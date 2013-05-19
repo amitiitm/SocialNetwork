@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<gencomponents:DetailAddEdit xmlns:mx="http://www.adobe.com/2006/mxml"
+	width="500" height="260" verticalGap="0"
+	xmlns:customcomponents="com.generic.customcomponents.*"
+	xmlns:gencomponents="com.generic.components.*" >
+
+	<mx:Script source="../scripts/GLSetupDetailScript.as"/>
+	
+	<mx:VBox height="100%" width="100%">
+	<mx:HBox width="100%">
+		<mx:Label text="Item Type" width="100" textAlign="right" height="20" />
+		<customcomponents:GenComboBox id="cbItem_type" defaultValue="D" width="127" cornerRadius="0" xmlTag="item_type" updatableFlag="true"
+			tableName="gl_setup_item" labelField="label" height="20" tabIndex="1" 
+			dataProvider="{__genModel.masterData.child('acct_item_type').acct_item_type}" />
+	
+		<mx:Label text="Status" width="103" height="20" textAlign="right" />
+		<customcomponents:GenComboBox id="cbTrans_flag" defaultValue="A" width="115" cornerRadius="0" xmlTag="trans_flag" updatableFlag="true"
+			tableName="gl_setup_item" labelField="label" height="20" tabIndex="4"  		
+			dataProvider="{__genModel.masterData.child('trans_flag').trans_flag}" />
+	</mx:HBox>
+	<mx:HBox width="100%">
+		<mx:Label text="Sales A/c #" width="100" textAlign="right" height="20" />
+		
+		<customcomponents:GenTextInputWithHelp
+							id="dcSales_account_id" 
+							width="200" 
+							toolTip="Sales A/c #" 
+							dataSourceName="GLAccount"
+							minimumChar = "{__genModel.masterData.child('lookup').glaccount.value}"
+							height="20" 
+							tabIndex="2" 
+							validationFlag="false" 
+							xmlTag="sales_account_id"
+							labelTag="sales_account_code"
+							dataField="id" 
+							labelField= "code"
+							updatableFlag="true" 
+							tableName="gl_setup_item" 
+							itemChangedEvent="tiSales_account_code.dataValue = dcSales_account_id.labelValue"
+							/>
+		
+		<!--<customcomponents:GenDynamicComboBoxWithHelp id="dcSales_account_id" width="200" 
+			tabIndex="2" toolTip="Sales A/c #"  defaultValue="" height="20" 
+			dataField="id" labelField="name" 
+			dataSourceName="GLAccount" dataProvider="{__genModel.lookupObj.glaccount.children()}"   
+			validationFlag="false" xmlTag="sales_account_id" updatableFlag="true" tableName="gl_setup_item"  />-->
+		</mx:HBox>
+
+	<mx:HBox width="100%">
+		
+		<mx:Label text="Purchase A/c #" width="100" textAlign="right" height="20" />
+		
+		<customcomponents:GenTextInputWithHelp
+							id="dcPurchase_account_id" 
+							width="200" 
+							toolTip="Purchase A/c #" 
+							dataSourceName="GLAccount"
+							minimumChar = "{__genModel.masterData.child('lookup').glaccount.value}"
+							height="20" 
+							tabIndex="3" 
+							validationFlag="false" 
+							xmlTag="purchase_account_id"
+							labelTag="purchase_account_code"
+							dataField="id" 
+							labelField= "code"
+							updatableFlag="true" 
+							tableName="gl_setup_item" 
+							itemChangedEvent="tiPurchase_account_code.dataValue = dcPurchase_account_id.labelValue"
+							/>
+							
+		<!--<customcomponents:GenDynamicComboBoxWithHelp id="dcPurchase_account_id" width="200" 
+			tabIndex="3" toolTip="Purchase A/c #"  defaultValue="" height="20" 
+			dataField="id" labelField="name"
+			dataSourceName="GLAccount" dataProvider="{__genModel.lookupObj.glaccount.children()}"   
+			validationFlag="false" xmlTag="purchase_account_id" updatableFlag="true" tableName="gl_setup_item"  />-->
+		</mx:HBox>
+			
+	</mx:VBox>
+	
+	<customcomponents:GenTextInput id="tiSerial_no" width="0" height="0" visible="false"
+		enabled="false" xmlTag="serial_no" updatableFlag="true"
+		tableName="gl_setup_item" />
+
+	<customcomponents:GenTextInput id="tiItem_type_desc" width="0" height="0" visible="false"
+		enabled="false" xmlTag="item_type_desc" updatableFlag="true" text="{cbItem_type.text}"
+		tableName="gl_setup_item" />
+
+	<customcomponents:GenTextInput id="tiSales_account_code" width="0" height="0" visible="false"
+		enabled="false" xmlTag="sales_account_code" updatableFlag="true" text="{dcSales_account_id.labelValue}"
+		tableName="gl_setup_item" />
+
+	<customcomponents:GenTextInput id="tiPurchase_account_code" width="0" height="0" visible="false"
+		enabled="false" xmlTag="purchase_account_code" updatableFlag="true" text="{dcPurchase_account_id.labelValue}"
+		tableName="gl_setup_item" />
+	
+</gencomponents:DetailAddEdit>

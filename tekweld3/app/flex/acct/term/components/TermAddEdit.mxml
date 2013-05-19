@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<gencomponents:AddEdit xmlns:mx="http://www.adobe.com/2006/mxml" 
+	height="100%" width="100%" verticalGap="0"
+	xmlns:customcomponents="com.generic.customcomponents.*"
+	xmlns:gencomponents="com.generic.components.*" 
+	creationPolicy="all">
+	
+	<mx:Script source="../scripts/TermAddEditScript.as"/>
+	
+	<mx:VBox width="100%" height="100%" verticalGap="3">
+		<mx:HBox width="100%" horizontalGap="0" verticalAlign="middle" height="20">
+			<mx:Label text="Term #" width="115" height="20" textAlign="right"/>
+			<customcomponents:GenTextInput id="tiCode" width="118" xmlTag="code" 
+				updatableFlag="true" tableName="term" defaultValue="" tabIndex="1"
+				validationFlag="true" toolTip="Term #" maxChars="25" fontSize="9" height="20"/>
+			<mx:Label text="Status" width="90" textAlign="right" height="20"/>
+			<customcomponents:GenComboBox id="cbTrans_flag" defaultValue="A" width="116" cornerRadius="0" xmlTag="trans_flag" updatableFlag="true"
+				tableName="term"  tabIndex="2" height="20" labelField="label"
+				dataProvider="{__genModel.masterData.child('trans_flag').trans_flag}"  />
+		</mx:HBox>
+		<mx:HBox width="100%" horizontalGap="0" verticalAlign="middle" height="20">
+			<mx:Label text="Name" width="115" textAlign="right" height="20"/>
+			<customcomponents:GenTextInput id="tiName" width="209" xmlTag="name" updatableFlag="true" tabIndex="3" tableName="term"
+				defaultValue="" validationFlag = "false" toolTip="Name" height="20"
+				maxChars="50" />
+		</mx:HBox>
+		<mx:HBox width="100%" horizontalGap="0" verticalAlign="middle" height="20">
+			<mx:Label text="Discount % / Days" width="115" textAlign="right" height="20"/>
+			<customcomponents:GenTextInput id="tiDisc_per" width="58" xmlTag="disc_per"  textAlign="right"
+				updatableFlag="true" tableName="term" defaultValue="0.00" tabIndex="4" height="20" 
+				validationFlag="false" toolTip="Discount %" dataType="N" maxValue="999.99" maxChars="6" fontSize="9"/>
+			<mx:Spacer width="2"/>
+			
+			<customcomponents:GenTextInput id="tiDisc_days" width="58" xmlTag="disc_days"  textAlign="right"
+				updatableFlag="true" tableName="term" defaultValue="0" tabIndex="5" height="20" 
+				validationFlag="false" toolTip="Discount Days" dataType="N" maxValue="9999" maxChars="6" fontSize="9"/>
+		</mx:HBox>		
+		<mx:Spacer height="10" width="100%" />
+		<mx:HBox width="100%" horizontalGap="0" verticalAlign="middle" height="20">
+			<mx:Label text="Payment %" width="181" textAlign="right" height="20"/>
+			<mx:Label text="Days" width="45" textAlign="right" height="20"/>
+		</mx:HBox>
+		<mx:HBox width="100%" horizontalGap="0" verticalAlign="middle" height="20">
+			<mx:Label text="1st" width="115" textAlign="right" height="20"/>
+			<customcomponents:GenTextInput id="tiPayment1_per" width="58" xmlTag="pay1_per"  textAlign="right"
+				updatableFlag="true" tableName="term" defaultValue="1.00" tabIndex="6" height="20" itemChangedEvent="calculateTotalPer()"
+				validationFlag="true" toolTip="Payment1 %" dataType="N" maxValue="999.99" maxChars="6" fontSize="9"/>
+			<mx:Spacer width="2"/>
+			<customcomponents:GenTextInput id="tiPayment1_days" width="58" xmlTag="pay1_days"  textAlign="right"
+				updatableFlag="true" tableName="term" defaultValue="0" tabIndex="7" height="20"
+				validationFlag="true" toolTip="Payment1 Days" dataType="N"  maxValue="9999" maxChars="4"  fontSize="9"/>
+		</mx:HBox>
+
+		<mx:HBox width="100%" horizontalGap="0" verticalAlign="middle" height="20">
+			<mx:Label text="2nd" width="115" textAlign="right" height="20"/>
+			<customcomponents:GenTextInput id="tiPayment2_per" width="58" xmlTag="pay2_per" textAlign="right"
+				updatableFlag="true" tableName="term" defaultValue="0.00" tabIndex="9" height="20" itemChangedEvent="calculateTotalPer()"
+				validationFlag="false" toolTip="Payment2 %" dataType="N" maxValue="999.99" maxChars="6" fontSize="9"/>
+			<mx:Spacer width="2"/>
+			<customcomponents:GenTextInput id="tiPayment2_days" width="58" xmlTag="pay2_days"  textAlign="right"
+				updatableFlag="true" tableName="term" defaultValue="0" tabIndex="10" height="20"
+				validationFlag="false" toolTip="Payment2 Days" dataType="N" maxValue="9999" maxChars="4" fontSize="9"/>
+		</mx:HBox>
+
+		<mx:HBox width="100%" horizontalGap="0" verticalAlign="middle" height="20">
+			<mx:Label text="3rd" width="115" textAlign="right" height="20"/>
+			<customcomponents:GenTextInput id="tiPayment3_per" width="58" xmlTag="pay3_per"  textAlign="right"
+				updatableFlag="true" tableName="term" defaultValue="0.00" tabIndex="12" height="20" itemChangedEvent="calculateTotalPer()"
+				validationFlag="false" toolTip="Payment3 %" dataType="N"  maxValue="999.99" maxChars="6"  fontSize="9"/>
+			<mx:Spacer width="2"/> 
+			<customcomponents:GenTextInput id="tiPayment3_days" width="58" xmlTag="pay3_days"  textAlign="right"
+				updatableFlag="true" tableName="term" defaultValue="0" tabIndex="13" height="20"
+				validationFlag="false" toolTip="Payment3 Days" dataType="N"  maxValue="9999" maxChars="4"  fontSize="9"/>
+		</mx:HBox>
+		<mx:HBox width="100%" horizontalGap="0" verticalAlign="middle" height="20">
+			<mx:Label text="4th" width="115" textAlign="right" height="20"/>
+			<customcomponents:GenTextInput id="tiPayment4_per" width="58" xmlTag="pay4_per"  textAlign="right"
+				updatableFlag="true" tableName="term" defaultValue="0.00" tabIndex="15" height="20" itemChangedEvent="calculateTotalPer()"
+				validationFlag="false" toolTip="Payment4 %" dataType="N" maxValue="999.99" maxChars="6" fontSize="9"/>
+			<mx:Spacer width="2"/>
+			<customcomponents:GenTextInput id="tiPayment4_days" width="58" xmlTag="pay4_days"  textAlign="right"
+				updatableFlag="true" tableName="term" defaultValue="0" tabIndex="16" height="20"
+				validationFlag="false" toolTip="Payment4 Days" dataType="N" maxValue="9999" maxChars="4" fontSize="9"/>
+		</mx:HBox>
+		<mx:HBox width="100%" horizontalGap="0" verticalAlign="middle" height="20">
+			<mx:Label text="5th" width="115" textAlign="right" height="20"/>
+			<customcomponents:GenTextInput id="tiPayment5_per" width="58" xmlTag="pay5_per"  textAlign="right"
+				updatableFlag="true" tableName="term" defaultValue="0.00" tabIndex="18" height="20" itemChangedEvent="calculateTotalPer()"
+				validationFlag="false" toolTip="Payment5 %"  dataType="N" maxValue="999.99" maxChars="6"  fontSize="9"/>
+			<mx:Spacer width="2"/>
+			<customcomponents:GenTextInput id="tiPayment5_days" width="58" xmlTag="pay5_days"  textAlign="right"
+				updatableFlag="true" tableName="term" defaultValue="0" tabIndex="19" height="20"
+				validationFlag="false" toolTip="Payment5 Days" dataType="N"  maxValue="9999" maxChars="4"  fontSize="9"/>
+		</mx:HBox>
+		<mx:HBox width="100%" horizontalGap="0" verticalAlign="middle" height="20">
+			<mx:Label text="6th" width="115" textAlign="right" height="20"/>
+			<customcomponents:GenTextInput id="tiPayment6_per" width="58" xmlTag="pay6_per"  textAlign="right"
+				updatableFlag="true" tableName="term" defaultValue="0.00" tabIndex="21" height="20" itemChangedEvent="calculateTotalPer()"
+				validationFlag="false" toolTip="Payment6 %" dataType="N"  maxValue="999.99" maxChars="6"  fontSize="9"/>
+			<mx:Spacer width="2"/> 
+			<customcomponents:GenTextInput id="tiPayment6_days" width="58" xmlTag="pay6_days"  textAlign="right"
+				updatableFlag="true" tableName="term" defaultValue="0" tabIndex="22" height="20"
+				validationFlag="false" toolTip="Payment6 Days" dataType="N"  maxValue="9999" maxChars="4"  fontSize="9"/>
+		</mx:HBox>
+		<mx:HBox width="100%" horizontalGap="0" verticalAlign="middle" height="20">
+			<mx:Label text="7th" width="115" textAlign="right" height="20"/>
+			<customcomponents:GenTextInput id="tiPayment7_per" width="58" xmlTag="pay7_per"  textAlign="right"
+				updatableFlag="true" tableName="term" defaultValue="0.00" tabIndex="24" height="20" itemChangedEvent="calculateTotalPer()"
+				validationFlag="false" toolTip="Payment7 %" dataType="N"  maxValue="999.99" maxChars="6"  fontSize="9"/>
+			<mx:Spacer width="2"/> 
+			<customcomponents:GenTextInput id="tiPayment7_days" width="58" xmlTag="pay7_days"  textAlign="right"
+				updatableFlag="true" tableName="term" defaultValue="0" tabIndex="25" height="20"
+				validationFlag="false" toolTip="Payment7 Days" dataType="N"  maxValue="9999" maxChars="4"  fontSize="9"/>
+		</mx:HBox>
+		<mx:HBox width="100%" horizontalGap="0" verticalAlign="middle" height="20">
+			<mx:Label text="8th" width="115" textAlign="right" height="20"/>
+			<customcomponents:GenTextInput id="tiPayment8_per" width="58" xmlTag="pay8_per"  textAlign="right"
+				updatableFlag="true" tableName="term" defaultValue="0.00" tabIndex="27" height="20" itemChangedEvent="calculateTotalPer()"
+				validationFlag="false" toolTip="Payment8 %" dataType="N"  maxValue="999.99" maxChars="6"  fontSize="9"/>
+			<mx:Spacer width="2"/> 
+			<customcomponents:GenTextInput id="tiPayment8_days" width="58" xmlTag="pay8_days"  textAlign="right"
+				updatableFlag="true" tableName="term" defaultValue="0" tabIndex="28" height="20"
+				validationFlag="false" toolTip="Payment8 Days" dataType="N"  maxValue="9999" maxChars="4"  fontSize="9"/>
+		</mx:HBox>
+		<mx:HBox width="100%" horizontalGap="0" verticalAlign="middle" height="20">
+			<mx:Label text="9th" width="115" textAlign="right" height="20"/>
+			<customcomponents:GenTextInput id="tiPayment9_per" width="58" xmlTag="pay9_per"  textAlign="right"
+				updatableFlag="true" tableName="term" defaultValue="0.00" tabIndex="30" height="20" itemChangedEvent="calculateTotalPer()"
+				validationFlag="false" toolTip="Payment9 %" dataType="N"  maxValue="999.99" maxChars="6"  fontSize="9"/>
+			<mx:Spacer width="2"/> 
+			<customcomponents:GenTextInput id="tiPayment9_days" width="58" xmlTag="pay9_days"  textAlign="right"
+				updatableFlag="true" tableName="term" defaultValue="0" tabIndex="31" height="20"
+				validationFlag="false" toolTip="Payment9 Days" dataType="N"  maxValue="9999" maxChars="4"  fontSize="9"/>
+		</mx:HBox>
+		<mx:HBox width="100%" horizontalGap="0" verticalAlign="middle" height="20">
+			<mx:Label text="10th" width="115" textAlign="right" height="20"/>
+			<customcomponents:GenTextInput id="tiPayment10_per" width="58" xmlTag="pay10_per"  textAlign="right"
+				updatableFlag="true" tableName="term" defaultValue="0.00" tabIndex="33" height="20" itemChangedEvent="calculateTotalPer()"
+				validationFlag="false" toolTip="Payment10 %" dataType="N"  maxValue="999.99" maxChars="6"  fontSize="9"/>
+			<mx:Spacer width="2"/> 
+			<customcomponents:GenTextInput id="tiPayment10_days" width="58" xmlTag="pay10_days"  textAlign="right"
+				updatableFlag="true" tableName="term" defaultValue="0" tabIndex="34" height="20"
+				validationFlag="false" toolTip="Payment10 Days" dataType="N"  maxValue="9999" maxChars="4"  fontSize="9"/>
+		</mx:HBox>
+		<mx:HBox width="100%" horizontalGap="0" verticalAlign="middle" height="20">
+			<mx:Label text="11th" width="115" textAlign="right" height="20"/>
+			<customcomponents:GenTextInput id="tiPayment11_per" width="58" xmlTag="pay11_per"  textAlign="right"
+				updatableFlag="true" tableName="term" defaultValue="0.00" tabIndex="36" height="20" itemChangedEvent="calculateTotalPer()"
+				validationFlag="false" toolTip="Payment11 %" dataType="N"  maxValue="999.99" maxChars="6"  fontSize="9"/>
+			<mx:Spacer width="2"/> 
+			<customcomponents:GenTextInput id="tiPayment11_days" width="58" xmlTag="pay11_days"  textAlign="right"
+				updatableFlag="true" tableName="term" defaultValue="0" tabIndex="37" height="20"
+				validationFlag="false" toolTip="Payment11 Days" dataType="N"  maxValue="9999" maxChars="4"  fontSize="9"/>
+		</mx:HBox>
+		<mx:HBox width="100%" horizontalGap="0" verticalAlign="middle" height="20">
+			<mx:Label text="12th" width="115" textAlign="right" height="20"/>
+			<customcomponents:GenTextInput id="tiPayment12_per" width="58" xmlTag="pay12_per"  textAlign="right"
+				updatableFlag="true" tableName="term" defaultValue="0.00" tabIndex="39" height="20" itemChangedEvent="calculateTotalPer()"
+				validationFlag="false" toolTip="Payment12 %" dataType="N"  maxValue="999.99" maxChars="6"  fontSize="9"/>
+			<mx:Spacer width="2"/> 
+			<customcomponents:GenTextInput id="tiPayment12_days" width="58" xmlTag="pay12_days"  textAlign="right"
+				updatableFlag="true" tableName="term" defaultValue="0" tabIndex="40" height="20"
+				validationFlag="false" toolTip="Payment12 Days" dataType="N"  maxValue="9999" maxChars="4"  fontSize="9"/>	
+		</mx:HBox>
+		<mx:HBox>
+			<mx:Spacer width="60"/>
+			<mx:HRule  width="170" strokeColor="#000000"/>
+		</mx:HBox>
+		<mx:HBox width="100%" horizontalGap="0" verticalAlign="middle" height="20">
+			<mx:Label text="Total %" width="115" textAlign="right" height="20"/>
+			<customcomponents:GenTextInput id="tiTotal_per" width="58" xmlTag="total_per"  textAlign="right"
+				updatableFlag="false" tableName="term" defaultValue="0.00" tabIndex="30" height="20" enabled="false"
+				validationFlag="false" toolTip="Total Per" dataType="N"  maxValue="999.99" maxChars="6"  fontSize="9"/>
+					
+		</mx:HBox>
+	</mx:VBox>
+</gencomponents:AddEdit>

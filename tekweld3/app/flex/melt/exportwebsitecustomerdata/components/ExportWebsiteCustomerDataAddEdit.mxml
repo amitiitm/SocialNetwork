@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<gencomponents:AddEdit xmlns:mx="http://www.adobe.com/2006/mxml"
+	height="100%" width="100%" verticalGap="0"
+	xmlns:customcomponents="com.generic.customcomponents.*"
+	xmlns:gencomponents="com.generic.components.*"
+	creationPolicy="all" >
+
+	<mx:Script source="../scripts/ExportWebsiteCustomerDataAddEditScript.as"/>
+	
+	<mx:HBox horizontalGap="0" height="100%" width="100%" horizontalAlign="center">
+			
+			<customcomponents:GenTextInput id="tiDummy" width="0"  
+				xmlTag="dummy" updatableFlag="false" tableName="catalog_store_location" includeInLayout="false" />
+
+			<mx:Button label="Please click to export JCPenney Customer's data" click="export()"/>
+	</mx:HBox>
+	
+</gencomponents:AddEdit>
+

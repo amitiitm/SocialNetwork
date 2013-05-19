@@ -1,0 +1,14 @@
+<columns>
+		<column data='code' label='Code' editable='false' visible='true' width='80' textAlign='left' 	
+				dataType='S'  sortDataType='S' columnPrecision="NaN" booleanFlag='false' componentType="Text"	/>
+		
+		<column data='name' label='Name' editable='false' visible='true' width='80' textAlign='left' 	
+				dataType='S'  sortDataType='S' columnPrecision="NaN" booleanFlag='false' componentType="Text"	/>
+
+		<column data='image_file' label='Image Name' editable='false' visible='true' width='80' textAlign='left' 	
+				dataType='S'  sortDataType='S' columnPrecision="NaN" booleanFlag='false' componentType="Text"	/>
+				
+		<column data='description' label='Description' editable='false' visible='true' width='80' textAlign='left' 	
+				dataType='S'  sortDataType='S' columnPrecision="NaN" booleanFlag='false' componentType="Text"	/>		
+
+</columns> 

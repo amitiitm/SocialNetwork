@@ -1,0 +1,2 @@
+module Js::RateGroupsHelper
+end

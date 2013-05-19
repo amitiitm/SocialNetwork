@@ -1,0 +1,39 @@
+<%= page_title :title => "Carrier Settings: #{@carrier.name}" %>
+
+<div id="tabs">
+	<ul>
+		<li><a href="#carrier-info">Carrier Settings</a></li>
+		<li><a href="/carriers/<%= @carrier.id %>/rate_sheets">Rate Sheets</a></li>
+	</ul>
+	<div id="carrier-info">
+		<div class="three-column sortable">
+			<div class="three-col-mid">		
+				<div class="column col1" id="middle">
+					<% box :type => "portlet", :title => "Endpoints" do %>
+						<%= render :partial => "carriers/endpoints/endpoints" %>
+					<% end -%>			
+				</div>		
+				<div class="column col2" id="left">
+					<% box :type => "portlet", :title => "Carrier Info" do %>
+						<%= render :partial => "carrier_info" %>
+					<% end -%>
+				</div>				
+				<div class="column col3" id="right">
+					<% box :type => "portlet", :title => "Trunks" do %>
+						<%= render :partial => "carriers/trunks/trunks" %>
+					<% end -%>
+				</div>		
+			</div>
+		</div>
+		<div class="clearfix"></div>
+	</div>
+</div>
+<script>
+	$(document).ready(function(){
+		$('#tabs').tabs({
+			cookie: { expires: 30 },
+			fx: { opacity: 'toggle', duration : 'slow' },
+			async: true
+		});		
+	});
+</script>

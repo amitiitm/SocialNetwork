@@ -1,0 +1,11 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  module: MyString
+  server_id: 1
+  settings: MyText
+
+two:
+  module: MyString
+  server_id: 1
+  settings: MyText

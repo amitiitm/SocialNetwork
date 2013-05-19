@@ -1,0 +1,65 @@
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"/>
+  <title>VOIPonTEL</title>
+
+
+  <link href="login_css/reset.css" rel="stylesheet" type="text/css"/>
+  <link href="login_css/style.css" rel="stylesheet" type="text/css"/>
+  <link href="login_css/common.css" rel="stylesheet" type="text/css"/>
+  <link href="login_css/registration.css" rel="stylesheet" type="text/css"/>
+
+  <!--[if IE]>
+  <link href="login_css/style-ie.css" rel="stylesheet" type="text/css"/>
+  <![endif]-->
+
+</head>
+<body style='background: url("/images/login/body-bg.png") repeat-y scroll 0 0 #DCD7CD;font-family: Arial,Helvetica,sans-serif;'>
+<!--**************************************main-wrapper******************************************************-->
+
+<div id="main-wrapper" class="round-corners round-corners-top">
+  <!--***********************************wrapper***********************************************-->
+  <div id="wrapper">
+    <!--***************************header******************************-->
+    <div id="header" class="round-corners">
+      <!--**************************-->
+      <div id="logo">
+        <a href="/"><img src="images/login/logo.png" title="View Home Page" alt="Home"/></a>
+      </div>
+    </div>
+    <!-- header -->
+    <!--********************************middle*****************************************-->
+    <div id="middle">
+      <%= yield %>
+    </div>
+    <!-- middle -->
+  </div>
+  <!-- wrapper -->
+
+
+</div>
+<!-- main-wrapper -->
+
+<!--********************************footer*****************************************-->
+<!-- explore-links -->
+<!-- stay-in-touch -->
+<div id="footer-menu-container" class="round-corners-bottom" style="width:970px; margin:auto;">
+  <div id="left-corner"><img src="images/login/left-cornor.png" alt="Left Corner"/></div>
+  <div id="footer-menu-copyright">
+    <div id="copyright">
+      <p>VOIP<em>on</em>TEL &copy; Copyright 2011. All right reserved.</p>
+      <p style="float:right;"><%= publish_date %></p>
+    </div>
+    <!-- copyright -->
+  </div>
+  <!-- footer-menu-copyright -->
+  <div id="right-corner"><img src="images/login/right-corner.png" alt="Right Corner"/></div>
+</div>
+<!-- footer-menu-container -->
+</body>
+</html>
+
+
+
+
+<%#= yield %>

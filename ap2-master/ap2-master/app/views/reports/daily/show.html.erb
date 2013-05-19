@@ -1,0 +1,21 @@
+<%= page_title :title => "Daily Traffic" %>
+
+<%= javascript_include_tag :high_charts %>
+
+<div id="charts"></div>
+
+<%= months %>
+<script type="text/javascript" charset="utf-8">
+	$(function(){
+		$.get("/reports/daily/daily_graph", null,function(resp){
+			$("#charts").html(resp);
+		})
+	});
+	$(".months").live('click', function(e){
+		e.preventDefault();
+		var year = $(this).attr("href");
+		$.get("/reports/daily/daily_graph", (year),function(resp){
+			$("#charts").html(resp);
+		})
+	});
+</script>

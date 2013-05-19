@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rds:CommonServices xmlns:rds="business.*" xmlns:mx="http://www.adobe.com/2006/mxml">
+
+	<mx:HTTPService id="saveRecord" 			url="/shipping/shipping/create_order_shipping_and_packages"/>
+	<mx:HTTPService id="getList" 				url="/shipping/shipping/list_order_shipping_and_packages"/>
+	<mx:HTTPService id="getRecord" 				url="/shipping/shipping/show_order_shipping_and_package" />
+	<mx:HTTPService id="printRecord" 			url="/production/production_report/render_package_slip_format" />
+	<mx:HTTPService id="recalculateShipAmount" 	url="/shipping/shipping/get_shipping_methods" />
+	
+	<mx:HTTPService id="artworkUploadUrl" 		url="/artwork/artwork/upload_artwork_attachments"/>
+	<mx:HTTPService id="sendToCustomer" 		url="/artwork/artwork/send_artwork_to_customer" />
+	<mx:HTTPService id="printJob" 				url="/sale/sales_report/render_sales_order_job_format" />
+	<mx:HTTPService id="genrateUpsLabel" 		url="/shipping/shipping/print_multipackage_label" />
+	<mx:HTTPService id="genratePackageSlip" 	url="/production/production_report/render_package_slip_format"/>
+	
+	<mx:HTTPService id="getListFormat" 			url="ship/shipjob/xmls/ShipJobListStru.xml" />
+	<mx:HTTPService id="getViewFormat" 			url="ship/shipjob/xmls/ShipJobCriteriaStru.xml" />
+	<mx:HTTPService id="packageDetailFormat" 	url="ship/shipjob/xmls/ShipJobPackageDetailStru.xml" />
+	<mx:HTTPService id="freightDetailFormat" 	url="ship/shipjob/xmls/ShipJobFreightDetailStru.xml" />
+	
+	
+	
+</rds:CommonServices>

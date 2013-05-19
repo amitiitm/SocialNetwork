@@ -1,0 +1,48 @@
+<columns>
+					
+	<column data='production_day1' 		label='Tier 1' 		editable='false' 	visible='true' 	width='60' textAlign='right' forLevel='false' 
+			defaultForLevel=''	booleanFlag='false'	sortDataType='N'	columnPrecision="0"/>
+	
+	<column data='production_day2' 		label='Tier 2' 		editable='false' 	visible='true' 	width='60' textAlign='right' forLevel='false' 
+			defaultForLevel=''	booleanFlag='false'	sortDataType='N'	columnPrecision="0"/>
+	
+	<column data='production_day3' 		label='Tier 3' 		editable='false' 	visible='true' 	width='60' textAlign='right' forLevel='false' 
+			defaultForLevel=''	booleanFlag='false'	sortDataType='N'	columnPrecision="0"/>
+	
+	<column data='production_day4' 		label='Tier 4' 		editable='false' 	visible='true' 	width='60' textAlign='right' forLevel='false' 
+			defaultForLevel=''	booleanFlag='false'	sortDataType='N'	columnPrecision="0"/>
+	
+	<column data='production_day5' 		label='Tier 5' 		editable='false' 	visible='true' 	width='60' textAlign='right' forLevel='false' 
+			defaultForLevel=''	booleanFlag='false'	sortDataType='N'	columnPrecision="0"/>	
+	
+	<column data='production_day6' 		label='Tier 6' 		editable='false' 	visible='true' 	width='60' textAlign='right' forLevel='false' 
+			defaultForLevel=''	booleanFlag='false'	sortDataType='N'	columnPrecision="0"/>	
+			
+	<column data='production_day7' 		label='Tier 7' 		editable='false' 	visible='true' 	width='60' textAlign='right' forLevel='false' 
+			defaultForLevel=''	booleanFlag='false'	sortDataType='N'	columnPrecision="0"/>	
+	
+	<column data='production_day8' 		label='Tier 8' 		editable='false' 	visible='true' 	width='60' textAlign='right' forLevel='false' 
+			defaultForLevel=''	booleanFlag='false'	sortDataType='N'	columnPrecision="0"/>	
+	
+	<column data='production_day9' 		label='Tier 9' 		editable='false' 	visible='true' 	width='60' textAlign='right' forLevel='false' 
+			defaultForLevel=''	booleanFlag='false'	sortDataType='N'	columnPrecision="0"/>										
+	
+	<column data='production_day10' 	label='Tier 10' 	editable='false' 	visible='true' 	width='60' textAlign='right' forLevel='false' 
+			defaultForLevel=''	booleanFlag='false'	sortDataType='N'	columnPrecision="0"/>
+	
+	<column data='production_day11' 		label='Tier 11' 		editable='false' 	visible='true' 	width='60' textAlign='right' forLevel='false' 
+			defaultForLevel=''	booleanFlag='false'	sortDataType='N'	columnPrecision="0"/>	
+			
+	<column data='production_day12' 		label='Tier 12' 		editable='false' 	visible='true' 	width='60' textAlign='right' forLevel='false' 
+			defaultForLevel=''	booleanFlag='false'	sortDataType='N'	columnPrecision="0"/>	
+	
+	<column data='production_day13' 		label='Tier 13' 		editable='false' 	visible='true' 	width='60' textAlign='right' forLevel='false' 
+			defaultForLevel=''	booleanFlag='false'	sortDataType='N'	columnPrecision="0"/>	
+	
+	<column data='production_day14' 		label='Tier 14' 		editable='false' 	visible='true' 	width='60' textAlign='right' forLevel='false' 
+			defaultForLevel=''	booleanFlag='false'	sortDataType='N'	columnPrecision="0"/>										
+	
+	<column data='production_day15' 	label='Tier 15' 	editable='false' 	visible='true' 	width='60' textAlign='left' forLevel='false' 
+			defaultForLevel=''	booleanFlag='false'	sortDataType='N'	columnPrecision="0"/>		
+	
+</columns> 

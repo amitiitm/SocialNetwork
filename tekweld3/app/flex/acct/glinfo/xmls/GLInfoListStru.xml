@@ -1,0 +1,13 @@
+<columns lockedColumnCount='0'>
+
+	<column data='code' 			label='GL #' 			editable='false' 		visible='true' 		width='80' 			textAlign='left'
+			print_width = '20'		forLevel='false' 		defaultForLevel='' 		booleanFlag='false'	sortDataType='S'	columnPrecision="NaN"/>
+						
+	<column data='debit_amt' 		label='Debit Amt.' 		editable='false' 		visible='true' 		width='60' 			textAlign='right' 
+			print_width = '18'		forLevel='false' 		defaultForLevel='' 		booleanFlag='false'	sortDataType='N'	columnPrecision="2"/>
+						
+	<column data='credit_amt' 		label='Credit Amt.' 	editable='false' 		visible='true' 		width='55' 			textAlign='right' 
+			print_width = '18'		forLevel='false' 		defaultForLevel='' 		booleanFlag='false'	sortDataType='N'	columnPrecision="2"/>
+
+
+</columns>

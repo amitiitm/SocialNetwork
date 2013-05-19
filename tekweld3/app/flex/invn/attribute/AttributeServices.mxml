@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rds:CommonServices xmlns:rds="business.*" xmlns:mx="http://www.adobe.com/2006/mxml">
+
+	<mx:HTTPService id="saveRecord" url="/inventory/item_attribute/create_catalog_attributes"/>
+	<mx:HTTPService id="getRecord" url="/inventory/item_attribute/show_catalog_attribute"/>
+	<mx:HTTPService id="getList" url="/inventory/item_attribute/list_catalog_attributes"/>
+	<mx:HTTPService id="getListFormat" url="invn/attribute/xmls/AttributeListStru.xml"/>
+	<mx:HTTPService id="getViewFormat" url="invn/attribute/xmls/AttributeCriteriaStru.xml"/>
+	<mx:HTTPService id="valueDetailFormat" url="invn/attribute/xmls/AttributeValueDetailStru.xml"/>
+	<mx:HTTPService id="printRecord" url=""/>
+	
+	<mx:HTTPService id="importDetailFormat" url="invn/attribute/xmls/AttributeImportStru.xml"/>
+	<mx:HTTPService id="recordUploadUrl" url="/inventory/item_attribute/convert_exceltoxml_for_catalog_item_attributes"/>
+
+
+</rds:CommonServices>

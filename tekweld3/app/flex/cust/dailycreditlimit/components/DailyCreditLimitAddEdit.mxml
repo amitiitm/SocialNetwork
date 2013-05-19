@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<gencomponents:AddEdit xmlns:mx="http://www.adobe.com/2006/mxml" 
+	height="100%" width="100%" verticalGap="0"
+	xmlns:customcomponents="com.generic.customcomponents.*"
+	xmlns:gencomponents="com.generic.components.*"
+	creationPolicy="all" creationComplete="init()">
+	
+	<mx:Script source="../scripts/DailyCreditLimitAddEditScript.as"/>
+	
+	<mx:VBox width="100%" height="100%">
+		<mx:VBox width="100%">
+			<mx:HBox width="100%">
+				<mx:Label text="Customer #" textAlign="right" width="100" height="20"/>
+				<customcomponents:GenTextInputWithHelp id="dcCustomer_id"
+					width="150" height="20" 
+					toolTip="Account #" defaultValue=""
+					dataField="id" 		labelField="code"
+					xmlTag="customer_id" labelTag="customer_code"
+					dataSourceName="Customer" 
+					tabIndex="1"  
+					itemChangedEvent="tiCustomerCode.dataValue	=	dcCustomer_id.labelValue"  
+					validationFlag="true" 
+					updatableFlag="true" tableName="customer_daily_credit_limit"
+					lookupFormatUrl	=	"retailCustomerLookupHelpFormat"
+				/>
+				
+			</mx:HBox>	
+			<mx:HBox width="100%" height="10%" verticalGap="0" >						
+				<mx:Label text="Credit Limit Date" height="20" width="100" textAlign="right"/>
+				<customcomponents:GenDateField id="dfCredit_limit_date" width="110" height="20" toolTip="Credit Limit Date" 
+					validationFlag="false" tabIndex="2" xmlTag="credit_limit_date" updatableFlag="true" tableName="customer_daily_credit_limit"/>
+			</mx:HBox>
+			<mx:HBox width="100%" height="10%" verticalGap="0" >
+				<mx:Label text="Credit Limit" width="100" textAlign="right"/>
+				<customcomponents:GenTextInput id="tiCredit_limit" width="110" height="20" visible="true"
+					xmlTag="credit_limit" updatableFlag="true" tabIndex="3"
+					tableName="customer_daily_credit_limit" defaultValue="0.00"  toolTip="Credit Limit" setDefaultOnEmpty="true" 
+					textAlign="right" dataType="N" maxValue="9999999999.99" />
+			</mx:HBox>
+			<mx:HBox visible="false" includeInLayout="false">
+				<customcomponents:GenTextInput id="tiCustomerCode" height="20" width="140" textAlign="left" defaultValue='' tabIndex="1"
+					xmlTag="customer_code" dataType="S" updatableFlag="true" tableName="customer_daily_credit_limit" maxChars="50" toolTip="Code"
+					editable="true" validationFlag="false" upperCaseFlag="true" />
+			</mx:HBox>
+				
+		</mx:VBox>
+	</mx:VBox>
+</gencomponents:AddEdit>

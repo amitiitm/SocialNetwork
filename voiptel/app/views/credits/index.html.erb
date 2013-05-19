@@ -1,0 +1,29 @@
+<div class="inner-response">
+<%= page_title :title => "Credits" %>
+
+<% table do |t| %>
+	<% t.th "#" %>
+	<% t.th "Account Holder" %>
+	<% t.th "Note" %>
+	<% t.th "Amount" %>
+	<% t.th "Old Balance" %>				
+	<% t.th "New Balance" %>
+	<% t.th "By" %>
+	<% t.th "Date" %>
+
+  <% counter = (@size - ((@page - 1) * @limit) + 1) %>
+  <% for credit in @credits do %>
+  	<% counter -= 1 %>
+		<% t.td counter %>
+		<% t.td credit.account.name %>
+		<% t.td credit.note %>
+		<% t.td number_to_currency(credit.amount) %>
+		<% t.td number_to_currency(credit.old_balance) %>
+		<% t.td number_to_currency(credit.amount + credit.old_balance) %>
+		<% t.td (if credit.admin_user then credit.admin_user.name else "Auto" end) %>
+		<% t.td credit.created_at %>
+		<% t.new_row %>
+	<%  end -%>
+<% end -%>
+<%= pager(credits_path) %>
+</div>

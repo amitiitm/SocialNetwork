@@ -1,0 +1,11 @@
+<columns  lockedColumnCount='0'>
+
+	<column data='select_yn'				label='Select'				editable='true'		visible='true'				width='50'			textAlign='center'	forLevel='false'
+			defaultForLevel=''				booleanFlag='false'			sortDataType='S'	columnPrecision="NaN" 		/>
+	
+	<column data='color_number'				label='Ccolor #'				editable='false' 	visible='true' 	width='150'	textAlign='left'	forLevel='false' 
+			defaultForLevel=''				booleanFlag='false'			sortDataType='S'	columnPrecision="NaN" 		/>
+	
+	<column data='color_card_sequence'		label='Cross-Reference'	editable='false'	visible='true'	width='180'	textAlign='left'	forLevel='false'
+			defaultForLevel=''				booleanFlag='false'			sortDataType='S'	columnPrecision="NaN" 		/>		
+</columns> 

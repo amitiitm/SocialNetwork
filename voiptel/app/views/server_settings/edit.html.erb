@@ -1,0 +1,28 @@
+<%= page_title :title => "Edit Server Settings: #{@server_setting.server.name}" %>
+<% box :type => "simple" do %>
+	<% form_for(@server_setting, :html => {:class => "html"}) do |f| %>
+	<ul>
+		<li>
+	    <%= f.label :module %>
+	    <%= f.text_field :module %>
+	  </li>
+	  <li>
+	    <%= f.label :server_id %><br />
+	    <%= f.select :server_id, Server.all.collect {|s| ["#{s.name} - #{s.ip}", s.id]}, { :include_blank => true } %>
+	  </li>
+	  <li>
+	    <%= f.label :settings %><br />
+	    <%= f.text_area :settings, :class => "code" %>
+	  </li>
+	  <li>
+	    <button type="Submit">Update</button>
+	  </li>
+	</ul>
+	<% end %>
+<% end -%>
+<script>
+	$(document).ready(function () {
+		$("textarea").indent();
+	});
+</script>
+<%= javascript_include_tag "/js/tab.js" %>

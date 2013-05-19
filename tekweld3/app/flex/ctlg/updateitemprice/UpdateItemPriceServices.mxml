@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rds:CommonServices xmlns:rds="business.*" xmlns:mx="http://www.adobe.com/2006/mxml">
+
+	<mx:HTTPService id="saveRecord" url="/item/create_catalog_item_prices"/>
+	<mx:HTTPService id="getRecord" url=""/>
+	<mx:HTTPService id="getList" url=""/>
+	<mx:HTTPService id="xlsUploadUrl" url="/item/upload_item_prices"/>
+	<mx:HTTPService id="printRecord" url=""/>
+	<mx:HTTPService id="updatePriceDetailFormat" url="ctlg/updateitemprice/xmls/UpdateItemPriceDetailStru.xml" />
+	
+
+</rds:CommonServices>

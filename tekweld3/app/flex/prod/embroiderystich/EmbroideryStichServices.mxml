@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rds:CommonServices xmlns:rds="business.*" xmlns:mx="http://www.adobe.com/2006/mxml">
+
+	<mx:HTTPService id="saveRecord" url="/production/production/create_production_stitch_inboxes"/>
+	<mx:HTTPService id="getList" url="/production/production_embroidery/embroidery_stitch_inbox"/>
+	
+	<mx:HTTPService id="getViewFormat" url="prod/embroiderystich/xmls/EmbroideryStichCriteriaStru.xml"/>
+	<mx:HTTPService id="getListFormat" url="prod/embroiderystich/xmls/EmbroideryStichListStru.xml"/>
+	<mx:HTTPService id="printPickSlip" 	url="/production/production_report/render_packaging_job_format"/>
+	<mx:HTTPService id="printRecord" url=""/>
+	<mx:HTTPService id="getThreads" url="/production/production_embroidery/list_embroidery_threads"/>
+</rds:CommonServices>

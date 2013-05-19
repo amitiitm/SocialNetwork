@@ -1,0 +1,12 @@
+<fieldset>
+	<legend>
+		Financial Stats</legend>
+		<b>Total Deposits: <%= number_to_currency(@total_deposits) %></b><br>
+		<b>Number of Deposits: <%= @number_of_deposits %></b><br>
+    <b>Available Balance: <%= number_to_currency(@total_balance) %></b><br>
+		<b>Used Balance: <%= number_to_currency(@used) %></b><br>
+    <b>Average Daily Deposit: <%= number_to_currency(@average_daily) %></b><br>
+    <b>Total Credits: <%= number_to_currency(@credits) %></b><br>
+    <b>Total Members: <%= @total_members %></b><br>
+    <b>Depositors: <%= @paying_members %> (<%= number_to_percentage((@paying_members / 227.to_f)*100, :precision => 2)%>)</b><br>
+</fieldset>

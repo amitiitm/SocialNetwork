@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<gencomponents:DetailAddEdit xmlns:mx="http://www.adobe.com/2006/mxml"
+							 width="500" height="302" verticalGap="0"
+	xmlns:customcomponents="com.generic.customcomponents.*"
+	xmlns:gencomponents="com.generic.components.*"
+	>
+
+	<mx:Script source="../scripts/ShipJobFreightDetailScript.as"/>
+	
+	<mx:VBox height="100%" width="100%" >
+		
+		
+		<mx:HBox width="100%" horizontalGap="2" verticalAlign="middle">
+			<mx:Label text="Package Type" width="115" textAlign="right"/>
+			<customcomponents:GenComboBox id="tiPackageType" width="150" cornerRadius="0" xmlTag="package_type" updatableFlag="true"
+										  tableName="sales_order_shipping_truck_package"  tabIndex="1" labelField="label" height="20" defaultValue="Pallet"  		
+										  dataProvider="{commonartworkXml.getShippingList('packagetype')}" toolTip="Package  Type"/>
+		</mx:HBox>
+		<mx:HBox width="100%" horizontalGap="2" verticalAlign="middle">
+			<mx:Label text="Freight Class" width="115" textAlign="right"/>
+			<customcomponents:GenComboBox id="tiFreightClass" width="150" cornerRadius="0" xmlTag="freight_class" updatableFlag="true"
+										  tableName="sales_order_shipping_truck_package"  tabIndex="2" labelField="label" height="20" defaultValue="50"  		
+										  dataProvider="{commonartworkXml.getShippingList('freightclass')}" toolTip="Freight Class"/>
+		</mx:HBox>
+		
+		<mx:HBox width="100%" horizontalGap="2" verticalAlign="middle">
+			<mx:Label text="Package Length" width="115" textAlign="right"/>
+			<customcomponents:GenTextInput id="tiPackageLength"  height="20" textAlign="right"
+										   updatableFlag="true" width="110" tabIndex="3" xmlTag="package_length" maxChars="50"
+										    tableName="sales_order_shipping_truck_package" defaultValue = '1'
+										   dataType="N" rounding="false" setDefaultOnEmpty="true"
+										   maxValue="9999999999" validationFlag="true" toolTip="Length"/>
+		</mx:HBox>
+		<mx:HBox width="100%" horizontalGap="2" verticalAlign="middle">
+			<mx:Label text="Package Width" width="115" textAlign="right"/>
+			<customcomponents:GenTextInput id="tiCartonWidth"  height="20" textAlign="right"
+										   updatableFlag="true" width="110" tabIndex="4" xmlTag="package_width" maxChars="50"
+										    tableName="sales_order_shipping_truck_package" defaultValue = '1' 
+										   dataType="N" rounding="false" setDefaultOnEmpty="true"
+										   maxValue="9999999999" validationFlag="true" toolTip="Width"/>
+		</mx:HBox>
+		<mx:HBox width="100%" horizontalGap="2" verticalAlign="middle">
+			<mx:Label text="Package Height" width="115" textAlign="right"/>
+			<customcomponents:GenTextInput id="tiCartonHeight"  height="20" textAlign="right"
+										   updatableFlag="true" width="110" tabIndex="5" xmlTag="package_height" maxChars="50"
+										    tableName="sales_order_shipping_truck_package" defaultValue = '1'
+										   dataType="N" rounding="false" setDefaultOnEmpty="true"
+										   maxValue="9999999999" validationFlag="true" toolTip="Height"/>
+		</mx:HBox>   
+		
+		<mx:HBox width="100%" horizontalGap="2" verticalAlign="middle">
+			<mx:Label text="Package Weight" width="115" textAlign="right" />
+			<customcomponents:GenTextInput id="tiPackage_weight" height="20" width="110" textAlign="right" defaultValue = '0.00'
+										   tabIndex="6" xmlTag="package_wt" dataType="N" rounding="false" setDefaultOnEmpty="true" 
+										    updatableFlag="true" tableName="sales_order_shipping_truck_package"
+										   maxValue="9999.99" validationFlag="true" toolTip="Carton Weight"/>		
+		</mx:HBox>
+		
+		
+		
+		<mx:HBox width="100%" horizontalGap="2" verticalAlign="middle">
+			<mx:Label text="No Of Boxes" width="115" textAlign="right"/>
+			<customcomponents:GenTextInput id="tiNoOFBoxes"  height="20" textAlign="right"
+										   updatableFlag="true" width="110" tabIndex="7" xmlTag="no_of_boxes" defaultValue = '0.00'
+										   tableName="sales_order_shipping_truck_package"
+										   dataType="N" rounding="false" setDefaultOnEmpty="true"
+										   maxValue="9999999999.99" validationFlag="" toolTip="Pcs/Carton"/>
+		</mx:HBox>
+		<mx:HBox width="100%" horizontalGap="2" verticalAlign="middle">
+			<mx:Label text="Total Pallet Weight" width="115" textAlign="right" />
+			<customcomponents:GenTextInput id="tiPallet_weight" height="20" width="110" textAlign="right" defaultValue = '0.00'
+										   tabIndex="8" xmlTag="total_pallet_wt" dataType="N" rounding="false" setDefaultOnEmpty="true" 
+										   updatableFlag="true" tableName="sales_order_shipping_truck_package"
+										   maxValue="9999.99" validationFlag="true" toolTip="Pallet Weight"/>		
+		</mx:HBox>
+		<mx:HBox width="100%" horizontalGap="2" verticalAlign="middle">
+			<mx:Label text="Price" width="115" textAlign="right" />
+			<customcomponents:GenTextInput id="tiPrice" height="20" width="110" textAlign="right" defaultValue = '0.00'
+										   tabIndex="9" xmlTag="price" dataType="N" rounding="false" setDefaultOnEmpty="true" 
+										   updatableFlag="true" tableName="sales_order_shipping_truck_package"
+										   maxValue="9999.99" validationFlag="true" toolTip="Price"/>		
+		</mx:HBox>
+		<mx:HBox width="100%" horizontalGap="2" verticalAlign="middle">
+			<customcomponents:GenCheckBox labelPlacement="left" label="HM/DG" id="cbHMDg" width="129" 
+										  xmlTag="hm_dg_flag" updatableFlag="true" tableName="sales_order_shipping_truck_package" defaultValue="N" textAlign="right" tabIndex="10"
+										  dataValueForOn ="Y" dataValueForOff ="N" />
+	</mx:HBox>
+		
+		<mx:HBox height="0" width="0" visible="false" >
+			<mx:Label text="Status" width="95" textAlign="right"/>
+			<customcomponents:GenComboBox id="cbTrans_flag" width="110" cornerRadius="0" xmlTag="trans_flag" updatableFlag="true"
+										  tableName="sales_order_shipping_truck_package"  tabIndex="6" defaultValue="A" labelField="label" 
+										  dataProvider="{__genModel.masterData.child('trans_flag').trans_flag}" />
+		</mx:HBox>
+		
+		<customcomponents:GenTextInput id="tiSerial_no" width="0" height="0" visible="false"
+									   editable="true" enabled="true" xmlTag="serial_no" updatableFlag="true"
+									   tableName="sales_order_shipping_truck_package" defaultValue=""  maxChars="4" toolTip="Serial #" />
+		
+	</mx:VBox>
+</gencomponents:DetailAddEdit>
+
+
+

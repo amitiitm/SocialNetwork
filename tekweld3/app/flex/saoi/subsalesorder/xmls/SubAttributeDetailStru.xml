@@ -1,0 +1,21 @@
+<columns lockedColumnCount='0'>
+	
+	<column	data='menu_name'			label='Menu'		editable='false'	visible='true'	width='188'	textAlign='left'	forLevel='true' 
+			defaultForLevel='0'			booleanFlag='false'	sortDataType='S'	dataType='S'	columnPrecision="NaN"/>
+	
+	<column data='create_permission' 	label='Add' 		editable='true' 	visible='true' 	width='40' textAlign='center' 	forLevel='true' 
+			defaultForLevel='1'         booleanFlag='true' 	sortDataType='S'	dataType='S'	columnPrecision="NaN"
+			dataValueForOn="Y"			dataValueForOff=" "
+			componentType="CheckBox" 	/>
+	
+`	<column data='modify_permission' 	label='Edit' 		editable='true' 	visible='true'	width='40' textAlign='center' 	forLevel='true' 
+			defaultForLevel='2'         booleanFlag='true'  sortDataType='S'	dataType='S'	columnPrecision="NaN"
+			dataValueForOn="Y"			dataValueForOff=" "			
+			componentType="CheckBox" />
+	
+	<column data='view_permission' 		label='View' 		editable='true' 	visible='true' 	width='40' textAlign='center' 	forLevel='true' 
+			defaultForLevel=''        	booleanFlag='true'  sortDataType='S'	dataType='S'	columnPrecision="NaN"
+			dataValueForOn="Y"			dataValueForOff=" "
+			componentType="CheckBox" />
+
+</columns> 

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rds:CommonServices xmlns:rds="business.*" xmlns:mx="http://www.adobe.com/2006/mxml">
+
+	<mx:HTTPService id="saveRecord" url=""/>
+	<mx:HTTPService id="getList" url="/sale/sales/list_assigned_orders"/> 
+	<mx:HTTPService id="getViewFormat" url="saoi/assignedorder/xmls/AssignedOrderCriteriaStru.xml"/>
+	<mx:HTTPService id="getListFormat" url="saoi/assignedorder/xmls/AssignedOrderListStru.xml"/>
+	<mx:HTTPService id="printRecord" url=""/>
+
+</rds:CommonServices>

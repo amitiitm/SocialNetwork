@@ -1,0 +1,56 @@
+<script type="text/javascript" src="/js/ui/ui.tabs.js"></script>
+<script type="text/javascript" src="/js/accounts/ui.js"></script>
+
+<div class="inner-page-title">
+  <div class="hack-hack-hack" style="float:left">
+    <h2>Account Details:
+      <div class="nice-blue inline"> <%= "#{@account.name} - Acc: #{@account.number} -
+		Balance: <baghali id='balance'>#{number_to_currency(@account.balance)}</baghali>" %></div>
+    </h2>
+  </div>
+  <% if session[:search_filter] %>
+  <span style="float:left;margin-left: 300px;">
+    <a  class="hash" href="search_result"><%= image_tag('/images/advance_search/bts.png', :size => "150x27") %></a>
+  </span>
+  <% end %>
+
+  <div style="float:right;"><a class="logout_link openable" href="/logout"><%= image_tag('/images/billing/logout.png') %></a>
+    <%if mobile_browser?%>
+        <%= javascript_include_tag "ap.sirch.js" %>
+        <div id="ssirch" style="position:relative; background-color: #3F3F3F !important; height:30px; float:left; margin-right:50px; width:300px;" class="GleeThemeDefault">
+          <input type="text" id="gleeSearchField" value="" autocomplete="off" class="ac_input GleeThemeDefault" style="background-color: #3F3F3F !important;font-size: 20px; ">
+          <div id="gleeSub" style="position:absolute;width:300px;">
+            <div id="gleeSubText" style="width:300px;background-color: #3F3F3F !important;"></div>
+            <div id="gleeSubActivity" style="width:300px;"></div>
+            <div id="gleeSubURL" style="width:300px;"></div>
+          </div>
+        </div>
+    <%end%>
+
+  </div>
+  <div class="clear"></div>
+</div>
+
+<div id="tabs" style="display">
+  <ul style="margin: 4px 4px 4px 4px">
+    <li><a href="/accounts/<%= params[:id] %>/overview?<%= params.to_param %>">Account Overview</a></li>
+    <li><a href="/cdrs/?limit=50&filter[account_id]=<%= @account.id %>">CDRs</a></li>
+    <li><%= link_to "Billing Info", account_billing_index_path(@account) %></li>
+    <li><%= link_to("Promotions", account_promotions_path(@account)) %></li>
+    <li><a href="/accounts/<%= params[:id] %>/phone_books">EasyDialer</a></li>
+    <% unless params[:no_memo] %>
+      <li><a href="/accounts/<%= params[:id] %>/memos">Memos</a></li>
+    <% end -%>
+    <li><%= link_to("Reports", account_reports_path(@account)) %></li>
+    <li><a href="#testimonial">Testimonial</a></li>
+    <li><%= link_to "Referrals", account_referrals_path(@account) %></li>
+    <li><%= link_to "Notifications", account_notifications_path(@account) %></li>
+    <li><%= link_to "Recorded Calls", account_pbx_cdrs_path(@account) %></li>
+    <li><%= link_to "HVC #{new_feature}", account_sip_accounts_path(@account) %></li>
+    <%= if @account.account_type == 2 then
+          ("<li>#{link_to('Endpoints', account_endpoints_path(@account))}</li>")
+        end %>
+  </ul>
+  <div id="billing"></div>
+  <div id="testimonial">TBD - Testimonial</div>
+</div>

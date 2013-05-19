@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<gencomponents:AddEdit xmlns:mx="http://www.adobe.com/2006/mxml" 
+	height="100%" width="100%" verticalGap="0"
+	xmlns:customcomponents="com.generic.customcomponents.*"
+	xmlns:gencomponents="com.generic.components.*" 
+	creationPolicy="all" creationComplete="init()">
+	
+	<mx:Script source="../scripts/RolePermissionAddEditScript.as"/>
+	
+	<mx:VBox horizontalGap="0" width="100%" height="100%">
+		<mx:HBox height="20" verticalAlign="middle" horizontalGap="2" width="100%">
+			<mx:Label text="Role" width="400" textAlign="right" height="20" />
+			<customcomponents:GenTextInputWithHelp
+				id="dcRole_id" 
+				width="180" 
+				toolTip="Role #" 
+				dataSourceName="Role"
+				height="20" 
+				tabIndex="1" 
+				validationFlag="true" 
+				xmlTag="role_id"
+				labelTag="role_code"
+				dataField="id" 
+				labelField= "code"
+				updatableFlag="true" 
+				tableName="role_permission" 
+				itemChangedEvent="dataChangeHandler();tiRole_code.dataValue = dcRole_id.labelValue"
+				click="dcClickHandler()"
+				/>
+			
+			<!--<customcomponents:GenDynamicComboBoxWithHelp id="dcRole_id" width="180" toolTip="Role Id" 
+				defaultValue="" dataField="id" labelField="name" dataSourceName="Role" 
+				dataProvider="{__genModel.lookupObj.role.children()}" itemChangedEvent="dataChangeHandler()"
+				click="dcClickHandler()" tabIndex="1" height="20" validationFlag="true" xmlTag="role_id" 
+				updatableFlag="true" tableName="role_permission" />-->
+			<mx:Button label="Reset" height="20" click="btnClickHandler()" />
+		</mx:HBox>	
+		<mx:HBox width="100%" height="100%" horizontalAlign="center" fontSize="10">	
+			<mx:Spacer width="50%"/>
+			<mx:VBox horizontalGap="0" height="100%" width="90%">
+				<mx:Label text="Module" width="100" textAlign="right" height="20"/>
+				<mx:Accordion id="accModule" height="100%" width="100%" />
+			</mx:VBox>
+
+			<mx:VBox horizontalGap="0" width="100%" height="100%">	
+				<mx:Label text="Permission" width="100" textAlign="right" height="20"/>
+				<customcomponents:GenDataGrid id="dgList"
+					updatableFlag="true"
+					editable="true"
+					dropEnabled="true"
+					dragEnabled="true"
+					dragMoveEnabled="true"
+					itemClick="setWindowStatus(event)"
+					dragDrop="listDragDrop(event)"
+					rootNode="role_permission_details"
+					formatServiceID="rolePermissionDetailFormat"
+					height="{accModule.height}"
+					width="{accModule.width}" />
+			</mx:VBox>
+			<mx:Spacer width="50%"/>
+		</mx:HBox>
+		<mx:VRule height="5" width="100%" />
+	</mx:VBox>
+	<customcomponents:GenTextInput id="tiRole_code" width="0"  height="0"  
+				xmlTag="role_code" updatableFlag="true" tableName="role_permission"/>	
+</gencomponents:AddEdit>

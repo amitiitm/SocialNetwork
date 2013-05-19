@@ -1,0 +1,61 @@
+<columns lockedColumnCount='0'>
+
+	<column data='select_yn' 			label='Select Y/N'		editable='true' 	visible='true' 	width='70' 	textAlign='center' 	
+			forLevel='false'			defaultForLevel='' 		sortDataType='S'	dataType='S'	booleanFlag='true'
+			dataValueForOn="Y"			dataValueForOff=" "
+			componentType="CheckBox"	columnPrecision="NaN"		
+	/>
+	
+	<column data='issued_trans_no'		label='Issue #'			editable='false' 	visible='true'	width='60'	textAlign='left'	
+			forLevel='true'				defaultForLevel='1' 	sortDataType='N'	dataType='S'	booleanFlag='false'
+			componentType="Text"		columnPrecision="0"
+	/>
+			
+	<column data='issued_trans_date' 	label='Issue Date' 		editable='false' 	visible='true' 	width='80' 	textAlign='left' 	
+			forLevel='true' 			defaultForLevel='2'		sortDataType='D' 	dataType='D'	booleanFlag='false'
+			componentType="Date" 		columnPrecision="NaN"
+	/>
+	
+	<column data='received_trans_date' 	label='Receive Date' 	editable='true' 	visible='true' 	width='80' 	textAlign='left' 	
+			forLevel='false' 			defaultForLevel=''		sortDataType='D' 	dataType='D'	booleanFlag='false'
+			componentType="Date" 		columnPrecision="NaN"
+	/>	
+	<column data='account_period_code' 	label='A/C Period' 		editable='false' 	visible='true' 	width='120' textAlign='left' 	
+			forLevel='true'				defaultForLevel='' 		sortDataType='S'	dataType='S'	booleanFlag='false'
+			componentType="Text"		columnPrecision="NaN"
+	/>
+
+	<column data='issued_serial_no' 	label='Issue Sr.#' 		editable='false' 	visible='true' 	width='60' 	textAlign='left' 	
+			forLevel='false'			defaultForLevel='' 		sortDataType='S'	dataType='S'	booleanFlag='false'
+			componentType="Text"		columnPrecision="NaN"
+	/>	 
+
+	<column data='diamond_lot_no' 		label='Lot #' 			editable='false' 	visible='true' 	width='120' textAlign='left' 	
+			forLevel='true'				defaultForLevel='3' 	sortDataType='S'	dataType='S'	booleanFlag='false'
+			componentType="Text"		columnPrecision="NaN"
+	/>
+
+	<column data='diamond_packet_no'	label='Certificate #' 	editable='false' 	visible='true' 	width='120' textAlign='left' 	
+			forLevel='true'				defaultForLevel='4' 	sortDataType='S'	dataType='S'	booleanFlag='false'
+			componentType="Text"		columnPrecision="NaN"
+	/>
+	
+	<column data='transfer_qty' 		label='Issue Qty' 		editable='false' 	visible='true' 	width='70' 	textAlign='right' 	
+			forLevel='false'			defaultForLevel='' 		sortDataType='N'	dataType='N'	booleanFlag='false'
+			negativeFlag="true" 		rounding="false" 		maxValue="99999"
+			componentType="Text"		columnPrecision="0"
+	/>
+
+	<column data='transfer_price' 		label='Issue Price' 	editable='false'	visible='true' 	width='70' 	textAlign='right' 	
+			forLevel='false'			defaultForLevel='' 		sortDataType='N'	dataType='N'	booleanFlag='false'
+			negativeFlag="true" 		rounding="false" 		maxValue="99999999.99"
+			componentType="Text"		columnPrecision="2"
+	/>
+
+	<column data='transfer_amt' 		label='Issue Amt' 		editable='false'	visible='true' 	width='70' 	textAlign='right' 	
+			forLevel='false'			defaultForLevel='' 		sortDataType='N'	dataType='N'	booleanFlag='false'
+			negativeFlag="true" 		rounding="false" 		maxValue="99999999.99"
+			componentType="Text"		columnPrecision="2"
+	/>
+	
+</columns> 

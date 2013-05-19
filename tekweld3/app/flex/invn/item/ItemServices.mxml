@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rds:CommonServices xmlns:rds="business.*" xmlns:mx="http://www.adobe.com/2006/mxml">
+
+	<mx:HTTPService id="saveRecord" 						url="/inventory/item/create_catalog_items"/>
+	<mx:HTTPService id="getRecord" 							url="/inventory/item/show_catalog_item"/>
+	<mx:HTTPService id="getList" 							url="/inventory/item/list_catalog_items"/>
+	<mx:HTTPService id="getListFormat" 						url="invn/item/xmls/ItemListStru.xml"/>
+	<mx:HTTPService id="getViewFormat" 						url="invn/item/xmls/ItemCriteriaStru.xml"/>
+	<mx:HTTPService id="imageUploadUrl" 					url="/inventory/item/upload_image"/>
+	<mx:HTTPService id="templateUploadUrl" 					url="/inventory/item/upload_item_templates" />
+	<mx:HTTPService id="printRecord" 						url=""/>
+	
+	
+	<mx:HTTPService id="ShippingDetailFormat" 				url="invn/item/xmls/ItemMasterShippingDetailStru.xml"/>
+	<mx:HTTPService id="priceLevelDetailFormat" 			url="invn/item/xmls/ItemPriceLevelDetailStru.xml"/>
+	<mx:HTTPService id="priceQuantityDetailFormat" 			url="invn/item/xmls/ItemPriceQuantityDetailStru.xml"/>
+	<mx:HTTPService id="templatesDetailFormat" 				url="invn/item/xmls/ItemTemplatesDetailStru.xml"/>
+	<mx:HTTPService id="productionDaysDetailFormat" 		url="invn/item/xmls/ItemProductionDaysDetailStru.xml"/>
+	<mx:HTTPService id="workflowStepDetailFormat" 			url="invn/item/xmls/ItemWorkFlowStepDetailStru.xml"/>
+	
+	<mx:HTTPService id="setupChargesFormat" 				url="invn/item/xmls/ItemSetupChargesDetailStru.xml"/>
+	<mx:HTTPService id="packagingDetailFormat" 				url="invn/item/xmls/PackagingDetailStru.xml"/>
+	
+	<mx:HTTPService id="accessoriesDetailFormat" 			url="invn/item/xmls/ItemAccessoriesDetailStru.xml"/>
+	<mx:HTTPService id="assembleDetailFormat" 				url="invn/item/xmls/ItemAssembleDetailStru.xml"/>
+	<mx:HTTPService id="similarItemDetailFormat" 			url="invn/item/xmls/SimilarItemsDetailStru.xml"/>
+	<mx:HTTPService id="valueDetailFormat" 					url="invn/item/xmls/ItemValueDetailStru.xml"/>
+	<mx:HTTPService id="attributeDetailFormat" 				url="invn/item/xmls/ItemAttributeDetailStru.xml"/>
+	<mx:HTTPService id="attributeList" 						url="/inventory/item_category/list_catalog_item_category_attributes" />
+	
+
+</rds:CommonServices>

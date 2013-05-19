@@ -1,0 +1,69 @@
+<columns lockedColumnCount='0'>
+	
+	<column data='catalog_item_packet_code' 				label='Packet #' 			editable='false' 	visible='true' 			width='80' 		textAlign='left' 
+			forLevel='false' 				defaultForLevel='' 			booleanFlag='false' sortDataType='S' columnPrecision="NaN"/>
+
+	<column data='catalog_item_code' 			label='Style #' 			editable='false' 	visible='true' 			width='80' 		textAlign='left' 
+			forLevel='false' 				defaultForLevel='' 			booleanFlag='false' sortDataType='S' columnPrecision="NaN"/>
+
+	<column data='metal_type' 				label='Metal Type' 			editable='false' 	visible='true' 			width='80' 		textAlign='left' 
+			forLevel='false' 				defaultForLevel='' 			booleanFlag='false' sortDataType='S' columnPrecision="NaN"/>
+
+	<column data='metal_color' 				label='Style #' 			editable='false' 	visible='true' 			width='80' 		textAlign='left' 
+			forLevel='false' 				defaultForLevel='' 			booleanFlag='false' sortDataType='S' columnPrecision="NaN"/>
+
+	<column data='color_stone_qty' 			label='Stone Qty' 			editable='false' 	visible='true' 			width='80' 		textAlign='left' 
+			forLevel='false' 				defaultForLevel='' 			booleanFlag='false' sortDataType='N' columnPrecision="0"/>
+
+	<column data='diamond_qty' 				label='Diam Qty' 			editable='false' 	visible='true' 			width='80' 		textAlign='left' 
+			forLevel='false' 				defaultForLevel='' 			booleanFlag='false' sortDataType='N' columnPrecision="0"/>			
+
+	<column data='color_stone_wt' 			label='Stone Wt' 			editable='false' 	visible='true' 			width='80' 		textAlign='left' 
+			forLevel='false' 				defaultForLevel='' 			booleanFlag='false' sortDataType='N' columnPrecision="2"/>
+			
+	<column data='diamond_wt' 				label='Diam Wt' 			editable='false' 	visible='true' 			width='80' 		textAlign='left' 
+			forLevel='false' 				defaultForLevel='' 			booleanFlag='false' sortDataType='N' columnPrecision="2"/>			
+
+	<column data='total_diamond_amt' 		label='Total Diam Value' 			editable='false' 	visible='true' 			width='80' 		textAlign='left' 
+			forLevel='false' 				defaultForLevel='' 			booleanFlag='false' sortDataType='N' columnPrecision="2"/>
+			
+	<column data='total_stone_amt' 		    label='Total Stone Value' 			editable='false' 	visible='true' 			width='80' 		textAlign='left' 
+			forLevel='false' 				defaultForLevel='' 			booleanFlag='false' sortDataType='N' columnPrecision="2"/>			
+
+	<column data='metal_base_rate' 			label='Gold Base Rate' 			editable='false' 	visible='true' 			width='80' 		textAlign='left' 
+			forLevel='false' 				defaultForLevel='' 			booleanFlag='false' sortDataType='N' columnPrecision="2"/>
+
+	<column data='qty' 						label='Qty' 			editable='false' 	visible='true' 			width='80' 		textAlign='left' 
+			forLevel='false' 				defaultForLevel='' 			booleanFlag='false' sortDataType='N' columnPrecision="2"/>
+
+	<column data='casting_wt' 				label='Finished Gold Rate' 			editable='false' 	visible='true' 			width='80' 		textAlign='left' 
+			forLevel='false' 				defaultForLevel='' 			booleanFlag='false' sortDataType='N' columnPrecision="2"/>
+
+	<column data='metal_total_rate ' 		label='Total Gold Rate' 			editable='false' 	visible='true' 			width='80' 		textAlign='left' 
+			forLevel='false' 				defaultForLevel='' 			booleanFlag='false' sortDataType='N' columnPrecision="2"/>
+
+	<column data='gold_value' 				label='Gold Value' 			editable='false' 	visible='true' 			width='80' 		textAlign='left' 
+			forLevel='false' 				defaultForLevel='' 			booleanFlag='false' sortDataType='N' columnPrecision="2"/>
+
+	<column data='finding_wt' 				label='Finding Wt.' 			editable='false' 	visible='true' 			width='80' 		textAlign='left' 
+			forLevel='false' 				defaultForLevel='' 			booleanFlag='false' sortDataType='N' columnPrecision="2"/>
+
+	<column data='finding_amt' 			label='Finding Value' 			editable='false' 	visible='true' 			width='80' 		textAlign='left' 
+			forLevel='false' 				defaultForLevel='' 			booleanFlag='false' sortDataType='N' columnPrecision="2"/>
+
+	<column data='setting_amt' 				label='Setting Amt.' 			editable='false' 	visible='true' 			width='80' 		textAlign='left' 
+			forLevel='false' 				defaultForLevel='' 			booleanFlag='false' sortDataType='N' columnPrecision="2"/>
+
+	<column data='labor_amt' 				label='Labor Amt.' 			editable='false' 	visible='true' 			width='80' 		textAlign='left' 
+			forLevel='false' 				defaultForLevel='' 			booleanFlag='false' sortDataType='N' columnPrecision="2"/>
+
+	<column data='price' 				label='Unit Price' 			editable='false' 	visible='true' 			width='80' 		textAlign='left' 
+			forLevel='false' 				defaultForLevel='' 			booleanFlag='false' sortDataType='N' columnPrecision="2"/>
+
+	<column data='tag_price' 				label='Tag Price' 			editable='false' 	visible='true' 			width='80' 		textAlign='left' 
+			forLevel='false' 				defaultForLevel='' 			booleanFlag='false' sortDataType='N' columnPrecision="2"/>
+
+	<column data='message' 					label='Message' 				editable='false' 	visible='true' 			width='80' 		textAlign='left' 
+			forLevel='false' 				defaultForLevel='' 			booleanFlag='false' sortDataType='S' columnPrecision="NaN"/>
+</columns>  
+

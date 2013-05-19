@@ -1,0 +1,50 @@
+<columns Title =''>
+	
+	<column dataType="S" 			label="A/C Period" 			checkbox="ckAll4" 		xmlTagFrom="str5" 			from="dcStr5" 
+			xmlTagTo="str6" 		to="dcStr6"					multiSelect="mvMultiSelect3" 	xmlTagMultiSelect="multiselect3"
+			lookupFlag="true" 		lookupName="AccountPeriod"	lookupLabel="code"		dataField="code" 			labelField="code"/>
+
+	<column dataType="D" 			label="Order Date" 			checkbox="ckAll3" 		xmlTagFrom="dt1" 			from="dfDt1" 
+			xmlTagTo="dt2" 			to="dfDt2"					
+			lookupFlag="false" 		lookupName="" 				/>
+
+	<column dataType="S" 			label="Order #" 			checkbox="ckAll2" 		xmlTagFrom="str3" 			from="tiStr3" 
+			xmlTagTo="str4" 		to="tiStr4"					multiSelect="tiMultiSelect2" 	xmlTagMultiSelect="multiselect2"
+			lookupFlag="false" 		lookupName="" 				/>
+
+	<column dataType="S" 			label="Customer #" 			checkbox="ckAll1" 		xmlTagFrom="str1" 			from="dcStr1"
+			xmlTagTo="str2" 		to="dcStr2"					multiSelect="mvMultiSelect1" 	xmlTagMultiSelect="multiselect1"
+			lookupFlag="true" 		lookupName="Customer"		lookupLabel="code"  dataField="code" 			labelField="code"/>
+	
+	<column dataType="S" 			label="Customer PO #" 		checkbox="ckAll6" 		xmlTagFrom="str9" 			from="dcStr9"
+			xmlTagTo="str10" 		to="dcStr10"				multiSelect="mvMultiSelect5" 	xmlTagMultiSelect="multiselect5"
+			lookupFlag="false" 		lookupName=""				lookupLabel=""  dataField="" 			labelField=""/>	
+	
+	<column dataType="S" 			label="Logo" 				checkbox="ckAll5" 		xmlTagFrom="str7" 			from="tiStr7"
+			xmlTagTo="str8" 		to="tiStr8"					multiSelect="mvMultiSelect4" 	xmlTagMultiSelect="multiselect4"
+			lookupFlag="false" 		lookupName=""				lookupLabel=""  dataField="" 			labelField=""/>	
+	
+	<column dataType="S" 			label="Accounting Status" 	checkbox="ckAll7" 		xmlTagFrom="str11" 			from="tiStr11"
+			xmlTagTo="str12" 		to="tiStr12"				multiSelect="mvMultiSelect6" 	xmlTagMultiSelect="multiselect6"
+			lookupFlag="false" 		lookupName=""				lookupLabel=""  dataField="" 			labelField=""/>
+			
+	<column dataType="S" 			label="Artwork Status" 		checkbox="ckAll8" 		xmlTagFrom="str13" 			from="tiStr13"
+			xmlTagTo="str14" 		to="tiStr14"				multiSelect="mvMultiSelect7" 	xmlTagMultiSelect="multiselect7"
+			lookupFlag="false" 		lookupName=""				lookupLabel=""  dataField="" 			labelField=""/>
+	
+	<column dataType="S" 			label="Paper Proof Status" 		checkbox="ckAll9" 		xmlTagFrom="str15" 			from="tiStr15"
+			xmlTagTo="str16" 		to="tiStr16"				multiSelect="mvMultiSelect8" 	xmlTagMultiSelect="multiselect8"
+			lookupFlag="false" 		lookupName=""				lookupLabel=""  dataField="" 			labelField=""/>
+			
+	<column dataType="S" 			label="Ack Status" 			checkbox="ckAll10" 		xmlTagFrom="str17" 			from="tiStr17"
+			xmlTagTo="str18" 		to="tiStr18"				multiSelect="mvMultiSelect9" 	xmlTagMultiSelect="multiselect9"
+			lookupFlag="false" 		lookupName=""				lookupLabel=""  dataField="" 			labelField=""/>
+			
+	<column dataType="S" 			label="Shipping Status" 	checkbox="ckAll11" 		xmlTagFrom="str19" 			from="tiStr19"
+			xmlTagTo="str20" 		to="tiStr20"				multiSelect="mvMultiSelect10" 	xmlTagMultiSelect="multiselect20"
+			lookupFlag="false" 		lookupName=""				lookupLabel=""  dataField="" 			labelField=""/>
+	
+	<column dataType="S" 			label="Order Status" 		checkbox="ckAll12" 		xmlTagFrom="str21" 			from="tiStr21"
+			xmlTagTo="str22" 		to="tiStr22"				multiSelect="mvMultiSelect11" 	xmlTagMultiSelect="multiselect11"
+			lookupFlag="false" 		lookupName=""				lookupLabel=""  dataField="" 			labelField=""/>							
+</columns> 	

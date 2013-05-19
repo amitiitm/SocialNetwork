@@ -1,0 +1,63 @@
+<%= page_title :title => "New Server" %>
+<% box :type => "simple", :style => "width:500px;" do %>
+	<%= error("server", "Unable to save: ") %>
+	<% form_for(@server, :html => {:class => "forms"})  do |f| %>		
+		<ul>
+			<li>
+				<label>Name</label>
+				<%= f.text_field :name %>
+			</li>
+			<li>
+				<label>Short Name</label>
+				<%= f.text_field :short_name %>
+			</li>
+			<li>
+				<label>IP</label>
+				<%= f.text_field :ip %>
+			</li>
+			<li>
+				<label>Hostname</label>
+				<%= f.text_field :hostname %>
+			</li>
+			<li>
+				<label>Server Type</label>
+				<%= f.select :server_type, Server::SERVER_TYPES, { :include_blank => true } %>
+			</li>
+		</ul>
+		<div id="load_balancer" class="hidden">
+			<% box :type => "box_title", :title => "Load Balancer Settings", :style => "width:450px;" do%>
+				<% fields_for @server.load_balancer do |lbf| %>
+				<ul>
+					<li>
+						<label>Dst URI:</label>
+						<%= lbf.text_field :dst_uri %>
+					</li>
+					<li>
+						<label>Resources:</label>
+						<%= lbf.text_field :resources, :value => "media=1000;" %>
+					</li>
+					<li>
+						<label>Probe Mode:</label>
+						<%= lbf.select :probe_mode, LoadBalancer::PROBE_MODES, {:selected => 2} %>
+					</li>
+				</ul>
+				<%= lbf.hidden_field :group_id, :value => 0 %>
+				<% end -%>
+			<% end -%>
+		</div>
+		<button type="submit">Save</button>
+	<% end %>	
+<% end -%>
+<script>
+	$("#server_server_type").change(function(){
+		if ($(this).val() == 3) {
+			$("#load_balancer").fadeIn('slow');
+			$("#load_balancer_dst_uri").val("sip:" + $("#server_hostname").val());
+		} else {
+			$("#load_balancer").fadeOut('slow');
+		};
+	});
+	$("#server_hostname").change(function(){
+		$("#load_balancer_dst_uri").val("sip:" + $(this).val());
+	});
+</script>

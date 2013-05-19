@@ -1,0 +1,17 @@
+<columns lockedColumnCount='0'>
+	
+	<column	data='catalog_item_code'	label='Item #'				editable='false'	visible='true'	width='200'	textAlign='left'	forLevel='true' 
+			defaultForLevel='1'			booleanFlag='false'			sortDataType='S' columnPrecision="NaN"/>
+	<column data='from_date' 	     	label='From Date' 			editable='false' 	visible='true' 	width='120' textAlign='left' 	forLevel='true' 
+			defaultForLevel='1'         booleanFlag='false'     	sortDataType='S' columnPrecision="NaN"/>
+	<column data='to_date' 	      		label='To Date' 			editable='false' 	visible='true' 	width='120' textAlign='left' 	forLevel='true' 
+			defaultForLevel='1'         booleanFlag='false'     	sortDataType='S' columnPrecision="NaN"/>
+	<column data='price' 	      		label='Price' 				editable='false' 	visible='true' 	width='120' textAlign='right' 	forLevel='true' 
+			defaultForLevel='1'         booleanFlag='false'     	sortDataType='S' columnPrecision="NaN"/>
+	<column data='discount_amt' 		label='Disc Amt' 			editable='false' 	visible='true' 	width='100' textAlign='right' 	forLevel='true' 
+			defaultForLevel='1'         booleanFlag='false'     	sortDataType='S' columnPrecision="NaN"/>
+	<column data='discount_per' 		label='Disc (%)' 			editable='false' 	visible='true' 	width='100' textAlign='right' 	forLevel='true' 
+			defaultForLevel='1'         booleanFlag='false'     	sortDataType='S' columnPrecision="NaN"/>	
+    <column data='status' 		label='Status' 	            editable='false' 	visible='true' 	width='100' textAlign='left' 	forLevel='true' 
+			defaultForLevel='1'         booleanFlag='false'     	sortDataType='S' columnPrecision="NaN"/>
+</columns> 

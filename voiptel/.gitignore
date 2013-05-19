@@ -1,0 +1,13 @@
+.DS_Store
+nbproject/*
+log/*
+config/*.yml
+public/audio/*
+tmp/**/*.*
+tmp/restart.txt
+db/schema.rb
+nohup.out
+*.idea
+config/environments/production.rb
+config/environment.rb
+config/database.yml

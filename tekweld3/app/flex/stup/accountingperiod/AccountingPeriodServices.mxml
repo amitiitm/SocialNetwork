@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rds:CommonServices xmlns:rds="business.*" xmlns:mx="http://www.adobe.com/2006/mxml">
+
+	<mx:HTTPService id="getListFormat" url="stup/accountingperiod/xmls/AccountingPeriodListStru.xml" />
+	<mx:HTTPService id="getViewFormat" url="stup/accountingperiod/xmls/AccountingPeriodCriteriaStru.xml" />
+	<mx:HTTPService id="detailFormat" url="stup/accountingperiod/xmls/AccountingPeriodDetailStru.xml"/>
+	<mx:HTTPService id="getList" url="/account/account_year/list_account_years"/>
+	<mx:HTTPService id="saveRecord" url="/account/account_year/create_account_years"/>
+	<mx:HTTPService id="getRecord" url="/account/account_year/show_account_year"/>	
+
+</rds:CommonServices>	

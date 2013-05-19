@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:TitleWindow xmlns:mx="http://www.adobe.com/2006/mxml" layout="absolute" width="600" height="500"
+	xmlns:customcomponents="com.generic.customcomponents.*"
+	showCloseButton="true" close="btnCancelClickHandler()"
+	creationComplete="init()"
+	backgroundColor="#CAD2DF"
+	initialize="{this.parentApplication.focusManager.deactivate()}">
+	
+	<mx:Script source="../scripts/UsageTermDetailScript.as"/>
+	
+	<mx:VBox width="100%" height="100%">
+		<mx:Label text="{heading}" fontSize="14" color="#154C8E" fontWeight="bold"/>
+		
+			<mx:VBox height="100%" width="100%">
+				
+				<mx:VBox verticalGap="0">
+					<mx:Label  text="Section" textAlign="right" height="20" color="#154C8D" fontSize="10"/>
+					<customcomponents:GenTextInput id="tiHeading" width="150" height="20" maxChars="50"
+						/>
+				</mx:VBox>
+			   <mx:VBox verticalGap="0" width="100%">
+		   			<mx:Label  text="Text" textAlign="right" color="#154C8D" fontSize="10"/>
+					<customcomponents:GenTextArea id="textParagraph" height="250" width="100%"
+						color="#3C4E76" fontSize="10"
+					/>		
+		 		</mx:VBox>
+		 		<mx:VBox>
+		 			<mx:HBox>
+		 				<mx:TextInput id="tiLink1"/>
+		 				<mx:ComboBox id="cmbUrl1">
+		 					<mx:dataProvider>
+		 						<mx:Object label="Order By Item" url="Order By Item #"/>
+		 						<mx:Object label="My Account" url="My Account"/>
+		 						<mx:Object label="Order Tracking" url="Order Tracking"/>
+		 						<mx:Object label="Customer Services" url="Customer Services"/>
+		 						<mx:Object label="About Us" url="About Us"/>
+		 						<mx:Object label="Contact Us" url="Contact Us"/>
+		 						<mx:Object label="Location" url="Location"/>
+		 						<mx:Object label="Privacy Policy" url="Privacy Policy"/>
+		 						<mx:Object label="Terms Of Use" url="Terms Of Use"/>
+		 					</mx:dataProvider>
+		 				</mx:ComboBox>
+		 			</mx:HBox>
+		 			<mx:HBox>
+		 				<mx:TextInput id="tiLink2"/>
+		 				<mx:ComboBox id="cmbUrl2">
+		 					<mx:dataProvider>
+		 						<mx:Object label="Order By Item" url="Order By Item #"/>
+		 						<mx:Object label="My Account" url="My Account"/>
+		 						<mx:Object label="Order Tracking" url="Order Tracking"/>
+		 						<mx:Object label="Customer Services" url="Customer Services"/>
+		 						<mx:Object label="About Us" url="About Us"/>
+		 						<mx:Object label="Contact Us" url="Contact Us"/>
+		 						<mx:Object label="Location" url="Location"/>
+		 						<mx:Object label="Privacy Policy" url="Privacy Policy"/>
+		 						<mx:Object label="Terms Of Use" url="Terms Of Use"/>
+		 					</mx:dataProvider>
+		 				</mx:ComboBox>
+		 			</mx:HBox>
+		 			<mx:HBox>
+		 				<mx:TextInput id="tiLink3"/>
+		 				<mx:ComboBox id="cmbUrl3">
+		 					<mx:dataProvider>
+		 						<mx:Object label="Order By Item" url="Order By Item #"/>
+		 						<mx:Object label="My Account" url="My Account"/>
+		 						<mx:Object label="Order Tracking" url="Order Tracking"/>
+		 						<mx:Object label="Customer Services" url="Customer Services"/>
+		 						<mx:Object label="About Us" url="About Us"/>
+		 						<mx:Object label="Contact Us" url="Contact Us"/>
+		 						<mx:Object label="Location" url="Location"/>
+		 						<mx:Object label="Privacy Policy" url="Privacy Policy"/>
+		 						<mx:Object label="Terms Of Use" url="Terms Of Use"/>
+		 					</mx:dataProvider>
+		 				</mx:ComboBox>
+		 			</mx:HBox>
+		 		</mx:VBox>
+				<mx:HBox  height="100%" horizontalAlign="center" verticalAlign="middle">
+					<mx:Button label="Save" id="btnSave" click="btnSaveClickHandler()" height="20"
+						color="#FFFFFF" textRollOverColor="#FFFFFF" buttonMode="{true}"
+						upSkin="@Embed('com/generic/assets/darkGrey.png')"
+					    downSkin="@Embed('com/generic/assets/darkGrey.png')"
+						overSkin="@Embed('com/generic/assets/darkGrey.png')"
+					    selectedUpSkin="@Embed('com/generic/assets/darkGrey.png')"
+					    selectedOverSkin="@Embed('com/generic/assets/darkGrey.png')"
+					    selectedDownSkin="@Embed('com/generic/assets/darkGrey.png')"
+						disabledSkin="@Embed('com/generic/assets/darkGrey.png')"/>
+					<mx:Button label="Cancel" 	click="btnCancelClickHandler()"  height="20"
+										color="#FFFFFF"
+					textRollOverColor="#FFFFFF"
+					buttonMode="{true}"
+					
+					upSkin="@Embed('com/generic/assets/darkGrey.png')"
+			
+				    downSkin="@Embed('com/generic/assets/darkGrey.png')"
+					
+					overSkin="@Embed('com/generic/assets/darkGrey.png')"
+				   
+				    selectedUpSkin="@Embed('com/generic/assets/darkGrey.png')"
+				    selectedOverSkin="@Embed('com/generic/assets/darkGrey.png')"
+				    selectedDownSkin="@Embed('com/generic/assets/darkGrey.png')"
+					
+					disabledSkin="@Embed('com/generic/assets/darkGrey.png')"/>	
+					
+					<mx:Button label="Update" id="btnUpdate" width="0"	height="0" visible="false"/>	
+				
+				</mx:HBox>
+			</mx:VBox>
+			
+		
+	</mx:VBox>
+
+</mx:TitleWindow>

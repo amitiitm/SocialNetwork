@@ -1,0 +1,16 @@
+<%= page_title :title => "Server Settings" %>
+
+<% table :width => "600px" do |t| %>
+	<% t.th "Server" %>
+	<% t.th "Module" %>
+	<% t.th "Actions" %>
+
+	<% for s in @server_settings do %>	
+		<% t.td h(s.server.name) %>
+		<% t.td h(s.module) %> 
+		<% t.td (link_to('Edit', edit_server_setting_path(s), :class => "hash") + " | " + (link_to ('Destroy', s, :confirm => 'Are you sure?', :method => :delete))) %>
+		<% t.new_row %>
+	<%  end -%>
+<% end -%>
+<br>
+<%= link_to 'New Setting', new_server_setting_path, :class => "ui-state-default float-left ui-corner-all ui-button hash" %>

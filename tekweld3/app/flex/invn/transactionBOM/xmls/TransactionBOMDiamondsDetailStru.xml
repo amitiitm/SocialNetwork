@@ -1,0 +1,45 @@
+<columns>
+
+	<column data='stone_shape'		label='Shape'			editable='false'    visible='true'		width='70'	textAlign='left'	
+	        forLevel='false' 		defaultForLevel=''		booleanFlag='false'	sortDataType='S' 	columnPrecision="NaN"/>
+	         
+	<column data='stone_setting' 	label='Setting'	  		editable='false'    visible='true'		width='70'	textAlign='left'	
+	        forLevel='false' 		defaultForLevel=''		booleanFlag='false'	sortDataType='S' 	columnPrecision="NaN"/>	
+	
+	<column data='qty'				label='Qty'				editable='false' 	visible='true' 		width='30' textAlign='right'
+		 	forLevel='false' 		defaultForLevel=''		booleanFlag='false'	sortDataType='N' 	columnPrecision="0"/>
+		 	
+	<column data='wt'	       		label='Avg Wt'			editable='false' 	visible='true' 		width='50' textAlign='right'
+		 	forLevel='false' 		defaultForLevel=''		booleanFlag='false'	sortDataType='N' 	columnPrecision="4"/>
+	
+	<column data='total_wt'	   		label='Total Wt'		editable='false' 	visible='true' 		width='55' textAlign='right'
+		 	forLevel='false' 		defaultForLevel=''		booleanFlag='false'	sortDataType='N' 	columnPrecision="4"/>
+		 	
+	<column data='cost'				label='Cost'			editable='false' 	visible='true' 		width='55' textAlign='right'
+		 	forLevel='false' 		defaultForLevel=''		booleanFlag='false'	sortDataType='N' 	columnPrecision="2"/>
+	         
+	<column data='total_cost'   	label='Total Cost'		editable='false' 	visible='true' 		width='60' textAlign='right'
+		 	forLevel='false' 		defaultForLevel=''		booleanFlag='false'	sortDataType='N' 	columnPrecision="2"/>	
+	
+	<column data='labor'			label='Labor'			editable='false' 	visible='true' 		width='45' textAlign='right'
+		 	forLevel='false' 		defaultForLevel=''		booleanFlag='false'	sortDataType='N' 	columnPrecision="2"/>
+		 	
+	<column data='setting_cost'		label='Total Labor'		editable='false' 	visible='true' 		width='70' textAlign='right'
+		 	forLevel='false' 		defaultForLevel=''		booleanFlag='false'	sortDataType='N' 	columnPrecision="2"/>	 	
+	
+	<column data='stone_quality'	label='Quality'	 		editable='false'    visible='true'		width='60'	textAlign='left'	
+	        forLevel='false' 		defaultForLevel=''		booleanFlag='false'	sortDataType='S' 	columnPrecision="NaN"/>
+	         
+	<column data='color_from'		label='Color'			editable='false'    visible='true'		width='60'	textAlign='left'	
+	        forLevel='false' 		defaultForLevel=''		booleanFlag='false'	sortDataType='S' 	columnPrecision="NaN"/>
+	         
+	<column data='clarity_from'		label='Clarity'			editable='false'    visible='true'		width='80'	textAlign='left'	
+	        forLevel='false' 		defaultForLevel=''		booleanFlag='false'	sortDataType='S' 	columnPrecision="NaN"/>   
+	         
+	<column data='duty_flag'		label='Duty'			editable='false'    visible='true'		width='35'	textAlign='left'	
+	        forLevel='false' 		defaultForLevel=''		booleanFlag='false'	sortDataType='S' 	columnPrecision="NaN"/>  
+	                
+	<column	data='flag1'	   		label='Center Stone'	editable='false'    visible='true'		width='80'	textAlign='left'	
+	        forLevel='false' 		defaultForLevel=''		booleanFlag='false'	sortDataType='S' 	columnPrecision="NaN"/>         
+
+</columns>	                 

@@ -1,0 +1,8 @@
+<h1>Import DID CSV File</h1>
+<% form_tag 'upload', :multipart => true do -%>
+  <%= label :file, "File" %>
+	<%= file_field_tag 'did_list', :size => 40%>
+	<%= new_line %>
+	<%= new_line %>
+	<%= submit_tag "Import" %>
+<% end -%>

@@ -1,0 +1,26 @@
+<div class="inner-response">
+	<% table do |t| %>
+		<% t.th "#" %>
+		<% t.th "Note", :style => "width:150px" %>
+		<% t.th "Amount" %>
+		<% t.th "Old Bal" %>
+		<% t.th "New Bal" %>				
+		<% t.th "By" %>
+		<% t.th "Date" %>
+	
+		<% counter = (@size - ((@page - 1) * @limit) + 1) %>
+		<% for credit in @credits do %>
+			<% counter -= 1 %>
+			<% t.td counter %>
+			<% t.td credit.note %> 
+			<% t.td number_to_currency(credit.amount) %>
+			<% t.td number_to_currency(credit.old_balance) %>
+			<% t.td number_to_currency(credit.old_balance + credit.amount) %>
+			<% t.td (if credit.admin_user then credit.admin_user.name else "Auto" end ) %>
+			<% t.td user_date(credit.created_at) %>
+			<% t.new_row %>
+		<%  end -%>
+	<% end -%>
+	<%= pager(credits_account_billing_path(@account), "inner-ajax") %>
+</div>
+<div class="clearfix"></div>

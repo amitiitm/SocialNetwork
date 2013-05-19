@@ -1,0 +1,113 @@
+--- 
+gl_setup_items_008: 
+  updated_at: 2011/01/24 15:13:34
+  update_flag: Y
+  trans_flag: A
+  created_by: 2
+  purchase_account_id: 5
+  sales_account_id: 2
+  lock_version: 2
+  gl_setup_id: 1
+  updated_by: 1
+  id: 8
+  company_id: 1
+  item_type: A
+  created_at: 2011/01/24 00:00:00
+gl_setup_items_001: 
+  updated_at: 2011/01/24 15:13:34
+  update_flag: Y
+  trans_flag: D
+  created_by: 2
+  purchase_account_id: 5
+  sales_account_id: 4
+  lock_version: 5
+  gl_setup_id: 1
+  updated_by: 1
+  id: 1
+  company_id: 1
+  item_type: I
+  created_at: 2011/01/24 00:00:00
+gl_setup_items_002: 
+  updated_at: 2011/01/24 15:13:34
+  update_flag: Y
+  trans_flag: D
+  created_by: 2
+  purchase_account_id: 5
+  sales_account_id: 4
+  lock_version: 5
+  gl_setup_id: 1
+  updated_by: 1
+  id: 2
+  company_id: 1
+  item_type: D
+  created_at: 2011/01/24 00:00:00
+gl_setup_items_003: 
+  updated_at: 2011/01/24 15:13:34
+  update_flag: Y
+  trans_flag: D
+  created_by: 2
+  purchase_account_id: 2
+  sales_account_id: 2
+  lock_version: 3
+  gl_setup_id: 1
+  updated_by: 1
+  id: 3
+  company_id: 1
+  item_type: D
+  created_at: 2011/01/24 00:00:00
+gl_setup_items_004: 
+  updated_at: 2011/01/24 15:13:34
+  update_flag: Y
+  trans_flag: D
+  created_by: 2
+  purchase_account_id: 3
+  sales_account_id: 1
+  lock_version: 3
+  gl_setup_id: 1
+  updated_by: 1
+  id: 4
+  company_id: 1
+  item_type: I
+  created_at: 2011/01/24 00:00:00
+gl_setup_items_005: 
+  updated_at: 2011/01/24 15:13:34
+  update_flag: Y
+  trans_flag: D
+  created_by: 2
+  purchase_account_id: 6
+  sales_account_id: 4
+  lock_version: 3
+  gl_setup_id: 1
+  updated_by: 1
+  id: 5
+  company_id: 1
+  item_type: A
+  created_at: 2011/01/24 00:00:00
+gl_setup_items_006: 
+  updated_at: 2011/01/24 15:13:34
+  update_flag: Y
+  trans_flag: A
+  created_by: 2
+  purchase_account_id: 3
+  sales_account_id: 2
+  lock_version: 2
+  gl_setup_id: 1
+  updated_by: 1
+  id: 6
+  company_id: 1
+  item_type: I
+  created_at: 2011/01/24 00:00:00
+gl_setup_items_007: 
+  updated_at: 2011/01/24 15:13:34
+  update_flag: Y
+  trans_flag: A
+  created_by: 2
+  purchase_account_id: 3
+  sales_account_id: 4
+  lock_version: 2
+  gl_setup_id: 1
+  updated_by: 1
+  id: 7
+  company_id: 1
+  item_type: D
+  created_at: 2011/01/24 00:00:00

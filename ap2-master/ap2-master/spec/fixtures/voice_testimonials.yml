@@ -1,0 +1,11 @@
+one:
+  file: MyString
+  location: MyString
+  customer_type: MyString
+  customer_id: 1
+
+two:
+  file: MyString
+  location: MyString
+  customer_type: MyString
+  customer_id: 1

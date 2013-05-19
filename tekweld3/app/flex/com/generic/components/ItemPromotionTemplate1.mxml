@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:HBox  horizontalGap="5" width="100%"  xmlns:mx="http://www.adobe.com/2006/mxml">
+<mx:Script source="../scripts/ItemPromotionTemplate1Script.as"/>
+	<mx:Canvas>
+		<!--<mx:Image id="img1"  name="image1" height="378" width="960" maintainAspectRatio="true"
+			source="{__genModel.path.image}{image1}"/>-->
+			
+		<mx:SWFLoader id="img1" name="image1" height="378" width="960" maintainAspectRatio="true"
+		 			source="{__genModel.path.image}{image1}"/>	
+		
+			 	
+			<mx:Button name="image1" label="Edit" toolTip="Edit"
+					color="#FFFFFF"
+					buttonMode="{true}"
+					textRollOverColor="#FFFFFF"
+					upSkin="@Embed('com/generic/assets/picEdit.png')"
+    		
+				    downSkin="@Embed('com/generic/assets/picEdit.png')"
+					
+					overSkin="@Embed('com/generic/assets/picEdit.png')"
+				   
+				    selectedUpSkin="@Embed('com/generic/assets/picEdit.png')"
+				    selectedOverSkin="@Embed('com/generic/assets/picEdit.png')"
+				    selectedDownSkin="@Embed('com/generic/assets/picEdit.png')"
+					
+					disabledSkin="@Embed('com/generic/assets/picEdit.png')"  />
+	</mx:Canvas>
+</mx:HBox>

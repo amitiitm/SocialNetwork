@@ -1,0 +1,20 @@
+
+Hi <%= assigns[:parameter].customer.name%>,<br></br>
+Your Payment of Amount: $ <%= assigns[:parameter].net_amt%> is Authorized against Order Number: <%= assigns[:parameter].trans_no%><br></br>
+
+Below are Transaction Details:<br></br>
+<% assigns[:parameter].customer_payment_transactions.each{|transaction|%>
+<% if(transaction.payment_release_flag == 'N' and transaction.payment_capture_flag == 'N')%>
+  Transaction Code: <%= transaction.transaction_code %> <br></br>
+  Authorization Code: <%= transaction.authorization_code %> <br></br>
+  Account Number: <%= transaction.account_number %> <br></br>
+  Response: <%= transaction.response_reason_text %> <br></br>
+ <%end%>
+<%}%>
+Thank You,<br></br>
+Ronnie Hillel<br></br>
+Phone - 877-835-9353 / 631-694-5503<br></br>
+Fax - 631-694-5568 /631-930-3268<br></br>
+WWW.TEKWELD.COM<br></br>
+Tekweld Catalog 2012<br></br>
+ASI 90807 |SAGE 67569 | PPAI 266346 | IMPACT 969627 | UPIC tekweld

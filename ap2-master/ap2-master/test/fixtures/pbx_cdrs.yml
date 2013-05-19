@@ -1,0 +1,23 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  dst_number: MyString
+  admin_user_id: 1
+  duration: 1
+  disposition: MyString
+  memo_id: 1
+  date: 2010-11-29 02:03:10
+  cid: MyString
+  contactable_type: MyString
+  contactable_id: 1
+
+two:
+  dst_number: MyString
+  admin_user_id: 1
+  duration: 1
+  disposition: MyString
+  memo_id: 1
+  date: 2010-11-29 02:03:10
+  cid: MyString
+  contactable_type: MyString
+  contactable_id: 1

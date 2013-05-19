@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rds:CommonServices xmlns:rds="business.*" xmlns:mx="http://www.adobe.com/2006/mxml">
+
+	<mx:HTTPService id="saveRecord" url="/purchase/purchase_invoice/create_invoices"/>
+	<mx:HTTPService id="getRecord" url="/purchase/purchase_invoice/show_invoice"/>
+	<mx:HTTPService id="getList" url="/purchase/purchase_invoice/list_invoices"/> 
+	<mx:HTTPService id="getListFormat" url="puoi/purchaseinvoice/xmls/PurchaseInvoiceListStru.xml"/>
+	<mx:HTTPService id="getViewFormat" url="puoi/purchaseinvoice/xmls/PurchaseInvoiceCriteriaStru.xml"/>
+	<mx:HTTPService id="itemDetailFormat" url="puoi/purchaseinvoice/xmls/PurchaseInvoiceItemDetailStru.xml"/>
+	<mx:HTTPService id="directItemDetailFormat" url="puoi/purchaseinvoice/xmls/PurchaseInvoiceDirectItemDetailStru.xml"/>
+	<mx:HTTPService id="fetchRecordFormat" url="puoi/purchaseinvoice/xmls/PurchaseInvoiceFetchRecordStru.xml"/>
+	
+	<mx:HTTPService id="fetch_open_std_orders" url="/purchase/purchase_order/list_open_standard_orders"/>
+	<mx:HTTPService id="fetch_open_std_orders_hdr" url="/purchase/purchase_order/list_open_standard_orders_hdr"/>
+	<mx:HTTPService id="fetchOrderHdrFormat" url="puoi/purchaseinvoice/xmls/PurchaseInvoiceFetchOrderHdrStru.xml"/>
+	<mx:HTTPService id="fetchGetSelectedOrderServiceID" url="/purchase/purchase_order/list_open_standard_order_lines"/>
+	
+	<mx:HTTPService id="setDefaultView" url=""/>
+	<mx:HTTPService id="printRecord" url="/purchase/purchase_report/render_purchase_invoice_format"/>
+	
+</rds:CommonServices>
+

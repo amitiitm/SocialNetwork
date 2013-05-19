@@ -1,0 +1,1174 @@
+--- 
+sequences_041: 
+  lno_date: 
+  default_bk: Y
+  updated_at: 2011/01/24 18:57:54
+  docu_typ: INVNTR
+  update_flag: Y
+  link_bk1: ""
+  book_nm: Inventory Packet Assignment
+  trans_flag: A
+  created_by: 
+  link_bk2: ""
+  lock_version: 10
+  edit_flag: ""
+  book_lno: "7000"
+  book_cd: TR05
+  updated_by: 1
+  id: 500
+  prod_trans_type: ""
+  company_id: 1
+  user_id: 
+  lno_flag: ""
+  table_nm: ""
+  created_at: 
+sequences_030: 
+  lno_date: 
+  default_bk: Y
+  updated_at: 2011/01/24 18:57:54
+  docu_typ: SDOICR
+  update_flag: Y
+  link_bk1: ""
+  book_nm: ""
+  trans_flag: A
+  created_by: 
+  link_bk2: ""
+  lock_version: 68
+  edit_flag: ""
+  book_lno: "1000"
+  book_cd: SC02
+  updated_by: 1
+  id: 282
+  prod_trans_type: ""
+  company_id: 1
+  user_id: 
+  lno_flag: ""
+  table_nm: ""
+  created_at: 
+sequences_019: 
+  lno_date: 
+  default_bk: ""
+  updated_at: 2011/01/24 18:57:54
+  docu_typ: FAAPCM
+  update_flag: y
+  link_bk1: 
+  book_nm: 
+  trans_flag: a
+  created_by: 
+  link_bk2: 
+  lock_version: 23
+  edit_flag: 
+  book_lno: "6003"
+  book_cd: CM01
+  updated_by: 1
+  id: 183
+  prod_trans_type: 
+  company_id: 1
+  user_id: 
+  lno_flag: 
+  table_nm: 
+  created_at: 
+sequences_008: 
+  lno_date: 
+  default_bk: Y
+  updated_at: 2011/01/24 18:57:53
+  docu_typ: SAOIRE
+  update_flag: Y
+  link_bk1: 
+  book_nm: ""
+  trans_flag: A
+  created_by: 1
+  link_bk2: 
+  lock_version: 102
+  edit_flag: 
+  book_lno: "3000"
+  book_cd: SE01
+  updated_by: 1
+  id: 8
+  prod_trans_type: 
+  company_id: 1
+  user_id: 
+  lno_flag: 
+  table_nm: 
+  created_at: 
+sequences_042: 
+  lno_date: 
+  default_bk: Y
+  updated_at: 2011/01/24 18:57:54
+  docu_typ: INVNHS
+  update_flag: Y
+  link_bk1: ""
+  book_nm: ""
+  trans_flag: A
+  created_by: 
+  link_bk2: ""
+  lock_version: 12
+  edit_flag: ""
+  book_lno: "1000"
+  book_cd: HS01
+  updated_by: 1
+  id: 520
+  prod_trans_type: ""
+  company_id: 1
+  user_id: 
+  lno_flag: ""
+  table_nm: ""
+  created_at: 
+sequences_031: 
+  lno_date: 
+  default_bk: Y
+  updated_at: 2011/01/24 18:57:54
+  docu_typ: SDOIRE
+  update_flag: Y
+  link_bk1: ""
+  book_nm: ""
+  trans_flag: A
+  created_by: 
+  link_bk2: ""
+  lock_version: 79
+  edit_flag: ""
+  book_lno: "1000"
+  book_cd: SE02
+  updated_by: 1
+  id: 283
+  prod_trans_type: ""
+  company_id: 1
+  user_id: 
+  lno_flag: ""
+  table_nm: ""
+  created_at: 
+sequences_020: 
+  lno_date: 
+  default_bk: Y
+  updated_at: 2011/01/24 18:57:54
+  docu_typ: SAOIOH
+  update_flag: Y
+  link_bk1: 
+  book_nm: ""
+  trans_flag: A
+  created_by: 1
+  link_bk2: 
+  lock_version: 92
+  edit_flag: 
+  book_lno: "4000"
+  book_cd: SH01
+  updated_by: 1
+  id: 220
+  prod_trans_type: 
+  company_id: 1
+  user_id: 
+  lno_flag: 
+  table_nm: 
+  created_at: 
+sequences_009: 
+  lno_date: 
+  default_bk: 
+  updated_at: 2011/01/24 18:57:53
+  docu_typ: FAARPA
+  update_flag: Y
+  link_bk1: 
+  book_nm: ""
+  trans_flag: A
+  created_by: 1
+  link_bk2: 
+  lock_version: 222
+  edit_flag: 
+  book_lno: "1000"
+  book_cd: RE01
+  updated_by: 1
+  id: 9
+  prod_trans_type: 
+  company_id: 1
+  user_id: 
+  lno_flag: 
+  table_nm: 
+  created_at: 
+sequences_043: 
+  lno_date: 
+  default_bk: Y
+  updated_at: 2011/01/24 18:57:54
+  docu_typ: DIINTR
+  update_flag: Y
+  link_bk1: ""
+  book_nm: Inventory Packet Assignment
+  trans_flag: A
+  created_by: 
+  link_bk2: ""
+  lock_version: 4
+  edit_flag: ""
+  book_lno: "7000"
+  book_cd: TR06
+  updated_by: 1
+  id: 540
+  prod_trans_type: ""
+  company_id: 1
+  user_id: 
+  lno_flag: ""
+  table_nm: ""
+  created_at: 
+sequences_032: 
+  lno_date: 
+  default_bk: Y
+  updated_at: 2011/01/24 18:57:54
+  docu_typ: SDOIOD
+  update_flag: Y
+  link_bk1: ""
+  book_nm: ""
+  trans_flag: A
+  created_by: 
+  link_bk2: ""
+  lock_version: 10
+  edit_flag: ""
+  book_lno: "1000"
+  book_cd: SO02
+  updated_by: 1
+  id: 284
+  prod_trans_type: ""
+  company_id: 1
+  user_id: 
+  lno_flag: ""
+  table_nm: ""
+  created_at: 
+sequences_021: 
+  lno_date: 
+  default_bk: ""
+  updated_at: 2011/01/24 18:57:54
+  docu_typ: POSREC
+  update_flag: Y
+  link_bk1: ""
+  book_nm: Point of Sales
+  trans_flag: A
+  created_by: 
+  link_bk2: ""
+  lock_version: 66
+  edit_flag: ""
+  book_lno: "2000"
+  book_cd: PS01
+  updated_by: 1
+  id: 240
+  prod_trans_type: ""
+  company_id: 1
+  user_id: 
+  lno_flag: ""
+  table_nm: ""
+  created_at: 
+sequences_010: 
+  lno_date: 
+  default_bk: ""
+  updated_at: 2011/01/24 18:57:53
+  docu_typ: FAARCM
+  update_flag: Y
+  link_bk1: 
+  book_nm: ""
+  trans_flag: A
+  created_by: 1
+  link_bk2: 
+  lock_version: 24
+  edit_flag: 
+  book_lno: "2000"
+  book_cd: CM01
+  updated_by: 1
+  id: 100
+  prod_trans_type: 
+  company_id: 1
+  user_id: 
+  lno_flag: 
+  table_nm: 
+  created_at: 
+sequences_044: 
+  lno_date: 
+  default_bk: Y
+  updated_at: 2011/01/24 18:57:54
+  docu_typ: DIINHS
+  update_flag: Y
+  link_bk1: ""
+  book_nm: DIIN Packet Update
+  trans_flag: A
+  created_by: 
+  link_bk2: ""
+  lock_version: 5
+  edit_flag: ""
+  book_lno: "7000"
+  book_cd: HS02
+  updated_by: 1
+  id: 544
+  prod_trans_type: ""
+  company_id: 1
+  user_id: 
+  lno_flag: ""
+  table_nm: ""
+  created_at: 
+sequences_033: 
+  lno_date: 
+  default_bk: Y
+  updated_at: 2011/01/24 18:57:54
+  docu_typ: SDOIOH
+  update_flag: Y
+  link_bk1: ""
+  book_nm: ""
+  trans_flag: A
+  created_by: 
+  link_bk2: ""
+  lock_version: 1
+  edit_flag: ""
+  book_lno: "1000"
+  book_cd: SH02
+  updated_by: 1
+  id: 285
+  prod_trans_type: ""
+  company_id: 1
+  user_id: 
+  lno_flag: ""
+  table_nm: ""
+  created_at: 
+sequences_022: 
+  lno_date: 
+  default_bk: Y
+  updated_at: 2011/01/24 18:57:54
+  docu_typ: PDOIMO
+  update_flag: Y
+  link_bk1: ""
+  book_nm: ""
+  trans_flag: A
+  created_by: 
+  link_bk2: ""
+  lock_version: 149
+  edit_flag: ""
+  book_lno: "1000"
+  book_cd: PM02
+  updated_by: 1
+  id: 260
+  prod_trans_type: ""
+  company_id: 1
+  user_id: 
+  lno_flag: ""
+  table_nm: ""
+  created_at: 
+sequences_011: 
+  lno_date: 
+  default_bk: 
+  updated_at: 2011/01/24 18:57:53
+  docu_typ: FAGLDT
+  update_flag: Y
+  link_bk1: 
+  book_nm: ""
+  trans_flag: A
+  created_by: 1
+  link_bk2: 
+  lock_version: 17
+  edit_flag: 
+  book_lno: "1000"
+  book_cd: JD01
+  updated_by: 1
+  id: 101
+  prod_trans_type: 
+  company_id: 1
+  user_id: 
+  lno_flag: 
+  table_nm: 
+  created_at: 
+sequences_045: 
+  lno_date: 
+  default_bk: Y
+  updated_at: 2011/01/24 18:57:54
+  docu_typ: DIINHS
+  update_flag: Y
+  link_bk1: ""
+  book_nm: DIIN Packet Update
+  trans_flag: A
+  created_by: 
+  link_bk2: ""
+  lock_version: 1
+  edit_flag: ""
+  book_lno: "7000"
+  book_cd: HS02
+  updated_by: 1
+  id: 546
+  prod_trans_type: ""
+  company_id: 1
+  user_id: 
+  lno_flag: ""
+  table_nm: ""
+  created_at: 
+sequences_034: 
+  lno_date: 
+  default_bk: Y
+  updated_at: 2011/01/24 18:57:54
+  docu_typ: CAOIOD
+  update_flag: Y
+  link_bk1: 
+  book_nm: ""
+  trans_flag: A
+  created_by: 1
+  link_bk2: 
+  lock_version: 711
+  edit_flag: 
+  book_lno: "9000"
+  book_cd: CO01
+  updated_by: 1
+  id: 300
+  prod_trans_type: 
+  company_id: 1
+  user_id: 
+  lno_flag: 
+  table_nm: 
+  created_at: 
+sequences_023: 
+  lno_date: 
+  default_bk: Y
+  updated_at: 2011/01/24 18:57:54
+  docu_typ: PDOIIN
+  update_flag: Y
+  link_bk1: ""
+  book_nm: ""
+  trans_flag: A
+  created_by: 
+  link_bk2: ""
+  lock_version: 99
+  edit_flag: ""
+  book_lno: "1000"
+  book_cd: PI02
+  updated_by: 1
+  id: 261
+  prod_trans_type: ""
+  company_id: 1
+  user_id: 
+  lno_flag: ""
+  table_nm: ""
+  created_at: 
+sequences_012: 
+  lno_date: 
+  default_bk: 
+  updated_at: 2011/01/24 18:57:53
+  docu_typ: FAAPPA
+  update_flag: Y
+  link_bk1: 
+  book_nm: ""
+  trans_flag: A
+  created_by: 1
+  link_bk2: 
+  lock_version: 95
+  edit_flag: 
+  book_lno: "5000"
+  book_cd: PA01
+  updated_by: 1
+  id: 120
+  prod_trans_type: 
+  company_id: 1
+  user_id: 
+  lno_flag: 
+  table_nm: 
+  created_at: 
+sequences_001: 
+  lno_date: 
+  default_bk: ""
+  updated_at: 2011/01/24 18:57:53
+  docu_typ: PAOIOD
+  update_flag: Y
+  link_bk1: 
+  book_nm: ""
+  trans_flag: A
+  created_by: 1
+  link_bk2: 
+  lock_version: 390
+  edit_flag: 
+  book_lno: "1000"
+  book_cd: PO01
+  updated_by: 1
+  id: 1
+  prod_trans_type: 
+  company_id: 1
+  user_id: 
+  lno_flag: 
+  table_nm: 
+  created_at: 
+sequences_046: 
+  lno_date: 
+  default_bk: Y
+  updated_at: 2011/01/24 18:57:54
+  docu_typ: PRODPR
+  update_flag: Y
+  link_bk1: ""
+  book_nm: Production Request
+  trans_flag: A
+  created_by: 
+  link_bk2: ""
+  lock_version: 11
+  edit_flag: ""
+  book_lno: "1000"
+  book_cd: PR01
+  updated_by: 1
+  id: 560
+  prod_trans_type: ""
+  company_id: 1
+  user_id: 
+  lno_flag: ""
+  table_nm: ""
+  created_at: 
+sequences_035: 
+  lno_date: 
+  default_bk: Y
+  updated_at: 2011/01/24 18:57:54
+  docu_typ: INVNRE
+  update_flag: Y
+  link_bk1: ""
+  book_nm: Invntory Receipt
+  trans_flag: A
+  created_by: 
+  link_bk2: ""
+  lock_version: 178
+  edit_flag: ""
+  book_lno: "7000"
+  book_cd: RE01
+  updated_by: 1
+  id: 440
+  prod_trans_type: ""
+  company_id: 1
+  user_id: 
+  lno_flag: ""
+  table_nm: ""
+  created_at: 
+sequences_024: 
+  lno_date: 
+  default_bk: Y
+  updated_at: 2011/01/24 18:57:54
+  docu_typ: PDOICR
+  update_flag: Y
+  link_bk1: ""
+  book_nm: ""
+  trans_flag: A
+  created_by: 
+  link_bk2: ""
+  lock_version: 41
+  edit_flag: ""
+  book_lno: "1000"
+  book_cd: PC02
+  updated_by: 1
+  id: 262
+  prod_trans_type: ""
+  company_id: 1
+  user_id: 
+  lno_flag: ""
+  table_nm: ""
+  created_at: 
+sequences_013: 
+  lno_date: 
+  default_bk: 
+  updated_at: 2011/01/24 18:57:53
+  docu_typ: FASHTR
+  update_flag: Y
+  link_bk1: 
+  book_nm: ""
+  trans_flag: A
+  created_by: 1
+  link_bk2: 
+  lock_version: 15
+  edit_flag: 
+  book_lno: "4000"
+  book_cd: BT01
+  updated_by: 1
+  id: 121
+  prod_trans_type: 
+  company_id: 1
+  user_id: 
+  lno_flag: 
+  table_nm: 
+  created_at: 
+sequences_002: 
+  lno_date: 
+  default_bk: ""
+  updated_at: 2011/01/24 18:57:53
+  docu_typ: PAOIIN
+  update_flag: Y
+  link_bk1: 
+  book_nm: ""
+  trans_flag: A
+  created_by: 1
+  link_bk2: 
+  lock_version: 292
+  edit_flag: 
+  book_lno: "5000"
+  book_cd: PI01
+  updated_by: 1
+  id: 2
+  prod_trans_type: 
+  company_id: 1
+  user_id: 
+  lno_flag: 
+  table_nm: 
+  created_at: 
+sequences_047: 
+  lno_date: 
+  default_bk: Y
+  updated_at: 2011/01/24 18:57:54
+  docu_typ: PKTSEQ
+  update_flag: Y
+  link_bk1: 
+  book_nm: Packet Sequence
+  trans_flag: A
+  created_by: 1
+  link_bk2: 
+  lock_version: 49
+  edit_flag: 
+  book_lno: "201100000"
+  book_cd: PK01
+  updated_by: 1
+  id: 640
+  prod_trans_type: 
+  company_id: 1
+  user_id: 
+  lno_flag: 
+  table_nm: 
+  created_at: 
+sequences_036: 
+  lno_date: 
+  default_bk: Y
+  updated_at: 2011/01/24 18:57:54
+  docu_typ: INVNIS
+  update_flag: Y
+  link_bk1: ""
+  book_nm: Inventory Issue
+  trans_flag: A
+  created_by: 
+  link_bk2: ""
+  lock_version: 188
+  edit_flag: ""
+  book_lno: "7000"
+  book_cd: IS01
+  updated_by: 1
+  id: 441
+  prod_trans_type: ""
+  company_id: 1
+  user_id: 
+  lno_flag: ""
+  table_nm: ""
+  created_at: 
+sequences_025: 
+  lno_date: 
+  default_bk: Y
+  updated_at: 2011/01/24 18:57:54
+  docu_typ: PDOIRE
+  update_flag: Y
+  link_bk1: ""
+  book_nm: ""
+  trans_flag: A
+  created_by: 
+  link_bk2: ""
+  lock_version: 45
+  edit_flag: ""
+  book_lno: "1000"
+  book_cd: PE02
+  updated_by: 1
+  id: 263
+  prod_trans_type: ""
+  company_id: 1
+  user_id: 
+  lno_flag: ""
+  table_nm: ""
+  created_at: 
+sequences_014: 
+  lno_date: 
+  default_bk: 
+  updated_at: 2011/01/24 18:57:53
+  docu_typ: FAAPIN
+  update_flag: Y
+  link_bk1: 
+  book_nm: ""
+  trans_flag: A
+  created_by: 1
+  link_bk2: 
+  lock_version: 36
+  edit_flag: 
+  book_lno: "1000"
+  book_cd: IN02
+  updated_by: 1
+  id: 122
+  prod_trans_type: 
+  company_id: 1
+  user_id: 
+  lno_flag: 
+  table_nm: 
+  created_at: 
+sequences_003: 
+  lno_date: 
+  default_bk: Y
+  updated_at: 2011/01/24 18:57:53
+  docu_typ: SAOIOD
+  update_flag: Y
+  link_bk1: 
+  book_nm: ""
+  trans_flag: A
+  created_by: 1
+  link_bk2: 
+  lock_version: 392
+  edit_flag: 
+  book_lno: "1000"
+  book_cd: SO01
+  updated_by: 1
+  id: 3
+  prod_trans_type: 
+  company_id: 1
+  user_id: 
+  lno_flag: 
+  table_nm: 
+  created_at: 
+sequences_048: 
+  lno_date: 
+  default_bk: Y
+  updated_at: 2011/01/24 18:57:54
+  docu_typ: PRODMO
+  update_flag: Y
+  link_bk1: ""
+  book_nm: ""
+  trans_flag: A
+  created_by: 
+  link_bk2: ""
+  lock_version: 1
+  edit_flag: ""
+  book_lno: "1000"
+  book_cd: LM01
+  updated_by: 1
+  id: 660
+  prod_trans_type: ""
+  company_id: 1
+  user_id: 
+  lno_flag: ""
+  table_nm: ""
+  created_at: 
+sequences_037: 
+  lno_date: 
+  default_bk: Y
+  updated_at: 2011/01/24 18:57:54
+  docu_typ: INVNTR
+  update_flag: Y
+  link_bk1: ""
+  book_nm: Inventory Transfer
+  trans_flag: A
+  created_by: 
+  link_bk2: ""
+  lock_version: 61
+  edit_flag: ""
+  book_lno: "7000"
+  book_cd: TR01
+  updated_by: 1
+  id: 460
+  prod_trans_type: ""
+  company_id: 1
+  user_id: 
+  lno_flag: ""
+  table_nm: ""
+  created_at: 
+sequences_026: 
+  lno_date: 
+  default_bk: Y
+  updated_at: 2011/01/24 18:57:54
+  docu_typ: PDOIOD
+  update_flag: Y
+  link_bk1: ""
+  book_nm: ""
+  trans_flag: A
+  created_by: 
+  link_bk2: ""
+  lock_version: 10
+  edit_flag: ""
+  book_lno: "1000"
+  book_cd: PO02
+  updated_by: 1
+  id: 264
+  prod_trans_type: ""
+  company_id: 1
+  user_id: 
+  lno_flag: ""
+  table_nm: ""
+  created_at: 
+sequences_015: 
+  lno_date: 
+  default_bk: Y
+  updated_at: 2011/01/24 18:57:53
+  docu_typ: PAOIMO
+  update_flag: Y
+  link_bk1: 
+  book_nm: ""
+  trans_flag: A
+  created_by: 1
+  link_bk2: 
+  lock_version: 137
+  edit_flag: 
+  book_lno: "9000"
+  book_cd: PM01
+  updated_by: 1
+  id: 160
+  prod_trans_type: 
+  company_id: 1
+  user_id: 
+  lno_flag: 
+  table_nm: 
+  created_at: 
+sequences_004: 
+  lno_date: 
+  default_bk: Y
+  updated_at: 2011/01/24 18:57:53
+  docu_typ: SAOIMO
+  update_flag: Y
+  link_bk1: 
+  book_nm: ""
+  trans_flag: A
+  created_by: 1
+  link_bk2: 
+  lock_version: 186
+  edit_flag: 
+  book_lno: "9000"
+  book_cd: SM01
+  updated_by: 1
+  id: 4
+  prod_trans_type: 
+  company_id: 1
+  user_id: 
+  lno_flag: 
+  table_nm: 
+  created_at: 
+sequences_050: 
+  lno_date: 
+  default_bk: Y
+  updated_at: 2011/01/24 18:57:54
+  docu_typ: PDOIPR
+  update_flag: Y
+  link_bk1: 
+  book_nm: Purchase Indent Requisition
+  trans_flag: A
+  created_by: 1
+  link_bk2: 
+  lock_version: 15
+  edit_flag: 
+  book_lno: "1000"
+  book_cd: PD01
+  updated_by: 1
+  id: 680
+  prod_trans_type: 
+  company_id: 1
+  user_id: 
+  lno_flag: 
+  table_nm: 
+  created_at: 
+sequences_049: 
+  lno_date: 
+  default_bk: Y
+  updated_at: 2011/01/24 18:57:54
+  docu_typ: PRODRE
+  update_flag: Y
+  link_bk1: ""
+  book_nm: ""
+  trans_flag: A
+  created_by: 
+  link_bk2: ""
+  lock_version: 1
+  edit_flag: ""
+  book_lno: "1000"
+  book_cd: LR01
+  updated_by: 1
+  id: 662
+  prod_trans_type: ""
+  company_id: 1
+  user_id: 
+  lno_flag: ""
+  table_nm: ""
+  created_at: 
+sequences_038: 
+  lno_date: 
+  default_bk: Y
+  updated_at: 2011/01/24 18:57:54
+  docu_typ: DIINRE
+  update_flag: Y
+  link_bk1: 
+  book_nm: Diamond Inventory Receive
+  trans_flag: A
+  created_by: 1
+  link_bk2: 
+  lock_version: 18
+  edit_flag: 
+  book_lno: "7000"
+  book_cd: RE02
+  updated_by: 1
+  id: 480
+  prod_trans_type: 
+  company_id: 1
+  user_id: 
+  lno_flag: 
+  table_nm: 
+  created_at: 
+sequences_027: 
+  lno_date: 
+  default_bk: Y
+  updated_at: 2011/01/24 18:57:54
+  docu_typ: PDOIOH
+  update_flag: Y
+  link_bk1: ""
+  book_nm: ""
+  trans_flag: A
+  created_by: 
+  link_bk2: ""
+  lock_version: 1
+  edit_flag: ""
+  book_lno: "1000"
+  book_cd: PH02
+  updated_by: 1
+  id: 265
+  prod_trans_type: ""
+  company_id: 1
+  user_id: 
+  lno_flag: ""
+  table_nm: ""
+  created_at: 
+sequences_016: 
+  lno_date: 
+  default_bk: Y
+  updated_at: 2011/01/24 18:57:53
+  docu_typ: PAOICR
+  update_flag: Y
+  link_bk1: 
+  book_nm: ""
+  trans_flag: A
+  created_by: 1
+  link_bk2: 
+  lock_version: 147
+  edit_flag: 
+  book_lno: "7000"
+  book_cd: PC01
+  updated_by: 1
+  id: 180
+  prod_trans_type: 
+  company_id: 1
+  user_id: 
+  lno_flag: 
+  table_nm: 
+  created_at: 
+sequences_005: 
+  lno_date: 
+  default_bk: Y
+  updated_at: 2011/01/24 18:57:53
+  docu_typ: SAOIIN
+  update_flag: Y
+  link_bk1: 
+  book_nm: ""
+  trans_flag: A
+  created_by: 1
+  link_bk2: 
+  lock_version: 221
+  edit_flag: 
+  book_lno: "5000"
+  book_cd: SI01
+  updated_by: 1
+  id: 5
+  prod_trans_type: 
+  company_id: 1
+  user_id: 
+  lno_flag: 
+  table_nm: 
+  created_at: 
+sequences_051: 
+  lno_date: 
+  default_bk: Y
+  updated_at: 2011/01/24 18:57:54
+  docu_typ: MELTPK
+  update_flag: Y
+  link_bk1: 
+  book_nm: ""
+  trans_flag: A
+  created_by: 1
+  link_bk2: 
+  lock_version: 40
+  edit_flag: 
+  book_lno: "1000"
+  book_cd: MT01
+  updated_by: 1
+  id: 739
+  prod_trans_type: 
+  company_id: 1
+  user_id: 
+  lno_flag: 
+  table_nm: 
+  created_at: 
+sequences_040: 
+  lno_date: 
+  default_bk: Y
+  updated_at: 2011/01/24 18:57:54
+  docu_typ: DIINIS
+  update_flag: Y
+  link_bk1: ""
+  book_nm: Diamond Inventory Issue
+  trans_flag: A
+  created_by: 
+  link_bk2: ""
+  lock_version: 27
+  edit_flag: ""
+  book_lno: "7000"
+  book_cd: IS02
+  updated_by: 1
+  id: 482
+  prod_trans_type: ""
+  company_id: 1
+  user_id: 
+  lno_flag: ""
+  table_nm: ""
+  created_at: 
+sequences_039: 
+  lno_date: 
+  default_bk: Y
+  updated_at: 2011/01/24 18:57:54
+  docu_typ: DIINTR
+  update_flag: Y
+  link_bk1: ""
+  book_nm: Diamond Transfer
+  trans_flag: A
+  created_by: 
+  link_bk2: ""
+  lock_version: 11
+  edit_flag: ""
+  book_lno: "7000"
+  book_cd: TR02
+  updated_by: 1
+  id: 481
+  prod_trans_type: ""
+  company_id: 1
+  user_id: 
+  lno_flag: ""
+  table_nm: ""
+  created_at: 
+sequences_028: 
+  lno_date: 
+  default_bk: Y
+  updated_at: 2011/01/24 18:57:54
+  docu_typ: SDOIMO
+  update_flag: Y
+  link_bk1: ""
+  book_nm: ""
+  trans_flag: A
+  created_by: 
+  link_bk2: ""
+  lock_version: 195
+  edit_flag: ""
+  book_lno: "1000"
+  book_cd: SM02
+  updated_by: 1
+  id: 280
+  prod_trans_type: ""
+  company_id: 1
+  user_id: 
+  lno_flag: ""
+  table_nm: ""
+  created_at: 
+sequences_017: 
+  lno_date: 
+  default_bk: Y
+  updated_at: 2011/01/24 18:57:54
+  docu_typ: PAOIRE
+  update_flag: Y
+  link_bk1: 
+  book_nm: ""
+  trans_flag: A
+  created_by: 1
+  link_bk2: 
+  lock_version: 90
+  edit_flag: 
+  book_lno: "3000"
+  book_cd: PE01
+  updated_by: 1
+  id: 181
+  prod_trans_type: 
+  company_id: 1
+  user_id: 
+  lno_flag: 
+  table_nm: 
+  created_at: 
+sequences_006: 
+  lno_date: 
+  default_bk: Y
+  updated_at: 2011/01/24 18:57:53
+  docu_typ: SAOICR
+  update_flag: Y
+  link_bk1: 
+  book_nm: ""
+  trans_flag: A
+  created_by: 1
+  link_bk2: 
+  lock_version: 114
+  edit_flag: 
+  book_lno: "7000"
+  book_cd: SC01
+  updated_by: 1
+  id: 6
+  prod_trans_type: 
+  company_id: 1
+  user_id: 
+  lno_flag: 
+  table_nm: 
+  created_at: 
+sequences_029: 
+  lno_date: 
+  default_bk: Y
+  updated_at: 2011/01/24 18:57:54
+  docu_typ: SDOIIN
+  update_flag: Y
+  link_bk1: ""
+  book_nm: ""
+  trans_flag: A
+  created_by: 
+  link_bk2: ""
+  lock_version: 127
+  edit_flag: ""
+  book_lno: "1000"
+  book_cd: SI02
+  updated_by: 1
+  id: 281
+  prod_trans_type: ""
+  company_id: 1
+  user_id: 
+  lno_flag: ""
+  table_nm: ""
+  created_at: 
+sequences_018: 
+  lno_date: 
+  default_bk: 
+  updated_at: 2011/01/24 18:57:54
+  docu_typ: PAOIOH
+  update_flag: Y
+  link_bk1: 
+  book_nm: ""
+  trans_flag: A
+  created_by: 1
+  link_bk2: 
+  lock_version: 103
+  edit_flag: 
+  book_lno: "4000"
+  book_cd: PH01
+  updated_by: 1
+  id: 182
+  prod_trans_type: 
+  company_id: 1
+  user_id: 
+  lno_flag: 
+  table_nm: 
+  created_at: 
+sequences_007: 
+  lno_date: 
+  default_bk: ""
+  updated_at: 2011/01/24 18:57:53
+  docu_typ: FAARIN
+  update_flag: Y
+  link_bk1: 
+  book_nm: ""
+  trans_flag: A
+  created_by: 1
+  link_bk2: 
+  lock_version: 120
+  edit_flag: 
+  book_lno: "1000"
+  book_cd: IN01
+  updated_by: 1
+  id: 7
+  prod_trans_type: 
+  company_id: 1
+  user_id: 
+  lno_flag: 
+  table_nm: 
+  created_at: 

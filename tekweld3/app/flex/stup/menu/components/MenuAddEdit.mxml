@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<gencomponents:AddEdit xmlns:mx="http://www.adobe.com/2006/mxml" 
+	height="100%" width="100%" verticalGap="0"
+	xmlns:customcomponents="com.generic.customcomponents.*"
+	xmlns:gencomponents="com.generic.components.*" >
+	<mx:Script source="../scripts/MenuAddEditscript.as"/>
+	
+	<mx:VBox horizontalGap="0" width="100%">
+		<mx:HBox height="20" verticalAlign="middle" horizontalGap="2">
+			<mx:Label text="Code" width="100" textAlign="right" height="20" />
+			<customcomponents:GenTextInput id="tiCode" width="120" tabIndex="1" height="20" upperCaseFlag="true" 
+				xmlTag="code" updatableFlag="true" tableName="menu" editable="true" maxChars="25" validationFlag="true"/>	
+		</mx:HBox>
+		
+		<mx:HBox height="20" verticalAlign="middle" horizontalGap="2">
+			<mx:Label text="Menu Type" width="100" textAlign="right" height="20"/>
+			<customcomponents:GenComboBox id="cbMenu_type" defaultValue="S" width="120" cornerRadius="0" xmlTag="menu_type" updatableFlag="true"
+				tableName="menu" tabIndex="2"  labelField="label" toolTip="Menu Type" height="20" 
+				dataProvider="{__genModel.masterData.child('menu_type').menu_type}" change="setDocument()"/>
+		
+			<mx:Label text="Menu Name" width="160" textAlign="right" height="20" />
+			<customcomponents:GenTextInput id="tiMenu_name" width="180" editable="true" tabIndex="3" height="20"  
+				xmlTag="menu_name" updatableFlag="true" tableName="menu" maxChars="50" validationFlag="true"/>
+		</mx:HBox>	
+		
+		<mx:HBox height="20" verticalAlign="middle" horizontalGap="2" width="100%">
+			<mx:Label text="Module #" width="100" textAlign="right" height="20"/>
+			<customcomponents:GenTextInputWithHelp
+				lookupFormatUrl	=	"mooduleLookupHelpFormat"
+				id="dcModule_id" 
+				width="180" 
+				toolTip="Module #" 
+				dataSourceName="Moodule"
+				height="20" 
+				tabIndex="4" 
+				validationFlag="true" 
+				xmlTag="moodule_id"
+				labelTag="moodule_name"
+				dataField="id" 
+				labelField= "moodule_name"
+				updatableFlag="true" 
+				tableName="menu" 
+				itemChangedEvent="handleBtnClick(event);tiMoodule_name.dataValue = dcModule_id.labelValue"
+				/>		
+			
+			<!--<customcomponents:GenDynamicComboBoxWithHelp id="dcModule_id" width="180" toolTip="Module Id" 
+				defaultValue="" dataField="id" labelField="name" dataSourceName="Moodule" 
+				dataProvider="{__genModel.lookupObj.moodule.children()}"
+				tabIndex="4" height="20" validationFlag="true" xmlTag="moodule_id" 
+				updatableFlag="true" tableName="menu"  itemChangedEvent="handleBtnClick(event)"/>-->
+				<mx:Label text="Menu #" width="100" textAlign="right" height="20" />
+				<customcomponents:GenTextInputWithHelp
+					id="dcMenu_id" 
+					width="180" 
+					toolTip="Menu #" 
+					dataSourceName="Menu"
+					height="20" 
+					tabIndex="4" 
+					validationFlag="true" 
+					xmlTag="menu_id"
+					labelTag="menu_code"
+					filterEnabled="true"
+					filterKeyName="moodule_id"
+					dataField="id" 
+					labelField= "code"
+					updatableFlag="true" 
+					tableName="menu" 
+					itemChangedEvent="tiMenu_code.dataValue = dcMenu_id.labelValue"
+					/>	
+				
+			<!--<customcomponents:GenDynamicComboBox id="dcMenu_id" width="180" toolTip="Menu Id" 
+				defaultValue="" dataField="id" labelField="name"  
+				dataProvider="{__genModel.lookupObj.menu.children()}" validationFlag="true"
+				tabIndex="4" height="20"  xmlTag="menu_id" 
+				updatableFlag="true" tableName="menu" />
+				<mx:Button id="btnLookup" width="14" label="" cornerRadius="0" height="16" click="handleBtnClick(event)"
+				 toolTip="Refresh" visible="true" textAlign="center" icon="@Embed(source='com/generic/assets/referesh_comp.png')"/>-->
+		</mx:HBox>	
+		
+		<mx:HBox height="20" verticalAlign="middle" horizontalGap="2" width="100%">
+			<mx:Label text="Document #" width="100" textAlign="right" height="20" />
+			<customcomponents:GenTextInputWithHelp
+				lookupFormatUrl	=	"documentLookupHelpFormat"
+				id="dcDocument_id" 
+				width="180" 
+				toolTip="Document #" 
+				dataSourceName="Document"
+				height="20" 
+				tabIndex="4" 
+				validationFlag="true" 
+				xmlTag="document_id"
+				labelTag="document_code"
+				dataField="id" 
+				labelField= "code"
+				updatableFlag="true" 
+				tableName="menu" 
+				itemChangedEvent="tiDocument_code.dataValue = dcDocument_id.labelValue"
+				/>
+			
+			<!--<customcomponents:GenDynamicComboBoxWithHelp id="dcDocument_id" width="180" toolTip="Document Id" 
+				defaultValue="" dataField="id" labelField="code" dataSourceName="Document" 
+				dataProvider="{__genModel.lookupObj.document.children()}"
+				tabIndex="4" height="20"  xmlTag="document_id" validationFlag="true"
+				updatableFlag="true" tableName="menu"/>-->
+				
+
+			<mx:Label text="Page Name" width="100" textAlign="right" height="20" />
+			<customcomponents:GenTextInput id="tiPage_name" width="180" editable="true" tabIndex="5" height="20"  
+				xmlTag="page_heading" updatableFlag="true" tableName="menu" maxChars="100" text="{tiMenu_name.text}"/>				
+				
+		</mx:HBox>	
+		
+		<mx:HBox height="25" verticalAlign="middle" horizontalGap="2" width="100%">
+			<mx:Label text="Sequence #" width="100" textAlign="right" height="20" />
+			<customcomponents:GenTextInput id="tiSequence" width="90" tabIndex="6" height="20"  
+				xmlTag="sequence" updatableFlag="true" tableName="menu" dataType="N" editable="true" />	
+			
+			<customcomponents:GenCheckBox labelPlacement="left" label="Visible ?" id="cbVisible_flag" width="206" enabled="true"
+										  xmlTag="visible_flag" updatableFlag="true" tableName="menu" defaultValue="Y" textAlign="right" tabIndex="7"
+										  dataValueForOn = "Y" dataValueForOff = "N"/>
+		</mx:HBox>
+		<mx:HBox width="100%" height="10%" verticalGap="0">		
+					<mx:Label text="Status" width="95" textAlign="right" height="20" />
+					<customcomponents:GenComboBox id="cbTrans_flag" defaultValue="A" width="116" cornerRadius="0" tabIndex="8" xmlTag="trans_flag" updatableFlag="true"
+						tableName="menu" enabled="true"  labelField="label" height="20" editable="false"
+						dataProvider="{__genModel.masterData.child('trans_flag').trans_flag}"
+						toolTip="Status" />
+				</mx:HBox>
+	</mx:VBox>
+	<customcomponents:GenTextInput id="tiDocument_code" width="0"  height="0"  
+				xmlTag="document_code" updatableFlag="true" tableName="menu"/>
+	<customcomponents:GenTextInput id="tiMoodule_name" width="0"  height="0"  
+				xmlTag="moodule_name" updatableFlag="true" tableName="menu"/>
+	<customcomponents:GenTextInput id="tiMenu_code" width="0"  height="0"  
+				xmlTag="menu_code" updatableFlag="true" tableName="menu"/>			
+</gencomponents:AddEdit>

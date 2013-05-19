@@ -1,0 +1,48 @@
+<columns lockedColumnCount='0'>
+	
+	<column data='stone_lot_number' 		label='Lot #' 				editable='false' 	visible='true' 		width='150' 	textAlign='left' 
+			forLevel='false' 				defaultForLevel='' 			booleanFlag='false' sortDataType='S'	columnPrecision="NaN"/>
+			
+	<column data='stone_packet_code'		label='Certificate #'		editable='false'	visible='true'		width='250'		textAlign='left'
+			forLevel='false' 				defaultForLevel=''			booleanFlag='false'	sortDataType='S'	columnPrecision="NaN"/>
+			
+	<column data='stone_shape'				label='Shape'				editable='false'	visible='true'		width='250'		textAlign='left'
+			forLevel='false' 				defaultForLevel=''			booleanFlag='false'	sortDataType='S'	columnPrecision="NaN"/>
+			
+	<column data='stone_size' 				label='Size' 				editable='false' 	visible='true' 		width='100' 	textAlign='right' 
+			forLevel='false' 				defaultForLevel='' 			booleanFlag='false' sortDataType='N'	columnPrecision="2"/>
+			
+	<column data='stone_quality' 			label='Quality' 			editable='false'	visible='true'		width='100'		textAlign='left'
+			forLevel='false' 				defaultForLevel=''			booleanFlag='false'	sortDataType='S'	columnPrecision="NaN"/>
+			
+	<column data='stone_color' 				label='Color' 				editable='false'	visible='true'		width='100'		textAlign='left'
+			forLevel='false' 				defaultForLevel=''			booleanFlag='false'	sortDataType='S'	columnPrecision="NaN"/>
+			
+	<column data='stone_clarity' 			label='Clarity' 			editable='false'	visible='true'		width='100'		textAlign='left'
+			forLevel='false' 				defaultForLevel=''			booleanFlag='false'	sortDataType='S'	columnPrecision="NaN"/>
+			
+	<column data='stone_setting' 			label='Setting' 			editable='false'	visible='true'		width='100'		textAlign='left'
+			forLevel='false' 				defaultForLevel=''			booleanFlag='false'	sortDataType='S'	columnPrecision="NaN"/>
+			
+	<column data='wt' 						label='Avg Wt' 				editable='false' 	visible='true' 		width='100' 	textAlign='right' 
+			forLevel='false' 				defaultForLevel='' 			booleanFlag='false' sortDataType='N'	columnPrecision="4"/>
+	
+	<column data='cost' 					label='Cost' 				editable='false' 	visible='true' 		width='100' 	textAlign='right' 
+			forLevel='false' 				defaultForLevel='' 			booleanFlag='false' sortDataType='N'	columnPrecision="2"/>
+			
+	<column data='price' 					label='Price' 				editable='false' 	visible='true' 		width='100' 	textAlign='right' 
+			forLevel='false' 				defaultForLevel='' 			booleanFlag='false' sortDataType='N'	columnPrecision="2"/>
+			
+	<column data='qty' 						label='Qty' 				editable='false' 	visible='true' 		width='100' 	textAlign='right' 
+			forLevel='false' 				defaultForLevel='' 			booleanFlag='false' sortDataType='N'	columnPrecision="2"/>
+			
+	<column data='total_wt' 				label='Total Wt' 			editable='false' 	visible='true' 		width='100' 	textAlign='right' 
+			forLevel='false' 				defaultForLevel='' 			booleanFlag='false' sortDataType='N'	columnPrecision="4"/>
+			
+	<column data='total_cost' 				label='Total Cost' 			editable='false' 	visible='true' 		width='100' 	textAlign='right' 
+			forLevel='false' 				defaultForLevel='' 			booleanFlag='false' sortDataType='N'	columnPrecision="2"/>
+			
+	<column data='total_amt' 				label='Total Amount' 		editable='false' 	visible='true' 		width='100' 	textAlign='right' 
+			forLevel='false' 				defaultForLevel='' 			booleanFlag='false' sortDataType='N'	columnPrecision="2"/>
+			
+</columns>  

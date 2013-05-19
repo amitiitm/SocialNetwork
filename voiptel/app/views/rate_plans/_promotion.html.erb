@@ -1,0 +1,21 @@
+<ul class="fields">
+	<li class="horizental">
+		<label>Promo Name:</label>
+		<%= f.text_field :name %>
+	</li>
+	<li class="horizental">
+		<label>Country:</label>
+		<%= f.select :country_id, V2Country.select_options, {:include_blank => true}, {:class => "country"} %>
+	</li>
+	<li class="horizental">
+		<label>Prefix:</label>
+		<%= f.text_field :prefix, :size => 15, :class => "prefix" %>
+	</li>
+	<li class="horizental">
+		<label>Rate (ie: 4.9):</label>
+		<%= f.text_field :rate_in_cents, :size => 5 %> <%= link_to_remove_fields("Remove", f, :style => "color:red !important;", :class => "ignore-me") %>
+	</li>
+	<%= f.hidden_field :days, :value => "-1" %>
+	<%= f.hidden_field :promotion_type, :value => "2" %>
+</ul>
+<div class="clear"></div>

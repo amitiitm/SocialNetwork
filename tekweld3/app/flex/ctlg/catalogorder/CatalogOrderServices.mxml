@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rds:CommonServices xmlns:rds="business.*" xmlns:mx="http://www.adobe.com/2006/mxml">
+
+	<mx:HTTPService id="saveRecord" url="/catalog_order/create_catalog_orders" />
+	<mx:HTTPService id="getRecord" url="/catalog_order/show_catalog_order" />
+	<mx:HTTPService id="getList" url="/catalog_order/list_catalog_orders" />
+	
+	<mx:HTTPService id="getListFormat" url="ctlg/catalogorder/xmls/CatalogOrderListStru.xml" />
+	<mx:HTTPService id="getViewFormat" url="ctlg/catalogorder/xmls/CatalogOrderCriteriaStru.xml" />
+	<mx:HTTPService id="lineDetailFormat" url="ctlg/catalogorder/xmls/CatalogOrderLineDetailStru.xml" />
+	
+	<mx:HTTPService id="printRecord" url="/catalog_report/render_catalog_order_format" />
+	
+
+</rds:CommonServices>

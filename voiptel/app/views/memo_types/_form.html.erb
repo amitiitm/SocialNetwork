@@ -1,0 +1,30 @@
+<% form_for @memo_type, :html => {:class => "forms"} do |f| %>
+	<%= error "Could not create" %>
+	<ul>
+		<li>
+			<div class="first left">
+				<label>Category</label>
+				<%= f.select :memo_category_id, MemoCategory.all.map {|c| [c.category, c.id]}.push(["Other", 0]) %>
+			</div>
+			<div class="left hidden" id="new-category">
+				<label>Category Name</label>
+				<%= f.text_field :new_category, :size => 15 %>				
+			</div>
+		</li>
+		<li>
+			<label>Subject</label>
+			<%= f.text_field :subject %>
+		</li>
+	</ul>
+<% end -%>
+<script>
+	$("#memo_type_memo_category_id").change(function(){
+		val = $("#memo_type_memo_category_id").val();
+		if (val == "0") {
+			$("#new-category").fadeIn();
+		} else {
+			$("#new-category").fadeOut();
+			$("#memo_type_new_category").val("");
+		};
+	});
+</script>

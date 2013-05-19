@@ -1,0 +1,1 @@
+response_for(@faq, page, "window.location.href='/faqs'")

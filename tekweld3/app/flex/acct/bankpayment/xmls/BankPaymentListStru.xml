@@ -1,0 +1,30 @@
+<columns  lockedColumnCount=''>
+
+	<column data='trans_bk' 			label='Payment Bk'		editable='false'	visible='true'		width='80'	textAlign='left'	forLevel='true'
+			print_width='18'			defaultForLevel='0'		booleanFlag='false'	sortDataType='S'	columnPrecision="NaN"/>
+	
+	<column data='trans_no' 			label='Payment #' 		editable='false' 	visible='true' 		width='80' 	textAlign='left' 	forLevel='true'
+			print_width='18'			defaultForLevel='1' 	booleanFlag='false' sortDataType='N'	columnPrecision="0"/>
+	
+	<column data='trans_date' 			label='Payment Date' 	editable='false' 	visible='true' 		width='80' 	textAlign='left' 	forLevel='true' 
+			print_width='18'			defaultForLevel='2' 	booleanFlag='false' sortDataType='D'	columnPrecision="NaN" />
+			
+	<column data='bank_name' 			label='Bank Name'		editable='false'	visible='true'		width='100'	textAlign='left'	forLevel='false'
+			print_width='24'			defaultForLevel=''		booleanFlag='false' sortDataType='S'	columnPrecision="NaN"/>
+					
+	<column data='account_period_code'	label='A/c Period' 		editable='false' 	visible='true' 		width='80' 	textAlign='left' 	forLevel='true' 
+			print_width='20'			defaultForLevel='3' 	booleanFlag='false' sortDataType='S'	columnPrecision="NaN"/>
+	
+	<column data='account_flag'			label='Account Type'	editable='false'	visible='true'		width='90'	textAlign='left'	forLevel='false' 
+			print_width='18'			defaultForLevel=''		booleanFlag='false'	sortDataType='S'	columnPrecision="NaN"/>
+			
+	<column data='debit_amt' 			label='Amount' 			editable='false' 	visible='true' 		width='100' textAlign='right' 	forLevel='false'
+			print_width='18'			defaultForLevel='' 		booleanFlag='false' sortDataType='N'	columnPrecision="2"/>
+			
+	<column data='check_no'				label='Check #'			editable='false'	visible='true'		width='100'	textAlign='left'	forLevel='false' 
+			print_width='18'			defaultForLevel=''		booleanFlag='false'	sortDataType='S'	columnPrecision="NaN"/>	
+		
+	<column data='check_date' 			label='Check Date' 		editable='false' 	visible='true' 		width='80' 	textAlign='left' 	forLevel='false' 
+			print_width='18'			defaultForLevel='' 		booleanFlag='false' sortDataType='D'	columnPrecision="NaN"/>
+							
+</columns> 

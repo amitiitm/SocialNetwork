@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rds:CommonServices xmlns:rds="business.*" xmlns:mx="http://www.adobe.com/2006/mxml">
+
+	<mx:HTTPService id="getViewFormat" url="rept/prod/labmemoregister/xmls/LabMemoRegisterCriteriaStru.xml" />
+	<mx:HTTPService id="getList" url="/production/production_report/lab_memo_register" />
+	<mx:HTTPService id="printRecord" url="" />
+
+</rds:CommonServices>

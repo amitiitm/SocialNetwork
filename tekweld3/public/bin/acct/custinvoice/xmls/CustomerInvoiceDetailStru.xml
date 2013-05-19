@@ -1,0 +1,18 @@
+<columns lockedColumnCount='0'>
+
+	<column data='serial_no' 	label='Serial #' 	editable='false' 	visible='true' 		width='60' 	textAlign='left' 
+			forLevel='false' 	defaultForLevel='' 	booleanFlag='false' sortDataType='N'	columnPrecision="0"/>
+			
+	<column data='gl_code' 		label='GL Code' 	editable='false' 	visible='true' 		width='150'	textAlign='left' 
+			forLevel='false' 	defaultForLevel='' 	booleanFlag='false' sortDataType='S'	columnPrecision="NaN"/>
+			
+	<column data='gl_name' 		label='GL A/c Name' editable='false' 	visible='true' 		width='250' textAlign='left' 
+			forLevel='false' 	defaultForLevel='' 	booleanFlag='false' sortDataType='S'	columnPrecision="NaN"/>
+			
+	<column data='gl_amt' 		label='Amount' 		editable='true' 	visible='true' 		width='100' textAlign='right' 
+			forLevel='false' 	defaultForLevel='' 	booleanFlag='false' sortDataType='N'	columnPrecision="2"/>
+			
+	<column data='description'	label='Description'	editable='false' 	visible='true' 		width='200' textAlign='left'
+			forLevel='false' 	defaultForLevel='' 	booleanFlag='false' sortDataType='S'	columnPrecision="NaN"/>
+
+</columns>

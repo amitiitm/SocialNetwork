@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<customcomponents:GenModule xmlns:mx="http://www.adobe.com/2006/mxml" xmlns:customcomponents="com.generic.customcomponents.*"
+							xmlns:components="com.generic.components.*"	width="100%" height="100%" backgroundColor="#FFFFFF"
+							paddingTop="0" verticalGap="0" creationPolicy="all" genModuleActive="module1_creationCompleteHandler(event)" xmlns:components1="dashboard.components.*">
+	
+	<mx:Script source="../scripts/DashboardModule.as"/>
+	<mx:VBox width="100%" height="100%" horizontalAlign="center" >
+		<mx:TabNavigator id="vsDashBoard" width="100%" height="100%" creationPolicy="all">
+			<components1:Dashboard1 id="dashboard1" label="Dashboard 1" width="100%" height="100%" creationPolicy="all" />
+			<components1:Dashboard2 id="dashboard2" label="Dashboard 2" width="100%" height="100%" creationPolicy="all" />
+			<components1:Dashboard3 id="dashboard3" label="Dashboard 3" width="100%" height="100%" creationPolicy="all" />
+			<components1:Dashboard4 id="dashboard4" label="Dashboard 4" width="100%" height="100%" creationPolicy="all" />
+			<components1:Dashboard5 id="dashboard5" label="Dashboard 5" width="100%" height="100%" creationPolicy="all" />
+			<components1:Dashboard6 id="dashboard6" label="Dashboard 6" width="100%" height="100%" creationPolicy="all" />
+			<components1:Dashboard7 id="dashboard7" label="Dashboard 7" width="100%" height="100%" creationPolicy="all" />
+		</mx:TabNavigator>
+	</mx:VBox>
+	
+	
+	
+</customcomponents:GenModule>

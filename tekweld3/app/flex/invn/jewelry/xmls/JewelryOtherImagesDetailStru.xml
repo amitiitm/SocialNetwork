@@ -1,0 +1,18 @@
+<columns  lockedColumnCount='0'>
+
+	<column data='serial_no'			label='Serial #'			editable='false'	visible='true'		width='100'	textAlign='left' 
+		forLevel='false'				defaultForLevel='' 			booleanFlag='false'	sortDataType='S' 	columnPrecision="NaN"/>
+	
+	<column data='image_thumnail'		label='Thumnail Image'		editable='false'	visible='true'		width='200'	textAlign='left' 
+		forLevel='false'				defaultForLevel='' 			booleanFlag='false'	sortDataType='S' 	columnPrecision="NaN"/>
+		
+	<column data='image_small'			label='Small Image'			editable='false' 	visible='true' 		width='200' textAlign='left'
+		forLevel='false' 				defaultForLevel=''			booleanFlag='false'	sortDataType='S'	columnPrecision="NaN"/>
+
+	<column data='image_normal'			label='Normal Image'		editable='false'	visible='true'		width='200'	textAlign='left' 
+		forLevel='false'				defaultForLevel='' 			booleanFlag='false'	sortDataType='S' 	columnPrecision="NaN"/>
+		
+	<column data='image_enlarge'		label='Enlarge Image'		editable='false'	visible='true'		width='200'	textAlign='left'
+		forLevel='false'				defaultForLevel='' 			booleanFlag='false'	sortDataType='S' 	columnPrecision="NaN"/>
+
+</columns> 

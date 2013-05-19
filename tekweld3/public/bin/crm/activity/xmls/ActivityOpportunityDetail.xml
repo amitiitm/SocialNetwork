@@ -1,0 +1,25 @@
+<columns  >
+
+	<column data='name' 			label='Name' 				editable='false' visible='true' width='100' textAlign='left' 
+		forLevel='false'			defaultForLevel=''			booleanFlag='false'/>
+	<column data='crm_account_id' 	label='Account #' 			editable='false' visible='true' width='100' textAlign='left' 
+		forLevel='false'			defaultForLevel=''			booleanFlag='false'/>
+	<column data='opportunity_type' label='Opportunity Type' 	editable='false' visible='true' width='100'	textAlign='left' 
+		forLevel='false'			defaultForLevel=''			booleanFlag='false'/>
+	<column data='stage' 			label='Stage' 				editable='false' visible='true' width='100' textAlign='left' 
+		forLevel='false'			defaultForLevel=''			booleanFlag='false'/>
+	<column data='close_date' 		label='Close Date'			editable='false' visible='true' width='100'	textAlign='left' 
+		forLevel='false'			defaultForLevel=''			booleanFlag='false'/>
+	<column data='probability_per' 	label='Probability %' 		editable='false' visible='true' width='100' textAlign='left' 
+		forLevel='false'			defaultForLevel=''			booleanFlag='false'/>
+	<column data='amount'			label='Amount' 				editable='false' visible='true' width='100' textAlign='left' 
+		forLevel='false'			defaultForLevel=''			booleanFlag='false'/>
+	<column data='subject' 			label='Subject' 			editable='false' visible='true' width='100' textAlign='left' 
+		forLevel='false'			defaultForLevel=''			booleanFlag='false'/>
+	<column data='description' 		label='Description' 		editable='false' visible='true' width='100' textAlign='left' 
+		forLevel='false'			defaultForLevel=''			booleanFlag='false'/>
+
+</columns> 
+
+
+				

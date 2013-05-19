@@ -1,0 +1,75 @@
+
+<h3>Congratulations</h3>
+<%= assigns[:parameter].customer.name%>,<br></br>
+
+You Have <b>WON!!</b> A Discount Coupon<br></br>
+
+Your Coupon Code Is <%= assigns[:parameter].coupon_code%><br/><br/>
+
+<%if assigns[:parameter].catalog_item_code.to_s != ''%>
+  Below are the details of discount types and prices applied to the item:<br/><br/>
+  <b>ITEM : </b><%= assigns[:parameter].catalog_item_code %>
+  <br/>
+
+  <%if assigns[:parameter].discount_type.to_s != ''%>
+    Discount Type Is  <%=  assigns[:parameter].discount_type.to_s%>
+    <br/>
+  <%else%>
+    <br/>
+    <table border="1">
+      <tr bgcolor="#4666C7">
+        <th>Tier 1 &nbsp;</th><th>Tier 2 &nbsp;</th><th>Tier 3 &nbsp;</th><th>Tier 4 &nbsp;</th><th>Tier 5 &nbsp;</th>
+        <th>Tier 6 &nbsp;</th><th>Tier 7 &nbsp;</th><th>Tier 8 &nbsp;</th><th>Tier 9 &nbsp;</th><th>Tier 10 &nbsp;</th>
+        <th>Tier 11 &nbsp;</th><th>Tier 12 &nbsp;</th><th>Tier 13 &nbsp;</th><th>Tier 14 &nbsp;</th><th>Tier 15 &nbsp;</th>
+      </tr>
+      <td><%= assigns[:parameter].column1 %></td><td><%= assigns[:parameter].column2 %></td>
+      <td><%= assigns[:parameter].column3 %></td><td><%= assigns[:parameter].column4 %></td>
+      <td><%= assigns[:parameter].column5 %></td><td><%= assigns[:parameter].column6 %></td>
+      <td><%= assigns[:parameter].column7 %></td><td><%= assigns[:parameter].column8 %></td>
+      <td><%= assigns[:parameter].column9 %></td><td><%= assigns[:parameter].column10 %></td>
+      <td><%= assigns[:parameter].column11 %></td><td><%= assigns[:parameter].column12 %></td>
+      <td><%= assigns[:parameter].column13 %></td><td><%= assigns[:parameter].column14 %></td>
+      <td><%= assigns[:parameter].column15 %></td>
+      <tr>
+      </tr>
+    </table>
+  <%end%>
+<%end%>
+<br/>
+<% discount_coupon_charge_array = [] %>
+<% assigns[:parameter].discount_coupon_charges.each{|charge| %>
+  <%if charge.trans_flag == 'A'%>
+    <% discount_coupon_charge_array << charge%>
+  <%end%>
+<%}%>
+
+<%if discount_coupon_charge_array[0]%>
+  Discounts on Charges are shown below
+  <table border="1">
+    <tr bgcolor="#4666C7">
+      <th>Setup Item Code</th><th>Original Rate</th><th>Discount Percent</th><th>Discounted Rate</th>
+    </tr>
+    <% assigns[:parameter].discount_coupon_charges.each{|charge| %>
+      <%if charge.trans_flag == 'A'%>
+        <tr>
+          <td><%= charge.catalog_item_code %></td><td><%= charge.original_rate %></td>
+          <td><%= charge.discount_per %></td><td><%= charge.discounted_rate %></td>
+        </tr>
+      <%end%>
+    <%}%>
+  </table>
+<%end%>
+
+<br/>
+<br/>
+
+Thank You,<br/>
+Ronnie Hillel<br/>
+Phone - 877-835-9353 / 631-694-5503<br/>
+Fax - 631-694-5568 /631-930-3268<br/>
+WWW.TEKWELD.COM<br/>
+Tekweld Catalog 2012<br/>
+ASI 90807 |SAGE 67569 | PPAI 266346 | IMPACT 969627 | UPIC tekweld
+
+
+

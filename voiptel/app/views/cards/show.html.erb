@@ -1,0 +1,40 @@
+<%= page_title :title => "Card Info - Serial: #{@card.formatted_serial} - PIN: #{@card.formatted_number}" %>
+
+<div class="two-column">
+	<div class="column">
+		<% box :type => "box_title", :title => "Card Info" do %>
+			<%= render :partial => "card_info" %>
+		<% end -%>
+	</div>
+	
+	<div class="column column-right">
+		<% box :type => "box_title", :title => "Other Cards" do %>
+			<%= render :partial => "other_cards" %>
+		<% end -%>
+	</div>
+</div>
+
+
+<div class="clearfix"></div>
+
+<div id="tabs">
+	<ul>
+		<% unless params[:no_memo] %>
+			<li><%= link_to("Memos", card_memos_path(@card)) %></li>
+		<% end -%>
+		<li><%= link_to("CDRs", "/card_cdrs/?limit=50&filter[card_id]=#{params[:id]}") %></li>
+		<li><%= link_to("Notifications", card_notifications_path(@card)) %></li>
+		<li><%= link_to("Recorded Calls", card_pbx_cdrs_path(@card)) %></li>
+	</ul>
+</div>
+<script>
+	$(document).ready(function(){
+		$('#tabs').tabs({
+			cookie: { expires: 30 },
+			fx: { opacity: 'toggle', duration : 'slow' },
+			async: true
+		});		
+	});
+</script>
+
+<%= convertable_fields(@card) %>

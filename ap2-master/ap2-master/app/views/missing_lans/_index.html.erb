@@ -1,0 +1,167 @@
+<style type="text/css">
+    .ui-state-hover { background-color: #ffC }
+    .inlineEdit-placeholder { font-style: italic; color: #555; }
+</style>
+<script type="text/javascript" src="/js/jquery.inlineedit.js"></script>
+<link rel="stylesheet" type="text/css" href="/css/custom.css">
+<link rel="stylesheet" type="text/css" href="/VOT_Admin_RecordedCalls_Inbound_files/style.css">
+<link rel="stylesheet" type="text/css" href="/VOT_Admin_RecordedCalls_Inbound_files/grid.css">
+<br>
+<div id="overview_menu"></div>
+<div style="clear:both;"></div>
+<%phones_group = @phones.group_by(&:account_id)%>
+<div class="inner-response">
+    <div class="inner-response" id="inner-response1">
+      <div id="overview_content_container">
+        <div id="overview_content" style="position:relative; border-radius:10px;">
+          <div id="recordsList" style=" min-width:200px;">
+            <h3>Missing LANs</h3>
+          </div>
+          <div style="clear:both;"></div>
+          <div id="overview-bar"><img src="../images/over_heading_bar.png" alt="" border="0"/></div>
+          <% if phones_group.size> 0 %>
+            <table id="index_missing_lans" class="tablesorter table pbx_calls" border="0" cellpadding="0" cellspacing="0" width="1000px">
+          <% else %>
+            <table border="0" cellpadding="0" cellspacing="0" width="1000px">
+          <% end %>
+            <thead>
+                <%= render :partial => 'list_header' %>
+            </thead>
+            <% row = 0 %>
+            <% counter = (@size - ((@page - 1) * @limit) + 1) %>
+            <tbody>
+                <%- hidden_row = []
+                phones_group.each do |accid, phones|
+                    phones.each do |ph|
+                        ln_number, is_permanent_lan = PhoneDidHandler.get_phone_lan ph
+                        counter -= 1 
+                        row += 1 
+                        i = row % 2 == 0 ? 1 : 2
+                        show_image = false
+                        cid = ph.account_id
+                        if (phones.count > 1 and ph == phones.first)
+                            show_image = true
+                            hidden_row << cid
+                            td_class = "#{cid} plus_image"
+                            tr_class = "markbold"
+                            style = ""
+                        end
+                        if phones.count > 1 && show_image == false
+                            tr_class = "#{cid} markitalic"
+                            style = "display:none"
+                        end
+                    -%>
+                    <tr style="<%= style %>" call_id="<%= ph.id %>" class="<%= tr_class %>" id="tr<%= i %>">
+                        <td valign="top">
+                            <div style="width:40px; padding-top:0px; float:left;"><%= counter %></div>
+                            <div class="<%= td_class %>" style="display:block; float:right">
+                            </div>
+                        </td>
+                        <td valign="top"><%= user_date(ph.created_at) %></td>
+                        <td valign="top"><%= number_to_phone(ph.number, :area_code => true) %> (<%=ph.type_name_short%>)</td>
+                        <td valign="top">
+                            <% full_name = ph.account.user.first_name + " " + ph.account.user.last_name %>
+                            <%=link_to full_name, "/accounts/#{full_name}-#{ph.account.id}", :class => "openable"%>
+                        </td>
+                        <td valign="top">
+                            <% if not is_permanent_lan%>
+                                <%=number_to_phone(ln_number,:area_code=>true)%>
+                            <%else%>
+                                <%=number_to_phone(PhoneDidHandler.temp_lan_for(ph), :area_code=>true)%>
+                            <%end%>
+                        </td>
+                        <td valign="top">
+                            <% if is_permanent_lan%>
+                                <%=number_to_phone(ln_number,:area_code=>true)%>
+                            <%end%>
+                        </td>
+                        <td valign="top"><%= ph.area_code_info.ratecenter if ph.area_code_info %></td>
+                        <td valign="top"><%= ph.area_code_info.state if ph.area_code_info %></td>
+                        <td valign="top"><%= ph.area_code_info.npa if ph.area_code_info %></td>
+                        <td valign="top"><%= time_in_word(ph.created_at) %> ago</td>
+                        <td valign="top" style="padding-left: 10px;">
+                            <% if !ph.notes.blank? || !ph.notes.nil? %>
+                                <span name="<%= ph.notes %>" id = "<%= ph.id %>" class="editable" title="Click to Edit"><%= ph.notes %></span>
+                            <% else %>
+                                <span name="Click to Add" id = "<%= ph.id %>" class="editable"></span>
+                            <% end %>
+                            <!--<input type="text" id="notes" name="notes" value="BackOrdered" style="background:url(/images/billing/textField_111_bg.jpg) no-repeat; width:111px;">-->
+                            <!--<input type="image" style="width:14px; height:16px;" src="../images/billing/edit.png" width="14" height="16" />-->
+                        </td>
+                        <td valign="top" style="padding-left: 20px;">
+                            <% if is_permanent_lan %>
+                                <a class="ajax-delete" href="/missing_lans/<%= ph.id %>"><img src="/images/billing/red.png?1343797428" alt="Red"></a>
+                            <% end %>
+                        </td>
+                    </tr>
+                <% end %>
+            <% end %>
+            </tbody>
+          </table>
+          <br>
+          <div class="clear"></div>
+          <div style="padding-left: 15px; padding-top: 10px;"><%= pbx_pager @path %></div>
+          <div style="clear:both;"></div>
+        </div>
+        <div class="clear"></div>
+        <div class="hide" id="container"></div>
+      </div>
+    </div>
+</div>
+
+<script type="text/javascript">
+    $(function(){
+        $('.editable').inlineEdit({ 
+          // buttons: '<button class="save" style="float:right; margin: 0px 5px 0 0;">Save</button>',
+          // cancelOnBlur: true,
+          buttons: '',
+          saveOnBlur: true,
+//          value: $.ajax({ data: { 'action': 'get' } }).responseText,
+          save: function(event, data) {
+		var self = this;
+              $.ajax({
+		data: {ph_id: this.id,note: data.value},
+		type: "post",
+		url: '/missing_lans/add_notes?ph_id=' + this.id + '&note=' + data.value, 
+		success: function(data){
+                	$('#'+data).addClass("editable");
+		},
+		error: function(){
+                	$(self).addClass("editable");
+			data.cancelMethod();
+		}
+              });
+          }
+        });
+    });
+
+  jQuery(document).ready(function () {
+    $(function () {
+      $('.calls').click(function () {
+        $('.calls').attr('style', 'color:""')
+        $(this).attr('style', 'color:green')
+      });
+
+      $(".plus_image").click(function () {
+        var klass = $(this).attr('class');
+        var cid = klass.split(" ")
+        var match = klass.match(/minus/i)
+        if (match) {
+          $('.' + cid[0]).hide();
+          $('.' + cid[0] + '.minus').show();
+          $(this).removeClass('minus_image');
+          $(this).addClass('plus_image');
+        }
+        else {
+          $('.' + cid[0]).show();
+          $(this).removeClass('plus_image');
+          $(this).addClass('minus_image');
+        }
+        $(this).show();
+      });
+    });
+        $("#index_missing_lans").tablesorter({sortList:[
+      [3, 1]
+    ]});
+  });
+</script>

@@ -1,0 +1,22 @@
+<div id="billing">
+	<div class="inner-page-title">
+		<h2>Billing Info</h2>
+		<span></span>
+	</div>
+	<div class="three-column-billing">
+		<div class="three-col-left">
+			<div class="column col1" id="middle">
+				<%= render :partial => "accounts/billing/billing_info" %>
+			</div>
+		</div>
+	</div>
+
+	<div class="clear"></div>
+	<script>
+		$(".accordion_cards").accordion({
+			autoHeight: false,
+			active: false,
+			collapsible: true		
+		});
+	</script>
+</div>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<gencomponents:AddEdit xmlns:mx="http://www.adobe.com/2006/mxml" 
+	height="100%" width="100%" verticalGap="0"
+	xmlns:customcomponents="com.generic.customcomponents.*"
+	xmlns:gencomponents="com.generic.components.*" 
+	creationPolicy="all" >
+	
+	<mx:Script source="../scripts/DailyMetalRateAddEditScript.as"/>
+
+	<mx:VBox width="100%" height="100%" verticalGap="3">
+		<mx:HBox width="100%" horizontalGap="2" verticalAlign="middle">
+			<mx:Label text="Date" width="100" height="20" textAlign="right"/>
+			<customcomponents:GenDateField id="dfMetal_rate_date" width="100" xmlTag="metal_rate_date" 
+				updatableFlag="true" tableName="metal_rate" tabIndex="1" height="20"
+				validationFlag="true" toolTip="Date" fontSize="9" />
+		</mx:HBox>
+		
+		<mx:Spacer height="15" width="100%" />
+		
+		<mx:HBox width="100%" horizontalGap="2" verticalAlign="middle">
+			<mx:Label text="Gold Rate" width="100" height="20" textAlign="right"/>
+			<customcomponents:GenTextInput id="tiGold_rate" width="100" xmlTag="gold_rate" updatableFlag="true" 
+				tabIndex="2" tableName="metal_rate" height="20" validationFlag="false" toolTip="Gold Rate"
+				dataType="N" textAlign="right" defaultValue="0.00" maxValue="9999999.99" />
+		</mx:HBox>
+		<mx:Spacer height="8"/>
+		<mx:HBox width="100%" horizontalGap="2" verticalAlign="middle">
+			<customcomponents:GenCheckBox labelPlacement="left" label="Lock" id="cbLock" width="112" xmlTag="update_flag"
+					updatableFlag="true" tableName="metal_rate" defaultValue="Y" textAlign="right" tabIndex="3" enabled="true" height="20" 
+					dataValueForOn="V" dataValueForOff="Y" />
+		</mx:HBox>
+	</mx:VBox>
+
+</gencomponents:AddEdit>

@@ -1,0 +1,352 @@
+<?xml version="1.0" encoding="utf-8"?>
+<gencomponents:AddEdit xmlns:mx="http://www.adobe.com/2006/mxml" 
+	height="100%" width="100%" verticalGap="0"
+	xmlns:customcomponents="com.generic.customcomponents.*"
+	xmlns:gencomponents="com.generic.components.*">
+	<mx:Script source="../scripts/DiscountCouponsAddEditscript.as"/>
+	<mx:VBox width="100%" height="100%" verticalGap="3">
+		<mx:HBox horizontalGap="0" verticalGap="2" width="100%">
+			<mx:VBox height="100%" width="266" horizontalGap="2" verticalGap="3">
+				<mx:HBox height="20" verticalAlign="middle" horizontalGap="2" width="100%">
+					<mx:Label text="Code #" width="95" textAlign="right" height="20" />
+					<customcomponents:GenTextInput id="tiCode" width="157" tabIndex="2" height="20"   enabled="true" editable="false"
+												   xmlTag="coupon_code" updatableFlag="true" tableName="discount_coupon" maxChars="50"/>	
+				</mx:HBox>
+				<mx:HBox height="20" verticalAlign="middle" horizontalGap="2" width="100%">
+					<mx:Label text="Customer #"  width="95" textAlign="right" height="20" />
+					<customcomponents:GenTextInputWithHelp id="dcCustomer_id"
+														   width="158" height="20" 
+														   toolTip="Customer #" defaultValue=""
+														   dataField="id" 		labelField="code"
+														   xmlTag="customer_id" labelTag="customer_code"
+														   dataSourceName="Customer" 
+														   tabIndex="10"  itemChangedEvent="tiCustomerCode.dataValue=dcCustomer_id.labelValue"  
+														   validationFlag="true" 
+														   updatableFlag="true" tableName="discount_coupon"
+														   lookupFormatUrl	=	"retailCustomerLookupHelpFormat"
+														   />
+					<mx:HBox visible="false" includeInLayout="false">
+						<mx:Label text="Code" width="95" textAlign="right" />
+						<customcomponents:GenTextInput id="tiCustomerCode" height="20" width="140" textAlign="left" defaultValue='' tabIndex="1"
+													   xmlTag="customer_code" dataType="S" updatableFlag="true" tableName="discount_coupon" maxChars="50" toolTip="Customer Code"
+													   editable="true" validationFlag="true" upperCaseFlag="true" />
+					</mx:HBox>
+				</mx:HBox>
+				
+				
+				<mx:HBox verticalAlign="middle" horizontalGap="2" width="100%">
+					<mx:Label text="Start Date" width="95" textAlign="right" height="20" />
+					<customcomponents:GenDateField id="dfFrom_date" width="116" xmlTag="from_date"
+												   updatableFlag="true" tabIndex="20" tableName="discount_coupon" height="20" 
+												   validationFlag="true" toolTip="discount_coupon Date"
+												   />
+				</mx:HBox>
+				<mx:HBox verticalAlign="middle" horizontalGap="2" width="100%">
+					<mx:Label text="End Date" width="95" textAlign="right" height="20" />
+					<customcomponents:GenDateField id="dfTo_date" width="116" xmlTag="to_date"
+												   updatableFlag="true" tabIndex="30" tableName="discount_coupon" height="20" 
+												   validationFlag="true" toolTip="discount_coupon Date"
+												   />
+				</mx:HBox>
+				
+			</mx:VBox>
+			<!--	<mx:VBox height="100%" width="266" horizontalGap="2">
+			
+			
+			</mx:VBox>-->
+			<mx:Spacer width="50" height="1"/>
+			<mx:VBox height="100%" width="266" horizontalGap="2" verticalGap="3">
+				
+				<mx:HBox height="20" verticalAlign="middle" horizontalGap="2" width="100%">
+					<mx:Label text="Uses Rewareded:" width="115" textAlign="right" height="20" />
+					<customcomponents:GenTextInput id="tiNoOfUses" width="44" tabIndex="40" height="20"   setDefaultOnEmpty="true"
+												   xmlTag="no_of_uses" updatableFlag="true" dataType="N" defaultValue="1" enabled="true" maxValue="99" validationFlag="true" tableName="discount_coupon" maxChars="50"/>	
+				</mx:HBox>
+				<mx:HBox height="20" verticalAlign="middle" horizontalGap="2" width="100%">
+					<mx:Label text="Uses Reedemed:" width="115" textAlign="right" height="20" />
+					<customcomponents:GenTextInput id="tiNoOfUsed" width="44" tabIndex="50" height="20"   setDefaultOnEmpty="true"
+												   xmlTag="no_of_used" updatableFlag="true" dataType="N" defaultValue="0" enabled="false" maxValue="99" validationFlag="true" tableName="discount_coupon" maxChars="50"/>	
+				</mx:HBox>
+				<mx:HBox height="20" verticalAlign="middle" horizontalGap="2" width="100%">
+					<customcomponents:GenCheckBox labelPlacement="left" label="Approve ?" id="cbapprove_Flag" width="130"
+												  xmlTag="approval_flag" updatableFlag="true" tableName="discount_coupon" defaultValue="N" textAlign="right" tabIndex="70"
+												  dataValueForOn = "Y" dataValueForOff = "N" itemChangedEvent="validatePassword()" />
+				</mx:HBox>
+				
+				
+				
+				
+			</mx:VBox>
+			
+		</mx:HBox>
+		
+		<mx:Spacer height="5"/>
+		<mx:HBox width="100%" height="82" horizontalGap="2" verticalAlign="middle" verticalGap="3">
+			<mx:Label text="Reason" width="95" textAlign="right" height="20" />
+			<customcomponents:GenTextArea id="taDiscountReason"  width="485" height="100%"
+										  maxChars="50" tabIndex="60" tableName="discount_coupon"
+										  updatableFlag="true" xmlTag="discount_reason"/>	
+		</mx:HBox>
+		
+		
+		
+		<mx:VBox width="100%" height="20" horizontalGap="2" verticalAlign="middle" verticalGap="3" visible="false" includeInLayout="false">
+			<mx:HBox>
+				<customcomponents:GenCheckBox labelPlacement="left" label="Free Shipping ?" id="cbNext_Day_Flag" width="109"
+											  xmlTag="free_shipping_flag" updatableFlag="true" tableName="sales_order" defaultValue="N" textAlign="right" tabIndex="70"
+											  dataValueForOn = "Y" dataValueForOff = "N" />
+			</mx:HBox>
+			
+		</mx:VBox>
+		<mx:Spacer height="5"/>
+		<mx:TabNavigator width="100%" height="100%" >
+			<mx:VBox label="Item Discount" width="100%" height="172" horizontalGap="2" verticalAlign="middle" verticalGap="3">
+				<mx:HBox height="20" verticalAlign="middle" horizontalGap="2" width="100%">
+					<mx:Label text="Item #" width="95" textAlign="right"  height="20"/>
+					<customcomponents:GenTextInputWithHelp
+						lookupFormatUrl	=  "itemLookupHelpFormat"
+						id="dcItemId" 
+						width="158" 
+						toolTip="Item #" 
+						dataSourceName="NonInventoryItem"
+						height="20" 
+						tabIndex="80" 
+						validationFlag="false" 
+						xmlTag="catalog_item_id"
+						labelTag="catalog_item_code"
+						dataField="id" 
+						labelField= "store_code"
+						updatableFlag="true" 
+						tableName="discount_coupon" 
+						itemChangedEvent="getItemDetails();tiItemCode.dataValue	=	dcItemId.labelValue"
+						/>
+					<mx:HBox visible="false" includeInLayout="false">
+						<mx:Label text="Code" width="95" textAlign="right" />
+						<customcomponents:GenTextInput id="tiItemCode" width="0" height="0" includeInLayout="false" visible="false"
+													   xmlTag="catalog_item_code" updatableFlag="true"  toolTip="Item Code"
+													   tableName="discount_coupon" />
+					</mx:HBox>
+					<mx:HBox height="20" verticalAlign="middle" horizontalGap="2" width="100%">
+						<mx:Label text="Type" width="167" textAlign="right" height="20" />
+						<customcomponents:GenComboBox id="cbType" width="158" cornerRadius="0" xmlTag="discount_type" updatableFlag="true"
+													  tableName="discount_coupon"  tabIndex="90" labelField="label" height="20" defaultValue=""  		
+													  dataProvider="{__genModel.masterData.child('charge_code').charge_code}" toolTip="Discount Type"
+													  itemChangedEvent="setColumnValue()"/>
+					</mx:HBox>
+				</mx:HBox>
+				
+				<mx:HBox width="100%" height="126" horizontalGap="2" verticalGap="3">
+					
+					<mx:VBox  height="126" horizontalGap="2" verticalGap="3">
+						
+						<mx:HBox verticalAlign="middle" horizontalGap="2" width="100%">
+							<mx:Label id="lblBlank" text="Blank" width="95" textAlign="right"/>
+							<customcomponents:GenTextInput id="tiBlankprice" width="80" height="20"
+														   dataType="N" defaultValue="0.000" enabled="true"
+														   maxValue="9999999999.999" rounding="false"
+														   setDefaultOnEmpty="true" tabIndex="100"
+														   tableName="discount_coupon" textAlign="right"
+														   toolTip="Quantity" updatableFlag="true"
+														   validationFlag="true" xmlTag="blank_price"/>
+							
+						</mx:HBox>
+						<mx:HBox verticalAlign="middle" horizontalGap="2" width="100%">
+							
+							<mx:Label id="lblTier1" text="Tier 1" width="95" textAlign="right"/>
+							<customcomponents:GenTextInput id="tiColumn1" width="80" height="20" dataType="N"
+														   defaultValue="0.000" enabled="true"
+														   itemChangedEvent="setColumnsOrder()"
+														   maxValue="9999999999.999" rounding="false"
+														   setDefaultOnEmpty="true" tabIndex="110"
+														   tableName="discount_coupon" textAlign="right"
+														   toolTip="Quantity" updatableFlag="true"
+														   validationFlag="true" xmlTag="column1"/>
+						</mx:HBox>
+						
+						<mx:HBox verticalAlign="middle" horizontalGap="2" width="100%">
+							<mx:Label id="lblTier2" text="Tier 2" width="95" textAlign="right"/>
+							<customcomponents:GenTextInput id="tiColumn2" width="80" height="20" dataType="N"
+														   defaultValue="0.000" enabled="true"
+														   itemChangedEvent="setColumnsOrder()"
+														   maxValue="9999999999.999" rounding="false"
+														   setDefaultOnEmpty="true" tabIndex="120"
+														   tableName="discount_coupon" textAlign="right"
+														   toolTip="Quantity" updatableFlag="true"
+														   validationFlag="true" xmlTag="column2"/>
+						</mx:HBox>
+						<mx:HBox verticalAlign="middle" horizontalGap="2" width="100%">
+							<mx:Label id="lblTier3" text="Tier 3" width="95" textAlign="right"/>
+							
+							<customcomponents:GenTextInput id="tiColumn3" width="80" height="20" dataType="N"
+														   defaultValue="0.000" enabled="true"
+														   itemChangedEvent="setColumnsOrder()"
+														   maxValue="9999999999.999" rounding="false"
+														   setDefaultOnEmpty="true" tabIndex="130"
+														   tableName="discount_coupon" textAlign="right"
+														   toolTip="Quantity" updatableFlag="true"
+														   validationFlag="true" xmlTag="column3"/>
+						</mx:HBox>
+						<mx:HBox verticalAlign="middle" horizontalGap="2" width="100%">
+							<mx:Label id="lblTier4" text="Tier 4" width="95" textAlign="right"/>
+							<customcomponents:GenTextInput id="tiColumn4" width="80" height="20" dataType="N"
+														   defaultValue="0.000" enabled="true"
+														   itemChangedEvent="setColumnsOrder()"
+														   maxValue="9999999999.999" rounding="false"
+														   setDefaultOnEmpty="true" tabIndex="140"
+														   tableName="discount_coupon" textAlign="right"
+														   toolTip="Quantity" updatableFlag="true"
+														   validationFlag="true" xmlTag="column4"/>
+						</mx:HBox>
+						
+					</mx:VBox>
+					<mx:VBox height="126" horizontalGap="2" verticalGap="3" width="100%">
+						
+						
+						<mx:HBox verticalAlign="middle" horizontalGap="2" width="100%">
+							<mx:Label id="lblTier5" text="Tier 5" width="245" textAlign="right"/>
+							<customcomponents:GenTextInput id="tiColumn5" width="80" height="20" dataType="N"
+														   defaultValue="0.000" enabled="true"
+														   itemChangedEvent="setColumnsOrder()"
+														   maxValue="9999999999.999" rounding="false"
+														   setDefaultOnEmpty="true" tabIndex="150"
+														   tableName="discount_coupon" textAlign="right"
+														   toolTip="Quantity" updatableFlag="true"
+														   validationFlag="true" xmlTag="column5"/>
+						</mx:HBox>
+						<mx:HBox verticalAlign="middle" horizontalGap="2" width="100%">
+							<mx:Label id="lblTier6" text="Tier 6" width="245" textAlign="right"/>
+							<customcomponents:GenTextInput id="tiColumn6" width="80" height="20" dataType="N"
+														   defaultValue="0.000" enabled="true"
+														   itemChangedEvent="setColumnsOrder()"
+														   maxValue="9999999999.999" rounding="false"
+														   setDefaultOnEmpty="true" tabIndex="160"
+														   tableName="discount_coupon" textAlign="right"
+														   toolTip="Quantity" updatableFlag="true"
+														   validationFlag="true" xmlTag="column6"/>	
+						</mx:HBox>
+						
+						<mx:HBox verticalAlign="middle" horizontalGap="2" width="100%">
+							<mx:Label text="Tier 7" id="lblTier7" width="245" textAlign="right"/>
+							<customcomponents:GenTextInput id="tiColumn7" width="80" height="20" dataType="N"
+														   defaultValue="0.000" enabled="true"
+														   itemChangedEvent="setColumnsOrder()"
+														   maxValue="9999999999.999" rounding="false"
+														   setDefaultOnEmpty="true" tabIndex="170"
+														   tableName="discount_coupon" textAlign="right"
+														   toolTip="Quantity" updatableFlag="true"
+														   validationFlag="true" xmlTag="column7"/>	
+						</mx:HBox>
+						<mx:HBox verticalAlign="middle" horizontalGap="2" width="100%">
+							<mx:Label text="Tier 8" id="lblTier8" width="245" textAlign="right"/>
+							<customcomponents:GenTextInput id="tiColumn8" width="80" height="20" dataType="N"
+														   defaultValue="0.000" enabled="true"
+														   itemChangedEvent="setColumnsOrder()"
+														   maxValue="9999999999.999" rounding="false"
+														   setDefaultOnEmpty="true" tabIndex="180"
+														   tableName="discount_coupon" textAlign="right"
+														   toolTip="Quantity" updatableFlag="true"
+														   validationFlag="true" xmlTag="column8"/>	
+						</mx:HBox>
+						<mx:HBox verticalAlign="middle" horizontalGap="2" width="100%">
+							<mx:Label id="lblTier9" text="Tier 9" width="245" textAlign="right"/>
+							<customcomponents:GenTextInput id="tiColumn9" width="80" height="20" dataType="N"
+														   defaultValue="0.000" enabled="true"
+														   itemChangedEvent="setColumnsOrder()"
+														   maxValue="9999999999.999" rounding="false"
+														   setDefaultOnEmpty="true" tabIndex="190"
+														   tableName="discount_coupon" textAlign="right"
+														   toolTip="Quantity" updatableFlag="true"
+														   validationFlag="true" xmlTag="column9"/>	
+						</mx:HBox>
+						
+					</mx:VBox>
+					<mx:VBox height="126" horizontalGap="2" verticalGap="3">
+						
+						
+						<mx:HBox verticalAlign="middle" horizontalGap="2" width="100%">
+							<mx:Label id="lblTier10" text="Tier 10" width="245" textAlign="right"/>
+							<customcomponents:GenTextInput id="tiColumn10" width="80" height="20" dataType="N"
+														   defaultValue="0.000" enabled="true"
+														   itemChangedEvent="setColumnsOrder()"
+														   maxValue="9999999999.999" rounding="false"
+														   setDefaultOnEmpty="true" tabIndex="200"
+														   tableName="discount_coupon" textAlign="right"
+														   toolTip="Quantity" updatableFlag="true"
+														   validationFlag="true" xmlTag="column10"/>	
+						</mx:HBox>
+						<mx:HBox verticalAlign="middle" horizontalGap="2" width="100%">
+							<mx:Label text="Tier 11" id="lblTier11" width="245" textAlign="right"/>
+							<customcomponents:GenTextInput id="tiColumn11" width="80" height="20" dataType="N"
+														   defaultValue="0.000" enabled="true"
+														   itemChangedEvent="setColumnsOrder()"
+														   maxValue="9999999999.999" rounding="false"
+														   setDefaultOnEmpty="true" tabIndex="210"
+														   tableName="discount_coupon" textAlign="right"
+														   toolTip="Quantity" updatableFlag="true"
+														   validationFlag="true" xmlTag="column11"/>	
+						</mx:HBox>
+						<mx:HBox verticalAlign="middle" horizontalGap="2" width="100%">
+							<mx:Label text="Tier 12" width="245" id="lblTier12" textAlign="right"/>
+							<customcomponents:GenTextInput id="tiColumn12" width="80" height="20" dataType="N"
+														   defaultValue="0.000" enabled="true"
+														   itemChangedEvent="setColumnsOrder()"
+														   maxValue="9999999999.999" rounding="false"
+														   setDefaultOnEmpty="true" tabIndex="220"
+														   tableName="discount_coupon" textAlign="right"
+														   toolTip="Quantity" updatableFlag="true"
+														   validationFlag="true" xmlTag="column12"/>	
+						</mx:HBox>
+						<mx:HBox verticalAlign="middle" horizontalGap="2" width="100%">
+							<mx:Label text="Tier 13" width="245" textAlign="right" id="lblTier13"/>
+							<customcomponents:GenTextInput id="tiColumn13" width="80" height="20" dataType="N"
+														   defaultValue="0.000" enabled="true"
+														   itemChangedEvent="setColumnsOrder()"
+														   maxValue="9999999999.999" rounding="false"
+														   setDefaultOnEmpty="true" tabIndex="230"
+														   tableName="discount_coupon" textAlign="right"
+														   toolTip="Quantity" updatableFlag="true"
+														   validationFlag="true" xmlTag="column13"/>	
+						</mx:HBox>
+						<mx:HBox verticalAlign="middle" horizontalGap="2" width="100%">
+							<mx:Label text="Tier 14" width="245" textAlign="right" id="lblTier14"/>
+							<customcomponents:GenTextInput id="tiColumn14" width="80" height="20" dataType="N"
+														   defaultValue="0.000" enabled="true"
+														   itemChangedEvent="setColumnsOrder()"
+														   maxValue="9999999999.999" rounding="false"
+														   setDefaultOnEmpty="true" tabIndex="240"
+														   tableName="discount_coupon" textAlign="right"
+														   toolTip="Quantity" updatableFlag="true"
+														   validationFlag="true" xmlTag="column14"/>	
+						</mx:HBox>
+						
+						
+						
+						
+					</mx:VBox>
+					<mx:HBox verticalAlign="middle" horizontalGap="2" width="100%">
+						<mx:Label text="Tier 15" width="80" textAlign="right" id="lblTier15"/>
+						<customcomponents:GenTextInput id="tiColumn15" width="80" height="20" dataType="N"
+													   defaultValue="0.000" enabled="true"
+													   itemChangedEvent="setColumnsOrder()"
+													   maxValue="9999999999.999" rounding="false"
+													   setDefaultOnEmpty="true" tabIndex="250"
+													   tableName="discount_coupon" textAlign="right"
+													   toolTip="Quantity" updatableFlag="true"
+													   validationFlag="true" xmlTag="column15"/>	
+					</mx:HBox>
+				</mx:HBox>
+				
+			</mx:VBox>
+			<gencomponents:Detail label="Service Charge Discount" id="dtlServiceChargeDiscount"
+								  updatableFlag="true"
+								  checkBlankRowColumn=""
+								  rootNode="discount_coupon_charges"
+								  formatServiceID="discountCouponServiceDetailFormat"
+								  height="100%" width="100%"
+								  DetailEditClass="{saoi.discountcoupons.components.DiscountCouponsServiceChargeDetail}"
+								  title="Discont Coupon Detail"
+								  />
+		</mx:TabNavigator>
+	</mx:VBox>
+	
+</gencomponents:AddEdit>

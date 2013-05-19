@@ -1,0 +1,19 @@
+<%= javascript_include_tag :high_charts %>
+
+<div id="charts"></div>
+
+<%= months %>
+<script type="text/javascript" charset="utf-8">
+	$(function(){
+		$.get("/reports/sales/monthly_graph", "year=<%= params[:year] %>",function(resp){
+			$("#charts").html(resp);
+		})
+	});
+	$(".years").live('click', function(e){
+		e.preventDefault();
+		var year = $(this).attr("href");
+		$.get("/reports/sales/monthly_graph", ("year=" + year),function(resp){
+			$("#charts").html(resp);
+		})
+	});
+</script>

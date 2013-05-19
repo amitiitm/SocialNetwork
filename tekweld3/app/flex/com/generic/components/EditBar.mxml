@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<mx:HBox xmlns:mx="http://www.adobe.com/2006/mxml" xmlns:customcomponents="com.generic.customcomponents.*" 
+	horizontalGap="0" verticalGap="0" paddingTop="0" paddingBottom="0"
+	width="100%" height="100%" doubleClickEnabled="true" doubleClick="doubleClickHandler(event)" >
+
+	<mx:Metadata>
+		[Event(name="downKeyEvent", type="com.generic.events.EditBarEvent")]
+		[Event(name="upKeyEvent", type="com.generic.events.EditBarEvent")]
+		[Event(name="tabKeyEvent", type="com.generic.events.EditBarEvent")]
+		[Event(name="shiftTabKeyEvent", type="com.generic.events.EditBarEvent")]
+		[Event(name="scrollOnTabEvent", type="com.generic.events.EditBarEvent")]
+		[Event(name="createdEvent", type="com.generic.events.EditBarEvent")]
+		[Event(name="editBarItemChangedEvent", type="com.generic.events.EditBarEvent")]
+		[Event(name="editBarDoubleClickEvent", type="com.generic.events.EditBarEvent")]
+		
+	</mx:Metadata> 
+
+	<mx:Script source="../scripts/EditBarScript.as"/>
+
+</mx:HBox>

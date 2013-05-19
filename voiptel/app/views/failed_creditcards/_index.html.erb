@@ -1,0 +1,121 @@
+<link rel="stylesheet" type="text/css" href="/css/custom.css">
+<link rel="stylesheet" type="text/css" href="/VOT_Admin_RecordedCalls_Inbound_files/style.css">
+<link rel="stylesheet" type="text/css" href="/VOT_Admin_RecordedCalls_Inbound_files/grid.css">
+<br>
+<div id="overview_menu">
+</div>
+<div style="clear:both;"></div>
+  <% ot = @credit_cards.collect(&:account_id) %>
+  <% ot_count = Hash.new(0) %>
+  <%- ot.each do |v|
+    ot_count[v] += 1
+  end
+  -%>
+<div class="inner-response">
+    <div class="inner-response" id="inner-response1">
+      <div id="overview_content_container">
+        <div id="overview_content" style="position:relative; border-radius:10px;">
+          <div id="recordsList" style=" min-width:200px;">
+            <h3>Failed Credit Cards</h3>
+            <div class="column column-right" style="">
+              <div id="player"></div>
+            </div>
+          </div>
+          <div style="clear:both;"></div>
+          <div id="overview-bar"><img src="../images/over_heading_bar.png" alt="" border="0"/></div>
+          <% if @credit_cards.count > 0 %>
+              <table id="index_failed_credticards" class="tablesorter table pbx_calls" border="0" cellpadding="0" cellspacing="0" width="900px">
+          <% else %>
+              <table border="0" cellpadding="0" cellspacing="0" width="900px">
+          <% end %>
+            <thead>
+            <%= render :partial => 'list_header' %>
+            </thead>
+            <% row = 0 %>
+                <% counter = (@size - ((@page - 1) * @limit) + 1) %>
+            <tbody>
+                <% hidden_row = [] %>
+                <% @credit_cards.each do |cc| %>
+                  <% counter -= 1 %>
+                  <% row += 1 %>
+                  <% i = row % 2 == 0 ? 1 : 2 %>
+                  <% show_image = false %>
+                  <% cid = cc.account_id %>
+                  <%- if (ot_count[cid] > 1)
+                        show_image = true
+                        ot_count.delete(cid)
+                        hidden_row << cid
+                        td_class = "#{cid} plus_image"
+                        tr_class = "markbold"
+                        style = ""
+                      end
+                  -%>
+                  <%- if hidden_row.include?(cid) && show_image == false
+                        tr_class = "#{cid} markitalic"
+                        style = "display:none"
+                      end
+                  -%>
+                  <tr style="<%= style %>" call_id="<%= cc.id %>" class="<%= tr_class %>" id="tr<%= i %>">
+                    <td valign="top">
+                      <div style="width:40px; padding-top:0px; float:left;"><%= counter %></div>
+                      <div class="<%= td_class %>" style="display:block; float:right">
+                      </div>
+                    </td>
+                    <td valign="top"><%= user_date(cc.created_at) %></td>
+                    <td valign="top">
+                        <% full_name = cc.account.user.first_name + " " + cc.account.user.last_name %>
+                        <%=link_to full_name, "/accounts/#{full_name}-#{cc.account.id}", :class => "openable"%>
+                    </td>
+                    <td valign="top"><%= cc.account.number if cc.account %></td>
+                    <td valign="top"><%= cc.transaction_reference.exp_month if cc.transaction_reference %>/<%= cc.transaction_reference.exp_year if cc.transaction_reference %></td>
+                    <td valign="top"><% if cc.transaction_reference %><%= (credit_card_icon(cc.transaction_reference.card_type) + " &nbsp;" + cc.transaction_reference.card_number) %><% end %></td>
+                    <td valign="top"><%= time_in_word(cc.created_at) %> ago</td>
+                    <td valign="top" style="padding-left: 20px;">
+                        <%= link_to(image_tag("/images/advance_search/zoom.png"), "/failed_creditcards/show_notes/#{cc.id}", :class => "ajax pbx", :update => "container") %>
+                    </td>
+                  </tr>
+                 <% end %>
+            </tbody>
+          </table>
+          <br>
+          <div class="clear"></div>
+          <div style="padding-left: 15px; padding-top: 10px;"><%= pbx_pager @path %></div>
+          <div style="clear:both;"></div>
+        </div>
+        <div class="clear"></div>
+        <div class="hide" id="container"></div>
+      </div>
+    </div>
+</div>
+
+<script>
+  jQuery(document).ready(function () {
+    $(function () {
+      $('.calls').click(function () {
+        $('.calls').attr('style', 'color:""')
+        $(this).attr('style', 'color:green')
+      });
+
+      $(".plus_image").click(function () {
+        var klass = $(this).attr('class');
+        var cid = klass.split(" ")
+        var match = klass.match(/minus/i)
+        if (match) {
+          $('.' + cid[0]).hide();
+          $('.' + cid[0] + '.minus').show();
+          $(this).removeClass('minus_image');
+          $(this).addClass('plus_image');
+        }
+        else {
+          $('.' + cid[0]).show();
+          $(this).removeClass('plus_image');
+          $(this).addClass('minus_image');
+        }
+        $(this).show();
+      });
+    });
+    $("#index_failed_credticards").tablesorter({sortList:[
+      [2, 1]
+    ]});
+  });
+</script>

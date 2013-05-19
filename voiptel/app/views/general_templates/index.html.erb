@@ -1,0 +1,29 @@
+<%= page_title :title => "General  Template" %>
+<div class="two-column-free">
+  <div class="column">
+    <% box :type => "box_title",:type => "simple", :style => "width:1270px" do %>
+      <% table :width => "350px" do |t| %>
+        <% t.th "#" %>
+        <% t.th "Name" %>
+        <% t.th "Identifier" %>
+        <% t.th "Actions" %>
+
+        <% counter = 0 %>
+        <% for general_template in @general_templates %>
+          <% t.td (counter += 1) %>
+          <% t.td general_template.name %>
+          <% t.td general_template.uid %>
+          <% t.td action_links(
+                          (link_to "Edit", edit_general_template_path(general_template), :class => "ajax", :update => "container"),
+                          (link_to "Delete", general_template_path(general_template), :class => "ajax-delete")
+                  ) %>
+          <% t.new_row %>
+        <% end %>
+      <% end %>
+      <br>
+      <%= button "new_general_template", "New General Template", :href => new_general_template_path, :update => "container" %>
+    <% end %>
+
+    <div class="hide" id="container"></div>
+  </div>
+</div>

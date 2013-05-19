@@ -1,0 +1,19 @@
+<% form_for [@account, @tmp_credit_card_info], :html => {:class => "forms"} do |f| %>
+	<%= error("Unable to Authorize:") %>
+	<ul>
+		<li>
+			<div class="first float-left">
+				<label class="desc">First Name</label>
+				<%= f.text_field :first_name, :class => 'field text',:style=>'width:118px;height:21px; background:url(/images/billing/txtfield_123_03.jpg) no-repeat;', :size => 15%>
+			</div>
+			<div class="first float-left">
+				<label class="desc">Last Name</label>
+        <%= f.text_field :last_name, :class => 'field text',:style=>'width:118px;height:21px; background:url(/images/billing/txtfield_123_03.jpg) no-repeat;', :size => 15%>
+			</div>
+		</li>
+		<li>
+			<label>Transfer:</label>
+			<%= f.select :transfer, TmpCreditCardInfo.select_options_for_transfer %>
+		</li>
+	</ul>
+<% end %>

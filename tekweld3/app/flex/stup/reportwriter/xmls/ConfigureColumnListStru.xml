@@ -1,0 +1,9 @@
+<columns>
+		<column	data='select_yn'		label='Select'				editable='true'		visible='true'		width='50' 
+				textAlign='center' 		forLevel='false' 			sortDataType='S'	dataType='S' 		booleanFlag='true'  						
+				columnPrecision="NaN" />
+				
+		<column data='column_label' 	label='Column' 				 editable='false' 	visible='true' 		width='100' 
+				textAlign='left' 		forLevel='true'				 dataType='S' 		sortDataType='S' 	booleanFlag='false' 
+				columnPrecision="NaN"/>		
+</columns> 

@@ -1,0 +1,7 @@
+<% box :type => "dialog", :id => "new-distributor", :title => "New Distributor", :icon => "ui-icon-person" do %>
+	<% box :type => "simple", :title => "New Distributor" do %>
+		<%= render :partial => "distributor_form", :locals => {:distributor => Distributor.new} %>
+	<% end -%>
+<% end -%>
+
+<%= javascript_include_tag "/js/ap.dialog.js" %>

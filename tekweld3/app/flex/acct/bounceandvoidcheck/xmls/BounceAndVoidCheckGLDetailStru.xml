@@ -1,0 +1,30 @@
+<columns  lockedColumnCount='0'>
+
+	<column data='serial_no' 	label='Serial #' 		editable='false' 	visible='true' 		width='60' 	textAlign='left' 
+			forLevel='false' 	defaultForLevel='' 		booleanFlag='false' sortDataType='N'	columnPrecision="0"/>
+			
+	<column data='trans_bk' 	label='Trans Bk' 		editable='false' 	visible='true' 		width='80' 	textAlign='left' 
+			forLevel='false' 	defaultForLevel='' 		booleanFlag='false' sortDataType='S'	columnPrecision="NaN"/>
+			
+	<column data='trans_no' 	label='Trans #' 		editable='false' 	visible='true' 		width='80' 	textAlign='left' 
+			forLevel='false' 	defaultForLevel='' 		booleanFlag='false' sortDataType='N'	columnPrecision="0"/>
+			
+	<column data='trans_date' 	label='Trans Date' 		editable='false' 	visible='true' 		width='80' 	textAlign='left' 
+			forLevel='false' 	defaultForLevel='' 		booleanFlag='false' sortDataType='D'	columnPrecision="NaN"/>
+			
+	<column data='gl_code' 		label='Account #' 		editable='false' 	visible='true' 		width='80' 	textAlign='left' 
+			forLevel='false' 	defaultForLevel='' 		booleanFlag='false' sortDataType='S'	columnPrecision="NaN"/>
+						
+	<column data='gl_name' 		label='Account Name'	editable='false' 	visible='true' 		width='180' textAlign='left' 
+			forLevel='false' 	defaultForLevel='' 		booleanFlag='false' sortDataType='S'	columnPrecision="NaN"/>
+										
+	<column data='debit_amt' 	label='Debit Amt' 		editable='false' 	visible='true' 		width='100' textAlign='right' 
+			forLevel='false' 	defaultForLevel='' 		booleanFlag='false' sortDataType='N'	columnPrecision="2"/>
+			
+	<column data='credit_amt' 	label='Credit Amt' 		editable='false' 	visible='true' 		width='100' textAlign='right' 
+			forLevel='false' 	defaultForLevel='' 		booleanFlag='false' sortDataType='N'	columnPrecision="2"/>
+				
+	<column data='description'	label='Description' 	editable='false' 	visible='true' 		width='180' textAlign='left' 
+			forLevel='false' 	defaultForLevel='' 		booleanFlag='false' sortDataType='S'	columnPrecision="NaN"/>			
+				
+</columns> 

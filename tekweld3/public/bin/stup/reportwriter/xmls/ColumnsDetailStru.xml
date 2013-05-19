@@ -1,0 +1,33 @@
+<columns  lockedColumnCount='0'>
+	
+	<column data='column_name'			label='Name'			editable='false'	visible='true'	width='120'	textAlign='left'	forLevel='false'
+			defaultForLevel=''			booleanFlag='false'		sortDataType='S'	columnPrecision="NaN"/>	
+	
+	<column data='column_label'			label='Label'			editable='false'	visible='true'	width='120'	textAlign='left'	forLevel='false'
+			defaultForLevel=''			booleanFlag='false'		sortDataType='S'	columnPrecision="NaN"/>	
+	
+	<column data='column_datatype'		label='DataType'		editable='false'	visible='true'	width='80'	textAlign='left'	forLevel='false'
+			defaultForLevel=''			booleanFlag='false'		sortDataType='S'	columnPrecision="NaN"/>	
+	
+	<column data='column_textalign' 	label='Text Align'		editable='false'	visible='true'	width='80'	textAlign='left'	forLevel='false'
+			defaultForLevel=''			booleanFlag='false'		sortDataType='S'	columnPrecision="NaN"/>	
+	
+	<column data='column_width'			label='Width'			editable='false'	visible='true'	width='80'	textAlign='right'	forLevel='false'
+			defaultForLevel=''			booleanFlag='false'		sortDataType='N'	columnPrecision="0"/>		
+	
+	<column data='print_width'			label='Width (Print)'	editable='false'	visible='true'	width='80'	textAlign='right'	forLevel='false'
+			defaultForLevel=''			booleanFlag='false'		sortDataType='N'	columnPrecision="0"/>		
+	
+	<column data='sortdatatype'			label='Sort Data Type'	editable='false'	visible='true'	width='80'	textAlign='left'	forLevel='false'
+			defaultForLevel=''			booleanFlag='false'		sortDataType='S'	columnPrecision="NaN"/>		
+	
+	<column data='isgroupable'			label='Groupable ?'		editable='false'	visible='true'	width='80'	textAlign='left'	forLevel='false'
+			defaultForLevel=''			booleanFlag='false'		sortDataType='S'	columnPrecision="NaN"/>		
+	
+	<column data='isdrilldowncolumn'	label='Drill Down?' 	editable='false'	visible='true'	width='80'	textAlign='left'	forLevel='false'
+			defaultForLevel=''			booleanFlag='false'		sortDataType='S'	columnPrecision="NaN"/>
+			
+	<column data='isfixedurl' 			label='Fixed Url?' 		editable='false'	visible='true'	width='80'	textAlign='left'	forLevel='false'
+			defaultForLevel=''			booleanFlag='false'		sortDataType='S'	columnPrecision="NaN"/>	
+					
+</columns> 

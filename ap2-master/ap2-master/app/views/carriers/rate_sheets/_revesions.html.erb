@@ -1,0 +1,25 @@
+<% if rate_sheet.revesions.blank? %>
+	<p>
+		This Rate Sheet has no rates and history!
+	</p>
+<% else %>
+	<% table do |t| %>
+		<% t.th "Revesion" %>
+		<% t.th "Date" %>
+		<% t.th "Effective Date" %>
+		<% t.th "Active" %>
+		<% t.th "Files" %>
+		<% t.th "Actions" %>
+
+		<% for rev in rate_sheets.revesions.find(:all, :order => "created_at DESC") %>
+			<% t.td rev.revesion %>
+			<% t.td rev.created_at %>
+			<% t.td rev.effective_date.strftime("%y%m%d-%H%M:%S") %>
+			<% t.td revesion_files(rev) %>
+			<% t.td "" %>
+			<% t.new_row %>
+		<% end -%>
+	<% end -%>
+<% end -%>
+<br>
+<button id="dialog-new-rates-link">New Rates</button>

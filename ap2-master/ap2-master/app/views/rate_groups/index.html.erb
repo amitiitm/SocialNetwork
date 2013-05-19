@@ -1,0 +1,28 @@
+<%= page_title :title => "Rate Groups" %>
+
+<% box :type => "simple" do %>
+	<% table :width => "400px" do |t| %>
+		<% t.th "#" %>
+		<% t.th "Name" %>
+		<% t.th "Description" %>
+		<% t.th "Enabled" %>
+
+		<% counter = 0 %>
+		<% for rg in @rate_groups do %>
+			<% t.td counter += 1 %>
+			<% t.td rg.name %>
+			<% t.td rg.desc %> 
+			<% t.td yes_no(rg.has_rates) %>
+			<% t.new_row %>
+		<%  end -%>
+	<% end -%>
+	<button id="dialog-new-rate-group-link">New Rate Group</button>
+<% end -%>
+
+<% box :type => "dialog",:id => "dialog-new-rate-group", :title => "New Rate Group", :icon => "ui-icon-person" do %>
+	<% box :type => "simple", :title => "New Rate Group" do %>
+		<%= render :partial => "rate_groups/rate_group_form", :locals => {:rate_group => RateGroup.new} %>
+	<% end -%>
+<% end -%>
+
+<script type="text/javascript" src="/js/rate_groups/ui.js"></script>

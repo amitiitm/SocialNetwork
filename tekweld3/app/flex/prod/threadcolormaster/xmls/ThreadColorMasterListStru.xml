@@ -1,0 +1,15 @@
+<columns  lockedColumnCount='0'>
+	
+	<column data='thread_company' 		label='Company' 			editable='false' 	visible='true' 		width='60' 			textAlign='left'
+		 	print_width = '20'			forLevel='true' 			defaultForLevel='1'	booleanFlag='false'	sortDataType='S'	columnPrecision="NaN"/>
+
+	<column data='thread_category' 		label='Category'			editable='false' 	visible='true' 		width='60' 			textAlign='left'
+		 	print_width = '20'			forLevel='true' 			defaultForLevel='0' booleanFlag='false'	sortDataType='S'	columnPrecision="NaN"/>
+    
+    <column data='color_number' 		label='Color #'				editable='false' 	visible='true' 		width='60' 			textAlign='left'
+		 	print_width = '20'			forLevel='true' 			defaultForLevel='0' booleanFlag='false'	sortDataType='S'	columnPrecision="NaN"/>
+		 	
+	<column data='color_card_sequence' 	label='Cross-Reference'		editable='false' 	visible='true' 		width='60' 			textAlign='left'
+		 	print_width = '20'			forLevel='true' 			defaultForLevel='0' booleanFlag='false'	sortDataType='S'	columnPrecision="NaN"/>
+		 		 	
+</columns> 

@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:HBox xmlns:mx="http://www.adobe.com/2006/mxml"
+	xmlns:customcomponents="com.generic.customcomponents.*" 
+	width="100%" 
+	height="20"
+	horizontalAlign="left" 
+	horizontalGap="0" 
+	verticalGap="0"
+	paddingLeft="2"
+	creationPolicy="all"
+	paddingRight="2" >
+	
+	<mx:Metadata>
+		[Event(name="resetFilterInboxEvent", type="flash.events.Event")]
+		[Event(name="filterInboxEvent", type="flash.events.Event")]
+	</mx:Metadata>
+		 
+	<mx:Script source="../scripts/ButtonControlViewPanelEditableListControlScript.as"/>
+
+	<mx:HBox id="hbView" width="240" height="20"  paddingRight="10">
+		<mx:Label id="lbl" text="View" width="40" textAlign="right" />
+		<mx:ComboBox id="cbView" width="150" name="cmbView" labelField="name" height="20"  rowCount="10" change="cmbViewChangeHandler(event);"
+			styleName="comboBox2"/>
+
+		<customcomponents:GenButton	id="btnQuery" 
+			icon="@Embed('../assets/search.png')" 
+			disabledIcon="@Embed('../assets/search_disabled.png')"
+			height="20" 
+			width="20" 
+			toolTip="Search"
+			cornerRadius="0"
+			click="btnQueryClickHandler()"
+		 	textAlign="center"/>
+	</mx:HBox>
+
+	<mx:HBox id="hbCustom1" 
+		visible="false" width="0"
+		horizontalAlign="left"
+		horizontalGap="0"
+		verticalGap="0"
+		paddingLeft="2"
+		creationPolicy="all"
+		paddingRight="2" />
+
+	<mx:HBox id="hbCRUD" horizontalGap="2">
+	
+		<customcomponents:GenButton	id="btnSave" 
+			icon="@Embed('../assets/save.png')" 
+			disabledIcon="@Embed('../assets/save_disabled.png')" 
+			height="20" 
+			width="20" 
+			toolTip="Save (Ctrl S)"
+			cornerRadius="0"
+			click="btnSaveClickHandler()"
+			enabled="{__genModel.activeModelLocator.addEditObj.editStatus}"
+			visible="{!hbCustom1.visible}"
+			textAlign="center"/>
+
+		<customcomponents:GenButton	id="btnCancel" 
+			icon="@Embed('../assets/close.png')"
+			disabledIcon="@Embed('../assets/close_disabled.png')"
+			height="20"
+			width="20"
+			toolTip="Cancel (Ctrl D)"
+			cornerRadius="0"
+			click="btnCancelClickHandler()"
+			enabled="{__genModel.activeModelLocator.addEditObj.editStatus}"
+		 	textAlign="center"/>
+		
+		<customcomponents:GenVRule id="addVrule" height="20" width="15"/>
+	</mx:HBox>
+
+	<mx:HBox id="hbOutput" horizontalGap="2">
+		<customcomponents:GenButton	id="btnPrint" 
+			icon="@Embed('../assets/print.png')" 
+			height="20" 
+			width="20" 
+			toolTip="Print (Ctrl P)"
+			cornerRadius="0"
+			click="btnPrintClickHandler()" 
+		 	textAlign="center"/>
+		
+		<customcomponents:GenButton	id="btnExport" 
+			icon="@Embed('../assets/export_csv_16x16.png')" 
+			height="20" 
+			width="20" 
+			toolTip="Export"
+			cornerRadius="0"
+			click="exportGridEventHandler()"
+			textAlign="center"/>
+		
+		<customcomponents:GenVRule id="outputVrule" height="20" width="15"/>
+	
+	</mx:HBox>	
+
+	<mx:HBox  horizontalGap="2">
+		<customcomponents:GenButton	id="btnRefresh" 
+			icon="@Embed('../assets/refresh.png')" 
+			height="20" 
+			width="20" 
+			toolTip="Refresh (Ctrl Shift R)"
+			cornerRadius="0"
+			click="btnRefreshClickHandler()"
+			textAlign="center"/>
+	
+	</mx:HBox>
+	
+	<!--<mx:PopUpButton  id="btnPopUp" height="20" label="Advance Options"  textAlign="left" fontWeight="normal"   
+		 creationComplete="initPopUPBtn()" /> since tree false-->
+		
+	
+	<customcomponents:GenVRule  height="20" width="15"/>
+	
+		<mx:HBox horizontalGap="2">
+
+		<customcomponents:GenButton	id="btnFilter" 
+			icon="@Embed('../assets/filter.png')" 
+			disabledIcon="@Embed('../assets/filter.png')"
+			height="20" 
+			width="20" 
+			toolTip="Filter (Ctrl T)"
+			cornerRadius="0"
+			click="btnFilterClickHandler()"
+			textAlign="center"/>	
+
+		<customcomponents:GenButton	id="btnResetFilter" 
+			icon="@Embed('../assets/filter_delete.png')" 
+			disabledIcon="@Embed('../assets/filter_delete.png')"
+			height="20" 
+			width="20" 
+			toolTip="Reset Filter (Ctrl Shift T)"
+			cornerRadius="0"
+			click="btnResetFilterClickHandler()"
+			textAlign="center"/>
+			
+		<customcomponents:GenVRule  height="20" width="15"/>	
+	</mx:HBox>
+	<mx:HBox width="100%" height="100%" horizontalAlign="center" verticalAlign="middle">
+		<mx:Label id="lblRecordStatus" text="(View Only)"  visible="{isRecordViewOnly}" textAlign="center" fontWeight="bold" color="#FF0000"/>					
+	</mx:HBox>
+	
+	<mx:XML format="e4x" id="myMenuData">
+	     <root>
+	        <menuitem label="Show Sort" name="showsort" type="check" toggled="false"/>
+	   	</root>
+	</mx:XML>
+	<!--<mx:XML format="e4x" id="myMenuData">
+	     <root>
+	        <menuitem label="Configure Columns" name="configurecolumns" type="check" toggled="false"/>
+	        <menuitem label="Layout" name="layout" type="check" toggled="false"/>
+	        <menuitem type="separator"/> 	
+	        <menuitem label="Show Sort" name="showsort" type="check" toggled="false"/>
+	   	</root>
+	</mx:XML>-->
+</mx:HBox>
+

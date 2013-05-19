@@ -1,0 +1,1 @@
+page << "$.get('#{zone_routes_path(@zone)}', {}, function(resp){$('#routes_response').html(resp)})"

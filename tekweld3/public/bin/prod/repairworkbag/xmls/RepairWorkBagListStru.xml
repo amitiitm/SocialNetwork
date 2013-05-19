@@ -1,0 +1,18 @@
+<columns  lockedColumnCount='0'>
+	
+	<column data='trans_bk' 			label='WB Bk' editable='false'	visible='true' 		width='80' 			textAlign='left'
+		 	print_width = '16'			forLevel='true' 	defaultForLevel='' 	booleanFlag='false'	sortDataType='S'	columnPrecision="NaN"/>	
+		 	
+	<column data='trans_no' 			label='WB #' 	editable='false' 	visible='true' 		width='80' 			textAlign='left'
+		 	print_width = '16'			forLevel='true' 	defaultForLevel='0' booleanFlag='false'	sortDataType='N'	columnPrecision="NaN"/>
+
+	<column data='trans_date' 			label='WB Date' editable='false' 	visible='true' 		width='80' 			textAlign='left'
+		 	print_width = '18'			forLevel='true' 	defaultForLevel='' 	booleanFlag='false'	sortDataType='D'	columnPrecision="NaN"/>
+		 	
+	<column data='customer_code' 		label='Customer #' 	editable='false' 	visible='true' 		width='80' 			textAlign='left'
+		 	print_width = '16'			forLevel='true' 	defaultForLevel='1' booleanFlag='false'	sortDataType='S'	columnPrecision="NaN"/>
+		 		 		
+	<column data='account_period_code'	label='A/C Period' 	editable='false' 	visible='true' 		width='80' 			textAlign='left'
+		 	print_width = '18'			forLevel='true' 	defaultForLevel='' 	booleanFlag='false'	sortDataType='S'	columnPrecision="NaN"/>
+		 	
+</columns>

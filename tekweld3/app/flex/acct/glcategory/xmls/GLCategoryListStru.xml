@@ -1,0 +1,18 @@
+<columns lockedColumnCount='0'>
+
+	<column data='code'			label='Code'			editable='false'	visible='true'		width='100'	textAlign='left'	forLevel='true'
+			print_width = '20'	defaultForLevel='2'		booleanFlag='false'	sortDataType='S' 	columnPrecision="NaN"/>
+			
+	<column data='name'			label='Name'			editable='false'	visible='true'		width='260'	textAlign='left'	forLevel='true'
+			print_width = '20'	defaultForLevel=''		booleanFlag='false'	sortDataType='S'	columnPrecision="NaN"/>
+
+	<column data='account_type'	label='Account Type'	editable='false'	visible='true'		width='120'	textAlign='left'	forLevel='true' 
+			print_width = '20'	defaultForLevel='0'		booleanFlag='false'	sortDataType='S'	columnPrecision="NaN"/>
+
+	<column data='tb_seq_no'	label='TB Seq #'		editable='false'	visible='true'		width='120'	textAlign='left'	forLevel='false'
+			print_width = '18'	defaultForLevel=''		booleanFlag='false'	sortDataType='S'	columnPrecision="NaN"/>
+	
+	<column data='trans_flag'	label='Status'			editable='false'	visible='true'		width='120'	textAlign='left'	forLevel='true' 
+			print_width = '16'	defaultForLevel='1'		booleanFlag='false' sortDataType='S'	columnPrecision="NaN"/>
+
+</columns> 

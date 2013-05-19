@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<gencomponents:AddEdit xmlns:mx="http://www.adobe.com/2006/mxml" 
+	height="100%" width="100%" verticalGap="0"
+	xmlns:customcomponents="com.generic.customcomponents.*"
+	xmlns:gencomponents="com.generic.components.*">
+	<mx:Script source="../scripts/ThreadColorMasterAddEditscript.as"/>
+	
+	<mx:VBox horizontalGap="0" width="100%">
+		<mx:HBox height="20" verticalAlign="middle" horizontalGap="2"> 
+			<mx:Label text="Company" width="115" textAlign="right"/>
+			<customcomponents:GenComboBox id="cbComapny" width="150" cornerRadius="0" xmlTag="thread_company" updatableFlag="true"
+										  tableName="thread_color"  tabIndex="1" labelField="label" height="20" defaultValue="MADEIRA"  		
+										  dataProvider="{__genModel.masterData.child('thread_company').thread_company}" toolTip="Company"/>
+			<mx:Label text="Status" width="90" textAlign="right" height="20"/>
+			<customcomponents:GenComboBox id="cbTrans_flag" defaultValue="A" width="100" cornerRadius="0" xmlTag="trans_flag" updatableFlag="true"
+										  tableName="thread_color" tabIndex="12"  labelField="label" height="20" 
+										  dataProvider="{__genModel.masterData.child('trans_flag').trans_flag}" />
+		</mx:HBox>
+		<mx:HBox height="20" verticalAlign="middle" horizontalGap="2"> 
+			<mx:Label text="Category" width="115" textAlign="right"/>
+			<customcomponents:GenComboBox id="cbCategory" width="150" cornerRadius="0" xmlTag="thread_category" updatableFlag="true"
+										  tableName="thread_color"  tabIndex="3" labelField="label" height="20" defaultValue="RAYON"  		
+										  dataProvider="{__genModel.masterData.child('thread_category').thread_category}" toolTip="Category"/>
+		</mx:HBox>
+		<mx:HBox height="20" verticalAlign="middle" horizontalGap="2">
+			<mx:Label text="Color #" width="115" textAlign="right" height="20" />
+			<customcomponents:GenTextInput id="tiColorCode" width="150" tabIndex="7" height="20"  
+				xmlTag="color_number" updatableFlag="true" tableName="thread_color" maxChars="25" upperCaseFlag="true"/>	
+		</mx:HBox>
+
+		<mx:HBox height="20" verticalAlign="middle" horizontalGap="2" width="100%">
+			<mx:Label text="Cross-Reference" width="115" textAlign="right" height="20" />
+			<customcomponents:GenTextInput id="tiColorCardSequence" width="150" tabIndex="7" height="20"  
+				xmlTag="color_card_sequence" updatableFlag="true" tableName="thread_color" maxChars="50"/>	
+		</mx:HBox>
+	</mx:VBox>
+</gencomponents:AddEdit>

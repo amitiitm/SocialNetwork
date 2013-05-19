@@ -1,0 +1,31 @@
+--- 
+CATALOG_PARAMETERS_001: 
+  merchant_id: ""
+  city: indore
+  address1: 
+  pdt_identity_token: ""
+  zip: ""
+  address2: 
+  store_inquires: 
+  updated_at: 2010-10-01 16:20:16
+  update_flag: Y
+  online_inquiries: 
+  company_logo_file: logo.png
+  trans_flag: A
+  created_by: 100
+  return_url: catalog.diasparkonline.com:3000
+  country: india
+  lock_version: 23
+  ipn_server: catalog.diasparkonline.com:3000
+  store_inquires_contact_no: " "
+  company_short_name: ""
+  updated_by: 100
+  id: 102
+  fax: " "
+  phone: " "
+  personalshopper: 
+  company_full_name: Setup Company Name
+  company_id: 1
+  paypal_enable_flag: N
+  state: " "
+  created_at: 2010-07-22 17:06:00

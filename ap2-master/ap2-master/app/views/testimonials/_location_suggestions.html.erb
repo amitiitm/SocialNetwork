@@ -1,0 +1,4 @@
+Billing City: <%= @billing_city || "N/A" %><br>
+<% for p in @user.phones do %>
+	Phone <%= "#{number_to_phone(p.number, :area_code => true)} | Rate Center: #{if p.area_code_info then p.area_code_info.ratecenter.downcase end} | City: #{if p.area_code_info then p.area_code_info.city.downcase end} | County: #{if p.area_code_info then p.area_code_info.county.downcase end}" %><br>
+<% end -%>

@@ -1,0 +1,2 @@
+page << "$('#edit-trunk').html('#{ escape_javascript render :partial => "trunk_dialog", :locals => {:carrier => @carrier, :trunk => @trunk, :id => "dialog-edit-trunk", :title => "Edit Trunk"}}');"
+page << "show_edit_trunk_dialog(#{@trunk.id})"

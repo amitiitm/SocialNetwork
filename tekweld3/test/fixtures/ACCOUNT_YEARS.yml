@@ -1,0 +1,35 @@
+--- 
+ACCOUNT_YEARS_001: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  from_period: "200900"
+  lock_version: 0
+  to_period: "200912"
+  updated_by: 
+  id: 100
+  gl_flag: Y
+  description: Year2009
+  year: "2009"
+  company_id: 1
+  ar_flag: Y
+  ap_flag: Y
+  created_at: 
+ACCOUNT_YEARS_002: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  from_period: "201000"
+  lock_version: 0
+  to_period: "201012"
+  updated_by: 
+  id: 101
+  gl_flag: Y
+  description: Year2010
+  year: "2010"
+  company_id: 1
+  ar_flag: Y
+  ap_flag: Y
+  created_at: 

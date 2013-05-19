@@ -1,0 +1,46 @@
+<columns lockedColumnCount='0'>
+
+	<column data='clear_flag'	label='Clear'		editable='true' 	visible='true' 		width='60'	textAlign='center'	
+			dataType='S'			componentType="CheckBox"	dataValueForOn="Y"	dataValueForOff="N" 		sortDataType='S'	columnPrecision="NaN"/>	
+
+	<column data='clear_date'	label='Clear Date' 	editable='true' 	visible='true'		width='100'	textAlign='right' 
+			dataType='D'			componentType="Date" 		sortDataType='D'	columnPrecision="NaN"/>
+
+	<column data='trans_no'		label='Trans #' 	editable='false' 	visible='true'		width='60'	textAlign='right' 
+			dataType='S'			componentType="Text" 		sortDataType='S'	columnPrecision="NaN"/>
+			
+	<column data='trans_date'	label='Trans Date' 	editable='false' 	visible='true'		width='100'	textAlign='right' 
+			dataType='D'			componentType="Date" 		sortDataType='D'	columnPrecision="NaN"/>
+
+	<column data='account_code' 	label='Account #' 	editable='false' 	visible='true' 		width='80' 	textAlign='left' 
+			dataType='S'			componentType="Text" 		sortDataType='S'	columnPrecision="NaN"/>
+
+	<column data='check_no' 	label='Check No' 	editable='false' 	visible='true' 		width='80' 	textAlign='left' 
+			dataType='S'			componentType="Text" 		sortDataType='S'	columnPrecision="NaN"/>
+
+	<column data='check_date'	label='Check Date' 	editable='false' 	visible='true'		width='100'	textAlign='right' 
+			dataType='D'			componentType="Date" 		sortDataType='D'	columnPrecision="NaN"/>
+
+	<column data='deposit_no' 	label='Deposit #' 	editable='false' 	visible='true' 		width='80' 	textAlign='left' 
+			dataType='S'			componentType="Text" 		sortDataType='S'	columnPrecision="NaN"/>
+			
+
+	<column data='credit_amt'	label='Deposit Amt' 	editable='false' 	visible='true'		width='80'	textAlign='right' 
+			dataType='N'			componentType="Text"		sortDataType='N'	columnPrecision="2"
+			validationFlag="false" 	negativeFlag="false" 		rounding="false" 	maxValue="99999999.99" />
+							
+
+	<column data='debit_amt'	label='Payment Amt' 	editable='false' 	visible='true'		width='80'	textAlign='right' 
+			dataType='N'			componentType="Text"		sortDataType='N'	columnPrecision="2"
+			validationFlag="false" 	negativeFlag="false" 		rounding="false" 	maxValue="99999999.99" />
+
+
+	<column data='payto_name'	 label='Pay To/Receive From' 	editable='false' 	visible='true'		width='110'	textAlign='left' 
+			dataType='S'			componentType="Text" 		sortDataType='S'	columnPrecision="NaN"/>
+
+
+	<column data='remarks' 		label='Remarks' 	editable='false' 	visible='true' 		width='80' 	textAlign='left' 
+			dataType='S'			componentType="Text" 		sortDataType='S'	columnPrecision="NaN"/>
+
+			
+</columns>  

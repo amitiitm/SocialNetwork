@@ -1,0 +1,15 @@
+<columns Title=''>
+
+	<column dataType="S" label="A/c Period #" checkbox="ckAll1" xmlTagFrom="str1" from="tiStr1" xmlTagTo="str2" to="tiStr2" multiSelect="mvMultiSelect1" xmlTagMultiSelect="multiselect1" lookupFlag="true" lookupName="AccountPeriod"		lookupLabel="code"		dataField="code" 			labelField="code" 
+			lookupFormatUrl=""/>
+	<column dataType="S" label="Vend Category #" checkbox="ckAll2" xmlTagFrom="str5" from="tiStr5" xmlTagTo="str6" to="tiStr6" multiSelect="mvMultiSelect3" xmlTagMultiSelect="multiselect3" lookupFlag="true" lookupName="VendorCategory" lookupLabel="code"		dataField="code" 			labelField="code" 
+			lookupFormatUrl=""/>
+	<column dataType="S" label="Vendor #" checkbox="ckAll3" xmlTagFrom="str3" from="tiStr3" xmlTagTo="str4" to="tiStr4" multiSelect="mvMultiSelect2" xmlTagMultiSelect="multiselect2" lookupFlag="true" lookupName="Vendor" lookupLabel="code"		dataField="code" 			labelField="code" 
+			lookupFormatUrl=""/>
+	
+</columns>
+
+
+
+
+

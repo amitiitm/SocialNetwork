@@ -1,0 +1,406 @@
+<?xml version="1.0" encoding="utf-8"?>
+<gencomponents:AddEdit xmlns:mx="http://www.adobe.com/2006/mxml" 
+					   height="100%" width="100%" verticalGap="0"
+					   xmlns:customcomponents="com.generic.customcomponents.*"
+					   xmlns:gencomponents="com.generic.components.*" creationPolicy="all" creationComplete="init()">
+	
+	<mx:Script source="../scripts/ApplicationSettingAddEditscript.as"/>
+	
+	<customcomponents:GenTextInput id="tiDummy"  width="0" height="0" visible="false" xmlTag="type" 
+								   updatableFlag="false" tableName="type" validationFlag="false"  fontSize="9"/>
+	
+	<mx:VBox height="0" width="0" visible="false">
+		<customcomponents:GenDataGrid 
+			id="dgTypes"
+			updatableFlag="true"	
+			rootNode = "details"
+			formatServiceID="typeFormat"
+			height="0" width="0%" visible="false" />
+	</mx:VBox>
+	
+	<mx:Spacer width="100%" height="10" />
+	
+	<mx:Label text="After applying these changes, please re-login in order for them to take effect" fontWeight="bold" paddingLeft="10" color="#0000FF" />
+	<mx:Spacer width="100%" height="10" />
+	
+	<mx:VBox height="100%" width="100%">
+		<mx:TabNavigator id="tnMain" width="100%" height="100%" change="setDefaultTempGrid()">
+			<mx:VBox label="Inventory" width="100%" height="100%">
+				<customcomponents:GenCheckBox labelPlacement="left" label="Check Inventory For Transaction" id="cbCheckInventory" width="215" xmlTag="check_inventory"
+											  updatableFlag="false" tableName="types" defaultValue="N" textAlign="right" tabIndex="100" enabled="true"
+											  dataValueForOn = "Y" dataValueForOff = "N"/>
+					<gencomponents:NewDetail id="dtlDiscountCode"
+										  updatableFlag="false"
+										  checkBlankRowColumn="type_cd"
+										  rootNode="details"
+										  formatServiceID="lineDetailFormat"
+										  height="100%" width="100%"
+										  tabIndex="21"
+										  />
+				</mx:VBox>	
+			<mx:VBox label="Master Access">
+				<mx:Spacer height="15"/>
+				<mx:HBox>
+					<mx:Label text="Customer" textAlign="right" width="136"/>
+					<mx:ComboBox id="cmbCustomerAccess" change="cmbChangeEvent()">
+						<mx:dataProvider>
+							<mx:Object label="All" data="All" />
+							<mx:Object label="Store" data="Store" />
+						</mx:dataProvider>
+					</mx:ComboBox>
+				</mx:HBox>
+				<mx:HBox>
+					<mx:Label text="Vendor" textAlign="right" width="136"/>
+					<mx:ComboBox id="cmbVendorAccess" change="cmbChangeEvent()">
+						<mx:dataProvider>
+							<mx:Object label="All" data="All" />
+							<mx:Object label="Store" data="Store" />
+						</mx:dataProvider>
+					</mx:ComboBox>
+				</mx:HBox>
+			</mx:VBox>
+			<mx:VBox label="Sales">
+				<mx:Spacer height="15"/>
+				<mx:VBox>
+					<customcomponents:GenCheckBox labelPlacement="left" label="Salesperson Equipment" id="cbSalespersonEquipment" width="390" xmlTag="equipment_flag"
+												  updatableFlag="false" tableName="type" defaultValue="N" textAlign="right" tabIndex="5" enabled="true"
+												  dataValueForOn = "Y" dataValueForOff = "N"/>
+					<customcomponents:GenCheckBox labelPlacement="left" 
+												  label="Allow Sales Invoice customer change if invoice type Order/Memo" id="cbSalesInvoiceTypeAllow" width="390" 
+												  xmlTag="other_custs_mem_ord"
+												  updatableFlag="false" tableName="type" defaultValue="N" textAlign="right" tabIndex="8" enabled="true"
+												  dataValueForOn = "Y" dataValueForOff = "N"/>	
+					<customcomponents:GenCheckBox labelPlacement="left" 
+												  label="Create customer profile on Authorize.net" id="cbAuthorizenetCustomerProfile" width="390" 
+												  xmlTag="customer_profile"
+												  updatableFlag="false" tableName="type" defaultValue="N" textAlign="right" tabIndex="9" enabled="true"
+												  dataValueForOn = "Y" dataValueForOff = "N"/>
+					<customcomponents:GenCheckBox labelPlacement="left" 
+												  label="Generate Invoice Automatically On Shipment" id="cbGenerateInvoiceAutomatically" width="390" 
+												  xmlTag="auto_invoiced"
+												  updatableFlag="false" tableName="type" defaultValue="N" textAlign="right" tabIndex="10" enabled="true"
+												  dataValueForOn = "Y" dataValueForOff = "N"/>
+				</mx:VBox>
+				<mx:Spacer height="10"/>
+				<mx:HBox>
+					<mx:Label  text="Approval Password  :" width="130" textAlign="right"/>
+					<customcomponents:GenTextInput id="tiRushPassword" height="20" width="252"  xmlTag="rush_password" updatableFlag="false" tableName="type"
+												   dataType="S" textAlign="left"   defaultValue=""  setDefaultOnEmpty="true" 
+												   tabIndex="15" toolTip="Rush Password" maxChars="50"/>		
+				</mx:HBox>
+				<mx:VBox>
+					<mx:Spacer height="10"/>
+					<mx:HBox>
+						<mx:Label  text="Proof  Text 1  :" width="130" textAlign="right"/>
+						<customcomponents:GenTextArea id="tiSendProofText1" height="75" width="252"  xmlTag="text1" updatableFlag="false" tableName="type"
+													   dataType="S" textAlign="left"   defaultValue="" 
+													   tabIndex="15" toolTip="Text 1" maxChars="500"/>		
+						<mx:Label  text="Proof  Text 4  :" width="130" textAlign="right"/>
+						<customcomponents:GenTextInput id="tiSendProofText4" height="75" width="252"  xmlTag="text4" updatableFlag="false" tableName="type"
+													   dataType="S" textAlign="left"   defaultValue=""
+													   tabIndex="15" toolTip="Text 4" maxChars="500"/>
+					</mx:HBox>
+					<mx:HBox>
+						<mx:Label  text="Proof  Text 2  :" width="130" textAlign="right"/>
+						<customcomponents:GenTextInput id="tiSendProofText2" height="75" width="252"  xmlTag="text2" updatableFlag="false" tableName="type"
+													   dataType="S" textAlign="left"   defaultValue=""  
+													   tabIndex="15" toolTip="Text 2" maxChars="500"/>
+						<mx:Label  text="Proof  Text 5  :" width="130" textAlign="right"/>
+						<customcomponents:GenTextInput id="tiSendProofText5" height="75" width="252"  xmlTag="text5" updatableFlag="false" tableName="type"
+													   dataType="S" textAlign="left"   defaultValue="" 
+													   tabIndex="15" toolTip="Text 5" maxChars="500"/>	
+					</mx:HBox>
+					<mx:HBox>
+						<mx:Label  text="Proof  Text 3  :" width="130" textAlign="right"/>
+						<customcomponents:GenTextInput id="tiSendProofText3" height="75" width="252"  xmlTag="text3" updatableFlag="false" tableName="type"
+													   dataType="S" textAlign="left"   defaultValue=""  
+													   tabIndex="15" toolTip="Text 3" maxChars="500"/>
+								
+						<mx:Label  text="Proof  Text 6  :" width="130" textAlign="right"/>
+						<customcomponents:GenTextInput id="tiSendProofText6" height="75" width="252"  xmlTag="text6" updatableFlag="false" tableName="type"
+													   dataType="S" textAlign="left"   defaultValue="" 
+													   tabIndex="15" toolTip="Text 6" maxChars="500"/>
+					</mx:HBox>
+					
+				</mx:VBox>
+			</mx:VBox>
+			<mx:VBox label="Production">
+				<mx:Spacer height="15"/>
+				<mx:HBox width="100%" height="100%">
+					<mx:VBox width="318">
+						<mx:HBox width="100%" height="4%" verticalAlign="middle"  verticalGap="0">
+							<mx:Label text="Free Stitch Count" textAlign="right" width="140"/>
+							<customcomponents:GenTextInput id="tiFreeStichCount" width="75"  xmlTag="free_stitch_count" updatableFlag="false" tableName="type"
+														   dataType="N" textAlign="right" validationFlag="true"  defaultValue="0" maxValue= "999999999" setDefaultOnEmpty="true" 
+														   rounding="true" tabIndex="15" toolTip="Free Stich Count"/>
+						</mx:HBox>
+						<mx:HBox width="100%" height="4%" verticalAlign="middle"  verticalGap="0">
+							<mx:Label text="Free Stitch Quantity" textAlign="right" width="140"/>
+							<customcomponents:GenTextInput id="tiFreeStichQuantity" width="75" xmlTag="free_stitch_qty" updatableFlag="false"
+														   tableName="type" tabIndex="20" 
+														   dataType="N" textAlign="right"  validationFlag="true" defaultValue="0" maxValue="999999999" setDefaultOnEmpty="true" 
+														   rounding="true" toolTip="Free Stich Quantity" />
+						</mx:HBox>
+						<mx:HBox width="100%" height="4%" verticalAlign="middle"  verticalGap="0">
+							<mx:Label text="Stitch Per Unit" textAlign="right" width="140"/>
+							<customcomponents:GenTextInput id="tiStichPerUnit" width="75" xmlTag="stitches_per_unit" updatableFlag="false"
+														   tableName="type" tabIndex="20" 
+														   dataType="N" textAlign="right"  validationFlag="true" defaultValue="0" maxValue="999999999" setDefaultOnEmpty="true" 
+														   rounding="true" toolTip="Stich Per Unit" />
+						</mx:HBox>
+						<mx:HBox width="100%" height="4%" verticalAlign="middle"  verticalGap="0">
+							<customcomponents:GenCheckBox labelPlacement="left" label="Stitch Estimation" id="cbStitchEstimation" width="209" xmlTag="stitch_estimation"
+														  updatableFlag="false" tableName="types" defaultValue="N" textAlign="center" tabIndex="100" enabled="true"
+														  dataValueForOn = "Y" dataValueForOff = "N"/>
+						</mx:HBox>
+						<mx:HBox width="100%" height="4%" verticalAlign="middle"  verticalGap="0">
+							<customcomponents:GenCheckBox labelPlacement="left" label="Embroidery Digitization" id="cbEmbdDigitization" width="178" xmlTag="embd_digitization"
+														  updatableFlag="false" tableName="types" defaultValue="N" textAlign="center" tabIndex="100" enabled="true"
+														  dataValueForOn = "Y" dataValueForOff = "N"/>
+						</mx:HBox>
+						
+						
+						<mx:HBox width="100%" height="4%" verticalAlign="middle"  verticalGap="0">
+							<mx:Label text="Estimation Vendor"  width="137" textAlign="right" height="20" />
+							<customcomponents:GenTextInputWithHelp id="dcVendor_id"
+																   width="158" height="20" 
+																   toolTip="Vendor #" 	defaultValue=""
+																   dataField="code" 		labelField="code"
+																   xmlTag="estimation_vendor" labelTag="code"
+																   dataSourceName="Vendor" 
+																   tabIndex="10"   
+																   validationFlag="true" 
+																   updatableFlag="true" tableName="types"
+																   />
+						</mx:HBox>
+						<mx:HBox width="100%" height="4%" verticalAlign="middle"  verticalGap="0">
+							<mx:Label text="Digitization Vendor"  width="137" textAlign="right" height="20" />
+							<customcomponents:GenTextInputWithHelp id="dcVendor_digitization"
+																   width="158" height="20" 
+																   toolTip="Vendor #" 	defaultValue=""
+																   dataField="code" 		labelField="code"
+																   xmlTag="digitization_vendor" labelTag="code"
+																   dataSourceName="Vendor" 
+																   tabIndex="10"   
+																   validationFlag="true" 
+																   updatableFlag="true" tableName="types"
+																   />
+						</mx:HBox>
+						<mx:HBox width="100%" height="4%" verticalAlign="middle"  verticalGap="0">
+							<mx:Label text="Water Vendor"  width="137" textAlign="right" height="20" />
+							<customcomponents:GenTextInputWithHelp id="dcWater_digitization"
+																   width="158" height="20" 
+																   toolTip="Vendor #" 	defaultValue=""
+																   dataField="code" 		labelField="code"
+																   xmlTag="water_vendor" labelTag="code"
+																   dataSourceName="Vendor" 
+																   tabIndex="10"   
+																   validationFlag="true" 
+																   updatableFlag="true" tableName="types"
+																   />
+						</mx:HBox>
+						
+					</mx:VBox>
+					<gencomponents:NewDetail id="dtlIndigoFileSavePath"
+											 updatableFlag="false"
+											 checkBlankRowColumn="type_cd"
+											 rootNode="details"
+											 btnRemoveVisible="{false}"
+											 formatServiceID="indigoFilePathDetailFormat"
+											 height="100%" width="100%"
+											 title="Setup"
+											 tabIndex="21"
+											 />
+					<mx:Button id="btnSetXml" click="setIndigoFileSavePathXml();" label="SetXml" visible="false" includeInLayout="false"/>
+				</mx:HBox>				
+				
+			</mx:VBox>
+			<mx:VBox label="Shipping">
+				<mx:Spacer height="15"/>
+				<mx:HBox width="100%" height="4%" verticalAlign="middle"  verticalGap="0">
+					<mx:Label text="Shipping Markup (%)" textAlign="right" width="140"/>
+					<customcomponents:GenTextInput id="tiShippingMarkup" width="50"  xmlTag="shipping_markup" updatableFlag="false" tableName="type"
+												   dataType="N" textAlign="right" validationFlag="true"  defaultValue="0.00" maxValue= "99.99" setDefaultOnEmpty="true" 
+												   rounding="true" tabIndex="15" toolTip="Free Stich Count"/>
+				</mx:HBox>
+			</mx:VBox>
+			<mx:VBox label="Purchase">
+				<mx:Spacer height="15"/>
+				<mx:HBox>
+					<customcomponents:GenCheckBox labelPlacement="left" 
+												  label="Allow Purchase Invoice vendor change if invoice type Order/Memo" 
+												  id="cbPurchaseInvoiceTypeAllow" width="390" xmlTag="other_vends_mem_ord"
+												  updatableFlag="false" tableName="type" defaultValue="N" textAlign="right" tabIndex="8" enabled="true"
+												  dataValueForOn = "Y" dataValueForOff = "N"/>
+				</mx:HBox>
+			</mx:VBox>
+			<mx:VBox label="Print Format" height="100%" width="100%">
+				
+				<mx:LinkBar width="100%" dataProvider="vsPrintFormat" styleName="myLinkBar" linkButtonStyleName="myLinkButton" buttonMode="false">
+				</mx:LinkBar>
+				
+				<mx:ViewStack id="vsPrintFormat" width="100%" height="100%">
+					
+					<mx:VBox label="Sales"  verticalGap="3">
+						
+						<mx:VBox  verticalGap="3" borderStyle="solid" borderThickness="1" width="373" height="155">
+							
+							<mx:Label text="Sales" width="100%"  textAlign="center" height="20"  fontWeight="bold" fontSize="10"/>
+							<mx:HBox>
+								<mx:Label  text=" Order :" width="130" textAlign="right"/>
+								<customcomponents:GenTextInput id="tiPrintFormatSalesOrder" height="20" width="207"  xmlTag="sorder" updatableFlag="false" tableName="type"
+															   dataType="S" textAlign="left"   defaultValue=""  setDefaultOnEmpty="true" 
+															   tabIndex="15" toolTip="Sales Order" maxChars="50"/>		
+							</mx:HBox>
+							<mx:HBox>
+								<mx:Label  text=" Invoice :" width="130" textAlign="right"/>
+								<customcomponents:GenTextInput id="tiPrintFormatSalesInvoice" height="20" width="207"  xmlTag="sinvoice" updatableFlag="false" tableName="type"
+															   dataType="S" textAlign="left"   defaultValue=""  setDefaultOnEmpty="true" 
+															   tabIndex="16" toolTip="Sales Invoice" maxChars="50"/>		
+							</mx:HBox>
+							<mx:HBox>
+								<mx:Label  text=" Credit Invoice :" width="130" textAlign="right"/>
+								<customcomponents:GenTextInput id="tiPrintFormatSalesCreditInvoice" height="20" width="207"  xmlTag="screditinvoice" updatableFlag="false" tableName="type"
+															   dataType="S" textAlign="left"   defaultValue=""  setDefaultOnEmpty="true" 
+															   tabIndex="17" toolTip="Sales Credit Invoice " maxChars="50"/>		
+							</mx:HBox>
+						</mx:VBox>
+						
+					</mx:VBox>
+					
+					<mx:VBox label="Purchase" verticalGap="3">
+						
+						<mx:VBox  verticalGap="3" borderStyle="solid" borderThickness="1" width="373" height="155">
+							
+							
+							<mx:Label text="Purchase" width="100%"  textAlign="center" height="20"  fontWeight="bold" fontSize="10"/>
+							<mx:HBox width="345">
+								<mx:Label  text=" Order :" width="130" textAlign="right"/>
+								<customcomponents:GenTextInput id="tiPrintFormatPurchaseOrder" height="20" width="207"  xmlTag="porder" updatableFlag="false" tableName="type"
+															   dataType="S" textAlign="left"   defaultValue=""  setDefaultOnEmpty="true" 
+															   tabIndex="20" toolTip="Purchase Order" maxChars="50"/>		
+							</mx:HBox>
+							
+							<mx:HBox width="345">
+								<mx:Label  text=" Invoice :" width="130" textAlign="right"/>
+								<customcomponents:GenTextInput id="tiPrintFormatPurchaseInvoice" height="20" width="207"  xmlTag="pinvoice" updatableFlag="false" tableName="type"
+															   dataType="S" textAlign="left"   defaultValue=""  setDefaultOnEmpty="true" 
+															   tabIndex="21" toolTip="Purchase Invoice" maxChars="50"/>		
+							</mx:HBox>
+							<mx:HBox width="345">
+								<mx:Label  text=" Credit Invoice :" width="130" textAlign="right"/>
+								<customcomponents:GenTextInput id="tiPrintFormatPurchaseCreditInvoice" height="20" width="207"  xmlTag="pcreditinvoice" updatableFlag="false" tableName="type"
+															   dataType="S" textAlign="left"   defaultValue=""  setDefaultOnEmpty="true" 
+															   tabIndex="22" toolTip="Purchase Credit Invoice " maxChars="50"/>		
+							</mx:HBox>
+						</mx:VBox>
+						
+					</mx:VBox>
+					
+					
+					
+					<mx:VBox label="Accounting">
+						
+						<mx:HBox>
+							
+							<mx:VBox label="Vendor" verticalGap="3" borderStyle="solid" borderThickness="1" width="373" height="110">
+								<mx:Label text="Customer" width="100%"  textAlign="center" height="20"  fontWeight="bold" fontSize="10"/>
+								
+								<mx:HBox width="345">
+									<mx:Label  text=" Invoice :" width="130" textAlign="right"/>
+									<customcomponents:GenTextInput id="tiPrintFormatAcctCustomerInvoice" height="20" width="207"  xmlTag="acinvoice" updatableFlag="false" tableName="type"
+																   dataType="S" textAlign="left"   defaultValue=""  setDefaultOnEmpty="true" 
+																   tabIndex="21" toolTip="Account Customer Invoice" maxChars="50"/>		
+								</mx:HBox>
+								<mx:HBox width="345">
+									<mx:Label  text=" Credit Invoice :" width="130" textAlign="right"/>
+									<customcomponents:GenTextInput id="tiPrintFormatAcctCustomerCreditInvoice" height="20" width="207"  xmlTag="accreditinvoice" updatableFlag="false" tableName="type"
+																   dataType="S" textAlign="left"   defaultValue=""  setDefaultOnEmpty="true" 
+																   tabIndex="22" toolTip="Account Customer Credit Invoice " maxChars="50"/>		
+								</mx:HBox>
+								<mx:HBox width="345">
+									<mx:Label  text=" Receipt :" width="130" textAlign="right"/>
+									<customcomponents:GenTextInput id="tiPrintFormatAcctCustomerReceipt" height="20" width="207"  xmlTag="acreceipt" updatableFlag="false" tableName="type"
+																   dataType="S" textAlign="left"   defaultValue=""  setDefaultOnEmpty="true" 
+																   tabIndex="23" toolTip="Account Customer Receipt" maxChars="50"/>		
+								</mx:HBox>
+							</mx:VBox>
+							
+							<mx:VBox label="Vendor" verticalGap="3" borderStyle="solid" borderThickness="1" width="373" height="110">
+								<mx:Label text="Vendor" width="100%"  textAlign="center" height="20"  fontWeight="bold" fontSize="10"/>
+								
+								<mx:HBox width="345">
+									<mx:Label  text=" Invoice :" width="130" textAlign="right"/>
+									<customcomponents:GenTextInput id="tiPrintFormatAccVendorInvoice" height="20" width="207"  xmlTag="avinvoice" updatableFlag="false" tableName="type"
+																   dataType="S" textAlign="left"   defaultValue=""  setDefaultOnEmpty="true" 
+																   tabIndex="27" toolTip="Account Vendor Invoice" maxChars="50"/>		
+								</mx:HBox>
+								<mx:HBox width="345">
+									<mx:Label  text=" Credit Invoice :" width="130" textAlign="right"/>
+									<customcomponents:GenTextInput id="tiPrintFormatAccVendorCreditInvoice" height="20" width="207"  xmlTag="avcreditinvoice" updatableFlag="false" tableName="type"
+																   dataType="S" textAlign="left"   defaultValue=""  setDefaultOnEmpty="true" 
+																   tabIndex="28" toolTip="Account Vendor Credit Invoice " maxChars="50"/>		
+								</mx:HBox>
+								<mx:HBox width="345">
+									<mx:Label  text="Write Check :" width="130" textAlign="right"/>
+									<customcomponents:GenTextInput id="tiPrintFormatAccVendorWtireCheck" height="20" width="207"  xmlTag="avwritecheck" updatableFlag="false" tableName="type"
+																   dataType="S" textAlign="left"   defaultValue=""  setDefaultOnEmpty="true" 
+																   tabIndex="29" toolTip="Account Vendor Write Check" maxChars="50"/>		
+								</mx:HBox>
+							</mx:VBox>
+						</mx:HBox>
+						
+						<mx:HBox>
+							
+							<mx:VBox label="Bank" verticalGap="3" borderStyle="solid" borderThickness="1" width="373" height="110">
+								<mx:Label text="Bank" width="100%"  textAlign="center" height="20"  fontWeight="bold" fontSize="10"/>
+								
+								<mx:HBox width="345">
+									<mx:Label  text=" Payment :" width="130" textAlign="right"/>
+									<customcomponents:GenTextInput id="tiPrintFormatAccBankPayment" height="20" width="207"  xmlTag="abpayment" updatableFlag="false" tableName="type"
+																   dataType="S" textAlign="left"   defaultValue=""  setDefaultOnEmpty="true" 
+																   tabIndex="24" toolTip="Account Bank Payment" maxChars="50"/>		
+								</mx:HBox>
+								<mx:HBox width="345">
+									<mx:Label  text=" Deposit :" width="130" textAlign="right"/>
+									<customcomponents:GenTextInput id="tiPrintFormatAccBankDeposit" height="20" width="207"  xmlTag="abdeposit" updatableFlag="false" tableName="type"
+																   dataType="S" textAlign="left"   defaultValue=""  setDefaultOnEmpty="true" 
+																   tabIndex="25" toolTip="Account Bank Deposit " maxChars="50"/>		
+								</mx:HBox>
+								<mx:HBox width="345">
+									<mx:Label  text="Transfer :" width="130" textAlign="right"/>
+									<customcomponents:GenTextInput id="tiPrintFormatAccBankTransfer" height="20" width="207"  xmlTag="abtransfer" updatableFlag="false" tableName="type"
+																   dataType="S" textAlign="left"   defaultValue=""  setDefaultOnEmpty="true" 
+																   tabIndex="26" toolTip="Account Bank Transfer" maxChars="50"/>		
+								</mx:HBox>
+							</mx:VBox>
+							
+							<mx:VBox label="Journal" verticalGap="3" borderStyle="solid" borderThickness="1" width="373" height="110">
+								<mx:Label text="Journal" width="100%"  textAlign="center" height="20"  fontWeight="bold" fontSize="10"/>
+								
+								<mx:HBox width="345">
+									<mx:Label  text=" Journal :" width="130" textAlign="right"/>
+									<customcomponents:GenTextInput id="tiPrintFormatAccJournal" height="20" width="207"  xmlTag="ajournal" updatableFlag="false" tableName="type"
+																   dataType="S" textAlign="left"   defaultValue=""  setDefaultOnEmpty="true" 
+																   tabIndex="30" toolTip="Account Journal" maxChars="50"/>		
+								</mx:HBox>
+								
+							</mx:VBox>
+							
+						</mx:HBox>
+					</mx:VBox>
+					
+					<mx:VBox label="Production" width="100%" height="100%" verticalGap="3">
+						<mx:VBox verticalGap="3" borderStyle="solid" borderThickness="1" width="373" height="130">
+							
+						</mx:VBox>					
+					</mx:VBox>
+					
+				</mx:ViewStack>	
+				
+				
+			</mx:VBox>
+			
+		</mx:TabNavigator>
+	</mx:VBox>
+</gencomponents:AddEdit>

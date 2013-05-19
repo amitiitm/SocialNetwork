@@ -1,0 +1,635 @@
+<?xml version="1.0" encoding="utf-8"?>
+<gencomponents:AddEdit xmlns:mx="http://www.adobe.com/2006/mxml"
+	height="100%" width="100%" verticalGap="0"
+	xmlns:customcomponents="com.generic.customcomponents.*"
+	xmlns:gencomponents="com.generic.components.*"
+	creationComplete="handleCreationComplete()"
+	creationPolicy="all" >
+
+	<mx:Script source="../scripts/GLSetupAddEditScript.as"/>
+	
+	<mx:VBox height="100%" width="100%">
+		<mx:HBox>
+			<mx:VBox borderStyle="solid" borderThickness="1" height="181" width="365" horizontalAlign="center">
+				<mx:Label text="Purchase" width="100%"  textAlign="center" height="20"  fontWeight="bold" fontSize="10"/>
+				<mx:HBox>
+					<mx:Label text="Purchase A/c #" width="140" textAlign="right" height="20" />
+					
+					<customcomponents:GenTextInputWithHelp
+							id="dcDefault_purchase_account_id" 
+							width="200" 
+							toolTip="Purchase A/c #" 
+							dataSourceName="GLAccount"
+							minimumChar = "{__genModel.masterData.child('lookup').glaccount.value}"
+							height="20" 
+							tabIndex="1" 
+							validationFlag="true" 
+							xmlTag="default_purchase_account_id"
+							labelTag="default_purchase_account_code"
+							dataField="id" 
+							labelField= "code"
+							updatableFlag="true" 
+							tableName="gl_setup" 
+							itemChangedEvent="tiDefault_purchase_account_id.dataValue = dcDefault_purchase_account_id.labelValue"
+							/>
+					
+					<customcomponents:GenTextInput id="tiDefault_purchase_account_id" xmlTag="default_purchase_account_code" updatableFlag="true"  text="{dcDefault_purchase_account_id.labelValue}"
+						tableName = "gl_setup"  width="0" height="0" visible="false"/>
+					
+					<!--<customcomponents:GenDynamicComboBoxWithHelp id="dcDefault_purchase_account_id" width="200" 
+						tabIndex="1" toolTip="Purchase A/c #"  defaultValue="" height="20" 
+						dataField="id" labelField="name" 
+						dataSourceName="GLAccount" dataProvider="{__genModel.lookupObj.glaccount.children()}"   
+						validationFlag="true" xmlTag="default_purchase_account_id" updatableFlag="true" tableName="gl_setup"  />	-->
+				</mx:HBox>
+				<mx:HBox>
+					<mx:Label text="Discount A/c #" width="140" textAlign="right" height="20" />
+					
+					<customcomponents:GenTextInputWithHelp
+							id="dcDiscount_purchase_account_id" 
+							width="200" 
+							toolTip="Discount Purchase A/c #" 
+							dataSourceName="GLAccount"
+							minimumChar = "{__genModel.masterData.child('lookup').glaccount.value}"
+							height="20" 
+							tabIndex="2" 
+							validationFlag="true" 
+							xmlTag="discount_purchase_account_id"
+							labelTag="discount_purchase_account_code"
+							dataField="id" 
+							labelField= "code"
+							updatableFlag="true" 
+							tableName="gl_setup" 
+							itemChangedEvent="tiDiscount_purchase_account_id.dataValue = dcDiscount_purchase_account_id.labelValue"
+							/>
+					
+					<customcomponents:GenTextInput id="tiDiscount_purchase_account_id" xmlTag="discount_purchase_account_code" updatableFlag="true"  text="{dcDiscount_purchase_account_id.labelValue}"
+						tableName = "gl_setup"  width="0" height="0" visible="false"/>
+					
+					<!--<customcomponents:GenDynamicComboBoxWithHelp id="dcDiscount_purchase_account_id" width="200" 
+						tabIndex="2" toolTip="Discount Purchase A/c #"  defaultValue="" height="20" 
+						dataField="id" labelField="name"
+						dataSourceName="GLAccount" dataProvider="{__genModel.lookupObj.glaccount.children()}"   
+						validationFlag="true" xmlTag="discount_purchase_account_id" updatableFlag="true" tableName="gl_setup"  />-->				
+				</mx:HBox>
+				<mx:HBox>
+					<mx:Label text="Shipping A/c #" width="140" textAlign="right" height="20" />
+					
+					<customcomponents:GenTextInputWithHelp
+							id="dcShipping_purchase_account_id" 
+							width="200" 
+							toolTip="Shipping Purchase A/c #" 
+							dataSourceName="GLAccount"
+							minimumChar = "{__genModel.masterData.child('lookup').glaccount.value}"
+							height="20" 
+							tabIndex="3" 
+							validationFlag="true" 
+							xmlTag="shipping_purchase_account_id"
+							labelTag="shipping_purchase_account_code"
+							dataField="id" 
+							labelField= "code"
+							updatableFlag="true" 
+							tableName="gl_setup" 
+							itemChangedEvent="tiShipping_purchase_account_id.dataValue = dcShipping_purchase_account_id.labelValue"
+							/>
+					
+					<customcomponents:GenTextInput id="tiShipping_purchase_account_id" xmlTag="shipping_purchase_account_code" updatableFlag="true"  text="{dcShipping_purchase_account_id.labelValue}"
+						tableName = "gl_setup"  width="0" height="0" visible="false"/>
+					
+					<!--<customcomponents:GenDynamicComboBoxWithHelp id="dcShipping_purchase_account_id" width="200" 
+						tabIndex="3" toolTip="Shipping Purchase A/c #"  defaultValue="" height="20" 
+						dataField="id" labelField="name"
+						dataSourceName="GLAccount" dataProvider="{__genModel.lookupObj.glaccount.children()}"   
+						validationFlag="true" xmlTag="shipping_purchase_account_id" updatableFlag="true" tableName="gl_setup"  />-->				
+				</mx:HBox>
+				<mx:HBox>
+					<mx:Label text="Insurance A/c #" width="140" textAlign="right" height="20" />
+					
+					<customcomponents:GenTextInputWithHelp
+							id="dcSalesInsurance_purchase_account_id" 
+							width="200" 
+							toolTip="PurchseInsurance Purchase A/c #" 
+							dataSourceName="GLAccount"
+							minimumChar = "{__genModel.masterData.child('lookup').glaccount.value}"
+							height="20" 
+							tabIndex="4" 
+							validationFlag="true" 
+							xmlTag="insurance_purchase_account_id"
+							labelTag="insurance_purchase_account_code"
+							dataField="id" 
+							labelField= "code"
+							updatableFlag="true" 
+							tableName="gl_setup" 
+							itemChangedEvent="tiSalesInsurance_purchase_account_id.dataValue = dcSalesInsurance_purchase_account_id.labelValue"
+							/>
+					
+					<customcomponents:GenTextInput id="tiSalesInsurance_purchase_account_id" xmlTag="insurance_purchase_account_code" updatableFlag="true"  text="{dcSalesInsurance_purchase_account_id.labelValue}"
+						tableName = "gl_setup"  width="0" height="0" visible="false"/>
+					
+					<!--<customcomponents:GenDynamicComboBoxWithHelp id="dcSalesInsurance_purchase_account_id" width="200" 
+						tabIndex="4" toolTip="PurchseInsurance Purchase A/c #"  defaultValue="" height="20" 
+						dataField="id" labelField="name"
+						dataSourceName="GLAccount" dataProvider="{__genModel.lookupObj.glaccount.children()}"   
+						validationFlag="true" xmlTag="insurance_purchase_account_id" updatableFlag="true" tableName="gl_setup"  />-->				
+				</mx:HBox>
+				<mx:HBox>
+					<mx:Label text="Tax A/c #" width="140" textAlign="right" height="20" />
+					
+					<customcomponents:GenTextInputWithHelp
+							id="dcSalesTax_purchase_account_id" 
+							width="200" 
+							toolTip="SalesTax Purchase A/c #" 
+							dataSourceName="GLAccount"
+							minimumChar = "{__genModel.masterData.child('lookup').glaccount.value}"
+							height="20" 
+							tabIndex="5" 
+							validationFlag="true" 
+							xmlTag="salestax_purchase_account_id"
+							labelTag="salestax_purchase_account_code"
+							dataField="id" 
+							labelField= "code"
+							updatableFlag="true" 
+							tableName="gl_setup" 
+							itemChangedEvent="tiSalesTax_purchase_account_id.dataValue = dcSalesTax_purchase_account_id.labelValue"
+							/>
+					
+					<customcomponents:GenTextInput id="tiSalesTax_purchase_account_id" xmlTag="salestax_purchase_account_code" updatableFlag="true"  text="{dcSalesTax_purchase_account_id.labelValue}"
+						tableName = "gl_setup"  width="0" height="0" visible="false"/>
+					
+					<!--<customcomponents:GenDynamicComboBoxWithHelp id="dcSalesTax_purchase_account_id" width="200" 
+						tabIndex="5" toolTip="SalesTax Purchase A/c #"  defaultValue="" height="20" 
+						dataField="id" labelField="name"
+						dataSourceName="GLAccount" dataProvider="{__genModel.lookupObj.glaccount.children()}"   
+						validationFlag="true" xmlTag="salestax_purchase_account_id" updatableFlag="true" tableName="gl_setup"  />-->				
+				</mx:HBox>	
+				<mx:HBox>
+					<mx:Label text="Other A/c #" width="140" textAlign="right" height="20" />
+					
+					<customcomponents:GenTextInputWithHelp
+							id="dcOther_purchase_account_id" 
+							width="200" 
+							toolTip="Other Purchase A/c #" 
+							dataSourceName="GLAccount"
+							minimumChar = "{__genModel.masterData.child('lookup').glaccount.value}"				
+							height="20" 
+							tabIndex="6" 
+							validationFlag="true" 
+							xmlTag="other_purchase_account_id"
+							labelTag="other_purchase_account_code"
+							dataField="id" 
+							labelField= "code"
+							updatableFlag="true" 
+							tableName="gl_setup" 
+							itemChangedEvent="tiOther_purchase_account_id.dataValue = dcOther_purchase_account_id.labelValue"
+							/>
+					
+					<customcomponents:GenTextInput id="tiOther_purchase_account_id" xmlTag="other_purchase_account_code" updatableFlag="true" 
+						 text="{dcOther_purchase_account_id.labelValue}" tableName = "gl_setup"  width="0" height="0" visible="false"/>
+					
+					<!--<customcomponents:GenDynamicComboBoxWithHelp id="dcOther_purchase_account_id" width="200" 
+						tabIndex="6" toolTip="Other Purchase A/c #"  defaultValue="" height="20" 
+						dataField="id" labelField="name"
+						dataSourceName="GLAccount" dataProvider="{__genModel.lookupObj.glaccount.children()}"   
+						validationFlag="true" xmlTag="other_purchase_account_id" updatableFlag="true" tableName="gl_setup"  />-->				
+				</mx:HBox>	
+			</mx:VBox>
+			<mx:VBox borderStyle="solid" borderThickness="1" height="181" width="365" horizontalAlign="center">
+				<mx:Label text="Sales" width="100%"  textAlign="center"  height="20" fontWeight="bold" fontSize="10"/>
+				<mx:HBox>
+					<mx:Label text="Sales A/c #" width="140" textAlign="right" height="20" />
+					
+					<customcomponents:GenTextInputWithHelp
+							id="dcDefault_sales_account_id" 
+							width="200" 
+							toolTip="Sales A/c #" 
+							dataSourceName="GLAccount"
+							minimumChar = "{__genModel.masterData.child('lookup').glaccount.value}"
+							height="20" 
+							tabIndex="7" 
+							validationFlag="true" 
+							xmlTag="default_sales_account_id"
+							labelTag="default_sales_account_code"
+							dataField="id" 
+							labelField= "code"
+							updatableFlag="true" 
+							tableName="gl_setup" 
+							itemChangedEvent="tiDefault_sales_account_id.dataValue = dcDefault_sales_account_id.labelValue"
+							/>
+					
+					<customcomponents:GenTextInput id="tiDefault_sales_account_id" xmlTag="default_sales_account_code" updatableFlag="true" 
+						 text="{dcDefault_sales_account_id.labelValue}" tableName = "gl_setup"  width="0" height="0" visible="false"/>
+					
+					<!--<customcomponents:GenDynamicComboBoxWithHelp id="dcDefault_sales_account_id" width="200" 
+						tabIndex="7" toolTip="Sales A/c #"  defaultValue="" height="20" 
+						dataField="id" labelField="name"
+						dataSourceName="GLAccount" dataProvider="{__genModel.lookupObj.glaccount.children()}"   
+						validationFlag="true" xmlTag="default_sales_account_id" updatableFlag="true" tableName="gl_setup"  />-->					
+				</mx:HBox>
+				<mx:HBox>
+				<mx:Label text="Discount A/c #" width="140" textAlign="right" height="20" />
+				
+				<customcomponents:GenTextInputWithHelp
+							id="dcDiscount_sales_account_id" 
+							width="200" 
+							toolTip="Discount Sales A/c #" 
+							dataSourceName="GLAccount"
+							minimumChar = "{__genModel.masterData.child('lookup').glaccount.value}"
+							height="20" 
+							tabIndex="8" 
+							validationFlag="true" 
+							xmlTag="discount_sales_account_id"
+							labelTag="discount_sales_account_code"
+							dataField="id" 
+							labelField= "code"
+							updatableFlag="true" 
+							tableName="gl_setup" 
+							itemChangedEvent="tiDiscount_sales_account_id.dataValue = dcDiscount_sales_account_id.labelValue"
+							/>
+					
+					<customcomponents:GenTextInput id="tiDiscount_sales_account_id" xmlTag="discount_sales_account_code" updatableFlag="true" 
+						 text="{dcDiscount_sales_account_id.labelValue}" tableName = "gl_setup"  width="0" height="0" visible="false"/>
+				
+				
+				<!--<customcomponents:GenDynamicComboBoxWithHelp id="dcDiscount_sales_account_id" width="200" 
+					tabIndex="8" toolTip="Discount Sales A/c #"  defaultValue="" height="20" 
+					dataField="id" labelField="name"
+					dataSourceName="GLAccount" dataProvider="{__genModel.lookupObj.glaccount.children()}"   
+					validationFlag="true" xmlTag="discount_sales_account_id" updatableFlag="true" tableName="gl_setup"  />-->					
+				</mx:HBox>
+				<mx:HBox>
+				<mx:Label text="Shipping A/c #" width="140" textAlign="right" height="20" />
+				
+				<customcomponents:GenTextInputWithHelp
+							id="dcShipping_sales_account_id" 
+							width="200" 
+							toolTip="Shipping Sales A/c #" 
+							dataSourceName="GLAccount"
+							minimumChar = "{__genModel.masterData.child('lookup').glaccount.value}"
+							height="20" 
+							tabIndex="9" 
+							validationFlag="true" 
+							xmlTag="shipping_sales_account_id"
+							labelTag="shipping_sales_account_code"
+							dataField="id" 
+							labelField= "code"
+							updatableFlag="true" 
+							tableName="gl_setup" 
+							itemChangedEvent="tiShipping_sales_account_id.dataValue = dcShipping_sales_account_id.labelValue"
+							/>
+					
+					<customcomponents:GenTextInput id="tiShipping_sales_account_id" xmlTag="shipping_sales_account_code" updatableFlag="true" 
+						 text="{dcShipping_sales_account_id.labelValue}" tableName = "gl_setup"  width="0" height="0" visible="false"/>
+				
+				<!--<customcomponents:GenDynamicComboBoxWithHelp id="dcShipping_sales_account_id" width="200" 
+					tabIndex="9" toolTip="Shipping Sales A/c #"  defaultValue="" height="20" 
+					dataField="id" labelField="name"
+					dataSourceName="GLAccount" dataProvider="{__genModel.lookupObj.glaccount.children()}"   
+					validationFlag="true" xmlTag="shipping_sales_account_id" updatableFlag="true" tableName="gl_setup"  />-->					
+				</mx:HBox>
+				<mx:HBox>
+				<mx:Label text="Insurance A/c #" width="140" textAlign="right" height="20" />
+				
+				<customcomponents:GenTextInputWithHelp
+							id="dcSalesInsurance_sales_account_id" 
+							width="200" 
+							toolTip="SalesInsurance Sales A/c #" 
+							dataSourceName="GLAccount"
+							minimumChar = "{__genModel.masterData.child('lookup').glaccount.value}"
+							height="20" 
+							tabIndex="10" 
+							validationFlag="true" 
+							xmlTag="insurance_sales_account_id"
+							labelTag="insurance_sales_account_code"
+							dataField="id" 
+							labelField= "code"
+							updatableFlag="true" 
+							tableName="gl_setup" 
+							itemChangedEvent="tiSalesInsurance_sales_account_id.dataValue = dcSalesInsurance_sales_account_id.labelValue"
+							/>
+					
+					<customcomponents:GenTextInput id="tiSalesInsurance_sales_account_id" xmlTag="insurance_sales_account_code" updatableFlag="true" 
+						 text="{dcSalesInsurance_sales_account_id.labelValue}" tableName = "gl_setup"  width="0" height="0" visible="false"/>
+				
+				<!--<customcomponents:GenDynamicComboBoxWithHelp id="dcSalesInsurance_sales_account_id" width="200" 
+					tabIndex="10" toolTip="SalesInsurance Sales A/c #"  defaultValue="" height="20" 
+					dataField="id" labelField="name"
+					dataSourceName="GLAccount" dataProvider="{__genModel.lookupObj.glaccount.children()}"   
+					validationFlag="true" xmlTag="insurance_sales_account_id" updatableFlag="true" tableName="gl_setup"  />	-->				
+				</mx:HBox>
+				<mx:HBox>
+				<mx:Label text="Tax A/c #" width="140" textAlign="right" height="20" />
+				
+				<customcomponents:GenTextInputWithHelp
+							id="dcSalesTax_sales_account_id" 
+							width="200" 
+							toolTip="SalesTax Sales A/c #" 
+							dataSourceName="GLAccount"
+							minimumChar = "{__genModel.masterData.child('lookup').glaccount.value}"
+							height="20" 
+							tabIndex="11" 
+							validationFlag="true" 
+							xmlTag="salestax_sales_account_id"
+							labelTag="salestax_sales_account_code"
+							dataField="id" 
+							labelField= "code"
+							updatableFlag="true" 
+							tableName="gl_setup" 
+							itemChangedEvent="tiSalesTax_sales_account_id.dataValue = dcSalesTax_sales_account_id.labelValue"
+							/>
+					
+					<customcomponents:GenTextInput id="tiSalesTax_sales_account_id" xmlTag="salestax_sales_account_code" updatableFlag="true" 
+						 text="{dcSalesTax_sales_account_id.labelValue}" tableName = "gl_setup"  width="0" height="0" visible="false"/>
+				
+				<!--<customcomponents:GenDynamicComboBoxWithHelp id="dcSalesTax_sales_account_id" width="200" 
+					tabIndex="11" toolTip="SalesTax Sales A/c #"  defaultValue="" height="20" 
+					dataField="id" labelField="name"
+					dataSourceName="GLAccount" dataProvider="{__genModel.lookupObj.glaccount.children()}"   
+					validationFlag="true" xmlTag="salestax_sales_account_id" updatableFlag="true" tableName="gl_setup"  />	-->				
+				</mx:HBox>	
+				<mx:HBox>
+					<mx:Label text="Other A/c #" width="140" textAlign="right" height="20" />
+					
+					<customcomponents:GenTextInputWithHelp
+							id="dcOther_sales_account_id" 
+							width="200" 
+							toolTip="Other Sales A/c #" 
+							dataSourceName="GLAccount"
+							minimumChar = "{__genModel.masterData.child('lookup').glaccount.value}"
+							height="20" 
+							tabIndex="12" 
+							validationFlag="true" 
+							xmlTag="other_sales_account_id"
+							labelTag="other_sales_account_code"
+							dataField="id" 
+							labelField= "code"
+							updatableFlag="true" 
+							tableName="gl_setup" 
+							itemChangedEvent="tiOther_sales_account_id.dataValue = dcOther_sales_account_id.labelValue"
+							/>
+					
+					<customcomponents:GenTextInput id="tiOther_sales_account_id" xmlTag="other_sales_account_code" updatableFlag="true" 
+						 text="{dcOther_sales_account_id.labelValue}" tableName = "gl_setup"  width="0" height="0" visible="false"/>
+					
+					<!--<customcomponents:GenDynamicComboBoxWithHelp id="dcOther_sales_account_id" width="200" 
+						tabIndex="12" toolTip="Other Sales A/c #"  defaultValue="" height="20" 
+						dataField="id" labelField="name"
+						dataSourceName="GLAccount" dataProvider="{__genModel.lookupObj.glaccount.children()}"   
+						validationFlag="true" xmlTag="other_sales_account_id" updatableFlag="true" tableName="gl_setup"  />	-->			
+				</mx:HBox>
+			</mx:VBox>			
+		</mx:HBox>
+		<mx:Spacer height="2"/>
+		<mx:HBox>
+			<mx:VBox borderStyle="solid" borderThickness="1" height="141" width="365" horizontalAlign="center">
+				<mx:Label text="Account Payable" width="100%"  textAlign="center"  height="20" fontWeight="bold" fontSize="10"/>
+				<mx:HBox>
+					<mx:Label text="Payable A/c #" width="140" textAlign="right" height="20" />
+					
+					<customcomponents:GenTextInputWithHelp
+							id="dcPayable_account_id" 
+							width="200" 
+							toolTip="Payable A/c #" 
+							dataSourceName="GLAccount"
+							minimumChar = "{__genModel.masterData.child('lookup').glaccount.value}"
+							height="20" 
+							tabIndex="13" 
+							validationFlag="true" 
+							xmlTag="ap_account_id"
+							labelTag="ap_account_code"
+							dataField="id" 
+							labelField= "code"
+							updatableFlag="true" 
+							tableName="gl_setup" 
+							itemChangedEvent="tiPayable_account_id.dataValue = dcPayable_account_id.labelValue"
+							/>
+					
+					<customcomponents:GenTextInput id="tiPayable_account_id" xmlTag="ap_account_code" updatableFlag="true" 
+						 text="{dcPayable_account_id.labelValue}" tableName = "gl_setup"  width="0" height="0" visible="false"/>
+					
+					<!--<customcomponents:GenDynamicComboBoxWithHelp id="dcPayable_account_id" width="200" 
+						tabIndex="13" toolTip="Payable A/c #"  defaultValue="" height="20" 
+						dataField="id" labelField="name"
+						dataSourceName="GLAccount" dataProvider="{__genModel.lookupObj.glaccount.children()}"   
+						validationFlag="true" xmlTag="ap_account_id" updatableFlag="true" tableName="gl_setup"  />-->					
+				</mx:HBox>
+				<mx:HBox>
+					<mx:Label text="Bank #" width="140" textAlign="right"/>
+					
+					<customcomponents:GenTextInputWithHelp
+							id="dcFAAPBankCd" 
+							width="200" 
+							toolTip="Faap Bank #" 
+							dataSourceName="GLBankAccount"
+							minimumChar = "{__genModel.masterData.child('lookup').glbankaccount.value}"
+							height="20" 
+							tabIndex="14" 
+							validationFlag="true" 
+							xmlTag="faap_bank_id"
+							labelTag="faap_bank_code"
+							dataField="id" 
+							labelField= "code"
+							updatableFlag="true" 
+							tableName="gl_setup" 
+							itemChangedEvent="tiFAAPBankCd.dataValue = dcFAAPBankCd.labelValue"
+							/>
+					
+					<customcomponents:GenTextInput id="tiFAAPBankCd" xmlTag="faap_bank_code" updatableFlag="true" 
+						 text="{dcFAAPBankCd.labelValue}" tableName = "gl_setup"  width="0" height="0" visible="false"/>
+					
+					<!--<customcomponents:GenDynamicComboBoxWithHelp id="dcFAAPBankCd" width="200" tabIndex="14" 
+						toolTip="Faap Bank Code"  defaultValue="" height="20" dataField="id" labelField="name"  
+					 	dataSourceName="GLBankAccount" dataProvider="{__genModel.lookupObj.glbankaccount.children()}"
+					 	validationFlag="true" xmlTag="faap_bank_id" updatableFlag="true" tableName="gl_setup"  />	-->				
+				</mx:HBox>
+				<mx:HBox>
+					<mx:Label text="Credit GL Account #" width="140" textAlign="right"/>
+					
+					<customcomponents:GenTextInputWithHelp
+							id="dcFAAPCrGLAccCd" 
+							width="200" 
+							toolTip="Faap Cr. GL Account #" 
+							dataSourceName="GLAccount"
+							minimumChar = "{__genModel.masterData.child('lookup').glaccount.value}"
+							height="20" 
+							tabIndex="15" 
+							validationFlag="true" 
+							xmlTag="faap_credit_gl_account_id"
+							labelTag="faap_credit_gl_account_code"
+							dataField="id" 
+							labelField= "code"
+							updatableFlag="true" 
+							tableName="gl_setup" 
+							itemChangedEvent="tiFAAPCrGLAccCd.dataValue = dcFAAPCrGLAccCd.labelValue"
+							/>
+					
+					<customcomponents:GenTextInput id="tiFAAPCrGLAccCd" xmlTag="faap_credit_gl_account_code" updatableFlag="true" 
+						 text="{dcFAAPCrGLAccCd.labelValue}" tableName = "gl_setup"  width="0" height="0" visible="false"/>
+					
+					<!--<customcomponents:GenDynamicComboBoxWithHelp id="dcFAAPCrGLAccCd" width="200" tabIndex="15" toolTip="Faap Cr. GL Account Code"  defaultValue="" height="20"
+						 dataField="id" labelField="name" 
+						 dataSourceName="GLAccount" dataProvider="{__genModel.lookupObj.glaccount.children()}"
+					 	validationFlag="true" xmlTag="faap_credit_gl_account_id" updatableFlag="true" tableName="gl_setup"  />	-->				
+				</mx:HBox>
+			</mx:VBox>
+			<mx:VBox borderStyle="solid" borderThickness="1" height="141" width="365" horizontalAlign="center">
+				<mx:Label text="Account Receivable" width="100%"  textAlign="center"  height="20" fontWeight="bold" fontSize="10"/>
+				<mx:HBox>
+					<mx:Label text="Receivable A/c #" width="140" textAlign="right" height="20" />
+					
+					<customcomponents:GenTextInputWithHelp
+							id="dcReceivable_account_id" 
+							width="200" 
+							toolTip="Receivable A/c #" 
+							dataSourceName="GLAccount"
+							minimumChar = "{__genModel.masterData.child('lookup').glaccount.value}"
+							height="20" 
+							tabIndex="16" 
+							validationFlag="true" 
+							xmlTag="ar_account_id"
+							labelTag="ar_account_code"
+							dataField="id" 
+							labelField= "code"
+							updatableFlag="true" 
+							tableName="gl_setup" 
+							itemChangedEvent="tiReceivable_account_id.dataValue = dcReceivable_account_id.labelValue"
+							/>
+					
+					<customcomponents:GenTextInput id="tiReceivable_account_id" xmlTag="ar_account_code" updatableFlag="true" 
+						 text="{dcReceivable_account_id.labelValue}" tableName = "gl_setup"  width="0" height="0" visible="false"/>
+					
+					<!--<customcomponents:GenDynamicComboBoxWithHelp id="dcReceivable_account_id" width="200" 
+						tabIndex="16" toolTip="Receivable A/c #"  defaultValue="" height="20" 
+						dataField="id" labelField="name"
+						dataSourceName="GLAccount" dataProvider="{__genModel.lookupObj.glaccount.children()}"   
+						validationFlag="true" xmlTag="ar_account_id" updatableFlag="true" tableName="gl_setup"  />	-->					
+				</mx:HBox>
+				<mx:HBox>
+					<mx:Label text="Invoice GL Accounts" width="140" textAlign="right"/>
+					
+					<customcomponents:GenTextInputWithHelp
+							id="dcFAARInvGLAcc" 
+							width="200" 
+							toolTip="Invoice Acc" 
+							dataSourceName="GLAccount"
+							minimumChar = "{__genModel.masterData.child('lookup').glaccount.value}"
+							height="20" 
+							tabIndex="17" 
+							validationFlag="true" 
+							xmlTag="faar_invoice_gl_account_id"
+							labelTag="faar_invoice_gl_account_code"
+							dataField="id" 
+							labelField= "code"
+							updatableFlag="true" 
+							tableName="gl_setup" 
+							itemChangedEvent="tiFAARInvGLAcc.dataValue = dcFAARInvGLAcc.labelValue"
+							/>
+					
+					<customcomponents:GenTextInput id="tiFAARInvGLAcc" xmlTag="faar_invoice_gl_account_code" updatableFlag="true" 
+						 text="{dcFAARInvGLAcc.labelValue}" tableName = "gl_setup"  width="0" height="0" visible="false"/>
+					
+					<!--<customcomponents:GenDynamicComboBoxWithHelp id="dcFAARInvGLAcc" width="200" tabIndex="17" toolTip="Invoice Acc"  defaultValue="" height="20"
+					 	dataField="id" labelField="name" 
+					 	dataSourceName="GLAccount" dataProvider="{__genModel.lookupObj.glaccount.children()}"
+					 	validationFlag="true" xmlTag="faar_invoice_gl_account_id" updatableFlag="true" tableName="gl_setup"  />-->					
+				</mx:HBox>
+				<mx:HBox>
+					<mx:Label text="Bank #" width="140" textAlign="right"/>
+					
+					<customcomponents:GenTextInputWithHelp
+							id="dcFAARBankCd" 
+							width="200" 
+							toolTip="Faar Bank #" 
+							dataSourceName="GLBankAccount"
+							minimumChar = "{__genModel.masterData.child('lookup').glbankaccount.value}"
+							height="20" 
+							tabIndex="18" 
+							validationFlag="true" 
+							xmlTag="faar_bank_id"
+							labelTag="faar_bank_code"
+							dataField="id" 
+							labelField= "code"
+							updatableFlag="true" 
+							tableName="gl_setup" 
+							itemChangedEvent="tiFAARBankCd.dataValue = dcFAARBankCd.labelValue"
+							/>
+					
+					<customcomponents:GenTextInput id="tiFAARBankCd" xmlTag="faar_bank_code" updatableFlag="true" 
+						 text="{dcFAARBankCd.labelValue}" tableName = "gl_setup"  width="0" height="0" visible="false"/>
+					
+					<!--<customcomponents:GenDynamicComboBoxWithHelp id="dcFAARBankCd" width="200" tabIndex="18" toolTip="Faar Bank Vode"  defaultValue="" height="20"
+						 dataField="id" labelField="name" 
+						 dataSourceName="GLBankAccount" dataProvider="{__genModel.lookupObj.glbankaccount.children()}"
+						 validationFlag="true" xmlTag="faar_bank_id" updatableFlag="true" tableName="gl_setup"  />	-->				
+				</mx:HBox>
+				<mx:HBox>
+					<mx:Label text="Credit GL Account #" width="140" textAlign="right"/>
+					
+					<customcomponents:GenTextInputWithHelp
+							id="dcFAARCrGLAccCd" 
+							width="200" 
+							toolTip="Faar Cr. GL Account #" 
+							dataSourceName="GLAccount"
+							minimumChar = "{__genModel.masterData.child('lookup').glaccount.value}"
+							height="20" 
+							tabIndex="19" 
+							validationFlag="true" 
+							xmlTag="faar_credit_gl_account_id"
+							labelTag="faar_credit_gl_account_code"
+							dataField="id" 
+							labelField= "code"
+							updatableFlag="true" 
+							tableName="gl_setup" 
+							itemChangedEvent="tiFAARCrGLAccCd.dataValue = dcFAARCrGLAccCd.labelValue"
+							/>
+					
+					<customcomponents:GenTextInput id="tiFAARCrGLAccCd" xmlTag="faar_credit_gl_account_code" updatableFlag="true" 
+						 text="{dcFAARCrGLAccCd.labelValue}" tableName = "gl_setup"  width="0" height="0" visible="false"/>
+					
+					<!--<customcomponents:GenDynamicComboBoxWithHelp id="dcFAARCrGLAccCd" width="200" tabIndex="19" toolTip="Faar Cr. GL Account Code"  defaultValue="" height="20"
+						 dataField="id" labelField="name" 
+						 dataSourceName="GLAccount" dataProvider="{__genModel.lookupObj.glaccount.children()}"
+					 	validationFlag="true" xmlTag="faar_credit_gl_account_id" updatableFlag="true" tableName="gl_setup"  />	-->				
+				</mx:HBox>
+			</mx:VBox>	
+		</mx:HBox>
+		<mx:Spacer height="2"/>
+		<mx:VBox borderStyle="solid" borderThickness="1" height="60" width="365" horizontalAlign="center">
+				<mx:Label text="Bank Charge" width="100%"  textAlign="center"  height="20" fontWeight="bold" fontSize="10"/>
+				<mx:HBox>
+					<mx:Label text="Bank Charge A/c #" width="140" textAlign="right" height="20" />
+					
+					<customcomponents:GenTextInputWithHelp
+							id="dcBank_charge_account_id" 
+							width="200" 
+							toolTip="Bank Charge A/c #" 
+							dataSourceName="GLAccount"
+							minimumChar = "{__genModel.masterData.child('lookup').glaccount.value}"
+							height="20" 
+							tabIndex="20" 
+							validationFlag="true" 
+							xmlTag="bank_charge_account_id"
+							labelTag="bank_charge_account_code"
+							dataField="id" 
+							labelField= "code"
+							updatableFlag="true" 
+							tableName="gl_setup" 
+							itemChangedEvent="tiBank_charge_account_code.dataValue = dcBank_charge_account_id.labelValue"
+							/>
+					
+					<customcomponents:GenTextInput id="tiBank_charge_account_code" xmlTag="bank_charge_account_code" updatableFlag="true" 
+						 text="{dcBank_charge_account_id.labelValue}" tableName = "gl_setup"  width="0" height="0" visible="false"/>
+						
+				</mx:HBox>
+			</mx:VBox>
+		<mx:HBox id="hbDetail" label="Item" width="100%" height="100%" horizontalAlign="center" fontSize="10">
+			<gencomponents:Detail id="dtlLine"
+				updatableFlag="true"
+				rootNode="gl_setup_items"
+				formatServiceID="glSetupDetailFormat"
+				width="100%"
+				DetailEditClass="{acct.glsetup.components.GLSetupDetail}"
+				title="GL Setup Detail"	/>
+		</mx:HBox>
+	</mx:VBox>
+</gencomponents:AddEdit>
+

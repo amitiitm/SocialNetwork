@@ -1,0 +1,110 @@
+<report_columns>
+	<report_column>
+		<column_name>trans_bk</column_name>
+		<id>1</id>
+		<column_label>trans bk</column_label>
+		<column_width>100</column_width>
+		<column_textalign>left</column_textalign>
+		<sortdatatype>S</sortdatatype>
+		<column_datatype>S</column_datatype>
+		<isgroupable>Y</isgroupable>
+		<isdrilldowncolumn>Y</isdrilldowncolumn>
+	</report_column>
+	<report_column>
+		
+		<column_name>trans_no</column_name>
+		<id>2</id>
+		<column_label>trans no</column_label>
+		<column_width>100</column_width>
+		<column_textalign>left</column_textalign>
+		<sortdatatype>N</sortdatatype>
+		<column_datatype>S</column_datatype>
+		<isgroupable>N</isgroupable>
+		<isdrilldowncolumn>Y</isdrilldowncolumn>
+	</report_column>	
+	<report_column>
+		
+		<column_name>trans_date</column_name>
+		<id>3</id>
+		<column_label>trans date</column_label>
+		<column_width>100</column_width>
+		<column_textalign>left</column_textalign>
+		<sortdatatype>D</sortdatatype>
+		<column_datatype>D</column_datatype>
+		<isgroupable>Y</isgroupable>
+		<isdrilldowncolumn>Y</isdrilldowncolumn>
+	</report_column>	
+	<report_column>
+		
+		<column_name>customer_code</column_name>
+		<id>4</id>
+		<column_label>customer code</column_label>
+		<column_width>100</column_width>
+		<column_textalign>left</column_textalign>
+		<sortdatatype>S</sortdatatype>
+		<column_datatype>S</column_datatype>
+		<isgroupable>Y</isgroupable>
+		<isdrilldowncolumn>Y</isdrilldowncolumn>
+	</report_column>			
+	<report_column>
+		
+		<column_name>account_period_code</column_name>
+		<id>5</id>
+		<column_label>account period code</column_label>
+		<column_width>100</column_width>
+		<column_textalign>left</column_textalign>
+		<sortdatatype>S</sortdatatype>
+		<column_datatype>S</column_datatype>
+		<isgroupable>Y</isgroupable>
+		<isdrilldowncolumn>Y</isdrilldowncolumn>
+	</report_column>	
+	<report_column>
+		
+		<column_name>received_amt</column_name>
+		<id>6</id>
+		<column_label>received amt</column_label>
+		<column_width>100</column_width>
+		<column_textalign>right</column_textalign>
+		<sortdatatype>N</sortdatatype>
+		<column_datatype>N</column_datatype>
+		<isgroupable>N</isgroupable>
+		<isdrilldowncolumn>Y</isdrilldowncolumn>
+	</report_column>	
+	<report_column>
+		
+		<column_name>applied_amt</column_name>
+		<id>7</id>
+		<column_label>applied amt</column_label>
+		<column_width>100</column_width>
+		<column_textalign>right</column_textalign>
+		<sortdatatype>N</sortdatatype>
+		<column_datatype>N</column_datatype>
+		<isgroupable>N</isgroupable>
+		<isdrilldowncolumn>Y</isdrilldowncolumn>
+	</report_column>
+	<report_column>
+		
+		<column_name>balance amt</column_name>
+		<id>8</id>
+		<column_label>balance amt</column_label>
+		<column_width>100</column_width>
+		<column_textalign>right</column_textalign>
+		<sortdatatype>N</sortdatatype>
+		<column_datatype>N</column_datatype>
+		<isgroupable>N</isgroupable>
+		<isdrilldowncolumn>Y</isdrilldowncolumn>
+	</report_column>
+	<report_column>
+		<column_name>item_qty</column_name>
+		<id>9</id>
+		<column_label>item qty</column_label>
+		<column_width>100</column_width>
+		<column_textalign>right</column_textalign>
+		<sortdatatype>N</sortdatatype>
+		<column_datatype>N</column_datatype>
+		<isgroupable>N</isgroupable>
+		<isdrilldowncolumn>Y</isdrilldowncolumn>
+	</report_column>			
+	
+
+</report_columns>

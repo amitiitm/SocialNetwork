@@ -1,0 +1,60 @@
+<columns lockedColumnCount='0'>
+
+	<column data='code'				label='Customer #' 		editable='false' 	visible='true' 		width='80' 		textAlign='left' 
+			print_width = '20'		forLevel='true' 		defaultForLevel='2' 	booleanFlag='false'	sortDataType='S'	columnPrecision="NaN"/>
+							
+	<column data='name' 			label='Customer Name' 	editable='false' 	visible='true' 		width='80' 		textAlign='left'
+			print_width = '20'		forLevel='false' 		defaultForLevel='' 		booleanFlag='false'	sortDataType='S'	columnPrecision="NaN"/>
+					
+	<column data='address1' 		label='Address #1'		editable='false' 	visible='true' 		width='80' 		textAlign='left' 
+			print_width = '26'		forLevel='false' 		defaultForLevel='' 		booleanFlag='false'	sortDataType='S'	columnPrecision="NaN"/>
+	
+	<column data='address2' 		label='Address #2' 		editable='false' 	visible='true'	 	width='80' 		textAlign='left' 
+			print_width = '26'		forLevel='false' 		defaultForLevel='' 		booleanFlag='false'	sortDataType='S'	columnPrecision="NaN"/>
+			
+	<column data='city' 			label='City' 			editable='false' 	visible='true' 		width='60'		textAlign='left' 
+			print_width = '18'		forLevel='false' 		defaultForLevel='' 		booleanFlag='false'	sortDataType='S'	columnPrecision="NaN"/>
+				
+	<column data='state' 			label='State' 			editable='false' 	visible='true' 		width='60' 		textAlign='left' 
+			print_width = '18'		forLevel='false' 		defaultForLevel='' 		booleanFlag='false'	sortDataType='S'	columnPrecision="NaN"/>
+			
+	<column data='zip' 				label='Zip' 			editable='false' 	visible='true' 		width='60' 		textAlign='left' 
+			print_width = '18'		forLevel='false' 		defaultForLevel='' 		booleanFlag='false'	sortDataType='S'	columnPrecision="NaN"/>
+			
+	<column data='country' 			label='Country' 		editable='false' 	visible='true' 		width='60' 		textAlign='left' 
+			print_width = '18'		forLevel='false' 		defaultForLevel='' 		booleanFlag='false'	sortDataType='S'	columnPrecision="NaN"/>
+		
+	<column data='phone1' 			label='Phone 1' 			editable='false' 	visible='true' 		width='100' 		textAlign='left' 
+			print_width = '18'		forLevel='false' 		defaultForLevel='' 		booleanFlag='false'	sortDataType='S'	columnPrecision="NaN"/>
+			
+	<column data='phone2' 			label='Phone 2' 			editable='false' 	visible='true' 		width='100' 		textAlign='left' 
+			print_width = '18'		forLevel='false' 		defaultForLevel='' 		booleanFlag='false'	sortDataType='S'	columnPrecision="NaN"/>
+			
+	<column data='fax1' 			label='Fax' 			editable='false' 	visible='true' 		width='100' 		textAlign='left' 
+			print_width = '18'		forLevel='false' 		defaultForLevel='' 		booleanFlag='false'	sortDataType='S'	columnPrecision="NaN"/>
+			
+	<column data='email' 			label='Email' 			editable='false' 	visible='true' 		width='100' 		textAlign='left' 
+			print_width = '18'		forLevel='false' 		defaultForLevel='' 		booleanFlag='false'	sortDataType='S'	columnPrecision="NaN"/>
+	
+	<column data='customer_category_code'	label='Category' 		editable='false' 	visible='true' 	width='60' 		textAlign='left' 
+			print_width = '18'			  	forLevel='true' 		defaultForLevel='0' 	booleanFlag='false'	sortDataType='S'	columnPrecision="NaN"/>
+			
+	<column data='invoice_term_code' 	label='Term #' 			editable='false' 	visible='true' 		width='80' 		textAlign='left' 
+			print_width = '15'		forLevel='false' 		defaultForLevel='' 		booleanFlag='false'	sortDataType='S'	columnPrecision="NaN"/>
+	
+	<column data='salesperson_code' label='Salesperson #' 	editable='false' 	visible='true' 		width='80' 		textAlign='left' 
+			print_width = '15'		forLevel='false' 		defaultForLevel='' 		booleanFlag='false'	sortDataType='S'	columnPrecision="NaN"/>	
+			
+	<column data='shipping_code' 	label='Shipping #' 		editable='false' 	visible='true' 		width='60' 		textAlign='left'
+			print_width = '18'		forLevel='false' 		defaultForLevel='' 		booleanFlag='false'	sortDataType='S'	columnPrecision="NaN"/>
+			
+	<column data='website' 			label='Website' 		editable='false' 	visible='true' 		width='150' 		textAlign='left' 
+			print_width = '18'		forLevel='false' 		defaultForLevel='' 		booleanFlag='false'	sortDataType='S'	columnPrecision="NaN"/>
+			
+	<column data='contact1' 		label='Contact' 		editable='false' 	visible='true' 		width='52' 		textAlign='left' 
+			print_width = '18'		forLevel='false' 		defaultForLevel='' 		booleanFlag='false'	sortDataType='S'	columnPrecision="NaN"/>
+			
+	<column data='message' 			label='Message' 		editable='false' 	visible='true' 		width='52' 		textAlign='left' 
+			print_width = '18'		forLevel='false' 		defaultForLevel='' 		booleanFlag='false'	sortDataType='S'	columnPrecision="NaN"/>
+			
+</columns>

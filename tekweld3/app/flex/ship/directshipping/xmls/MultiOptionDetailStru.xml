@@ -1,0 +1,30 @@
+<columns lockedColumnCount='0'>
+	
+	<column	data='id'					label='Id'		editable='false'	visible='true'	width='188'	textAlign='left'	forLevel='true' 
+			defaultForLevel='0'			booleanFlag='false'	sortDataType='S'	dataType='S'	columnPrecision="NaN"/>
+	
+	<column data='value' 				label='Value' 		editable='false' 	visible='true' 	width='40' textAlign='center' 	forLevel='true' 
+			defaultForLevel='1'         booleanFlag='true' 	sortDataType='S'	dataType='S'	columnPrecision="NaN"
+			/>
+	
+	<column data='damaged_qty' 			label='Damaged Qty' 		editable='false' 	visible='true' 	width='40' textAlign='center' 	forLevel='true' 
+			defaultForLevel='1'         booleanFlag='true' 	sortDataType='N'	dataType='N'	columnPrecision="0"
+			/>
+	
+	<column data='qty' 					label='Qty' 		editable='false' 	visible='true' 	width='40' textAlign='center' 	forLevel='true' 
+			defaultForLevel='1'         booleanFlag='true' 	sortDataType='N'	dataType='N'	columnPrecision="0"
+			/>		
+			
+	<column data='sales_order_attributes_value_id' 		label='Attributes_value_id' 		editable='false' 	visible='true' 	width='40' textAlign='center' 	forLevel='true' 
+			defaultForLevel='1'         booleanFlag='true' 	sortDataType='S'	dataType='S'	columnPrecision="NaN"
+			/>
+	
+	<column data='trans_flag' 			label='Trans Flag' 		editable='false' 	visible='true' 	width='40' textAlign='center' 	forLevel='true' 
+			defaultForLevel='1'         booleanFlag='true' 	sortDataType='S'	dataType='S'	columnPrecision="NaN"
+			/>					
+			
+	<column data='lock_version' 	label='Lock' 		editable='false' 	visible='true' 	width='40' textAlign='center' 	forLevel='true' 
+			defaultForLevel='1'         booleanFlag='true' 	sortDataType='S'	dataType='S'	columnPrecision="NaN"
+			/>				
+
+</columns> 

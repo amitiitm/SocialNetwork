@@ -1,0 +1,5 @@
+if @error
+  page.alert(@error)
+else
+  page.alert("Saved changes.")
+end

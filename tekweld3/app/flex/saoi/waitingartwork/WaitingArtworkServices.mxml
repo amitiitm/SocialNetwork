@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rds:CommonServices xmlns:rds="business.*" xmlns:mx="http://www.adobe.com/2006/mxml">
+	
+	<mx:HTTPService id="saveRecord" url=""/>
+	<mx:HTTPService id="getList" url="/artwork/artwork/waiting_for_artworks_inbox"/> 
+	<mx:HTTPService id="getViewFormat" url="saoi/waitingartwork/xmls/WaitingArtworkCriteriaStru.xml"/>
+	<mx:HTTPService id="getListFormat" url="saoi/waitingartwork/xmls/WaitingArtworkListStru.xml"/>
+	<mx:HTTPService id="printRecord" url=""/>
+	<mx:HTTPService id="pickOrder" url="/sale/sales/hold_pick_order"/>
+	
+</rds:CommonServices>

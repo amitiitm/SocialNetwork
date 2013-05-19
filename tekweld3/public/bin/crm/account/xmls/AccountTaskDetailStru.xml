@@ -1,0 +1,30 @@
+<columns  lockedColumnCount='0'>
+	
+	<column data='trans_date'		label='Task Date'		editable='false'	visible='true'	width='80'	textAlign='left'	forLevel='false'
+			defaultForLevel=''		booleanFlag='false' 	sortDataType='D'/>
+
+	<column data='crm_contact_code' label='Contact #' 		editable='false' 	visible='true' 	width='100' textAlign='left' 	forLevel='false'
+			defaultForLevel='' 		booleanFlag='false' 	sortDataType='S'/>
+			
+	<column data='crm_contact_id' label='Contact #' 		editable='false' 	visible='false' 	width='0' textAlign='left' 	forLevel='false'
+			defaultForLevel='' 		booleanFlag='false' 	sortDataType='S'/>		
+
+	<column data='assigned_user_name'	label='Assigned User'	editable='false'	visible='true'	width='80'	textAlign='left'	forLevel='false'
+			defaultForLevel=''		booleanFlag='false' 	sortDataType='S'/>
+
+	<column data='start_date'		label='Start Date'		editable='false'	visible='true'	width='80'	textAlign='left'	forLevel='false'
+			defaultForLevel=''		booleanFlag='false' 	sortDataType='D'/>
+
+	<column data='end_date'			label='End Date'		editable='false'	visible='true'	width='80'	textAlign='left'	forLevel='false'
+			defaultForLevel=''		booleanFlag='false' 	sortDataType='D'/>
+
+	<column data='due_date'			label='Due Date'		editable='false'	visible='true'	width='80'	textAlign='left'	forLevel='false'
+			defaultForLevel=''		booleanFlag='false' 	sortDataType='D'/>
+
+	<column data='location' 		label='Location'		editable='false'	visible='true'	width='150'	textAlign='left'	forLevel='false'
+			defaultForLevel=''		booleanFlag='false' 	sortDataType='S'/>
+
+	<column data='subject' 			label='Subject'			editable='false'	visible='true'	width='150'	textAlign='left'	forLevel='false'
+			defaultForLevel=''		booleanFlag='false' 	sortDataType='S'/>
+
+</columns> 

@@ -1,0 +1,144 @@
+<div class="panel" id="sidebar">
+<div class="transparency"></div>
+<div style="clear:both;"></div>
+	<% order = -1 %>
+	<div class="columns">
+		<div class="colleft accordion_sidebar">
+			<% accordion_menu :title => "Accounts", :order => (order += 1) do |m| %>
+				<% m.item link_to "New Account", "/accounts/new", :class => "hash" %>
+				<% m.item link_to "List of Accounts", "/accounts/", :class => "hash" %>
+				<% m.item link_to "Failed Auto Recharge", "/accounts/recharge", :class => "hash" %>
+				<% m.item link_to "None Paying", "/accounts/none_paying", :class => "hash" %>
+				<% m.item link_to "Closed Accounts", "/accounts/closed", :class => "hash" %>
+				<% m.item link_to "Referrals", "/referrals", :class => "hash" %>
+                <% m.item link_to "Missing LANs", "/missing_lans", :class => "openable" %>
+                <% m.item link_to "Failed Credit Cards", "/failed_creditcards", :class => "openable" %>
+                <% m.item link_to "Credit Cards Added By Customers", "/creditcards_by_customer", :class => "openable"%>
+                <% m.item link_to "Advanced Credits", "/advanced_credits", :class => "openable" %>
+			<% end -%>
+			<% accordion_menu :title => "Referrals", :order => (order += 1) do |m| %>
+				<% m.item link_to "Unmatched", "/referrals/unmatched", :class => "hash"%>
+				<% m.item link_to "Matched", "/referrals/matched", :class => "hash" %>
+				<% m.item link_to "All", "/referrals/", :class => "hash"%>
+			<% end -%>
+			<% if allowed? %>
+				<% accordion_menu :title => "Leads", :order => (order += 1) do |m| %>
+					<% m.item link_to "Unassigned Leads", "/leads", :class => "hash"%>
+					<% m.item link_to "All Leads", "/leads/all", :class => "hash"%>
+					<% m.item link_to "Upload Lead", "/leads/upload", :class => "hash"%>
+				<% end -%>
+			<% end -%>
+			<% accordion_menu :title => "Calling Cards", :order => (order += 1) do |m| %>
+				<% m.item link_to "Cards List", "/cards", :class => "hash" if allowed? %>
+				<% m.item link_to "Distributors", "/distributors", :class => "hash"%>
+				<% m.item link_to "Distributions", "/distributions", :class => "hash"%>
+				<%# m.item link_to "Inventory", "/cards_inventories", :class => "hash" if allowed? %>
+			<% end -%>
+			<% if allowed? %>
+				<% accordion_menu :title => "Rate Engine", :order => (order += 1) do |m| %>
+					<% m.item link_to "Rate Engine", "/zones", :class => "hash"%>
+					<% m.item link_to "Promotions", "/promotions", :class => "hash"%>
+					<% m.item link_to "Rating Plans", "/rate_plans", :class => "hash"%>
+					<% m.item link_to "Country Settings", "/v2_countries", :class => "hash"%>
+				<% end -%>
+			<% end -%>
+			<% if allowed? %>
+				<% accordion_menu :title => "Carriers", :order => (order += 1) do |m| %>
+					<% m.item link_to "New Carrier", "/carriers/new", :class => "hash"%>
+					<% m.item link_to "List of Carriers", "/carriers", :class => "hash"%>
+				<% end -%>
+			<% end -%>
+		</div>
+	
+		<div class="colleft accordion_sidebar">
+			<% accordion_menu :title => "Memos & Followups", :order => (order += 1) do |m| %>						
+				<% m.item link_to "View All", "/memos/all", :class => "hash"%>
+				<% if allowed? %>
+					<% m.item link_to "Memo Types", "/memo_types", :class => "hash"%>
+					<% m.item link_to "Reassign Memos", "/memos/reassign", :class => "hash"%>
+				<% end -%>
+				<% m.item link_to "Recorded Calls", "/pbx_cdrs", :class => "openable"%>
+			<% end -%>
+			
+			<% if allowed? %>
+				<% accordion_menu :title => "Notifications", :order => (order += 1) do |m| %>
+					<% m.item link_to "New Template", "/notification_templates/new", :class => "hash"%>
+					<% m.item link_to "Templates", "/notification_templates", :class => "hash"%>
+					<% m.item link_to "General Templates", "/general_templates", :class => "hash"%>
+					<% m.item link_to "Sent Notifications", "/notification_types", :class => "hash"%>
+				<% end -%>
+			<% end %>
+
+			<% accordion_menu :title => "Testimonials", :order => (order += 1) do |m| %>
+				<% m.item link_to "Create Testimonial", "/testimonials/new", :class => "hash"%>
+				<% m.item link_to "View Testimonials", "/testimonials", :class => "hash"%>
+				<% m.item link_to "Voice Testimonials", "/voice_testimonials", :class => "hash"%>
+			<% end -%>
+			<% accordion_menu :title => "Etisal", :order => (order += 1) do |m| %>
+				<% m.item link_to "Etisal Apps", "/etisal_apps", :class => "hash"%>
+				<% m.item link_to "Etisal Live Console", "/etisal_live_console", :class => "hash"%>
+				<% m.item link_to "Online SIP Accounts", "/sip_locations", :class => "hash"%>
+			<% end -%>
+			<% if allowed? %>
+				<% accordion_menu :title => "DIDs", :order => (order += 1) do |m| %>
+					<% m.item link_to "New DID", "/dids/new", :class => "hash"%>
+					<% m.item link_to "List of DIDs", "/dids/", :class => "hash"%>
+				<% end -%>
+			<% end -%>
+		</div>
+		<div class="colleft accordion_sidebar">
+			<% if allowed? %>
+				<% accordion_menu :title => "Financial", :order => (order += 1) do |m| %>
+					<% m.item(link_to "Void Transaction", "/orders/void", :class => "hash") if allowed? %>
+					<% m.item link_to "Transactions", "/orders", :class => "hash"%>							
+					<% m.item link_to "Credits", "/credits", :class => "hash"%>
+					<% m.item link_to "Taxes", "/product_taxes", :class => "hash"%>
+					<% m.item link_to "Stats", "/financial/stats", :class => "hash"%>
+				<% end -%>
+				<% accordion_menu :title => "Servers", :order => (order += 1) do |m| %>
+					<% m.item link_to "List of Servers", "/servers", :class => "hash"%>
+					<% m.item link_to "Server Settings", "/server_settings", :class => "hash"%>
+					<% m.item link_to "Replication Status", "/db_status", :class => "hash"%>
+				<% end -%>
+				<% accordion_menu :title => "CMS", :order => (order += 1) do |m| %>						
+					<% m.item link_to "FAQs", "/faqs", :class => "hash"%>
+				<% end -%>
+				<% accordion_menu :title => "Misc", :order => (order += 1) do |m| %>
+					<% m.item link_to "AP Users", "/admin_users", :class => "hash"%>
+				<% end -%>						
+			<% end -%>
+			<% accordion_menu :title => "IVRs", :order => (order += 1) do |m| %>
+				<% m.item link_to "Scripts", "/ivrs", :class => "hash"%>
+			<% end -%>
+			<% accordion_menu :title => "Reports", :order => (order += 1) do |m| %>
+				<% m.item link_to "CDRs", "/cdrs", :class => "hash"%>
+				<% m.item link_to "Card CDRs", "/card_cdrs", :class => "hash"%>
+				<% m.item link_to "Old Daily Traffic", "/reports/old_daily" %>
+				<% m.item link_to "Daily Traffic", "/reports/daily", :class => "hash"%>
+				<% m.item link_to "Monthly Traffic", "/reports/monthly", :class => "hash"%>
+			<% end -%>
+		</div>
+		<div class="colleft">
+			<div class="ui-corner-all ui-corner-all yellow-box">
+				<div class="cont tooltip ui-corner-all">
+					<h3>Info:</h3>
+					<p id="cm">
+					</p>                                                                                        F
+				</div>
+			</div>
+		</div>
+		<div class="colleft accordion_sidebar" style="width:300px">
+			<% accordion_menu :title => "AP Repo Info", :order => (order += 1) do |m| %>
+				<% m.item BZR_INFO %>
+			<% end -%>
+		</div>
+	</div>
+<div style="clear:both;"></div>
+ <%=render :partial=>"layouts/top_bar" unless params[:controller]=="pbx_cdrs"%>
+<script type="text/javascript" charset="utf-8">
+	$(function(){
+		$(".panel .side-menu a").live('click', function(e){
+      $('.panel').toggle();
+		});
+	})
+</script>

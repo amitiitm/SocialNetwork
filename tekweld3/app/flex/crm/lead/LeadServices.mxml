@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rds:CommonServices xmlns:rds="business.*" xmlns:mx="http://www.adobe.com/2006/mxml">
+
+	<mx:HTTPService id="saveRecord" url="/crm/crm_lead/create_crm_leads"/>
+	<mx:HTTPService id="save_account" url="/crm/crm_account/create_crm_account_from_lead"/>
+	
+	<mx:HTTPService id="getRecord" url="/crm/crm_lead/show_crm_leads"/>
+	<mx:HTTPService id="getList" url="/crm/crm_lead/list_crm_leads"/>
+
+	<mx:HTTPService id="getListFormat" url="crm/lead/xmls/LeadListStru.xml"/>
+	
+		
+	<mx:HTTPService id="notesDetailFormat" url="crm/lead/xmls/LeadNotesStru.xml"/>
+	<mx:HTTPService id="getViewFormat" url="crm/lead/xmls/LeadCriteriaStru.xml"/>
+	<mx:HTTPService id="printRecord" url=""/>
+	
+	
+</rds:CommonServices>

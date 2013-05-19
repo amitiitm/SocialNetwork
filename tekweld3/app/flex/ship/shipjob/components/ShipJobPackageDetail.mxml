@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<gencomponents:DetailAddEdit xmlns:mx="http://www.adobe.com/2006/mxml"
+							 width="500" height="150" verticalGap="0"
+	xmlns:customcomponents="com.generic.customcomponents.*"
+	xmlns:gencomponents="com.generic.components.*"
+	>
+
+	<mx:Script source="../scripts/ShipJobPackageDetailScript.as"/>
+	
+	<mx:VBox height="100%" width="100%" >    
+		
+		<mx:HBox visible="false" includeInLayout="false">
+			<mx:Label text="Carton Size" width="95" textAlign="right"/>
+			<customcomponents:GenTextInput id="tiCartonSize"  height="20" textAlign="right"
+										   updatableFlag="true" width="110" tabIndex="1" xmlTag="carton_size" maxChars="500"
+										    tableName="sales_order_shipping_package"
+										   validationFlag="false" toolTip="Size"/>
+		</mx:HBox>
+		
+		
+		<mx:HBox>
+			<mx:Label text="Carton Length" width="95" textAlign="right"/>
+			<customcomponents:GenTextInput id="tiCartonLength"  height="20" textAlign="right"
+										   updatableFlag="true" width="110" tabIndex="1" xmlTag="carton_length" maxChars="50"
+										    tableName="sales_order_shipping_package" defaultValue = '1'
+										   dataType="N" rounding="false" setDefaultOnEmpty="true"
+										   maxValue="9999999999" validationFlag="true" toolTip="Length"/>
+		</mx:HBox>
+		<mx:HBox>
+			<mx:Label text="Carton Width" width="95" textAlign="right"/>
+			<customcomponents:GenTextInput id="tiCartonWidth"  height="20" textAlign="right"
+										   updatableFlag="true" width="110" tabIndex="1" xmlTag="carton_width" maxChars="50"
+										    tableName="sales_order_shipping_package" defaultValue = '1' 
+										   dataType="N" rounding="false" setDefaultOnEmpty="true"
+										   maxValue="9999999999" validationFlag="true" toolTip="Width"/>
+		</mx:HBox>
+		<mx:HBox>
+			<mx:Label text="Carton Height" width="95" textAlign="right"/>
+			<customcomponents:GenTextInput id="tiCartonHeight"  height="20" textAlign="right"
+										   updatableFlag="true" width="110" tabIndex="1" xmlTag="carton_height" maxChars="50"
+										    tableName="sales_order_shipping_package" defaultValue = '1'
+										   dataType="N" rounding="false" setDefaultOnEmpty="true"
+										   maxValue="9999999999" validationFlag="true" toolTip="Height"/>
+		</mx:HBox>   
+		
+		<mx:HBox>
+			<mx:Label text="Pcs/Carton" width="95" textAlign="right"/>
+			<customcomponents:GenTextInput id="tiPcs_carton"  height="20" textAlign="right"
+										   updatableFlag="true" width="110" tabIndex="2" xmlTag="pcs_per_carton" defaultValue = '0.00'
+										    tableName="sales_order_shipping_package"
+										   dataType="N" rounding="false" setDefaultOnEmpty="true"
+										   maxValue="9999999999.99" validationFlag="" toolTip="Pcs/Carton"/>
+		</mx:HBox> 
+		
+		<mx:HBox>
+			<mx:Label text="Carton Weight" width="95" textAlign="right" />
+			<customcomponents:GenTextInput id="tiCarton_weight" height="20" width="110" textAlign="right" defaultValue = '0.00'
+										   tabIndex="3" xmlTag="carton_wt" dataType="N" rounding="false" setDefaultOnEmpty="true" 
+										    updatableFlag="true" tableName="sales_order_shipping_package"
+										   maxValue="9999.99" validationFlag="true" toolTip="Carton Weight"/>		
+		</mx:HBox>
+		<mx:HBox height="0" width="0" visible="false" >
+			<mx:Label text="Status" width="95" textAlign="right"/>
+			<customcomponents:GenComboBox id="cbTrans_flag" width="110" cornerRadius="0" xmlTag="trans_flag" updatableFlag="true"
+										  tableName="sales_order_shipping_package"  tabIndex="6" defaultValue="A" labelField="label" 
+										  dataProvider="{__genModel.masterData.child('trans_flag').trans_flag}" />
+		</mx:HBox>
+		
+		<customcomponents:GenTextInput id="tiSerial_no" width="0" height="0" visible="false"
+									   editable="true" enabled="true" xmlTag="serial_no" updatableFlag="true"
+									   tableName="sales_order_shipping_package" defaultValue=""  maxChars="4" toolTip="Serial #" />
+		
+	</mx:VBox>
+</gencomponents:DetailAddEdit>
+
+
+

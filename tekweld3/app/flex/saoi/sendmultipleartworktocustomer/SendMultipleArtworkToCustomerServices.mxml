@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rds:CommonServices xmlns:rds="business.*" xmlns:mx="http://www.adobe.com/2006/mxml">
+
+	<mx:HTTPService id="saveRecord" 					url="/artwork/artwork/send_multiple_artworks_to_customer" />
+	<mx:HTTPService id="getRecord" 						url="/artwork/artwork/show_orders_tosend_multiple_artworks"/>
+	 <mx:HTTPService id="getList" 						url="/artwork/artwork/list_orders_tosend_multiple_artworks"/>
+	<mx:HTTPService id="printRecord" 					url="/sale/sales_report/render_sales_order_format" />
+	<mx:HTTPService id="artworkUploadUrl" 				url="/artwork/artwork/upload_artwork_attachments" />
+	<mx:HTTPService id="sendToCustomer" 				url="/artwork/artwork/send_artwork_to_customer" />
+	
+	<mx:HTTPService id="getListFormat" 					url="saoi/sendmultipleartworktocustomer/xmls/SendMultipleArtworkToCustomerListStru.xml" />
+	<mx:HTTPService id="getViewFormat" 					url="saoi/sendmultipleartworktocustomer/xmls/SendMultipleArtworkToCustomerCriteriaStru.xml" />
+	<mx:HTTPService id="artworkDetailFormat" 			url="saoi/sendmultipleartworktocustomer/xmls/SendMultipleArtworkToCustomerArtworkDetailStru.xml" />
+	<mx:HTTPService id="queryDetailFormat" 				url="saoi/sendmultipleartworktocustomer/xmls/SendMultipleArtworkToCustomerQueriesDetailStru.xml" />
+	<mx:HTTPService id="lineDetailFormat" 				url="saoi/sendmultipleartworktocustomer/xmls/SendMultipleArtworkToCustomerLineDetailStru.xml" />
+	<mx:HTTPService id="lineActivityFormat" 			url="saoi/sendmultipleartworktocustomer/xmls/SendMultipleArtworkToCustomerActivityDetailStru.xml" />
+	<mx:HTTPService id="dgItemOptionsGridFormat" 		url="saoi/sendmultipleartworktocustomer/xmls/SendMultipleArtworkToCustomerItemOptionsDetailStru.xml" />
+</rds:CommonServices>

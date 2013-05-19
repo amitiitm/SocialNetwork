@@ -1,0 +1,16 @@
+<div class="two-column">
+	<div class="column">
+		<p>
+			Value: <%= number_to_currency(@card.value) %><br>
+			Balance: <%= number_to_currency(@card.balance) %><br>
+			Distributor: <%= if @card.distribution then @card.distribution.distributor.bname else "N/A" end %><br>
+			Activated: <%= if @card.activated then "On #{user_date @card.activation_date}" else "No" end %><br>
+			Used: <%= if @card.used then "On #{user_date @card.used_date}" else "No" end %><br>
+			<%= button_function("convert-ac", "Convert", "convert_to_ac()") unless params[:no_memo]%>
+		</p>
+	</div>
+	
+	<div class="column column-right">
+		<%= render :partial => "phones" %>
+	</div>
+</div>

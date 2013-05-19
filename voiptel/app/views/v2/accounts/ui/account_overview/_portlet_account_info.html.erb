@@ -1,0 +1,77 @@
+<div id="portlet_account_info" class="portlet ui-widget ui-widget-content ui-helper-clearfix ui-corner-all">
+	<div class="portlet-header ui-widget-header">Account Info & Settings<span class="ui-icon ui-icon-circle-arrow-s"></span></div>
+	<div class="portlet-content">
+		<% form_for @account, :html => {:class => "forms"} do |f| %>
+			<ul>
+				<li>
+					<label >Account Status</label>
+					<%= f.select :status, Account::STATUS%>
+				</li>	
+				<li>
+					<div class="first left">
+						<label >Account Type</label>
+						<%= f.select :account_type, Account::TYPES %>						
+					</div>
+					<div id="business_name" class="<%= if @account.account_type == 1 then 'hidden' end%>">
+						<div class="left">
+							<label >Business Name</label>
+							<%= f.text_field :business_name, :size => 15 %>
+						</div>
+						<div id="short_name" class="left">
+							<label >Account Identifier</label>
+							<%= f.text_field :short_name, :size => 15 %>
+						</div>
+					</div>
+				</li>
+							
+				<li>
+					<div class="left">
+							<label >Account Number</label>
+							<%= f.text_field :number, :size => 15, :disabled => true %>
+					</div>
+					<div class="left">
+							<label >Account Pin</label>
+							<%= f.text_field :pin, :size => 15%>
+					</div>
+				</li>
+				<li class="first left">
+					<div class="first left">
+						<label >Announce Call Limit</label>
+						<%= f.select :announce_call_limit, [["Enabled", true], ["Disabled", false]] %>
+					</div>
+					<div class="left" style="padding-left:20px">
+						<label >Set CID</label>
+						<%= f.select :set_cid, [["Enabled", true], ["Disabled", false]] %>
+					</div>
+				</li>
+				
+				<!-- <li>
+					<div class="first left">
+						<label >Balance</label>
+						<%#= f.text_field :balance, :size => 10 %>
+					</div>
+				</li> -->
+				<!--<li>-->
+					<!--<div class="first left">-->
+						<!--<label >Auto Recharge</label>-->
+						<!--<%#= f.select :auto_recharge, [["Enabled", true], ["Disabled", false]] %>-->
+					<!--</div>-->
+					<!--<div id="threshold" class="left <%#= unless @account.auto_recharge then 'hidden' end %>">-->
+						<!--<label >Threshold</label>-->
+						<!--<%#= f.select :threshold, [[5,5], [10,10]], { :include_blank => true }%>-->
+					<!--</div>-->
+					<!--<div id="recharge_amount" class="left <%#= unless @account.auto_recharge then 'hidden' end %>">-->
+						<!--<label >Recharge Amount</label>-->
+						<!--<%#= f.select :recharge_amount, [[10,10], [15,15], [20,20], [30,30], [40,40], [50,50], [100,100]], { :include_blank => true } %>-->
+					<!--</div>-->
+				<!--</li>-->
+
+				<li class="buttons">
+					<%= f.submit "Save Changes", :class => "ui-state-default ui-corner-all ui-button" %>
+				</li>
+			</ul>
+			<%= f.hidden_field :admin_user_id, :value => session[:admin_user_id] %>
+		<% end -%>
+	</div>
+</div>
+<script type="text/javascript" src="/js/accounts/account_info.js"></script>

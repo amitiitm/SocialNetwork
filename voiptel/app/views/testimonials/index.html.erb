@@ -1,0 +1,32 @@
+<script type="text/javascript" src="/js/tablesorter.js"></script>
+<script type="text/javascript" src="/js/accounts/index.js"></script>
+
+<%= page_title :title => "Testimonials", :desc => "Testimonials By OpenFo Customers" %>
+
+<% table do |t| %>
+	<% t.th "#" %>
+	<% t.th "Account Holder" %>
+	<% t.th "Testimonial" %>
+	<% t.th "Location" %>
+	<% t.th "Date" %>
+	<% t.th "Published" %>
+	<% t.th "Actions" %>
+
+	<% counter = @testimonials.size + 1%>
+	<% for tes in @testimonials do %>
+		<% counter -= 1 %>
+		<% t.td counter %>
+		<% t.td link_to(tes.user.account.name, account_path(tes.user.account), :class => "hash") %>
+		<% t.td truncate(tes.message, :length => 50) %> 
+		<% t.td tes.city %>
+		<% t.td tes.created_at.strftime("%a %Y-%m-%d %H:%M") %>
+		<% t.td check_box "testimonial", "publish", :checked => tes.publish, :class => "observe-publish", :"record-id" => tes.id %>		
+		<% t.td link_to("View", edit_testimonial_path(tes), :class => "hash") + " | " + link_to("Delete", testimonial_path(tes), :class => "ajax-delete") %>						
+		<% t.new_row %>
+	<%  end -%>
+<% end -%>
+
+<%= javascript_include_tag "/js/testimonials/observe_publish.js" %>
+
+
+

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:VBox xmlns:mx="http://www.adobe.com/2006/mxml" xmlns:local="*" xmlns:gen="com.generic.genclass.*"
+	 xmlns:customcomponents="com.generic.customcomponents.*" cornerRadius="0" width="100%" height="100%" 
+	 verticalGap="0" creationComplete="creationComplete()">
+		  
+	<mx:Script>
+		<![CDATA[
+			import com.generic.customcomponents.GenTab;
+			
+			import model.GenModelLocator;
+		]]>
+	</mx:Script>
+
+	<mx:Style>
+		.CloseButton
+		{
+		   upSkin: Embed(source="../assets/Close_Up.png"); 
+		   overSkin: Embed(source="../assets/Close_Over.png");
+		   downSkin: Embed(source="../assets/Close_Down.png");
+		} 
+	</mx:Style>
+
+	<mx:Script source="../scripts/HomeScript.as" />
+	
+	<mx:VBox id="main" width="100%" height="100%"  verticalGap="0">
+		<mx:ApplicationControlBar id="acbMain" x="0" y="0" width="100%" height="3%" dock="false" paddingTop="2" paddingLeft="2" paddingRight="0">
+			<mx:HBox width="32%" horizontalAlign="left" height="50%" verticalGap="0" horizontalGap="0" paddingTop="5">
+				<mx:Label id="lblProductName" width="124" text="PROMOGEEK - " fontFamily="Verdana" fontSize="14" fontWeight="bold" />
+				<mx:LinkButton id="lbCurrentStore" label="{GenModelLocator.getInstance().user.company_name}" fontFamily="Verdana" fontSize="14" fontWeight="bold" 
+            		paddingLeft="0" paddingRight="0" paddingTop="0" paddingBottom="0"
+            		click="lbCurrentStoreClick()" rollOverColor="#dfdede" selectionColor="#dfdede" />
+			</mx:HBox>
+			<mx:HBox width="100%" height="100%" verticalGap="0"  horizontalGap="2" verticalAlign="middle">
+				<mx:ComboBox id="cbMoodule" width="22%" height="20%" dataProvider="{xmlModule.children()}"
+					labelField="name" change="cbModuleChangeHandler()" rowCount="{XMLList(xmlModule.children()).length()}" styleName="comboBox2" />
+				<mx:MenuBar id="mbMenu" height="20%" width="70%" labelField="@name" dataProvider="{xmlFilteredMenu.children()}" 
+					change="mbMenuChangeHandler(event)"/>
+			</mx:HBox>
+			<mx:VBox borderColor="#404040" backgroundColor="#bbbab9" borderStyle="solid" borderThickness="1" verticalGap="0" verticalAlign="top" paddingTop="0" paddingBottom="0" backgroundAlpha="0.13">
+				<mx:Label text="{GenModelLocator.getInstance().user.first_name}"/>
+				<mx:HBox width="100%" verticalGap="0" horizontalGap="0" paddingTop="0" >
+					<mx:LinkButton label="Log Out" paddingLeft="0"  paddingTop="0" click="logoutButtonClickHandler()" rollOverColor="#dfdede" selectionColor="#dfdede" />
+					<mx:LinkButton label="Change Password"  paddingLeft="0"  paddingTop="0"  click="changeLoginPwd()" rollOverColor="#dfdede" selectionColor="#dfdede" />
+				</mx:HBox>
+			</mx:VBox>
+		</mx:ApplicationControlBar>
+		<mx:HRule width="100%" strokeColor="#94937f"/>
+		<mx:VBox paddingTop="5" paddingLeft="9" paddingRight="5" id="can_moodule" x="0" y="81" width="100%" height="100%" label="Moodule" >
+			<customcomponents:GenTabNavigator  borderStyle="solid" id="tabMain" width="100%" height="100%" tabHeight="25" cornerRadius="0" closePolicy="{GenTab.CLOSE_ROLLOVER}" tabWidth="150">
+				<customcomponents:GenModuleLoader icon="@Embed('../assets/home.PNG')" label="Home" width="100%" height="100%" fontWeight="normal" themeColor="#D7D7BF">
+					<customcomponents:GenModule id="gmHome" />
+				</customcomponents:GenModuleLoader>
+			</customcomponents:GenTabNavigator>
+		</mx:VBox>
+	</mx:VBox>
+	<mx:HBox width="100%" horizontalAlign="center">
+		<mx:Label x="-87" width="352" color="#019901" fontFamily="Verdana" fontSize="10"
+				  fontWeight="bold" paddingLeft="5" text="{GenModelLocator.currentVersion}"/>
+		<mx:HBox x="379" width="332" horizontalAlign="right">
+			<!--<mx:Label paddingLeft="9" paddingRight="5" textAlign="center" text="Copyright 2010, Diaspark Inc. USA."  fontSize="9" />-->		
+			<mx:LinkButton label="Contact Us"  paddingLeft="0"  paddingTop="0"  click="openMailClient()" rollOverColor="#dfdede" selectionColor="#dfdede" />
+		</mx:HBox>
+		<mx:HBox width="40%" horizontalAlign="right">
+			<mx:Label text="Dateformat : {__genModel.user.date_format}"/>
+		</mx:HBox>
+	</mx:HBox>
+	
+</mx:VBox>

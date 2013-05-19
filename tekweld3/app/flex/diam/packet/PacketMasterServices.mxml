@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rds:CommonServices xmlns:rds="business.*"
+	xmlns:mx="http://www.adobe.com/2006/mxml">
+
+	<mx:HTTPService id="saveRecord" url="/diamond/create_packets"/>
+	<mx:HTTPService id="getRecord" url="/diamond/show_packet"/>
+	<mx:HTTPService id="getListFormat" url="diam/packet/xmls/PacketMasterListStru.xml"/>
+	<mx:HTTPService id="getList" url="/diamond/list_packets"/>
+	<mx:HTTPService id="getViewFormat" url="diam/packet/xmls/PacketMasterCriteriaStru.xml"/>
+	<mx:HTTPService id="printRecord" url=""/>
+	<mx:HTTPService id="detailFormat" url="diam/packet/xmls/PacketMasterImportStru.xml"/>
+	<mx:HTTPService id="recordUploadUrl" url="/diamond/convert_exceltoxml_for_diamond_packets"/>
+
+
+</rds:CommonServices>

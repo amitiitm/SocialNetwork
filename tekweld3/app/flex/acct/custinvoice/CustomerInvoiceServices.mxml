@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rds:CommonServices xmlns:rds="business.*"
+	xmlns:mx="http://www.adobe.com/2006/mxml">
+
+	<mx:HTTPService id="saveRecord" url="/sale/customer_invoice/create_invoices"/>
+	<mx:HTTPService id="getRecord" url="/sale/customer_invoice/show_invoice"/>
+	<mx:HTTPService id="getListFormat" url="acct/custinvoice/xmls/CustomerInvoiceListStru.xml"/>
+	<mx:HTTPService id="getList" url="/sale/customer_invoice/list_invoices"/>
+	<mx:HTTPService id="getViewFormat" url="acct/custinvoice/xmls/CustomerInvoiceCriteriaStru.xml"/>
+	<mx:HTTPService id="DetailFormat" url="acct/custinvoice/xmls/CustomerInvoiceDetailStru.xml"/>
+	<mx:HTTPService id="GLFormat" url="acct/custinvoice/xmls/CustomerInvoiceGLStru.xml"/>
+	<mx:HTTPService id="PaymentFormat" url="acct/custinvoice/xmls/CustomerInvoicePaymentStru.xml"/>
+	<mx:HTTPService id="fetch_invoice_header_details" url="/sale/customer_invoice/fetch_invoice_header_details" />
+	
+	<mx:HTTPService id="importDetailFormat" url="acct/custinvoice/xmls/CustomerInvoiceImportStru.xml"/>
+	<mx:HTTPService id="recordUploadUrl" url="/sale/customer_invoice/convert_exceltoxml_for_customer_invoices"/>
+	
+	<mx:HTTPService id="setDefaultView" url=""/>
+	<mx:HTTPService id="printRecord" url="/sale/customer_report/customer_invoice_format"/>
+
+</rds:CommonServices>

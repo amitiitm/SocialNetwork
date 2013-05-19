@@ -1,0 +1,27 @@
+<columns  lockedColumnCount='0'>
+
+	<column data='item_type' 				label='Item Type' 		editable='false'	visible='true'	width='80'	textAlign='left'
+			forLevel='false' 				defaultForLevel=''		booleanFlag='false'	sortDataType='S' columnPrecision="NaN"/>
+	
+	<column data='catalog_item_code'		label='Item #'			editable='false'	visible='true'	width='120'	textAlign='left'	
+			forLevel='false'				defaultForLevel=''		booleanFlag='false'	sortDataType='S' columnPrecision="NaN"/>
+			
+	<column data='catalog_item_packet_id'		label='packet #'			editable='false'	visible='true'	width='120'	textAlign='left'	
+			forLevel='false'				defaultForLevel=''		booleanFlag='false'	sortDataType='S' columnPrecision="NaN"/>
+	
+	<column data='item_description'			label='Item Description' editable='false'	visible='true'	width='250'	textAlign='left'	
+			forLevel='false'				defaultForLevel=''		booleanFlag='false'	sortDataType='S' columnPrecision="NaN"/>
+	
+	<column data='item_qty'					label='Qty'				editable='false' 	visible='true' 	width='75'	textAlign='right'	
+			forLevel='false'				defaultForLevel=''		booleanFlag='false'	sortDataType='N' columnPrecision="0"/>
+	
+	<column data='wt' 						label='Weight' 			editable='false' 	visible='true' 	width='100' textAlign='right' 
+			forLevel='false' 				defaultForLevel='' 		booleanFlag='false' sortDataType='N' columnPrecision="4"/>	
+			
+	<column data='item_price'				label='Price'			editable='false'	visible='true'	width='80'	textAlign='right'	
+			forLevel='false'				defaultForLevel=''		booleanFlag='false'	sortDataType='N' columnPrecision="2"/>
+	
+	<column data='item_amt'					label='Item Amount'		editable='false'	visible='true'	width='100'	textAlign='right'	
+			forLevel='false'				defaultForLevel=''		booleanFlag='false'	sortDataType='N' columnPrecision="2"/>
+			
+</columns> 

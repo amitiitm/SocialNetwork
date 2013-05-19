@@ -1,0 +1,44 @@
+<% if @carrier.trunks.blank? %>
+	<p>
+		No Trunk defined. Without any trunks, this carrier will not terminate at all!
+	</p>
+<% else %>
+	<% table do |t| %>
+		<% t.th "Name" %>
+		<% t.th "Description" %>
+		<% t.th "Endpoints" %>
+		<% t.th "Prot." %>
+		<% t.th "Prefix" %>
+		<% t.th "Actions" %>
+
+		<% for trunk in @carrier.trunks.find(:all, :order => "name ASC") %>
+			<% t.td  trunk.name %>
+			<% t.td  trunk.description %>
+			<% t.td	endpoints(trunk) %>
+			<% t.td  trunk.protocol %>
+			<% t.td  trunk.tech_prefix %>
+			<% t.td 	(
+									link_to("Edit", edit_carrier_trunk_path(@carrier, trunk), :class => "ajax", :ajax => "eval") + " | " +
+									link_to("Delete", carrier_trunk_path(@carrier, trunk), :class => "ajax-delete")
+								) 
+			%>
+			<% t.new_row %>
+		<% end -%>
+	<% end -%>
+<% end -%>
+<br>
+<button id="dialog-new-trunk-link">New Trunk</button>
+
+<%= render :partial => "carriers/trunks/trunk_dialog", :locals => {:carrier => @carrier, :trunk => Trunk.new(:protocol => "SIP"), :id => "dialog-new-trunk", :title => "New Trunk"} %>
+
+<div id="edit-trunk" class="hide"></div>
+<script type="text/javascript" src="/js/carriers/trunk_ui.js"></script>
+<!--
+<script type="text/javascript" src="/js/tablesorter.js"></script>
+<script>
+	$(document).ready(function() {
+		$("#sort-table").tablesorter({ widgets: ['zebra']});
+		$(".header").append('<span class="ui-icon ui-icon-carat-2-n-s"></span>');
+	});
+</script>
+-->

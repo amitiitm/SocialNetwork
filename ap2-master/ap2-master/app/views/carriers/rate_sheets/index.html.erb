@@ -1,0 +1,19 @@
+<div id="ratesheet-tabs">
+	<ul>
+	<% for trunk in @carrier.trunks do %>
+		<li><a href="/carriers/<%= @carrier.id %>/trunks/<%= trunk.id %>/rate_sheets"><%= trunk.name %></a></li>
+	<% end -%>
+	</ul>
+</div>
+
+<div id="edit-rate_sheet" class="hide"></div>
+<script type="text/javascript" src="/js/carriers/rate_sheet_ui.js"></script>
+<script>
+	$(document).ready(function(){
+		$('#ratesheet-tabs').tabs({
+			cookie: { expires: 30 },
+			fx: { opacity: 'toggle', duration : 'slow' },
+			async: true
+		});		
+	});
+</script>

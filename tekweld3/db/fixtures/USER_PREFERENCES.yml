@@ -1,0 +1,217 @@
+--- 
+USER_PREFERENCES_001: 
+  string13: ""
+  date6: 
+  decimal5: 
+  trans_flag: A
+  document_id: 68
+  string14: ""
+  date7: 
+  decimal6: 
+  updated_by: 100
+  string15: ""
+  date8: 
+  decimal7: 
+  string1: ctlg
+  user_id: 1
+  string2: ctlgzzzz
+  string16: ""
+  date9: 
+  decimal8: 
+  string3: ""
+  string17: ""
+  decimal9: 
+  list1: "1"
+  string4: zzzz
+  list10: ""
+  string18: ""
+  list2: "0"
+  all10: ""
+  string5: ""
+  string20: ""
+  string19: ""
+  list3: "3"
+  updated_at: 2010-07-20 12:14:06
+  string6: zzzz
+  date10: 
+  decimal10: 
+  list4: ""
+  string7: ""
+  list5: ""
+  list6: ""
+  string8: ""
+  all1: N
+  list7: ""
+  lock_version: 45
+  string9: ""
+  all2: Y
+  list8: ""
+  created_by: 100
+  list9: ""
+  all3: Y
+  company_id: 1
+  all4: ""
+  date1: 
+  all5: ""
+  all6: ""
+  date2: 
+  decimal1: 
+  all7: ""
+  created_at: 2010-05-21 00:00:00
+  string10: ""
+  date3: 
+  decimal2: 
+  all8: ""
+  string11: ""
+  date4: 
+  decimal3: 
+  all9: ""
+  string12: ""
+  date5: 
+  decimal4: 
+  id: 120
+  update_flag: Y
+USER_PREFERENCES_002: 
+  string13: ""
+  date6: 
+  decimal5: 
+  trans_flag: A
+  document_id: 69
+  string14: ""
+  date7: 
+  decimal6: 
+  updated_by: 100
+  string15: ""
+  date8: 
+  decimal7: 
+  string1: ""
+  user_id: 1
+  string2: zzzz
+  string16: ""
+  date9: 
+  decimal8: 
+  string3: ""
+  string17: ""
+  decimal9: 
+  list1: "0"
+  string4: zzzz
+  list10: ""
+  string18: ""
+  list2: "1"
+  all10: ""
+  string5: ""
+  string20: ""
+  string19: ""
+  list3: "2"
+  updated_at: 2010-08-03 11:04:15
+  string6: zzzz
+  date10: 
+  decimal10: 
+  list4: ""
+  string7: ""
+  list5: ""
+  list6: ""
+  string8: ""
+  all1: Y
+  list7: ""
+  lock_version: 11
+  string9: ""
+  all2: Y
+  list8: ""
+  created_by: 100
+  list9: ""
+  all3: Y
+  company_id: 1
+  all4: ""
+  date1: 
+  all5: ""
+  all6: ""
+  date2: 
+  decimal1: 
+  all7: ""
+  created_at: 2010-08-02 00:00:00
+  string10: ""
+  date3: 
+  decimal2: 
+  all8: ""
+  string11: ""
+  date4: 
+  decimal3: 
+  all9: ""
+  string12: ""
+  date5: 
+  decimal4: 
+  id: 140
+  update_flag: Y
+USER_PREFERENCES_003: 
+  string13: ""
+  date6: 
+  decimal5: 
+  trans_flag: A
+  document_id: 60
+  string14: ""
+  date7: 
+  decimal6: 
+  updated_by: 100
+  string15: ""
+  date8: 
+  decimal7: 
+  string1: ""
+  user_id: 1
+  string2: zzzz
+  string16: ""
+  date9: 
+  decimal8: 
+  string3: ""
+  string17: ""
+  decimal9: 
+  list1: "0"
+  string4: ""
+  list10: ""
+  string18: ""
+  list2: "1"
+  all10: ""
+  string5: ""
+  string20: ""
+  string19: ""
+  list3: "2"
+  updated_at: 2010-08-03 10:57:27
+  string6: zzzz
+  date10: 
+  decimal10: 
+  list4: ""
+  string7: ""
+  list5: ""
+  list6: ""
+  string8: zzzz
+  all1: Y
+  list7: ""
+  lock_version: 5
+  string9: ""
+  all2: ""
+  list8: ""
+  created_by: 180
+  list9: ""
+  all3: ""
+  company_id: 1
+  all4: ""
+  date1: 
+  all5: Y
+  all6: Y
+  date2: 
+  decimal1: 
+  all7: Y
+  created_at: 2010-08-02 00:00:00
+  string10: zzzz
+  date3: 
+  decimal2: 
+  all8: ""
+  string11: ""
+  date4: 
+  decimal3: 
+  all9: ""
+  string12: ""
+  date5: 
+  decimal4: 
+  id: 141
+  update_flag: Y

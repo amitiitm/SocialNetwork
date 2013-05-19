@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rds:CommonServices xmlns:rds="business.*" xmlns:mx="http://www.adobe.com/2006/mxml">
+
+	<mx:HTTPService id="saveRecord" url="/diamond/create_diamond_packet_updates"/>
+	<mx:HTTPService id="getRecord" url="/diamond/show_diamond_packet_update"/>
+	<mx:HTTPService id="getList" url="/diamond/list_diamond_packet_updates"/>
+	
+	<mx:HTTPService id="getListFormat" url="dinvn/updatecertificateparameter/xmls/UpdateCertificateParameterListStru.xml"/>
+	<mx:HTTPService id="getViewFormat" url="dinvn/updatecertificateparameter/xmls/UpdateCertificateParameterCriteriaStru.xml"/>
+	<mx:HTTPService id="CertificateDetailFormat" url="dinvn/updatecertificateparameter/xmls/UpdateCertificateParameterDetailStru.xml" />
+	
+	<mx:HTTPService id="xlsUploadUrl" url="/setup/setup/convert_exceltoxml"/>
+	
+	<mx:HTTPService id="printRecord" url=""/>
+
+</rds:CommonServices>

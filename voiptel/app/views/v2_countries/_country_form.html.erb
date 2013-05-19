@@ -1,0 +1,38 @@
+<% form_for @country, :html => {:class => "forms" } do |f| %>
+<ul>
+	<li>
+		<label>Name</label>
+		<%= f.text_field :name %>
+	</li>
+	<li>
+		<div class="left">
+			<label>Min Digits</label>
+			<%= f.text_field :min_digits, :size => 5 %>
+		</div>
+		<div class="left">
+			<label>Max Digits</label>
+			<%= f.text_field :max_digits, :size => 5 %>
+		</div>
+		</li>
+		<li>
+			<div class="left">
+				<label>Min CNS</label>
+				<%= f.text_field :min_cns, :size => 5 %>
+			</div>
+			<div class="left">
+				<label>Max Digits</label>
+				<%= f.text_field :max_cns, :size => 5 %>
+			</div>					
+		</li>
+		<li>
+			<label>Validation</label>
+			<%= f.select :validation, Country::VALIDATION %>
+		</li>
+		<li>
+			<label>Parent Country <%= f.select :is_parent_country, [["No", false], ["Yes", true]] %></label>			
+		</li>
+		<li>
+			<label>Import Rates? <%= f.select :import_rates, [["No", false], ["Yes", true]] %></label>			
+		</li>		
+</ul>
+<% end -%>

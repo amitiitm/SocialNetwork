@@ -1,0 +1,6 @@
+<columns Title = 'Customer Receipt'>
+
+	<column dataType="S"	label="Receipt #"			checkbox="ckAll1"	xmlTagFrom="str1"	from="tiStr1" 
+		xmlTagTo="str2"		to="tiStr2"		multiSelect="tiMultiSelect1"	xmlTagMultiSelect="multiselect1"	lookupFlag="false"	lookupName="" />
+
+</columns>

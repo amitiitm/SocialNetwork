@@ -1,0 +1,326 @@
+--- 
+ACCOUNT_PERIODS_005: 
+  in_frdt: 2010-05-01 00:00:00
+  ar_post_flag: U
+  updated_at: 
+  iv: O
+  code: "201005"
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  account_year_id: 101
+  ap: O
+  lock_version: 0
+  gl: O
+  updated_by: 
+  id: 163
+  description: May 2010
+  ar: O
+  to_date: 2010-05-31 00:00:00
+  from_date: 2010-05-01 00:00:00
+  company_id: 1
+  in_todt: 2010-05-31 00:00:00
+  ap_post_flag: U
+  in_post_flag: U
+  gl_post_flag: U
+  created_at: 
+ACCOUNT_PERIODS_006: 
+  in_frdt: 2010-06-01 00:00:00
+  ar_post_flag: U
+  updated_at: 
+  iv: O
+  code: "201006"
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  account_year_id: 101
+  ap: O
+  lock_version: 0
+  gl: O
+  updated_by: 
+  id: 180
+  description: June 2010
+  ar: O
+  to_date: 2010-06-30 00:00:00
+  from_date: 2010-06-01 00:00:00
+  company_id: 1
+  in_todt: 2010-06-30 00:00:00
+  ap_post_flag: U
+  in_post_flag: U
+  gl_post_flag: U
+  created_at: 
+ACCOUNT_PERIODS_007: 
+  in_frdt: 2010-07-01 00:00:00
+  ar_post_flag: U
+  updated_at: 
+  iv: O
+  code: "201007"
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  account_year_id: 101
+  ap: O
+  lock_version: 0
+  gl: O
+  updated_by: 
+  id: 202
+  description: July 2010
+  ar: O
+  to_date: 2010-07-31 00:00:00
+  from_date: 2010-07-01 00:00:00
+  company_id: 1
+  in_todt: 2010-07-31 00:00:00
+  ap_post_flag: U
+  in_post_flag: U
+  gl_post_flag: U
+  created_at: 
+ACCOUNT_PERIODS_008: 
+  in_frdt: 2010-08-01 00:00:00
+  ar_post_flag: U
+  updated_at: 
+  iv: O
+  code: "201008"
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  account_year_id: 101
+  ap: O
+  lock_version: 0
+  gl: O
+  updated_by: 
+  id: 221
+  description: August 2010
+  ar: O
+  to_date: 2010-08-31 00:00:00
+  from_date: 2010-08-01 00:00:00
+  company_id: 1
+  in_todt: 2010-08-31 00:00:00
+  ap_post_flag: U
+  in_post_flag: U
+  gl_post_flag: U
+  created_at: 
+ACCOUNT_PERIODS_009: 
+  in_frdt: 2010-09-01 00:00:00
+  ar_post_flag: U
+  updated_at: 
+  iv: O
+  code: "201009"
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  account_year_id: 101
+  ap: O
+  lock_version: 
+  gl: O
+  updated_by: 
+  id: 241
+  description: September 2010
+  ar: O
+  to_date: 2010-09-30 00:00:00
+  from_date: 2010-09-01 00:00:00
+  company_id: 1
+  in_todt: 2010-09-30 00:00:00
+  ap_post_flag: U
+  in_post_flag: U
+  gl_post_flag: U
+  created_at: 
+ACCOUNT_PERIODS_010: 
+  in_frdt: 
+  ar_post_flag: U
+  updated_at: 
+  iv: O
+  code: "200911"
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  account_year_id: 100
+  ap: O
+  lock_version: 0
+  gl: O
+  updated_by: 
+  id: 100
+  description: 
+  ar: O
+  to_date: 2009-11-30 13:03:41
+  from_date: 2009-11-01 13:03:41
+  company_id: 1
+  in_todt: 
+  ap_post_flag: U
+  in_post_flag: U
+  gl_post_flag: U
+  created_at: 
+ACCOUNT_PERIODS_011: 
+  in_frdt: 2009-12-01 00:00:00
+  ar_post_flag: U
+  updated_at: 
+  iv: O
+  code: "200912"
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  account_year_id: 100
+  ap: O
+  lock_version: 0
+  gl: O
+  updated_by: 
+  id: 126
+  description: DECEMBER 2009
+  ar: O
+  to_date: 2009-12-31 00:00:00
+  from_date: 2009-12-01 00:00:00
+  company_id: 1
+  in_todt: 2009-12-31 00:00:00
+  ap_post_flag: U
+  in_post_flag: U
+  gl_post_flag: U
+  created_at: 
+ACCOUNT_PERIODS_001: 
+  in_frdt: 2010-01-01 00:00:00
+  ar_post_flag: U
+  updated_at: 
+  iv: O
+  code: "201001"
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  account_year_id: 101
+  ap: O
+  lock_version: 0
+  gl: O
+  updated_by: 
+  id: 102
+  description: January 2010
+  ar: O
+  to_date: 2010-01-31 00:00:00
+  from_date: 2010-01-01 00:00:00
+  company_id: 1
+  in_todt: 2010-01-31 00:00:00
+  ap_post_flag: U
+  in_post_flag: U
+  gl_post_flag: U
+  created_at: 
+ACCOUNT_PERIODS_002: 
+  in_frdt: 2010-02-01 00:00:00
+  ar_post_flag: U
+  updated_at: 
+  iv: O
+  code: "201002"
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  account_year_id: 101
+  ap: O
+  lock_version: 0
+  gl: O
+  updated_by: 
+  id: 121
+  description: Fabuary 2010
+  ar: O
+  to_date: 2010-02-28 00:00:00
+  from_date: 2010-02-01 00:00:00
+  company_id: 1
+  in_todt: 2010-02-28 00:00:00
+  ap_post_flag: U
+  in_post_flag: U
+  gl_post_flag: U
+  created_at: 
+ACCOUNT_PERIODS_003: 
+  in_frdt: 2010-03-01 00:00:00
+  ar_post_flag: U
+  updated_at: 
+  iv: O
+  code: "201003"
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  account_year_id: 101
+  ap: "0"
+  lock_version: 0
+  gl: "0"
+  updated_by: 
+  id: 141
+  description: March 2010
+  ar: "0"
+  to_date: 2010-03-31 00:00:00
+  from_date: 2010-03-01 00:00:00
+  company_id: 1
+  in_todt: 2010-03-31 00:00:00
+  ap_post_flag: U
+  in_post_flag: U
+  gl_post_flag: U
+  created_at: 
+ACCOUNT_PERIODS_004: 
+  in_frdt: 2010-04-01 00:00:00
+  ar_post_flag: U
+  updated_at: 
+  iv: O
+  code: "201004"
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  account_year_id: 101
+  ap: O
+  lock_version: 0
+  gl: O
+  updated_by: 
+  id: 142
+  description: April 2010
+  ar: O
+  to_date: 2010-04-30 00:00:00
+  from_date: 2010-04-01 00:00:00
+  company_id: 1
+  in_todt: 2010-04-30 00:00:00
+  ap_post_flag: U
+  in_post_flag: U
+  gl_post_flag: U
+  created_at: 
+ACCOUNT_PERIODS_012: 
+  in_frdt: 2010-10-01 00:00:00
+  ar_post_flag: U
+  updated_at: 
+  iv: O
+  code: "201010"
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  account_year_id: 101
+  ap: O
+  lock_version: 0
+  gl: O
+  updated_by: 
+  id: 143
+  description: Oct 2010
+  ar: O
+  to_date: 2010-10-31 00:00:00
+  from_date: 2010-10-01 00:00:00
+  company_id: 1
+  in_todt: 2010-10-31 00:00:00
+  ap_post_flag: U
+  in_post_flag: U
+  gl_post_flag: U
+  created_at: 
+ACCOUNT_PERIODS_013: 
+  in_frdt: 2010-11-01 00:00:00
+  ar_post_flag: U
+  updated_at: 
+  iv: O
+  code: "201011"
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  account_year_id: 101
+  ap: O
+  lock_version: 0
+  gl: O
+  updated_by: 
+  id: 242
+  description: November 2010
+  ar: O
+  to_date: 2010-11-30 00:00:00
+  from_date: 2010-11-01 00:00:00
+  company_id: 1
+  in_todt: 2010-11-30 00:00:00
+  ap_post_flag: U
+  in_post_flag: U
+  gl_post_flag: U
+  created_at: 

@@ -1,0 +1,27 @@
+<columns  lockedColumnCount='0'>
+
+	<column data='accessory_item_id'	label='Item id'				editable='false'	visible='false'		width='0'	textAlign='left' 
+		forLevel='false'				defaultForLevel='' 			booleanFlag='false'	sortDataType='S' 	columnPrecision="NaN"/>
+	
+	<column data='catalog_item_code'	label='Item #'				editable='false'	visible='true'		width='100'	textAlign='left' 
+		forLevel='false'				defaultForLevel='' 			booleanFlag='false'	sortDataType='S' 	columnPrecision="NaN"/>
+		
+	<column data='catalog_item_name'	label='Item Name'			editable='false' 	visible='true' 		width='100' textAlign='left'
+		forLevel='false' 				defaultForLevel=''			booleanFlag='false'	sortDataType='S'	columnPrecision="NaN"/>
+
+	<column data='qty'					label='Qty'					editable='false'	visible='true'		width='60'	textAlign='right' 
+		forLevel='false'				defaultForLevel='' 			booleanFlag='false'	sortDataType='N' 	columnPrecision="0"/>
+	
+	<column data='price'				label='Price'					editable='false'	visible='true'		width='60'	textAlign='right' 
+		forLevel='false'				defaultForLevel='' 			booleanFlag='false'	sortDataType='N' 	columnPrecision="3"/>
+				
+	<column data='cost'					label='Cost'				editable='false'	visible='true'		width='60'	textAlign='right'
+		forLevel='false'				defaultForLevel='' 			booleanFlag='false'	sortDataType='N' 	columnPrecision="3"/>
+	
+	<column data='unit'					label='Unit'				editable='false'	visible='true'		width='60'	textAlign='left'
+		forLevel='false'				defaultForLevel='' 			booleanFlag='false'	sortDataType='S' 	columnPrecision="NaN"/>
+	
+	<column data='description'			label='Description'				editable='false'	visible='true'		width='80'	textAlign='left'
+		forLevel='false'				defaultForLevel='' 			booleanFlag='false'	sortDataType='S' 	columnPrecision="NaN"/>	
+	
+</columns> 

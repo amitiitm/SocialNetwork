@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rds:CommonServices xmlns:rds="business.*" xmlns:mx="http://www.adobe.com/2006/mxml">
+
+	<mx:HTTPService id="saveRecord" url="/payment/payment_profile/create_payment_profiles"/>
+	<mx:HTTPService id="getRecord" url="/payment/payment_profile/show_payment_profile"/>
+	<mx:HTTPService id="getList" url="/payment/payment_profile/list_payment_profiles"/>
+	
+	<mx:HTTPService id="getListFormat" url="cust/customerpaymentprofile/xmls/CustomerPaymentProfileListStru.xml"/>
+	<mx:HTTPService id="getViewFormat" url="cust/customerpaymentprofile/xmls/CustomerPaymentProfileCriteriaStru.xml"/>
+	
+	<mx:HTTPService id="printRecord" url=""/>
+
+</rds:CommonServices>

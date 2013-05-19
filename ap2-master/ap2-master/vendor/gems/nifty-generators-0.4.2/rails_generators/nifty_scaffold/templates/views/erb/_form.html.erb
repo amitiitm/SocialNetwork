@@ -1,0 +1,12 @@
+<%% form_for @<%= singular_name %>, :html => {:class => "forms"} do |f| %>
+  <%%= error("Could not create <%= singular_name %>:") %>
+	<ul>
+	<%- for attribute in attributes -%>
+	  <li>
+	    <%%= f.label :<%= attribute.name %> %>
+	    <%%= f.<%= attribute.field_type %> :<%= attribute.name %> %>
+	  </li>
+	<%- end -%>
+	</ul>
+	<!-- <%%= submit_button("Save") %> <%%= loading("Please wait...") %> -->
+<%% end %>

@@ -1,0 +1,49 @@
+<% if @cards.blank? %>
+	<span class="bold">This account has no credit cards</span><br>
+	<%= button(:new_card, "New Credit Card", :update => "new-card-container", :href => new_account_credit_card_path(@account)) %>
+	<%= button(:new_card, "Credit Card Over Phone", :update => "new-card-container", :href => new_account_tmp_credit_card_info_path(@account)) %>
+<% else %>
+  <% form_tag charge_account_credit_cards_path(@account), :class => "forms", :indicator => "charge-card" do %>
+	<%= error("Unable to charge the card:") %>
+		<ul>
+			<li>
+				<label>Balance: <%= number_to_currency(@account.balance) %></label>
+			</li>
+			<li>
+				<div class="first float-left">
+					<label class="desc">Credit Card</label>
+					<%= select "charge", "credit_card_id",
+						@cards.map {|tr| ["#{tr.card_type.upcase}-#{tr.card_number}", tr.id]}
+					%>
+				</div>
+				<div class="float-left">
+					<label class="desc">Amount</label>
+					<%#= text_field(:charge, :amount, :size => 5) %>
+					<%= select(:charge, :amount, Account::DEPOSIT_AMOUNTS, {:selected => 10}) %>
+				</div>			
+			</li>	
+			<button class="ui-state-default float-left ui-corner-all ui-button" type="submit">Charge</button>
+			<%= loading("Please wait...") %>
+		</ul>
+	<% end -%>
+<% end %>
+<div class="clearfix"></div>
+<br>
+<hr>
+<% form_for [@account, @credit], :html => {:class => "forms"} do |f| %>
+<%= error("Could not add credit:") %>
+<ul>
+	<li>
+		<label>Credit Amount:</label>
+		<%= f.text_field :amount, :size => 5 %>			
+	</li>
+	<li>
+		<label>Credit Note:</label>
+		<%= f.text_area :note, :cols => 25, :rows => 2 %>		
+	</li>
+	<%= f.hidden_field :admin_user_id %>
+	<%= submit_button("Add Credit") %>
+</ul>
+<%= loading("Saving...") %>
+<% end -%>
+<div class="clearfix"></div>

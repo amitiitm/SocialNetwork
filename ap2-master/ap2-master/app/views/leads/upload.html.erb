@@ -1,0 +1,14 @@
+<%= page_title :title => "Upload Leads" %>
+
+<% form_for @lead, :html => {:enctype => "multipart/form-data"} do |f| %>
+	<ul>
+		<li>
+			<label>File</label>
+			<%= f.file_field :file %>
+		</li>
+		<li>
+			<%= f.submit "Upload" %>
+		</li>
+		<%= f.hidden_field :upload %>
+	</ul>
+<% end -%>

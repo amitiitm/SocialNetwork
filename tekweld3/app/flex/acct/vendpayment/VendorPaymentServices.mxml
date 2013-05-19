@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rds:CommonServices xmlns:rds="business.*" xmlns:mx="http://www.adobe.com/2006/mxml">
+
+	<mx:HTTPService id="saveRecord" url="/purchase/vendor_payment/create_payments" />
+	<mx:HTTPService id="getRecord" url="/purchase/vendor_payment/show_payments" />
+	<mx:HTTPService id="getList" url="/purchase/vendor_payment/list_payments" />
+	
+	<mx:HTTPService id="getListFormat" url="acct/vendpayment/xmls/VendorPaymentListStru.xml" />
+	<mx:HTTPService id="getViewFormat" url="acct/vendpayment/xmls/VendorPaymentCriteriaStru.xml" />
+	<mx:HTTPService id="lineDetailFormat" url="acct/vendpayment/xmls/VendorPaymentLineDetailStru.xml" />
+	
+	<mx:HTTPService id="GLFormat" url="acct/vendpayment/xmls/VendorPaymentGLStru.xml"/>
+	
+	<mx:HTTPService id="invoiceList" url="/purchase/vendor_invoice/fetch_invoices_for_payments" />
+	
+	<mx:HTTPService id="printRecord" url="/purchase/vendor_report/vendor_payment_format" />
+	
+	
+	
+</rds:CommonServices>

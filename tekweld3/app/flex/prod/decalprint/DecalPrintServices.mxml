@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rds:CommonServices xmlns:rds="business.*" xmlns:mx="http://www.adobe.com/2006/mxml">
+
+	<mx:HTTPService id="saveRecord" 		url="/production/production/create_production_print_inboxes"/>
+	<mx:HTTPService id="getList" 			url="/production/production_indigo/decal_print_inbox"/>
+	<mx:HTTPService id="viewProof" 			url="/production/production_indigo/view_all_indigo_print_proofs"/>
+	
+	<mx:HTTPService id="getViewFormat" 		url="prod/decalprint/xmls/DecalPrintCriteriaStru.xml"/>
+	<mx:HTTPService id="getListFormat" 		url="prod/decalprint/xmls/DecalPrintListStru.xml"/>
+	<mx:HTTPService id="printRecord" 		url=""/>
+	<mx:HTTPService id="printIndigoSlip" 		url="/production/production_indigo/render_indigo_print_slip"/>
+	
+</rds:CommonServices>

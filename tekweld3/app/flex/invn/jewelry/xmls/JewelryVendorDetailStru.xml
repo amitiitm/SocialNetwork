@@ -1,0 +1,12 @@
+<columns>
+	
+	<column data='vendor_code'		label='Vendor #'		editable='false'	visible='true'	width='150'	textAlign='left'	forLevel='false' 	
+		defaultForLevel=''			booleanFlag='false'		sortDataType='S' 	columnPrecision="NaN"/>
+
+	<column data='vendor_sku_no'	label='Vendor SKU #'	editable='false'	visible='true'	width='150'	textAlign='left'	forLevel='false' 	
+		defaultForLevel=''			booleanFlag='false'		sortDataType='S' 	columnPrecision="NaN"/>
+		
+	<column data='price'			label='Price'			editable='false' 	visible='true' 	width='300' textAlign='right' 	forLevel='false'
+	 	defaultForLevel=''			booleanFlag='false'		sortDataType='N' 	columnPrecision="2"/>
+	
+</columns>

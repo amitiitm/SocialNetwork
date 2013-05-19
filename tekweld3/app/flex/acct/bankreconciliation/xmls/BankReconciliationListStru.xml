@@ -1,0 +1,18 @@
+<columns lockedColumnCount='0'>
+
+	<column data='account_period_code' 	label='A/c Period #' 	editable='false' 	visible='true' 		width='80' 	textAlign='left' 
+			forLevel='false' 	defaultForLevel='' 	booleanFlag='false' sortDataType='S'	columnPrecision="NaN"/>
+					
+	<column data='bank_code' 	label='Bank #' 		editable='false' 	visible='true' 		width='100' 	textAlign='left' 
+			forLevel='false' 	defaultForLevel='' 	booleanFlag='false' sortDataType='S'	columnPrecision="NaN"/>
+
+	<column data='from_date' 	label='From Date' 		editable='false' 	visible='true' 		width='100' 	textAlign='left' 
+			forLevel='false' 	defaultForLevel='' 	booleanFlag='false' sortDataType='D'	columnPrecision="NaN"/>
+
+	<column data='to_date' 	label='To Date' 		editable='false' 	visible='true' 		width='100' 	textAlign='left' 
+			forLevel='false' 	defaultForLevel='' 	booleanFlag='false' sortDataType='D'	columnPrecision="NaN"/>
+
+	<column data='bank_balance' 	label='Bank Balance' 		editable='false' 	visible='true' 		width='100' 	textAlign='left' 
+			forLevel='false' 	defaultForLevel='' 	booleanFlag='false' sortDataType='N'	columnPrecision="2"/>
+		
+</columns>  

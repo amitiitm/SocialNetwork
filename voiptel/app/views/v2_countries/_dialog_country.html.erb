@@ -1,0 +1,5 @@
+<% box :type => "dialog", :id => "dialog-country", :title => "Edit Country: #{@country.name}", :icon => "ui-icon-person" do %>
+	<% box :type => "simple", :title => "Edit Country: #{@country.name}" do %>
+		<%= render :partial => "v2_countries/country_form" %>
+	<% end -%>
+<% end -%>

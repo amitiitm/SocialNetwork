@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<gencomponents:DetailAddEdit xmlns:mx="http://www.adobe.com/2006/mxml"
+							 width="850" height="480" verticalGap="0"
+							 xmlns:customcomponents="com.generic.customcomponents.*"
+							 xmlns:gencomponents="com.generic.components.*"
+							 creationComplete="creationCompleteHandler()">
+	<mx:Script source="../scripts/SalesQuotationShippingImportDetailScript.as"/>
+	<mx:XML  id="shippingStruXml"	source="../xmls/SalesQuotationShippingImportStru.xml"/>
+	<mx:VBox height="0" width="0" visible="false">
+		<customcomponents:GenTextInput id="tiDummy" width="0" height="0" visible="false" editable="false"
+									   xmlTag="dummy" updatableFlag="true" tableName="sales_order_shipping" />
+	</mx:VBox>
+	
+	<mx:VBox width="100%" height="100%" verticalGap="3">		
+		<mx:LinkButton id="lbSampleXLS" label="Sample/Download Excel format" click="handleSampleXLS()" color="#0000FF" />
+		
+		<customcomponents:GenDataGrid 
+			id="dgValues"
+			width="100%" 
+			height="100%"
+			editable="false"
+			structure="{shippingStruXml}"
+			updatableFlag="true"
+			formatServiceID="detailFormat"
+			rootNode="rows"
+			click="clickHandler()"
+			/>
+		
+	</mx:VBox>
+</gencomponents:DetailAddEdit>

@@ -1,0 +1,50 @@
+<% if @carrier.rate_sheets.blank? %>
+	<p>
+		No Rate Sheets uploaded yet!
+	</p>
+<% else %>
+	<% for rate_sheet in @carrier.rate_sheets.find(:all, :order => "created_at DESC") %>
+		<% box :type => "box_title", :title => (rate_sheet.name + " Last Updated at #{rate_sheet.updated_at.strftime('%Y/%m/%d %H:%M')}") do %>
+			<%= render :partial => "carriers/rate_sheets/revesions", :locals => {:rate_sheet => rate_sheet} %>
+		<% end -%>
+	<% end -%>
+	
+
+	<% table do |t| %>
+		<% t.th "Name" %>
+		<% t.th "Version" %>
+		<% t.th "Effective Date" %>
+		<% t.th "Trunks" %>
+		<% t.th "Active" %>
+		<% t.th "Files" %>
+		<% t.th "Actions" %>
+
+		<% for rate_sheet in @carrier.rate_sheets.find(:all, :order => "created_at DESC") %>
+			<% t.td rate_sheet.name %>
+			<% t.td rate_sheet.created_at.strftime("%y%m%d-%H%M") %>
+			<% t.td rate_sheet.effective_date %>
+			<% t.td (rate_sheet.trunks.map {|trunk| trunk.name }.join(", ")) %>
+			<% t.td	 (if rate_sheet.active then "Yes" else "No" end)%>
+			<% t.td "<ol><li>file 1</li><li>file 2</li></ol>" %>
+			<% t.td 	(
+									link_to("Edit", edit_carrier_rate_sheet_path(@carrier, rate_sheet), :class => "ajax", :ajax => "eval") #+ " | " +
+									#link_to("Delete", carrier_rate_sheet_path(@carrier, rate_sheet), :class => "ajax-delete")
+								) 
+			%>
+			<% t.new_row %>
+		<% end -%>
+	<% end -%>
+<% end -%>
+<br>
+<button id="dialog-new-rate_sheet-link">New Rate Sheet</button>
+
+<%= render :partial => "carriers/rate_sheets/rate_sheet_dialog",
+		:locals => {
+			:carrier => @carrier,
+			:rate_sheet => RateSheet.new(:carrier_id => @carrier.id),
+			:id => "dialog-new-rate_sheet", :title => "New rate_sheet"
+		}
+%>
+
+<div id="edit-rate_sheet" class="hide"></div>
+<script type="text/javascript" src="/js/carriers/rate_sheet_ui.js"></script>

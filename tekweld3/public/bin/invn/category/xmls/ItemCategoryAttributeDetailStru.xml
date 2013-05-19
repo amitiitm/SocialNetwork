@@ -1,0 +1,11 @@
+<columns  lockedColumnCount='0'>
+
+	<column data='code'			label='Code'		editable='false'	visible='true'	width='100'	textAlign='left'	forLevel='false'
+			defaultForLevel=''	booleanFlag='false'	sortDataType='S' 	columnPrecision="NaN"/>
+			
+	<column data='name'			label='Name'		editable='false'	visible='true'	width='300'	textAlign='left'	forLevel='false'
+			defaultForLevel=''	booleanFlag='false'	sortDataType='S'	columnPrecision="NaN"/>
+
+</columns> 
+
+

@@ -1,0 +1,21 @@
+<columns  lockedColumnCount='0'>
+
+	<column data='code'			label='Period'			editable='false' 	visible='true' 		width='80'	textAlign='left'	
+			forLevel='false' 	defaultForLevel=''		booleanFlag='false'	sortDataType='S'	columnPrecision="NaN"/>
+
+	<column data='from_date'	label='From Date'		editable='false' 	visible='true' 		width='80'	textAlign='left'	
+			forLevel='false' 	defaultForLevel=''		booleanFlag='false'	sortDataType='D'	columnPrecision="NaN"/>
+			
+	<column data='to_date' 		label='To Date' 		editable='false' 	visible='true' 		width='80' 	textAlign='left'
+		 	forLevel='false' 	defaultForLevel='' 		booleanFlag='false'	sortDataType='D'	columnPrecision="NaN"/>
+
+	<column data='in_frdt' 		label='In From Date'	editable='false' 	visible='true' 		width='80' 	textAlign='left'
+		 	forLevel='false' 	defaultForLevel='' 		booleanFlag='false'	sortDataType='D'	columnPrecision="NaN"/>
+	
+	<column data='in_todt' 		label='In To Date' 		editable='false' 	visible='true' 		width='80' 	textAlign='left'
+		 	forLevel='false' 	defaultForLevel='' 		booleanFlag='false'	sortDataType='D'	columnPrecision="NaN"/>
+		 	
+	<column data='description'	label='Description' 	editable='false' 	visible='true' 		width='250'	textAlign='left'
+		 	forLevel='false' 	defaultForLevel='' 		booleanFlag='false'	sortDataType='S'	columnPrecision="NaN"/>
+		 	
+</columns> 

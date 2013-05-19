@@ -1,0 +1,11 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  carrier_id: 1
+  rate_sheet_id: 1
+  revesion: 1
+
+two:
+  carrier_id: 1
+  rate_sheet_id: 1
+  revesion: 1

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<gencomponents:DetailAddEdit xmlns:mx="http://www.adobe.com/2006/mxml"
+	width="440" height="200" verticalGap="0"
+	xmlns:customcomponents="com.generic.customcomponents.*"
+	xmlns:gencomponents="com.generic.components.*">
+
+	<mx:Script source="../scripts/VendorInvoiceDetailScript.as"/>
+
+	<mx:VBox width="100%" height="100%">	
+		
+		<!--<mx:VBox id="vbMain" width="428" height="115" label="Item Details" verticalGap="2" verticalAlign="top"
+				 verticalCenter="-8" x="0" borderStyle="solid">
+			<mx:Spacer height="5"/>-->
+			<mx:HBox>
+				<mx:Label text="GL Code" width="104" textAlign="right"/>
+				
+				<customcomponents:GenTextInputWithHelp
+							id="tiGlAccount" 
+							width="150" 
+							toolTip="GL Account" 
+							dataSourceName="GLAccount"
+							minimumChar = "{__genModel.masterData.child('lookup').glaccount.value}"
+							height="20" 
+							tabIndex="1" 
+							validationFlag="true" 
+							xmlTag="gl_account_id"
+							labelTag="gl_account_code"
+							dataField="id" 
+							labelField= "code"
+							updatableFlag="true" 
+							tableName="vendor_invoice_line" 
+							itemChangedEvent="GLAccountFocusOutHandler()"
+							/>
+				
+				<!--<customcomponents:GenDynamicComboBoxWithHelp id="tiGlAccount" width="150" 
+					toolTip="GL Account"  defaultValue="" tabIndex="1" itemChangedEvent="GLAccountFocusOutHandler()" 
+					dataField="id" labelField="code" height="20"
+					dataSourceName="GLAccount" dataProvider="{GenModelLocator.getInstance().lookupObj.glaccount.children()}"   
+					validationFlag="true" xmlTag="gl_account_id" updatableFlag="true" tableName="vendor_invoice_line"  />-->
+				<customcomponents:GenTextInput id="tiGlCode" xmlTag="gl_account_code" updatableFlag="true"  text="{tiGlAccount.labelValue}"
+					validationFlag="false" tableName = "Vendor_invoice_line"  width="0" height="0" visible="false"/>
+					
+			</mx:HBox>
+			<mx:HBox>	
+				<mx:Label text="Account Name" width="104" textAlign="right"/>
+				<customcomponents:GenTextInput id="tiGlName" height="20" xmlTag="gl_account_name" updatableFlag="true"   
+					validationFlag="false" tableName="vendor_invoice_line"  width="270"  visible="true" enabled="false"/>
+			</mx:HBox>	
+			<mx:HBox>
+				<mx:Label text="Amount" width="104" textAlign="right"/>
+				<customcomponents:GenTextInput id="tiAmt" xmlTag="gl_amt"  height="20" updatableFlag="true"
+					tableName="vendor_invoice_line" tabIndex="2" textAlign="right"  toolTip="Amount"  negativeFlag = "true"
+					validationFlag="true" dataType="N" setDefaultOnEmpty="true" defaultValue="0.00" maxValue="9999999999.99" width="105"/>
+			</mx:HBox>
+			<mx:HBox>
+				<mx:Label text="Description" width="104" textAlign="right"/>
+				<customcomponents:GenTextInput id="tiDesc" xmlTag="description" updatableFlag="true" toolTip="Description"
+					tableName = "Vendor_invoice_line" tabIndex="3" height="20" maxChars="50" width="270"/>
+			</mx:HBox>
+			<mx:HBox width="0" height="0" visible="false">
+				<customcomponents:GenTextInput id="tiSerial_no" toolTip="Serial #" restrict="1234567890" visible="false"
+					validationFlag="false" xmlTag="serial_no" updatableFlag="true" tableName="vendor_invoice_line"/>
+				<customcomponents:GenComboBox id="cbTrans_flag" defaultValue="A" width="90" cornerRadius="0" xmlTag="trans_flag" updatableFlag="true"
+					tableName="vendor_invoice_line"  height="18" labelField="label"
+					dataProvider="{GenModelLocator.getInstance().masterData.child('trans_flag').trans_flag}"  />	
+			</mx:HBox>
+		<!--</mx:VBox>-->
+	</mx:VBox>
+</gencomponents:DetailAddEdit>

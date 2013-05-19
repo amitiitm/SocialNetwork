@@ -1,0 +1,37 @@
+<%= page_title :title => "View/Edit Testimonial (from #{@testimonial.user.account.name})" %>
+
+<% box :type => "box_title", :title => "2) Testimonial" do %>
+	<% form_for @testimonial, :html => {:class => "forms"} do |f| %>
+		<ul>
+			<li>
+				<label class="desc">First Name</label>
+				<%= f.text_field :name, :class => 'field text', :size => 15%>							
+			</li>
+			<li>
+				<label class="desc">City</label>
+				<%= f.text_field :city, :class => 'field text', :size => 15%>
+			</li>
+			<li>
+				<div class="blue-box" style="width: 500px;">
+					<h3>Location Suggestions:</h3>
+					<p id="suggestions">
+						Billing City: <%= @billing_city || "N/A" %><br>
+						<% for p in @testimonial.user.account.phones do %>
+							Phone <%= "#{number_to_phone(p.number, :area_code => true)} | Rate Center: #{if p.area_code_info then p.area_code_info.ratecenter.downcase end} | City: #{if p.area_code_info then p.area_code_info.city.downcase end} | County: #{if p.area_code_info then p.area_code_info.county.downcase end}" %><br>
+						<% end -%>
+					</p>
+				</div>
+			</li>
+			<li>
+				<label class="desc">Message</label>
+				<%= f.text_area :message, :class => 'field text', :size => 15%>
+			</li>
+			<li>
+				<label class="desc">Publish <%= f.check_box :publish %></label>							
+			</li>
+		</ul>
+		<%= f.hidden_field :user_id %>
+		<button class="ui-state-default float-left ui-corner-all ui-button" type="submit">Save</button>
+		<div class="clearfix"></div>
+	<% end -%>
+<% end -%>

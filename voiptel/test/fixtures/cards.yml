@@ -1,0 +1,17 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  number: MyString
+  serial: MyString
+  enabled: false
+  activated: false
+  activation_date: 2010-05-24 21:49:10
+  value: 1
+
+two:
+  number: MyString
+  serial: MyString
+  enabled: false
+  activated: false
+  activation_date: 2010-05-24 21:49:10
+  value: 1

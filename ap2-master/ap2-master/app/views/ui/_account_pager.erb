@@ -1,0 +1,57 @@
+<div id="pager">
+	<% if @page > 1 %>
+		<%= link_to(
+			'<span style="margin-left:5px" class="ui-icon ui-icon-circle-arrow-w prev_icon"></span>',
+			"#",
+			:class => "btn_no_text btn prev pager-link ignore-me",
+			:title => "Previous Page",
+			:indicator => "pager",
+			:page => "prev"
+		)%>
+	<% end -%>
+		<label class="text" style="margin-left: 0px; padding-left:20px">Page: </label>
+		<input id = "p_num" type="text" style="background:url(/images/billing/textField_63_bg.jpg) no-repeat; border:0;padding-top: 1px;width:58px;" value="<%= @page %>" size="1"/>
+        <label class="text" style="margin-left: 0px">/ <%= @pages %></label>
+		<% if @page < @pages %>
+			<%= link_to(
+				'<span class="ui-icon ui-icon-circle-arrow-e next_icon"></span>',
+				"#",
+				:class => "btn_no_text btn next pager-link ignore-me",
+				:title => "Next Page",
+				:indicator => "pager",
+				:page => "next"
+			)%>
+
+		<% end -%>
+		<%= select "pager", "limit", UiHelper::PAGER_LIMITS, {:selected => @limit}, {:style=>"padding-top: 1px;",:class => "pagesize pager-limit"} %>
+		<div style="padding-top:7px;" class="hidden" id="loading-pager"><%= image_tag("load.gif", :class => "icon") %> Loading...</div>
+		<input type="hidden" id="pager_url" name="url" value="<%= path %>"></input>
+		<form id="ghatogh">
+			<% @params_filter.keys.each do |k| -%>
+				<input type="hidden" id="filter_<%= k %>" name="filter[<%= k %>]" value="<%= @conditions[k] %>">
+			<% end -%>
+			<input type="hidden" name="page" id="page" value="<%= @page %>">
+			<input type="hidden" name="limit" id="limit" value="<%= @limit %>">
+			<input type="hidden" name="size" id="size" value="<%= @size %>">
+      <input type="hidden" name="sort_order" id="sort_order" value="<%= @sort_order %>">
+      <input type="hidden" name="sort" id="sort" value="<%= @sort %>">
+		</form>
+</div>
+<script>
+	jQuery("#p_num").keydown(function(e){
+		if (e.keyCode == 13) {
+			jQuery("#page").val(jQuery(this).val());
+			jQuery("#loading-pager").fadeIn('slow');
+			var url = jQuery("#pager_url").val();
+			var form = jQuery("#ghatogh");
+			var filters = jQuery('#form_filter');
+			var args = form.serialize();
+			if (filters) {
+				args += "&" + filters.serialize();
+			};
+			jQuery.get(url, args, function(response){
+		   jQuery('.inner-response').html(response);
+		  });
+		};
+	});
+</script>

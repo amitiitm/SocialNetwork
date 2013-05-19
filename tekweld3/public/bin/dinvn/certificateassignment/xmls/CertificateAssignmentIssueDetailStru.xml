@@ -1,0 +1,30 @@
+<columns lockedColumnCount='0'>
+
+	<column data='serial_no'			label='Serial #'		editable='false'	visible='true'	width='60'	textAlign='left'	forLevel='false'
+			defaultForLevel=''			booleanFlag='false'		sortDataType='N'	columnPrecision="0"/>
+			
+	<column data='diamond_lot_no'		label='Lot #'			editable='false'	visible='true'	width='100'	textAlign='left'	forLevel='false'
+			defaultForLevel=''			booleanFlag='false'		sortDataType='S'	columnPrecision="NaN"/>
+					
+	<column data='diamond_packet_no'	label='Certificate #'	editable='false'	visible='true'	width='100'	textAlign='left'	forLevel='false' 
+			defaultForLevel=''			booleanFlag='false' 	sortDataType='S'	columnPrecision="NaN"/>
+					
+	<column data='location_code'		label='Location #'		editable='false' 	visible='true' 	width='80'	textAlign='left'	forLevel='false'
+			defaultForLevel=''			booleanFlag='false'		sortDataType='S'	columnPrecision="NaN"/>
+					
+	<column data='iss_pcs'				label='Pcs'				editable='false' 	visible='true' 	width='65'	textAlign='right'	forLevel='false' 
+			defaultForLevel=''			booleanFlag='false'		sortDataType='N'	columnPrecision="0"/>
+			
+	<column data='iss_wt'				label='Carat'			editable='false'	visible='true'	width='65'	textAlign='right'	forLevel='false'
+			defaultForLevel=''			booleanFlag='false'		sortDataType='N'	columnPrecision="3"/>
+			
+	<column data='iss_price'			label='Price'			editable='false'	visible='true'	width='80'	textAlign='right'	forLevel='false' 
+			defaultForLevel=''			booleanFlag='false'		sortDataType='N'	columnPrecision="2"/>
+			
+	<column data='sell_unit'			label='Sell Unit'		editable='false'	visible='true'	width='60'	textAlign='left'	forLevel='false' 
+			defaultForLevel=''			booleanFlag='false'		sortDataType='S'	columnPrecision="NaN"/>
+					
+	<column data='iss_amt'				label='Item Amt'		editable='false'	visible='true'	width='80'	textAlign='right'	forLevel='false' 
+			defaultForLevel=''			booleanFlag='false'		sortDataType='N'	columnPrecision="2"/>
+
+</columns> 

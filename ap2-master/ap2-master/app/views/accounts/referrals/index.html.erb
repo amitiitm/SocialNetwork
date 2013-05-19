@@ -1,0 +1,20 @@
+<%= page_title :title => "Account Referrals" %>
+
+<% table :width => "750px" do |t| %>
+	<% t.th "#" %>
+	<% t.th "Customer Name" %>
+	<% t.th "Registration Date" %>
+	<% t.th "Deposit Date" %>
+	<% t.th "Credit Date" %>
+	
+	<% counter = @referrals.size + 1 %>
+	<% for r in @referrals %>
+		<% t.td(counter -= 1) %>
+		<% t.td r.referred_account.name %>
+		<% t.td user_date(r.referred_account.created_at) %>
+		<% t.td user_date(r.deposit_date) %>
+		<% t.td user_date(r.credit_date) %>
+		
+		<% t.new_row %>
+	<% end -%>
+<% end -%>	

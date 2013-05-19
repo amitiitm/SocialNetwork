@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<gencomponents:DetailAddEdit xmlns:mx="http://www.adobe.com/2006/mxml"
+	width="450" height="130" verticalGap="0"
+	xmlns:customcomponents="com.generic.customcomponents.*"
+	xmlns:gencomponents="com.generic.components.*">
+
+    <mx:Script source="../scripts/BankDetailScript.as"/>
+
+	<mx:VBox height="100%" width="100%">
+	
+		<mx:HBox>
+			<mx:Label text="Payment Type" width="95" textAlign="right"/>
+			<customcomponents:GenComboBox id="cbPayment_type" defaultValue="CHCK" width="115" cornerRadius="0" xmlTag="payment_type" 
+				updatableFlag="true" tableName="bank_check"  tabIndex="1" height="20" labelField="label"
+				dataProvider="{__genModel.masterData.child('faxx').pay_type}" />
+		</mx:HBox>
+	
+		<mx:HBox>
+			<mx:Label text="From #" width="95" textAlign="right"/>
+			<customcomponents:GenTextInput id="tiCheck_from" width="115" height="20" visible="true"
+				editable="true" xmlTag="check_from" updatableFlag="true" defaultValue="" setDefaultOnEmpty="true" 
+				tableName="bank_check" tabIndex="2" toolTip="Check from" negativeFlag="false" validationFlag="true"  
+				textAlign="right" dataType="N" maxValue="999999" />
+	
+			<mx:Label text="To #" width="55" textAlign="right"/>
+			<customcomponents:GenTextInput id="tiCheck_to" width="115" height="20" visible="true"
+				editable="true" xmlTag="check_to" updatableFlag="true" defaultValue="" setDefaultOnEmpty="true" 
+				tableName="bank_check" tabIndex="3" toolTip="Check to" negativeFlag="false" validationFlag="true" 
+				textAlign="right" dataType="N" maxValue="999999" />
+		</mx:HBox>
+		<customcomponents:GenTextInput id="tiSerial_no" toolTip="Serial #" restrict="1234567890" visible="false"
+			validationFlag="false" xmlTag="serial_no" updatableFlag="false" tableName="bank_check"/>
+	</mx:VBox>
+</gencomponents:DetailAddEdit>

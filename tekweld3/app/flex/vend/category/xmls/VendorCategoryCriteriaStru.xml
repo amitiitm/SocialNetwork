@@ -1,0 +1,7 @@
+<columns Title='Vendor Category'>
+
+	<column dataType="S" label="Code" checkbox="ckAll1" xmlTagFrom="str1" from="tiStr1" xmlTagTo="str2" to="tiStr2" multiSelect="mvMultiSelect1" xmlTagMultiSelect="multiselect1" lookupFlag="true" 		lookupName="VendorCategory"			lookupLabel="code"  dataField="code" 			labelField="code" 
+		lookupFormatUrl=""/>
+	<column dataType="S" label="Name" checkbox="ckAll2" xmlTagFrom="str3" from="tiStr3" xmlTagTo="str4" to="tiStr4" multiSelect="tiMultiSelect2" xmlTagMultiSelect="multiselect2" lookupFlag="false" lookupName="" />
+
+</columns>

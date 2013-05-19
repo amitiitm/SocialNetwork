@@ -1,0 +1,15 @@
+<columns lockedColumnCount='0'>
+
+	<column data='type_cd' 		label='Type Cd' 	editable='false'	visible='false'		width='0'	textAlign='left' 
+			forLevel='false' 	defaultForLevel='' 	booleanFlag='false' sortDataType='S'	columnPrecision="NaN"/>
+			
+	<column data='subtype_cd' 	label='Subtype Cd' 	editable='false' 	visible='false' 	width='0' 	textAlign='left'
+			forLevel='false' 	defaultForLevel='' 	booleanFlag='false' sortDataType='S'	columnPrecision="NaN"/>
+			
+	<column data='value'		label='Value' 		editable='false'	visible='true'		width='170'	textAlign='left'
+			forLevel='false'	defaultForLevel=''	booleanFlag='false'	sortDataType='S'	columnPrecision="NaN"/>
+			
+	<column data='description'	label='Description'	editable='false'	visible='true'		width='170'	textAlign='left'
+			forLevel='false'	defaultForLevel=''	booleanFlag='false'	sortDataType='S'	columnPrecision="NaN"/>		
+
+</columns>

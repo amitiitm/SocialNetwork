@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rds:ApplicationServices xmlns:rds="business.*" xmlns:mx="http://www.adobe.com/2006/mxml">
+
+	<mx:HTTPService id="saveRecord" url="/catalog/create_hierarchy"/>
+	<mx:HTTPService id="getRecord" url="/catalog/list_hierarchy"/>
+	<mx:HTTPService id="printRecord" url=""/>
+	<mx:HTTPService id="getElementService" url="/catalog/list_all_attributes_values"/>
+	<mx:HTTPService id="getHeirarchyService" url="/catalog/list_hierarchy"/>
+	<mx:HTTPService id="gridDetailFormat" url="ctlg/catalogtree/xmls/GridStructure.xml"/>
+
+</rds:ApplicationServices>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rds:CommonServices xmlns:rds="business.*" xmlns:mx="http://www.adobe.com/2006/mxml">
+
+	<mx:HTTPService id="saveRecord" url="/inventory/inventory/create_inventory_transaction_transfers"/>
+	<mx:HTTPService id="getRecord" url="/inventory/inventory/show_inventory_transaction_transfer"/>
+	<mx:HTTPService id="getList" url="/inventory/inventory/list_transfer_transactions"/>
+	
+	<mx:HTTPService id="getViewFormat" url="invn/itemtransfer/xmls/ItemTransferCriteriaStru.xml"/>
+	<mx:HTTPService id="getListFormat" url="invn/itemtransfer/xmls/ItemTransferListStru.xml"/>
+	<mx:HTTPService id="lineReceiptDetailFormat" url="invn/itemtransfer/xmls/ItemTransferReceiveDetailStru.xml" />
+	<mx:HTTPService id="lineIssueDetailFormat" url="invn/itemtransfer/xmls/ItemTransferIssueDetailStru.xml" />
+	
+	<mx:HTTPService id="printRecord" url=""/>
+
+</rds:CommonServices>
+
+
+

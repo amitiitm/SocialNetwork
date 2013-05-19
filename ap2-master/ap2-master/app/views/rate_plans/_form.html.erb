@@ -1,0 +1,34 @@
+<% form_for @rate_plan, :html => {:class => "forms"} do |f| %>
+  <%= error("Could not create rate_plan:") %>
+	<ul>
+	  <li class="horizental">
+	    <%= f.label :name %>
+	    <%= f.text_field :name %>
+	  </li>
+		<li class="horizental">
+	    <%= f.label "Price" %>
+	    <%= f.text_field :price, :size => 5 %>
+	  </li>
+		<li></li>
+	
+		<% f.fields_for :promotions do |promotion_fields| %>
+			<%= render :partial => "promotion", :locals => {:f => promotion_fields} %>
+		<% end %>
+		<%= link_to_add_fields("Add more plans", f, :promotions, "promotion", :class => "ignore-me") %>
+	</ul>
+<% end %>
+<%= javascript_include_tag "country.js" %>
+<script type="text/javascript" charset="utf-8">
+	$(function(){
+		$(".country").live('change', function(){
+			var country_id = $(this).val();
+			if ($(this).parent().hasClass("fieldWithErrors")) {
+				var prefix_dom = $(this).parent().parent().parent().find(".prefix");
+			} else {
+				var prefix_dom = $(this).parent().parent().find(".prefix");
+			};
+			$(prefix_dom).val(countries[country_id]);
+			$(prefix_dom).focus();
+		});
+	});
+</script>

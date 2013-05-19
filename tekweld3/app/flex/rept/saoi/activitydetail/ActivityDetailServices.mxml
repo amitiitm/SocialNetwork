@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rds:CommonServices xmlns:rds="business.*" xmlns:mx="http://www.adobe.com/2006/mxml">
+
+	<mx:HTTPService id="getViewFormat" url="rept/saoi/useractivity/xmls/UserActivityCriteriaStru.xml" />
+	<mx:HTTPService id="getList" url="/sale/sales_report/list_activity_detail_report" />
+	<mx:HTTPService id="printRecord" url="" />
+
+</rds:CommonServices>

@@ -1,0 +1,14 @@
+<% box :type => "dialog", :id => "dialog-add-funds", :title => "Add Funds" do %>
+	<% box :type => "simple", :title => "Add Funds" do %>
+		<%= render :partial => "accounts/billing/add_fund" %>
+	<% end -%>
+<% end -%>
+
+<script type="text/javascript">
+$('#dialog-add-funds').dialog({
+	autoOpen: true,
+	width: '400px',
+	bgiframe: false,
+	modal: true
+});
+</script>

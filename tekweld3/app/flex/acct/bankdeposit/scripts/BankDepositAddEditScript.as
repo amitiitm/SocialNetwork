@@ -1,0 +1,206 @@
+import business.events.GetInformationEvent;
+
+import com.generic.events.AddEditEvent;
+
+import model.GenModelLocator;
+
+import mx.controls.Alert;
+import mx.formatters.NumberFormatter;
+import mx.rpc.IResponder;
+
+[Bindable]
+private var __genModel:GenModelLocator	=	GenModelLocator.getInstance();
+private var getInformationEvent:GetInformationEvent;
+private var _numericFormatter:NumberFormatter = new NumberFormatter();
+
+private function init():void
+{
+	getAccountPeriod();
+}
+
+private function getAccountPeriod():void
+{
+	if(dfTrans_date.text != '' && dfTrans_date.text != null)
+	{
+		var callbacks:IResponder	=	new mx.rpc.Responder(getAccountPeriodHandler, null);
+		
+		getInformationEvent	=	new GetInformationEvent('accountperiod',callbacks, dfTrans_date.text);
+		getInformationEvent.dispatch(); 
+	}
+}
+
+private function getAccountPeriodHandler(resultXml:XML):void
+{
+	dcAccount_period_code.dataValue	=	resultXml.child('code');
+	dcAccount_period_code.labelValue	=	resultXml.child('code');
+}
+
+private function bankChangeEvent():void
+{
+	if(dcBank_Id.text != '' && dcBank_Id.text != null)
+	{
+		var callbacks:IResponder	=	new mx.rpc.Responder(bankChangeEventHandler, null);
+	
+		getInformationEvent	=	new GetInformationEvent('depositbank', callbacks, dfTrans_date.text, dcBank_Id.dataValue);
+		getInformationEvent.dispatch(); 
+	}	
+}
+
+private function bankChangeEventHandler(resultXml:XML):void
+{
+	tiBank_name.dataValue		= 	resultXml.children().child('bank_name').toString();
+	tiBank_code.dataValue		= 	resultXml.children().child('bank_code').toString();
+	dcBank_Id.labelValue		= 	resultXml.children().child('bank_code').toString();
+	dcBank_Id.dataValue  		=	resultXml.children().child('bank_id').toString();
+	tiCheck_no.text				=	resultXml.children().child('check_no').toString();
+	cbPayment_type.dataValue	=	resultXml.children().child('payment_type').toString();
+	tiDeposit_no.text			=	resultXml.children().child('deposit_slip_no').toString();
+
+	//Alert.show('bankchange'+resultXml);
+}
+
+private function accountTypeChangeEvent():void
+{
+	setAccountLookUp(cbAccount_Type.dataValue.toString());
+	dcAccount_Id.dataValue	=	'';
+	dcAccount_Id.labelValue	=	'';
+	tiPayTo.text	=	'';
+}
+
+private function setAccountLookUp(accountType:String):void
+{
+	if(accountType.toUpperCase() != 'G')
+	{
+		if(depositDtl.dgDtl.rows.children().length() > 0)
+		{
+			for(var i:int=depositDtl.dgDtl.rows.children().length() - 1; i >= 0; i--)
+			{
+				depositDtl.deleteRow(i);
+			}
+		}
+	}
+	
+	switch(accountType.toUpperCase())
+	{
+		 case 'C':
+		 		dcAccount_Id.dataSourceName	=	'CustomerWholesale'
+		 		dcAccount_Id.minimumChar	=	__genModel.masterData.child('lookup').customerwholesale.value
+				dcAccount_Id.toolTip		=	'Customer #'
+		 		depositDtl.enabled	=	false;
+		 		dcAccount_Id.enabled	=	true;
+		        
+		        break;
+		case 'V':
+		        dcAccount_Id.dataSourceName	=	'Vendor'
+				dcAccount_Id.minimumChar	=	__genModel.masterData.child('lookup').vendor.value
+				dcAccount_Id.toolTip		=	'Vendor #'	
+		        depositDtl.enabled	=	false;
+		        dcAccount_Id.enabled	=	true;
+		        
+		        break;
+		case 'G':
+		        depositDtl.enabled	=	true;
+		        dcAccount_Id.enabled	=	false;
+		        
+		        break;                    
+		default:
+        		dcAccount_Id.dataSourceName	=	'CustomerWholesale'
+				dcAccount_Id.minimumChar	=	__genModel.masterData.child('lookup').customerwholesale.value
+				dcAccount_Id.toolTip		=	'Customer #'
+		 		depositDtl.enabled	=	false;
+		 		dcAccount_Id.enabled	=	true;
+		        
+		        break;
+	}
+}
+
+private function AccountIdChangeEvent():void
+{
+	if(dcAccount_Id.text != '' && dcAccount_Id.text != null && cbAccount_Type.dataValue == 'V')
+	{
+		var callbacks:IResponder = new mx.rpc.Responder(accountDetailsHandler, null);
+		getInformationEvent = new GetInformationEvent('vendorinfo', callbacks, dcAccount_Id.dataValue);
+		getInformationEvent.dispatch();	
+		
+	}	
+	else if(dcAccount_Id.text != '' && dcAccount_Id.text != null && cbAccount_Type.dataValue == 'C')
+	{
+		var callbacks:IResponder = new mx.rpc.Responder(accountDetailsHandler, null);
+		getInformationEvent = new GetInformationEvent('customerdetail', callbacks, dcAccount_Id.dataValue);
+		getInformationEvent.dispatch();
+	}
+}
+
+private function accountDetailsHandler(resultXml:XML):void
+{
+	tiPayTo.text	=	resultXml.children().child('name').toString()
+	dcAccount_Id.labelValue	=	resultXml.children().child('code').toString()
+	dcAccount_Id.dataValue	=	resultXml.children().child('id').toString()
+	
+}
+
+override protected function preSaveEventHandler(event:AddEditEvent):int
+{
+	if(cbAccount_Type.dataValue.toString().toUpperCase()!="G")
+	{
+		if(dcAccount_Id.text == '' || dcAccount_Id.text == null)
+		{
+			Alert.show('Account # is required');
+			return 1;
+		} 
+		
+		depositDtl.dgDtl.rows  = new XML('<' + depositDtl.rootNode + '/>');
+	}
+	else
+	{
+		_numericFormatter.precision	=	2;
+		_numericFormatter.rounding	=	"nearest";
+		_numericFormatter.useThousandsSeparator	=	false;
+
+		var i:int;
+		var crditSum:Number	=	0.00;
+		var rows:XML;
+		rows	=	depositDtl.dgDtl.rows
+		for(i=0; i< rows.children().length(); i++)
+		{
+			crditSum	=	crditSum	+ Number(rows.children()[i].credit_amt)
+		}
+		
+		if(Number(_numericFormatter.format(crditSum))	==	Number(tiCreditAmt.text))
+		{
+			return 0
+		}
+		else
+		{
+			Alert.show('Amount must equal to the total credit Amount');
+			return 1;
+		}	
+	}
+	
+	 
+	return 0;
+}
+
+override protected function retrieveRecordEventHandler(event:AddEditEvent):void  //after save and prev,next,.....
+{
+	//make a function for this, and same dome for deposit screen
+	//set default account type and accountId for this in both screen
+	
+	setAccountLookUp(event.recordXml.children().child('account_flag').toString());
+	
+	dcAccount_Id.dataValue	= 	event.recordXml.children().child('account_id').toString()
+	dcAccount_Id.labelValue	=	event.recordXml.children().child('account_code').toString()
+	dcAccount_Id.enabled		= 	false;
+
+	cbAccount_Type.enabled	=	false;
+}
+
+override protected function resetObjectEventHandler():void   //on add buttton press,
+{
+	cbAccount_Type.enabled	=	true;
+	dcAccount_Id.enabled	=	true;
+		
+	accountTypeChangeEvent(); 
+	getAccountPeriod();
+	//set editable fields true
+}

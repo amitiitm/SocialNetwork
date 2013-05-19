@@ -1,0 +1,38 @@
+<script type="text/javascript" src="/js/tablesorter.js"></script>
+<script type="text/javascript" src="/js/tablesorter-pager.js"></script>
+<script type="text/javascript" src="/js/accounts/index.js"></script>
+
+<%= page_title :title => "Servers", :dec => "View Servers" %>
+
+<div class="hastable">	
+<form name="myform" class="pager-form" method="post" action="">	
+		<table id="sort-table" style="width:500px"> 
+		<thead> 
+			<tr>
+    <th>Name</th>
+		<th>Short Name</th>
+    <th>Hostname</th>
+		<th>IP</th>
+		<th>Actions</th>
+  </tr>
+</thead>
+<tbody>
+<% @servers.each do |server| %>
+  <tr>
+    <td><%=h server.name %></td>
+		<td><%=h server.short_name %></td>
+    <td><%=h server.hostname %></td>
+		<td><%=h server.ip %></td>
+    <td><%= link_to 'Edit', edit_server_path(server), :class => "hash" %> | 
+    <%= link_to 'Delete', server, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+		</tbody>
+	 </table>
+			
+</form>	 
+</div>
+
+<br />
+<div class="clearfix"></div>
+<%= link_to 'New server', new_server_path, :class => "hash" %>

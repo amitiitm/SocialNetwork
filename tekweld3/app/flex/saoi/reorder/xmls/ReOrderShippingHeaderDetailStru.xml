@@ -1,0 +1,18 @@
+<columns  lockedColumnCount='0'>
+
+	<column data='ship_qty'					label='Qty'					editable='false'	visible='true'	width='50'	textAlign='right'	forLevel='false'
+			defaultForLevel=''				booleanFlag='false'			sortDataType='N'	columnPrecision="0"/>
+	
+	<column data='internal_ship_date'		label='Ship Date'			editable='false'	visible='true'	width='80'	textAlign='left'	forLevel='false'
+			defaultForLevel=''				booleanFlag='false'			sortDataType='D'	columnPrecision="NaN"/>
+	
+	<column data='internal_inhand_date'		label='Inhand Date'					editable='false'	visible='true'	width='80'	textAlign='left'	forLevel='false'
+			defaultForLevel=''				booleanFlag='false'			sortDataType='D'	columnPrecision="NaN"/>
+	
+	<column data='shipping_code'			label='Ship Provider'			editable='false'	visible='true'	width='100'	textAlign='left'	forLevel='false'
+			defaultForLevel=''				booleanFlag='false'			sortDataType='S'	columnPrecision="NaN"/>	
+	
+	<column data='tracking_no'				label='Tracking #'			editable='false'	visible='true'	width='100'	textAlign='left'	forLevel='false'
+			defaultForLevel=''				booleanFlag='false'			sortDataType='S'	columnPrecision="NaN"/>	
+										
+</columns> 

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rds:CommonServices xmlns:rds="business.*" xmlns:mx="http://www.adobe.com/2006/mxml">
+
+	<mx:HTTPService id="saveRecord" url="/diamond_purchase/create_credits"/>
+	<mx:HTTPService id="getRecord" url="/diamond_purchase/show_credit"/>
+	<mx:HTTPService id="getList" url="/diamond_purchase/list_credits"/>
+	<mx:HTTPService id="getListFormat" url="dpuoi/creditinvoice/xmls/DiamPurchaseCreditInvoiceListStru.xml"/>
+	<mx:HTTPService id="getViewFormat" url="dpuoi/creditinvoice/xmls/DiamPurchaseCreditInvoiceCriteriaStru.xml"/>
+	<mx:HTTPService id="itemDetailFormat" url="dpuoi/creditinvoice/xmls/DiamPurchaseCreditInvoiceItemDetailStru.xml"/>
+	<mx:HTTPService id="directItemDetailFormat" url="dpuoi/creditinvoice/xmls/DiamPurchaseCreditInvoiceDirectItemDetailStru.xml"/>	
+	<mx:HTTPService id="fetchRecordFormat" url="dpuoi/creditinvoice/xmls/DiamPurchaseCreditInvoiceFetchRecordStru.xml"/>
+
+	<mx:HTTPService id="fetch_open_invoices" url="/diamond_purchase/fetch_open_invoices"/>
+	<mx:HTTPService id="fetch_open_invoices_hdr" url="/diamond_purchase/fetch_open_invoices_hdr"/>
+	<mx:HTTPService id="fetchInvoiceHdrFormat" url="dpuoi/creditinvoice/xmls/DiamPurchaseCreditInvoiceFetchInvoiceHdrStru.xml"/>
+	<mx:HTTPService id="fetchGetSelectedInvoiceServiceID" url="/diamond_purchase/fetch_open_invoice_lines"/>
+
+	<mx:HTTPService id="setDefaultView" url=""/>
+	<mx:HTTPService id="printRecord" url="/diamond_purchase_report/purchase_credit_invoice_format"/>
+
+</rds:CommonServices>

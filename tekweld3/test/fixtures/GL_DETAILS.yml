@@ -1,0 +1,5713 @@
+--- 
+GL_DETAILS_186: 
+  module_code: SAOI
+  post_flag: U
+  updated_at: 2010-08-25 18:20:57
+  customer_vendor_flag: C
+  ref_no: 
+  update_flag: V
+  trans_flag: A
+  created_by: 100
+  trans_bk: PS01
+  lock_version: 0
+  updated_by: 100
+  id: 4853
+  customer_vendor_id: 720
+  description: ""
+  credit_amt: "0.00"
+  trans_no: "2046"
+  hdr_serial_no: "501"
+  gl_account_id: 219
+  account_period_code: "201008"
+  company_id: 100
+  ref_date: 
+  dtl_serial_no: "1"
+  trans_date: 2010-08-25 00:00:00
+  trans_type: I
+  debit_amt: "4900.00"
+  ref_bk: 
+  created_at: 2010-08-25 18:20:57
+GL_DETAILS_158: 
+  module_code: SAOI
+  post_flag: U
+  updated_at: 2010-08-25 16:41:12
+  customer_vendor_flag: C
+  ref_no: 
+  update_flag: V
+  trans_flag: A
+  created_by: 180
+  trans_bk: PS01
+  lock_version: 0
+  updated_by: 180
+  id: 4833
+  customer_vendor_id: 102
+  description: ""
+  credit_amt: "0.00"
+  trans_no: "2002"
+  hdr_serial_no: "501"
+  gl_account_id: 176
+  account_period_code: "201008"
+  company_id: 1
+  ref_date: 
+  dtl_serial_no: "502"
+  trans_date: 2010-08-25 00:00:00
+  trans_type: I
+  debit_amt: "84.00"
+  ref_bk: 
+  created_at: 2010-08-25 16:41:12
+GL_DETAILS_129: 
+  module_code: SAOI
+  post_flag: U
+  updated_at: 2010-08-20 10:45:29
+  customer_vendor_flag: C
+  ref_no: 
+  update_flag: V
+  trans_flag: A
+  created_by: 180
+  trans_bk: PS01
+  lock_version: 0
+  updated_by: 180
+  id: 4740
+  customer_vendor_id: 127
+  description: ""
+  credit_amt: "0.00"
+  trans_no: "2031"
+  hdr_serial_no: "501"
+  gl_account_id: 219
+  account_period_code: "201008"
+  company_id: 100
+  ref_date: 
+  dtl_serial_no: "1"
+  trans_date: 2010-08-20 00:00:00
+  trans_type: I
+  debit_amt: "8600.00"
+  ref_bk: 
+  created_at: 2010-08-20 10:45:29
+GL_DETAILS_072: 
+  module_code: SAOI
+  post_flag: U
+  updated_at: 2010-08-18 15:53:05
+  customer_vendor_flag: C
+  ref_no: 
+  update_flag: V
+  trans_flag: A
+  created_by: 100
+  trans_bk: PS01
+  lock_version: 0
+  updated_by: 100
+  id: 4611
+  customer_vendor_id: 500
+  description: ""
+  credit_amt: "0.00"
+  trans_no: "2014"
+  hdr_serial_no: "501"
+  gl_account_id: 176
+  account_period_code: "201008"
+  company_id: 100
+  ref_date: 
+  dtl_serial_no: "502"
+  trans_date: 2010-08-18 00:00:00
+  trans_type: I
+  debit_amt: "2100.00"
+  ref_bk: 
+  created_at: 2010-08-18 15:53:05
+GL_DETAILS_044: 
+  module_code: SAOI
+  post_flag: U
+  updated_at: 2010-08-18 14:42:59
+  customer_vendor_flag: C
+  ref_no: 
+  update_flag: V
+  trans_flag: A
+  created_by: 100
+  trans_bk: PS01
+  lock_version: 0
+  updated_by: 100
+  id: 4575
+  customer_vendor_id: 102
+  description: ""
+  credit_amt: "0.00"
+  trans_no: "2008"
+  hdr_serial_no: "501"
+  gl_account_id: 219
+  account_period_code: "201008"
+  company_id: 100
+  ref_date: 
+  dtl_serial_no: "1"
+  trans_date: 2010-08-18 00:00:00
+  trans_type: I
+  debit_amt: "2400.00"
+  ref_bk: 
+  created_at: 2010-08-18 14:42:59
+GL_DETAILS_016: 
+  module_code: FAXX
+  post_flag: U
+  updated_at: 2010-08-10 14:53:27
+  customer_vendor_flag: 
+  ref_no: ref1010
+  update_flag: V
+  trans_flag: A
+  created_by: 100
+  trans_bk: CM01
+  lock_version: 0
+  updated_by: 100
+  id: 4508
+  customer_vendor_id: 403
+  description: ""
+  credit_amt: "0.00"
+  trans_no: "6001"
+  hdr_serial_no: "201"
+  gl_account_id: 105
+  account_period_code: "201008"
+  company_id: 1
+  ref_date: 2010-08-10 00:00:00
+  dtl_serial_no: "203"
+  trans_date: 2010-08-10 00:00:00
+  trans_type: I
+  debit_amt: "10.00"
+  ref_bk: 
+  created_at: 2010-08-10 14:53:27
+GL_DETAILS_187: 
+  module_code: SAOI
+  post_flag: U
+  updated_at: 2010-08-25 18:42:15
+  customer_vendor_flag: C
+  ref_no: 
+  update_flag: V
+  trans_flag: A
+  created_by: 100
+  trans_bk: PS01
+  lock_version: 0
+  updated_by: 100
+  id: 4854
+  customer_vendor_id: 720
+  description: ""
+  credit_amt: "3531.00"
+  trans_no: "2047"
+  hdr_serial_no: "501"
+  gl_account_id: 144
+  account_period_code: "201008"
+  company_id: 100
+  ref_date: 
+  dtl_serial_no: "501"
+  trans_date: 2010-08-25 00:00:00
+  trans_type: I
+  debit_amt: "0.00"
+  ref_bk: 
+  created_at: 2010-08-25 18:42:15
+GL_DETAILS_159: 
+  module_code: SAOI
+  post_flag: U
+  updated_at: 2010-08-25 16:41:12
+  customer_vendor_flag: C
+  ref_no: 
+  update_flag: V
+  trans_flag: A
+  created_by: 180
+  trans_bk: PS01
+  lock_version: 0
+  updated_by: 180
+  id: 4834
+  customer_vendor_id: 102
+  description: ""
+  credit_amt: "0.00"
+  trans_no: "2002"
+  hdr_serial_no: "501"
+  gl_account_id: 219
+  account_period_code: "201008"
+  company_id: 1
+  ref_date: 
+  dtl_serial_no: "1"
+  trans_date: 2010-08-25 00:00:00
+  trans_type: I
+  debit_amt: "1200.00"
+  ref_bk: 
+  created_at: 2010-08-25 16:41:12
+GL_DETAILS_073: 
+  module_code: SAOI
+  post_flag: U
+  updated_at: 2010-08-18 15:53:05
+  customer_vendor_flag: C
+  ref_no: 
+  update_flag: V
+  trans_flag: A
+  created_by: 100
+  trans_bk: PS01
+  lock_version: 0
+  updated_by: 100
+  id: 4612
+  customer_vendor_id: 500
+  description: ""
+  credit_amt: "0.00"
+  trans_no: "2014"
+  hdr_serial_no: "501"
+  gl_account_id: 219
+  account_period_code: "201008"
+  company_id: 100
+  ref_date: 
+  dtl_serial_no: "1"
+  trans_date: 2010-08-18 00:00:00
+  trans_type: I
+  debit_amt: "25800.00"
+  ref_bk: 
+  created_at: 2010-08-18 15:53:05
+GL_DETAILS_045: 
+  module_code: SAOI
+  post_flag: U
+  updated_at: 2010-08-18 14:47:41
+  customer_vendor_flag: C
+  ref_no: 
+  update_flag: V
+  trans_flag: A
+  created_by: 100
+  trans_bk: PS01
+  lock_version: 0
+  updated_by: 100
+  id: 4576
+  customer_vendor_id: 102
+  description: ""
+  credit_amt: "2568.00"
+  trans_no: "2009"
+  hdr_serial_no: "501"
+  gl_account_id: 144
+  account_period_code: "201008"
+  company_id: 100
+  ref_date: 
+  dtl_serial_no: "501"
+  trans_date: 2010-08-18 00:00:00
+  trans_type: I
+  debit_amt: "0.00"
+  ref_bk: 
+  created_at: 2010-08-18 14:47:41
+GL_DETAILS_100: 
+  module_code: SAOI
+  post_flag: U
+  updated_at: 2010-08-19 12:35:38
+  customer_vendor_flag: C
+  ref_no: 
+  update_flag: V
+  trans_flag: A
+  created_by: 100
+  trans_bk: PS01
+  lock_version: 0
+  updated_by: 100
+  id: 4683
+  customer_vendor_id: 203
+  description: ""
+  credit_amt: "0.00"
+  trans_no: "2025"
+  hdr_serial_no: "501"
+  gl_account_id: 219
+  account_period_code: "201008"
+  company_id: 100
+  ref_date: 
+  dtl_serial_no: "1"
+  trans_date: 2010-08-19 00:00:00
+  trans_type: I
+  debit_amt: "47000.00"
+  ref_bk: 
+  created_at: 2010-08-19 12:35:38
+GL_DETAILS_017: 
+  module_code: FAXX
+  post_flag: U
+  updated_at: 2010-08-10 14:53:27
+  customer_vendor_flag: 
+  ref_no: ref1010
+  update_flag: V
+  trans_flag: A
+  created_by: 100
+  trans_bk: CM01
+  lock_version: 0
+  updated_by: 100
+  id: 4509
+  customer_vendor_id: 403
+  description: ""
+  credit_amt: "10.00"
+  trans_no: "6001"
+  hdr_serial_no: "201"
+  gl_account_id: 104
+  account_period_code: "201008"
+  company_id: 1
+  ref_date: 2010-08-10 00:00:00
+  dtl_serial_no: "303"
+  trans_date: 2010-08-10 00:00:00
+  trans_type: I
+  debit_amt: "0.00"
+  ref_bk: 
+  created_at: 2010-08-10 14:53:27
+GL_DETAILS_188: 
+  module_code: SAOI
+  post_flag: U
+  updated_at: 2010-08-25 18:42:15
+  customer_vendor_flag: C
+  ref_no: 
+  update_flag: V
+  trans_flag: A
+  created_by: 100
+  trans_bk: PS01
+  lock_version: 0
+  updated_by: 100
+  id: 4855
+  customer_vendor_id: 720
+  description: ""
+  credit_amt: "0.00"
+  trans_no: "2047"
+  hdr_serial_no: "501"
+  gl_account_id: 176
+  account_period_code: "201008"
+  company_id: 100
+  ref_date: 
+  dtl_serial_no: "502"
+  trans_date: 2010-08-25 00:00:00
+  trans_type: I
+  debit_amt: "231.00"
+  ref_bk: 
+  created_at: 2010-08-25 18:42:15
+GL_DETAILS_074: 
+  module_code: SAOI
+  post_flag: U
+  updated_at: 2010-08-18 18:05:54
+  customer_vendor_flag: C
+  ref_no: 
+  update_flag: V
+  trans_flag: A
+  created_by: 100
+  trans_bk: PS01
+  lock_version: 0
+  updated_by: 100
+  id: 4644
+  customer_vendor_id: 101
+  description: ""
+  credit_amt: "0.00"
+  trans_no: "2018"
+  hdr_serial_no: "501"
+  gl_account_id: 219
+  account_period_code: "201008"
+  company_id: 100
+  ref_date: 
+  dtl_serial_no: "1"
+  trans_date: 2010-08-18 00:00:00
+  trans_type: I
+  debit_amt: "37100.00"
+  ref_bk: 
+  created_at: 2010-08-18 18:05:54
+GL_DETAILS_046: 
+  module_code: SAOI
+  post_flag: U
+  updated_at: 2010-08-18 14:47:41
+  customer_vendor_flag: C
+  ref_no: 
+  update_flag: V
+  trans_flag: A
+  created_by: 100
+  trans_bk: PS01
+  lock_version: 0
+  updated_by: 100
+  id: 4577
+  customer_vendor_id: 102
+  description: ""
+  credit_amt: "0.00"
+  trans_no: "2009"
+  hdr_serial_no: "501"
+  gl_account_id: 176
+  account_period_code: "201008"
+  company_id: 100
+  ref_date: 
+  dtl_serial_no: "502"
+  trans_date: 2010-08-18 00:00:00
+  trans_type: I
+  debit_amt: "168.00"
+  ref_bk: 
+  created_at: 2010-08-18 14:47:41
+GL_DETAILS_101: 
+  module_code: SAOI
+  post_flag: U
+  updated_at: 2010-08-19 14:32:24
+  customer_vendor_flag: C
+  ref_no: 
+  update_flag: V
+  trans_flag: A
+  created_by: 180
+  trans_bk: PS01
+  lock_version: 0
+  updated_by: 180
+  id: 4684
+  customer_vendor_id: 506
+  description: ""
+  credit_amt: "9095.00"
+  trans_no: "2026"
+  hdr_serial_no: "501"
+  gl_account_id: 144
+  account_period_code: "201008"
+  company_id: 100
+  ref_date: 
+  dtl_serial_no: "501"
+  trans_date: 2010-08-19 00:00:00
+  trans_type: I
+  debit_amt: "0.00"
+  ref_bk: 
+  created_at: 2010-08-19 14:32:24
+GL_DETAILS_189: 
+  module_code: SAOI
+  post_flag: U
+  updated_at: 2010-08-25 18:42:15
+  customer_vendor_flag: C
+  ref_no: 
+  update_flag: V
+  trans_flag: A
+  created_by: 100
+  trans_bk: PS01
+  lock_version: 0
+  updated_by: 100
+  id: 4856
+  customer_vendor_id: 720
+  description: ""
+  credit_amt: "0.00"
+  trans_no: "2047"
+  hdr_serial_no: "501"
+  gl_account_id: 219
+  account_period_code: "201008"
+  company_id: 100
+  ref_date: 
+  dtl_serial_no: "1"
+  trans_date: 2010-08-25 00:00:00
+  trans_type: I
+  debit_amt: "3300.00"
+  ref_bk: 
+  created_at: 2010-08-25 18:42:15
+GL_DETAILS_130: 
+  module_code: SAOI
+  post_flag: U
+  updated_at: 2010-08-19 14:58:04
+  customer_vendor_flag: C
+  ref_no: 
+  update_flag: V
+  trans_flag: A
+  created_by: 100
+  trans_bk: PS01
+  lock_version: 0
+  updated_by: 100
+  id: 4693
+  customer_vendor_id: 203
+  description: ""
+  credit_amt: "50290.00"
+  trans_no: "2025"
+  hdr_serial_no: "501"
+  gl_account_id: 144
+  account_period_code: "201008"
+  company_id: 1
+  ref_date: 
+  dtl_serial_no: "501"
+  trans_date: 2010-08-19 00:00:00
+  trans_type: I
+  debit_amt: "0.00"
+  ref_bk: 
+  created_at: 2010-08-19 14:58:04
+GL_DETAILS_075: 
+  module_code: SAOI
+  post_flag: U
+  updated_at: 2010-08-18 18:05:54
+  customer_vendor_flag: C
+  ref_no: 
+  update_flag: V
+  trans_flag: A
+  created_by: 100
+  trans_bk: PS01
+  lock_version: 0
+  updated_by: 100
+  id: 4645
+  customer_vendor_id: 101
+  description: ""
+  credit_amt: "0.00"
+  trans_no: "2018"
+  hdr_serial_no: "501"
+  gl_account_id: 219
+  account_period_code: "201008"
+  company_id: 100
+  ref_date: 
+  dtl_serial_no: "1"
+  trans_date: 2010-08-18 00:00:00
+  trans_type: I
+  debit_amt: "36100.00"
+  ref_bk: 
+  created_at: 2010-08-18 18:05:54
+GL_DETAILS_047: 
+  module_code: SAOI
+  post_flag: U
+  updated_at: 2010-08-18 13:54:25
+  customer_vendor_flag: C
+  ref_no: 
+  update_flag: V
+  trans_flag: A
+  created_by: 100
+  trans_bk: PS01
+  lock_version: 0
+  updated_by: 100
+  id: 4553
+  customer_vendor_id: 127
+  description: ""
+  credit_amt: "0.00"
+  trans_no: "2004"
+  hdr_serial_no: "501"
+  gl_account_id: 219
+  account_period_code: "201008"
+  company_id: 100
+  ref_date: 
+  dtl_serial_no: "1"
+  trans_date: 2010-08-18 00:00:00
+  trans_type: I
+  debit_amt: "2800.00"
+  ref_bk: 
+  created_at: 2010-08-18 13:54:25
+GL_DETAILS_102: 
+  module_code: SAOI
+  post_flag: U
+  updated_at: 2010-08-19 14:32:24
+  customer_vendor_flag: C
+  ref_no: 
+  update_flag: V
+  trans_flag: A
+  created_by: 180
+  trans_bk: PS01
+  lock_version: 0
+  updated_by: 180
+  id: 4685
+  customer_vendor_id: 506
+  description: ""
+  credit_amt: "0.00"
+  trans_no: "2026"
+  hdr_serial_no: "501"
+  gl_account_id: 176
+  account_period_code: "201008"
+  company_id: 100
+  ref_date: 
+  dtl_serial_no: "502"
+  trans_date: 2010-08-19 00:00:00
+  trans_type: I
+  debit_amt: "595.00"
+  ref_bk: 
+  created_at: 2010-08-19 14:32:24
+GL_DETAILS_018: 
+  module_code: SAOI
+  post_flag: U
+  updated_at: 2010-08-18 13:02:38
+  customer_vendor_flag: C
+  ref_no: 
+  update_flag: V
+  trans_flag: A
+  created_by: 100
+  trans_bk: PS01
+  lock_version: 0
+  updated_by: 100
+  id: 4541
+  customer_vendor_id: 126
+  description: ""
+  credit_amt: "0.00"
+  trans_no: "2001"
+  hdr_serial_no: "501"
+  gl_account_id: 176
+  account_period_code: "201008"
+  company_id: 100
+  ref_date: 
+  dtl_serial_no: "502"
+  trans_date: 2010-08-18 00:00:00
+  trans_type: I
+  debit_amt: "196.00"
+  ref_bk: 
+  created_at: 2010-08-18 13:02:38
+GL_DETAILS_131: 
+  module_code: SAOI
+  post_flag: U
+  updated_at: 2010-08-19 14:58:04
+  customer_vendor_flag: C
+  ref_no: 
+  update_flag: V
+  trans_flag: A
+  created_by: 100
+  trans_bk: PS01
+  lock_version: 0
+  updated_by: 100
+  id: 4694
+  customer_vendor_id: 203
+  description: ""
+  credit_amt: "0.00"
+  trans_no: "2025"
+  hdr_serial_no: "501"
+  gl_account_id: 176
+  account_period_code: "201008"
+  company_id: 1
+  ref_date: 
+  dtl_serial_no: "502"
+  trans_date: 2010-08-19 00:00:00
+  trans_type: I
+  debit_amt: "3290.00"
+  ref_bk: 
+  created_at: 2010-08-19 14:58:04
+GL_DETAILS_048: 
+  module_code: SAOI
+  post_flag: U
+  updated_at: 2010-08-18 13:54:25
+  customer_vendor_flag: C
+  ref_no: 
+  update_flag: V
+  trans_flag: A
+  created_by: 100
+  trans_bk: PS01
+  lock_version: 0
+  updated_by: 100
+  id: 4554
+  customer_vendor_id: 127
+  description: ""
+  credit_amt: "0.00"
+  trans_no: "2004"
+  hdr_serial_no: "501"
+  gl_account_id: 219
+  account_period_code: "201008"
+  company_id: 100
+  ref_date: 
+  dtl_serial_no: "1"
+  trans_date: 2010-08-18 00:00:00
+  trans_type: I
+  debit_amt: "2800.00"
+  ref_bk: 
+  created_at: 2010-08-18 13:54:25
+GL_DETAILS_103: 
+  module_code: SAOI
+  post_flag: U
+  updated_at: 2010-08-19 14:32:24
+  customer_vendor_flag: C
+  ref_no: 
+  update_flag: V
+  trans_flag: A
+  created_by: 180
+  trans_bk: PS01
+  lock_version: 0
+  updated_by: 180
+  id: 4686
+  customer_vendor_id: 506
+  description: ""
+  credit_amt: "0.00"
+  trans_no: "2026"
+  hdr_serial_no: "501"
+  gl_account_id: 219
+  account_period_code: "201008"
+  company_id: 100
+  ref_date: 
+  dtl_serial_no: "1"
+  trans_date: 2010-08-19 00:00:00
+  trans_type: I
+  debit_amt: "8500.00"
+  ref_bk: 
+  created_at: 2010-08-19 14:32:24
+GL_DETAILS_019: 
+  module_code: SAOI
+  post_flag: U
+  updated_at: 2010-08-18 13:02:38
+  customer_vendor_flag: C
+  ref_no: 
+  update_flag: V
+  trans_flag: A
+  created_by: 100
+  trans_bk: PS01
+  lock_version: 0
+  updated_by: 100
+  id: 4542
+  customer_vendor_id: 126
+  description: ""
+  credit_amt: "0.00"
+  trans_no: "2001"
+  hdr_serial_no: "501"
+  gl_account_id: 219
+  account_period_code: "201008"
+  company_id: 100
+  ref_date: 
+  dtl_serial_no: "1"
+  trans_date: 2010-08-18 00:00:00
+  trans_type: I
+  debit_amt: "2800.00"
+  ref_bk: 
+  created_at: 2010-08-18 13:02:38
+GL_DETAILS_076: 
+  module_code: SAOI
+  post_flag: U
+  updated_at: 2010-08-18 16:15:02
+  customer_vendor_flag: C
+  ref_no: 
+  update_flag: V
+  trans_flag: A
+  created_by: 100
+  trans_bk: PS01
+  lock_version: 0
+  updated_by: 100
+  id: 4617
+  customer_vendor_id: 500
+  description: ""
+  credit_amt: "0.00"
+  trans_no: "2015"
+  hdr_serial_no: "501"
+  gl_account_id: 176
+  account_period_code: "201008"
+  company_id: 100
+  ref_date: 
+  dtl_serial_no: "502"
+  trans_date: 2010-08-18 00:00:00
+  trans_type: I
+  debit_amt: "3374.00"
+  ref_bk: 
+  created_at: 2010-08-18 16:15:02
+GL_DETAILS_160: 
+  module_code: SAOI
+  post_flag: U
+  updated_at: 2010-08-25 16:57:02
+  customer_vendor_flag: C
+  ref_no: 
+  update_flag: V
+  trans_flag: A
+  created_by: 100
+  trans_bk: PS01
+  lock_version: 0
+  updated_by: 100
+  id: 4835
+  customer_vendor_id: 421
+  description: ""
+  credit_amt: "78859.00"
+  trans_no: "2042"
+  hdr_serial_no: "501"
+  gl_account_id: 144
+  account_period_code: "201008"
+  company_id: 100
+  ref_date: 
+  dtl_serial_no: "501"
+  trans_date: 2010-08-25 00:00:00
+  trans_type: I
+  debit_amt: "0.00"
+  ref_bk: 
+  created_at: 2010-08-25 16:57:02
+GL_DETAILS_132: 
+  module_code: SAOI
+  post_flag: U
+  updated_at: 2010-08-19 14:58:04
+  customer_vendor_flag: C
+  ref_no: 
+  update_flag: V
+  trans_flag: A
+  created_by: 100
+  trans_bk: PS01
+  lock_version: 0
+  updated_by: 100
+  id: 4695
+  customer_vendor_id: 203
+  description: ""
+  credit_amt: "0.00"
+  trans_no: "2025"
+  hdr_serial_no: "501"
+  gl_account_id: 219
+  account_period_code: "201008"
+  company_id: 1
+  ref_date: 
+  dtl_serial_no: "1"
+  trans_date: 2010-08-19 00:00:00
+  trans_type: I
+  debit_amt: "47000.00"
+  ref_bk: 
+  created_at: 2010-08-19 14:58:04
+GL_DETAILS_049: 
+  module_code: SAOI
+  post_flag: U
+  updated_at: 2010-08-18 14:47:41
+  customer_vendor_flag: C
+  ref_no: 
+  update_flag: V
+  trans_flag: A
+  created_by: 100
+  trans_bk: PS01
+  lock_version: 0
+  updated_by: 100
+  id: 4578
+  customer_vendor_id: 102
+  description: ""
+  credit_amt: "0.00"
+  trans_no: "2009"
+  hdr_serial_no: "501"
+  gl_account_id: 219
+  account_period_code: "201008"
+  company_id: 100
+  ref_date: 
+  dtl_serial_no: "1"
+  trans_date: 2010-08-18 00:00:00
+  trans_type: I
+  debit_amt: "2400.00"
+  ref_bk: 
+  created_at: 2010-08-18 14:47:41
+GL_DETAILS_104: 
+  module_code: SAOI
+  post_flag: U
+  updated_at: 2010-08-19 14:38:13
+  customer_vendor_flag: C
+  ref_no: 
+  update_flag: V
+  trans_flag: A
+  created_by: 180
+  trans_bk: PS01
+  lock_version: 0
+  updated_by: 180
+  id: 4687
+  customer_vendor_id: 506
+  description: ""
+  credit_amt: "4815.00"
+  trans_no: "2027"
+  hdr_serial_no: "501"
+  gl_account_id: 144
+  account_period_code: "201008"
+  company_id: 100
+  ref_date: 
+  dtl_serial_no: "501"
+  trans_date: 2010-08-19 00:00:00
+  trans_type: I
+  debit_amt: "0.00"
+  ref_bk: 
+  created_at: 2010-08-19 14:38:13
+GL_DETAILS_077: 
+  module_code: SAOI
+  post_flag: U
+  updated_at: 2010-08-18 16:15:02
+  customer_vendor_flag: C
+  ref_no: 
+  update_flag: V
+  trans_flag: A
+  created_by: 100
+  trans_bk: PS01
+  lock_version: 0
+  updated_by: 100
+  id: 4618
+  customer_vendor_id: 500
+  description: ""
+  credit_amt: "0.00"
+  trans_no: "2015"
+  hdr_serial_no: "501"
+  gl_account_id: 219
+  account_period_code: "201008"
+  company_id: 100
+  ref_date: 
+  dtl_serial_no: "1"
+  trans_date: 2010-08-18 00:00:00
+  trans_type: I
+  debit_amt: "34200.00"
+  ref_bk: 
+  created_at: 2010-08-18 16:15:02
+GL_DETAILS_161: 
+  module_code: SAOI
+  post_flag: U
+  updated_at: 2010-08-25 16:57:02
+  customer_vendor_flag: C
+  ref_no: 
+  update_flag: V
+  trans_flag: A
+  created_by: 100
+  trans_bk: PS01
+  lock_version: 0
+  updated_by: 100
+  id: 4836
+  customer_vendor_id: 421
+  description: ""
+  credit_amt: "0.00"
+  trans_no: "2042"
+  hdr_serial_no: "501"
+  gl_account_id: 176
+  account_period_code: "201008"
+  company_id: 100
+  ref_date: 
+  dtl_serial_no: "502"
+  trans_date: 2010-08-25 00:00:00
+  trans_type: I
+  debit_amt: "5159.00"
+  ref_bk: 
+  created_at: 2010-08-25 16:57:02
+GL_DETAILS_133: 
+  module_code: SAOI
+  post_flag: U
+  updated_at: 2010-08-20 11:47:28
+  customer_vendor_flag: C
+  ref_no: 
+  update_flag: V
+  trans_flag: A
+  created_by: 180
+  trans_bk: PS01
+  lock_version: 0
+  updated_by: 180
+  id: 4741
+  customer_vendor_id: 100
+  description: ""
+  credit_amt: "5671.00"
+  trans_no: "2030"
+  hdr_serial_no: "501"
+  gl_account_id: 144
+  account_period_code: "201008"
+  company_id: 100
+  ref_date: 
+  dtl_serial_no: "501"
+  trans_date: 2010-08-20 00:00:00
+  trans_type: I
+  debit_amt: "0.00"
+  ref_bk: 
+  created_at: 2010-08-20 11:47:28
+GL_DETAILS_105: 
+  module_code: SAOI
+  post_flag: U
+  updated_at: 2010-08-19 14:38:13
+  customer_vendor_flag: C
+  ref_no: 
+  update_flag: V
+  trans_flag: A
+  created_by: 180
+  trans_bk: PS01
+  lock_version: 0
+  updated_by: 180
+  id: 4688
+  customer_vendor_id: 506
+  description: ""
+  credit_amt: "0.00"
+  trans_no: "2027"
+  hdr_serial_no: "501"
+  gl_account_id: 176
+  account_period_code: "201008"
+  company_id: 100
+  ref_date: 
+  dtl_serial_no: "502"
+  trans_date: 2010-08-19 00:00:00
+  trans_type: I
+  debit_amt: "315.00"
+  ref_bk: 
+  created_at: 2010-08-19 14:38:13
+GL_DETAILS_078: 
+  module_code: SAOI
+  post_flag: U
+  updated_at: 2010-08-18 16:15:02
+  customer_vendor_flag: C
+  ref_no: 
+  update_flag: V
+  trans_flag: A
+  created_by: 100
+  trans_bk: PS01
+  lock_version: 0
+  updated_by: 100
+  id: 4619
+  customer_vendor_id: 500
+  description: ""
+  credit_amt: "0.00"
+  trans_no: "2015"
+  hdr_serial_no: "501"
+  gl_account_id: 219
+  account_period_code: "201008"
+  company_id: 100
+  ref_date: 
+  dtl_serial_no: "1"
+  trans_date: 2010-08-18 00:00:00
+  trans_type: I
+  debit_amt: "14000.00"
+  ref_bk: 
+  created_at: 2010-08-18 16:15:02
+GL_DETAILS_190: 
+  module_code: SAOI
+  post_flag: U
+  updated_at: 2010-08-25 18:43:53
+  customer_vendor_flag: C
+  ref_no: 
+  update_flag: V
+  trans_flag: A
+  created_by: 100
+  trans_bk: PS01
+  lock_version: 0
+  updated_by: 100
+  id: 4857
+  customer_vendor_id: 720
+  description: ""
+  credit_amt: "3531.00"
+  trans_no: "2048"
+  hdr_serial_no: "501"
+  gl_account_id: 144
+  account_period_code: "201008"
+  company_id: 100
+  ref_date: 
+  dtl_serial_no: "501"
+  trans_date: 2010-08-25 00:00:00
+  trans_type: I
+  debit_amt: "0.00"
+  ref_bk: 
+  created_at: 2010-08-25 18:43:53
+GL_DETAILS_162: 
+  module_code: SAOI
+  post_flag: U
+  updated_at: 2010-08-25 16:57:02
+  customer_vendor_flag: C
+  ref_no: 
+  update_flag: V
+  trans_flag: A
+  created_by: 100
+  trans_bk: PS01
+  lock_version: 0
+  updated_by: 100
+  id: 4837
+  customer_vendor_id: 421
+  description: ""
+  credit_amt: "0.00"
+  trans_no: "2042"
+  hdr_serial_no: "501"
+  gl_account_id: 219
+  account_period_code: "201008"
+  company_id: 100
+  ref_date: 
+  dtl_serial_no: "1"
+  trans_date: 2010-08-25 00:00:00
+  trans_type: I
+  debit_amt: "73700.00"
+  ref_bk: 
+  created_at: 2010-08-25 16:57:02
+GL_DETAILS_134: 
+  module_code: SAOI
+  post_flag: U
+  updated_at: 2010-08-25 10:31:43
+  customer_vendor_flag: C
+  ref_no: 
+  update_flag: V
+  trans_flag: A
+  created_by: 180
+  trans_bk: PS01
+  lock_version: 0
+  updated_by: 180
+  id: 4804
+  customer_vendor_id: 100
+  description: ""
+  credit_amt: "0.00"
+  trans_no: "2038"
+  hdr_serial_no: "501"
+  gl_account_id: 176
+  account_period_code: "201008"
+  company_id: 100
+  ref_date: 
+  dtl_serial_no: "502"
+  trans_date: 2010-08-25 00:00:00
+  trans_type: I
+  debit_amt: "1029.00"
+  ref_bk: 
+  created_at: 2010-08-25 10:31:43
+GL_DETAILS_020: 
+  module_code: SAOI
+  post_flag: U
+  updated_at: 2010-08-18 13:10:37
+  customer_vendor_flag: C
+  ref_no: 
+  update_flag: V
+  trans_flag: A
+  created_by: 100
+  trans_bk: PS01
+  lock_version: 0
+  updated_by: 100
+  id: 4543
+  customer_vendor_id: 126
+  description: ""
+  credit_amt: "1819.00"
+  trans_no: "2002"
+  hdr_serial_no: "501"
+  gl_account_id: 144
+  account_period_code: "201008"
+  company_id: 100
+  ref_date: 
+  dtl_serial_no: "501"
+  trans_date: 2010-08-18 00:00:00
+  trans_type: I
+  debit_amt: "0.00"
+  ref_bk: 
+  created_at: 2010-08-18 13:10:37
+GL_DETAILS_079: 
+  module_code: SAOI
+  post_flag: U
+  updated_at: 2010-08-18 17:37:26
+  customer_vendor_flag: C
+  ref_no: 
+  update_flag: V
+  trans_flag: A
+  created_by: 100
+  trans_bk: PS01
+  lock_version: 0
+  updated_by: 100
+  id: 4623
+  customer_vendor_id: 100
+  description: ""
+  credit_amt: "10058.00"
+  trans_no: "2016"
+  hdr_serial_no: "501"
+  gl_account_id: 144
+  account_period_code: "201008"
+  company_id: 100
+  ref_date: 
+  dtl_serial_no: "501"
+  trans_date: 2010-08-18 00:00:00
+  trans_type: I
+  debit_amt: "0.00"
+  ref_bk: 
+  created_at: 2010-08-18 17:37:26
+GL_DETAILS_191: 
+  module_code: SAOI
+  post_flag: U
+  updated_at: 2010-08-25 18:43:53
+  customer_vendor_flag: C
+  ref_no: 
+  update_flag: V
+  trans_flag: A
+  created_by: 100
+  trans_bk: PS01
+  lock_version: 0
+  updated_by: 100
+  id: 4858
+  customer_vendor_id: 720
+  description: ""
+  credit_amt: "0.00"
+  trans_no: "2048"
+  hdr_serial_no: "501"
+  gl_account_id: 176
+  account_period_code: "201008"
+  company_id: 100
+  ref_date: 
+  dtl_serial_no: "502"
+  trans_date: 2010-08-25 00:00:00
+  trans_type: I
+  debit_amt: "231.00"
+  ref_bk: 
+  created_at: 2010-08-25 18:43:53
+GL_DETAILS_163: 
+  module_code: SAOI
+  post_flag: U
+  updated_at: 2010-08-25 19:00:29
+  customer_vendor_flag: C
+  ref_no: 
+  update_flag: V
+  trans_flag: A
+  created_by: 100
+  trans_bk: PS01
+  lock_version: 0
+  updated_by: 100
+  id: 4883
+  customer_vendor_id: 720
+  description: ""
+  credit_amt: "62381.00"
+  trans_no: "2050"
+  hdr_serial_no: "501"
+  gl_account_id: 144
+  account_period_code: "201008"
+  company_id: 100
+  ref_date: 
+  dtl_serial_no: "501"
+  trans_date: 2010-08-25 00:00:00
+  trans_type: I
+  debit_amt: "0.00"
+  ref_bk: 
+  created_at: 2010-08-25 19:00:29
+GL_DETAILS_135: 
+  module_code: SAOI
+  post_flag: U
+  updated_at: 2010-08-23 18:02:31
+  customer_vendor_flag: C
+  ref_no: 
+  update_flag: V
+  trans_flag: A
+  created_by: 180
+  trans_bk: PS01
+  lock_version: 0
+  updated_by: 180
+  id: 4783
+  customer_vendor_id: 100
+  description: ""
+  credit_amt: "5671.00"
+  trans_no: "2035"
+  hdr_serial_no: "501"
+  gl_account_id: 144
+  account_period_code: "201008"
+  company_id: 100
+  ref_date: 
+  dtl_serial_no: "501"
+  trans_date: 2010-08-23 00:00:00
+  trans_type: I
+  debit_amt: "0.00"
+  ref_bk: 
+  created_at: 2010-08-23 18:02:31
+GL_DETAILS_106: 
+  module_code: SAOI
+  post_flag: U
+  updated_at: 2010-08-19 14:38:14
+  customer_vendor_flag: C
+  ref_no: 
+  update_flag: V
+  trans_flag: A
+  created_by: 180
+  trans_bk: PS01
+  lock_version: 0
+  updated_by: 180
+  id: 4689
+  customer_vendor_id: 506
+  description: ""
+  credit_amt: "0.00"
+  trans_no: "2027"
+  hdr_serial_no: "501"
+  gl_account_id: 219
+  account_period_code: "201008"
+  company_id: 100
+  ref_date: 
+  dtl_serial_no: "1"
+  trans_date: 2010-08-19 00:00:00
+  trans_type: I
+  debit_amt: "4500.00"
+  ref_bk: 
+  created_at: 2010-08-19 14:38:14
+GL_DETAILS_021: 
+  module_code: SAOI
+  post_flag: U
+  updated_at: 2010-08-18 13:10:37
+  customer_vendor_flag: C
+  ref_no: 
+  update_flag: V
+  trans_flag: A
+  created_by: 100
+  trans_bk: PS01
+  lock_version: 0
+  updated_by: 100
+  id: 4544
+  customer_vendor_id: 126
+  description: ""
+  credit_amt: "0.00"
+  trans_no: "2002"
+  hdr_serial_no: "501"
+  gl_account_id: 176
+  account_period_code: "201008"
+  company_id: 100
+  ref_date: 
+  dtl_serial_no: "502"
+  trans_date: 2010-08-18 00:00:00
+  trans_type: I
+  debit_amt: "119.00"
+  ref_bk: 
+  created_at: 2010-08-18 13:10:37
+GL_DETAILS_192: 
+  module_code: SAOI
+  post_flag: U
+  updated_at: 2010-08-25 18:43:53
+  customer_vendor_flag: C
+  ref_no: 
+  update_flag: V
+  trans_flag: A
+  created_by: 100
+  trans_bk: PS01
+  lock_version: 0
+  updated_by: 100
+  id: 4859
+  customer_vendor_id: 720
+  description: ""
+  credit_amt: "0.00"
+  trans_no: "2048"
+  hdr_serial_no: "501"
+  gl_account_id: 219
+  account_period_code: "201008"
+  company_id: 100
+  ref_date: 
+  dtl_serial_no: "1"
+  trans_date: 2010-08-25 00:00:00
+  trans_type: I
+  debit_amt: "3300.00"
+  ref_bk: 
+  created_at: 2010-08-25 18:43:53
+GL_DETAILS_164: 
+  module_code: SAOI
+  post_flag: U
+  updated_at: 2010-08-25 19:00:29
+  customer_vendor_flag: C
+  ref_no: 
+  update_flag: V
+  trans_flag: A
+  created_by: 100
+  trans_bk: PS01
+  lock_version: 0
+  updated_by: 100
+  id: 4884
+  customer_vendor_id: 720
+  description: ""
+  credit_amt: "0.00"
+  trans_no: "2050"
+  hdr_serial_no: "501"
+  gl_account_id: 176
+  account_period_code: "201008"
+  company_id: 100
+  ref_date: 
+  dtl_serial_no: "502"
+  trans_date: 2010-08-25 00:00:00
+  trans_type: I
+  debit_amt: "4081.00"
+  ref_bk: 
+  created_at: 2010-08-25 19:00:29
+GL_DETAILS_136: 
+  module_code: SAOI
+  post_flag: U
+  updated_at: 2010-08-23 18:02:31
+  customer_vendor_flag: C
+  ref_no: 
+  update_flag: V
+  trans_flag: A
+  created_by: 180
+  trans_bk: PS01
+  lock_version: 0
+  updated_by: 180
+  id: 4784
+  customer_vendor_id: 100
+  description: ""
+  credit_amt: "0.00"
+  trans_no: "2035"
+  hdr_serial_no: "501"
+  gl_account_id: 176
+  account_period_code: "201008"
+  company_id: 100
+  ref_date: 
+  dtl_serial_no: "502"
+  trans_date: 2010-08-23 00:00:00
+  trans_type: I
+  debit_amt: "371.00"
+  ref_bk: 
+  created_at: 2010-08-23 18:02:31
+GL_DETAILS_107: 
+  module_code: SAOI
+  post_flag: U
+  updated_at: 2010-08-19 14:45:04
+  customer_vendor_flag: C
+  ref_no: 
+  update_flag: V
+  trans_flag: A
+  created_by: 180
+  trans_bk: PS01
+  lock_version: 0
+  updated_by: 180
+  id: 4690
+  customer_vendor_id: 201
+  description: ""
+  credit_amt: "5671.00"
+  trans_no: "2028"
+  hdr_serial_no: "501"
+  gl_account_id: 144
+  account_period_code: "201008"
+  company_id: 100
+  ref_date: 
+  dtl_serial_no: "501"
+  trans_date: 2010-08-19 00:00:00
+  trans_type: I
+  debit_amt: "0.00"
+  ref_bk: 
+  created_at: 2010-08-19 14:45:04
+GL_DETAILS_050: 
+  module_code: SAOI
+  post_flag: U
+  updated_at: 2010-08-18 14:07:36
+  customer_vendor_flag: C
+  ref_no: 
+  update_flag: V
+  trans_flag: A
+  created_by: 100
+  trans_bk: PS01
+  lock_version: 0
+  updated_by: 100
+  id: 4558
+  customer_vendor_id: 203
+  description: ""
+  credit_amt: "1819.00"
+  trans_no: "2005"
+  hdr_serial_no: "501"
+  gl_account_id: 144
+  account_period_code: "201008"
+  company_id: 100
+  ref_date: 
+  dtl_serial_no: "501"
+  trans_date: 2010-08-18 00:00:00
+  trans_type: I
+  debit_amt: "0.00"
+  ref_bk: 
+  created_at: 2010-08-18 14:07:36
+GL_DETAILS_022: 
+  module_code: SAOI
+  post_flag: U
+  updated_at: 2010-08-18 13:10:37
+  customer_vendor_flag: C
+  ref_no: 
+  update_flag: V
+  trans_flag: A
+  created_by: 100
+  trans_bk: PS01
+  lock_version: 0
+  updated_by: 100
+  id: 4545
+  customer_vendor_id: 126
+  description: ""
+  credit_amt: "0.00"
+  trans_no: "2002"
+  hdr_serial_no: "501"
+  gl_account_id: 219
+  account_period_code: "201008"
+  company_id: 100
+  ref_date: 
+  dtl_serial_no: "1"
+  trans_date: 2010-08-18 00:00:00
+  trans_type: I
+  debit_amt: "1700.00"
+  ref_bk: 
+  created_at: 2010-08-18 13:10:37
+GL_DETAILS_193: 
+  module_code: SAOI
+  post_flag: U
+  updated_at: 2010-08-25 18:47:31
+  customer_vendor_flag: C
+  ref_no: 
+  update_flag: V
+  trans_flag: A
+  created_by: 100
+  trans_bk: PS01
+  lock_version: 0
+  updated_by: 100
+  id: 4860
+  customer_vendor_id: 720
+  description: ""
+  credit_amt: "70941.00"
+  trans_no: "2049"
+  hdr_serial_no: "501"
+  gl_account_id: 144
+  account_period_code: "201008"
+  company_id: 100
+  ref_date: 
+  dtl_serial_no: "501"
+  trans_date: 2010-08-25 00:00:00
+  trans_type: I
+  debit_amt: "0.00"
+  ref_bk: 
+  created_at: 2010-08-25 18:47:31
+GL_DETAILS_165: 
+  module_code: SAOI
+  post_flag: U
+  updated_at: 2010-08-25 11:08:02
+  customer_vendor_flag: C
+  ref_no: 
+  update_flag: V
+  trans_flag: A
+  created_by: 180
+  trans_bk: PS01
+  lock_version: 0
+  updated_by: 180
+  id: 4809
+  customer_vendor_id: 100
+  description: ""
+  credit_amt: "4601.00"
+  trans_no: "2040"
+  hdr_serial_no: "501"
+  gl_account_id: 144
+  account_period_code: "201008"
+  company_id: 100
+  ref_date: 
+  dtl_serial_no: "501"
+  trans_date: 2010-08-25 00:00:00
+  trans_type: I
+  debit_amt: "0.00"
+  ref_bk: 
+  created_at: 2010-08-25 11:08:02
+GL_DETAILS_137: 
+  module_code: SAOI
+  post_flag: U
+  updated_at: 2010-08-23 18:02:31
+  customer_vendor_flag: C
+  ref_no: 
+  update_flag: V
+  trans_flag: A
+  created_by: 180
+  trans_bk: PS01
+  lock_version: 0
+  updated_by: 180
+  id: 4785
+  customer_vendor_id: 100
+  description: ""
+  credit_amt: "0.00"
+  trans_no: "2035"
+  hdr_serial_no: "501"
+  gl_account_id: 219
+  account_period_code: "201008"
+  company_id: 100
+  ref_date: 
+  dtl_serial_no: "1"
+  trans_date: 2010-08-23 00:00:00
+  trans_type: I
+  debit_amt: "5300.00"
+  ref_bk: 
+  created_at: 2010-08-23 18:02:31
+GL_DETAILS_108: 
+  module_code: SAOI
+  post_flag: U
+  updated_at: 2010-08-19 14:45:04
+  customer_vendor_flag: C
+  ref_no: 
+  update_flag: V
+  trans_flag: A
+  created_by: 180
+  trans_bk: PS01
+  lock_version: 0
+  updated_by: 180
+  id: 4691
+  customer_vendor_id: 201
+  description: ""
+  credit_amt: "0.00"
+  trans_no: "2028"
+  hdr_serial_no: "501"
+  gl_account_id: 176
+  account_period_code: "201008"
+  company_id: 100
+  ref_date: 
+  dtl_serial_no: "502"
+  trans_date: 2010-08-19 00:00:00
+  trans_type: I
+  debit_amt: "371.00"
+  ref_bk: 
+  created_at: 2010-08-19 14:45:04
+GL_DETAILS_051: 
+  module_code: SAOI
+  post_flag: U
+  updated_at: 2010-08-18 14:07:36
+  customer_vendor_flag: C
+  ref_no: 
+  update_flag: V
+  trans_flag: A
+  created_by: 100
+  trans_bk: PS01
+  lock_version: 0
+  updated_by: 100
+  id: 4559
+  customer_vendor_id: 203
+  description: ""
+  credit_amt: "0.00"
+  trans_no: "2005"
+  hdr_serial_no: "501"
+  gl_account_id: 176
+  account_period_code: "201008"
+  company_id: 100
+  ref_date: 
+  dtl_serial_no: "502"
+  trans_date: 2010-08-18 00:00:00
+  trans_type: I
+  debit_amt: "119.00"
+  ref_bk: 
+  created_at: 2010-08-18 14:07:36
+GL_DETAILS_023: 
+  module_code: SAOI
+  post_flag: U
+  updated_at: 2010-08-18 13:14:19
+  customer_vendor_flag: C
+  ref_no: 
+  update_flag: V
+  trans_flag: A
+  created_by: 100
+  trans_bk: PS01
+  lock_version: 0
+  updated_by: 100
+  id: 4546
+  customer_vendor_id: 126
+  description: ""
+  credit_amt: "6206.00"
+  trans_no: "2003"
+  hdr_serial_no: "501"
+  gl_account_id: 144
+  account_period_code: "201008"
+  company_id: 100
+  ref_date: 
+  dtl_serial_no: "501"
+  trans_date: 2010-08-18 00:00:00
+  trans_type: I
+  debit_amt: "0.00"
+  ref_bk: 
+  created_at: 2010-08-18 13:14:19
+GL_DETAILS_194: 
+  module_code: SAOI
+  post_flag: U
+  updated_at: 2010-08-25 18:47:31
+  customer_vendor_flag: C
+  ref_no: 
+  update_flag: V
+  trans_flag: A
+  created_by: 100
+  trans_bk: PS01
+  lock_version: 0
+  updated_by: 100
+  id: 4861
+  customer_vendor_id: 720
+  description: ""
+  credit_amt: "0.00"
+  trans_no: "2049"
+  hdr_serial_no: "501"
+  gl_account_id: 176
+  account_period_code: "201008"
+  company_id: 100
+  ref_date: 
+  dtl_serial_no: "502"
+  trans_date: 2010-08-25 00:00:00
+  trans_type: I
+  debit_amt: "4641.00"
+  ref_bk: 
+  created_at: 2010-08-25 18:47:31
+GL_DETAILS_166: 
+  module_code: SAOI
+  post_flag: U
+  updated_at: 2010-08-25 11:08:02
+  customer_vendor_flag: C
+  ref_no: 
+  update_flag: V
+  trans_flag: A
+  created_by: 180
+  trans_bk: PS01
+  lock_version: 0
+  updated_by: 180
+  id: 4810
+  customer_vendor_id: 100
+  description: ""
+  credit_amt: "0.00"
+  trans_no: "2040"
+  hdr_serial_no: "501"
+  gl_account_id: 176
+  account_period_code: "201008"
+  company_id: 100
+  ref_date: 
+  dtl_serial_no: "502"
+  trans_date: 2010-08-25 00:00:00
+  trans_type: I
+  debit_amt: "301.00"
+  ref_bk: 
+  created_at: 2010-08-25 11:08:02
+GL_DETAILS_138: 
+  module_code: SAOI
+  post_flag: U
+  updated_at: 2010-08-23 18:05:12
+  customer_vendor_flag: C
+  ref_no: 
+  update_flag: V
+  trans_flag: A
+  created_by: 180
+  trans_bk: PS01
+  lock_version: 0
+  updated_by: 180
+  id: 4786
+  customer_vendor_id: 100
+  description: ""
+  credit_amt: "5671.00"
+  trans_no: "2036"
+  hdr_serial_no: "501"
+  gl_account_id: 144
+  account_period_code: "201008"
+  company_id: 100
+  ref_date: 
+  dtl_serial_no: "501"
+  trans_date: 2010-08-23 00:00:00
+  trans_type: I
+  debit_amt: "0.00"
+  ref_bk: 
+  created_at: 2010-08-23 18:05:12
+GL_DETAILS_109: 
+  module_code: SAOI
+  post_flag: U
+  updated_at: 2010-08-19 14:45:04
+  customer_vendor_flag: C
+  ref_no: 
+  update_flag: V
+  trans_flag: A
+  created_by: 180
+  trans_bk: PS01
+  lock_version: 0
+  updated_by: 180
+  id: 4692
+  customer_vendor_id: 201
+  description: ""
+  credit_amt: "0.00"
+  trans_no: "2028"
+  hdr_serial_no: "501"
+  gl_account_id: 219
+  account_period_code: "201008"
+  company_id: 100
+  ref_date: 
+  dtl_serial_no: "1"
+  trans_date: 2010-08-19 00:00:00
+  trans_type: I
+  debit_amt: "5300.00"
+  ref_bk: 
+  created_at: 2010-08-19 14:45:04
+GL_DETAILS_052: 
+  module_code: SAOI
+  post_flag: U
+  updated_at: 2010-08-18 14:07:36
+  customer_vendor_flag: C
+  ref_no: 
+  update_flag: V
+  trans_flag: A
+  created_by: 100
+  trans_bk: PS01
+  lock_version: 0
+  updated_by: 100
+  id: 4560
+  customer_vendor_id: 203
+  description: ""
+  credit_amt: "0.00"
+  trans_no: "2005"
+  hdr_serial_no: "501"
+  gl_account_id: 219
+  account_period_code: "201008"
+  company_id: 100
+  ref_date: 
+  dtl_serial_no: "1"
+  trans_date: 2010-08-18 00:00:00
+  trans_type: I
+  debit_amt: "1700.00"
+  ref_bk: 
+  created_at: 2010-08-18 14:07:36
+GL_DETAILS_024: 
+  module_code: SAOI
+  post_flag: U
+  updated_at: 2010-08-18 13:14:19
+  customer_vendor_flag: C
+  ref_no: 
+  update_flag: V
+  trans_flag: A
+  created_by: 100
+  trans_bk: PS01
+  lock_version: 0
+  updated_by: 100
+  id: 4547
+  customer_vendor_id: 126
+  description: ""
+  credit_amt: "0.00"
+  trans_no: "2003"
+  hdr_serial_no: "501"
+  gl_account_id: 176
+  account_period_code: "201008"
+  company_id: 100
+  ref_date: 
+  dtl_serial_no: "502"
+  trans_date: 2010-08-18 00:00:00
+  trans_type: I
+  debit_amt: "406.00"
+  ref_bk: 
+  created_at: 2010-08-18 13:14:19
+GL_DETAILS_080: 
+  module_code: SAOI
+  post_flag: U
+  updated_at: 2010-08-18 17:37:26
+  customer_vendor_flag: C
+  ref_no: 
+  update_flag: V
+  trans_flag: A
+  created_by: 100
+  trans_bk: PS01
+  lock_version: 0
+  updated_by: 100
+  id: 4624
+  customer_vendor_id: 100
+  description: ""
+  credit_amt: "0.00"
+  trans_no: "2016"
+  hdr_serial_no: "501"
+  gl_account_id: 176
+  account_period_code: "201008"
+  company_id: 100
+  ref_date: 
+  dtl_serial_no: "502"
+  trans_date: 2010-08-18 00:00:00
+  trans_type: I
+  debit_amt: "658.00"
+  ref_bk: 
+  created_at: 2010-08-18 17:37:26
+GL_DETAILS_195: 
+  module_code: SAOI
+  post_flag: U
+  updated_at: 2010-08-25 18:47:31
+  customer_vendor_flag: C
+  ref_no: 
+  update_flag: V
+  trans_flag: A
+  created_by: 100
+  trans_bk: PS01
+  lock_version: 0
+  updated_by: 100
+  id: 4862
+  customer_vendor_id: 720
+  description: ""
+  credit_amt: "0.00"
+  trans_no: "2049"
+  hdr_serial_no: "501"
+  gl_account_id: 219
+  account_period_code: "201008"
+  company_id: 100
+  ref_date: 
+  dtl_serial_no: "1"
+  trans_date: 2010-08-25 00:00:00
+  trans_type: I
+  debit_amt: "32800.00"
+  ref_bk: 
+  created_at: 2010-08-25 18:47:31
+GL_DETAILS_167: 
+  module_code: SAOI
+  post_flag: U
+  updated_at: 2010-08-25 11:08:02
+  customer_vendor_flag: C
+  ref_no: 
+  update_flag: V
+  trans_flag: A
+  created_by: 180
+  trans_bk: PS01
+  lock_version: 0
+  updated_by: 180
+  id: 4811
+  customer_vendor_id: 100
+  description: ""
+  credit_amt: "0.00"
+  trans_no: "2040"
+  hdr_serial_no: "501"
+  gl_account_id: 219
+  account_period_code: "201008"
+  company_id: 100
+  ref_date: 
+  dtl_serial_no: "1"
+  trans_date: 2010-08-25 00:00:00
+  trans_type: I
+  debit_amt: "4300.00"
+  ref_bk: 
+  created_at: 2010-08-25 11:08:02
+GL_DETAILS_053: 
+  module_code: SAOI
+  post_flag: U
+  updated_at: 2010-08-18 14:16:22
+  customer_vendor_flag: C
+  ref_no: 
+  update_flag: V
+  trans_flag: A
+  created_by: 100
+  trans_bk: PS01
+  lock_version: 0
+  updated_by: 100
+  id: 4561
+  customer_vendor_id: 680
+  description: ""
+  credit_amt: "1819.00"
+  trans_no: "2006"
+  hdr_serial_no: "501"
+  gl_account_id: 144
+  account_period_code: "201008"
+  company_id: 100
+  ref_date: 
+  dtl_serial_no: "501"
+  trans_date: 2010-08-18 00:00:00
+  trans_type: I
+  debit_amt: "0.00"
+  ref_bk: 
+  created_at: 2010-08-18 14:16:22
+GL_DETAILS_025: 
+  module_code: SAOI
+  post_flag: U
+  updated_at: 2010-08-18 13:14:19
+  customer_vendor_flag: C
+  ref_no: 
+  update_flag: V
+  trans_flag: A
+  created_by: 100
+  trans_bk: PS01
+  lock_version: 0
+  updated_by: 100
+  id: 4548
+  customer_vendor_id: 126
+  description: ""
+  credit_amt: "0.00"
+  trans_no: "2003"
+  hdr_serial_no: "501"
+  gl_account_id: 219
+  account_period_code: "201008"
+  company_id: 100
+  ref_date: 
+  dtl_serial_no: "1"
+  trans_date: 2010-08-18 00:00:00
+  trans_type: I
+  debit_amt: "1700.00"
+  ref_bk: 
+  created_at: 2010-08-18 13:14:19
+GL_DETAILS_081: 
+  module_code: SAOI
+  post_flag: U
+  updated_at: 2010-08-18 17:37:26
+  customer_vendor_flag: C
+  ref_no: 
+  update_flag: V
+  trans_flag: A
+  created_by: 100
+  trans_bk: PS01
+  lock_version: 0
+  updated_by: 100
+  id: 4625
+  customer_vendor_id: 100
+  description: ""
+  credit_amt: "0.00"
+  trans_no: "2016"
+  hdr_serial_no: "501"
+  gl_account_id: 219
+  account_period_code: "201008"
+  company_id: 100
+  ref_date: 
+  dtl_serial_no: "1"
+  trans_date: 2010-08-18 00:00:00
+  trans_type: I
+  debit_amt: "9400.00"
+  ref_bk: 
+  created_at: 2010-08-18 17:37:26
+GL_DETAILS_196: 
+  module_code: SAOI
+  post_flag: U
+  updated_at: 2010-08-25 18:47:31
+  customer_vendor_flag: C
+  ref_no: 
+  update_flag: V
+  trans_flag: A
+  created_by: 100
+  trans_bk: PS01
+  lock_version: 0
+  updated_by: 100
+  id: 4863
+  customer_vendor_id: 720
+  description: ""
+  credit_amt: "0.00"
+  trans_no: "2049"
+  hdr_serial_no: "501"
+  gl_account_id: 219
+  account_period_code: "201008"
+  company_id: 100
+  ref_date: 
+  dtl_serial_no: "1"
+  trans_date: 2010-08-25 00:00:00
+  trans_type: I
+  debit_amt: "33500.00"
+  ref_bk: 
+  created_at: 2010-08-25 18:47:31
+GL_DETAILS_168: 
+  module_code: SAOI
+  post_flag: U
+  updated_at: 2010-08-25 11:35:19
+  customer_vendor_flag: C
+  ref_no: 
+  update_flag: V
+  trans_flag: A
+  created_by: 180
+  trans_bk: PS01
+  lock_version: 0
+  updated_by: 180
+  id: 4812
+  customer_vendor_id: 680
+  description: ""
+  credit_amt: "9202.00"
+  trans_no: "2041"
+  hdr_serial_no: "501"
+  gl_account_id: 144
+  account_period_code: "201008"
+  company_id: 100
+  ref_date: 
+  dtl_serial_no: "501"
+  trans_date: 2010-08-25 00:00:00
+  trans_type: I
+  debit_amt: "0.00"
+  ref_bk: 
+  created_at: 2010-08-25 11:35:19
+GL_DETAILS_139: 
+  module_code: SAOI
+  post_flag: U
+  updated_at: 2010-08-23 18:05:12
+  customer_vendor_flag: C
+  ref_no: 
+  update_flag: V
+  trans_flag: A
+  created_by: 180
+  trans_bk: PS01
+  lock_version: 0
+  updated_by: 180
+  id: 4787
+  customer_vendor_id: 100
+  description: ""
+  credit_amt: "0.00"
+  trans_no: "2036"
+  hdr_serial_no: "501"
+  gl_account_id: 176
+  account_period_code: "201008"
+  company_id: 100
+  ref_date: 
+  dtl_serial_no: "502"
+  trans_date: 2010-08-23 00:00:00
+  trans_type: I
+  debit_amt: "371.00"
+  ref_bk: 
+  created_at: 2010-08-23 18:05:12
+GL_DETAILS_054: 
+  module_code: SAOI
+  post_flag: U
+  updated_at: 2010-08-18 15:53:05
+  customer_vendor_flag: C
+  ref_no: 
+  update_flag: V
+  trans_flag: A
+  created_by: 100
+  trans_bk: PS01
+  lock_version: 0
+  updated_by: 100
+  id: 4613
+  customer_vendor_id: 500
+  description: ""
+  credit_amt: "0.00"
+  trans_no: "2014"
+  hdr_serial_no: "501"
+  gl_account_id: 219
+  account_period_code: "201008"
+  company_id: 100
+  ref_date: 
+  dtl_serial_no: "1"
+  trans_date: 2010-08-18 00:00:00
+  trans_type: I
+  debit_amt: "4200.00"
+  ref_bk: 
+  created_at: 2010-08-18 15:53:05
+GL_DETAILS_026: 
+  module_code: SAOI
+  post_flag: U
+  updated_at: 2010-08-18 13:14:19
+  customer_vendor_flag: C
+  ref_no: 
+  update_flag: V
+  trans_flag: A
+  created_by: 100
+  trans_bk: PS01
+  lock_version: 0
+  updated_by: 100
+  id: 4549
+  customer_vendor_id: 126
+  description: ""
+  credit_amt: "0.00"
+  trans_no: "2003"
+  hdr_serial_no: "501"
+  gl_account_id: 219
+  account_period_code: "201008"
+  company_id: 100
+  ref_date: 
+  dtl_serial_no: "1"
+  trans_date: 2010-08-18 00:00:00
+  trans_type: I
+  debit_amt: "1700.00"
+  ref_bk: 
+  created_at: 2010-08-18 13:14:19
+GL_DETAILS_082: 
+  module_code: SAOI
+  post_flag: U
+  updated_at: 2010-08-19 11:41:33
+  customer_vendor_flag: C
+  ref_no: 
+  update_flag: V
+  trans_flag: A
+  created_by: 180
+  trans_bk: PS01
+  lock_version: 0
+  updated_by: 180
+  id: 4668
+  customer_vendor_id: 506
+  description: ""
+  credit_amt: "0.00"
+  trans_no: "2020"
+  hdr_serial_no: "501"
+  gl_account_id: 219
+  account_period_code: "201008"
+  company_id: 100
+  ref_date: 
+  dtl_serial_no: "1"
+  trans_date: 2010-08-19 00:00:00
+  trans_type: I
+  debit_amt: "19700.00"
+  ref_bk: 
+  created_at: 2010-08-19 11:41:33
+GL_DETAILS_197: 
+  module_code: FAXX
+  post_flag: U
+  updated_at: 2010-09-15 11:22:44
+  customer_vendor_flag: 
+  ref_no: "1"
+  update_flag: V
+  trans_flag: A
+  created_by: 100
+  trans_bk: BT01
+  lock_version: 0
+  updated_by: 100
+  id: 4920
+  customer_vendor_id: 381
+  description: opopop
+  credit_amt: "120.00"
+  trans_no: "4001"
+  hdr_serial_no: "101"
+  gl_account_id: 381
+  account_period_code: "201009"
+  company_id: 1
+  ref_date: 2010-09-15 11:22:43
+  dtl_serial_no: "202"
+  trans_date: 2010-09-15 00:00:00
+  trans_type: TRFR
+  debit_amt: "0.00"
+  ref_bk: 
+  created_at: 2010-09-15 11:22:44
+GL_DETAILS_169: 
+  module_code: SAOI
+  post_flag: U
+  updated_at: 2010-08-25 11:35:19
+  customer_vendor_flag: C
+  ref_no: 
+  update_flag: V
+  trans_flag: A
+  created_by: 180
+  trans_bk: PS01
+  lock_version: 0
+  updated_by: 180
+  id: 4813
+  customer_vendor_id: 680
+  description: ""
+  credit_amt: "0.00"
+  trans_no: "2041"
+  hdr_serial_no: "501"
+  gl_account_id: 176
+  account_period_code: "201008"
+  company_id: 100
+  ref_date: 
+  dtl_serial_no: "502"
+  trans_date: 2010-08-25 00:00:00
+  trans_type: I
+  debit_amt: "602.00"
+  ref_bk: 
+  created_at: 2010-08-25 11:35:19
+GL_DETAILS_110: 
+  module_code: SAOI
+  post_flag: U
+  updated_at: 2010-08-19 12:03:49
+  customer_vendor_flag: C
+  ref_no: 
+  update_flag: V
+  trans_flag: A
+  created_by: 180
+  trans_bk: PS01
+  lock_version: 0
+  updated_by: 180
+  id: 4673
+  customer_vendor_id: 506
+  description: ""
+  credit_amt: "0.00"
+  trans_no: "2022"
+  hdr_serial_no: "501"
+  gl_account_id: 176
+  account_period_code: "201008"
+  company_id: 100
+  ref_date: 
+  dtl_serial_no: "502"
+  trans_date: 2010-08-19 00:00:00
+  trans_type: I
+  debit_amt: "840.00"
+  ref_bk: 
+  created_at: 2010-08-19 12:03:49
+GL_DETAILS_027: 
+  module_code: SAOI
+  post_flag: U
+  updated_at: 2010-08-18 13:14:19
+  customer_vendor_flag: C
+  ref_no: 
+  update_flag: V
+  trans_flag: A
+  created_by: 100
+  trans_bk: PS01
+  lock_version: 0
+  updated_by: 100
+  id: 4550
+  customer_vendor_id: 126
+  description: ""
+  credit_amt: "0.00"
+  trans_no: "2003"
+  hdr_serial_no: "501"
+  gl_account_id: 219
+  account_period_code: "201008"
+  company_id: 100
+  ref_date: 
+  dtl_serial_no: "1"
+  trans_date: 2010-08-18 00:00:00
+  trans_type: I
+  debit_amt: "2400.00"
+  ref_bk: 
+  created_at: 2010-08-18 13:14:19
+GL_DETAILS_083: 
+  module_code: SAOI
+  post_flag: U
+  updated_at: 2010-08-19 11:55:55
+  customer_vendor_flag: C
+  ref_no: 
+  update_flag: V
+  trans_flag: A
+  created_by: 180
+  trans_bk: PS01
+  lock_version: 0
+  updated_by: 180
+  id: 4669
+  customer_vendor_id: 506
+  description: ""
+  credit_amt: "12840.00"
+  trans_no: "2021"
+  hdr_serial_no: "501"
+  gl_account_id: 144
+  account_period_code: "201008"
+  company_id: 100
+  ref_date: 
+  dtl_serial_no: "501"
+  trans_date: 2010-08-19 00:00:00
+  trans_type: I
+  debit_amt: "0.00"
+  ref_bk: 
+  created_at: 2010-08-19 11:55:55
+GL_DETAILS_055: 
+  module_code: SAOI
+  post_flag: U
+  updated_at: 2010-08-18 15:10:12
+  customer_vendor_flag: C
+  ref_no: 
+  update_flag: V
+  trans_flag: A
+  created_by: 100
+  trans_bk: PS01
+  lock_version: 0
+  updated_by: 100
+  id: 4582
+  customer_vendor_id: 504
+  description: ""
+  credit_amt: "49862.00"
+  trans_no: "2011"
+  hdr_serial_no: "501"
+  gl_account_id: 144
+  account_period_code: "201008"
+  company_id: 100
+  ref_date: 
+  dtl_serial_no: "501"
+  trans_date: 2010-08-18 00:00:00
+  trans_type: I
+  debit_amt: "0.00"
+  ref_bk: 
+  created_at: 2010-08-18 15:10:12
+GL_DETAILS_198: 
+  module_code: FAXX
+  post_flag: U
+  updated_at: 2010-09-15 11:22:44
+  customer_vendor_flag: 
+  ref_no: "1"
+  update_flag: V
+  trans_flag: A
+  created_by: 100
+  trans_bk: BT01
+  lock_version: 0
+  updated_by: 100
+  id: 4921
+  customer_vendor_id: 381
+  description: opopop
+  credit_amt: "0.00"
+  trans_no: "4001"
+  hdr_serial_no: "101"
+  gl_account_id: 347
+  account_period_code: "201009"
+  company_id: 1
+  ref_date: 2010-09-15 11:22:43
+  dtl_serial_no: "201"
+  trans_date: 2010-09-15 00:00:00
+  trans_type: TRFR
+  debit_amt: "120.00"
+  ref_bk: 
+  created_at: 2010-09-15 11:22:44
+GL_DETAILS_111: 
+  module_code: SAOI
+  post_flag: U
+  updated_at: 2010-08-19 12:03:49
+  customer_vendor_flag: C
+  ref_no: 
+  update_flag: V
+  trans_flag: A
+  created_by: 180
+  trans_bk: PS01
+  lock_version: 0
+  updated_by: 180
+  id: 4674
+  customer_vendor_id: 506
+  description: ""
+  credit_amt: "0.00"
+  trans_no: "2022"
+  hdr_serial_no: "501"
+  gl_account_id: 219
+  account_period_code: "201008"
+  company_id: 100
+  ref_date: 
+  dtl_serial_no: "1"
+  trans_date: 2010-08-19 00:00:00
+  trans_type: I
+  debit_amt: "12000.00"
+  ref_bk: 
+  created_at: 2010-08-19 12:03:49
+GL_DETAILS_028: 
+  module_code: SAOI
+  post_flag: U
+  updated_at: 2010-08-18 13:54:24
+  customer_vendor_flag: C
+  ref_no: 
+  update_flag: V
+  trans_flag: A
+  created_by: 100
+  trans_bk: PS01
+  lock_version: 0
+  updated_by: 100
+  id: 4551
+  customer_vendor_id: 127
+  description: ""
+  credit_amt: "5992.00"
+  trans_no: "2004"
+  hdr_serial_no: "501"
+  gl_account_id: 144
+  account_period_code: "201008"
+  company_id: 100
+  ref_date: 
+  dtl_serial_no: "501"
+  trans_date: 2010-08-18 00:00:00
+  trans_type: I
+  debit_amt: "0.00"
+  ref_bk: 
+  created_at: 2010-08-18 13:54:24
+GL_DETAILS_084: 
+  module_code: SAOI
+  post_flag: U
+  updated_at: 2010-08-19 11:55:56
+  customer_vendor_flag: C
+  ref_no: 
+  update_flag: V
+  trans_flag: A
+  created_by: 180
+  trans_bk: PS01
+  lock_version: 0
+  updated_by: 180
+  id: 4670
+  customer_vendor_id: 506
+  description: ""
+  credit_amt: "0.00"
+  trans_no: "2021"
+  hdr_serial_no: "501"
+  gl_account_id: 176
+  account_period_code: "201008"
+  company_id: 100
+  ref_date: 
+  dtl_serial_no: "502"
+  trans_date: 2010-08-19 00:00:00
+  trans_type: I
+  debit_amt: "840.00"
+  ref_bk: 
+  created_at: 2010-08-19 11:55:56
+GL_DETAILS_056: 
+  module_code: SAOI
+  post_flag: U
+  updated_at: 2010-08-18 15:10:13
+  customer_vendor_flag: C
+  ref_no: 
+  update_flag: V
+  trans_flag: A
+  created_by: 100
+  trans_bk: PS01
+  lock_version: 0
+  updated_by: 100
+  id: 4583
+  customer_vendor_id: 504
+  description: ""
+  credit_amt: "0.00"
+  trans_no: "2011"
+  hdr_serial_no: "501"
+  gl_account_id: 176
+  account_period_code: "201008"
+  company_id: 100
+  ref_date: 
+  dtl_serial_no: "502"
+  trans_date: 2010-08-18 00:00:00
+  trans_type: I
+  debit_amt: "3262.00"
+  ref_bk: 
+  created_at: 2010-08-18 15:10:13
+GL_DETAILS_199: 
+  module_code: SAOI
+  post_flag: U
+  updated_at: 2010-08-25 19:02:54
+  customer_vendor_flag: C
+  ref_no: 
+  update_flag: V
+  trans_flag: A
+  created_by: 100
+  trans_bk: PS01
+  lock_version: 0
+  updated_by: 100
+  id: 4892
+  customer_vendor_id: 720
+  description: ""
+  credit_amt: "62381.00"
+  trans_no: "2051"
+  hdr_serial_no: "501"
+  gl_account_id: 144
+  account_period_code: "201008"
+  company_id: 100
+  ref_date: 
+  dtl_serial_no: "501"
+  trans_date: 2010-08-25 00:00:00
+  trans_type: I
+  debit_amt: "0.00"
+  ref_bk: 
+  created_at: 2010-08-25 19:02:54
+GL_DETAILS_140: 
+  module_code: SAOI
+  post_flag: U
+  updated_at: 2010-08-23 18:05:12
+  customer_vendor_flag: C
+  ref_no: 
+  update_flag: V
+  trans_flag: A
+  created_by: 180
+  trans_bk: PS01
+  lock_version: 0
+  updated_by: 180
+  id: 4788
+  customer_vendor_id: 100
+  description: ""
+  credit_amt: "0.00"
+  trans_no: "2036"
+  hdr_serial_no: "501"
+  gl_account_id: 219
+  account_period_code: "201008"
+  company_id: 100
+  ref_date: 
+  dtl_serial_no: "1"
+  trans_date: 2010-08-23 00:00:00
+  trans_type: I
+  debit_amt: "5300.00"
+  ref_bk: 
+  created_at: 2010-08-23 18:05:12
+GL_DETAILS_085: 
+  module_code: SAOI
+  post_flag: U
+  updated_at: 2010-08-18 17:48:14
+  customer_vendor_flag: C
+  ref_no: 
+  update_flag: V
+  trans_flag: A
+  created_by: 100
+  trans_bk: PS01
+  lock_version: 0
+  updated_by: 100
+  id: 4629
+  customer_vendor_id: 503
+  description: ""
+  credit_amt: "75863.00"
+  trans_no: "2017"
+  hdr_serial_no: "501"
+  gl_account_id: 144
+  account_period_code: "201008"
+  company_id: 100
+  ref_date: 
+  dtl_serial_no: "501"
+  trans_date: 2010-08-18 00:00:00
+  trans_type: I
+  debit_amt: "0.00"
+  ref_bk: 
+  created_at: 2010-08-18 17:48:14
+GL_DETAILS_057: 
+  module_code: SAOI
+  post_flag: U
+  updated_at: 2010-08-18 15:10:13
+  customer_vendor_flag: C
+  ref_no: 
+  update_flag: V
+  trans_flag: A
+  created_by: 100
+  trans_bk: PS01
+  lock_version: 0
+  updated_by: 100
+  id: 4584
+  customer_vendor_id: 504
+  description: ""
+  credit_amt: "0.00"
+  trans_no: "2011"
+  hdr_serial_no: "501"
+  gl_account_id: 219
+  account_period_code: "201008"
+  company_id: 100
+  ref_date: 
+  dtl_serial_no: "1"
+  trans_date: 2010-08-18 00:00:00
+  trans_type: I
+  debit_amt: "46600.00"
+  ref_bk: 
+  created_at: 2010-08-18 15:10:13
+GL_DETAILS_112: 
+  module_code: SAOI
+  post_flag: U
+  updated_at: 2010-08-19 12:13:44
+  customer_vendor_flag: C
+  ref_no: 
+  update_flag: V
+  trans_flag: A
+  created_by: 100
+  trans_bk: PS01
+  lock_version: 0
+  updated_by: 100
+  id: 4675
+  customer_vendor_id: 500
+  description: ""
+  credit_amt: "325173.00"
+  trans_no: "2023"
+  hdr_serial_no: "501"
+  gl_account_id: 144
+  account_period_code: "201008"
+  company_id: 100
+  ref_date: 
+  dtl_serial_no: "501"
+  trans_date: 2010-08-19 00:00:00
+  trans_type: I
+  debit_amt: "0.00"
+  ref_bk: 
+  created_at: 2010-08-19 12:13:44
+GL_DETAILS_141: 
+  module_code: SAOI
+  post_flag: U
+  updated_at: 2010-08-23 18:23:54
+  customer_vendor_flag: C
+  ref_no: 
+  update_flag: V
+  trans_flag: A
+  created_by: 180
+  trans_bk: PS01
+  lock_version: 0
+  updated_by: 180
+  id: 4789
+  customer_vendor_id: 100
+  description: ""
+  credit_amt: "5671.00"
+  trans_no: "2036"
+  hdr_serial_no: "501"
+  gl_account_id: 144
+  account_period_code: "201008"
+  company_id: 1
+  ref_date: 
+  dtl_serial_no: "501"
+  trans_date: 2010-08-23 00:00:00
+  trans_type: I
+  debit_amt: "0.00"
+  ref_bk: 
+  created_at: 2010-08-23 18:23:54
+GL_DETAILS_029: 
+  module_code: SAOI
+  post_flag: U
+  updated_at: 2010-08-18 13:54:25
+  customer_vendor_flag: C
+  ref_no: 
+  update_flag: V
+  trans_flag: A
+  created_by: 100
+  trans_bk: PS01
+  lock_version: 0
+  updated_by: 100
+  id: 4552
+  customer_vendor_id: 127
+  description: ""
+  credit_amt: "0.00"
+  trans_no: "2004"
+  hdr_serial_no: "501"
+  gl_account_id: 176
+  account_period_code: "201008"
+  company_id: 100
+  ref_date: 
+  dtl_serial_no: "502"
+  trans_date: 2010-08-18 00:00:00
+  trans_type: I
+  debit_amt: "392.00"
+  ref_bk: 
+  created_at: 2010-08-18 13:54:25
+GL_DETAILS_086: 
+  module_code: SAOI
+  post_flag: U
+  updated_at: 2010-08-18 17:48:14
+  customer_vendor_flag: C
+  ref_no: 
+  update_flag: V
+  trans_flag: A
+  created_by: 100
+  trans_bk: PS01
+  lock_version: 0
+  updated_by: 100
+  id: 4630
+  customer_vendor_id: 503
+  description: ""
+  credit_amt: "0.00"
+  trans_no: "2017"
+  hdr_serial_no: "501"
+  gl_account_id: 176
+  account_period_code: "201008"
+  company_id: 100
+  ref_date: 
+  dtl_serial_no: "502"
+  trans_date: 2010-08-18 00:00:00
+  trans_type: I
+  debit_amt: "4963.00"
+  ref_bk: 
+  created_at: 2010-08-18 17:48:14
+GL_DETAILS_058: 
+  module_code: SAOI
+  post_flag: U
+  updated_at: 2010-08-19 11:41:33
+  customer_vendor_flag: C
+  ref_no: 
+  update_flag: V
+  trans_flag: A
+  created_by: 180
+  trans_bk: PS01
+  lock_version: 0
+  updated_by: 180
+  id: 4666
+  customer_vendor_id: 506
+  description: ""
+  credit_amt: "21079.00"
+  trans_no: "2020"
+  hdr_serial_no: "501"
+  gl_account_id: 144
+  account_period_code: "201008"
+  company_id: 100
+  ref_date: 
+  dtl_serial_no: "501"
+  trans_date: 2010-08-19 00:00:00
+  trans_type: I
+  debit_amt: "0.00"
+  ref_bk: 
+  created_at: 2010-08-19 11:41:33
+GL_DETAILS_113: 
+  module_code: SAOI
+  post_flag: U
+  updated_at: 2010-08-19 12:13:44
+  customer_vendor_flag: C
+  ref_no: 
+  update_flag: V
+  trans_flag: A
+  created_by: 100
+  trans_bk: PS01
+  lock_version: 0
+  updated_by: 100
+  id: 4676
+  customer_vendor_id: 500
+  description: ""
+  credit_amt: "0.00"
+  trans_no: "2023"
+  hdr_serial_no: "501"
+  gl_account_id: 176
+  account_period_code: "201008"
+  company_id: 100
+  ref_date: 
+  dtl_serial_no: "502"
+  trans_date: 2010-08-19 00:00:00
+  trans_type: I
+  debit_amt: "21273.00"
+  ref_bk: 
+  created_at: 2010-08-19 12:13:44
+GL_DETAILS_170: 
+  module_code: SAOI
+  post_flag: U
+  updated_at: 2010-08-25 11:35:19
+  customer_vendor_flag: C
+  ref_no: 
+  update_flag: V
+  trans_flag: A
+  created_by: 180
+  trans_bk: PS01
+  lock_version: 0
+  updated_by: 180
+  id: 4814
+  customer_vendor_id: 680
+  description: ""
+  credit_amt: "0.00"
+  trans_no: "2041"
+  hdr_serial_no: "501"
+  gl_account_id: 219
+  account_period_code: "201008"
+  company_id: 100
+  ref_date: 
+  dtl_serial_no: "1"
+  trans_date: 2010-08-25 00:00:00
+  trans_type: I
+  debit_amt: "8600.00"
+  ref_bk: 
+  created_at: 2010-08-25 11:35:19
+GL_DETAILS_142: 
+  module_code: SAOI
+  post_flag: U
+  updated_at: 2010-08-23 18:23:54
+  customer_vendor_flag: C
+  ref_no: 
+  update_flag: V
+  trans_flag: A
+  created_by: 180
+  trans_bk: PS01
+  lock_version: 0
+  updated_by: 180
+  id: 4790
+  customer_vendor_id: 100
+  description: ""
+  credit_amt: "0.00"
+  trans_no: "2036"
+  hdr_serial_no: "501"
+  gl_account_id: 176
+  account_period_code: "201008"
+  company_id: 1
+  ref_date: 
+  dtl_serial_no: "502"
+  trans_date: 2010-08-23 00:00:00
+  trans_type: I
+  debit_amt: "371.00"
+  ref_bk: 
+  created_at: 2010-08-23 18:23:54
+GL_DETAILS_087: 
+  module_code: SAOI
+  post_flag: U
+  updated_at: 2010-08-18 17:48:14
+  customer_vendor_flag: C
+  ref_no: 
+  update_flag: V
+  trans_flag: A
+  created_by: 100
+  trans_bk: PS01
+  lock_version: 0
+  updated_by: 100
+  id: 4631
+  customer_vendor_id: 503
+  description: ""
+  credit_amt: "0.00"
+  trans_no: "2017"
+  hdr_serial_no: "501"
+  gl_account_id: 219
+  account_period_code: "201008"
+  company_id: 100
+  ref_date: 
+  dtl_serial_no: "1"
+  trans_date: 2010-08-18 00:00:00
+  trans_type: I
+  debit_amt: "33000.00"
+  ref_bk: 
+  created_at: 2010-08-18 17:48:14
+GL_DETAILS_059: 
+  module_code: SAOI
+  post_flag: U
+  updated_at: 2010-08-19 11:41:33
+  customer_vendor_flag: C
+  ref_no: 
+  update_flag: V
+  trans_flag: A
+  created_by: 180
+  trans_bk: PS01
+  lock_version: 0
+  updated_by: 180
+  id: 4667
+  customer_vendor_id: 506
+  description: ""
+  credit_amt: "0.00"
+  trans_no: "2020"
+  hdr_serial_no: "501"
+  gl_account_id: 176
+  account_period_code: "201008"
+  company_id: 100
+  ref_date: 
+  dtl_serial_no: "502"
+  trans_date: 2010-08-19 00:00:00
+  trans_type: I
+  debit_amt: "1379.00"
+  ref_bk: 
+  created_at: 2010-08-19 11:41:33
+GL_DETAILS_114: 
+  module_code: SAOI
+  post_flag: U
+  updated_at: 2010-08-20 10:19:19
+  customer_vendor_flag: C
+  ref_no: 
+  update_flag: V
+  trans_flag: A
+  created_by: 180
+  trans_bk: PS01
+  lock_version: 0
+  updated_by: 180
+  id: 4720
+  customer_vendor_id: 506
+  description: ""
+  credit_amt: "14124.00"
+  trans_no: "2024"
+  hdr_serial_no: "501"
+  gl_account_id: 144
+  account_period_code: "201008"
+  company_id: 1
+  ref_date: 
+  dtl_serial_no: "501"
+  trans_date: 2010-08-19 00:00:00
+  trans_type: I
+  debit_amt: "0.00"
+  ref_bk: 
+  created_at: 2010-08-20 10:19:19
+GL_DETAILS_171: 
+  module_code: SAOI
+  post_flag: U
+  updated_at: 2010-08-25 16:03:58
+  customer_vendor_flag: C
+  ref_no: 
+  update_flag: V
+  trans_flag: A
+  created_by: 100
+  trans_bk: PS01
+  lock_version: 0
+  updated_by: 100
+  id: 4826
+  customer_vendor_id: 680
+  description: ""
+  credit_amt: "12840.00"
+  trans_no: "2001"
+  hdr_serial_no: "501"
+  gl_account_id: 144
+  account_period_code: "201008"
+  company_id: 1
+  ref_date: 
+  dtl_serial_no: "501"
+  trans_date: 2010-08-25 00:00:00
+  trans_type: I
+  debit_amt: "0.00"
+  ref_bk: 
+  created_at: 2010-08-25 16:03:58
+GL_DETAILS_143: 
+  module_code: SAOI
+  post_flag: U
+  updated_at: 2010-08-23 18:23:54
+  customer_vendor_flag: C
+  ref_no: 
+  update_flag: V
+  trans_flag: A
+  created_by: 180
+  trans_bk: PS01
+  lock_version: 0
+  updated_by: 180
+  id: 4791
+  customer_vendor_id: 100
+  description: ""
+  credit_amt: "0.00"
+  trans_no: "2036"
+  hdr_serial_no: "501"
+  gl_account_id: 219
+  account_period_code: "201008"
+  company_id: 1
+  ref_date: 
+  dtl_serial_no: "1"
+  trans_date: 2010-08-23 00:00:00
+  trans_type: I
+  debit_amt: "5300.00"
+  ref_bk: 
+  created_at: 2010-08-23 18:23:54
+GL_DETAILS_115: 
+  module_code: SAOI
+  post_flag: U
+  updated_at: 2010-08-20 10:19:19
+  customer_vendor_flag: C
+  ref_no: 
+  update_flag: V
+  trans_flag: A
+  created_by: 180
+  trans_bk: PS01
+  lock_version: 0
+  updated_by: 180
+  id: 4721
+  customer_vendor_id: 506
+  description: ""
+  credit_amt: "0.00"
+  trans_no: "2024"
+  hdr_serial_no: "501"
+  gl_account_id: 176
+  account_period_code: "201008"
+  company_id: 1
+  ref_date: 
+  dtl_serial_no: "502"
+  trans_date: 2010-08-19 00:00:00
+  trans_type: I
+  debit_amt: "924.00"
+  ref_bk: 
+  created_at: 2010-08-20 10:19:19
+GL_DETAILS_088: 
+  module_code: SAOI
+  post_flag: U
+  updated_at: 2010-08-18 17:48:14
+  customer_vendor_flag: C
+  ref_no: 
+  update_flag: V
+  trans_flag: A
+  created_by: 100
+  trans_bk: PS01
+  lock_version: 0
+  updated_by: 100
+  id: 4632
+  customer_vendor_id: 503
+  description: ""
+  credit_amt: "0.00"
+  trans_no: "2017"
+  hdr_serial_no: "501"
+  gl_account_id: 219
+  account_period_code: "201008"
+  company_id: 100
+  ref_date: 
+  dtl_serial_no: "1"
+  trans_date: 2010-08-18 00:00:00
+  trans_type: I
+  debit_amt: "37900.00"
+  ref_bk: 
+  created_at: 2010-08-18 17:48:14
+GL_DETAILS_001: 
+  module_code: SAOI
+  post_flag: U
+  updated_at: 2010-08-05 14:06:16
+  customer_vendor_flag: C
+  ref_no: 
+  update_flag: V
+  trans_flag: A
+  created_by: 100
+  trans_bk: SI01
+  lock_version: 0
+  updated_by: 100
+  id: 4440
+  customer_vendor_id: 460
+  description: ""
+  credit_amt: "16500.00"
+  trans_no: "5001"
+  hdr_serial_no: "501"
+  gl_account_id: 144
+  account_period_code: "201008"
+  company_id: 100
+  ref_date: 
+  dtl_serial_no: "501"
+  trans_date: 2010-08-05 00:00:00
+  trans_type: I
+  debit_amt: "0.00"
+  ref_bk: 
+  created_at: 2010-08-05 14:06:16
+GL_DETAILS_172: 
+  module_code: SAOI
+  post_flag: U
+  updated_at: 2010-08-25 16:03:58
+  customer_vendor_flag: C
+  ref_no: 
+  update_flag: V
+  trans_flag: A
+  created_by: 100
+  trans_bk: PS01
+  lock_version: 0
+  updated_by: 100
+  id: 4827
+  customer_vendor_id: 680
+  description: ""
+  credit_amt: "0.00"
+  trans_no: "2001"
+  hdr_serial_no: "501"
+  gl_account_id: 176
+  account_period_code: "201008"
+  company_id: 1
+  ref_date: 
+  dtl_serial_no: "502"
+  trans_date: 2010-08-25 00:00:00
+  trans_type: I
+  debit_amt: "840.00"
+  ref_bk: 
+  created_at: 2010-08-25 16:03:58
+GL_DETAILS_144: 
+  module_code: SAOI
+  post_flag: U
+  updated_at: 2010-08-23 11:04:00
+  customer_vendor_flag: C
+  ref_no: 
+  update_flag: V
+  trans_flag: A
+  created_by: 180
+  trans_bk: PS01
+  lock_version: 0
+  updated_by: 180
+  id: 4772
+  customer_vendor_id: 101
+  description: ""
+  credit_amt: "0.00"
+  trans_no: "2033"
+  hdr_serial_no: "501"
+  gl_account_id: 176
+  account_period_code: "201008"
+  company_id: 100
+  ref_date: 
+  dtl_serial_no: "502"
+  trans_date: 2010-08-23 00:00:00
+  trans_type: I
+  debit_amt: "329.00"
+  ref_bk: 
+  created_at: 2010-08-23 11:04:00
+GL_DETAILS_116: 
+  module_code: SAOI
+  post_flag: U
+  updated_at: 2010-08-19 16:21:45
+  customer_vendor_flag: C
+  ref_no: 
+  update_flag: V
+  trans_flag: A
+  created_by: 180
+  trans_bk: PS01
+  lock_version: 0
+  updated_by: 180
+  id: 4699
+  customer_vendor_id: 506
+  description: ""
+  credit_amt: "5671.00"
+  trans_no: "2029"
+  hdr_serial_no: "501"
+  gl_account_id: 144
+  account_period_code: "201008"
+  company_id: 100
+  ref_date: 
+  dtl_serial_no: "501"
+  trans_date: 2010-08-19 00:00:00
+  trans_type: I
+  debit_amt: "0.00"
+  ref_bk: 
+  created_at: 2010-08-19 16:21:45
+GL_DETAILS_030: 
+  module_code: FAXX
+  post_flag: U
+  updated_at: 2010-08-10 14:48:22
+  customer_vendor_flag: 
+  ref_no: ref02
+  update_flag: V
+  trans_flag: A
+  created_by: 100
+  trans_bk: CM01
+  lock_version: 0
+  updated_by: 100
+  id: 4502
+  customer_vendor_id: 403
+  description: ""
+  credit_amt: "0.00"
+  trans_no: "6002"
+  hdr_serial_no: "201"
+  gl_account_id: 105
+  account_period_code: "201008"
+  company_id: 1
+  ref_date: 2010-08-10 00:00:00
+  dtl_serial_no: "101"
+  trans_date: 2010-08-10 00:00:00
+  trans_type: I
+  debit_amt: "650.00"
+  ref_bk: 
+  created_at: 2010-08-10 14:48:22
+GL_DETAILS_089: 
+  module_code: SAOI
+  post_flag: U
+  updated_at: 2010-08-19 11:55:56
+  customer_vendor_flag: C
+  ref_no: 
+  update_flag: V
+  trans_flag: A
+  created_by: 180
+  trans_bk: PS01
+  lock_version: 0
+  updated_by: 180
+  id: 4671
+  customer_vendor_id: 506
+  description: ""
+  credit_amt: "0.00"
+  trans_no: "2021"
+  hdr_serial_no: "501"
+  gl_account_id: 219
+  account_period_code: "201008"
+  company_id: 100
+  ref_date: 
+  dtl_serial_no: "1"
+  trans_date: 2010-08-19 00:00:00
+  trans_type: I
+  debit_amt: "12000.00"
+  ref_bk: 
+  created_at: 2010-08-19 11:55:56
+GL_DETAILS_002: 
+  module_code: SAOI
+  post_flag: U
+  updated_at: 2010-08-05 14:06:16
+  customer_vendor_flag: C
+  ref_no: 
+  update_flag: V
+  trans_flag: A
+  created_by: 100
+  trans_bk: SI01
+  lock_version: 0
+  updated_by: 100
+  id: 4441
+  customer_vendor_id: 460
+  description: ""
+  credit_amt: "0.00"
+  trans_no: "5001"
+  hdr_serial_no: "501"
+  gl_account_id: 219
+  account_period_code: "201008"
+  company_id: 100
+  ref_date: 
+  dtl_serial_no: "1"
+  trans_date: 2010-08-05 00:00:00
+  trans_type: I
+  debit_amt: "16500.00"
+  ref_bk: 
+  created_at: 2010-08-05 14:06:16
+GL_DETAILS_200: 
+  module_code: SAOI
+  post_flag: U
+  updated_at: 2010-08-25 19:02:54
+  customer_vendor_flag: C
+  ref_no: 
+  update_flag: V
+  trans_flag: A
+  created_by: 100
+  trans_bk: PS01
+  lock_version: 0
+  updated_by: 100
+  id: 4893
+  customer_vendor_id: 720
+  description: ""
+  credit_amt: "0.00"
+  trans_no: "2051"
+  hdr_serial_no: "501"
+  gl_account_id: 176
+  account_period_code: "201008"
+  company_id: 100
+  ref_date: 
+  dtl_serial_no: "502"
+  trans_date: 2010-08-25 00:00:00
+  trans_type: I
+  debit_amt: "4081.00"
+  ref_bk: 
+  created_at: 2010-08-25 19:02:54
+GL_DETAILS_173: 
+  module_code: SAOI
+  post_flag: U
+  updated_at: 2010-08-25 16:03:58
+  customer_vendor_flag: C
+  ref_no: 
+  update_flag: V
+  trans_flag: A
+  created_by: 100
+  trans_bk: PS01
+  lock_version: 0
+  updated_by: 100
+  id: 4828
+  customer_vendor_id: 680
+  description: ""
+  credit_amt: "0.00"
+  trans_no: "2001"
+  hdr_serial_no: "501"
+  gl_account_id: 219
+  account_period_code: "201008"
+  company_id: 1
+  ref_date: 
+  dtl_serial_no: "1"
+  trans_date: 2010-08-25 00:00:00
+  trans_type: I
+  debit_amt: "12000.00"
+  ref_bk: 
+  created_at: 2010-08-25 16:03:58
+GL_DETAILS_145: 
+  module_code: SAOI
+  post_flag: U
+  updated_at: 2010-08-23 11:04:00
+  customer_vendor_flag: C
+  ref_no: 
+  update_flag: V
+  trans_flag: A
+  created_by: 180
+  trans_bk: PS01
+  lock_version: 0
+  updated_by: 180
+  id: 4773
+  customer_vendor_id: 101
+  description: ""
+  credit_amt: "0.00"
+  trans_no: "2033"
+  hdr_serial_no: "501"
+  gl_account_id: 219
+  account_period_code: "201008"
+  company_id: 100
+  ref_date: 
+  dtl_serial_no: "1"
+  trans_date: 2010-08-23 00:00:00
+  trans_type: I
+  debit_amt: "4700.00"
+  ref_bk: 
+  created_at: 2010-08-23 11:04:00
+GL_DETAILS_031: 
+  module_code: FAXX
+  post_flag: U
+  updated_at: 2010-08-10 14:48:22
+  customer_vendor_flag: 
+  ref_no: ref02
+  update_flag: V
+  trans_flag: A
+  created_by: 100
+  trans_bk: CM01
+  lock_version: 0
+  updated_by: 100
+  id: 4503
+  customer_vendor_id: 403
+  description: ""
+  credit_amt: "650.00"
+  trans_no: "6002"
+  hdr_serial_no: "201"
+  gl_account_id: 153
+  account_period_code: "201008"
+  company_id: 1
+  ref_date: 2010-08-10 00:00:00
+  dtl_serial_no: "102"
+  trans_date: 2010-08-10 00:00:00
+  trans_type: I
+  debit_amt: "0.00"
+  ref_bk: 
+  created_at: 2010-08-10 14:48:22
+GL_DETAILS_003: 
+  module_code: FAXX
+  post_flag: U
+  updated_at: 2010-08-07 10:36:21
+  customer_vendor_flag: 
+  ref_no: "55555"
+  update_flag: V
+  trans_flag: A
+  created_by: 100
+  trans_bk: RE01
+  lock_version: 0
+  updated_by: 100
+  id: 4460
+  customer_vendor_id: 403
+  description: remarks
+  credit_amt: "1500.00"
+  trans_no: "1001"
+  hdr_serial_no: "101"
+  gl_account_id: 105
+  account_period_code: "201008"
+  company_id: 1
+  ref_date: 2010-08-07 00:00:00
+  dtl_serial_no: "202"
+  trans_date: 2010-08-07 00:00:00
+  trans_type: DEPS
+  debit_amt: "0.00"
+  ref_bk: 
+  created_at: 2010-08-07 10:36:21
+GL_DETAILS_201: 
+  module_code: SAOI
+  post_flag: U
+  updated_at: 2010-08-25 19:02:54
+  customer_vendor_flag: C
+  ref_no: 
+  update_flag: V
+  trans_flag: A
+  created_by: 100
+  trans_bk: PS01
+  lock_version: 0
+  updated_by: 100
+  id: 4894
+  customer_vendor_id: 720
+  description: ""
+  credit_amt: "0.00"
+  trans_no: "2051"
+  hdr_serial_no: "501"
+  gl_account_id: 219
+  account_period_code: "201008"
+  company_id: 100
+  ref_date: 
+  dtl_serial_no: "1"
+  trans_date: 2010-08-25 00:00:00
+  trans_type: I
+  debit_amt: "58300.00"
+  ref_bk: 
+  created_at: 2010-08-25 19:02:54
+GL_DETAILS_174: 
+  module_code: SAOI
+  post_flag: U
+  updated_at: 2010-08-25 17:02:39
+  customer_vendor_flag: C
+  ref_no: 
+  update_flag: V
+  trans_flag: A
+  created_by: 100
+  trans_bk: PS01
+  lock_version: 0
+  updated_by: 100
+  id: 4841
+  customer_vendor_id: 421
+  description: ""
+  credit_amt: "16264.00"
+  trans_no: "2043"
+  hdr_serial_no: "501"
+  gl_account_id: 144
+  account_period_code: "201008"
+  company_id: 100
+  ref_date: 
+  dtl_serial_no: "501"
+  trans_date: 2010-08-25 00:00:00
+  trans_type: I
+  debit_amt: "0.00"
+  ref_bk: 
+  created_at: 2010-08-25 17:02:39
+GL_DETAILS_146: 
+  module_code: SAOI
+  post_flag: U
+  updated_at: 2010-08-23 18:39:47
+  customer_vendor_flag: C
+  ref_no: 
+  update_flag: V
+  trans_flag: A
+  created_by: 180
+  trans_bk: PS01
+  lock_version: 0
+  updated_by: 180
+  id: 4792
+  customer_vendor_id: 100
+  description: ""
+  credit_amt: "502900.00"
+  trans_no: "2037"
+  hdr_serial_no: "501"
+  gl_account_id: 144
+  account_period_code: "201008"
+  company_id: 100
+  ref_date: 
+  dtl_serial_no: "501"
+  trans_date: 2010-08-23 00:00:00
+  trans_type: I
+  debit_amt: "0.00"
+  ref_bk: 
+  created_at: 2010-08-23 18:39:47
+GL_DETAILS_117: 
+  module_code: SAOI
+  post_flag: U
+  updated_at: 2010-08-19 16:21:45
+  customer_vendor_flag: C
+  ref_no: 
+  update_flag: V
+  trans_flag: A
+  created_by: 180
+  trans_bk: PS01
+  lock_version: 0
+  updated_by: 180
+  id: 4700
+  customer_vendor_id: 506
+  description: ""
+  credit_amt: "0.00"
+  trans_no: "2029"
+  hdr_serial_no: "501"
+  gl_account_id: 176
+  account_period_code: "201008"
+  company_id: 100
+  ref_date: 
+  dtl_serial_no: "502"
+  trans_date: 2010-08-19 00:00:00
+  trans_type: I
+  debit_amt: "371.00"
+  ref_bk: 
+  created_at: 2010-08-19 16:21:45
+GL_DETAILS_032: 
+  module_code: FAXX
+  post_flag: U
+  updated_at: 2010-08-10 14:48:33
+  customer_vendor_flag: 
+  ref_no: ""
+  update_flag: V
+  trans_flag: A
+  created_by: 100
+  trans_bk: CM01
+  lock_version: 0
+  updated_by: 100
+  id: 4504
+  customer_vendor_id: 403
+  description: ""
+  credit_amt: "0.00"
+  trans_no: "6003"
+  hdr_serial_no: "201"
+  gl_account_id: 105
+  account_period_code: "201008"
+  company_id: 1
+  ref_date: 2010-08-10 00:00:00
+  dtl_serial_no: "101"
+  trans_date: 2010-08-10 00:00:00
+  trans_type: I
+  debit_amt: "200.00"
+  ref_bk: 
+  created_at: 2010-08-10 14:48:33
+GL_DETAILS_004: 
+  module_code: FAXX
+  post_flag: U
+  updated_at: 2010-08-07 10:36:21
+  customer_vendor_flag: 
+  ref_no: "55555"
+  update_flag: V
+  trans_flag: A
+  created_by: 100
+  trans_bk: RE01
+  lock_version: 0
+  updated_by: 100
+  id: 4461
+  customer_vendor_id: 403
+  description: remarks
+  credit_amt: "0.00"
+  trans_no: "1001"
+  hdr_serial_no: "101"
+  gl_account_id: 347
+  account_period_code: "201008"
+  company_id: 1
+  ref_date: 2010-08-07 00:00:00
+  dtl_serial_no: "201"
+  trans_date: 2010-08-07 00:00:00
+  trans_type: DEPS
+  debit_amt: "1500.00"
+  ref_bk: 
+  created_at: 2010-08-07 10:36:21
+GL_DETAILS_060: 
+  module_code: SAOI
+  post_flag: U
+  updated_at: 2010-08-18 15:30:41
+  customer_vendor_flag: C
+  ref_no: 
+  update_flag: V
+  trans_flag: A
+  created_by: 100
+  trans_bk: PS01
+  lock_version: 0
+  updated_by: 100
+  id: 4593
+  customer_vendor_id: 460
+  description: ""
+  credit_amt: "64628.00"
+  trans_no: "2010"
+  hdr_serial_no: "501"
+  gl_account_id: 144
+  account_period_code: "201008"
+  company_id: 100
+  ref_date: 
+  dtl_serial_no: "501"
+  trans_date: 2010-08-18 00:00:00
+  trans_type: I
+  debit_amt: "0.00"
+  ref_bk: 
+  created_at: 2010-08-18 15:30:41
+GL_DETAILS_202: 
+  module_code: FAXX
+  post_flag: U
+  updated_at: 2010-09-08 12:58:54
+  customer_vendor_flag: 
+  ref_no: "11212"
+  update_flag: V
+  trans_flag: A
+  created_by: 100
+  trans_bk: RE01
+  lock_version: 0
+  updated_by: 100
+  id: 4902
+  customer_vendor_id: 100
+  description: "121212"
+  credit_amt: "420.00"
+  trans_no: "1003"
+  hdr_serial_no: "101"
+  gl_account_id: 144
+  account_period_code: "201009"
+  company_id: 1
+  ref_date: 2010-09-08 00:00:00
+  dtl_serial_no: "202"
+  trans_date: 2010-09-08 00:00:00
+  trans_type: DEPS
+  debit_amt: "0.00"
+  ref_bk: 
+  created_at: 2010-09-08 12:58:54
+GL_DETAILS_175: 
+  module_code: SAOI
+  post_flag: U
+  updated_at: 2010-08-25 17:02:39
+  customer_vendor_flag: C
+  ref_no: 
+  update_flag: V
+  trans_flag: A
+  created_by: 100
+  trans_bk: PS01
+  lock_version: 0
+  updated_by: 100
+  id: 4842
+  customer_vendor_id: 421
+  description: ""
+  credit_amt: "0.00"
+  trans_no: "2043"
+  hdr_serial_no: "501"
+  gl_account_id: 176
+  account_period_code: "201008"
+  company_id: 100
+  ref_date: 
+  dtl_serial_no: "502"
+  trans_date: 2010-08-25 00:00:00
+  trans_type: I
+  debit_amt: "1064.00"
+  ref_bk: 
+  created_at: 2010-08-25 17:02:39
+GL_DETAILS_147: 
+  module_code: SAOI
+  post_flag: U
+  updated_at: 2010-08-23 18:39:47
+  customer_vendor_flag: C
+  ref_no: 
+  update_flag: V
+  trans_flag: A
+  created_by: 180
+  trans_bk: PS01
+  lock_version: 0
+  updated_by: 180
+  id: 4793
+  customer_vendor_id: 100
+  description: ""
+  credit_amt: "0.00"
+  trans_no: "2037"
+  hdr_serial_no: "501"
+  gl_account_id: 176
+  account_period_code: "201008"
+  company_id: 100
+  ref_date: 
+  dtl_serial_no: "502"
+  trans_date: 2010-08-23 00:00:00
+  trans_type: I
+  debit_amt: "32900.00"
+  ref_bk: 
+  created_at: 2010-08-23 18:39:47
+GL_DETAILS_118: 
+  module_code: SAOI
+  post_flag: U
+  updated_at: 2010-08-19 16:21:45
+  customer_vendor_flag: C
+  ref_no: 
+  update_flag: V
+  trans_flag: A
+  created_by: 180
+  trans_bk: PS01
+  lock_version: 0
+  updated_by: 180
+  id: 4701
+  customer_vendor_id: 506
+  description: ""
+  credit_amt: "0.00"
+  trans_no: "2029"
+  hdr_serial_no: "501"
+  gl_account_id: 219
+  account_period_code: "201008"
+  company_id: 100
+  ref_date: 
+  dtl_serial_no: "1"
+  trans_date: 2010-08-19 00:00:00
+  trans_type: I
+  debit_amt: "5300.00"
+  ref_bk: 
+  created_at: 2010-08-19 16:21:45
+GL_DETAILS_033: 
+  module_code: FAXX
+  post_flag: U
+  updated_at: 2010-08-10 14:48:33
+  customer_vendor_flag: 
+  ref_no: ""
+  update_flag: V
+  trans_flag: A
+  created_by: 100
+  trans_bk: CM01
+  lock_version: 0
+  updated_by: 100
+  id: 4505
+  customer_vendor_id: 403
+  description: ""
+  credit_amt: "200.00"
+  trans_no: "6003"
+  hdr_serial_no: "201"
+  gl_account_id: 153
+  account_period_code: "201008"
+  company_id: 1
+  ref_date: 2010-08-10 00:00:00
+  dtl_serial_no: "102"
+  trans_date: 2010-08-10 00:00:00
+  trans_type: I
+  debit_amt: "0.00"
+  ref_bk: 
+  created_at: 2010-08-10 14:48:33
+GL_DETAILS_005: 
+  module_code: FAXX
+  post_flag: U
+  updated_at: 2010-08-07 11:51:15
+  customer_vendor_flag: 
+  ref_no: "6666"
+  update_flag: V
+  trans_flag: A
+  created_by: 100
+  trans_bk: PA01
+  lock_version: 0
+  updated_by: 100
+  id: 4462
+  customer_vendor_id: 361
+  description: "1112121"
+  credit_amt: "0.00"
+  trans_no: "5001"
+  hdr_serial_no: "101"
+  gl_account_id: 114
+  account_period_code: "201008"
+  company_id: 1
+  ref_date: 2010-08-07 00:00:00
+  dtl_serial_no: "202"
+  trans_date: 2010-08-07 00:00:00
+  trans_type: PAYM
+  debit_amt: "1200.00"
+  ref_bk: 
+  created_at: 2010-08-07 11:51:15
+GL_DETAILS_061: 
+  module_code: SAOI
+  post_flag: U
+  updated_at: 2010-08-18 15:30:41
+  customer_vendor_flag: C
+  ref_no: 
+  update_flag: V
+  trans_flag: A
+  created_by: 100
+  trans_bk: PS01
+  lock_version: 0
+  updated_by: 100
+  id: 4594
+  customer_vendor_id: 460
+  description: ""
+  credit_amt: "0.00"
+  trans_no: "2010"
+  hdr_serial_no: "501"
+  gl_account_id: 176
+  account_period_code: "201008"
+  company_id: 100
+  ref_date: 
+  dtl_serial_no: "502"
+  trans_date: 2010-08-18 00:00:00
+  trans_type: I
+  debit_amt: "4228.00"
+  ref_bk: 
+  created_at: 2010-08-18 15:30:41
+GL_DETAILS_203: 
+  module_code: FAXX
+  post_flag: U
+  updated_at: 2010-09-08 12:58:54
+  customer_vendor_flag: 
+  ref_no: "11212"
+  update_flag: V
+  trans_flag: A
+  created_by: 100
+  trans_bk: RE01
+  lock_version: 0
+  updated_by: 100
+  id: 4903
+  customer_vendor_id: 100
+  description: "121212"
+  credit_amt: "0.00"
+  trans_no: "1003"
+  hdr_serial_no: "101"
+  gl_account_id: 347
+  account_period_code: "201009"
+  company_id: 1
+  ref_date: 2010-09-08 00:00:00
+  dtl_serial_no: "201"
+  trans_date: 2010-09-08 00:00:00
+  trans_type: DEPS
+  debit_amt: "420.00"
+  ref_bk: 
+  created_at: 2010-09-08 12:58:54
+GL_DETAILS_176: 
+  module_code: SAOI
+  post_flag: U
+  updated_at: 2010-08-25 17:02:39
+  customer_vendor_flag: C
+  ref_no: 
+  update_flag: V
+  trans_flag: A
+  created_by: 100
+  trans_bk: PS01
+  lock_version: 0
+  updated_by: 100
+  id: 4843
+  customer_vendor_id: 421
+  description: ""
+  credit_amt: "0.00"
+  trans_no: "2043"
+  hdr_serial_no: "501"
+  gl_account_id: 219
+  account_period_code: "201008"
+  company_id: 100
+  ref_date: 
+  dtl_serial_no: "1"
+  trans_date: 2010-08-25 00:00:00
+  trans_type: I
+  debit_amt: "15200.00"
+  ref_bk: 
+  created_at: 2010-08-25 17:02:39
+GL_DETAILS_148: 
+  module_code: SAOI
+  post_flag: U
+  updated_at: 2010-08-23 18:39:47
+  customer_vendor_flag: C
+  ref_no: 
+  update_flag: V
+  trans_flag: A
+  created_by: 180
+  trans_bk: PS01
+  lock_version: 0
+  updated_by: 180
+  id: 4794
+  customer_vendor_id: 100
+  description: ""
+  credit_amt: "0.00"
+  trans_no: "2037"
+  hdr_serial_no: "501"
+  gl_account_id: 219
+  account_period_code: "201008"
+  company_id: 100
+  ref_date: 
+  dtl_serial_no: "1"
+  trans_date: 2010-08-23 00:00:00
+  trans_type: I
+  debit_amt: "470000.00"
+  ref_bk: 
+  created_at: 2010-08-23 18:39:47
+GL_DETAILS_119: 
+  module_code: SAOI
+  post_flag: U
+  updated_at: 2010-08-20 10:19:19
+  customer_vendor_flag: C
+  ref_no: 
+  update_flag: V
+  trans_flag: A
+  created_by: 180
+  trans_bk: PS01
+  lock_version: 0
+  updated_by: 180
+  id: 4722
+  customer_vendor_id: 506
+  description: ""
+  credit_amt: "0.00"
+  trans_no: "2024"
+  hdr_serial_no: "501"
+  gl_account_id: 219
+  account_period_code: "201008"
+  company_id: 1
+  ref_date: 
+  dtl_serial_no: "1"
+  trans_date: 2010-08-19 00:00:00
+  trans_type: I
+  debit_amt: "13200.00"
+  ref_bk: 
+  created_at: 2010-08-20 10:19:19
+GL_DETAILS_006: 
+  module_code: FAXX
+  post_flag: U
+  updated_at: 2010-08-07 11:51:15
+  customer_vendor_flag: 
+  ref_no: "6666"
+  update_flag: V
+  trans_flag: A
+  created_by: 100
+  trans_bk: PA01
+  lock_version: 0
+  updated_by: 100
+  id: 4463
+  customer_vendor_id: 361
+  description: "1112121"
+  credit_amt: "1200.00"
+  trans_no: "5001"
+  hdr_serial_no: "101"
+  gl_account_id: 347
+  account_period_code: "201008"
+  company_id: 1
+  ref_date: 2010-08-07 00:00:00
+  dtl_serial_no: "201"
+  trans_date: 2010-08-07 00:00:00
+  trans_type: PAYM
+  debit_amt: "0.00"
+  ref_bk: 
+  created_at: 2010-08-07 11:51:15
+GL_DETAILS_090: 
+  module_code: SAOI
+  post_flag: U
+  updated_at: 2010-08-19 12:03:49
+  customer_vendor_flag: C
+  ref_no: 
+  update_flag: V
+  trans_flag: A
+  created_by: 180
+  trans_bk: PS01
+  lock_version: 0
+  updated_by: 180
+  id: 4672
+  customer_vendor_id: 506
+  description: ""
+  credit_amt: "12840.00"
+  trans_no: "2022"
+  hdr_serial_no: "501"
+  gl_account_id: 144
+  account_period_code: "201008"
+  company_id: 100
+  ref_date: 
+  dtl_serial_no: "501"
+  trans_date: 2010-08-19 00:00:00
+  trans_type: I
+  debit_amt: "0.00"
+  ref_bk: 
+  created_at: 2010-08-19 12:03:49
+GL_DETAILS_062: 
+  module_code: SAOI
+  post_flag: U
+  updated_at: 2010-08-18 15:30:41
+  customer_vendor_flag: C
+  ref_no: 
+  update_flag: V
+  trans_flag: A
+  created_by: 100
+  trans_bk: PS01
+  lock_version: 0
+  updated_by: 100
+  id: 4595
+  customer_vendor_id: 460
+  description: ""
+  credit_amt: "0.00"
+  trans_no: "2010"
+  hdr_serial_no: "501"
+  gl_account_id: 219
+  account_period_code: "201008"
+  company_id: 100
+  ref_date: 
+  dtl_serial_no: "1"
+  trans_date: 2010-08-18 00:00:00
+  trans_type: I
+  debit_amt: "2800.00"
+  ref_bk: 
+  created_at: 2010-08-18 15:30:41
+GL_DETAILS_034: 
+  module_code: SAOI
+  post_flag: U
+  updated_at: 2010-08-18 14:16:22
+  customer_vendor_flag: C
+  ref_no: 
+  update_flag: V
+  trans_flag: A
+  created_by: 100
+  trans_bk: PS01
+  lock_version: 0
+  updated_by: 100
+  id: 4562
+  customer_vendor_id: 680
+  description: ""
+  credit_amt: "0.00"
+  trans_no: "2006"
+  hdr_serial_no: "501"
+  gl_account_id: 176
+  account_period_code: "201008"
+  company_id: 100
+  ref_date: 
+  dtl_serial_no: "502"
+  trans_date: 2010-08-18 00:00:00
+  trans_type: I
+  debit_amt: "119.00"
+  ref_bk: 
+  created_at: 2010-08-18 14:16:22
+GL_DETAILS_204: 
+  module_code: SAOI
+  post_flag: U
+  updated_at: 2010-08-25 19:00:29
+  customer_vendor_flag: C
+  ref_no: 
+  update_flag: V
+  trans_flag: A
+  created_by: 100
+  trans_bk: PS01
+  lock_version: 0
+  updated_by: 100
+  id: 4885
+  customer_vendor_id: 720
+  description: ""
+  credit_amt: "0.00"
+  trans_no: "2050"
+  hdr_serial_no: "501"
+  gl_account_id: 219
+  account_period_code: "201008"
+  company_id: 100
+  ref_date: 
+  dtl_serial_no: "1"
+  trans_date: 2010-08-25 00:00:00
+  trans_type: I
+  debit_amt: "58300.00"
+  ref_bk: 
+  created_at: 2010-08-25 19:00:29
+GL_DETAILS_177: 
+  module_code: SAOI
+  post_flag: U
+  updated_at: 2010-08-25 18:15:47
+  customer_vendor_flag: C
+  ref_no: 
+  update_flag: V
+  trans_flag: A
+  created_by: 180
+  trans_bk: PS01
+  lock_version: 0
+  updated_by: 180
+  id: 4844
+  customer_vendor_id: 101
+  description: ""
+  credit_amt: "535.00"
+  trans_no: "2044"
+  hdr_serial_no: "501"
+  gl_account_id: 144
+  account_period_code: "201008"
+  company_id: 100
+  ref_date: 
+  dtl_serial_no: "501"
+  trans_date: 2010-08-25 00:00:00
+  trans_type: I
+  debit_amt: "0.00"
+  ref_bk: 
+  created_at: 2010-08-25 18:15:47
+GL_DETAILS_149: 
+  module_code: SAOI
+  post_flag: U
+  updated_at: 2010-08-23 14:40:19
+  customer_vendor_flag: C
+  ref_no: 
+  update_flag: V
+  trans_flag: A
+  created_by: 100
+  trans_bk: PS01
+  lock_version: 0
+  updated_by: 100
+  id: 4777
+  customer_vendor_id: 101
+  description: ""
+  credit_amt: "60027.00"
+  trans_no: "2034"
+  hdr_serial_no: "501"
+  gl_account_id: 144
+  account_period_code: "201008"
+  company_id: 100
+  ref_date: 
+  dtl_serial_no: "501"
+  trans_date: 2010-08-23 00:00:00
+  trans_type: I
+  debit_amt: "0.00"
+  ref_bk: 
+  created_at: 2010-08-23 14:40:19
+GL_DETAILS_091: 
+  module_code: SAOI
+  post_flag: U
+  updated_at: 2010-08-18 18:05:54
+  customer_vendor_flag: C
+  ref_no: 
+  update_flag: V
+  trans_flag: A
+  created_by: 100
+  trans_bk: PS01
+  lock_version: 0
+  updated_by: 100
+  id: 4641
+  customer_vendor_id: 101
+  description: ""
+  credit_amt: "146911.00"
+  trans_no: "2018"
+  hdr_serial_no: "501"
+  gl_account_id: 144
+  account_period_code: "201008"
+  company_id: 100
+  ref_date: 
+  dtl_serial_no: "501"
+  trans_date: 2010-08-18 00:00:00
+  trans_type: I
+  debit_amt: "0.00"
+  ref_bk: 
+  created_at: 2010-08-18 18:05:54
+GL_DETAILS_063: 
+  module_code: SAOI
+  post_flag: U
+  updated_at: 2010-08-18 15:30:41
+  customer_vendor_flag: C
+  ref_no: 
+  update_flag: V
+  trans_flag: A
+  created_by: 100
+  trans_bk: PS01
+  lock_version: 0
+  updated_by: 100
+  id: 4596
+  customer_vendor_id: 460
+  description: ""
+  credit_amt: "0.00"
+  trans_no: "2010"
+  hdr_serial_no: "501"
+  gl_account_id: 219
+  account_period_code: "201008"
+  company_id: 100
+  ref_date: 
+  dtl_serial_no: "1"
+  trans_date: 2010-08-18 00:00:00
+  trans_type: I
+  debit_amt: "36700.00"
+  ref_bk: 
+  created_at: 2010-08-18 15:30:41
+GL_DETAILS_035: 
+  module_code: SAOI
+  post_flag: U
+  updated_at: 2010-08-18 14:16:22
+  customer_vendor_flag: C
+  ref_no: 
+  update_flag: V
+  trans_flag: A
+  created_by: 100
+  trans_bk: PS01
+  lock_version: 0
+  updated_by: 100
+  id: 4563
+  customer_vendor_id: 680
+  description: ""
+  credit_amt: "0.00"
+  trans_no: "2006"
+  hdr_serial_no: "501"
+  gl_account_id: 219
+  account_period_code: "201008"
+  company_id: 100
+  ref_date: 
+  dtl_serial_no: "1"
+  trans_date: 2010-08-18 00:00:00
+  trans_type: I
+  debit_amt: "1700.00"
+  ref_bk: 
+  created_at: 2010-08-18 14:16:22
+GL_DETAILS_178: 
+  module_code: SAOI
+  post_flag: U
+  updated_at: 2010-08-25 18:15:47
+  customer_vendor_flag: C
+  ref_no: 
+  update_flag: V
+  trans_flag: A
+  created_by: 180
+  trans_bk: PS01
+  lock_version: 0
+  updated_by: 180
+  id: 4845
+  customer_vendor_id: 101
+  description: ""
+  credit_amt: "0.00"
+  trans_no: "2044"
+  hdr_serial_no: "501"
+  gl_account_id: 176
+  account_period_code: "201008"
+  company_id: 100
+  ref_date: 
+  dtl_serial_no: "502"
+  trans_date: 2010-08-25 00:00:00
+  trans_type: I
+  debit_amt: "35.00"
+  ref_bk: 
+  created_at: 2010-08-25 18:15:47
+GL_DETAILS_007: 
+  module_code: FAAR
+  post_flag: U
+  updated_at: 2010-08-07 15:05:56
+  customer_vendor_flag: 
+  ref_no: "121212"
+  update_flag: V
+  trans_flag: A
+  created_by: 100
+  trans_bk: IN01
+  lock_version: 0
+  updated_by: 100
+  id: 4480
+  customer_vendor_id: 100
+  description: ""
+  credit_amt: "2500.00"
+  trans_no: "1001"
+  hdr_serial_no: "301"
+  gl_account_id: 353
+  account_period_code: "201008"
+  company_id: 1
+  ref_date: 2010-08-07 00:00:00
+  dtl_serial_no: "102"
+  trans_date: 2010-08-07 00:00:00
+  trans_type: I
+  debit_amt: "0.00"
+  ref_bk: IN01
+  created_at: 2010-08-07 15:05:56
+GL_DETAILS_092: 
+  module_code: SAOI
+  post_flag: U
+  updated_at: 2010-08-18 18:05:54
+  customer_vendor_flag: C
+  ref_no: 
+  update_flag: V
+  trans_flag: A
+  created_by: 100
+  trans_bk: PS01
+  lock_version: 0
+  updated_by: 100
+  id: 4642
+  customer_vendor_id: 101
+  description: ""
+  credit_amt: "0.00"
+  trans_no: "2018"
+  hdr_serial_no: "501"
+  gl_account_id: 176
+  account_period_code: "201008"
+  company_id: 100
+  ref_date: 
+  dtl_serial_no: "502"
+  trans_date: 2010-08-18 00:00:00
+  trans_type: I
+  debit_amt: "9611.00"
+  ref_bk: 
+  created_at: 2010-08-18 18:05:54
+GL_DETAILS_064: 
+  module_code: SAOI
+  post_flag: U
+  updated_at: 2010-08-18 15:30:41
+  customer_vendor_flag: C
+  ref_no: 
+  update_flag: V
+  trans_flag: A
+  created_by: 100
+  trans_bk: PS01
+  lock_version: 0
+  updated_by: 100
+  id: 4597
+  customer_vendor_id: 460
+  description: ""
+  credit_amt: "0.00"
+  trans_no: "2010"
+  hdr_serial_no: "501"
+  gl_account_id: 219
+  account_period_code: "201008"
+  company_id: 100
+  ref_date: 
+  dtl_serial_no: "1"
+  trans_date: 2010-08-18 00:00:00
+  trans_type: I
+  debit_amt: "20900.00"
+  ref_bk: 
+  created_at: 2010-08-18 15:30:41
+GL_DETAILS_036: 
+  module_code: SAOI
+  post_flag: U
+  updated_at: 2010-08-19 11:41:10
+  customer_vendor_flag: C
+  ref_no: 
+  update_flag: V
+  trans_flag: A
+  created_by: 100
+  trans_bk: PS01
+  lock_version: 0
+  updated_by: 100
+  id: 4663
+  customer_vendor_id: 460
+  description: ""
+  credit_amt: "0.00"
+  trans_no: "2019"
+  hdr_serial_no: "501"
+  gl_account_id: 176
+  account_period_code: "201008"
+  company_id: 100
+  ref_date: 
+  dtl_serial_no: "502"
+  trans_date: 2010-08-19 00:00:00
+  trans_type: I
+  debit_amt: "14196.00"
+  ref_bk: 
+  created_at: 2010-08-19 11:41:10
+GL_DETAILS_179: 
+  module_code: SAOI
+  post_flag: U
+  updated_at: 2010-08-25 18:15:47
+  customer_vendor_flag: C
+  ref_no: 
+  update_flag: V
+  trans_flag: A
+  created_by: 180
+  trans_bk: PS01
+  lock_version: 0
+  updated_by: 180
+  id: 4846
+  customer_vendor_id: 101
+  description: ""
+  credit_amt: "0.00"
+  trans_no: "2044"
+  hdr_serial_no: "501"
+  gl_account_id: 219
+  account_period_code: "201008"
+  company_id: 100
+  ref_date: 
+  dtl_serial_no: "1"
+  trans_date: 2010-08-25 00:00:00
+  trans_type: I
+  debit_amt: "500.00"
+  ref_bk: 
+  created_at: 2010-08-25 18:15:47
+GL_DETAILS_120: 
+  module_code: SAOI
+  post_flag: U
+  updated_at: 2010-08-20 11:47:28
+  customer_vendor_flag: C
+  ref_no: 
+  update_flag: V
+  trans_flag: A
+  created_by: 180
+  trans_bk: PS01
+  lock_version: 0
+  updated_by: 180
+  id: 4742
+  customer_vendor_id: 100
+  description: ""
+  credit_amt: "0.00"
+  trans_no: "2030"
+  hdr_serial_no: "501"
+  gl_account_id: 176
+  account_period_code: "201008"
+  company_id: 100
+  ref_date: 
+  dtl_serial_no: "502"
+  trans_date: 2010-08-20 00:00:00
+  trans_type: I
+  debit_amt: "371.00"
+  ref_bk: 
+  created_at: 2010-08-20 11:47:28
+GL_DETAILS_008: 
+  module_code: FAAR
+  post_flag: U
+  updated_at: 2010-08-07 15:05:56
+  customer_vendor_flag: 
+  ref_no: "121212"
+  update_flag: V
+  trans_flag: A
+  created_by: 100
+  trans_bk: IN01
+  lock_version: 0
+  updated_by: 100
+  id: 4481
+  customer_vendor_id: 100
+  description: ""
+  credit_amt: "0.00"
+  trans_no: "1001"
+  hdr_serial_no: "301"
+  gl_account_id: 144
+  account_period_code: "201008"
+  company_id: 1
+  ref_date: 2010-08-07 00:00:00
+  dtl_serial_no: "201"
+  trans_date: 2010-08-07 00:00:00
+  trans_type: I
+  debit_amt: "2500.00"
+  ref_bk: IN01
+  created_at: 2010-08-07 15:05:56
+GL_DETAILS_093: 
+  module_code: SAOI
+  post_flag: U
+  updated_at: 2010-08-18 18:05:54
+  customer_vendor_flag: C
+  ref_no: 
+  update_flag: V
+  trans_flag: A
+  created_by: 100
+  trans_bk: PS01
+  lock_version: 0
+  updated_by: 100
+  id: 4643
+  customer_vendor_id: 101
+  description: ""
+  credit_amt: "0.00"
+  trans_no: "2018"
+  hdr_serial_no: "501"
+  gl_account_id: 219
+  account_period_code: "201008"
+  company_id: 100
+  ref_date: 
+  dtl_serial_no: "1"
+  trans_date: 2010-08-18 00:00:00
+  trans_type: I
+  debit_amt: "64100.00"
+  ref_bk: 
+  created_at: 2010-08-18 18:05:54
+GL_DETAILS_065: 
+  module_code: SAOI
+  post_flag: U
+  updated_at: 2010-08-18 15:42:26
+  customer_vendor_flag: C
+  ref_no: 
+  update_flag: V
+  trans_flag: A
+  created_by: 100
+  trans_bk: PS01
+  lock_version: 0
+  updated_by: 100
+  id: 4598
+  customer_vendor_id: 500
+  description: ""
+  credit_amt: "16799.00"
+  trans_no: "2012"
+  hdr_serial_no: "501"
+  gl_account_id: 144
+  account_period_code: "201008"
+  company_id: 100
+  ref_date: 
+  dtl_serial_no: "501"
+  trans_date: 2010-08-18 00:00:00
+  trans_type: I
+  debit_amt: "0.00"
+  ref_bk: 
+  created_at: 2010-08-18 15:42:26
+GL_DETAILS_037: 
+  module_code: SAOI
+  post_flag: U
+  updated_at: 2010-08-19 11:41:10
+  customer_vendor_flag: C
+  ref_no: 
+  update_flag: V
+  trans_flag: A
+  created_by: 100
+  trans_bk: PS01
+  lock_version: 0
+  updated_by: 100
+  id: 4664
+  customer_vendor_id: 460
+  description: ""
+  credit_amt: "0.00"
+  trans_no: "2019"
+  hdr_serial_no: "501"
+  gl_account_id: 219
+  account_period_code: "201008"
+  company_id: 100
+  ref_date: 
+  dtl_serial_no: "1"
+  trans_date: 2010-08-19 00:00:00
+  trans_type: I
+  debit_amt: "46700.00"
+  ref_bk: 
+  created_at: 2010-08-19 11:41:10
+GL_DETAILS_121: 
+  module_code: SAOI
+  post_flag: U
+  updated_at: 2010-08-20 11:47:28
+  customer_vendor_flag: C
+  ref_no: 
+  update_flag: V
+  trans_flag: A
+  created_by: 180
+  trans_bk: PS01
+  lock_version: 0
+  updated_by: 180
+  id: 4743
+  customer_vendor_id: 100
+  description: ""
+  credit_amt: "0.00"
+  trans_no: "2030"
+  hdr_serial_no: "501"
+  gl_account_id: 219
+  account_period_code: "201008"
+  company_id: 100
+  ref_date: 
+  dtl_serial_no: "1"
+  trans_date: 2010-08-20 00:00:00
+  trans_type: I
+  debit_amt: "5300.00"
+  ref_bk: 
+  created_at: 2010-08-20 11:47:28
+GL_DETAILS_009: 
+  module_code: FAAR
+  post_flag: U
+  updated_at: 2010-08-07 15:06:19
+  customer_vendor_flag: 
+  ref_no: "1212"
+  update_flag: V
+  trans_flag: A
+  created_by: 100
+  trans_bk: IN01
+  lock_version: 0
+  updated_by: 100
+  id: 4482
+  customer_vendor_id: 100
+  description: ""
+  credit_amt: "3200.00"
+  trans_no: "1002"
+  hdr_serial_no: "301"
+  gl_account_id: 353
+  account_period_code: "201008"
+  company_id: 1
+  ref_date: 2010-08-07 00:00:00
+  dtl_serial_no: "102"
+  trans_date: 2010-08-07 00:00:00
+  trans_type: I
+  debit_amt: "0.00"
+  ref_bk: IN01
+  created_at: 2010-08-07 15:06:19
+GL_DETAILS_094: 
+  module_code: SAOI
+  post_flag: U
+  updated_at: 2010-08-19 12:13:44
+  customer_vendor_flag: C
+  ref_no: 
+  update_flag: V
+  trans_flag: A
+  created_by: 100
+  trans_bk: PS01
+  lock_version: 0
+  updated_by: 100
+  id: 4677
+  customer_vendor_id: 500
+  description: ""
+  credit_amt: "0.00"
+  trans_no: "2023"
+  hdr_serial_no: "501"
+  gl_account_id: 219
+  account_period_code: "201008"
+  company_id: 100
+  ref_date: 
+  dtl_serial_no: "1"
+  trans_date: 2010-08-19 00:00:00
+  trans_type: I
+  debit_amt: "303900.00"
+  ref_bk: 
+  created_at: 2010-08-19 12:13:44
+GL_DETAILS_066: 
+  module_code: SAOI
+  post_flag: U
+  updated_at: 2010-08-18 15:42:26
+  customer_vendor_flag: C
+  ref_no: 
+  update_flag: V
+  trans_flag: A
+  created_by: 100
+  trans_bk: PS01
+  lock_version: 0
+  updated_by: 100
+  id: 4599
+  customer_vendor_id: 500
+  description: ""
+  credit_amt: "0.00"
+  trans_no: "2012"
+  hdr_serial_no: "501"
+  gl_account_id: 176
+  account_period_code: "201008"
+  company_id: 100
+  ref_date: 
+  dtl_serial_no: "502"
+  trans_date: 2010-08-18 00:00:00
+  trans_type: I
+  debit_amt: "1099.00"
+  ref_bk: 
+  created_at: 2010-08-18 15:42:26
+GL_DETAILS_038: 
+  module_code: SAOI
+  post_flag: U
+  updated_at: 2010-08-19 11:41:10
+  customer_vendor_flag: C
+  ref_no: 
+  update_flag: V
+  trans_flag: A
+  created_by: 100
+  trans_bk: PS01
+  lock_version: 0
+  updated_by: 100
+  id: 4665
+  customer_vendor_id: 460
+  description: ""
+  credit_amt: "0.00"
+  trans_no: "2019"
+  hdr_serial_no: "501"
+  gl_account_id: 219
+  account_period_code: "201008"
+  company_id: 100
+  ref_date: 
+  dtl_serial_no: "1"
+  trans_date: 2010-08-19 00:00:00
+  trans_type: I
+  debit_amt: "156100.00"
+  ref_bk: 
+  created_at: 2010-08-19 11:41:10
+GL_DETAILS_150: 
+  module_code: SAOI
+  post_flag: U
+  updated_at: 2010-08-23 14:40:19
+  customer_vendor_flag: C
+  ref_no: 
+  update_flag: V
+  trans_flag: A
+  created_by: 100
+  trans_bk: PS01
+  lock_version: 0
+  updated_by: 100
+  id: 4778
+  customer_vendor_id: 101
+  description: ""
+  credit_amt: "0.00"
+  trans_no: "2034"
+  hdr_serial_no: "501"
+  gl_account_id: 176
+  account_period_code: "201008"
+  company_id: 100
+  ref_date: 
+  dtl_serial_no: "502"
+  trans_date: 2010-08-23 00:00:00
+  trans_type: I
+  debit_amt: "3927.00"
+  ref_bk: 
+  created_at: 2010-08-23 14:40:19
+GL_DETAILS_122: 
+  module_code: FAXX
+  post_flag: U
+  updated_at: 2010-09-08 12:56:52
+  customer_vendor_flag: 
+  ref_no: "545"
+  update_flag: V
+  trans_flag: A
+  created_by: 100
+  trans_bk: RE01
+  lock_version: 0
+  updated_by: 100
+  id: 4900
+  customer_vendor_id: 100
+  description: by minal
+  credit_amt: "345.00"
+  trans_no: "1002"
+  hdr_serial_no: "101"
+  gl_account_id: 144
+  account_period_code: "201009"
+  company_id: 1
+  ref_date: 2010-09-08 00:00:00
+  dtl_serial_no: "202"
+  trans_date: 2010-09-08 00:00:00
+  trans_type: DEPS
+  debit_amt: "0.00"
+  ref_bk: 
+  created_at: 2010-09-08 12:56:52
+GL_DETAILS_095: 
+  module_code: SAOI
+  post_flag: U
+  updated_at: 2010-08-19 12:16:20
+  customer_vendor_flag: C
+  ref_no: 
+  update_flag: V
+  trans_flag: A
+  created_by: 180
+  trans_bk: PS01
+  lock_version: 0
+  updated_by: 180
+  id: 4678
+  customer_vendor_id: 506
+  description: ""
+  credit_amt: "14124.00"
+  trans_no: "2024"
+  hdr_serial_no: "501"
+  gl_account_id: 144
+  account_period_code: "201008"
+  company_id: 100
+  ref_date: 
+  dtl_serial_no: "501"
+  trans_date: 2010-08-19 00:00:00
+  trans_type: I
+  debit_amt: "0.00"
+  ref_bk: 
+  created_at: 2010-08-19 12:16:20
+GL_DETAILS_067: 
+  module_code: SAOI
+  post_flag: U
+  updated_at: 2010-08-18 15:42:26
+  customer_vendor_flag: C
+  ref_no: 
+  update_flag: V
+  trans_flag: A
+  created_by: 100
+  trans_bk: PS01
+  lock_version: 0
+  updated_by: 100
+  id: 4600
+  customer_vendor_id: 500
+  description: ""
+  credit_amt: "0.00"
+  trans_no: "2012"
+  hdr_serial_no: "501"
+  gl_account_id: 219
+  account_period_code: "201008"
+  company_id: 100
+  ref_date: 
+  dtl_serial_no: "1"
+  trans_date: 2010-08-18 00:00:00
+  trans_type: I
+  debit_amt: "15700.00"
+  ref_bk: 
+  created_at: 2010-08-18 15:42:26
+GL_DETAILS_039: 
+  module_code: SAOI
+  post_flag: U
+  updated_at: 2010-08-18 14:27:12
+  customer_vendor_flag: C
+  ref_no: 
+  update_flag: V
+  trans_flag: A
+  created_by: 100
+  trans_bk: PS01
+  lock_version: 0
+  updated_by: 100
+  id: 4570
+  customer_vendor_id: 203
+  description: ""
+  credit_amt: "1819.00"
+  trans_no: "2007"
+  hdr_serial_no: "501"
+  gl_account_id: 144
+  account_period_code: "201008"
+  company_id: 100
+  ref_date: 
+  dtl_serial_no: "501"
+  trans_date: 2010-08-18 00:00:00
+  trans_type: I
+  debit_amt: "0.00"
+  ref_bk: 
+  created_at: 2010-08-18 14:27:12
+GL_DETAILS_151: 
+  module_code: SAOI
+  post_flag: U
+  updated_at: 2010-08-23 14:40:19
+  customer_vendor_flag: C
+  ref_no: 
+  update_flag: V
+  trans_flag: A
+  created_by: 100
+  trans_bk: PS01
+  lock_version: 0
+  updated_by: 100
+  id: 4779
+  customer_vendor_id: 101
+  description: ""
+  credit_amt: "0.00"
+  trans_no: "2034"
+  hdr_serial_no: "501"
+  gl_account_id: 219
+  account_period_code: "201008"
+  company_id: 100
+  ref_date: 
+  dtl_serial_no: "1"
+  trans_date: 2010-08-23 00:00:00
+  trans_type: I
+  debit_amt: "56100.00"
+  ref_bk: 
+  created_at: 2010-08-23 14:40:19
+GL_DETAILS_123: 
+  module_code: SAOI
+  post_flag: U
+  updated_at: 2010-08-23 10:36:24
+  customer_vendor_flag: C
+  ref_no: 
+  update_flag: V
+  trans_flag: A
+  created_by: 180
+  trans_bk: PS01
+  lock_version: 0
+  updated_by: 180
+  id: 4766
+  customer_vendor_id: 100
+  description: ""
+  credit_amt: "8132.00"
+  trans_no: "2032"
+  hdr_serial_no: "501"
+  gl_account_id: 144
+  account_period_code: "201008"
+  company_id: 100
+  ref_date: 
+  dtl_serial_no: "501"
+  trans_date: 2010-08-23 00:00:00
+  trans_type: I
+  debit_amt: "0.00"
+  ref_bk: 
+  created_at: 2010-08-23 10:36:24
+GL_DETAILS_096: 
+  module_code: SAOI
+  post_flag: U
+  updated_at: 2010-08-19 12:16:20
+  customer_vendor_flag: C
+  ref_no: 
+  update_flag: V
+  trans_flag: A
+  created_by: 180
+  trans_bk: PS01
+  lock_version: 0
+  updated_by: 180
+  id: 4679
+  customer_vendor_id: 506
+  description: ""
+  credit_amt: "0.00"
+  trans_no: "2024"
+  hdr_serial_no: "501"
+  gl_account_id: 176
+  account_period_code: "201008"
+  company_id: 100
+  ref_date: 
+  dtl_serial_no: "502"
+  trans_date: 2010-08-19 00:00:00
+  trans_type: I
+  debit_amt: "924.00"
+  ref_bk: 
+  created_at: 2010-08-19 12:16:20
+GL_DETAILS_068: 
+  module_code: SAOI
+  post_flag: U
+  updated_at: 2010-08-18 15:49:35
+  customer_vendor_flag: C
+  ref_no: 
+  update_flag: V
+  trans_flag: A
+  created_by: 100
+  trans_bk: PS01
+  lock_version: 0
+  updated_by: 100
+  id: 4604
+  customer_vendor_id: 201
+  description: ""
+  credit_amt: "28141.00"
+  trans_no: "2013"
+  hdr_serial_no: "501"
+  gl_account_id: 144
+  account_period_code: "201008"
+  company_id: 100
+  ref_date: 
+  dtl_serial_no: "501"
+  trans_date: 2010-08-18 00:00:00
+  trans_type: I
+  debit_amt: "0.00"
+  ref_bk: 
+  created_at: 2010-08-18 15:49:35
+GL_DETAILS_180: 
+  module_code: SAOI
+  post_flag: U
+  updated_at: 2010-08-25 18:16:32
+  customer_vendor_flag: C
+  ref_no: 
+  update_flag: V
+  trans_flag: A
+  created_by: 100
+  trans_bk: PS01
+  lock_version: 0
+  updated_by: 100
+  id: 4847
+  customer_vendor_id: 721
+  description: ""
+  credit_amt: "89987.00"
+  trans_no: "2045"
+  hdr_serial_no: "501"
+  gl_account_id: 144
+  account_period_code: "201008"
+  company_id: 100
+  ref_date: 
+  dtl_serial_no: "501"
+  trans_date: 2010-08-25 00:00:00
+  trans_type: I
+  debit_amt: "0.00"
+  ref_bk: 
+  created_at: 2010-08-25 18:16:32
+GL_DETAILS_152: 
+  module_code: SAOI
+  post_flag: U
+  updated_at: 2010-08-25 10:31:43
+  customer_vendor_flag: C
+  ref_no: 
+  update_flag: V
+  trans_flag: A
+  created_by: 180
+  trans_bk: PS01
+  lock_version: 0
+  updated_by: 180
+  id: 4805
+  customer_vendor_id: 100
+  description: ""
+  credit_amt: "0.00"
+  trans_no: "2038"
+  hdr_serial_no: "501"
+  gl_account_id: 219
+  account_period_code: "201008"
+  company_id: 100
+  ref_date: 
+  dtl_serial_no: "1"
+  trans_date: 2010-08-25 00:00:00
+  trans_type: I
+  debit_amt: "14700.00"
+  ref_bk: 
+  created_at: 2010-08-25 10:31:43
+GL_DETAILS_124: 
+  module_code: SAOI
+  post_flag: U
+  updated_at: 2010-08-20 10:45:29
+  customer_vendor_flag: C
+  ref_no: 
+  update_flag: V
+  trans_flag: A
+  created_by: 180
+  trans_bk: PS01
+  lock_version: 0
+  updated_by: 180
+  id: 4738
+  customer_vendor_id: 127
+  description: ""
+  credit_amt: "9202.00"
+  trans_no: "2031"
+  hdr_serial_no: "501"
+  gl_account_id: 144
+  account_period_code: "201008"
+  company_id: 100
+  ref_date: 
+  dtl_serial_no: "501"
+  trans_date: 2010-08-20 00:00:00
+  trans_type: I
+  debit_amt: "0.00"
+  ref_bk: 
+  created_at: 2010-08-20 10:45:29
+GL_DETAILS_010: 
+  module_code: FAAR
+  post_flag: U
+  updated_at: 2010-08-07 15:06:19
+  customer_vendor_flag: 
+  ref_no: "1212"
+  update_flag: V
+  trans_flag: A
+  created_by: 100
+  trans_bk: IN01
+  lock_version: 0
+  updated_by: 100
+  id: 4483
+  customer_vendor_id: 100
+  description: ""
+  credit_amt: "0.00"
+  trans_no: "1002"
+  hdr_serial_no: "301"
+  gl_account_id: 144
+  account_period_code: "201008"
+  company_id: 1
+  ref_date: 2010-08-07 00:00:00
+  dtl_serial_no: "201"
+  trans_date: 2010-08-07 00:00:00
+  trans_type: I
+  debit_amt: "3200.00"
+  ref_bk: IN01
+  created_at: 2010-08-07 15:06:19
+GL_DETAILS_069: 
+  module_code: SAOI
+  post_flag: U
+  updated_at: 2010-08-18 15:49:35
+  customer_vendor_flag: C
+  ref_no: 
+  update_flag: V
+  trans_flag: A
+  created_by: 100
+  trans_bk: PS01
+  lock_version: 0
+  updated_by: 100
+  id: 4605
+  customer_vendor_id: 201
+  description: ""
+  credit_amt: "0.00"
+  trans_no: "2013"
+  hdr_serial_no: "501"
+  gl_account_id: 176
+  account_period_code: "201008"
+  company_id: 100
+  ref_date: 
+  dtl_serial_no: "502"
+  trans_date: 2010-08-18 00:00:00
+  trans_type: I
+  debit_amt: "1841.00"
+  ref_bk: 
+  created_at: 2010-08-18 15:49:35
+GL_DETAILS_097: 
+  module_code: SAOI
+  post_flag: U
+  updated_at: 2010-08-19 12:16:20
+  customer_vendor_flag: C
+  ref_no: 
+  update_flag: V
+  trans_flag: A
+  created_by: 180
+  trans_bk: PS01
+  lock_version: 0
+  updated_by: 180
+  id: 4680
+  customer_vendor_id: 506
+  description: ""
+  credit_amt: "0.00"
+  trans_no: "2024"
+  hdr_serial_no: "501"
+  gl_account_id: 219
+  account_period_code: "201008"
+  company_id: 100
+  ref_date: 
+  dtl_serial_no: "1"
+  trans_date: 2010-08-19 00:00:00
+  trans_type: I
+  debit_amt: "13200.00"
+  ref_bk: 
+  created_at: 2010-08-19 12:16:20
+GL_DETAILS_181: 
+  module_code: SAOI
+  post_flag: U
+  updated_at: 2010-08-25 18:16:32
+  customer_vendor_flag: C
+  ref_no: 
+  update_flag: V
+  trans_flag: A
+  created_by: 100
+  trans_bk: PS01
+  lock_version: 0
+  updated_by: 100
+  id: 4848
+  customer_vendor_id: 721
+  description: ""
+  credit_amt: "0.00"
+  trans_no: "2045"
+  hdr_serial_no: "501"
+  gl_account_id: 176
+  account_period_code: "201008"
+  company_id: 100
+  ref_date: 
+  dtl_serial_no: "502"
+  trans_date: 2010-08-25 00:00:00
+  trans_type: I
+  debit_amt: "5887.00"
+  ref_bk: 
+  created_at: 2010-08-25 18:16:32
+GL_DETAILS_153: 
+  module_code: SAOI
+  post_flag: U
+  updated_at: 2010-08-25 10:31:43
+  customer_vendor_flag: C
+  ref_no: 
+  update_flag: V
+  trans_flag: A
+  created_by: 180
+  trans_bk: PS01
+  lock_version: 0
+  updated_by: 180
+  id: 4803
+  customer_vendor_id: 100
+  description: ""
+  credit_amt: "15729.00"
+  trans_no: "2038"
+  hdr_serial_no: "501"
+  gl_account_id: 144
+  account_period_code: "201008"
+  company_id: 100
+  ref_date: 
+  dtl_serial_no: "501"
+  trans_date: 2010-08-25 00:00:00
+  trans_type: I
+  debit_amt: "0.00"
+  ref_bk: 
+  created_at: 2010-08-25 10:31:43
+GL_DETAILS_125: 
+  module_code: SAOI
+  post_flag: U
+  updated_at: 2010-08-20 10:45:29
+  customer_vendor_flag: C
+  ref_no: 
+  update_flag: V
+  trans_flag: A
+  created_by: 180
+  trans_bk: PS01
+  lock_version: 0
+  updated_by: 180
+  id: 4739
+  customer_vendor_id: 127
+  description: ""
+  credit_amt: "0.00"
+  trans_no: "2031"
+  hdr_serial_no: "501"
+  gl_account_id: 176
+  account_period_code: "201008"
+  company_id: 100
+  ref_date: 
+  dtl_serial_no: "502"
+  trans_date: 2010-08-20 00:00:00
+  trans_type: I
+  debit_amt: "602.00"
+  ref_bk: 
+  created_at: 2010-08-20 10:45:29
+GL_DETAILS_011: 
+  module_code: PUOI
+  post_flag: U
+  updated_at: 2010-08-12 14:10:14
+  customer_vendor_flag: V
+  ref_no: 
+  update_flag: V
+  trans_flag: A
+  created_by: 180
+  trans_bk: PI01
+  lock_version: 0
+  updated_by: 180
+  id: 4520
+  customer_vendor_id: 361
+  description: ""
+  credit_amt: "0.00"
+  trans_no: "5001"
+  hdr_serial_no: "501"
+  gl_account_id: 153
+  account_period_code: "201008"
+  company_id: 1
+  ref_date: 
+  dtl_serial_no: "501"
+  trans_date: 2010-08-12 00:00:00
+  trans_type: I
+  debit_amt: "12000.00"
+  ref_bk: 
+  created_at: 2010-08-12 14:10:14
+GL_DETAILS_098: 
+  module_code: SAOI
+  post_flag: U
+  updated_at: 2010-08-19 12:35:38
+  customer_vendor_flag: C
+  ref_no: 
+  update_flag: V
+  trans_flag: A
+  created_by: 100
+  trans_bk: PS01
+  lock_version: 0
+  updated_by: 100
+  id: 4681
+  customer_vendor_id: 203
+  description: ""
+  credit_amt: "50290.00"
+  trans_no: "2025"
+  hdr_serial_no: "501"
+  gl_account_id: 144
+  account_period_code: "201008"
+  company_id: 100
+  ref_date: 
+  dtl_serial_no: "501"
+  trans_date: 2010-08-19 00:00:00
+  trans_type: I
+  debit_amt: "0.00"
+  ref_bk: 
+  created_at: 2010-08-19 12:35:38
+GL_DETAILS_182: 
+  module_code: SAOI
+  post_flag: U
+  updated_at: 2010-08-25 18:16:33
+  customer_vendor_flag: C
+  ref_no: 
+  update_flag: V
+  trans_flag: A
+  created_by: 100
+  trans_bk: PS01
+  lock_version: 0
+  updated_by: 100
+  id: 4849
+  customer_vendor_id: 721
+  description: ""
+  credit_amt: "0.00"
+  trans_no: "2045"
+  hdr_serial_no: "501"
+  gl_account_id: 219
+  account_period_code: "201008"
+  company_id: 100
+  ref_date: 
+  dtl_serial_no: "1"
+  trans_date: 2010-08-25 00:00:00
+  trans_type: I
+  debit_amt: "8900.00"
+  ref_bk: 
+  created_at: 2010-08-25 18:16:33
+GL_DETAILS_154: 
+  module_code: SAOI
+  post_flag: U
+  updated_at: 2010-08-25 16:13:55
+  customer_vendor_flag: C
+  ref_no: 
+  update_flag: V
+  trans_flag: A
+  created_by: 180
+  trans_bk: PS01
+  lock_version: 0
+  updated_by: 180
+  id: 4829
+  customer_vendor_id: 680
+  description: ""
+  credit_amt: "8132.00"
+  trans_no: "2039"
+  hdr_serial_no: "501"
+  gl_account_id: 144
+  account_period_code: "201008"
+  company_id: 100
+  ref_date: 
+  dtl_serial_no: "501"
+  trans_date: 2010-08-25 00:00:00
+  trans_type: I
+  debit_amt: "0.00"
+  ref_bk: 
+  created_at: 2010-08-25 16:13:55
+GL_DETAILS_126: 
+  module_code: SAOI
+  post_flag: U
+  updated_at: 2010-08-23 10:36:24
+  customer_vendor_flag: C
+  ref_no: 
+  update_flag: V
+  trans_flag: A
+  created_by: 180
+  trans_bk: PS01
+  lock_version: 0
+  updated_by: 180
+  id: 4767
+  customer_vendor_id: 100
+  description: ""
+  credit_amt: "0.00"
+  trans_no: "2032"
+  hdr_serial_no: "501"
+  gl_account_id: 176
+  account_period_code: "201008"
+  company_id: 100
+  ref_date: 
+  dtl_serial_no: "502"
+  trans_date: 2010-08-23 00:00:00
+  trans_type: I
+  debit_amt: "532.00"
+  ref_bk: 
+  created_at: 2010-08-23 10:36:24
+GL_DETAILS_012: 
+  module_code: PUOI
+  post_flag: U
+  updated_at: 2010-08-12 14:10:14
+  customer_vendor_flag: V
+  ref_no: 
+  update_flag: V
+  trans_flag: A
+  created_by: 180
+  trans_bk: PI01
+  lock_version: 0
+  updated_by: 180
+  id: 4521
+  customer_vendor_id: 361
+  description: ""
+  credit_amt: "12000.00"
+  trans_no: "5001"
+  hdr_serial_no: "501"
+  gl_account_id: 480
+  account_period_code: "201008"
+  company_id: 1
+  ref_date: 
+  dtl_serial_no: "1"
+  trans_date: 2010-08-12 00:00:00
+  trans_type: I
+  debit_amt: "0.00"
+  ref_bk: 
+  created_at: 2010-08-12 14:10:14
+GL_DETAILS_040: 
+  module_code: SAOI
+  post_flag: U
+  updated_at: 2010-08-18 14:27:12
+  customer_vendor_flag: C
+  ref_no: 
+  update_flag: V
+  trans_flag: A
+  created_by: 100
+  trans_bk: PS01
+  lock_version: 0
+  updated_by: 100
+  id: 4571
+  customer_vendor_id: 203
+  description: ""
+  credit_amt: "0.00"
+  trans_no: "2007"
+  hdr_serial_no: "501"
+  gl_account_id: 176
+  account_period_code: "201008"
+  company_id: 100
+  ref_date: 
+  dtl_serial_no: "502"
+  trans_date: 2010-08-18 00:00:00
+  trans_type: I
+  debit_amt: "119.00"
+  ref_bk: 
+  created_at: 2010-08-18 14:27:12
+GL_DETAILS_099: 
+  module_code: SAOI
+  post_flag: U
+  updated_at: 2010-08-19 12:35:38
+  customer_vendor_flag: C
+  ref_no: 
+  update_flag: V
+  trans_flag: A
+  created_by: 100
+  trans_bk: PS01
+  lock_version: 0
+  updated_by: 100
+  id: 4682
+  customer_vendor_id: 203
+  description: ""
+  credit_amt: "0.00"
+  trans_no: "2025"
+  hdr_serial_no: "501"
+  gl_account_id: 176
+  account_period_code: "201008"
+  company_id: 100
+  ref_date: 
+  dtl_serial_no: "502"
+  trans_date: 2010-08-19 00:00:00
+  trans_type: I
+  debit_amt: "3290.00"
+  ref_bk: 
+  created_at: 2010-08-19 12:35:38
+GL_DETAILS_183: 
+  module_code: SAOI
+  post_flag: U
+  updated_at: 2010-08-25 18:16:33
+  customer_vendor_flag: C
+  ref_no: 
+  update_flag: V
+  trans_flag: A
+  created_by: 100
+  trans_bk: PS01
+  lock_version: 0
+  updated_by: 100
+  id: 4850
+  customer_vendor_id: 721
+  description: ""
+  credit_amt: "0.00"
+  trans_no: "2045"
+  hdr_serial_no: "501"
+  gl_account_id: 219
+  account_period_code: "201008"
+  company_id: 100
+  ref_date: 
+  dtl_serial_no: "1"
+  trans_date: 2010-08-25 00:00:00
+  trans_type: I
+  debit_amt: "75200.00"
+  ref_bk: 
+  created_at: 2010-08-25 18:16:33
+GL_DETAILS_155: 
+  module_code: SAOI
+  post_flag: U
+  updated_at: 2010-08-25 16:13:55
+  customer_vendor_flag: C
+  ref_no: 
+  update_flag: V
+  trans_flag: A
+  created_by: 180
+  trans_bk: PS01
+  lock_version: 0
+  updated_by: 180
+  id: 4830
+  customer_vendor_id: 680
+  description: ""
+  credit_amt: "0.00"
+  trans_no: "2039"
+  hdr_serial_no: "501"
+  gl_account_id: 176
+  account_period_code: "201008"
+  company_id: 100
+  ref_date: 
+  dtl_serial_no: "502"
+  trans_date: 2010-08-25 00:00:00
+  trans_type: I
+  debit_amt: "532.00"
+  ref_bk: 
+  created_at: 2010-08-25 16:13:55
+GL_DETAILS_127: 
+  module_code: SAOI
+  post_flag: U
+  updated_at: 2010-08-23 10:36:24
+  customer_vendor_flag: C
+  ref_no: 
+  update_flag: V
+  trans_flag: A
+  created_by: 180
+  trans_bk: PS01
+  lock_version: 0
+  updated_by: 180
+  id: 4768
+  customer_vendor_id: 100
+  description: ""
+  credit_amt: "0.00"
+  trans_no: "2032"
+  hdr_serial_no: "501"
+  gl_account_id: 219
+  account_period_code: "201008"
+  company_id: 100
+  ref_date: 
+  dtl_serial_no: "1"
+  trans_date: 2010-08-23 00:00:00
+  trans_type: I
+  debit_amt: "7600.00"
+  ref_bk: 
+  created_at: 2010-08-23 10:36:24
+GL_DETAILS_041: 
+  module_code: SAOI
+  post_flag: U
+  updated_at: 2010-08-18 14:27:12
+  customer_vendor_flag: C
+  ref_no: 
+  update_flag: V
+  trans_flag: A
+  created_by: 100
+  trans_bk: PS01
+  lock_version: 0
+  updated_by: 100
+  id: 4572
+  customer_vendor_id: 203
+  description: ""
+  credit_amt: "0.00"
+  trans_no: "2007"
+  hdr_serial_no: "501"
+  gl_account_id: 219
+  account_period_code: "201008"
+  company_id: 100
+  ref_date: 
+  dtl_serial_no: "1"
+  trans_date: 2010-08-18 00:00:00
+  trans_type: I
+  debit_amt: "1700.00"
+  ref_bk: 
+  created_at: 2010-08-18 14:27:12
+GL_DETAILS_013: 
+  module_code: SAOI
+  post_flag: U
+  updated_at: 2010-08-18 13:02:38
+  customer_vendor_flag: C
+  ref_no: 
+  update_flag: V
+  trans_flag: A
+  created_by: 100
+  trans_bk: PS01
+  lock_version: 0
+  updated_by: 100
+  id: 4540
+  customer_vendor_id: 126
+  description: ""
+  credit_amt: "2996.00"
+  trans_no: "2001"
+  hdr_serial_no: "501"
+  gl_account_id: 144
+  account_period_code: "201008"
+  company_id: 100
+  ref_date: 
+  dtl_serial_no: "501"
+  trans_date: 2010-08-18 00:00:00
+  trans_type: I
+  debit_amt: "0.00"
+  ref_bk: 
+  created_at: 2010-08-18 13:02:38
+GL_DETAILS_184: 
+  module_code: SAOI
+  post_flag: U
+  updated_at: 2010-08-25 18:20:57
+  customer_vendor_flag: C
+  ref_no: 
+  update_flag: V
+  trans_flag: A
+  created_by: 100
+  trans_bk: PS01
+  lock_version: 0
+  updated_by: 100
+  id: 4851
+  customer_vendor_id: 720
+  description: ""
+  credit_amt: "5243.00"
+  trans_no: "2046"
+  hdr_serial_no: "501"
+  gl_account_id: 144
+  account_period_code: "201008"
+  company_id: 100
+  ref_date: 
+  dtl_serial_no: "501"
+  trans_date: 2010-08-25 00:00:00
+  trans_type: I
+  debit_amt: "0.00"
+  ref_bk: 
+  created_at: 2010-08-25 18:20:57
+GL_DETAILS_156: 
+  module_code: SAOI
+  post_flag: U
+  updated_at: 2010-08-25 16:13:55
+  customer_vendor_flag: C
+  ref_no: 
+  update_flag: V
+  trans_flag: A
+  created_by: 180
+  trans_bk: PS01
+  lock_version: 0
+  updated_by: 180
+  id: 4831
+  customer_vendor_id: 680
+  description: ""
+  credit_amt: "0.00"
+  trans_no: "2039"
+  hdr_serial_no: "501"
+  gl_account_id: 219
+  account_period_code: "201008"
+  company_id: 100
+  ref_date: 
+  dtl_serial_no: "1"
+  trans_date: 2010-08-25 00:00:00
+  trans_type: I
+  debit_amt: "7600.00"
+  ref_bk: 
+  created_at: 2010-08-25 16:13:55
+GL_DETAILS_070: 
+  module_code: SAOI
+  post_flag: U
+  updated_at: 2010-08-18 15:49:35
+  customer_vendor_flag: C
+  ref_no: 
+  update_flag: V
+  trans_flag: A
+  created_by: 100
+  trans_bk: PS01
+  lock_version: 0
+  updated_by: 100
+  id: 4606
+  customer_vendor_id: 201
+  description: ""
+  credit_amt: "0.00"
+  trans_no: "2013"
+  hdr_serial_no: "501"
+  gl_account_id: 219
+  account_period_code: "201008"
+  company_id: 100
+  ref_date: 
+  dtl_serial_no: "1"
+  trans_date: 2010-08-18 00:00:00
+  trans_type: I
+  debit_amt: "10500.00"
+  ref_bk: 
+  created_at: 2010-08-18 15:49:35
+GL_DETAILS_042: 
+  module_code: SAOI
+  post_flag: U
+  updated_at: 2010-08-18 14:42:59
+  customer_vendor_flag: C
+  ref_no: 
+  update_flag: V
+  trans_flag: A
+  created_by: 100
+  trans_bk: PS01
+  lock_version: 0
+  updated_by: 100
+  id: 4573
+  customer_vendor_id: 102
+  description: ""
+  credit_amt: "2568.00"
+  trans_no: "2008"
+  hdr_serial_no: "501"
+  gl_account_id: 144
+  account_period_code: "201008"
+  company_id: 100
+  ref_date: 
+  dtl_serial_no: "501"
+  trans_date: 2010-08-18 00:00:00
+  trans_type: I
+  debit_amt: "0.00"
+  ref_bk: 
+  created_at: 2010-08-18 14:42:59
+GL_DETAILS_014: 
+  module_code: FAXX
+  post_flag: U
+  updated_at: 2010-08-10 14:53:27
+  customer_vendor_flag: 
+  ref_no: ref1010
+  update_flag: V
+  trans_flag: A
+  created_by: 100
+  trans_bk: CM01
+  lock_version: 0
+  updated_by: 100
+  id: 4506
+  customer_vendor_id: 403
+  description: ""
+  credit_amt: "0.00"
+  trans_no: "6001"
+  hdr_serial_no: "201"
+  gl_account_id: 105
+  account_period_code: "201008"
+  company_id: 1
+  ref_date: 2010-08-10 00:00:00
+  dtl_serial_no: "101"
+  trans_date: 2010-08-10 00:00:00
+  trans_type: I
+  debit_amt: "450.00"
+  ref_bk: 
+  created_at: 2010-08-10 14:53:27
+GL_DETAILS_185: 
+  module_code: SAOI
+  post_flag: U
+  updated_at: 2010-08-25 18:20:57
+  customer_vendor_flag: C
+  ref_no: 
+  update_flag: V
+  trans_flag: A
+  created_by: 100
+  trans_bk: PS01
+  lock_version: 0
+  updated_by: 100
+  id: 4852
+  customer_vendor_id: 720
+  description: ""
+  credit_amt: "0.00"
+  trans_no: "2046"
+  hdr_serial_no: "501"
+  gl_account_id: 176
+  account_period_code: "201008"
+  company_id: 100
+  ref_date: 
+  dtl_serial_no: "502"
+  trans_date: 2010-08-25 00:00:00
+  trans_type: I
+  debit_amt: "343.00"
+  ref_bk: 
+  created_at: 2010-08-25 18:20:57
+GL_DETAILS_157: 
+  module_code: SAOI
+  post_flag: U
+  updated_at: 2010-08-25 16:41:12
+  customer_vendor_flag: C
+  ref_no: 
+  update_flag: V
+  trans_flag: A
+  created_by: 180
+  trans_bk: PS01
+  lock_version: 0
+  updated_by: 180
+  id: 4832
+  customer_vendor_id: 102
+  description: ""
+  credit_amt: "1284.00"
+  trans_no: "2002"
+  hdr_serial_no: "501"
+  gl_account_id: 144
+  account_period_code: "201008"
+  company_id: 1
+  ref_date: 
+  dtl_serial_no: "501"
+  trans_date: 2010-08-25 00:00:00
+  trans_type: I
+  debit_amt: "0.00"
+  ref_bk: 
+  created_at: 2010-08-25 16:41:12
+GL_DETAILS_128: 
+  module_code: FAXX
+  post_flag: U
+  updated_at: 2010-09-08 12:56:52
+  customer_vendor_flag: 
+  ref_no: "545"
+  update_flag: V
+  trans_flag: A
+  created_by: 100
+  trans_bk: RE01
+  lock_version: 0
+  updated_by: 100
+  id: 4901
+  customer_vendor_id: 100
+  description: by minal
+  credit_amt: "0.00"
+  trans_no: "1002"
+  hdr_serial_no: "101"
+  gl_account_id: 349
+  account_period_code: "201009"
+  company_id: 1
+  ref_date: 2010-09-08 00:00:00
+  dtl_serial_no: "201"
+  trans_date: 2010-09-08 00:00:00
+  trans_type: DEPS
+  debit_amt: "345.00"
+  ref_bk: 
+  created_at: 2010-09-08 12:56:52
+GL_DETAILS_071: 
+  module_code: SAOI
+  post_flag: U
+  updated_at: 2010-08-18 15:49:35
+  customer_vendor_flag: C
+  ref_no: 
+  update_flag: V
+  trans_flag: A
+  created_by: 100
+  trans_bk: PS01
+  lock_version: 0
+  updated_by: 100
+  id: 4607
+  customer_vendor_id: 201
+  description: ""
+  credit_amt: "0.00"
+  trans_no: "2013"
+  hdr_serial_no: "501"
+  gl_account_id: 219
+  account_period_code: "201008"
+  company_id: 100
+  ref_date: 
+  dtl_serial_no: "1"
+  trans_date: 2010-08-18 00:00:00
+  trans_type: I
+  debit_amt: "15800.00"
+  ref_bk: 
+  created_at: 2010-08-18 15:49:35
+GL_DETAILS_043: 
+  module_code: SAOI
+  post_flag: U
+  updated_at: 2010-08-18 14:42:59
+  customer_vendor_flag: C
+  ref_no: 
+  update_flag: V
+  trans_flag: A
+  created_by: 100
+  trans_bk: PS01
+  lock_version: 0
+  updated_by: 100
+  id: 4574
+  customer_vendor_id: 102
+  description: ""
+  credit_amt: "0.00"
+  trans_no: "2008"
+  hdr_serial_no: "501"
+  gl_account_id: 176
+  account_period_code: "201008"
+  company_id: 100
+  ref_date: 
+  dtl_serial_no: "502"
+  trans_date: 2010-08-18 00:00:00
+  trans_type: I
+  debit_amt: "168.00"
+  ref_bk: 
+  created_at: 2010-08-18 14:42:59
+GL_DETAILS_015: 
+  module_code: FAXX
+  post_flag: U
+  updated_at: 2010-08-10 14:53:27
+  customer_vendor_flag: 
+  ref_no: ref1010
+  update_flag: V
+  trans_flag: A
+  created_by: 100
+  trans_bk: CM01
+  lock_version: 0
+  updated_by: 100
+  id: 4507
+  customer_vendor_id: 403
+  description: ""
+  credit_amt: "450.00"
+  trans_no: "6001"
+  hdr_serial_no: "201"
+  gl_account_id: 153
+  account_period_code: "201008"
+  company_id: 1
+  ref_date: 2010-08-10 00:00:00
+  dtl_serial_no: "102"
+  trans_date: 2010-08-10 00:00:00
+  trans_type: I
+  debit_amt: "0.00"
+  ref_bk: 
+  created_at: 2010-08-10 14:53:27

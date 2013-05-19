@@ -1,0 +1,28 @@
+<%%= page_title :title => "<%= plural_name.titleize %>" %>
+
+<%% box :type => "simple" do %>
+	<%% table :width => "500px" do |t| %>
+		<%% t.th "#" %>
+		<%- for attribute in attributes -%>
+	  <%% t.th "<%= attribute.column.human_name.titleize %>"  %>
+	  <%- end -%>
+		<%% t.th "Actions" %>
+
+		<%% counter = 0 %>	
+		<%% for <%= singular_name %> in @<%= plural_name %> %>
+			<%% t.td (counter += 1) %>
+			<%- for attribute in attributes -%>
+		  <%% t.td <%= singular_name %>.<%= attribute.name %> %>
+		  <%- end -%>
+			<%% t.td actions(
+				(link_to "Edit", edit_<%= singular_name %>_path(<%= singular_name %>), :class => "ajax", :update => "container"),
+				(link_to "Delete", <%= singular_name %>_path(<%= singular_name %>), :class => "ajax-delete")
+			)%>
+			<%% t.new_row %>
+		<%% end %>		
+	<%% end %>
+	<br>
+	<%%= button "new_<%= singular_name%>", "New <%= singular_name.titleize %>", :href => new_<%= singular_name %>_path, :update => "container" %>
+<%% end %>
+
+<div class="hide" id="container"></div>

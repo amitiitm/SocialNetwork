@@ -1,0 +1,12 @@
+<columns  lockedColumnCount='0'>
+
+   	<column data='day'					label='Day'			editable='false' 	visible='true' 		width='100' textAlign='left'
+		forLevel='false' 				defaultForLevel=''			booleanFlag='false'	sortDataType='N'	columnPrecision="0"/>
+
+	<column data='qty'					label='Quantity'			editable='false'	visible='true'		width='80'	textAlign='right' 
+		forLevel='false'				defaultForLevel='' 			booleanFlag='false'	sortDataType='N' 	columnPrecision="2"/>
+		
+	<column data='amount'					label='Amount'		editable='false'	visible='true'		width='80'	textAlign='right'
+		forLevel='false'				defaultForLevel='' 			booleanFlag='false'	sortDataType='N' 	columnPrecision="2"/>
+
+</columns> 

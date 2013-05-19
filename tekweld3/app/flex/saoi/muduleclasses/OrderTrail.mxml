@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:TitleWindow xmlns:fx="http://ns.adobe.com/mxml/2009" 
+				xmlns:s="library://ns.adobe.com/flex/spark" 
+				xmlns:mx="library://ns.adobe.com/flex/mx" width="528" xmlns:customcomponents="com.generic.customcomponents.*"
+				creationComplete="creationComplete()"
+				title="Order Trail" showCloseButton="true" close="closeHandler()">
+	<fx:Declarations>
+		<!-- Place non-visual elements (e.g., services, value objects) here -->
+	</fx:Declarations>
+	<fx:Script>
+		<![CDATA[
+			import com.adobe.cairngorm.business.ServiceLocator;
+			import com.generic.genclass.URL;
+			
+			import model.GenModelLocator;
+			
+			import mx.controls.Alert;
+			import mx.core.Application;
+			import mx.formatters.DateFormatter;
+			import mx.managers.CursorManager;
+			import mx.managers.PopUpManager;
+			import mx.rpc.AsyncToken;
+			import mx.rpc.IResponder;
+			import mx.rpc.events.FaultEvent;
+			import mx.rpc.events.ResultEvent;
+			import mx.rpc.http.HTTPService;
+			[Bindable]
+			public var orderDetail:XML= new XML();
+			[Bindable]
+			private var trans_no:String = '';
+			
+			private var __genModel:GenModelLocator 	= GenModelLocator.getInstance();
+			private var __service:ServiceLocator 	= __genModel.services;
+			private var __responderTrail:IResponder;
+			
+			public function dataService(service:HTTPService):HTTPService
+			{
+				var urlObj:URL				=	new URL();
+				service.url					=	urlObj.getURL(service.url);
+				service.resultFormat 		= "e4x";					
+				service.method 				= "POST";
+				service.useProxy			= false;
+				service.contentType			="application/xml";
+				service.requestTimeout	 	= 1800
+				
+				return service;
+			}
+			
+			private function creationComplete():void
+			{
+				trans_no = orderDetail.trans_no.toString();
+				var trackData:HTTPService = dataService(__service.getHTTPService("getOrderTrail"));
+				__responderTrail = new mx.rpc.Responder(trailDataResultHandler,trailDataFaultHandler);
+				
+				var token:AsyncToken = trackData.send(new XML(	<params>
+																	<trans_no>{trans_no}</trans_no>
+																</params>
+				)
+				);
+				token.addResponder(__responderTrail);	
+				
+				CursorManager.setBusyCursor();
+				Application.application.enabled = false;
+			}
+			public function trailDataResultHandler(event:ResultEvent):void
+			{
+				
+				CursorManager.removeBusyCursor();
+				Application.application.enabled = true;
+				
+				var result:XML = XML(event.result);
+				setView(result);
+				
+			}
+			public function trailDataFaultHandler(event:FaultEvent):void
+			{
+				Alert.show("trailDataFaultHandler"+event.fault.faultDetail);
+				
+				CursorManager.removeBusyCursor();
+				Application.application.enabled = true;
+			}
+			private function tree_labelFunc(item:XML):String 
+			{
+				return "Order # :  "+item.@trans_no.toString()+"	Order Date :	"+item.@trans_date.toString()+"   Cust PO :	"+item.@ext_ref_no.toString();
+			}
+
+			private function setView(xml:XML):void
+			{
+				var xmlInner:XML = new XML(<rows></rows>)
+				var tempXml:XML ;
+				var currentChild:XML  =  xmlInner;
+				for(var i:int = 0; i < xml.children().length(); i++)
+				{
+					tempXml   					= new XML(<row></row>);
+					tempXml.@['trans_no']  		= xml.children()[i].trans_no.toString();
+					tempXml.@['trans_date']  	= xml.children()[i].trans_date.toString();
+					tempXml.@['ext_ref_no']  	= xml.children()[i].ext_ref_no.toString();
+					
+					currentChild.appendChild(tempXml);	
+					currentChild   = tempXml;  
+				}
+				treeOrderTrail.dataProvider  = xmlInner.row;
+				treeOrderTrail.openItems     = xmlInner..row;
+			}
+			private function closeHandler():void
+			{
+				PopUpManager.removePopUp(this);
+			}
+		]]>
+	</fx:Script>
+	<mx:HBox width="100%" verticalAlign="top"  verticalGap="0">
+			<mx:Tree id="treeOrderTrail"  width="100%" labelFunction="tree_labelFunc"/>
+	</mx:HBox>
+</mx:TitleWindow>

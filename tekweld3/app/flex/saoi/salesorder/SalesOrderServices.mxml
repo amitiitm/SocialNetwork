@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rds:CommonServices xmlns:rds="business.*" xmlns:mx="http://www.adobe.com/2006/mxml">
+
+	<mx:HTTPService id="saveRecord" 						url="/sale/regular_order/create_orders" />
+	<mx:HTTPService id="getRecord" 							url="/sale/regular_order/show_order" />
+	<mx:HTTPService id="getList" 							url="/sale/regular_order/list_orders" />
+	<mx:HTTPService id="artworkUploadUrl" 					url="/artwork/artwork/upload_artwork_attachments" />
+	<mx:HTTPService id="printRecord" 						url="/sale/sales_report/render_sales_order_format" />
+	<mx:HTTPService id="sendToCustomer" 					url="/artwork/artwork/send_artwork_to_customer" />
+	<mx:HTTPService id="printJob"							url="/sale/sales_report/render_sales_order_job_format" />
+	<mx:HTTPService id="resendAcknowledgment" 				url="/sale/sales/resend_order_acknowledgment" />
+	<mx:HTTPService id="getDataForTracking" 				url="/sale/sales/show_order_and_artwork_flow" />
+	<mx:HTTPService id="validateUniqueness" 				url="/setup/setup/validate_uniqueness" />
+	<mx:HTTPService id="validateCreditCard" 				url="/payment/payment/validate_credit_card" />
+	<mx:HTTPService id="getEstimatedShipDate" 				url="/shipping/shipping/calculate_estimated_ship_date_and_packages"/>
+	<mx:HTTPService id="getPaymentUrl" 						url="/payment/payment/make_payment" />
+	<mx:HTTPService id="shippingUploadUrl" 					url="/shipping/shipping/convert_exceltoxml_to_for_sales_order_shippings" />
+	<mx:HTTPService id="createAndCapture" 					url="/payment/payment/create_payment_profile_and_authorize" />
+	<mx:HTTPService id="getThreads" 						url="/production/production_embroidery/list_embroidery_threads"/>
+	<mx:HTTPService id="generatePO" 						url="/purchase/purchase_order/create_po_from_so"/>
+	<mx:HTTPService id="sendArtworkForEstimation" 			url="/production/production_embroidery/resend_artwork_for_embroidery_estimation"/>
+	<mx:HTTPService id="cancelAuthorizePayment" 			url="/payment/payment/cancel_authorized_transaction"/>
+	<mx:HTTPService id="getInhandDate" 						url="/shipping/shipping/get_inhand_date"/>
+	<mx:HTTPService id="getShippingmethodsFromApi" 			url="/shipping/shipping/get_shipping_methods"/>
+	<mx:HTTPService id="reSendProof" 						url="/shipping/shipping/get_shipping_methods"/>
+	<mx:HTTPService id="sendTrackingInfo" 					url="/shipping/shipping/send_package_tracking_info"/>
+	
+	
+	<mx:HTTPService id="discountCouponDetailFormat" 		url="saoi/salesorder/xmls/SalesOrderDiscountCouponsDetailStru.xml" />
+	<mx:HTTPService id="detailFormat" 						url="saoi/salesorder/xmls/SalesOrderShippingImportStru.xml"/>
+	<mx:HTTPService id="artworkDetailFormat" 				url="saoi/salesorder/xmls/SalesOrderArtworkDetailStru.xml" /> 
+	<mx:HTTPService id="getListFormat" 						url="saoi/salesorder/xmls/SalesOrderListStru.xml" />
+	<mx:HTTPService id="getViewFormat" 						url="saoi/salesorder/xmls/SalesOrderCriteriaStru.xml" />
+	<mx:HTTPService id="lineDetailFormat" 					url="saoi/salesorder/xmls/SalesOrderLineDetailStru.xml" />
+	<mx:HTTPService id="lineActivityFormat" 				url="saoi/salesorder/xmls/SalesOrderActivityDetailStru.xml" />
+	<mx:HTTPService id="serviceDetailFormat" 				url="saoi/salesorder/xmls/SalesOrderServiceDetailStru.xml" />
+	<mx:HTTPService id="shippingDetailFormat" 				url="saoi/salesorder/xmls/SalesOrderShippingDetailStru.xml" />
+	<mx:HTTPService id="shippingHeaderDetailFormat" 		url="saoi/salesorder/xmls/SalesOrderShippingHeaderDetailStru.xml" />
+	<mx:HTTPService id="optionDetailFormat" 				url="saoi/salesorder/xmls/OptionDetailStru.xml" />
+	<mx:HTTPService id="paymentInfoActivityDetailFormat" 	url="saoi/salesorder/xmls/SalesOrderPaymentActivityDetailStru.xml" />
+	<mx:HTTPService id="queryDetailFormat" 					url="saoi/salesorder/xmls/SalesOrderQueriesDetailStru.xml" />
+	<mx:HTTPService id="dgItemPacketsGridFormat" 			url="saoi/salesorder/xmls/SalesOrderItemPacketsDetailStru.xml" />
+	<mx:HTTPService id="dgInvoicesFormat" 					url="saoi/salesorder/xmls/SalesOrderInvoiceslStru.xml" />
+	<mx:HTTPService id="subRecordGridFormatService" 		url="saoi/salesorder/xmls/SalesOrderSubRecordStru.xml" />
+	
+	
+	
+</rds:CommonServices>

@@ -1,0 +1,38 @@
+<% cid = @type == 'outbound' ? 'Customer Number' : 'Customer CID' %>
+<tr>
+  <th class="header1" scope="col" width="120">
+    <div class="tableTitleHeading" style="width:70px;">SID</div>
+  </th>
+  <th class="header1" scope="col" width="120">
+    <div class="tableTitleHeading" style="width:96px;">Date</div>
+  </th>
+  <th class="header1" scope="col" width="111">
+    <div class="tableTitleHeading" style="width:93px;"><%= cid %></div>
+  </th>
+  <th class="header1" scope="col" width="123">
+    <div class="tableTitleHeading" style="width:105px;">Customer Name</div>
+  </th>
+  <th class="header1" scope="col" width="80">
+    <div class="tableTitleHeading" style="width:79px;">Disposition</div>
+  </th>
+  <th class="header1" scope="col" width="70">
+    <div class="tableTitleHeading" style="width:52px;">Conv</div>
+  </th>
+  <% if @type!='outbound' %>
+    <th class="header1" scope="col" width="70">
+      <div class="tableTitleHeading" style="width:52px;">VM</div>
+    </th>
+  <% end %>
+  <th class="header1" scope="col" width="72">
+    <div class="tableTitleHeading" style="width:54px;">Agent</div>
+  </th>
+  <th class="header1" scope="col" width="44">
+    <div class="tableTitleHeading" style="width:26px;">Ext</div>
+  </th>
+  <th class="header1" scope="col" width="36">
+    <div class="tableTitleHeading" style="width:45px;">Notes</div>
+  </th>
+  <th class="header1" scope="col" width="88">
+    <div class="tableTitleHeading" style="width:76px;">Missed Call Age</div>
+  </th>
+</tr>

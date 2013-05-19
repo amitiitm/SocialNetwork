@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<gencomponents:DetailAddEdit xmlns:mx="http://www.adobe.com/2006/mxml"
+	width="660" height="140" verticalGap="0"
+	xmlns:customcomponents="com.generic.customcomponents.*"
+	xmlns:gencomponents="com.generic.components.*">
+
+	<mx:Script source="../scripts/ItemProductionDaysDetailScript.as"/>
+	
+	<mx:VBox height="100%" width="100%" >    
+	
+		
+		<mx:HBox>
+			<mx:Label text="Tier 1" width="95" textAlign="right"/>
+			<customcomponents:GenTextInput id="tiColumn1"  height="20" textAlign="right"
+				updatableFlag="true" width="110" tabIndex="3" xmlTag="production_day1" defaultValue ="0"
+				tableName="catalog_item_production_day" itemChangedEvent="setColumnsOrder()"
+				dataType="N" rounding="false" setDefaultOnEmpty="true"
+				maxValue="9999999999" validationFlag="true" toolTip="Quantity"/>
+				
+			<mx:Label text="Tier 6" width="95" textAlign="right"/>
+			<customcomponents:GenTextInput id="tiColumn6"  height="20" textAlign="right"
+				updatableFlag="true" width="110" tabIndex="8" xmlTag="production_day6" defaultValue ="0"
+				tableName="catalog_item_production_day" itemChangedEvent="setColumnsOrder()"
+				dataType="N" rounding="false" setDefaultOnEmpty="true"
+				maxValue="9999999999" validationFlag="true" toolTip="Quantity"/>
+			
+			<mx:Label text="Tier 11" width="95" textAlign="right"/>
+			<customcomponents:GenTextInput id="tiColumn11"  height="20" textAlign="right"
+										   updatableFlag="true" width="110" tabIndex="13" xmlTag="production_day11" defaultValue ="0"
+										   tableName="catalog_item_production_day" itemChangedEvent="setColumnsOrder()"
+										   dataType="N" rounding="false" setDefaultOnEmpty="true"
+										   maxValue="9999999999" validationFlag="true" toolTip="Quantity"/>	
+			
+		</mx:HBox>
+		
+			<mx:HBox>
+			<mx:Label text="Tier 2" width="95" textAlign="right"/>
+			<customcomponents:GenTextInput id="tiColumn2"  height="20" textAlign="right"
+				updatableFlag="true" width="110" tabIndex="4" xmlTag="production_day2" defaultValue ="0"
+				tableName="catalog_item_production_day" itemChangedEvent="setColumnsOrder()"
+				dataType="N" rounding="false" setDefaultOnEmpty="true"
+				maxValue="9999999999" validationFlag="true" toolTip="Quantity"/>
+			<mx:Label text="Tier 7" width="95" textAlign="right"/>
+			<customcomponents:GenTextInput id="tiColumn7"  height="20" textAlign="right"
+				updatableFlag="true" width="110" tabIndex="9" xmlTag="production_day7" defaultValue ="0"
+				tableName="catalog_item_production_day" itemChangedEvent="setColumnsOrder()"
+				dataType="N" rounding="false" setDefaultOnEmpty="true"
+				maxValue="9999999999" validationFlag="true" toolTip="Quantity"/>
+				
+				<mx:Label text="Tier 12" width="95" textAlign="right"/>
+				<customcomponents:GenTextInput id="tiColumn12"  height="20" textAlign="right"
+											   updatableFlag="true" width="110" tabIndex="14" xmlTag="production_day12" defaultValue ="0"
+											   tableName="catalog_item_production_day" itemChangedEvent="setColumnsOrder()"
+											   dataType="N" rounding="false" setDefaultOnEmpty="true"
+											   maxValue="9999999999" validationFlag="true" toolTip="Quantity"/>	
+		</mx:HBox>
+			<mx:HBox>
+			<mx:Label text="Tier 3" width="95" textAlign="right"/>
+			<customcomponents:GenTextInput id="tiColumn3"  height="20" textAlign="right"
+				updatableFlag="true" width="110" tabIndex="5" xmlTag="production_day3" defaultValue ="0"
+				tableName="catalog_item_production_day" itemChangedEvent="setColumnsOrder()"
+				dataType="N" rounding="false" setDefaultOnEmpty="true"
+				maxValue="9999999999" validationFlag="true" toolTip="Quantity"/>
+			<mx:Label text="Tier 8" width="95" textAlign="right"/>
+			<customcomponents:GenTextInput id="tiColumn8"  height="20" textAlign="right"
+				updatableFlag="true" width="110" tabIndex="10" xmlTag="production_day8" defaultValue ="0"
+				tableName="catalog_item_production_day" itemChangedEvent="setColumnsOrder()"
+				dataType="N" rounding="false" setDefaultOnEmpty="true"
+				maxValue="9999999999" validationFlag="true" toolTip="Quantity"/>
+				
+				<mx:Label text="Tier 13" width="95" textAlign="right"/>
+				<customcomponents:GenTextInput id="tiColumn13"  height="20" textAlign="right"
+											   updatableFlag="true" width="110" tabIndex="15" xmlTag="production_day13" defaultValue ="0"
+											   tableName="catalog_item_production_day" itemChangedEvent="setColumnsOrder()"
+											   dataType="N" rounding="false" setDefaultOnEmpty="true"
+											   maxValue="9999999999" validationFlag="true" toolTip="Quantity"/>	
+		</mx:HBox>
+			<mx:HBox>
+			<mx:Label text="Tier 4" width="95" textAlign="right"/>
+			<customcomponents:GenTextInput id="tiColumn4"  height="20" textAlign="right"
+				updatableFlag="true" width="110" tabIndex="6" xmlTag="production_day4" defaultValue ="0"
+				tableName="catalog_item_production_day" itemChangedEvent="setColumnsOrder()"
+				dataType="N" rounding="false" setDefaultOnEmpty="true"
+				maxValue="9999999999" validationFlag="true" toolTip="Quantity"/>
+			<mx:Label text="Tier 9" width="95" textAlign="right"/>
+			<customcomponents:GenTextInput id="tiColumn9"  height="20" textAlign="right"
+				updatableFlag="true" width="110" tabIndex="11" xmlTag="production_day9" defaultValue ="0"
+				tableName="catalog_item_production_day" itemChangedEvent="setColumnsOrder()"
+				dataType="N" rounding="false" setDefaultOnEmpty="true"
+				maxValue="9999999999" validationFlag="true" toolTip="Quantity"/>
+				
+				<mx:Label text="Tier 14" width="95" textAlign="right"/>
+				<customcomponents:GenTextInput id="tiColumn14"  height="20" textAlign="right"
+											   updatableFlag="true" width="110" tabIndex="16" xmlTag="production_day14" defaultValue ="0"
+											   tableName="catalog_item_production_day" itemChangedEvent="setColumnsOrder()"
+											   dataType="N" rounding="false" setDefaultOnEmpty="true"
+											   maxValue="9999999999" validationFlag="true" toolTip="Quantity"/>
+				
+		</mx:HBox>
+			<mx:HBox>
+			<mx:Label text="Tier 5" width="95" textAlign="right"/>
+			<customcomponents:GenTextInput id="tiColumn5"  height="20" textAlign="right"
+				updatableFlag="true" width="110" tabIndex="7" xmlTag="production_day5" defaultValue ="0"
+				tableName="catalog_item_production_day" itemChangedEvent="setColumnsOrder()"
+				dataType="N" rounding="false" setDefaultOnEmpty="true"
+				maxValue="9999999999" validationFlag="true" toolTip="Quantity"/>
+			<mx:Label text="Tier 10" width="95" textAlign="right"/>
+			<customcomponents:GenTextInput id="tiColumn10"  height="20" textAlign="right"
+				updatableFlag="true" width="110" tabIndex="12" xmlTag="production_day10" defaultValue ="0"
+				tableName="catalog_item_production_day" itemChangedEvent="setColumnsOrder()"
+				dataType="N" rounding="false" setDefaultOnEmpty="true"
+				maxValue="9999999999" validationFlag="true" toolTip="Quantity"/>	
+				<mx:Label text="Tier 15" width="95" textAlign="right"/>
+				<customcomponents:GenTextInput id="tiColumn15"  height="20" textAlign="right"
+											   updatableFlag="true" width="110" tabIndex="17" xmlTag="production_day15" defaultValue ="0"
+											   tableName="catalog_item_production_day" itemChangedEvent="setColumnsOrder()"
+											   dataType="N" rounding="false" setDefaultOnEmpty="true"
+											   maxValue="9999999999" validationFlag="true" toolTip="Quantity"/>		
+		</mx:HBox>
+		
+		<mx:HBox height="0" width="0" visible="false" includeInLayout="false" >
+			<mx:Label text="Status" width="95" textAlign="right"/>
+			<customcomponents:GenComboBox id="cbTrans_flag" width="110" cornerRadius="0" xmlTag="trans_flag" updatableFlag="true"
+				tableName="catalog_item_production_day"  tabIndex="6" defaultValue="A" labelField="label" 
+				dataProvider="{__genModel.masterData.child('trans_flag').trans_flag}" />
+			<mx:Label text="Column 1" width="95" textAlign="right"/>
+		</mx:HBox>
+		
+	
+		<customcomponents:GenTextInput id="tiSerial_no" width="0" height="0" visible="false"
+			editable="true" enabled="true" xmlTag="serial_no" updatableFlag="true"
+			tableName="catalog_item_production_day" defaultValue=""  maxChars="4" toolTip="Serial #" />
+	
+	</mx:VBox>
+</gencomponents:DetailAddEdit>

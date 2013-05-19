@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:TitleWindow xmlns:fx="http://ns.adobe.com/mxml/2009" 
+		 xmlns:s="library://ns.adobe.com/flex/spark" 
+		 xmlns:mx="library://ns.adobe.com/flex/mx" width="328" height="154" xmlns:customcomponents="com.generic.customcomponents.*"
+		 creationComplete="creationComplete()"
+		 title="Generate PO #" showCloseButton="true" close="closeHandler()">
+	<fx:Declarations>
+		<!-- Place non-visual elements (e.g., services, value objects) here -->
+	</fx:Declarations>
+	<fx:Script>
+		<![CDATA[
+			import com.adobe.cairngorm.business.ServiceLocator;
+			import com.generic.genclass.URL;
+			
+			import model.GenModelLocator;
+			
+			import mx.controls.Alert;
+			import mx.core.Application;
+			import mx.managers.CursorManager;
+			import mx.managers.PopUpManager;
+			import mx.rpc.AsyncToken;
+			import mx.rpc.IResponder;
+			import mx.rpc.events.FaultEvent;
+			import mx.rpc.events.ResultEvent;
+			import mx.rpc.http.HTTPService;
+			
+			import saoi.muduleclasses.event.MissingInfoEvent;
+			import saoi.salesorder.SalesOrderModelLocator;
+			
+			private var __genModel:GenModelLocator = GenModelLocator.getInstance();
+			private var __service:ServiceLocator = __genModel.services;
+			private var __responder:IResponder;
+			
+			public function dataService(service:HTTPService):HTTPService
+			{
+				var urlObj:URL				=	new URL();
+				service.url					=	urlObj.getURL(service.url);
+				service.resultFormat 		= "e4x";					
+				service.method 				= "POST";
+				service.useProxy			= false;
+				service.contentType			="application/xml";
+				service.requestTimeout	 	= 1800
+				
+				return service;
+			}
+			private function saveService():void
+			{
+				var service:HTTPService 	= dataService(__service.getHTTPService("generatePO"));
+				__responder					= new mx.rpc.Responder(serviceResultHandler,serviceFaultHandler);
+				var tempXml:XML				= new XML(<params>
+															<vendor_id>{dcVendor_id.dataValue}</vendor_id>
+															<order_id>{__genModel.activeModelLocator.addEditObj.record.children()[0].id.toString()}</order_id>
+															<created_by>{__genModel.user.userID}</created_by>
+														</params>);
+				var token:AsyncToken = service.send(tempXml);
+				token.addResponder(__responder);	
+				
+				CursorManager.setBusyCursor();
+				Application.application.enabled = false;
+			}
+			public function serviceResultHandler(event:ResultEvent):void
+			{
+				CursorManager.removeBusyCursor();
+				Application.application.enabled = true;
+				
+				var resultXml:XML  = XML(event.result);
+				
+				if(resultXml.name() == "errors")
+				{
+					if(resultXml.children().length() > 0) 
+					{
+						var message:String = '';
+						
+						for(var i:uint = 0; i < resultXml.children().length(); i++) 
+						{
+							message += resultXml.children()[i] + "\n";
+						}
+						Alert.show(message);
+					} 
+				}
+				else
+				{
+					Alert.show(resultXml.toString());
+					dispatchEvent(new MissingInfoEvent(MissingInfoEvent.MissingInfoEvent_Type,resultXml));
+					closeHandler();
+				}
+			}
+			public function serviceFaultHandler(event:FaultEvent):void
+			{
+				Alert.show("POGenerateFaultHandler"+event.fault.faultDetail);
+				
+				CursorManager.removeBusyCursor();
+				Application.application.enabled = true;
+			}
+			
+			private function creationComplete():void
+			{
+				
+			}
+			private function setDefaaultView():void
+			{
+				
+			}
+			private function closeHandler():void
+			{
+				PopUpManager.removePopUp(this);
+			}
+			private function saveClickHandler():void
+			{
+				if(!__genModel.isLockScreen)
+				{
+					if(dcVendor_id.dataValue!='')
+					{
+						saveService();
+					}
+					else
+					{
+						Alert.show("Please Select Vendor");
+					}
+				}
+				else
+				{
+					Alert.show("In Progress, Try Again");
+				}
+				
+			}
+		]]>
+	</fx:Script>
+	<mx:HBox width="100%" height="50" verticalGap="0" horizontalGap="5" verticalAlign="middle">
+		<mx:HBox width="100%" height="4%" verticalAlign="middle"  verticalGap="0">
+			<mx:Label text="Vendor #"  width="80" textAlign="right" height="20"/>
+			<customcomponents:GenTextInputWithHelp id="dcVendor_id"
+												   width="158" height="20" 
+												   toolTip="Customer #" defaultValue=""
+												   dataField="id" 		labelField="code"
+												   xmlTag="vendor_id" 	labelTag="vendor_code"
+												   dataSourceName="Vendor" 
+												   tabIndex="10"  itemChangedEvent=""  
+												   validationFlag="true" 
+												   updatableFlag="true" tableName="sales_order"
+												   />
+		</mx:HBox>
+	</mx:HBox>
+	<mx:HBox width="100%" height="46" verticalAlign="middle" horizontalGap="5" horizontalAlign="center"  verticalGap="0">
+		<mx:Button label="Save" click="saveClickHandler()"/>
+		<mx:Button label="Cancel" click="closeHandler()"/>
+	</mx:HBox>
+</mx:TitleWindow>

@@ -1,0 +1,60 @@
+<%= debug flash[:error] %>
+<div id="pages-middle" class="round-corners-pages">
+        <div id="registration-container" class="pages">
+          <div id="login-lookup-dist" class="round-corners shadow">
+            <% form_tag session_path do -%>
+              <div id="login" class="float-lft">
+                <h2 style="font-size:18px; color:#666; padding:20px">
+                  <img src="images/login/login.png" class="mar" alt="Login"/> user login</h2>
+                <%if flash[:error].blank?%>
+                <p style="color:#666;"> Please enter your<span> Email</span> and <span> Password</span> to log into your
+                  account. </p>
+                <%else%>
+                <p style="color:#F00;"> Please enter correct<span> Email</span> and <span> Password</span> to log into
+                <%end%>
+                  <!--your account. </p> <?php }?>-->
+                <table width="200" border="0" align="center" cellpadding="3px">
+                  <tr>
+                    <td class="email-pass">
+                      <div align="left" style="font-size: 13px">User Name/Email:</div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div align="left">
+                        <%= text_field_tag 'login', @login %>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="email-pass">
+                      <div align="left"  style="font-size: 13px">Password:</div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div align="left">
+                        <%= password_field_tag 'password', nil %>
+                      </div>
+                    </td>
+                  </tr>
+                </table>
+                <div id="login-btn">
+                  <input class="btn_submit" name="reg" id="reg" type="submit" value="">
+                </div>
+                <!-- login-btn -->
+              </div>
+              <!-- login -->
+            <%end%>
+          </div>
+        </div>
+      </div>
+
+
+<script type="text/javascript">
+  $('#sidebar-left').attr('id','');
+  $('#page_wrapper').attr('id','');
+  $('#publish_date').remove();
+  $('.trigger').remove();
+
+</script>

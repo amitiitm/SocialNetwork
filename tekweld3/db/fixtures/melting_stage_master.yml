@@ -1,0 +1,209 @@
+--- 
+melting_stage_master_016: 
+  stage_name: Update Commission
+  updated_at: 
+  sequence_no: 160
+  update_flag: Y
+  stage_code: UPDATECOMMISSION
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 29
+  company_id: 1
+  created_at: 
+melting_stage_master_005: 
+  stage_name: Send Offer With Video
+  updated_at: 
+  sequence_no: 50
+  update_flag: Y
+  stage_code: SENDOFFERWITHVIDEO
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 18
+  company_id: 1
+  created_at: 
+melting_stage_master_006: 
+  stage_name: Update Customer Response
+  updated_at: 
+  sequence_no: 60
+  update_flag: Y
+  stage_code: UPDATECUSTOMERRESPONSE
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 19
+  company_id: 1
+  created_at: 
+melting_stage_master_007: 
+  stage_name: First Offer Reminder
+  updated_at: 
+  sequence_no: 70
+  update_flag: Y
+  stage_code: FIRSTOFFERREMINDER
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 20
+  company_id: 1
+  created_at: 
+melting_stage_master_008: 
+  stage_name: Second Offer Reminder
+  updated_at: 
+  sequence_no: 80
+  update_flag: Y
+  stage_code: SECONDOFFERREMINDER
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 21
+  company_id: 1
+  created_at: 
+melting_stage_master_009: 
+  stage_name: Print Check
+  updated_at: 
+  sequence_no: 90
+  update_flag: Y
+  stage_code: PRINTCHECK
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 22
+  company_id: 1
+  created_at: 
+melting_stage_master_010: 
+  stage_name: First Deposit Reminder
+  updated_at: 
+  sequence_no: 100
+  update_flag: Y
+  stage_code: FIRSTDEPOSITREMINDER
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 23
+  company_id: 1
+  created_at: 
+melting_stage_master_011: 
+  stage_name: Second Deposit Reminder
+  updated_at: 
+  sequence_no: 110
+  update_flag: Y
+  stage_code: SECONDDEPOSITREMINDER
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 24
+  company_id: 1
+  created_at: 
+melting_stage_master_012: 
+  stage_name: Verify Check
+  updated_at: 
+  sequence_no: 120
+  update_flag: Y
+  stage_code: VERIFYCHECK
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 25
+  company_id: 1
+  created_at: 
+melting_stage_master_001: 
+  stage_name: Receive Packet
+  updated_at: 
+  sequence_no: 10
+  update_flag: Y
+  stage_code: RECEIVEPACKET
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 14
+  company_id: 1
+  created_at: 
+melting_stage_master_013: 
+  stage_name: Update Check Status
+  updated_at: 
+  sequence_no: 130
+  update_flag: Y
+  stage_code: UPDATECHECKSTATUS
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 26
+  company_id: 1
+  created_at: 
+melting_stage_master_002: 
+  stage_name: Attach Video
+  updated_at: 
+  sequence_no: 20
+  update_flag: Y
+  stage_code: ATTACHVIDEO
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 15
+  company_id: 1
+  created_at: 
+melting_stage_master_014: 
+  stage_name: Stop Payment
+  updated_at: 
+  sequence_no: 140
+  update_flag: Y
+  stage_code: STOPPAYMENT
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 27
+  company_id: 1
+  created_at: 
+melting_stage_master_003: 
+  stage_name: Metal Analysis
+  updated_at: 
+  sequence_no: 30
+  update_flag: Y
+  stage_code: METALANALYSIS
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 16
+  company_id: 1
+  created_at: 
+melting_stage_master_015: 
+  stage_name: Return Packet
+  updated_at: 
+  sequence_no: 150
+  update_flag: Y
+  stage_code: RETURNPACKET
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 28
+  company_id: 1
+  created_at: 
+melting_stage_master_004: 
+  stage_name: Calculate Offer
+  updated_at: 
+  sequence_no: 40
+  update_flag: Y
+  stage_code: CALCULATEOFFER
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 17
+  company_id: 1
+  created_at: 

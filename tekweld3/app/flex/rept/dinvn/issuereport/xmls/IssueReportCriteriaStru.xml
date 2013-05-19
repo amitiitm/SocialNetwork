@@ -1,0 +1,18 @@
+<columns Title = 'Dinvn'>
+
+	<column dataType="S" label="A/c Period #" checkbox="ckAll1" xmlTagFrom="str1" from="tiStr1" xmlTagTo="str2" to="tiStr2" multiSelect="mvMultiSelect1" xmlTagMultiSelect="multiselect1" lookupFlag="true" lookupName="AccountPeriod" lookupLabel="code" dataField="code" labelField="code" />
+	<column dataType="D" label="Issue Date" checkbox="ckAll2" xmlTagFrom="dt1" from="dfDt1" xmlTagTo="dt2" to="dfDt2" multiSelect="" xmlTagMultiSelect="" lookupFlag="false" lookupName="" />
+	<column dataType="S" label="Issue #" checkbox="ckAll3" xmlTagFrom="str3" from="tiStr3" xmlTagTo="str4" to="tiStr4" multiSelect="tiMultiSelect2" xmlTagMultiSelect="multiselect2" lookupFlag="false" lookupName="" />
+	<column dataType="S" label="Issue Bk" checkbox="ckAll4" xmlTagFrom="str5" from="tiStr5" xmlTagTo="str6" to="tiStr6" multiSelect="mvMultiSelect3" xmlTagMultiSelect="multiselect3" lookupFlag="false" lookupName="" />
+	<column dataType="S" label="Issue To" checkbox="ckAll7" xmlTagFrom="str9" from="tiStr9" xmlTagTo="str10" to="tiStr10" multiSelect="mvMultiSelect5" xmlTagMultiSelect="multiselect5" lookupFlag="false" lookupName=""  />
+	<column dataType="S" label="Lot #" checkbox="ckAll8" xmlTagFrom="str11" from="tiStr11" xmlTagTo="str12" to="tiStr12" multiSelect="mvMultiSelect6" xmlTagMultiSelect="multiselect6" lookupFlag="true" lookupName="DiamondLot" lookupLabel="code" dataField="code" labelField="code" />
+	<column dataType="S" label="Diam Category #" checkbox="ckAll9" xmlTagFrom="str13" from="tiStr13" xmlTagTo="str14" to="tiStr14" multiSelect="mvMultiSelect7" xmlTagMultiSelect="multiselect7" lookupFlag="true" lookupName="DiamondCategory" lookupLabel="code" dataField="code" labelField="code"	 />	
+	<column dataType="S" label="Packet #" checkbox="ckAll10" xmlTagFrom="str15" from="tiStr15" xmlTagTo="str16" to="tiStr16" multiSelect="mvMultiSelect8" xmlTagMultiSelect="multiselect8" lookupFlag="false" lookupName=""  />
+	<column dataType="S" label="Reference #" checkbox="ckAll5" xmlTagFrom="str7" from="tiStr7" xmlTagTo="str8" to="tiStr8" multiSelect="mvMultiSelect4" xmlTagMultiSelect="multiselect4" lookupFlag="false" lookupName="" />
+	<column dataType="D" label="Reference Date" checkbox="ckAll6" xmlTagFrom="dt3" from="dfDt3" xmlTagTo="dt4" to="dfDt4" multiSelect="" xmlTagMultiSelect="" lookupFlag="false" lookupName="" />
+	
+</columns>
+
+	
+	
+	

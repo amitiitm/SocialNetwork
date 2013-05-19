@@ -1,0 +1,65 @@
+<%= page_title :title => "Lead Info: #{number_to_phone(@lead.phone, :area_code => true)}" %>
+
+<div id="tabs">
+	<ul>
+		<li><%= link_to("Lead Info", "#lead-info") %></li>
+		<li><%= link_to("Notifications", lead_notifications_path(@lead)) %></li>
+		<li><%= link_to("Recorded Calls", lead_pbx_cdrs_path(@lead)) %></li>
+	</ul>
+	
+	<div id="lead-info">
+		<p>
+			Phone: <%= phone(@lead.phone, :contactable_type => "Lead", :contactable_id => @lead.id) %><br>
+			Location: <%= @lead.city.to_s.titlecase %>, <%= @lead.state.to_s.upcase %><br>
+			<% if @lead.time_zone %>
+				Local Time: <%= user_date Time.now.in_time_zone(@lead.time_zone) %><br>
+			<% else %>
+				Local Time: N/A
+			<% end %>
+		</p>
+
+		<% form_for @lead, :html => {:class => "forms"} do |f| %>
+			<ul>
+				<li>
+					<label>First Name</label>
+					<%= f.text_field :first_name %>
+				</li>
+				<li>
+					<label>Last Name</label>
+					<%= f.text_field :last_name %>
+				</li>
+				<li>
+					<label>Email</label>
+					<%= f.text_field :email %>
+				</li>
+				<li>
+					<label>Do Not Call? <%= f.check_box :do_not_call %></label>
+				</li>
+				<li>
+					<%= submit_button("Save") %> <%= button_function("convert-ac", "Convert", "convert_to_ac()") unless params[:no_memo]%> <%= loading("Saving...", "loading-leads") %>
+				</li>
+			</ul>
+		<% end -%>
+		<% unless params[:no_memo] %>
+			<% box :type => "box_title", :title => "Memos" do %>
+				<div id="memos"></div>
+			<% end %>
+		<% end %>
+	</div>
+</div>
+<%= convertable_fields(@lead) %>
+
+<script type="text/javascript" charset="utf-8">
+	$(function(){
+		$('#tabs').tabs({
+			cookie: { expires: 30 },
+			fx: { opacity: 'toggle', duration : 'fast' },
+			async: true
+		});
+		<% unless params[:no_memo] %>
+			$.get('<%= lead_memos_path(@lead) %>', function(resp){
+				$("#memos").html(resp);
+			});
+		<% end %>
+	})
+</script>

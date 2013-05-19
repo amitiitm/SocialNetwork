@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<gencomponents:AddEdit xmlns:mx="http://www.adobe.com/2006/mxml"
+	height="100%" width="100%" verticalGap="0"
+	xmlns:customcomponents="com.generic.customcomponents.*"
+	xmlns:gencomponents="com.generic.components.*"
+	creationPolicy="all" xmlns:components="saoi.salescancellation.components.*">
+	
+	<mx:Script source="../scripts/VendorAddEditScript.as"/>
+	
+	<mx:VBox width="100%" height="100%" verticalGap="3">
+		<mx:HBox width="100%" horizontalGap="4" verticalAlign="middle">
+			<mx:Label text="Code #" width="95" textAlign="right" height="20" />
+			<customcomponents:GenTextInput id="tiCode" width="137" visible="true" xmlTag="code" updatableFlag="true" toolTip="Code"
+				height="20" tabIndex="1" tableName="vendor" defaultValue="" validationFlag="false" maxChars="25" upperCaseFlag="true" enabled="false"/>
+		</mx:HBox>
+
+		<mx:HBox width="100%" horizontalGap="4" verticalAlign="middle">
+			<mx:Label text="Name" width="95" textAlign="right" height="20" />
+			<customcomponents:GenTextInput id="tiName" width="300" xmlTag="name" updatableFlag="true" tabIndex="2" tableName="vendor"
+				defaultValue="" validationFlag="true" toolTip="Name" maxChars="100" height="20" />
+			<mx:Label text="Status" width="135" textAlign="right" height="20" />
+			<customcomponents:GenComboBox id="cbTrans_flag" defaultValue="A" width="137" cornerRadius="0" xmlTag="trans_flag" updatableFlag="true"
+				tableName="vendor"  tabIndex="6" labelField="label" height="20"
+				dataProvider="{GenModelLocator.getInstance().masterData.child('trans_flag').trans_flag}" />
+		<!--	<customcomponents:GenCheckBox labelPlacement="left" label="Lab" id="cbLab_yn" width="125" xmlTag="lab_yn" height="20"
+				updatableFlag="true" tableName="vendor" defaultValue="N" textAlign="right" tabIndex="8" enabled="true" 
+				dataValueForOn="Y" dataValueForOff="N"/>-->
+		</mx:HBox>
+
+		<mx:HBox width="100%" horizontalGap="4" verticalAlign="middle">
+			<mx:Label text="Category" width="95" textAlign="right" height="20" />
+			
+			<customcomponents:GenTextInputWithHelp
+				id="dcVendor_category_id" 
+				width="137" 
+				toolTip="Catagory #" 
+				dataSourceName="VendorCategory"
+				minimumChar = "{__genModel.masterData.child('lookup').vendorcategory.value}"
+				height="20" 
+				tabIndex="3" 
+				validationFlag="true" 
+				xmlTag="vendor_category_id"
+				labelTag="vendor_category_code"
+				dataField="id" 
+				labelField= "code"
+				updatableFlag="true" 
+				tableName="vendor" 
+				itemChangedEvent="tiCategory_code.dataValue = dcVendor_category_id.labelValue"
+				/>
+			
+			<!--<customcomponents:GenDynamicComboBoxWithHelp id="dcVendor_category_id" width="137" 
+				tabIndex="3" toolTip="Catagory #" defaultValue="" height="20"
+				dataField="id"
+				dataSourceName="VendorCategory" dataProvider="{GenModelLocator.getInstance().lookupObj.vendorcategory.children()}" 
+				labelField="code" validationFlag="true" xmlTag="vendor_category_id" updatableFlag="true" tableName="vendor" />-->
+				
+			<mx:Label text="Expense A/c" width="298" textAlign="right" height="20" />
+			
+			<customcomponents:GenTextInputWithHelp
+				id="dcGl_account_id" 
+				width="137" 
+				toolTip="Expense A/c" 
+				dataSourceName="GLAccount"
+				minimumChar = "{__genModel.masterData.child('lookup').glaccount.value}"
+				height="20" 
+				tabIndex="7" 
+				validationFlag="true" 
+				xmlTag="gl_account_id"
+				labelTag="gl_account_code"
+				dataField="id" 
+				labelField= "code"
+				updatableFlag="true" 
+				tableName="vendor" 
+				itemChangedEvent="tiGL_account_code.dataValue = dcGl_account_id.labelValue"
+				/>
+			
+			<!--<customcomponents:GenDynamicComboBoxWithHelp id="dcGl_account_id" width="137" 
+				tabIndex="7" toolTip="Expense A/c" defaultValue="" height="20"
+				dataField="id"
+				dataSourceName="GLAccount" dataProvider="{GenModelLocator.getInstance().lookupObj.glaccount.children()}" 
+				labelField="code" validationFlag="true" xmlTag="gl_account_id" updatableFlag="true" tableName="vendor" />-->
+		</mx:HBox>
+		
+		<mx:Spacer height="10" width="100%" />
+		
+		<mx:TabNavigator id="tnDetail" width="100%" height="100%">
+			<mx:VBox id="vbContact" label="Contact" width="100%" height="100%" verticalGap="3" tabIndex="100">
+				<mx:HBox horizontalGap="0" verticalAlign="middle" width="100%">
+					<mx:Label text="Address" textAlign="right" width="97" height="20"/>
+					<customcomponents:GenTextInput id="tiAddress1" width="300" xmlTag="address1" updatableFlag="true"
+						tableName="vendor" defaultValue="" maxChars="50" tabIndex="10" height="20" />
+					<mx:Label text="Telephone" width="100" textAlign="right" height="20"/>
+					<customcomponents:GenTextInput id="tiPhone" width="190" xmlTag="phone" updatableFlag="true"
+						tableName="vendor" defaultValue="" tabIndex="20" maxChars="50" restrict="-0123456789" height="20"/>
+				</mx:HBox>
+				<mx:HBox horizontalGap="0" verticalAlign="middle" width="100%">
+					<mx:Spacer width="97"/>
+					<customcomponents:GenTextInput id="tiAddress2" width="300" xmlTag="address2" updatableFlag="true"
+						tableName="vendor" defaultValue="" tabIndex="11" maxChars="50" height="20" />
+					<mx:Label text="Fax" width="100" textAlign="right" height="20" />
+					<customcomponents:GenTextInput id="tiFax" width="190" xmlTag="fax" updatableFlag="true"
+						tableName="vendor" defaultValue="" tabIndex="21" maxChars="50" restrict="-0123456789" height="20" />
+				</mx:HBox>
+
+				<mx:HBox horizontalGap="0" verticalAlign="middle" width="100%">
+					<mx:Label text="City/State/Zip" textAlign="right" width="97" height="20" />
+					<customcomponents:GenTextInput id="tiCity" width="100" xmlTag="city" updatableFlag="true" tableName="vendor"
+						defaultValue="" tabIndex="12" maxChars="25" height="20" />
+					<mx:Spacer width="5"/>
+					<customcomponents:GenTextInput id="tiState" width="95" xmlTag="state" updatableFlag="true" tableName="vendor"
+						defaultValue="" tabIndex="13" maxChars="2" upperCaseFlag="true" height="20" />
+					<mx:Spacer width="5"/>
+					<customcomponents:GenTextInput id="tiZip" width="95" xmlTag="zip" updatableFlag="true" tableName="vendor"
+						defaultValue="" tabIndex="14" maxChars="15" height="20" />
+				</mx:HBox>
+				<mx:HBox horizontalGap="0" verticalAlign="middle" width="100%">
+					<mx:Label text="Country" textAlign="right" width="97" height="20" />
+					<customcomponents:GenTextInput id="tiCountry" width="40" xmlTag="country" updatableFlag="true"
+						tableName="vendor" defaultValue="US" tabIndex="15" maxChars="2" height="20" />
+				</mx:HBox>
+					
+				<mx:HBox horizontalGap="0" verticalAlign="middle" width="100%">
+					<mx:Label text="First Name" textAlign="right" width="97" height="20" />
+					<customcomponents:GenTextInput id="tiFirst_name" width="100" xmlTag="first_name" updatableFlag="true" toolTip="First Name"
+						tableName="vendor" defaultValue="" tabIndex="16" validationFlag="false" maxChars="50" height="20" />
+					<mx:Label text="Last Name" textAlign="right" width="100" height="20" />
+					<customcomponents:GenTextInput id="tiLast_name" width="100" xmlTag="last_name" updatableFlag="true" toolTip="Last Name"
+						tableName="vendor" defaultValue="" tabIndex="17" validationFlag="false" maxChars="50" height="20" />
+					<mx:Label text="Cell #" width="100" textAlign="right" height="20" />
+					<customcomponents:GenTextInput id="tiCell_no" width="190" xmlTag="cell_no" updatableFlag="true"
+						tableName="vendor" defaultValue="" tabIndex="22" maxChars="15" restrict="-0123456789" height="20" />
+				</mx:HBox>
+
+				<mx:HBox horizontalGap="0" verticalAlign="middle" width="100%">
+					<mx:Label text="Email To" textAlign="right" width="97" height="20" />
+					<customcomponents:GenTextInput id="tiEmail_to" width="300" xmlTag="email_to" updatableFlag="true" toolTip="Email to"
+						tableName="vendor" defaultValue="" tabIndex="18" validationFlag="false" maxChars="200" height="20" />
+				</mx:HBox>
+				
+				<mx:HBox horizontalGap="0" verticalAlign="middle" width="100%">
+					<mx:Label text="CC" textAlign="right" width="97" height="20" />
+					<customcomponents:GenTextInput id="tiEmail_cc" width="300" xmlTag="email_cc" updatableFlag="true" toolTip="Email CC"
+						tableName="vendor" defaultValue="" tabIndex="19" maxChars="200" validationFlag="false" height="20" />
+				</mx:HBox>
+			</mx:VBox>
+			
+			<mx:VBox id="vbOther" label="Other" width="100%" height="100%" verticalGap="3" horizontalGap="0">
+				<mx:HBox verticalAlign="middle" horizontalGap="0">
+				
+					<mx:Label text="Term"  width="127" textAlign="right" height="20" />
+					<customcomponents:GenTextInputWithHelp
+						id="dcInvoice_term_code" 
+						width="137" 
+						toolTip="Invoice Term #" 
+						tabIndex="30"
+						dataSourceName="Term"
+						minimumChar = "{__genModel.masterData.child('lookup').term.value}"
+						height="20" 
+						updatableFlag="true"
+						validationFlag="true"
+						xmlTag="invoice_term_code"
+						labelTag="invoice_term_code"
+						dataField="code"  
+						labelField= "code"
+						tableName="vendor" 
+						itemChangedEvent="setMemoTerm()"
+						/>
+					<!--<customcomponents:GenDynamicComboBoxWithHelp id="dcInvoice_term_code" width="137" 
+						tabIndex="30" toolTip="Invoice Term" defaultValue="" height="20"
+						dataField="code" 
+						dataSourceName="Term" dataProvider="{GenModelLocator.getInstance().lookupObj.term.children()}" labelField="code"
+						validationFlag="true" xmlTag="invoice_term_code" updatableFlag="true" tableName="vendor" />-->
+					<mx:Spacer width="5"/>
+					<customcomponents:GenTextInputWithHelp
+						id="dcMemo_term_code" 
+						width="0" 
+						toolTip="Memo Term #" 
+						dataSourceName="Term"
+						minimumChar = "{__genModel.masterData.child('lookup').term.value}"
+						height="0" 
+						updatableFlag="true"
+						validationFlag="true"
+						xmlTag="memo_term_code"
+						labelTag="memo_term_code"
+						dataField="code"  
+						labelField= "code"
+						tableName="vendor" 
+						visible="false"
+						includeInLayout="false"
+						/>
+					<!--<customcomponents:GenDynamicComboBoxWithHelp id="dcMemo_term_code" width="137" 
+						tabIndex="31" toolTip="Memo Term" defaultValue="" height="20"
+						dataField="code" 
+						dataSourceName="Term" dataProvider="{GenModelLocator.getInstance().lookupObj.term.children()}" labelField="code"
+						validationFlag="true" xmlTag="memo_term_code" updatableFlag="true" tableName="vendor"  />-->
+				</mx:HBox>
+				<mx:HBox verticalAlign="middle" horizontalGap="0">
+					<mx:Label text="Discount %" textAlign="right" width="127" height="20"/>
+					<customcomponents:GenTextInput id="tiDiscount_per" textAlign="right" 
+						width="137" xmlTag="discount_per" dataType="N" maxValue="999.99" height="20"
+						updatableFlag="true" tabIndex="32" tableName="vendor" defaultValue="0.00"/>
+				</mx:HBox>
+				<mx:HBox verticalAlign="middle" horizontalGap="0">
+					<mx:Label text="Credit Limit" textAlign="right" width="127" height="20"/>
+					<customcomponents:GenTextInput id="tiCredit_limit" dataType="N" maxValue="9999999999.99" rounding="false" 
+						setDefaultOnEmpty="true" textAlign="right" width="137" height="20" 
+						xmlTag="credit_limit" updatableFlag="true" tabIndex="33" tableName="vendor"  
+						defaultValue="0.00" />
+				</mx:HBox>
+				<mx:HBox verticalAlign="middle" horizontalGap="0">
+					<mx:Label text="Metal Markup" textAlign="right" width="127" height="20"/>
+					<customcomponents:GenTextInput id="tiMetal_mu" width="137" xmlTag="metal_mu" height="20"
+						updatableFlag="true" tableName="vendor" tabIndex="35" textAlign="right"
+						defaultValue="0.00" setDefaultOnEmpty="true" dataType="N" maxValue="9999999999.99"
+						validationFlag="false" toolTip="Metal Mu" />
+				</mx:HBox>
+			</mx:VBox>
+		</mx:TabNavigator>
+		<customcomponents:GenTextInput id="tiGL_account_code" width="0" xmlTag="gl_account_code" updatableFlag="true" tableName="vendor"
+						defaultValue="" height="0" visible="false"/>
+		<customcomponents:GenTextInput id="tiCategory_code" width="0" xmlTag="vendor_category_code" updatableFlag="true" tableName="vendor"
+						defaultValue="" height="0" visible="false"/>
+	</mx:VBox>
+</gencomponents:AddEdit>

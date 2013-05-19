@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rds:CommonServices xmlns:rds="business.*" xmlns:mx="http://www.adobe.com/2006/mxml">
+
+	<mx:HTTPService id="saveRecord" 						url="/setup/type/create_app_settings"/>
+	<mx:HTTPService id="getRecord" 							url="/setup/type/show_app_settings"/>
+	<mx:HTTPService id="typeFormat" 						url="stup/applicationsetting/xmls/typeDetailStru.xml" />	
+	<mx:HTTPService id="lineDetailFormat" 					url="stup/applicationsetting/xmls/DiscountCodeDetailStru.xml" />
+	<mx:HTTPService id="indigoFilePathDetailFormat" 		url="stup/applicationsetting/xmls/IndigoFilePathDetailStru.xml" />
+</rds:CommonServices>	
+

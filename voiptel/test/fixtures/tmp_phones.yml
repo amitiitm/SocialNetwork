@@ -1,0 +1,11 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  number: MyString
+  area_code: MyString
+  card_id: 1
+
+two:
+  number: MyString
+  area_code: MyString
+  card_id: 1

@@ -1,0 +1,30 @@
+<div class="inner-response">
+<%= page_title :title => "Transactions" %>
+
+<% table :width => "1100px" do |t| %>
+	<% t.th "#" %>
+	<% t.th "User" %>
+	<% t.th "Amount" %>
+	<% t.th "Tax" %>
+	<% t.th "Tot" %>
+	<% t.th "Status" %>
+	<% t.th "Date" %>				
+	<% t.th "Actions" %>
+
+  <% counter = (@size - ((@page - 1) * @limit) + 1) %>
+  <% for order in @orders do %>
+  	<% counter -= 1 %>
+		<% t.td counter %>
+		<% t.td order.user.name %>
+		<% t.td(if order.order_transaction then "$#{(order.order_transaction.amount) /100.0}" else "--" end) %>
+		<% t.td(if order.order_transaction then number_to_currency(order.order_transaction.tax_amount) else "--" end) %>
+		<% t.td(if order.order_transaction then number_to_currency(order.order_transaction.full_amount) else "--" end) %>
+		<% t.td(if order.order_transaction then order.order_transaction.message else "Failed" end) %>
+		<% t.td order.created_at %>
+		<% t.td  link_to("Log", "/orders/log/#{order.id}", :class => "ajax", :update => "container") %>
+		<% t.new_row %>
+	<%  end -%>
+<% end -%>
+<%= pager orders_path %>
+</div>
+<div id="container"></div>

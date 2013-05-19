@@ -1,0 +1,22 @@
+--- 
+purchasepeople_001: 
+  city: Edison
+  address1: 200 Metroplex drive
+  name: NA
+  zip: 08817
+  address2: suite#401
+  updated_at: 2011/01/28 18:38:37
+  fax1: 123-344-1200
+  code: NA
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  country: USA
+  lock_version: 0
+  updated_by: 1
+  id: 1
+  contact1: 123-344-1200
+  phone1: 123-344-1200
+  company_id: 1
+  state: NJ
+  created_at: 2011/01/28 18:38:37

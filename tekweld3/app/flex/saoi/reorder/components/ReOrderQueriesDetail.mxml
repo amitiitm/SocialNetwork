@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<gencomponents:DetailAddEdit xmlns:mx="http://www.adobe.com/2006/mxml"
+	width="600" height="500" verticalGap="0"
+	xmlns:customcomponents="com.generic.customcomponents.*"
+	xmlns:gencomponents="com.generic.components.*"
+	>
+
+	<mx:Script source="../scripts/ReOrderQueriesDetailScript.as"/>
+	
+	<mx:VBox height="100%" width="100%">
+		<mx:HBox width="100%" horizontalGap="2" verticalAlign="middle" visible="false" includeInLayout="false">
+			<mx:Label text="Type" width="92" textAlign="right"/>
+			<customcomponents:GenComboBox id="tiQueriesType" width="225" cornerRadius="0" xmlTag="query_type" updatableFlag="true"
+										  tableName="query"  tabIndex="1" labelField="label" height="20" defaultValue="Order"  		
+										  dataProvider="{__genModel.masterData.child('saoi_query_type').saoi_query_type}" toolTip="Query Type"/>
+		</mx:HBox>
+		<mx:HBox width="100%" horizontalGap="2" verticalAlign="middle">
+			<mx:Label text="Category" width="92" textAlign="right"/>
+			<customcomponents:GenComboBox id="tiQueriesCategory" width="225" cornerRadius="0" xmlTag="query_category" updatableFlag="true"
+										  tableName="query"  tabIndex="2" labelField="label" height="20" defaultValue="Order"  		
+										  dataProvider="{__genModel.masterData.child('saoi_query_category').saoi_query_category}" toolTip="Query Category"/>
+		</mx:HBox>
+		
+		<mx:HBox height="20" width="100%" horizontalGap="2" verticalAlign="middle" visible="false" includeInLayout="false">
+				<mx:Label text="Subject" width="92" textAlign="right"/>
+				<customcomponents:GenTextInput id="tiSubject" width="341" tabIndex="3" height="20"  updatableFlag="true" maxChars="100" xmlTag="subject" tableName="query"
+					/>
+		</mx:HBox>
+		<mx:HBox height="176" width="100%" horizontalGap="2">
+				<mx:Label text="Query" width="92" textAlign="right"/>
+				<customcomponents:GenTextArea id="tiQuery" width="341" height="100%" tabIndex="4" updatableFlag="true" maxChars="1000"  xmlTag="question" tableName="query"
+					/>
+		</mx:HBox>
+		<mx:HBox height="176" width="100%" horizontalGap="2">
+			<mx:Label text="Answer" width="92" textAlign="right"/>
+			<customcomponents:GenTextArea id="tiAnswer" width="341" height="100%" tabIndex="5" updatableFlag="true" maxChars="1000"  xmlTag="answer" tableName="query" editable="false"
+										   />
+		</mx:HBox>
+		<mx:HBox height="0" width="0" includeInLayout="false">
+				<mx:Label text="Status" width="0" height="0" textAlign="right"/>
+				<customcomponents:GenComboBox id="cbTrans_flag" width="0" height="0" cornerRadius="0" xmlTag="trans_flag" updatableFlag="true"
+					tableName="query"  labelField="label" defaultValue="A"  dataProvider="{__genModel.masterData.child('trans_flag').trans_flag}" />
+		</mx:HBox>
+		<customcomponents:GenTextInput id="tiSerial_no" width="0" height="0" visible="false"
+				editable="true" enabled="true" xmlTag="serial_no" updatableFlag="true"
+				tableName="query" defaultValue=""  />
+		<mx:HBox visible="false" includeInLayout="false">
+			<mx:Label text="Order Date" width="95" textAlign="right" height="20" />
+			<customcomponents:GenTextInput id="tiDateAdded" width="0" height="0" visible="false"
+										   editable="true" enabled="true" xmlTag="date_added" updatableFlag="true"
+										   tableName="query" defaultValue=""  />
+			<customcomponents:GenCheckBox labelPlacement="left" label="Answer ?" id="cbAnswerFlag" width="249" 
+										  xmlTag="answer_flag" updatableFlag="true" tableName="query" defaultValue="N" textAlign="right" tabIndex="11"
+										  dataValueForOn ="Y" dataValueForOff ="N" />
+		</mx:HBox>
+	</mx:VBox>
+</gencomponents:DetailAddEdit>
+
+
+

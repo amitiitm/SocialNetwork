@@ -1,0 +1,6 @@
+source 'http://rubygems.org'
+gem "eventmachine"
+gem "daemons"
+gem "juggernaut"
+gem "memcache"
+gem "json"

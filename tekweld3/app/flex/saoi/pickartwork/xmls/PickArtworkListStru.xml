@@ -1,0 +1,51 @@
+<columns lockedColumnCount='0'>
+
+	<column data='select_yn' 			label='Select' 		editable='true' 	visible='true' 	width='65' 	textAlign='center' 	
+										forLevel='false'			defaultForLevel='' 		sortDataType='S'	dataType='S'	booleanFlag='true'
+										dataValueForOn="Y"			dataValueForOff=" "
+										componentType="CheckBox"	
+	/>
+	
+	<column data='order_type'			label='Order Type'			editable='false' 	visible='true'	width='70'	textAlign='left'	
+										forLevel='true'				defaultForLevel='1' 	sortDataType='S'	dataType='S'	booleanFlag='false'
+										componentType="Text"		columnPrecision="NaN"
+	/>
+	
+	<column data='ext_ref_no'			label='Customer PO#'		editable='false'	visible='true'	 width='120'	  textAlign='left'	
+										forLevel='true'			print_width = '20'			defaultForLevel='3'		booleanFlag='false'	
+										sortDataType='S' componentType="Text" columnPrecision="NaN"/>
+
+	
+	<column data='trans_no'				label='Order #'			editable='false' 	visible='true'	width='70'	textAlign='left'	
+										forLevel='true'				defaultForLevel='1' 	sortDataType='S'	dataType='S'	booleanFlag='false'
+										componentType="Text"		columnPrecision="NaN"
+	/>
+	
+
+	<column data='trans_date' 			label='Order Date' 		editable='false' 	visible='true' 	width='80' 	textAlign='left' 	
+										forLevel='true' 			defaultForLevel='0'		sortDataType='D' 	dataType='D'	booleanFlag='false'
+										componentType="Date" 		columnPrecision="NaN"
+	/>
+	
+	
+	<column data='customer_code'		label='Customer #'		editable='false'	visible='true'	 width='120'	  textAlign='left'	
+										forLevel='true'			print_width = '20'			defaultForLevel='3'		booleanFlag='false'	
+										sortDataType='S' componentType="Text" columnPrecision="NaN"/>
+	
+	<column data='logo_name'			label='Logo #'		editable='false'	visible='true'	 width='120'	  textAlign='left'	
+										forLevel='true'			print_width = '20'			defaultForLevel='3'		booleanFlag='false'	
+										sortDataType='S' componentType="Text" columnPrecision="NaN"/>
+		 
+	<column data='ship_date'			label='Ship Date'		editable='false' 	visible='true' 	 width='90'	  textAlign='left'	forLevel='true' 
+			print_width = '18'			componentType="Date"	defaultForLevel='2'		booleanFlag='false' dataType='D'	sortDataType='D' columnPrecision="NaN"/>	
+	
+	<column data='order_status'		label='Order Status'		editable='false'	visible='true'	 width='120'	  textAlign='left'	
+										forLevel='true'			print_width = '20'			defaultForLevel='3'		booleanFlag='false'	
+										sortDataType='S' componentType="Text" columnPrecision="NaN"/>
+	
+	<column data='workflow_location'		label='Workflow location'		editable='false'	visible='true'	 width='120'	  textAlign='left'	
+										forLevel='true'			print_width = '20'			defaultForLevel='3'		booleanFlag='false'	
+										sortDataType='S' componentType="Text" columnPrecision="NaN"/>
+	
+	
+</columns> 

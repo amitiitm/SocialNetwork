@@ -1,0 +1,13 @@
+<% modal_dialog "New Credit Card",:id=>'phone_card' do %>
+	<%= render :partial => "form" %>
+<% end %>
+
+
+<script type="text/javascript">
+$('#phone_card').dialog({
+	autoOpen: true,
+	width: '500px',
+	bgiframe: false,
+	modal: true
+});
+</script>

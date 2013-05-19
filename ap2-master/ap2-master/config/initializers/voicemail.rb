@@ -1,0 +1,1 @@
+::VM_STORAGE = YAML::load(File.open("#{RAILS_ROOT}/config/vm.yml"))[RAILS_ENV]["storage"]

@@ -1,0 +1,482 @@
+--- 
+lookups_034: 
+  whereclause: 
+  name: Role
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 133
+  version: 
+  table_name: roles
+  created_at: 
+lookups_023: 
+  whereclause: 
+  name: ItemCategory
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 122
+  version: 
+  table_name: catalog_item_categories
+  created_at: 
+lookups_012: 
+  whereclause: 
+  name: Purchaseperson
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 111
+  version: 
+  table_name: purchasepeople
+  created_at: 
+lookups_001: 
+  whereclause: 
+  name: Customer
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 100
+  version: "1"
+  table_name: customers
+  created_at: 
+lookups_035: 
+  whereclause: 
+  name: Menu
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 134
+  version: 
+  table_name: menus
+  created_at: 
+lookups_024: 
+  whereclause: 
+  name: CrmAccountCategory
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 123
+  version: 
+  table_name: crm_account_categories
+  created_at: 
+lookups_013: 
+  whereclause: 
+  name: Lab
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 112
+  version: 
+  table_name: vendors
+  created_at: 
+lookups_002: 
+  whereclause: 
+  name: CustomerCategory
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 101
+  version: "0"
+  table_name: customer_categories
+  created_at: 
+lookups_036: 
+  whereclause: 
+  name: Moodule
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 135
+  version: 
+  table_name: moodules
+  created_at: 
+lookups_025: 
+  whereclause: 
+  name: CrmAccount
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 124
+  version: 
+  table_name: crm_accounts
+  created_at: 
+lookups_014: 
+  whereclause: 
+  name: Location
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 113
+  version: 
+  table_name: locations
+  created_at: 
+lookups_003: 
+  whereclause: 
+  name: Term
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 102
+  version: "0"
+  table_name: terms
+  created_at: 
+lookups_037: 
+  whereclause: 
+  name: MeltingRetailer
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 136
+  version: 
+  table_name: melting_retailers
+  created_at: 
+lookups_026: 
+  whereclause: 
+  name: CrmTask
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 125
+  version: 
+  table_name: crm_tasks
+  created_at: 
+lookups_015: 
+  whereclause: 
+  name: Bank
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 114
+  version: 
+  table_name: banks
+  created_at: 
+lookups_004: 
+  whereclause: 
+  name: AccountPeriod
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 103
+  version: "0"
+  table_name: account_periods
+  created_at: 
+lookups_027: 
+  whereclause: 
+  name: CrmContact
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 126
+  version: 
+  table_name: crm_contacts
+  created_at: 
+lookups_016: 
+  whereclause: 
+  name: GLAccount
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 115
+  version: 
+  table_name: gl_accounts
+  created_at: 
+lookups_005: 
+  whereclause: 
+  name: Salesperson
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 104
+  version: "0"
+  table_name: salespeople
+  created_at: 
+lookups_028: 
+  whereclause: 
+  name: CrmOpportunity
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 127
+  version: 
+  table_name: crm_opportunities
+  created_at: 
+lookups_017: 
+  whereclause: 
+  name: DiamondCategory
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 116
+  version: 
+  table_name: diamond_categories
+  created_at: 
+lookups_006: 
+  whereclause: 
+  name: Vendor
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 105
+  version: "0"
+  table_name: vendors
+  created_at: 
+lookups_029: 
+  whereclause: 
+  name: User
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 128
+  version: 
+  table_name: users
+  created_at: 
+lookups_018: 
+  whereclause: 
+  name: DiamondLot
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 117
+  version: 
+  table_name: diamond_lots
+  created_at: 
+lookups_007: 
+  whereclause: 
+  name: CustomerShipping
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 106
+  version: "0"
+  table_name: customer_shippings
+  created_at: 
+lookups_030: 
+  whereclause: 
+  name: Document
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 129
+  version: 
+  table_name: documents
+  created_at: 
+lookups_019: 
+  whereclause: 
+  name: GlCategory
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 118
+  version: 
+  table_name: gl_categories
+  created_at: 
+lookups_008: 
+  whereclause: 
+  name: Shipping
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 107
+  version: "0"
+  table_name: shippings
+  created_at: 
+lookups_031: 
+  whereclause: 
+  name: CatalogAttribute
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 130
+  version: 
+  table_name: catalog_attributes
+  created_at: 
+lookups_020: 
+  whereclause: 
+  name: GLBankAccount
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 119
+  version: 
+  table_name: gl_accounts
+  created_at: 
+lookups_009: 
+  whereclause: 
+  name: Item
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 108
+  version: 
+  table_name: catalog_items
+  created_at: 
+lookups_032: 
+  whereclause: 
+  name: CatalogAttributeValue
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 131
+  version: 
+  table_name: catalog_attribute_values
+  created_at: 
+lookups_021: 
+  whereclause: 
+  name: VendorCategory
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 120
+  version: 
+  table_name: vendor_categories
+  created_at: 
+lookups_010: 
+  whereclause: 
+  name: CustomerCategory
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 109
+  version: 
+  table_name: customer_categories
+  created_at: 
+lookups_033: 
+  whereclause: 
+  name: CatalogOrderStatus
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 132
+  version: 
+  table_name: types
+  created_at: 
+lookups_022: 
+  whereclause: 
+  name: ItemGroup
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 121
+  version: 
+  table_name: catalog_groups
+  created_at: 
+lookups_011: 
+  whereclause: 
+  name: CompanyStore
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 110
+  version: 
+  table_name: companies
+  created_at: 

@@ -1,0 +1,38 @@
+<columns  lockedColumnCount='0'>
+	
+	<column data='retailer_name' 			 		label='Retailer' 					editable='false' 	visible='true' 		width='100' 	textAlign='left'
+		 	print_width = '18'						forLevel='true' 					defaultForLevel='' 					booleanFlag='false'	sortDataType='S'	columnPrecision="NaN"/>		 		 			 			 			 			 			 			 		
+		 	
+	<column data='retailer_ref_no' 				label='Store #' 				editable='false' 	visible='true' 		width='100' 		textAlign='left'
+	 		print_width = '16'					forLevel='false' 					defaultForLevel='' 					booleanFlag='false'	sortDataType='S'	columnPrecision="NaN"/>
+	 				
+	<column data='trans_no' 					label='Packet #' 					editable='false' 	visible='true' 		width='80' 		textAlign='left'
+		 	print_width = '16'					forLevel='true' 					defaultForLevel='' 					booleanFlag='false'	sortDataType='S'	columnPrecision="NaN"/>	
+		 	
+	<column data='trans_date'					label='Packet Date'					editable='false' 	visible='true' 		width='80'		textAlign='left'	
+ 			print_width = '18'					forLevel='true' 					defaultForLevel=''					booleanFlag='false'	sortDataType='D'	columnPrecision="NaN"/>
+ 			
+	<column data='customer_name' 				label='Customer Name' 				editable='false' 	visible='true' 		width='120' 	textAlign='left'
+			print_width = '20'				 	forLevel='true' 					defaultForLevel='' 					booleanFlag='false'	sortDataType='S'	columnPrecision="NaN"/>	
+	
+	<column data='customer_email_id' 			label='Customer Email #' 			editable='false' 	visible='true' 		width='180' 	textAlign='left'
+		 	print_width = '24'					forLevel='false' 					defaultForLevel='' 					booleanFlag='false'	sortDataType='S'	columnPrecision="NaN"/>
+		 	
+	<column data='customer_ref_no' 				label='Customer Ref #' 				editable='false' 	visible='true' 		width='100' 		textAlign='left'
+	 		print_width = '16'					forLevel='false' 					defaultForLevel='' 					booleanFlag='false'	sortDataType='S'	columnPrecision="NaN"/>
+	 		
+	<column data='customer_ref_date'			label='Customer Ref Date'			editable='false' 	visible='true' 		width='80'		textAlign='left'	
+ 			print_width = '18'					forLevel='false' 					defaultForLevel=''					booleanFlag='false'	sortDataType='D'	columnPrecision="NaN"/>
+ 	
+	<column data='account_period_code' 			label='A/c Period #' 				editable='false' 	visible='true' 		width='80' 		textAlign='left'
+		 	print_width = '18'					forLevel='true' 					defaultForLevel='' 					booleanFlag='false'	sortDataType='S'	columnPrecision="NaN"/>	
+		 	
+	<column data='receive_date'					label='Receive Date'				editable='false' 	visible='true' 		width='80'		textAlign='left'	
+ 			print_width = '18'					forLevel='true' 					defaultForLevel=''					booleanFlag='false'	sortDataType='D'	columnPrecision="NaN"/>
+ 	
+ 	<column data='receive_ship_via' 			label='Ship Via #' 			   		editable='false' 	visible='true' 		width='80' 		textAlign='left'
+		 	print_width = '16'					forLevel='true' 					defaultForLevel='' 					booleanFlag='false'	sortDataType='S'	columnPrecision="NaN"/>
+		 	
+ 	<column data='receive_tracking_no' 			label='Receive Tracking #' 		editable='false' 	visible='true' 		width='80' 		textAlign='left'
+		 	print_width = '16'					forLevel='false' 					defaultForLevel='' 					booleanFlag='false'	sortDataType='S'	columnPrecision="NaN"/>
+</columns> 

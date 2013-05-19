@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<gencomponents:AddEdit xmlns:mx="http://www.adobe.com/2006/mxml" 
+	height="100%" width="100%" verticalGap="0"
+	xmlns:customcomponents="com.generic.customcomponents.*"
+	xmlns:gencomponents="com.generic.components.*" 
+	creationPolicy="all"  creationComplete="creationCompleteHandler()"
+	>
+	<mx:Script source="../scripts/ItemPromotionAddEditScript.as"/>
+	<mx:HBox height="0" width="0" visible="false">
+		<customcomponents:GenTextInput id="tiImage1Link" width="0" xmlTag="image1_link"
+							updatableFlag="true"  tableName="catalog_promotion"
+							defaultValue="" validationFlag="false"  height="0"
+							/>
+
+		<customcomponents:GenTextInput id="tiImage1Name" width="0" xmlTag="image1"
+							updatableFlag="true"  tableName="catalog_promotion"
+							defaultValue="" validationFlag="false"  height="0" 
+							/>
+
+		<customcomponents:GenTextInput id="tiImage2Link" width="0" xmlTag="image2_link"
+							updatableFlag="true"  tableName="catalog_promotion"
+							defaultValue="" validationFlag="false"  height="0" 
+							/>
+							
+		<customcomponents:GenTextInput id="tiImage2Name" width="0" xmlTag="image2"
+					updatableFlag="true"  tableName="catalog_promotion"
+					defaultValue="" validationFlag="false"  height="0" 
+					/>
+
+		<customcomponents:GenTextInput id="tiImage3Link" width="0" xmlTag="image3_link"
+							updatableFlag="true"  tableName="catalog_promotion"
+							defaultValue="" validationFlag="false"  height="0" 
+					/>
+		
+		<customcomponents:GenTextInput id="tiImage3Name" width="0" xmlTag="image3"
+							updatableFlag="true"  tableName="catalog_promotion"
+							defaultValue="" validationFlag="false"  height="0" 
+							/>
+
+		<customcomponents:GenTextInput id="tiImage4Link" width="0" xmlTag="image4_link"
+							updatableFlag="true"  tableName="catalog_promotion"
+							defaultValue="" validationFlag="false"  height="0" 
+							/>
+
+		<customcomponents:GenTextInput id="tiImage4Name" width="0" xmlTag="image4"
+							updatableFlag="true"  tableName="catalog_promotion"
+							defaultValue="" validationFlag="false"  height="0" 
+							/>
+							
+		<customcomponents:GenTextInput id="tiCurentTemplate" width="0" xmlTag="template_type"
+							updatableFlag="true"  tableName="catalog_promotion"
+							defaultValue="t13" setDefaultOnEmpty="true" validationFlag="false"  height="0" 
+							/>					
+
+	</mx:HBox>
+	<mx:VBox height="100%" width="100%" horizontalAlign="center">
+		<mx:HBox width="980" >
+			<mx:Label text="Customize your Home Page" color="#7986A6" fontSize="14" fontWeight="bold"/>
+			<mx:Spacer width="100%"/>
+			<mx:Button label="Template Library" fontSize="13"  click="openTemplatesClickHandler()"
+				color="#536083"/>
+		</mx:HBox>
+		<mx:VBox height="510" width="980" paddingTop="10" 
+			 backgroundColor="#E2E7ED" verticalGap="10">
+			<mx:Label paddingLeft="10" text="Below is your current custom template. Click Edit to change the image for the current template"
+						color="#164D8E" fontSize="10"/>
+			<mx:ViewStack  paddingLeft="10"  width="970" id="vsLayout">
+				<gencomponents:ItemPromotionTemplate13 id="t13" 
+					image1="{tiImage1Name.text}"
+					image2="{tiImage2Name.text}"
+					image3="{tiImage3Name.text}"
+					image4="{tiImage4Name.text}"
+					click="btnEditImageClickHandler(event)"/>
+				<gencomponents:ItemPromotionTemplate1 id="t1" 
+					image1="{tiImage1Name.text}"
+					click="btnEditImageClickHandler(event)"
+					/>	
+			</mx:ViewStack>
+			<mx:VBox paddingLeft="10" verticalGap="10">
+				<mx:Label   text="This is a custom template. click on publish to see this template on your site. "
+					color="#164D8E" fontSize="10"/>
+				<mx:Button  label="Publish"
+						click="handlePublishClick()"	
+						buttonMode="{true}"
+						color="#FFFFFF"
+						textRollOverColor="#FFFFFF"
+						upSkin="@Embed('com/generic/assets/picEdit.png')"
+	    		
+					    downSkin="@Embed('com/generic/assets/picEdit.png')"
+						
+						overSkin="@Embed('com/generic/assets/picEdit.png')"
+					   
+					    selectedUpSkin="@Embed('com/generic/assets/picEdit.png')"
+					    selectedOverSkin="@Embed('com/generic/assets/picEdit.png')"
+					    selectedDownSkin="@Embed('com/generic/assets/picEdit.png')"
+						
+						disabledSkin="@Embed('com/generic/assets/picEdit.png')" />	
+				
+			</mx:VBox>
+		</mx:VBox>
+	</mx:VBox>
+
+
+</gencomponents:AddEdit>

@@ -1,0 +1,16 @@
+<% form_for @faq, :html => {:class => "forms"} do |f| %>
+	<%= error("Could not create the FAQ:") %>
+	<ul>
+		<li>
+			<%= f.label "Question" %>				
+			<%= f.text_field :question, :size => 150 %>
+		</li>
+		<li>
+			<%= f.label "Answer" %>				
+			<%= f.text_area :answer, :rows => 10, :cols => 110 %>
+		</li>
+		<% if @faq.new_record? %>
+			<li><%= submit_button("Save") %> <%= loading("Saving...") %></li>
+		<% end %>
+	</ul>
+<% end %>

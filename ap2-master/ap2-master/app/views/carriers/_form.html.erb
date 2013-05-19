@@ -1,0 +1,34 @@
+<br>
+<% form_for @carrier, :html => {:class => "forms" } do |f| -%>
+	<%= error("Could not create carrier") %>
+	<ul>
+		<li>
+			<label>Name</label>
+			<%= f.text_field :name, :size => 15 %>
+		</li>
+		<li>
+			<label>Tech Prefix</label>
+			<%= f.text_field :tech_prefix, :size => 5 %>
+		</li>
+		<li>
+			<label>Endpoint IP</label>
+			<%= f.text_field :ip, :size => 15 %>
+		</li>
+		<li>
+			<label>Codecs</label>
+			<%= f.text_field :codec %><br><br>
+			<span style="float:none;margin-top:5px">
+				* G.711a: PCMA<br>
+				* G.711u: PCMU<br>
+				* G.729: PCMA<br>
+				* For multiple use | sign: PCMU|PCMA|G729<br>
+			</span>
+		</li>
+		<% unless @carrier.new_record? %>
+			<li>
+				<label>Archive <%= f.check_box :archived %></label>
+			</li>
+		<% end %>
+	</ul>
+	<%= submit_button("Create") %>
+<% end -%>

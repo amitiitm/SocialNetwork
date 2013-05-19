@@ -1,0 +1,188 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>
+      <% if params[:controller] == "creditcards_by_customer" %>
+        Credit Cards Added By Customers
+      <% elsif params[:controller] == "failed_creditcards" %>
+        Failed Credit Cards
+      <% elsif params[:controller] == "advanced_credits" %>
+        Advanced Credits
+      <% elsif params[:controller] == "missing_lans" %>
+        Missing LANs
+      <% else %>
+        Recorded Calls
+      <% end %>
+  </title>
+  <%= stylesheet_link_tag '/css/new_style' %>
+  <%= stylesheet_link_tag '/css/new_grid' %>
+  <%= javascript_include_tag "jquery.min-1.5.0" %>
+  <%= javascript_include_tag "/js/ui/effects.core.js" %>
+  <%= javascript_include_tag "/js/ui/effects.slide.js" %>
+  <%= javascript_include_tag "/js/ui/ui.core.js" %>
+  <%= javascript_include_tag "/js/ui/ui.widget.js" %>
+  <%= javascript_include_tag "/js/ui/ui.mouse.js" %>
+  <%= javascript_include_tag "/js/live_search.js" %>
+  <%= javascript_include_tag "/js/tooltip.js" %>
+  <%= javascript_include_tag "/js/cookie.js" %>
+  <%= javascript_include_tag "/js/ui/ui.tabs.js" %>
+  <%= javascript_include_tag "/js/ui/ui.sortable.js" %>
+  <%= javascript_include_tag "/js/ui/ui.draggable.js" %>
+  <%= javascript_include_tag "/js/ui/ui.resizable.js" %>
+  <%= javascript_include_tag "/js/ui/ui.position.js" %>
+  <%= javascript_include_tag "/js/ui/ui.button.js" %>
+  <%= javascript_include_tag "/js/ui/ui.dialog.js" %>
+  <%= javascript_include_tag "/js/blink.js" %>
+  <%= javascript_include_tag "/js/custom.js" %>
+  <%= javascript_include_tag "/js/ui/ui.datepicker.js" %>
+  <%= javascript_include_tag "jquery.ba-bbq.min.js" %>
+  <%= stylesheet_link_tag "/css/ui/ui.accordion.css" %>
+  <%= javascript_include_tag "/js/ui/ui.accordion.js" %>
+  <%= javascript_include_tag "/js/ap.ghazanfar.js" %>
+  <%= javascript_include_tag "jquery.gritter.min" %>
+  <%= javascript_include_tag "ap.live.js" %>
+  <%= javascript_include_tag "juggernaut.js" %>
+  <%= javascript_include_tag "/js/ap.timer.js" %>
+  <%= javascript_include_tag "/js/ap.cm.js" if RAILS_ENV == "production" %>
+  <%= javascript_include_tag "ap.sirch.js" %>
+  <%= javascript_include_tag "/js/tablesorter.js" %>
+  <%= javascript_include_tag "ap.hotkeys.js" %>
+  <%= javascript_include_tag "/js/jshashtable", "/js/jquery.progressbar.js" %>
+  <%= javascript_include_tag "jq.blockui.js" %>
+  <%= stylesheet_link_tag "/css/ui/ui.datepicker.css" %>
+  <%= stylesheet_link_tag "/css/ui/ui.base.css" %>
+  <%= stylesheet_link_tag "/css/themes/black_rose/ui.css" %>
+  <%= stylesheet_link_tag "/css/custom.css" %>
+</head>
+<body>
+<div id="overview_wrapper">
+  <div id="overview_black_top"><img src="../images/over_black_top.png" alt="" border="0" /></div><!-- overview_black_top -->
+  <div id="overview_black_center">
+    <div id="overview_sub_wrapper">
+      <div id="overview_heading">
+        <div id="logo"><menu class="voip_trigger" href=""></menu></div>
+        <div id="account_details">
+          <h1 style="margin-left: 232px;">
+              <% if params[:controller] == "creditcards_by_customer" %>
+                Credit Cards Added By Customers
+              <% elsif params[:controller] == "failed_creditcards" %>
+                Failed Credit Cards
+              <% elsif params[:controller] == "advanced_credits" %>
+                Advanced Credits
+              <% elsif params[:controller] == "missing_lans" %>
+                Missing LANs
+              <% else %>
+                Recorded Calls
+              <% end %>
+          </h1>
+        </div><!-- account_details -->
+        <div id="sales-agent">
+          <% if logged_in? -%>
+            <%= link_to image_tag('/images/billing/logout.png'), logout_path, { :title => "Log out" } %>
+          <% end %>
+          <div style="clear:both;"></div>
+          <h1>Admin: <span class="top-heading-highlight"><%= session[:user].name.humanize %></span></h1>
+        </div><!-- sales-agent -->
+        <div class="clear"></div>
+      </div><!-- overview_heading -->
+      <div id="overview_content_wrapper">
+        <%=yield%>
+      </div><!-- overview_content_container -->
+      <div style="clear:both;"></div>
+    </div><!-- overview_content_wrapper -->
+    <span style="float:right;height: 0px;color: white;padding-right: 15px;"><%= publish_date %></span>
+  </div><!-- overview_sub_wrapper -->
+  <div id="overview_black_bottom"><img src="../images/over_black_bottom.png" alt="" border="0" /></div><!-- overview_black_bottom -->
+
+</div><!-- overview_black_center -->
+
+<div class="clear"></div>
+<input type="hidden" name="ext" id="ext" value="<%= session[:user].ext %>"></input>
+<div id="dev_null" style='display:none'></div>
+<div id="sirch" style="display: none; top: 30%;" class="GleeThemeDefault">
+  <input type="text" id="gleeSearchField" value="" autocomplete="off" class="ac_input GleeThemeDefault" style="font-size: 50px; ">
+  <div id="gleeSub">
+    <div id="gleeSubText">Salam</div>
+    <div id="gleeSubActivity"></div>
+    <div id="gleeSubURL"></div>
+  </div>
+</div>
+
+<div style="clear:both;"></div>
+<%= render :partial => "/layouts/new_sidebar" %>
+
+
+<script type="text/javascript" charset="utf-8">
+  $(function(){
+    close_sidebar();
+  });
+</script>
+<script type="text/javascript" charset="utf-8">
+  var first_pop = true;
+
+  function hack_hack_hack() {
+    var first_hack = $(".hack-hack-hack")[0];
+    $(first_hack).addClass("move-right");
+  }
+
+  $(function(){
+    var h = $(window).height() - 60;
+    $(".search-result").live('click', function(e) {
+      e.preventDefault();
+      close_sirch_box();
+    });
+    $("#page-content-wrapper").css({"minHeight" : h});
+    $(".voip_trigger").click(function(){
+      toggle_panel();
+      return false;
+    });
+
+    $("a").live('click', function(e){
+      if ($(this).hasClass("openable")) {
+        return true;
+      }
+
+      if ($(this).hasClass("pbx_search_result")) {
+        return  window.location.href = $(this).attr('href')
+      }
+
+
+      if ($(this).hasClass("ajax") || $(this).hasClass("ajax-delete") || $(this).hasClass("fn")
+              || $(this).hasClass("ignore-me") || $(this).hasClass("ui-state-default")
+              || $(this).hasClass("ui-datepicker-next") || $(this).hasClass("ui-datepicker-prev")) {
+        return false;
+      };
+
+      e.preventDefault();
+      history.pushState({ path: this.path }, '', this.href);
+      $.get(this.href, {}, function(resp) {
+        $("#response").hide();
+        $("#response").html(resp);
+        $("#response").show('slide', {direction: 'left'});
+        hack_hack_hack();
+      })
+      return false
+    });
+
+    $(window).bind('popstate', function(e) {
+      if (first_pop) {
+        first_pop = false;
+        return false;
+      };
+      var path = location.pathname;
+      $.get(path, {}, function(resp) {
+        $("#response").hide();
+        $("#response").html(resp);
+        $("#response").show('slide', {direction: 'right'});
+        hack_hack_hack();
+      })
+    });
+    hack_hack_hack();
+    /*$(".wazzup").fadeOut(500, function(){
+     $("#page-layout").fadeIn('slow');
+     });*/
+  });
+</script>
+</body>
+</html>

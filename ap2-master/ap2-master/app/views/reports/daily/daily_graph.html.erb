@@ -1,0 +1,12 @@
+<% box :type => "box_title", :title => "Daily Traffic" do %>
+	<%= high_chart("my_id2", @daily_traffic) %>
+<% end -%>
+<% box :type => "box_title", :title => "Daily Average Graph" do %>
+	<%= high_chart("my_id3", @daily_average) %>
+<% end -%>
+<div class="clear"></div>
+
+<p>
+	<%= v2_show_months(Chronic.parse("2008-08-01").beginning_of_month) %>
+	<span class="red"><%= job_update('update_cached_stuff') %></span>
+</p>

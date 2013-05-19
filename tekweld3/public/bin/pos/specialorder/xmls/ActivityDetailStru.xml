@@ -1,0 +1,21 @@
+<columns lockedColumnCount='0'>
+			
+	<column data='trans_bk'					label='Transfer Bk'				editable='false'	visible='true'		width='80'		textAlign='left'
+			forLevel='false' 				defaultForLevel=''			booleanFlag='false'	sortDataType='S'	columnPrecision="NaN"/>
+
+	<column data='trans_no' 				label='Transfer #' 				editable='false'	visible='true'		width='80'		textAlign='left'
+			forLevel='false' 				defaultForLevel=''			booleanFlag='false'	sortDataType='S'	columnPrecision="NaN"/>
+			
+	<column data='trans_date' 				label='Transfer Date' 			editable='false'	visible='true'		width='80'		textAlign='left'
+			forLevel='false' 				defaultForLevel=''			booleanFlag='false'	sortDataType='D'	columnPrecision="NaN"/>
+
+	<column data='from_stage' 				label='From Stage' 			editable='false'	visible='true'		width='100'		textAlign='left'
+			forLevel='false' 				defaultForLevel=''			booleanFlag='false'	sortDataType='S'	columnPrecision="NaN"/>
+			
+	<column data='to_stage' 				label='To Stage' 			editable='false'	visible='true'		width='100'		textAlign='left'
+			forLevel='false' 				defaultForLevel=''			booleanFlag='false'	sortDataType='S'	columnPrecision="NaN"/>
+			
+	<column data='remarks' 					label='Remarks' 			editable='false'	visible='true'		width='200'		textAlign='left'
+			forLevel='false' 				defaultForLevel=''			booleanFlag='false'	sortDataType='S'	columnPrecision="NaN"/>
+	
+</columns>  

@@ -1,0 +1,25 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  number: 1
+  country: 1
+  area: MyString
+  setup_cost: 1
+  monthly_charge: 1
+  per_minute_charge: 1
+  free_minutes: 1
+  channels: 1
+  url: MyString
+  vendor_id: 1
+
+two:
+  number: 1
+  country: 1
+  area: MyString
+  setup_cost: 1
+  monthly_charge: 1
+  per_minute_charge: 1
+  free_minutes: 1
+  channels: 1
+  url: MyString
+  vendor_id: 1

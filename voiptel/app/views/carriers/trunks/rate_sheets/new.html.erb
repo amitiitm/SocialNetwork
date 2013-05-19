@@ -1,0 +1,16 @@
+<div class="hide">
+	<%= render :partial => "carriers/rate_sheets/rate_sheet_dialog",
+			:locals => {
+				:trunk => @trunk,
+				:rate_sheet => @rate_sheet,
+				:id => "dialog-new-trunk-rate-sheet", :title => "New rate_sheet"
+			}
+	%>	
+</div>
+
+<%= javascript_include_tag "/js/ap.dialog.js" %>
+<script>
+	$(document).ready(function(){
+		$("#dialog-new-trunk-rate-sheet").dialog('open');
+	});
+</script>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rds:CommonServices xmlns:rds="business.*" xmlns:mx="http://www.adobe.com/2006/mxml">
+
+	<mx:HTTPService id="saveRecord" url="/artwork/artwork/create_artworks" />
+	<mx:HTTPService id="getRecord" url="/artwork/artwork/show_assigned_artwork"/>
+	 <mx:HTTPService id="getList" url="/artwork/artwork/list_finished_artwork_inbox"/>
+	<mx:HTTPService id="printRecord" url="/sale/sales_report/render_sales_order_format" />
+	<mx:HTTPService id="artworkUploadUrl" url="/artwork/artwork/upload_artwork_attachments" />
+	<mx:HTTPService id="sendToCustomer" url="/artwork/artwork/send_artwork_to_customer" />
+	
+	<mx:HTTPService id="getListFormat" url="saoi/reviewartwork/xmls/ReviewArtworkListStru.xml" />
+	<mx:HTTPService id="getViewFormat" url="saoi/reviewartwork/xmls/ReviewArtworkCriteriaStru.xml" />
+	<mx:HTTPService id="lineDetailFormat" url="saoi/reviewartwork/xmls/ReviewArtworkLineDetailStru.xml" />
+	<mx:HTTPService id="serviceDetailFormat" url="saoi/reviewartwork/xmls/ReviewArtworkServiceDetailStru.xml" />
+	<mx:HTTPService id="artworkDetailFormat" url="saoi/reviewartwork/xmls/ReviewArtworkArtworkDetailStru.xml" />
+	<mx:HTTPService id="shippingDetailFormat" url="saoi/reviewartwork/xmls/ReviewArtworkShippingDetailStru.xml" />
+	<mx:HTTPService id="optionDetailFormat" url="saoi/reviewartwork/xmls/OptionDetailStru.xml" />
+	<mx:HTTPService id="lineActivityFormat" 			url="saoi/reviewartwork/xmls/ReviewArtworkActivityDetailStru.xml" />
+	
+	
+</rds:CommonServices>

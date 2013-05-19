@@ -1,0 +1,40 @@
+<columns  lockedColumnCount='0'>
+	
+	<column data='address_name'		label='Address Name'	editable='false'	visible='true'	width='250'	textAlign='left'	forLevel='false'
+			defaultForLevel=''		booleanFlag='false'		sortDataType='S'/>
+	
+	<column data='address1'			label='Address 1'		editable='false'	visible='true'	width='250'	textAlign='left'	forLevel='false'
+			defaultForLevel=''		booleanFlag='false'		sortDataType='S'/>
+	
+	<column data='address2'			label='Address 2'		editable='false'	visible='true'	width='250'	textAlign='left'	forLevel='false'
+			defaultForLevel=''		booleanFlag='false'		sortDataType='S'/>	
+	
+	<column data='city'				label='City'			editable='false'	visible='true'	width='150'	textAlign='left'	forLevel='false'
+			defaultForLevel=''		booleanFlag='false'		sortDataType='S'/>	
+	
+	<column data='state'			label='State'			editable='false'	visible='true'	width='150'	textAlign='left'	forLevel='false'
+			defaultForLevel=''		booleanFlag='false'		sortDataType='S'/>	
+	
+	<column data='zip'				label='Zip'				editable='false'	visible='true'	width='150'	textAlign='left'	forLevel='false'
+			defaultForLevel=''		booleanFlag='false'		sortDataType='S'/>	
+	
+	<column data='country'			label='Country'			editable='false'	visible='true'	width='150'	textAlign='left'	forLevel='false'
+			defaultForLevel=''		booleanFlag='false'		sortDataType='S'/>		
+	
+	<column data='phone'			label='Phone'			editable='false'	visible='true'	width='150'	textAlign='left'	forLevel='false'
+			defaultForLevel=''		booleanFlag='false'		sortDataType='S'/>		
+	
+	<column data='email'			label='Email'			editable='false'	visible='true'	width='150'	textAlign='left'	forLevel='false'
+			defaultForLevel=''		booleanFlag='false'		sortDataType='S'/>		
+	
+	<column data='fax'				label='Fax'				editable='false'	visible='true'	width='150'	textAlign='left'	forLevel='false'
+			defaultForLevel=''		booleanFlag='false'		sortDataType='S'/>		
+								
+</columns> 
+
+
+
+
+
+
+

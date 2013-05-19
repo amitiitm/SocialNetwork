@@ -1,0 +1,5 @@
+<% if not id.blank?  %>
+	<div class="hidden loading" id="<%= id %>" <%= tags %>><%= image_tag("load.gif", :class => "icon") %> <%= message %></div>
+<% else  %>
+	<div class="hidden loading" id="loading" <%= tags %>><%= image_tag("load.gif", :class => "icon") %> <%= message %></div>
+<% end -%>

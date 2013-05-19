@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rds:CommonServices xmlns:rds="business.*" xmlns:mx="http://www.adobe.com/2006/mxml">
+
+	<mx:HTTPService id="saveRecord" url="/point_of_sale/create_pos_orders" />
+	<mx:HTTPService id="save_workbag" url="/workbag/create_workbag_from_spo" />
+	<mx:HTTPService id="getRecord" url="/point_of_sale/show_pos_orders" />
+	<mx:HTTPService id="getList" url="/point_of_sale/list_pos_orders" />
+	
+	
+	<mx:HTTPService id="getListFormat" url="pos/specialorder/xmls/SpecialOrderListStru.xml" />
+	<mx:HTTPService id="getViewFormat" url="pos/specialorder/xmls/SpecialOrderCriteriaStru.xml" />
+	<mx:HTTPService id="ActivityDetailFormat" url="pos/specialorder/xmls/ActivityDetailStru.xml"/>
+
+	<!--we have taken invisible data grid for storing payment and address to send at the time of save-->
+	<mx:HTTPService id="paymentFormat" url="pos/specialorder/xmls/SpecialOrderPaymentStru.xml" />
+	
+	<mx:HTTPService id="printRecord" url="/production_report/print_spo" />
+	<mx:HTTPService id="printWorkbag" url="/production_report/workbag_order_format" />
+
+</rds:CommonServices>

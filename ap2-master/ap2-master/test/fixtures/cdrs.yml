@@ -1,0 +1,31 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  date: 2008-08-04 02:28:27
+  did_id: 1
+  account_id: 1
+  user_id: 1
+  phone_id: 1
+  dst_number: MyString
+  country_id: 1
+  src: MyString
+  src_channel: MyString
+  dst_channel: MyString
+  duration: 1
+  disposition: MyString
+  uniqueid: MyString
+
+two:
+  date: 2008-08-04 02:28:27
+  did_id: 1
+  account_id: 1
+  user_id: 1
+  phone_id: 1
+  dst_number: MyString
+  country_id: 1
+  src: MyString
+  src_channel: MyString
+  dst_channel: MyString
+  duration: 1
+  disposition: MyString
+  uniqueid: MyString

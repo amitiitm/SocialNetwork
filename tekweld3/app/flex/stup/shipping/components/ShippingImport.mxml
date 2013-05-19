@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<gencomponents:Import  xmlns:mx="http://www.adobe.com/2006/mxml" 
+	height="100%" width="100%" verticalGap="0"
+	xmlns:customcomponents="com.generic.customcomponents.*"
+	xmlns:gencomponents="com.generic.components.*" 
+	creationPolicy="all">
+	<mx:Script source="../scripts/ShippingImportScript.as"/>
+	
+	<mx:VBox height="0" width="0" visible="false">
+		<customcomponents:GenTextInput id="tiDummy" width="0" height="0" visible="false" editable="false"
+			xmlTag="dummy" updatableFlag="true" tableName="shipping" />
+	</mx:VBox>
+	
+	<mx:VBox width="100%" height="100%" verticalGap="3">		
+		<mx:LinkButton id="lbSampleXLS" label="Sample/Download Excel format" click="handleSampleXLS()" color="#0000FF" />
+			
+		<customcomponents:GenDataGrid 
+			id="dgValues"
+			width="100%" 
+			height="100%"
+			editable="false"
+			updatableFlag="true"
+			formatServiceID="detailFormat"
+			rootNode="shippings"
+			click="clickHandler()"
+		/>
+		
+	</mx:VBox>
+</gencomponents:Import>

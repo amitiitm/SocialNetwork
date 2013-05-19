@@ -1,0 +1,53 @@
+<columns  lockedColumnCount='0'>
+
+	<column data='trans_bk'		label='Trans Bk'			editable='false'	visible='true'		
+			width='80'	textAlign='left'			forLevel='false'			print_width='18'	defaultForLevel=''		
+			booleanFlag='false'	sortDataType='S' 	columnPrecision="NaN"/>
+	
+	<column data='trans_no'		label='Trans #'			editable='false'	visible='true'		
+			width='100'	textAlign='left'			forLevel='false'				print_width='20'	defaultForLevel=''		
+			booleanFlag='false'	sortDataType='S' 	columnPrecision="NaN"/>		
+
+	<column data='trans_date'	label='Trans Date'		editable='false'	visible='true'		width='100'	textAlign='left'	forLevel='false' 
+			print_width='20'	defaultForLevel=''		booleanFlag='false' sortDataType='D'	columnPrecision="NaN"/>			
+	
+	<column data='item_qty'						label='Item Qty'				editable='false'	visible='true'		
+			width='100'	textAlign='right'			forLevel='false'				print_width='22'	defaultForLevel=''	
+			booleanFlag='false'	sortDataType='N'	columnPrecision="2"/>
+			
+	<column data='net_amt'							label='Net Amt'				editable='false'	visible='true'		
+			width='100'	textAlign='right'			forLevel='false'				print_width='22'	defaultForLevel=''	
+			booleanFlag='false'	sortDataType='N'	columnPrecision="2"/>
+						
+	<column data='term_code'						label='Term #'					editable='false'	visible='true'		
+			width='120'	textAlign='left'			forLevel='false'				print_width='22'	defaultForLevel=''		
+			booleanFlag='false'	sortDataType='S'	columnPrecision="NaN"/>
+						
+	<column data='due_date'							label='Due Date'		editable='false'	visible='true'		width='100'	textAlign='left'	forLevel='false' 
+			print_width='20'	defaultForLevel=''		booleanFlag='false' sortDataType='D'	columnPrecision="NaN"/>	
+
+	<column data='ship_date'						label='Ship Date'		editable='false'	visible='true'		width='100'	textAlign='left'	forLevel='false' 
+			print_width='20'	defaultForLevel=''		booleanFlag='false' sortDataType='D'	columnPrecision="NaN"/>	
+
+
+	<column data='shipping_code'						label='Shipping #'					editable='false'	visible='true'		
+			width='100'	textAlign='left'			forLevel='false'				print_width='22'	defaultForLevel=''		
+			booleanFlag='false'	sortDataType='S'	columnPrecision="NaN"/>
+			
+			
+	<column data='account_period_code'				label='Account Period #'			editable='false'	visible='true'		
+			width='120'	textAlign='left'			forLevel='false'				print_width='26'	defaultForLevel=''		
+			booleanFlag='false'	sortDataType='S' 	columnPrecision="NaN"/>	
+			
+	<column data='ext_ref_no'		label='Ext Ref #'			editable='false'	visible='true'		
+			width='100'	textAlign='left'			forLevel='false'				print_width='23'	defaultForLevel=''		
+			booleanFlag='false'	sortDataType='S' 	columnPrecision="NaN"/>		
+			
+	<column data='ext_ref_date'						label='Ext Ref Date'		editable='false'	visible='true'		width='100'	textAlign='left'	forLevel='false' 
+			print_width='23'	defaultForLevel=''		booleanFlag='false' sortDataType='D'	columnPrecision="NaN"/>		
+				
+	<column data='tracking_no'		label='Tracking #'			editable='false'	visible='true'		
+		width='100'	textAlign='left'			forLevel='false'				print_width='23'	defaultForLevel=''		
+		booleanFlag='false'	sortDataType='S' 	columnPrecision="NaN"/>		
+
+</columns>

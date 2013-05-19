@@ -1,0 +1,15 @@
+<% box :type => "dialog", :id => "dialog-edit-did", :title => "DID #{@did.number}", :icon => "ui-icon-person" do %>
+	<% box :type => "simple", :title => "DID #{@did.number}" do %>
+		<% form_for @did, :html => {:class => "forms"} do |f| %>
+			<ul>
+				<li>
+					<label>Assign <%= f.check_box :active %></label>
+				</li>
+				<li>
+					<label>Handler</label>
+					<%= f.select :did_type, Did::TYPES %>
+				</li>
+			</ul>
+		<% end -%>
+	<% end -%>
+<% end -%>

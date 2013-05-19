@@ -1,0 +1,26 @@
+<% form_for @product_tax, :html => {:class => "forms"} do |f| %>
+  <%= error("Could not create product_tax:") %>
+	<ul>
+	  <li class="hori">
+	    <%= f.label :app_name %>
+	    <%= f.text_field :product_name, :size => 15 %>
+	  </li>
+	  <li class="hori">
+	    <%= f.label :app_handler %>
+	    <%= f.text_field :product_code, :size => 15 %>
+	  </li>
+	  <li class="hori">
+	    <label>Enabled?</label>	    
+			<%= f.select :enabled, [["Yes", true], ["No", false]] %>
+	  </li>
+	  <li class="hori">
+	    <%= f.label :charge_type %>
+	    <%= f.select :charge_type, [["Add Tax", 1], ["Deduct Tax", 2]] %>
+	  </li>
+		<li></li>
+		<% f.fields_for :tax_items do |tax_item_fields| %>
+			<%= render :partial => "tax_item", :locals => {:f => tax_item_fields} %>
+		<% end %>
+		<%= link_to_add_fields("Add tax items", f, :tax_items, "tax_item", :class => "ignore-me") %>
+	</ul>
+<% end %>

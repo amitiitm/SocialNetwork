@@ -1,0 +1,29 @@
+<columns lockedColumnCount='0'>
+			
+	<column data='labor_type'				label='Labor Type'			editable='false'	visible='true'		width='250'		textAlign='left'
+			forLevel='false' 				defaultForLevel=''			booleanFlag='false'	sortDataType='S'	columnPrecision="NaN"/>
+			
+	<column data='labor_code' 				label='Code' 				editable='false'	visible='true'		width='100'		textAlign='left'
+			forLevel='false' 				defaultForLevel=''			booleanFlag='false'	sortDataType='S'	columnPrecision="NaN"/>
+			
+	<column data='labor_description' 		label='Description' 		editable='false'	visible='true'		width='200'		textAlign='left'
+			forLevel='false' 				defaultForLevel=''			booleanFlag='false'	sortDataType='S'	columnPrecision="NaN"/>
+			
+	<column data='cost' 					label='Cost' 				editable='false' 	visible='true' 		width='100' 	textAlign='right' 
+			forLevel='false' 				defaultForLevel='' 			booleanFlag='false' sortDataType='N'	columnPrecision="2"/>
+			
+	<column data='price' 					label='Price' 				editable='false' 	visible='true' 		width='100' 	textAlign='right' 
+			forLevel='false' 				defaultForLevel='' 			booleanFlag='false' sortDataType='N'	columnPrecision="2"/>
+						
+	<column data='qty' 						label='Qty' 				editable='false' 	visible='true' 		width='100' 	textAlign='right' 
+			forLevel='false' 				defaultForLevel='' 			booleanFlag='false' sortDataType='N'	columnPrecision="2"/>
+	
+	<column data='total_cost' 				label='Total Cost' 			editable='false' 	visible='true' 		width='100' 	textAlign='right' 
+			forLevel='false' 				defaultForLevel='' 			booleanFlag='false' sortDataType='N'	columnPrecision="2"/>
+			
+	<column data='total_amt' 				label='Total Amount' 		editable='false' 	visible='true' 		width='100' 	textAlign='right' 
+			forLevel='false' 				defaultForLevel='' 			booleanFlag='false' sortDataType='N'	columnPrecision="2"/>
+					
+	<column data='remarks' 					label='Remarks' 			editable='false'	visible='true'		width='100'		textAlign='left'
+			forLevel='false' 				defaultForLevel=''			booleanFlag='false'	sortDataType='S'	columnPrecision="NaN"/>
+</columns>  

@@ -1,0 +1,13 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  npa: MyString
+  lat: MyString
+  long: MyString
+  rate_center_id: 1
+
+two:
+  npa: MyString
+  lat: MyString
+  long: MyString
+  rate_center_id: 1

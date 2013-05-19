@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:Module xmlns:mx="http://www.adobe.com/2006/mxml" width="100%" height="100%" layout="absolute" 
+	paddingTop="80" verticalGap="0" horizontalGap="0" creationPolicy="all"
+	preinitialize="onPreinitialize()" >
+<mx:Script source="../scripts/GenModuleScript.as"/>
+ 	<mx:Metadata>
+		[Event(name="genModuleActive", type="com.generic.events.GenModuleEvent")]
+		[Event(name="genModuleShortcutKey", type="com.generic.events.GenModuleEvent")]
+	</mx:Metadata>
+</mx:Module>

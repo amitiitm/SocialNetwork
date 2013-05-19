@@ -1,0 +1,2 @@
+module RateGroupsHelper
+end

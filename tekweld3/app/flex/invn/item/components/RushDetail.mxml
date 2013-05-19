@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<gencomponents:DetailAddEdit xmlns:mx="http://www.adobe.com/2006/mxml" xmlns:customcomponents="com.generic.customcomponents.*"
+	xmlns:gencomponents="com.generic.components.*" width="500" height="160" verticalGap="0">
+
+	<mx:Script source="../scripts/ItemSetupChargesScript.as"/>
+	
+	<mx:VBox height="100%" width="100%" >
+		<mx:HBox>
+			<mx:Label text="Day" width="95" height="20" textAlign="right"/>
+		    <customcomponents:GenTextInput id="tiCharges" width="150" xmlTag="day" updatableFlag="true" tabIndex="1" 
+		    	height="20" tableName="catalog_item_setup"  maxChars="50" textAlign="right" defaultValue="0.00" dataType="N" rounding="true"/>
+		</mx:HBox>
+		
+		
+		<mx:HBox>
+			<mx:Label text="Quantity" width="95" height="20" textAlign="right"/>
+		    <customcomponents:GenTextInput id="tiQunatity" width="150" xmlTag="qty" updatableFlag="true" tabIndex="2" 
+		    	height="20" tableName="catalog_item_setup"  maxChars="50"/>
+		</mx:HBox>
+		
+		<mx:HBox>
+			<mx:Label text="Amt" width="95" height="20" textAlign="right"/>
+		    <customcomponents:GenTextInput id="tiAmount" width="90" xmlTag="amount" updatableFlag="true" tabIndex="2"
+				textAlign="right" defaultValue="0.00" dataType="N" rounding="true" setDefaultOnEmpty="true" maxValue="9999999999.99"		    	
+		    	height="20" tableName="catalog_item_setup" />
+		</mx:HBox>
+
+
+		<mx:HBox width="0" height="0" visible="false">
+			<customcomponents:GenTextInput id="tiSerial_no" width="0" height="0" visible="false"
+				enabled="false" xmlTag="serial_no" updatableFlag="true"
+				tableName="catalog_item_setup" defaultValue=""  />
+		</mx:HBox>	 
+
+	</mx:VBox>
+</gencomponents:DetailAddEdit>

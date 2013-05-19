@@ -1,0 +1,27 @@
+<columns  lockedColumnCount=''>
+
+	<column data='name' 			label='Opportunity Name' 	editable='false' 	visible='true' 	width='200' 	textAlign='left' 	forLevel='true'
+			print_width = '16'		defaultForLevel='1' 	booleanFlag='false' 	sortDataType='S'	columnPrecision="NaN"/>
+	
+	<column data='close_date' 		label='Close Date'		editable='false'	visible='true'	width='80'	textAlign='left'	forLevel='true'
+			print_width = '18'		defaultForLevel='0'		booleanFlag='false' 	sortDataType='D'	columnPrecision="NaN"/>
+	
+	<column data='stage' 			label='Stage' 			editable='false' 	visible='true' 	width='80' 	textAlign='left' 	forLevel='true'
+			print_width = '16'		defaultForLevel='1' 	booleanFlag='false' 	sortDataType='S'	columnPrecision="NaN"/>
+			
+	<column data='opportunity_type' label='Opportunity Type' 		editable='false' 	visible='true' 	width='100' 	textAlign='left' 	forLevel='false'
+		print_width = '18'			defaultForLevel='' 			booleanFlag='false' 	sortDataType='S'	columnPrecision="NaN"/>		
+	
+	<column data='probability_per' 	label='Probability %' 	editable='false' 	visible='true' 	width='80' 	textAlign='right' 	forLevel='true' 
+			print_width = '18'		defaultForLevel='2' 	booleanFlag='false' 	sortDataType='N' 	columnPrecision="2"/>
+			
+	<column data='amount' 			label='Amount'			editable='false'	visible='true'	width='80'	textAlign='right'	forLevel='false'
+			print_width = '18'		defaultForLevel=''		booleanFlag='false' 	sortDataType='N'	columnPrecision="2"/>
+	
+	<column data='subject' 			label='Subject'			editable='false'	visible='true'	width='100'	textAlign='left'	forLevel='false'
+			print_width = '18'		defaultForLevel=''		booleanFlag='false' 	sortDataType='S'	columnPrecision="NaN"/>
+			
+	<column data='description'		label='Description' 	editable='false' 	visible='true' width='80' 	textAlign='left' 	forLevel='true' 
+			print_width = '24'		defaultForLevel='3' 	booleanFlag='false' 	sortDataType='S'	columnPrecision="NaN"/>
+			
+</columns> 

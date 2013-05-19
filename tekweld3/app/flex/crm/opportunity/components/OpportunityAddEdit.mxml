@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<gencomponents:AddEdit xmlns:mx="http://www.adobe.com/2006/mxml" 
+	height="100%" width="100%" verticalGap="0"
+	xmlns:customcomponents="com.generic.customcomponents.*"
+	xmlns:gencomponents="com.generic.components.*"
+	creationPolicy="all" creationComplete="init()">
+	
+	<mx:Script source="../scripts/OpportunityAddEditScript.as"/>
+	
+	<mx:VBox height="100%" width="100%">
+		<mx:HBox width="100%">
+			<mx:Label text="Opportunity Name" textAlign="right" width="130" height="20"/>
+			<customcomponents:GenTextInput id="tiOpportunity_name" width="160" visible="true" editable="true" validationFlag="true"
+				 height="20" tabIndex="1" xmlTag="name" updatableFlag="true" tableName="crm_opportunity" toolTip="Opportunity Name" maxChars="50"/>
+			<mx:Label text="Close Date" textAlign="right" width="130" height="20"/>
+			<customcomponents:GenDateField id="dfClose_date" width="110" xmlTag="close_date"
+				updatableFlag="true" tableName="crm_opportunity" tabIndex="2" height="20"
+				validationFlag="false" toolTip="Close Date"/>			
+		</mx:HBox>
+		<mx:HBox width="100%">
+			<mx:Label textAlign="right" width="130" text="Account #" height="20"/>
+			<customcomponents:GenDynamicComboBoxWithHelp id="dcCRM_account_id" width="170" toolTip="Account #" defaultValue=""
+				dataField="id" labelField="name"
+				dataSourceName="CrmAccount"  dataProvider="{__genModel.lookupObj.crmaccount.children()}"   
+				height="20" tabIndex="3"  itemChangedEvent=""
+				validationFlag="true" xmlTag="crm_account_id" updatableFlag="true" tableName="crm_opportunity"  />
+			<mx:Label textAlign="right" width="120" text="Stage" height="20"/>
+			<customcomponents:GenComboBox id="cbStage" defaultValue="Prospecting" width="110" cornerRadius="0" xmlTag="stage" updatableFlag="true"
+				tableName="crm_opportunity"  tabIndex="4" height="20" labelField="label" dataProvider="{__genModel.masterData.child('crm').stage}" />			
+		</mx:HBox>
+		<mx:HBox width="100%">
+			<mx:Label text="Opportunity Type" textAlign="right" width="130" height="20"/>
+			<customcomponents:GenComboBox id="cbOpportunity_type" defaultValue="Existing" width="160" cornerRadius="0" xmlTag="opportunity_type" updatableFlag="true"
+				tableName="crm_opportunity"  tabIndex="5" height="20" labelField="label" dataProvider="{__genModel.masterData.child('crm').opportunity_type}" />
+			<mx:Label text="Probability (%)" textAlign="right" width="130" height="20"/>
+			<customcomponents:GenTextInput id="tiProbability_per" width="110" visible="true" editable="true"
+				tabIndex="6" xmlTag="probability_per" updatableFlag="true" tableName="crm_opportunity" height="20"
+				dataType="N" textAlign="right" setDefaultOnEmpty="true" maxValue="9999.99" defaultValue="0.00"/>			
+		</mx:HBox>
+		<mx:HBox width="100%">
+			<mx:Label text="Subject" textAlign="right" width="130" height="20"/>
+			<customcomponents:GenComboBox id="cbSubject" defaultValue="Email"  width="161" cornerRadius="0" xmlTag="subject" updatableFlag="true"
+				tableName="crm_opportunity" tabIndex="7"  height="20" labelField="label" 
+				dataProvider="{__genModel.masterData.child('crm').activity_type}" />
+			<mx:Label text="Amount" textAlign="right" width="130" height="20"/>
+			<customcomponents:GenTextInput id="tiAmount" width="110" visible="true" editable="true"
+				tabIndex="8" xmlTag="amount" updatableFlag="true" tableName="crm_opportunity" height="20"
+				dataType="N" textAlign="right" setDefaultOnEmpty="true" maxValue="9999999999.99" defaultValue="0.00"/>			
+		</mx:HBox>
+		<mx:HBox width="100%">
+			<mx:Label text="Description" textAlign="right" width="130" height="20"/>
+			<customcomponents:GenTextArea id="taDescription" width="416" visible="true" editable="true" height="80"
+				 tabIndex="9" xmlTag="description" updatableFlag="true" tableName="crm_opportunity" maxChars="200"/>
+		</mx:HBox>
+	</mx:VBox>
+</gencomponents:AddEdit>

@@ -1,0 +1,6 @@
+#!/usr/bin/env ruby
+require 'rubygems'
+require 'daemons'
+
+Daemons.run(File.dirname(__FILE__) + '/active_calls.rb', :dir_mode => :normal, :dir => "/tmp", :monitor => true, :log_output => true)
+

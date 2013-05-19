@@ -1,0 +1,25 @@
+<link href="/css/uploadify.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="/js/swfobject.js"></script>
+<script type="text/javascript" src="/js/jquery.uploadify.v2.1.0.min.js"></script>
+<div id="fileQueue"></div>
+<input type="file" name="uploadify" id="uploadify" />
+<p><a href="javascript:jQuery('#uploadify').uploadifyClearQueue()">Cancel All Uploads</a></p>
+
+<script type="text/javascript">
+$(document).ready(function() {
+	$("#uploadify").uploadify({
+		'uploader'       : '/uploadify.swf',
+		'script'         : '/files/',
+		'cancelImg'      : '/images/upload_cancel.png',
+		'folder'         : 'default',
+		'queueID'        : 'fileQueue',
+		'auto'           : true,
+		'multi'          : true,
+		'fileExt'				 : '<%= ext %>',
+		'fileDesc'			 : 'Hello',
+		'method'				 : 'post',
+		'onComplete'		 : <%= hnd %>,
+		'onAllComplete'	 : <%= queue_hnd %>
+	});
+});
+</script>

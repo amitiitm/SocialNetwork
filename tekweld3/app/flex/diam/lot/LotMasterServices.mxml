@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rds:CommonServices xmlns:rds="business.*"
+	xmlns:mx="http://www.adobe.com/2006/mxml">
+
+	<mx:HTTPService id="saveRecord" url="/diamond/create_lots"/>
+	<mx:HTTPService id="getRecord" url="/diamond/show_lot"/>
+	<mx:HTTPService id="getListFormat" url="diam/lot/xmls/LotMasterListStru.xml"/>
+	<mx:HTTPService id="getList" url="/diamond/list_lots"/>
+	<mx:HTTPService id="getViewFormat" url="diam/lot/xmls/LotMasterCriteriaStru.xml"/>
+	<mx:HTTPService id="setDefaultView" url=""/>
+	<mx:HTTPService id="printRecord" url=""/>
+	
+	<mx:HTTPService id="detailFormat" url="diam/lot/xmls/LotMasterImportStru.xml"/>
+	<mx:HTTPService id="recordUploadUrl" url="/diamond/convert_exceltoxml_for_diamond_lots"/>
+	
+</rds:CommonServices>

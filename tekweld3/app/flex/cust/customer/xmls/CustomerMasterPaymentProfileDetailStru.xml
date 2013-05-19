@@ -1,0 +1,24 @@
+<columns lockedColumnCount='0'>
+
+<!--	<column data='serial_no'	label='Serial #'		editable='false'	visible='true'		width='60'	textAlign='left' -->
+<!--			forLevel='false' 	defaultForLevel='' 		booleanFlag='false' sortDataType='N'	columnPrecision="0"/>-->
+			
+	<column data='customer_payment_profile_code' 		label='Payment Profile #' 	editable='false' 	visible='true' 		width='90' 	textAlign='left' 
+			forLevel='false' 	defaultForLevel='' 		booleanFlag='false' sortDataType='S'	columnPrecision="NaN"/>
+	
+	<column data='payment_method' 	label='Card Type' 		editable='false' 	visible='true' 		width='60' 	textAlign='left' 
+			forLevel='false' 	defaultForLevel='' 		booleanFlag='false' sortDataType='S'	columnPrecision="NaN"/>
+			
+	<column data='name_on_card' label='Name On Card' 	editable='false' 	visible='true' 		width='90' 	textAlign='left' 
+			forLevel='false' 	defaultForLevel='' 		booleanFlag='false' sortDataType='S'	columnPrecision="NaN"/>
+
+	<column data='card_number' 	label='Credit Card #' 	editable='false' 	visible='true' 		width='80' 	textAlign='right' 
+			forLevel='false' 	defaultForLevel='' 		booleanFlag='false' sortDataType='N'		columnPrecision="0"/>
+			
+	<column data='expiration_month' 		label='Expiration Month' 		editable='false' 	visible='true' 		width='60' 	textAlign='left' 
+			forLevel='false' 	defaultForLevel='' 		booleanFlag='false' sortDataType='S'	columnPrecision="NaN"/>
+			
+	<column data='expiration_year' 		label='Expiration Year' 		editable='false' 	visible='true' 		width='60' 	textAlign='left' 
+			forLevel='false' 	defaultForLevel='' 		booleanFlag='false' sortDataType='S'	columnPrecision="NaN"/>		
+			
+</columns>  

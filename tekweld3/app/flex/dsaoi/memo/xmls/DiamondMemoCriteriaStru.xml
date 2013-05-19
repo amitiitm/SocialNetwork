@@ -1,0 +1,20 @@
+<columns Title =''>
+
+	<column dataType="S" 			label="A/c period" 			checkbox="ckAll1" 		xmlTagFrom="str1" 			from="dcStr1"
+			xmlTagTo="str2" 		to="dcStr2"					multiSelect="mvMultiSelect1" 	xmlTagMultiSelect="multiselect1"
+			lookupFlag="true" 		lookupName="AccountPeriod"		lookupLabel="code"		dataField="code" 		labelField="code" />
+
+	<column dataType="D" 			label="Memo Date" 			checkbox="ckAll2" 		xmlTagFrom="dt1" 			from="dfDt1" 
+			xmlTagTo="dt2" 			to="dfDt2"					multiSelect="" 	xmlTagMultiSelect=""
+			lookupFlag="false" 		lookupName="" 				/>
+
+	<column dataType="S" 			label="Memo #" 				checkbox="ckAll3" 		xmlTagFrom="str3" 			from="tiStr3" 
+			xmlTagTo="str4" 		to="tiStr4"					multiSelect="tiMultiSelect2" 	xmlTagMultiSelect="multiselect2"
+			lookupFlag="false" 		lookupName="" 				/>
+
+	<column dataType="S" 			label="Customer #" 			checkbox="ckAll4" 		xmlTagFrom="str5" 			from="dcStr5" 
+			xmlTagTo="str6" 		to="dcStr6"					multiSelect="tiMultiSelect3" 	xmlTagMultiSelect="multiselect3"
+			lookupFlag="true" 		lookupName="Customer"		lookupLabel="code"		dataField="code" 			labelField="code"/>
+
+</columns> 	
+

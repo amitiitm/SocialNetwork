@@ -1,0 +1,26 @@
+<columns  lockedColumnCount='0'>
+
+	<column data='select_yn'				label='Select'				editable='true'		visible='true'				width='50'			textAlign='center'	forLevel='false'
+			defaultForLevel=''				booleanFlag='false'			sortDataType='S'	columnPrecision="NaN" 		/>
+	
+	<column data='service_code'				label='Service #'			editable='false' 	visible='true' 	width='150'	textAlign='left'	forLevel='false' 
+			defaultForLevel=''				booleanFlag='false'			sortDataType='S'	columnPrecision="NaN" 		/>
+	
+	<column data='service_name'				label='Service Name'		editable='false'	visible='true'	width='180'	textAlign='left'	forLevel='false'
+			defaultForLevel=''				booleanFlag='false'			sortDataType='S'	columnPrecision="NaN" 		/>
+	
+	<column data='delivery_date'			label='Delivery Date'		editable='false' 	visible='true' 	width='80'	textAlign='left'	forLevel='false' 
+			defaultForLevel=''				booleanFlag='false'			sortDataType='D'	columnPrecision="NaN" 		/>	
+	
+	<column data='price'					label='Price'				editable='false'	visible='true'	width='60'	textAlign='right'	forLevel='false'
+			defaultForLevel=''				booleanFlag='false'			sortDataType='N'	columnPrecision="3" 		/>	
+	
+	<column data='insured_charge'			label='Insured Charge'		editable='false'	visible='true'	width='60'	textAlign='right'	forLevel='false'
+			defaultForLevel=''				booleanFlag='false'			sortDataType='N'	columnPrecision="3" 		/>	
+	
+	<column data='negotiated_charge'		label='Negotiated Charge'	editable='false'	visible='true'	width='60'	textAlign='right'	forLevel='false'
+			defaultForLevel=''				booleanFlag='false'			sortDataType='N'	columnPrecision="3" 		/>						
+	
+	<column data='currency'					label='Currency'			editable='false' 	visible='true' 	width='60'	textAlign='left'	forLevel='false' 
+			defaultForLevel=''				booleanFlag='false'			sortDataType='S'	columnPrecision="NaN" 		/>		
+</columns> 

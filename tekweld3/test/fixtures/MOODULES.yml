@@ -1,0 +1,157 @@
+--- 
+moodules_005: 
+  sequence: 80
+  updated_at: 
+  code: PROD
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 61
+  company_id: 1
+  moodule_name: Production
+  created_at: 
+moodules_006: 
+  sequence: 110
+  updated_at: 
+  code: MELT
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 83
+  company_id: 1
+  moodule_name: Metal Melting
+  created_at: 
+moodules_007: 
+  sequence: 40
+  updated_at: 
+  code: ACCT
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 110
+  company_id: 1
+  moodule_name: Accounting
+  created_at: 
+moodules_008: 
+  sequence: 90
+  updated_at: 
+  code: CTLG
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 111
+  company_id: 1
+  moodule_name: Catalog Admin
+  created_at: 
+moodules_009: 
+  sequence: 30
+  updated_at: 
+  code: DIAM
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 112
+  company_id: 1
+  moodule_name: Diamond
+  created_at: 
+moodules_010: 
+  sequence: 60
+  updated_at: 
+  code: POS
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 113
+  company_id: 1
+  moodule_name: Point of Sales
+  created_at: 
+moodules_011: 
+  sequence: 100
+  updated_at: 
+  code: STUP
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 600
+  company_id: 1
+  moodule_name: Setup
+  created_at: 
+moodules_012: 
+  sequence: 20
+  updated_at: 2010/11/25 12:44:31
+  code: abc
+  update_flag: Y
+  trans_flag: A
+  created_by: 2
+  lock_version: 0
+  updated_by: 2
+  id: 601
+  company_id: 1
+  moodule_name: ABC
+  created_at: 2010/11/25 12:44:31
+moodules_001: 
+  sequence: 50
+  updated_at: 
+  code: INVN
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 1
+  company_id: 1
+  moodule_name: Inventory
+  created_at: 
+moodules_002: 
+  sequence: 20
+  updated_at: 
+  code: PUOI
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 2
+  company_id: 1
+  moodule_name: Purchase
+  created_at: 
+moodules_003: 
+  sequence: 70
+  updated_at: 
+  code: CRM
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 21
+  company_id: 1
+  moodule_name: CRM
+  created_at: 
+moodules_004: 
+  sequence: 10
+  updated_at: 
+  code: SAOI
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 41
+  company_id: 1
+  moodule_name: Sales
+  created_at: 

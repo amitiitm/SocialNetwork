@@ -1,0 +1,11 @@
+<% unless params[:no_modal] %>
+	<div class="dialog" id="<%= options[:id] %>" title="<%= options[:title] %>" width="<%= options[:width] %>">
+		<%= content %>
+		<%= loading("Loading...", "loading", :style => "top:0px !important") %>
+	</div>
+	<%= javascript_include_tag "/js/ap.ddialog.js" %>	
+<% else %>
+	<% box options.merge(:type => "box_title") do %>
+		<%= content %>
+	<% end %>
+<% end %>

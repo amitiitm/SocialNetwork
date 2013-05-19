@@ -1,0 +1,11 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  default_ui_id: 1
+  position: 1
+  container: MyString
+
+two:
+  default_ui_id: 1
+  position: 1
+  container: MyString

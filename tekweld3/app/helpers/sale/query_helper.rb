@@ -1,0 +1,2 @@
+module Sale::QueryHelper
+end

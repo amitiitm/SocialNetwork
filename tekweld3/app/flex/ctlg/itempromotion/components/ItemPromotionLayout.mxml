@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:TitleWindow xmlns:mx="http://www.adobe.com/2006/mxml" layout="absolute" width="450" height="350"
+	xmlns:customcomponents="com.generic.customcomponents.*"
+	showCloseButton="true" close="btnCancelClickHandler()"
+	creationComplete="init()"
+	backgroundColor="#CAD2DF"
+	initialize="{this.parentApplication.focusManager.deactivate()}">
+	
+	<mx:Script source="../scripts/ItemPromotionLayoutScript.as"/>
+	
+	<mx:VBox width="100%" height="100%">
+		<mx:Label text="Select Home Page Template" fontSize="14"
+			color="#21346C" fontWeight="bold"/>
+
+		<mx:Text color="#144D90" fontSize="10">
+				<mx:text>
+					<![CDATA[
+Impress your visitors with design that fits your bussiness style.
+choose your favorite template then click install
+
+					]]>
+				</mx:text>
+			</mx:Text>
+		<mx:HBox>
+			
+				<mx:Image id="template13"  name="t13" height="112" width="186" maintainAspectRatio="true"
+					source="com/generic/assets/template13.png" 
+					buttonMode="{true}" click="templateClickHandler(event)"
+					/>
+				<mx:Image id="template1"  name="t1" height="112" width="186" maintainAspectRatio="true"
+					source="com/generic/assets/template1.png"  
+					buttonMode="{true}" click="templateClickHandler(event)"
+					/>										
+		</mx:HBox>
+		<mx:HBox width="380">
+			<mx:LinkButton   icon="@Embed('com/generic/assets/PrevBut.png')"/>
+			<mx:Spacer width="220"/>
+			<mx:LinkButton  icon="@Embed('com/generic/assets/NextBut.png')"/>
+		</mx:HBox>
+		
+		<mx:HBox height="50" horizontalAlign="center" verticalAlign="middle">
+			<mx:Button id="btnInstall" name="install" label="Install" click="btnInstallClickHandler()"
+				buttonMode="{true}"
+				color="#FFFFFF"
+				textRollOverColor="#FFFFFF"
+				upSkin="@Embed('com/generic/assets/darkGrey.png')"
+		
+			    downSkin="@Embed('com/generic/assets/darkGrey.png')"
+				
+				overSkin="@Embed('com/generic/assets/darkGrey.png')"
+			   
+			    selectedUpSkin="@Embed('com/generic/assets/darkGrey.png')"
+			    selectedOverSkin="@Embed('com/generic/assets/darkGrey.png')"
+			    selectedDownSkin="@Embed('com/generic/assets/darkGrey.png')"
+				
+				disabledSkin="@Embed('com/generic/assets/darkGrey.png')" />
+			
+			<mx:Button id="btnCancel" name="cancel" label="Cancel" click="btnCancelClickHandler()"
+				buttonMode="{true}"
+				color="#FFFFFF"
+				textRollOverColor="#FFFFFF"
+				upSkin="@Embed('com/generic/assets/darkGrey.png')"
+		
+			    downSkin="@Embed('com/generic/assets/darkGrey.png')"
+				
+				overSkin="@Embed('com/generic/assets/darkGrey.png')"
+			   
+			    selectedUpSkin="@Embed('com/generic/assets/darkGrey.png')"
+			    selectedOverSkin="@Embed('com/generic/assets/darkGrey.png')"
+			    selectedDownSkin="@Embed('com/generic/assets/darkGrey.png')"
+				
+				disabledSkin="@Embed('com/generic/assets/darkGrey.png')" />	 
+		</mx:HBox>	
+	</mx:VBox>
+		
+</mx:TitleWindow>

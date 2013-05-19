@@ -1,0 +1,12 @@
+<%= page_title :title => "OpenFo FAQs" %>
+<% if !@faqs.blank? %>
+  <% for faq in @faqs %>
+    <%= render :partial => "faq", :locals => {:faq => faq} %>
+  <% end %>
+<% end %>
+<br><br>
+<% box :type => "box_title", :title => "New FAQ", :style => "width:790px" do%>
+	<br>
+	<%= render :partial => "form" %>
+<% end %>
+<div class="hide" id="container"></div>

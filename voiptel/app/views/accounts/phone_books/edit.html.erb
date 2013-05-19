@@ -1,0 +1,7 @@
+<% box :type => "dialog", :id => "dialog-edit-phone-book", :title => "Edit EasyDialer #{@phone_book.easy_dial_number}", :icon => "ui-icon-person" do %>
+	<% box :type => "simple", :title => "" do %>
+		<%= render :partial => "accounts/phone_books/form" %>
+	<% end -%>
+<% end -%>
+
+<%= javascript_include_tag "/js/ap.dialog.js" %>

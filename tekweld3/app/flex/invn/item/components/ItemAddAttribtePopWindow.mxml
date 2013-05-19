@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:TitleWindow xmlns:fx="http://ns.adobe.com/mxml/2009" 
+		 xmlns:s="library://ns.adobe.com/flex/spark" 
+		 xmlns:mx="library://ns.adobe.com/flex/mx" width="540" height="188" xmlns:customcomponents="com.generic.customcomponents.*"
+		 creationComplete="creationComplete()"
+		 title="Item Options" showCloseButton="true" close="closeHandler()">
+	<fx:Declarations>
+		<!-- Place non-visual elements (e.g., services, value objects) here -->
+	</fx:Declarations>
+	<fx:Script>
+		<![CDATA[
+			import business.events.GetInformationEvent;
+			import business.events.PreSaveEvent;
+			
+			import com.generic.events.GenDynamicComboBoxEvent;
+			
+			import model.GenModelLocator;
+			
+			import mx.controls.Alert;
+			import mx.managers.PopUpManager;
+			import mx.rpc.IResponder;
+			import mx.rpc.Responder;
+			
+			import saoi.muduleclasses.event.MissingInfoEvent;
+			
+			[Bindable]
+			public var orderDetail:XML= new XML();
+			public var optionsXml:XML;
+			
+			[Bindable]
+			private var __genModel:GenModelLocator = GenModelLocator.getInstance();
+			private var xmlMissingInfo:XML = new XML();
+			
+			[Embed("com/generic/assets/save.png")]
+			private const saveButtonIcon:Class;
+			
+			[Embed("com/generic/assets/save_disabled.png")]
+			private const save_disabledButtonIcon:Class;
+			
+			private function creationComplete():void
+			{
+				//Alert.show(orderDetail.toXMLString());
+				optionsXml  		 =  XML(orderDetail.catalog_item_attributes_values);
+			}
+			
+			private function handleCodeChange():void
+			{
+				if(dcCatalog_attribute_id.text != '' && dcCatalog_attribute_id.text != null)
+				{
+					var callbacks:IResponder	=	new mx.rpc.Responder(attributeResultHandler,null)
+					var getInformationEvent:GetInformationEvent	=	new GetInformationEvent('attribute_info',callbacks,dcCatalog_attribute_id.dataValue,dcCatalog_attribute_id.labelValue)
+					getInformationEvent.dispatch();
+				}
+			}
+			
+			private function attributeResultHandler(resultXml:XML):void
+			{
+				dcCatalog_attribute_id.dataValue	=	resultXml.children().child('id').toString()	
+				dcCatalog_attribute_id.labelValue	=	resultXml.children().child('code').toString()
+				tiName.dataValue 					=	resultXml.children().child('name').toString()
+				tiCode.dataValue 					=	resultXml.children().child('code').toString()	
+			}
+			
+			private function closeHandler():void
+			{
+				PopUpManager.removePopUp(this);
+			}
+			private function saveClickHandler():void
+			{
+				if(dcCatalog_attribute_id.dataValue =='')
+				{
+					Alert.show("Please Select Option Code");
+				}
+				else if(isAlreadyExistOptions())
+				{
+					Alert.show("Selected option already exists in option list");
+				}
+				else
+				{
+					xmlMissingInfo  					   	= new XML(<catalog_item_attributes_value></catalog_item_attributes_value>);
+					xmlMissingInfo.catalog_attribute_id 	= dcCatalog_attribute_id.dataValue;
+					xmlMissingInfo.code    					= tiCode.dataValue;
+					xmlMissingInfo.attribute_name    		= tiName.dataValue;
+					
+					dispatchEvent(new MissingInfoEvent(MissingInfoEvent.MissingInfoEvent_Type,xmlMissingInfo));
+					closeHandler();
+				}
+			}
+			
+			private function isAlreadyExistOptions():Boolean
+			{
+				var returnValue:Boolean  = false;
+				
+				for(var i:int = 0 ; i< optionsXml.children().length();i++)
+				{
+					if(optionsXml.children()[i].catalog_attribute_id.toString() == dcCatalog_attribute_id.dataValue)
+					{
+						returnValue   = true;
+						break;
+					}
+				}
+				
+				return returnValue;
+			}
+			
+		]]>
+	</fx:Script>
+	<mx:VBox height="100%" width="500" >	
+		<mx:HBox verticalAlign="middle" >
+			<customcomponents:GenButton	id="btnEdit" 
+										icon="{saveButtonIcon}"
+										disabledIcon="{save_disabledButtonIcon}"
+										color="#D2C5EB"
+										height="25" 
+										width="25" 
+										toolTip="Edit"
+										cornerRadius="0"
+										click="saveClickHandler()" />
+		</mx:HBox>
+		<mx:HBox>
+			<mx:Label text="Code" width="95" textAlign="right"/>
+			<customcomponents:GenTextInputWithHelp
+				id="dcCatalog_attribute_id" 
+				width="205" 
+				toolTip="Attribute #" 
+				dataSourceName="CatalogAttribute"
+				height="20" 
+				tabIndex="1" 
+				validationFlag="true" 
+				xmlTag="catalog_attribute_id"
+				labelTag="catalog_attribute_code"
+				dataField="id" 
+				labelField= "code"
+				updatableFlag="true" 
+				tableName="catalog_item_category_attribute" 
+				itemChangedEvent="handleCodeChange()"
+				/>
+			
+			<!--<customcomponents:GenDynamicComboBoxWithHelp id="dcCatalog_attribute_id" height="20" textAlign="left"
+				 updatableFlag="true" width="205" tabIndex="1" xmlTag="catalog_attribute_id" defaultValue='' dataSourceName="CatalogAttribute"
+				 dataField="id" dataProvider="{__genModel.lookupObj.catalogattribute.children()}" labelField="code"
+				 itemChangedEvent="handleCodeChange(event)" tableName="catalog_item_category_attribute"
+				 dataType="S" validationFlag="true" toolTip="Code" />-->
+		</mx:HBox>
+		
+		<mx:HBox>
+			<mx:Label text="Name" width="95" textAlign="right"/>
+			<customcomponents:GenTextInput id="tiName" width="378" height="20" visible="true"
+										   editable="false" xmlTag="name" updatableFlag="true" tabIndex="2" maxChars="50"
+										   tableName="catalog_category_attribute" defaultValue="" />
+		</mx:HBox>
+		
+		<customcomponents:GenTextInput id="tiCode" width="0" height="0" visible="false"
+									   editable="false" enabled="false" xmlTag="code" updatableFlag="true"
+									   tableName="catalog_category_attribute" defaultValue="" />
+		<mx:HBox width="100%" height="45" verticalAlign="middle"  verticalGap="0">
+			<s:Spacer width="146"/>
+			<!--<s:Button label="Save" click="saveClickHandler()"/>
+			<s:Button label="Cancel" click="closeHandler()" />-->
+		</mx:HBox>
+		
+	</mx:VBox>
+</mx:TitleWindow>

@@ -1,0 +1,17 @@
+<columns lockedColumnCount='0'>
+	
+	<column data='id'					label='Id'					editable='false' 	visible='false'	width='0'	textAlign='left'	
+										forLevel='true'				defaultForLevel='1' 	sortDataType='S'	dataType='S'	booleanFlag='false'
+										componentType="Text"		columnPrecision="NaN"
+	/>
+	
+	<column data='description'			label='Discount #'			editable='false' 	visible='true'	width='70'	textAlign='left'	
+										forLevel='true'				defaultForLevel='1' 	sortDataType='S'	dataType='S'	booleanFlag='false'
+										componentType="Text"		columnPrecision="NaN"
+	/>
+	
+	<column data='value'				label='Value (%)'		editable='true'	visible='true'	 width='120'	  textAlign='left'	
+										forLevel='true'			print_width = '20'			defaultForLevel='3'		booleanFlag='false'	
+										sortDataType='N' 		componentType="Text" columnPrecision="2"/>
+	
+</columns> 

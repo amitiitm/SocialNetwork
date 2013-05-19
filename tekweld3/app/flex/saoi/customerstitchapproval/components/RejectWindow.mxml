@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:TitleWindow xmlns:fx="http://ns.adobe.com/mxml/2009" 
+		 xmlns:s="library://ns.adobe.com/flex/spark" 
+		 xmlns:mx="library://ns.adobe.com/flex/mx" width="574" height="288" xmlns:customcomponents="com.generic.customcomponents.*" verticalGap="3"
+		 creationComplete="creationComplete()"
+		 title="Reject Detail" showCloseButton="true" close="closeHandler()">
+	<fx:Declarations>
+		<!-- Place non-visual elements (e.g., services, value objects) here -->
+	</fx:Declarations>
+	<fx:Script>
+		<![CDATA[
+			import business.events.PreSaveEvent;
+			import business.events.RecordStatusEvent;
+			
+			import com.adobe.cairngorm.business.ServiceLocator;
+			import com.generic.genclass.URL;
+			
+			import model.GenModelLocator;
+			
+			import mx.controls.Alert;
+			import mx.core.Application;
+			import mx.managers.CursorManager;
+			import mx.managers.PopUpManager;
+			import mx.rpc.AsyncToken;
+			import mx.rpc.IResponder;
+			import mx.rpc.events.FaultEvent;
+			import mx.rpc.events.ResultEvent;
+			import mx.rpc.http.HTTPService;
+			
+			public  var fileRef:FileReference = new FileReference();
+			import saoi.muduleclasses.event.MissingInfoEvent;
+			
+			[Bindable]
+			private var __genModel:GenModelLocator = GenModelLocator.getInstance();
+			private var urlObj:URL	=	new URL();
+			private var __service:ServiceLocator = __genModel.services;
+			private var urlartworkUploadUrl:String  =	urlObj.getURL(__genModel.services.getHTTPService("artworkUploadUrl").url.toString());
+			private var _request:URLRequest = new URLRequest(urlartworkUploadUrl);
+			[Bindable]
+			public var xml:XML= new XML();
+			private var __generateIndigo:IResponder;
+			[Bindable]
+			private var backToXml:XML  = new XML(<rows>
+													<row>New Artwork</row>
+													<row>Change Layout</row>
+													<row>Reestimation</row> 
+													<row>Cancel Order</row> 
+												</rows>);
+			
+			private function creationComplete():void
+			{
+				taComment.dataValue			= taComment.defaultValue;
+				tiFileName.dataValue		= tiFileName.defaultValue;
+				cbBackTo.selectedIndex		= 0;
+				setVisiblityOfuploadArtworkButton();
+			}
+			
+			private function closeHandler():void
+			{
+				PopUpManager.removePopUp(this);
+			}
+			private function saveClickHandler():void
+			{
+				createImpositionFile();
+			}
+			
+			private function createImpositionFile():void
+			{
+				CursorManager.setBusyCursor();
+				this.enabled  =  false;
+				
+				xml.children()[0].customer_stitch_reject_reason = taComment.dataValue;
+				xml.children()[0].revert_to						= cbBackTo.selectedItem.toString();
+				xml.children()[0].artwork_file_name				= tiFileName.dataValue;
+				var rejectService:HTTPService 			= dataService(__service.getHTTPService("saveRecord"));
+				__generateIndigo 						= new mx.rpc.Responder(createImpositionFileResultHandler,createImpositionFileFaultHandler);
+				var token:AsyncToken 					= rejectService.send(xml);
+				token.addResponder(__generateIndigo);
+			}
+			public function dataService(service:HTTPService):HTTPService
+			{
+				var urlObj:URL				=	new URL();
+				service.url					=	urlObj.getURL(service.url);
+				service.resultFormat 		= 	"e4x";					
+				service.method 				= 	"POST";
+				service.useProxy			= 	false;
+				service.contentType			=	"application/xml";
+				service.requestTimeout	 	= 	1800
+				
+				return service;
+			}
+			private function createImpositionFileResultHandler(event:ResultEvent):void
+			{
+				this.enabled  = true;
+				CursorManager.removeBusyCursor();
+				
+				var result:String  = event.result.toString();
+				
+				//Alert.show("Record Saved Successfully");
+				dispatchEvent(new MissingInfoEvent(MissingInfoEvent.MissingInfoEvent_Type,new XML(<rows>
+																										<result>{"SUCCESS"}</result>
+																								  </rows>)));
+				closeHandler();
+			}
+			public function createImpositionFileFaultHandler(event:FaultEvent):void
+			{
+				Alert.show("Rject Window#"+event.fault.faultDetail);
+				
+				this.enabled  = true;
+				CursorManager.removeBusyCursor();
+			}
+			private function setVisiblityOfuploadArtworkButton():void
+			{
+				if(cbBackTo.selectedItem.toString().toUpperCase()=='NEW ARTWORK')
+				{
+					btnUpload.visible  = true;
+					tiFileName.visible = true;
+				}
+				else
+				{
+					btnUpload.visible    = false;
+					tiFileName.visible   = false;
+					tiFileName.dataValue = '';
+				}
+			}
+			private function handleUploadArtwork():void
+			{
+				try
+				{
+					fileRef.addEventListener(Event.SELECT,selectArtworkHandler);
+					fileRef.addEventListener(Event.COMPLETE, handleComplete);
+					fileRef.addEventListener(DataEvent.UPLOAD_COMPLETE_DATA,handleResponseCompleteData);
+					fileRef.browse();
+				}
+				catch(error:Error)
+				{
+					Alert.show(error.message);
+				}
+				
+			}
+			public function selectArtworkHandler(event:Event):void
+			{
+				tiFileName.text = fileRef.name;
+				
+				var _variables:URLVariables = new URLVariables();
+				_variables.file_name 		= 	 fileRef.name.toString();
+				
+				_request.method 			= 	URLRequestMethod.POST;
+				_request.data 				= 	_variables;	
+				
+				uploadFile(fileRef)
+				
+				CursorManager.setBusyCursor();
+				Application.application.enabled = false;
+				
+			}
+			
+			public  function uploadFile(file:FileReference):void
+			{
+				try
+				{	
+					fileRef.upload(_request);
+				}
+				catch (error:Error)
+				{
+					Alert.show("unable to load Artwork"+error.message);
+				}
+				
+			}
+			
+			public function handleComplete(event:Event):void
+			{
+				CursorManager.removeBusyCursor();
+				Application.application.enabled = true;
+			}
+			private function handleResponseCompleteData(event:DataEvent):void
+			{
+				var result:String = event.data.toString();
+				if(result=='Attachment Upload Successfull')
+				{
+					
+					var recordStatusEvent:RecordStatusEvent = new RecordStatusEvent('MODIFY');
+					recordStatusEvent.dispatch();
+				}
+				else
+				{
+					tiFileName.text = '';
+				}
+				Alert.show(result);
+			}
+		]]>
+	</fx:Script>
+	<mx:HBox width="100%" height="24" verticalAlign="middle">
+		<mx:Label width="73" text="Send To" textAlign="right"/>
+		<mx:ComboBox id="cbBackTo" dataProvider="{backToXml.children()}" change="setVisiblityOfuploadArtworkButton()"/>
+		<mx:HBox width="100%" height="20" horizontalGap="2" verticalAlign="middle">
+			<customcomponents:GenTextInput id="tiFileName"  width="100%" height="20"  validationFlag='true' toolTip="Order Artwork"
+										   xmlTag="artwork_file_name" updatableFlag="true" tableName="sales_order_artwork" tabIndex="4" enabled="false" />
+			<mx:Button id="btnUpload" label="Upload Artwork" toolTip="Upload Artwork" width="126" height="20" tabIndex="1"	click="handleUploadArtwork()"/>
+		</mx:HBox>
+	</mx:HBox>
+	<s:Spacer height="5"/>
+	<mx:HBox width="100%" height="136" verticalAlign="top">
+		<mx:Label width="73" height="16" text="Reason" textAlign="right"/>
+		<customcomponents:GenTextArea id="taComment" y="3" width="100%" height="100%"
+									  defaultValue="" maxChars="500" tabIndex="20"
+									  tableName="sales_order" toolTip="Comment"
+									  updatableFlag="true" validationFlag="false"
+									  xmlTag="missing_order_info"/>
+	</mx:HBox>
+	<mx:HBox width="100%" height="45" verticalAlign="middle"  verticalGap="0">
+		<s:Spacer width="73"/>
+		<s:Button label="Save" click="saveClickHandler()"/>
+		<s:Button label="Cancel" click="closeHandler()" />
+	</mx:HBox>
+	
+</mx:TitleWindow>

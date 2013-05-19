@@ -1,0 +1,62 @@
+<columns lockedColumnCount='0'>
+
+	<column data='select_yn' 			label='Calculate (Y/N)' 		editable='true' 	visible='true' 	width='90' 	textAlign='center' 	
+			forLevel='false'			defaultForLevel='' 		sortDataType='S'	dataType='S'	booleanFlag='true'
+			dataValueForOn="Y"			dataValueForOff=" "
+			componentType="CheckBox"	
+	/>
+	
+	<column data='customer_name' 		label='Customer' 		editable='false' 	visible='true' 	width='180' textAlign='left' 	
+			forLevel='true'				defaultForLevel='' 		sortDataType='S'	dataType='S'	booleanFlag='false'
+			componentType="Text"		columnPrecision="NaN"
+	/>
+
+	<column data='trans_no'				label='Packet #'		editable='false' 	visible='true'	width='70'	textAlign='left'	
+			forLevel='true'				defaultForLevel='2' 	sortDataType='S'	dataType='S'	booleanFlag='false'
+			componentType="Text"		columnPrecision="NaN"
+	/>
+
+	<column data='gold_rate' 			label='Gold Rate' 		editable='false'	visible='true' 	width='80' textAlign='right' 	
+			forLevel='false'			defaultForLevel='' 		sortDataType='N'	dataType='N'	booleanFlag='false'
+			negativeFlag="true" 		rounding="false" 		maxValue="99999.99"
+			componentType="Text"		columnPrecision="2"
+	/>
+	
+	<column data='gold_weight' 			label='Gram Wt' 		editable='false'	visible='true' 	width='80' textAlign='right' 	
+			forLevel='false'			defaultForLevel='' 		sortDataType='N'	dataType='N'	booleanFlag='false'
+			negativeFlag="true" 		rounding="false" 		maxValue="99999.99999"
+			componentType="Text"		columnPrecision="5"
+	/>
+	
+	<column data='offer_amt' 			label='Offer Value' 	editable='false' 	visible='true' 	width='80' 	textAlign='right' 	
+			forLevel='false' 			defaultForLevel=''		sortDataType='N' 	dataType='N'	booleanFlag='false'
+			componentType="Text" 		rounding="false" 		maxValue="99999999.99"	columnPrecision="2"
+	/>
+	
+	<column data='trans_date' 			label='Packet Date' 	editable='false' 	visible='true' 	width='90' 	textAlign='left' 	
+			forLevel='true' 			defaultForLevel='1'		sortDataType='D' 	dataType='D'	booleanFlag='false'
+			componentType="Date" 		columnPrecision="NaN"
+	/>
+
+	<column data='total_pcs' 			label='Total Pcs' 		editable='false'		visible='true' 	width='60' textAlign='right' 	
+			forLevel='false'			defaultForLevel='' 		sortDataType='N'	dataType='N'	booleanFlag='false'
+			negativeFlag="true" 		rounding="false" 		maxValue="9999"
+			componentType="Text"		columnPrecision="0"
+	/>
+
+	<column data='retailer_name' 		label='Retailer' 		editable='false' 	visible='true' 	width='120' 	textAlign='left' 	
+			forLevel='true'				defaultForLevel='3'		sortDataType='S'	dataType='S'	booleanFlag='false'
+			componentType="Text"		columnPrecision="NaN"
+	/>	 
+
+	<column data='receive_date' 		label='Receive Date' 	editable='false' 	visible='true' 	width='90' 	textAlign='left'
+			forLevel='true' 			defaultForLevel='1'		sortDataType='D' 	dataType='D'	booleanFlag='false'
+			componentType="Date" 		columnPrecision="NaN"
+	/>
+
+	<column data='remarks' 				label='Remarks' 		editable='true' 	visible='true' 	width='200' 	textAlign='left' 	
+			forLevel='false'			defaultForLevel='3'		sortDataType='S'	dataType='S'	booleanFlag='false'
+			componentType="Text"		columnPrecision="NaN"
+	/>	 
+
+</columns> 

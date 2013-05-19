@@ -1,0 +1,15 @@
+<columns  lockedColumnCount='0'>
+
+	<column data='catalog_item_code'		label='Item #'				editable='false'	visible='true'	width='110'	textAlign='left'	forLevel='false'
+			defaultForLevel=''				booleanFlag='false'			sortDataType='S'	columnPrecision="NaN"/>
+			
+	<column data='total_sold_qty'			label='Sold Qty'			editable='false'	visible='true'	width='80'	textAlign='left'	forLevel='false'
+			defaultForLevel=''				booleanFlag='false'			sortDataType='N'	columnPrecision="0"/>
+			
+	<column data='on_stock_qty'				label='Stock Qty'			editable='false'	visible='true'	width='80'	textAlign='left'	forLevel='false'
+			defaultForLevel=''				booleanFlag='false'			sortDataType='N'	columnPrecision="0"/>		
+	
+	<column data='open_order_qty'			label='Ordered Qty'		    editable='false'	visible='true'	width='110'	textAlign='left'	forLevel='false'
+			defaultForLevel=''				booleanFlag='false'			sortDataType='N'	columnPrecision="0"/>
+									
+</columns> 

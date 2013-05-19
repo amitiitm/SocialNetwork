@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rds:CommonServices xmlns:rds="business.*" xmlns:mx="http://www.adobe.com/2006/mxml">
+
+<!-- account report criteria format service-->
+<mx:HTTPService id="getOpenReceiptCriteriaFormat" url="cust/customerinfo/xmls/CustOpenReceiptCriteriaStru.xml" /> <!--Open Receipt-->
+<mx:HTTPService id="getOpenCreditCriteriaFormat" url="cust/customerinfo/xmls/CustOpenCreditCriteriaStru.xml" /> <!--Open Credit-->
+<mx:HTTPService id="getAllReceiptCriteriaFormat" url="cust/customerinfo/xmls/CustAllReceiptCriteriaStru.xml" /> <!--All Receipt-->
+<mx:HTTPService id="getAllCreditCriteriaFormat" url="cust/customerinfo/xmls/CustAllCreditCriteriaStru.xml" /> <!--All Credit-->
+<mx:HTTPService id="getCustAgingCriteriaFormat" url="cust/customerinfo/xmls/CustAgingCriteriaStru.xml" /> <!--Customer Aging-->
+<!--sales report criteria format service-->
+<mx:HTTPService id="getOpenMemoCriteriaFormat" url="cust/customerinfo/xmls/OpenMemoCriteriaStru.xml" /> <!--Open Memo-->
+<mx:HTTPService id="getAllMemosCriteriaFormat" url="cust/customerinfo/xmls/AllMemosListCriteriaStru.xml" /> <!--All Memos-->
+<mx:HTTPService id="getInvoiceSummaryCriteriaFormat" url="cust/customerinfo/xmls/InvoiceSummaryCriteriaStru.xml" /> <!--Invoice Summary-->
+<mx:HTTPService id="getInvoiceByItemCriteriaFormat" url="cust/customerinfo/xmls/InvoiceByItemCriteriaStru.xml" /> <!--Invoice By Item-->
+<mx:HTTPService id="getCreditInvoiceSummaryCriteriaFormat" url="cust/customerinfo/xmls/CreditInvoiceSummaryCriteriaStru.xml" /> <!--Credit Invoice Summary-->
+<mx:HTTPService id="getCreditInvoiceByItemCriteriaFormat" url="cust/customerinfo/xmls/CreditInvoiceByItemCriteriaStru.xml" /> <!--Credit Invoice By Item-->
+<mx:HTTPService id="getOpenOrderCriteriaFormat" url="cust/customerinfo/xmls/OpenOrderCriteriaStru.xml" /> <!--Open Order-->
+<mx:HTTPService id="getAllOrdersCriteriaFormat" url="cust/customerinfo/xmls/AllOrdersCriteriaStru.xml" /> <!--All Orders-->
+<mx:HTTPService id="getTopSalesCriteriaFormat" url="cust/customerinfo/xmls/TopSalesCriteriaStru.xml" /> <!--Top Sales-->
+
+
+
+<!-- account report format service-->
+<mx:HTTPService id="getOpenReceiptFormat" url="cust/customerinfo/xmls/CustOpenReceiptListStru.xml" /> <!--Open Receipt-->
+<mx:HTTPService id="getOpenCreditFormat" url="cust/customerinfo/xmls/CustOpenCreditListStru.xml" /> <!--Open Credit-->
+<mx:HTTPService id="getAllReceiptFormat" url="cust/customerinfo/xmls/CustAllReceiptListStru.xml" /> <!--All Receipt-->
+<mx:HTTPService id="getAllCreditFormat" url="cust/customerinfo/xmls/CustAllCreditListStru.xml" /> <!--All Credit-->
+<mx:HTTPService id="getCustAgingFormat" url="cust/customerinfo/xmls/CustAgingListStru.xml" /> <!--Customer Aging-->
+<!--sales report format service-->
+<mx:HTTPService id="getOpenMemoFormat" url="cust/customerinfo/xmls/OpenMemoListStru.xml" /> <!--Open Memo-->
+<mx:HTTPService id="getAllMemosFormat" url="cust/customerinfo/xmls/AllMemosListStruListStru.xml" /> <!--All Memos-->
+<mx:HTTPService id="getInvoiceSummaryFormat" url="cust/customerinfo/xmls/InvoiceSummaryListStru.xml" /> <!--Invoice Summary-->
+<mx:HTTPService id="getInvoiceByItemFormat" url="cust/customerinfo/xmls/InvoiceByItemListStru.xml" /> <!--Invoice By Item-->
+<mx:HTTPService id="getCreditInvoiceSummaryFormat" url="cust/customerinfo/xmls/CreditInvoiceSummaryListStru.xml" /> <!--Credit Invoice Summary-->
+<mx:HTTPService id="getCreditInvoiceByItemFormat" url="cust/customerinfo/xmls/CreditInvoiceByItemListStru.xml" /> <!--Credit Invoice By Item-->
+<mx:HTTPService id="getOpenOrderFormat" url="cust/customerinfo/xmls/OpenOrderListStru.xml" /> <!--Open Order-->
+<mx:HTTPService id="getAllOrdersFormat" url="cust/customerinfo/xmls/AllOrdersListStru.xml" /> <!--All Orders-->
+<mx:HTTPService id="getTopSalesFormat" url="cust/customerinfo/xmls/TopSalesListStru.xml" /> <!--Top Sales-->
+
+
+<!--acct reports data service-->
+<mx:HTTPService id="getListOpenReceipt" url="/sale/customer_info/customer_open_receipts" /> <!--List Open Receipt-->
+<mx:HTTPService id="getListOpenCredit" url="/sale/customer_info/customer_open_credits" /> <!--List Open Credit-->
+<mx:HTTPService id="getListAllReceipt" url="/sale/customer_info/customer_receipts" /> <!--List All Receipt-->
+<mx:HTTPService id="getListAllCredit" url="/sale/customer_info/customer_credits" /> <!--List All Credit-->
+<mx:HTTPService id="getListCustAging" url="/sale/customer_info/customer_aging" /> <!--List Customer Aging-->
+<!--Saoi reports data service-->
+<mx:HTTPService id="getListOpenMemo" url="/sale/customer_info/customer_open_memos" /> <!--List Open Memo-->
+<mx:HTTPService id="getListAllMemos" url="/sale/customer_info/customer_memos" /> <!--List All Memos-->
+<mx:HTTPService id="getListInvoiceSummary" url="/sale/customer_info/customer_invoice_summary" /> <!--List Invoice Summary-->
+<mx:HTTPService id="getListInvoiceByItem" url="/sale/customer_info/customer_invoice_by_item" /> <!--List Invoice By Item-->
+<mx:HTTPService id="getListCreditInvoiceSummary" url="/sale/customer_info/customer_credit_invoice_summary" /> <!--List Credit Invoice Summary-->
+<mx:HTTPService id="getListCreditInvoiceByItem" url="/sale/customer_info/customer_credit_invoice_by_item" /> <!--List Credit Invoice By Item-->
+<mx:HTTPService id="getListOpenOrder" url="/sale/customer_info/customer_open_order" /> <!--List Open Order-->
+<mx:HTTPService id="getListAllOrders" url="/sale/customer_info/customer_orders" /> <!--List All Orders-->
+<mx:HTTPService id="getListTopSales" url="/sale/customer_info/top_sales" /> <!--List Top Sales-->
+
+<mx:HTTPService id="getListFormat" url="cust/customerinfo/xmls/CustomerInfoListStru.xml" />
+<mx:HTTPService id="getViewFormat" url="cust/customerinfo/xmls/CustomerInfoCriteriaStru.xml" />
+<mx:HTTPService id="getList" url="/sale/customer_report/customer_info_detail" />
+<!--<mx:HTTPService id="listCustomer" url="/customer_report/customer_info_detail"/>--> <!--customer list-->
+<mx:HTTPService id="showCustomer" url="/sale/customer_retail/show_customer"/> <!--customer detail-->
+
+<mx:HTTPService id="printTopSaleRecord" url="/sale/customer_report/top_sales_format" />
+
+<mx:HTTPService id="printRecord" url="" />
+</rds:CommonServices>

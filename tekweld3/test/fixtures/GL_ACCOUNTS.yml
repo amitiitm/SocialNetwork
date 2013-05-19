@@ -1,0 +1,243 @@
+--- 
+gl_accounts_001: 
+  start_date: 2011/01/24 00:00:00
+  balance_type: DB
+  name: Discount Account
+  group1: ""
+  group2: ""
+  updated_at: 2011/01/24 11:52:00
+  gl_category_id: 4
+  group3: ""
+  code: DISCOUNTACCT
+  update_flag: Y
+  group4: ""
+  trans_flag: A
+  created_by: 1
+  lock_version: 3
+  updated_by: 1
+  id: 1
+  acct_flag: A
+  tb_seq_no: 10
+  company_id: 1
+  bank_id: 
+  created_at: 2011/01/24 11:05:33
+gl_accounts_002: 
+  start_date: 2011/01/24 00:00:00
+  balance_type: DB
+  name: Insurance Account
+  group1: ""
+  group2: ""
+  updated_at: 2011/01/24 11:05:52
+  gl_category_id: 4
+  group3: ""
+  code: INSURANCEACCT
+  update_flag: Y
+  group4: ""
+  trans_flag: A
+  created_by: 2
+  lock_version: 0
+  updated_by: 2
+  id: 2
+  acct_flag: A
+  tb_seq_no: 2
+  company_id: 1
+  bank_id: 
+  created_at: 2011/01/24 11:05:52
+gl_accounts_003: 
+  start_date: 2011/01/24 00:00:00
+  balance_type: DB
+  name: Shipping Account
+  group1: ""
+  group2: ""
+  updated_at: 2011/01/24 11:06:08
+  gl_category_id: 4
+  group3: ""
+  code: SHIPPINGACCT
+  update_flag: Y
+  group4: ""
+  trans_flag: A
+  created_by: 2
+  lock_version: 0
+  updated_by: 2
+  id: 3
+  acct_flag: A
+  tb_seq_no: 3
+  company_id: 1
+  bank_id: 
+  created_at: 2011/01/24 11:06:08
+gl_accounts_004: 
+  start_date: 2011/01/24 00:00:00
+  balance_type: DB
+  name: Sales Account
+  group1: ""
+  group2: ""
+  updated_at: 2011/01/24 11:06:28
+  gl_category_id: 3
+  group3: ""
+  code: SALESACCT
+  update_flag: Y
+  group4: ""
+  trans_flag: A
+  created_by: 2
+  lock_version: 0
+  updated_by: 2
+  id: 4
+  acct_flag: A
+  tb_seq_no: 4
+  company_id: 1
+  bank_id: 
+  created_at: 2011/01/24 11:06:28
+gl_accounts_005: 
+  start_date: 2011/01/24 00:00:00
+  balance_type: DB
+  name: Purchase Account
+  group1: ""
+  group2: ""
+  updated_at: 2011/01/24 11:07:09
+  gl_category_id: 4
+  group3: ""
+  code: PURCHASEACCT
+  update_flag: Y
+  group4: ""
+  trans_flag: A
+  created_by: 2
+  lock_version: 0
+  updated_by: 2
+  id: 5
+  acct_flag: A
+  tb_seq_no: 5
+  company_id: 1
+  bank_id: 
+  created_at: 2011/01/24 11:07:09
+gl_accounts_006: 
+  start_date: 2011/01/24 00:00:00
+  balance_type: DB
+  name: Payable Account
+  group1: ""
+  group2: ""
+  updated_at: 2011/01/24 11:08:07
+  gl_category_id: 2
+  group3: ""
+  code: PAYABLEACCT
+  update_flag: Y
+  group4: ""
+  trans_flag: A
+  created_by: 2
+  lock_version: 0
+  updated_by: 2
+  id: 6
+  acct_flag: A
+  tb_seq_no: 6
+  company_id: 1
+  bank_id: 
+  created_at: 2011/01/24 11:08:07
+gl_accounts_007: 
+  start_date: 2011/01/24 00:00:00
+  balance_type: DB
+  name: Receivable Account
+  group1: ""
+  group2: ""
+  updated_at: 2011/01/24 11:08:27
+  gl_category_id: 1
+  group3: ""
+  code: RECEIVABLEACCT
+  update_flag: Y
+  group4: ""
+  trans_flag: A
+  created_by: 2
+  lock_version: 0
+  updated_by: 2
+  id: 7
+  acct_flag: A
+  tb_seq_no: 6
+  company_id: 1
+  bank_id: 
+  created_at: 2011/01/24 11:08:27
+gl_accounts_008: 
+  start_date: 2011/01/24 00:00:00
+  balance_type: DB
+  name: Tax Account
+  group1: ""
+  group2: ""
+  updated_at: 2011/01/24 11:13:26
+  gl_category_id: 2
+  group3: ""
+  code: TAXACCT
+  update_flag: Y
+  group4: ""
+  trans_flag: A
+  created_by: 2
+  lock_version: 0
+  updated_by: 2
+  id: 8
+  acct_flag: A
+  tb_seq_no: 7
+  company_id: 1
+  bank_id: 
+  created_at: 2011/01/24 11:13:26
+gl_accounts_009: 
+  start_date: 2011/01/24 00:00:00
+  balance_type: DB
+  name: Chase Bank
+  group1: 
+  group2: 
+  updated_at: 2011/01/24 11:20:43
+  gl_category_id: 1
+  group3: 
+  code: CHASE
+  update_flag: Y
+  group4: 
+  trans_flag: A
+  created_by: 2
+  lock_version: 0
+  updated_by: 2
+  id: 9
+  acct_flag: B
+  tb_seq_no: 
+  company_id: 1
+  bank_id: 1
+  created_at: 2011/01/24 11:20:43
+gl_accounts_010: 
+  start_date: 2011/01/24 00:00:00
+  balance_type: DB
+  name: Sales Return Account
+  group1: ""
+  group2: ""
+  updated_at: 2011/01/24 12:37:55
+  gl_category_id: 2
+  group3: ""
+  code: SALESRETURN
+  update_flag: Y
+  group4: ""
+  trans_flag: A
+  created_by: 2
+  lock_version: 1
+  updated_by: 2
+  id: 10
+  acct_flag: A
+  tb_seq_no: 8
+  company_id: 1
+  bank_id: 
+  created_at: 2011/01/24 12:37:09
+gl_accounts_011: 
+  start_date: 2011/01/24 00:00:00
+  balance_type: DB
+  name: Purchase Return Account
+  group1: ""
+  group2: ""
+  updated_at: 2011/01/24 12:37:37
+  gl_category_id: 1
+  group3: ""
+  code: PURCHASERETURNACCT
+  update_flag: Y
+  group4: ""
+  trans_flag: A
+  created_by: 2
+  lock_version: 0
+  updated_by: 2
+  id: 11
+  acct_flag: A
+  tb_seq_no: 9
+  company_id: 1
+  bank_id: 
+  created_at: 2011/01/24 12:37:37

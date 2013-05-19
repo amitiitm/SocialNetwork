@@ -1,0 +1,17 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  name: MyString
+  prefix: MyString
+  ztype: 1
+  buy_rate: 9.99
+  sell_rate: 9.99
+  country_id: 1
+
+two:
+  name: MyString
+  prefix: MyString
+  ztype: 1
+  buy_rate: 9.99
+  sell_rate: 9.99
+  country_id: 1

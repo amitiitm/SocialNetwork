@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:DateField xmlns:mx="http://www.adobe.com/2006/mxml" focusIn="onFocusIn()" focusOut="onFocusOut()" change="onChange()"  open="onOpen()"
+	yearNavigationEnabled="true" height="18"
+	labelFunction="{dateFunc}" editable="true"
+	creationComplete="creationCompleteHandler(event)"
+	>
+	<mx:Metadata>
+	  	 [Event(name="itemChangedEvent", type="com.generic.events.GenDateFieldEvent")]
+	</mx:Metadata> 
+
+ 	<mx:Script source="../scripts/GenDateFieldScript.as"/>
+</mx:DateField>

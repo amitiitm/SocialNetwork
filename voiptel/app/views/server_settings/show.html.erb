@@ -1,0 +1,21 @@
+<fieldset>
+	<legend>View Settings</legend>
+	<p>
+	  <b>Module:</b>
+	  <%=h @server_setting.module %>
+	</p>
+
+	<p>
+	  <b>Server:</b>
+	  <%=h @server_setting.server.name %>
+	</p>
+
+	<p>
+	  <b>Settings:</b>
+	  <%=h @server_setting.settings %>
+	</p>
+
+
+	<%= link_to 'Edit', edit_server_setting_path(@server_setting) %> |
+	<%= link_to 'Back', server_settings_path %>
+</fieldset>

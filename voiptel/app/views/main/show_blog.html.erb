@@ -1,0 +1,66 @@
+<!DOCTYPE HTML>
+<!--
+	Halcyonic 1.0 by nodethirtythree + FCT
+	http://nodethirtythree.com | @nodethirtythree
+	Released under the Creative Commons Attribution 3.0 license (nodethirtythree.com/license)
+-->
+<html>
+  <head>
+    <title>Technotronics Solutions</title>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <!--5grid--><script src="/assets/5grid/viewport.js"></script><!--[if lt IE 9]><script src="css/5grid/ie.js"></script><![endif]--><link rel="stylesheet" href="/assets/5grid/responsive.css" /><!--/5grid-->
+    <link rel="stylesheet" href="/assets/style.css" />
+    <!--[if lte IE 9]><link rel="stylesheet" href="css/style-ie9.css" /><![endif]-->
+  </head>
+  <body class="subpage">
+
+    <!-- Menu -->
+    <%=render 'menu'%>
+
+
+    <!-- Content -->
+    <div id="content-wrapper">
+      <div id="content">
+        <div class="5grid">
+          <div class="3u-first">
+
+            <!-- Sidebar -->
+            <section>
+              <header>
+                <h2>Existing Blogs</h2>
+              </header>
+              <%blogs = Blog.find(:all)%>
+              <ul class="link-list">
+                <%blogs.each{|blog|%>
+                  <li><%= link_to blog.blog_name,:controller => "main", :action => "show_blog" , :id => blog.id%></li>
+                <%}%>
+              </ul>
+            </section>
+            <%=render 'left_bottom_sidebar'%>
+
+          </div>
+          <div class="9u">
+
+            <!-- Main Content -->
+            <section>
+              <header>
+                <h2>Description</h2>
+              </header>
+              <p><%= @blog.blog_description %></p>
+            </section>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <%= render 'footer' %>
+
+    <!-- Copyright -->
+    <%= render 'copyright' %>
+
+  </body>
+</html>

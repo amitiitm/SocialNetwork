@@ -1,0 +1,33 @@
+<columns  lockedColumnCount='0'>
+
+	<column data='code'			label='Bank #'			editable='false'	visible='true'		width='100'	textAlign='left'	forLevel='true'
+			print_width='20'	defaultForLevel='2'		booleanFlag='false'	sortDataType='S' 	columnPrecision="NaN"/>
+			
+	<column data='name'			label='Name'			editable='false'	visible='true'		width='160'	textAlign='left'	forLevel='true'
+			print_width='24'	defaultForLevel=''		booleanFlag='false'	sortDataType='S'	columnPrecision="NaN"/>
+			
+	<column data='bank_acct_no'	label='Bank A/c #'		editable='false'	visible='true'		width='160'	textAlign='left'	forLevel='true' 
+			print_width='20'	defaultForLevel=''		booleanFlag='false'	sortDataType='S'	columnPrecision="NaN"/>
+	
+	<column data='account_type'	label='A/c Type'		editable='false'	visible='true'		width='60'	textAlign='left'	forLevel='true'
+			print_width='18'	defaultForLevel='1'		booleanFlag='false'	sortDataType='S'	columnPrecision="NaN"/>
+			
+	<column data='start_date'	label='Start Date'		editable='false'	visible='true'		width='80'	textAlign='left'	forLevel='false' 
+			print_width='18'	defaultForLevel=''		booleanFlag='false' sortDataType='D'	columnPrecision="NaN"/>
+			
+	<column data='transit_no'	label='Transit #'		editable='false'	visible='true'		width='60'	textAlign='left'	forLevel='false'
+			print_width='15'	defaultForLevel=''		booleanFlag='false'	sortDataType='S'	columnPrecision="NaN"/>
+			
+	<column data='credit_limit'	label='Credit Limit'	editable='false'	visible='true'		width='100'	textAlign='right'	forLevel='false'
+			print_width='18'	defaultForLevel=''	 	booleanFlag='false' sortDataType='N'	columnPrecision="2"/>
+			
+	<column data='current_balance'	label='Current Balance'	editable='false' 	visible='true' 		width='100'	textAlign='right' 	forLevel='false'
+			print_width='18' 	defaultForLevel='' 		booleanFlag='false' sortDataType='N'		columnPrecision="2"/>
+
+	<column data='contact_nm'	label='Contact Name'	editable='false' 	visible='true' 		width='100'	textAlign='left'	forLevel='false'
+			print_width='24'	defaultForLevel=''		booleanFlag='false'	sortDataType='S'	columnPrecision="NaN"/>
+	
+	<column data='city'			label='City'			editable='false' 	visible='true' 		width='60'	textAlign='left'	forLevel='true' 
+			print_width='16'	defaultForLevel='0'		booleanFlag='false'	sortDataType='S'	columnPrecision="NaN"/>
+				
+</columns> 

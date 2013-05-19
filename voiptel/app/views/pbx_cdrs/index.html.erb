@@ -1,0 +1,8 @@
+<link rel="stylesheet" type="text/css" href="/VOT_Admin_RecordedCalls_Inbound_files/style.css"></link>
+<link rel="stylesheet" type="text/css" href="/VOT_Admin_RecordedCalls_Inbound_files/grid.css"></link>
+<%= page_title :title => "Recorded Calls" %>
+<%parameters = recorded_call_url(@contable,params)%>
+<%= link_to("Inbound", "/pbx_cdrs/inbound?#{parameters}&type=inbound", :class => "hash pbx ajax calls", :update=>"inner-response1") %> |
+<%= link_to("Outbound", "/pbx_cdrs/outbound?#{parameters}&type=outbound", :class => "hash ajax pbx calls", :update=>"inner-response1") %><br/><br/>
+
+  <%=render :partial => "inbound"%>

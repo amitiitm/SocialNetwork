@@ -1,0 +1,133 @@
+--- 
+roles_004: 
+  updated_at: 2011/01/21 16:50:52
+  code: ACCTADMIN
+  update_flag: Y
+  trans_flag: A
+  created_by: 2
+  lock_version: 0
+  updated_by: 2
+  id: 118
+  company_id: 1
+  role_name: Accounts Administrator
+  created_at: 2011/01/21 16:50:52
+roles_005: 
+  updated_at: 2011/01/21 16:51:08
+  code: DIAMADMIN
+  update_flag: Y
+  trans_flag: A
+  created_by: 2
+  lock_version: 0
+  updated_by: 2
+  id: 119
+  company_id: 1
+  role_name: Diamond Administrator
+  created_at: 2011/01/21 16:51:08
+roles_006: 
+  updated_at: 2011/01/21 16:51:28
+  code: PRODADMIN
+  update_flag: Y
+  trans_flag: A
+  created_by: 2
+  lock_version: 0
+  updated_by: 2
+  id: 120
+  company_id: 1
+  role_name: Production Administrator
+  created_at: 2011/01/21 16:51:28
+roles_007: 
+  updated_at: 2011/01/21 16:51:37
+  code: CRMADMIN
+  update_flag: Y
+  trans_flag: A
+  created_by: 2
+  lock_version: 0
+  updated_by: 2
+  id: 121
+  company_id: 1
+  role_name: CRM Administrator
+  created_at: 2011/01/21 16:51:37
+roles_008: 
+  updated_at: 2011/01/21 16:51:46
+  code: MELTADMIN
+  update_flag: Y
+  trans_flag: A
+  created_by: 2
+  lock_version: 0
+  updated_by: 2
+  id: 122
+  company_id: 1
+  role_name: Melting Administrator
+  created_at: 2011/01/21 16:51:46
+roles_009: 
+  updated_at: 2011/01/21 16:52:00
+  code: CATALOGADMIN
+  update_flag: Y
+  trans_flag: A
+  created_by: 2
+  lock_version: 0
+  updated_by: 2
+  id: 123
+  company_id: 1
+  role_name: Catalog Administrator
+  created_at: 2011/01/21 16:52:00
+roles_010: 
+  updated_at: 2011/01/21 16:52:21
+  code: POSADMIN
+  update_flag: Y
+  trans_flag: A
+  created_by: 2
+  lock_version: 0
+  updated_by: 2
+  id: 124
+  company_id: 1
+  role_name: POS Administrator
+  created_at: 2011/01/21 16:52:21
+roles_011: 
+  updated_at: 2011/01/21 16:52:35
+  code: SETUPADMIN
+  update_flag: Y
+  trans_flag: A
+  created_by: 2
+  lock_version: 0
+  updated_by: 2
+  id: 125
+  company_id: 1
+  role_name: Setup Administrator
+  created_at: 2011/01/21 16:52:35
+roles_001: 
+  updated_at: 2011/01/21 16:49:56
+  code: INVNADMIN
+  update_flag: Y
+  trans_flag: A
+  created_by: 2
+  lock_version: 0
+  updated_by: 2
+  id: 115
+  company_id: 1
+  role_name: Inventory Administrator
+  created_at: 2011/01/21 16:49:56
+roles_002: 
+  updated_at: 2011/01/21 16:50:15
+  code: SALESADMIN
+  update_flag: Y
+  trans_flag: A
+  created_by: 2
+  lock_version: 0
+  updated_by: 2
+  id: 116
+  company_id: 1
+  role_name: Sales Administrator
+  created_at: 2011/01/21 16:50:15
+roles_003: 
+  updated_at: 2011/01/21 16:50:36
+  code: PURADMIN
+  update_flag: Y
+  trans_flag: A
+  created_by: 2
+  lock_version: 0
+  updated_by: 2
+  id: 117
+  company_id: 1
+  role_name: Purchase Administrator
+  created_at: 2011/01/21 16:50:36

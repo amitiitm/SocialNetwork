@@ -1,0 +1,51 @@
+<% page_title :title => "Notifications" %>
+
+
+<% if !@notifications.blank? %>
+	<% table :width => "850px" do |t| %>
+		<% t.th "#" %>
+	  <% t.th "Subject"  %>
+	  <% t.th "From Name"  %>
+		<% t.th "To Name"  %>
+		<% t.th "Notitication Cat"  %>
+		<% t.th "Sent On"  %>
+		<% t.th "Actions" %>
+
+		<% counter = 0 %>	
+		<% for notification in @notifications %>
+			<% t.td (counter += 1) %>
+		  <% t.td notification.subject %>
+			<% t.td("<span class='tooltip' title='#{notification.from_address}'>#{notification.from_name}</span>") %>
+		  <% t.td("<span class='tooltip' title='#{notification.to_address}'>#{notification.to_name}</span>") %>
+			<% t.td notification.category.name %>
+			<% t.td user_date(notification.created_at) %>
+			<% t.td action_links(
+				link_to("View", "/notifications/view/#{notification.id}", :class => "fn", :function => "view(this)")
+			) %>
+
+			<% t.new_row %>
+		<% end %>		
+	<% end %>
+<% else %>
+	No email has been sent yet.
+<% end %>
+
+
+<script type="text/javascript" charset="utf-8">
+	function view(el){
+		var path = $(el).attr("href");
+		window.open(path,"Window1","menubar=no,width=790,height=900,toolbar=no");
+	}
+	
+	$(function(){
+		$('.tooltip').tooltip({
+			track: true,
+			delay: 0,
+			showURL: false,
+			showBody: " - ",
+			fade: 250
+		});
+	});
+</script>
+
+

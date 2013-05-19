@@ -1,0 +1,22 @@
+<%= javascript_include_tag "jquery.jstree.js" %>
+<%= page_title :title => "jsTree" %>
+
+<% box :type => "box_title", :title => "IVRs", :style => "width:500px" do %>
+	<div id="demo1" class="demo">
+		<ul>  
+		<% for ivr in @ivrs %>
+		    <li id="#phtml_<%= ivr.id %>"><%= link_to ivr.name, edit_ivr_path(ivr), :class => "ivrs" %>
+		        <%= tree_ul(ivr) %>
+		   </li>
+		<% end %>
+		</ul>
+	</div>
+<% end %>
+<script type="text/javascript" class="source">
+$(function () {
+	$("#demo1").jstree({ 
+		"plugins" : [ "themes", "html_data", "ui", "crrm" ]
+	});
+});
+</script>
+

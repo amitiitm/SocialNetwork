@@ -1,0 +1,35 @@
+<columns lockedColumnCount='0'>
+	
+	<column data='serial_no' 			label='Serial #' 			editable='false' 	visible='true' 	width='60' 		textAlign='left' 
+			forLevel='false' 			defaultForLevel='' 			booleanFlag='false' sortDataType='N'/>
+
+	<column data='pos_order_id' 		label='Pos Order #' 		editable='false' 	visible='true' 	width='80' 		textAlign='right' 
+			forLevel='false' 			defaultForLevel='' 			booleanFlag='false' sortDataType='N'/>
+	<column data='payment_method' 		label='Payment Method' 		editable='false' 	visible='true' 		width='80' 		textAlign='left' 
+			forLevel='false' 			defaultForLevel='' 			booleanFlag='false' sortDataType='S'/>
+	<column data='reference_no' 		label='Ref #' 				editable='false' 	visible='true' 		width='80' 		textAlign='left' 
+			forLevel='false' 			defaultForLevel='' 			booleanFlag='false' sortDataType='S'/>		
+	<column data='payment_amt' 			label='Payment Amt' 		editable='false' 	visible='true' 	width='80' 		textAlign='right' 
+			forLevel='false' 			defaultForLevel='' 			booleanFlag='false' sortDataType='N'/>
+	<column data='check_date' 			label='Check Date' 			editable='false' 	visible='true' 		width='85' 		textAlign='left' 
+			forLevel='false' 			defaultForLevel='' 			booleanFlag='false' sortDataType='D'/>
+				
+	
+	<column data='trans_flag' 			label='Status' 			editable='false' 	visible='false' 	width='0' 		textAlign='left' 
+			forLevel='false' 			defaultForLevel='' 			booleanFlag='false' sortDataType='S'/>
+	<column data='id' 					label='#' 					editable='false' 	visible='false' 	width='0' 		textAlign='right' 
+			forLevel='false' 			defaultForLevel='' 			booleanFlag='false' sortDataType='N'/>
+	<column data='company_id' 			label='' 					editable='false' 	visible='false' 	width='0' 		textAlign='left' 
+			forLevel='false' 			defaultForLevel='' 			booleanFlag='false' sortDataType='S'/>
+	<column data='created_by' 			label='' 					editable='false' 	visible='false' 	width='0' 		textAlign='left' 
+			forLevel='false' 			defaultForLevel='' 			booleanFlag='false' sortDataType='S'/>
+	<column data='updated_by' 			label='' 					editable='false' 	visible='false' 	width='0' 		textAlign='left' 
+			forLevel='false' 			defaultForLevel='' 			booleanFlag='false' sortDataType='S'/>
+	<column data='lock_version' 		label='Lock version' 		editable='false' 	visible='false' 	width='0' 		textAlign='right' 
+			forLevel='false' 			defaultForLevel='' 			booleanFlag='false' sortDataType='N'/>
+
+</columns>  
+
+
+
+

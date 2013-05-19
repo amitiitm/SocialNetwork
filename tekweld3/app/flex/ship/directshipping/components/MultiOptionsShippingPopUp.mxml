@@ -1,0 +1,365 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:TitleWindow xmlns:fx="http://ns.adobe.com/mxml/2009" 
+		 xmlns:s="library://ns.adobe.com/flex/spark" 
+		 xmlns:mx="library://ns.adobe.com/flex/mx" width="500" height="400" xmlns:customcomponents="com.generic.customcomponents.*"
+		 title="Multi Options" showCloseButton="true" close="closeHandler()" defaultButton="{btnOk}" creationComplete="titlewindow1_creationCompleteHandler(event)">
+	<fx:Declarations>
+		<!-- Place non-visual elements (e.g., services, value objects) here -->
+		<fx:XML id="dgMultiOptionsXml" source="../xmls/MultiOptionDetailStru.xml"/>
+	</fx:Declarations>
+	<fx:Script>
+		<![CDATA[
+			import com.adobe.cairngorm.business.ServiceLocator;
+			import com.generic.components.Inbox;
+			import com.generic.customcomponents.GenTextInput;
+			import com.generic.events.GenDataGridEvent;
+			import com.generic.events.GenTextInputEvent;
+			import com.generic.events.InboxEvent;
+			import com.generic.events.NewGenDataGridEvent;
+			import com.generic.genclass.URL;
+			
+			import model.GenModelLocator;
+			
+			import mx.controls.Alert;
+			import mx.controls.ComboBox;
+			import mx.controls.Label;
+			import mx.core.Application;
+			import mx.events.DataGridEvent;
+			import mx.events.FlexEvent;
+			import mx.managers.CursorManager;
+			import mx.managers.PopUpManager;
+			import mx.rpc.AsyncToken;
+			import mx.rpc.IResponder;
+			import mx.rpc.events.FaultEvent;
+			import mx.rpc.events.ResultEvent;
+			import mx.rpc.http.HTTPService;
+			
+			import saoi.muduleclasses.CommonUtility;
+			import saoi.muduleclasses.event.MissingInfoEvent;
+			import saoi.salesorder.SalesOrderModelLocator;
+			
+			private var __genModel:GenModelLocator 			= GenModelLocator.getInstance();
+			private var __service:ServiceLocator 			= __genModel.services;
+			public  var inbox:Inbox;
+			private var __responder:IResponder;
+			
+			protected function titlewindow1_creationCompleteHandler(event:FlexEvent):void
+			{
+				this.parentApplication.focusManager.deactivate();
+				getMultioptionsXml(inbox);
+				//var optionsXml:XML							= getMultioptionsXml(inbox);
+				//drawMultiOptions(optionsXml.copy());
+			}
+			
+			private function closeHandler():void
+			{
+				PopUpManager.removePopUp(this);
+			}
+			private function updateRemarks():void
+			{
+				var result:String			= getSaveValue();
+				var damaged_qty_description	= getDamagedMultiSaveValue();
+				
+				if(isMultiOptionsQtyValid(inbox.selectedRows.children()[0].ship_qty.toString(),result)==0)
+				{
+					
+				}
+				else
+				{
+					result	= '';
+					damaged_qty_description = '';
+					Alert.show("There is mismatch in Ship Quantity & Multiple Option Quantity.");
+				}
+				inbox.selectedRows.children()[0].multi_description 		 = result;
+				inbox.selectedRows.children()[0].damaged_qty_description = damaged_qty_description;
+				inbox.reset();
+				closeHandler();
+				
+			}
+			private function isMultiOptionsQtyValid(main_item_qty:String,multiDescriptions:String):int
+			{
+				if(multiDescriptions==null || multiDescriptions=='' || main_item_qty=='' || main_item_qty==null)
+				{
+					return 0;
+				}
+				var item_qty:Number 	   = Number(main_item_qty);
+				var total_multi_qty:Number = Number(0);
+				
+				var returnValue:int = 0;
+				var params:Array = multiDescriptions.split(";");
+				
+				for (var i:int=0;i<params.length-1;i++)
+				{
+					var paramElement:String  	= params[i].toString();
+					var colonIndex:int			= paramElement.indexOf("=");
+					var code:String 			= paramElement.substr(0,colonIndex);
+					var code_value:String 		= paramElement.substr(colonIndex+1,paramElement.length);
+					total_multi_qty  			= total_multi_qty + Number(code_value);
+				}
+				if(item_qty==total_multi_qty)
+				{
+					returnValue  = 0;
+				}
+				else if(total_multi_qty>item_qty)
+				{
+					returnValue  = 1;  
+				}
+				else
+				{
+					returnValue	 = -1;
+				}
+				
+				return returnValue;
+			}
+			private function getSaveValue():String
+			{
+				var __saveOption:String 				= new String();
+				for(var i:int=0;i<vbMultiOptions.getChildren().length;i++)
+				{
+					
+					var hbox:HBox 						= HBox(vbMultiOptions.getChildByName('hb'+i));
+					var inputValue:GenTextInput  		= GenTextInput(hbox.getChildAt(3));
+					if(Number(inputValue.dataValue)>0)
+					{
+						__saveOption = __saveOption.concat(Label(hbox.getChildAt(0)).text+"=");
+						__saveOption = __saveOption.concat(inputValue.dataValue,';');
+					}
+				}
+				return __saveOption;
+			}
+			private function getDamagedMultiSaveValue():String
+			{
+				var __saveOption:String 				= new String();
+				for(var i:int=0;i<vbMultiOptions.getChildren().length;i++)
+				{
+					
+					var hbox:HBox 						= HBox(vbMultiOptions.getChildByName('hb'+i));
+					var inputValue:GenTextInput  		= GenTextInput(hbox.getChildAt(4));
+					if(Number(inputValue.dataValue)>0)
+					{
+						__saveOption = __saveOption.concat(Label(hbox.getChildAt(0)).text+"=");
+						__saveOption = __saveOption.concat(inputValue.dataValue,';');
+					}
+				}
+				return __saveOption;
+			}
+			private function inputChnageHandler(event:Event):void
+			{
+				if(dgMultiOptions.rows.children().length()>0)
+				{
+					dgMultiOptions.rows.children()[Number(GenTextInput(event.target).id)].ship_qty = GenTextInput(event.target).dataValue;
+					dgMultiOptions.rows   = dgMultiOptions.rows;
+				}
+				updateTotalQty(vbMultiOptions);
+			}
+			private function inputDamagedQtyChnageHandler(event:Event):void
+			{
+				if(dgMultiOptions.rows.children().length()>0)
+				{
+					dgMultiOptions.rows.children()[Number(GenTextInput(event.target).id)].damaged_qty = GenTextInput(event.target).dataValue;
+					dgMultiOptions.rows   = dgMultiOptions.rows;
+				}
+				updateTotalQty(vbMultiOptions);
+			}
+			public function getMultioptionsXml(inbox:Inbox):void
+			{
+				var trans_no:String			= inbox.selectedRows.children()[0].trans_no.toString();
+				if(trans_no!='')
+				{
+					var tempXml:XML							= new XML(				<params>
+																						<trans_no>{trans_no}</trans_no>
+																					</params>);
+					var http:HTTPService 					= new CommonUtility().dataService(__service.getHTTPService("getMultiOptions"));
+					__responder 							= new mx.rpc.Responder(getMultiOptionsResultHandler,getMultiOptionsFaultHandler);
+					var token:AsyncToken 					= http.send(tempXml);
+					token.addResponder(__responder);
+				}
+				else
+				{
+					
+				}
+			}
+			private function getMultiOptionsResultHandler(event:ResultEvent):void
+			{
+				var recordxml:XML  		= XML(event.result);
+				dgMultiOptions.rows		= recordxml;
+				
+				CursorManager.removeBusyCursor();
+				Application.application.enabled = true;
+				
+				drawMultiOptions(dgMultiOptions.rows.copy());
+			}
+			public function getMultiOptionsFaultHandler(event:FaultEvent):void
+			{
+				Alert.show("Get Multioptions  "+event.fault.faultDetail);
+				
+				CursorManager.removeBusyCursor();
+				Application.application.enabled = true;
+				closeHandler();
+			}
+			private function drawMultiOptions(xml:XML):void
+			{
+				var startTabIndex:int   = 10000;
+				
+				for(var i:int=0;i<xml.children().length();i++)
+				{
+					var hbox:HBox = new HBox();
+					hbox.percentWidth	  	= 100;
+					hbox.height 		 	= 22;
+					hbox.name         		= 'hb'+i;	
+					hbox.setStyle('verticalAlign','middle');
+					
+					// multioptionsValue
+					var lblAttributeName:Label						= new Label();
+					lblAttributeName.text 							= xml.children()[i].value;
+					lblAttributeName.width							= 120;
+					lblAttributeName.tabEnabled						= false;
+					lblAttributeName.setStyle('textAlign','right');
+					lblAttributeName.setStyle('borderStyle','none');
+					
+					
+					// multioptionsOrderValue
+					var tiOrderValue:GenTextInput					= new GenTextInput();
+					tiOrderValue.id									= i.toString()
+					tiOrderValue.enabled							= false;
+					tiOrderValue.width								= 75;
+					tiOrderValue.dataType							= 'N';
+					tiOrderValue.dataValue							= xml.children()[i].qty;
+					tiOrderValue.tabEnabled							= false;
+					tiOrderValue.tabIndex							= (startTabIndex+1);
+					
+					// multioptionsShippedQty
+					var tiShippedQty:GenTextInput					= new GenTextInput();
+					tiShippedQty.id									= i.toString()
+					tiShippedQty.enabled							= false;
+					tiShippedQty.width								= 75;
+					tiShippedQty.dataType							= 'N';
+					tiShippedQty.dataValue							= xml.children()[i].clear_qty;
+					tiShippedQty.tabEnabled							= false;
+					tiShippedQty.tabIndex							= (startTabIndex+1);
+					
+					
+					//// for input
+					var tiRemarksValue:GenTextInput					= new GenTextInput();
+					tiRemarksValue.id								= i.toString()
+					tiRemarksValue.width							= 75;
+					tiRemarksValue.dataType							= 'N';
+					tiRemarksValue.dataValue						= xml.children()[i].ship_qty;
+					tiRemarksValue.tabEnabled						= true;
+					tiRemarksValue.enabled							= !__genModel.activeModelLocator.addEditObj.isRecordViewOnly;
+					tiRemarksValue.tabIndex							= (startTabIndex+1);
+					tiRemarksValue.addEventListener(GenTextInputEvent.ITEMCHANGED_EVENT,inputChnageHandler);
+					
+					//// for input Damaged qty
+					var tiDamagedQty:GenTextInput					= new GenTextInput();
+					tiDamagedQty.id									= i.toString()
+					tiDamagedQty.width								= 75;
+					tiDamagedQty.dataType							= 'N';
+					tiDamagedQty.dataValue							= xml.children()[i].damaged_qty;
+					tiDamagedQty.tabEnabled							= true;
+					tiDamagedQty.enabled							= !__genModel.activeModelLocator.addEditObj.isRecordViewOnly;
+					tiDamagedQty.tabIndex							= (startTabIndex+1);
+					tiDamagedQty.addEventListener(GenTextInputEvent.ITEMCHANGED_EVENT,inputDamagedQtyChnageHandler);
+					
+					hbox.addChildAt(lblAttributeName,0);
+					hbox.addChildAt(tiOrderValue,1);
+					hbox.addChildAt(tiShippedQty,2)
+					hbox.addChildAt(tiRemarksValue,3);
+					hbox.addChildAt(tiDamagedQty,4);
+					
+					vbMultiOptions.addChildAt(hbox,i);
+					startTabIndex   = startTabIndex +1;
+				}
+				/* var multiDescriptions:String			= inbox.selectedRows.children()[0].multi_description.toString();
+				if(multiDescriptions!='')
+				{
+					setShippingOptionsValue();
+				} */
+				updateTotalQty(vbMultiOptions);
+				
+			}
+			private function setShippingOptionsValue():void
+			{
+				var tempXml:XML		= getShippingOptionsValueXml();
+				for(var i:int =0 ;i<vbMultiOptions.getChildren().length;i++)
+				{
+					var hbox:HBox 								= HBox(vbMultiOptions.getChildByName('hb'+i));
+					var codeValue:String						= Label(hbox.getChildAt(0)).text;
+					GenTextInput(hbox.getChildAt(2)).dataValue	=  tempXml.children().(code==codeValue).toString();
+				}
+			}
+			private function getShippingOptionsValueXml():XML
+			{
+				var multiDescriptions:String			= inbox.selectedRows.children()[0].multi_description.toString();
+				var params:Array = multiDescriptions.split(";");
+				var tempXml:XML  						= new XML(<rows></rows>);
+				var xmlChild:XMLList					= new XMLList(<row></row>);
+				
+				for (var i:int=0;i<params.length-1;i++)
+				{
+					var paramElement:String  	= params[i].toString();
+					var colonIndex:int			= paramElement.indexOf("=");
+					var code:String 			= paramElement.substr(0,colonIndex);
+					var code_value:String 		= paramElement.substr(colonIndex+1,paramElement.length);
+					xmlChild.code				= code;
+					xmlChild.value				= code_value;
+					tempXml.appendChild(xmlChild.copy());
+				}
+				return tempXml.copy();
+			}
+			private function updateTotalQty(vbMultiOptions:VBox):void
+			{
+				var order_qty_total:Number							= 0.00;
+				var shipped_qty_total:Number						= 0.00;
+				var ship_qty_total:Number							= 0.00;
+				var damaged_qty_total:Number						= 0.00;
+				
+				for(var i:int =0 ;i<vbMultiOptions.getChildren().length;i++)
+				{
+					var hbox:HBox 								= HBox(vbMultiOptions.getChildByName('hb'+i));
+					var order_qty:Number						= Number(GenTextInput(hbox.getChildAt(1)).dataValue);
+					var shipped_qty:Number						= Number(GenTextInput(hbox.getChildAt(2)).dataValue);
+					var ship_qty:Number							= Number(GenTextInput(hbox.getChildAt(3)).dataValue);
+					var damaged_qty:Number						= Number(GenTextInput(hbox.getChildAt(4)).dataValue);
+					
+					order_qty_total		= order_qty_total 	+	order_qty;
+					shipped_qty_total	= shipped_qty_total +	shipped_qty;
+					ship_qty_total		= ship_qty_total 	+	ship_qty;
+					damaged_qty_total	= damaged_qty_total +	damaged_qty;
+				}
+				
+				tiTotal_Order_Qty.dataValue		= order_qty_total.toString();
+				tiTotal_Shipped_Qty.dataValue	= shipped_qty_total.toString();
+				tiTotal_Ship_Qty.dataValue		= ship_qty_total.toString();
+				tiTotal_Damaged_Qty.dataValue	= damaged_qty_total.toString();
+			}
+		]]>
+	</fx:Script>
+	<customcomponents:GenDataGrid id="dgMultiOptions"
+								  updatableFlag="true"
+								  rootNode="sales_order_attributes_multiple_values"
+								  structure="{dgMultiOptionsXml}"
+								  formatServiceID="optionDetailFormat"
+								  height="0"
+								  width="0" visible="false" includeInLayout="false"/>
+	<mx:HBox width="100%" height="25" verticalAlign="middle">
+		<mx:Label text="Option" width="120" textAlign="right"/>
+		<mx:Label text="Order Qty" width="75"/>
+		<mx:Label text="Shipped Qty" width="75"/>
+		<mx:Label text="Ship Qty" width="75"/>
+		<mx:Label text="Damaged Qty" width="75"/>
+	</mx:HBox>
+	<mx:VBox id="vbMultiOptions" verticalGap="3" width="100%" height="245"/>
+	<mx:Label text="-----------------------------------------------------------------------------------------" textAlign="center" height="15" width="100%"/>
+	<mx:HBox width="100%" height="25" verticalAlign="middle">
+		<mx:Label text="Total" width="120" textAlign="right"/>
+		<customcomponents:GenTextInput id="tiTotal_Order_Qty" width="75" enabled="false"/>
+		<customcomponents:GenTextInput id="tiTotal_Shipped_Qty" width="75" enabled="false"/>
+		<customcomponents:GenTextInput id="tiTotal_Ship_Qty" width="75" enabled="false"/>
+		<customcomponents:GenTextInput id="tiTotal_Damaged_Qty" width="75" enabled="false"/>
+	</mx:HBox>
+	<mx:HBox width="100%" height="38" verticalAlign="middle" horizontalGap="5" horizontalAlign="center"  verticalGap="0">
+		<mx:Button id="btnOk" label="Ok" click="updateRemarks()"/>
+		<mx:Button label="Cancel" click="closeHandler()"/>
+	</mx:HBox>
+</mx:TitleWindow>

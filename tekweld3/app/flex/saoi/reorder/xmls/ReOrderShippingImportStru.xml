@@ -1,0 +1,54 @@
+<columns  lockedColumnCount='0'>
+
+	
+	<column data='attention'				label='Attention'			editable='false'	visible='true'	width='110'	textAlign='left'	forLevel='false'
+			defaultForLevel=''				booleanFlag='false'			sortDataType='S'	columnPrecision="NaN"/>
+	
+	<column data='customer_shipping_id'		label='Ship #'				editable='false'	visible='false'	width='110'	textAlign='left'	forLevel='false'
+			defaultForLevel=''				booleanFlag='false'			sortDataType='S'	columnPrecision="NaN"/>
+			
+	<column data='ship_name'				label='Ship Name'			editable='false'	visible='true'	width='110'	textAlign='left'	forLevel='false'
+			defaultForLevel=''				booleanFlag='false'			sortDataType='S'	columnPrecision="NaN"/>
+	
+	<column data='ship_qty'					label='Quantity'			editable='false'	visible='true'	width='80'	textAlign='right'	forLevel='false'
+			defaultForLevel=''				booleanFlag='false'			sortDataType='N'	columnPrecision="0"/>
+	
+	<column data='ship_amt'					label='Amount'				editable='false'	visible='true'	width='80'	textAlign='right'	forLevel='false'
+			defaultForLevel=''				booleanFlag='false'			sortDataType='N'	columnPrecision="2"/>	
+	
+	<column data='ship_address1'			label='Address #1'			editable='false'	visible='true'	width='110'	textAlign='left'	forLevel='false'
+			defaultForLevel=''				booleanFlag='false'			sortDataType='S'	columnPrecision="NaN"/>
+	
+	<column data='ship_address2'			label='Address #2'			editable='false'	visible='true'	width='110'	textAlign='left'	forLevel='false'
+			defaultForLevel=''				booleanFlag='false'			sortDataType='S'	columnPrecision="NaN"/>
+	
+	<column data='ship_city'				label='City'				editable='false'	visible='true'	width='100'	textAlign='left'	forLevel='false'
+			defaultForLevel=''				booleanFlag='false'			sortDataType='S'	columnPrecision="NaN"/>
+	
+	<column data='ship_state'				label='State'				editable='false'	visible='true'	width='100'	textAlign='left'	forLevel='false'
+			defaultForLevel=''				booleanFlag='false'			sortDataType='S'	columnPrecision="NaN"/>
+			
+	<column data='ship_zip'					label='Zip'					editable='false'	visible='true'	width='100'	textAlign='left'	forLevel='false'
+			defaultForLevel=''				booleanFlag='false'			sortDataType='S'	columnPrecision="NaN"/>
+	
+	<column data='ship_country'				label='Country'				editable='false'	visible='true'	width='100'	textAlign='left'	forLevel='false'
+			defaultForLevel=''				booleanFlag='false'			sortDataType='S'	columnPrecision="NaN"/>
+	
+	<column data='ship_date'				label='Ship Date'			editable='false'	visible='true'	width='110'	textAlign='left'	forLevel='false'
+			defaultForLevel=''				booleanFlag='false'			sortDataType='D'	columnPrecision="NaN"/>
+	
+	<column data='inhand_date'				label='Inhand Date'			editable='false'	visible='true'	width='110'	textAlign='left'	forLevel='false'
+			defaultForLevel=''				booleanFlag='false'			sortDataType='D'	columnPrecision="NaN"/>
+			
+	<column data='shipping_method'			label='Ship Method'			editable='false'	visible='true'	width='110'	textAlign='left'	forLevel='false'
+			defaultForLevel=''				booleanFlag='false'			sortDataType='S'	columnPrecision="NaN"/>		
+	
+	<column data='account_no'				label='Account NO'			editable='false'	visible='true'	width='100'	textAlign='left'	forLevel='false'
+			defaultForLevel=''				booleanFlag='false'			sortDataType='S'	columnPrecision="NaN"/>
+			
+	<column data='estimated_ship_date'		label='Estimated Ship Date'		editable='false'	visible='true'	width='220'	textAlign='left'	forLevel='false'
+			defaultForLevel=''				booleanFlag='false'			sortDataType='D'	columnPrecision="NaN"/>	
+	
+	<column data='estimated_arrival_date'	label='Estimated Arrival Date'	editable='false'	visible='true'	width='220'	textAlign='left'	forLevel='false'
+			defaultForLevel=''				booleanFlag='false'			sortDataType='D'	columnPrecision="NaN"/>								
+</columns> 

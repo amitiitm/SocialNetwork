@@ -1,0 +1,2 @@
+#::ANP   = ActiveNumberingPlan
+#::NP    = NumberingPlan

@@ -1,0 +1,25 @@
+<%= page_title :title => "Notification Types" %>
+<% box :type => "simple" do %>
+	<% table :width => "400px" do |t| %>
+		<% t.th "#" %>
+		<% t.th "Category" %>
+		<% t.th "Type" %>
+		<% t.th "Actions" %>
+		
+		<% counter = 0 %>
+		<% for n in @notification_types do %>
+			<% t.td counter += 1 %>
+			<% t.td n.notification_category.name %>
+			<% t.td n.name %>
+			<% t.td(
+				link_to("Edit", edit_notification_type_path(n), :class => "ajax", :update => "container") + " | " +
+				link_to("Delete", notification_type_path(n), :class => "ajax-delete")
+			) %>
+			<% t.new_row %>
+		<%  end -%>
+	<% end -%>
+	<br>
+	<%= button "new_notification_type", "New Notification Type", :href => new_notification_type_path, :update => "container" %>
+<% end -%>
+
+<div id="container" class="hide"></div>

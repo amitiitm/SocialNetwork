@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rds:CommonServices xmlns:rds="business.*" xmlns:mx="http://www.adobe.com/2006/mxml">
+
+	<mx:HTTPService id="saveRecord" url="/purchase/vendor_payment/create_payments_for_pay_bills" />
+	<mx:HTTPService id="getRecord" url="/purchase/vendor_invoice/fetch_open_invoices"/>
+	
+	<mx:HTTPService id="getPayBillsOenInvoicesFormat" url="acct/paybills/xmls/PayBillOpenInvoicesStructure.xml"/>
+	<mx:HTTPService id="getPrepareCheckFormat" url="acct/paybills/xmls/PayBillPrepareCheckStructure.xml"/>
+	<mx:HTTPService id="getPrintCheckCheckFormat" url="acct/paybills/xmls/PayBillPrintCheckStructure.xml"/>	
+		
+	<mx:HTTPService id="printRecord" url="/purchase/vendor_report/vendor_payment_format" />	
+</rds:CommonServices>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rds:CommonServices xmlns:rds="business.*"
+	xmlns:mx="http://www.adobe.com/2006/mxml">
+
+	<mx:HTTPService id="saveRecord" url="/sale/customer/create_customers"/>  
+	<mx:HTTPService id="getRecord" url="/sale/customer/show_customer"/>  
+	<mx:HTTPService id="getList" url="/sale/customer/list_customers"/>	
+	
+	<mx:HTTPService id="getListFormat" url="cust/customer/xmls/CustomerMasterListStru.xml"/>
+	<mx:HTTPService id="getViewFormat" url="cust/customer/xmls/CustomerMasterCriteriaStru.xml"/>
+	<mx:HTTPService id="ShippingDetailFormat" url="cust/customer/xmls/CustomerMasterShippingDetailStru.xml"/>
+	<mx:HTTPService id="DailyNotesDetailFormat" url="cust/customer/xmls/CustomerMasterNotesDetailStru.xml"/>
+	 
+	<mx:HTTPService id="BestPromotionDetailFormat" url="cust/customer/xmls/CustomerMasterBestPromotionDetailStru.xml"/>
+	<mx:HTTPService id="FlowEzeDetailFormat" url="cust/customer/xmls/CustomerMasterFlowEzeDetailStru.xml"/>
+	<mx:HTTPService id="IndentityLinksDetailFormat" url="cust/customer/xmls/CustomerMasterIndentityLinksDetailStru.xml"/>
+	<mx:HTTPService id="PaymentProfileDetailFormat" url="cust/quickcustomer/xmls/CustomerMasterPaymentProfileDetailStru.xml"/>
+	
+	<mx:HTTPService id="setDefaultView" url=""/>
+	<mx:HTTPService id="printRecord" url=""/>
+	
+	<mx:HTTPService id="detailFormat" url="cust/customer/xmls/CustomerMasterImportStru.xml"/>
+	<mx:HTTPService id="recordUploadUrl" url="/sale/customer/convert_exceltoxml_to_create_customers"/>
+
+</rds:CommonServices>

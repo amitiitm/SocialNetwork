@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:TitleWindow xmlns:fx="http://ns.adobe.com/mxml/2009" 
+		 xmlns:s="library://ns.adobe.com/flex/spark" 
+		 xmlns:mx="library://ns.adobe.com/flex/mx" width="418" height="156" xmlns:customcomponents="com.generic.customcomponents.*"
+		 creationComplete="creationComplete()"
+		 title="Artwork Review" showCloseButton="true" close="closeHandler()">
+	<fx:Declarations>
+		<!-- Place non-visual elements (e.g., services, value objects) here -->
+	</fx:Declarations>
+	<fx:Script>
+		<![CDATA[
+			import business.events.PreSaveEvent;
+			
+			import model.GenModelLocator;
+			
+			import mx.controls.Alert;
+			import mx.managers.PopUpManager;
+			
+			import saoi.muduleclasses.event.MissingInfoEvent;
+			
+			[Bindable]
+			public var orderDetail:XML= new XML();
+			[Bindable]
+			private var missingInfo:String = '';
+			[Bindable]
+			private var __genModel:GenModelLocator = GenModelLocator.getInstance();
+			private var xmlMissingInfo:XML = new XML();
+			private var screenView:String = '';
+			private function creationComplete():void
+			{
+				missingInfo 				= orderDetail.missinginfo.toString();
+				screenView					= orderDetail.screenview.toString();
+				var checkBoxData:XMLList 	= XMLList(orderDetail.checkboxdata);
+				setCheckboxData(checkBoxData);
+			}
+			private function setCheckboxData(xmllist:XMLList):void
+			{
+				cbArtworkComplete.dataValue 		= 	xmllist.artworkreviewed_flag.toString() ;
+			}
+			private function closeHandler():void
+			{
+				PopUpManager.removePopUp(this);
+			}
+			private function saveClickHandler():void
+			{
+				xmlMissingInfo  					   	= new XML(<missing_info></missing_info>);
+				xmlMissingInfo.artworkreviewed_flag  	= cbArtworkComplete.dataValue;
+				
+				dispatchEvent(new MissingInfoEvent(MissingInfoEvent.MissingInfoEvent_Type,xmlMissingInfo));
+				closeHandler();
+			}
+			
+		]]>
+	</fx:Script>
+	<customcomponents:GenCheckBox labelPlacement="left" label="Artwork Reviewed ?" id="cbArtworkComplete" width="183" 
+								  xmlTag="artworkcompleted_flag" updatableFlag="true" tableName="sales_order" defaultValue="N" textAlign="right" tabIndex="11"
+								  dataValueForOn ="Y" dataValueForOff ="N" />
+	
+	<mx:HBox width="100%" height="45" verticalAlign="middle"  verticalGap="0">
+		<s:Spacer width="160"/>
+		<s:Button label="Save" click="saveClickHandler()"/>
+		<s:Button label="Cancel" click="closeHandler()" />
+	</mx:HBox>
+</mx:TitleWindow>

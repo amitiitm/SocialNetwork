@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:VBox xmlns:mx="http://www.adobe.com/2006/mxml"
+	xmlns:customcomponents="com.generic.customcomponents.*"
+	xmlns:components="com.generic.components.*"
+	width="100%" height="100%" verticalGap="0" verticalAlign="top"
+	creationComplete="creationCompleteHandler()" creationPolicy="all"
+	horizontalScrollPolicy="off" >
+
+	<mx:Metadata>
+		[Event(name="detailItemClick", type="com.generic.events.NewDetailEvent")]
+		[Event(name="detailItemFocusOut", type="com.generic.events.NewDetailEvent")]
+		[Event(name="detailRemoveRow", type="com.generic.events.NewDetailEvent")]
+		[Event(name="detailRowFocusChanged", type="com.generic.events.NewDetailEvent")]
+		[Event(name="structureCompleteEvent", type="com.generic.events.NewDetailEvent")]
+	</mx:Metadata>
+
+	<mx:Script source="../scripts/NewDetailScript.as"/>
+
+	<mx:HBox width="100%"  horizontalAlign="left" horizontalGap="0" verticalGap="0">
+		<components:ButtonControlDetailPanel id="bcdp"
+			fetchRecordsEvent="fetchRecordsHandler(event)"
+			editRowEvent="editRowHandler(event)"
+			btnFetchVisible="{btnFetchVisible}"
+			btnEditVisible="{btnEditVisible}"
+			btnRemoveVisible="{btnRemoveVisible}"
+			removeRowEvent="removeRowHandler(event)" />
+	</mx:HBox>
+
+	<mx:VBox width="100%" height="100%" id="dtl" verticalGap="0" verticalAlign="top" >
+		<customcomponents:NewGenDataGrid
+			id="dgDtl"
+			height="100%"
+			selectable="false"
+			sortableColumns="true" 
+			paddingTop="0" paddingLeft="0" paddingRight="0" paddingBottom="0"
+			rowHeight="24"
+			updatableFlag="{updatableFlag}"
+			checkBlankRowColumn="{checkBlankRowColumn}"
+			rootNode="{rootNode}"
+			formatServiceID="{formatServiceID}"
+			horizontalScrollPolicy="on"
+			
+			updateComplete="handleUpdateComplete(event)"
+			itemClick="handleItemClick(event)"
+			resize="handleResize(event)"
+			columnStretch="handleColumnStretch(event)"
+			headerRelease="headerReleaseHandler(event)"
+			scroll="onScroll(event)"
+		/>
+	</mx:VBox>
+
+	<components:EditBar id="editBar" includeInLayout="false" paddingTop="0" paddingLeft="0" paddingRight="0" paddingBottom="0" backgroundAlpha="1" 
+		horizontalScrollPolicy="off"
+		scrollOnTabEvent="handleScrollOnTabEvent(event)"
+		upKeyEvent="handleUpKeyEvent(event)"
+		shiftTabKeyEvent="handleShiftTabKeyEvent(event)"
+		downKeyEvent="handleDownKeyEvent(event)"
+		tabKeyEvent="handleTabKeyEvent(event)"
+		editBarItemChangedEvent="handleEditBarItemChangedEvent(event)"
+		width="{dgDtl.width - 2}" />
+
+</mx:VBox>

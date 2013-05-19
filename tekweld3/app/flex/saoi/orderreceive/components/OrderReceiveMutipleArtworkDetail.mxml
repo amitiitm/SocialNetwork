@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:TitleWindow xmlns:mx="http://www.adobe.com/2006/mxml"
+	 width="700" height="370" verticalGap="0"
+	 backgroundAlpha="0.7"
+	 showCloseButton="true" close="current_uploading_index == 0 ? Alert.show('Please first upload the attachments '):PopUpManager.removePopUp(this)"
+	 paddingLeft="2" paddingTop="0" paddingRight="0">
+	 
+	<mx:Script source="../scripts/OrderReceiveMultipleArtworkDetailScript.as"/>
+	
+	<mx:VBox height="100%" width="100%" paddingTop="0" paddingLeft="0" paddingRight="5">
+		<mx:DataGrid id="dgAttachment" width="100%" height="100%" selectable="false" 
+					 itemEditEnd="updateGridDataprovider(event)" editable="true">
+			<mx:columns>
+				<mx:DataGridColumn dataField="name" headerText="Attachment Name"  editable="false" width="250"/>
+				<mx:DataGridColumn dataField="attachment_path" headerText="Attachment Path" visible="false"/>
+				<mx:DataGridColumn headerText="Attachment Type" width="130" dataField="attachment_type" 
+						editorDataField="updated_value"	itemEditor="saoi.orderreceive.components.ArtworkGridComboBoxRenderer">
+				</mx:DataGridColumn>
+				<mx:DataGridColumn headerText="Comment" dataField="artwork_comment"/> 
+			</mx:columns>
+		</mx:DataGrid>
+		<mx:HBox horizontalAlign="center" width="100%">
+			<mx:Button label="Upload Attachments" click="btnUploadHandler()"/>
+			<mx:Button label="Close" click="btnCloseClickHandler()"/>
+		</mx:HBox>
+	</mx:VBox>
+</mx:TitleWindow>
+
+
+

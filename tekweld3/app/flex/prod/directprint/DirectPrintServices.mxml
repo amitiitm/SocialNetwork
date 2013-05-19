@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rds:CommonServices xmlns:rds="business.*" xmlns:mx="http://www.adobe.com/2006/mxml">
+
+	<mx:HTTPService id="saveRecord" 			url="/production/production/create_production_print_inboxes"/>
+	<mx:HTTPService id="getList" 				url="/production/production_direct/direct_pad_print_inbox"/>
+	
+	<mx:HTTPService id="getViewFormat" 			url="prod/directprint/xmls/DirectPrintCriteriaStru.xml"/>
+	<mx:HTTPService id="getListFormat" 			url="prod/directprint/xmls/DirectPrintListStru.xml"/>
+	<mx:HTTPService id="getOptionData" 			url="/production/production_direct/direct_pad_print_option_inbox"/>
+	<mx:HTTPService id="printRecord" 			url=""/>
+
+</rds:CommonServices>

@@ -1,0 +1,38 @@
+<div id="update-me">
+	<%= page_title :title => "Promotions" %>
+
+	<% table :width => "850px" do |t| %>
+		<% t.th "#" %>
+		<% t.th "Name" %>
+		<% t.th "Country" %>
+		<% t.th "Prefix" %>
+		<% t.th "Rate" %>
+		<% t.th "Days" %>
+		<% t.th "Promo Date" %>
+		<% t.th "Expiration" %>
+		<% t.th "Actions"  if allowed?%>
+		
+		<% counter = 0 %>
+		<% for p in @promotions do %>
+			<% counter += 1 %>
+			<% t.td counter %>
+			<% t.td p.name %>
+			<% t.td p.country.name %>
+			<% t.td p.prefix %>
+			<% t.td (p.rate * 100) %>
+			<% t.td p.days %>
+			<% t.td user_date(p.created_at) %>
+			<% t.td expiration(p) %>
+			<% t.td (
+				link_to("Edit", edit_account_promotion_path(@account, p), :class => "ajax", :update => "container") + " | " +
+				link_to("Delete", account_promotion_path(@account, p), :class => "ajax-delete")
+			)  if allowed? %>
+
+			<% t.new_row %>
+		<%  end -%>
+	<% end -%>
+	<br>
+	<%= button "new_promo", "New Promotion", :href => new_account_promotion_path(@account), :update => "container" if allowed? %>
+	<div class="clear"></div>
+	<div id="container" class="hidden"></div>
+</div>

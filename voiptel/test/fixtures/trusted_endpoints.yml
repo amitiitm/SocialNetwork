@@ -1,0 +1,19 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  grp: 1
+  ip: MyString
+  mask: 1
+  port: 1
+  proto: MyString
+  pattern: MyString
+  context_info: MyString
+
+two:
+  grp: 1
+  ip: MyString
+  mask: 1
+  port: 1
+  proto: MyString
+  pattern: MyString
+  context_info: MyString

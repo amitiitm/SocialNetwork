@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:TitleWindow xmlns:fx="http://ns.adobe.com/mxml/2009" 
+		 xmlns:s="library://ns.adobe.com/flex/spark" 
+		 xmlns:mx="library://ns.adobe.com/flex/mx" width="742" height="320" xmlns:customcomponents="com.generic.customcomponents.*"
+		 creationComplete="creationComplete()"
+		 title="Shipping Methods" showCloseButton="true" close="closeHandler()" xmlns:components="com.generic.components.*">
+	<fx:Declarations>
+		<!-- Place non-visual elements (e.g., services, value objects) here -->
+		<fx:XML id="shippingMethodStructure" source="xmls/ShippingMethodApiStr.xml"/>
+	</fx:Declarations>
+	
+	<fx:Script>
+		<![CDATA[
+			import business.events.GetInformationEvent;
+			import business.events.RecordStatusEvent;
+			
+			import com.adobe.cairngorm.business.ServiceLocator;
+			import com.generic.genclass.URL;
+			
+			import model.GenModelLocator;
+			
+			import mx.binding.utils.BindingUtils;
+			import mx.controls.Alert;
+			import mx.core.Application;
+			import mx.events.DataGridEvent;
+			import mx.managers.CursorManager;
+			import mx.managers.PopUpManager;
+			import mx.rpc.AsyncToken;
+			import mx.rpc.IResponder;
+			import mx.rpc.Responder;
+			import mx.rpc.events.FaultEvent;
+			import mx.rpc.events.ResultEvent;
+			import mx.rpc.http.HTTPService;
+			
+			import saoi.muduleclasses.event.MissingInfoEvent;
+			
+			[Bindable]
+			public var __genModel:GenModelLocator  = GenModelLocator.getInstance(); ;
+			[Bindable]
+			public var itemDetail:XML= new XML();
+			[Bindable]
+			private var main_image_name:String = '';
+			[Bindable]
+			private var zip_code:String = '';
+			private var country:String = '';
+			private var shipping_code:String='';
+			private var catalog_item_id:String = '';
+			private var qty:String = '';
+			private var sales_order_id:String='';
+			private var state:String='';
+			private var packetsXml:XMLList;
+			private var xmlMissingInfo:XML = new XML();
+			private var getInformationEvent:GetInformationEvent;
+			public var __services:ServiceLocator;
+			private var __responder:IResponder;
+			
+			private function creationComplete():void
+			{
+				__services  	= __genModel.services;
+				
+				zip_code 		= itemDetail.zip_code.toString();
+				country			= itemDetail.country.toString();
+				shipping_code	= itemDetail.shipping_code.toString();
+				catalog_item_id = itemDetail.catalog_item_id.toString();
+				qty				= itemDetail.qty.toString();
+				sales_order_id	= itemDetail.sales_order_id.toString();
+				state 			= itemDetail.state.toString();
+				packetsXml		= itemDetail.packetsXml;
+				getShipMethods();
+			}
+			public function dataService(service:HTTPService):HTTPService
+			{
+				var urlObj:URL				=	new URL();
+				service.url					=	urlObj.getURL(service.url);
+				service.resultFormat 		= "e4x";					
+				service.method 				= "POST";
+				service.useProxy			= false;
+				service.contentType			="application/xml";
+				service.requestTimeout	 	= 1800
+				
+				return service;
+			}
+			private function getShipMethods():void
+			{
+				if(__genModel.activeModelLocator.addEditObj.record!=null)
+				{
+						var tempXml:XML			= new XML(<params>
+															<zip_code>{zip_code}</zip_code>
+															<country>{country}</country>
+															<shipping_code>{shipping_code}</shipping_code>
+															<sales_order_id>{sales_order_id}</sales_order_id>
+															<state>{state}</state>
+															<qty>{qty}</qty>
+															<packagexml>{packetsXml.children()[0].copy()}</packagexml>
+														  </params>);
+						
+						var resend:HTTPService  = dataService(__services.getHTTPService("getShippingmethodsForSampleOrder"));
+						__responder 			= new mx.rpc.Responder(getShippingmethodsForSampleOrderResultHandler,getShippingmethodsForSampleOrderFaultHandler);
+						
+						var token:AsyncToken 	= resend.send(new XML(tempXml));
+						token.addResponder(__responder);	
+						
+						CursorManager.setBusyCursor();
+						__genModel.isLockScreen   = true;
+				}
+				else
+				{
+					Alert.show("Please select record");
+				}
+			}
+			private function getShippingmethodsForSampleOrderFaultHandler(event:FaultEvent):void
+			{
+				__genModel.isLockScreen   = false;
+				CursorManager.removeBusyCursor();
+				
+				Alert.show(event.fault.faultDetail);
+			}
+			private function getShippingmethodsForSampleOrderResultHandler(event:ResultEvent):void
+			{
+				__genModel.isLockScreen   = false;
+				CursorManager.removeBusyCursor();
+			
+				var resultXml:XML				 = XML(event.result);
+				
+				if(resultXml.name() == "errors")
+				{
+					if(resultXml.children().length() > 0) 
+					{
+						var message:String = '';
+						
+						for(var i:uint = 0; i < resultXml.children().length(); i++) 
+						{
+							message += resultXml.children()[i] + "\n";
+						}
+						Alert.show(message);
+					} 
+				}
+				else
+				{
+					gdShippingMethod.rows		= resultXml;
+				}
+			}
+			private function closeHandler():void
+			{
+				PopUpManager.removePopUp(this);
+			}
+			
+			private function selectButtonClickHandler():void
+			{
+				xmlMissingInfo  					   = new XML(<missing_info></missing_info>);
+				if(gdShippingMethod.selectedRow!=null && gdShippingMethod.selectedRow.select_yn.toString() =='Y')
+				{
+					xmlMissingInfo.appendChild(gdShippingMethod.selectedRow);
+				}
+				else
+				{
+					
+				}
+				dispatchEvent(new MissingInfoEvent(MissingInfoEvent.MissingInfoEvent_Type,xmlMissingInfo));
+				closeHandler();
+				
+			}
+			
+			private function itemFocusOutEventHandler(event:Event):void
+			{
+				if(String(gdShippingMethod.selectedRow.child('select_yn')).toUpperCase()	==	'Y')
+				{
+					var currentSelectedRow:String;
+					currentSelectedRow			=	gdShippingMethod.selectedRow.child('service_code').toString();
+					
+					var selectedChildList:XMLList	=	null;
+					
+					selectedChildList				=	gdShippingMethod.rows.children().(child('select_yn').toString().toUpperCase() == 'Y')
+					
+					//unselect previous selected
+					for(var i:int = 0 ; i< selectedChildList.length() ; i++)
+					{
+						if(XML(selectedChildList[i]).child('service_code').toString() !=	currentSelectedRow)
+						{
+							selectedChildList[i].select_yn		=	'N'
+						}
+					}
+				}		
+			}
+			private function selectRow():void
+			{		 
+				
+				if(gdShippingMethod.selectedRow.select_yn == 	 'Y')
+				{
+					gdShippingMethod.selectedRow.select_yn = 	 'N'
+				}
+				else
+				{
+					gdShippingMethod.selectedRow.select_yn = 	 'Y'
+				}
+				
+				
+				gdShippingMethod.dispatchEvent(new DataGridEvent(DataGridEvent.ITEM_FOCUS_OUT));
+				
+				var recordStatusEvent:RecordStatusEvent = new RecordStatusEvent("MODIFY");
+				recordStatusEvent.dispatch();
+			}
+		]]>
+	</fx:Script>
+	<mx:HBox width="100%" height="234" verticalAlign="top"  verticalGap="0">
+		<customcomponents:GenDataGrid id="gdShippingMethod" structure="{shippingMethodStructure}" itemFocusOut="itemFocusOutEventHandler(event)" itemClick="selectRow()" /> 
+	</mx:HBox>
+	<s:Spacer height="10"/>
+	<mx:HBox width="100%" height="26" verticalGap="0" verticalAlign="middle">
+		<mx:Button label="Select" click="selectButtonClickHandler()"/>
+		<mx:Button label="Cancel" click="closeHandler()"/>
+	</mx:HBox>
+</mx:TitleWindow>

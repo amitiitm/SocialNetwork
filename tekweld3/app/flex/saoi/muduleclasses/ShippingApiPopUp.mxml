@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:TitleWindow xmlns:fx="http://ns.adobe.com/mxml/2009" 
+		 xmlns:s="library://ns.adobe.com/flex/spark" 
+		 xmlns:mx="library://ns.adobe.com/flex/mx" width="742" height="320" xmlns:customcomponents="com.generic.customcomponents.*"
+		 creationComplete="creationComplete()"
+		 title="Shipping Methods" showCloseButton="true" close="closeHandler()" xmlns:components="com.generic.components.*">
+	<fx:Declarations>
+		<!-- Place non-visual elements (e.g., services, value objects) here -->
+		<fx:XML id="shippingMethodStructure" source="xmls/ShippingMethodApiStr.xml"/>
+	</fx:Declarations>
+	
+	<fx:Script>
+		<![CDATA[
+			import business.events.GetInformationEvent;
+			import business.events.RecordStatusEvent;
+			
+			import model.GenModelLocator;
+			
+			import mx.binding.utils.BindingUtils;
+			import mx.controls.Alert;
+			import mx.core.Application;
+			import mx.events.DataGridEvent;
+			import mx.managers.CursorManager;
+			import mx.managers.PopUpManager;
+			import mx.rpc.IResponder;
+			
+			import saoi.muduleclasses.event.MissingInfoEvent;
+			
+			[Bindable]
+			public var __genModel:GenModelLocator  = GenModelLocator.getInstance(); ;
+			[Bindable]
+			public var itemDetail:XML= new XML();
+			[Bindable]
+			private var main_image_name:String = '';
+			[Bindable]
+			private var zip_code:String = '';
+			private var country:String = '';
+			private var shipping_code:String='';
+			private var catalog_item_id:String = '';
+			private var qty:String = '';
+			private var sales_order_id:String='';
+			private var state:String='';
+			private var estimated_ship_date:String='';
+			private var xmlMissingInfo:XML = new XML();
+			private var getInformationEvent:GetInformationEvent;
+			
+			private function creationComplete():void
+			{
+				dgShippingMethod.rows			 = itemDetail; 
+			}
+			
+			private function closeHandler():void
+			{
+				PopUpManager.removePopUp(this);
+			}
+			
+			private function selectButtonClickHandler():void
+			{
+				xmlMissingInfo  					   = new XML(<missing_info></missing_info>);
+				if(dgShippingMethod.selectedRow!=null && dgShippingMethod.selectedRow.select_yn.toString() =='Y')
+				{
+					xmlMissingInfo.appendChild(dgShippingMethod.selectedRow);
+				}
+				else
+				{
+					
+				}
+				dispatchEvent(new MissingInfoEvent(MissingInfoEvent.MissingInfoEvent_Type,xmlMissingInfo));
+				closeHandler();
+				
+			}
+			
+			private function itemFocusOutEventHandler(event:Event):void
+			{
+				if(String(dgShippingMethod.selectedRow.child('select_yn')).toUpperCase()	==	'Y')
+				{
+					var currentSelectedRow:String;
+					currentSelectedRow			=	dgShippingMethod.selectedRow.child('service_code').toString();
+					
+					var selectedChildList:XMLList	=	null;
+					
+					selectedChildList				=	dgShippingMethod.rows.children().(child('select_yn').toString().toUpperCase() == 'Y')
+					
+					//unselect previous selected
+					for(var i:int = 0 ; i< selectedChildList.length() ; i++)
+					{
+						if(XML(selectedChildList[i]).child('service_code').toString() !=	currentSelectedRow)
+						{
+							selectedChildList[i].select_yn		=	'N'
+						}
+					}
+				}		
+			}
+			private function selectRow():void
+			{		 
+				
+				if(dgShippingMethod.selectedRow.select_yn == 	 'Y')
+				{
+					dgShippingMethod.selectedRow.select_yn = 	 'N'
+				}
+				else
+				{
+					dgShippingMethod.selectedRow.select_yn = 	 'Y'
+				}
+				
+				
+				dgShippingMethod.dispatchEvent(new DataGridEvent(DataGridEvent.ITEM_FOCUS_OUT));
+				
+				var recordStatusEvent:RecordStatusEvent = new RecordStatusEvent("MODIFY");
+				recordStatusEvent.dispatch();
+			}
+		]]>
+	</fx:Script>
+	<mx:HBox width="100%" height="234" verticalAlign="top"  verticalGap="0">
+		<customcomponents:GenDataGrid id="dgShippingMethod" structure="{shippingMethodStructure}" itemFocusOut="itemFocusOutEventHandler(event)" itemClick="selectRow()" /> 
+	</mx:HBox>
+	<s:Spacer height="10"/>
+	<mx:HBox width="100%" height="26" verticalGap="0" verticalAlign="middle">
+		<mx:Button label="Select" click="selectButtonClickHandler()"/>
+		<mx:Button label="Cancel" click="closeHandler()"/>
+	</mx:HBox>
+</mx:TitleWindow>

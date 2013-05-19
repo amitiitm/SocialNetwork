@@ -1,0 +1,9 @@
+<columns  lockedColumnCount='0'>
+
+	<column data='total_count'				label='Ship Date'			editable='false'	visible='true'	width='110'	textAlign='left'	forLevel='false'
+			defaultForLevel=''				booleanFlag='false'			sortDataType='N'	columnPrecision="0"/>
+	
+	<column data='customer_code'			label='Customer #'			editable='false'	visible='true'	width='110'	textAlign='left'	forLevel='false'
+			defaultForLevel=''				booleanFlag='false'			sortDataType='S'	columnPrecision="NaN"/>
+											
+</columns> 

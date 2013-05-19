@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<gencomponents:DetailAddEdit xmlns:mx="http://www.adobe.com/2006/mxml"
+	width="850" height="480" verticalGap="0"
+	xmlns:customcomponents="com.generic.customcomponents.*"
+	xmlns:gencomponents="com.generic.components.*"
+	creationComplete="creationCompleteHandler()">
+	
+	<mx:Script source="../scripts/PurchaseOrderImportDetailScript.as"/>
+	
+	<mx:XML  id="importDetailStruXml"	source="../xmls/PurchaseOrderImportDetailStru.xml"/>
+
+	<mx:VBox height="0" width="0" visible="false">
+		<customcomponents:GenTextInput id="tiDummy" width="0" height="0" 
+			xmlTag="name" updatableFlag="false" tableName="purchase_order_line"/>
+		
+	</mx:VBox>
+					
+	<mx:VBox height="100%" width="100%">	
+		
+		<mx:VBox height="100%" width="100%">
+			<mx:LinkButton id="lbSampleXLS" label="Sample/Download Excel format" click="handleSampleXLS()" color="#0000FF" />
+			<mx:Label text="Purchase Order"/>
+			<customcomponents:GenDataGrid id="dgMain" height="100%" width="100%"
+				updatableFlag="true" rootNode="purchase_order_lines"
+				structure="{importDetailStruXml}"
+				itemClick="itemClickHandler()"/>				
+		</mx:VBox>
+	</mx:VBox>
+</gencomponents:DetailAddEdit>

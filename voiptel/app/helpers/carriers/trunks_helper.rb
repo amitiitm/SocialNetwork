@@ -1,0 +1,3 @@
+module Carriers::TrunksHelper
+
+end

@@ -1,0 +1,58 @@
+<% form_for [trunk.carrier, trunk, rate_sheet], :html => {:class => "forms"} do |f|%>
+	<ul>
+		<li>
+			<label>Effective Date</label>
+			<%= select_date Time.now, {}, {}%>
+		</li>
+		<li>
+			<label>Timezone</label>
+			<%= f.time_zone_select :time_zone %>			
+		</li>
+		<li>
+			<div class="blue-box ui-corner-all hidden" style="width: 300px;" id="files">				
+			</div>
+		</li>
+	</ul>
+	
+	<%= f.hidden_field :carrier_id %>
+	<%= f.hidden_field :trunk_id %>
+<% end -%>
+
+<div class="hidden" id="file-template">
+	<div id="file-FILE_ID">
+		<input type="hidden" name="rate_sheet[files][]" value="FILE_ID">
+		FILE_NAME <a href="/files/FILE_ID" class="ajax-delete" callback="remove_file">Remove</a><br><br>
+	</div>	
+</div>
+
+<script>
+	var file_ids = []
+	function file_complete(event, qid, file_obj, response, data) {
+		resp = JSON.parse(response);
+		if (resp.success) {
+			file_ids.push(resp.file_id);
+			var temp = $("#file-template").html();
+			$("#files").append(temp.replace(/FILE_ID/g, resp.file_id).replace(/FILE_NAME/g, resp.name));
+			$("#files").slideDown('slow');
+		} else {
+			alert("Error Happened! Let Moe Know about it!");
+		};
+		return;
+	}
+	function completed(event, data) {
+		// $.post("<%=upload_carrier_trunk_rate_sheets_path(trunk.carrier, trunk, rate_sheet)%>", "file_ids=" + file_ids, function(r){
+		// 	eval(r);
+		// });
+		file_ids = [];
+	}
+	function remove_file(resp) {
+		data = JSON.parse(resp);
+		$("#file-" + data.id).fadeOut('slow', function(){
+			$("#file-" + data.id).remove();
+			if ($("#files").children().size() == 0) {
+				$("#files").slideUp('slow');
+			};						
+		});
+	}
+</script>
+<%= upload("file_complete", "completed", "*.csv;") %>

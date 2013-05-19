@@ -1,0 +1,25 @@
+one:
+  content: MyText
+  subject: MyString
+  from_name: MyString
+  from_address: MyString
+  email: MyString
+  notification_template_id: 1
+  notification_category_id: 1
+  emailable_type: MyString
+  emailable_id: 1
+  memo_id: 1
+  delivered: false
+
+two:
+  content: MyText
+  subject: MyString
+  from_name: MyString
+  from_address: MyString
+  email: MyString
+  notification_template_id: 1
+  notification_category_id: 1
+  emailable_type: MyString
+  emailable_id: 1
+  memo_id: 1
+  delivered: false

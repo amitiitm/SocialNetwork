@@ -1,0 +1,31 @@
+<%= page_title :title => "Voice Testimonials" %>
+
+<% box :type => "simple" do %>
+	<% if not @voice_testimonials.blank? %>
+		<% table :width => "700px" do |t| %>
+			<% t.th "#" %>
+		  <% t.th "Customer" %>
+			<% t.th "Saved" %>
+		 	<% t.th "Date" %>
+			<% t.th "Actions" %>
+
+			<% counter = 0 %>	
+			<% for voice_testimonial in @voice_testimonials %>
+				<% t.td (counter += 1) %>
+			  <% t.td(link_to(voice_testimonial.customer.info, (send("#{voice_testimonial.customer.class.to_s.downcase}_path", voice_testimonial.customer))))%>
+				<% t.td yes_no(voice_testimonial.saved) %>
+				<% t.td user_date(voice_testimonial.created_at) %>
+				<% t.td action_links(
+					("<audio src='#{voice_testimonial.url}' controls preload='none'></audio>"),
+					(link_to "Delete", voice_testimonial_path(voice_testimonial), :class => "ajax-delete", :style => 'margin-bottom:5px' if allowed?)
+				)%>
+				<% t.new_row %>
+			<% end %>		
+		<% end %>
+		<br>
+	<% else %>
+		No Voice Testimonials
+	<% end %>
+<% end %>
+
+<div class="hide" id="container"></div>

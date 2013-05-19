@@ -1,0 +1,51 @@
+<div class="inner-response">
+  <div id="wrapper">
+    <div id="container1" style="width:731px;">
+      <div id="tabsPanel" style="width:731px;    margin:0px auto;">
+        <div alight="center" id="success_auto_recharge_update" class="success_block" style="display:none; width: 707px; padding-top: 30px; padding-bottom: 18px; margin-bottom: 0px;">
+          Your auto recharge has been updated successfully.
+        </div>
+        <%= error("Your auto recharge couldn't be save:") %>
+
+        <div id="tabPanelMiddle" style="width:729px; margin:0px auto;">
+          <% form_tag update_autorecharge_account_billing_path(@account), :class => "forms" do %>
+              <div class="panel1" style="width:675px; min-height:90px; background-color:#f6f6f6; margin:10px 0px 0px 24px;">
+                <div id="title" style="width:100%;"><h2></h2><img src="/images/billing/arrow.png" width="16" height="16"/></div>
+                <!--divfield--><!--divfield--><!--divfield--><!--divfield-->
+                <div class="divfield" style="width:142px;">
+                  <div>
+                    <label style="margin-left:6px;">Auto Recharge</label>
+                    <%= select(:account, :auto_recharge, [["Enable", true], ["Disable", false]], {:selected => @account.auto_recharge}, :style => "width:118px;") %>
+                  </div>
+                </div>
+                <div class="divfield" style="width:142px;">
+                  <div>
+                    <label style="margin-left:6px;">Threshold</label>
+                    <%= select(:account, :threshold, [["$5", 5], ["$10", 10], ["$15", 15], ["$20", 20]], {:selected => @account.threshold}, :style => "width:118px;") %>
+                  </div>
+                </div>
+                <div class="divfield" style="width:142px;">
+                  <div>
+                    <label style="margin-left:6px;">Recharge Amount</label>
+                    <%= select(:account, :recharge_amount, [["$10", 10], ["$15", 15], ["$20", 20], ["$30", 30], ["$40", 40], ["$50", 50], ["$100", 100]], {:selected => @account.recharge_amount}, :style => "width:118px;") %>
+                  </div>
+                </div>
+                <div class="clear"></div>
+              </div>
+              <div class="clear"></div>
+              <div id="buttons" style="margin-right:30px;">
+                <%=image_submit_tag "/images/billing/save.jpg",:style=>"margin-right:30px;"%>
+              </div>
+          <%end%>
+
+          <div class="clear"></div>
+        </div>
+        <!--tabPanelMiddle-->
+        <div class="clear"></div>
+      </div>
+      <!--tabsPanel-->
+      <div class="clear"></div>
+    </div>
+    <!--container-->
+  </div><!--wrapper-->
+</div>

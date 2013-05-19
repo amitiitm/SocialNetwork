@@ -1,0 +1,43 @@
+<h1>Edit <%= @country.name %></h1>
+<fieldset>
+  <legend><%= @country.name %></legend>
+	<% form_remote_tag :url => {:action => :update_country, :id => @country.id} do %>
+		<span>
+			<%= label :country, :name %>
+			<%= text_field :country, :name %>
+		</span>
+		<span>
+			<%= label :country, :country_code %>
+			<%= text_field :country, :country_code, :size => 5 %>
+		</span>
+		<span>
+			<%= label :country, "2 Letters Code" %>
+			<%= text_field :country, :country_name_2_letters, :size => 2 %>
+		</span>
+		<span>
+			<%= label :country, "3 Letters Code" %>
+			<%= text_field :country, :country_name_3_letters, :size => 2 %>
+		</span>
+		<%= new_line %>
+		<span>
+			<%= label :country, "Min CNS" %>
+			<%= text_field :country, :min_cns, :size => 2, :disabled => "disabled" %>
+		</span>
+		<span>
+			<%= label :country, "Max CNS" %>
+			<%= text_field :country, :max_cns, :size => 2, :disabled => "disabled" %>
+		</span>
+		<%= new_line %>
+		<span>
+			<%= label :country, "Publish on Homepage?" %>
+			<%= check_box :country, :publish %>
+		</span>
+		<%= new_line %>
+		<span>
+			<%= label :country, "Special Case?" %>
+			<%= check_box :country, :special_case %>
+		</span>
+		<%= new_line %><br>
+		<%= submit_tag "Save Changes" %>
+	<% end -%>
+</fieldset>

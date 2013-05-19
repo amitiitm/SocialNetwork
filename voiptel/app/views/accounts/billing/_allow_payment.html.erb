@@ -1,0 +1,10 @@
+<% form_for @account, :html => {:class => "forms"} do |f| %>
+    <div style="border: 1px solid rgb(180, 180, 180); float: left; margin: 7px 25px 16px 0px; padding: 5px 0px 8px 20px;">
+      <span>
+        <span style="font-family: 'TrebuchetMSRegular';font-weight:bold; color: #000000;">Allow Payment</span>
+          <%= f.select :allow_transaction, [["Enabled", true], ["Disabled", false]] %>
+          <%=image_submit_tag "/images/billing/save.jpg",:style=>"margin-right:30px;margin-bottom:-7px; border:0px;"%>
+      </span>
+    </div>
+<%end%>
+<div class="clear"></div>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rds:CommonServices xmlns:rds="business.*" xmlns:mx="http://www.adobe.com/2006/mxml">
+
+	<mx:HTTPService id="saveRecord" 							url="/sale/sales_quotation/create_quotations" />
+	<mx:HTTPService id="getRecord" 								url="/sale/sales_quotation/show_quotation" />
+	<mx:HTTPService id="getList" 								url="/sale/sales_quotation/list_quotations" />
+	<mx:HTTPService id="printRecord" 							url="/sale/sales_report/render_sample_order_format" />
+	<mx:HTTPService id="printJob" 								url="/sales_report/render_sample_order_job_format" />
+	<mx:HTTPService id="shippingUploadUrl" 						url="/shipping/shipping/convert_exceltoxml_to_for_sales_order_shippings" />
+	<mx:HTTPService id="getInhandDate" 							url="/shipping/shipping/get_inhand_date"/>
+	<mx:HTTPService id="getEstimatedShipDate" 					url="/shipping/shipping/calculate_estimated_ship_date_and_packages"/>
+	
+	<mx:HTTPService id="getListFormat" 							url="saoi/salesquotation/xmls/SalesQuotationListStru.xml" />
+	<mx:HTTPService id="getViewFormat" 							url="saoi/salesquotation/xmls/SalesQuotationCriteriaStru.xml" />
+	<mx:HTTPService id="lineDetailFormat"						url="saoi/salesquotation/xmls/SalesQuotationLineDetailStru.xml" />
+	<mx:HTTPService id="dgItemOptionsGridFormat" 				url="saoi/salesquotation/xmls/SalesQuotationItemOptionsDetailStru.xml" />
+	<mx:HTTPService id="shippingDetailFormat" 					url="saoi/salesquotation/xmls/SalesQuotationShippingDetailStru.xml" />
+	<mx:HTTPService id="dgItemServiceChargeGridFormat"			url="saoi/salesquotation/xmls/SalesQuotationServiceDetailStru.xml" />
+	<mx:HTTPService id="dgItemPacketsGridFormat" 				url="saoi/salesquotation/xmls/SalesQuotationItemPacketsDetailStru.xml" />
+	<mx:HTTPService id="getShippingmethodsFromApi" 				url="/shipping/shipping/get_shipping_methods"/>
+	<mx:HTTPService id="lineActivityFormat" 					url="saoi/salesquotation/xmls/SalesQuotationActivityDetailStru.xml" />
+	
+	<mx:HTTPService id="shippingQuotationAmount" 				url="/sale/sales_quotation/get_shipping_amount_for_quotation" />
+	<mx:HTTPService id="sendQuotationToCustomer" 				url="/sale/sales_quotation/send_quotation_to_customer" />
+	<mx:HTTPService id="printPreview" 							url="/sale/sales_quotation/preview_quotation" />
+	
+</rds:CommonServices>

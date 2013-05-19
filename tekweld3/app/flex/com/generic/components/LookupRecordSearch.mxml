@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:TitleWindow xmlns:mx="http://www.adobe.com/2006/mxml" 
+	xmlns:customcomponents="com.generic.customcomponents.*"
+	xmlns:components="com.generic.components.*"
+	title="Lookup"
+	height="400" width="650"
+	creationPolicy="all"
+	creationComplete="creationCompleteHandler()"
+	showCloseButton="true"
+	close="closeHandler()"
+	initialize="{this.parentApplication.focusManager.deactivate()}">
+
+	<mx:Metadata>
+		
+		[Event(name="refreshLookCompleteEvent", type="com.generic.events.LookupRecordSearchEvent")]
+		[Event(name="refreshLookupEvent", type="com.generic.events.LookupRecordSearchEvent")]				
+		
+	</mx:Metadata>
+	<mx:Script source="../scripts/LookupRecordSearchScript.as"/>
+	
+	<mx:XML  id="lookupFormat" source="com/generic/xmls/LookupHelpStru.xml"/>
+	
+	<mx:VBox height="100%" width="100%">
+		<mx:HBox borderThickness="0" borderStyle="none" horizontalGap="0" width="{gridLookup.width}">
+			<mx:Label id="lbLabel" text="Filter : "	 height="20" />
+			<customcomponents:GenTextInput id="tiCode" keyUp="filterLookup(event)" height="20" tabIndex="1"/>
+			<customcomponents:GenTextInput id="tiName" keyUp="filterLookup(event)" height="20" tabIndex="2" />
+		</mx:HBox>
+			
+		<customcomponents:GenDataGrid id="gridLookup"
+			structure="{lookupFormat}"
+			rows = "{filterdRows}"
+			editable="true"
+			height="100%" width="100%"
+			columnStretch="changeColumnSizeHandler()"
+			itemFocusOut="itemFocusOutEventHandler(event)"
+			itemClick="selectRow()"
+			/>
+				
+			
+		<mx:HBox width="100%" textAlign="center" horizontalGap="3">
+			<mx:Button id="btnOK" label="OK" click="btnOKCilckHandler()" width="80" height="20" tabIndex="3" />
+			<mx:Button id="btnCancel" label="Cancel" click="btnCancelCilckHandler()" width="80" height="20" tabIndex="4" />
+			<mx:Button id="btnRefresh" label="Refresh" click="btnrefreshCilckHandler()" width="80" height="20" enabled="true" tabIndex="5"/>
+			<mx:Button id="btnAdd" label="New" click="btnAddCilckHandler()" width="80" height="20" tabIndex="5"
+				enabled="{isNewButtonActive}"/>		
+		</mx:HBox>	
+	</mx:VBox>
+</mx:TitleWindow>

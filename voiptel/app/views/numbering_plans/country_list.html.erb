@@ -1,0 +1,28 @@
+<h1>Country List</h1>
+<%= if @sort == "country_code" then link_to("Sort By Country Name", :action => "country_list", :sort_by => "country_name")  else link_to("Sort By Country Code", :action => :country_list, :sort_by => "country_code") end%><br><br>
+<table cellspacing="0">
+	<th>#</th>
+  <th>Country Name</th>
+	<th>Country Code</th>	
+	<th>CC2</th>
+	<th>CC3</th>
+	<th>Min CNS</th>
+	<th>Max CNS</th>
+	<th>Special Case</th>
+	<th>Actions</th>
+	<% counter = 0%>
+  <% for country in @countries do %>
+	<% counter += 1 %>
+  	<tr>
+			<td><%= counter %></td>
+			<td><%= link_to country.name, :controller => :zones, :action => :view, :id => country.id %></td>
+			<td><%= country.country_code %></td>
+			<td><%= country.country_name_2_letters %></td>
+			<td><%= country.country_name_3_letters %></td>
+			<td><%= country.min_cns %></td>
+			<td><%= country.max_cns %></td>
+			<td><%= if country.special_case then "Yes" + ((country.is_parent_country) ? "*" : "") else "NO" end %></td>
+			<td><%= link_to "Edit", :action => "edit_country", :id => country.id %></td>
+		</tr>
+  <%  end %>
+</table>

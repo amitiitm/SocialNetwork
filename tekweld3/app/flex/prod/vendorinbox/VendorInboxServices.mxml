@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rds:CommonServices xmlns:rds="business.*" xmlns:mx="http://www.adobe.com/2006/mxml">
+
+	<mx:HTTPService id="saveRecord" 	url="/production/production/create_vendor_inboxes"/>
+	<mx:HTTPService id="getList" 		url="/production/production/vendor_inbox"/>
+	<mx:HTTPService id="printPickSlip" 	url="/production/production_report/render_packaging_job_format"/>
+	<mx:HTTPService id="printRecord" 	url=""/>
+	
+	<mx:HTTPService id="getViewFormat" 	url="prod/vendorinbox/xmls/VendorInboxCriteriaStru.xml"/>
+	<mx:HTTPService id="getListFormat" 	url="prod/vendorinbox/xmls/VendorInboxListStru.xml"/>
+</rds:CommonServices>

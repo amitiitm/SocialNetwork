@@ -1,0 +1,6 @@
+<columns Title=''>
+
+    <column dataType="S" label="A/c Period #" checkbox="ckAll1" xmlTagFrom="str1" from="tiStr1" xmlTagTo="str2" to="tiStr2" multiSelect="" xmlTagMultiSelect="" lookupFlag="false" lookupName="" />
+	<column dataType="S" label="Account #" checkbox="ckAll2" xmlTagFrom="str3" from="tiStr3" xmlTagTo="str4" to="tiStr4" multiSelect="mvMultiSelect1" xmlTagMultiSelect="multiselect1" lookupFlag="true" lookupName="GLAccount" lookupLabel="code" dataField="code" />
+    
+</columns>

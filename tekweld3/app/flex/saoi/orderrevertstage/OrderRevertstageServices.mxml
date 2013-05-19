@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rds:CommonServices xmlns:rds="business.*" xmlns:mx="http://www.adobe.com/2006/mxml">
+
+	<mx:HTTPService id="saveRecord" url="/sale/sales/create_revert_order_stages" />
+	<mx:HTTPService id="getRecord" url="/sale/sales/show_all_order" />
+	 <mx:HTTPService id="getList" url="/sale/sales/list_all_orders" />
+	<mx:HTTPService id="printRecord" url="/sale/sales_report/render_sales_order_format" />
+	<mx:HTTPService id="lineActivityFormat" url="saoi/orderrevertstage/xmls/OrderRevertstageActivityDetailStru.xml" />
+	<mx:HTTPService id="getListFormat" url="saoi/orderrevertstage/xmls/OrderRevertstageListStru.xml" />
+	<mx:HTTPService id="getViewFormat" url="saoi/orderrevertstage/xmls/OrderRevertstageCriteriaStru.xml" />
+	
+	
+</rds:CommonServices>

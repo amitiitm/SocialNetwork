@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:TitleWindow xmlns:mx="http://www.adobe.com/2006/mxml" 
+		xmlns:customcomponents="com.generic.customcomponents.*"
+		xmlns:gencomponents="com.generic.components.*" 
+		width="554" height="208"
+		creationComplete="creationCompleteHandler()"
+		title="Print List/Records"
+		showCloseButton="true"
+		close="btnCancelClickHandler()">
+	<mx:Script source="../scripts/PrintListRecordsDetailScript.as"/>
+	<mx:VBox>
+		<mx:Spacer height="10"/>
+		<mx:HBox horizontalGap="10">
+			<mx:Spacer width="60"/>
+			<mx:RadioButtonGroup id="rdogroupPrint"/>
+			<mx:RadioButton id="rdoList" groupName="rdogroupPrint"	value="List"  selected="true"  label="List" labelPlacement="left" width="70" textAlign="left"/>
+			<mx:RadioButton id="rdoRecords" groupName="rdogroupPrint" value="Records" label="Records" labelPlacement="left" width="70" textAlign="left"/>
+		</mx:HBox>
+		<mx:Spacer height="5"/>
+ 		<mx:VBox id="vbFilter"    height="48">
+			<mx:HBox horizontalGap="10">
+				<mx:Spacer width="60"/>
+				<mx:Label text="From" width="110"/>
+				<mx:Label text="To" width="110"/>
+			</mx:HBox>		
+			
+			<mx:HBox horizontalGap="10">
+				<mx:Label text="Trans #" width="60"/>
+				<customcomponents:GenTextInput id="ti_trans_no_from" width="110" maxChars="18" enabled = "{rdogroupPrint.selectedValue == 'Records'? true : false}"/>
+				<customcomponents:GenTextInput id="ti_trans_no_to" width="110" maxChars="18" enabled = "{rdogroupPrint.selectedValue == 'Records'? true : false}"/>
+				<customcomponents:GenTextInput id="ti_trans_no_multipal" width="200" enabled = "{rdogroupPrint.selectedValue == 'Records'? true : false}"/>
+			</mx:HBox>	
+		</mx:VBox>	
+			<mx:Spacer height="5"/>
+			<mx:HBox horizontalGap="10">
+				<mx:Spacer width="60"/>
+				<mx:Button id="btnOK" label="Ok" click="btnOKClickHandler()"/>
+				<mx:Button id="btnCancel" label="Cancel" click="btnCancelClickHandler()"/>
+			</mx:HBox>	
+
+	</mx:VBox>
+	
+</mx:TitleWindow>

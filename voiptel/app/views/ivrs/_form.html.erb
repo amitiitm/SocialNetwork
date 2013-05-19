@@ -1,0 +1,44 @@
+<% form_for @ivr, :html => {:class => "forms"} do |f| %>
+  <%= error("Could not create ivr:") %>
+	<ul>
+		<li class="horizental">
+			<label>IVR Category</label>
+			<%= f.select :ivr_category_id, (IvrCategory.all.map {|c| [c.name, c.id]} + [["Other", 0]]), :include_blank => true %>			
+		</li>
+		<li class="horizental" style="display:none" id="new-category-container">
+			<label>Category Name</label>
+			<%= f.text_field :new_category, :id => "new-category" %>
+		</li>
+	  <li>
+	    <%= f.label :name %>
+	    <%= f.text_field :name %>
+	  </li>
+	  <li class="horizental">
+	    <%= f.label "English Script" %>
+	    <%= f.text_area :en_text, :rows => 5 %>
+	  </li>
+	  <li class="horizental">
+	    <%= f.label "Farsi Script" %>
+	    <%= f.text_area :fa_text, :rows => 5, :class => "rtl" %>
+	  </li>
+		<li></li>
+	  <li class="horizental">
+	    <label class="no-underline"><%= f.check_box :en_sound %> En file available</label>
+	  </li>
+	  <li class="horizental">
+			<label class="no-underline"><%= f.check_box :fa_sound %> Fa file available</label>
+	  </li>
+	</ul>
+<% end %>
+
+<script type="text/javascript" charset="utf-8">
+	$("#ivr_ivr_category_id").change(function(){
+		val = $(this).val();
+		if (val == "0") {
+			$("#new-category-container").fadeIn();
+		} else {
+			$("#new-category-container").fadeOut();
+			$("#new-category").val("");
+		};
+	});
+</script>

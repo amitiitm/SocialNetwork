@@ -1,0 +1,1021 @@
+<?xml version="1.0" encoding="utf-8"?>
+<gencomponents:AddEdit xmlns:mx="http://www.adobe.com/2006/mxml"
+	height="100%" width="100%" verticalGap="0"
+	xmlns:customcomponents="com.generic.customcomponents.*"
+	xmlns:gencomponents="com.generic.components.*"
+	creationPolicy="all" creationComplete="init()">
+	
+	<mx:Script source="../scripts/JewelryAddEditScript.as"/>
+	<mx:Script source="../scripts/JewelryAddEditCastingScript.as"/>
+	<mx:Script source="../scripts/JewelryAddEditFindingScript.as"/>
+	<mx:Script source="../scripts/JewelryAddEditColorStoneScript.as"/>
+	<mx:Script source="../scripts/JewelryAddEditDiamondScript.as"/>
+	<mx:Script source="../scripts/JewelryAddEditCenterStoneScript.as"/>
+	<mx:Script source="../scripts/JewelryAddEditFinishAndOtherLaborScript.as"/>
+	<mx:Script source="../scripts/JewelryAddEditSettingScript.as"/>
+	
+	<mx:VBox width="100%" height="100%" verticalGap="3">
+	 <mx:HBox width="100%">
+	   <mx:VBox width="100%">
+		<mx:HBox width="100%" horizontalGap="2" verticalAlign="middle">
+			<mx:Label text="Item #" width="120" textAlign="right" height="20" />
+			<customcomponents:GenTextInput id="tiStore_code" width="125" xmlTag="store_code" height="20"
+				updatableFlag="true" tableName="catalog_item" defaultValue="" tabIndex="1" upperCaseFlag="true"
+				validationFlag="true" toolTip="Code" maxChars="25" fontSize="9"/>
+			<mx:Label text="Web #" width="120" textAlign="right" height="20"/>
+			<customcomponents:GenTextInput id="tiWeb_code" width="125" xmlTag="web_code" text="{tiStore_code.text}"
+				updatableFlag="true" tableName="catalog_item" defaultValue="" tabIndex="2" height="20" upperCaseFlag="true"
+				validationFlag="true" toolTip="Web Code" maxChars="25" />
+		    <mx:Label text="Base Rate" width="170" textAlign="right" height="20" />
+            <mx:Label text="Surcharge" width="65" textAlign="right" height="20" />
+            <mx:Label text="Total" width="78" textAlign="right" height="20" />
+            <mx:Label text="Metal %" width="55" textAlign="right" height="20" />
+		</mx:HBox>
+		
+		<mx:HBox width="100%" horizontalGap="2" verticalAlign="middle">
+			<mx:Label text="Category" width="120" textAlign="right" height="20"/>
+			<customcomponents:GenTextInputWithHelp
+				id="dcCatalog_item_category_id" 
+				width="125" 
+				toolTip="Item Category #" 
+				dataSourceName="ItemCategory"
+				height="20" 
+				tabIndex="3" 
+				xmlTag="catalog_item_category_id"
+				labelTag="catalog_item_category_code"
+				dataField="id" 
+				labelField= "code"
+				updatableFlag="true" 
+				validationFlag="true"
+				tableName="catalog_item" 
+				itemChangedEvent="handleItemChangedItem_Category();tiItemCategory_code.dataValue	=	dcCatalog_item_category_id.labelValue"
+				/>
+			
+			<!--<customcomponents:GenDynamicComboBoxWithHelp id="dcCatalog_item_category_id" width="125" height="20"
+				tabIndex="3" toolTip="Item Category #" defaultValue="" 
+				dataField="id" itemChangedEvent="handleItemChangedItem_Category()" 
+				dataSourceName="ItemCategory" dataProvider="{__genModel.lookupObj.itemcategory.children()}" labelField="code"
+				validationFlag="true" xmlTag="catalog_item_category_id" updatableFlag="true" tableName="catalog_item" />-->
+		   	<mx:Label text="Item Date" width="120" textAlign="right" height="20" />
+			<customcomponents:GenDateField id="dfItem_Date" width="120"  toolTip="Item Date"  tabIndex="4"
+				xmlTag="item_date" updatableFlag="true" tableName="catalog_item" height="20" />
+		    <mx:Label text="Gold" width="95" textAlign="right" height="20" />
+            <customcomponents:GenTextInput id="tiGold_base_rate" width="80" xmlTag="gold_base_rate" updatableFlag="true" tableName="catalog_item"
+				defaultValue="0.00" dataType="N" maxValue="99999999.99" setDefaultOnEmpty="true" tabIndex="9" toolTip="Gold Base Rate" 
+				height="20" textAlign="right" itemChangedEvent="handleGoldTotalRateChanged(event)"/>
+            <customcomponents:GenTextInput id="tiGold_surcharge" width="65" xmlTag="gold_surcharge" updatableFlag="true" tableName="catalog_item"
+				defaultValue="0.00" dataType="N" maxValue="99999999.99" setDefaultOnEmpty="true" tabIndex="9" toolTip="Gold Surcharge" 
+				height="20" textAlign="right" itemChangedEvent="handleGoldTotalRateChanged(event)" />
+            <customcomponents:GenTextInput id="tiGold_total_rate" width="80" xmlTag="gold_total_rate" updatableFlag="true" tableName="catalog_item"
+				defaultValue="0.00" dataType="N" maxValue="99999999.99" setDefaultOnEmpty="true" tabIndex="10" toolTip="Gold Total Rate" 
+				height="20" textAlign="right" enabled="false"/>
+            <customcomponents:GenTextInput id="tiGold_mu" width="55" xmlTag="gold_mu" updatableFlag="true" tableName="catalog_item"
+				defaultValue="{__genModel.masterData.child('jewelry_default').metal_markup}" dataType="N" maxValue="99999999.99" setDefaultOnEmpty="true" tabIndex="11" toolTip="Gold Markup" 
+				height="20" textAlign="right" itemChangedEvent="handleGoldMarkupChanged(event)"/>
+		</mx:HBox>
+
+		<mx:HBox width="100%" horizontalGap="2" verticalAlign="middle">
+			 <mx:Label text="Size/Country" width="120" height="20" textAlign="right"/>
+			 <customcomponents:GenTextInput id="tiMm_size" width="52" xmlTag="mm_size" height="20"
+				updatableFlag="true" tableName="catalog_item" tabIndex="6" textAlign="right" itemChangedEvent="sizeChangeHandler()"
+				defaultValue="" setDefaultOnEmpty="true"	validationFlag="false" toolTip="MM Size" />
+			<customcomponents:GenTextInput id="tiSizeCountry" width="107" height="20" validationFlag="false"
+				xmlTag="size_country" updatableFlag="true" tabIndex="6" maxChars="50" defaultValue="" 
+				tableName="catalog_item" />		
+				
+			<mx:Label text="Silver" width="304" textAlign="right" height="20" />
+            <customcomponents:GenTextInput id="tiSilver_base_rate" width="80" xmlTag="silver_base_rate" updatableFlag="true" tableName="catalog_item"
+				defaultValue="0.00" dataType="N" maxValue="99999999.99" setDefaultOnEmpty="true" tabIndex="12" toolTip="Silver Base Rate" 
+				height="20" textAlign="right" itemChangedEvent="handleSilverTotalRateChanged(event)"/>
+           	<customcomponents:GenTextInput id="tiSilver_surcharge" width="65" xmlTag="silver_surcharge" updatableFlag="true" tableName="catalog_item"
+				defaultValue="0.00" dataType="N" maxValue="99999999.99" setDefaultOnEmpty="true" tabIndex="13" toolTip="Silver Surcharge" 
+				height="20" textAlign="right" itemChangedEvent="handleSilverTotalRateChanged(event)"/>
+           	<customcomponents:GenTextInput id="tiSilver_total_rate" width="80" xmlTag="silver_total_rate" updatableFlag="true" tableName="catalog_item"
+				defaultValue="0.00" dataType="N" maxValue="99999999.99" setDefaultOnEmpty="true" tabIndex="14" toolTip="Silver Total Rate" 
+				height="20" textAlign="right" enabled="false"/>
+            <customcomponents:GenTextInput id="tiSilver_mu" width="55" xmlTag="silver_mu" updatableFlag="true" tableName="catalog_item"
+				defaultValue="{__genModel.masterData.child('jewelry_default').metal_markup}" dataType="N" maxValue="99999999.99" setDefaultOnEmpty="true" tabIndex="15" toolTip="Silver Markup" 
+				height="20" textAlign="right" itemChangedEvent="handleSilverMarkupChanged(event)" />
+		</mx:HBox>
+		<mx:HBox width="100%" horizontalGap="2" verticalAlign="middle">
+			
+			<mx:Label text="LBH/Unit" width="120" height="20" textAlign="right"/>	
+			<customcomponents:GenTextInput id="tiLength" width="52" xmlTag="length" updatableFlag="true" tableName="catalog_item"
+				defaultValue="" dataType="N" maxValue="99999999.99" setDefaultOnEmpty="true" tabIndex="7" toolTip="Length" 
+				height="20" textAlign="right" />
+			<customcomponents:GenTextInput id="tiBreadth" width="52" xmlTag="breadth" updatableFlag="true" tableName="catalog_item"
+				defaultValue="" dataType="N" maxValue="99999999.99" setDefaultOnEmpty="true" tabIndex="7" toolTip="Breadth" 
+				height="20" textAlign="right" />
+			<customcomponents:GenTextInput id="tiHeight" width="52" xmlTag="height" updatableFlag="true" tableName="catalog_item"
+				defaultValue="" dataType="N" maxValue="99999999.99" setDefaultOnEmpty="true" tabIndex="7" toolTip="Height" 
+				height="20" textAlign="right" />	
+           	 <customcomponents:GenComboBox id="cbSize_unit" defaultValue="INCH" width="89" cornerRadius="0" xmlTag="size_unit" updatableFlag="true"
+				tableName="catalog_item"  tabIndex="7" labelField="label" height="20"  
+				dataProvider="{__genModel.masterData.child('size_unit').size_unit}" />	
+			
+			<mx:Label text="Platinum" width="214" textAlign="right" height="20" />
+            <customcomponents:GenTextInput id="tiPlatinum_base_rate" width="80" xmlTag="platinum_base_rate" updatableFlag="true" tableName="catalog_item"
+				defaultValue="0.00" dataType="N" maxValue="99999999.99" setDefaultOnEmpty="true" tabIndex="16" toolTip="Platinum Base Rate" 
+				height="20" textAlign="right" itemChangedEvent="handlePlatinumTotalRateChanged(event)"/>               
+           	<customcomponents:GenTextInput id="tiPlatinum_surcharge" width="65" xmlTag="platinum_surcharge" updatableFlag="true" tableName="catalog_item"
+				defaultValue="0.00" dataType="N" maxValue="99999999.99" setDefaultOnEmpty="true" tabIndex="17" toolTip="Platinum Surcharge" 
+				height="20" textAlign="right" itemChangedEvent="handlePlatinumTotalRateChanged(event)"/>
+          	<customcomponents:GenTextInput id="tiPlatinum_total_rate" width="80" xmlTag="platinum_total_rate" updatableFlag="true" tableName="catalog_item"
+				defaultValue="0.00" dataType="N" maxValue="99999999.99" setDefaultOnEmpty="true" tabIndex="18" toolTip="Platinum Total Rate" 
+				height="20" textAlign="right" enabled="false"/> 
+           	<customcomponents:GenTextInput id="tiPlatinum_mu" width="55" xmlTag="platinum_mu" updatableFlag="true" tableName="catalog_item"
+				defaultValue="{__genModel.masterData.child('jewelry_default').metal_markup}" dataType="N" maxValue="99999999.99" setDefaultOnEmpty="true" tabIndex="19" toolTip="Platinum Markup" 
+				height="20" textAlign="right" itemChangedEvent="handlePlatinumMarkupChanged(event)"/>
+        </mx:HBox>
+        <mx:HBox width="100%" horizontalGap="2" verticalAlign="middle">
+        	<mx:Label text="Design" width="120" textAlign="right" height="20"/>
+        	<customcomponents:GenDynamicComboBoxWithHelp id="dcDesign_id" width="125" height="20"
+				tabIndex="8" toolTip="Design #" defaultValue="" 
+				dataField="id" itemChangedEvent="handleDesignChanged()" 
+				dataSourceName="Design" dataProvider="{__genModel.lookupObj.design.children()}" labelField="code"
+				validationFlag="false" xmlTag="design_id" updatableFlag="true" tableName="catalog_item" />
+			
+			<mx:Label text="Status" width="120" textAlign="right" height="20"/>
+			<customcomponents:GenComboBox id="cbTrans_flag" defaultValue="A" width="100" cornerRadius="0" xmlTag="trans_flag" updatableFlag="true"
+				tableName="catalog_item"  tabIndex="8" labelField="label" height="20" 
+				dataProvider="{__genModel.masterData.child('trans_flag').trans_flag}" />	
+							
+			<mx:Label text="Production Type" width="0" textAlign="right" height="0" visible="false"/>
+			<customcomponents:GenComboBox id="cbProduction_type" defaultValue="I" width="0" cornerRadius="0" xmlTag="production_type" updatableFlag="true"
+				tableName="catalog_item"  tabIndex="7" labelField="label" height="0" visible="false" 
+				dataProvider="{__genModel.masterData.child('production_type').production_type}" />	
+				
+            <mx:Label text="Palladium" width="113" textAlign="right" height="20" />
+            <customcomponents:GenTextInput id="tiPalladium_base_rate" width="80" xmlTag="palladium_base_rate" updatableFlag="true" tableName="catalog_item"
+				defaultValue="0.00" dataType="N" maxValue="99999999.99" setDefaultOnEmpty="true" tabIndex="20" toolTip="Palladium Base Rate" 
+				height="20" textAlign="right" itemChangedEvent="handlePalladiumTotalRateChanged(event)"/>
+           	<customcomponents:GenTextInput id="tiPalladium_surcharge" width="65" xmlTag="palladium_surcharge" updatableFlag="true" tableName="catalog_item"
+				defaultValue="0.00" dataType="N" maxValue="99999999.99" setDefaultOnEmpty="true" tabIndex="21" toolTip="Palladium Surcharge" 
+				height="20" textAlign="right" itemChangedEvent="handlePalladiumTotalRateChanged(event)"/>
+            <customcomponents:GenTextInput id="tiPalladium_total_rate" width="80" xmlTag="palladium_total_rate" updatableFlag="true" tableName="catalog_item"
+				defaultValue="0.00" dataType="N" maxValue="99999999.99" setDefaultOnEmpty="true" tabIndex="22" toolTip="Palladium Total Rate" 
+				height="20" textAlign="right" enabled="false"/>
+            <customcomponents:GenTextInput id="tiPalladium_mu" width="55" xmlTag="palladium_mu" updatableFlag="true" tableName="catalog_item"
+				defaultValue="{__genModel.masterData.child('jewelry_default').metal_markup}" dataType="N" maxValue="99999999.99" setDefaultOnEmpty="true" tabIndex="23" toolTip="Palladium Markup" 
+				height="20" textAlign="right" itemChangedEvent="handlePalladiumMarkupChanged(event)"/>
+        </mx:HBox>		
+   	   </mx:VBox>
+   	   <mx:VBox width="100%" paddingTop="25" paddingLeft="5">
+   		 <mx:Image id="image" cachePolicy="off" 
+								width="100"
+								height="100" 
+								verticalAlign="middle" 
+								horizontalAlign="center"
+								autoLoad="true" 
+							/>	
+   	   </mx:VBox>
+      </mx:HBox>
+         
+	  <mx:Spacer height="2" />
+		
+		<mx:TabNavigator id="tnDetail" width="100%" height="100%">
+			<mx:HBox id="hbCasting" label="Casting" width="100%" height="100%" horizontalAlign="center">
+				<gencomponents:Detail id="dtlCasting"
+					updatableFlag="true"
+					checkBlankRowColumn="catalog_item_id"
+					rootNode="catalog_item_castings"
+					formatServiceID="castingDetailFormat"
+					height="100%" width="100%"
+					title="Casting"
+					detailAddEditComplete="handleCastingUpdateComplete(event)"
+					detailRemoveRow="handleCastingUpdateComplete(event)"
+					DetailEditClass="{invn.jewelry.components.JewelryCastingDetail}"/>
+			</mx:HBox>
+
+            <mx:HBox id="hbFinding" label="Finding" width="100%" height="100%" horizontalAlign="center">
+				<gencomponents:Detail id="dtlFinding"
+					updatableFlag="true"
+					checkBlankRowColumn="catalog_item_id"
+					rootNode="catalog_item_findings"
+					formatServiceID="findingDetailFormat"
+					height="100%" width="100%"
+					title="Finding"
+					detailAddEditComplete="handleFindingUpdateComplete(event)"
+					detailRemoveRow="handleFindingUpdateComplete(event)"
+					DetailEditClass="{invn.jewelry.components.JewelryFindingDetail}"/>
+			</mx:HBox>
+         
+            <mx:HBox id="hbDiamond" label="Diamond" width="100%" height="100%" horizontalAlign="center">
+				<gencomponents:Detail id="dtlDiamond"
+					updatableFlag="true"
+					checkBlankRowColumn="catalog_item_id"
+					rootNode="catalog_item_diamonds"
+					formatServiceID="diamondDetailFormat"
+					height="100%" width="100%"
+					title="Diamonds"
+					detailAddEditComplete="handleDiamondUpdateComplete(event)"
+					detailRemoveRow="handleDiamondUpdateComplete(event)"
+					DetailEditClass="{invn.jewelry.components.JewelryDiamondsDetail}"/>
+			</mx:HBox>
+
+            <mx:HBox id="hbStone" label="Stone" width="100%" height="100%" horizontalAlign="center">
+				<gencomponents:Detail id="dtlStone"
+					updatableFlag="true"
+					checkBlankRowColumn="catalog_item_id"
+					rootNode="catalog_item_stones"
+					formatServiceID="stoneDetailFormat"
+					height="100%" width="100%"
+					title="Stones"
+					detailAddEditComplete="handleColorStoneUpdateComplete(event)"
+					detailRemoveRow="handleColorStoneUpdateComplete(event)"
+					DetailEditClass="{invn.jewelry.components.JewelryStonesDetail}"/>
+			</mx:HBox>
+
+            <mx:HBox id="hbLabor" label="Labor" width="100%" height="100%" horizontalAlign="center">
+				<gencomponents:Detail id="dtlLabor"
+					updatableFlag="true"
+					checkBlankRowColumn="catalog_item_id"
+					rootNode="catalog_item_others"
+					formatServiceID="laborDetailFormat"
+					height="100%" width="100%"
+					title="Labors"
+					detailAddEditComplete="handleLaborUpdateComplete(event)"
+					detailRemoveRow="handleLaborUpdateComplete(event)"
+					DetailEditClass="{invn.jewelry.components.JewelryLaborsDetail}"/>
+			</mx:HBox>
+			<mx:VBox id="hbPrice_breakup" label="Price Breakup" width="100%" height="100%" verticalGap="3" tabIndex="100">
+				<mx:HBox  width="100%" horizontalGap="2" verticalAlign="middle">
+		        	<mx:Label text="Cost" width="414" textAlign="right" height="20" />
+		            <mx:Label text="Wholesale M/U" width="130" textAlign="right" height="20" />
+		            <mx:Label text="Wholesale Price" width="100" textAlign="right" height="20" />
+		            <mx:Label text="Retail M/U" width="70" textAlign="right" height="20" />
+		            <mx:Label text="Retail Price" width="80" textAlign="right" height="20" />
+				</mx:HBox>
+		        <mx:HBox  width="100%" horizontalGap="2" verticalAlign="middle">
+					<customcomponents:GenTextInput id="tiCasting_type" width="91" height="20" validationFlag="false"
+				    	xmlTag="casting_type" updatableFlag="true" maxChars="50" defaultValue="" toolTip="Casting Type"
+					    tableName="catalog_item" enabled="false"/>
+					<customcomponents:GenTextInput id="tiCasting_color" width="40" height="20" validationFlag="false"
+				    	xmlTag="casting_color" updatableFlag="true" maxChars="50" defaultValue="" toolTip="Casting Color"
+					    tableName="catalog_item" enabled="false" />
+					<mx:Spacer width="38"/>
+					<customcomponents:GenTextInput id="tiCasting_wt" width="60" xmlTag="casting_wt" height="20"
+						updatableFlag="true" tableName="catalog_item" textAlign="right"
+						defaultValue="0.0000" setDefaultOnEmpty="true" dataType="N" maxValue="99999999.9999"
+						validationFlag="false" toolTip="Casting Wt" enabled="false"/>
+	                <customcomponents:GenTextInput id="tiCasting_unit" width="25" height="20" validationFlag="false"
+			        	xmlTag="casting_unit" updatableFlag="true" maxChars="50" defaultValue="" toolTip="Casting Unit"
+				        tableName="catalog_item" enabled="false" />
+	              	<mx:Label text="Casting" width="92" textAlign="right" height="20" />
+					<customcomponents:GenTextInput id="tiCasting_cost" width="85" xmlTag="casting_cost" height="20"
+						updatableFlag="true" tableName="catalog_item" textAlign="right"
+						defaultValue="0.00" setDefaultOnEmpty="true" dataType="N" maxValue="99999999.99"
+						validationFlag="false" toolTip="Casting Cost" enabled="false" />
+	                <mx:Spacer width="15"/>
+	                <customcomponents:GenTextInput id="tiCasting_mu" width="85" xmlTag="casting_mu" height="20"
+						updatableFlag="true" tableName="catalog_item" tabIndex="107" textAlign="right"
+						defaultValue="0.00" setDefaultOnEmpty="true" dataType="N" maxValue="999.99"
+						validationFlag="false" toolTip="Casting Markup" itemChangedEvent="handleCastingMarkupItemChanged(event)"/>
+	            	<customcomponents:GenTextInput id="tiCasting_amt" width="85" xmlTag="casting_amt" height="20"
+						updatableFlag="true" tableName="catalog_item" tabIndex="108" textAlign="right"
+					 	defaultValue="0.00" setDefaultOnEmpty="true" dataType="N" maxValue="99999999.99"
+						validationFlag="false" toolTip="Casting Amt" itemChangedEvent="handleCastingAmtItemChanged(event)" />
+	          	    <customcomponents:GenTextInput id="tiCasting_mu_retail" width="85" xmlTag="casting_mu_retail" height="20"
+						updatableFlag="true" tableName="catalog_item" tabIndex="109" textAlign="right"
+						defaultValue="0.00" setDefaultOnEmpty="true" dataType="N" maxValue="99999.99"
+						validationFlag="false" toolTip="Casting Markup Retail" itemChangedEvent="handleCastingMarkupRetail(event)"/>
+	                <customcomponents:GenTextInput id="tiCasting_amt_retail" width="85" xmlTag="casting_amt_retail" height="20"
+						updatableFlag="true" tableName="catalog_item" tabIndex="110" textAlign="right"
+						defaultValue="0.00" setDefaultOnEmpty="true" dataType="N" maxValue="99999999.99"
+						validationFlag="false" toolTip="Casting Amt Retail" itemChangedEvent="handleCastingAmtRetailItemChanged(event)" />
+				</mx:HBox>
+				<mx:HBox  width="100%" horizontalGap="2" verticalAlign="middle">
+					<customcomponents:GenTextInput id="tiFinding_type" width="91" height="20" validationFlag="false"
+			       		xmlTag="finding_type" updatableFlag="true" maxChars="50" defaultValue="" toolTip="Finding Type"
+				        tableName="catalog_item" enabled="false"/>
+					<customcomponents:GenTextInput id="tiFinding_color" width="40" height="20" validationFlag="false"
+			        	xmlTag="finding_color" updatableFlag="true" maxChars="50" defaultValue="" toolTip="Finding Color"
+				        tableName="catalog_item" enabled="false" />
+	                <mx:Spacer width="38"/>
+					<customcomponents:GenTextInput id="tiFinding_wt" width="60" xmlTag="finding_wt" height="20"
+						updatableFlag="true" tableName="catalog_item" textAlign="right"
+						defaultValue="0.0000" setDefaultOnEmpty="true" dataType="N" maxValue="99999999.9999"
+						validationFlag="false" toolTip="Finding Wt" enabled="false"/>
+					<customcomponents:GenTextInput id="tiFinding_unit" width="25" height="20" validationFlag="false"
+			        	xmlTag="finding_unit" updatableFlag="true" maxChars="50" defaultValue="" toolTip="Finding Unit"
+				        tableName="catalog_item" enabled="false" />
+	              	<mx:Label text="Finding" width="92" textAlign="right" height="20" />
+					<customcomponents:GenTextInput id="tiFinding_cost" width="85" xmlTag="finding_cost" height="20"
+						updatableFlag="true" tableName="catalog_item" textAlign="right"
+						defaultValue="0.00" setDefaultOnEmpty="true" dataType="N" maxValue="99999999.99"
+						validationFlag="false" toolTip="Finding Cost" enabled="false" />
+	                <mx:Spacer width="15"/>
+	                <customcomponents:GenTextInput id="tiFinding_mu" width="85" xmlTag="finding_mu" height="20"
+						updatableFlag="true" tableName="catalog_item" tabIndex="111" textAlign="right"
+						defaultValue="0.00" setDefaultOnEmpty="true" dataType="N" maxValue="999.99"
+						validationFlag="false" toolTip="Finding Markup" itemChangedEvent="handleFindingMarkupItemChanged(event)"/>
+	                <customcomponents:GenTextInput id="tiFinding_amt" width="85" xmlTag="finding_amt" height="20"
+						updatableFlag="true" tableName="catalog_item" tabIndex="112" textAlign="right"
+					 	defaultValue="0.00" setDefaultOnEmpty="true" dataType="N" maxValue="99999999.99"
+						validationFlag="false" toolTip="Finding Amt" itemChangedEvent="handleFindingAmtItemChanged(event)" />
+	                <customcomponents:GenTextInput id="tiFinding_mu_retail" width="85" xmlTag="finding_mu_retail" height="20"
+						updatableFlag="true" tableName="catalog_item" tabIndex="113" textAlign="right"
+						defaultValue="0.00" setDefaultOnEmpty="true" dataType="N" maxValue="99999.99"
+						validationFlag="false" toolTip="Finding Markup Retail" itemChangedEvent="handleFindingMarkupRetail(event)"/>
+	                <customcomponents:GenTextInput id="tiFinding_amt_retail" width="85" xmlTag="finding_amt_retail" height="20"
+						updatableFlag="true" tableName="catalog_item" tabIndex="114" textAlign="right"
+						defaultValue="0.00" setDefaultOnEmpty="true" dataType="N" maxValue="99999999.99"
+						validationFlag="false" toolTip="Finding Amt Retail" itemChangedEvent="handleFindingAmtRetailItemChanged(event)" />
+				</mx:HBox>
+				<mx:HBox  width="100%" horizontalGap="2" verticalAlign="middle">
+					<customcomponents:GenTextInput id="tiDiamond_qlty" width="91" height="20" validationFlag="false"
+				    	xmlTag="diamond_qlty" updatableFlag="true" maxChars="50" defaultValue="" toolTip="Diamond Qlty"
+					    tableName="catalog_item" enabled="false"/>
+		            <mx:Spacer width="80"/>
+		            <customcomponents:GenTextInput id="tiDiamond_wt" width="60" xmlTag="diamond_wt" height="20"
+						updatableFlag="true" tableName="catalog_item" textAlign="right"
+						defaultValue="0.0000" setDefaultOnEmpty="true" dataType="N" maxValue="99999999.9999"
+						validationFlag="false" toolTip="Diamond Wt" enabled="false" />
+					<mx:Label text="Ct" width="20" textAlign="right" height="20" />
+		            <mx:Label text="Diamond" width="97" textAlign="right" height="20" />
+		            <customcomponents:GenTextInput id="tiDiamond_cost" width="85" xmlTag="diamond_cost" height="20"
+						updatableFlag="true" tableName="catalog_item" textAlign="right"
+						defaultValue="0.00" setDefaultOnEmpty="true" dataType="N" maxValue="99999999.99"
+						validationFlag="false" toolTip="Diamond Cost" enabled="false" />
+					<mx:Spacer width="15"/>
+		            <customcomponents:GenTextInput id="tiDiamond_mu" width="85" xmlTag="diamond_mu" height="20"
+						updatableFlag="true" tableName="catalog_item" tabIndex="115" textAlign="right"
+						defaultValue="0.00" setDefaultOnEmpty="true" dataType="N" maxValue="999.99"
+						validationFlag="false" toolTip="Diamond Markup" itemChangedEvent="handleDiamondMarkupItemChanged(event)" />
+					<customcomponents:GenTextInput id="tiDiamond_amt" width="85" xmlTag="diamond_amt" height="20"
+						updatableFlag="true" tableName="catalog_item" tabIndex="116" textAlign="right"
+						defaultValue="0.00" setDefaultOnEmpty="true" dataType="N" maxValue="99999999.99"
+						validationFlag="false" toolTip="Diamond Amt" itemChangedEvent="handleDiamondAmtItemchanged(event)" />
+					<customcomponents:GenTextInput id="tiDiamond_mu_retail" width="85" xmlTag="diamond_mu_retail" height="20"
+						updatableFlag="true" tableName="catalog_item" tabIndex="117" textAlign="right"
+						defaultValue="0.00" setDefaultOnEmpty="true" dataType="N" maxValue="99999.99"
+						validationFlag="false" toolTip="Diamond Markup Retail" itemChangedEvent="handleDiamondRetailMarkupItemChanged(event)" />
+					<customcomponents:GenTextInput id="tiDiamond_amt_retail" width="85" xmlTag="diamond_amt_retail" height="20"
+						updatableFlag="true" tableName="catalog_item" tabIndex="118" textAlign="right"
+						defaultValue="0.00" setDefaultOnEmpty="true" dataType="N" maxValue="99999999.99"
+						validationFlag="false" toolTip="Diamond Amt Retail" itemChangedEvent="handleDiamondRetailPriceItemChanged(event)" />
+				</mx:HBox>
+				<mx:HBox  width="100%" horizontalGap="2" verticalAlign="middle">
+					<customcomponents:GenTextInput id="tiColor_stone_type" width="91" height="20" validationFlag="false"
+				    	xmlTag="color_stone_type" updatableFlag="true" maxChars="50" defaultValue="" toolTip="Color Stone Type"
+					    tableName="catalog_item" enabled="false"/>
+					<customcomponents:GenTextInput id="tiColor_stone_shape" width="80" height="20" validationFlag="false"
+				    	xmlTag="color_stone_shape" updatableFlag="true" maxChars="50" defaultValue="" toolTip="Color Stone Shape"
+					    tableName="catalog_item" enabled="false" />
+					<customcomponents:GenTextInput id="tiColor_stone_wt" width="60" xmlTag="color_stone_wt" height="20"
+						updatableFlag="true" tableName="catalog_item" textAlign="right"
+						defaultValue="0.00" setDefaultOnEmpty="true" dataType="N" maxValue="99999999.9999"
+						validationFlag="false" toolTip="Color Stone Wt" enabled="false"/>
+					<mx:Label text="Ct" width="20" textAlign="right" height="20" />
+		            <mx:Label text="Color Stone" width="97" textAlign="right" height="20" />
+		            <customcomponents:GenTextInput id="tiColor_stone_cost" width="85" xmlTag="color_stone_cost" height="20"
+						updatableFlag="true" tableName="catalog_item" textAlign="right"
+						defaultValue="0.00" setDefaultOnEmpty="true" dataType="N" maxValue="99999.99"
+						validationFlag="false" toolTip="Color Stone Cost" enabled="false" />
+					<mx:Spacer width="15"/>
+		            <customcomponents:GenTextInput id="tiColor_stone_mu" width="85" xmlTag="color_stone_mu" height="20"
+						updatableFlag="true" tableName="catalog_item" tabIndex="119" textAlign="right"
+						defaultValue="0.00" setDefaultOnEmpty="true" dataType="N" maxValue="999.99"
+						validationFlag="false" toolTip="Color Stone Markup" itemChangedEvent="handleColorStoneMarkupItemChanged(event)"/>
+					<customcomponents:GenTextInput id="tiColor_stone_amt" width="85" xmlTag="color_stone_amt" height="20"
+						updatableFlag="true" tableName="catalog_item" tabIndex="120" textAlign="right"
+						defaultValue="0.00" setDefaultOnEmpty="true" dataType="N" maxValue="99999999.99"
+						validationFlag="false" toolTip="Color Stone Amt" itemChangedEvent="handleColorStoneAmtItemchanged(event)" />
+					<customcomponents:GenTextInput id="tiColor_stone_mu_retail" width="85" xmlTag="color_stone_mu_retail" height="20"
+						updatableFlag="true" tableName="catalog_item" tabIndex="121" textAlign="right"
+						defaultValue="0.00" setDefaultOnEmpty="true" dataType="N" maxValue="99999999.99"
+						validationFlag="false" toolTip="Color Stone Markup Retail" itemChangedEvent="handleColorStoneRetailMarkupItemChanged(event)"/>
+					<customcomponents:GenTextInput id="tiColor_stone_amt_retail" width="85" xmlTag="color_stone_amt_retail" height="20"
+						updatableFlag="true" tableName="catalog_item" tabIndex="122" textAlign="right"
+						defaultValue="0.00" setDefaultOnEmpty="true" dataType="N" maxValue="99999999.99"
+						validationFlag="false" toolTip="Color Stone Amt Retail" itemChangedEvent="handleColorStoneRetailPriceItemChanged(event)" />	
+				</mx:HBox>
+				<mx:HBox  width="100%" horizontalGap="2" verticalAlign="middle">
+		        	<customcomponents:GenTextInput id="tiCenter_stone_type" width="92" height="20" validationFlag="false"
+				    	xmlTag="center_stone_type" updatableFlag="true"  maxChars="50" defaultValue="" toolTip="Center Stone Type"
+					    tableName="catalog_item" enabled="false"/>
+					<customcomponents:GenTextInput id="tiCenter_stone_shape" width="80" height="20" validationFlag="false"
+				    	xmlTag="center_stone_shape" updatableFlag="true" maxChars="50" defaultValue="" toolTip="Center Stone Shape"
+					    tableName="catalog_item" enabled="false"/>
+					<customcomponents:GenTextInput id="tiCenter_stone_qlty" width="60" height="20" validationFlag="false"
+				    	xmlTag="center_stone_qlty" updatableFlag="true" maxChars="50" defaultValue="" toolTip="Center Stone Qlty"
+					    tableName="catalog_item" enabled="false"/>
+					<mx:Label text="Center Stone" width="118" textAlign="right" height="20" />
+		            <customcomponents:GenTextInput id="tiCenter_stone_cost" width="85" xmlTag="center_stone_cost" height="20"
+						updatableFlag="true" tableName="catalog_item" textAlign="right"
+						defaultValue="0.00" setDefaultOnEmpty="true" dataType="N" maxValue="99999999.99"
+						validationFlag="false" toolTip="Center Stone Cost" enabled="false" />
+					<mx:Spacer width="15"/>
+					<customcomponents:GenTextInput id="tiCenter_stone_mu" width="85" xmlTag="center_stone_mu" height="20"
+						updatableFlag="true" tableName="catalog_item" tabIndex="123" textAlign="right"
+						defaultValue="0.00" setDefaultOnEmpty="true" dataType="N" maxValue="99999.99"
+						validationFlag="false" toolTip="Center Stone Markup" itemChangedEvent="handleCenterStoneMarkupItemChanged(event)"/>
+					<customcomponents:GenTextInput id="tiCenter_stone_amt" width="85" xmlTag="center_stone_amt" height="20"
+						updatableFlag="true" tableName="catalog_item" tabIndex="124" textAlign="right"
+						defaultValue="0.00" setDefaultOnEmpty="true" dataType="N" maxValue="99999999.99"
+						validationFlag="false" toolTip="Center Stone Amt" itemChangedEvent="handleCreateStoneAmtItemchanged(event)" />
+					<customcomponents:GenTextInput id="tiCenter_stone_retail_mu" width="85" xmlTag="center_stone_retail_mu" height="20"
+						updatableFlag="true" tableName="catalog_item" tabIndex="125" textAlign="right"
+						defaultValue="0.00" setDefaultOnEmpty="true" dataType="N" maxValue="99999.99"
+						validationFlag="false" toolTip="Center Stone Retail Markup" itemChangedEvent="handleCenterStoneRetailMarkupItemChanged(event)"/>
+					<customcomponents:GenTextInput id="tiCenter_stone_retail_price" width="85" xmlTag="center_stone_retail_price" height="20"
+						updatableFlag="true" tableName="catalog_item" tabIndex="126" textAlign="right"
+						defaultValue="0.00" setDefaultOnEmpty="true" dataType="N" maxValue="99999999.99"
+						validationFlag="false" toolTip="Center Stone Retail Price" itemChangedEvent="handleCenterStoneRetailPriceItemChanged(event)" />
+				</mx:HBox>
+				<mx:HBox  width="100%" horizontalGap="2" verticalAlign="middle">
+		        	<mx:Label text="Surcharge %" width="91" textAlign="right" height="20" />
+					<customcomponents:GenTextInput id="tiSurcharge_per" width="80" xmlTag="surcharge_per" height="20"
+						updatableFlag="true" tableName="catalog_item" tabIndex="101" textAlign="right"
+						defaultValue="0.00" setDefaultOnEmpty="true" dataType="N" maxValue="9999.99"
+						validationFlag="false" toolTip="Surcharge Per" itemChangedEvent="handleSurchargePerItemChanged(event)" />
+					<customcomponents:GenTextInput id="tiSurcharge_amt" width="80" xmlTag="surcharge_amt" height="20"
+						updatableFlag="true" tableName="catalog_item" textAlign="right"
+						defaultValue="0.00" setDefaultOnEmpty="true" dataType="N" maxValue="999999.99"
+						validationFlag="false" toolTip="Surcharge Amt"  enabled="false" />
+		          
+					<mx:Label text="Setting" width="99" textAlign="right" height="20" />
+		            <customcomponents:GenTextInput id="tiSettinglabor_cost" width="85" xmlTag="settinglabor_cost" height="20"
+						updatableFlag="true" tableName="catalog_item" textAlign="right"
+						defaultValue="0.00" setDefaultOnEmpty="true" dataType="N" maxValue="99999999.99"
+						validationFlag="false" toolTip="Settinglabor Cost" enabled="false" />
+					<mx:Spacer width="15"/>
+					<customcomponents:GenTextInput id="tiSettinglabor_mu" width="85" xmlTag="settinglabor_mu" height="20"
+						updatableFlag="true" tableName="catalog_item" tabIndex="127" textAlign="right"
+						defaultValue="0.00" setDefaultOnEmpty="true" dataType="N" maxValue="999.99"
+						validationFlag="false" toolTip="Settinglabor Markup" itemChangedEvent="handleSettingMarkupItemChanged(event)" />
+					<customcomponents:GenTextInput id="tiSettinglabor_amt" width="85" xmlTag="settinglabor_amt" height="20"
+						updatableFlag="true" tableName="catalog_item" tabIndex="128" textAlign="right"
+						defaultValue="0.00" setDefaultOnEmpty="true" dataType="N" maxValue="99999999.99"
+						validationFlag="false" toolTip="Settinglabor Amt" itemChangedEvent="handleSettingAmtItemchanged(event)" />
+					<customcomponents:GenTextInput id="tiSettinglabor_mu_retail" width="85" xmlTag="settinglabor_mu_retail" height="20"
+						updatableFlag="true" tableName="catalog_item" tabIndex="129" textAlign="right"
+						defaultValue="0.00" setDefaultOnEmpty="true" dataType="N" maxValue="99999.99"
+						validationFlag="false" toolTip="Settinglabor Markup Retail" itemChangedEvent="handleSettingRetailMarkupItemChanged(event)"/>
+					<customcomponents:GenTextInput id="tiSettinglabor_amt_retail" width="85" xmlTag="settinglabor_amt_retail" height="20"
+						updatableFlag="true" tableName="catalog_item" tabIndex="130" textAlign="right"
+						defaultValue="0.00" setDefaultOnEmpty="true" dataType="N" maxValue="99999999.99"
+						validationFlag="false" toolTip="Settinglabor amt Retail" itemChangedEvent="handleSettingRetailPriceItemChanged(event)" />
+				</mx:HBox>
+				<mx:HBox  width="100%" horizontalGap="2" verticalAlign="middle">
+		        	<mx:Label text="Vendor PO Cost" width="173" textAlign="right" height="20" />
+					<customcomponents:GenTextInput id="tiVendor_po_cost" width="80" xmlTag="vendor_po_cost" height="20"
+						updatableFlag="true" tableName="catalog_item" textAlign="right"
+						defaultValue="0.00" setDefaultOnEmpty="true" dataType="N" maxValue="999999.99"
+						validationFlag="false" toolTip="Vendor PO Cost" enabled="false"/>
+					<mx:Label text="Finishing" width="99" textAlign="right" height="20" />
+		            <customcomponents:GenTextInput id="tiFinishing_labor_cost" width="85" xmlTag="finishing_labor_cost" height="20"
+						updatableFlag="true" tableName="catalog_item" textAlign="right" dataType="N" 
+						defaultValue="0.00" setDefaultOnEmpty="true" maxValue="9999999.99"
+						validationFlag="false" toolTip="Finishinglabor Cost" enabled="false" />
+		            <mx:Spacer width="15"/>
+		            <customcomponents:GenTextInput id="tiFinishing_labor_mu" width="85" xmlTag="finishing_labor_mu" height="20"
+						updatableFlag="true" tableName="catalog_item" tabIndex="131" textAlign="right"
+						defaultValue="0.00" setDefaultOnEmpty="true" dataType="N" maxValue="999.99"
+						validationFlag="false" toolTip="Finishinglabor Markup" itemChangedEvent="handleFinishingMarkupItemChanged(event)" />
+		            <customcomponents:GenTextInput id="tiFinishing_labor_amt" width="85" xmlTag="finishing_labor_amt" height="20"
+						updatableFlag="true" tableName="catalog_item" tabIndex="132" textAlign="right"
+						defaultValue="0.00" setDefaultOnEmpty="true" dataType="N" maxValue="99999999.99"
+						validationFlag="false" toolTip="Finishinglabor Amt" itemChangedEvent="handleFinishingAmtItemchanged(event)" />
+		            <customcomponents:GenTextInput id="tiFinishinglabor_mu_retail" width="85" xmlTag="finishinglabor_mu_retail" height="20"
+						updatableFlag="true" tableName="catalog_item" tabIndex="133" textAlign="right"
+						defaultValue="0.00" setDefaultOnEmpty="true" dataType="N" maxValue="99999.99"
+						validationFlag="false" toolTip="Finishinglabor Markup Retail" itemChangedEvent="handleFinishingRetailMarkupItemChanged(event)"/>
+					<customcomponents:GenTextInput id="tiFinishinglabor_amt_retail" width="85" xmlTag="finishinglabor_amt_retail" height="20"
+						updatableFlag="true" tableName="catalog_item" tabIndex="134" textAlign="right"
+						defaultValue="0.00" setDefaultOnEmpty="true" dataType="N" maxValue="99999999.99"
+						validationFlag="false" toolTip="Finishinglabor Amt Retail" itemChangedEvent="handleFinishingRetailPriceItemChanged(event)" />
+				</mx:HBox>
+				<mx:HBox  width="100%" horizontalGap="2" verticalAlign="middle">
+		        	<mx:Spacer width="244"/>
+					<mx:Label text="Other" width="110" textAlign="right" height="20" />
+		            <customcomponents:GenTextInput id="tiOther_cost" width="85" xmlTag="other_cost" height="20"
+						updatableFlag="true" tableName="catalog_item" textAlign="right"
+						defaultValue="0.00" setDefaultOnEmpty="true" dataType="N" maxValue="9999999.99"
+						validationFlag="false" toolTip="Other Cost" enabled="false" />
+		            <mx:Spacer width="15"/>
+		            <customcomponents:GenTextInput id="tiOther_mu" width="85" xmlTag="other_mu" height="20"
+						updatableFlag="true" tableName="catalog_item" tabIndex="135" textAlign="right"
+						defaultValue="0.00" setDefaultOnEmpty="true" dataType="N" maxValue="99999.99"
+						validationFlag="false" toolTip="Other Markup" itemChangedEvent="handleOtherMarkupItemChanged(event)" />
+		            <customcomponents:GenTextInput id="tiOther_amt" width="85" xmlTag="other_amt" height="20"
+						updatableFlag="true" tableName="catalog_item" tabIndex="136" textAlign="right"
+						defaultValue="0.00" setDefaultOnEmpty="true" dataType="N" maxValue="99999999.99"
+						validationFlag="false" toolTip="Other Amt" itemChangedEvent="handleOtherAmtItemchanged(event)" />
+		            <customcomponents:GenTextInput id="tiOther_mu_retail" width="85" xmlTag="other_mu_retail" height="20"
+						updatableFlag="true" tableName="catalog_item" tabIndex="137" textAlign="right"
+						defaultValue="0.00" setDefaultOnEmpty="true" dataType="N" maxValue="99999.99"
+						validationFlag="false" toolTip="Other Markup Retail" itemChangedEvent="handleOtherRetailMarkupItemChanged(event)"/>
+					<customcomponents:GenTextInput id="tiOther_amt_retail" width="85" xmlTag="other_amt_retail" height="20"
+						updatableFlag="true" tableName="catalog_item" tabIndex="138" textAlign="right"
+						defaultValue="0.00" setDefaultOnEmpty="true" dataType="N" maxValue="99999999.99"
+						validationFlag="false" toolTip="Other Amt Retail" itemChangedEvent="handleOtherRetailPriceItemChanged(event)" />
+				</mx:HBox>
+				<mx:HBox  width="100%" horizontalGap="2" verticalAlign="middle">
+					<mx:Spacer width="275"/>
+					<mx:HRule x="275" width="510"/>
+				</mx:HBox>
+				<mx:HBox  width="100%" horizontalGap="2" verticalAlign="middle">
+					<mx:Label text="Discount %" width="90" textAlign="right" height="20" />
+					<customcomponents:GenTextInput id="tiDiscount_per" width="80" xmlTag="discount_per" height="20"
+						updatableFlag="true" tableName="catalog_item" tabIndex="102" textAlign="right"
+						defaultValue="0.00" setDefaultOnEmpty="true" dataType="N" maxValue="9999.99" negativeFlag="true" 
+						validationFlag="false" toolTip="Discount Per" itemChangedEvent="handleDiscountPerItemChanged(event)"/>
+		            <customcomponents:GenTextInput id="tiDiscount_amt" width="80" xmlTag="discount_amt" height="20"
+						updatableFlag="true" tableName="catalog_item" tabIndex="103" textAlign="right"
+						defaultValue="0.00" setDefaultOnEmpty="true" dataType="N" maxValue="9999.99" negativeFlag="true"
+						itemChangedEvent="handleDiscountAmtItemChanged(event)" validationFlag="false" toolTip="Discount Amt" />
+					<mx:Spacer width="100" height="2"/>
+					
+					<customcomponents:GenTextInput id="tiSubTotal_cost" width="85" xmlTag="subtotal_cost" height="20"
+						updatableFlag="true" tableName="catalog_item" textAlign="right"
+						defaultValue="0.00" setDefaultOnEmpty="true" dataType="N" maxValue="99999999.99"
+						validationFlag="false" toolTip="Metal" enabled="false" />
+				</mx:HBox>
+				<mx:HBox  width="100%" horizontalGap="2" verticalAlign="middle">
+		        	<mx:Label text="Duty %" width="90" textAlign="right" height="20" />
+					<customcomponents:GenTextInput id="tiDuty_per" width="80" xmlTag="duty_per" height="20"
+						updatableFlag="true" tableName="catalog_item" tabIndex="104" textAlign="right"
+						defaultValue="0.00" setDefaultOnEmpty="true" dataType="N" maxValue="9999.99"
+						validationFlag="false" toolTip="Duty Per" itemChangedEvent="handleDutyPerItemChanged(event)"/>
+					<customcomponents:GenTextInput id="tiDuty_amt" width="80" xmlTag="duty_amt" height="20"
+						updatableFlag="true" tableName="catalog_item" textAlign="right"
+						defaultValue="0.00" setDefaultOnEmpty="true" dataType="N" maxValue="9999.99"
+						validationFlag="false" toolTip="Duty Amt" enabled="false"/>
+		        	<mx:Label text="Vendor Fixed Cost" width="100" textAlign="right" height="20" />
+		            <customcomponents:GenTextInput id="tiVendor_fixed_cost" width="85" xmlTag="vendor_fixed_cost" height="20"
+						updatableFlag="true" tableName="catalog_item" tabIndex="106" textAlign="right"
+						defaultValue="0.00" setDefaultOnEmpty="true" dataType="N" maxValue="99999999.99"
+						validationFlag="false" toolTip="Vendor Fixed Cost" itemChangedEvent="handleVendorFixedCostItemChanged(event)" />
+				</mx:HBox>
+				<mx:HBox  width="100%" horizontalGap="2" verticalAlign="middle">
+		        	<mx:Spacer width="275"/>
+		            <mx:HRule x="275" width="510"/>
+				</mx:HBox>
+				<mx:HBox  width="100%" horizontalGap="2" verticalAlign="middle">
+		        	<mx:Label text="Gold Increment" width="90" textAlign="right" height="20" />
+		            <customcomponents:GenTextInput id="tiGold_increment" width="81" xmlTag="gold_increment" height="20"
+						updatableFlag="true" tableName="catalog_item" tabIndex="105" textAlign="right"
+						defaultValue="0.00" setDefaultOnEmpty="true" dataType="N" maxValue="99.999999"
+						validationFlag="false" toolTip="Gold Increment" />
+					<customcomponents:GenCheckBox labelPlacement="left" label="Fixed Cost ?" id="cbFixedCost" width="111" xmlTag="price_flag" height="20"
+						updatableFlag="true" tableName="catalog_item" defaultValue="V" textAlign="right" tabIndex="105" enabled="true"
+						dataValueForOn="F" dataValueForOff="V" itemChangedEvent="FixedCostChangedHandler()"/>	
+				
+					<mx:Label text="Total Cost" width="68" textAlign="right" height="20" />
+		            <customcomponents:GenTextInput id="tiTotal_cost" width="85" xmlTag="total_cost" height="20"
+						updatableFlag="true" tableName="catalog_item" textAlign="right"
+						defaultValue="0.00" setDefaultOnEmpty="true" dataType="N" maxValue="999999999.99"
+						validationFlag="false" toolTip="Total Cost" enabled="false" itemChangedEvent="updateAllTotal()" />
+					<mx:Spacer width="15"/>
+		            <customcomponents:GenTextInput id="tiMarkup_per" width="85" xmlTag="markup_per" height="20"
+						updatableFlag="true" tableName="catalog_item" tabIndex="139" textAlign="right"
+						defaultValue="0.00" setDefaultOnEmpty="true" dataType="N" maxValue="999.99"
+						validationFlag="false" toolTip="Markup Per" itemChangedEvent="handleMarupPerItemChanged(event)" />
+					<customcomponents:GenTextInput id="tiPrice" width="85" xmlTag="price" height="20"
+						updatableFlag="true" tableName="catalog_item" tabIndex="140" textAlign="right"
+						defaultValue="0.00" setDefaultOnEmpty="true" dataType="N" maxValue="99999999.99"
+						validationFlag="false" toolTip="price" itemChangedEvent="handlePriceItemChanged(event)" />
+					<customcomponents:GenTextInput id="tiMarkup_per_retail" width="85" xmlTag="markup_per_retail" height="20"
+						updatableFlag="true" tableName="catalog_item" tabIndex="141" textAlign="right"
+						defaultValue="0.00" setDefaultOnEmpty="true" dataType="N" maxValue="99999.99"
+					 	validationFlag="false" toolTip="Markup Per Retail" itemChangedEvent="handleMarkupPerRetailItemChanged(event)"/>
+					<customcomponents:GenTextInput id="tiRetail_price" width="85" xmlTag="retail_price" height="20"
+						updatableFlag="true" tableName="catalog_item" tabIndex="142" textAlign="right"
+						defaultValue="0.00" setDefaultOnEmpty="true" dataType="N" maxValue="9999999999.99"
+						validationFlag="false" toolTip="Retail Price" itemChangedEvent="handleRetailPriceItemChanged(event)" />
+				</mx:HBox>
+			</mx:VBox>
+			<mx:HBox id="hbPrice" label="Price" width="100%" height="100%" horizontalAlign="center">
+				<gencomponents:Detail id="dtlPrice"
+					updatableFlag="true"
+					checkBlankRowColumn="catalog_item_id"
+					rootNode="catalog_item_prices"
+					formatServiceID="priceDetailFormat"
+					height="100%" width="100%"
+					title="Item Price"
+					DetailEditClass="{invn.jewelry.components.JewelryPriceDetail}"/>
+			</mx:HBox>
+			<mx:HBox id="hbHeader" label="Misc" width="100%" height="100%" verticalGap="3" tabIndex="100">
+			  <mx:VBox height="100%" width="100%">
+			
+				<mx:HBox width="100%" horizontalGap="2" verticalAlign="middle">
+      				<mx:Label text="Factory Model" width="120" height="20" textAlign="right"/>
+					<customcomponents:GenTextInput id="tiFactory_model" width="125" xmlTag="factory_model" height="20"
+						updatableFlag="true" tableName="catalog_item" tabIndex="105" 
+						validationFlag="false" toolTip="Factory Model" />
+					<mx:Label text="Factory Code" width="120" height="20" textAlign="right"/>
+					<customcomponents:GenTextInput id="tiFactory_code" width="125" xmlTag="factory_code" height="20"
+						updatableFlag="true" tableName="catalog_item" tabIndex="106" 
+						validationFlag="false" toolTip="Factory Code" />	
+			 	</mx:HBox>
+			 	<mx:HBox  width="100%" horizontalGap="2" verticalAlign="top">
+			 		<mx:Label text="Name" width="120" textAlign="right"/>
+					<customcomponents:GenTextInput id="tiName" width="251" height="20" validationFlag="true"
+					xmlTag="name" updatableFlag="true" tabIndex="107" maxChars="50" defaultValue="" toolTip="Name"
+					tableName="catalog_item" />
+				</mx:HBox>
+				<mx:HBox  width="100%" horizontalGap="2" verticalAlign="top">
+					<mx:Label text="Purchase Description" width="120" textAlign="right" height="20" />
+				  	<customcomponents:GenTextArea width="375" height="60" id="taPurchaseDesc" maxChars="100"    toolTip="Purchase Description"
+						xmlTag="purchase_description" updatableFlag="true" tableName="catalog_item" tabIndex="107" />
+				</mx:HBox>
+				<mx:HBox  width="100%" horizontalGap="2" verticalAlign="top">
+					<mx:Label text="Sale Description" width="120" textAlign="right" height="20"/>
+				 	<customcomponents:GenTextArea width="375" height="60" id="taSalesDesc" maxChars="100" toolTip="Sale Description"
+						xmlTag="sale_description" updatableFlag="true" tableName="catalog_item" tabIndex="108" />					
+				</mx:HBox>
+				
+			  </mx:VBox>
+			  <mx:VBox height="100%" width="100%">
+					<mx:HBox width="100%" horizontalGap="2" verticalAlign="middle">
+					<mx:Label text="Prefered Vendor #" width="120" textAlign="right"/>
+						<customcomponents:GenTextInputWithHelp
+							id="dcPrefered_vendor_id" 
+							width="125" 
+							toolTip="Prefered Vendor #" 
+							dataSourceName="Vendor"
+							height="20" 
+							tabIndex="109" 
+							xmlTag="prefered_vendor_id"
+							labelTag="prefered_vendor_code"
+							dataField="id" 
+							labelField= "code"
+							updatableFlag="true" 
+							tableName="catalog_item" 
+							itemChangedEvent="tiVendor_code.dataValue = dcPrefered_vendor_id.labelValue"
+							/>
+					<!--<customcomponents:GenDynamicComboBoxWithHelp id="dcPrefered_vendor_id" width="125" height="20"
+						tabIndex="109" toolTip="Prefered Vendor #" defaultValue="" 
+						dataField="id" itemChangedEvent="preferedVendorChanged()"
+						dataSourceName="Vendor"  dataProvider="{__genModel.lookupObj.vendor.children()}" labelField="code" 
+						xmlTag="prefered_vendor_id" updatableFlag="true" tableName="catalog_item" />-->
+				</mx:HBox>
+				<mx:HBox width="100%" horizontalGap="2" verticalAlign="middle">					
+					<mx:Label text="Vendor Item #" width="120" textAlign="right"/>
+					<customcomponents:GenTextInput id="tiPriority" width="125" xmlTag="vendor_item_name" updatableFlag="true" tableName="catalog_item"
+						defaultValue="" maxChars="50" setDefaultOnEmpty="true" tabIndex="110" toolTip="Vendor Item Name" height="20" />	
+				</mx:HBox>
+				<mx:HBox width="100%" horizontalGap="2" verticalAlign="middle">					
+					<mx:Label text="Vendor Style #" width="120" textAlign="right"/>
+					<customcomponents:GenTextInput id="tiVendor_style_no" width="125" xmlTag="vendor_style_no" updatableFlag="true" tableName="catalog_item"
+						defaultValue="" maxChars="50" setDefaultOnEmpty="true" tabIndex="111" toolTip="Vendor Style No" height="20" />	
+					<mx:Label text="UPC #" width="100" textAlign="right"/>
+					<customcomponents:GenTextInput id="tiUpc_no" width="125" xmlTag="upc_no" updatableFlag="true" tableName="catalog_item"
+						defaultValue="" maxChars="50" setDefaultOnEmpty="true" tabIndex="113" toolTip="UPC No" height="20" />
+				</mx:HBox>
+				<mx:Spacer height="3" />
+				<mx:HBox width="100%" horizontalGap="2" verticalAlign="middle">
+				 	<mx:Label text="Reorder Level" width="120" textAlign="right" height="20" />
+				 	<customcomponents:GenTextInput id="tiReorder_Level" width="88" xmlTag="reorder_level" updatableFlag="true" tableName="catalog_item" height="20"
+						defaultValue="0.00" dataType="N" textAlign="right" maxValue="9999.99" setDefaultOnEmpty="true" tabIndex="113" toolTip="Reorder Level"/>
+			  	</mx:HBox>
+			  	<mx:HBox width="100%" horizontalGap="2" verticalAlign="middle">
+			  		<mx:Label text="Reorder Qty" width="120" textAlign="right" height="20" />
+				 	<customcomponents:GenTextInput id="tiReorder_Qty" width="88" xmlTag="reorder_qty" updatableFlag="true" tableName="catalog_item"
+						defaultValue="0.00" dataType="N" maxValue="99999.99" setDefaultOnEmpty="true" tabIndex="114" toolTip="Reorder Qty" height="20" textAlign="right"/>
+				</mx:HBox>		
+				<mx:HBox width="100%" horizontalGap="2" verticalAlign="middle">
+					<mx:Label text="Min/Max Qty" width="120" textAlign="right" height="20" />
+				 	<customcomponents:GenTextInput id="tiMin_Qty" width="43" xmlTag="min_qty" updatableFlag="true" tableName="catalog_item"
+						defaultValue="0.00" dataType="N" maxValue="9999999.99" setDefaultOnEmpty="true" tabIndex="115" toolTip="Min Qty" height="20" textAlign="right"/>	
+					<customcomponents:GenTextInput id="tiMax_Qty" width="43" xmlTag="max_qty" updatableFlag="true" tableName="catalog_item"
+						defaultValue="0.00" dataType="N" maxValue="9999999.99" setDefaultOnEmpty="true" tabIndex="116" toolTip="Max Qty" height="20" textAlign="right"/>	
+				</mx:HBox>
+				<mx:Spacer height="3" />
+				<mx:HBox width="100%" horizontalGap="2" verticalAlign="middle">
+					<mx:Label text="Barcode" width="120" textAlign="right" height="20" />
+				  	<customcomponents:GenTextInput id="tiBarcode" width="125" xmlTag="barcode" updatableFlag="true" tableName="catalog_item"
+						defaultValue="" maxChars="25" tabIndex="117" toolTip="Barcode" height="20" />	
+				 	<customcomponents:GenCheckBox labelPlacement="left" label="Packet Required ?" id="cbPacket_require_yn" width="135" xmlTag="packet_require_yn"
+						updatableFlag="true" tableName="catalog_item" defaultValue="{__genModel.masterData.child('invn').packet_required.value}" textAlign="right" tabIndex="117" enabled="true" height="20"
+						dataValueForOn="Y" dataValueForOff="N"/>
+					<customcomponents:GenCheckBox labelPlacement="left" label="Batch Required ?" id="cbBatch_require_yn" width="135" xmlTag="batch_require_yn"
+						updatableFlag="true" tableName="catalog_item" defaultValue="{__genModel.masterData.child('invn').generate_batch.value}" textAlign="right" tabIndex="118" enabled="true" height="20"
+						dataValueForOn="Y" dataValueForOff="N"/>	
+				</mx:HBox>
+				<mx:HBox width="100%" horizontalGap="2" verticalAlign="middle">
+					<mx:Label text="Priority" width="120" textAlign="right" height="20" />
+				 	<customcomponents:GenComboBox id="cbPriority" defaultValue="A" width="125" cornerRadius="0" xmlTag="priority" updatableFlag="true"
+						tableName="catalog_item"  tabIndex="119" height="20" labelField="label" 
+						dataProvider="{__genModel.masterData.child('paymentpriority').paymentpriority}" />
+						
+					<customcomponents:GenCheckBox labelPlacement="left" label="Taxable" id="cbTaxable" width="135" xmlTag="taxable" height="20"
+						updatableFlag="true" tableName="catalog_item" defaultValue="Y" textAlign="right" tabIndex="120" enabled="true"
+						dataValueForOn="Y" dataValueForOff="N"/>	
+				</mx:HBox>
+				</mx:VBox>
+			</mx:HBox>
+		  
+			<mx:HBox id="hbImage" label="Image" width="100%" height="100%" verticalGap="3" tabIndex="100">
+				<mx:VBox height="100%" width="50%">
+					<mx:HBox width="100%" horizontalGap="2" verticalAlign="middle" >
+					<mx:Label text="Thumnail" width="120" textAlign="right" height="20" />
+					<customcomponents:GenTextInput id="tiImage_Thumnail" width="250"  visible="true"
+						editable="false" enabled="false" xmlTag="image_thumnail" updatableFlag="true" text="{btnBrowse_imageThumnail.fileName}"
+						tableName="catalog_item" defaultValue="" maxChars="100" toolTip="Image" height="20" />
+				 	<mx:Spacer width="5" />
+					<customcomponents:GenUploadButton id="btnBrowse_imageThumnail" downloadCompleteEvent="handleCompleteEvent(event)"
+						label="..." toolTip="Browse Image" width="40" height="20" tabIndex="104" uploadFileNameSetEvent="handleUploadEvent(event)"
+						uploadServiceID="imageUploadUrl" fileTitle="Image Name" fileTypes="*.jpg,*.bmp,*.png" />
+				</mx:HBox>
+				
+				<mx:HBox width="100%" horizontalGap="2" verticalAlign="middle">
+					<mx:Label text="Small" width="120" textAlign="right" height="20" />
+					<customcomponents:GenTextInput id="tiImage_Small" width="250"  visible="true" 
+						editable="false" enabled="false" xmlTag="image_small" updatableFlag="true" text="{btnBrowse_imageSmall.fileName}"
+						tableName="catalog_item" defaultValue="" maxChars="100" toolTip="Image" height="20" />
+					<mx:Spacer width="5" />
+					<customcomponents:GenUploadButton id="btnBrowse_imageSmall" downloadCompleteEvent="handleCompleteEvent(event)"
+						label="..." toolTip="Browse Image" width="40" height="20" tabIndex="105" uploadFileNameSetEvent="handleUploadEvent(event)"
+						uploadServiceID="imageUploadUrl" fileTitle="Image Name" fileTypes="*.jpg,*.bmp,*.png" />
+				</mx:HBox>
+				<mx:HBox width="100%" horizontalGap="2" verticalAlign="middle">
+					<mx:Label text="Normal" width="120" textAlign="right" height="20"/>
+				 	<customcomponents:GenTextInput id="tiImage_Normal" width="250"  visible="true" 
+						editable="false" enabled="false" xmlTag="image_normal" updatableFlag="true" text="{btnBrowse_imageNormal.fileName}"
+						tableName="catalog_item" defaultValue="" maxChars="100" toolTip="Image" height="20" />
+				 	<mx:Spacer width="5" />
+					<customcomponents:GenUploadButton id="btnBrowse_imageNormal" downloadCompleteEvent="handleCompleteEvent(event)"
+						label="..." toolTip="Browse Image" width="40" height="20" tabIndex="106" uploadFileNameSetEvent="handleUploadEvent(event)"
+						uploadServiceID="imageUploadUrl" fileTitle="Image Name" fileTypes="*.jpg,*.bmp,*.png" />
+			 	</mx:HBox>
+				<mx:HBox width="100%" horizontalGap="2" verticalAlign="middle">
+					<mx:Label text="Enlarge" width="120" textAlign="right" height="20" />
+				 	<customcomponents:GenTextInput id="tiImage_Enlarge" width="250"  visible="true" 
+						editable="false" enabled="false" xmlTag="image_enlarge" updatableFlag="true" text="{btnBrowse_imageEnlarge.fileName}"
+						tableName="catalog_item" defaultValue="" maxChars="100" toolTip="Image" height="20" />
+			     	<mx:Spacer width="5" />
+				 	<customcomponents:GenUploadButton id="btnBrowse_imageEnlarge" downloadCompleteEvent="handleCompleteEvent(event)"
+						label="..." toolTip="Browse Image" width="40" height="20" tabIndex="107" uploadFileNameSetEvent="handleUploadEvent(event)"
+						uploadServiceID="imageUploadUrl" fileTitle="Image Name" fileTypes="*.jpg,*.bmp,*.png" />
+				</mx:HBox>
+
+				<mx:Spacer height="10" width="100%" />
+				
+				<mx:HBox width="100%" horizontalGap="2" verticalAlign="middle">
+					<mx:Label text="Sketch #1" width="120" textAlign="right" height="20"/>
+				 	<customcomponents:GenTextInput id="tiSketch_image1" width="250"  visible="true" 
+						editable="false" enabled="false" xmlTag="sketch_image1" updatableFlag="true" text="{btnBrowse_sketchImage1.fileName}"
+						tableName="catalog_item" defaultValue="" maxChars="100" toolTip="Sketch #1" height="20" />
+					<mx:Spacer width="5" />
+					<customcomponents:GenUploadButton id="btnBrowse_sketchImage1" downloadCompleteEvent="handleCompleteEvent(event)"
+						label="..." toolTip="Browse Image" width="40" height="20" tabIndex="107" uploadFileNameSetEvent="handleUploadEvent(event)"
+						uploadServiceID="imageUploadUrl" fileTitle="Image Name" fileTypes="*.jpg,*.bmp,*.png" />
+				</mx:HBox>
+				<mx:HBox width="100%" horizontalGap="2" verticalAlign="middle">
+					<mx:Label text="Sketch #2" width="120" textAlign="right" height="20"/>
+					<customcomponents:GenTextInput id="tiSketch_image2" width="250" visible="true" 
+						editable="false" enabled="false" xmlTag="sketch_image2" updatableFlag="true" text="{btnBrowse_sketchImage2.fileName}"
+						tableName="catalog_item" defaultValue="" maxChars="100" toolTip="Sketch #2" height="20" />
+				 	<mx:Spacer width="5" />
+				 	<customcomponents:GenUploadButton id="btnBrowse_sketchImage2" downloadCompleteEvent="handleCompleteEvent(event)"
+						label="..." toolTip="Browse Image" width="40" height="20" tabIndex="107" uploadFileNameSetEvent="handleUploadEvent(event)"
+						uploadServiceID="imageUploadUrl" fileTitle="Image Name" fileTypes="*.jpg,*.bmp,*.png" />
+			 	</mx:HBox>
+				<mx:HBox width="100%" horizontalGap="2" verticalAlign="middle">
+					<mx:Label text="Sketch #3" width="120" textAlign="right"/>
+					<customcomponents:GenTextInput id="tiSketch_image3" width="250"  visible="true" text="{btnBrowse_sketchImage3.fileName}"
+						editable="false" enabled="false" xmlTag="sketch_image3" updatableFlag="true" height="20" 
+						tableName="catalog_item" defaultValue="" maxChars="100" toolTip="Sketch #3" />
+				 	<mx:Spacer width="5" />
+				 	<customcomponents:GenUploadButton id="btnBrowse_sketchImage3" downloadCompleteEvent="handleCompleteEvent(event)"
+						label="..." toolTip="Browse Image" width="40" height="20" tabIndex="107" uploadFileNameSetEvent="handleUploadEvent(event)"
+						uploadServiceID="imageUploadUrl" fileTitle="Image Name" fileTypes="*.jpg,*.bmp,*.png" />
+				</mx:HBox>
+				</mx:VBox>
+				
+			    <mx:VBox height="100%" width="50%">
+			    	<mx:HBox width="100%">
+						<mx:VBox width="103 " height="103" borderStyle="solid">
+							<mx:Image id="imageThumnail" cachePolicy="off"
+								width="100 "
+								height="100 " 
+								verticalAlign="middle" 
+								horizontalAlign="center"
+								autoLoad="true" 
+							/>
+						</mx:VBox>
+						<mx:VBox width="103 " height="103" borderStyle="solid">
+							<mx:Image id="imageSmall" cachePolicy="off" 
+								width="100 "
+								height="100 " 
+								verticalAlign="middle" 
+								horizontalAlign="center"
+								autoLoad="true" 
+							/>
+						</mx:VBox>
+						<mx:VBox width="103 " height="103" borderStyle="solid">
+							<mx:Image id="imageNormal" cachePolicy="off" 
+								width="100 "
+								height="100 " 
+								verticalAlign="middle" 
+								horizontalAlign="center"
+								autoLoad="true" 
+							/>
+						</mx:VBox>
+						<mx:VBox width="103 " height="103" borderStyle="solid">
+							<mx:Image id="imageEnlarge" cachePolicy="off"
+								width="100"
+								height="100" 
+								verticalAlign="middle" 
+								horizontalAlign="center"
+								autoLoad="true" 
+							/>
+						</mx:VBox>
+				    </mx:HBox>
+				    <mx:HBox width="100 %" paddingLeft="50">
+						<mx:VBox width="103 " height="103" borderStyle="solid">
+							<mx:Image id="image1Sketch1" cachePolicy="off" 
+								width="100 "
+								height="100 " 
+								verticalAlign="middle" 
+								horizontalAlign="center"
+								autoLoad="true" 
+							/>
+						</mx:VBox>
+						<mx:VBox width="103 " height="103" borderStyle="solid">
+							<mx:Image id="image1Sketch2" cachePolicy="off" 
+								width="100"
+								height="100" 
+								verticalAlign="middle" 
+								horizontalAlign="center"
+								autoLoad="true" 
+							/>
+						</mx:VBox>
+						<mx:VBox width="103 " height="103" borderStyle="solid">
+							<mx:Image id="image1Sketch3" cachePolicy="off" 
+								width="100"
+								height="100" 
+								verticalAlign="middle" 
+								horizontalAlign="center"
+								autoLoad="true"
+							/>
+						</mx:VBox>
+				    </mx:HBox>
+			    </mx:VBox>
+ 			</mx:HBox>
+			<mx:HBox id="hbOtherImages" label="Other Image" width="100%" height="100%" horizontalAlign="center" visible="true" >
+				<gencomponents:Detail id="dtlOtherImages"
+					updatableFlag="true"
+					checkBlankRowColumn="catalog_item_id"
+					rootNode="catalog_item_images"
+					formatServiceID="otherImgesDetailFormat"
+					height="100%" width="100%" visible="true"
+					title="Other Images"
+					DetailEditClass="{invn.jewelry.components.JewelryOtherImagesDetail}"/>
+			</mx:HBox>
+			<mx:HBox id="hbUDF" label="UDF" width="100%" height="100%" verticalGap="3" horizontalGap="0" horizontalAlign="left"
+				verticalAlign="top">
+				<mx:VBox width="100%" height="202" verticalGap="3" verticalAlign="middle" horizontalAlign="left">
+					<mx:HBox verticalAlign="middle" horizontalGap="0" width="100%">
+						<mx:Spacer height="10"/>
+						<mx:Label text="UDF1" textAlign="right" width="89"/>
+						<customcomponents:GenTextInput id="tiUdf1" width="339" xmlTag="udf1" updatableFlag="true"
+						tabIndex="301"	tableName="catalog_item" defaultValue="" maxChars="100" height="20"/>
+					</mx:HBox>
+					<mx:HBox verticalAlign="middle" horizontalGap="0" width="100%">
+						<mx:Label text="UDF2" textAlign="right" width="89"/>
+						<customcomponents:GenTextInput id="tiUdf2" width="339" xmlTag="udf2" updatableFlag="true"
+							tabIndex="302" tableName="catalog_item" defaultValue="" maxChars="100" height="20"/>
+					</mx:HBox>
+					<mx:HBox verticalAlign="middle" horizontalGap="0" width="100%">
+						<mx:Label text="UDF3" textAlign="right" width="89"/>
+						<customcomponents:GenTextInput id="tiUdf3" width="339" xmlTag="udf3" updatableFlag="true"
+							tabIndex="303" tableName="catalog_item" defaultValue="" maxChars="100" height="20"/>
+					</mx:HBox>
+					<mx:HBox verticalAlign="middle" horizontalGap="0" width="100%">
+						<mx:Label text="UDF4" textAlign="right" width="89"/>
+						<customcomponents:GenTextInput id="tiUdf4" width="339" xmlTag="udf4" updatableFlag="true"
+							tabIndex="304" tableName="catalog_item" defaultValue="" maxChars="100" height="20"/>
+					</mx:HBox>
+					<mx:HBox verticalAlign="middle" horizontalGap="0" width="100%">
+						<mx:Label text="UDF5" textAlign="right" width="89"/>
+						<customcomponents:GenTextInput id="tiUdf5" width="339" xmlTag="udf5" updatableFlag="true"
+							tabIndex="305" tableName="catalog_item" defaultValue="" maxChars="100" height="20"/>
+					</mx:HBox>
+					<mx:HBox verticalAlign="middle" horizontalGap="0" width="100%" height="20">
+						<mx:Label text="UDF6" textAlign="right" width="89"/>
+						<customcomponents:GenTextInput id="tiUdf6" width="339" xmlTag="udf6" updatableFlag="true"
+							tabIndex="306" tableName="catalog_item" defaultValue="" maxChars="100" height="20"/>
+					</mx:HBox>
+				</mx:VBox>
+			</mx:HBox>
+
+			<mx:HBox id="hbCustomer" label="Customer" width="100%" height="100%" horizontalAlign="center">
+				<gencomponents:Detail id="dtlCustomer"
+					updatableFlag="true"
+					checkBlankRowColumn="customer_sku_no"
+					rootNode="catalog_item_cust_parameters"
+					formatServiceID="custParameterFormat"
+					height="100%" width="100%"
+					title="Customer Specific"
+					DetailEditClass="{invn.jewelry.components.JewelryCustomerParameter}"/>
+			</mx:HBox>
+
+			<mx:HBox id="hbVendor" label="Vendor" width="100%" height="100%" horizontalAlign="center">
+				<gencomponents:Detail id="dtlVendor"
+					updatableFlag="true"
+					checkBlankRowColumn="vendor_sku_no"
+					rootNode="catalog_item_vend_parameters"
+					formatServiceID="vendParameterFormat"
+					height="100%" width="100%"
+					title="Vendor Specific"
+					DetailEditClass="{invn.jewelry.components.JewelryVendorParameter}"/>
+			</mx:HBox>
+
+            <mx:HBox id="hbSimilar_items" label="Similar Item" width="100%" height="100%" horizontalAlign="center">
+				<gencomponents:Detail id="dtlSimilar_items"
+					updatableFlag="true"
+					checkBlankRowColumn="catalog_item_id"
+					rootNode="catalog_item_similar_items"
+					formatServiceID="similarItemDetailFormat"
+					height="100%" width="100%"
+					title="Similar Items"
+					DetailEditClass="{invn.jewelry.components.SimilarJewelryDetail}"/>
+			</mx:HBox>
+			
+			<mx:HBox id="hbAttribute" label="Attribute" width="100%" height="100%" horizontalAlign="left" fontSize="10" >
+				<customcomponents:GenDataGrid 
+					id="dgAttribute"
+					paddingTop="0"
+					paddingLeft="0"
+					paddingRight="0"
+					paddingBottom="0"
+					width="360" 
+					height="100%"
+					sortableColumns="false"
+					updatableFlag="true"
+					itemClick="handleAttributeItemClick()"
+					formatServiceID="attributeDetailFormat"
+					rootNode="catalog_item_attributes_values" />
+				<mx:Spacer width="20" />
+				<customcomponents:GenDataGrid 
+					id="dgValues"
+					paddingTop="0"
+					paddingLeft="0"
+					paddingRight="0"
+					paddingBottom="0"
+					width="320" 
+					height="100%"
+					editable="true"
+					sortableColumns="false"
+					updatableFlag="false"
+					formatServiceID="valueDetailFormat"
+					itemFocusOut="handleValuesFocusOut(event)"
+					rootNode="catalog_attribute_values"/>
+			</mx:HBox>
+		</mx:TabNavigator>
+	</mx:VBox>
+	
+	<!-- Dont remove hbAssemble, it is generic part of item master  -->
+	<mx:HBox id="hbAssemble" label="Assemble" width="0" height="0" horizontalAlign="center" visible="false" >
+		<gencomponents:Detail id="dtlAssemble"
+			updatableFlag="true"
+			checkBlankRowColumn="assemble_item_id"
+			rootNode="catalog_item_lines"
+			formatServiceID="assembleDetailFormat"
+			height="0" width="0" visible="false"
+			title="Item Assemble"
+			DetailEditClass="{invn.jewelry.components.JewelryAssembleDetail}"/>
+	</mx:HBox>
+	
+	<mx:HBox width="0" verticalAlign="middle" height="0" visible="false">
+		<mx:Label text="Item Type" width="0" visible="false" textAlign="right" height="0"/>
+		<customcomponents:GenComboBox id="cbItem_type" defaultValue="I" width="0" cornerRadius="0" xmlTag="item_type" updatableFlag="true"
+			tableName="catalog_item"  labelField="label" height="0" visible="false"
+			dataProvider="{__genModel.masterData.child('invn_item_type').invn_item_type}" />
+ 
+		<mx:HBox width="0" height="0" visible="false" verticalAlign="middle">
+			<mx:Label text="Cost" width="0" visible="false" textAlign="right" height="0" />
+			<customcomponents:GenTextInput id="tiCost" width="0" xmlTag="cost" updatableFlag="true" tableName="catalog_item"
+				defaultValue="0.00" dataType="N" maxValue="99999999.99" setDefaultOnEmpty="true"  height="0" visible="false"  
+				toolTip="Cost" textAlign="right"/>
+			<mx:Label text="Unit" width="0" visible="false" textAlign="right" height="0" />
+			<customcomponents:GenComboBox id="cbUnit" defaultValue="WT" width="0" cornerRadius="0" xmlTag="unit" updatableFlag="true"
+				tableName="catalog_item"  labelField="label" visible="false"
+				dataProvider="{__genModel.masterData.child('sell_unit').sell_unit}" height="0" />
+		</mx:HBox>
+		
+		<mx:Label text="Diamond Qty" width="0" visible="false" textAlign="right" height="0" />
+		<customcomponents:GenTextInput id="tiDiamond_qty" width="0" xmlTag="diamond_qty" updatableFlag="true" tableName="catalog_item"
+			defaultValue="0.00" dataType="N" maxValue="99999999.99" setDefaultOnEmpty="true"  height="0" visible="false"  
+			toolTip="Diamond Qty" textAlign="right"/>
+		<mx:Label text="Color Stone Qty" width="0" visible="false" textAlign="right" height="0" />
+		<customcomponents:GenTextInput id="tiColor_stone_qty" width="0" xmlTag="color_stone_qty" updatableFlag="true" tableName="catalog_item"
+			defaultValue="0.00" dataType="N" maxValue="99999999.99" setDefaultOnEmpty="true"  height="0" visible="false"  
+			toolTip="Color Stone Qty" textAlign="right"/>
+		<customcomponents:GenTextInput id="tiJewelryOrDesignFlag" width="0" height="0" validationFlag="false" visible="false"
+				xmlTag="jewelry_design_flag" updatableFlag="true"  defaultValue="J" tableName="catalog_item" />	
+		<customcomponents:GenTextInput id="tiDesingCode" width="0" height="0" validationFlag="false"
+				xmlTag="design_code" updatableFlag="true"  text="{dcDesign_id.dcb.text}"	tableName="catalog_item" />		
+				
+		<customcomponents:GenTextInput id="tiColor_stone_size" width="0" height="0" validationFlag="false" updatableFlag="true"
+			xmlTag="color_stone_size" visible="false" includeInLayout="false"  toolTip="Color Stone Size" textAlign="right" 
+			defaultValue="0.00" tableName="catalog_item" />
+		<customcomponents:GenTextInput id="tiVendor_code" xmlTag="prefered_vendor_code" updatableFlag="true" 
+					text="{dcPrefered_vendor_id.labelValue}" tableName = "catalog_item"  width="0" height="0" visible="false"/>		
+		<customcomponents:GenTextInput id="tiItemCategory_code" xmlTag="catalog_item_category_code" updatableFlag="true" 
+	 			   text="{dcCatalog_item_category_id.labelValue}" tableName = "catalog_item"  width="0" height="0" visible="false"/>	
+	</mx:HBox>
+</gencomponents:AddEdit>

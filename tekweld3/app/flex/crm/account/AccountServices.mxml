@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rds:CommonServices xmlns:rds="business.*" xmlns:mx="http://www.adobe.com/2006/mxml">
+
+	<mx:HTTPService id="saveRecord" url="/crm/crm_account/create_accounts"/>
+	<mx:HTTPService id="getRecord" url="/crm/crm_account/show_accounts"/>
+	<mx:HTTPService id="getList" url="/crm/crm_account/list_accounts"/>
+	<mx:HTTPService id="getListFormat" url="crm/account/xmls/AccountListStru.xml"/>
+	<mx:HTTPService id="getViewFormat" url="crm/account/xmls/AccountCriteriaStru.xml"/>
+	<mx:HTTPService id="taskDetailFormat" url="crm/account/xmls/AccountTaskDetailStru.xml"/>
+	<mx:HTTPService id="contactDetailFormat" url="crm/account/xmls/AccountContactDetailStru.xml"/>
+	<mx:HTTPService id="otherAddressDetailFormat" url="crm/otheraddress/xmls/OtherAddressDetailStru.xml"/>
+	<mx:HTTPService id="opportunityDetailFormat" url="crm/account/xmls/AccountOpportunityDetailStru.xml"/>
+	<mx:HTTPService id="activityDetailFormat" url="crm/account/xmls/AccountActivityHistoryDetailStru.xml"/>
+	<mx:HTTPService id="printRecord" url=""/>
+	
+</rds:CommonServices>

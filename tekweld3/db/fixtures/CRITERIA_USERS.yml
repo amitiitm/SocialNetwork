@@ -1,0 +1,4173 @@
+--- 
+criteria_users_002: 
+  default_yn: N
+  updated_at: 2011/01/24 18:38:53
+  document_id: 522
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  lock_version: 22
+  criteria_id: 1373
+  updated_by: 1
+  id: 215
+  company_id: 1
+  user_id: 1
+  created_at: 2010/06/11 12:05:11
+criteria_users_003: 
+  default_yn: N
+  updated_at: 2011/01/24 18:28:55
+  document_id: 22
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  lock_version: 13
+  criteria_id: 620
+  updated_by: 1
+  id: 260
+  company_id: 1
+  user_id: 1
+  created_at: 2010/06/14 10:14:12
+criteria_users_110: 
+  default_yn: Y
+  updated_at: 2011/01/24 18:21:55
+  document_id: 1001
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 0
+  criteria_id: 1813
+  updated_by: 1
+  id: 8262
+  company_id: 1
+  user_id: 1
+  created_at: 2011/01/24 18:21:55
+criteria_users_004: 
+  default_yn: N
+  updated_at: 2011/01/24 18:40:17
+  document_id: 542
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  lock_version: 21
+  criteria_id: 1501
+  updated_by: 1
+  id: 293
+  company_id: 1
+  user_id: 1
+  created_at: 2010/06/15 15:16:38
+criteria_users_030: 
+  default_yn: N
+  updated_at: 2011/01/24 18:39:39
+  document_id: 703
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  lock_version: 6
+  criteria_id: 1581
+  updated_by: 1
+  id: 4367
+  company_id: 1
+  user_id: 1
+  created_at: 2010/07/23 14:56:00
+criteria_users_111: 
+  default_yn: Y
+  updated_at: 2011/01/24 18:22:24
+  document_id: 1111
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 0
+  criteria_id: 1814
+  updated_by: 1
+  id: 8263
+  company_id: 1
+  user_id: 1
+  created_at: 2011/01/24 18:22:24
+criteria_users_005: 
+  default_yn: N
+  updated_at: 2011/01/24 18:24:30
+  document_id: 686
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  lock_version: 5
+  criteria_id: 1582
+  updated_by: 1
+  id: 447
+  company_id: 1
+  user_id: 1
+  created_at: 2010/06/18 14:38:59
+criteria_users_031: 
+  default_yn: N
+  updated_at: 2011/01/24 18:44:13
+  document_id: 560
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  lock_version: 17
+  criteria_id: 481
+  updated_by: 1
+  id: 4586
+  company_id: 1
+  user_id: 1
+  created_at: 2010/07/27 11:13:14
+criteria_users_112: 
+  default_yn: Y
+  updated_at: 2011/01/24 18:23:00
+  document_id: 1112
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 0
+  criteria_id: 1815
+  updated_by: 1
+  id: 8264
+  company_id: 1
+  user_id: 1
+  created_at: 2011/01/24 18:23:00
+criteria_users_032: 
+  default_yn: N
+  updated_at: 2011/01/24 18:34:00
+  document_id: 662
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  lock_version: 4
+  criteria_id: 1530
+  updated_by: 1
+  id: 4608
+  company_id: 1
+  user_id: 1
+  created_at: 2010/07/27 15:18:05
+criteria_users_113: 
+  default_yn: Y
+  updated_at: 2011/01/24 18:23:21
+  document_id: 684
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 0
+  criteria_id: 1816
+  updated_by: 1
+  id: 8265
+  company_id: 1
+  user_id: 1
+  created_at: 2011/01/24 18:23:21
+criteria_users_220: 
+  default_yn: Y
+  updated_at: 2011/01/24 18:35:54
+  document_id: 762
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 0
+  criteria_id: 1922
+  updated_by: 1
+  id: 8373
+  company_id: 1
+  user_id: 1
+  created_at: 2011/01/24 18:35:54
+criteria_users_006: 
+  default_yn: N
+  updated_at: 2011/01/24 18:36:32
+  document_id: 706
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  lock_version: 31
+  criteria_id: 1587
+  updated_by: 1
+  id: 462
+  company_id: 1
+  user_id: 1
+  created_at: 2010/06/18 18:04:55
+criteria_users_033: 
+  default_yn: N
+  updated_at: 2011/01/24 18:31:19
+  document_id: 480
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  lock_version: 145
+  criteria_id: 232
+  updated_by: 1
+  id: 4609
+  company_id: 1
+  user_id: 1
+  created_at: 2010/07/27 15:18:42
+criteria_users_114: 
+  default_yn: Y
+  updated_at: 2011/01/24 18:23:33
+  document_id: 250
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 0
+  criteria_id: 1817
+  updated_by: 1
+  id: 8266
+  company_id: 1
+  user_id: 1
+  created_at: 2011/01/24 18:23:33
+criteria_users_140: 
+  default_yn: Y
+  updated_at: 2011/01/24 18:27:52
+  document_id: 162
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 0
+  criteria_id: 1844
+  updated_by: 1
+  id: 8293
+  company_id: 1
+  user_id: 1
+  created_at: 2011/01/24 18:27:52
+criteria_users_221: 
+  default_yn: Y
+  updated_at: 2011/01/24 18:35:59
+  document_id: 520
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 0
+  criteria_id: 1923
+  updated_by: 1
+  id: 8374
+  company_id: 1
+  user_id: 1
+  created_at: 2011/01/24 18:35:59
+criteria_users_060: 
+  default_yn: Y
+  updated_at: 2010/12/23 16:46:49
+  document_id: 1313
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 0
+  criteria_id: 1733
+  updated_by: 1
+  id: 7387
+  company_id: 1
+  user_id: 1
+  created_at: 2010/12/23 16:46:49
+criteria_users_115: 
+  default_yn: Y
+  updated_at: 2011/01/24 18:23:39
+  document_id: 682
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 0
+  criteria_id: 1819
+  updated_by: 1
+  id: 8268
+  company_id: 1
+  user_id: 1
+  created_at: 2011/01/24 18:23:39
+criteria_users_141: 
+  default_yn: Y
+  updated_at: 2011/01/24 18:28:04
+  document_id: 320
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 0
+  criteria_id: 1845
+  updated_by: 1
+  id: 8294
+  company_id: 1
+  user_id: 1
+  created_at: 2011/01/24 18:28:04
+criteria_users_222: 
+  default_yn: Y
+  updated_at: 2011/01/24 18:36:00
+  document_id: 704
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 0
+  criteria_id: 1924
+  updated_by: 1
+  id: 8375
+  company_id: 1
+  user_id: 1
+  created_at: 2011/01/24 18:36:00
+criteria_users_007: 
+  default_yn: N
+  updated_at: 2011/01/24 18:36:43
+  document_id: 707
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  lock_version: 32
+  criteria_id: 1588
+  updated_by: 1
+  id: 463
+  company_id: 1
+  user_id: 1
+  created_at: 2010/06/18 18:14:36
+criteria_users_034: 
+  default_yn: N
+  updated_at: 2011/01/24 18:20:50
+  document_id: 785
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  lock_version: 1
+  criteria_id: 340
+  updated_by: 1
+  id: 4727
+  company_id: 1
+  user_id: 1
+  created_at: 2010/07/29 16:15:08
+criteria_users_223: 
+  default_yn: Y
+  updated_at: 2011/01/24 18:36:06
+  document_id: 763
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 0
+  criteria_id: 1925
+  updated_by: 1
+  id: 8376
+  company_id: 1
+  user_id: 1
+  created_at: 2011/01/24 18:36:06
+criteria_users_061: 
+  default_yn: N
+  updated_at: 2011/01/24 18:44:13
+  document_id: 560
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 3
+  criteria_id: 480
+  updated_by: 1
+  id: 7458
+  company_id: 1
+  user_id: 1
+  created_at: 2010/12/27 16:04:08
+criteria_users_116: 
+  default_yn: Y
+  updated_at: 2011/01/24 18:23:56
+  document_id: 683
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 0
+  criteria_id: 1820
+  updated_by: 1
+  id: 8269
+  company_id: 1
+  user_id: 1
+  created_at: 2011/01/24 18:23:56
+criteria_users_142: 
+  default_yn: Y
+  updated_at: 2011/01/24 18:28:06
+  document_id: 680
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 0
+  criteria_id: 1846
+  updated_by: 1
+  id: 8295
+  company_id: 1
+  user_id: 1
+  created_at: 2011/01/24 18:28:06
+criteria_users_008: 
+  default_yn: N
+  updated_at: 2011/01/24 18:31:19
+  document_id: 480
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  lock_version: 255
+  criteria_id: 1529
+  updated_by: 1
+  id: 786
+  company_id: 1
+  user_id: 1
+  created_at: 2010/06/20 16:29:05
+criteria_users_035: 
+  default_yn: N
+  updated_at: 2011/01/24 18:26:07
+  document_id: 602
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  lock_version: 1
+  criteria_id: 440
+  updated_by: 1
+  id: 4812
+  company_id: 1
+  user_id: 1
+  created_at: 2010/07/30 15:44:02
+criteria_users_250: 
+  default_yn: Y
+  updated_at: 2011/01/24 18:40:54
+  document_id: 1082
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 0
+  criteria_id: 1952
+  updated_by: 1
+  id: 8403
+  company_id: 1
+  user_id: 1
+  created_at: 2011/01/24 18:40:54
+criteria_users_224: 
+  default_yn: Y
+  updated_at: 2011/01/24 18:36:15
+  document_id: 705
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 0
+  criteria_id: 1926
+  updated_by: 1
+  id: 8377
+  company_id: 1
+  user_id: 1
+  created_at: 2011/01/24 18:36:15
+criteria_users_143: 
+  default_yn: Y
+  updated_at: 2011/01/24 18:28:07
+  document_id: 980
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 0
+  criteria_id: 1847
+  updated_by: 1
+  id: 8296
+  company_id: 1
+  user_id: 1
+  created_at: 2011/01/24 18:28:07
+criteria_users_009: 
+  default_yn: N
+  updated_at: 2011/01/24 18:38:53
+  document_id: 522
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  lock_version: 7
+  criteria_id: 1483
+  updated_by: 1
+  id: 850
+  company_id: 1
+  user_id: 1
+  created_at: 2010/06/21 16:24:27
+criteria_users_036: 
+  default_yn: N
+  updated_at: 2011/01/24 18:35:48
+  document_id: 640
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  lock_version: 1
+  criteria_id: 1527
+  updated_by: 1
+  id: 4988
+  company_id: 1
+  user_id: 1
+  created_at: 2010/08/07 12:55:01
+criteria_users_062: 
+  default_yn: N
+  updated_at: 2011/01/24 18:44:13
+  document_id: 560
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 1
+  criteria_id: 1506
+  updated_by: 1
+  id: 7460
+  company_id: 1
+  user_id: 1
+  created_at: 2010/12/27 16:24:39
+criteria_users_251: 
+  default_yn: Y
+  updated_at: 2011/01/24 18:40:59
+  document_id: 841
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 0
+  criteria_id: 1953
+  updated_by: 1
+  id: 8404
+  company_id: 1
+  user_id: 1
+  created_at: 2011/01/24 18:40:59
+criteria_users_225: 
+  default_yn: Y
+  updated_at: 2011/01/24 18:36:15
+  document_id: 764
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 0
+  criteria_id: 1927
+  updated_by: 1
+  id: 8378
+  company_id: 1
+  user_id: 1
+  created_at: 2011/01/24 18:36:15
+criteria_users_117: 
+  default_yn: Y
+  updated_at: 2011/01/24 18:24:10
+  document_id: 685
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 0
+  criteria_id: 1821
+  updated_by: 1
+  id: 8270
+  company_id: 1
+  user_id: 1
+  created_at: 2011/01/24 18:24:10
+criteria_users_144: 
+  default_yn: Y
+  updated_at: 2011/01/24 18:28:19
+  document_id: 681
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 0
+  criteria_id: 1848
+  updated_by: 1
+  id: 8297
+  company_id: 1
+  user_id: 1
+  created_at: 2011/01/24 18:28:19
+criteria_users_170: 
+  default_yn: Y
+  updated_at: 2011/01/24 18:30:44
+  document_id: 441
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 0
+  criteria_id: 1874
+  updated_by: 1
+  id: 8323
+  company_id: 1
+  user_id: 1
+  created_at: 2011/01/24 18:30:44
+criteria_users_037: 
+  default_yn: N
+  updated_at: 2011/01/24 18:34:56
+  document_id: 947
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  lock_version: 1
+  criteria_id: 560
+  updated_by: 1
+  id: 5113
+  company_id: 1
+  user_id: 1
+  created_at: 2010/08/16 18:31:13
+criteria_users_063: 
+  default_yn: N
+  updated_at: 2011/01/24 18:35:59
+  document_id: 520
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 2
+  criteria_id: 1463
+  updated_by: 1
+  id: 7545
+  company_id: 1
+  user_id: 1
+  created_at: 2010/12/29 15:02:15
+criteria_users_252: 
+  default_yn: Y
+  updated_at: 2011/01/24 18:41:08
+  document_id: 1182
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 0
+  criteria_id: 1954
+  updated_by: 1
+  id: 8405
+  company_id: 1
+  user_id: 1
+  created_at: 2011/01/24 18:41:08
+criteria_users_226: 
+  default_yn: Y
+  updated_at: 2011/01/24 18:36:24
+  document_id: 521
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 0
+  criteria_id: 1928
+  updated_by: 1
+  id: 8379
+  company_id: 1
+  user_id: 1
+  created_at: 2011/01/24 18:36:24
+criteria_users_118: 
+  default_yn: Y
+  updated_at: 2011/01/24 18:24:30
+  document_id: 686
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 0
+  criteria_id: 1822
+  updated_by: 1
+  id: 8271
+  company_id: 1
+  user_id: 1
+  created_at: 2011/01/24 18:24:30
+criteria_users_145: 
+  default_yn: Y
+  updated_at: 2011/01/24 18:28:20
+  document_id: 322
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 0
+  criteria_id: 1849
+  updated_by: 1
+  id: 8298
+  company_id: 1
+  user_id: 1
+  created_at: 2011/01/24 18:28:20
+criteria_users_171: 
+  default_yn: Y
+  updated_at: 2011/01/24 18:30:46
+  document_id: 621
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 0
+  criteria_id: 1875
+  updated_by: 1
+  id: 8324
+  company_id: 1
+  user_id: 1
+  created_at: 2011/01/24 18:30:46
+criteria_users_038: 
+  default_yn: N
+  updated_at: 2011/01/24 18:34:42
+  document_id: 948
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  lock_version: 1
+  criteria_id: 602
+  updated_by: 1
+  id: 5143
+  company_id: 1
+  user_id: 1
+  created_at: 2010/08/18 11:54:06
+criteria_users_064: 
+  default_yn: N
+  updated_at: 2011/01/24 18:39:58
+  document_id: 541
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 5
+  criteria_id: 1504
+  updated_by: 1
+  id: 7678
+  company_id: 1
+  user_id: 1
+  created_at: 2011/01/10 14:20:19
+criteria_users_090: 
+  default_yn: N
+  updated_at: 2011/01/24 18:42:38
+  document_id: 65
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 3
+  criteria_id: 1792
+  updated_by: 1
+  id: 8169
+  company_id: 1
+  user_id: 1
+  created_at: 2011/01/21 11:23:21
+criteria_users_253: 
+  default_yn: Y
+  updated_at: 2011/01/24 18:41:13
+  document_id: 1262
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 0
+  criteria_id: 1955
+  updated_by: 1
+  id: 8406
+  company_id: 1
+  user_id: 1
+  created_at: 2011/01/24 18:41:13
+criteria_users_146: 
+  default_yn: Y
+  updated_at: 2011/01/24 18:28:32
+  document_id: 340
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 0
+  criteria_id: 1850
+  updated_by: 1
+  id: 8299
+  company_id: 1
+  user_id: 1
+  created_at: 2011/01/24 18:28:32
+criteria_users_172: 
+  default_yn: Y
+  updated_at: 2011/01/24 18:30:55
+  document_id: 154
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 0
+  criteria_id: 1876
+  updated_by: 1
+  id: 8325
+  company_id: 1
+  user_id: 1
+  created_at: 2011/01/24 18:30:55
+criteria_users_039: 
+  default_yn: N
+  updated_at: 2011/01/24 18:40:37
+  document_id: 840
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  lock_version: 1
+  criteria_id: 400
+  updated_by: 1
+  id: 5328
+  company_id: 1
+  user_id: 1
+  created_at: 2010/08/23 16:19:38
+criteria_users_065: 
+  default_yn: N
+  updated_at: 2011/01/24 18:35:37
+  document_id: 500
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 8
+  criteria_id: 1462
+  updated_by: 1
+  id: 7700
+  company_id: 1
+  user_id: 1
+  created_at: 2011/01/11 11:34:22
+criteria_users_091: 
+  default_yn: N
+  updated_at: 2011/01/24 18:32:08
+  document_id: 380
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 10
+  criteria_id: 1439
+  updated_by: 1
+  id: 8174
+  company_id: 1
+  user_id: 1
+  created_at: 2011/01/21 11:32:54
+criteria_users_119: 
+  default_yn: Y
+  updated_at: 2011/01/24 18:24:55
+  document_id: 151
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 0
+  criteria_id: 1823
+  updated_by: 1
+  id: 8272
+  company_id: 1
+  user_id: 1
+  created_at: 2011/01/24 18:24:55
+criteria_users_280: 
+  default_yn: Y
+  updated_at: 2011/01/24 18:43:41
+  document_id: 1272
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 0
+  criteria_id: 1982
+  updated_by: 1
+  id: 8433
+  company_id: 1
+  user_id: 1
+  created_at: 2011/01/24 18:43:41
+criteria_users_254: 
+  default_yn: Y
+  updated_at: 2011/01/24 18:41:14
+  document_id: 960
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 0
+  criteria_id: 1956
+  updated_by: 1
+  id: 8407
+  company_id: 1
+  user_id: 1
+  created_at: 2011/01/24 18:41:14
+criteria_users_227: 
+  default_yn: Y
+  updated_at: 2011/01/24 18:36:30
+  document_id: 802
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 0
+  criteria_id: 1929
+  updated_by: 1
+  id: 8380
+  company_id: 1
+  user_id: 1
+  created_at: 2011/01/24 18:36:30
+criteria_users_147: 
+  default_yn: Y
+  updated_at: 2011/01/24 18:28:34
+  document_id: 1002
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 0
+  criteria_id: 1851
+  updated_by: 1
+  id: 8300
+  company_id: 1
+  user_id: 1
+  created_at: 2011/01/24 18:28:34
+criteria_users_173: 
+  default_yn: Y
+  updated_at: 2011/01/24 18:31:00
+  document_id: 67
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 0
+  criteria_id: 1877
+  updated_by: 1
+  id: 8326
+  company_id: 1
+  user_id: 1
+  created_at: 2011/01/24 18:31:00
+criteria_users_066: 
+  default_yn: N
+  updated_at: 2011/01/24 18:39:58
+  document_id: 541
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 1
+  criteria_id: 1567
+  updated_by: 1
+  id: 7708
+  company_id: 1
+  user_id: 1
+  created_at: 2011/01/11 11:38:08
+criteria_users_092: 
+  default_yn: N
+  updated_at: 2011/01/24 18:32:08
+  document_id: 380
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 9
+  criteria_id: 1747
+  updated_by: 1
+  id: 8175
+  company_id: 1
+  user_id: 1
+  created_at: 2011/01/21 11:33:04
+criteria_users_281: 
+  default_yn: Y
+  updated_at: 2011/01/24 18:43:46
+  document_id: 1277
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 0
+  criteria_id: 1983
+  updated_by: 1
+  id: 8434
+  company_id: 1
+  user_id: 1
+  created_at: 2011/01/24 18:43:46
+criteria_users_255: 
+  default_yn: Y
+  updated_at: 2011/01/24 18:41:21
+  document_id: 962
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 0
+  criteria_id: 1957
+  updated_by: 1
+  id: 8408
+  company_id: 1
+  user_id: 1
+  created_at: 2011/01/24 18:41:21
+criteria_users_228: 
+  default_yn: Y
+  updated_at: 2011/01/24 18:36:32
+  document_id: 706
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 0
+  criteria_id: 1930
+  updated_by: 1
+  id: 8381
+  company_id: 1
+  user_id: 1
+  created_at: 2011/01/24 18:36:32
+criteria_users_174: 
+  default_yn: Y
+  updated_at: 2011/01/24 18:31:06
+  document_id: 1122
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 0
+  criteria_id: 1878
+  updated_by: 1
+  id: 8327
+  company_id: 1
+  user_id: 1
+  created_at: 2011/01/24 18:31:06
+criteria_users_067: 
+  default_yn: Y
+  updated_at: 2011/01/11 19:00:27
+  document_id: 1314
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 0
+  criteria_id: 1755
+  updated_by: 1
+  id: 7798
+  company_id: 1
+  user_id: 1
+  created_at: 2011/01/11 19:00:27
+criteria_users_093: 
+  default_yn: N
+  updated_at: 2011/01/24 18:36:24
+  document_id: 521
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 1
+  criteria_id: 142
+  updated_by: 1
+  id: 8191
+  company_id: 1
+  user_id: 1
+  created_at: 2011/01/21 12:56:23
+criteria_users_148: 
+  default_yn: Y
+  updated_at: 2011/01/24 18:28:43
+  document_id: 21
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 0
+  criteria_id: 1852
+  updated_by: 1
+  id: 8301
+  company_id: 1
+  user_id: 1
+  created_at: 2011/01/24 18:28:43
+criteria_users_282: 
+  default_yn: Y
+  updated_at: 2011/01/24 18:43:59
+  document_id: 964
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 0
+  criteria_id: 1984
+  updated_by: 1
+  id: 8435
+  company_id: 1
+  user_id: 1
+  created_at: 2011/01/24 18:43:59
+criteria_users_256: 
+  default_yn: Y
+  updated_at: 2011/01/24 18:41:29
+  document_id: 961
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 0
+  criteria_id: 1958
+  updated_by: 1
+  id: 8409
+  company_id: 1
+  user_id: 1
+  created_at: 2011/01/24 18:41:29
+criteria_users_229: 
+  default_yn: Y
+  updated_at: 2011/01/24 18:36:40
+  document_id: 540
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 0
+  criteria_id: 1931
+  updated_by: 1
+  id: 8382
+  company_id: 1
+  user_id: 1
+  created_at: 2011/01/24 18:36:40
+criteria_users_175: 
+  default_yn: Y
+  updated_at: 2011/01/24 18:31:06
+  document_id: 1121
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 0
+  criteria_id: 1879
+  updated_by: 1
+  id: 8328
+  company_id: 1
+  user_id: 1
+  created_at: 2011/01/24 18:31:06
+criteria_users_068: 
+  default_yn: Y
+  updated_at: 2011/01/12 11:03:53
+  document_id: 1315
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 0
+  criteria_id: 1756
+  updated_by: 1
+  id: 7799
+  company_id: 1
+  user_id: 1
+  created_at: 2011/01/12 11:03:53
+criteria_users_094: 
+  default_yn: N
+  updated_at: 2011/01/24 18:32:08
+  document_id: 380
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 2
+  criteria_id: 1793
+  updated_by: 1
+  id: 8196
+  company_id: 1
+  user_id: 1
+  created_at: 2011/01/21 14:50:42
+criteria_users_149: 
+  default_yn: Y
+  updated_at: 2011/01/24 18:28:51
+  document_id: 341
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 0
+  criteria_id: 1853
+  updated_by: 1
+  id: 8302
+  company_id: 1
+  user_id: 1
+  created_at: 2011/01/24 18:28:51
+criteria_users_283: 
+  default_yn: Y
+  updated_at: 2011/01/24 18:44:00
+  document_id: 1274
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 0
+  criteria_id: 1985
+  updated_by: 1
+  id: 8436
+  company_id: 1
+  user_id: 1
+  created_at: 2011/01/24 18:44:00
+criteria_users_257: 
+  default_yn: Y
+  updated_at: 2011/01/24 18:41:34
+  document_id: 1301
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 0
+  criteria_id: 1959
+  updated_by: 1
+  id: 8410
+  company_id: 1
+  user_id: 1
+  created_at: 2011/01/24 18:41:34
+criteria_users_069: 
+  default_yn: Y
+  updated_at: 2011/01/12 11:05:56
+  document_id: 1308
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 0
+  criteria_id: 1724
+  updated_by: 1
+  id: 7800
+  company_id: 1
+  user_id: 1
+  created_at: 2011/01/12 11:05:56
+criteria_users_095: 
+  default_yn: N
+  updated_at: 2011/01/24 18:33:21
+  document_id: 384
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 1
+  criteria_id: 1029
+  updated_by: 1
+  id: 8197
+  company_id: 1
+  user_id: 1
+  created_at: 2011/01/21 15:04:13
+criteria_users_176: 
+  default_yn: Y
+  updated_at: 2011/01/24 18:31:19
+  document_id: 480
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 0
+  criteria_id: 1880
+  updated_by: 1
+  id: 8329
+  company_id: 1
+  user_id: 1
+  created_at: 2011/01/24 18:31:19
+criteria_users_284: 
+  default_yn: Y
+  updated_at: 2011/01/24 18:44:09
+  document_id: 1275
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 0
+  criteria_id: 1986
+  updated_by: 1
+  id: 8437
+  company_id: 1
+  user_id: 1
+  created_at: 2011/01/24 18:44:09
+criteria_users_258: 
+  default_yn: Y
+  updated_at: 2011/01/24 18:41:37
+  document_id: 1183
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 0
+  criteria_id: 1960
+  updated_by: 1
+  id: 8411
+  company_id: 1
+  user_id: 1
+  created_at: 2011/01/24 18:41:37
+criteria_users_096: 
+  default_yn: N
+  updated_at: 2011/01/24 18:42:38
+  document_id: 65
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 1
+  criteria_id: 745
+  updated_by: 1
+  id: 8200
+  company_id: 1
+  user_id: 1
+  created_at: 2011/01/21 17:19:27
+criteria_users_177: 
+  default_yn: Y
+  updated_at: 2011/01/24 18:31:21
+  document_id: 1241
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 0
+  criteria_id: 1881
+  updated_by: 1
+  id: 8330
+  company_id: 1
+  user_id: 1
+  created_at: 2011/01/24 18:31:21
+criteria_users_285: 
+  default_yn: Y
+  updated_at: 2011/01/24 18:44:13
+  document_id: 560
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 0
+  criteria_id: 1987
+  updated_by: 1
+  id: 8438
+  company_id: 1
+  user_id: 1
+  created_at: 2011/01/24 18:44:13
+criteria_users_259: 
+  default_yn: Y
+  updated_at: 2011/01/24 18:41:37
+  document_id: 963
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 0
+  criteria_id: 1961
+  updated_by: 1
+  id: 8412
+  company_id: 1
+  user_id: 1
+  created_at: 2011/01/24 18:41:37
+criteria_users_097: 
+  default_yn: N
+  updated_at: 2011/01/24 18:28:55
+  document_id: 22
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 1
+  criteria_id: 621
+  updated_by: 1
+  id: 8213
+  company_id: 1
+  user_id: 1
+  created_at: 2011/01/24 14:28:04
+criteria_users_178: 
+  default_yn: Y
+  updated_at: 2011/01/24 18:31:33
+  document_id: 1240
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 0
+  criteria_id: 1882
+  updated_by: 1
+  id: 8331
+  company_id: 1
+  user_id: 1
+  created_at: 2011/01/24 18:31:33
+criteria_users_286: 
+  default_yn: Y
+  updated_at: 2011/01/24 18:44:14
+  document_id: 1279
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 0
+  criteria_id: 1988
+  updated_by: 1
+  id: 8439
+  company_id: 1
+  user_id: 1
+  created_at: 2011/01/24 18:44:14
+criteria_users_098: 
+  default_yn: N
+  updated_at: 2011/01/24 18:41:52
+  document_id: 61
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 1
+  criteria_id: 1425
+  updated_by: 1
+  id: 8227
+  company_id: 1
+  user_id: 1
+  created_at: 2011/01/24 16:00:49
+criteria_users_179: 
+  default_yn: Y
+  updated_at: 2011/01/24 18:31:47
+  document_id: 700
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 0
+  criteria_id: 1883
+  updated_by: 1
+  id: 8332
+  company_id: 1
+  user_id: 1
+  created_at: 2011/01/24 18:31:47
+criteria_users_287: 
+  default_yn: Y
+  updated_at: 2011/01/24 18:44:22
+  document_id: 1312
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 0
+  criteria_id: 1989
+  updated_by: 1
+  id: 8440
+  company_id: 1
+  user_id: 1
+  created_at: 2011/01/24 18:44:22
+criteria_users_099: 
+  default_yn: N
+  updated_at: 2011/01/24 18:32:47
+  document_id: 708
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 1
+  criteria_id: 1802
+  updated_by: 1
+  id: 8231
+  company_id: 1
+  user_id: 1
+  created_at: 2011/01/24 16:32:06
+criteria_users_288: 
+  default_yn: Y
+  updated_at: 2011/01/24 18:44:29
+  document_id: 562
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 0
+  criteria_id: 1990
+  updated_by: 1
+  id: 8441
+  company_id: 1
+  user_id: 1
+  created_at: 2011/01/24 18:44:29
+criteria_users_289: 
+  default_yn: Y
+  updated_at: 2011/01/24 18:44:29
+  document_id: 1281
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 0
+  criteria_id: 1991
+  updated_by: 1
+  id: 8442
+  company_id: 1
+  user_id: 1
+  created_at: 2011/01/24 18:44:29
+criteria_users_100: 
+  default_yn: N
+  updated_at: 2011/01/24 18:28:04
+  document_id: 320
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 1
+  criteria_id: 1060
+  updated_by: 1
+  id: 8237
+  company_id: 1
+  user_id: 1
+  created_at: 2011/01/24 16:48:27
+criteria_users_020: 
+  default_yn: N
+  updated_at: 2011/01/24 18:45:37
+  document_id: 564
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  lock_version: 1
+  criteria_id: 168
+  updated_by: 1
+  id: 2934
+  company_id: 1
+  user_id: 1
+  created_at: 2010/07/08 12:46:18
+criteria_users_101: 
+  default_yn: N
+  updated_at: 2011/01/24 18:35:37
+  document_id: 500
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 1
+  criteria_id: 1803
+  updated_by: 1
+  id: 8252
+  company_id: 1
+  user_id: 1
+  created_at: 2011/01/24 18:15:39
+criteria_users_021: 
+  default_yn: N
+  updated_at: 2011/01/24 18:24:10
+  document_id: 685
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  lock_version: 1
+  criteria_id: 1571
+  updated_by: 1
+  id: 3208
+  company_id: 1
+  user_id: 1
+  created_at: 2010/07/10 10:52:50
+criteria_users_102: 
+  default_yn: N
+  updated_at: 2011/01/24 18:23:33
+  document_id: 250
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 1
+  criteria_id: 1805
+  updated_by: 1
+  id: 8254
+  company_id: 1
+  user_id: 1
+  created_at: 2011/01/24 18:18:13
+criteria_users_022: 
+  default_yn: N
+  updated_at: 2011/01/24 18:24:58
+  document_id: 687
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  lock_version: 1
+  criteria_id: 261
+  updated_by: 1
+  id: 3209
+  company_id: 1
+  user_id: 1
+  created_at: 2010/07/10 10:53:35
+criteria_users_103: 
+  default_yn: Y
+  updated_at: 2011/01/24 18:18:52
+  document_id: 781
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 0
+  criteria_id: 1806
+  updated_by: 1
+  id: 8255
+  company_id: 1
+  user_id: 1
+  created_at: 2011/01/24 18:18:52
+criteria_users_210: 
+  default_yn: Y
+  updated_at: 2011/01/24 18:34:53
+  document_id: 422
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 0
+  criteria_id: 1912
+  updated_by: 1
+  id: 8363
+  company_id: 1
+  user_id: 1
+  created_at: 2011/01/24 18:34:53
+criteria_users_023: 
+  default_yn: N
+  updated_at: 2011/01/24 18:45:06
+  document_id: 563
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  lock_version: 1
+  criteria_id: 167
+  updated_by: 1
+  id: 3281
+  company_id: 1
+  user_id: 1
+  created_at: 2010/07/10 11:35:49
+criteria_users_104: 
+  default_yn: Y
+  updated_at: 2011/01/24 18:19:31
+  document_id: 780
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 0
+  criteria_id: 1807
+  updated_by: 1
+  id: 8256
+  company_id: 1
+  user_id: 1
+  created_at: 2011/01/24 18:19:31
+criteria_users_130: 
+  default_yn: Y
+  updated_at: 2011/01/24 18:26:10
+  document_id: 691
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 0
+  criteria_id: 1834
+  updated_by: 1
+  id: 8283
+  company_id: 1
+  user_id: 1
+  created_at: 2011/01/24 18:26:10
+criteria_users_211: 
+  default_yn: Y
+  updated_at: 2011/01/24 18:34:56
+  document_id: 947
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 0
+  criteria_id: 1913
+  updated_by: 1
+  id: 8364
+  company_id: 1
+  user_id: 1
+  created_at: 2011/01/24 18:34:56
+criteria_users_024: 
+  default_yn: N
+  updated_at: 2011/01/24 18:33:24
+  document_id: 660
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  lock_version: 10
+  criteria_id: 1531
+  updated_by: 1
+  id: 3748
+  company_id: 1
+  user_id: 1
+  created_at: 2010/07/15 16:39:58
+criteria_users_050: 
+  default_yn: Y
+  updated_at: 2010/10/27 15:37:59
+  document_id: 1263
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 0
+  criteria_id: 1692
+  updated_by: 1
+  id: 6076
+  company_id: 1
+  user_id: 1
+  created_at: 2010/10/27 15:37:59
+criteria_users_105: 
+  default_yn: Y
+  updated_at: 2011/01/24 18:19:53
+  document_id: 782
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 0
+  criteria_id: 1808
+  updated_by: 1
+  id: 8257
+  company_id: 1
+  user_id: 1
+  created_at: 2011/01/24 18:19:53
+criteria_users_131: 
+  default_yn: Y
+  updated_at: 2011/01/24 18:26:17
+  document_id: 603
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 0
+  criteria_id: 1835
+  updated_by: 1
+  id: 8284
+  company_id: 1
+  user_id: 1
+  created_at: 2011/01/24 18:26:17
+criteria_users_212: 
+  default_yn: Y
+  updated_at: 2011/01/24 18:35:01
+  document_id: 645
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 0
+  criteria_id: 1914
+  updated_by: 1
+  id: 8365
+  company_id: 1
+  user_id: 1
+  created_at: 2011/01/24 18:35:01
+criteria_users_025: 
+  default_yn: N
+  updated_at: 2011/01/24 18:46:20
+  document_id: 581
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  lock_version: 6
+  criteria_id: 1162
+  updated_by: 1
+  id: 3909
+  company_id: 1
+  user_id: 1
+  created_at: 2010/07/19 10:53:17
+criteria_users_051: 
+  default_yn: Y
+  updated_at: 2010/10/28 16:19:10
+  document_id: 1282
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 0
+  criteria_id: 1699
+  updated_by: 1
+  id: 6132
+  company_id: 1
+  user_id: 1
+  created_at: 2010/10/28 16:19:10
+criteria_users_132: 
+  default_yn: Y
+  updated_at: 2011/01/24 18:26:30
+  document_id: 740
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 0
+  criteria_id: 1836
+  updated_by: 1
+  id: 8285
+  company_id: 1
+  user_id: 1
+  created_at: 2011/01/24 18:26:30
+criteria_users_213: 
+  default_yn: Y
+  updated_at: 2011/01/24 18:35:11
+  document_id: 423
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 0
+  criteria_id: 1915
+  updated_by: 1
+  id: 8366
+  company_id: 1
+  user_id: 1
+  created_at: 2011/01/24 18:35:11
+criteria_users_240: 
+  default_yn: Y
+  updated_at: 2011/01/24 18:39:39
+  document_id: 703
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 0
+  criteria_id: 1942
+  updated_by: 1
+  id: 8393
+  company_id: 1
+  user_id: 1
+  created_at: 2011/01/24 18:39:39
+criteria_users_026: 
+  default_yn: N
+  updated_at: 2011/01/24 18:35:37
+  document_id: 500
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  lock_version: 49
+  criteria_id: 1361
+  updated_by: 1
+  id: 3993
+  company_id: 1
+  user_id: 1
+  created_at: 2010/07/19 15:38:23
+criteria_users_052: 
+  default_yn: Y
+  updated_at: 2010/11/26 17:28:21
+  document_id: 1691
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 0
+  criteria_id: 1719
+  updated_by: 1
+  id: 6376
+  company_id: 1
+  user_id: 1
+  created_at: 2010/11/26 17:28:21
+criteria_users_106: 
+  default_yn: Y
+  updated_at: 2011/01/24 18:20:23
+  document_id: 783
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 0
+  criteria_id: 1809
+  updated_by: 1
+  id: 8258
+  company_id: 1
+  user_id: 1
+  created_at: 2011/01/24 18:20:23
+criteria_users_133: 
+  default_yn: Y
+  updated_at: 2011/01/24 18:26:42
+  document_id: 692
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 0
+  criteria_id: 1837
+  updated_by: 1
+  id: 8286
+  company_id: 1
+  user_id: 1
+  created_at: 2011/01/24 18:26:42
+criteria_users_214: 
+  default_yn: Y
+  updated_at: 2011/01/24 18:35:15
+  document_id: 644
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 0
+  criteria_id: 1916
+  updated_by: 1
+  id: 8367
+  company_id: 1
+  user_id: 1
+  created_at: 2011/01/24 18:35:15
+criteria_users_241: 
+  default_yn: Y
+  updated_at: 2011/01/24 18:39:48
+  document_id: 900
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 0
+  criteria_id: 1943
+  updated_by: 1
+  id: 8394
+  company_id: 1
+  user_id: 1
+  created_at: 2011/01/24 18:39:48
+criteria_users_027: 
+  default_yn: N
+  updated_at: 2011/01/24 18:29:32
+  document_id: 155
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  lock_version: 1
+  criteria_id: 144
+  updated_by: 1
+  id: 4148
+  company_id: 1
+  user_id: 1
+  created_at: 2010/07/20 16:10:27
+criteria_users_053: 
+  default_yn: N
+  updated_at: 2011/01/24 18:31:19
+  document_id: 480
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 64
+  criteria_id: 1523
+  updated_by: 1
+  id: 6407
+  company_id: 1
+  user_id: 1
+  created_at: 2010/11/30 15:36:57
+criteria_users_107: 
+  default_yn: Y
+  updated_at: 2011/01/24 18:20:50
+  document_id: 785
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 0
+  criteria_id: 1810
+  updated_by: 1
+  id: 8259
+  company_id: 1
+  user_id: 1
+  created_at: 2011/01/24 18:20:50
+criteria_users_134: 
+  default_yn: Y
+  updated_at: 2011/01/24 18:26:55
+  document_id: 800
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 0
+  criteria_id: 1838
+  updated_by: 1
+  id: 8287
+  company_id: 1
+  user_id: 1
+  created_at: 2011/01/24 18:26:55
+criteria_users_160: 
+  default_yn: Y
+  updated_at: 2011/01/24 18:29:58
+  document_id: 169
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 0
+  criteria_id: 1864
+  updated_by: 1
+  id: 8313
+  company_id: 1
+  user_id: 1
+  created_at: 2011/01/24 18:29:58
+criteria_users_215: 
+  default_yn: Y
+  updated_at: 2011/01/24 18:35:23
+  document_id: 760
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 0
+  criteria_id: 1917
+  updated_by: 1
+  id: 8368
+  company_id: 1
+  user_id: 1
+  created_at: 2011/01/24 18:35:23
+criteria_users_242: 
+  default_yn: Y
+  updated_at: 2011/01/24 18:39:58
+  document_id: 541
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 0
+  criteria_id: 1944
+  updated_by: 1
+  id: 8395
+  company_id: 1
+  user_id: 1
+  created_at: 2011/01/24 18:39:58
+criteria_users_028: 
+  default_yn: N
+  updated_at: 2011/01/24 18:23:39
+  document_id: 682
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  lock_version: 1
+  criteria_id: 1576
+  updated_by: 1
+  id: 4204
+  company_id: 1
+  user_id: 1
+  created_at: 2010/07/21 16:04:41
+criteria_users_054: 
+  default_yn: N
+  updated_at: 2011/01/24 18:36:15
+  document_id: 705
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 1
+  criteria_id: 1602
+  updated_by: 1
+  id: 6724
+  company_id: 1
+  user_id: 1
+  created_at: 2010/12/03 11:14:51
+criteria_users_080: 
+  default_yn: N
+  updated_at: 2011/01/24 18:31:19
+  document_id: 480
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 21
+  criteria_id: 420
+  updated_by: 1
+  id: 8062
+  company_id: 1
+  user_id: 1
+  created_at: 2011/01/19 11:22:13
+criteria_users_108: 
+  default_yn: Y
+  updated_at: 2011/01/24 18:21:13
+  document_id: 784
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 0
+  criteria_id: 1811
+  updated_by: 1
+  id: 8260
+  company_id: 1
+  user_id: 1
+  created_at: 2011/01/24 18:21:13
+criteria_users_135: 
+  default_yn: Y
+  updated_at: 2011/01/24 18:27:10
+  document_id: 161
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 0
+  criteria_id: 1839
+  updated_by: 1
+  id: 8288
+  company_id: 1
+  user_id: 1
+  created_at: 2011/01/24 18:27:10
+criteria_users_161: 
+  default_yn: Y
+  updated_at: 2011/01/24 18:29:59
+  document_id: 230
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 0
+  criteria_id: 1865
+  updated_by: 1
+  id: 8314
+  company_id: 1
+  user_id: 1
+  created_at: 2011/01/24 18:29:59
+criteria_users_243: 
+  default_yn: Y
+  updated_at: 2011/01/24 18:40:02
+  document_id: 1180
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 0
+  criteria_id: 1945
+  updated_by: 1
+  id: 8396
+  company_id: 1
+  user_id: 1
+  created_at: 2011/01/24 18:40:02
+criteria_users_055: 
+  default_yn: N
+  updated_at: 2011/01/24 18:44:29
+  document_id: 562
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 1
+  criteria_id: 166
+  updated_by: 1
+  id: 6812
+  company_id: 1
+  user_id: 1
+  created_at: 2010/12/06 11:18:13
+criteria_users_081: 
+  default_yn: N
+  updated_at: 2011/01/24 18:31:19
+  document_id: 480
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 16
+  criteria_id: 380
+  updated_by: 1
+  id: 8074
+  company_id: 1
+  user_id: 1
+  created_at: 2011/01/19 12:18:30
+criteria_users_109: 
+  default_yn: Y
+  updated_at: 2011/01/24 18:21:40
+  document_id: 1100
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 0
+  criteria_id: 1812
+  updated_by: 1
+  id: 8261
+  company_id: 1
+  user_id: 1
+  created_at: 2011/01/24 18:21:40
+criteria_users_136: 
+  default_yn: Y
+  updated_at: 2011/01/24 18:27:11
+  document_id: 460
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 0
+  criteria_id: 1840
+  updated_by: 1
+  id: 8289
+  company_id: 1
+  user_id: 1
+  created_at: 2011/01/24 18:27:11
+criteria_users_162: 
+  default_yn: Y
+  updated_at: 2011/01/24 18:30:09
+  document_id: 159
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 0
+  criteria_id: 1866
+  updated_by: 1
+  id: 8315
+  company_id: 1
+  user_id: 1
+  created_at: 2011/01/24 18:30:09
+criteria_users_216: 
+  default_yn: Y
+  updated_at: 2011/01/24 18:35:29
+  document_id: 714
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 0
+  criteria_id: 1918
+  updated_by: 1
+  id: 8369
+  company_id: 1
+  user_id: 1
+  created_at: 2011/01/24 18:35:29
+criteria_users_270: 
+  default_yn: Y
+  updated_at: 2011/01/24 18:42:51
+  document_id: 1300
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 0
+  criteria_id: 1972
+  updated_by: 1
+  id: 8423
+  company_id: 1
+  user_id: 1
+  created_at: 2011/01/24 18:42:51
+criteria_users_244: 
+  default_yn: Y
+  updated_at: 2011/01/24 18:40:04
+  document_id: 1261
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 0
+  criteria_id: 1946
+  updated_by: 1
+  id: 8397
+  company_id: 1
+  user_id: 1
+  created_at: 2011/01/24 18:40:04
+criteria_users_029: 
+  default_yn: N
+  updated_at: 2011/01/24 18:39:15
+  document_id: 565
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  lock_version: 9
+  criteria_id: 1503
+  updated_by: 1
+  id: 4310
+  company_id: 1
+  user_id: 1
+  created_at: 2010/07/22 12:52:29
+criteria_users_056: 
+  default_yn: N
+  updated_at: 2011/01/24 18:40:23
+  document_id: 1280
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 2
+  criteria_id: 1690
+  updated_by: 1
+  id: 6918
+  company_id: 1
+  user_id: 1
+  created_at: 2010/12/06 17:53:51
+criteria_users_082: 
+  default_yn: N
+  updated_at: 2011/01/24 18:31:19
+  document_id: 480
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 9
+  criteria_id: 1663
+  updated_by: 1
+  id: 8086
+  company_id: 1
+  user_id: 1
+  created_at: 2011/01/19 14:14:27
+criteria_users_137: 
+  default_yn: Y
+  updated_at: 2011/01/24 18:27:23
+  document_id: 301
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 0
+  criteria_id: 1841
+  updated_by: 1
+  id: 8290
+  company_id: 1
+  user_id: 1
+  created_at: 2011/01/24 18:27:23
+criteria_users_163: 
+  default_yn: Y
+  updated_at: 2011/01/24 18:30:14
+  document_id: 167
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 0
+  criteria_id: 1867
+  updated_by: 1
+  id: 8316
+  company_id: 1
+  user_id: 1
+  created_at: 2011/01/24 18:30:14
+criteria_users_217: 
+  default_yn: Y
+  updated_at: 2011/01/24 18:35:37
+  document_id: 500
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 0
+  criteria_id: 1919
+  updated_by: 1
+  id: 8370
+  company_id: 1
+  user_id: 1
+  created_at: 2011/01/24 18:35:37
+criteria_users_271: 
+  default_yn: Y
+  updated_at: 2011/01/24 18:42:52
+  document_id: 64
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 0
+  criteria_id: 1973
+  updated_by: 1
+  id: 8424
+  company_id: 1
+  user_id: 1
+  created_at: 2011/01/24 18:42:52
+criteria_users_245: 
+  default_yn: Y
+  updated_at: 2011/01/24 18:40:15
+  document_id: 1200
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 0
+  criteria_id: 1947
+  updated_by: 1
+  id: 8398
+  company_id: 1
+  user_id: 1
+  created_at: 2011/01/24 18:40:15
+criteria_users_057: 
+  default_yn: N
+  updated_at: 2011/01/24 18:40:23
+  document_id: 1280
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 1
+  criteria_id: 1720
+  updated_by: 1
+  id: 6919
+  company_id: 1
+  user_id: 1
+  created_at: 2010/12/06 17:53:57
+criteria_users_083: 
+  default_yn: N
+  updated_at: 2011/01/24 18:31:19
+  document_id: 480
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 6
+  criteria_id: 1524
+  updated_by: 1
+  id: 8089
+  company_id: 1
+  user_id: 1
+  created_at: 2011/01/19 14:27:25
+criteria_users_138: 
+  default_yn: Y
+  updated_at: 2011/01/24 18:27:40
+  document_id: 163
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 0
+  criteria_id: 1842
+  updated_by: 1
+  id: 8291
+  company_id: 1
+  user_id: 1
+  created_at: 2011/01/24 18:27:40
+criteria_users_164: 
+  default_yn: Y
+  updated_at: 2011/01/24 18:30:17
+  document_id: 440
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 0
+  criteria_id: 1868
+  updated_by: 1
+  id: 8317
+  company_id: 1
+  user_id: 1
+  created_at: 2011/01/24 18:30:17
+criteria_users_190: 
+  default_yn: Y
+  updated_at: 2011/01/24 18:33:01
+  document_id: 709
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 0
+  criteria_id: 1892
+  updated_by: 1
+  id: 8343
+  company_id: 1
+  user_id: 1
+  created_at: 2011/01/24 18:33:01
+criteria_users_218: 
+  default_yn: Y
+  updated_at: 2011/01/24 18:35:37
+  document_id: 761
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 0
+  criteria_id: 1920
+  updated_by: 1
+  id: 8371
+  company_id: 1
+  user_id: 1
+  created_at: 2011/01/24 18:35:37
+criteria_users_272: 
+  default_yn: Y
+  updated_at: 2011/01/24 18:42:55
+  document_id: 966
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 0
+  criteria_id: 1974
+  updated_by: 1
+  id: 8425
+  company_id: 1
+  user_id: 1
+  created_at: 2011/01/24 18:42:55
+criteria_users_246: 
+  default_yn: Y
+  updated_at: 2011/01/24 18:40:17
+  document_id: 542
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 0
+  criteria_id: 1948
+  updated_by: 1
+  id: 8399
+  company_id: 1
+  user_id: 1
+  created_at: 2011/01/24 18:40:17
+criteria_users_058: 
+  default_yn: N
+  updated_at: 2011/01/24 18:36:00
+  document_id: 704
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 2
+  criteria_id: 1601
+  updated_by: 1
+  id: 7234
+  company_id: 1
+  user_id: 1
+  created_at: 2010/12/14 10:55:03
+criteria_users_084: 
+  default_yn: N
+  updated_at: 2011/01/24 18:31:19
+  document_id: 480
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 1
+  criteria_id: 1522
+  updated_by: 1
+  id: 8104
+  company_id: 1
+  user_id: 1
+  created_at: 2011/01/19 16:25:24
+criteria_users_165: 
+  default_yn: Y
+  updated_at: 2011/01/24 18:30:24
+  document_id: 1305
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 0
+  criteria_id: 1869
+  updated_by: 1
+  id: 8318
+  company_id: 1
+  user_id: 1
+  created_at: 2011/01/24 18:30:24
+criteria_users_191: 
+  default_yn: Y
+  updated_at: 2011/01/24 18:33:02
+  document_id: 190
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 0
+  criteria_id: 1893
+  updated_by: 1
+  id: 8344
+  company_id: 1
+  user_id: 1
+  created_at: 2011/01/24 18:33:02
+criteria_users_219: 
+  default_yn: Y
+  updated_at: 2011/01/24 18:35:48
+  document_id: 640
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 0
+  criteria_id: 1921
+  updated_by: 1
+  id: 8372
+  company_id: 1
+  user_id: 1
+  created_at: 2011/01/24 18:35:48
+criteria_users_273: 
+  default_yn: Y
+  updated_at: 2011/01/24 18:43:05
+  document_id: 1268
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 0
+  criteria_id: 1975
+  updated_by: 1
+  id: 8426
+  company_id: 1
+  user_id: 1
+  created_at: 2011/01/24 18:43:05
+criteria_users_247: 
+  default_yn: Y
+  updated_at: 2011/01/24 18:40:23
+  document_id: 1280
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 0
+  criteria_id: 1949
+  updated_by: 1
+  id: 8400
+  company_id: 1
+  user_id: 1
+  created_at: 2011/01/24 18:40:23
+criteria_users_059: 
+  default_yn: N
+  updated_at: 2011/01/24 18:44:22
+  document_id: 1312
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 1
+  criteria_id: 1731
+  updated_by: 1
+  id: 7295
+  company_id: 1
+  user_id: 1
+  created_at: 2010/12/17 12:53:01
+criteria_users_085: 
+  default_yn: N
+  updated_at: 2011/01/24 18:34:47
+  document_id: 646
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 1
+  criteria_id: 1525
+  updated_by: 1
+  id: 8117
+  company_id: 1
+  user_id: 1
+  created_at: 2011/01/19 16:58:18
+criteria_users_139: 
+  default_yn: Y
+  updated_at: 2011/01/24 18:27:43
+  document_id: 101
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 0
+  criteria_id: 1843
+  updated_by: 1
+  id: 8292
+  company_id: 1
+  user_id: 1
+  created_at: 2011/01/24 18:27:43
+criteria_users_166: 
+  default_yn: Y
+  updated_at: 2011/01/24 18:30:26
+  document_id: 342
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 0
+  criteria_id: 1870
+  updated_by: 1
+  id: 8319
+  company_id: 1
+  user_id: 1
+  created_at: 2011/01/24 18:30:26
+criteria_users_192: 
+  default_yn: Y
+  updated_at: 2011/01/24 18:33:03
+  document_id: 385
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 0
+  criteria_id: 1894
+  updated_by: 1
+  id: 8345
+  company_id: 1
+  user_id: 1
+  created_at: 2011/01/24 18:33:03
+criteria_users_274: 
+  default_yn: Y
+  updated_at: 2011/01/24 18:43:06
+  document_id: 1271
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 0
+  criteria_id: 1976
+  updated_by: 1
+  id: 8427
+  company_id: 1
+  user_id: 1
+  created_at: 2011/01/24 18:43:06
+criteria_users_248: 
+  default_yn: Y
+  updated_at: 2011/01/24 18:40:37
+  document_id: 840
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 0
+  criteria_id: 1950
+  updated_by: 1
+  id: 8401
+  company_id: 1
+  user_id: 1
+  created_at: 2011/01/24 18:40:37
+criteria_users_086: 
+  default_yn: N
+  updated_at: 2011/01/24 18:33:42
+  document_id: 661
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 1
+  criteria_id: 1558
+  updated_by: 1
+  id: 8128
+  company_id: 1
+  user_id: 1
+  created_at: 2011/01/19 17:24:29
+criteria_users_167: 
+  default_yn: Y
+  updated_at: 2011/01/24 18:30:28
+  document_id: 620
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 0
+  criteria_id: 1871
+  updated_by: 1
+  id: 8320
+  company_id: 1
+  user_id: 1
+  created_at: 2011/01/24 18:30:28
+criteria_users_193: 
+  default_yn: Y
+  updated_at: 2011/01/24 18:33:21
+  document_id: 384
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 0
+  criteria_id: 1895
+  updated_by: 1
+  id: 8346
+  company_id: 1
+  user_id: 1
+  created_at: 2011/01/24 18:33:21
+criteria_users_275: 
+  default_yn: Y
+  updated_at: 2011/01/24 18:43:14
+  document_id: 967
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 0
+  criteria_id: 1977
+  updated_by: 1
+  id: 8428
+  company_id: 1
+  user_id: 1
+  created_at: 2011/01/24 18:43:14
+criteria_users_087: 
+  default_yn: N
+  updated_at: 2011/01/24 18:28:07
+  document_id: 980
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 1
+  criteria_id: 1785
+  updated_by: 1
+  id: 8156
+  company_id: 1
+  user_id: 1
+  created_at: 2011/01/20 17:46:58
+criteria_users_168: 
+  default_yn: Y
+  updated_at: 2011/01/24 18:30:35
+  document_id: 166
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 0
+  criteria_id: 1872
+  updated_by: 1
+  id: 8321
+  company_id: 1
+  user_id: 1
+  created_at: 2011/01/24 18:30:35
+criteria_users_194: 
+  default_yn: Y
+  updated_at: 2011/01/24 18:33:24
+  document_id: 660
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 0
+  criteria_id: 1896
+  updated_by: 1
+  id: 8347
+  company_id: 1
+  user_id: 1
+  created_at: 2011/01/24 18:33:24
+criteria_users_276: 
+  default_yn: Y
+  updated_at: 2011/01/24 18:43:20
+  document_id: 1269
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 0
+  criteria_id: 1978
+  updated_by: 1
+  id: 8429
+  company_id: 1
+  user_id: 1
+  created_at: 2011/01/24 18:43:20
+criteria_users_249: 
+  default_yn: Y
+  updated_at: 2011/01/24 18:40:41
+  document_id: 1303
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 0
+  criteria_id: 1951
+  updated_by: 1
+  id: 8402
+  company_id: 1
+  user_id: 1
+  created_at: 2011/01/24 18:40:41
+criteria_users_088: 
+  default_yn: N
+  updated_at: 2011/01/24 18:42:38
+  document_id: 65
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 4
+  criteria_id: 1787
+  updated_by: 1
+  id: 8160
+  company_id: 1
+  user_id: 1
+  created_at: 2011/01/21 11:00:43
+criteria_users_169: 
+  default_yn: Y
+  updated_at: 2011/01/24 18:30:38
+  document_id: 68
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 0
+  criteria_id: 1873
+  updated_by: 1
+  id: 8322
+  company_id: 1
+  user_id: 1
+  created_at: 2011/01/24 18:30:38
+criteria_users_195: 
+  default_yn: Y
+  updated_at: 2011/01/24 18:33:34
+  document_id: 270
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 0
+  criteria_id: 1897
+  updated_by: 1
+  id: 8348
+  company_id: 1
+  user_id: 1
+  created_at: 2011/01/24 18:33:34
+criteria_users_277: 
+  default_yn: Y
+  updated_at: 2011/01/24 18:43:24
+  document_id: 1273
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 0
+  criteria_id: 1979
+  updated_by: 1
+  id: 8430
+  company_id: 1
+  user_id: 1
+  created_at: 2011/01/24 18:43:24
+criteria_users_089: 
+  default_yn: N
+  updated_at: 2011/01/24 18:35:29
+  document_id: 714
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 1
+  criteria_id: 1625
+  updated_by: 1
+  id: 8167
+  company_id: 1
+  user_id: 1
+  created_at: 2011/01/21 11:17:49
+criteria_users_196: 
+  default_yn: Y
+  updated_at: 2011/01/24 18:33:42
+  document_id: 661
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 0
+  criteria_id: 1898
+  updated_by: 1
+  id: 8349
+  company_id: 1
+  user_id: 1
+  created_at: 2011/01/24 18:33:42
+criteria_users_278: 
+  default_yn: Y
+  updated_at: 2011/01/24 18:43:31
+  document_id: 1311
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 0
+  criteria_id: 1980
+  updated_by: 1
+  id: 8431
+  company_id: 1
+  user_id: 1
+  created_at: 2011/01/24 18:43:31
+criteria_users_197: 
+  default_yn: Y
+  updated_at: 2011/01/24 18:33:44
+  document_id: 383
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 0
+  criteria_id: 1899
+  updated_by: 1
+  id: 8350
+  company_id: 1
+  user_id: 1
+  created_at: 2011/01/24 18:33:44
+criteria_users_279: 
+  default_yn: Y
+  updated_at: 2011/01/24 18:43:39
+  document_id: 968
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 0
+  criteria_id: 1981
+  updated_by: 1
+  id: 8432
+  company_id: 1
+  user_id: 1
+  created_at: 2011/01/24 18:43:39
+criteria_users_198: 
+  default_yn: Y
+  updated_at: 2011/01/24 18:33:49
+  document_id: 290
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 0
+  criteria_id: 1900
+  updated_by: 1
+  id: 8351
+  company_id: 1
+  user_id: 1
+  created_at: 2011/01/24 18:33:49
+criteria_users_199: 
+  default_yn: Y
+  updated_at: 2011/01/24 18:34:00
+  document_id: 662
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 0
+  criteria_id: 1901
+  updated_by: 1
+  id: 8352
+  company_id: 1
+  user_id: 1
+  created_at: 2011/01/24 18:34:00
+criteria_users_010: 
+  default_yn: N
+  updated_at: 2011/01/24 18:38:53
+  document_id: 522
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  lock_version: 6
+  criteria_id: 1482
+  updated_by: 1
+  id: 851
+  company_id: 1
+  user_id: 1
+  created_at: 2010/06/21 16:24:35
+criteria_users_011: 
+  default_yn: N
+  updated_at: 2011/01/24 18:32:53
+  document_id: 381
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  lock_version: 60
+  criteria_id: 1031
+  updated_by: 1
+  id: 954
+  company_id: 1
+  user_id: 1
+  created_at: 2010/06/22 14:33:42
+criteria_users_200: 
+  default_yn: Y
+  updated_at: 2011/01/24 18:34:04
+  document_id: 702
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 0
+  criteria_id: 1902
+  updated_by: 1
+  id: 8353
+  company_id: 1
+  user_id: 1
+  created_at: 2011/01/24 18:34:04
+criteria_users_012: 
+  default_yn: N
+  updated_at: 2011/01/24 18:32:53
+  document_id: 381
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  lock_version: 51
+  criteria_id: 1401
+  updated_by: 1
+  id: 967
+  company_id: 1
+  user_id: 1
+  created_at: 2010/06/22 15:09:15
+criteria_users_201: 
+  default_yn: Y
+  updated_at: 2011/01/24 18:34:08
+  document_id: 1
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 0
+  criteria_id: 1903
+  updated_by: 1
+  id: 8354
+  company_id: 1
+  user_id: 1
+  created_at: 2011/01/24 18:34:08
+criteria_users_013: 
+  default_yn: N
+  updated_at: 2011/01/24 18:28:32
+  document_id: 340
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  lock_version: 45
+  criteria_id: 980
+  updated_by: 1
+  id: 1013
+  company_id: 1
+  user_id: 1
+  created_at: 2010/06/22 16:46:00
+criteria_users_120: 
+  default_yn: Y
+  updated_at: 2011/01/24 18:24:58
+  document_id: 687
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 0
+  criteria_id: 1824
+  updated_by: 1
+  id: 8273
+  company_id: 1
+  user_id: 1
+  created_at: 2011/01/24 18:24:58
+criteria_users_202: 
+  default_yn: Y
+  updated_at: 2011/01/24 18:34:10
+  document_id: 711
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 0
+  criteria_id: 1904
+  updated_by: 1
+  id: 8355
+  company_id: 1
+  user_id: 1
+  created_at: 2011/01/24 18:34:10
+criteria_users_014: 
+  default_yn: N
+  updated_at: 2011/01/24 18:30:44
+  document_id: 441
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  lock_version: 24
+  criteria_id: 1121
+  updated_by: 1
+  id: 1059
+  company_id: 1
+  user_id: 1
+  created_at: 2010/06/23 11:34:19
+criteria_users_040: 
+  default_yn: N
+  updated_at: 2011/01/24 18:21:55
+  document_id: 1001
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  lock_version: 1
+  criteria_id: 703
+  updated_by: 1
+  id: 5487
+  company_id: 1
+  user_id: 1
+  created_at: 2010/08/27 11:04:27
+criteria_users_121: 
+  default_yn: Y
+  updated_at: 2011/01/24 18:25:10
+  document_id: 152
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 0
+  criteria_id: 1825
+  updated_by: 1
+  id: 8274
+  company_id: 1
+  user_id: 1
+  created_at: 2011/01/24 18:25:10
+criteria_users_015: 
+  default_yn: N
+  updated_at: 2011/01/24 18:33:49
+  document_id: 290
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  lock_version: 25
+  criteria_id: 500
+  updated_by: 1
+  id: 1144
+  company_id: 1
+  user_id: 1
+  created_at: 2010/06/23 18:11:40
+criteria_users_041: 
+  default_yn: N
+  updated_at: 2011/01/24 18:31:19
+  document_id: 480
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  lock_version: 115
+  criteria_id: 1521
+  updated_by: 1
+  id: 5520
+  company_id: 1
+  user_id: 1
+  created_at: 2010/08/30 11:41:49
+criteria_users_122: 
+  default_yn: Y
+  updated_at: 2011/01/24 18:25:21
+  document_id: 690
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 0
+  criteria_id: 1826
+  updated_by: 1
+  id: 8275
+  company_id: 1
+  user_id: 1
+  created_at: 2011/01/24 18:25:21
+criteria_users_203: 
+  default_yn: Y
+  updated_at: 2011/01/24 18:34:18
+  document_id: 920
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 0
+  criteria_id: 1905
+  updated_by: 1
+  id: 8356
+  company_id: 1
+  user_id: 1
+  created_at: 2011/01/24 18:34:18
+criteria_users_230: 
+  default_yn: Y
+  updated_at: 2011/01/24 18:36:43
+  document_id: 707
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 0
+  criteria_id: 1932
+  updated_by: 1
+  id: 8383
+  company_id: 1
+  user_id: 1
+  created_at: 2011/01/24 18:36:43
+criteria_users_016: 
+  default_yn: N
+  updated_at: 2011/01/24 18:28:04
+  document_id: 320
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  lock_version: 15
+  criteria_id: 870
+  updated_by: 1
+  id: 1754
+  company_id: 1
+  user_id: 1
+  created_at: 2010/06/28 11:15:28
+criteria_users_042: 
+  default_yn: N
+  updated_at: 2011/01/24 18:31:19
+  document_id: 480
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  lock_version: 114
+  criteria_id: 111
+  updated_by: 1
+  id: 5521
+  company_id: 1
+  user_id: 1
+  created_at: 2010/08/30 11:43:50
+criteria_users_123: 
+  default_yn: Y
+  updated_at: 2011/01/24 18:25:32
+  document_id: 153
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 0
+  criteria_id: 1827
+  updated_by: 1
+  id: 8276
+  company_id: 1
+  user_id: 1
+  created_at: 2011/01/24 18:25:32
+criteria_users_204: 
+  default_yn: Y
+  updated_at: 2011/01/24 18:34:25
+  document_id: 712
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 0
+  criteria_id: 1906
+  updated_by: 1
+  id: 8357
+  company_id: 1
+  user_id: 1
+  created_at: 2011/01/24 18:34:25
+criteria_users_231: 
+  default_yn: Y
+  updated_at: 2011/01/24 18:36:51
+  document_id: 803
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 0
+  criteria_id: 1933
+  updated_by: 1
+  id: 8384
+  company_id: 1
+  user_id: 1
+  created_at: 2011/01/24 18:36:51
+criteria_users_017: 
+  default_yn: N
+  updated_at: 2011/01/24 18:35:37
+  document_id: 500
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  lock_version: 70
+  criteria_id: 1464
+  updated_by: 1
+  id: 1947
+  company_id: 1
+  user_id: 1
+  created_at: 2010/06/29 14:31:31
+criteria_users_043: 
+  default_yn: N
+  updated_at: 2011/01/24 18:31:19
+  document_id: 480
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  lock_version: 113
+  criteria_id: 622
+  updated_by: 1
+  id: 5522
+  company_id: 1
+  user_id: 1
+  created_at: 2010/08/30 11:45:37
+criteria_users_124: 
+  default_yn: Y
+  updated_at: 2011/01/24 18:25:33
+  document_id: 600
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 0
+  criteria_id: 1828
+  updated_by: 1
+  id: 8277
+  company_id: 1
+  user_id: 1
+  created_at: 2011/01/24 18:25:33
+criteria_users_150: 
+  default_yn: Y
+  updated_at: 2011/01/24 18:28:55
+  document_id: 22
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 0
+  criteria_id: 1854
+  updated_by: 1
+  id: 8303
+  company_id: 1
+  user_id: 1
+  created_at: 2011/01/24 18:28:55
+criteria_users_232: 
+  default_yn: Y
+  updated_at: 2011/01/24 18:37:08
+  document_id: 171
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 0
+  criteria_id: 1934
+  updated_by: 1
+  id: 8385
+  company_id: 1
+  user_id: 1
+  created_at: 2011/01/24 18:37:08
+criteria_users_044: 
+  default_yn: Y
+  updated_at: 2010/09/01 17:47:33
+  document_id: 66
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  lock_version: 0
+  criteria_id: 746
+  updated_by: 100
+  id: 5592
+  company_id: 1
+  user_id: 1
+  created_at: 2010/09/01 17:47:33
+criteria_users_070: 
+  default_yn: N
+  updated_at: 2011/01/24 18:35:37
+  document_id: 500
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 2
+  criteria_id: 123
+  updated_by: 1
+  id: 7803
+  company_id: 1
+  user_id: 1
+  created_at: 2011/01/12 14:08:44
+criteria_users_125: 
+  default_yn: Y
+  updated_at: 2011/01/24 18:25:34
+  document_id: 688
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 0
+  criteria_id: 1829
+  updated_by: 1
+  id: 8278
+  company_id: 1
+  user_id: 1
+  created_at: 2011/01/24 18:25:34
+criteria_users_151: 
+  default_yn: Y
+  updated_at: 2011/01/24 18:29:09
+  document_id: 442
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 0
+  criteria_id: 1855
+  updated_by: 1
+  id: 8304
+  company_id: 1
+  user_id: 1
+  created_at: 2011/01/24 18:29:09
+criteria_users_205: 
+  default_yn: Y
+  updated_at: 2011/01/24 18:34:26
+  document_id: 420
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 0
+  criteria_id: 1907
+  updated_by: 1
+  id: 8358
+  company_id: 1
+  user_id: 1
+  created_at: 2011/01/24 18:34:26
+criteria_users_233: 
+  default_yn: Y
+  updated_at: 2011/01/24 18:37:22
+  document_id: 191
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 0
+  criteria_id: 1935
+  updated_by: 1
+  id: 8386
+  company_id: 1
+  user_id: 1
+  created_at: 2011/01/24 18:37:22
+criteria_users_018: 
+  default_yn: N
+  updated_at: 2011/01/24 18:23:21
+  document_id: 684
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  lock_version: 18
+  criteria_id: 1568
+  updated_by: 1
+  id: 2673
+  company_id: 1
+  user_id: 1
+  created_at: 2010/07/03 12:16:43
+criteria_users_045: 
+  default_yn: N
+  updated_at: 2011/01/24 18:31:19
+  document_id: 480
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  lock_version: 66
+  criteria_id: 1528
+  updated_by: 1
+  id: 5840
+  company_id: 1
+  user_id: 1
+  created_at: 2010/09/09 10:58:47
+criteria_users_071: 
+  default_yn: N
+  updated_at: 2011/01/24 18:39:15
+  document_id: 565
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 1
+  criteria_id: 1563
+  updated_by: 1
+  id: 7818
+  company_id: 1
+  user_id: 1
+  created_at: 2011/01/12 15:13:44
+criteria_users_126: 
+  default_yn: Y
+  updated_at: 2011/01/24 18:25:48
+  document_id: 601
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 0
+  criteria_id: 1830
+  updated_by: 1
+  id: 8279
+  company_id: 1
+  user_id: 1
+  created_at: 2011/01/24 18:25:48
+criteria_users_152: 
+  default_yn: Y
+  updated_at: 2011/01/24 18:29:16
+  document_id: 23
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 0
+  criteria_id: 1856
+  updated_by: 1
+  id: 8305
+  company_id: 1
+  user_id: 1
+  created_at: 2011/01/24 18:29:16
+criteria_users_206: 
+  default_yn: Y
+  updated_at: 2011/01/24 18:34:28
+  document_id: 1000
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 0
+  criteria_id: 1908
+  updated_by: 1
+  id: 8359
+  company_id: 1
+  user_id: 1
+  created_at: 2011/01/24 18:34:28
+criteria_users_260: 
+  default_yn: Y
+  updated_at: 2011/01/24 18:41:52
+  document_id: 61
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 0
+  criteria_id: 1962
+  updated_by: 1
+  id: 8413
+  company_id: 1
+  user_id: 1
+  created_at: 2011/01/24 18:41:52
+criteria_users_234: 
+  default_yn: Y
+  updated_at: 2011/01/24 18:37:40
+  document_id: 210
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 0
+  criteria_id: 1936
+  updated_by: 1
+  id: 8387
+  company_id: 1
+  user_id: 1
+  created_at: 2011/01/24 18:37:40
+criteria_users_019: 
+  default_yn: N
+  updated_at: 2011/01/24 18:33:02
+  document_id: 190
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  lock_version: 31
+  criteria_id: 1381
+  updated_by: 1
+  id: 2676
+  company_id: 1
+  user_id: 1
+  created_at: 2010/07/03 12:18:02
+criteria_users_046: 
+  default_yn: N
+  updated_at: 2011/01/24 18:23:00
+  document_id: 1112
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  lock_version: 1
+  criteria_id: 801
+  updated_by: 1
+  id: 5872
+  company_id: 1
+  user_id: 1
+  created_at: 2010/09/13 16:50:32
+criteria_users_072: 
+  default_yn: N
+  updated_at: 2011/01/24 18:36:40
+  document_id: 540
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 1
+  criteria_id: 1502
+  updated_by: 1
+  id: 7821
+  company_id: 1
+  user_id: 1
+  created_at: 2011/01/12 15:23:25
+criteria_users_127: 
+  default_yn: Y
+  updated_at: 2011/01/24 18:25:58
+  document_id: 689
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 0
+  criteria_id: 1831
+  updated_by: 1
+  id: 8280
+  company_id: 1
+  user_id: 1
+  created_at: 2011/01/24 18:25:58
+criteria_users_153: 
+  default_yn: Y
+  updated_at: 2011/01/24 18:29:22
+  document_id: 720
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 0
+  criteria_id: 1857
+  updated_by: 1
+  id: 8306
+  company_id: 1
+  user_id: 1
+  created_at: 2011/01/24 18:29:22
+criteria_users_207: 
+  default_yn: Y
+  updated_at: 2011/01/24 18:34:38
+  document_id: 421
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 0
+  criteria_id: 1909
+  updated_by: 1
+  id: 8360
+  company_id: 1
+  user_id: 1
+  created_at: 2011/01/24 18:34:38
+criteria_users_261: 
+  default_yn: Y
+  updated_at: 2011/01/24 18:41:53
+  document_id: 1184
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 0
+  criteria_id: 1963
+  updated_by: 1
+  id: 8414
+  company_id: 1
+  user_id: 1
+  created_at: 2011/01/24 18:41:53
+criteria_users_235: 
+  default_yn: Y
+  updated_at: 2011/01/24 18:38:35
+  document_id: 902
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 0
+  criteria_id: 1937
+  updated_by: 1
+  id: 8388
+  company_id: 1
+  user_id: 1
+  created_at: 2011/01/24 18:38:35
+criteria_users_047: 
+  default_yn: N
+  updated_at: 2011/01/24 18:33:02
+  document_id: 190
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  lock_version: 1
+  criteria_id: 100
+  updated_by: 1
+  id: 5942
+  company_id: 1
+  user_id: 1
+  created_at: 2010/09/20 10:08:08
+criteria_users_073: 
+  default_yn: N
+  updated_at: 2011/01/24 18:38:53
+  document_id: 522
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 1
+  criteria_id: 143
+  updated_by: 1
+  id: 7823
+  company_id: 1
+  user_id: 1
+  created_at: 2011/01/12 15:24:09
+criteria_users_154: 
+  default_yn: Y
+  updated_at: 2011/01/24 18:29:26
+  document_id: 60
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 0
+  criteria_id: 1858
+  updated_by: 1
+  id: 8307
+  company_id: 1
+  user_id: 1
+  created_at: 2011/01/24 18:29:26
+criteria_users_180: 
+  default_yn: Y
+  updated_at: 2011/01/24 18:31:51
+  document_id: 1302
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 0
+  criteria_id: 1884
+  updated_by: 1
+  id: 8333
+  company_id: 1
+  user_id: 1
+  created_at: 2011/01/24 18:31:51
+criteria_users_208: 
+  default_yn: Y
+  updated_at: 2011/01/24 18:34:42
+  document_id: 948
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 0
+  criteria_id: 1910
+  updated_by: 1
+  id: 8361
+  company_id: 1
+  user_id: 1
+  created_at: 2011/01/24 18:34:42
+criteria_users_262: 
+  default_yn: Y
+  updated_at: 2011/01/24 18:41:54
+  document_id: 1267
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 0
+  criteria_id: 1964
+  updated_by: 1
+  id: 8415
+  company_id: 1
+  user_id: 1
+  created_at: 2011/01/24 18:41:54
+criteria_users_236: 
+  default_yn: Y
+  updated_at: 2011/01/24 18:38:53
+  document_id: 522
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 0
+  criteria_id: 1938
+  updated_by: 1
+  id: 8389
+  company_id: 1
+  user_id: 1
+  created_at: 2011/01/24 18:38:53
+criteria_users_048: 
+  default_yn: N
+  updated_at: 2011/01/24 18:31:06
+  document_id: 1121
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 1
+  criteria_id: 1675
+  updated_by: 1
+  id: 5983
+  company_id: 1
+  user_id: 1
+  created_at: 2010/10/25 15:43:08
+criteria_users_074: 
+  default_yn: N
+  updated_at: 2011/01/24 18:33:03
+  document_id: 385
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 1
+  criteria_id: 1030
+  updated_by: 1
+  id: 7825
+  company_id: 1
+  user_id: 1
+  created_at: 2011/01/12 15:43:41
+criteria_users_128: 
+  default_yn: Y
+  updated_at: 2011/01/24 18:26:01
+  document_id: 321
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 0
+  criteria_id: 1832
+  updated_by: 1
+  id: 8281
+  company_id: 1
+  user_id: 1
+  created_at: 2011/01/24 18:26:01
+criteria_users_155: 
+  default_yn: Y
+  updated_at: 2011/01/24 18:29:32
+  document_id: 155
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 0
+  criteria_id: 1859
+  updated_by: 1
+  id: 8308
+  company_id: 1
+  user_id: 1
+  created_at: 2011/01/24 18:29:32
+criteria_users_181: 
+  default_yn: Y
+  updated_at: 2011/01/24 18:32:06
+  document_id: 643
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 0
+  criteria_id: 1885
+  updated_by: 1
+  id: 8334
+  company_id: 1
+  user_id: 1
+  created_at: 2011/01/24 18:32:06
+criteria_users_209: 
+  default_yn: Y
+  updated_at: 2011/01/24 18:34:47
+  document_id: 646
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 0
+  criteria_id: 1911
+  updated_by: 1
+  id: 8362
+  company_id: 1
+  user_id: 1
+  created_at: 2011/01/24 18:34:47
+criteria_users_263: 
+  default_yn: Y
+  updated_at: 2011/01/24 18:42:05
+  document_id: 1220
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 0
+  criteria_id: 1965
+  updated_by: 1
+  id: 8416
+  company_id: 1
+  user_id: 1
+  created_at: 2011/01/24 18:42:05
+criteria_users_237: 
+  default_yn: Y
+  updated_at: 2011/01/24 18:39:09
+  document_id: 1260
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 0
+  criteria_id: 1939
+  updated_by: 1
+  id: 8390
+  company_id: 1
+  user_id: 1
+  created_at: 2011/01/24 18:39:09
+criteria_users_049: 
+  default_yn: N
+  updated_at: 2011/01/24 18:32:08
+  document_id: 380
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 19
+  criteria_id: 1438
+  updated_by: 1
+  id: 5993
+  company_id: 1
+  user_id: 1
+  created_at: 2010/10/26 11:56:14
+criteria_users_075: 
+  default_yn: N
+  updated_at: 2011/01/24 18:39:39
+  document_id: 703
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 1
+  criteria_id: 1767
+  updated_by: 1
+  id: 7857
+  company_id: 1
+  user_id: 1
+  created_at: 2011/01/14 12:41:13
+criteria_users_129: 
+  default_yn: Y
+  updated_at: 2011/01/24 18:26:07
+  document_id: 602
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 0
+  criteria_id: 1833
+  updated_by: 1
+  id: 8282
+  company_id: 1
+  user_id: 1
+  created_at: 2011/01/24 18:26:07
+criteria_users_156: 
+  default_yn: Y
+  updated_at: 2011/01/24 18:29:45
+  document_id: 1120
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 0
+  criteria_id: 1860
+  updated_by: 1
+  id: 8309
+  company_id: 1
+  user_id: 1
+  created_at: 2011/01/24 18:29:45
+criteria_users_182: 
+  default_yn: Y
+  updated_at: 2011/01/24 18:32:08
+  document_id: 701
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 0
+  criteria_id: 1886
+  updated_by: 1
+  id: 8335
+  company_id: 1
+  user_id: 1
+  created_at: 2011/01/24 18:32:08
+criteria_users_290: 
+  default_yn: Y
+  updated_at: 2011/01/24 18:44:43
+  document_id: 1276
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 0
+  criteria_id: 1992
+  updated_by: 1
+  id: 8443
+  company_id: 1
+  user_id: 1
+  created_at: 2011/01/24 18:44:43
+criteria_users_264: 
+  default_yn: Y
+  updated_at: 2011/01/24 18:42:08
+  document_id: 63
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 0
+  criteria_id: 1966
+  updated_by: 1
+  id: 8417
+  company_id: 1
+  user_id: 1
+  created_at: 2011/01/24 18:42:08
+criteria_users_076: 
+  default_yn: N
+  updated_at: 2011/01/24 18:44:56
+  document_id: 561
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 4
+  criteria_id: 164
+  updated_by: 1
+  id: 7883
+  company_id: 1
+  user_id: 1
+  created_at: 2011/01/14 16:34:38
+criteria_users_157: 
+  default_yn: Y
+  updated_at: 2011/01/24 18:29:46
+  document_id: 168
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 0
+  criteria_id: 1861
+  updated_by: 1
+  id: 8310
+  company_id: 1
+  user_id: 1
+  created_at: 2011/01/24 18:29:46
+criteria_users_183: 
+  default_yn: Y
+  updated_at: 2011/01/24 18:32:08
+  document_id: 380
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 0
+  criteria_id: 1804
+  updated_by: 1
+  id: 8336
+  company_id: 1
+  user_id: 1
+  created_at: 2011/01/24 18:32:08
+criteria_users_291: 
+  default_yn: Y
+  updated_at: 2011/01/24 18:44:56
+  document_id: 561
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 0
+  criteria_id: 1993
+  updated_by: 1
+  id: 8444
+  company_id: 1
+  user_id: 1
+  created_at: 2011/01/24 18:44:56
+criteria_users_265: 
+  default_yn: Y
+  updated_at: 2011/01/24 18:42:13
+  document_id: 1264
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 0
+  criteria_id: 1967
+  updated_by: 1
+  id: 8418
+  company_id: 1
+  user_id: 1
+  created_at: 2011/01/24 18:42:13
+criteria_users_238: 
+  default_yn: Y
+  updated_at: 2011/01/24 18:39:15
+  document_id: 565
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 0
+  criteria_id: 1940
+  updated_by: 1
+  id: 8391
+  company_id: 1
+  user_id: 1
+  created_at: 2011/01/24 18:39:15
+criteria_users_077: 
+  default_yn: N
+  updated_at: 2011/01/24 18:44:56
+  document_id: 561
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 1
+  criteria_id: 1550
+  updated_by: 1
+  id: 7892
+  company_id: 1
+  user_id: 1
+  created_at: 2011/01/14 16:42:49
+criteria_users_158: 
+  default_yn: Y
+  updated_at: 2011/01/24 18:29:49
+  document_id: 69
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 0
+  criteria_id: 1862
+  updated_by: 1
+  id: 8311
+  company_id: 1
+  user_id: 1
+  created_at: 2011/01/24 18:29:49
+criteria_users_184: 
+  default_yn: Y
+  updated_at: 2011/01/24 18:32:21
+  document_id: 641
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 0
+  criteria_id: 1887
+  updated_by: 1
+  id: 8337
+  company_id: 1
+  user_id: 1
+  created_at: 2011/01/24 18:32:21
+criteria_users_292: 
+  default_yn: Y
+  updated_at: 2011/01/24 18:44:57
+  document_id: 1278
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 0
+  criteria_id: 1994
+  updated_by: 1
+  id: 8445
+  company_id: 1
+  user_id: 1
+  created_at: 2011/01/24 18:44:57
+criteria_users_266: 
+  default_yn: Y
+  updated_at: 2011/01/24 18:42:15
+  document_id: 62
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 0
+  criteria_id: 1968
+  updated_by: 1
+  id: 8419
+  company_id: 1
+  user_id: 1
+  created_at: 2011/01/24 18:42:15
+criteria_users_239: 
+  default_yn: Y
+  updated_at: 2011/01/24 18:39:15
+  document_id: 901
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 0
+  criteria_id: 1941
+  updated_by: 1
+  id: 8392
+  company_id: 1
+  user_id: 1
+  created_at: 2011/01/24 18:39:15
+criteria_users_078: 
+  default_yn: N
+  updated_at: 2011/01/24 18:23:33
+  document_id: 250
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 2
+  criteria_id: 1221
+  updated_by: 1
+  id: 7974
+  company_id: 1
+  user_id: 1
+  created_at: 2011/01/18 16:08:49
+criteria_users_159: 
+  default_yn: Y
+  updated_at: 2011/01/24 18:29:51
+  document_id: 400
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 0
+  criteria_id: 1863
+  updated_by: 1
+  id: 8312
+  company_id: 1
+  user_id: 1
+  created_at: 2011/01/24 18:29:51
+criteria_users_185: 
+  default_yn: Y
+  updated_at: 2011/01/24 18:32:23
+  document_id: 622
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 0
+  criteria_id: 1888
+  updated_by: 1
+  id: 8338
+  company_id: 1
+  user_id: 1
+  created_at: 2011/01/24 18:32:23
+criteria_users_293: 
+  default_yn: Y
+  updated_at: 2011/01/24 18:45:06
+  document_id: 563
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 0
+  criteria_id: 1995
+  updated_by: 1
+  id: 8446
+  company_id: 1
+  user_id: 1
+  created_at: 2011/01/24 18:45:06
+criteria_users_267: 
+  default_yn: Y
+  updated_at: 2011/01/24 18:42:18
+  document_id: 1221
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 0
+  criteria_id: 1969
+  updated_by: 1
+  id: 8420
+  company_id: 1
+  user_id: 1
+  created_at: 2011/01/24 18:42:18
+criteria_users_079: 
+  default_yn: N
+  updated_at: 2011/01/24 18:31:19
+  document_id: 480
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 27
+  criteria_id: 1701
+  updated_by: 1
+  id: 8054
+  company_id: 1
+  user_id: 1
+  created_at: 2011/01/19 10:47:19
+criteria_users_186: 
+  default_yn: Y
+  updated_at: 2011/01/24 18:32:28
+  document_id: 382
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 0
+  criteria_id: 1818
+  updated_by: 1
+  id: 8339
+  company_id: 1
+  user_id: 1
+  created_at: 2011/01/24 18:32:28
+criteria_users_294: 
+  default_yn: Y
+  updated_at: 2011/01/24 18:45:37
+  document_id: 564
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 0
+  criteria_id: 1996
+  updated_by: 1
+  id: 8447
+  company_id: 1
+  user_id: 1
+  created_at: 2011/01/24 18:45:37
+criteria_users_268: 
+  default_yn: Y
+  updated_at: 2011/01/24 18:42:30
+  document_id: 300
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 0
+  criteria_id: 1970
+  updated_by: 1
+  id: 8421
+  company_id: 1
+  user_id: 1
+  created_at: 2011/01/24 18:42:30
+criteria_users_187: 
+  default_yn: Y
+  updated_at: 2011/01/24 18:32:33
+  document_id: 642
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 0
+  criteria_id: 1889
+  updated_by: 1
+  id: 8340
+  company_id: 1
+  user_id: 1
+  created_at: 2011/01/24 18:32:33
+criteria_users_295: 
+  default_yn: Y
+  updated_at: 2011/01/24 18:45:55
+  document_id: 566
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 0
+  criteria_id: 1997
+  updated_by: 1
+  id: 8448
+  company_id: 1
+  user_id: 1
+  created_at: 2011/01/24 18:45:55
+criteria_users_269: 
+  default_yn: Y
+  updated_at: 2011/01/24 18:42:38
+  document_id: 65
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 0
+  criteria_id: 1971
+  updated_by: 1
+  id: 8422
+  company_id: 1
+  user_id: 1
+  created_at: 2011/01/24 18:42:38
+criteria_users_188: 
+  default_yn: Y
+  updated_at: 2011/01/24 18:32:47
+  document_id: 708
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 0
+  criteria_id: 1890
+  updated_by: 1
+  id: 8341
+  company_id: 1
+  user_id: 1
+  created_at: 2011/01/24 18:32:47
+criteria_users_296: 
+  default_yn: Y
+  updated_at: 2011/01/24 18:46:05
+  document_id: 965
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 0
+  criteria_id: 1998
+  updated_by: 1
+  id: 8449
+  company_id: 1
+  user_id: 1
+  created_at: 2011/01/24 18:46:05
+criteria_users_189: 
+  default_yn: Y
+  updated_at: 2011/01/24 18:32:53
+  document_id: 381
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 0
+  criteria_id: 1891
+  updated_by: 1
+  id: 8342
+  company_id: 1
+  user_id: 1
+  created_at: 2011/01/24 18:32:53
+criteria_users_297: 
+  default_yn: Y
+  updated_at: 2011/01/24 18:46:20
+  document_id: 581
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 0
+  criteria_id: 1999
+  updated_by: 1
+  id: 8450
+  company_id: 1
+  user_id: 1
+  created_at: 2011/01/24 18:46:20
+criteria_users_298: 
+  default_yn: Y
+  updated_at: 2011/01/24 18:46:36
+  document_id: 580
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 0
+  criteria_id: 2000
+  updated_by: 1
+  id: 8451
+  company_id: 1
+  user_id: 1
+  created_at: 2011/01/24 18:46:36
+criteria_users_001: 
+  default_yn: N
+  updated_at: 2011/01/24 18:35:59
+  document_id: 520
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  lock_version: 19
+  criteria_id: 1367
+  updated_by: 1
+  id: 213
+  company_id: 1
+  user_id: 1
+  created_at: 2010/06/11 12:03:30

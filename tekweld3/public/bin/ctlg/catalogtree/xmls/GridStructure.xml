@@ -1,0 +1,4 @@
+<columns>
+		<column data='hierarchy' label='Column' editable='false' visible='true' width='80' textAlign='left' 	
+				dataType='S'  sortDataType='S' columnPrecision="NaN" booleanFlag='false' componentType="Text"	/>
+</columns> 

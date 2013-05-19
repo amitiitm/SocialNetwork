@@ -1,0 +1,36 @@
+<columns>
+
+	<column data='metal_type'	label='Type'		   	editable='false'	visible='true'		width='150'	textAlign='left'	
+	         forLevel='false' 	defaultForLevel=''		booleanFlag='false'	sortDataType='S' 	columnPrecision="NaN"/>
+	
+	<column data='metal_color'	label='Color'		    editable='false'   	visible='true'		width='150'	textAlign='left'	
+	         forLevel='false' 	defaultForLevel=''		booleanFlag='false'	sortDataType='S' 	columnPrecision="NaN"/>		
+	
+	<column data='metal_size'	label='Size'			editable='false' 	visible='true' 		width='150' textAlign='left'
+		 	forLevel='false' 	defaultForLevel=''		booleanFlag='false'	sortDataType='S' 	columnPrecision="NaN"/>
+	
+	<column data='qty'			label='Qty'				editable='false' 	visible='true' 		width='100' textAlign='right'
+		 	forLevel='false' 	defaultForLevel=''		booleanFlag='false'	sortDataType='N'	columnPrecision="0"/>
+	
+	<column data='finished_wt'	label='Finished Wt'		editable='false' 	visible='true' 		width='100' textAlign='right'
+		 	forLevel='false' 	defaultForLevel=''		booleanFlag='false'	sortDataType='N' 	columnPrecision="4"/>
+	
+	<column data='cost'			label='Cost'			editable='false' 	visible='true' 		width='100' textAlign='right'
+		 	forLevel='false' 	defaultForLevel=''		booleanFlag='false'	sortDataType='N' 	columnPrecision="3"/>
+		 	
+	<column data='gold_surcharge' label='Surcharge'		editable='false' 	visible='true' 		width='100' textAlign='right'
+		 	forLevel='false' 	  defaultForLevel='' 	booleanFlag='false'	sortDataType='N' 	columnPrecision="3"/>
+	
+	<column data='labor'		label='Total Labor'		editable='false' 	visible='true' 		width='100' textAlign='right'
+		 	forLevel='false' 	defaultForLevel=''		booleanFlag='false'	sortDataType='N' 	columnPrecision="2"/>
+	
+	<column data='total_wt'		label='Total Wt'		editable='false' 	visible='true' 		width='100' textAlign='right'
+		 	forLevel='false' 	defaultForLevel=''		booleanFlag='false'	sortDataType='N' 	columnPrecision="4"/>
+	
+	<column data='total_cost'	label='Total Cost'		editable='false' 	visible='true' 		width='100' textAlign='right'
+		 	forLevel='false' 	defaultForLevel=''		booleanFlag='false'	sortDataType='N' 	columnPrecision="2"/>
+		 	
+	<column data='duty_flag'	label='Duty'		  	editable='false'    visible='true'		width='100'	textAlign='left'	
+	         forLevel='false' 	defaultForLevel=''		booleanFlag='false'	sortDataType='S' 	columnPrecision="NaN"/>
+
+</columns>		

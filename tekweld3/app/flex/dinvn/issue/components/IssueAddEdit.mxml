@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<gencomponents:AddEdit xmlns:mx="http://www.adobe.com/2006/mxml" 
+	height="100%" width="100%" verticalGap="0"
+	xmlns:customcomponents="com.generic.customcomponents.*"
+	xmlns:gencomponents="com.generic.components.*" 
+	creationPolicy="all" creationComplete="init()" >
+	
+	<mx:Script source="../scripts/IssueAddEditScript.as"/>
+	<mx:VBox width="0" height="0" verticalGap="0" horizontalGap="0" verticalAlign="top" visible="false">
+		<customcomponents:GenTextInput  width="0" height="0" visible="false" xmlTag="ri_flag" 
+			updatableFlag="true" tableName="diamond_inventory" defaultValue="I"  
+			validationFlag="false"  fontSize="9"/>	
+	</mx:VBox>
+	
+	<mx:VBox width="100%" height="100%">
+		<mx:HBox id="HBoxHeader" width="100%"  horizontalGap="0" verticalGap="0" verticalAlign="top" 
+			paddingBottom="0" paddingTop="0">
+			
+			<mx:VBox height="100%" width="30%" verticalGap="3" horizontalGap="0" paddingBottom="0" paddingTop="0">
+				
+				<mx:HBox width="100%">
+					<mx:Label text="Issue Type" width="100" textAlign="right" height="20" />
+					<customcomponents:GenComboBox id="cbIssue_type" defaultValue="V" width="160" cornerRadius="0" xmlTag="trans_type" 
+						updatableFlag="true" tableName="diamond_inventory" height="20" labelField="label" tabIndex="1"
+						dataProvider="{__genModel.masterData.child('invn_trans_type').invn_trans_type}" enabled="false"
+						 change="issueTypeChangeEvent()" />
+				</mx:HBox>
+				<mx:HBox width="100%">		
+					<mx:Label id="lblReference" text="Vendor #" width="100" textAlign="right" height="20" />
+					<customcomponents:GenDynamicComboBoxWithHelp id="dcReference_id" width="160"  defaultValue=""
+						dataField="id" labelField="name" 
+						dataSourceName="Vendor" dataProvider="{__genModel.lookupObj.vendor.children()}"   
+						itemChangedEvent="getReferenceDetails()" height="20" toolTip="To Vendor" tabIndex="2"
+						validationFlag="true" xmlTag="trans_type_id" updatableFlag="true" tableName="diamond_inventory"  />					
+				</mx:HBox>
+				<mx:HBox width="100%" height="100%">
+					<mx:Spacer width="100"/>
+					<mx:VBox width="100%" height="100%" verticalGap="0" horizontalGap="0" verticalAlign="top" >
+						<mx:TextArea id="taReference" width="100%" height="45" backgroundAlpha="0" editable="false" borderStyle="none"  />
+					</mx:VBox>
+				</mx:HBox>
+			</mx:VBox>
+			<mx:VRule height="100%"/>
+			<mx:VBox width="35%" height="100%" verticalGap="3" horizontalGap="0" paddingBottom="0" paddingTop="0">
+				<mx:HBox width="100%">
+					<mx:Label text="Reference #" width="100" textAlign="right" height="20" />
+					<customcomponents:GenTextInput  width="116" height="20" visible="true"
+						xmlTag="ext_ref_no" updatableFlag="true" maxChars="50" tabIndex="3"
+						tableName="diamond_inventory" textAlign="left" dataType="S"  />
+				</mx:HBox>
+				<mx:HBox width="100%">
+					<mx:Label text="Reference Date" width="100" textAlign="right" height="20" />
+					<customcomponents:GenDateField id="dfExt_ref_date" height="20" xmlTag="ext_ref_date" width="116"
+						updatableFlag="true" tabIndex="4" tableName="diamond_inventory" defaultValue="" />						
+				</mx:HBox>
+			</mx:VBox>
+			<mx:VRule height="100%"/>
+			<mx:VBox width="35%" height="100%" verticalGap="3" horizontalGap="0" paddingBottom="0" paddingTop="0">
+				<mx:HBox width="100%">
+					<mx:Label text="Issue #" width="100" textAlign="right" height="20" />
+					<customcomponents:GenTextInput  width="70" height="20"  xmlTag="trans_no" enabled="false"
+						updatableFlag="true" tableName="diamond_inventory" defaultValue=""  
+						validationFlag="false" toolTip="Trans No" maxChars="4" fontSize="9"/>
+					<customcomponents:GenTextInput id="tiTrans_bk" width="35" height="20" enabled="false"
+						xmlTag="trans_bk" updatableFlag="true" tableName="diamond_inventory" />
+				</mx:HBox>
+				<mx:HBox width="100%"> 
+					<mx:Label text="Issue Date" width="100" textAlign="right" height="20" />
+					<customcomponents:GenDateField id="dfTrans_date" xmlTag="trans_date" width="116" height="20" 
+						updatableFlag="true" tabIndex="5" tableName="diamond_inventory" defaultValue="" itemChangedEvent="getAccountPeriod()" />					
+				</mx:HBox>
+				<mx:HBox width="100%">
+					<mx:Label text="A/c Period" width="100" textAlign="right" height="20" />
+					<customcomponents:GenDynamicComboBoxWithHelp id="dcAccount_period_code" width="116" height="20" 
+						 toolTip="A/c Period Code"  defaultValue="" enabled="false"
+						dataField="code" labelField="code"
+						dataSourceName="AccountPeriod"  dataProvider="{__genModel.lookupObj.accountperiod.children()}" 
+						validationFlag="true" xmlTag="account_period_code" updatableFlag="true" tableName="diamond_inventory"  />
+				</mx:HBox>
+				<mx:HBox width="100%">
+					<mx:Label text="Status" width="100" textAlign="right" height="20" />
+					<customcomponents:GenComboBox id="cbTrans_flag" defaultValue="A" width="116" cornerRadius="0" xmlTag="trans_flag" updatableFlag="true"
+						tableName="diamond_inventory"  height="20" labelField="label" tabIndex="6" enabled="false"
+						dataProvider="{__genModel.masterData.child('trans_flag').trans_flag}"  />
+				</mx:HBox>						
+			</mx:VBox>
+		</mx:HBox>
+		<mx:VBox width="100%" height="100%" label="Item Detail">
+			<mx:HBox id="hbReceipt" label="Item Detail" width="100%" height="100%" horizontalAlign="left">
+				<gencomponents:Detail id="dtlLine"
+					updatableFlag="true"
+					rootNode="diamond_inventory_lines"
+					formatServiceID="lineDetailFormat"
+					height="100%" width="100%"
+					title="Issue Detail"
+					DetailEditClass="{dinvn.issue.components.IssueDetail}"
+					detailAddEditComplete="setGrossAmount();"
+					detailRemoveRow="setGrossAmount();"
+					/>
+			</mx:HBox>	
+			<mx:HBox id="hbFooter" height="135" width="100%"  horizontalAlign="left" horizontalGap="0">
+			    <mx:VBox  height="100%" width="180" paddingLeft="20">
+					<mx:HBox>
+						<mx:Label text="Total Items" width="80" textAlign="right" />
+						<mx:Label id="lblTotal_items" width="35" textAlign="right" />
+					</mx:HBox>
+					<mx:HBox>
+						<mx:Label text="Item Qty" width="80" textAlign="right" />
+						<mx:Label id="lblItem_qty" width="35" textAlign="right" />
+					</mx:HBox>
+				</mx:VBox>
+				<mx:VBox width="220" height="100%">
+					<mx:Label text="Remarks"/>
+					<customcomponents:GenTextArea width="200" height="50" id="taRemarks" maxChars="50"
+						 xmlTag="remarks" updatableFlag="true" tableName="diamond_inventory"/>
+				</mx:VBox>					
+				<mx:HBox  horizontalAlign="right" visible="false" height="0" width="0">
+					<mx:Label text="Item Amount " width="0" textAlign="right" height="0" />
+					<customcomponents:GenTextInput id="tiItem_amt" height="0" width="0" textAlign="right" editable="false"
+						backgroundAlpha="0" defaultValue="0.00"  dataType="N" rounding="true" setDefaultOnEmpty="true" maxValue="9999999999.99"/>
+				</mx:HBox>							
+			</mx:HBox>								
+		</mx:VBox>
+	</mx:VBox>
+</gencomponents:AddEdit>

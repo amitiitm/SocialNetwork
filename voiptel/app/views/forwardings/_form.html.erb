@@ -1,0 +1,22 @@
+<% form_for @forwarding, :html => {:class => "forms"} do |f| %>
+  <%= error("Could not create forwarding:") %>
+	<ul>
+	  <li>
+	    <%= f.label :did_id %>
+	    <%= f.text_field :did_id %>
+	  </li>
+	  <li>
+	    <%= f.label :account_id %>
+	    <%= f.text_field :account_id %>
+	  </li>
+	  <li>
+	    <%= f.label :rate %>
+	    <%= f.text_field :rate %>
+	  </li>
+	  <li>
+	    <%= f.label :priority %>
+	    <%= f.text_field :priority %>
+	  </li>
+	</ul>
+	<!-- <%= submit_button("Save") %> <%= loading("Please wait...") %> -->
+<% end %>

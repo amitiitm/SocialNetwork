@@ -1,0 +1,9 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  rate_sheet: 1
+  my_file_id: 1
+
+two:
+  rate_sheet: 1
+  my_file_id: 1

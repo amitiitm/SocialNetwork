@@ -1,0 +1,9 @@
+one:
+  name: MyString
+  uid: MyString
+  template: MyText
+
+two:
+  name: MyString
+  uid: MyString
+  template: MyText

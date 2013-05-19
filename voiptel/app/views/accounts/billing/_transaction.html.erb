@@ -1,0 +1,155 @@
+<div class="inner-response">
+  <div id="wrapper">
+    <div id="container1" style="width:721px;">
+      <div id="tabsPanel" style="width:731px; margin-top:0 auto;">  
+      <div alight="center" id="success_credit" class="success_block" style="display:none; width: 707px; padding-top: 30px; padding-bottom: 18px; margin-bottom: 0px;">
+        Your credit has been updated successfully.
+      </div>
+        <div id="tabPanelMiddle" style="width:729px;">
+          <table id="myTable" class="tablesorter table" width="690" border="0" cellspacing="0" cellpadding="0" style="margin:12px 23px 0px 23px;">
+            <thead>
+            <tr class="header_bg">
+              <th class="th_billing" width="30px" scope="col">
+                <div class="tableTitleHeading2" style="width:25px;">#</div>
+              </th>
+              <th class="th_billing" width="65" scope="col">
+                <div class="tableTitleHeading2" style="width:60px;">Payments</div>
+              </th>
+
+              <th class="th_billing" width="60" scope="col">
+                <div class="tableTitleHeading2" style="width:55px;">Old Bal</div>
+              </th>
+
+              <th class="th_billing" width="60" scope="col">
+                <div class="tableTitleHeading2" style="width:55px;">New Bal</div>
+              </th>
+
+              <th class="th_billing" width="50" scope="col">
+                <div class="tableTitleHeading2" style="width:45px;">Status</div>
+              </th>
+
+              <th class="th_billing" width="65" scope="col">
+                <div class="tableTitleHeading2" style="width:60px;">New Debt</div>
+              </th>
+
+              <th class="th_billing" width="90" scope="col">
+                <div class="tableTitleHeading2">Date</div>
+              </th>
+
+              <th class="th_billing" width="100" scope="col">
+                <div class="tableTitleHeading2" style="width:95px;">Source of Funds</div>
+              </th>
+
+              <th class="th_billing" width="100" scope="col">
+                <div class="tableTitleHeading2">Added By</div>
+              </th>
+              <th class="th_billing" width="30" scope="col">
+                <div class="tableTitleHeading2" style="width:25px;">Log</div>
+              </th>
+            </tr>
+            </thead>
+            </tbody>
+            <% if @transactions.blank? %>
+                <tr>
+                  <td colspan="10" style="text-align:center" class="bold">There is no transaction for this account</td>
+                </tr>
+            <% end %>
+            <% counter = (@size - ((@page - 1) * @limit) + 1) %>
+            <% row=0 %>
+            <% for ot in @transactions do %>
+                <% counter = counter - 1 %>
+                <% row += 1 %>
+                <% i = row % 2 == 0 ? 2 : 1 %>
+                <tr class="tr<%= i %>">
+                  <td align="center" valign="top"><%= counter %></td>
+                  <td valign="top"><%= number_to_currency(ot.amount / 100.to_f) %></td>
+                  <td valign="top"><%= number_to_currency(ot.old_balance) %></td>
+                  <td valign="top"><%= number_to_currency(ot.new_balance) %></td>
+                  <td valign="top"><%= if ot.message == "Success" then
+                                         "Success"
+                                       else
+                                         "<span class='tooltip' title='#{ot.message}'>Failed</span>"
+                                       end %></td>
+                  <td valign="top"><%=number_to_currency(ot.current_debt) %></td>
+                  <td valign="top"><%= user_date(ot.created_at) %></td>
+                  <% tr = TransactionReference.all_tr(ot.transaction_reference_id) %>
+                  <% card_detail = tr.blank? ? "--" : (credit_card_icon(tr.card_type) + " " + tr.card_number) %>
+                  <td valign="top" style="align:center">
+                    <% if card_detail == "--" %>
+                        Paypal Trans # <%= ot.authorization %>
+                    <% else %>
+                        <%= card_detail %>
+                    <% end %>
+                  </td>
+                  <td valign="top">
+                    <% if charged_by(ot, tr) == "--" %>
+                        Openfo/<%= ot.charged_by %>
+                    <% else %>
+                        <%= charged_by(ot, tr) %>
+                    <% end %>
+                  </td>
+                  <td valign="top"><%=link_to("Log", "/orders/log/#{ot.order_id}", :class => "ajax", :update => "log-container")%></td>
+                </tr>
+            <% end %>
+            </tbody>
+          </table>
+          <div class="clear"></div>
+          
+            <table cellpadding="0" cellspacing="0" width="100%" style="border: none;">
+                <tr>
+                    <td width="50%" style="border: none;">
+                        <span class='trans_pagination'><%= billing_pager(transactions_account_billing_path(@account), "inner-ajax") %></span>
+                        <br>
+                        <div class="clear" style="padding-left: 23px;">
+                            <%= render :partial=>'allow_payment' %>
+                        </div>
+                    </td>
+                    <td width="50%" style="border: none;">
+                      <div class="clear" style="padding-left: 50px;">
+                        <%
+                        @initial_amount = 5
+                        @amount_detail = Array.new(40) {|i| @initial_amount + (i*5)}
+                        %>
+                          </div>
+                            <% form_for [@account, @order_transaction], :html => {:class => "forms"} do |f| %>
+                              <div>
+                                <div style="border: 1px solid rgb(180, 180, 180); float: right; margin: 7px 15px 16px 0px; padding: 5px 0px 8px 20px;">
+                                  <span>
+                                <span style="font-family: 'TrebuchetMSRegular';font-weight:bold; color: #000000; padding-top: 10px">Paypal Payment</span>
+                                  <%= select("payment", "paypal", options_for_select(@amount_detail)) %>
+                                  <%= image_submit_tag "/images/billing/save.jpg", :style => "margin-right:30px; margin-bottom:-7px; border:0px;" %>
+                                  <input type="hidden" name="account_id" id="account_id" value="<%=params[:account_id]%>">
+                                  </span><br><br>
+                                <span style="font-family: 'TrebuchetMSRegular'; font-weight:bold; color: #000000;">Paypal Trans #:</span>
+                                  <%= text_field(:paypal, :transaction, :size => 20, :style => 'border:0; width:118px; height:21px; background:url(/images/billing/txtfield_123_03.jpg) no-repeat;')%> 
+                                  </span>
+                                </div>
+                                <%= loading("Saving...") %>
+                              </div>
+                            <% end %>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+            
+          
+        <!--tabPanelMiddle-->
+        <div class="clear"></div>
+      </div>
+      <!--tabsPanel-->
+      <div class="clear"></div>
+
+    </div>
+    <!--container-->
+  </div>
+  <!--wrapper-->
+</div>
+
+<div id="log-container" class="hide"></div>
+
+<script type="text/javascript">
+    jQuery(document).ready(function () {
+        jQuery("#tabPanelMiddle #myTable").tablesorter();
+        jQuery(".header").addClass("header1");
+    });
+</script>

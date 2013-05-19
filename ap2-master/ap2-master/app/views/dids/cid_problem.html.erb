@@ -1,0 +1,19 @@
+<h1>CID Problems with DIDs</h1>
+<table cellspacing="0">
+	<th>#</th>
+  <th>DID Number</th>
+  <th>DID Provider</th>
+	<th>SIP Headers</th>
+	<th>Date</th>
+	<% counter = 0 %>
+  <% for cid_problem in @cid_problems do %>
+	<% counter += 1 %>
+  	<tr>
+			<td> <%= counter %></td>
+      <td><%= if cid_problem.did then number_to_phone(cid_problem.did.number, :area_code => true) else "Not Found" end %></td>
+			<td><%= if cid_problem.did then cid_problem.did.did_provider.name else "Not Found" end %></td>
+      <td><%= text_area("baghali", "baghali", :rows => 3, :cols => 70, :value => cid_problem.sip_headers, :disabled=>true) %></td>
+			<td><%= cid_problem.created_at %></td>
+		</tr>
+  <%  end %> 
+</table>

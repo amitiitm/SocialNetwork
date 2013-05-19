@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<gencomponents:AddEdit xmlns:mx="http://www.adobe.com/2006/mxml"
+	height="100%" width="100%" verticalGap="0"
+	xmlns:customcomponents="com.generic.customcomponents.*"
+	xmlns:gencomponents="com.generic.components.*"
+	creationPolicy="all" creationComplete="init()" >
+
+	<mx:Script source="../scripts/AboutUsAddEditScript.as"/>
+	<mx:HBox width="0" height="0" visible="false">
+		<mx:VBox height="100%" width="320">
+			
+			<mx:HBox>
+				<mx:Label width="95" text="Code" textAlign="right" height="20"/>
+				<customcomponents:GenTextInput id="tiCode" width="150" height="20"  
+					xmlTag="code" updatableFlag="false" tableName="catalog_about" maxChars="25" />
+			</mx:HBox>
+			<mx:HBox>
+				<mx:Label width="95" text="Tab Name" textAlign="right" height="20"/>
+				<customcomponents:GenTextInput id="tiTabName" width="150" height="20" 
+					xmlTag="name" updatableFlag="false" tableName="catalog_about" maxChars="50"/>
+			</mx:HBox>
+		   <mx:HBox>
+	   			<mx:Label width="95" text="Upload Image" textAlign="right" height="20"/>
+	   			<customcomponents:GenTextInput id="tiImageName"  width="150" height="20"
+					xmlTag="image_name" updatableFlag="false" tableName="catalog_about" />
+				<!--<customcomponents:GenUploadButton id="btnBrowse_image" label="..." toolTip="Browse Image" width="40" height="20" tabIndex="104"
+					uploadServiceID="imageUploadUrl" fileTitle="Image Name" fileTypes="*.jpg,*.bmp,*.png" uploadFileNameSetEvent="handleUploadEvent(event)" />-->
+			</mx:HBox>
+			<!--<mx:HBox height="100%" width="100%" horizontalAlign="center" verticalAlign="middle">
+				<mx:Button label="Add" click="resetValues()" enabled="{tabnavAboutUs.selectedIndex > 0}" height="20"/>
+				<mx:Button label="Save" click="createNewTab()" height="20"/>
+				<mx:Button label="Remove" click="RemoveTab()" enabled="{tabnavAboutUs.selectedIndex != 0}" height="20"/>	
+			</mx:HBox>-->
+		</mx:VBox>
+		<mx:HBox width="100%" height="100%">
+				<mx:Label width="105" text="Tab Description" textAlign="right"/>
+				<customcomponents:GenTextArea id="textDescription" height="100%" width="100%"
+				/>		
+		</mx:HBox>	
+	</mx:HBox>
+	<customcomponents:GenDataGrid id="dtlLine"
+			updatableFlag="true"
+			rootNode="rows"
+			formatServiceID="getTabDetailFormat"
+			height="0" width="0"
+			visible="false"
+			/>
+		
+	<mx:VBox width="100%" height="100%" horizontalAlign="center">
+		<mx:Label text="Manage Your About Us" width="960"  color="#7886A3" fontSize="14" fontWeight="bold"/>	
+		<mx:TabNavigator id="tabnavAboutUs" height="100%" width="960" change="setValues()"
+			 styleName="aboutUs"  tabStyleName="aboutUsTab"  buttonMode="{true}" horizontalGap="3">
+			 <mx:VBox label="" height="0" width="0" visible="false">
+			 	
+			 </mx:VBox>
+		</mx:TabNavigator>
+		<mx:HBox horizontalGap="10" height="20%" horizontalAlign="center">
+			<mx:Button label="Add" click="resetValues(); openDetailWindow();" 
+				color="#FFFFFF"
+				textRollOverColor="#FFFFFF"
+				buttonMode="{true}"
+				
+				upSkin="@Embed('com/generic/assets/darkGrey.png')"
+		
+			    downSkin="@Embed('com/generic/assets/darkGrey.png')"
+				
+				overSkin="@Embed('com/generic/assets/darkGrey.png')"
+			   
+			    selectedUpSkin="@Embed('com/generic/assets/darkGrey.png')"
+			    selectedOverSkin="@Embed('com/generic/assets/darkGrey.png')"
+			    selectedDownSkin="@Embed('com/generic/assets/darkGrey.png')"
+				
+				disabledSkin="@Embed('com/generic/assets/darkGrey.png')"/>
+			<mx:Button label="Edit" click="openDetailWindow()"
+				color="#FFFFFF"
+				textRollOverColor="#FFFFFF"
+				buttonMode="{true}"
+				
+				upSkin="@Embed('com/generic/assets/darkGrey.png')"
+		
+			    downSkin="@Embed('com/generic/assets/darkGrey.png')"
+				
+				overSkin="@Embed('com/generic/assets/darkGrey.png')"
+			   
+			    selectedUpSkin="@Embed('com/generic/assets/darkGrey.png')"
+			    selectedOverSkin="@Embed('com/generic/assets/darkGrey.png')"
+			    selectedDownSkin="@Embed('com/generic/assets/darkGrey.png')"
+				
+				disabledSkin="@Embed('com/generic/assets/darkGrey.png')"/>
+			<mx:Button label="Remove" click="RemoveTab()" enabled="{tabnavAboutUs.selectedIndex != 0}"
+				color="#FFFFFF"
+				textRollOverColor="#FFFFFF"
+				disabledColor="#FFFFFF"
+				buttonMode="{true}"
+				
+				upSkin="@Embed('com/generic/assets/darkGrey.png')"
+		
+			    downSkin="@Embed('com/generic/assets/darkGrey.png')"
+				
+				overSkin="@Embed('com/generic/assets/darkGrey.png')"
+			   
+			    selectedUpSkin="@Embed('com/generic/assets/darkGrey.png')"
+			    selectedOverSkin="@Embed('com/generic/assets/darkGrey.png')"
+			    selectedDownSkin="@Embed('com/generic/assets/darkGrey.png')"
+				
+				disabledSkin="@Embed('com/generic/assets/darkGrey.png')"/>
+		</mx:HBox>
+	</mx:VBox>
+</gencomponents:AddEdit>
+

@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<gencomponents:AddEdit  xmlns:gencomponents="com.generic.components.*" 
+ 	xmlns:customcomponents="com.generic.customcomponents.*" 
+	xmlns:mx="http://www.adobe.com/2006/mxml" 
+	width="100%" height="100%" verticalGap="3" paddingTop="0" creationComplete="init()">
+
+	<mx:Script source="../scripts/AttachVideoAddEditScript.as"/>
+			
+			<mx:HBox width="100%"  horizontalGap="3" height="102">		
+				<mx:VBox width="290" verticalGap="3" height="100%">
+					<mx:Spacer height="4%"/>
+					<mx:HBox width="288" horizontalGap="2" verticalAlign="left">
+							<mx:Label text="Customer Name" height="20" width="96" textAlign="right" />
+							<customcomponents:GenTextInput id="tiCustomer_Name" width="190" height="20" toolTip="Customer_Name"
+								xmlTag="customer_name" updatableFlag="true" tableName="melting_transaction" defaultValue=""  maxChars="50" enabled="false"/>
+					</mx:HBox>
+					<mx:HBox width="286" horizontalGap="2" horizontalAlign="left">
+							<mx:Label text="Ref #" width="96" height="20" textAlign="right"/>
+							<customcomponents:GenTextInput id="tiCustomerRef" width="109" height="20" toolTip="Customer_Ref#" 
+							validationFlag="false"  maxChars="25" xmlTag="customer_ref_no" updatableFlag="true" tableName="melting_transaction" enabled="false"/>
+					 </mx:HBox>
+					<mx:HBox width="289" horizontalGap="2" horizontalAlign="left">
+							<mx:Label text="Ref Date" width="96" height="20" textAlign="right"/>
+							<customcomponents:GenDateField id="dfCustomerDate" width="110" xmlTag="customer_ref_date"
+							updatableFlag="true" tableName="melting_transaction" height="20" 
+							validationFlag="false" toolTip="Customer Ref Date"  enabled="false"/>
+					 </mx:HBox>
+				</mx:VBox>
+				<mx:VRule height="100%"/>
+				<mx:VBox width="290" verticalGap="3"  height="100%">
+					<mx:Spacer height="4%"/>
+					<mx:HBox width="100%">
+							<mx:Label text="Retailer" width="120" height="20" textAlign="right"/>
+							<customcomponents:GenDynamicComboBoxWithHelp id="dcRetailer" width="109" toolTip="Retail #" 
+							defaultValue="" dataField="id" labelField="name" dataSourceName="MeltingRetailer" 
+							dataProvider="{__genModel.lookupObj.meltingretailer.children()}"
+							enabled="false" height="20" validationFlag="true" xmlTag="melting_retailer_id" 
+							updatableFlag="true" tableName="melting_transaction" />
+					</mx:HBox>
+							 <mx:HBox width="100%" horizontalAlign="left">
+							<mx:Label text="Store #" width="120" height="20" textAlign="right"/>
+							<customcomponents:GenTextInput id="tiRetailerRef" width="109" height="20" toolTip="Store #" 
+							validationFlag="false"  maxChars="25" xmlTag="retailer_ref_no" updatableFlag="true" tableName="melting_transaction" tabIndex="6" enabled="false"/>
+					 </mx:HBox>
+				</mx:VBox>
+				<mx:VRule height="100%"/>
+				
+				<mx:VBox width="290" height="100%" verticalGap="3">
+						<mx:Spacer height="4%"/>
+						<mx:HBox width="100%" height="10%" verticalGap="0">						
+							<mx:Label text="Packet #" height="20" width="118" textAlign="right" />
+							<customcomponents:GenTextInput id="tiTrans_no" width="114" height="20" toolTip="Trans #" enabled="false" 
+								xmlTag="trans_no" updatableFlag="true" tableName="melting_transaction" defaultValue="" />
+							<customcomponents:GenTextInput id="tiTrans_bk" width="0" height="0" enabled="false"
+								xmlTag="trans_bk" updatableFlag="false" tableName="melting_transaction"  visible="false"/>
+						</mx:HBox>
+						<mx:HBox width="100%" height="10%" verticalGap="0">
+							<mx:Label text="Packet Date" height="20" width="118" textAlign="right"/>
+							<customcomponents:GenDateField id="dfTrans_date" width="114" height="20" toolTip="Trans Date" 
+								validationFlag="true" 
+								xmlTag="trans_date" updatableFlag="true" tableName="melting_transaction" enabled="false"/>
+						</mx:HBox>
+						
+						<mx:HBox width="100%" height="10%" verticalGap="0">		
+							<mx:Label text="A/C Period" height="20" width="118" textAlign="right" />
+							<customcomponents:GenDynamicComboBoxWithHelp id="dcAccount_period_code" width="114" 
+								toolTip="A/c Period" defaultValue="" enabled="false" dataField="code" labelField="code" 
+								dataSourceName="AccountPeriod" dataProvider="{__genModel.lookupObj.accountperiod.children()}"
+								height="20" validationFlag="true" xmlTag="account_period_code" 
+								updatableFlag="true" tableName="melting_transaction" />	
+						</mx:HBox>
+						<mx:HBox width="100%" horizontalAlign="left">
+						    	<mx:Label text="Record Status" width="118" height="20" textAlign="right"/>
+							<customcomponents:GenComboBox id="cbTrans_flag" defaultValue="A"  width="114" cornerRadius="0" xmlTag="trans_flag" updatableFlag="true"
+							tableName="melting_transaction"  labelField="label" height="20"
+							dataProvider="{__genModel.masterData.child('trans_flag').trans_flag}" enabled="false"/>
+						 </mx:HBox>
+				</mx:VBox>
+					
+			</mx:HBox>
+			
+			
+			<mx:Spacer height="10"/>	
+			<mx:HBox width="100%"  horizontalGap="3">
+				<mx:Label width="96" text="Upload Video" textAlign="right"/>
+		   		<customcomponents:GenTextInput id="tiVideoFileName"  width="390" height="20" enabled="false"
+					xmlTag="video_file_name" updatableFlag="true" tableName="melting_transaction" validationFlag="true" toolTip="Upload Video"/>
+				<customcomponents:GenUploadButton id="btnBrowsevideo" 
+					label="..." toolTip="Attach Video" width="40" height="20" tabIndex="1"
+					uploadServiceID="attachVideo" tableName="melting_transaction"
+					fileTitle="Attach Video" fileTypes="*.asf" 
+					uploadFileNameSetEvent="handleUploadEvent(event)" 
+					downloadCompleteEvent="handleDownloadCompleteEvent(event)"/>
+			</mx:HBox>
+			<mx:Spacer height="10"/>	
+
+			<mx:HBox width="100%" horizontalGap="3" verticalAlign="middle">
+				<mx:Spacer width="96" />
+				<mx:VBox id="vbPlayer" height="100%" width="444">
+					
+				</mx:VBox>
+				
+				<mx:VBox height="285" width="100%" verticalGap="3">
+				<mx:HBox width="100%" height="20" horizontalGap="3">
+				<mx:Label width="170" textAlign="right" height="20"  text="Total Pcs"/>
+				<customcomponents:GenTextInput id="tiTotal_Pcs" width="65" xmlTag="total_pcs" setDefaultOnEmpty="true"
+					updatableFlag="true" tabIndex="2" tableName="melting_transaction" dataType="N" textAlign="right" maxValue="9999"
+					validationFlag="false" toolTip="Total Pcs" editable="true" height="20" defaultValue="0"/>
+			</mx:HBox>
+				<mx:HBox width="100%" height="20" horizontalGap="3">
+					<mx:Label text="Gram Wt" width="170" textAlign="right" height="20" />
+					<customcomponents:GenTextInput id="tiGold_weight" width="65" xmlTag="gold_weight"
+						updatableFlag="true" tabIndex="3" tableName="melting_transaction" textAlign="right"
+						 validationFlag="false" toolTip="Gram Wt" editable="true" height="20" defaultValue="0.00000"
+						dataType="N" rounding="false" setDefaultOnEmpty="true" maxValue="9999.99999"   enabled="true"/>
+				</mx:HBox>
+			<mx:HBox width="100%" height="197" horizontalGap="3" paddingTop="150" paddingLeft="150" >
+				<mx:LinkButton click="openVideo()" id="videoUrlLink" color="#067AB4" skin="{null}" alpha="1.0" 
+					 mouseOver="videoUrlLink.setStyle('textDecoration', 'underline');" textRollOverColor="0x067AB4" 
+			 		 paddingLeft="0" useHandCursor="true" mouseOut="videoUrlLink.setStyle('textDecoration', 'normal')" fontWeight="normal" cornerRadius="0"/>
+			</mx:HBox>
+				</mx:VBox>
+			</mx:HBox>
+			<customcomponents:GenTextInput id="tiMelting_packet_request_id" width="0" xmlTag="melting_packet_request_id"
+					updatableFlag="true"  tableName="melting_transaction" visible="false" 
+					validationFlag="false" toolTip="Melting Packet Request ID" height="0"  />
+			<customcomponents:GenTextInput id="tiCurrent_melting_stage_code" width="0" xmlTag="current_melting_stage_code"
+						updatableFlag="true"  tableName="melting_transaction" visible="false" setDefaultOnEmpty="true"
+						defaultValue="ATTACHVIDEO" validationFlag="false" toolTip="Current Melting Stage #" height="0"  />
+			<mx:VBox width="100%" paddingTop="10">
+				<customcomponents:GenButton id="next" skin="{null}" icon="@Embed(source='../../../com/generic/assets/nextbutton.JPG')"
+						 click="nextClickHandler()" width="72" height="72" textAlign="center" />		
+			</mx:VBox>
+
+</gencomponents:AddEdit>

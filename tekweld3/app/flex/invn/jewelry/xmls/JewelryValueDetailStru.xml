@@ -1,0 +1,10 @@
+<columns  lockedColumnCount='0'>
+
+	<column data='select_yn'	label='Select'		editable='true'		visible='true'	width='60'	textAlign='center'	forLevel='false'
+			defaultForLevel=''	booleanFlag='true'	sortDataType='S' 	columnPrecision="NaN"/>
+
+	<column data='name'			label='Value'		editable='false'	visible='true'	width='150'	textAlign='left'	forLevel='false'
+			defaultForLevel=''	booleanFlag='false'	sortDataType='S' 	columnPrecision="NaN"/>
+
+</columns> 
+ 

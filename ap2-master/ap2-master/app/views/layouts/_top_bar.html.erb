@@ -1,0 +1,135 @@
+<!--<ul style="font-size:80px;position:absolute;top:42%;left:-633px;height: 0px" id="demo_menu3">-->
+<ul style="font-size:80px;position:static;top:42%;left:0px;height: 0px" id="demo_menu3">
+  <div id="mainWrapper">
+    <div id="searchBarWrapper" class="transparent">
+      <h1>Advanced Page Search:  <span  style="cursor: pointer;color: #7E2217" id="show_advance_search">Show</span></h1>
+      <% form_for @account, :url=>{:controller => 'accounts', :action => 'search'},  :html =>{:method=>:post,:id=>'search_form'} do  |f|%>
+        <% max_val=50.00;min_val=10.00 %>
+        <% max_val=nil;min_val=nil %>
+        <div id="lineBox">
+          <h1>Balance:</h1>
+
+          <div id="lineBoxFields">
+            <span class="inputField_heading">Min: $</span><%= text_field :search, :from_balance, {:value => min_val} %>
+          </div>
+          <div id="lineBoxFields">
+            <span class="inputField_heading">Max: $</span><%= text_field :search, :to_balance, {:value => max_val} %>
+          </div>
+        </div>
+        <!-- lineBox -->
+
+        <div id="lineBox">
+          <h1>Auto Recharge:</h1>
+
+          <div id="lineBoxFields">
+            <span class="inputField_heading">Min: $</span><%= text_field :search, :from_recharge_amount, {:value => min_val} %>
+          </div>
+          <div id="lineBoxFields">
+            <span class="inputField_heading">Max: $</span><%= text_field :search, :to_recharge_amount, {:value => max_val} %>
+          </div>
+        </div>
+        <!-- lineBox -->
+
+        <div id="lineBox">
+          <h1>Payments:</h1>
+
+          <div id="lineBoxFields">
+            <span class="inputField_heading">Min: $</span><%= text_field :search, :from_deposits, {:value => min_val} %>
+          </div>
+          <div id="lineBoxFields">
+            <span class="inputField_heading">Max: $</span><%= text_field :search, :to_deposits, {:value => max_val} %>
+          </div>
+        </div>
+        <!-- lineBox -->
+        <div id="lineBox">
+          <h1>Last Payment:</h1>
+
+          <div id="lineBoxFields">
+            <span class="inputField_heading">Min: $</span><%= text_field :search, :from_last_deposit_amount, {:value => min_val} %>
+          </div>
+          <div id="lineBoxFields">
+            <span class="inputField_heading">Max: $</span><%= text_field :search, :to_last_deposit_amount, {:value => max_val} %>
+          </div>
+        </div>
+        <!-- lineBox -->
+        <% val = 'Calendar' %>
+        <% val = nil %>
+        <div id="lineBox">
+          <h1>Last Payment Date:</h1>
+
+          <div id="lineBoxFields">
+            <span class="inputField_heading">From:</span><%= text_field :search, :from_last_deposit_date, {:value => val,:readonly=>'true'} %>
+          </div>
+          <div id="lineBoxFields">
+            <span class="inputField_heading">To:</span><%= text_field :search, :to_last_deposit_date, {:value => val,:readonly=>'true'} %>
+          </div>
+        </div>
+
+        <!-- lineBox -->
+
+        <div id="lineBox">
+          <h1>Last Answered CDR:</h1>
+
+          <div id="lineBoxFields">
+            <span class="inputField_heading">From:</span><%= text_field :search, :from_last_answered_cdr, {:value => val,:readonly=>'true'} %>
+          </div>
+          <div id="lineBoxFields">
+            <span class="inputField_heading">To:</span><%= text_field :search, :to_last_answered_cdr, {:value => val,:readonly=>'true'} %>
+          </div>
+        </div>
+        <!-- lineBox -->
+        <div id="lineBox">
+          <h1>Cont Date:</h1>
+
+          <div id="lineBoxFields">
+            <span class="inputField_heading">From:</span><%= text_field :search, :from_last_conversation_date, {:value => val,:readonly=>'true'} %>
+          </div>
+          <div id="lineBoxFields">
+            <span class="inputField_heading">To:</span><%= text_field :search, :to_last_conversation_date, {:value => val,:readonly=>'true'} %>
+          </div>
+        </div>
+        <div id="lineBox">
+          <h1>Reg. Date:</h1>
+
+          <div id="lineBoxFields">
+            <span class="inputField_heading">From:</span><%= text_field :search, :from_created_at, {:value => val,:readonly=>'true'} %>
+          </div>
+          <div id="lineBoxFields">
+            <span class="inputField_heading">To:</span><%= text_field :search, :to_created_at, {:value => val,:readonly=>'true'} %>
+          </div>
+        </div>
+        <!-- lineBox -->
+        <div style="float:left; height:56px; width:70px; margin:0px; padding:0px; margin-top:6px; padding-top:10px;">
+          <%= image_submit_tag "/images/advance_search/btn_go.png", :style => "border-style:none" %>
+          <span href="#" id='cancel' style="border-style:none;cursor: pointer"  width="59" height="27"><%=image_tag("/images/advance_search/btn_reset.png")%></span>
+        </div>
+      <% end %>
+    </div>
+  </div>
+</ul>
+
+
+<script type="text/javascript">
+  jQuery(document).ready(function () {
+    jQuery('#search_form').hide();
+    jQuery('#show_advance_search').live('click', function (event) {
+      jQuery('#search_form').toggle();
+    });
+    $("#search_from_last_answered_cdr,#search_to_last_answered_cdr,#search_from_last_deposit_date," +
+            "#search_to_last_deposit_date,#search_from_created_at,#search_to_created_at," +
+            "#search_from_last_conversation_date,#search_to_last_conversation_date").datepicker({
+              changeMonth:true,
+              changeYear:true,
+              dateFormat:"mm-dd-yy",
+              maxDate: "+0d"
+            });
+
+    jQuery.fn.reset = function () {
+      $(this).each (function() { this.reset(); });
+    }
+
+    jQuery('#cancel').live('click', function (event) {
+      $("#search_form").reset();
+    })
+  });
+</script>

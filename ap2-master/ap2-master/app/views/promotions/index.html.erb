@@ -1,0 +1,31 @@
+<%= page_title :title => "Promotions" %>
+
+<% table :width => "500px" do |t| %>
+	<% t.th "#" %>
+	<% t.th "Name" %>
+	<% t.th "Country" %>
+	<% t.th "Prefix" %>
+	<% t.th "Rate" %>
+	<% t.th "Days" %>
+	<% t.th "Actions" %>
+	<% counter = 0 %>
+	<% for p in @promotions do %>
+		<% counter += 1 %>
+		<% t.td counter %>
+		<% t.td p.name %>
+		<% t.td p.country.name %>
+		<% t.td p.prefix %>
+		<% t.td (p.rate * 100) %>
+		<% t.td p.days %>			
+		<% t.td (
+			link_to("Edit", edit_promotion_path(p), :class => "ajax", :update => "container") + " | " +
+			link_to("Delete", promotion_path(p), :class => "ajax-delete")
+		) %>
+		
+		<% t.new_row %>
+	<%  end -%>
+<% end -%>
+<br>
+<%= button "new_promo", "New Promotion", :href => new_promotion_path, :update => "container" %>
+
+<div id="container" class="hidden"></div>

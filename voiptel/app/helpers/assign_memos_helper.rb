@@ -1,0 +1,2 @@
+module AssignMemosHelper
+end

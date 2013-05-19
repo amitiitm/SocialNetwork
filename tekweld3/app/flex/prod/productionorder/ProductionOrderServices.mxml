@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rds:CommonServices xmlns:rds="business.*" xmlns:mx="http://www.adobe.com/2006/mxml">
+
+	<mx:HTTPService id="saveRecord" url="/artwork/artwork/create_accept_reject_paperproof_records"/>
+	<mx:HTTPService id="getList" url="/production/production/list_all_production_data"/> 
+	<mx:HTTPService id="getRecord" url="/production/production/show_production_inbox" />
+	<mx:HTTPService id="printRecord" url="/sale/sales_report/render_sales_order_format" />
+	<mx:HTTPService id="artworkUploadUrl" url="/artwork/artwork/upload_artwork_attachments"/>
+	<mx:HTTPService id="sendToCustomer" url="/artwork/artwork/send_artwork_to_customer" />
+	<mx:HTTPService id="optionDetailFormat" url="prod/productionorder/xmls/OptionDetailStru.xml" />
+	<mx:HTTPService id="getListFormat" url="prod/productionorder/xmls/ProductionOrderListStru.xml" />
+	<mx:HTTPService id="getViewFormat" url="prod/productionorder/xmls/ProductionOrderCriteriaStru.xml" />
+	<mx:HTTPService id="artworkDetailFormat" url="prod/productionorder/xmls/ProductionOrderArtworkDetailStru.xml" />
+	<mx:HTTPService id="printJob" url="/sale/sales_report/render_sales_order_job_format" />
+	<mx:HTTPService id="printPickSlip" 	url="/production/production_report/render_packaging_job_format"/>
+	
+	
+</rds:CommonServices>

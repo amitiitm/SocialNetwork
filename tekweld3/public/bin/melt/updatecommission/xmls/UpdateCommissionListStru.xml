@@ -1,0 +1,51 @@
+<columns lockedColumnCount='0'>
+
+	<column data='select_yn' 			label='Select Y/N' 		editable='true' 	visible='true' 	width='65' 	textAlign='center' 	
+			forLevel='false'			defaultForLevel='' 		sortDataType='S'	dataType='S'	booleanFlag='true'
+			dataValueForOn="Y"			dataValueForOff=" "
+			componentType="CheckBox"	
+	/>
+	
+	<column data='customer_name' 		label='Customer' 		editable='false' 	visible='true' 	width='180' textAlign='left' 	
+			forLevel='true'				defaultForLevel='' 		sortDataType='S'	dataType='S'	booleanFlag='false'
+			componentType="Text"		columnPrecision="NaN"
+	/>
+
+	<column data='retailer_name' 		label='Retailer' 		editable='false' 	visible='true' 	width='180' textAlign='left' 	
+			forLevel='true'				defaultForLevel='' 		sortDataType='S'	dataType='S'	booleanFlag='false'
+			componentType="Text"		columnPrecision="NaN"
+	/>
+	
+	<column data='offer_amt' 			label='Offer Amt' 		editable='false' 	visible='true' 	width='90' textAlign='right' 	
+			forLevel='false'			defaultForLevel='' 		sortDataType='N'	dataType='N'	booleanFlag='false'
+			negativeFlag="true" 		rounding="false" 		maxValue="99999999.99"
+			componentType="Text"		columnPrecision="2"
+	/>
+
+	<column data='commission_amt' 		label='Commission' 		editable='false'		visible='true' 	width='90' textAlign='right' 	
+			forLevel='false'			defaultForLevel='' 		sortDataType='N'	dataType='N'	booleanFlag='false'
+			negativeFlag="true" 		rounding="false" 		maxValue="9999999.99"
+			componentType="Text"		columnPrecision="2"
+	/>
+
+	<column data='trans_no'				label='Packet #'		editable='false' 	visible='true'	width='70'	textAlign='left'	
+			forLevel='true'				defaultForLevel='2' 	sortDataType='S'	dataType='S'	booleanFlag='false'
+			componentType="Text"		columnPrecision="NaN"
+	/>
+
+	<column data='trans_date' 			label='Packet Date' 	editable='false' 	visible='true' 	width='80' 	textAlign='left' 	
+			forLevel='true' 			defaultForLevel='1'		sortDataType='D' 	dataType='D'	booleanFlag='false'
+			componentType="Text" 		columnPrecision="NaN"
+	/>
+	
+	<column data='account_period_code'	label='A/c Period #' 	editable='false' 	visible='true' 		width='80' 		textAlign='left'
+		 	forLevel='true' 			defaultForLevel='' 	 	booleanFlag='false'		sortDataType='S'	
+		 	componentType="Text" 		columnPrecision="NaN"/>
+		 	
+	<column data='total_pcs'			label='Total Pcs'		editable='false' 	visible='true'	width='70'	textAlign='right'	
+			forLevel='false'			defaultForLevel='2' 	sortDataType='N'	dataType='N'	booleanFlag='false'
+			componentType="Text"		maxValue="9999"			columnPrecision="0"
+	/>
+
+
+</columns> 

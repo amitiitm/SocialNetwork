@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rds:CommonServices xmlns:rds="business.*" xmlns:mx="http://www.adobe.com/2006/mxml">
+
+	<mx:HTTPService id="getListFormat" url="prod/threadcolormaster/xmls/ThreadColorMasterListStru.xml" />
+	<mx:HTTPService id="getViewFormat" url="prod/threadcolormaster/xmls/ThreadColorMasterCriteriaStru.xml" />
+	
+	<mx:HTTPService id="getList" url="/production/thread_color/list_thread_colors"/>
+	<mx:HTTPService id="saveRecord" url="/production/thread_color/create_thread_colors"/>
+	<mx:HTTPService id="getRecord" url="/production/thread_color/show_thread_color"/>	
+
+</rds:CommonServices>	

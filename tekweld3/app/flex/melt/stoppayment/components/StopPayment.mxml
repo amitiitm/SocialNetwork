@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<EditableListControl xmlns="com.generic.components.*" xmlns:mx="http://www.adobe.com/2006/mxml" width="100%" height="100%" creationPolicy="all"
+	
+	genModuleActive				=	"handleStopPaymentAcitve(event)"
+	creationComplete			= 	"handleCreationComplete(event)"
+	view						= 	"{__localModel.viewObj.view}"
+	defaultView					= 	"{__localModel.viewObj.selectedView}"
+	isSortOrderSelectionVisible	= 	"{__localModel.sortOrderSelectionObj.isSortOrderSelectionVisible}"
+	sortField 					= 	"{__localModel.sortOrderSelectionObj.sortField}"
+	defaultLevelXml 			= 	"{__localModel.viewObj.selectedView}"
+	filteredList  				= 	"{__localModel.listObj.filteredList}"
+	treeXml		  				= 	"{__localModel.treeObj.treeXml}"
+	listFormat 	  				= 	"{__localModel.listObj.listFormat}">
+	
+	<mx:Script source="../scripts/StopPaymentScript.as"/>
+	
+</EditableListControl>
+

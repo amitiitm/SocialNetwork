@@ -1,0 +1,6 @@
+<div id="<%= options[:id] %>" class="portlet ui-widget ui-widget-content ui-helper-clearfix ui-corner-all <%= options[:class] %>" style="<%= options[:style] %>">
+	<div class="portlet-header ui-widget-header"><%= options[:title] %><span class="ui-icon ui-icon-circle-arrow-s"></span></div>
+	<div class="portlet-content" style="<%= if options[:fold] then 'display:none' end %>">
+		<%= content %>
+	</div>
+</div>

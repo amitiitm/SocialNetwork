@@ -1,0 +1,143 @@
+<div class="inner-response">
+<div id="wrapper">
+  <div id="container1" style="width:721px;">
+    <div id="tabsPanel" style="width:731px; margin-top:0 auto;">
+      <div alight="center" id="success_credit" class="success_block" style="display:none; width: 707px; padding-top: 30px; padding-bottom: 18px; margin-bottom: 0px;">
+        Your credit has been updated successfully.
+      </div>
+      <div id="tabPanelMiddle1" style="width:729px;padding-bottom: 20px;">
+        <table id="myTable1" class="tablesorter table" width="690" border="0" cellspacing="0" cellpadding="0" style="margin:12px 23px 0px 23px;">
+          <thead>
+          <%= render :partial => "/accounts/billing/credit_header" %>
+          </thead>
+          <% if @credits.blank? %>
+              <tr>
+                <td colspan="10" style="text-align:center" class="bold">There is no credit for this account</td>
+              </tr>
+          <% end %>
+          <% row=0 %>
+          <% counter = (@size - ((@page - 1) * @limit) + 1) %>
+          <% for credit in @credits do %>
+              <% counter -= 1 %>
+              <% row += 1 %>
+              <% i = row % 2 == 0 ? 2 : 1 %>
+                <% if  credit.category == 1
+                       @category="Advance (Due Back)"           
+                 elsif  credit.category == 2
+                        @category="Promo_5% Deposit Match"
+                        
+                 elsif  credit.category == 3
+                       @category="Promo_10% Deposit Match"   
+                   
+                 elsif  credit.category == 4
+                       @category="Call Issue"  
+                   
+                 elsif  credit.category == 5
+                       @category="Referral" 
+                  
+                 elsif  credit.category == 6
+                       @category="Duplicate Payment"  
+                   
+                 elsif  credit.category == 7
+                       @category="Paypal Processing Error" 
+                   
+                 elsif  credit.category == 8
+                       @category="QA_Test Calls"  
+                   
+                 elsif  credit.category == 9
+                       @category="Promo_Iran-TehranFree20"   
+                   
+                 else  credit.category == 10
+                       @category="Promo_MobileFree20"   %>
+               <% end %>
+
+              <tr class="tr<%= i %>">
+                <td valign="top"><%= counter %></td>
+                <td valign="top"><%= number_to_currency(credit.amount) %></td>
+                <td valign="top"><%= number_to_currency(credit.old_balance) %></td>
+                <td valign="top"><%= number_to_currency(credit.old_balance + credit.amount) %></td>
+                <td valign="top"><%= "Success" %> </td>
+                <td valign="top">
+                    <% if credit.category == 1 %>
+                        <%= number_to_currency(credit.current_debt) %>
+                    <% end %>
+                </td>
+                <td valign="top"> <%= user_date(credit.created_at) %> </td>
+                <td valign="top"> <%= credit.note %> </td>
+                <td valign="top"> <%= credit.admin_user ? "Openfo/" + credit.admin_user.name : "Auto" %> </td>
+                <td valign="top"> <%= @category %> </td>
+              </tr>
+          <% end %>
+        </table>
+        <div class="clear"></div>
+        <div class="tablePagination1" style="width:690px;">
+          <div>
+            <span class='credit_pagination'><%= credit_pager(credits_account_billing_path(@account), "inner-ajax") %></span>
+            <!--Add Credit-->
+            <div class="clear"></div>
+             <% form_for [@account, @credit], :html => {:class => "forms"} do |f| %>
+              <div>
+                <div style="margin-left: 380px;margin-bottom: -10px;"><%= error("Could not add credit:") %></div>
+                <%= f.hidden_field :admin_user_id %>
+                <div style="border:#c1c1c1 solid 1px; background:#f0f0f0; padding:0px 10px 12px 0px;float:right; border-radius:5px; width:290px; margin:0px 0px 0px 13px; ">
+                  <div class="divfield" style="width:176px">
+                    <div>
+                      <label>Credit Amount: </label>
+                      <%=f.text_field :amount,:style=>'background:url(/images/billing/text_field_59_gray.png) no-repeat; width:64px;'%>
+                    </div>                   
+                    <div style="width:300px; padding-top: 10px">
+                      <label>Category: </label>
+                      <span style="padding-left: 35px">
+                        <%= f.select :category, [["Advance (Due Back)", 1], ["Promo_5% Deposit Match", 2], ["Promo_10% Deposit Match", 3], ["Call Issue", 4], ["Referral", 5], ["Duplicate Payment", 6], ["Paypal Processing Error", 7], ["QA_Test Calls", 8], ["Promo_Iran-TehranFree20", 9], ["Promo_MobileFree20", 10]] %>
+                      </span>
+                    </div>
+                  </div>
+                  <!--divfield-->
+
+
+                  <div class="divfield" style="width:88px; margin-top:6px; margin-left:none;">
+                    <div>
+                      <%=image_submit_tag "/images/billing/btn_addCredit.png",:style=>"padding:0 0 0 0 ; height:30px"%>
+                    </div>
+                  </div>
+                  <!--divfield-->
+
+                  <div class="divfield" style="width:266px">
+                    <span>
+                      <textarea id="credit_note" style="width:260px; min-height:40px; border-radius:5px;" name="credit[note]"></textarea>
+                    </span>
+                    <div class="clear"></div>
+                  </div>
+                  <%= loading("Saving...") %>
+                  <!--divfield-->
+                  <div class="clear"></div>
+                </div>
+                <!--End Add Credit-->
+              </div>
+            <%end%>
+            <div class="clear"></div>
+          </div>
+
+          <div class="clear"></div>
+        </div>
+        <div class="clear"></div>
+      </div>
+      <!--tabPanelMiddle-->
+      <div class="clear"></div>
+    </div>
+    <!--tabsPanel-->
+    <div class="clear"></div>
+  </div>
+  <!--container-->
+</div>
+<!--wrapper-->
+</div>
+<script>
+    jQuery(document).ready(function() {
+        var id = "#myTable1";
+      $( "span #credit_note" ).resizable({ disabled: true });
+        $("#tabPanelMiddle1 #myTable1").tablesorter();
+        $(".th_billing").addClass('header1');
+    });
+</script>
+

@@ -1,0 +1,22 @@
+<%= page_title :title => "AP Users" %>
+<% box :type => "simple" do %>
+	<% table :width => "250px" do |t| %>
+		<% t.th "#" %>
+		<% t.th "Name" %>
+		<% t.th "Ext" %>
+		<% t.th "Actions" %>
+
+		<% counter = 0 %>
+		<% for u in @admin_users do %>
+			<% t.td counter += 1 %>
+			<% t.td u.name %>
+			<% t.td u.ext %>
+			<% t.td action_links(link_to("Edit", edit_admin_user_path(u), :class => "ajax", :update => "container")) %>
+			<% t.new_row %>
+		<%  end -%>
+	<% end -%>
+	<br>
+	<%= button "new_campaign", "New AP User", :href => new_admin_user_path, :update => "container" %>
+	<div class="clear"></div>
+<% end -%>
+<div id="container" class="hidden"></div>

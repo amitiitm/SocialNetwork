@@ -1,0 +1,4343 @@
+--- 
+report_layout_users_300: 
+  default_yn: Y
+  updated_at: 2011/01/19 18:08:13
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 1
+  updated_by: 1
+  id: 3958
+  company_id: 1
+  user_id: 1
+  report_layout_id: 945
+  created_at: 2011/01/19 18:08:13
+report_layout_users_005: 
+  default_yn: ""
+  updated_at: 2010/07/24 12:16:49
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  lock_version: 10
+  updated_by: 100
+  id: 1585
+  company_id: 1
+  user_id: 0
+  report_layout_id: 1101
+  created_at: 2010/07/06 14:26:49
+report_layout_users_031: 
+  default_yn: Y
+  updated_at: 2010/07/29 16:14:01
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  lock_version: 1
+  updated_by: 100
+  id: 2327
+  company_id: 1
+  user_id: 1
+  report_layout_id: 1335
+  created_at: 2010/07/29 16:14:01
+report_layout_users_112: 
+  default_yn: ""
+  updated_at: 2011/01/19 16:46:24
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  lock_version: 3
+  updated_by: 1
+  id: 3458
+  company_id: 1
+  user_id: 0
+  report_layout_id: 1692
+  created_at: 2010/09/15 11:41:02
+report_layout_users_301: 
+  default_yn: N
+  updated_at: 2011/01/19 18:09:05
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 2
+  updated_by: 1
+  id: 3959
+  company_id: 1
+  user_id: 1
+  report_layout_id: 1880
+  created_at: 2011/01/19 18:09:02
+report_layout_users_006: 
+  default_yn: ""
+  updated_at: 2010/07/24 11:14:17
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  lock_version: 6
+  updated_by: 100
+  id: 1586
+  company_id: 1
+  user_id: 0
+  report_layout_id: 1102
+  created_at: 2010/07/06 14:27:51
+report_layout_users_032: 
+  default_yn: N
+  updated_at: 2010/09/13 14:51:42
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  lock_version: 43
+  updated_by: 100
+  id: 2400
+  company_id: 1
+  user_id: 1
+  report_layout_id: 760
+  created_at: 2010/08/02 11:41:50
+report_layout_users_113: 
+  default_yn: ""
+  updated_at: 2011/01/19 16:46:25
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  lock_version: 3
+  updated_by: 1
+  id: 3459
+  company_id: 1
+  user_id: 0
+  report_layout_id: 1693
+  created_at: 2010/09/15 11:41:03
+report_layout_users_220: 
+  default_yn: ""
+  updated_at: 2011/01/19 11:48:39
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 1
+  updated_by: 1
+  id: 3839
+  company_id: 1
+  user_id: 0
+  report_layout_id: 1218
+  created_at: 2011/01/19 11:48:38
+report_layout_users_302: 
+  default_yn: Y
+  updated_at: 2011/01/19 18:09:05
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 1
+  updated_by: 1
+  id: 3960
+  company_id: 1
+  user_id: 1
+  report_layout_id: 1879
+  created_at: 2011/01/19 18:09:05
+report_layout_users_007: 
+  default_yn: ""
+  updated_at: 2010/07/24 14:28:28
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  lock_version: 7
+  updated_by: 100
+  id: 1587
+  company_id: 1
+  user_id: 0
+  report_layout_id: 1103
+  created_at: 2010/07/06 14:30:33
+report_layout_users_033: 
+  default_yn: N
+  updated_at: 2010/09/13 14:51:42
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  lock_version: 42
+  updated_by: 100
+  id: 2481
+  company_id: 1
+  user_id: 1
+  report_layout_id: 1360
+  created_at: 2010/08/07 10:52:31
+report_layout_users_114: 
+  default_yn: ""
+  updated_at: 2011/01/19 16:46:26
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  lock_version: 3
+  updated_by: 1
+  id: 3460
+  company_id: 1
+  user_id: 0
+  report_layout_id: 1694
+  created_at: 2010/09/15 11:41:05
+report_layout_users_140: 
+  default_yn: ""
+  updated_at: 2011/01/05 12:03:42
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 2
+  updated_by: 2
+  id: 3546
+  company_id: 1
+  user_id: 0
+  report_layout_id: 1870
+  created_at: 2010/12/01 11:43:48
+report_layout_users_221: 
+  default_yn: ""
+  updated_at: 2011/01/19 11:48:43
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 1
+  updated_by: 1
+  id: 3840
+  company_id: 1
+  user_id: 0
+  report_layout_id: 1219
+  created_at: 2011/01/19 11:48:42
+report_layout_users_303: 
+  default_yn: Y
+  updated_at: 2011/01/19 18:09:19
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 1
+  updated_by: 1
+  id: 3961
+  company_id: 1
+  user_id: 1
+  report_layout_id: 1863
+  created_at: 2011/01/19 18:09:19
+report_layout_users_008: 
+  default_yn: ""
+  updated_at: 2010/08/10 11:54:07
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  lock_version: 1
+  updated_by: 100
+  id: 1588
+  company_id: 1
+  user_id: 0
+  report_layout_id: 1104
+  created_at: 2010/07/06 16:46:21
+report_layout_users_034: 
+  default_yn: N
+  updated_at: 2010/08/07 12:27:23
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  lock_version: 4
+  updated_by: 100
+  id: 2502
+  company_id: 1
+  user_id: 1
+  report_layout_id: 1282
+  created_at: 2010/08/07 12:27:17
+report_layout_users_060: 
+  default_yn: N
+  updated_at: 2010/09/01 14:55:41
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  lock_version: 14
+  updated_by: 100
+  id: 2915
+  company_id: 1
+  user_id: 1
+  report_layout_id: 1546
+  created_at: 2010/08/31 11:21:46
+report_layout_users_115: 
+  default_yn: ""
+  updated_at: 2011/01/21 10:44:01
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  lock_version: 3
+  updated_by: 1
+  id: 3462
+  company_id: 1
+  user_id: 0
+  report_layout_id: 1688
+  created_at: 2010/09/15 12:31:28
+report_layout_users_141: 
+  default_yn: Y
+  updated_at: 2011/01/14 16:32:51
+  update_flag: Y
+  trans_flag: A
+  created_by: 2
+  lock_version: 2
+  updated_by: 1
+  id: 3554
+  company_id: 1
+  user_id: 2
+  report_layout_id: 965
+  created_at: 2010/12/02 00:45:53
+report_layout_users_222: 
+  default_yn: ""
+  updated_at: 2011/01/19 11:48:46
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 1
+  updated_by: 1
+  id: 3841
+  company_id: 1
+  user_id: 0
+  report_layout_id: 1220
+  created_at: 2011/01/19 11:48:46
+report_layout_users_330: 
+  default_yn: ""
+  updated_at: 2011/01/21 12:55:21
+  update_flag: Y
+  trans_flag: A
+  created_by: 2
+  lock_version: 1
+  updated_by: 2
+  id: 3999
+  company_id: 1
+  user_id: 0
+  report_layout_id: 1884
+  created_at: 2011/01/21 12:55:20
+report_layout_users_304: 
+  default_yn: N
+  updated_at: 2011/01/19 18:09:41
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 3
+  updated_by: 1
+  id: 3962
+  company_id: 1
+  user_id: 1
+  report_layout_id: 1867
+  created_at: 2011/01/19 18:09:34
+report_layout_users_223: 
+  default_yn: ""
+  updated_at: 2011/01/19 11:54:50
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 1
+  updated_by: 1
+  id: 3847
+  company_id: 1
+  user_id: 0
+  report_layout_id: 1240
+  created_at: 2011/01/19 11:54:50
+report_layout_users_009: 
+  default_yn: ""
+  updated_at: 2010/08/10 14:28:19
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  lock_version: 1
+  updated_by: 100
+  id: 1589
+  company_id: 1
+  user_id: 0
+  report_layout_id: 1105
+  created_at: 2010/07/06 16:47:59
+report_layout_users_035: 
+  default_yn: N
+  updated_at: 2010/08/07 12:27:23
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  lock_version: 3
+  updated_by: 100
+  id: 2503
+  company_id: 1
+  user_id: 1
+  report_layout_id: 1283
+  created_at: 2010/08/07 12:27:19
+report_layout_users_061: 
+  default_yn: N
+  updated_at: 2010/08/31 12:39:39
+  update_flag: Y
+  trans_flag: A
+  created_by: 180
+  lock_version: 4
+  updated_by: 180
+  id: 2926
+  company_id: 1
+  user_id: 180
+  report_layout_id: 1549
+  created_at: 2010/08/31 12:27:31
+report_layout_users_116: 
+  default_yn: N
+  updated_at: 2011/01/19 18:13:57
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  lock_version: 9
+  updated_by: 1
+  id: 3468
+  company_id: 1
+  user_id: 1
+  report_layout_id: 1682
+  created_at: 2010/09/15 12:34:03
+report_layout_users_142: 
+  default_yn: N
+  updated_at: 2010/12/06 10:45:44
+  update_flag: Y
+  trans_flag: A
+  created_by: 2
+  lock_version: 4
+  updated_by: 2
+  id: 3563
+  company_id: 1
+  user_id: 2
+  report_layout_id: 1702
+  created_at: 2010/12/06 05:15:17
+report_layout_users_331: 
+  default_yn: ""
+  updated_at: 2011/01/21 12:57:31
+  update_flag: Y
+  trans_flag: A
+  created_by: 2
+  lock_version: 1
+  updated_by: 2
+  id: 4000
+  company_id: 1
+  user_id: 0
+  report_layout_id: 1886
+  created_at: 2011/01/21 12:57:31
+report_layout_users_305: 
+  default_yn: N
+  updated_at: 2011/01/19 18:09:41
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 2
+  updated_by: 1
+  id: 3963
+  company_id: 1
+  user_id: 1
+  report_layout_id: 1868
+  created_at: 2011/01/19 18:09:36
+report_layout_users_250: 
+  default_yn: ""
+  updated_at: 2011/01/19 14:23:02
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 1
+  updated_by: 1
+  id: 3876
+  company_id: 1
+  user_id: 0
+  report_layout_id: 1660
+  created_at: 2011/01/19 14:23:02
+report_layout_users_224: 
+  default_yn: ""
+  updated_at: 2011/01/19 11:54:54
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 1
+  updated_by: 1
+  id: 3848
+  company_id: 1
+  user_id: 0
+  report_layout_id: 1241
+  created_at: 2011/01/19 11:54:53
+report_layout_users_036: 
+  default_yn: Y
+  updated_at: 2010/08/07 12:27:23
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  lock_version: 1
+  updated_by: 100
+  id: 2505
+  company_id: 1
+  user_id: 1
+  report_layout_id: 1281
+  created_at: 2010/08/07 12:27:22
+report_layout_users_062: 
+  default_yn: N
+  updated_at: 2010/08/31 14:31:54
+  update_flag: Y
+  trans_flag: A
+  created_by: 180
+  lock_version: 9
+  updated_by: 180
+  id: 2949
+  company_id: 1
+  user_id: 180
+  report_layout_id: 1468
+  created_at: 2010/08/31 14:27:21
+report_layout_users_117: 
+  default_yn: ""
+  updated_at: 2010/10/19 18:35:46
+  update_flag: Y
+  trans_flag: A
+  created_by: 2
+  lock_version: 1
+  updated_by: 2
+  id: 3478
+  company_id: 1
+  user_id: 0
+  report_layout_id: 1764
+  created_at: 2010/10/19 18:35:46
+report_layout_users_143: 
+  default_yn: N
+  updated_at: 2010/12/06 10:45:44
+  update_flag: Y
+  trans_flag: A
+  created_by: 2
+  lock_version: 2
+  updated_by: 2
+  id: 3564
+  company_id: 1
+  user_id: 2
+  report_layout_id: 1871
+  created_at: 2010/12/06 10:45:40
+report_layout_users_332: 
+  default_yn: ""
+  updated_at: 2011/01/21 13:01:04
+  update_flag: Y
+  trans_flag: A
+  created_by: 2
+  lock_version: 1
+  updated_by: 2
+  id: 4001
+  company_id: 1
+  user_id: 0
+  report_layout_id: 1885
+  created_at: 2011/01/21 13:01:04
+report_layout_users_306: 
+  default_yn: Y
+  updated_at: 2011/01/19 18:09:41
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 1
+  updated_by: 1
+  id: 3964
+  company_id: 1
+  user_id: 1
+  report_layout_id: 1869
+  created_at: 2011/01/19 18:09:41
+report_layout_users_251: 
+  default_yn: ""
+  updated_at: 2011/01/19 14:23:08
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 1
+  updated_by: 1
+  id: 3877
+  company_id: 1
+  user_id: 0
+  report_layout_id: 1661
+  created_at: 2011/01/19 14:23:08
+report_layout_users_225: 
+  default_yn: ""
+  updated_at: 2011/01/19 11:54:57
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 1
+  updated_by: 1
+  id: 3849
+  company_id: 1
+  user_id: 0
+  report_layout_id: 1242
+  created_at: 2011/01/19 11:54:56
+report_layout_users_037: 
+  default_yn: ""
+  updated_at: 2011/01/19 15:47:39
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  lock_version: 2
+  updated_by: 1
+  id: 2507
+  company_id: 1
+  user_id: 0
+  report_layout_id: 807
+  created_at: 2010/08/07 12:30:15
+report_layout_users_063: 
+  default_yn: N
+  updated_at: 2010/08/31 14:31:54
+  update_flag: Y
+  trans_flag: A
+  created_by: 180
+  lock_version: 6
+  updated_by: 180
+  id: 2952
+  company_id: 1
+  user_id: 180
+  report_layout_id: 1466
+  created_at: 2010/08/31 14:28:53
+report_layout_users_118: 
+  default_yn: ""
+  updated_at: 2010/10/19 18:35:47
+  update_flag: Y
+  trans_flag: A
+  created_by: 2
+  lock_version: 1
+  updated_by: 2
+  id: 3479
+  company_id: 1
+  user_id: 0
+  report_layout_id: 1765
+  created_at: 2010/10/19 18:35:47
+report_layout_users_144: 
+  default_yn: N
+  updated_at: 2010/12/06 10:45:44
+  update_flag: Y
+  trans_flag: A
+  created_by: 2
+  lock_version: 2
+  updated_by: 2
+  id: 3565
+  company_id: 1
+  user_id: 2
+  report_layout_id: 1700
+  created_at: 2010/12/06 05:15:42
+report_layout_users_170: 
+  default_yn: ""
+  updated_at: 2011/01/12 15:10:13
+  update_flag: Y
+  trans_flag: A
+  created_by: 2
+  lock_version: 2
+  updated_by: 1
+  id: 3766
+  company_id: 1
+  user_id: 0
+  report_layout_id: 948
+  created_at: 2011/01/07 12:04:34
+report_layout_users_333: 
+  default_yn: ""
+  updated_at: 2011/01/21 13:02:34
+  update_flag: Y
+  trans_flag: A
+  created_by: 2
+  lock_version: 1
+  updated_by: 2
+  id: 4002
+  company_id: 1
+  user_id: 0
+  report_layout_id: 1883
+  created_at: 2011/01/21 13:02:34
+report_layout_users_307: 
+  default_yn: N
+  updated_at: 2011/01/19 18:12:17
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 3
+  updated_by: 1
+  id: 3965
+  company_id: 1
+  user_id: 1
+  report_layout_id: 1424
+  created_at: 2011/01/19 18:12:11
+report_layout_users_252: 
+  default_yn: ""
+  updated_at: 2011/01/19 14:24:39
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 1
+  updated_by: 1
+  id: 3878
+  company_id: 1
+  user_id: 0
+  report_layout_id: 1662
+  created_at: 2011/01/19 14:24:39
+report_layout_users_226: 
+  default_yn: ""
+  updated_at: 2011/01/19 12:02:52
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 1
+  updated_by: 1
+  id: 3850
+  company_id: 1
+  user_id: 0
+  report_layout_id: 1243
+  created_at: 2011/01/19 12:02:51
+report_layout_users_038: 
+  default_yn: ""
+  updated_at: 2010/08/07 12:42:16
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  lock_version: 2
+  updated_by: 100
+  id: 2508
+  company_id: 1
+  user_id: 0
+  report_layout_id: 820
+  created_at: 2010/08/07 12:41:07
+report_layout_users_064: 
+  default_yn: N
+  updated_at: 2010/08/31 14:31:54
+  update_flag: Y
+  trans_flag: A
+  created_by: 180
+  lock_version: 4
+  updated_by: 180
+  id: 2953
+  company_id: 1
+  user_id: 180
+  report_layout_id: 1553
+  created_at: 2010/08/31 14:28:56
+report_layout_users_090: 
+  default_yn: N
+  updated_at: 2010/09/01 14:49:39
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  lock_version: 10
+  updated_by: 100
+  id: 3097
+  company_id: 1
+  user_id: 1
+  report_layout_id: 1596
+  created_at: 2010/09/01 14:42:07
+report_layout_users_119: 
+  default_yn: ""
+  updated_at: 2010/10/19 18:35:51
+  update_flag: Y
+  trans_flag: A
+  created_by: 2
+  lock_version: 1
+  updated_by: 2
+  id: 3481
+  company_id: 1
+  user_id: 0
+  report_layout_id: 1767
+  created_at: 2010/10/19 18:35:50
+report_layout_users_145: 
+  default_yn: Y
+  updated_at: 2010/12/06 10:45:44
+  update_flag: Y
+  trans_flag: A
+  created_by: 2
+  lock_version: 1
+  updated_by: 2
+  id: 3566
+  company_id: 1
+  user_id: 2
+  report_layout_id: 1701
+  created_at: 2010/12/06 05:15:44
+report_layout_users_171: 
+  default_yn: ""
+  updated_at: 2011/01/07 12:05:38
+  update_flag: Y
+  trans_flag: A
+  created_by: 2
+  lock_version: 1
+  updated_by: 2
+  id: 3767
+  company_id: 1
+  user_id: 0
+  report_layout_id: 950
+  created_at: 2011/01/07 12:05:38
+report_layout_users_334: 
+  default_yn: Y
+  updated_at: 2011/01/21 15:11:19
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 1
+  updated_by: 1
+  id: 4004
+  company_id: 1
+  user_id: 1
+  report_layout_id: 1894
+  created_at: 2011/01/21 15:11:19
+report_layout_users_308: 
+  default_yn: N
+  updated_at: 2011/01/19 18:12:17
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 2
+  updated_by: 1
+  id: 3966
+  company_id: 1
+  user_id: 1
+  report_layout_id: 1425
+  created_at: 2011/01/19 18:12:13
+report_layout_users_253: 
+  default_yn: ""
+  updated_at: 2011/01/19 14:24:39
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 1
+  updated_by: 1
+  id: 3879
+  company_id: 1
+  user_id: 0
+  report_layout_id: 1663
+  created_at: 2011/01/19 14:24:39
+report_layout_users_227: 
+  default_yn: ""
+  updated_at: 2011/01/19 12:02:56
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 1
+  updated_by: 1
+  id: 3851
+  company_id: 1
+  user_id: 0
+  report_layout_id: 1244
+  created_at: 2011/01/19 12:02:56
+report_layout_users_039: 
+  default_yn: N
+  updated_at: 2010/08/07 17:04:27
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  lock_version: 6
+  updated_by: 100
+  id: 2544
+  company_id: 1
+  user_id: 1
+  report_layout_id: 1040
+  created_at: 2010/08/07 16:37:50
+report_layout_users_065: 
+  default_yn: N
+  updated_at: 2010/08/31 14:31:54
+  update_flag: Y
+  trans_flag: A
+  created_by: 180
+  lock_version: 2
+  updated_by: 180
+  id: 2955
+  company_id: 1
+  user_id: 180
+  report_layout_id: 1554
+  created_at: 2010/08/31 14:29:01
+report_layout_users_091: 
+  default_yn: N
+  updated_at: 2010/09/01 14:49:39
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  lock_version: 8
+  updated_by: 100
+  id: 3100
+  company_id: 1
+  user_id: 1
+  report_layout_id: 1588
+  created_at: 2010/09/01 14:47:49
+report_layout_users_146: 
+  default_yn: N
+  updated_at: 2011/01/19 18:09:19
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 4
+  updated_by: 1
+  id: 3570
+  company_id: 1
+  user_id: 1
+  report_layout_id: 1862
+  created_at: 2010/12/06 17:52:03
+report_layout_users_172: 
+  default_yn: ""
+  updated_at: 2011/01/07 12:05:42
+  update_flag: Y
+  trans_flag: A
+  created_by: 2
+  lock_version: 1
+  updated_by: 2
+  id: 3768
+  company_id: 1
+  user_id: 0
+  report_layout_id: 1809
+  created_at: 2011/01/07 12:05:42
+report_layout_users_309: 
+  default_yn: Y
+  updated_at: 2011/01/19 18:12:17
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 1
+  updated_by: 1
+  id: 3967
+  company_id: 1
+  user_id: 1
+  report_layout_id: 1877
+  created_at: 2011/01/19 18:12:17
+report_layout_users_280: 
+  default_yn: N
+  updated_at: 2011/01/19 17:44:31
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 2
+  updated_by: 1
+  id: 3925
+  company_id: 1
+  user_id: 1
+  report_layout_id: 958
+  created_at: 2011/01/19 17:44:27
+report_layout_users_254: 
+  default_yn: ""
+  updated_at: 2011/01/19 14:26:55
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 1
+  updated_by: 1
+  id: 3880
+  company_id: 1
+  user_id: 0
+  report_layout_id: 1520
+  created_at: 2011/01/19 14:26:55
+report_layout_users_228: 
+  default_yn: ""
+  updated_at: 2011/01/19 12:03:00
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 1
+  updated_by: 1
+  id: 3852
+  company_id: 1
+  user_id: 0
+  report_layout_id: 1245
+  created_at: 2011/01/19 12:03:00
+report_layout_users_066: 
+  default_yn: N
+  updated_at: 2010/08/31 14:31:54
+  update_flag: Y
+  trans_flag: A
+  created_by: 180
+  lock_version: 2
+  updated_by: 180
+  id: 2956
+  company_id: 1
+  user_id: 180
+  report_layout_id: 1467
+  created_at: 2010/08/31 14:29:03
+report_layout_users_092: 
+  default_yn: N
+  updated_at: 2010/09/01 14:49:39
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  lock_version: 6
+  updated_by: 100
+  id: 3102
+  company_id: 1
+  user_id: 1
+  report_layout_id: 1581
+  created_at: 2010/09/01 14:48:28
+report_layout_users_147: 
+  default_yn: N
+  updated_at: 2010/12/06 13:09:11
+  update_flag: Y
+  trans_flag: A
+  created_by: 2
+  lock_version: 2
+  updated_by: 2
+  id: 3572
+  company_id: 1
+  user_id: 2
+  report_layout_id: 1324
+  created_at: 2010/12/06 07:39:04
+report_layout_users_173: 
+  default_yn: ""
+  updated_at: 2011/01/17 16:07:50
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 1
+  updated_by: 1
+  id: 3772
+  company_id: 1
+  user_id: 0
+  report_layout_id: 953
+  created_at: 2011/01/17 16:07:50
+report_layout_users_281: 
+  default_yn: Y
+  updated_at: 2011/01/19 17:44:31
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 1
+  updated_by: 1
+  id: 3926
+  company_id: 1
+  user_id: 1
+  report_layout_id: 1012
+  created_at: 2011/01/19 17:44:30
+report_layout_users_255: 
+  default_yn: ""
+  updated_at: 2011/01/19 14:26:57
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 1
+  updated_by: 1
+  id: 3881
+  company_id: 1
+  user_id: 0
+  report_layout_id: 1521
+  created_at: 2011/01/19 14:26:56
+report_layout_users_229: 
+  default_yn: ""
+  updated_at: 2011/01/19 12:12:35
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 1
+  updated_by: 1
+  id: 3853
+  company_id: 1
+  user_id: 0
+  report_layout_id: 1160
+  created_at: 2011/01/19 12:12:35
+report_layout_users_067: 
+  default_yn: Y
+  updated_at: 2010/08/31 14:31:54
+  update_flag: Y
+  trans_flag: A
+  created_by: 180
+  lock_version: 1
+  updated_by: 180
+  id: 2957
+  company_id: 1
+  user_id: 180
+  report_layout_id: 1552
+  created_at: 2010/08/31 14:31:54
+report_layout_users_093: 
+  default_yn: N
+  updated_at: 2010/09/01 14:49:39
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  lock_version: 4
+  updated_by: 100
+  id: 3104
+  company_id: 1
+  user_id: 1
+  report_layout_id: 1590
+  created_at: 2010/09/01 14:48:45
+report_layout_users_148: 
+  default_yn: Y
+  updated_at: 2010/12/06 13:09:11
+  update_flag: Y
+  trans_flag: A
+  created_by: 2
+  lock_version: 1
+  updated_by: 2
+  id: 3573
+  company_id: 1
+  user_id: 2
+  report_layout_id: 1323
+  created_at: 2010/12/06 07:39:11
+report_layout_users_174: 
+  default_yn: ""
+  updated_at: 2011/01/17 16:15:23
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 1
+  updated_by: 1
+  id: 3775
+  company_id: 1
+  user_id: 0
+  report_layout_id: 955
+  created_at: 2011/01/17 16:15:23
+report_layout_users_282: 
+  default_yn: N
+  updated_at: 2011/01/19 17:44:45
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 2
+  updated_by: 1
+  id: 3927
+  company_id: 1
+  user_id: 1
+  report_layout_id: 960
+  created_at: 2011/01/19 17:44:42
+report_layout_users_256: 
+  default_yn: ""
+  updated_at: 2011/01/19 15:22:04
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 1
+  updated_by: 1
+  id: 3882
+  company_id: 1
+  user_id: 0
+  report_layout_id: 1380
+  created_at: 2011/01/19 15:22:04
+report_layout_users_068: 
+  default_yn: N
+  updated_at: 2010/08/31 15:25:43
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  lock_version: 9
+  updated_by: 100
+  id: 2969
+  company_id: 1
+  user_id: 1
+  report_layout_id: 1555
+  created_at: 2010/08/31 15:24:31
+report_layout_users_094: 
+  default_yn: N
+  updated_at: 2010/09/01 14:49:39
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  lock_version: 2
+  updated_by: 100
+  id: 3106
+  company_id: 1
+  user_id: 1
+  report_layout_id: 1593
+  created_at: 2010/09/01 14:49:06
+report_layout_users_149: 
+  default_yn: N
+  updated_at: 2010/12/07 13:08:08
+  update_flag: Y
+  trans_flag: A
+  created_by: 2
+  lock_version: 2
+  updated_by: 2
+  id: 3575
+  company_id: 1
+  user_id: 2
+  report_layout_id: 1330
+  created_at: 2010/12/07 07:38:04
+report_layout_users_175: 
+  default_yn: ""
+  updated_at: 2011/01/17 16:15:25
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 1
+  updated_by: 1
+  id: 3776
+  company_id: 1
+  user_id: 0
+  report_layout_id: 956
+  created_at: 2011/01/17 16:15:25
+report_layout_users_283: 
+  default_yn: Y
+  updated_at: 2011/01/19 17:44:45
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 1
+  updated_by: 1
+  id: 3928
+  company_id: 1
+  user_id: 1
+  report_layout_id: 1013
+  created_at: 2011/01/19 17:44:45
+report_layout_users_257: 
+  default_yn: ""
+  updated_at: 2011/01/19 15:22:07
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 1
+  updated_by: 1
+  id: 3884
+  company_id: 1
+  user_id: 0
+  report_layout_id: 1382
+  created_at: 2011/01/19 15:22:07
+report_layout_users_095: 
+  default_yn: Y
+  updated_at: 2010/09/01 14:49:38
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  lock_version: 1
+  updated_by: 100
+  id: 3107
+  company_id: 1
+  user_id: 1
+  report_layout_id: 1597
+  created_at: 2010/09/01 14:49:38
+report_layout_users_176: 
+  default_yn: ""
+  updated_at: 2011/01/17 16:15:27
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 1
+  updated_by: 1
+  id: 3777
+  company_id: 1
+  user_id: 0
+  report_layout_id: 1011
+  created_at: 2011/01/17 16:15:27
+report_layout_users_069: 
+  default_yn: N
+  updated_at: 2010/08/31 15:25:43
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  lock_version: 7
+  updated_by: 100
+  id: 2971
+  company_id: 1
+  user_id: 1
+  report_layout_id: 1556
+  created_at: 2010/08/31 15:25:08
+report_layout_users_284: 
+  default_yn: N
+  updated_at: 2011/01/19 17:45:12
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 2
+  updated_by: 1
+  id: 3929
+  company_id: 1
+  user_id: 1
+  report_layout_id: 954
+  created_at: 2011/01/19 17:45:09
+report_layout_users_258: 
+  default_yn: ""
+  updated_at: 2011/01/19 15:25:27
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 1
+  updated_by: 1
+  id: 3888
+  company_id: 1
+  user_id: 0
+  report_layout_id: 1383
+  created_at: 2011/01/19 15:25:27
+report_layout_users_096: 
+  default_yn: N
+  updated_at: 2010/09/01 14:55:41
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  lock_version: 10
+  updated_by: 100
+  id: 3112
+  company_id: 1
+  user_id: 1
+  report_layout_id: 1598
+  created_at: 2010/09/01 14:52:04
+report_layout_users_177: 
+  default_yn: ""
+  updated_at: 2011/01/17 16:19:00
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 1
+  updated_by: 1
+  id: 3778
+  company_id: 1
+  user_id: 0
+  report_layout_id: 1481
+  created_at: 2011/01/17 16:19:00
+report_layout_users_285: 
+  default_yn: Y
+  updated_at: 2011/01/19 17:45:12
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 1
+  updated_by: 1
+  id: 3930
+  company_id: 1
+  user_id: 1
+  report_layout_id: 1010
+  created_at: 2011/01/19 17:45:12
+report_layout_users_259: 
+  default_yn: ""
+  updated_at: 2011/01/19 15:25:28
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 1
+  updated_by: 1
+  id: 3889
+  company_id: 1
+  user_id: 0
+  report_layout_id: 1384
+  created_at: 2011/01/19 15:25:28
+report_layout_users_178: 
+  default_yn: ""
+  updated_at: 2011/01/17 16:26:19
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 1
+  updated_by: 1
+  id: 3779
+  company_id: 1
+  user_id: 0
+  report_layout_id: 957
+  created_at: 2011/01/17 16:26:19
+report_layout_users_097: 
+  default_yn: N
+  updated_at: 2010/09/01 14:55:41
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  lock_version: 7
+  updated_by: 100
+  id: 3115
+  company_id: 1
+  user_id: 1
+  report_layout_id: 1543
+  created_at: 2010/09/01 14:52:46
+report_layout_users_286: 
+  default_yn: N
+  updated_at: 2011/01/19 17:45:48
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 3
+  updated_by: 1
+  id: 3931
+  company_id: 1
+  user_id: 1
+  report_layout_id: 1814
+  created_at: 2011/01/19 17:45:38
+report_layout_users_179: 
+  default_yn: ""
+  updated_at: 2011/01/17 16:32:27
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 1
+  updated_by: 1
+  id: 3782
+  company_id: 1
+  user_id: 0
+  report_layout_id: 959
+  created_at: 2011/01/17 16:32:26
+report_layout_users_098: 
+  default_yn: N
+  updated_at: 2010/09/01 14:55:41
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  lock_version: 4
+  updated_by: 100
+  id: 3118
+  company_id: 1
+  user_id: 1
+  report_layout_id: 1540
+  created_at: 2010/09/01 14:55:33
+report_layout_users_287: 
+  default_yn: N
+  updated_at: 2011/01/19 17:45:48
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 2
+  updated_by: 1
+  id: 3932
+  company_id: 1
+  user_id: 1
+  report_layout_id: 1815
+  created_at: 2011/01/19 17:45:43
+report_layout_users_099: 
+  default_yn: N
+  updated_at: 2010/09/01 14:55:41
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  lock_version: 2
+  updated_by: 100
+  id: 3120
+  company_id: 1
+  user_id: 1
+  report_layout_id: 1542
+  created_at: 2010/09/01 14:55:38
+report_layout_users_288: 
+  default_yn: Y
+  updated_at: 2011/01/19 17:45:48
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 1
+  updated_by: 1
+  id: 3933
+  company_id: 1
+  user_id: 1
+  report_layout_id: 1816
+  created_at: 2011/01/19 17:45:47
+report_layout_users_289: 
+  default_yn: N
+  updated_at: 2011/01/19 17:57:43
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 3
+  updated_by: 1
+  id: 3939
+  company_id: 1
+  user_id: 1
+  report_layout_id: 1889
+  created_at: 2011/01/19 17:57:04
+report_layout_users_100: 
+  default_yn: Y
+  updated_at: 2010/09/01 14:55:41
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  lock_version: 1
+  updated_by: 100
+  id: 3121
+  company_id: 1
+  user_id: 1
+  report_layout_id: 1599
+  created_at: 2010/09/01 14:55:40
+report_layout_users_020: 
+  default_yn: N
+  updated_at: 2010/08/07 17:04:27
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  lock_version: 11
+  updated_by: 100
+  id: 2067
+  company_id: 1
+  user_id: 1
+  report_layout_id: 1021
+  created_at: 2010/07/20 18:28:41
+report_layout_users_101: 
+  default_yn: N
+  updated_at: 2010/09/01 15:19:49
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  lock_version: 5
+  updated_by: 100
+  id: 3161
+  company_id: 1
+  user_id: 1
+  report_layout_id: 1602
+  created_at: 2010/09/01 15:19:35
+report_layout_users_021: 
+  default_yn: ""
+  updated_at: 2010/07/24 14:50:35
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  lock_version: 4
+  updated_by: 100
+  id: 2086
+  company_id: 1
+  user_id: 0
+  report_layout_id: 1300
+  created_at: 2010/07/21 17:39:06
+report_layout_users_102: 
+  default_yn: N
+  updated_at: 2010/09/01 15:19:49
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  lock_version: 3
+  updated_by: 100
+  id: 3164
+  company_id: 1
+  user_id: 1
+  report_layout_id: 1600
+  created_at: 2010/09/01 15:19:44
+report_layout_users_022: 
+  default_yn: ""
+  updated_at: 2010/07/24 14:11:03
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  lock_version: 2
+  updated_by: 100
+  id: 2161
+  company_id: 1
+  user_id: 0
+  report_layout_id: 1100
+  created_at: 2010/07/24 11:10:41
+report_layout_users_103: 
+  default_yn: N
+  updated_at: 2010/09/01 15:19:49
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  lock_version: 2
+  updated_by: 100
+  id: 3165
+  company_id: 1
+  user_id: 1
+  report_layout_id: 1601
+  created_at: 2010/09/01 15:19:46
+report_layout_users_210: 
+  default_yn: ""
+  updated_at: 2011/01/19 11:14:33
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 1
+  updated_by: 1
+  id: 3829
+  company_id: 1
+  user_id: 0
+  report_layout_id: 1501
+  created_at: 2011/01/19 11:14:33
+report_layout_users_023: 
+  default_yn: ""
+  updated_at: 2010/08/16 09:59:50
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  lock_version: 5
+  updated_by: 100
+  id: 2166
+  company_id: 1
+  user_id: 0
+  report_layout_id: 1322
+  created_at: 2010/07/24 12:16:48
+report_layout_users_104: 
+  default_yn: Y
+  updated_at: 2010/09/06 12:56:10
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  lock_version: 0
+  updated_by: 100
+  id: 3180
+  company_id: 1
+  user_id: 1
+  report_layout_id: 1620
+  created_at: 2010/09/06 12:56:10
+report_layout_users_130: 
+  default_yn: ""
+  updated_at: 2010/11/30 14:21:33
+  update_flag: Y
+  trans_flag: A
+  created_by: 2
+  lock_version: 2
+  updated_by: 1
+  id: 3510
+  company_id: 1
+  user_id: 0
+  report_layout_id: 1855
+  created_at: 2010/10/29 15:03:16
+report_layout_users_211: 
+  default_yn: ""
+  updated_at: 2011/01/19 11:21:18
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 1
+  updated_by: 1
+  id: 3830
+  company_id: 1
+  user_id: 0
+  report_layout_id: 1252
+  created_at: 2011/01/19 11:21:18
+report_layout_users_024: 
+  default_yn: ""
+  updated_at: 2010/08/16 10:02:58
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  lock_version: 2
+  updated_by: 100
+  id: 2172
+  company_id: 1
+  user_id: 0
+  report_layout_id: 1325
+  created_at: 2010/07/24 13:53:17
+report_layout_users_050: 
+  default_yn: N
+  updated_at: 2010/08/23 11:19:09
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  lock_version: 2
+  updated_by: 100
+  id: 2802
+  company_id: 1
+  user_id: 1
+  report_layout_id: 1280
+  created_at: 2010/08/23 11:17:45
+report_layout_users_105: 
+  default_yn: N
+  updated_at: 2011/01/19 17:45:48
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  lock_version: 5
+  updated_by: 1
+  id: 3182
+  company_id: 1
+  user_id: 1
+  report_layout_id: 1016
+  created_at: 2010/09/06 13:39:21
+report_layout_users_131: 
+  default_yn: ""
+  updated_at: 2010/11/30 14:31:46
+  update_flag: Y
+  trans_flag: A
+  created_by: 2
+  lock_version: 1
+  updated_by: 1
+  id: 3511
+  company_id: 1
+  user_id: 0
+  report_layout_id: 1856
+  created_at: 2010/10/29 17:05:58
+report_layout_users_212: 
+  default_yn: ""
+  updated_at: 2011/01/19 11:21:20
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 1
+  updated_by: 1
+  id: 3831
+  company_id: 1
+  user_id: 0
+  report_layout_id: 1253
+  created_at: 2011/01/19 11:21:20
+report_layout_users_320: 
+  default_yn: N
+  updated_at: 2011/01/19 18:27:21
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 2
+  updated_by: 1
+  id: 3982
+  company_id: 1
+  user_id: 1
+  report_layout_id: 951
+  created_at: 2011/01/19 18:27:16
+report_layout_users_025: 
+  default_yn: ""
+  updated_at: 2010/08/16 10:13:50
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  lock_version: 3
+  updated_by: 100
+  id: 2180
+  company_id: 1
+  user_id: 0
+  report_layout_id: 1331
+  created_at: 2010/07/24 15:12:50
+report_layout_users_051: 
+  default_yn: ""
+  updated_at: 2010/08/26 12:37:22
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  lock_version: 1
+  updated_by: 100
+  id: 2844
+  company_id: 1
+  user_id: 0
+  report_layout_id: 1502
+  created_at: 2010/08/26 12:15:36
+report_layout_users_106: 
+  default_yn: ""
+  updated_at: 2010/09/06 17:08:07
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  lock_version: 3
+  updated_by: 100
+  id: 3184
+  company_id: 1
+  user_id: 0
+  report_layout_id: 1621
+  created_at: 2010/09/06 17:07:19
+report_layout_users_132: 
+  default_yn: Y
+  updated_at: 2010/10/29 19:12:12
+  update_flag: Y
+  trans_flag: A
+  created_by: 2
+  lock_version: 0
+  updated_by: 2
+  id: 3512
+  company_id: 1
+  user_id: 2
+  report_layout_id: 1857
+  created_at: 2010/10/29 19:12:12
+report_layout_users_213: 
+  default_yn: ""
+  updated_at: 2011/01/19 11:21:22
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 1
+  updated_by: 1
+  id: 3832
+  company_id: 1
+  user_id: 0
+  report_layout_id: 1254
+  created_at: 2011/01/19 11:21:21
+report_layout_users_321: 
+  default_yn: Y
+  updated_at: 2011/01/19 18:27:21
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 1
+  updated_by: 1
+  id: 3983
+  company_id: 1
+  user_id: 1
+  report_layout_id: 1882
+  created_at: 2011/01/19 18:27:21
+report_layout_users_240: 
+  default_yn: ""
+  updated_at: 2011/01/19 12:38:50
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 1
+  updated_by: 1
+  id: 3864
+  company_id: 1
+  user_id: 0
+  report_layout_id: 1204
+  created_at: 2011/01/19 12:38:49
+report_layout_users_026: 
+  default_yn: ""
+  updated_at: 2010/08/16 10:13:54
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  lock_version: 2
+  updated_by: 100
+  id: 2182
+  company_id: 1
+  user_id: 0
+  report_layout_id: 1333
+  created_at: 2010/07/24 15:12:54
+report_layout_users_052: 
+  default_yn: ""
+  updated_at: 2010/08/26 15:49:24
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  lock_version: 4
+  updated_by: 100
+  id: 2846
+  company_id: 1
+  user_id: 0
+  report_layout_id: 1503
+  created_at: 2010/08/26 12:40:32
+report_layout_users_107: 
+  default_yn: N
+  updated_at: 2010/09/13 14:51:42
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  lock_version: 24
+  updated_by: 100
+  id: 3341
+  company_id: 1
+  user_id: 1
+  report_layout_id: 880
+  created_at: 2010/09/09 14:28:59
+report_layout_users_133: 
+  default_yn: Y
+  updated_at: 2010/11/08 18:22:08
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 1
+  updated_by: 1
+  id: 3515
+  company_id: 1
+  user_id: 1
+  report_layout_id: 1858
+  created_at: 2010/11/08 18:22:08
+report_layout_users_214: 
+  default_yn: ""
+  updated_at: 2011/01/19 11:32:46
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 1
+  updated_by: 1
+  id: 3833
+  company_id: 1
+  user_id: 0
+  report_layout_id: 1212
+  created_at: 2011/01/19 11:32:46
+report_layout_users_322: 
+  default_yn: N
+  updated_at: 2011/01/19 19:05:02
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 3
+  updated_by: 1
+  id: 3986
+  company_id: 1
+  user_id: 1
+  report_layout_id: 1720
+  created_at: 2011/01/19 19:03:17
+report_layout_users_241: 
+  default_yn: ""
+  updated_at: 2011/01/19 12:38:53
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 1
+  updated_by: 1
+  id: 3865
+  company_id: 1
+  user_id: 0
+  report_layout_id: 1205
+  created_at: 2011/01/19 12:38:53
+report_layout_users_027: 
+  default_yn: ""
+  updated_at: 2010/08/16 10:06:18
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  lock_version: 3
+  updated_by: 100
+  id: 2183
+  company_id: 1
+  user_id: 0
+  report_layout_id: 1326
+  created_at: 2010/07/24 15:14:45
+report_layout_users_053: 
+  default_yn: ""
+  updated_at: 2010/08/26 15:58:57
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  lock_version: 2
+  updated_by: 100
+  id: 2851
+  company_id: 1
+  user_id: 0
+  report_layout_id: 1505
+  created_at: 2010/08/26 15:56:34
+report_layout_users_108: 
+  default_yn: N
+  updated_at: 2011/01/19 16:45:55
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  lock_version: 6
+  updated_by: 1
+  id: 3451
+  company_id: 1
+  user_id: 1
+  report_layout_id: 1687
+  created_at: 2010/09/15 10:35:02
+report_layout_users_134: 
+  default_yn: ""
+  updated_at: 2010/11/19 12:45:48
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 2
+  updated_by: 2
+  id: 3516
+  company_id: 1
+  user_id: 0
+  report_layout_id: 1852
+  created_at: 2010/11/08 18:25:13
+report_layout_users_160: 
+  default_yn: ""
+  updated_at: 2011/01/12 15:27:32
+  update_flag: Y
+  trans_flag: A
+  created_by: 2
+  lock_version: 3
+  updated_by: 1
+  id: 3696
+  company_id: 1
+  user_id: 0
+  report_layout_id: 902
+  created_at: 2011/01/06 12:43:53
+report_layout_users_215: 
+  default_yn: ""
+  updated_at: 2011/01/19 11:32:50
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 1
+  updated_by: 1
+  id: 3834
+  company_id: 1
+  user_id: 0
+  report_layout_id: 1213
+  created_at: 2011/01/19 11:32:49
+report_layout_users_323: 
+  default_yn: N
+  updated_at: 2011/01/19 19:05:02
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 2
+  updated_by: 1
+  id: 3987
+  company_id: 1
+  user_id: 1
+  report_layout_id: 1362
+  created_at: 2011/01/19 19:04:52
+report_layout_users_242: 
+  default_yn: ""
+  updated_at: 2011/01/19 12:45:08
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 1
+  updated_by: 1
+  id: 3866
+  company_id: 1
+  user_id: 0
+  report_layout_id: 1206
+  created_at: 2011/01/19 12:45:08
+report_layout_users_028: 
+  default_yn: ""
+  updated_at: 2010/08/16 10:06:22
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  lock_version: 3
+  updated_by: 100
+  id: 2185
+  company_id: 1
+  user_id: 0
+  report_layout_id: 1328
+  created_at: 2010/07/24 15:14:49
+report_layout_users_054: 
+  default_yn: ""
+  updated_at: 2010/08/26 15:58:58
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  lock_version: 0
+  updated_by: 100
+  id: 2852
+  company_id: 1
+  user_id: 0
+  report_layout_id: 1506
+  created_at: 2010/08/26 15:58:58
+report_layout_users_080: 
+  default_yn: N
+  updated_at: 2010/09/01 14:49:39
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  lock_version: 35
+  updated_by: 100
+  id: 3072
+  company_id: 1
+  user_id: 1
+  report_layout_id: 1585
+  created_at: 2010/09/01 12:21:05
+report_layout_users_109: 
+  default_yn: N
+  updated_at: 2011/01/19 16:45:54
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  lock_version: 5
+  updated_by: 1
+  id: 3452
+  company_id: 1
+  user_id: 1
+  report_layout_id: 1686
+  created_at: 2010/09/15 10:35:04
+report_layout_users_135: 
+  default_yn: Y
+  updated_at: 2011/01/12 15:02:12
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 4
+  updated_by: 1
+  id: 3517
+  company_id: 1
+  user_id: 1
+  report_layout_id: 920
+  created_at: 2010/11/11 18:58:38
+report_layout_users_161: 
+  default_yn: ""
+  updated_at: 2011/01/12 14:48:16
+  update_flag: Y
+  trans_flag: A
+  created_by: 2
+  lock_version: 2
+  updated_by: 1
+  id: 3699
+  company_id: 1
+  user_id: 0
+  report_layout_id: 941
+  created_at: 2011/01/06 12:52:17
+report_layout_users_216: 
+  default_yn: ""
+  updated_at: 2011/01/19 11:32:53
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 1
+  updated_by: 1
+  id: 3835
+  company_id: 1
+  user_id: 0
+  report_layout_id: 1214
+  created_at: 2011/01/19 11:32:52
+report_layout_users_324: 
+  default_yn: Y
+  updated_at: 2011/01/19 19:05:02
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 1
+  updated_by: 1
+  id: 3988
+  company_id: 1
+  user_id: 1
+  report_layout_id: 1000
+  created_at: 2011/01/19 19:05:02
+report_layout_users_243: 
+  default_yn: ""
+  updated_at: 2011/01/19 12:45:11
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 1
+  updated_by: 1
+  id: 3867
+  company_id: 1
+  user_id: 0
+  report_layout_id: 1207
+  created_at: 2011/01/19 12:45:11
+report_layout_users_029: 
+  default_yn: N
+  updated_at: 2010/08/16 09:59:48
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  lock_version: 4
+  updated_by: 100
+  id: 2189
+  company_id: 1
+  user_id: 1
+  report_layout_id: 1321
+  created_at: 2010/07/24 15:51:24
+report_layout_users_055: 
+  default_yn: ""
+  updated_at: 2010/08/26 18:02:44
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  lock_version: 7
+  updated_by: 100
+  id: 2855
+  company_id: 1
+  user_id: 0
+  report_layout_id: 1507
+  created_at: 2010/08/26 17:08:06
+report_layout_users_081: 
+  default_yn: N
+  updated_at: 2010/09/01 14:49:39
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  lock_version: 33
+  updated_by: 100
+  id: 3074
+  company_id: 1
+  user_id: 1
+  report_layout_id: 1586
+  created_at: 2010/09/01 12:21:16
+report_layout_users_136: 
+  default_yn: ""
+  updated_at: 2010/11/19 13:07:53
+  update_flag: Y
+  trans_flag: A
+  created_by: 2
+  lock_version: 0
+  updated_by: 2
+  id: 3519
+  company_id: 1
+  user_id: 0
+  report_layout_id: 1859
+  created_at: 2010/11/19 13:07:53
+report_layout_users_162: 
+  default_yn: ""
+  updated_at: 2011/01/12 15:47:13
+  update_flag: Y
+  trans_flag: A
+  created_by: 2
+  lock_version: 3
+  updated_by: 1
+  id: 3702
+  company_id: 1
+  user_id: 0
+  report_layout_id: 943
+  created_at: 2011/01/06 12:56:23
+report_layout_users_217: 
+  default_yn: ""
+  updated_at: 2011/01/19 11:39:58
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 1
+  updated_by: 1
+  id: 3836
+  company_id: 1
+  user_id: 0
+  report_layout_id: 1215
+  created_at: 2011/01/19 11:39:58
+report_layout_users_325: 
+  default_yn: N
+  updated_at: 2011/01/20 12:17:29
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 4
+  updated_by: 1
+  id: 3992
+  company_id: 1
+  user_id: 1
+  report_layout_id: 1892
+  created_at: 2011/01/20 12:17:21
+report_layout_users_270: 
+  default_yn: ""
+  updated_at: 2011/01/19 16:15:47
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 1
+  updated_by: 1
+  id: 3904
+  company_id: 1
+  user_id: 0
+  report_layout_id: 1421
+  created_at: 2011/01/19 16:15:47
+report_layout_users_244: 
+  default_yn: ""
+  updated_at: 2011/01/19 12:45:14
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 1
+  updated_by: 1
+  id: 3868
+  company_id: 1
+  user_id: 0
+  report_layout_id: 1208
+  created_at: 2011/01/19 12:45:14
+report_layout_users_056: 
+  default_yn: Y
+  updated_at: 2010/08/26 18:02:45
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  lock_version: 7
+  updated_by: 100
+  id: 2857
+  company_id: 1
+  user_id: 1
+  report_layout_id: 1508
+  created_at: 2010/08/26 17:29:08
+report_layout_users_082: 
+  default_yn: N
+  updated_at: 2010/09/01 14:49:39
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  lock_version: 31
+  updated_by: 100
+  id: 3076
+  company_id: 1
+  user_id: 1
+  report_layout_id: 1587
+  created_at: 2010/09/01 12:21:23
+report_layout_users_137: 
+  default_yn: ""
+  updated_at: 2010/11/23 14:43:12
+  update_flag: Y
+  trans_flag: A
+  created_by: 2
+  lock_version: 1
+  updated_by: 2
+  id: 3520
+  company_id: 1
+  user_id: 0
+  report_layout_id: 1860
+  created_at: 2010/11/23 13:25:42
+report_layout_users_163: 
+  default_yn: ""
+  updated_at: 2011/01/12 15:47:14
+  update_flag: Y
+  trans_flag: A
+  created_by: 2
+  lock_version: 3
+  updated_by: 1
+  id: 3703
+  company_id: 1
+  user_id: 0
+  report_layout_id: 944
+  created_at: 2011/01/06 12:56:25
+report_layout_users_218: 
+  default_yn: ""
+  updated_at: 2011/01/19 11:40:02
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 1
+  updated_by: 1
+  id: 3837
+  company_id: 1
+  user_id: 0
+  report_layout_id: 1216
+  created_at: 2011/01/19 11:40:01
+report_layout_users_326: 
+  default_yn: N
+  updated_at: 2011/01/20 12:17:29
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 3
+  updated_by: 1
+  id: 3993
+  company_id: 1
+  user_id: 1
+  report_layout_id: 1891
+  created_at: 2011/01/20 12:17:23
+report_layout_users_271: 
+  default_yn: ""
+  updated_at: 2011/01/19 16:15:48
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 1
+  updated_by: 1
+  id: 3905
+  company_id: 1
+  user_id: 0
+  report_layout_id: 1422
+  created_at: 2011/01/19 16:15:48
+report_layout_users_245: 
+  default_yn: ""
+  updated_at: 2011/01/19 12:50:48
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 1
+  updated_by: 1
+  id: 3869
+  company_id: 1
+  user_id: 0
+  report_layout_id: 1209
+  created_at: 2011/01/19 12:50:48
+report_layout_users_057: 
+  default_yn: N
+  updated_at: 2010/09/01 14:55:41
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  lock_version: 19
+  updated_by: 100
+  id: 2910
+  company_id: 1
+  user_id: 1
+  report_layout_id: 1544
+  created_at: 2010/08/31 11:21:25
+report_layout_users_083: 
+  default_yn: N
+  updated_at: 2010/09/01 14:49:39
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  lock_version: 28
+  updated_by: 100
+  id: 3079
+  company_id: 1
+  user_id: 1
+  report_layout_id: 1589
+  created_at: 2010/09/01 12:53:03
+report_layout_users_138: 
+  default_yn: ""
+  updated_at: 2010/12/09 17:47:45
+  update_flag: Y
+  trans_flag: A
+  created_by: 2
+  lock_version: 12
+  updated_by: 2
+  id: 3521
+  company_id: 1
+  user_id: 0
+  report_layout_id: 1861
+  created_at: 2010/11/23 14:43:10
+report_layout_users_164: 
+  default_yn: ""
+  updated_at: 2011/01/12 15:47:16
+  update_flag: Y
+  trans_flag: A
+  created_by: 2
+  lock_version: 3
+  updated_by: 1
+  id: 3704
+  company_id: 1
+  user_id: 0
+  report_layout_id: 1005
+  created_at: 2011/01/06 12:56:27
+report_layout_users_190: 
+  default_yn: N
+  updated_at: 2011/01/20 12:17:29
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 11
+  updated_by: 1
+  id: 3805
+  company_id: 1
+  user_id: 1
+  report_layout_id: 861
+  created_at: 2011/01/18 18:20:31
+report_layout_users_219: 
+  default_yn: ""
+  updated_at: 2011/01/19 11:40:05
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 1
+  updated_by: 1
+  id: 3838
+  company_id: 1
+  user_id: 0
+  report_layout_id: 1217
+  created_at: 2011/01/19 11:40:05
+report_layout_users_327: 
+  default_yn: N
+  updated_at: 2011/01/20 12:17:29
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 2
+  updated_by: 1
+  id: 3994
+  company_id: 1
+  user_id: 1
+  report_layout_id: 1875
+  created_at: 2011/01/20 12:17:27
+report_layout_users_272: 
+  default_yn: ""
+  updated_at: 2011/01/19 16:21:24
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 1
+  updated_by: 1
+  id: 3907
+  company_id: 1
+  user_id: 0
+  report_layout_id: 1423
+  created_at: 2011/01/19 16:21:24
+report_layout_users_246: 
+  default_yn: ""
+  updated_at: 2011/01/19 12:50:51
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 1
+  updated_by: 1
+  id: 3870
+  company_id: 1
+  user_id: 0
+  report_layout_id: 1210
+  created_at: 2011/01/19 12:50:50
+report_layout_users_058: 
+  default_yn: N
+  updated_at: 2010/09/01 14:55:41
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  lock_version: 17
+  updated_by: 100
+  id: 2912
+  company_id: 1
+  user_id: 1
+  report_layout_id: 1545
+  created_at: 2010/08/31 11:21:32
+report_layout_users_084: 
+  default_yn: N
+  updated_at: 2010/09/01 14:49:39
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  lock_version: 25
+  updated_by: 100
+  id: 3082
+  company_id: 1
+  user_id: 1
+  report_layout_id: 1591
+  created_at: 2010/09/01 13:01:19
+report_layout_users_139: 
+  default_yn: ""
+  updated_at: 2011/01/05 11:31:08
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 2
+  updated_by: 2
+  id: 3527
+  company_id: 1
+  user_id: 0
+  report_layout_id: 1864
+  created_at: 2010/11/30 14:37:13
+report_layout_users_165: 
+  default_yn: ""
+  updated_at: 2011/01/12 15:10:11
+  update_flag: Y
+  trans_flag: A
+  created_by: 2
+  lock_version: 3
+  updated_by: 1
+  id: 3705
+  company_id: 1
+  user_id: 0
+  report_layout_id: 947
+  created_at: 2011/01/06 13:01:00
+report_layout_users_191: 
+  default_yn: ""
+  updated_at: 2011/01/19 10:43:58
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 1
+  updated_by: 1
+  id: 3808
+  company_id: 1
+  user_id: 0
+  report_layout_id: 1255
+  created_at: 2011/01/19 10:43:58
+report_layout_users_328: 
+  default_yn: Y
+  updated_at: 2011/01/20 12:17:29
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 1
+  updated_by: 1
+  id: 3995
+  company_id: 1
+  user_id: 1
+  report_layout_id: 1890
+  created_at: 2011/01/20 12:17:29
+report_layout_users_273: 
+  default_yn: Y
+  updated_at: 2011/01/19 16:35:33
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 1
+  updated_by: 1
+  id: 3914
+  company_id: 1
+  user_id: 1
+  report_layout_id: 1381
+  created_at: 2011/01/19 16:35:33
+report_layout_users_247: 
+  default_yn: ""
+  updated_at: 2011/01/19 12:50:53
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 1
+  updated_by: 1
+  id: 3871
+  company_id: 1
+  user_id: 0
+  report_layout_id: 1211
+  created_at: 2011/01/19 12:50:53
+report_layout_users_059: 
+  default_yn: N
+  updated_at: 2010/09/01 14:55:41
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  lock_version: 17
+  updated_by: 100
+  id: 2913
+  company_id: 1
+  user_id: 1
+  report_layout_id: 1541
+  created_at: 2010/08/31 11:21:42
+report_layout_users_085: 
+  default_yn: N
+  updated_at: 2010/09/01 14:49:39
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  lock_version: 24
+  updated_by: 100
+  id: 3084
+  company_id: 1
+  user_id: 1
+  report_layout_id: 1582
+  created_at: 2010/09/01 13:01:31
+report_layout_users_166: 
+  default_yn: ""
+  updated_at: 2011/01/12 15:10:15
+  update_flag: Y
+  trans_flag: A
+  created_by: 2
+  lock_version: 3
+  updated_by: 1
+  id: 3707
+  company_id: 1
+  user_id: 0
+  report_layout_id: 1007
+  created_at: 2011/01/06 13:01:05
+report_layout_users_192: 
+  default_yn: ""
+  updated_at: 2011/01/19 10:44:00
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 1
+  updated_by: 1
+  id: 3809
+  company_id: 1
+  user_id: 0
+  report_layout_id: 1256
+  created_at: 2011/01/19 10:44:00
+report_layout_users_329: 
+  default_yn: Y
+  updated_at: 2011/01/21 14:55:35
+  update_flag: Y
+  trans_flag: A
+  created_by: 2
+  lock_version: 2
+  updated_by: 1
+  id: 3996
+  company_id: 1
+  user_id: 2
+  report_layout_id: 1893
+  created_at: 2011/01/21 10:36:16
+report_layout_users_274: 
+  default_yn: Y
+  updated_at: 2011/01/19 17:32:28
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 1
+  updated_by: 1
+  id: 3916
+  company_id: 1
+  user_id: 1
+  report_layout_id: 1443
+  created_at: 2011/01/19 17:32:28
+report_layout_users_248: 
+  default_yn: ""
+  updated_at: 2011/01/19 14:20:20
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 1
+  updated_by: 1
+  id: 3874
+  company_id: 1
+  user_id: 0
+  report_layout_id: 1640
+  created_at: 2011/01/19 14:20:18
+report_layout_users_086: 
+  default_yn: N
+  updated_at: 2010/09/01 14:49:39
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  lock_version: 22
+  updated_by: 100
+  id: 3086
+  company_id: 1
+  user_id: 1
+  report_layout_id: 1563
+  created_at: 2010/09/01 13:01:44
+report_layout_users_167: 
+  default_yn: ""
+  updated_at: 2011/01/12 15:15:17
+  update_flag: Y
+  trans_flag: A
+  created_by: 2
+  lock_version: 2
+  updated_by: 1
+  id: 3763
+  company_id: 1
+  user_id: 0
+  report_layout_id: 900
+  created_at: 2011/01/07 12:01:11
+report_layout_users_193: 
+  default_yn: ""
+  updated_at: 2011/01/19 10:44:02
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 1
+  updated_by: 1
+  id: 3810
+  company_id: 1
+  user_id: 0
+  report_layout_id: 1257
+  created_at: 2011/01/19 10:44:02
+report_layout_users_275: 
+  default_yn: N
+  updated_at: 2011/01/19 17:44:04
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 5
+  updated_by: 1
+  id: 3920
+  company_id: 1
+  user_id: 1
+  report_layout_id: 1811
+  created_at: 2011/01/19 17:43:44
+report_layout_users_249: 
+  default_yn: ""
+  updated_at: 2011/01/19 14:20:30
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 1
+  updated_by: 1
+  id: 3875
+  company_id: 1
+  user_id: 0
+  report_layout_id: 1641
+  created_at: 2011/01/19 14:20:27
+report_layout_users_087: 
+  default_yn: N
+  updated_at: 2010/09/01 14:49:39
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  lock_version: 16
+  updated_by: 100
+  id: 3092
+  company_id: 1
+  user_id: 1
+  report_layout_id: 1592
+  created_at: 2010/09/01 13:03:53
+report_layout_users_168: 
+  default_yn: ""
+  updated_at: 2011/01/12 15:15:19
+  update_flag: Y
+  trans_flag: A
+  created_by: 2
+  lock_version: 2
+  updated_by: 1
+  id: 3764
+  company_id: 1
+  user_id: 0
+  report_layout_id: 901
+  created_at: 2011/01/07 12:01:13
+report_layout_users_194: 
+  default_yn: ""
+  updated_at: 2011/01/19 10:46:02
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 1
+  updated_by: 1
+  id: 3811
+  company_id: 1
+  user_id: 0
+  report_layout_id: 1340
+  created_at: 2011/01/19 10:46:02
+report_layout_users_276: 
+  default_yn: N
+  updated_at: 2011/01/19 17:44:04
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 4
+  updated_by: 1
+  id: 3921
+  company_id: 1
+  user_id: 1
+  report_layout_id: 1812
+  created_at: 2011/01/19 17:43:52
+report_layout_users_088: 
+  default_yn: N
+  updated_at: 2010/09/01 14:49:39
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  lock_version: 15
+  updated_by: 100
+  id: 3093
+  company_id: 1
+  user_id: 1
+  report_layout_id: 1594
+  created_at: 2010/09/01 13:04:49
+report_layout_users_169: 
+  default_yn: ""
+  updated_at: 2011/01/12 15:15:20
+  update_flag: Y
+  trans_flag: A
+  created_by: 2
+  lock_version: 2
+  updated_by: 1
+  id: 3765
+  company_id: 1
+  user_id: 0
+  report_layout_id: 1001
+  created_at: 2011/01/07 12:01:16
+report_layout_users_195: 
+  default_yn: ""
+  updated_at: 2011/01/19 10:46:03
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 1
+  updated_by: 1
+  id: 3812
+  company_id: 1
+  user_id: 0
+  report_layout_id: 1341
+  created_at: 2011/01/19 10:46:03
+report_layout_users_277: 
+  default_yn: N
+  updated_at: 2011/01/19 17:44:04
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 3
+  updated_by: 1
+  id: 3922
+  company_id: 1
+  user_id: 1
+  report_layout_id: 1813
+  created_at: 2011/01/19 17:43:56
+report_layout_users_089: 
+  default_yn: N
+  updated_at: 2010/09/01 14:49:39
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  lock_version: 13
+  updated_by: 100
+  id: 3095
+  company_id: 1
+  user_id: 1
+  report_layout_id: 1595
+  created_at: 2010/09/01 13:07:58
+report_layout_users_196: 
+  default_yn: ""
+  updated_at: 2011/01/19 10:47:55
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 1
+  updated_by: 1
+  id: 3813
+  company_id: 1
+  user_id: 0
+  report_layout_id: 1261
+  created_at: 2011/01/19 10:47:55
+report_layout_users_278: 
+  default_yn: N
+  updated_at: 2011/01/19 17:44:04
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 2
+  updated_by: 1
+  id: 3923
+  company_id: 1
+  user_id: 1
+  report_layout_id: 865
+  created_at: 2011/01/19 17:43:59
+report_layout_users_197: 
+  default_yn: ""
+  updated_at: 2011/01/19 10:52:13
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 1
+  updated_by: 1
+  id: 3814
+  company_id: 1
+  user_id: 0
+  report_layout_id: 1249
+  created_at: 2011/01/19 10:52:13
+report_layout_users_279: 
+  default_yn: Y
+  updated_at: 2011/01/19 17:44:04
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 1
+  updated_by: 1
+  id: 3924
+  company_id: 1
+  user_id: 1
+  report_layout_id: 966
+  created_at: 2011/01/19 17:44:04
+report_layout_users_198: 
+  default_yn: ""
+  updated_at: 2011/01/19 10:52:15
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 1
+  updated_by: 1
+  id: 3815
+  company_id: 1
+  user_id: 0
+  report_layout_id: 1250
+  created_at: 2011/01/19 10:52:15
+report_layout_users_199: 
+  default_yn: ""
+  updated_at: 2011/01/19 10:52:17
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 1
+  updated_by: 1
+  id: 3816
+  company_id: 1
+  user_id: 0
+  report_layout_id: 1251
+  created_at: 2011/01/19 10:52:17
+report_layout_users_010: 
+  default_yn: ""
+  updated_at: 2010/07/15 12:01:29
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  lock_version: 3
+  updated_by: 100
+  id: 1640
+  company_id: 1
+  user_id: 0
+  report_layout_id: 1120
+  created_at: 2010/07/10 15:30:59
+report_layout_users_011: 
+  default_yn: ""
+  updated_at: 2010/08/07 17:08:11
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  lock_version: 3
+  updated_by: 100
+  id: 1641
+  company_id: 1
+  user_id: 0
+  report_layout_id: 1121
+  created_at: 2010/07/10 15:37:32
+report_layout_users_200: 
+  default_yn: ""
+  updated_at: 2011/01/19 10:53:18
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 1
+  updated_by: 1
+  id: 3817
+  company_id: 1
+  user_id: 0
+  report_layout_id: 1504
+  created_at: 2011/01/19 10:53:18
+report_layout_users_012: 
+  default_yn: ""
+  updated_at: 2010/07/24 15:27:48
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  lock_version: 6
+  updated_by: 100
+  id: 1660
+  company_id: 1
+  user_id: 0
+  report_layout_id: 1140
+  created_at: 2010/07/11 11:20:51
+report_layout_users_120: 
+  default_yn: ""
+  updated_at: 2010/10/19 18:37:13
+  update_flag: Y
+  trans_flag: A
+  created_by: 2
+  lock_version: 1
+  updated_by: 2
+  id: 3482
+  company_id: 1
+  user_id: 0
+  report_layout_id: 1770
+  created_at: 2010/10/19 18:37:13
+report_layout_users_201: 
+  default_yn: ""
+  updated_at: 2011/01/19 10:59:14
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 1
+  updated_by: 1
+  id: 3818
+  company_id: 1
+  user_id: 0
+  report_layout_id: 1246
+  created_at: 2011/01/19 10:59:14
+report_layout_users_013: 
+  default_yn: ""
+  updated_at: 2010/07/14 12:43:07
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  lock_version: 3
+  updated_by: 100
+  id: 1661
+  company_id: 1
+  user_id: 0
+  report_layout_id: 1141
+  created_at: 2010/07/11 14:27:05
+report_layout_users_121: 
+  default_yn: ""
+  updated_at: 2010/10/19 18:37:14
+  update_flag: Y
+  trans_flag: A
+  created_by: 2
+  lock_version: 1
+  updated_by: 2
+  id: 3483
+  company_id: 1
+  user_id: 0
+  report_layout_id: 1771
+  created_at: 2010/10/19 18:37:14
+report_layout_users_202: 
+  default_yn: ""
+  updated_at: 2011/01/19 10:59:16
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 1
+  updated_by: 1
+  id: 3819
+  company_id: 1
+  user_id: 0
+  report_layout_id: 1247
+  created_at: 2011/01/19 10:59:16
+report_layout_users_014: 
+  default_yn: ""
+  updated_at: 2010/07/21 17:39:06
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  lock_version: 1
+  updated_by: 100
+  id: 1662
+  company_id: 1
+  user_id: 0
+  report_layout_id: 1142
+  created_at: 2010/07/11 16:47:35
+report_layout_users_040: 
+  default_yn: ""
+  updated_at: 2010/08/16 09:59:47
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  lock_version: 1
+  updated_by: 100
+  id: 2663
+  company_id: 1
+  user_id: 0
+  report_layout_id: 1320
+  created_at: 2010/08/16 09:59:47
+report_layout_users_310: 
+  default_yn: N
+  updated_at: 2011/01/21 10:44:02
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 4
+  updated_by: 1
+  id: 3968
+  company_id: 1
+  user_id: 1
+  report_layout_id: 1689
+  created_at: 2011/01/19 18:12:27
+report_layout_users_122: 
+  default_yn: ""
+  updated_at: 2010/10/19 18:37:17
+  update_flag: Y
+  trans_flag: A
+  created_by: 2
+  lock_version: 1
+  updated_by: 2
+  id: 3484
+  company_id: 1
+  user_id: 0
+  report_layout_id: 1772
+  created_at: 2010/10/19 18:37:16
+report_layout_users_203: 
+  default_yn: ""
+  updated_at: 2011/01/19 10:59:19
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 1
+  updated_by: 1
+  id: 3820
+  company_id: 1
+  user_id: 0
+  report_layout_id: 1248
+  created_at: 2011/01/19 10:59:19
+report_layout_users_015: 
+  default_yn: ""
+  updated_at: 2011/01/07 12:05:36
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  lock_version: 5
+  updated_by: 2
+  id: 1710
+  company_id: 1
+  user_id: 0
+  report_layout_id: 949
+  created_at: 2010/07/12 15:25:03
+report_layout_users_041: 
+  default_yn: ""
+  updated_at: 2010/08/16 10:06:20
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  lock_version: 1
+  updated_by: 100
+  id: 2666
+  company_id: 1
+  user_id: 0
+  report_layout_id: 1327
+  created_at: 2010/08/16 10:06:20
+report_layout_users_311: 
+  default_yn: N
+  updated_at: 2011/01/21 10:44:03
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 3
+  updated_by: 1
+  id: 3969
+  company_id: 1
+  user_id: 1
+  report_layout_id: 1690
+  created_at: 2011/01/19 18:12:31
+report_layout_users_230: 
+  default_yn: ""
+  updated_at: 2011/01/19 12:12:38
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 1
+  updated_by: 1
+  id: 3854
+  company_id: 1
+  user_id: 0
+  report_layout_id: 1180
+  created_at: 2011/01/19 12:12:38
+report_layout_users_123: 
+  default_yn: ""
+  updated_at: 2010/10/19 18:38:21
+  update_flag: Y
+  trans_flag: A
+  created_by: 2
+  lock_version: 1
+  updated_by: 2
+  id: 3485
+  company_id: 1
+  user_id: 0
+  report_layout_id: 1761
+  created_at: 2010/10/19 18:38:21
+report_layout_users_204: 
+  default_yn: ""
+  updated_at: 2011/01/19 11:01:46
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 1
+  updated_by: 1
+  id: 3821
+  company_id: 1
+  user_id: 0
+  report_layout_id: 1442
+  created_at: 2011/01/19 11:01:46
+report_layout_users_016: 
+  default_yn: ""
+  updated_at: 2011/01/07 12:05:40
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  lock_version: 5
+  updated_by: 2
+  id: 1712
+  company_id: 1
+  user_id: 0
+  report_layout_id: 1008
+  created_at: 2010/07/12 15:25:07
+report_layout_users_042: 
+  default_yn: ""
+  updated_at: 2010/08/16 10:13:52
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  lock_version: 1
+  updated_by: 100
+  id: 2668
+  company_id: 1
+  user_id: 0
+  report_layout_id: 1332
+  created_at: 2010/08/16 10:13:52
+report_layout_users_312: 
+  default_yn: Y
+  updated_at: 2011/01/21 10:44:05
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 2
+  updated_by: 1
+  id: 3970
+  company_id: 1
+  user_id: 1
+  report_layout_id: 1691
+  created_at: 2011/01/19 18:12:36
+report_layout_users_231: 
+  default_yn: ""
+  updated_at: 2011/01/19 12:12:41
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 1
+  updated_by: 1
+  id: 3855
+  company_id: 1
+  user_id: 0
+  report_layout_id: 1181
+  created_at: 2011/01/19 12:12:41
+report_layout_users_150: 
+  default_yn: Y
+  updated_at: 2010/12/07 13:08:08
+  update_flag: Y
+  trans_flag: A
+  created_by: 2
+  lock_version: 1
+  updated_by: 2
+  id: 3576
+  company_id: 1
+  user_id: 2
+  report_layout_id: 1329
+  created_at: 2010/12/07 07:38:08
+report_layout_users_205: 
+  default_yn: ""
+  updated_at: 2011/01/19 11:04:12
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 1
+  updated_by: 1
+  id: 3823
+  company_id: 1
+  user_id: 0
+  report_layout_id: 1440
+  created_at: 2011/01/19 11:04:12
+report_layout_users_017: 
+  default_yn: Y
+  updated_at: 2010/07/15 18:31:38
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  lock_version: 1
+  updated_by: 100
+  id: 1910
+  company_id: 1
+  user_id: 1
+  report_layout_id: 1262
+  created_at: 2010/07/15 18:31:38
+report_layout_users_043: 
+  default_yn: ""
+  updated_at: 2010/08/19 11:42:44
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  lock_version: 0
+  updated_by: 100
+  id: 2721
+  company_id: 1
+  user_id: 0
+  report_layout_id: 1460
+  created_at: 2010/08/19 11:42:44
+report_layout_users_124: 
+  default_yn: ""
+  updated_at: 2010/10/19 18:38:22
+  update_flag: Y
+  trans_flag: A
+  created_by: 2
+  lock_version: 1
+  updated_by: 2
+  id: 3486
+  company_id: 1
+  user_id: 0
+  report_layout_id: 1762
+  created_at: 2010/10/19 18:38:22
+report_layout_users_313: 
+  default_yn: N
+  updated_at: 2011/01/19 18:13:57
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 3
+  updated_by: 1
+  id: 3973
+  company_id: 1
+  user_id: 1
+  report_layout_id: 1683
+  created_at: 2011/01/19 18:13:42
+report_layout_users_232: 
+  default_yn: N
+  updated_at: 2011/01/19 15:43:56
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 4
+  updated_by: 1
+  id: 3856
+  company_id: 1
+  user_id: 1
+  report_layout_id: 1361
+  created_at: 2011/01/19 12:16:34
+report_layout_users_151: 
+  default_yn: ""
+  updated_at: 2010/12/09 18:23:36
+  update_flag: Y
+  trans_flag: A
+  created_by: 2
+  lock_version: 3
+  updated_by: 2
+  id: 3578
+  company_id: 1
+  user_id: 0
+  report_layout_id: 1872
+  created_at: 2010/12/09 18:05:33
+report_layout_users_206: 
+  default_yn: ""
+  updated_at: 2011/01/19 11:04:13
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 1
+  updated_by: 1
+  id: 3824
+  company_id: 1
+  user_id: 0
+  report_layout_id: 1441
+  created_at: 2011/01/19 11:04:13
+report_layout_users_018: 
+  default_yn: N
+  updated_at: 2011/01/12 15:02:16
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  lock_version: 7
+  updated_by: 1
+  id: 2016
+  company_id: 1
+  user_id: 1
+  report_layout_id: 1003
+  created_at: 2010/07/19 15:38:50
+report_layout_users_044: 
+  default_yn: ""
+  updated_at: 2010/08/19 11:42:45
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  lock_version: 0
+  updated_by: 100
+  id: 2722
+  company_id: 1
+  user_id: 0
+  report_layout_id: 1461
+  created_at: 2010/08/19 11:42:45
+report_layout_users_070: 
+  default_yn: N
+  updated_at: 2010/08/31 15:25:43
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  lock_version: 5
+  updated_by: 100
+  id: 2973
+  company_id: 1
+  user_id: 1
+  report_layout_id: 1557
+  created_at: 2010/08/31 15:25:23
+report_layout_users_125: 
+  default_yn: ""
+  updated_at: 2010/10/19 18:38:24
+  update_flag: Y
+  trans_flag: A
+  created_by: 2
+  lock_version: 1
+  updated_by: 2
+  id: 3487
+  company_id: 1
+  user_id: 0
+  report_layout_id: 1763
+  created_at: 2010/10/19 18:38:24
+report_layout_users_314: 
+  default_yn: N
+  updated_at: 2011/01/19 18:13:57
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 2
+  updated_by: 1
+  id: 3974
+  company_id: 1
+  user_id: 1
+  report_layout_id: 1681
+  created_at: 2011/01/19 18:13:53
+report_layout_users_233: 
+  default_yn: Y
+  updated_at: 2011/01/19 15:43:55
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 3
+  updated_by: 1
+  id: 3857
+  company_id: 1
+  user_id: 1
+  report_layout_id: 822
+  created_at: 2011/01/19 12:16:36
+report_layout_users_207: 
+  default_yn: ""
+  updated_at: 2011/01/19 11:08:32
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 1
+  updated_by: 1
+  id: 3825
+  company_id: 1
+  user_id: 0
+  report_layout_id: 767
+  created_at: 2011/01/19 11:08:32
+report_layout_users_019: 
+  default_yn: N
+  updated_at: 2011/01/12 15:02:14
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  lock_version: 6
+  updated_by: 1
+  id: 2027
+  company_id: 1
+  user_id: 1
+  report_layout_id: 940
+  created_at: 2010/07/19 17:34:42
+report_layout_users_045: 
+  default_yn: ""
+  updated_at: 2010/08/19 11:42:46
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  lock_version: 0
+  updated_by: 100
+  id: 2723
+  company_id: 1
+  user_id: 0
+  report_layout_id: 1462
+  created_at: 2010/08/19 11:42:46
+report_layout_users_071: 
+  default_yn: N
+  updated_at: 2010/08/31 15:25:43
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  lock_version: 2
+  updated_by: 100
+  id: 2976
+  company_id: 1
+  user_id: 1
+  report_layout_id: 1558
+  created_at: 2010/08/31 15:25:35
+report_layout_users_126: 
+  default_yn: Y
+  updated_at: 2010/10/20 16:54:39
+  update_flag: Y
+  trans_flag: A
+  created_by: 2
+  lock_version: 1
+  updated_by: 2
+  id: 3488
+  company_id: 1
+  user_id: 2
+  report_layout_id: 1766
+  created_at: 2010/10/20 16:54:39
+report_layout_users_152: 
+  default_yn: ""
+  updated_at: 2011/01/05 11:41:15
+  update_flag: Y
+  trans_flag: A
+  created_by: 2
+  lock_version: 2
+  updated_by: 2
+  id: 3579
+  company_id: 1
+  user_id: 0
+  report_layout_id: 1873
+  created_at: 2010/12/09 18:29:28
+report_layout_users_315: 
+  default_yn: Y
+  updated_at: 2011/01/19 18:13:57
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 1
+  updated_by: 1
+  id: 3975
+  company_id: 1
+  user_id: 1
+  report_layout_id: 1680
+  created_at: 2011/01/19 18:13:57
+report_layout_users_260: 
+  default_yn: ""
+  updated_at: 2011/01/19 17:04:45
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 2
+  updated_by: 1
+  id: 3892
+  company_id: 1
+  user_id: 0
+  report_layout_id: 764
+  created_at: 2011/01/19 15:45:45
+report_layout_users_234: 
+  default_yn: ""
+  updated_at: 2011/01/19 12:18:19
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 1
+  updated_by: 1
+  id: 3858
+  company_id: 1
+  user_id: 0
+  report_layout_id: 1182
+  created_at: 2011/01/19 12:18:19
+report_layout_users_208: 
+  default_yn: ""
+  updated_at: 2011/01/19 11:08:33
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 1
+  updated_by: 1
+  id: 3826
+  company_id: 1
+  user_id: 0
+  report_layout_id: 1260
+  created_at: 2011/01/19 11:08:33
+report_layout_users_046: 
+  default_yn: N
+  updated_at: 2010/08/19 12:24:48
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  lock_version: 4
+  updated_by: 100
+  id: 2734
+  company_id: 1
+  user_id: 1
+  report_layout_id: 1465
+  created_at: 2010/08/19 12:24:36
+report_layout_users_072: 
+  default_yn: Y
+  updated_at: 2010/08/31 15:25:43
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  lock_version: 0
+  updated_by: 100
+  id: 2978
+  company_id: 1
+  user_id: 1
+  report_layout_id: 1559
+  created_at: 2010/08/31 15:25:43
+report_layout_users_127: 
+  default_yn: Y
+  updated_at: 2010/10/22 18:05:06
+  update_flag: Y
+  trans_flag: A
+  created_by: 2
+  lock_version: 1
+  updated_by: 2
+  id: 3503
+  company_id: 1
+  user_id: 2
+  report_layout_id: 1851
+  created_at: 2010/10/22 18:05:06
+report_layout_users_153: 
+  default_yn: N
+  updated_at: 2011/01/19 18:09:05
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 5
+  updated_by: 1
+  id: 3586
+  company_id: 1
+  user_id: 1
+  report_layout_id: 1865
+  created_at: 2010/12/17 11:16:41
+report_layout_users_316: 
+  default_yn: N
+  updated_at: 2011/01/19 18:27:21
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 7
+  updated_by: 1
+  id: 3977
+  company_id: 1
+  user_id: 1
+  report_layout_id: 952
+  created_at: 2011/01/19 18:21:59
+report_layout_users_261: 
+  default_yn: ""
+  updated_at: 2011/01/19 15:58:07
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 1
+  updated_by: 1
+  id: 3893
+  company_id: 1
+  user_id: 0
+  report_layout_id: 1400
+  created_at: 2011/01/19 15:58:07
+report_layout_users_235: 
+  default_yn: ""
+  updated_at: 2011/01/19 12:18:22
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 1
+  updated_by: 1
+  id: 3859
+  company_id: 1
+  user_id: 0
+  report_layout_id: 1183
+  created_at: 2011/01/19 12:18:22
+report_layout_users_209: 
+  default_yn: ""
+  updated_at: 2011/01/19 11:14:32
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 1
+  updated_by: 1
+  id: 3828
+  company_id: 1
+  user_id: 0
+  report_layout_id: 1500
+  created_at: 2011/01/19 11:14:31
+report_layout_users_047: 
+  default_yn: N
+  updated_at: 2010/08/19 12:24:48
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  lock_version: 2
+  updated_by: 100
+  id: 2736
+  company_id: 1
+  user_id: 1
+  report_layout_id: 1463
+  created_at: 2010/08/19 12:24:40
+report_layout_users_073: 
+  default_yn: N
+  updated_at: 2010/08/31 17:07:42
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  lock_version: 21
+  updated_by: 100
+  id: 2984
+  company_id: 1
+  user_id: 1
+  report_layout_id: 1562
+  created_at: 2010/08/31 16:27:35
+report_layout_users_128: 
+  default_yn: ""
+  updated_at: 2010/10/29 12:36:19
+  update_flag: Y
+  trans_flag: A
+  created_by: 2
+  lock_version: 1
+  updated_by: 2
+  id: 3508
+  company_id: 1
+  user_id: 0
+  report_layout_id: 1853
+  created_at: 2010/10/29 12:18:48
+report_layout_users_154: 
+  default_yn: Y
+  updated_at: 2010/12/28 11:19:23
+  update_flag: Y
+  trans_flag: A
+  created_by: 2
+  lock_version: 0
+  updated_by: 2
+  id: 3606
+  company_id: 1
+  user_id: 2
+  report_layout_id: 1876
+  created_at: 2010/12/28 11:19:23
+report_layout_users_180: 
+  default_yn: ""
+  updated_at: 2011/01/17 16:38:18
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 1
+  updated_by: 1
+  id: 3785
+  company_id: 1
+  user_id: 0
+  report_layout_id: 961
+  created_at: 2011/01/17 16:38:18
+report_layout_users_317: 
+  default_yn: N
+  updated_at: 2011/01/19 18:27:21
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 6
+  updated_by: 1
+  id: 3978
+  company_id: 1
+  user_id: 1
+  report_layout_id: 1800
+  created_at: 2011/01/19 18:22:02
+report_layout_users_262: 
+  default_yn: ""
+  updated_at: 2011/01/19 15:58:08
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 1
+  updated_by: 1
+  id: 3894
+  company_id: 1
+  user_id: 0
+  report_layout_id: 1401
+  created_at: 2011/01/19 15:58:08
+report_layout_users_236: 
+  default_yn: ""
+  updated_at: 2011/01/19 12:24:09
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 1
+  updated_by: 1
+  id: 3860
+  company_id: 1
+  user_id: 0
+  report_layout_id: 1200
+  created_at: 2011/01/19 12:24:08
+report_layout_users_048: 
+  default_yn: Y
+  updated_at: 2010/08/19 12:24:48
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  lock_version: 1
+  updated_by: 100
+  id: 2737
+  company_id: 1
+  user_id: 1
+  report_layout_id: 1464
+  created_at: 2010/08/19 12:24:48
+report_layout_users_074: 
+  default_yn: N
+  updated_at: 2010/08/31 17:07:42
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  lock_version: 3
+  updated_by: 100
+  id: 3003
+  company_id: 1
+  user_id: 1
+  report_layout_id: 1560
+  created_at: 2010/08/31 17:07:35
+report_layout_users_129: 
+  default_yn: ""
+  updated_at: 2010/11/30 14:43:23
+  update_flag: Y
+  trans_flag: A
+  created_by: 2
+  lock_version: 2
+  updated_by: 1
+  id: 3509
+  company_id: 1
+  user_id: 0
+  report_layout_id: 1854
+  created_at: 2010/10/29 12:37:19
+report_layout_users_155: 
+  default_yn: Y
+  updated_at: 2010/12/28 11:22:29
+  update_flag: Y
+  trans_flag: A
+  created_by: 2
+  lock_version: 0
+  updated_by: 2
+  id: 3609
+  company_id: 1
+  user_id: 2
+  report_layout_id: 1878
+  created_at: 2010/12/28 11:22:29
+report_layout_users_181: 
+  default_yn: ""
+  updated_at: 2011/01/17 16:38:20
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 1
+  updated_by: 1
+  id: 3786
+  company_id: 1
+  user_id: 0
+  report_layout_id: 962
+  created_at: 2011/01/17 16:38:19
+report_layout_users_318: 
+  default_yn: N
+  updated_at: 2011/01/19 18:27:21
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 5
+  updated_by: 1
+  id: 3979
+  company_id: 1
+  user_id: 1
+  report_layout_id: 1009
+  created_at: 2011/01/19 18:22:06
+report_layout_users_263: 
+  default_yn: ""
+  updated_at: 2011/01/19 15:58:10
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 1
+  updated_by: 1
+  id: 3895
+  company_id: 1
+  user_id: 0
+  report_layout_id: 1402
+  created_at: 2011/01/19 15:58:10
+report_layout_users_237: 
+  default_yn: ""
+  updated_at: 2011/01/19 12:24:11
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 1
+  updated_by: 1
+  id: 3861
+  company_id: 1
+  user_id: 0
+  report_layout_id: 1201
+  created_at: 2011/01/19 12:24:11
+report_layout_users_049: 
+  default_yn: ""
+  updated_at: 2011/01/14 16:32:49
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  lock_version: 2
+  updated_by: 1
+  id: 2792
+  company_id: 1
+  user_id: 0
+  report_layout_id: 964
+  created_at: 2010/08/22 14:41:58
+report_layout_users_075: 
+  default_yn: Y
+  updated_at: 2010/08/31 17:07:42
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  lock_version: 1
+  updated_by: 100
+  id: 3005
+  company_id: 1
+  user_id: 1
+  report_layout_id: 1561
+  created_at: 2010/08/31 17:07:41
+report_layout_users_156: 
+  default_yn: N
+  updated_at: 2010/12/28 14:45:12
+  update_flag: Y
+  trans_flag: A
+  created_by: 2
+  lock_version: 5
+  updated_by: 2
+  id: 3613
+  company_id: 1
+  user_id: 2
+  report_layout_id: 1017
+  created_at: 2010/12/28 14:44:49
+report_layout_users_182: 
+  default_yn: ""
+  updated_at: 2011/01/17 16:38:21
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 1
+  updated_by: 1
+  id: 3787
+  company_id: 1
+  user_id: 0
+  report_layout_id: 1014
+  created_at: 2011/01/17 16:38:21
+report_layout_users_319: 
+  default_yn: N
+  updated_at: 2011/01/19 18:27:21
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 4
+  updated_by: 1
+  id: 3980
+  company_id: 1
+  user_id: 1
+  report_layout_id: 1801
+  created_at: 2011/01/19 18:22:09
+report_layout_users_290: 
+  default_yn: N
+  updated_at: 2011/01/19 17:57:43
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 2
+  updated_by: 1
+  id: 3940
+  company_id: 1
+  user_id: 1
+  report_layout_id: 1888
+  created_at: 2011/01/19 17:57:41
+report_layout_users_264: 
+  default_yn: ""
+  updated_at: 2011/01/19 16:02:47
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 1
+  updated_by: 1
+  id: 3896
+  company_id: 1
+  user_id: 0
+  report_layout_id: 1385
+  created_at: 2011/01/19 16:02:47
+report_layout_users_238: 
+  default_yn: ""
+  updated_at: 2011/01/19 12:24:14
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 1
+  updated_by: 1
+  id: 3862
+  company_id: 1
+  user_id: 0
+  report_layout_id: 1202
+  created_at: 2011/01/19 12:24:14
+report_layout_users_076: 
+  default_yn: N
+  updated_at: 2010/09/01 14:49:38
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  lock_version: 73
+  updated_by: 100
+  id: 3035
+  company_id: 1
+  user_id: 1
+  report_layout_id: 1564
+  created_at: 2010/09/01 12:09:24
+report_layout_users_157: 
+  default_yn: N
+  updated_at: 2011/01/19 18:08:13
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 9
+  updated_by: 1
+  id: 3620
+  company_id: 1
+  user_id: 1
+  report_layout_id: 1807
+  created_at: 2010/12/29 15:06:43
+report_layout_users_183: 
+  default_yn: ""
+  updated_at: 2011/01/17 16:44:10
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 1
+  updated_by: 1
+  id: 3788
+  company_id: 1
+  user_id: 0
+  report_layout_id: 848
+  created_at: 2011/01/17 16:44:10
+report_layout_users_291: 
+  default_yn: Y
+  updated_at: 2011/01/19 17:57:43
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 1
+  updated_by: 1
+  id: 3941
+  company_id: 1
+  user_id: 1
+  report_layout_id: 1887
+  created_at: 2011/01/19 17:57:43
+report_layout_users_265: 
+  default_yn: ""
+  updated_at: 2011/01/19 16:02:48
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 1
+  updated_by: 1
+  id: 3897
+  company_id: 1
+  user_id: 0
+  report_layout_id: 1386
+  created_at: 2011/01/19 16:02:48
+report_layout_users_239: 
+  default_yn: ""
+  updated_at: 2011/01/19 12:38:47
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 1
+  updated_by: 1
+  id: 3863
+  company_id: 1
+  user_id: 0
+  report_layout_id: 1203
+  created_at: 2011/01/19 12:38:46
+report_layout_users_077: 
+  default_yn: N
+  updated_at: 2010/09/01 14:49:39
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  lock_version: 60
+  updated_by: 100
+  id: 3047
+  company_id: 1
+  user_id: 1
+  report_layout_id: 1584
+  created_at: 2010/09/01 12:11:40
+report_layout_users_158: 
+  default_yn: ""
+  updated_at: 2011/01/06 13:01:59
+  update_flag: Y
+  trans_flag: A
+  created_by: 2
+  lock_version: 8
+  updated_by: 2
+  id: 3627
+  company_id: 1
+  user_id: 0
+  report_layout_id: 1881
+  created_at: 2011/01/05 11:52:29
+report_layout_users_184: 
+  default_yn: ""
+  updated_at: 2011/01/17 16:44:12
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 1
+  updated_by: 1
+  id: 3789
+  company_id: 1
+  user_id: 0
+  report_layout_id: 963
+  created_at: 2011/01/17 16:44:12
+report_layout_users_292: 
+  default_yn: N
+  updated_at: 2011/01/19 18:07:27
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 2
+  updated_by: 1
+  id: 3950
+  company_id: 1
+  user_id: 1
+  report_layout_id: 942
+  created_at: 2011/01/19 18:07:23
+report_layout_users_266: 
+  default_yn: ""
+  updated_at: 2011/01/19 16:11:17
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 1
+  updated_by: 1
+  id: 3900
+  company_id: 1
+  user_id: 0
+  report_layout_id: 1426
+  created_at: 2011/01/19 16:11:17
+report_layout_users_078: 
+  default_yn: N
+  updated_at: 2010/09/01 14:49:39
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  lock_version: 48
+  updated_by: 100
+  id: 3060
+  company_id: 1
+  user_id: 1
+  report_layout_id: 1583
+  created_at: 2010/09/01 12:14:06
+report_layout_users_159: 
+  default_yn: Y
+  updated_at: 2011/01/05 12:33:48
+  update_flag: Y
+  trans_flag: A
+  created_by: 2
+  lock_version: 1
+  updated_by: 2
+  id: 3638
+  company_id: 1
+  user_id: 2
+  report_layout_id: 1866
+  created_at: 2011/01/05 12:33:48
+report_layout_users_185: 
+  default_yn: ""
+  updated_at: 2011/01/17 16:44:15
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 1
+  updated_by: 1
+  id: 3790
+  company_id: 1
+  user_id: 0
+  report_layout_id: 1015
+  created_at: 2011/01/17 16:44:14
+report_layout_users_293: 
+  default_yn: Y
+  updated_at: 2011/01/19 18:07:27
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 1
+  updated_by: 1
+  id: 3951
+  company_id: 1
+  user_id: 1
+  report_layout_id: 1004
+  created_at: 2011/01/19 18:07:27
+report_layout_users_267: 
+  default_yn: ""
+  updated_at: 2011/01/19 16:11:18
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 1
+  updated_by: 1
+  id: 3901
+  company_id: 1
+  user_id: 0
+  report_layout_id: 1427
+  created_at: 2011/01/19 16:11:18
+report_layout_users_079: 
+  default_yn: N
+  updated_at: 2010/09/01 14:49:39
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  lock_version: 38
+  updated_by: 100
+  id: 3070
+  company_id: 1
+  user_id: 1
+  report_layout_id: 1580
+  created_at: 2010/09/01 12:20:24
+report_layout_users_186: 
+  default_yn: ""
+  updated_at: 2011/01/17 16:47:53
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 1
+  updated_by: 1
+  id: 3791
+  company_id: 1
+  user_id: 0
+  report_layout_id: 1480
+  created_at: 2011/01/17 16:47:53
+report_layout_users_294: 
+  default_yn: N
+  updated_at: 2011/01/19 18:07:43
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 2
+  updated_by: 1
+  id: 3952
+  company_id: 1
+  user_id: 1
+  report_layout_id: 903
+  created_at: 2011/01/19 18:07:38
+report_layout_users_268: 
+  default_yn: ""
+  updated_at: 2011/01/19 16:11:19
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 1
+  updated_by: 1
+  id: 3902
+  company_id: 1
+  user_id: 0
+  report_layout_id: 1428
+  created_at: 2011/01/19 16:11:19
+report_layout_users_187: 
+  default_yn: N
+  updated_at: 2011/01/21 15:11:19
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 5
+  updated_by: 1
+  id: 3801
+  company_id: 1
+  user_id: 1
+  report_layout_id: 1874
+  created_at: 2011/01/18 18:10:02
+report_layout_users_295: 
+  default_yn: Y
+  updated_at: 2011/01/19 18:07:43
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 1
+  updated_by: 1
+  id: 3953
+  company_id: 1
+  user_id: 1
+  report_layout_id: 1002
+  created_at: 2011/01/19 18:07:43
+report_layout_users_269: 
+  default_yn: ""
+  updated_at: 2011/01/19 16:15:46
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 1
+  updated_by: 1
+  id: 3903
+  company_id: 1
+  user_id: 0
+  report_layout_id: 1420
+  created_at: 2011/01/19 16:15:46
+report_layout_users_188: 
+  default_yn: N
+  updated_at: 2011/01/21 15:11:19
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 5
+  updated_by: 1
+  id: 3802
+  company_id: 1
+  user_id: 1
+  report_layout_id: 862
+  created_at: 2011/01/18 18:10:07
+report_layout_users_296: 
+  default_yn: N
+  updated_at: 2011/01/19 18:08:13
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 5
+  updated_by: 1
+  id: 3954
+  company_id: 1
+  user_id: 1
+  report_layout_id: 1806
+  created_at: 2011/01/19 18:07:59
+report_layout_users_189: 
+  default_yn: N
+  updated_at: 2011/01/21 15:11:19
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 4
+  updated_by: 1
+  id: 3803
+  company_id: 1
+  user_id: 1
+  report_layout_id: 1603
+  created_at: 2011/01/18 18:12:31
+report_layout_users_297: 
+  default_yn: N
+  updated_at: 2011/01/19 18:08:13
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 4
+  updated_by: 1
+  id: 3955
+  company_id: 1
+  user_id: 1
+  report_layout_id: 1805
+  created_at: 2011/01/19 18:08:02
+report_layout_users_298: 
+  default_yn: N
+  updated_at: 2011/01/19 18:08:13
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 3
+  updated_by: 1
+  id: 3956
+  company_id: 1
+  user_id: 1
+  report_layout_id: 1006
+  created_at: 2011/01/19 18:08:06
+report_layout_users_001: 
+  default_yn: N
+  updated_at: 2010/11/11 19:09:25
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  lock_version: 17
+  updated_by: 1
+  id: 1208
+  company_id: 1
+  user_id: 1
+  report_layout_id: 980
+  created_at: 2010/06/22 18:04:48
+report_layout_users_299: 
+  default_yn: N
+  updated_at: 2011/01/19 18:08:13
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 2
+  updated_by: 1
+  id: 3957
+  company_id: 1
+  user_id: 1
+  report_layout_id: 946
+  created_at: 2011/01/19 18:08:09
+report_layout_users_002: 
+  default_yn: ""
+  updated_at: 2010/08/07 14:52:55
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  lock_version: 6
+  updated_by: 100
+  id: 1500
+  company_id: 1
+  user_id: 0
+  report_layout_id: 1020
+  created_at: 2010/06/30 10:35:42
+report_layout_users_003: 
+  default_yn: N
+  updated_at: 2010/08/07 17:04:27
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  lock_version: 9
+  updated_by: 100
+  id: 1540
+  company_id: 1
+  user_id: 1
+  report_layout_id: 1060
+  created_at: 2010/07/02 13:02:11
+report_layout_users_110: 
+  default_yn: N
+  updated_at: 2011/01/19 16:45:52
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  lock_version: 4
+  updated_by: 1
+  id: 3453
+  company_id: 1
+  user_id: 1
+  report_layout_id: 1685
+  created_at: 2010/09/15 10:35:06
+report_layout_users_004: 
+  default_yn: ""
+  updated_at: 2010/08/09 10:28:13
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  lock_version: 4
+  updated_by: 100
+  id: 1560
+  company_id: 1
+  user_id: 0
+  report_layout_id: 1080
+  created_at: 2010/07/03 17:04:50
+report_layout_users_030: 
+  default_yn: N
+  updated_at: 2010/07/29 16:14:01
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  lock_version: 2
+  updated_by: 100
+  id: 2326
+  company_id: 1
+  user_id: 1
+  report_layout_id: 1334
+  created_at: 2010/07/29 16:13:58
+report_layout_users_111: 
+  default_yn: Y
+  updated_at: 2011/01/19 16:45:51
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  lock_version: 3
+  updated_by: 1
+  id: 3454
+  company_id: 1
+  user_id: 1
+  report_layout_id: 1684
+  created_at: 2010/09/15 10:35:08

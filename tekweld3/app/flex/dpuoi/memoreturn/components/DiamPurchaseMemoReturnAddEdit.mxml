@@ -1,0 +1,352 @@
+<?xml version="1.0" encoding="utf-8"?>
+<gencomponents:AddEdit  xmlns:gencomponents="com.generic.components.*" 
+	xmlns:customcomponents="com.generic.customcomponents.*" creationComplete="init()" 
+	xmlns:mx="http://www.adobe.com/2006/mxml" 
+	width="100%" height="100%" verticalGap="0" paddingTop="0">
+	
+	<mx:Script source="../Scripts/DiamPurchaseMemoReturnAddEditScript.as"/>
+	
+	<mx:HBox id="HBoxHeader" width="100%"  horizontalGap="0" verticalGap="0" verticalAlign="top" 
+		paddingBottom="0" paddingTop="0">
+		
+		<mx:VBox width="0" height="0" verticalGap="0" horizontalGap="0" verticalAlign="top" visible="false">
+			<customcomponents:GenTextInput id="tiBill_nm" width="0" height="0" visible="false" editable="false"
+				xmlTag="bill_name" updatableFlag="true" tableName="diamond_purchase" />	
+			<customcomponents:GenTextInput id="tiTrans_qty_pcs" width="0" height="0" visible="false" editable="false"
+				xmlTag="total_pcs" updatableFlag="true" tableName="diamond_purchase" />
+			<customcomponents:GenTextInput id="tiTrans_qty_wt" width="0" height="0" visible="false" editable="false"
+				xmlTag="total_wt" updatableFlag="true" tableName="diamond_purchase" />
+           <customcomponents:GenTextInput id="tiShip_zip" width="0" height="0"  visible="false" editable="false"
+				xmlTag="ship_zip" updatableFlag="true" tableName="diamond_purchase" />					
+			<customcomponents:GenTextInput id="tiBill_zip" width="0" height="0"  visible="false" editable="false"
+				xmlTag="bill_zip" updatableFlag="true" tableName="diamond_purchase" />					
+			<customcomponents:GenTextInput id="tiSerial_no" width="0" text="0" height="0" visible="false" editable="false" />
+        </mx:VBox>
+
+		<mx:VRule height="100%" visible="false"/>
+				
+		<mx:VBox width="100%" height="100%" horizontalGap="0" verticalGap="3" paddingBottom="0" paddingTop="0">
+			<mx:Spacer height="4%"/>
+			<mx:VBox id="vbGetOrder" width="100%"  verticalGap="0">
+				<mx:HBox width="100%" height="4%" verticalAlign="middle" horizontalGap="0" verticalGap="0">
+					<mx:Text text="Vendor #"  height="20" width="110" textAlign="right"/>
+					<customcomponents:GenDynamicComboBoxWithHelp id="dcVendor_id" width="116" toolTip="Vendor #" defaultValue="" 
+			    	    height="20" tabIndex="1" dataField="id" 
+			    	    dataSourceName="Vendor" dataProvider="{__genModel.lookupObj.vendor.children()}" 
+			    	    itemChangedEvent="getVendorDetails()" validationFlag="true" labelField="name" 
+			    	    xmlTag="vendor_id" updatableFlag="true" tableName="diamond_purchase"  />
+			    </mx:HBox>
+			</mx:VBox>	
+			<mx:HBox width="100%" height="10%" verticalGap="0" horizontalGap="0">						
+				<mx:Label text="Ship Date" height="20" width="110" textAlign="right"/>
+			    <customcomponents:GenDateField id="dfShip_dt" width="116" height="20" toolTip="Ship Date" 
+					validationFlag = "true" tabIndex="2"
+					xmlTag="ship_date" updatableFlag="true" tableName="diamond_purchase"/>	
+			</mx:HBox>
+		</mx:VBox>				
+				
+		<mx:VRule height="100%"/>
+				
+		<mx:VBox width="100%" height="100%" verticalGap="3" horizontalGap="0" paddingBottom="0" paddingTop="0">
+			<mx:Spacer height="4%"/>
+		    <mx:HBox width="100%"  verticalGap="0" height="10%" verticalAlign="middle">
+			    <mx:Label text="Ref Memo #"  height="20" width="90" textAlign="right"/>
+			    <customcomponents:GenTextInput id="tiRef_trans_no" width="105" xmlTag="ref_trans_no"
+					updatableFlag="true" tableName="diamond_purchase" height="20" 
+					defaultValue="" validationFlag="false" toolTip="Ref #"
+					maxChars="18" />
+				<mx:Button id="btnGetData" label="..." width="16" height="16" tabIndex="3" click="handleBtnGetDataClick(event)" />
+			</mx:HBox>
+			<mx:HBox width="100%" height="10%" verticalAlign="middle" verticalGap="0">						
+				<mx:Label text="Ship Via" height="20" width="90" textAlign="right"/>
+				<customcomponents:GenDynamicComboBoxWithHelp id="dcShipping_code" width="105" 
+					tabIndex="4" toolTip="Ship via"  defaultValue="" height="20"
+					dataField="code" labelField="code" 
+					dataSourceName="Shipping" dataProvider="{__genModel.lookupObj.shipping.children()}"   
+					validationFlag="true" xmlTag="shipping_code" updatableFlag="true" tableName="diamond_purchase"  />
+			</mx:HBox>
+			<mx:HBox width="100%" verticalGap="0" height="10%" verticalAlign="middle">
+				<mx:Label text="Tracking #" width="90" textAlign="right" height="20" />
+				<customcomponents:GenTextInput id="tiTracking_no" width="105" xmlTag="tracking_no"
+					updatableFlag="true" tabIndex="5" tableName="diamond_purchase" height="20"
+					defaultValue="" validationFlag="false" toolTip="Tracking #"
+					maxChars="50" />	
+			</mx:HBox>				
+		</mx:VBox>
+		
+		<mx:VRule height="100%"/>
+				
+		<mx:VBox width="100%" height="100%" verticalGap="3" horizontalGap="0" paddingBottom="0" paddingTop="0">
+			<mx:Spacer height="4%"/>
+			<mx:HBox width="100%" height="10%" verticalAlign="middle" verticalGap="0">						
+				<mx:Label text="Return #" height="20" width="110" textAlign="right"/>
+				<customcomponents:GenTextInput id="tiTrans_no" width="65" height="20" toolTip="Trans #" enabled="false" 
+					 xmlTag="trans_no" updatableFlag="true" tableName="diamond_purchase" defaultValue=""/>
+				<customcomponents:GenTextInput id="tiTrans_bk" width="35" height="20" visible="true" enabled="false"
+					xmlTag="trans_bk" updatableFlag="true" tableName="diamond_purchase" />
+			</mx:HBox>
+			<mx:HBox width="100%" height="10%" verticalAlign="middle" verticalGap="0">
+				<mx:Label text="Return Date" height="20" width="110" textAlign="right"/>
+				<customcomponents:GenDateField id="dfTrans_date" width="109" height="20" toolTip="Trans Date" 
+					validationFlag ="true" itemChangedEvent="getAccountPeriod(); getDueDate()"
+					tabIndex="6" xmlTag="trans_date" updatableFlag="true" tableName="diamond_purchase"/> 
+			</mx:HBox>
+			<mx:HBox width="100%" height="10%" verticalAlign="middle" verticalGap="0">		
+				<mx:Label text="A/C Period" height="20" width="110" textAlign="right" />
+				<customcomponents:GenDynamicComboBoxWithHelp id="dcAccount_period_code" width="109" 
+					enabled="false" toolTip="A/c Period Code"  defaultValue="" height="20"
+					dataField="code" labelField="code" 
+					dataSourceName="AccountPeriod" dataProvider="{__genModel.lookupObj.accountperiod.children()}"
+					validationFlag="true" xmlTag="account_period_code" updatableFlag="true" tableName="diamond_purchase"  />
+		    </mx:HBox>
+			<mx:HBox width="100%" height="10%" verticalAlign="middle" verticalGap="0">		
+			  <mx:Label text="Status" width="110" height="20" textAlign="right"/>
+			  <customcomponents:GenComboBox id="cbTrans_flag" defaultValue="A" width="109" cornerRadius="0" xmlTag="trans_flag" updatableFlag="true"
+					tableName="diamond_purchase"  labelField="label" height="20" enabled="false"
+					dataProvider="{__genModel.masterData.child('trans_flag').trans_flag}" />
+		    </mx:HBox>
+	    </mx:VBox>
+	</mx:HBox>	
+	<mx:Spacer  height="15" width="100%"/>
+	<mx:TabNavigator id="tnDetail" width="100%" height="100%">
+		<mx:VBox id="hbHeader" label="Address" width="100%" height="100%" verticalGap="3" tabIndex="100">
+			<mx:VBox id="vbHeader2" width="100%" height="10%" verticalGap="3">
+			 <mx:HBox width="100%" horizontalGap="2" verticalAlign="middle">
+				<mx:Label text="Vendor Address" width="237" fontSize="10" fontWeight="bold" textAlign="right" visible="true" height="20" />
+				<mx:Label text="Ship to Store" width="379" fontSize="10" fontWeight="bold" textAlign="right" visible="true" height="20" />
+			 </mx:HBox>				
+             <mx:HBox width="100%" horizontalGap="2" verticalAlign="middle">
+			    <mx:Label text="Address #1" width="95" height="20" textAlign="right"/>
+			    <customcomponents:GenTextInput id="tiBill_address1" width="235" xmlTag="bill_address1"
+					updatableFlag="true" tabIndex="8" tableName="diamond_purchase" height="20"
+					defaultValue="" validationFlag="false" toolTip="Bill Address #1"
+					maxChars="50" />
+					
+                <mx:Label text="Store #" width="159" height="20" textAlign="right"/>
+				<customcomponents:GenDynamicComboBoxWithHelp id="dcCompany_store_id" width="225"  
+				     toolTip="Store #"  defaultValue="{__genModel.user.default_company_id.toString()}" height="20"  enabled="false"
+					dataField="id" labelField="code"
+					dataSourceName="CompanyStore" dataProvider="{__genModel.lookupObj.companystore.children()}"
+					validationFlag="true" xmlTag="company_store_id" updatableFlag="true" tableName="diamond_purchase" />						
+		     </mx:HBox>
+		     <mx:HBox width="100%" horizontalGap="2" height="20" verticalAlign="middle">
+		       <mx:Label text="#2" width="95" textAlign="right"/>
+			   <customcomponents:GenTextInput id="tiBill_address2" width="235" xmlTag="bill_address2"
+				    updatableFlag="true" tabIndex="9" tableName="diamond_purchase" height="20" 
+					defaultValue="" validationFlag="false" toolTip="Bill Address #2"
+					maxChars="50" />
+		     
+	           <mx:Label text="Name" width="159" height="20" textAlign="right"/>
+			   <customcomponents:GenTextInput id="tiShip_nm" width="225" xmlTag="ship_name"
+					updatableFlag="true" tableName="diamond_purchase" height="20"
+					defaultValue="" validationFlag="false" toolTip="Ship Name" enabled="false" maxChars="50" />
+		     </mx:HBox>
+		     <mx:HBox width="100%" horizontalGap="2" height="20" verticalAlign="middle">
+			   <mx:Label text="City/State" width="95" textAlign="right"/>
+			   <customcomponents:GenTextInput id="tiBill_city" width="116" xmlTag="bill_city"
+					updatableFlag="true" tabIndex="10" tableName="diamond_purchase" height="20" 
+					defaultValue="" validationFlag="false" toolTip="City"
+					maxChars="25" />
+			   <customcomponents:GenTextInput id="tiBill_state" width="116" xmlTag="bill_state"
+					updatableFlag="true" tabIndex="11" tableName="diamond_purchase" height="20" 
+					defaultValue="" validationFlag="false" toolTip="State"
+					maxChars="25" />
+			
+			   <mx:Label text="Address #1" width="160" height="20" textAlign="right"/>
+			   <customcomponents:GenTextInput id="tiShip_address1" width="224" xmlTag="ship_address1"
+					updatableFlag="true" tableName="diamond_purchase" height="20" 
+					defaultValue="" validationFlag="false" toolTip="Ship Address #1" enabled="false" maxChars="50" />	
+			 </mx:HBox>
+	         <mx:HBox width="100%" horizontalGap="2" height="20" verticalAlign="middle">
+			    <mx:Label text="Country" width="95" textAlign="right"/>
+				<customcomponents:GenTextInput id="tiBill_country" width="116" xmlTag="bill_country"
+					updatableFlag="true" tabIndex="12" tableName="diamond_purchase" height="20" 
+					defaultValue="" validationFlag="false" toolTip="Country"
+					maxChars="20" />
+				
+				<mx:Label text="#2" width="279" height="20" textAlign="right"/>
+				<customcomponents:GenTextInput id="tiShip_address2" width="224" xmlTag="ship_address2"
+					updatableFlag="true" tableName="diamond_purchase" height="20" 
+					defaultValue="" validationFlag="false" toolTip="Ship Address #2" enabled="false" maxChars="50" />	
+			 </mx:HBox>
+	         <mx:HBox width="100%" horizontalGap="2" height="20" verticalAlign="middle">
+				<mx:Label text="Phone/Fax" width="95" textAlign="right"/>
+				<customcomponents:GenTextInput id="tiBill_phone1" width="116" xmlTag="bill_phone"
+					updatableFlag="true" tabIndex="13" tableName="diamond_purchase" height="20" 
+					defaultValue="" validationFlag="false" toolTip="Phone"
+				    maxChars="50" />
+			    <customcomponents:GenTextInput id="tiBill_fax1"  width="116" xmlTag="bill_fax"
+					updatableFlag="true" tabIndex="14" tableName="diamond_purchase" height="20" 
+					defaultValue="" validationFlag="false" toolTip="Fax"
+					maxChars="50" />
+				
+				<mx:Label text="City/State" width="160" height="20" textAlign="right"/>
+				<customcomponents:GenTextInput id="tiShip_city" width="109" xmlTag="ship_city"
+					updatableFlag="true" tableName="diamond_purchase" height="20" 
+					defaultValue="" validationFlag="false" toolTip="City" enabled="false" maxChars="25" />
+				<customcomponents:GenTextInput id="tiShip_state" width="115" height="20" xmlTag="ship_state"
+					updatableFlag="true" tableName="diamond_purchase" 
+					defaultValue="" validationFlag="false" toolTip="State" enabled="false" maxChars="25" />
+			 </mx:HBox>
+			 <mx:HBox width="100%" horizontalGap="2" height="20" verticalAlign="middle">
+				<mx:Label text="Country" width="493" height="20" textAlign="right"/>
+				<customcomponents:GenTextInput id="tiShip_country" width="110" xmlTag="ship_country"
+					updatableFlag="true" tableName="diamond_purchase" height="20" 
+					defaultValue="" validationFlag="false" toolTip="Country" enabled="false" maxChars="20" />
+			 </mx:HBox>
+			 <mx:HBox width="100%" horizontalGap="2" verticalAlign="middle">
+			    <mx:Label text="Phone/Fax" width="493" height="20" textAlign="right"/>
+				<customcomponents:GenTextInput id="tiShip_phone1" width="109" xmlTag="ship_phone"
+					updatableFlag="true" tableName="diamond_purchase" height="20" 
+					defaultValue="" validationFlag="false" toolTip="Phone" enabled="false" maxChars="50" />
+				<customcomponents:GenTextInput id="tiShip_fax1"  width="115" xmlTag="ship_fax"
+					updatableFlag="true" tableName="diamond_purchase"
+					defaultValue="" validationFlag="false" toolTip="Fax" height="20" enabled="false" maxChars="50" />
+		     </mx:HBox>	
+		   </mx:VBox>
+		</mx:VBox>
+		<mx:VBox id="vbDetail" label="Detail" width="100%" height="100%" verticalGap="0" verticalAlign="top">
+			<mx:ViewStack id="vsDtl" width="100%" height="100%">
+				<mx:HBox id="hbEditable" width="100%" height="100%" paddingLeft="0" paddingRight="0">
+					<gencomponents:EditableDetail id="dtlLine"
+				         updatableFlag="true"
+				         checkBlankRowColumn="diamond_lot_id"
+				         rootNode="diamond_purchase_lines"
+				         formatServiceID="itemDetailFormat"
+				         height="100%" width="100%"
+				         detailItemFocusOut="setGrossAmountEditable(event);updateRecordSummary()"
+				         detailRemoveRow="calculateGrossAmount();updateRecordSummary()"
+				         title="Open Memos"
+				         fetchRecordFlag="{true}"
+			           	 dc_id="{dcVendor_id}"
+				         fetchDetailFormatServiceID="fetchRecordFormat"
+				         fetchDetailDataServiceID="fetch_open_memos"
+				         creationComplete="createMapping()" />			
+			    </mx:HBox>
+            </mx:ViewStack>			
+			<mx:HBox id="hbFooter" width="100%" height="135" y="625" horizontalAlign="right" horizontalGap="0">
+				<mx:VBox width="220" height="100%" paddingLeft="20">
+					<mx:HBox>
+						<mx:Label text="Total Items" width="80" textAlign="right" />
+						<mx:Label id="lblTotal_items" width="70" textAlign="left" />
+					</mx:HBox>
+					<mx:HBox>
+						<mx:Label text="Item Pcs" width="80" textAlign="right" />
+						<mx:Label id="lblItem_pcs" width="70" textAlign="left" />
+					</mx:HBox>
+					<mx:HBox>
+						<mx:Label text="Item Wt" width="80" textAlign="right" />
+						<mx:Label id="lblItem_wt" width="70" textAlign="left" />
+					</mx:HBox>
+					<mx:HBox height="0" width="0" visible="false">
+						<mx:Label text="Clear Pcs" width="80" textAlign="right" />
+						<mx:Label id="lblClear_pcs" width="70" textAlign="left" />
+					</mx:HBox>
+				</mx:VBox>
+
+				<mx:VBox width="220" height="100%">
+					<mx:Label text="Remarks"/>
+					<customcomponents:GenTextArea width="200" height="50" id="taRemarks" maxChars="255"
+						 xmlTag="remarks" updatableFlag="true" tableName="diamond_purchase"/>
+				</mx:VBox>
+				<mx:VBox height="100%" verticalAlign="top" horizontalAlign="right" verticalGap="1" width="100%">
+					<mx:HBox>
+						<mx:Label text="Item Amount" width="110" textAlign="right"/>
+						<mx:Spacer width="110"/>
+						<customcomponents:GenTextInput id="tiLine_amt"  height="18" width="110" textAlign="right" editable="false" 
+							enabled="false" xmlTag="lines_amt" updatableFlag="true" tableName="diamond_purchase" defaultValue="0.00"
+							dataType="N" rounding="true" setDefaultOnEmpty="true" maxValue="9999999999.99"/>
+					</mx:HBox>
+					<mx:HBox>
+						<mx:Label text="Discount" width="110" textAlign="right"/>
+						<customcomponents:GenTextInput id="tiDiscount_per" height="18" width="110" textAlign="right" tabIndex="12"
+							xmlTag="discount_per" updatableFlag="true" tableName="diamond_purchase" defaultValue="0.00" 
+							maxValue="9999.99" validationFlag ="true" toolTip="Discount(%)"
+							itemChangedEvent="discount_perChange()" dataType="N" rounding="false" setDefaultOnEmpty="true"/>
+						<customcomponents:GenTextInput id="tiDiscount_amt" height="18" width="110" textAlign="right" tabIndex="13"
+							xmlTag="discount_amt" updatableFlag="true" tableName="diamond_purchase" defaultValue="0.00" maxValue="9999999999.99"
+							itemChangedEvent="discount_amtChange()" dataType="N" rounding="true" setDefaultOnEmpty="true" 
+							validationFlag ="true" toolTip="Discount Amt"/>
+					</mx:HBox>			
+		            <mx:HBox>
+						<mx:Label text="Shipping" width="110" textAlign="right"/>
+						<customcomponents:GenTextInput id="tiShip_per" height="18" width="110" textAlign="right" tabIndex="14"
+							xmlTag="ship_per" updatableFlag="true" tableName="diamond_purchase" defaultValue="0.00" itemChangedEvent="ship_perChange()"
+							dataType="N" rounding="fasle" setDefaultOnEmpty="true" maxValue="9999.99" validationFlag="true" toolTip="Ship(%)" />
+						<customcomponents:GenTextInput id="tiShip_amt" height="18" width="110" textAlign="right" tabIndex="15"
+							xmlTag="ship_amt" updatableFlag="true" tableName="diamond_purchase" defaultValue="0.00" itemChangedEvent="ship_amtChange()"
+							dataType="N" rounding="true" setDefaultOnEmpty="true" maxValue="9999999999.99" 
+							validationFlag ="true" toolTip="Ship Amt" />
+					</mx:HBox>			
+					<mx:HBox>
+						<mx:Label text="Insurance" width="110" textAlign="right"/>
+						<customcomponents:GenTextInput id="tiInsurance_per" height="18" width="110" textAlign="right" tabIndex="16"
+							xmlTag="insurance_per" updatableFlag="true" tableName="diamond_purchase" defaultValue="0.00" itemChangedEvent="ins_perChange()"
+							dataType="N" rounding="false" setDefaultOnEmpty="true" maxValue="9999.99" validationFlag="true" toolTip="Insurence(%)"/>
+						<customcomponents:GenTextInput id="tiInsurance_amt" height="18" width="110" textAlign="right" tabIndex="17"
+							xmlTag="insurance_amt" updatableFlag="true" tableName="diamond_purchase" defaultValue="0.00" maxValue="9999999999.99" 
+							itemChangedEvent="insurance_amtChange()" dataType="N" rounding="true" setDefaultOnEmpty="true" 
+							validationFlag ="true" toolTip="Insurence Amt"/>
+					</mx:HBox>			
+			        <mx:HBox>
+						<mx:Label text="Sales Tax" width="110" textAlign="right"/>
+						<customcomponents:GenTextInput id="tiTax_per" height="18"  width="110" textAlign="right" tabIndex="18"
+							xmlTag="tax_per" updatableFlag="true" tableName="diamond_purchase" defaultValue="0.000" itemChangedEvent="tax_perChange()"
+							dataType="N" rounding="false" setDefaultOnEmpty="true" maxValue="999.999" validationFlag="true" toolTip="Tax(%)"/>
+						<customcomponents:GenTextInput id="tiTax_amt" height="18" width="110" textAlign="right" tabIndex="19"
+							xmlTag="tax_amt" updatableFlag="true" tableName="diamond_purchase" defaultValue="0.00" itemChangedEvent="tax_amtChange()"
+							dataType="N" rounding="true" setDefaultOnEmpty="true" maxValue="9999999999.99" 
+							validationFlag ="true" toolTip="Tax Amt"/>
+					</mx:HBox>			
+			        <mx:HBox>
+						<mx:Label text="Other" width="110" textAlign="right"/>
+						<mx:Spacer width="110"/>
+						<customcomponents:GenTextInput id="tiOther_amt"  height="18" width="110" textAlign="right" tabIndex="20" toolTip="Other Amt"
+							xmlTag="other_amt" updatableFlag="true" tableName="diamond_purchase" defaultValue="0.00" itemChangedEvent="other_amtChange()"
+							dataType="N" rounding="true" setDefaultOnEmpty="true" maxValue="9999999999.99" validationFlag ="true" />
+					</mx:HBox>			
+			        <mx:HBox>
+						<mx:Label text="Net Amount" width="110" textAlign="right"/>
+						<mx:Spacer width="110"/>
+						<customcomponents:GenTextInput id="tiNet_amt"  height="18" width="110" textAlign="right" editable="false"
+							enabled="false" xmlTag="net_amt" updatableFlag="true" tableName="diamond_purchase" defaultValue="0.00"
+							dataType="N" rounding="true" setDefaultOnEmpty="true" maxValue="9999999999.99" />
+					</mx:HBox>			
+				</mx:VBox>
+			</mx:HBox>	
+		</mx:VBox>
+	</mx:TabNavigator>	
+	<mx:HBox width="0" height="0" visible="false">						
+		<mx:Label text="Ref. #" height="0" width="0" visible="false" textAlign="right"/>
+		<customcomponents:GenTextInput id="tiPo_no" width="0" height="0" toolTip="Ref. #" 
+			validationFlag="false"  maxChars="50" visible="false" 
+			xmlTag="po_no" updatableFlag="true" tableName="diamond_purchase"/>
+    </mx:HBox>
+	<mx:HBox width="0" height="0" visible="false">						
+		<mx:Label text="Ref.Date" height="0" width="0" visible="false" textAlign="right"/>
+		<customcomponents:GenDateField id="dfPo_dt" width="0" height="0" toolTip="ref Date"
+			validationFlag="false" visible="false"
+			xmlTag="po_date" updatableFlag="true" tableName="diamond_purchase"	/>
+	</mx:HBox>
+	<mx:HBox width="0" height="0" visible="false">
+		<mx:Label text="Taxable Amount" width="0" height="0" textAlign="right"/>
+		<customcomponents:GenTextInput id="tiTaxable_amt"  textAlign="right" editable="true" width="0" height="0" visible="false"
+			backgroundAlpha="0" xmlTag="taxable_amt" updatableFlag="false" tableName="diamond_purchase" defaultValue="0.00"
+			dataType="N" rounding="true" setDefaultOnEmpty="true" maxValue="9999999999.99"/>
+	</mx:HBox>
+	<mx:HBox width="0"  verticalGap="0" horizontalGap="0" height="0" visible="false" >
+		<mx:Label text="Term #" height="0" width="0" textAlign="right"/>
+		<customcomponents:GenDynamicComboBoxWithHelp id="dcTerm_code" width="0" 
+			toolTip="Term #" defaultValue="" itemChangedEvent="getDueDate()" height="0"
+			dataField="code"
+			dataSourceName="Term" dataProvider="{__genModel.lookupObj.term.children()}" labelField="code"
+			validationFlag="true" xmlTag="term_code" updatableFlag="true" tableName="diamond_purchase" />
+    </mx:HBox>
+	<mx:HBox width="0"  verticalGap="0" horizontalGap="0" height="0" visible="false" >
+		<mx:Label text="Due Date" height="0" width="0" textAlign="right"/>
+		<customcomponents:GenDateField id="dfDue_date" width="0" height="0" toolTip="Due Date"
+			validationFlag = "true" tabIndex="3"
+			xmlTag="due_date" updatableFlag="true" tableName="diamond_purchase"/>	
+	</mx:HBox>
+	
+</gencomponents:AddEdit>

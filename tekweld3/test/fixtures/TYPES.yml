@@ -1,0 +1,6889 @@
+--- 
+types_377: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 1371
+  description: About Us
+  value: About Us
+  subtype_cd: catalog_portal_link
+  company_id: 1
+  type_cd: catalog_portal_link
+  created_at: 
+types_187: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 0
+  updated_by: 1
+  id: 628
+  description: Default Price Level
+  value: LEVEL1
+  subtype_cd: def_price_level
+  company_id: 1
+  type_cd: POS
+  created_at: 2010/02/01 17:02:57
+types_378: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 1372
+  description: Contact Us
+  value: Contact Us
+  subtype_cd: catalog_portal_link
+  company_id: 1
+  type_cd: catalog_portal_link
+  created_at: 
+types_188: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 0
+  updated_by: 1
+  id: 629
+  description: Thank You Very Much
+  value: MESSAGE
+  subtype_cd: receipt_message
+  company_id: 1
+  type_cd: POS
+  created_at: 2010/02/01 17:02:57
+types_001: 
+  updated_at: 2011/02/22 15:47:12
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  lock_version: 150
+  updated_by: 1
+  id: 1
+  description: User want to check inventory or not.
+  value: N
+  subtype_cd: check_inventory
+  company_id: 1
+  type_cd: invn
+  created_at: 
+types_379: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 1373
+  description: Location
+  value: Location
+  subtype_cd: catalog_portal_link
+  company_id: 1
+  type_cd: catalog_portal_link
+  created_at: 
+types_189: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 0
+  updated_by: 1
+  id: 630
+  description: Cash
+  value: Cash
+  subtype_cd: payment_method
+  company_id: 1
+  type_cd: POS
+  created_at: 2010/02/01 17:02:57
+types_002: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 21
+  description: Inventory
+  value: I
+  subtype_cd: INVN_ITEM_TYPE
+  company_id: 1
+  type_cd: INVN_ITEM_TYPE
+  created_at: 
+types_430: 
+  updated_at: 2011/02/22 15:47:14
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 134
+  updated_by: 1
+  id: 1497
+  description: ""
+  value: "0.00"
+  subtype_cd: wholesale_markup
+  company_id: 1
+  type_cd: jewelry_default
+  created_at: 
+types_240: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 720
+  description: Decision Maker
+  value: decision_maker
+  subtype_cd: role
+  company_id: 1
+  type_cd: CRM
+  created_at: 
+types_050: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 130
+  description: PSW
+  value: PSW
+  subtype_cd: stone_setting
+  company_id: 1
+  type_cd: stone_setting
+  created_at: 
+types_003: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 22
+  description: Assembly
+  value: A
+  subtype_cd: INVN_ITEM_TYPE
+  company_id: 1
+  type_cd: INVN_ITEM_TYPE
+  created_at: 
+types_431: 
+  updated_at: 2011/02/22 15:47:14
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 136
+  updated_by: 1
+  id: 1498
+  description: ""
+  value: "0.00"
+  subtype_cd: retail_markup
+  company_id: 1
+  type_cd: jewelry_default
+  created_at: 
+types_241: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 721
+  description: Employee
+  value: employee
+  subtype_cd: role
+  company_id: 1
+  type_cd: CRM
+  created_at: 
+types_051: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 131
+  description: PVH
+  value: PVH
+  subtype_cd: stone_setting
+  company_id: 1
+  type_cd: stone_setting
+  created_at: 
+types_004: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 30
+  description: Active
+  value: A
+  subtype_cd: trans_flag
+  company_id: 1
+  type_cd: trans_flag
+  created_at: 
+types_432: 
+  updated_at: 2011/02/22 15:47:14
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 100
+  updated_by: 1
+  id: 1522
+  description: 9KT
+  value: 9KT
+  subtype_cd: metal_type
+  company_id: 1
+  type_cd: metal_type
+  created_at: 
+types_242: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 722
+  description: Influencer
+  value: influencer
+  subtype_cd: role
+  company_id: 1
+  type_cd: CRM
+  created_at: 
+types_052: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 132
+  description: PVW
+  value: PVW
+  subtype_cd: stone_setting
+  company_id: 1
+  type_cd: stone_setting
+  created_at: 
+types_005: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 31
+  description: Hold
+  value: H
+  subtype_cd: trans_flag
+  company_id: 1
+  type_cd: trans_flag
+  created_at: 
+types_480: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 0
+  updated_by: 1
+  id: 1628
+  description: PLAT
+  value: PLAT
+  subtype_cd: unit
+  company_id: 1
+  type_cd: unit_conversion
+  created_at: 
+types_433: 
+  updated_at: 2011/02/22 15:47:14
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 90
+  updated_by: 1
+  id: 1571
+  description: equipment tab - salesperson
+  value: N
+  subtype_cd: equipment_flag
+  company_id: 1
+  type_cd: saoi
+  created_at: 
+types_243: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 742
+  description: Existing Business
+  value: Existing
+  subtype_cd: opportunity_type
+  company_id: 1
+  type_cd: CRM
+  created_at: 
+types_053: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 133
+  description: SPH
+  value: SPH
+  subtype_cd: stone_setting
+  company_id: 1
+  type_cd: stone_setting
+  created_at: 
+types_006: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 32
+  description: Delete
+  value: D
+  subtype_cd: trans_flag
+  company_id: 1
+  type_cd: trans_flag
+  created_at: 
+types_290: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 834
+  description: " "
+  value: " "
+  subtype_cd: activity_type
+  company_id: 1
+  type_cd: CRM
+  created_at: 
+types_481: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 0
+  updated_by: 1
+  id: 1629
+  description: STER
+  value: STER
+  subtype_cd: unit
+  company_id: 1
+  type_cd: unit_conversion
+  created_at: 
+types_434: 
+  updated_at: 2011/02/22 15:47:14
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 83
+  updated_by: 1
+  id: 1572
+  description: GREEN
+  value: G
+  subtype_cd: metal_color
+  company_id: 1
+  type_cd: metal_color
+  created_at: 2011/01/20 00:00:00
+types_244: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 743
+  description: New Business
+  value: New
+  subtype_cd: opportunity_type
+  company_id: 1
+  type_cd: CRM
+  created_at: 
+types_054: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 134
+  description: SSH
+  value: SSH
+  subtype_cd: stone_setting
+  company_id: 1
+  type_cd: stone_setting
+  created_at: 
+types_007: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 33
+  description: Not Started
+  value: N
+  subtype_cd: wfca_flag
+  company_id: 1
+  type_cd: wfca_flag
+  created_at: 
+types_291: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 835
+  description: " "
+  value: " "
+  subtype_cd: lead_source
+  company_id: 1
+  type_cd: CRM
+  created_at: 
+types_482: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 0
+  updated_by: 1
+  id: 1630
+  description: DWT
+  value: DWT
+  subtype_cd: unit
+  company_id: 1
+  type_cd: unit_conversion
+  created_at: 
+types_435: 
+  updated_at: 2011/02/22 15:47:14
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 83
+  updated_by: 1
+  id: 1573
+  description: Round
+  value: ROUND
+  subtype_cd: stone_shape
+  company_id: 1
+  type_cd: stone_shape
+  created_at: 2011/01/20 00:00:00
+types_055: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 165
+  description: ACH
+  value: ACH
+  subtype_cd: pay_type
+  company_id: 1
+  type_cd: FAXX
+  created_at: 
+types_008: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 34
+  description: WFCA
+  value: W
+  subtype_cd: wfca_flag
+  company_id: 1
+  type_cd: wfca_flag
+  created_at: 
+types_292: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 836
+  description: Memo
+  value: M
+  subtype_cd: DI
+  company_id: 1
+  type_cd: REF_TYPE
+  created_at: 
+types_245: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 744
+  description: Prospecting
+  value: Prospecting
+  subtype_cd: stage
+  company_id: 1
+  type_cd: CRM
+  created_at: 
+types_483: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 0
+  updated_by: 1
+  id: 1632
+  description: FIN
+  value: FIN
+  subtype_cd: unit
+  company_id: 1
+  type_cd: unit_conversion
+  created_at: 
+types_436: 
+  updated_at: 2011/02/22 15:47:14
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 83
+  updated_by: 1
+  id: 1574
+  description: Princess
+  value: PRINCESS
+  subtype_cd: stone_shape
+  company_id: 1
+  type_cd: stone_shape
+  created_at: 2011/01/20 00:00:00
+types_056: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 166
+  description: AMEX
+  value: AMEX
+  subtype_cd: pay_type
+  company_id: 1
+  type_cd: FAXX
+  created_at: 
+types_009: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 35
+  description: Completed
+  value: C
+  subtype_cd: wfca_flag
+  company_id: 1
+  type_cd: wfca_flag
+  created_at: 
+types_293: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 837
+  description: Direct
+  value: D
+  subtype_cd: DI
+  company_id: 1
+  type_cd: REF_TYPE
+  created_at: 
+types_246: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 745
+  description: Qualification
+  value: Qualification
+  subtype_cd: stage
+  company_id: 1
+  type_cd: CRM
+  created_at: 
+types_484: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 0
+  updated_by: 1
+  id: 1633
+  description: KILO
+  value: KILO
+  subtype_cd: unit
+  company_id: 1
+  type_cd: unit_conversion
+  created_at: 
+types_437: 
+  updated_at: 2011/02/22 15:47:14
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 83
+  updated_by: 1
+  id: 1575
+  description: Emerald
+  value: EMERALD
+  subtype_cd: stone_shape
+  company_id: 1
+  type_cd: stone_shape
+  created_at: 2011/01/20 00:00:00
+types_294: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 838
+  description: Invoice
+  value: I
+  subtype_cd: DCI
+  company_id: 1
+  type_cd: REF_TYPE
+  created_at: 
+types_247: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 746
+  description: Needs-Analysis
+  value: Needs-Analysis
+  subtype_cd: stage
+  company_id: 1
+  type_cd: CRM
+  created_at: 
+types_057: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 167
+  description: CASH
+  value: CASH
+  subtype_cd: pay_type
+  company_id: 1
+  type_cd: FAXX
+  created_at: 
+types_485: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 0
+  updated_by: 1
+  id: 1634
+  description: OZ
+  value: OZ
+  subtype_cd: unit
+  company_id: 1
+  type_cd: unit_conversion
+  created_at: 
+types_438: 
+  updated_at: 2011/02/22 15:47:14
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 83
+  updated_by: 1
+  id: 1576
+  description: Asscher
+  value: ASSCHER
+  subtype_cd: stone_shape
+  company_id: 1
+  type_cd: stone_shape
+  created_at: 2011/01/20 00:00:00
+types_295: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 839
+  description: Direct
+  value: D
+  subtype_cd: DCI
+  company_id: 1
+  type_cd: REF_TYPE
+  created_at: 
+types_248: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 747
+  description: Negotiaition
+  value: Negotiaition
+  subtype_cd: stage
+  company_id: 1
+  type_cd: CRM
+  created_at: 
+types_058: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 168
+  description: CHECK
+  value: CHCK
+  subtype_cd: pay_type
+  company_id: 1
+  type_cd: FAXX
+  created_at: 
+types_486: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 0
+  updated_by: 1
+  id: 1638
+  description: 14xx
+  value: 14xx
+  subtype_cd: unit
+  company_id: 1
+  type_cd: unit_conversion
+  created_at: 
+types_439: 
+  updated_at: 2011/02/22 15:47:14
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 83
+  updated_by: 1
+  id: 1577
+  description: Marquise
+  value: MARQUISE
+  subtype_cd: stone_shape
+  company_id: 1
+  type_cd: stone_shape
+  created_at: 2011/01/20 00:00:00
+types_296: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 840
+  description: Carat
+  value: C
+  subtype_cd: diamond_unit
+  company_id: 1
+  type_cd: diamond_unit
+  created_at: 
+types_249: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 748
+  description: Direct Mail
+  value: Direct
+  subtype_cd: lead_source
+  company_id: 1
+  type_cd: CRM
+  created_at: 
+types_059: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 169
+  description: MISC
+  value: MISC
+  subtype_cd: pay_type
+  company_id: 1
+  type_cd: FAXX
+  created_at: 
+types_487: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 1639
+  description: HO
+  value: H
+  subtype_cd: store_type
+  company_id: 1
+  type_cd: store_type
+  created_at: 
+types_297: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 841
+  description: Pcs
+  value: PCS
+  subtype_cd: diamond_unit
+  company_id: 1
+  type_cd: diamond_unit
+  created_at: 
+types_488: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 1640
+  description: Store
+  value: S
+  subtype_cd: store_type
+  company_id: 1
+  type_cd: store_type
+  created_at: 
+types_300: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 883
+  description: MP
+  value: MP
+  subtype_cd: state
+  company_id: 1
+  type_cd: india
+  created_at: 
+types_110: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 523
+  description: SAMP
+  value: SAMP
+  subtype_cd: prod_so_type
+  company_id: 1
+  type_cd: prod_so_type
+  created_at: 
+types_298: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 863
+  description: folder to upload transaction attachment
+  value: public/attachments/
+  subtype_cd: ATTACHMENT
+  company_id: 1
+  type_cd: UPLOAD_FOLDER
+  created_at: 
+types_489: 
+  updated_at: 2011/02/22 15:47:16
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  lock_version: 19
+  updated_by: 1
+  id: 1641
+  description: Y - Packet have multiline breakup otherwise set N
+  value: Y
+  subtype_cd: packet_breakup
+  company_id: 1
+  type_cd: invn
+  created_at: 
+types_301: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 904
+  description: Date
+  value: D
+  subtype_cd: datatype
+  company_id: 1
+  type_cd: report_column
+  created_at: 
+types_111: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 524
+  description: Each
+  value: E
+  subtype_cd: sell_unit
+  company_id: 1
+  type_cd: sell_unit
+  created_at: 
+types_299: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 882
+  description: USA
+  value: USA
+  subtype_cd: country
+  company_id: 1
+  type_cd: country
+  created_at: 
+types_302: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 905
+  description: String
+  value: S
+  subtype_cd: datatype
+  company_id: 1
+  type_cd: report_column
+  created_at: 
+types_112: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 525
+  description: Carat
+  value: C
+  subtype_cd: sell_unit
+  company_id: 1
+  type_cd: sell_unit
+  created_at: 
+types_350: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 1223
+  description: Labor Other
+  value: OTH
+  subtype_cd: labor_type
+  company_id: 1
+  type_cd: labor_type
+  created_at: 
+types_160: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 585
+  description: Receivable
+  value: AREC
+  subtype_cd: journal_type
+  company_id: 1
+  type_cd: FAGL
+  created_at: 
+types_303: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 906
+  description: Numeric
+  value: N
+  subtype_cd: datatype
+  company_id: 1
+  type_cd: report_column
+  created_at: 
+types_113: 
+  updated_at: 2011/02/22 15:47:13
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 104
+  updated_by: 1
+  id: 526
+  description: Axis
+  value: "13200"
+  subtype_cd: bank_code
+  company_id: 1
+  type_cd: FAAR
+  created_at: 
+types_351: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 1300
+  description: Bank
+  value: B
+  subtype_cd: account_type_other
+  company_id: 1
+  type_cd: bank_payment
+  created_at: 
+types_161: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 586
+  description: Payable
+  value: APAY
+  subtype_cd: journal_type
+  company_id: 1
+  type_cd: FAGL
+  created_at: 
+types_304: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 907
+  description: Left
+  value: L
+  subtype_cd: alignment
+  company_id: 1
+  type_cd: report_column
+  created_at: 
+types_114: 
+  updated_at: 2011/02/22 15:47:13
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 104
+  updated_by: 1
+  id: 527
+  description: Sales Return
+  value: "13201"
+  subtype_cd: credit_gl_account_cd
+  company_id: 1
+  type_cd: FAAR
+  created_at: 
+types_162: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 587
+  description: Fixed Assets
+  value: FASS
+  subtype_cd: journal_type
+  company_id: 1
+  type_cd: FAGL
+  created_at: 
+types_305: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 908
+  description: Right
+  value: R
+  subtype_cd: alignment
+  company_id: 1
+  type_cd: report_column
+  created_at: 
+types_115: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 540
+  description: General
+  value: "1"
+  subtype_cd: inv_type
+  company_id: 1
+  type_cd: FAAR
+  created_at: 
+types_352: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 1320
+  description: folder to store pdf
+  value: /public/reports/
+  subtype_cd: REPORT_PRINT
+  company_id: 1
+  type_cd: UPLOAD_FOLDER
+  created_at: 
+types_163: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 588
+  description: Vendor
+  value: V
+  subtype_cd: account_type
+  company_id: 1
+  type_cd: bank_payment
+  created_at: 
+types_306: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 923
+  description: Vendor
+  value: V
+  subtype_cd: invn_trans_type
+  company_id: 1
+  type_cd: invn_trans_type
+  created_at: 
+types_116: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 541
+  description: Receipt
+  value: RE
+  subtype_cd: inv_type
+  company_id: 1
+  type_cd: FAAR
+  created_at: 
+types_353: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  lock_version: 0
+  updated_by: 100
+  id: 1340
+  description: Mr.
+  value: Mr.
+  subtype_cd: title
+  company_id: 1
+  type_cd: title
+  created_at: 
+types_307: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 924
+  description: Customer
+  value: C
+  subtype_cd: invn_trans_type
+  company_id: 1
+  type_cd: invn_trans_type
+  created_at: 
+types_117: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 542
+  description: Repair
+  value: RP
+  subtype_cd: inv_type
+  company_id: 1
+  type_cd: FAAR
+  created_at: 
+types_354: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  lock_version: 0
+  updated_by: 100
+  id: 1341
+  description: Miss
+  value: Miss
+  subtype_cd: title
+  company_id: 1
+  type_cd: title
+  created_at: 
+types_164: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 589
+  description: Customer
+  value: C
+  subtype_cd: account_type
+  company_id: 1
+  type_cd: bank_payment
+  created_at: 
+types_308: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 925
+  description: Adjustment
+  value: A
+  subtype_cd: invn_trans_type
+  company_id: 1
+  type_cd: invn_trans_type
+  created_at: 
+types_118: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 543
+  description: Asset
+  value: SA
+  subtype_cd: inv_type
+  company_id: 1
+  type_cd: FAAR
+  created_at: 
+types_355: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  lock_version: 0
+  updated_by: 100
+  id: 1342
+  description: Mrs.
+  value: Mrs.
+  subtype_cd: title
+  company_id: 1
+  type_cd: title
+  created_at: 
+types_165: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 590
+  description: GL
+  value: G
+  subtype_cd: account_type
+  company_id: 1
+  type_cd: bank_payment
+  created_at: 
+types_309: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 942
+  description: Opening Balance
+  value: O
+  subtype_cd: invn_trans_type
+  company_id: 1
+  type_cd: invn_trans_type
+  created_at: 
+types_119: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 544
+  description: Memo
+  value: SM
+  subtype_cd: inv_type
+  company_id: 1
+  type_cd: FAAR
+  created_at: 
+types_356: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  lock_version: 0
+  updated_by: 100
+  id: 1343
+  description: Order Placed
+  value: P
+  subtype_cd: value
+  company_id: 1
+  type_cd: catalog_order_status
+  created_at: 
+types_166: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 591
+  description: MISC
+  value: M
+  subtype_cd: inv_type
+  company_id: 1
+  type_cd: FAAP
+  created_at: 
+types_357: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  lock_version: 0
+  updated_by: 100
+  id: 1344
+  description: Confirmed Order
+  value: O
+  subtype_cd: value
+  company_id: 1
+  type_cd: catalog_order_status
+  created_at: 
+types_167: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 592
+  description: AR ADJUSTMENTS
+  value: AR
+  subtype_cd: inv_type
+  company_id: 1
+  type_cd: FAAP
+  created_at: 
+types_358: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  lock_version: 0
+  updated_by: 100
+  id: 1345
+  description: Shipped
+  value: S
+  subtype_cd: value
+  company_id: 1
+  type_cd: catalog_order_status
+  created_at: 
+types_168: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 593
+  description: EXPENSE
+  value: EXP
+  subtype_cd: inv_type
+  company_id: 1
+  type_cd: FAAP
+  created_at: 
+types_359: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  lock_version: 0
+  updated_by: 100
+  id: 1346
+  description: Order Closed
+  value: L
+  subtype_cd: value
+  company_id: 1
+  type_cd: catalog_order_status
+  created_at: 
+types_169: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 594
+  description: REPAIRS
+  value: RP
+  subtype_cd: inv_type
+  company_id: 1
+  type_cd: FAAP
+  created_at: 
+types_410: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 1469
+  description: cream
+  value: cream
+  subtype_cd: pearl_color
+  company_id: 1
+  type_cd: IPAD
+  created_at: 
+types_220: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 697
+  description: North America
+  value: North-America
+  subtype_cd: business_territory
+  company_id: 1
+  type_cd: CRM
+  created_at: 
+types_030: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 100
+  description: com/catalogadmin/images/
+  value: ../images/catalog/
+  subtype_cd: image_path
+  company_id: 1
+  type_cd: file_ini
+  created_at: 
+types_411: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 1470
+  description: golden
+  value: golden
+  subtype_cd: pearl_color
+  company_id: 1
+  type_cd: IPAD
+  created_at: 
+types_221: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 698
+  description: Accounting
+  value: Accounting
+  subtype_cd: industry
+  company_id: 1
+  type_cd: CRM
+  created_at: 
+types_031: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 103
+  description: folder to upload item images
+  value: public/images/
+  subtype_cd: IMAGE
+  company_id: 1
+  type_cd: UPLOAD_FOLDER
+  created_at: 
+types_412: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 1471
+  description: grey
+  value: grey
+  subtype_cd: pearl_color
+  company_id: 1
+  type_cd: IPAD
+  created_at: 
+types_222: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 699
+  description: Consulting
+  value: Consulting
+  subtype_cd: industry
+  company_id: 1
+  type_cd: CRM
+  created_at: 
+types_032: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 104
+  description: General
+  value: G
+  subtype_cd: login_type
+  company_id: 1
+  type_cd: login_type
+  created_at: 
+types_460: 
+  updated_at: 2011/02/22 15:47:15
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 65
+  updated_by: 1
+  id: 1607
+  description: Good
+  value: GOOD
+  subtype_cd: stone_cut
+  company_id: 1
+  type_cd: stone_cut
+  created_at: 2011/01/20 00:00:00
+types_413: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 1472
+  description: green
+  value: green
+  subtype_cd: pearl_color
+  company_id: 1
+  type_cd: IPAD
+  created_at: 
+types_270: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 805
+  description: Mr.
+  value: Mr
+  subtype_cd: salutation
+  company_id: 1
+  type_cd: CRM
+  created_at: 
+types_080: 
+  updated_at: 2011/02/22 15:47:12
+  update_flag: Y
+  trans_flag: A
+  created_by: 0
+  lock_version: 100
+  updated_by: 1
+  id: 207
+  description: B6
+  value: B6
+  subtype_cd: stone_quality
+  company_id: 1
+  type_cd: stone_quality
+  created_at: 
+types_223: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 700
+  description: Government
+  value: Government
+  subtype_cd: industry
+  company_id: 1
+  type_cd: CRM
+  created_at: 
+types_033: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 105
+  description: Posted
+  value: P
+  subtype_cd: post_flag
+  company_id: 1
+  type_cd: post_flag
+  created_at: 
+types_461: 
+  updated_at: 2011/02/22 15:47:15
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 64
+  updated_by: 1
+  id: 1608
+  description: Fair
+  value: FAIR
+  subtype_cd: stone_cut
+  company_id: 1
+  type_cd: stone_cut
+  created_at: 2011/01/20 00:00:00
+types_414: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 1473
+  description: lavender
+  value: lavender
+  subtype_cd: pearl_color
+  company_id: 1
+  type_cd: IPAD
+  created_at: 
+types_081: 
+  updated_at: 2011/02/22 15:47:12
+  update_flag: Y
+  trans_flag: A
+  created_by: 0
+  lock_version: 100
+  updated_by: 1
+  id: 208
+  description: B7
+  value: B7
+  subtype_cd: stone_quality
+  company_id: 1
+  type_cd: stone_quality
+  created_at: 
+types_224: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 701
+  description: Wholesale
+  value: Wholesale
+  subtype_cd: industry
+  company_id: 1
+  type_cd: CRM
+  created_at: 
+types_034: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 106
+  description: Unposted
+  value: U
+  subtype_cd: post_flag
+  company_id: 1
+  type_cd: post_flag
+  created_at: 
+types_271: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 806
+  description: Mrs.
+  value: Mrs
+  subtype_cd: salutation
+  company_id: 1
+  type_cd: CRM
+  created_at: 
+types_462: 
+  updated_at: 2011/02/22 15:47:15
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 64
+  updated_by: 1
+  id: 1609
+  description: Very Good
+  value: VERY GOOD
+  subtype_cd: stone_cut
+  company_id: 1
+  type_cd: stone_cut
+  created_at: 2011/01/20 00:00:00
+types_415: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 1474
+  description: lt. grey
+  value: lt.grey
+  subtype_cd: pearl_color
+  company_id: 1
+  type_cd: IPAD
+  created_at: 
+types_082: 
+  updated_at: 2011/02/22 15:47:12
+  update_flag: Y
+  trans_flag: A
+  created_by: 0
+  lock_version: 100
+  updated_by: 1
+  id: 209
+  description: BS
+  value: BS
+  subtype_cd: stone_quality
+  company_id: 1
+  type_cd: stone_quality
+  created_at: 
+types_225: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 704
+  description: Any
+  value: Any
+  subtype_cd: preferred_contact
+  company_id: 1
+  type_cd: CRM
+  created_at: 
+types_035: 
+  updated_at: 2011/02/22 15:47:12
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 100
+  updated_by: 1
+  id: 107
+  description: Ruby
+  value: RUBY
+  subtype_cd: stone_type
+  company_id: 1
+  type_cd: stone_type
+  created_at: 
+types_272: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 807
+  description: Ms.
+  value: Ms
+  subtype_cd: salutation
+  company_id: 1
+  type_cd: CRM
+  created_at: 
+types_463: 
+  updated_at: 2011/02/22 15:47:15
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 64
+  updated_by: 1
+  id: 1610
+  description: Ideal
+  value: IDEAL
+  subtype_cd: stone_cut
+  company_id: 1
+  type_cd: stone_cut
+  created_at: 2011/01/20 00:00:00
+types_416: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 1475
+  description: nat. pink
+  value: nat. pink
+  subtype_cd: pearl_color
+  company_id: 1
+  type_cd: IPAD
+  created_at: 
+types_226: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 705
+  description: Email
+  value: Email
+  subtype_cd: preferred_contact
+  company_id: 1
+  type_cd: CRM
+  created_at: 
+types_036: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 112
+  description: Wt
+  value: WT
+  subtype_cd: sell_unit
+  company_id: 1
+  type_cd: sell_unit
+  created_at: 
+types_273: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 808
+  description: Single
+  value: Single
+  subtype_cd: marital_status
+  company_id: 1
+  type_cd: CRM
+  created_at: 
+types_083: 
+  updated_at: 2011/02/22 15:47:12
+  update_flag: Y
+  trans_flag: A
+  created_by: 0
+  lock_version: 100
+  updated_by: 1
+  id: 210
+  description: BSC1
+  value: BSC1
+  subtype_cd: stone_quality
+  company_id: 1
+  type_cd: stone_quality
+  created_at: 
+types_464: 
+  updated_at: 2011/02/22 15:47:15
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 64
+  updated_by: 1
+  id: 1611
+  description: Signature Ideal
+  value: SIGNATURE IDEAL
+  subtype_cd: stone_cut
+  company_id: 1
+  type_cd: stone_cut
+  created_at: 2011/01/20 00:00:00
+types_417: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 1476
+  description: peacock
+  value: peacock
+  subtype_cd: pearl_color
+  company_id: 1
+  type_cd: IPAD
+  created_at: 
+types_227: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 706
+  description: Phone
+  value: Phone
+  subtype_cd: preferred_contact
+  company_id: 1
+  type_cd: CRM
+  created_at: 
+types_037: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 115
+  description: Pcs
+  value: PCS
+  subtype_cd: sell_unit
+  company_id: 1
+  type_cd: sell_unit
+  created_at: 
+types_274: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 809
+  description: Married
+  value: Married
+  subtype_cd: marital_status
+  company_id: 1
+  type_cd: CRM
+  created_at: 
+types_084: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 284
+  description: Open
+  value: O
+  subtype_cd: action_flag
+  company_id: 1
+  type_cd: action_flag
+  created_at: 
+types_465: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 1613
+  description: Diamond
+  value: D
+  subtype_cd: OTHER
+  company_id: 1
+  type_cd: INVN_ITEM_TYPE
+  created_at: 
+types_418: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 1477
+  description: rose
+  value: rose
+  subtype_cd: pearl_color
+  company_id: 1
+  type_cd: IPAD
+  created_at: 
+types_228: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 707
+  description: Fax
+  value: Fax
+  subtype_cd: preferred_contact
+  company_id: 1
+  type_cd: CRM
+  created_at: 
+types_038: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 118
+  description: NA
+  value: NA
+  subtype_cd: stone_setting
+  company_id: 1
+  type_cd: stone_setting
+  created_at: 
+types_275: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 810
+  description: Divorced
+  value: Divorced
+  subtype_cd: marital_status
+  company_id: 1
+  type_cd: CRM
+  created_at: 
+types_085: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 285
+  description: Close
+  value: C
+  subtype_cd: action_flag
+  company_id: 1
+  type_cd: action_flag
+  created_at: 
+types_466: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 1614
+  description: Diamond
+  value: D
+  subtype_cd: ACCT_ITEM_TYPE
+  company_id: 1
+  type_cd: ACCT_ITEM_TYPE
+  created_at: 
+types_419: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 1478
+  description: yellow
+  value: yellow
+  subtype_cd: pearl_color
+  company_id: 1
+  type_cd: IPAD
+  created_at: 
+types_229: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 708
+  description: Mail
+  value: Mail
+  subtype_cd: preferred_contact
+  company_id: 1
+  type_cd: CRM
+  created_at: 
+types_039: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 119
+  description: BBH
+  value: BBH
+  subtype_cd: stone_setting
+  company_id: 1
+  type_cd: stone_setting
+  created_at: 
+types_276: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 811
+  description: Male
+  value: Male
+  subtype_cd: gender
+  company_id: 1
+  type_cd: CRM
+  created_at: 
+types_086: 
+  updated_at: 2011/02/22 15:47:12
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 104
+  updated_by: 1
+  id: 286
+  description: Bank
+  value: "14100"
+  subtype_cd: invoice_gl_acct
+  company_id: 1
+  type_cd: FAAR
+  created_at: 
+types_467: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 1615
+  description: Inventory
+  value: I
+  subtype_cd: ACCT_ITEM_TYPE
+  company_id: 1
+  type_cd: ACCT_ITEM_TYPE
+  created_at: 
+types_277: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 812
+  description: Female
+  value: Female
+  subtype_cd: gender
+  company_id: 1
+  type_cd: CRM
+  created_at: 
+types_087: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 0
+  lock_version: 0
+  updated_by: 0
+  id: 500
+  description: Poor
+  value: Poor
+  subtype_cd: grade
+  company_id: 1
+  type_cd: grade
+  created_at: 
+types_468: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 1616
+  description: Assembly
+  value: A
+  subtype_cd: ACCT_ITEM_TYPE
+  company_id: 1
+  type_cd: ACCT_ITEM_TYPE
+  created_at: 
+types_278: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 813
+  description: Hold
+  value: Y
+  subtype_cd: credit_hold_flag
+  company_id: 1
+  type_cd: CRM
+  created_at: 
+types_088: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 501
+  description: "Non "
+  value: "Non "
+  subtype_cd: culet
+  company_id: 1
+  type_cd: culet
+  created_at: 
+types_469: 
+  updated_at: 2011/02/22 15:47:16
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 33
+  updated_by: 1
+  id: 1617
+  description: B1
+  value: B1
+  subtype_cd: stone_quality
+  company_id: 1
+  type_cd: stone_quality
+  created_at: 2011/01/24 00:00:00
+types_279: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 814
+  description: Not Hold
+  value: N
+  subtype_cd: credit_hold_flag
+  company_id: 1
+  type_cd: CRM
+  created_at: 
+types_089: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 502
+  description: "V.Small "
+  value: "V.Small "
+  subtype_cd: culet
+  company_id: 1
+  type_cd: culet
+  created_at: 
+types_330: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 1188
+  description: Finished Wt
+  value: F
+  subtype_cd: metal_wt_flag
+  company_id: 1
+  type_cd: metal_wt_flag
+  created_at: 
+types_140: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 0
+  lock_version: 0
+  updated_by: 0
+  id: 565
+  description: 
+  value: "40001"
+  subtype_cd: item_credit_acctid
+  company_id: 1
+  type_cd: saoi
+  created_at: 
+types_331: 
+  updated_at: 2011/02/22 15:47:13
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 100
+  updated_by: 1
+  id: 1189
+  description: 10KT
+  value: 10KT
+  subtype_cd: metal_type
+  company_id: 1
+  type_cd: metal_type
+  created_at: 
+types_141: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 0
+  lock_version: 0
+  updated_by: 0
+  id: 566
+  description: 
+  value: A
+  subtype_cd: credit_faar_flag
+  company_id: 1
+  type_cd: FAAR
+  created_at: 
+types_332: 
+  updated_at: 2011/02/22 15:47:13
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 100
+  updated_by: 1
+  id: 1190
+  description: 14KT
+  value: 14KT
+  subtype_cd: metal_type
+  company_id: 1
+  type_cd: metal_type
+  created_at: 
+types_142: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 567
+  description: Cash
+  value: C
+  subtype_cd: account_type
+  company_id: 1
+  type_cd: bank
+  created_at: 
+types_333: 
+  updated_at: 2011/02/22 15:47:13
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 100
+  updated_by: 1
+  id: 1191
+  description: 18KT
+  value: 18KT
+  subtype_cd: metal_type
+  company_id: 1
+  type_cd: metal_type
+  created_at: 
+types_143: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 568
+  description: Bank
+  value: B
+  subtype_cd: account_type
+  company_id: 1
+  type_cd: bank
+  created_at: 
+types_380: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 1374
+  description: Privacy Policy
+  value: Privacy Policy
+  subtype_cd: catalog_portal_link
+  company_id: 1
+  type_cd: catalog_portal_link
+  created_at: 
+types_190: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 0
+  updated_by: 1
+  id: 631
+  description: Check
+  value: Check
+  subtype_cd: payment_method
+  company_id: 1
+  type_cd: POS
+  created_at: 2010/02/01 17:02:57
+types_334: 
+  updated_at: 2011/02/22 15:47:13
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 100
+  updated_by: 1
+  id: 1192
+  description: 24KT
+  value: 24KT
+  subtype_cd: metal_type
+  company_id: 1
+  type_cd: metal_type
+  created_at: 
+types_144: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 569
+  description: Credit Card
+  value: R
+  subtype_cd: account_type
+  company_id: 1
+  type_cd: bank
+  created_at: 
+types_381: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 1375
+  description: "Term Of Use "
+  value: "Term Of Use "
+  subtype_cd: catalog_portal_link
+  company_id: 1
+  type_cd: catalog_portal_link
+  created_at: 
+types_191: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 0
+  updated_by: 1
+  id: 632
+  description: Debit Card
+  value: debit_card
+  subtype_cd: payment_method
+  company_id: 1
+  type_cd: POS
+  created_at: 2010/02/01 17:02:57
+types_335: 
+  updated_at: 2011/02/22 15:47:13
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 100
+  updated_by: 1
+  id: 1196
+  description: PALLIDIUM
+  value: PALD
+  subtype_cd: metal_type
+  company_id: 1
+  type_cd: metal_type
+  created_at: 
+types_145: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 570
+  description: Notes Payable
+  value: N
+  subtype_cd: account_type
+  company_id: 1
+  type_cd: bank
+  created_at: 
+types_382: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 1380
+  description: Dr.
+  value: Dr.
+  subtype_cd: title
+  company_id: 1
+  type_cd: title
+  created_at: 
+types_192: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 0
+  updated_by: 1
+  id: 633
+  description: Account
+  value: Account
+  subtype_cd: payment_method
+  company_id: 1
+  type_cd: POS
+  created_at: 2010/02/01 17:02:57
+types_336: 
+  updated_at: 2011/02/22 15:47:13
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 100
+  updated_by: 1
+  id: 1197
+  description: PLATINUM
+  value: PLAT
+  subtype_cd: metal_type
+  company_id: 1
+  type_cd: metal_type
+  created_at: 
+types_146: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 571
+  description: Debit Balance
+  value: DB
+  subtype_cd: balance_type
+  company_id: 1
+  type_cd: bank
+  created_at: 
+types_383: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 1400
+  description: Not Attended
+  value: N
+  subtype_cd: enquiry_status
+  company_id: 1
+  type_cd: enquiry_status
+  created_at: 
+types_193: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 0
+  updated_by: 1
+  id: 634
+  description: Gift Certificate
+  value: Gift_Cert
+  subtype_cd: payment_method
+  company_id: 1
+  type_cd: POS
+  created_at: 2010/02/01 17:02:57
+types_337: 
+  updated_at: 2011/02/22 15:47:13
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 100
+  updated_by: 1
+  id: 1198
+  description: SILVER
+  value: STER
+  subtype_cd: metal_type
+  company_id: 1
+  type_cd: metal_type
+  created_at: 
+types_147: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 572
+  description: Credit Balance
+  value: CR
+  subtype_cd: balance_type
+  company_id: 1
+  type_cd: bank
+  created_at: 
+types_384: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 1401
+  description: Attended
+  value: Y
+  subtype_cd: enquiry_status
+  company_id: 1
+  type_cd: enquiry_status
+  created_at: 
+types_194: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 0
+  updated_by: 1
+  id: 635
+  description: Gift Card
+  value: Gift_Card
+  subtype_cd: payment_method
+  company_id: 1
+  type_cd: POS
+  created_at: 2010/02/01 17:02:57
+types_338: 
+  updated_at: 2011/02/22 15:47:13
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 100
+  updated_by: 1
+  id: 1199
+  description: TWO TONE
+  value: TWOT
+  subtype_cd: metal_type
+  company_id: 1
+  type_cd: metal_type
+  created_at: 
+types_148: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 573
+  description: Assets
+  value: BA
+  subtype_cd: account_type
+  company_id: 1
+  type_cd: gl_category
+  created_at: 
+types_385: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 1440
+  description: In Progress
+  value: I
+  subtype_cd: payment_status
+  company_id: 1
+  type_cd: catalog_order
+  created_at: 
+types_195: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 0
+  updated_by: 1
+  id: 636
+  description: Visa
+  value: Visa
+  subtype_cd: card_type
+  company_id: 1
+  type_cd: POS
+  created_at: 2010/02/01 17:02:57
+types_339: 
+  updated_at: 2011/02/22 15:47:13
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 100
+  updated_by: 1
+  id: 1201
+  description: WHITE
+  value: W
+  subtype_cd: metal_color
+  company_id: 1
+  type_cd: metal_color
+  created_at: 
+types_149: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 574
+  description: Liabilities && Equity
+  value: BL
+  subtype_cd: account_type
+  company_id: 1
+  type_cd: gl_category
+  created_at: 
+types_386: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 1441
+  description: folder to store videos
+  value: /public/videos/
+  subtype_cd: VIDEO
+  company_id: 1
+  type_cd: UPLOAD_FOLDER
+  created_at: 
+types_196: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 0
+  updated_by: 1
+  id: 637
+  description: MasterCard
+  value: MasterCard
+  subtype_cd: card_type
+  company_id: 1
+  type_cd: POS
+  created_at: 2010/02/01 17:02:57
+types_387: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 1442
+  description: folder to store video
+  value: /projects/metalmelting/public/videos/
+  subtype_cd: METALMELT_VIDEO
+  company_id: 1
+  type_cd: UPLOAD_FOLDER
+  created_at: 
+types_197: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 0
+  updated_by: 1
+  id: 638
+  description: Discover
+  value: Discover
+  subtype_cd: card_type
+  company_id: 1
+  type_cd: POS
+  created_at: 2010/02/01 17:02:57
+types_200: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 642
+  description: 
+  value: "42000"
+  subtype_cd: item_debit_acctcd
+  company_id: 1
+  type_cd: puoi_gl_accts
+  created_at: 
+types_010: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 36
+  description: "Yes"
+  value: Y
+  subtype_cd: credit_approval_flag
+  company_id: 1
+  type_cd: credit_approval_flag
+  created_at: 
+types_388: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  lock_version: 0
+  updated_by: 100
+  id: 1443
+  description: Top Menu
+  value: M
+  subtype_cd: menu_type
+  company_id: 1
+  type_cd: menu_type
+  created_at: 
+types_198: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 0
+  updated_by: 1
+  id: 639
+  description: American Express
+  value: American Express
+  subtype_cd: card_type
+  company_id: 1
+  type_cd: POS
+  created_at: 2010/02/01 17:02:57
+types_201: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 643
+  description: 
+  value: "20002"
+  subtype_cd: item_credit_acctcd
+  company_id: 1
+  type_cd: puoi_gl_accts
+  created_at: 
+types_011: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 37
+  description: Credit Card
+  value: C
+  subtype_cd: credit_approval_flag
+  company_id: 1
+  type_cd: credit_approval_flag
+  created_at: 
+types_389: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  lock_version: 0
+  updated_by: 100
+  id: 1444
+  description: Sub Menu
+  value: S
+  subtype_cd: menu_type
+  company_id: 1
+  type_cd: menu_type
+  created_at: 
+types_199: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 0
+  updated_by: 1
+  id: 640
+  description: DinerClub
+  value: DinerClub
+  subtype_cd: card_type
+  company_id: 1
+  type_cd: POS
+  created_at: 2010/02/01 17:02:57
+types_202: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 646
+  description: 
+  value: "62000"
+  subtype_cd: tax_acctcd
+  company_id: 1
+  type_cd: puoi_gl_accts
+  created_at: 
+types_012: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 38
+  description: WFCA
+  value: W
+  subtype_cd: credit_approval_flag
+  company_id: 1
+  type_cd: credit_approval_flag
+  created_at: 
+types_440: 
+  updated_at: 2011/02/22 15:47:14
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 83
+  updated_by: 1
+  id: 1578
+  description: Oval
+  value: OVAL
+  subtype_cd: stone_shape
+  company_id: 1
+  type_cd: stone_shape
+  created_at: 2011/01/20 00:00:00
+types_250: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 749
+  description: Employee Referral
+  value: Employee
+  subtype_cd: lead_source
+  company_id: 1
+  type_cd: CRM
+  created_at: 
+types_060: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 170
+  description: W/T
+  value: WT
+  subtype_cd: pay_type
+  company_id: 1
+  type_cd: FAXX
+  created_at: 
+types_203: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 647
+  description: 
+  value: "40501"
+  subtype_cd: discount_acctcd
+  company_id: 1
+  type_cd: puoi_gl_accts
+  created_at: 
+types_013: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 39
+  description: "No"
+  value: N
+  subtype_cd: credit_approval_flag
+  company_id: 1
+  type_cd: credit_approval_flag
+  created_at: 
+types_441: 
+  updated_at: 2011/02/22 15:47:14
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 83
+  updated_by: 1
+  id: 1579
+  description: Radiant
+  value: RADIANT
+  subtype_cd: stone_shape
+  company_id: 1
+  type_cd: stone_shape
+  created_at: 2011/01/20 00:00:00
+types_251: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 750
+  description: Partner
+  value: Partner
+  subtype_cd: lead_source
+  company_id: 1
+  type_cd: CRM
+  created_at: 
+types_061: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 185
+  description: Low
+  value: Low
+  subtype_cd: gemex
+  company_id: 1
+  type_cd: gemex
+  created_at: 
+types_204: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 662
+  description: 
+  value: A
+  subtype_cd: credit_faap_flag
+  company_id: 1
+  type_cd: faap
+  created_at: 
+types_014: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 40
+  description: A
+  value: A
+  subtype_cd: paymentpriority
+  company_id: 1
+  type_cd: paymentpriority
+  created_at: 
+types_442: 
+  updated_at: 2011/02/22 15:47:14
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 83
+  updated_by: 1
+  id: 1580
+  description: Pear
+  value: PEAR
+  subtype_cd: stone_shape
+  company_id: 1
+  type_cd: stone_shape
+  created_at: 2011/01/20 00:00:00
+types_252: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 751
+  description: Trade Show
+  value: Trade_Show
+  subtype_cd: lead_source
+  company_id: 1
+  type_cd: CRM
+  created_at: 
+types_062: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 187
+  description: Medium
+  value: Med
+  subtype_cd: gemex
+  company_id: 1
+  type_cd: gemex
+  created_at: 
+types_205: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 682
+  description: Public
+  value: Public
+  subtype_cd: ownership_type
+  company_id: 1
+  type_cd: CRM
+  created_at: 
+types_015: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 41
+  description: Standard
+  value: S
+  subtype_cd: PO
+  company_id: 1
+  type_cd: TRANS_TYPE
+  created_at: 
+types_490: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 0
+  updated_by: 1
+  id: 1642
+  description: ""
+  value: ""
+  subtype_cd: metal_analysis
+  company_id: 1
+  type_cd: melting
+  created_at: 
+types_443: 
+  updated_at: 2011/02/22 15:47:15
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 83
+  updated_by: 1
+  id: 1581
+  description: Heart
+  value: HEART
+  subtype_cd: stone_shape
+  company_id: 1
+  type_cd: stone_shape
+  created_at: 2011/01/20 00:00:00
+types_253: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 752
+  description: Website
+  value: website
+  subtype_cd: lead_source
+  company_id: 1
+  type_cd: CRM
+  created_at: 
+types_063: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 188
+  description: High
+  value: High
+  subtype_cd: gemex
+  company_id: 1
+  type_cd: gemex
+  created_at: 
+types_206: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 683
+  description: Private
+  value: Private
+  subtype_cd: ownership_type
+  company_id: 1
+  type_cd: CRM
+  created_at: 
+types_016: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 42
+  description: C
+  value: C
+  subtype_cd: paymentpriority
+  company_id: 1
+  type_cd: paymentpriority
+  created_at: 
+types_491: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 0
+  updated_by: 1
+  id: 1643
+  description: Reject
+  value: R
+  subtype_cd: metal_analysis
+  company_id: 1
+  type_cd: melting
+  created_at: 
+types_444: 
+  updated_at: 2011/02/22 15:47:15
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 83
+  updated_by: 1
+  id: 1582
+  description: Cushion
+  value: CUSHION
+  subtype_cd: stone_shape
+  company_id: 1
+  type_cd: stone_shape
+  created_at: 2011/01/20 00:00:00
+types_254: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 753
+  description: Other
+  value: other
+  subtype_cd: lead_source
+  company_id: 1
+  type_cd: CRM
+  created_at: 
+types_064: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 189
+  description: Very High
+  value: VH
+  subtype_cd: gemex
+  company_id: 1
+  type_cd: gemex
+  created_at: 
+types_207: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 684
+  description: Subsidiary
+  value: Subsidiary
+  subtype_cd: ownership_type
+  company_id: 1
+  type_cd: CRM
+  created_at: 
+types_017: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 43
+  description: D
+  value: D
+  subtype_cd: paymentpriority
+  company_id: 1
+  type_cd: paymentpriority
+  created_at: 
+types_492: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 0
+  updated_by: 1
+  id: 1644
+  description: Accpet
+  value: A
+  subtype_cd: metal_analysis
+  company_id: 1
+  type_cd: melting
+  created_at: 
+types_445: 
+  updated_at: 2011/02/22 15:47:15
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 79
+  updated_by: 1
+  id: 1583
+  description: D
+  value: D
+  subtype_cd: stone_color
+  company_id: 1
+  type_cd: stone_color
+  created_at: 2011/01/20 00:00:00
+types_255: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 754
+  description: Not Started
+  value: NS
+  subtype_cd: status
+  company_id: 1
+  type_cd: CRM
+  created_at: 
+types_065: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 190
+  description: X Thin
+  value: X Thin
+  subtype_cd: girdle
+  company_id: 1
+  type_cd: girdle
+  created_at: 
+types_208: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 685
+  description: Other
+  value: Other
+  subtype_cd: ownership_type
+  company_id: 1
+  type_cd: CRM
+  created_at: 
+types_018: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 44
+  description: A
+  value: A
+  subtype_cd: price_level
+  company_id: 1
+  type_cd: price_level
+  created_at: 
+types_446: 
+  updated_at: 2011/02/22 15:47:15
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 77
+  updated_by: 1
+  id: 1584
+  description: E
+  value: E
+  subtype_cd: stone_color
+  company_id: 1
+  type_cd: stone_color
+  created_at: 2011/01/20 00:00:00
+types_256: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 755
+  description: In Progress
+  value: progress
+  subtype_cd: status
+  company_id: 1
+  type_cd: CRM
+  created_at: 
+types_066: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 191
+  description: V Thin
+  value: V Thin
+  subtype_cd: girdle
+  company_id: 1
+  type_cd: girdle
+  created_at: 
+types_209: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 686
+  description: Billing Address
+  value: BillTo
+  subtype_cd: address_type
+  company_id: 1
+  type_cd: CRM
+  created_at: 
+types_019: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 45
+  description: B
+  value: B
+  subtype_cd: price_level
+  company_id: 1
+  type_cd: price_level
+  created_at: 
+types_447: 
+  updated_at: 2011/02/22 15:47:15
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 77
+  updated_by: 1
+  id: 1585
+  description: F
+  value: F
+  subtype_cd: stone_color
+  company_id: 1
+  type_cd: stone_color
+  created_at: 2011/01/20 00:00:00
+types_257: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 756
+  description: Completed
+  value: completed
+  subtype_cd: status
+  company_id: 1
+  type_cd: CRM
+  created_at: 
+types_067: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 193
+  description: S Thin
+  value: S Thin
+  subtype_cd: girdle
+  company_id: 1
+  type_cd: girdle
+  created_at: 
+types_448: 
+  updated_at: 2011/02/22 15:47:15
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 77
+  updated_by: 1
+  id: 1586
+  description: G
+  value: G
+  subtype_cd: stone_color
+  company_id: 1
+  type_cd: stone_color
+  created_at: 2011/01/20 00:00:00
+types_258: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 757
+  description: Waiting on Someone else
+  value: waiting
+  subtype_cd: status
+  company_id: 1
+  type_cd: CRM
+  created_at: 
+types_068: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 194
+  description: Thin
+  value: Thin
+  subtype_cd: girdle
+  company_id: 1
+  type_cd: girdle
+  created_at: 
+types_449: 
+  updated_at: 2011/02/22 15:47:15
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 77
+  updated_by: 1
+  id: 1587
+  description: H
+  value: H
+  subtype_cd: stone_color
+  company_id: 1
+  type_cd: stone_color
+  created_at: 2011/01/20 00:00:00
+types_259: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 758
+  description: Deferred
+  value: Deferred
+  subtype_cd: status
+  company_id: 1
+  type_cd: CRM
+  created_at: 
+types_069: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 195
+  description: Medium
+  value: Medium
+  subtype_cd: girdle
+  company_id: 1
+  type_cd: girdle
+  created_at: 
+types_310: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 982
+  description: 
+  value: /inbox
+  subtype_cd: INBOX
+  company_id: 1
+  type_cd: UPLOAD_FOLDER
+  created_at: 
+types_120: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 545
+  description: SPO
+  value: SO
+  subtype_cd: inv_type
+  company_id: 1
+  type_cd: FAAR
+  created_at: 
+types_311: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 983
+  description: 
+  value: /log
+  subtype_cd: LOG
+  company_id: 1
+  type_cd: UPLOAD_FOLDER
+  created_at: 
+types_121: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 546
+  description: Advertisement
+  value: YA
+  subtype_cd: inv_type
+  company_id: 1
+  type_cd: FAAR
+  created_at: 
+types_312: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 984
+  description: ""
+  value: /backup
+  subtype_cd: BACKUP
+  company_id: 1
+  type_cd: UPLOAD_FOLDER
+  created_at: 
+types_122: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 547
+  description: AR CB
+  value: YB
+  subtype_cd: inv_type
+  company_id: 1
+  type_cd: FAAR
+  created_at: 
+types_360: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  lock_version: 0
+  updated_by: 100
+  id: 1347
+  description: Cancelled
+  value: C
+  subtype_cd: value
+  company_id: 1
+  type_cd: catalog_order_status
+  created_at: 
+types_170: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 595
+  description: APP. FEES
+  value: ZA
+  subtype_cd: inv_type
+  company_id: 1
+  type_cd: FAAP
+  created_at: 
+types_313: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 1023
+  description: Store Transfer
+  value: S
+  subtype_cd: invn_trans_type_oth
+  company_id: 1
+  type_cd: invn_trans_type
+  created_at: 
+types_123: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 548
+  description: Discount
+  value: YD
+  subtype_cd: inv_type
+  company_id: 1
+  type_cd: FAAR
+  created_at: 
+types_361: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 1348
+  description: PayPal
+  value: P
+  subtype_cd: payment_type
+  company_id: 1
+  type_cd: catalog_order
+  created_at: 
+types_171: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 596
+  description: CASTING
+  value: ZC
+  subtype_cd: inv_type
+  company_id: 1
+  type_cd: FAAP
+  created_at: 
+types_314: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 1024
+  description: Item Transfer
+  value: T
+  subtype_cd: invn_trans_type_oth
+  company_id: 1
+  type_cd: invn_trans_type
+  created_at: 
+types_124: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 549
+  description: AR Inv
+  value: YI
+  subtype_cd: inv_type
+  company_id: 1
+  type_cd: FAAR
+  created_at: 
+types_362: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 1349
+  description: Pay Later
+  value: O
+  subtype_cd: payment_type
+  company_id: 1
+  type_cd: catalog_order
+  created_at: 
+types_172: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 597
+  description: DIAMOND
+  value: ZD
+  subtype_cd: inv_type
+  company_id: 1
+  type_cd: FAAP
+  created_at: 
+types_315: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 1042
+  description: Packet Assignment
+  value: P
+  subtype_cd: invn_trans_type_oth
+  company_id: 1
+  type_cd: invn_trans_type
+  created_at: 
+types_125: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 550
+  description: Markdown
+  value: YM
+  subtype_cd: inv_type
+  company_id: 1
+  type_cd: FAAR
+  created_at: 
+types_363: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 1350
+  description: Paid
+  value: P
+  subtype_cd: payment_status
+  company_id: 1
+  type_cd: catalog_order
+  created_at: 
+types_173: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 598
+  description: JEWELRY
+  value: ZJ
+  subtype_cd: inv_type
+  company_id: 1
+  type_cd: FAAP
+  created_at: 
+types_316: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 1062
+  description: folder to store images uploaded for catalog
+  value: /projects/catalogportal3/public/images/
+  subtype_cd: CATALOG_IMAGE
+  company_id: 1
+  type_cd: UPLOAD_FOLDER
+  created_at: 
+types_126: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 551
+  description: Penalty
+  value: YT
+  subtype_cd: inv_type
+  company_id: 1
+  type_cd: FAAR
+  created_at: 
+types_364: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 1351
+  description: Not Paid
+  value: U
+  subtype_cd: payment_status
+  company_id: 1
+  type_cd: catalog_order
+  created_at: 
+types_174: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 599
+  description: LABOR
+  value: ZT
+  subtype_cd: inv_type
+  company_id: 1
+  type_cd: FAAP
+  created_at: 
+types_317: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 1082
+  description: folder to store temporary report files which are exported.
+  value: /public/reports/export/
+  subtype_cd: REPORT_EXPORT
+  company_id: 1
+  type_cd: UPLOAD_FOLDER
+  created_at: 
+types_127: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: ""
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 552
+  description: General
+  value: "1"
+  subtype_cd: credit_type
+  company_id: 1
+  type_cd: FAAR
+  created_at: 
+types_365: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 1352
+  description: Payment Failed
+  value: F
+  subtype_cd: payment_status
+  company_id: 1
+  type_cd: catalog_order
+  created_at: 
+types_175: 
+  updated_at: 2011/02/22 15:47:13
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 104
+  updated_by: 1
+  id: 600
+  description: Accounts Payable
+  value: "13104"
+  subtype_cd: credit_gl_account_cd
+  company_id: 1
+  type_cd: FAAP
+  created_at: 
+types_318: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 1102
+  description: Invoice
+  value: I
+  subtype_cd: PC
+  company_id: 1
+  type_cd: TRANS_TYPE
+  created_at: 
+types_128: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 553
+  description: Defective
+  value: DE
+  subtype_cd: credit_type
+  company_id: 1
+  type_cd: FAAR
+  created_at: 
+types_366: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  lock_version: 0
+  updated_by: 100
+  id: 1360
+  description: Order Placed
+  value: Order Placed
+  subtype_cd: description
+  company_id: 1
+  type_cd: catalog_order_status
+  created_at: 
+types_176: 
+  updated_at: 2011/02/22 15:47:13
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 104
+  updated_by: 1
+  id: 601
+  description: DCU
+  value: "13103"
+  subtype_cd: bank_code
+  company_id: 1
+  type_cd: FAAP
+  created_at: 
+types_319: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 1103
+  description: Direct
+  value: D
+  subtype_cd: PC
+  company_id: 1
+  type_cd: TRANS_TYPE
+  created_at: 
+types_129: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 554
+  description: Repair
+  value: RP
+  subtype_cd: credit_type
+  company_id: 1
+  type_cd: FAAR
+  created_at: 
+types_367: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  lock_version: 0
+  updated_by: 100
+  id: 1361
+  description: Confirmed Order
+  value: Confirmed Order
+  subtype_cd: description
+  company_id: 1
+  type_cd: catalog_order_status
+  created_at: 
+types_177: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 602
+  description: Memo
+  value: M
+  subtype_cd: PO
+  company_id: 1
+  type_cd: TRANS_TYPE
+  created_at: 
+types_368: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  lock_version: 0
+  updated_by: 100
+  id: 1362
+  description: Shipped
+  value: Shipped
+  subtype_cd: description
+  company_id: 1
+  type_cd: catalog_order_status
+  created_at: 
+types_178: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 603
+  description: Order
+  value: O
+  subtype_cd: PI
+  company_id: 1
+  type_cd: TRANS_TYPE
+  created_at: 
+types_369: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  lock_version: 0
+  updated_by: 100
+  id: 1363
+  description: Order Closed
+  value: Order Closed
+  subtype_cd: description
+  company_id: 1
+  type_cd: catalog_order_status
+  created_at: 
+types_179: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 604
+  description: Memo
+  value: M
+  subtype_cd: PI
+  company_id: 1
+  type_cd: TRANS_TYPE
+  created_at: 
+types_420: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 1479
+  description: white
+  value: white
+  subtype_cd: pearl_color
+  company_id: 1
+  type_cd: IPAD
+  created_at: 
+types_230: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 710
+  description: Morning
+  value: Morning
+  subtype_cd: preferred_time
+  company_id: 1
+  type_cd: CRM
+  created_at: 
+types_040: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 120
+  description: BBW
+  value: BBW
+  subtype_cd: stone_setting
+  company_id: 1
+  type_cd: stone_setting
+  created_at: 
+types_421: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 1480
+  description: "akoya "
+  value: akoya
+  subtype_cd: pearl_type
+  company_id: 1
+  type_cd: IPAD
+  created_at: 
+types_231: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 711
+  description: Afternoon
+  value: Afternoon
+  subtype_cd: preferred_time
+  company_id: 1
+  type_cd: CRM
+  created_at: 
+types_041: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 121
+  description: CSH
+  value: CSH
+  subtype_cd: stone_setting
+  company_id: 1
+  type_cd: stone_setting
+  created_at: 
+types_422: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 1481
+  description: crown
+  value: crown
+  subtype_cd: pearl_type
+  company_id: 1
+  type_cd: IPAD
+  created_at: 
+types_232: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 712
+  description: Evening
+  value: Evening
+  subtype_cd: preferred_time
+  company_id: 1
+  type_cd: CRM
+  created_at: 
+types_042: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 122
+  description: CSW
+  value: CSW
+  subtype_cd: stone_setting
+  company_id: 1
+  type_cd: stone_setting
+  created_at: 
+types_470: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 0
+  updated_by: 1
+  id: 1618
+  description: Gold
+  value: Gold
+  subtype_cd: item
+  company_id: 1
+  type_cd: unit_conversion
+  created_at: 
+types_423: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 1482
+  description: fresh water
+  value: fresh water
+  subtype_cd: pearl_type
+  company_id: 1
+  type_cd: IPAD
+  created_at: 
+types_280: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 822
+  description: Account
+  value: A
+  subtype_cd: address_for_flag
+  company_id: 1
+  type_cd: CRM
+  created_at: 
+types_090: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 503
+  description: "Small "
+  value: "Small "
+  subtype_cd: culet
+  company_id: 1
+  type_cd: culet
+  created_at: 
+types_233: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 713
+  description: Monday
+  value: Monday
+  subtype_cd: preferred_day
+  company_id: 1
+  type_cd: CRM
+  created_at: 
+types_043: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 123
+  description: MP
+  value: MP
+  subtype_cd: stone_setting
+  company_id: 1
+  type_cd: stone_setting
+  created_at: 
+types_471: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 0
+  updated_by: 1
+  id: 1619
+  description: COLR
+  value: COLR
+  subtype_cd: metal_type
+  company_id: 1
+  type_cd: unit_conversion
+  created_at: 
+types_424: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 1483
+  description: southsea
+  value: southsea
+  subtype_cd: pearl_type
+  company_id: 1
+  type_cd: IPAD
+  created_at: 
+types_281: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 823
+  description: Contact
+  value: C
+  subtype_cd: address_for_flag
+  company_id: 1
+  type_cd: CRM
+  created_at: 
+types_091: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 504
+  description: "Medium "
+  value: "Medium "
+  subtype_cd: culet
+  company_id: 1
+  type_cd: culet
+  created_at: 
+types_234: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 714
+  description: Tuesday
+  value: Tuesday
+  subtype_cd: preferred_day
+  company_id: 1
+  type_cd: CRM
+  created_at: 
+types_044: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 124
+  description: MS
+  value: MS
+  subtype_cd: stone_setting
+  company_id: 1
+  type_cd: stone_setting
+  created_at: 
+types_472: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 0
+  updated_by: 1
+  id: 1620
+  description: KT
+  value: KT
+  subtype_cd: metal_type
+  company_id: 1
+  type_cd: unit_conversion
+  created_at: 
+types_425: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 1484
+  description: tahitian
+  value: tahitian
+  subtype_cd: pearl_type
+  company_id: 1
+  type_cd: IPAD
+  created_at: 
+types_282: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 824
+  description: Letter
+  value: Letter
+  subtype_cd: activity_type
+  company_id: 1
+  type_cd: CRM
+  created_at: 
+types_092: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 505
+  description: "Large "
+  value: "Large "
+  subtype_cd: culet
+  company_id: 1
+  type_cd: culet
+  created_at: 
+types_235: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 715
+  description: Wednesday
+  value: Wednesday
+  subtype_cd: preferred_day
+  company_id: 1
+  type_cd: CRM
+  created_at: 
+types_045: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 125
+  description: NS
+  value: NS
+  subtype_cd: stone_setting
+  company_id: 1
+  type_cd: stone_setting
+  created_at: 
+types_473: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 0
+  updated_by: 1
+  id: 1621
+  description: KTWT
+  value: KTWT
+  subtype_cd: metal_type
+  company_id: 1
+  type_cd: unit_conversion
+  created_at: 
+types_426: 
+  updated_at: 2011/02/22 15:47:14
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 133
+  updated_by: 1
+  id: 1491
+  description: ""
+  value: N
+  subtype_cd: margin_calculation
+  company_id: 1
+  type_cd: jewelry_default
+  created_at: 
+types_283: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 827
+  description: Call
+  value: Call
+  subtype_cd: activity_type
+  company_id: 1
+  type_cd: CRM
+  created_at: 
+types_093: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 506
+  description: "Yes"
+  value: Y
+  subtype_cd: web_upload
+  company_id: 1
+  type_cd: web_upload
+  created_at: 
+types_236: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 716
+  description: Thursday
+  value: Thursday
+  subtype_cd: preferred_day
+  company_id: 1
+  type_cd: CRM
+  created_at: 
+types_046: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 126
+  description: PI
+  value: PI
+  subtype_cd: stone_setting
+  company_id: 1
+  type_cd: stone_setting
+  created_at: 
+types_474: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 0
+  updated_by: 1
+  id: 1622
+  description: WT
+  value: WT
+  subtype_cd: metal_type
+  company_id: 1
+  type_cd: unit_conversion
+  created_at: 
+types_427: 
+  updated_at: 2011/02/22 15:47:14
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 133
+  updated_by: 1
+  id: 1494
+  description: ""
+  value: Y
+  subtype_cd: change_price
+  company_id: 1
+  type_cd: jewelry_default
+  created_at: 
+types_284: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 828
+  description: " "
+  value: " "
+  subtype_cd: ownership_type
+  company_id: 1
+  type_cd: CRM
+  created_at: 
+types_094: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 507
+  description: "No"
+  value: N
+  subtype_cd: web_upload
+  company_id: 1
+  type_cd: web_upload
+  created_at: 
+types_237: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 717
+  description: Friday
+  value: Friday
+  subtype_cd: preferred_day
+  company_id: 1
+  type_cd: CRM
+  created_at: 
+types_047: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 127
+  description: PIW
+  value: PIW
+  subtype_cd: stone_setting
+  company_id: 1
+  type_cd: stone_setting
+  created_at: 
+types_475: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 0
+  updated_by: 1
+  id: 1623
+  description: 24KT
+  value: 24KT
+  subtype_cd: unit
+  company_id: 1
+  type_cd: unit_conversion
+  created_at: 
+types_428: 
+  updated_at: 2011/02/22 15:47:14
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 132
+  updated_by: 1
+  id: 1495
+  description: ""
+  value: "0.00"
+  subtype_cd: diam_loss_per
+  company_id: 1
+  type_cd: jewelry_default
+  created_at: 
+types_285: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 829
+  description: " "
+  value: " "
+  subtype_cd: address_type
+  company_id: 1
+  type_cd: CRM
+  created_at: 
+types_095: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 508
+  description: On Hold
+  value: H
+  subtype_cd: web_upload
+  company_id: 1
+  type_cd: web_upload
+  created_at: 
+types_238: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 718
+  description: Saturday
+  value: Saturday
+  subtype_cd: preferred_day
+  company_id: 1
+  type_cd: CRM
+  created_at: 
+types_048: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 128
+  description: PRW
+  value: PRW
+  subtype_cd: stone_setting
+  company_id: 1
+  type_cd: stone_setting
+  created_at: 
+types_476: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 0
+  updated_by: 1
+  id: 1624
+  description: 9KT
+  value: 9KT
+  subtype_cd: unit
+  company_id: 1
+  type_cd: unit_conversion
+  created_at: 
+types_429: 
+  updated_at: 2011/02/22 15:47:14
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 132
+  updated_by: 1
+  id: 1496
+  description: ""
+  value: "0.00"
+  subtype_cd: stone_loss_per
+  company_id: 1
+  type_cd: jewelry_default
+  created_at: 
+types_286: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 830
+  description: " "
+  value: " "
+  subtype_cd: relationship_type
+  company_id: 1
+  type_cd: CRM
+  created_at: 
+types_096: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 509
+  description: Info Missing
+  value: M
+  subtype_cd: web_upload
+  company_id: 1
+  type_cd: web_upload
+  created_at: 
+types_239: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 719
+  description: Sunday
+  value: Sunday
+  subtype_cd: preferred_day
+  company_id: 1
+  type_cd: CRM
+  created_at: 
+types_049: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 129
+  description: PSH
+  value: PSH
+  subtype_cd: stone_setting
+  company_id: 1
+  type_cd: stone_setting
+  created_at: 
+types_477: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 0
+  updated_by: 1
+  id: 1625
+  description: 10KT
+  value: 10KT
+  subtype_cd: unit
+  company_id: 1
+  type_cd: unit_conversion
+  created_at: 
+types_287: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 831
+  description: " "
+  value: " "
+  subtype_cd: industry
+  company_id: 1
+  type_cd: CRM
+  created_at: 
+types_097: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 510
+  description: None
+  value: None
+  subtype_cd: "fluorescence "
+  company_id: 1
+  type_cd: "fluorescence "
+  created_at: 
+types_478: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 0
+  updated_by: 1
+  id: 1626
+  description: 14KT
+  value: 14KT
+  subtype_cd: unit
+  company_id: 1
+  type_cd: unit_conversion
+  created_at: 
+types_100: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 513
+  description: "V.Strong "
+  value: V.Strong
+  subtype_cd: "fluorescence "
+  company_id: 1
+  type_cd: "fluorescence "
+  created_at: 
+types_288: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 832
+  description: " "
+  value: " "
+  subtype_cd: preferred_contact
+  company_id: 1
+  type_cd: CRM
+  created_at: 
+types_098: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 511
+  description: "Faint "
+  value: "Faint "
+  subtype_cd: "fluorescence "
+  company_id: 1
+  type_cd: "fluorescence "
+  created_at: 
+types_479: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 0
+  updated_by: 1
+  id: 1627
+  description: 18KT
+  value: 18KT
+  subtype_cd: unit
+  company_id: 1
+  type_cd: unit_conversion
+  created_at: 2011/01/25 00:00:00
+types_101: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 514
+  description: "Negligible "
+  value: "Negligible "
+  subtype_cd: "fluorescence "
+  company_id: 1
+  type_cd: "fluorescence "
+  created_at: 
+types_289: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 833
+  description: " "
+  value: " "
+  subtype_cd: opportunity_type
+  company_id: 1
+  type_cd: CRM
+  created_at: 
+types_099: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 512
+  description: "Strong "
+  value: "Strong "
+  subtype_cd: "fluorescence "
+  company_id: 1
+  type_cd: "fluorescence "
+  created_at: 
+types_102: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 515
+  description: "Medium "
+  value: "Medium "
+  subtype_cd: "fluorescence "
+  company_id: 1
+  type_cd: "fluorescence "
+  created_at: 
+types_103: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 516
+  description: "Inert "
+  value: "Inert "
+  subtype_cd: "fluorescence "
+  company_id: 1
+  type_cd: "fluorescence "
+  created_at: 
+types_340: 
+  updated_at: 2011/02/22 15:47:13
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 100
+  updated_by: 1
+  id: 1202
+  description: YELLOW
+  value: Y
+  subtype_cd: metal_color
+  company_id: 1
+  type_cd: metal_color
+  created_at: 
+types_150: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 575
+  description: Expense
+  value: IE
+  subtype_cd: account_type
+  company_id: 1
+  type_cd: gl_category
+  created_at: 
+types_104: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 517
+  description: Item
+  value: I
+  subtype_cd: barcode_flag
+  company_id: 1
+  type_cd: barcode_flag
+  created_at: 
+types_341: 
+  updated_at: 2011/02/22 15:47:13
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 100
+  updated_by: 1
+  id: 1203
+  description: TRI COLOR
+  value: "3"
+  subtype_cd: metal_color
+  company_id: 1
+  type_cd: metal_color
+  created_at: 
+types_151: 
+  updated_at: 
+  update_flag: y
+  trans_flag: a
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 576
+  description: Income
+  value: II
+  subtype_cd: account_type
+  company_id: 1
+  type_cd: gl_category
+  created_at: 
+types_105: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 518
+  description: Packet
+  value: P
+  subtype_cd: barcode_flag
+  company_id: 1
+  type_cd: barcode_flag
+  created_at: 
+types_342: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 1204
+  description: GM
+  value: GM
+  subtype_cd: metal_unit
+  company_id: 1
+  type_cd: metal_unit
+  created_at: 
+types_152: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 577
+  description: Transaction Date Range
+  value: "2009-12-01"
+  subtype_cd: trans_from_date
+  company_id: 1
+  type_cd: FAGL
+  created_at: 
+types_106: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 519
+  description: WB
+  value: W
+  subtype_cd: barcode_flag
+  company_id: 1
+  type_cd: barcode_flag
+  created_at: 
+types_390: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 1445
+  description: Center
+  value: C
+  subtype_cd: alignment
+  company_id: 1
+  type_cd: report_column
+  created_at: 
+types_343: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 1205
+  description: DWT
+  value: DWT
+  subtype_cd: metal_unit
+  company_id: 1
+  type_cd: metal_unit
+  created_at: 
+types_153: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 578
+  description: Transaction Date Range
+  value: "2009-12-31"
+  subtype_cd: trans_to_date
+  company_id: 1
+  type_cd: FAGL
+  created_at: 
+types_107: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 520
+  description: Label
+  value: L
+  subtype_cd: barcode_flag
+  company_id: 1
+  type_cd: barcode_flag
+  created_at: 
+types_391: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 1447
+  description: VS-VG
+  value: VS-VG
+  subtype_cd: diamond
+  company_id: 1
+  type_cd: IPAD
+  created_at: 
+types_344: 
+  updated_at: 2011/02/22 15:47:13
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 100
+  updated_by: 1
+  id: 1211
+  description: Black
+  value: BLK
+  subtype_cd: stone_shade
+  company_id: 1
+  type_cd: stone_shade
+  created_at: 
+types_154: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 579
+  description: Regular
+  value: REGU
+  subtype_cd: journal_type
+  company_id: 1
+  type_cd: FAGL
+  created_at: 
+types_108: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 521
+  description: STND
+  value: STND
+  subtype_cd: prod_so_type
+  company_id: 1
+  type_cd: "prod_so_type "
+  created_at: 
+types_392: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 1449
+  description: SI-VG
+  value: SI-VG
+  subtype_cd: diamond
+  company_id: 1
+  type_cd: IPAD
+  created_at: 
+types_345: 
+  updated_at: 2011/02/22 15:47:13
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 100
+  updated_by: 1
+  id: 1212
+  description: Blue
+  value: BLUE
+  subtype_cd: stone_shade
+  company_id: 1
+  type_cd: stone_shade
+  created_at: 
+types_155: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 580
+  description: Repeating
+  value: REPE
+  subtype_cd: journal_type
+  company_id: 1
+  type_cd: FAGL
+  created_at: 
+types_109: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 522
+  description: "SPO "
+  value: "SPO "
+  subtype_cd: prod_so_type
+  company_id: 1
+  type_cd: prod_so_type
+  created_at: 
+types_393: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 1450
+  description: yellow
+  value: yellow
+  subtype_cd: metal_color
+  company_id: 1
+  type_cd: IPAD
+  created_at: 
+types_346: 
+  updated_at: 2011/02/22 15:47:13
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 100
+  updated_by: 1
+  id: 1213
+  description: Brown
+  value: BRN
+  subtype_cd: stone_shade
+  company_id: 1
+  type_cd: stone_shade
+  created_at: 
+types_156: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 581
+  description: Reversed
+  value: REVE
+  subtype_cd: journal_type
+  company_id: 1
+  type_cd: FAGL
+  created_at: 
+types_394: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 1451
+  description: white
+  value: white
+  subtype_cd: metal_color
+  company_id: 1
+  type_cd: IPAD
+  created_at: 
+types_347: 
+  updated_at: 2011/02/22 15:47:14
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 100
+  updated_by: 1
+  id: 1214
+  description: Green
+  value: GRN
+  subtype_cd: stone_shade
+  company_id: 1
+  type_cd: stone_shade
+  created_at: 
+types_157: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 582
+  description: Beginning Balance
+  value: BBAL
+  subtype_cd: journal_type
+  company_id: 1
+  type_cd: FAGL
+  created_at: 
+types_395: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 1453
+  description: 10K
+  value: 10K
+  subtype_cd: metal_type
+  company_id: 1
+  type_cd: IPAD
+  created_at: 
+types_348: 
+  updated_at: 2011/02/22 15:47:14
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 100
+  updated_by: 1
+  id: 1215
+  description: Yellow
+  value: YELL
+  subtype_cd: stone_shade
+  company_id: 1
+  type_cd: stone_shade
+  created_at: 
+types_158: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 583
+  description: Adjustment
+  value: ADJU
+  subtype_cd: journal_type
+  company_id: 1
+  type_cd: FAGL
+  created_at: 
+types_396: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 1454
+  description: 14K
+  value: 14K
+  subtype_cd: metal_type
+  company_id: 1
+  type_cd: IPAD
+  created_at: 
+types_349: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 1222
+  description: Labor Finish
+  value: LAB
+  subtype_cd: labor_type
+  company_id: 1
+  type_cd: labor_type
+  created_at: 
+types_159: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 584
+  description: Cash
+  value: CASH
+  subtype_cd: journal_type
+  company_id: 1
+  type_cd: FAGL
+  created_at: 
+types_397: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 1455
+  description: 18K
+  value: 18K
+  subtype_cd: metal_type
+  company_id: 1
+  type_cd: IPAD
+  created_at: 
+types_400: 
+  updated_at: 
+  update_flag: y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 1458
+  description: 4.5-5
+  value: 4.5-5
+  subtype_cd: pearl_size
+  company_id: 1
+  type_cd: IPAD
+  created_at: 
+types_210: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 687
+  description: Shipping Address
+  value: ShipTo
+  subtype_cd: address_type
+  company_id: 1
+  type_cd: CRM
+  created_at: 
+types_020: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 46
+  description: C
+  value: C
+  subtype_cd: price_level
+  company_id: 1
+  type_cd: price_level
+  created_at: 
+types_398: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 1456
+  description: 24K
+  value: 24K
+  subtype_cd: metal_type
+  company_id: 1
+  type_cd: IPAD
+  created_at: 
+types_401: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 1459
+  description: 5-5.5
+  value: 5-5.5
+  subtype_cd: pearl_size
+  company_id: 1
+  type_cd: IPAD
+  created_at: 
+types_211: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 688
+  description: Primary
+  value: Primary
+  subtype_cd: address_type
+  company_id: 1
+  type_cd: CRM
+  created_at: 
+types_021: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 47
+  description: D
+  value: D
+  subtype_cd: price_level
+  company_id: 1
+  type_cd: price_level
+  created_at: 
+types_399: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 1457
+  description: 4-4.5
+  value: 4-4.5
+  subtype_cd: pearl_size
+  company_id: 1
+  type_cd: IPAD
+  created_at: 
+types_402: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 1460
+  description: 5.5-6
+  value: 5.5-6
+  subtype_cd: pearl_size
+  company_id: 1
+  type_cd: IPAD
+  created_at: 
+types_212: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 689
+  description: Other
+  value: Other
+  subtype_cd: address_type
+  company_id: 1
+  type_cd: CRM
+  created_at: 
+types_022: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 48
+  description: E
+  value: E
+  subtype_cd: price_level
+  company_id: 1
+  type_cd: price_level
+  created_at: 
+types_450: 
+  updated_at: 2011/02/22 15:47:15
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 77
+  updated_by: 1
+  id: 1588
+  description: I
+  value: I
+  subtype_cd: stone_color
+  company_id: 1
+  type_cd: stone_color
+  created_at: 2011/01/20 00:00:00
+types_403: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 1461
+  description: 6-6.5
+  value: 6-6.5
+  subtype_cd: pearl_size
+  company_id: 1
+  type_cd: IPAD
+  created_at: 
+types_213: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 690
+  description: Competitor
+  value: Competitor
+  subtype_cd: relationship_type
+  company_id: 1
+  type_cd: CRM
+  created_at: 
+types_023: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 49
+  description: F
+  value: F
+  subtype_cd: price_level
+  company_id: 1
+  type_cd: price_level
+  created_at: 
+types_260: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 759
+  description: High
+  value: High
+  subtype_cd: priority
+  company_id: 1
+  type_cd: CRM
+  created_at: 
+types_070: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 196
+  description: S Thick
+  value: S Thick
+  subtype_cd: girdle
+  company_id: 1
+  type_cd: girdle
+  created_at: 
+types_451: 
+  updated_at: 2011/02/22 15:47:15
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 77
+  updated_by: 1
+  id: 1589
+  description: J
+  value: J
+  subtype_cd: stone_color
+  company_id: 1
+  type_cd: stone_color
+  created_at: 2011/01/20 00:00:00
+types_404: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 1462
+  description: 6.5-7
+  value: 6.5-7
+  subtype_cd: pearl_size
+  company_id: 1
+  type_cd: IPAD
+  created_at: 
+types_214: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 691
+  description: Consultant
+  value: Consultant
+  subtype_cd: relationship_type
+  company_id: 1
+  type_cd: CRM
+  created_at: 
+types_024: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 50
+  description: G
+  value: G
+  subtype_cd: price_level
+  company_id: 1
+  type_cd: price_level
+  created_at: 
+types_261: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 760
+  description: Normal
+  value: Normal
+  subtype_cd: priority
+  company_id: 1
+  type_cd: CRM
+  created_at: 
+types_071: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 197
+  description: Thick
+  value: Thick
+  subtype_cd: girdle
+  company_id: 1
+  type_cd: girdle
+  created_at: 
+types_452: 
+  updated_at: 2011/02/22 15:47:15
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 76
+  updated_by: 1
+  id: 1590
+  description: SI1
+  value: SI1
+  subtype_cd: stone_clarity
+  company_id: 1
+  type_cd: stone_clarity
+  created_at: 2011/01/20 00:00:00
+types_405: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 1463
+  description: 7-7.5
+  value: 7-7.5
+  subtype_cd: pearl_size
+  company_id: 1
+  type_cd: IPAD
+  created_at: 
+types_215: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 692
+  description: Customer
+  value: Customer
+  subtype_cd: relationship_type
+  company_id: 1
+  type_cd: CRM
+  created_at: 
+types_025: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 51
+  description: H
+  value: H
+  subtype_cd: price_level
+  company_id: 1
+  type_cd: price_level
+  created_at: 
+types_262: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 761
+  description: Low
+  value: Low
+  subtype_cd: priority
+  company_id: 1
+  type_cd: CRM
+  created_at: 
+types_072: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 198
+  description: V Thick
+  value: V Thick
+  subtype_cd: girdle
+  company_id: 1
+  type_cd: girdle
+  created_at: 
+types_453: 
+  updated_at: 2011/02/22 15:47:15
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 76
+  updated_by: 1
+  id: 1591
+  description: SI2
+  value: SI2
+  subtype_cd: stone_clarity
+  company_id: 1
+  type_cd: stone_clarity
+  created_at: 2011/01/20 00:00:00
+types_406: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 1464
+  description: 7.5-8
+  value: 7.5-8
+  subtype_cd: pearl_size
+  company_id: 1
+  type_cd: IPAD
+  created_at: 
+types_216: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 693
+  description: Reseller
+  value: Reseller
+  subtype_cd: relationship_type
+  company_id: 1
+  type_cd: CRM
+  created_at: 
+types_026: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 52
+  description: I
+  value: I
+  subtype_cd: price_level
+  company_id: 1
+  type_cd: price_level
+  created_at: 
+types_263: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 762
+  description: Call
+  value: Call
+  subtype_cd: task_type
+  company_id: 1
+  type_cd: CRM
+  created_at: 
+types_073: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 199
+  description: X Thick
+  value: X Thick
+  subtype_cd: girdle
+  company_id: 1
+  type_cd: girdle
+  created_at: 
+types_454: 
+  updated_at: 2011/02/22 15:47:15
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 76
+  updated_by: 1
+  id: 1592
+  description: VS1
+  value: VS1
+  subtype_cd: stone_clarity
+  company_id: 1
+  type_cd: stone_clarity
+  created_at: 2011/01/20 00:00:00
+types_407: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 1466
+  description: 8-8.5
+  value: 8-8.5
+  subtype_cd: pearl_size
+  company_id: 1
+  type_cd: IPAD
+  created_at: 
+types_217: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 694
+  description: Supplier
+  value: Supplier
+  subtype_cd: relationship_type
+  company_id: 1
+  type_cd: CRM
+  created_at: 
+types_027: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 53
+  description: J
+  value: J
+  subtype_cd: price_level
+  company_id: 1
+  type_cd: price_level
+  created_at: 
+types_264: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 763
+  description: Email
+  value: Email
+  subtype_cd: task_type
+  company_id: 1
+  type_cd: CRM
+  created_at: 
+types_074: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 200
+  description: Ideal
+  value: Ideal
+  subtype_cd: grade
+  company_id: 1
+  type_cd: grade
+  created_at: 
+types_455: 
+  updated_at: 2011/02/22 15:47:15
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 76
+  updated_by: 1
+  id: 1593
+  description: VS2
+  value: VS2
+  subtype_cd: stone_clarity
+  company_id: 1
+  type_cd: stone_clarity
+  created_at: 2011/01/20 00:00:00
+types_408: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 1467
+  description: 8.5-9
+  value: 8.5-9
+  subtype_cd: pearl_size
+  company_id: 1
+  type_cd: IPAD
+  created_at: 
+types_218: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 695
+  description: Vendor
+  value: Vendor
+  subtype_cd: relationship_type
+  company_id: 1
+  type_cd: CRM
+  created_at: 
+types_028: 
+  updated_at: 2011/02/22 15:47:12
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 100
+  updated_by: 1
+  id: 78
+  description: Saphire
+  value: SAPH
+  subtype_cd: stone_type
+  company_id: 1
+  type_cd: stone_type
+  created_at: 
+types_265: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 764
+  description: Meeting
+  value: Meeting
+  subtype_cd: task_type
+  company_id: 1
+  type_cd: CRM
+  created_at: 
+types_075: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 201
+  description: Excellent
+  value: Excellent
+  subtype_cd: grade
+  company_id: 1
+  type_cd: grade
+  created_at: 
+types_456: 
+  updated_at: 2011/02/22 15:47:15
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 76
+  updated_by: 1
+  id: 1594
+  description: VVS1
+  value: VVS1
+  subtype_cd: stone_clarity
+  company_id: 1
+  type_cd: stone_clarity
+  created_at: 2011/01/20 00:00:00
+types_409: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 1468
+  description: black
+  value: black
+  subtype_cd: pearl_color
+  company_id: 1
+  type_cd: IPAD
+  created_at: 
+types_029: 
+  updated_at: 2011/02/22 15:47:12
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 100
+  updated_by: 1
+  id: 79
+  description: Diamond
+  value: DIAM
+  subtype_cd: stone_type
+  company_id: 1
+  type_cd: stone_type
+  created_at: 
+types_266: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 765
+  description: Other
+  value: Other
+  subtype_cd: task_type
+  company_id: 1
+  type_cd: CRM
+  created_at: 
+types_076: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 202
+  description: V.Good
+  value: V.Good
+  subtype_cd: grade
+  company_id: 1
+  type_cd: grade
+  created_at: 
+types_219: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 696
+  description: Other
+  value: Other
+  subtype_cd: relationship_type
+  company_id: 1
+  type_cd: CRM
+  created_at: 
+types_457: 
+  updated_at: 2011/02/22 15:47:15
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 76
+  updated_by: 1
+  id: 1595
+  description: VVS2
+  value: VVS2
+  subtype_cd: stone_clarity
+  company_id: 1
+  type_cd: stone_clarity
+  created_at: 2011/01/20 00:00:00
+types_267: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 802
+  description: Email
+  value: Email
+  subtype_cd: activity_type
+  company_id: 1
+  type_cd: CRM
+  created_at: 
+types_077: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 203
+  description: Good
+  value: Good
+  subtype_cd: grade
+  company_id: 1
+  type_cd: grade
+  created_at: 
+types_458: 
+  updated_at: 2011/02/22 15:47:15
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 76
+  updated_by: 1
+  id: 1596
+  description: IF
+  value: IF
+  subtype_cd: stone_clarity
+  company_id: 1
+  type_cd: stone_clarity
+  created_at: 2011/01/20 00:00:00
+types_268: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 803
+  description: Fax
+  value: Fax
+  subtype_cd: activity_type
+  company_id: 1
+  type_cd: CRM
+  created_at: 
+types_078: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 204
+  description: Fair
+  value: Fair
+  subtype_cd: grade
+  company_id: 1
+  type_cd: grade
+  created_at: 
+types_459: 
+  updated_at: 2011/02/22 15:47:15
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 76
+  updated_by: 1
+  id: 1597
+  description: FL
+  value: FL
+  subtype_cd: stone_clarity
+  company_id: 1
+  type_cd: stone_clarity
+  created_at: 2011/01/20 00:00:00
+types_269: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 804
+  description: Appointment
+  value: Appointment
+  subtype_cd: activity_type
+  company_id: 1
+  type_cd: CRM
+  created_at: 
+types_079: 
+  updated_at: 2011/02/22 15:47:12
+  update_flag: Y
+  trans_flag: A
+  created_by: 0
+  lock_version: 100
+  updated_by: 1
+  id: 206
+  description: B2
+  value: B2
+  subtype_cd: stone_quality
+  company_id: 1
+  type_cd: stone_quality
+  created_at: 
+types_320: 
+  updated_at: 2011/02/22 15:47:13
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 133
+  updated_by: 1
+  id: 1122
+  description: A for Automatic, M for Manual
+  value: A
+  subtype_cd: generate_packet
+  company_id: 1
+  type_cd: invn
+  created_at: 
+types_130: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 555
+  description: Advertisement
+  value: YA
+  subtype_cd: credit_type
+  company_id: 1
+  type_cd: FAAR
+  created_at: 
+types_321: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 1142
+  description: Lab
+  value: L
+  subtype_cd: invn_trans_type_oth
+  company_id: 1
+  type_cd: invn_trans_type
+  created_at: 
+types_131: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 556
+  description: Chargeback
+  value: YB
+  subtype_cd: credit_type
+  company_id: 1
+  type_cd: FAAR
+  created_at: 
+types_322: 
+  updated_at: 2011/01/20 11:48:21
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 22
+  updated_by: 1
+  id: 1162
+  description: All &amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp; Store
+  value: All
+  subtype_cd: customer
+  company_id: 1
+  type_cd: master_access
+  created_at: 
+types_132: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 557
+  description: Discount
+  value: YD
+  subtype_cd: credit_type
+  company_id: 1
+  type_cd: FAAR
+  created_at: 
+types_323: 
+  updated_at: 2011/01/20 11:48:21
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 22
+  updated_by: 1
+  id: 1163
+  description: All &amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp; Store
+  value: All
+  subtype_cd: vendor
+  company_id: 1
+  type_cd: master_access
+  created_at: 
+types_133: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 558
+  description: Markdown
+  value: YM
+  subtype_cd: credit_type
+  company_id: 1
+  type_cd: FAAR
+  created_at: 
+types_370: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  lock_version: 0
+  updated_by: 100
+  id: 1364
+  description: Cancelled
+  value: Cancelled
+  subtype_cd: description
+  company_id: 1
+  type_cd: catalog_order_status
+  created_at: 
+types_180: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 605
+  description: Direct
+  value: D
+  subtype_cd: PI
+  company_id: 1
+  type_cd: TRANS_TYPE
+  created_at: 
+types_324: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 1182
+  description: Casting
+  value: M
+  subtype_cd: casting_finding
+  company_id: 1
+  type_cd: casting_finding
+  created_at: 
+types_134: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 559
+  description: Penalty
+  value: YT
+  subtype_cd: credit_type
+  company_id: 1
+  type_cd: FAAR
+  created_at: 
+types_371: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 1365
+  description: "Order By Item #"
+  value: "Order By Item #"
+  subtype_cd: catalog_portal_link
+  company_id: 1
+  type_cd: catalog_portal_link
+  created_at: 
+types_181: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 0
+  updated_by: 1
+  id: 622
+  description: Returned till 30
+  value: "30"
+  subtype_cd: return_days
+  company_id: 1
+  type_cd: POS
+  created_at: 2010/02/01 17:02:57
+types_325: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 1183
+  description: Finding
+  value: F
+  subtype_cd: casting_finding
+  company_id: 1
+  type_cd: casting_finding
+  created_at: 
+types_135: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 0
+  lock_version: 0
+  updated_by: 0
+  id: 560
+  description: 
+  value: "43000"
+  subtype_cd: ship_acctid
+  company_id: 1
+  type_cd: saoi
+  created_at: 
+types_372: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 1366
+  description: My Account
+  value: My Account
+  subtype_cd: catalog_portal_link
+  company_id: 1
+  type_cd: catalog_portal_link
+  created_at: 
+types_182: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 0
+  updated_by: 1
+  id: 623
+  description: Regular Price
+  value: LEVEL1
+  subtype_cd: price_level
+  company_id: 1
+  type_cd: POS
+  created_at: 2010/02/01 17:02:57
+types_136: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 0
+  lock_version: 0
+  updated_by: 0
+  id: 561
+  description: 
+  value: "59503"
+  subtype_cd: insurance_acctid
+  company_id: 1
+  type_cd: saoi
+  created_at: 
+types_373: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 1367
+  description: Order Tracking
+  value: Order Tracking
+  subtype_cd: catalog_portal_link
+  company_id: 1
+  type_cd: catalog_portal_link
+  created_at: 
+types_183: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 0
+  updated_by: 1
+  id: 624
+  description: Sale Price
+  value: LEVEL2
+  subtype_cd: price_level
+  company_id: 1
+  type_cd: POS
+  created_at: 2010/02/01 17:02:57
+types_326: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 1184
+  description: Us
+  value: U
+  subtype_cd: supplier_setter
+  company_id: 1
+  type_cd: supplier_setter
+  created_at: 
+types_137: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 0
+  lock_version: 0
+  updated_by: 0
+  id: 562
+  description: 
+  value: "62000"
+  subtype_cd: tax_acctid
+  company_id: 1
+  type_cd: saoi
+  created_at: 
+types_374: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 1368
+  description: Customer Services
+  value: Customer Services
+  subtype_cd: catalog_portal_link
+  company_id: 1
+  type_cd: catalog_portal_link
+  created_at: 
+types_184: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 0
+  updated_by: 1
+  id: 625
+  description: WholeSale Price
+  value: LEVEL3
+  subtype_cd: price_level
+  company_id: 1
+  type_cd: POS
+  created_at: 2010/02/01 17:02:57
+types_327: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 1185
+  description: Customer
+  value: C
+  subtype_cd: supplier_setter
+  company_id: 1
+  type_cd: supplier_setter
+  created_at: 
+types_375: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 1369
+  description: Wish List
+  value: Wish List
+  subtype_cd: catalog_portal_link
+  company_id: 1
+  type_cd: catalog_portal_link
+  created_at: 
+types_185: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 0
+  updated_by: 1
+  id: 626
+  description: Employee Price
+  value: LEVEL4
+  subtype_cd: price_level
+  company_id: 1
+  type_cd: POS
+  created_at: 2010/02/01 17:02:57
+types_328: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 1186
+  description: Vendor
+  value: V
+  subtype_cd: supplier_setter
+  company_id: 1
+  type_cd: supplier_setter
+  created_at: 
+types_138: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 0
+  lock_version: 0
+  updated_by: 0
+  id: 563
+  description: 
+  value: "40501"
+  subtype_cd: discount_acctid
+  company_id: 1
+  type_cd: saoi
+  created_at: 
+types_376: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 1370
+  description: Cart
+  value: Cart
+  subtype_cd: catalog_portal_link
+  company_id: 1
+  type_cd: catalog_portal_link
+  created_at: 
+types_186: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 0
+  updated_by: 1
+  id: 627
+  description: Custom Price
+  value: LEVEL5
+  subtype_cd: price_level
+  company_id: 1
+  type_cd: POS
+  created_at: 2010/02/01 17:02:57
+types_329: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 1187
+  description: Casting Wt
+  value: C
+  subtype_cd: metal_wt_flag
+  company_id: 1
+  type_cd: metal_wt_flag
+  created_at: 
+types_139: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 0
+  lock_version: 0
+  updated_by: 0
+  id: 564
+  description: 
+  value: "42000"
+  subtype_cd: item_debit_acctid
+  company_id: 1
+  type_cd: saoi
+  created_at: 

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rds:CommonServices xmlns:rds="business.*" xmlns:mx="http://www.adobe.com/2006/mxml">
+
+	<mx:HTTPService id="saveRecord" url="/account/bank/create_bank_check_bounces"/>
+	<mx:HTTPService id="getRecord" url="/account/bank/show_bank_check_bounces"/>
+	<mx:HTTPService id="getListFormat" url="acct/bounceandvoidcheck/xmls/BounceAndVoidCheckListStru.xml"/>
+	<mx:HTTPService id="getList" url="/account/bank/list_bank_check_bounces"/>
+	<mx:HTTPService id="getViewFormat" url="acct/bounceandvoidcheck/xmls/BounceAndVoidCheckCriteriaStru.xml"/>
+	<mx:HTTPService id="GLFormat" url="acct/bounceandvoidcheck/xmls/BounceAndVoidCheckGLDetailStru.xml"/>
+	<mx:HTTPService id="printRecord" url=""/>
+	
+</rds:CommonServices>

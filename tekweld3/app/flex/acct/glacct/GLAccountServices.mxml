@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rds:CommonServices xmlns:rds="business.*" xmlns:mx="http://www.adobe.com/2006/mxml">
+
+	<mx:HTTPService id="saveRecord" url="/account/gl_account/create_gl_accounts" />
+	<mx:HTTPService id="getRecord" url="/account/gl_account/show_gl_account"/>
+	<mx:HTTPService id="getListFormat" url="acct/glacct/xmls/GLAccountListStru.xml" />
+	<mx:HTTPService id="getList" url="/account/gl_account/list_gl_accounts"/>
+	<mx:HTTPService id="getViewFormat" url="acct/glacct/xmls/GLAccountCriteriaStru.xml" />
+	<mx:HTTPService id="printRecord" url="" />
+	
+	<mx:HTTPService id="detailFormat" url="acct/glacct/xmls/GLAccountImportStru.xml"/>
+	<mx:HTTPService id="recordUploadUrl" url="/account/gl_account/convert_exceltoxml_for_glaccounts"/>
+	
+</rds:CommonServices>

@@ -1,0 +1,9 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  notification_template: 
+  memo_type_id: 1
+
+two:
+  notification_template: 
+  memo_type_id: 1

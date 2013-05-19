@@ -1,0 +1,2 @@
+module SipLocationsHelper
+end

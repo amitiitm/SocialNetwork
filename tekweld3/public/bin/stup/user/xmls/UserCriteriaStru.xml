@@ -1,0 +1,23 @@
+<columns Title =''>
+	
+	<column dataType="S"		label="Login #"			checkbox="ckAll1"				xmlTagFrom="str1"	from="dcStr1"
+			xmlTagTo="str2" 	to="dcStr2"				multiSelect="mvMultiSelect1" 	xmlTagMultiSelect="multiselect1"
+			lookupFlag="false" 	lookupName=""	/>
+	
+	<column dataType="S"		label="First Name"		checkbox="ckAll2"				xmlTagFrom="str3"	from="dcStr3"
+			xmlTagTo="str4" 	to="dcStr4"				multiSelect="mvMultiSelect2" 	xmlTagMultiSelect="multiselect2"
+			lookupFlag="false" 	lookupName=""	/>
+	
+	<column dataType="S"		label="Last Name"		checkbox="ckAll3"				xmlTagFrom="str5"	from="dcStr5"
+			xmlTagTo="str6" 	to="dcStr6"				multiSelect="mvMultiSelect3" 	xmlTagMultiSelect="multiselect3"
+			lookupFlag="false" 	lookupName=""	/>
+		
+	<column dataType="S"		label="Date Format"		checkbox="ckAll4"				xmlTagFrom="str7"	from="dcStr7"
+			xmlTagTo="str8" 	to="dcStr8"				multiSelect="mvMultiSelect4" 	xmlTagMultiSelect="multiselect4"
+			lookupFlag="false" 	lookupName=""	/>
+		
+	<column dataType="S"		label="Default Store"	checkbox="ckAll5"				xmlTagFrom="str9"	from="dcStr9"
+			xmlTagTo="str10" 	to="dcStr10"			multiSelect="mvMultiSelect5" 	xmlTagMultiSelect="multiselect5"
+			lookupFlag="false" 	lookupName=""	/>
+			
+</columns> 	

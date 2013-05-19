@@ -1,0 +1,2 @@
+module Carriers::RateSheetsHelper
+end

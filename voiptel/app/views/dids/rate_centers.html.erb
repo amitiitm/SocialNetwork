@@ -1,0 +1,29 @@
+<h1>Rate Centers</h1>
+<table cellspacing="0">
+	<th>#</th>
+  <th>NPA</th>
+  <th>NXX</th>
+	<th>Lat - Long</th>
+  <th>Rate Center</th>
+	<th>State</th>
+  <th>City</th>
+  <th>County</th>
+  <th>Company</th>
+  <th>Zip Codes</th> 
+	<% counter = 0 %>
+  <% for rate_center in @rate_centers do %>
+	<% counter += 1 %>
+  	<tr>
+			<td> <%= counter %></td>
+			<td><%= rate_center.npa %></td>
+			<td><%= rate_center.nxx %></td>
+			<td>(<%= rate_center.latitude %>,<%= rate_center.longitude %>)</td>
+			<td><%= rate_center.rate_center.rate_center %></td>
+			<td><%= rate_center.state %></td>
+			<td><%= rate_center.city %></td>
+			<td><%= rate_center.county %></td>
+			<td><%= rate_center.company %></td>
+			<td><%= rate_center.zipcode_postalcode %></td>
+		</tr>
+  <%  end %> 
+</table>

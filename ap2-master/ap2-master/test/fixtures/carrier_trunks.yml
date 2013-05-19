@@ -1,0 +1,9 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  carrier_id: 1
+  trunk_id: 1
+
+two:
+  carrier_id: 1
+  trunk_id: 1

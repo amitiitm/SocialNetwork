@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="UTF-8"?><xsl:transform version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:j4lext="xalan://com.java4less.xreport.fop.XLSTExtension" extension-element-prefixes="j4lext"  >
+<xsl:template match="/"><fo:root xmlns:fo="http://www.w3.org/1999/XSL/Format">
+<fo:layout-master-set>
+<fo:simple-page-master master-name="master1" page-width="22.0cm" page-height="29.7cm" margin-top="1.0cm"   margin-bottom="2.0cm" margin-left="1.0cm"  margin-right="0.1cm"  > 
+  <fo:region-body   margin-top="9.43cm"/> 
+  <fo:region-before extent="9.43cm"/> 
+  <fo:region-after  extent="-0.22cm"/> 
+  </fo:simple-page-master>
+</fo:layout-master-set>
+<fo:page-sequence master-reference="master1">
+<fo:static-content flow-name="xsl-region-before">
+<fo:table width="20.9cm"  >
+  <fo:table-column column-width="1.73cm"/>
+  <fo:table-column column-width="2.0cm"/>
+  <fo:table-column column-width="1.76cm"/>
+  <fo:table-column column-width="10.24cm"/>
+  <fo:table-column column-width="5.17cm"/>
+  <fo:table-body>
+    <fo:table-row   background-color="#ffffff" height="0.49cm">
+        <fo:table-cell   number-columns-spanned="1">
+        <fo:block></fo:block>        </fo:table-cell>
+        <fo:table-cell   number-columns-spanned="1">
+        <fo:block></fo:block>        </fo:table-cell>
+        <fo:table-cell   number-columns-spanned="1">
+        <fo:block></fo:block>        </fo:table-cell>
+        <fo:table-cell   number-columns-spanned="1">
+        <fo:block></fo:block>        </fo:table-cell>
+        <fo:table-cell   number-columns-spanned="1">
+      <fo:block   margin-left="2.51cm" margin-right="0.71cm"  margin-top="0.0cm"  font-size="10pt"  font-family="SansSerif"  color="#000000"  text-align="left"><xsl:value-of select="vendor_payments/vendor_payment/check_no"></xsl:value-of></fo:block>
+        </fo:table-cell>
+    </fo:table-row>
+    <fo:table-row   background-color="#ffffff" height="0.51cm">
+        <fo:table-cell   number-columns-spanned="1">
+        <fo:block></fo:block>        </fo:table-cell>
+        <fo:table-cell   number-columns-spanned="1">
+        <fo:block></fo:block>        </fo:table-cell>
+        <fo:table-cell   number-columns-spanned="1">
+        <fo:block></fo:block>        </fo:table-cell>
+        <fo:table-cell   number-columns-spanned="1">
+        <fo:block></fo:block>        </fo:table-cell>
+        <fo:table-cell   number-columns-spanned="1">
+      <fo:block   margin-left="3.0cm" margin-right="0.39cm"  margin-top="0.24cm"  font-size="10pt"  font-family="SansSerif"  color="#000000"  text-align="right"><xsl:value-of select="vendor_payments/vendor_payment/check_date"></xsl:value-of></fo:block>
+        </fo:table-cell>
+    </fo:table-row>
+    <fo:table-row   background-color="#ffffff" height="1.0cm">
+        <fo:table-cell   number-columns-spanned="4">
+      <fo:block   margin-left="1.49cm" margin-right="9.59cm"  margin-top="0.73cm"  font-size="12pt"  font-family="SansSerif"  color="#000000"  text-align="left"><xsl:value-of select="vendor_payments/vendor_payment/name"></xsl:value-of></fo:block>
+        </fo:table-cell>
+        <fo:table-cell   number-columns-spanned="1">
+        <fo:block></fo:block>        </fo:table-cell>
+    </fo:table-row>
+    <fo:table-row   background-color="#ffffff" height="0.24cm">
+        <fo:table-cell   number-columns-spanned="1">
+        <fo:block></fo:block>        </fo:table-cell>
+        <fo:table-cell   number-columns-spanned="1">
+        <fo:block></fo:block>        </fo:table-cell>
+        <fo:table-cell   number-columns-spanned="1">
+        <fo:block></fo:block>        </fo:table-cell>
+        <fo:table-cell   number-columns-spanned="1">
+        <fo:block></fo:block>        </fo:table-cell>
+        <fo:table-cell   number-columns-spanned="1">
+      <fo:block   margin-left="1.27cm" margin-right="1.71cm"  margin-top="0.0cm"  font-size="10pt"  font-family="SansSerif"  color="#000000"  text-align="right"><xsl:value-of select="vendor_payments/vendor_payment/paid_amt"></xsl:value-of></fo:block>
+        </fo:table-cell>
+    </fo:table-row>
+    <fo:table-row   background-color="#ffffff" height="1.0cm">
+        <fo:table-cell   number-columns-spanned="4">
+      <fo:block   margin-left="1.0cm" margin-right="2.95cm"  margin-top="0.0cm"  font-size="12pt"  font-family="SansSerif"  color="#000000"  text-align="left"><xsl:value-of select="vendor_payments/vendor_payment/amt_in_words"></xsl:value-of></fo:block>
+        </fo:table-cell>
+        <fo:table-cell   number-columns-spanned="1">
+        <fo:block></fo:block>        </fo:table-cell>
+    </fo:table-row>
+    <fo:table-row   background-color="#ffffff" height="0.49cm">
+        <fo:table-cell   number-columns-spanned="1">
+        <fo:block></fo:block>        </fo:table-cell>
+        <fo:table-cell   number-columns-spanned="3">
+      <fo:block   margin-left="0.51cm" margin-right="5.81cm"  margin-top="0.0cm"  font-size="12pt"  font-family="SansSerif"  color="#000000"  text-align="left"><xsl:value-of select="vendor_payments/vendor_payment/name"></xsl:value-of></fo:block>
+        </fo:table-cell>
+        <fo:table-cell   number-columns-spanned="1">
+        <fo:block></fo:block>        </fo:table-cell>
+    </fo:table-row>
+    <fo:table-row   background-color="#ffffff" height="0.51cm">
+        <fo:table-cell   number-columns-spanned="1">
+        <fo:block></fo:block>        </fo:table-cell>
+        <fo:table-cell   number-columns-spanned="3">
+      <fo:block   margin-left="0.51cm" margin-right="5.81cm"  margin-top="0.0cm"  font-size="12pt"  font-family="SansSerif"  color="#000000"  text-align="left"><xsl:value-of select="vendor_payments/vendor_payment/address1"></xsl:value-of></fo:block>
+        </fo:table-cell>
+        <fo:table-cell   number-columns-spanned="1">
+        <fo:block></fo:block>        </fo:table-cell>
+    </fo:table-row>
+    <fo:table-row   background-color="#ffffff" height="0.49cm">
+        <fo:table-cell   number-columns-spanned="1">
+        <fo:block></fo:block>        </fo:table-cell>
+        <fo:table-cell   number-columns-spanned="3">
+      <fo:block   margin-left="0.51cm" margin-right="5.65cm"  margin-top="0.0cm"  font-size="12pt"  font-family="SansSerif"  color="#000000"  text-align="left"><xsl:value-of select="vendor_payments/vendor_payment/address2"></xsl:value-of></fo:block>
+        </fo:table-cell>
+        <fo:table-cell   number-columns-spanned="1">
+        <fo:block></fo:block>        </fo:table-cell>
+    </fo:table-row>
+    <fo:table-row   background-color="#ffffff" height="0.51cm">
+        <fo:table-cell   number-columns-spanned="1">
+        <fo:block></fo:block>        </fo:table-cell>
+        <fo:table-cell   number-columns-spanned="3">
+      <fo:block   margin-left="0.51cm" margin-right="5.03cm"  margin-top="0.0cm"  font-size="12pt"  font-family="SansSerif"  color="#000000"  text-align="left"><xsl:value-of select="concat(/vendor_payments/vendor_payment/city ,',     ', /vendor_payments/vendor_payment/state ,',     ', /vendor_payments/vendor_payment/zip)"></xsl:value-of></fo:block>
+        </fo:table-cell>
+        <fo:table-cell   number-columns-spanned="1">
+        <fo:block></fo:block>        </fo:table-cell>
+    </fo:table-row>
+    <fo:table-row   background-color="#ffffff" height="2.76cm">
+        <fo:table-cell   number-columns-spanned="1">
+        <fo:block></fo:block>        </fo:table-cell>
+        <fo:table-cell   number-columns-spanned="1">
+        <fo:block></fo:block>        </fo:table-cell>
+        <fo:table-cell   number-columns-spanned="1">
+        <fo:block></fo:block>        </fo:table-cell>
+        <fo:table-cell   number-columns-spanned="1">
+        <fo:block></fo:block>        </fo:table-cell>
+        <fo:table-cell   number-columns-spanned="1">
+        <fo:block></fo:block>        </fo:table-cell>
+    </fo:table-row>
+    <fo:table-row   background-color="#ffffff" height="0.73cm">
+        <fo:table-cell   number-columns-spanned="1">
+      <fo:block   margin-left="0.24cm" margin-right="0.03cm"  margin-top="0.24cm"  font-size="9pt"  font-family="SansSerif"  font-style="bold"  color="#000000"  text-align="left">Trans # :</fo:block>
+        </fo:table-cell>
+        <fo:table-cell   number-columns-spanned="1">
+      <fo:block   margin-left="0.0cm" margin-right="0.08cm"  margin-top="0.24cm"  font-size="9pt"  font-family="SansSerif"  color="#000000"  text-align="left"><xsl:value-of select="vendor_payments/vendor_payment/trans_no"></xsl:value-of></fo:block>
+        </fo:table-cell>
+        <fo:table-cell   number-columns-spanned="1">
+      <fo:block   margin-left="0.0cm" margin-right="0.0cm"  margin-top="0.24cm"  font-size="9pt"  font-family="SansSerif"  font-style="bold"  color="#000000"  text-align="left">Trans Date :</fo:block>
+        </fo:table-cell>
+        <fo:table-cell   number-columns-spanned="1">
+      <fo:block   margin-left="0.24cm" margin-right="7.73cm"  margin-top="0.24cm"  font-size="9pt"  font-family="SansSerif"  color="#000000"  text-align="left"><xsl:value-of select="vendor_payments/vendor_payment/trans_date"></xsl:value-of></fo:block>
+        </fo:table-cell>
+        <fo:table-cell   number-columns-spanned="1">
+        <fo:block></fo:block>        </fo:table-cell>
+    </fo:table-row>
+    <fo:table-row   background-color="#ffffff" height="0.7cm">
+        <fo:table-cell   number-columns-spanned="1">
+        <fo:block></fo:block>        </fo:table-cell>
+        <fo:table-cell   number-columns-spanned="1">
+        <fo:block></fo:block>        </fo:table-cell>
+        <fo:table-cell   number-columns-spanned="1">
+        <fo:block></fo:block>        </fo:table-cell>
+        <fo:table-cell   number-columns-spanned="1">
+        <fo:block></fo:block>        </fo:table-cell>
+        <fo:table-cell   number-columns-spanned="1">
+        <fo:block></fo:block>        </fo:table-cell>
+    </fo:table-row>
+  </fo:table-body>
+</fo:table>
+</fo:static-content>
+<fo:static-content flow-name="xsl-region-after">
+<fo:table width="20.9cm"  >
+  <fo:table-column column-width="20.9cm"/>
+  <fo:table-body>
+    <fo:table-row   background-color="#ffffff" height="-0.22cm">
+      <fo:table-cell><fo:table>
+      <fo:table-column column-width="20.9cm"/>
+      <fo:table-body>
+      <fo:table-row  background-color="#ffffff" height="-0.22cm">
+        <fo:table-cell   number-columns-spanned="1">
+        <fo:block></fo:block>        </fo:table-cell>
+    </fo:table-row>
+    </fo:table-body>
+    </fo:table></fo:table-cell>
+    </fo:table-row>
+  </fo:table-body>
+</fo:table>
+</fo:static-content>
+<fo:flow flow-name="xsl-region-body"> 
+
+<!-- START Area Header -->
+<fo:table width="20.9cm"  >
+  <fo:table-column column-width="20.9cm"/>
+  <fo:table-body>
+    <fo:table-row   background-color="#ffffff" height="-0.22cm">
+      <fo:table-cell><fo:table>
+      <fo:table-column column-width="20.9cm"/>
+      <fo:table-body>
+      <fo:table-row  background-color="#ffffff" height="-0.22cm">
+        <fo:table-cell   number-columns-spanned="1">
+        <fo:block></fo:block>        </fo:table-cell>
+    </fo:table-row>
+    </fo:table-body>
+    </fo:table></fo:table-cell>
+    </fo:table-row>
+<fo:table-row>
+<fo:table-cell number-columns-spanned="1">
+<fo:block>
+
+<!-- START Area Detail -->
+<xsl:if test="count(vendor_payments/vendor_payment/vendor_payment_lines/vendor_payment_line) &gt; 0" >
+<fo:table width="20.9cm"  border-color="#000000" border-style="solid" border-width="medium" >
+  <fo:table-column column-width="3.0cm"/>
+  <fo:table-column column-width="2.73cm"/>
+  <fo:table-column column-width="2.76cm"/>
+  <fo:table-column column-width="3.0cm"/>
+  <fo:table-column column-width="3.24cm"/>
+  <fo:table-column column-width="3.0cm"/>
+  <fo:table-column column-width="3.17cm"/>
+  <fo:table-header>
+    <fo:table-row   background-color="#ffffff" height="0.73cm">
+        <fo:table-cell  border-color="#000000" border-style="solid" border-width="medium"  number-columns-spanned="1">
+      <fo:block   margin-left="0.24cm" margin-right="0.41cm"  margin-top="0.24cm"  font-size="9pt"  font-family="SansSerif"  font-style="bold"  color="#000000"  text-align="left">Voucher #</fo:block>
+        </fo:table-cell>
+        <fo:table-cell  border-color="#000000" border-style="solid" border-width="medium"  number-columns-spanned="1">
+      <fo:block   margin-left="0.24cm" margin-right="0.46cm"  margin-top="0.24cm"  font-size="9pt"  font-family="SansSerif"  font-style="bold"  color="#000000"  text-align="left">Voucher Date</fo:block>
+        </fo:table-cell>
+        <fo:table-cell  border-color="#000000" border-style="solid" border-width="medium"  number-columns-spanned="1">
+      <fo:block   margin-left="0.27cm" margin-right="0.44cm"  margin-top="0.24cm"  font-size="9pt"  font-family="SansSerif"  font-style="bold"  color="#000000"  text-align="left">Invoice #</fo:block>
+        </fo:table-cell>
+        <fo:table-cell  border-color="#000000" border-style="solid" border-width="medium"  number-columns-spanned="1">
+      <fo:block   margin-left="0.24cm" margin-right="0.22cm"  margin-top="0.24cm"  font-size="9pt"  font-family="SansSerif"  font-style="bold"  color="#000000"  text-align="right">Original Amt</fo:block>
+        </fo:table-cell>
+        <fo:table-cell  border-color="#000000" border-style="solid" border-width="medium"  number-columns-spanned="1">
+      <fo:block   margin-left="0.75cm" margin-right="0.05cm"  margin-top="0.24cm"  font-size="9pt"  font-family="SansSerif"  font-style="bold"  color="#000000"  text-align="right">Balance Amt</fo:block>
+        </fo:table-cell>
+        <fo:table-cell  border-color="#000000" border-style="solid" border-width="medium"  number-columns-spanned="1">
+      <fo:block   margin-left="0.51cm" margin-right="0.24cm"  margin-top="0.24cm"  font-size="9pt"  font-family="SansSerif"  font-style="bold"  color="#000000"  text-align="right">DiscTaken  Amt</fo:block>
+        </fo:table-cell>
+        <fo:table-cell  border-color="#000000" border-style="solid" border-width="medium"  number-columns-spanned="1">
+      <fo:block   margin-left="0.51cm" margin-right="0.58cm"  margin-top="0.24cm"  font-size="9pt"  font-family="SansSerif"  font-style="bold"  color="#000000"  text-align="right">Paid Amt</fo:block>
+        </fo:table-cell>
+    </fo:table-row>
+  </fo:table-header>
+  <fo:table-body>
+  <xsl:for-each select="vendor_payments/vendor_payment/vendor_payment_lines/vendor_payment_line">
+    <fo:table-row   background-color="#ffffff" height="0.68cm">
+        <fo:table-cell  border-color="#000000" border-style="solid" border-width="medium"  number-columns-spanned="1">
+      <fo:block   margin-left="0.24cm" margin-right="0.54cm"  margin-top="0.24cm"  font-size="9pt"  font-family="SansSerif"  color="#000000"  text-align="left"><xsl:value-of select="voucher_no"></xsl:value-of></fo:block>
+        </fo:table-cell>
+        <fo:table-cell  border-color="#000000" border-style="solid" border-width="medium"  number-columns-spanned="1">
+      <fo:block   margin-left="0.24cm" margin-right="0.41cm"  margin-top="0.24cm"  font-size="9pt"  font-family="SansSerif"  color="#000000"  text-align="left"><xsl:value-of select="voucher_date"></xsl:value-of></fo:block>
+        </fo:table-cell>
+        <fo:table-cell  border-color="#000000" border-style="solid" border-width="medium"  number-columns-spanned="1">
+      <fo:block   margin-left="0.27cm" margin-right="0.38cm"  margin-top="0.24cm"  font-size="9pt"  font-family="SansSerif"  color="#000000"  text-align="left"><xsl:value-of select="ref_no"></xsl:value-of></fo:block>
+        </fo:table-cell>
+        <fo:table-cell  border-color="#000000" border-style="solid" border-width="medium"  number-columns-spanned="1">
+      <fo:block   margin-left="0.24cm" margin-right="0.17cm"  margin-top="0.24cm"  font-size="9pt"  font-family="SansSerif"  color="#000000"  text-align="right"><xsl:value-of select="original_amt"></xsl:value-of></fo:block>
+        </fo:table-cell>
+        <fo:table-cell  border-color="#000000" border-style="solid" border-width="medium"  number-columns-spanned="1">
+      <fo:block   margin-left="0.24cm" margin-right="0.16cm"  margin-top="0.24cm"  font-size="9pt"  font-family="SansSerif"  color="#000000"  text-align="right"><xsl:value-of select="balance_amt"></xsl:value-of></fo:block>
+        </fo:table-cell>
+        <fo:table-cell  border-color="#000000" border-style="solid" border-width="medium"  number-columns-spanned="1">
+      <fo:block   margin-left="0.27cm" margin-right="0.19cm"  margin-top="0.24cm"  font-size="9pt"  font-family="SansSerif"  color="#000000"  text-align="right"><xsl:value-of select="disctaken_amt"></xsl:value-of></fo:block>
+        </fo:table-cell>
+        <fo:table-cell  border-color="#000000" border-style="solid" border-width="medium"  number-columns-spanned="1">
+      <fo:block   margin-left="0.27cm" margin-right="0.49cm"  margin-top="0.24cm"  font-size="9pt"  font-family="SansSerif"  color="#000000"  text-align="right"><xsl:value-of select="apply_amt"></xsl:value-of></fo:block>
+        </fo:table-cell>
+    </fo:table-row>
+  </xsl:for-each>
+  </fo:table-body>
+</fo:table>
+</xsl:if>
+
+<!-- END Area Detail -->
+</fo:block>
+</fo:table-cell>
+</fo:table-row>
+<fo:table-row>
+<fo:table-cell number-columns-spanned="1">
+<fo:block>
+
+<!-- START Area Footer -->
+<fo:table width="20.9cm"  >
+  <fo:table-column column-width="20.9cm"/>
+  <fo:table-body>
+    <fo:table-row   background-color="#ffffff" height="-0.22cm">
+      <fo:table-cell><fo:table>
+      <fo:table-column column-width="20.9cm"/>
+      <fo:table-body>
+      <fo:table-row  background-color="#ffffff" height="-0.22cm">
+        <fo:table-cell   number-columns-spanned="1">
+        <fo:block></fo:block>        </fo:table-cell>
+    </fo:table-row>
+    </fo:table-body>
+    </fo:table></fo:table-cell>
+    </fo:table-row>
+  </fo:table-body>
+</fo:table>
+
+<!-- END Area Footer -->
+</fo:block>
+</fo:table-cell>
+</fo:table-row>
+  </fo:table-body>
+</fo:table>
+
+<!-- END Area Header -->
+</fo:flow>
+</fo:page-sequence>
+</fo:root>
+</xsl:template>
+</xsl:transform>

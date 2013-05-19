@@ -1,0 +1,24 @@
+  <table cellspacing="0">
+  <tr>                         
+			<th>#</th>
+			<th>Destination #</th>
+			<th>EasyDial</th>
+			<th>Nick Name</th>
+			<th>Country</th>
+			<th>Calls</th>
+			<th width="130px">Actions</th>
+		</tr>
+			<% row = 0 %>
+		  <% for phone in @phone_book %>
+			<% row += 1 %>
+		    <tr id="<%= "phone_#{phone.id}" %>">              
+					<td><%= row %></td>
+					<td><%= phone.phone_number %></td>
+					<td><%= phone.easy_dial_number %></td>
+					<td><div id="nickname-<%= phone.id %>"><%= if phone.contact_nick_name.blank? then link_to_remote("Edit", :url => {:action => "edit_nickname", :id => phone.id}, :html => {:class => "link"}) else phone.contact_nick_name end %></div></td>				
+					<td><%= country_name(phone.phone_number) %></td>
+					<td><%= phone.freq %></td>
+					<td><%#= easy_dialer_actions(phone) %></td>
+				</tr>
+        <% end %>
+    </table>

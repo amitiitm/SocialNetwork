@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<gencomponents:DetailAddEdit xmlns:mx="http://www.adobe.com/2006/mxml"
+	width="400" height="200" verticalGap="0"
+	xmlns:customcomponents="com.generic.customcomponents.*"
+	xmlns:gencomponents="com.generic.components.*">
+	
+	<mx:Script source="../scripts/SalesPersonDetailScript.as"/>
+	
+		<mx:VBox height="100%" width="100%">
+				<mx:HBox>
+					<mx:Label text="Sales Person #" width="90" textAlign="right" height="20" />
+				    <customcomponents:GenDynamicComboBoxWithHelp id="dcSales_person_code" width="120" toolTip="Sales Person" 
+					   dataSourceName="Salesperson" dataProvider="{__genModel.lookupObj.salesperson.children()}" labelField="name" dataField="code"
+					   xmlTag="salesperson_code" updatableFlag="true" tabIndex="6" tableName="pos_salesperson" height="20"
+					   defaultValue="" validationFlag="true" />
+				</mx:HBox>
+				<mx:HBox>
+					<mx:Label text="Share" width="90" textAlign="right" height="20" />
+				    <customcomponents:GenTextInput id="tiShare" width="120" height="20" toolTip="Share"
+							xmlTag="share" updatableFlag="true" tableName="pos_salesperson" tabIndex="109" validationFlag="true" 
+							defaultValue="0.00" setDefaultOnEmpty="true"  textAlign="right" dataType="N" maxValue="100.01"/>
+				</mx:HBox>
+				<mx:Spacer height="20"/>
+
+				<mx:HBox>
+					<mx:Label text="Total Share" width="90" textAlign="right" height="20" />
+				    <mx:TextInput id="tiTotalShare" width="120" height="20" toolTip="Share" enabled="false"
+							textAlign="right" 
+							text="{__localModel.totalShare}"/>
+				</mx:HBox>
+				
+				<mx:HBox width="0" height="0" visible="false">
+					<customcomponents:GenTextInput id="tiSerial_no" toolTip="Serial #" restrict="1234567890" visible="false"
+						validationFlag="false" 
+						xmlTag="serial_no" updatableFlag="true" tableName="pos_salesperson"/>
+					<customcomponents:GenComboBox id="cbTrans_flag" defaultValue="A" width="90" cornerRadius="0" xmlTag="trans_flag" updatableFlag="true"
+						tableName="pos_salesperson"   height="18" labelField="label" 
+						dataProvider="{__genModel.masterData.child('trans_flag').trans_flag}" />	
+				</mx:HBox>
+		</mx:VBox>
+	
+</gencomponents:DetailAddEdit>	

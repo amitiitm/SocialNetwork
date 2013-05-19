@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<gencomponents:AddEdit xmlns:mx="http://www.adobe.com/2006/mxml" 
+	height="100%" width="100%" verticalGap="0"
+	xmlns:customcomponents="com.generic.customcomponents.*"
+	xmlns:gencomponents="com.generic.components.*">
+	<mx:Script source="../scripts/UserAddEditscript.as"/>
+	
+	<mx:VBox horizontalGap="0" width="100%">
+		<mx:HBox height="20" verticalAlign="middle" horizontalGap="2">
+			<mx:Label text="Login #/Email" width="120" textAlign="right" height="20" />
+			<customcomponents:GenTextInput id="tiLoginEmail" width="215" tabIndex="1" height="20"  validationFlag="true" toolTip="Login #"  
+				xmlTag="login" updatableFlag="true" tableName="user" maxChars="255" change="setEmail()" />
+		</mx:HBox>
+
+		<mx:HBox height="20" verticalAlign="middle" horizontalGap="2" width="100%">
+			<mx:Label text="Password" width="120" textAlign="right" height="20" />
+			<customcomponents:GenTextInput id="tiPassword" displayAsPassword="true" text="" height="20" width="120" tabIndex="2"
+				validationFlag="false" toolTip="Password" xmlTag ="password" tableName="user" updatableFlag="true" maxChars="20"/>
+		</mx:HBox>
+		
+		<mx:HBox height="20" verticalAlign="middle" horizontalGap="2" width="100%">
+			<mx:Label text="Confirm Password" width="120" textAlign="right" height="20" />
+			<customcomponents:GenTextInput id="tiPassword_confirm" displayAsPassword="true" text="" height="20" width="120" tabIndex="3"
+				validationFlag="false" toolTip="Password Confirmation" xmlTag ="password_confirmation" tableName="user" updatableFlag="true" maxChars="20"/>
+		
+			<mx:Label text="Login Type/Code" width="110" textAlign="right" height="20"/>
+			<customcomponents:GenComboBox id="cbLogin_type" defaultValue="G" width="120" cornerRadius="0" xmlTag="login_type" updatableFlag="true"
+				tableName="user" tabIndex="4"  labelField="label" toolTip="Login Type" height="20" itemChangedEvent="logInTypeChanged()"
+				dataProvider="{__genModel.masterData.child('login_type').login_type}" />
+			
+			<customcomponents:GenTextInputWithHelp
+				id="dcTypeId" 
+				width="120" 
+				dataSourceName="CustomerWholesale"
+				height="20" 
+				tabIndex="4" 
+				updatableFlag="true" 
+				xmlTag="type_id"
+				labelTag="type_code"
+				dataField="id" 
+				labelField= "code"
+				tableName="user" 
+				itemChangedEvent="tiType_code.dataValue	=	dcTypeId.labelValue"
+				/>	
+				
+		<!--	<customcomponents:GenDynamicComboBoxWithHelp id="dcTypeId" width="120" height="20"
+				tabIndex="4"  dataField="id"  labelField="code" dataSourceName="CustomerWholesale" dataProvider="{__genModel.lookupObj.customerwholesale.children()}" 
+				 xmlTag="type_id" updatableFlag="true" tableName="user" />	-->
+		</mx:HBox>
+
+		<mx:HBox height="20" verticalAlign="middle" horizontalGap="2">
+			<mx:Label text="Short Name" width="120" textAlign="right" height="20" />
+			<customcomponents:GenTextInput id="tiUser_cd" width="120" height="20" tabIndex="5" toolTip="Short Name"
+				xmlTag="user_cd" updatableFlag="true" validationFlag="true" defaultValue="" tableName="user" />
+		</mx:HBox>
+
+		<mx:HBox height="20" verticalAlign="middle" horizontalGap="2" width="100%">
+			<mx:Label text="First Name" width="120" textAlign="right" height="20" />
+			<customcomponents:GenTextInput id="tiFirst_name" width="120" tabIndex="6" height="20"  toolTip="First Name"
+				xmlTag="first_name" updatableFlag="true" validationFlag="true" tableName="user" maxChars="80"/>	
+		
+			<mx:Label text="Last Name" width="110" textAlign="right" height="20" />
+			<customcomponents:GenTextInput id="tiLast_name" width="120" tabIndex="7" height="20"  toolTip="Last Name"
+				xmlTag="last_name" updatableFlag="true" tableName="user" validationFlag="true" maxChars="80"/>
+		</mx:HBox>
+		
+		
+		<mx:HBox height="20" verticalAlign="middle" horizontalGap="2" width="100%">
+			<mx:Label text="Date Format" width="120" textAlign="right" height="20" />
+			<customcomponents:GenComboBox id="cbDate_format" defaultValue="MM/DD/YYYY" width="120" xmlTag="date_format" updatableFlag="true" tableName="user"
+					validationFlag="false" toolTip="Date Format" tabIndex="8" height="20" 
+					cornerRadius="0" labelField="label" dataProvider="{__genModel.masterData.child('login_type').date_format }"/>
+
+			<mx:Label text="Default Store" width="110" textAlign="right" height="20" />
+			<!--<customcomponents:GenDynamicComboBox id="dcDefault_store" width="250" toolTip="Default Store" 
+				dataProvider="{GenModelLocator.getInstance().lookupObj.companystore.children()}" labelField="name" dataField="id"
+				xmlTag="default_company_id" updatableFlag="true" tableName="user" height="20" tabIndex="9" 
+				validationFlag="false" enabled="false"/>-->
+			
+			<customcomponents:GenTextInputWithHelp
+				lookupFormatUrl	=  "companyStoreLookupHelpFormat"
+				id="dcDefault_store" 
+				width="250" 
+				toolTip="Default Store #" 
+				dataSourceName="CompanyStore"
+				height="20" 
+				tabIndex="9" 
+				validationFlag="false" 
+				xmlTag="default_company_id" 
+				updatableFlag="true"
+				labelTag="default_company_code"
+				dataField="id" 
+				labelField= "company_cd"
+				tableName="user"
+				enabled="false"
+				/>
+			<mx:Label text="Default Screen" width="116" textAlign="right" height="20" />
+			<customcomponents:GenTextInputWithHelp
+				id="dcMenu_id" 
+				width="226" 
+				toolTip="Menu #" 
+				dataSourceName="SubMenu"
+				height="20" 
+				tabIndex="4" 
+				validationFlag="true" 
+				xmlTag="menu_id"
+				labelTag="menu_code"
+				filterEnabled="false"
+				filterKeyName=""
+				dataField="id" 
+				labelField= "code"
+				updatableFlag="true" 
+				tableName="user" 
+				itemChangedEvent="tiMenu_code.dataValue = dcMenu_id.labelValue"
+				/>	
+		</mx:HBox>
+		
+		<mx:HBox height="20" verticalAlign="middle" horizontalGap="2" width="100%">
+			<mx:Label text="Status" width="120" height="20" textAlign="right"/>
+			<customcomponents:GenComboBox id="cbTrans_flag" defaultValue="A" width="120" cornerRadius="0" xmlTag="trans_flag" updatableFlag="true"
+				tableName="user"  tabIndex="10" height="20" labelField="label" 
+				dataProvider="{__genModel.masterData.child('trans_flag').trans_flag}" />
+		</mx:HBox>
+	</mx:VBox>
+
+	<mx:Spacer height="10" width="100%" />
+
+	<gencomponents:Detail id="dtlLine"
+		updatableFlag="true"
+		checkBlankRowColumn=""
+		rootNode="user_companies"
+		formatServiceID="detailFormat"
+		height="100%" width="100%"
+		detailAddEditComplete="setDefaultStore()"
+		detailRemoveRow="setDefaultStore()"
+		DetailEditClass="{stup.user.components.UserDetail}"
+		title="User Detail"
+	/>
+	
+	<customcomponents:GenTextInput id="tiType_id" width="0" height="0" visible="false"  
+		xmlTag="type_id" updatableFlag="true" validationFlag="false" tableName="user" />
+				
+	<customcomponents:GenTextInput id="tiLogin_flag" width="0" visible="false" height="0"  toolTip="Login Flag Name"
+		xmlTag="login_flag" updatableFlag="false" validationFlag="false" defaultValue="N" tableName="user" />
+				
+	<customcomponents:GenTextInput id="tiUser_flag" width="0" visible="false" height="0"  toolTip="User Flag Name"
+		xmlTag="user_flag" updatableFlag="false" validationFlag="false" defaultValue="A" tableName="user" />	
+			
+	<mx:HBox height="0" verticalAlign="middle" horizontalGap="2" width="0" visible="false">
+		<mx:Label text="Email" width="0" textAlign="right" height="0" />
+		<customcomponents:GenTextInput id="tiEmail" width="0"  height="0"  validationFlag="false" 
+			xmlTag="email" updatableFlag="true" visible="false" tableName="user" toolTip="E-Mail"  />
+		
+		<customcomponents:GenTextInput id="tiType_code" width="0"  height="0"  validationFlag="false" 
+			xmlTag="type_code" updatableFlag="true" visible="false" tableName="user" />	
+		<customcomponents:GenTextInput id="tiDefault_company_code" width="0"  height="0"  validationFlag="false" 
+			xmlTag="default_company_code" updatableFlag="true" visible="false" tableName="user" />
+		<customcomponents:GenTextInput id="tiMenu_code" width="0"  height="0"  
+									   xmlTag="menu_code" updatableFlag="true" tableName="menu"/>
+	</mx:HBox>
+</gencomponents:AddEdit>

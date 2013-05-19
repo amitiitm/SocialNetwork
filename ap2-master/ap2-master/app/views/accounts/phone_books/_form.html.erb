@@ -1,0 +1,12 @@
+<% form_for([@account, @phone_book], :html => {:class => "forms"}) do |f| %>
+	<ul>
+		<li>
+			<label>Phone Number (ie: 982188870100)</label>
+			<%= f.text_field :phone_number %>
+		</li>
+		<li>
+			<label>EasyDialer</label>
+			<%= f.text_field :easy_dial_number, :size => 5 %>
+		</li>		
+	</ul>
+<% end -%>

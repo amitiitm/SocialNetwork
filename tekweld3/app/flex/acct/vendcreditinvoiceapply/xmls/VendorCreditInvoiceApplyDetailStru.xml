@@ -1,0 +1,47 @@
+<columns  lockedColumnCount='0'>
+
+	<column data='apply_flag'		label='Apply Flag'			editable='true'		visible='true'	width='40'	textAlign='center'	
+			dataType='S'			componentType="CheckBox"	dataValueForOn="Y"	dataValueForOff="N" 		sortDataType='S'	columnPrecision="NaN"/>
+
+	<column data='voucher_no'		label='Voucher #'			editable='false'	visible='true'	width='70'	textAlign='left'
+			dataType='S'			componentType="Text" 		sortDataType='S'	columnPrecision="NaN"/>
+
+	<column data='ref_no'			label='Invoice #'			editable='false'	visible='true'	width='70' 	textAlign='left'
+			dataType='S'			componentType="Text" 		sortDataType='S'	columnPrecision="NaN"/>
+
+	<column data='voucher_date'		label='Voucher Date'		editable='false'	visible='true'	width='75'	textAlign='left'
+			dataType='D'			componentType="Date" 		sortDataType='D'	columnPrecision="NaN"/>
+
+	<column data='due_date'			label='Due Date'			editable='false'	visible='true'	width='75'	textAlign='left'
+			dataType='D'			componentType="Date" 		sortDataType='D'	columnPrecision="NaN"/>
+
+	<column data='original_amt'		label='Original Amt'		editable='false' 	visible='true' 	width='75'	textAlign='right'
+			dataType='N'			componentType="Text"		sortDataType='N'	columnPrecision="2"
+			validationFlag="false" 	negativeFlag="false" 		rounding="false"	maxValue="99999999.99" />
+
+	<column data='balance_amt'		label='Balance Amt'			editable='false' 	visible='true' 	width='75' textAlign='right'
+			dataType='N'			componentType="Text"		sortDataType='N'	columnPrecision="2"
+			validationFlag="false"	negativeFlag="false" 		rounding="false" 	maxValue="99999999.99" />
+
+	<column data='apply_amt'		label='Apply Amt'			editable='true' 	visible='true' 	width='75' textAlign='right'
+			dataType='N'			componentType="Text" 		sortDataType='N'	columnPrecision="2"
+			validationFlag="false" 	negativeFlag="false" 		rounding="false" 	maxValue="99999999.99" />
+
+	<column data='disctaken_amt'	label='Disc Amt'			editable='false' 	visible='true'	width='70' textAlign='right'
+			dataType='N'			componentType="Text" 		sortDataType='N'	columnPrecision="2"
+			validationFlag="false" 	negativeFlag="false" 		rounding="false" 	maxValue="99999999.99" />
+
+	<column data='gl_account_code'			label='GL Code'				editable='false'	visible='true'	width='100'	textAlign='left'
+			dataType='S'			componentType="Lookup"		sortDataType='S'	columnPrecision="NaN"
+			validationFlag="false"	dataField="code"		 	labelField="code" 	dataSourceName="GLAccount" />
+			
+	<column data='gl_account_name'			label='GL A/c Name'			editable='false'	visible='true'	width='135'	textAlign='left'
+			dataType='S'			componentType="Text"		sortDataType='S'	columnPrecision="NaN" />		
+
+	<column data='remaining_amt'	label='Remaining Amt'		editable='false' 	visible='true'	width='85'	textAlign='right'
+			dataType='N'			componentType="Text" 		sortDataType='N'	columnPrecision="2"
+			validationFlag="false" 	negativeFlag="false" 		rounding="false" 	maxValue="99999999.99" />
+	
+	<column data='description'		label='Description'			editable='false'	visible='true'	width='155'	textAlign='left'
+			dataType='S'			componentType="Text" 		sortDataType='S'	columnPrecision="NaN"/>	
+</columns> 

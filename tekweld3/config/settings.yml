@@ -1,0 +1,20 @@
+## UPS Credentials ##
+    api_transaction_key: 2Br54s6hwfK2a4ZR
+    api_login_id: 765XetqRVSg5
+    ups_license_number: 6C921F3E7B6B3698
+    ups_user_id: TekweldNY
+    ups_password: Tekweld1125
+    ups_shipper_number: 0Y865V
+
+## FedEx Credentials ##
+    fedex_account_number : 510087267
+    fedex_meter_number : 100120237
+    fedex_api_transaction_key : eQauzT1zSpVbIAXW
+    fedex_password : G0yfc8s6Cy4uWTkf53koiuLQs
+    fedex_webservice_version : 10
+    fedex_user_id : 100DIASP001
+    fedex_login_password : diaspark123
+
+## USPS Credentials ##
+    usps_userid : 611DIASP0663
+

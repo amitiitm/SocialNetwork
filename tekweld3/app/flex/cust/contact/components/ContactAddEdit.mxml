@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<gencomponents:AddEdit xmlns:mx="http://www.adobe.com/2006/mxml" 
+	height="100%" width="100%" verticalGap="0"
+	xmlns:customcomponents="com.generic.customcomponents.*"
+	xmlns:gencomponents="com.generic.components.*"
+	creationPolicy="all" creationComplete="init()">
+	
+	<mx:Script source="../scripts/ContactAddEditScript.as"/>
+	
+	<mx:VBox width="100%" height="100%">
+		<mx:VBox width="100%">
+			<mx:HBox width="100%">
+				<mx:Label text="Name" textAlign="right" width="100" height="20"/>
+				<customcomponents:GenComboBox id="cbSalutation" defaultValue="Mr" width="60" cornerRadius="0" xmlTag="salutation" updatableFlag="true"
+					tableName="customer_contact"  tabIndex="1" height="20" labelField="label" dataProvider="{__genModel.masterData.child('crm').salutation}" />
+				<customcomponents:GenTextInput id="tiFirst_name" width="152" visible="true" editable="true" validationFlag="true" toolTip="First Name"
+					tabIndex="2" xmlTag="first_name" updatableFlag="true" tableName="customer_contact" maxChars="50" height="20"/>		
+				<customcomponents:GenTextInput id="tiLast_name" width="152" visible="true" editable="true" validationFlag="true" toolTip="Last Name"
+					tabIndex="3" xmlTag="last_name" updatableFlag="true" tableName="customer_contact" maxChars="50" height="20"/>		
+			</mx:HBox>
+			<mx:HBox width="100%">
+				<mx:Label text="Customer #" textAlign="right" width="100" height="20"/>
+				<customcomponents:GenTextInputWithHelp id="dcCustomer_id"
+													   width="160" height="20" 
+													   toolTip="Account #" defaultValue=""
+													   dataField="id" 		labelField="code"
+													   xmlTag="customer_id" labelTag="customer_code"
+													   dataSourceName="Customer" 
+													   tabIndex="4"  itemChangedEvent="tiCustomerCode.dataValue	=	dcCustomer_id.labelValue"  
+													   validationFlag="true" 
+													   updatableFlag="true" tableName="customer_contact"
+													   lookupFormatUrl	=	"retailCustomerLookupHelpFormat"
+													   />
+				
+				<!--<customcomponents:GenDynamicComboBoxWithHelp id="dcCustomer_id" width="160" toolTip="Account #" defaultValue=""
+					dataField="id" labelField="name" validationFlag="true"
+					dataSourceName="Customer" dataProvider="{__genModel.lookupObj.customer.children()}" 
+					height="20" tabIndex="4" xmlTag="customer_id" updatableFlag="true" tableName="customer_contact" />-->
+			</mx:HBox>	
+			<mx:HBox visible="false" includeInLayout="false">
+				<customcomponents:GenTextInput id="tiCustomerCode" height="20" width="140" textAlign="left" defaultValue='' tabIndex="1"
+											   xmlTag="customer_code" dataType="S" updatableFlag="true" tableName="customer_contact" maxChars="50" toolTip="Code"
+											   editable="true" validationFlag="false" upperCaseFlag="true" />
+			</mx:HBox>
+		</mx:VBox>
+		<mx:TabNavigator width="100%" height="100%">
+			<mx:VBox label="General" width="100%" height="100%">
+				<mx:HBox width="100%">
+					<mx:Label text="Job Title" textAlign="right" width="140" height="20"/>
+					<customcomponents:GenTextInput id="tiJob_title" width="150" visible="true" editable="true" height="20"
+						tabIndex="5" xmlTag="job_title" updatableFlag="true" tableName="customer_contact" maxChars="50"/>
+					<mx:Label text="Department" textAlign="right" width="136" height="20"/>
+					<customcomponents:GenTextInput id="tiDepartment" width="140" visible="true" editable="true" height="20"
+						tabIndex="6" xmlTag="department" updatableFlag="true" tableName="customer_contact" maxChars="50"/>		
+				</mx:HBox>
+				<!--<mx:HBox width="100%">
+					<mx:Label text="Marital Status" textAlign="right" width="140" height="20"/>
+					<customcomponents:GenComboBox id="cbMarital_status" defaultValue="Single" width="108" cornerRadius="0" xmlTag="marital_status" updatableFlag="true"
+						tableName="customer_contact"  tabIndex="7" height="20" labelField="label" dataProvider="{__genModel.masterData.child('crm').marital_status}" />
+					<mx:Label text="Spouse Name" textAlign="right" width="178" height="20"/>
+					<customcomponents:GenTextInput id="tiSpouse_name" width="140" visible="true" editable="true" height="20"
+						tabIndex="8" xmlTag="spouse_name" updatableFlag="true" tableName="customer_contact" maxChars="50"/>		
+				</mx:HBox>-->
+				<mx:HBox width="100%">
+					<mx:Label text="Gender" textAlign="right" width="140" height="20"/>
+					<customcomponents:GenComboBox id="cbGender" defaultValue="Male" width="108" cornerRadius="0" xmlTag="gender" updatableFlag="true"
+						tableName="customer_contact"  tabIndex="9" height="20" labelField="label" dataProvider="{__genModel.masterData.child('crm').gender}" />
+					<mx:Label text="Manager" textAlign="right" width="178" height="20"/>
+					<customcomponents:GenTextInput id="tiManager" width="140" visible="true" editable="true" height="20"
+						tabIndex="10" xmlTag="manager" updatableFlag="true" tableName="customer_contact" maxChars="50"/>
+				</mx:HBox>
+				<!--<mx:HBox width="100%">
+					<mx:Label text="Date of Birth" textAlign="right" width="140" height="20"/>
+					<customcomponents:GenDateField id="dfDate_of_birth" width="110" xmlTag="date_of_birth"
+						updatableFlag="true" tableName="customer_contact" tabIndex="11" height="20"
+						validationFlag="false" toolTip="Date Of Birth"/>
+					<mx:Label text="Date of Marraige" textAlign="right" width="176" height="20"/>
+					<customcomponents:GenDateField id="dfDate_of_marraige" width="120" xmlTag="date_of_marraige"
+						updatableFlag="true" tableName="customer_contact" tabIndex="12" height="20"
+						validationFlag="false" toolTip="Date Of Marraige"/>		
+				</mx:HBox>-->
+				<!--<mx:HBox width="100%">
+					<mx:Label text="Spouse Date of Birth" textAlign="right" width="140" height="20"/>
+					<customcomponents:GenDateField id="dfSPDate_of_birth" width="110" xmlTag="spouse_date_of_birth"
+						updatableFlag="true" tableName="customer_contact" tabIndex="13" height="20"
+						validationFlag="false" toolTip="Spouse Of Birth"/>
+				</mx:HBox>	-->			
+				<mx:Spacer  height="5"/>
+				<mx:HBox width="100%">
+					<mx:Label text="Role" textAlign="right" width="140" height="20"/>
+					<customcomponents:GenComboBox id="cbRole" defaultValue="decision_maker" width="150" cornerRadius="0" xmlTag="role" updatableFlag="true"
+						tableName="customer_contact"  tabIndex="13" height="20" labelField="label" dataProvider="{__genModel.masterData.child('crm').role}" />
+					<mx:Label text="Preferred Contact Method" textAlign="right" width="136" height="20"/>
+					<customcomponents:GenComboBox id="cbPreferred_contact_method" defaultValue="Any" width="120" cornerRadius="0" xmlTag="preferred_contact_method" updatableFlag="true"
+						tableName="customer_contact"  tabIndex="14" height="20" labelField="label" dataProvider="{__genModel.masterData.child('crm').preferred_contact}" />
+				</mx:HBox>
+				<mx:HBox width="100%">
+					<mx:Label text="Preferred Contact Time" textAlign="right" width="140" height="20"/>
+					<customcomponents:GenComboBox id="cbPreferred_contact_time" defaultValue="Morning" width="150" cornerRadius="0" xmlTag="preferred_contact_time" updatableFlag="true"
+						tableName="customer_contact"  tabIndex="15" height="20" labelField="label" dataProvider="{__genModel.masterData.child('crm').preferred_time}" />
+					<mx:Label text="Preferred Contact Day" textAlign="right" width="136" height="20"/>
+					<customcomponents:GenComboBox id="cbPreferred_contact_day" defaultValue="Monday" width="120" cornerRadius="0" xmlTag="preferred_contact_day" updatableFlag="true"
+						tableName="customer_contact"  tabIndex="16" height="20" labelField="label" dataProvider="{__genModel.masterData.child('crm').preferred_day}" />
+				</mx:HBox>		
+				<mx:Spacer height="5"/>			
+				<mx:HBox width="100%">
+					<customcomponents:GenCheckBox labelPlacement="left" label="Send Marketing Material" id="cbSend_marketing_material" width="160" xmlTag="send_marketing_material"
+						updatableFlag="true" tableName="customer_contact" defaultValue="N" textAlign="right" tabIndex="17" enabled="true"
+						dataValueForOn = "Y" dataValueForOff = "N" height="20"/>				
+					<customcomponents:GenCheckBox labelPlacement="left" label="Send Email" id="cbSend_email" width="107" xmlTag="allow_email"
+						updatableFlag="true" tableName="customer_contact" defaultValue="N" textAlign="right" tabIndex="18" enabled="true"
+						dataValueForOn = "Y" dataValueForOff = "N" height="20"/>
+					<customcomponents:GenCheckBox labelPlacement="left" label="Make Phone Call" id="cbMake_phone_call" width="122" xmlTag="allow_phone_call"
+						updatableFlag="true" tableName="customer_contact" defaultValue="N" textAlign="right" tabIndex="19" enabled="true"
+						dataValueForOn = "Y" dataValueForOff = "N" height="20"/>
+					<customcomponents:GenCheckBox labelPlacement="left" label="Send Fax" id="cbSend_fax" width="84" xmlTag="allow_fax"
+						updatableFlag="true" tableName="customer_contact" defaultValue="N" textAlign="right" tabIndex="20" enabled="true"
+						dataValueForOn = "Y" dataValueForOff = "N" height="20"/>
+					<customcomponents:GenCheckBox labelPlacement="left" label="Send Mail" id="cbSend_mail" width="90" xmlTag="allow_mail"
+						updatableFlag="true" tableName="customer_contact" defaultValue="N" textAlign="right" tabIndex="21" enabled="true"
+						dataValueForOn = "Y" dataValueForOff = "N" height="20"/>
+				</mx:HBox>
+			</mx:VBox>
+			<mx:VBox label="Primary Address" width="100%" height="100%">
+				<mx:HBox width="100%">
+					<mx:Label text="Address Name" textAlign="right" width="140" height="20"/>
+					<customcomponents:GenTextInput id="tiAddress_name" width="403" visible="true" editable="true" height="20"
+						tabIndex="22" xmlTag="address_name" updatableFlag="true" tableName="customer_contact" maxChars="50"/>					
+				</mx:HBox>
+				<mx:HBox width="100%">
+					<mx:Label text="Address" textAlign="right" width="140" height="20"/>
+					<customcomponents:GenTextInput id="tiAddress_1" width="403" visible="true" editable="true" height="20"
+						tabIndex="23" xmlTag="address1" updatableFlag="true" tableName="customer_contact" maxChars="50"/>					
+				</mx:HBox>
+				<mx:HBox width="100%">
+					<mx:Label textAlign="right" width="140" height="20"/>
+					<customcomponents:GenTextInput id="tiAddress_2" width="403" visible="true" editable="true" height="20"
+						tabIndex="24" xmlTag="address2" updatableFlag="true" tableName="customer_contact" maxChars="50"/>					
+				</mx:HBox>
+				<mx:HBox width="100%">
+					<mx:Label text="City/State/Zip" textAlign="right" width="140" height="20"/>
+					<customcomponents:GenTextInput id="tiCity" width="263" visible="true" editable="true" height="20"
+						tabIndex="25" xmlTag="city" updatableFlag="true" tableName="customer_contact" maxChars="25"/>
+					<customcomponents:GenTextInput id="tiState" width="34" visible="true" editable="true" height="20" upperCaseFlag="true"
+						tabIndex="26" xmlTag="state" updatableFlag="true" tableName="customer_contact" maxChars="2"/>					
+					<customcomponents:GenTextInput id="tiZip" width="90" visible="true" editable="true" height="20"
+						tabIndex="27" xmlTag="zip" updatableFlag="true" tableName="customer_contact" maxChars="15"/>					
+			
+				</mx:HBox>
+				<mx:HBox width="100%">
+					<mx:Label text="Country" textAlign="right" width="140" height="20"/>
+					<customcomponents:GenTextInput id="tiCountry" width="32" visible="true" editable="true" defaultValue="US" height="20"
+						tabIndex="28" xmlTag="country" updatableFlag="true" tableName="customer_contact" maxChars="2"/>					
+				</mx:HBox>
+				<mx:HBox width="100%">
+					<mx:Label text="Phone1/Phone2" textAlign="right" width="140" height="20"/>
+					<customcomponents:GenTextInput id="tiBusiness_phone" width="128" visible="true" editable="true" height="20"
+						tabIndex="29" xmlTag="business_phone" updatableFlag="true" tableName="customer_contact" maxChars="50"/>
+					<customcomponents:GenTextInput id="tiManager_phone" width="128" visible="true" editable="true" height="20"
+						tabIndex="30" xmlTag="manager_phone" updatableFlag="true" tableName="customer_contact" maxChars="50"/>					
+				</mx:HBox>
+				<mx:HBox width="100%">
+					<mx:Label text="Cell Phone/Home" textAlign="right" width="140" height="20"/>
+					<customcomponents:GenTextInput id="tiHome_phone" width="128" visible="true" editable="true" height="20"
+						tabIndex="31" xmlTag="home_phone" updatableFlag="true" tableName="customer_contact" maxChars="50"/>
+					<customcomponents:GenTextInput id="tiCell_phone" width="128" visible="true" editable="true" height="20"
+						tabIndex="32" xmlTag="cell_phone" updatableFlag="true" tableName="customer_contact" maxChars="50"/>					
+				</mx:HBox>
+				<mx:HBox width="100%">
+					<mx:Label text="Fax" textAlign="right" width="140" height="20"/>
+					<customcomponents:GenTextInput id="tiFax" width="128" visible="true" editable="true" height="20"
+						tabIndex="33" xmlTag="fax" updatableFlag="true" tableName="customer_contact" maxChars="50"/>					
+				</mx:HBox>				
+				<mx:HBox width="100%">
+					<mx:Label text="Email" textAlign="right" width="140" height="20"/>
+					<customcomponents:GenTextInput id="tiEmail" width="403" visible="true" editable="true" height="20"
+						tabIndex="34" xmlTag="email" updatableFlag="true" tableName="customer_contact" maxChars="50"/>
+				</mx:HBox>
+			</mx:VBox>
+			<mx:VBox label="Secondary Address" width="100%" height="100%">
+				<customcomponents:GenCheckBox labelPlacement="left" label="Copy Primary Address" id="cbCopyPrimaryAddress" width="171" xmlTag="collection"
+											  updatableFlag="false" tableName="customer_contact" defaultValue="N" textAlign="right" tabIndex="10" enabled="true"
+											  dataValueForOn = "Y" dataValueForOff = "N" itemChangedEvent="setPrimaryAddress()"/>
+				<mx:HBox width="100%">
+					<mx:Label text="Address Name" textAlign="right" width="150"  height="20"/>
+					<customcomponents:GenTextInput id="tiSecondaryAddress_name" width="403" visible="true" editable="true" height="20"
+												   tabIndex="22" xmlTag="secondary_address_name" updatableFlag="true" tableName="customer_contact" maxChars="50"/>					
+				</mx:HBox>
+				<mx:HBox width="100%">
+					<mx:Label text="Address" textAlign="right" width="150" height="20"/>
+					<customcomponents:GenTextInput id="tiSecondaryAddress1" width="403" visible="true" editable="true" height="20"
+												   tabIndex="23" xmlTag="secondary_address1" updatableFlag="true" tableName="customer_contact" maxChars="50"/>					
+				</mx:HBox>
+				<mx:HBox width="100%">
+					<mx:Label textAlign="right" width="150" height="20"/>
+					<customcomponents:GenTextInput id="tiSecondaryAddress2" width="403" visible="true" editable="true" height="20"
+												   tabIndex="24" xmlTag="secondary_address2" updatableFlag="true" tableName="customer_contact" maxChars="50"/>					
+				</mx:HBox>
+				<mx:HBox width="100%">
+					<mx:Label text="City/State/Zip" textAlign="right" width="150" height="20"/>
+					<customcomponents:GenTextInput id="tiSecondaryCity" width="264" visible="true" editable="true" height="20"
+												   tabIndex="25" xmlTag="secondary_city" updatableFlag="true" tableName="customer_contact" maxChars="25"/>
+					<customcomponents:GenTextInput id="tiSecondaryState" width="34" visible="true" editable="true" height="20" upperCaseFlag="true"
+												   tabIndex="26" xmlTag="secondary_state" updatableFlag="true" tableName="customer_contact" maxChars="2"/>					
+					<customcomponents:GenTextInput id="tiSecondaryZip" width="90" visible="true" editable="true" height="20"
+												   tabIndex="27" xmlTag="secondary_zip" updatableFlag="true" tableName="customer_contact" maxChars="15"/>					
+					
+				</mx:HBox>
+				<mx:HBox width="100%">
+					<mx:Label text="Country" textAlign="right" width="150" height="20"/>
+					<customcomponents:GenTextInput id="tiSecondaryCountry" width="37" visible="true" editable="true" height="20"
+												   tabIndex="28" xmlTag="secondary_country" updatableFlag="true" tableName="customer_contact" maxChars="2" defaultValue="US"/>					
+				</mx:HBox>
+				<mx:HBox width="100%">
+					<mx:Label text=" Phone/Ext." textAlign="right" width="150"  height="20"/>
+					<customcomponents:GenTextInput id="tiSecPhone" width="128" visible="true" editable="true" height="20"
+												   tabIndex="30" xmlTag="secondary_phone_no" updatableFlag="true" tableName="customer_contact" maxChars="50"/>					
+					<customcomponents:GenTextInput id="tiSecExt" width="128" visible="true" editable="true" height="20"
+												   tabIndex="31" xmlTag="secondary_phone_extn" updatableFlag="true" tableName="customer_contact" maxChars="50"/>
+				</mx:HBox>
+				<mx:HBox width="100%">
+					<mx:Label text="Direct/Cell" textAlign="right" width="150" height="20"/>
+					<customcomponents:GenTextInput id="tiSecDirect" width="264" visible="true" editable="true" height="20"
+												   tabIndex="32" xmlTag="secondary_direct" updatableFlag="true" tableName="customer_contact" maxChars="50"/>					
+					<customcomponents:GenTextInput id="tiSecCell" width="128" visible="true" editable="true" height="20"
+												   tabIndex="33" xmlTag="secondary_cell_no" updatableFlag="true" tableName="customer_contact" maxChars="50"/>
+				</mx:HBox>
+				<mx:HBox width="100%">
+					<mx:Label text="Fax" textAlign="right" width="150" height="20"/>
+					<customcomponents:GenTextInput id="tiSecFax" width="128" visible="true" editable="true" height="20"
+												   tabIndex="34" xmlTag="secondary_fax" updatableFlag="true" tableName="customer_contact" maxChars="50"/>
+				</mx:HBox>
+				<mx:HBox width="100%">
+					<mx:Label text="Email" textAlign="right" width="150" height="20"/>
+					<customcomponents:GenTextInput id="tiSecEmail" width="268" visible="true" editable="true" height="20"
+												   tabIndex="35" xmlTag="secondary_email" updatableFlag="true" tableName="customer_contact" maxChars="50"/>
+				</mx:HBox>
+			</mx:VBox>		
+			<!--<mx:VBox label="Other Address" width="100%" height="100%">
+				<gencomponents:Detail id="dtlOther_addresses"
+					updatableFlag="true"
+					checkBlankRowColumn="catalog_item_id"
+					rootNode="crm_addresses"
+					formatServiceID="otherAddressDetailFormat"
+					height="100%" width="100%"
+					DetailEditClass="{crm.otheraddress.components.OtherAddressDetail}"
+					title="Other Address" />
+			</mx:VBox>-->
+		</mx:TabNavigator>
+	</mx:VBox>
+</gencomponents:AddEdit>

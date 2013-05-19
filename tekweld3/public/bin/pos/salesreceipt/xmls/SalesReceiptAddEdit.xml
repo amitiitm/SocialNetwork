@@ -1,0 +1,25 @@
+<columns lockedColumnCount='0'>
+	<column data='Item' 		    label='Item #' 		    editable='false' 	visible='true' 		width='60'	textAlign='left' 
+			forLevel='false' 		defaultForLevel='' 		booleanFlag='false' sortDataType='N'/>
+	<column data='name' 		    label='Name' 		    editable='false' 	visible='true' 		width='80' textAlign='left' 
+			forLevel='false' 		defaultForLevel='' 		booleanFlag='false' sortDataType='S'/>
+	<column data='description'      label='Description'      editable='false' 	visible='true' 		width='80' textAlign='left' 
+			forLevel='false' 		defaultForLevel='' 		booleanFlag='false' sortDataType='S'/>
+	<column data='attribute' 		label='Attribute' 		editable='false' 	visible='true' 		width='80' textAlign='left' 
+			forLevel='false' 		defaultForLevel='' 		booleanFlag='false' sortDataType='S'/>
+	<column data='Size' 			label='Size' 		    editable='false' 	visible='true' 		width='80' textAlign='left' 
+			forLevel='false' 		defaultForLevel='' 		booleanFlag='false' sortDataType='S'/>	
+	<column data='qty' 			    label='Qty' 	        editable='false' 	visible='true' 		width='100' textAlign='left' 
+			forLevel='false' 		defaultForLevel='' 		booleanFlag='false' sortDataType='N'/>									
+	<column data='price' 		    label='Price' 		    editable='false' 	visible='true' 		width='100' textAlign='right' 
+			forLevel='false' 		defaultForLevel='' 		booleanFlag='false' sortDataType='N'/>
+	<column data='ext_price' 		label='Ext Price' 		editable='false' 	visible='true' 		width='100' textAlign='right' 
+			forLevel='false' 		defaultForLevel='' 		booleanFlag='false' sortDataType='N'/>	
+	<column data='alternative' 		label='Alternative' 	editable='false' 	visible='true' 		width='20' textAlign='left' 
+			forLevel='false' 		defaultForLevel='' 		booleanFlag='false' sortDataType='S'/>
+	<column data='unit_of_measure' 	label=Unit of Measure'' editable='false' 	visible='true' 	width='0' 	textAlign='left' 
+			forLevel='false' 		defaultForLevel='' 		booleanFlag='false' sortDataType='S'/>
+	<column data='avail_qty' 		label='Avail.Qty' 		editable='false' 	visible='true' 	width='0' 	textAlign='left' 
+			forLevel='false' 		defaultForLevel='' 		booleanFlag='false' sortDataType='N'/>
+	
+</columns>  

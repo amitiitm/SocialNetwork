@@ -1,0 +1,29 @@
+--- 
+shippings_001: 
+  name: UPS
+  charge_flag: ""
+  updated_at: 2011/01/28 18:40:42
+  code: UPS
+  update_flag: Y
+  charge_shipping: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 0
+  updated_by: 1
+  id: 1
+  company_id: 1
+  created_at: 2011/01/28 18:40:42
+shippings_002: 
+  name: FEDEX
+  charge_flag: ""
+  updated_at: 2011/01/28 18:40:52
+  code: FEDEX
+  update_flag: Y
+  charge_shipping: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 0
+  updated_by: 1
+  id: 2
+  company_id: 1
+  created_at: 2011/01/28 18:40:52

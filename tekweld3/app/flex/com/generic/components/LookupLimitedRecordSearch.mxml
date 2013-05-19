@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:TitleWindow xmlns:mx="http://www.adobe.com/2006/mxml" 
+	xmlns:customcomponents="com.generic.customcomponents.*"
+	xmlns:components="com.generic.components.*"
+	title="Lookup"
+	height="400" width="70%"
+	creationPolicy="all"
+	creationComplete="creationCompleteHandler()"
+	showCloseButton="true"
+	close="closeHandler()"
+	initialize="{this.parentApplication.focusManager.deactivate()}">
+
+	<mx:Metadata>
+		
+		[Event(name="refreshLookCompleteEvent", type="com.generic.events.LookupRecordSearchEvent")]
+		[Event(name="refreshLookupEvent", type="com.generic.events.LookupRecordSearchEvent")]
+		[Event(name="lookupCloseEvent", type="com.generic.events.LookupRecordSearchEvent")]				
+		
+	</mx:Metadata>
+
+
+	<mx:Script source="../scripts/LookupLimitedRecordSearchScript.as"/>
+	
+<!--	<mx:XML  id="lookupFormat" source="com/generic/xmls/LookupHelpStru.xml"/>-->
+	
+	<mx:VBox height="100%" width="100%">
+		<mx:HBox id="hbSearchBox" height="22" horizontalGap="0" borderThickness="0" borderStyle="none">
+		 		
+		 	</mx:HBox>
+		<!--<mx:HBox borderThickness="0" borderStyle="none" horizontalGap="0" width="{gridLookup.width}">
+			<mx:Label id="lbLabel" text="Filter : "	 height="20" />
+			<customcomponents:GenTextInput id="tiCode" keyUp="filterLookup(event)" height="20" tabIndex="1"/>
+			<customcomponents:GenTextInput id="tiName" keyUp="filterLookup(event)" height="20" tabIndex="2" />
+		</mx:HBox>-->
+			
+		<customcomponents:GenDataGrid 
+			id="gridLookup"
+			rows = "{filterdRows}"
+			paddingTop="0"
+			paddingLeft="0"
+			paddingRight="0"
+			paddingBottom="0"
+			editable="true"
+			height="100%"
+			width="100%"
+			columnStretch="changeColumnSizeHandler(event)"
+			scroll="onScroll(event)"
+			itemFocusOut="itemFocusOutEventHandler(event)"
+			itemClick="selectRow()"
+			doubleClickEnabled="true"
+			itemDoubleClick="btnEditCilckHandler()"
+			keyUp="keyUPEventHandler(event)"
+			/>
+				
+			
+		<mx:HBox width="100%" textAlign="center" horizontalGap="2">
+			<mx:Button id="btnOK" label="OK" click="btnOKCilckHandler()"  tabIndex="3" 
+				width="70" height="20" styleName="myButton"/>
+			<mx:Button id="btnCancel" label="Cancel" click="btnCancelCilckHandler()"  tabIndex="4" 
+				width="70" height="20" styleName="myButton"/>
+			<mx:Button id="btnRefresh" label="Refresh" click="btnrefreshCilckHandler()" visible="false" enabled="true"
+				width="0" height="0" styleName="myButton"/>
+			<mx:Button id="btnAdd" label="New" click="btnAddCilckHandler()"  tabIndex="5"
+				enabled="{isNewButtonActive}"
+				width="70" height="20" styleName="myButton"/>
+			<mx:Button id="btnEdit" label="Edit" click="btnEditCilckHandler()"  tabIndex="6"
+				enabled="{isEditButtonActive}"
+				width="70" height="20" styleName="myButton"/>		
+			<mx:HBox  horizontalAlign="right" width="100%" horizontalGap="2" textAlign="center">
+				<mx:TextInput id="tiFind" width="120" tabIndex="6" height="20" keyDown="keyDownEnterHandler(event)" />	
+				<mx:Button	id="btnFind" label="Find" click="btnFindCilckHandler()" tabIndex="7"
+					width="70" height="20" styleName="myButton"/> 
+			</mx:HBox>	
+		</mx:HBox>	
+		<mx:Label  id="lblMessage" width="100%" height="20"  color="Red" fontWeight="bold"/>
+	</mx:VBox>
+</mx:TitleWindow>

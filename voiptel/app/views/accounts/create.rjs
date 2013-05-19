@@ -1,0 +1,4 @@
+if @account.valid? and not params[:from_memo]
+  page << "history.pushState({ path: this.path }, '', '#{account_path(@account)}');"
+end
+response_for(@account, page, :default, (@container || '#response'))

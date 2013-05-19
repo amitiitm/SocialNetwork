@@ -1,0 +1,15 @@
+<columns  lockedColumnCount='0'>
+	
+	<column data='login' 		label='Login #' 	editable='false' 	visible='true'		width='200' 		textAlign='left'
+		 	print_width = '18'	forLevel='true' 	defaultForLevel='1' booleanFlag='false'	sortDataType='S'	columnPrecision="NaN"/>
+
+	<column data='first_name' 	label='First Name' 	editable='false' 	visible='true' 		width='150' 		textAlign='left'
+		 	print_width = '18'	forLevel='false' 	defaultForLevel='0' booleanFlag='false'	sortDataType='S'	columnPrecision="NaN"/>
+		 	
+	<column data='last_name' 	label='Last Name' 	editable='false' 	visible='true' 		width='150' 		textAlign='left'
+		 	print_width = '18'	forLevel='false' 	defaultForLevel='0' booleanFlag='false'	sortDataType='S'	columnPrecision="NaN"/>
+		 
+	<column data='email' 		label='Email' 		editable='false' 	visible='true' 		width='150' 		textAlign='left'
+		 	print_width = '24'	forLevel='false'	defaultForLevel='0' booleanFlag='false'	sortDataType='S'	columnPrecision="NaN"/>	 	 	
+		 	
+</columns> 

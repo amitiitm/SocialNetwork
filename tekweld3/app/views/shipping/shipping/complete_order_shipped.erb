@@ -1,0 +1,26 @@
+<br></br>
+Dear <%= assigns[:parameter].ship_name%>,
+<br></br>
+Your Order <%= assigns[:parameter].sales_order.trans_no%> is Shipped.<br></br>
+<% if assigns[:parameter].shipping_code.to_s != 'TRUCKING'%>
+  To track your package go to following link<br/>
+  <% assigns[:parameter].sales_order_shipping_packages.each{|package|%>
+    <%if package.tracking_no and package.tracking_no != '' and package.trans_flag == 'A'%>
+      <% if assigns[:parameter].shipping_code.to_s == 'UPS'%>
+        <a href="http://wwwapps.ups.com/WebTracking/OnlineTool?InquiryNumber1=<%=package.tracking_no%>&InquiryNumber1=1Z8E06350325519485&TypeOfInquiryNumber=T&UPS_HTML_License=6C921F3E7B6B3698&UPS_HTML_Version=3.0&IATA=us&Lang=eng&submit=Track+package(s)" target="_blank">Track Your Package Here</a><br></br>
+      <% elsif assigns[:parameter].shipping_code.to_s == 'FEDEX'%>
+        <a href="http://www.fedex.com/Tracking/Detail?trackNum=<%=package.tracking_no%>&clienttype=dotcom&totalPieceNum=&ascend_header=1&cntry_code=us&pieceNum=&language=english&tracknumber_list=999999999999&mi=n&spnlk=spnl0" target="_blank">Track Your Package Here</a><br></br>
+      <% elsif assigns[:parameter].shipping_code.to_s == 'USPS'%>
+        <a href="http://usps.ems-tracking.net/usps-tracking.php?number=<%=package.tracking_no%>" target="_blank">Track Your Package Here</a><br></br>
+      <%end%>
+    <%end%>
+  <%}%>
+<%end%>
+
+Sincerely,<br></br>
+Tekweld<br></br>
+Tel: 631-694-5503<br></br>
+Fax: 631-694-5568<br></br>
+877-TEKWELD (835-9353)<br></br>
+www.tekweld.com<br></br>
+*** PLEASE VISIT OUR NEW SITE WWW.TEKWELD.COM ***

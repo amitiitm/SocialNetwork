@@ -1,0 +1,12 @@
+<li class="fields" style="padding: 0px !important">
+	<% f.fields_for :auth_user do |au| %>
+		<li>
+			<label>Login:</label>
+			<%= au.text_field :login %>
+		</li>
+		<li>
+			<label>Password</label>
+			<%= au.text_field :new_password %>
+		</li>
+	<% end %>
+</li>

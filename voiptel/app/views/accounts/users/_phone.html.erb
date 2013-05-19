@@ -1,0 +1,11 @@
+<li class="fields" style="padding: 0px !important">
+	<div class="first float-left">
+		<label class="desc">Number</label>
+		<%= f.text_field :number, :size => 15%>
+	</div>
+	<div class="float-left">
+		<label class="desc">Type</label>
+		<%= f.select :phone_type, Phone::TYPES %>
+		<%= link_to_remove_fields("Remove", f, :style => "color:red !important;", :class => "ignore-me") %>
+	</div>
+</li>

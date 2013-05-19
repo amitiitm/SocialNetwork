@@ -1,0 +1,13 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  email: MyString
+  destination: MyString
+  enabled: false
+  domain_id: 1
+
+two:
+  email: MyString
+  destination: MyString
+  enabled: false
+  domain_id: 1

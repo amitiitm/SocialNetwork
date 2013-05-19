@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<gencomponents:AddEdit xmlns:mx="http://www.adobe.com/2006/mxml"
+	height="100%" width="100%" verticalGap="0"
+	xmlns:customcomponents="com.generic.customcomponents.*"
+	xmlns:gencomponents="com.generic.components.*"
+	creationPolicy="all" >
+
+	<mx:Script source="../scripts/StoreLocationAddEditScript.as"/>
+
+	<customcomponents:GenTextInput id="tiDummy" width="0"  
+		xmlTag="dummy" updatableFlag="false" tableName="catalog_store_location" />
+		
+	<mx:HBox id="hbDetail" label="Item" width="100%" height="100%" horizontalAlign="center" fontSize="10">
+		<gencomponents:Detail id="dtlLine"
+			updatableFlag="true"
+			rootNode="rows"
+			formatServiceID="storeLocationDetailFormat"
+			height="100%" width="100%"
+			DetailEditClass="{ctlg.storelocation.components.StoreLocationDetail}"
+			title="Store Location Detail" />
+	</mx:HBox>
+</gencomponents:AddEdit>
+

@@ -1,0 +1,27 @@
+<% modal_dialog "Edit Distribution", :id => "edit_distribution" do %>
+	<p>
+		Return Cards:<br>
+		Range: <%= @distribution.serial_start %> - <%= @distribution.serial_end %><br>
+		Number of Cards: <%= @distribution.num_cards %>
+	</p>
+	<% form_for @distribution, :html => {:class => "forms"} do |f| %>
+		<ul>
+			<li>
+				<label>Start Serial:</label>
+				<%= f.text_field :return_start_serial %>
+			</li>
+			<li class="horizental">
+				<label>
+					<%= f.radio_button :return_end_method, "serial" %> By Ending Serial:
+				</label>
+				<%= f.text_field :return_end_serial, :size => 10 %>
+			</li>
+			<li class="horizental">
+				<label>
+					<%= f.radio_button :return_end_method, "count" %> By Count:
+				</label>
+				<%= f.text_field :return_count, :size => 10 %>
+			</li>
+		</ul>
+	<% end %>
+<% end %>

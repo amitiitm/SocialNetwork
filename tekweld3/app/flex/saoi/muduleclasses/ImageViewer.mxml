@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:TitleWindow xmlns:fx="http://ns.adobe.com/mxml/2009" 
+				xmlns:s="library://ns.adobe.com/flex/spark" 
+				xmlns:mx="library://ns.adobe.com/flex/mx" layout="vertical" paddingTop="0" horizontalAlign="center" height="700" width="900" verticalAlign="middle" title="Artwork Viewer" showCloseButton="true"  close="closeHandler()" creationComplete="initImageViewer()">
+	<fx:Declarations>
+		<!-- Place non-visual elements (e.g., services, value objects) here -->
+	</fx:Declarations>
+	<fx:Script>
+		<![CDATA[
+			import mx.controls.Alert;
+			import mx.core.FlexGlobals;
+			import mx.core.UIComponent;
+			import mx.managers.PopUpManager;
+			
+			[Bindable]
+			public var imagePath:String = '';
+			public var htmlLoader:HTMLLoader;
+			private function closeHandler():void
+			{
+				var title:String 						= FlexGlobals.topLevelApplication.name;
+				FlexGlobals.topLevelApplication.title	= title.substring(0,title.length-1);
+				PopUpManager.removePopUp(this);
+			}
+			private function initImageViewer():void
+			{
+				if(HTMLLoader.pdfCapability == HTMLPDFCapability.STATUS_OK) 
+				{
+					var url:URLRequest 			= new URLRequest(imagePath);
+					var bounds:Rectangle 		= new Rectangle(100, 100, 800, 600);
+					htmlLoader					= HTMLLoader.createRootWindow(false, new NativeWindowInitOptions(), true, bounds);
+					htmlLoader.load(url);
+					
+					viewer.addChild( htmlLoader);
+				}
+				else 
+				{
+					Alert.show("PDF cannot be displayed. Error code:,please Download File", HTMLLoader.pdfCapability.toString());
+				}
+
+			}
+		]]>
+	</fx:Script>
+	<mx:UIComponent id="viewer" height="90%" width="90%"/>
+</mx:TitleWindow>

@@ -1,0 +1,18 @@
+<columns  lockedColumnCount='0'>
+	
+	<column data='item' 		label='Item'		editable='false'	visible='true' 		width='100' 		textAlign='left'
+		 	print_width = '16'	forLevel='true' 	defaultForLevel='' 	booleanFlag='false'	sortDataType='S'	columnPrecision="NaN"/>
+
+	<column data='from_unit' 	label='From Unit' 	editable='false' 	visible='true' 		width='100' 		textAlign='left'
+		 	print_width = '18'	forLevel='true' 	defaultForLevel='' 	booleanFlag='false'	sortDataType='S'	columnPrecision="NaN"/>
+	
+	<column data='to_unit' 		label='To Unit' 	editable='false' 	visible='true' 		width='100' 		textAlign='left'
+		 	print_width = '18'	forLevel='true' 	defaultForLevel='' 	booleanFlag='false'	sortDataType='S'	columnPrecision="NaN"/>
+	
+	<column data='factor' 		label='Factor' 		editable='false' 	visible='true' 		width='250'			textAlign='left'
+		 	print_width = '24'	forLevel='true' 	defaultForLevel='' 	booleanFlag='false'	sortDataType='N'	columnPrecision="6"/>
+		 		 	
+	<column data='description' 	label='Description'	editable='false' 	visible='true' 		width='250'			textAlign='left'
+		 	print_width = '24'	forLevel='true' 	defaultForLevel='' 	booleanFlag='false'	sortDataType='S'	columnPrecision="NaN"/>
+		 	
+</columns> 

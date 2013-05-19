@@ -1,0 +1,12 @@
+<columns  lockedColumnCount='0'>
+	
+	<column data='customer_code'		label='Customer #'			editable='false' 	visible='true' 	width='350'	textAlign='left'	forLevel='false' 
+			defaultForLevel=''			booleanFlag='false'			sortDataType='S'	columnPrecision="NaN"/>
+	
+	<column data='customer_name'		label='Customer Name'				editable='false' 	visible='true' 	width='150'	textAlign='left'	forLevel='false' 
+			defaultForLevel=''			booleanFlag='false'			sortDataType='S'	columnPrecision="NaN"/>
+</columns> 
+
+
+
+

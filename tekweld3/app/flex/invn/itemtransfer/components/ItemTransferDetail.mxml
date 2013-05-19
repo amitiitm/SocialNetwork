@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<gencomponents:DetailAddEdit xmlns:mx="http://www.adobe.com/2006/mxml"
+	width="480" height="345" verticalGap="0"
+	xmlns:customcomponents="com.generic.customcomponents.*"
+	xmlns:gencomponents="com.generic.components.*"
+	creationComplete="creationCompleteHandler()">
+
+	<mx:Script source="../scripts/ItemTransferDetailScript.as"/>
+	
+	<mx:VBox height="100%" width="100%">
+		<mx:HBox>
+			<mx:Label text="Item #" width="95" textAlign="right" height="20"/>
+			<customcomponents:GenTextInputWithHelp
+				lookupFormatUrl	=  "itemLookupHelpFormat"
+				id="dcItemId" 
+				width="150" 
+				toolTip="Item #" 
+				dataSourceName="InventoryItem"
+				height="20" 
+				tabIndex="1" 
+				validationFlag="true" 
+				xmlTag="catalog_item_id"
+				labelTag="catalog_item_code"
+				dataField="id" 
+				labelField= "store_code"
+				updatableFlag="true" 
+				tableName="inventory_transaction_receive_line" 
+				itemChangedEvent="getItemDetails();"
+				/>
+			
+			<!--<customcomponents:GenDynamicComboBoxWithHelp id="dcItemId" width="150"  height="20"
+				tabIndex="1" toolTip="Item #"  itemChangedEvent="getItemDetails()" dataSourceName="Item"
+				dataField="id" dataProvider="{__genModel.lookupObj.item.children()}" labelField="code" 
+				validationFlag="true" xmlTag="catalog_item_id" updatableFlag="true" tableName="inventory_transaction_receive_line" />-->
+		</mx:HBox>
+
+		<mx:HBox>
+			<mx:Label text="Packet #" width="95" textAlign="right" height="20"/>
+			<customcomponents:GenTextInput id="tiCatalog_item_packet_code" width="150" height="20" maxChars="25" validationFlag="false"
+				tabIndex="2" toolTip="Packet #" xmlTag="catalog_item_packet_code" updatableFlag="true" tableName="inventory_transaction_receive_line"
+				itemChangedEvent="getPacketDetails()" />
+		</mx:HBox>
+
+		<mx:HBox>
+			<mx:Label text="Description" width="95" textAlign="right" height="20"/>
+			<customcomponents:GenTextInput id="tiItemDescription" width="330" 
+				xmlTag="item_description" updatableFlag="true" tabIndex="3" height="20"
+				tableName="inventory_transaction_receive_line" maxChars="100"/>
+		</mx:HBox>
+
+		<mx:HBox>
+			<mx:Label text="Qty" width="95" height="20" textAlign="right"/>
+			<customcomponents:GenTextInput id="tiQty" width="110" height="20" visible="true"
+				editable="true" enabled="true" xmlTag="rec_qty" updatableFlag="true" 
+				tableName="inventory_transaction_receive_line" defaultValue="0" tabIndex="4" toolTip="Pcs" setDefaultOnEmpty="true" 
+				itemChangedEvent="calculateNetAmount()" textAlign="right" dataType="N" maxValue="99999" />
+			<mx:Label text="Price" width="95" height="20" textAlign="right"/>
+			<customcomponents:GenTextInput id="tiPrice" width="110" height="20" visible="true"
+				xmlTag="rec_price" updatableFlag="true" tabIndex="5"
+				tableName="inventory_transaction_receive_line" defaultValue="0.000"  toolTip="Price" setDefaultOnEmpty="true" 
+				itemChangedEvent="calculateNetAmount()" textAlign="right" dataType="N" maxValue="9999999999.999" />
+		</mx:HBox>
+
+		<mx:HBox>
+			<mx:Label text="Item Amt" width="95" textAlign="right" height="20"/>
+			<customcomponents:GenTextInput id="tiItem_amt" width="110" height="20" visible="true"
+				xmlTag="rec_amt" updatableFlag="true"  setDefaultOnEmpty="true"  
+				tableName="inventory_transaction_receive_line" defaultValue="0.00" enabled="false" toolTip="Item Amt"
+				itemChangedEvent="itemAmountChangeHandler()" textAlign="right" dataType="N" maxValue="9999999999.99" />
+		</mx:HBox>
+
+		<mx:HBox height="0" width="0" visible="false">
+			<customcomponents:GenTextInput id="tiPacket_require_yn" width="0" height="0" visible="false"
+				xmlTag="packet_require_yn" updatableFlag="true" tableName="inventory_transaction_receive_line" />
+			<customcomponents:GenTextInput id="tiCatalog_item_packet_id" width="0" height="0" visible="false"
+				xmlTag="catalog_item_packet_id" updatableFlag="true" tableName="inventory_transaction_receive_line"  />
+			<mx:Label text="Status" width="0" height="0" textAlign="right"/>
+			<customcomponents:GenComboBox id="cbTrans_flag" defaultValue="A" width="0" height="0" cornerRadius="0" xmlTag="trans_flag" updatableFlag="true"
+				tableName="inventory_transaction_receive_line" labelField="label"  		
+				dataProvider="{__genModel.masterData.child('trans_flag').trans_flag}" />
+			<customcomponents:GenTextInput  width="0" height="0" visible="false" xmlTag="receipt_issue_flag" 
+				updatableFlag="true" tableName="inventory_transaction_receive_line" defaultValue="R"  
+				validationFlag="false"  fontSize="9"/>	
+			<customcomponents:GenTextInput id="tiTaxable" width="0" height="0" visible="true"
+				editable="true" enabled="true" xmlTag="taxable" updatableFlag="true"
+				tableName="inventory_transaction_receive_line" defaultValue=""/>
+			<customcomponents:GenTextInput id="tiTrans_bk" width="0" height="0" visible="true"
+				editable="true" enabled="true" xmlTag="trans_bk" updatableFlag="true"
+				tableName="inventory_transaction_receive_line" defaultValue=""/>
+			<customcomponents:GenTextInput id="tiTrans_no" width="0" height="0" visible="true"
+				editable="true" enabled="true" xmlTag="trans_no" updatableFlag="true"
+				tableName="inventory_transaction_receive_line" defaultValue=""/>
+			<customcomponents:GenDateField id="dfTrans_date" width="0" xmlTag="trans_date"
+				updatableFlag="true" tableName="inventory_transaction_receive_line" defaultValue="" 
+				validationFlag="false" toolTip="Trans Dt"/>
+			<customcomponents:GenTextInput id="tiRef_trans_bk" width="0" height="0" visible="false"
+				editable="true" enabled="true" xmlTag="ref_trans_bk" updatableFlag="true"
+				tableName="inventory_transaction_receive_line" defaultValue=""  maxChars="4" toolTip="Ref Trans Bk"/>
+			<customcomponents:GenTextInput id="tiRef_trans_no" width="0" height="0" visible="true"
+				editable="true" enabled="true" xmlTag="ref_trans_no" updatableFlag="true"
+				tableName="inventory_transaction_receive_line" defaultValue=""  maxChars="18" toolTip="Ref Trans #" />
+			<customcomponents:GenTextInput id="tiRef_type" width="0" height="0" visible="false"
+				editable="true" enabled="true" xmlTag="ref_type" updatableFlag="true"
+				tableName="inventory_transaction_receive_line" defaultValue=""  maxChars="1" toolTip="Ref Type"/>
+			<customcomponents:GenDateField id="dfRef_trans_date" width="0" xmlTag="ref_trans_date"
+				updatableFlag="true" tableName="inventory_transaction_receive_line" defaultValue="" 
+				validationFlag="false" toolTip="Ref Trans Dt"/>
+			<customcomponents:GenTextInput id="tiRef_serial_no" width="0" height="0" visible="false"
+				editable="true" enabled="true" xmlTag="ref_serial_no" updatableFlag="true"
+				tableName="inventory_transaction_receive_line" defaultValue="" maxChars="4" toolTip="Ref Serial #"/>	
+			<customcomponents:GenTextInput id="tiRef_Qty" width="0" height="0" visible="false"
+				editable="true" enabled="true" xmlTag="ref_qty" updatableFlag="true"
+				tableName="inventory_transaction_receive_line" defaultValue="0.00"  
+				textAlign="right" dataType="N" maxValue="99999999.99" setDefaultOnEmpty="true"/>
+			<customcomponents:GenTextInput id="tiClearQty" width="0" height="0" visible="false"
+				xmlTag="clear_qty" updatableFlag="true" maxValue="99999999.99"
+				tableName="inventory_transaction_receive_line"  defaultValue="0.00"  dataType="N" setDefaultOnEmpty="true"/>
+			<customcomponents:GenTextInput id="tiSerial_no" width="0" height="0" visible="true"
+				editable="true" enabled="true" xmlTag="serial_no" updatableFlag="true"
+				tableName="inventory_transaction_receive_line" defaultValue="" />
+			<customcomponents:GenTextInput id="tiImage_thumnail" width="0" height="0" visible="false"
+				editable="false" enabled="true" xmlTag="image_thumnail" updatableFlag="true"
+				tableName="inventory_transaction_receive_line" defaultValue="" />
+			<customcomponents:GenTextInput id="tiItemCode" width="0" height="0" visible="false"
+				xmlTag="catalog_item_code" updatableFlag="true"
+				tableName="inventory_transaction_receive_line"  text="{dcItemId.labelValue}" />
+			<customcomponents:GenComboBox id="cbItem_type" defaultValue="I" width="0" cornerRadius="0" xmlTag="item_type" updatableFlag="true"
+				tableName="inventory_transaction_receive_line" labelField="label"  visible="false" 		
+				dataProvider="{__genModel.masterData.child('invn_item_type').invn_item_type}" />	
+		</mx:HBox>
+	
+		<mx:VBox width="120" height="120">
+			<mx:Image id="itemImage" 
+				width="100%"
+				height="100%" 
+				verticalAlign="middle" 
+				horizontalAlign="center" 
+				source="{__genModel.path.image}{tiImage_thumnail.text}"/>
+		</mx:VBox>
+		
+	</mx:VBox>
+</gencomponents:DetailAddEdit>
+
+

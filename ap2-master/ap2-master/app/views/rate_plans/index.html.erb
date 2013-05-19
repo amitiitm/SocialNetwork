@@ -1,0 +1,26 @@
+<%= page_title :title => "HVC / AC Rating Plans" %>
+
+<% box :type => "simple" do %>
+	<span class="red big">If Moe is still alive & around please consult with him before deleting a plan!</span><br><br>
+	<% table :width => "320px" do |t| %>
+		<% t.th "#" %>
+	  <% t.th "Name"  %>
+	 	<% t.th "Price"  %>
+		<% t.th "Actions" %>
+
+		<% counter = 0 %>	
+		<% for rate_plan in @rate_plans %>
+			<% t.td (counter += 1) %>
+		  <% t.td rate_plan.name %>
+			<% t.td number_to_currency(rate_plan.price) %>
+			<% t.td action_links(
+				(link_to "Edit", edit_rate_plan_path(rate_plan), :class => "ajax", :update => "container"),
+				(link_to "Delete", rate_plan_path(rate_plan), :class => "ajax-delete")
+			)%>
+			<% t.new_row %>
+		<% end %>		
+	<% end %>
+	<%= button "new_rate_plan", "New Rate Plan", :href => new_rate_plan_path, :update => "container" %>
+<% end %>
+
+<div class="hide" id="container"></div>

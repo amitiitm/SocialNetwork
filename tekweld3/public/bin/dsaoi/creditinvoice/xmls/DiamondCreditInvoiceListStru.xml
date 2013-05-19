@@ -1,0 +1,45 @@
+<columns  lockedColumnCount='0'>
+	
+	<column data='trans_bk' 				label='Cr Invoice Bk' 	editable='false' 	visible='true' 		width='90' 			textAlign='left'
+		 	print_width = '18'				forLevel='true' 		defaultForLevel='0' booleanFlag='false'	sortDataType='S'	columnPrecision="NaN"/>
+		 		
+	<column data='trans_no' 				label='Cr Invoice #' 	editable='false' 	visible='true' 		width='90' 			textAlign='left'
+		 	print_width = '18'				forLevel='true' 		defaultForLevel='1' booleanFlag='false'	sortDataType='N'	columnPrecision="0"/>
+		 	
+	<column data='trans_date' 				label='Cr Invoice Date'	editable='false' 	visible='true' 		width='110' 		textAlign='left'
+		 	print_width = '18'				forLevel='true' 		defaultForLevel='2' booleanFlag='false'	sortDataType='D'	columnPrecision="NaN"/>
+		 	
+	<column data='ref_type' 				label='Type' 			editable='false' 	visible='true' 		width='80' 			textAlign='left'
+		 	print_width = '15'				forLevel='false' 		defaultForLevel='' 	booleanFlag='false'	sortDataType='S'	columnPrecision="NaN"/>
+		 	
+	<column data='customer_id' 				label='Customer id' 	editable='false' 	visible='false' 	width='0' 			textAlign='right'
+		 	print_width = '20'				forLevel='true' 		defaultForLevel='' 	booleanFlag='false'	sortDataType='S'	columnPrecision="NaN"/>
+	
+	<column data='customer_code' 			label='Customer #' 		editable='false' 	visible='true' 		width='80' 			textAlign='left'
+		 	print_width = '20'				forLevel='true' 		defaultForLevel='' 	booleanFlag='false'	sortDataType='S'	columnPrecision="NaN"/>
+
+	<column data='account_period_code' 		label='A/C Period' 		editable='false' 	visible='true' 		width='80' 			textAlign='left'
+		 	print_width = '18'				forLevel='true' 		defaultForLevel='' 	booleanFlag='false'	sortDataType='S'	columnPrecision="NaN"/>
+		 		 	
+	<column data='customer_shipping_code'	label='Ship #' 			editable='false' 	visible='true' 		width='80' 			textAlign='left'
+		 	print_width = '18'				forLevel='false' 		defaultForLevel='' 	booleanFlag='false'	sortDataType='S'	columnPrecision="NaN"/>
+
+	<column data='shipping_code' 			label='Ship Via' 		editable='false' 	visible='true' 		width='80' 			textAlign='left'
+		 	print_width = '18'				forLevel='true' 		defaultForLevel='' 	booleanFlag='false'	sortDataType='S'	columnPrecision="NaN"/>
+		 		
+	<column data='po_no' 					label='Ref #' 			editable='false' 	visible='true' 		width='80' 			textAlign='left'
+		 	print_width = '16'				forLevel='false' 		defaultForLevel='' 	booleanFlag='false'	sortDataType='S'	columnPrecision="NaN"/>
+
+	<column data='ship_date' 				label='Ship Date' 		editable='false' 	visible='true' 		width='80' 			textAlign='left'
+		 	print_width = '18'				forLevel='false' 		defaultForLevel='' 	booleanFlag='false'	sortDataType='D'	columnPrecision="NaN"/>
+
+	<column data='due_date' 				label='Due Date' 		editable='false' 	visible='true' 		width='80' 			textAlign='left'
+		 	print_width = '18'				forLevel='false' 		defaultForLevel='' 	booleanFlag='false'	sortDataType='D'	columnPrecision="NaN"/>
+		 	
+	<column data='lines_amt' 				label='Item Amt' 		editable='false' 	visible='true' 		width='80' 			textAlign='right'
+		 	print_width = '18'				forLevel='false' 		defaultForLevel='' 	booleanFlag='false'	sortDataType='N'	columnPrecision="2"/>
+		 	
+	<column data='net_amt' 					label='Net Amt' 		editable='false' 	visible='true' 		width='80' 			textAlign='right'
+		 	print_width = '20'				forLevel='false' 		defaultForLevel='' 	booleanFlag='false'	sortDataType='N'	columnPrecision="2"/>
+	
+</columns> 

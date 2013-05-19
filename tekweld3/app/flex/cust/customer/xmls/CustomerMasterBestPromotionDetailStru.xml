@@ -1,0 +1,65 @@
+<columns lockedColumnCount='0'>
+
+	<column data='catalog_item_code' 			label='Item Code' 		editable='false' 	visible='true' 		width='200' 	textAlign='left' 
+			forLevel='false' 	defaultForLevel='' 		booleanFlag='false' sortDataType='S'	columnPrecision="NaN"/>
+			
+	<column data='from_date' 	label='From' 			editable='false' 	visible='true' 		width='100' 	textAlign='left' 
+			forLevel='false' 	defaultForLevel='' 		booleanFlag='false' sortDataType='D'	columnPrecision="NaN"/>
+
+    <column data='to_date' 		label='To' 				editable='false' 	visible='true' 		width='100' 	textAlign='left' 
+			forLevel='false' 	defaultForLevel='' 		booleanFlag='false' sortDataType='D'	columnPrecision="NaN"/>
+			
+	<column data='charge_code' 	label='Discount Code' 			editable='false' 	visible='true' 		width='200' 	textAlign='left' 
+			forLevel='false' 	defaultForLevel='' 		booleanFlag='false' sortDataType='S'	columnPrecision="NaN"/>
+			
+<!--	<column data='production_time' 		label='Production Time' 			editable='false' 	visible='true' 		width='50' 	textAlign='right' -->
+<!--			forLevel='false' 	defaultForLevel='' 		booleanFlag='false' sortDataType='N'	columnPrecision="2"/>-->
+			
+	<column data='column1' 		label='Tier 1' 			editable='false' 	visible='true' 		width='50' 	textAlign='right' 
+			forLevel='false' 	defaultForLevel='' 		booleanFlag='false' sortDataType='N'	columnPrecision="3"/>
+	
+	<column data='column2' 		label='Tier 2' 			editable='false' 	visible='true' 		width='50' 	textAlign='right' 
+			forLevel='false' 	defaultForLevel='' 		booleanFlag='false' sortDataType='N'	columnPrecision="3"/>
+			
+
+	<column data='column3' 	label='Tier 3' 			editable='false' 	visible='true' 		width='50' 	textAlign='right' 
+			forLevel='false' 	defaultForLevel='' 		booleanFlag='false' sortDataType='N'	columnPrecision="3"/>
+	
+	<column data='column4' 	label='Tier 4' 			editable='false' 	visible='true' 		width='50' 	textAlign='right' 
+			forLevel='false' 	defaultForLevel='' 		booleanFlag='false' sortDataType='N'	columnPrecision="3"/>
+	
+	<column data='column5' 	label='Tier 5' 			editable='false' 	visible='true' 		width='50' 	textAlign='right' 
+			forLevel='false' 	defaultForLevel='' 		booleanFlag='false' sortDataType='N'	columnPrecision="3"/>
+									
+	<column data='column6' 	label='Tier 6' 			editable='false' 	visible='true' 		width='50' 	textAlign='right' 
+			forLevel='false' 	defaultForLevel='' 		booleanFlag='false' sortDataType='N'	columnPrecision="3"/>
+	
+	<column data='column7' 	label='Tier 7' 			editable='false' 	visible='true' 		width='50' 	textAlign='right' 
+			forLevel='false' 	defaultForLevel='' 		booleanFlag='false' sortDataType='N'	columnPrecision="3"/>
+	
+	<column data='column8' 	label='Tier 8' 			editable='false' 	visible='true' 		width='50' 	textAlign='right' 
+			forLevel='false' 	defaultForLevel='' 		booleanFlag='false' sortDataType='N'	columnPrecision="3"/>
+			
+	<column data='column9' 	label='Tier 9' 			editable='false' 	visible='true' 		width='50' 	textAlign='right' 
+			forLevel='false' 	defaultForLevel='' 		booleanFlag='false' sortDataType='N'	columnPrecision="3"/>
+	
+	<column data='column10' 	label='Tier 10' 			editable='false' 	visible='true' 		width='50' 	textAlign='right' 
+			forLevel='false' 	defaultForLevel='' 		booleanFlag='false' sortDataType='N'	columnPrecision="3"/>
+	
+	<column data='column11' 	label='Tier 11' 			editable='false' 	visible='true' 		width='50' 	textAlign='right' 
+			forLevel='false' 	defaultForLevel='' 		booleanFlag='false' sortDataType='N'	columnPrecision="3"/>
+	
+	<column data='column12' 	label='Tier 12' 			editable='false' 	visible='true' 		width='50' 	textAlign='right' 
+			forLevel='false' 	defaultForLevel='' 		booleanFlag='false' sortDataType='N'	columnPrecision="3"/>
+	
+	<column data='column13' 	label='Tier 13' 			editable='false' 	visible='true' 		width='50' 	textAlign='right' 
+			forLevel='false' 	defaultForLevel='' 		booleanFlag='false' sortDataType='N'	columnPrecision="3"/>
+			
+	<column data='column14' 	label='Tier 14' 			editable='false' 	visible='true' 		width='50' 	textAlign='right' 
+			forLevel='false' 	defaultForLevel='' 		booleanFlag='false' sortDataType='N'	columnPrecision="3"/>
+	
+	<column data='column15' 	label='Tier 15' 			editable='false' 	visible='true' 		width='50' 	textAlign='left' 
+			forLevel='false' 	defaultForLevel='' 		booleanFlag='false' sortDataType='N'	columnPrecision="3"/>		
+	
+	
+</columns>  

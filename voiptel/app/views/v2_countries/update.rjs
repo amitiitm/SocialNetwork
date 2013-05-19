@@ -1,0 +1,5 @@
+if @success
+  page.alert("saved!")
+else
+  page.alert("not saved")
+end

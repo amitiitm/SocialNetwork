@@ -1,0 +1,11 @@
+one:
+  product_name: MyString
+  product_code: MyString
+  enabled: false
+  charge_type: 1
+
+two:
+  product_name: MyString
+  product_code: MyString
+  enabled: false
+  charge_type: 1

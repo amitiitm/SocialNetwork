@@ -1,0 +1,32 @@
+
+
+Hi <%= assigns[:parameter].customer.name%>,<br></br>
+<% if  assigns[:parameter].trans_type == 'S'%>
+  Your Order has been received.<br/>
+<% elsif  assigns[:parameter].trans_type == 'E'%>
+  Your ReOrder has been received.<br/>
+<% elsif  assigns[:parameter].trans_type == 'P'%>
+  Your Sample Order has been received.<br/>
+<% elsif  assigns[:parameter].trans_type == 'V'%>
+  Your Virtual Order has been received.<br/>
+<% elsif  assigns[:parameter].trans_type == 'F'%>
+  Your Pre Production Order has been received.<br/>
+  <% end %>
+  Your Order Number is <%= assigns[:parameter].trans_no%><br/>
+  Below is our production procedure:<br/>
+
+  -Within 24 Hours of order received (Before 6pm EST) you will receive an acknowledgment.<br/>
+  -Your acknowledgment will show the scheduled shipping date.<br/>
+  -Upon shipping you will receive an automatic e-mail notification with tracking.  Tracking link will only be valid after 7pm when UPS picks up.<br/>
+  -Within 24-48 of job being shipped, you will be e-mailed your invoice.<br></br>
+
+  Thank You,<br/>
+  Ronnie Hillel<br/>
+  Phone - 877-835-9353 / 631-694-5503<br/>
+  Fax - 631-694-5568 /631-930-3268<br/>
+  WWW.TEKWELD.COM<br/>
+  Tekweld Catalog 2012<br/>
+  ASI 90807 |SAGE 67569 | PPAI 266346 | IMPACT 969627 | UPIC tekweld
+
+
+

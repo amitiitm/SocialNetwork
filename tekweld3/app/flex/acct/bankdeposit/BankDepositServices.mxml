@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rds:CommonServices xmlns:rds="business.*" xmlns:mx="http://www.adobe.com/2006/mxml">
+
+	<mx:HTTPService id="saveRecord" url="/account/deposit/create_deposits"/>
+	<mx:HTTPService id="getRecord" url="/account/deposit/show_deposits"/>
+	<mx:HTTPService id="getListFormat" url="acct/bankdeposit/xmls/BankDepositListStru.xml"/>
+	<mx:HTTPService id="getList" url="/account/deposit/list_deposits"/>
+	<mx:HTTPService id="getViewFormat" url="acct/bankdeposit/xmls/BankDepositCriteriaStru.xml"/>
+	<mx:HTTPService id="GLFormat" url="acct/bankdeposit/xmls/BankDepositGLStru.xml"/>
+	<mx:HTTPService id="lineDetailFormat" url="acct/bankdeposit/xmls/BankDepositDetailStru.xml"/>
+	
+	<mx:HTTPService id="printRecord" url=""/>
+
+</rds:CommonServices>

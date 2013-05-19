@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:TitleWindow xmlns:fx="http://ns.adobe.com/mxml/2009" 
+		 xmlns:s="library://ns.adobe.com/flex/spark" 
+		 xmlns:mx="library://ns.adobe.com/flex/mx" width="328" height="154" xmlns:customcomponents="com.generic.customcomponents.*"
+		 title="Enter password to approve" showCloseButton="true" close="closeHandler()" defaultButton="{btnOk}">
+	<fx:Declarations>
+		<!-- Place non-visual elements (e.g., services, value objects) here -->
+	</fx:Declarations>
+	<fx:Script>
+		<![CDATA[
+			import com.adobe.cairngorm.business.ServiceLocator;
+			import com.generic.genclass.URL;
+			
+			import model.GenModelLocator;
+			
+			import mx.controls.Alert;
+			import mx.core.Application;
+			import mx.managers.CursorManager;
+			import mx.managers.PopUpManager;
+			import mx.rpc.AsyncToken;
+			import mx.rpc.IResponder;
+			import mx.rpc.events.FaultEvent;
+			import mx.rpc.events.ResultEvent;
+			import mx.rpc.http.HTTPService;
+			
+			import saoi.muduleclasses.event.MissingInfoEvent;
+			import saoi.salesorder.SalesOrderModelLocator;
+			
+			private var __genModel:GenModelLocator 			= GenModelLocator.getInstance();
+			private var __service:ServiceLocator 			= __genModel.services;
+			private var __responder:IResponder;
+			private var validateService_service_url:String 	= '/shipping/shipping/calculate_estimated_ship_date_and_packages';
+			private var commonUtility:CommonUtility   		= new CommonUtility();
+			
+			
+			private function validateService():void
+			{
+				var httpservice:HTTPService					= new HTTPService();
+				httpservice.url								= validateService_service_url;
+				var http:HTTPService 						= commonUtility.dataService(httpservice);
+				__responder									= new mx.rpc.Responder(serviceResultHandler,serviceFaultHandler);
+				var tempXml:XML								= new XML(	<params>
+																			<password>{tiPassword.dataValue}</password>
+																		</params>);
+				var token:AsyncToken = httpservice.send(tempXml);
+				token.addResponder(__responder);	
+				
+				CursorManager.setBusyCursor();
+				Application.application.enabled = false;
+			}
+			public function serviceResultHandler(event:ResultEvent):void
+			{
+				CursorManager.removeBusyCursor();
+				Application.application.enabled = true;
+				
+				var resultXml:XML  = XML(event.result);
+				
+				if(resultXml.name() == "errors")
+				{
+					if(resultXml.children().length() > 0) 
+					{
+						var message:String = '';
+						
+						for(var i:uint = 0; i < resultXml.children().length(); i++) 
+						{
+							message += resultXml.children()[i] + "\n";
+						}
+						Alert.show(message);
+					} 
+				}
+				else
+				{
+					dispatchEvent(new MissingInfoEvent(MissingInfoEvent.MissingInfoEvent_Type,resultXml));
+					closeHandler();
+				}
+			}
+			public function serviceFaultHandler(event:FaultEvent):void
+			{
+				Alert.show("ValidateFaultHandler"+event.fault.faultDetail);
+				
+				CursorManager.removeBusyCursor();
+				Application.application.enabled = true;
+			}
+			
+			private function closeHandler():void
+			{
+				var resultXml:XML  = new XML(<results><result></result></results>);
+				dispatchEvent(new MissingInfoEvent(MissingInfoEvent.MissingInfoEvent_Type,resultXml));
+				PopUpManager.removePopUp(this);
+				
+			}
+			private function validateClickHandler():void
+			{
+				if(tiPassword.dataValue ==__genModel.masterData.child('validate').rush_password.value.toString())
+				{
+					//validateService();
+					var resultXml:XML  = new XML(<results><result>VALID</result></results>);
+					dispatchEvent(new MissingInfoEvent(MissingInfoEvent.MissingInfoEvent_Type,resultXml));
+					PopUpManager.removePopUp(this);
+				}
+				else
+				{
+					Alert.show("Invalid Password");
+				}
+				
+				
+			}
+		]]>
+	</fx:Script>
+	<mx:HBox width="100%" height="50" verticalGap="0" horizontalGap="5" verticalAlign="middle">
+		<mx:HBox y="10" width="100%" height="30" verticalAlign="middle" verticalGap="0">
+			<mx:Label text="Password"  width="80" textAlign="right" height="20"/>
+			<customcomponents:GenTextInput id="tiPassword" displayAsPassword="true"/> 
+		</mx:HBox>
+	</mx:HBox>
+	<mx:HBox width="100%" height="46" verticalAlign="middle" horizontalGap="5" horizontalAlign="center"  verticalGap="0">
+		<mx:Button id="btnOk" label="Ok" click="validateClickHandler()"/>
+		<mx:Button label="Cancel" click="closeHandler()"/>
+	</mx:HBox>
+</mx:TitleWindow>

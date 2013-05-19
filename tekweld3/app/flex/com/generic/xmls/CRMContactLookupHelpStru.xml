@@ -1,0 +1,11 @@
+<columns  lockedColumnCount='0'>
+
+	<column	data='select_yn'		label='Select'		editable='true'		visible='true'		width='50'
+			textAlign='center' 		forLevel='false' 	sortDataType='S'	dataType='S' 		booleanFlag='true'	/>
+				 	
+	<column data='id'				label='ID'			editable='false' 	visible='false' 	width='0'	
+			textAlign='left'		forLevel='false'	defaultForLevel=''	booleanFlag='false'	sortDataType='N'	/>						
+
+	<column data='name'				label='Name'		editable='false' 	visible='true' 		width='200'	
+			textAlign='left'		forLevel='false'	defaultForLevel=''	booleanFlag='false'	sortDataType='S'	/>							
+</columns> 

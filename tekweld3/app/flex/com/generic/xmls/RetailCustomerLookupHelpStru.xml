@@ -1,0 +1,27 @@
+<columns  lockedColumnCount='0'>
+
+	<column	data='select_yn'		label='Select'		editable='true'		visible='true'		width='50'
+			textAlign='center' 		forLevel='false' 	sortDataType='S'	dataType='S' 		booleanFlag='true'	/>
+				 	
+	<column data='id'				label='ID'			editable='false' 	visible='false' 	width='0'	
+			textAlign='left'		forLevel='false'	defaultForLevel=''	booleanFlag='false'	sortDataType='N'	/>
+
+	<column data='code'				label='Code'		editable='false' 	visible='true' 		width='100'	
+			textAlign='left'		forLevel='false'	defaultForLevel=''	booleanFlag='false'	sortDataType='S'	/>							
+
+	<column data='name'				label='Name'		editable='false' 	visible='true' 		width='150'	
+			textAlign='left'		forLevel='false'	defaultForLevel=''	booleanFlag='false'	sortDataType='S'	/>
+	
+	<column data='city'				label='City'		editable='false' 	visible='true' 		width='150'	
+			textAlign='left'		forLevel='false'	defaultForLevel=''	booleanFlag='false'	sortDataType='S'	/>		
+			
+	<column data='contact1'			label='Main Contact' editable='false' 	visible='true' 		width='150'	
+			textAlign='left'		forLevel='false'	defaultForLevel=''	booleanFlag='false'	sortDataType='S'	/>
+	
+	<column data='email'			label='Email'		editable='false' 	visible='true' 		width='150'	
+			textAlign='left'		forLevel='false'	defaultForLevel=''	booleanFlag='false'	sortDataType='S'	/>							
+
+	<column data='phone'			label='Phone'		editable='false' 	visible='true' 		width='150'	
+			textAlign='left'		forLevel='false'	defaultForLevel=''	booleanFlag='false'	sortDataType='S'	/>							
+
+</columns> 

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rds:CommonServices xmlns:rds="business.*" xmlns:mx="http://www.adobe.com/2006/mxml">
+
+	<mx:HTTPService id="saveRecord" url="/account/gl_transaction/create_gl_transactions"/>
+	<mx:HTTPService id="getRecord" url="/account/gl_transaction/show_gl_transactions"/>
+	<mx:HTTPService id="getListFormat" url="acct/journal/xmls/JournalListStru.xml"/>
+	<mx:HTTPService id="getList" url="/account/gl_transaction/list_gl_transactions"/>
+	<mx:HTTPService id="getViewFormat" url="acct/journal/xmls/JournalCriteriaStru.xml"/>
+	<mx:HTTPService id="lineDetailFormat" url="acct/journal/xmls/JournalDetailStru.xml"/>
+	
+	<mx:HTTPService id="printRecord" url=""/>
+	
+
+</rds:CommonServices>

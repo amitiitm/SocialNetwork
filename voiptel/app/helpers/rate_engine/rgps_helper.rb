@@ -1,0 +1,2 @@
+module RateEngine::RgpsHelper
+end

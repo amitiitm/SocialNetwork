@@ -1,0 +1,9 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  rate_plan_id: 1
+  promotion_id: 1
+
+two:
+  rate_plan_id: 1
+  promotion_id: 1

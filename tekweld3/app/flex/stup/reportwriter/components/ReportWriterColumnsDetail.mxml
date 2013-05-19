@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<gencomponents:DetailAddEdit xmlns:mx="http://www.adobe.com/2006/mxml"
+	width="625" height="160" verticalGap="0"
+	xmlns:customcomponents="com.generic.customcomponents.*"
+	xmlns:gencomponents="com.generic.components.*">
+	
+	<mx:Script source="../scripts/ReportWriterColumnsDetailScript.as"/>
+	
+	<mx:VBox width="100%" height="100%">	
+		
+		<mx:HBox width="100%">
+			<mx:Label text="Name" textAlign="right" width="100" height="20" />
+			<customcomponents:GenTextInput id="tiName" width="160" visible="true" editable="true" height="20" 
+				tabIndex="1" xmlTag="column_name" updatableFlag="true" tableName="report_column"/>
+			<mx:Label text="Label" textAlign="right" width="100" height="20" />
+			<customcomponents:GenTextInput id="tiLabel" width="160" visible="true" editable="true" height="20" 
+				tabIndex="2" xmlTag="column_label" updatableFlag="true" tableName="report_column"/>
+		</mx:HBox>
+		<mx:HBox width="100%">
+			<mx:Label textAlign="right" width="100" text="Data Type" height="20" />
+			<customcomponents:GenComboBox id="cbDataType" defaultValue="S" width="160" cornerRadius="0" xmlTag="column_datatype" updatableFlag="true" height="20" 
+				tableName="report_column"  tabIndex="3" labelField="label"  dataProvider="{__genModel.masterData.child('report_column').datatype}"/>
+			<mx:Label textAlign="right" width="100" text="Sort Data Type" height="20" />
+			<customcomponents:GenComboBox id="cbSortDataType" defaultValue="S" width="160" cornerRadius="0" xmlTag="sortdatatype" updatableFlag="true" height="20" 
+				tableName="report_column"  tabIndex="4" labelField="label"  dataProvider="{__genModel.masterData.child('report_column').datatype}"/>
+		</mx:HBox>
+		<mx:HBox width="100%">
+			<mx:Label textAlign="right" width="100" text="Text Align" height="20" />
+			<customcomponents:GenComboBox id="cbTextAlign"  defaultValue="L" width="160" cornerRadius="0" xmlTag="column_textalign" updatableFlag="true" height="20" 
+				tableName="report_column"  tabIndex="5" labelField="label"  dataProvider="{__genModel.masterData.child('report_column').alignment}"/>
+			<mx:Label text="Precision" textAlign="right" width="100" height="20" />
+			<customcomponents:GenTextInput id="tiPrecision" width="160" visible="true" editable="true" dataType="N" height="20" 
+				tabIndex="6" xmlTag="column_precision"  updatableFlag="true" tableName="report_column"
+				maxValue="99" defaultValue="0" setDefaultOnEmpty="true"/>
+		</mx:HBox>
+		<mx:HBox>
+			<mx:Label text="Width" textAlign="right" width="100" height="20" />
+			<customcomponents:GenTextInput id="tiWidth" width="160" visible="true" editable="true" dataType="N" height="20" 
+				tabIndex="7" xmlTag="column_width" updatableFlag="true" tableName="report_column"/>
+			<mx:Label text="Width (Print)" textAlign="right" width="100" height="20" />
+			<customcomponents:GenTextInput id="tiPrint_width" width="160" visible="true" editable="true" dataType="N" height="20" 
+				tabIndex="8" xmlTag="print_width" updatableFlag="true" tableName="report_column"/>
+		</mx:HBox>
+		<mx:HBox width="100%">
+			<customcomponents:GenCheckBox labelPlacement="left" label="Groupable" id="cbGroupable" width="120" xmlTag="isgroupable"
+				updatableFlag="true" tableName="report_column" defaultValue="N" textAlign="right" tabIndex="9" enabled="true" height="20" 
+				dataValueForOn="Y" dataValueForOff="N"/>
+			<customcomponents:GenCheckBox labelPlacement="left" label="Drill Down Column" id="cbDrillDownColumn" width="270" xmlTag="isdrilldowncolumn"
+				updatableFlag="true" tableName="report_column" defaultValue="N" textAlign="right" tabIndex="10" enabled="true" height="20" 
+				dataValueForOn = "Y" dataValueForOff = "N" change="changeHandler()"/>
+		</mx:HBox>
+		<mx:HBox width="100%">
+			<customcomponents:GenCheckBox labelPlacement="left" label="Fixed URL" id="cbFixedUrl" width="120" xmlTag="isfixedurl"
+				updatableFlag="true" tableName="report_column" defaultValue="N" textAlign="right" tabIndex="11" enabled="true" height="20" 
+				dataValueForOn="Y" dataValueForOff="N" visible="{cbDrillDownColumn.selected}"/>
+			<mx:HBox visible="{cbFixedUrl.selected}" width="100%">
+				<mx:Label id="lblDoc_id" textAlign="right" width="75" text="Document#" height="20" visible="{cbFixedUrl.selected}" />
+				<customcomponents:GenTextInputWithHelp
+					lookupFormatUrl	=	"documentLookupHelpFormat"
+					id="dcDoc_id" 
+					width="350" 
+					toolTip="Document #" 
+					dataSourceName="Document"
+					height="20" 
+					tabIndex="14" 
+					validationFlag="false" 
+					xmlTag="drilldown_component_code"
+					labelTag="drilldown_component_code"
+					dataField="component_cd" 
+					labelField= "component_cd"
+					updatableFlag="true" 
+					tableName="report_column" 
+					visible="{cbFixedUrl.selected}"
+					/>
+				
+				<!--<customcomponents:GenDynamicComboBoxWithHelp id="dcDoc_id" width="350" visible="{cbFixedUrl.selected}"
+						tabIndex="14" toolTip="Document #" defaultValue="" height="20" cornerRadius="0" dataField="component_cd"
+						dataSourceName="Document" dataProvider="{__genModel.lookupObj.document.children()}" labelField="component_cd" 
+						validationFlag="false" xmlTag="drilldown_component_code" updatableFlag="true" tableName="report_column" />-->
+				
+			</mx:HBox>
+		</mx:HBox>
+		<customcomponents:GenTextInput id="tiSerial_no" width="0" height="0" visible="false"
+			editable="false" enabled="false" xmlTag="serial_no" updatableFlag="true"  
+			tableName="report_column" defaultValue=""  maxChars="4" />
+	</mx:VBox>
+</gencomponents:DetailAddEdit>

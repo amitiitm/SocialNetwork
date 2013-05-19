@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:AdvancedDataGrid xmlns:mx="http://www.adobe.com/2006/mxml"
+	width="100%" 
+	height="100%"
+	useRollOver="false"
+	doubleClickEnabled="true"
+	horizontalScrollPolicy="on"
+ 	itemClick="itemClickHandler(event)"
+  	itemDoubleClick="itemDoubleClickEventHandler(event)"
+ 	rowHeight="24"
+ 	defaultLeafIcon="{null}"
+ 	folderClosedIcon="{null}"
+ 	folderOpenIcon="{null}"
+ 	groupLabelFunction="groupLabelFuntionHandler">
+	
+	<mx:Metadata>
+		 [Event(name="itemClickCustomReportEvent", type="com.generic.events.CustomReportEvent")]
+	  	 [Event(name="itemDoubleClickCustomReportEvent", type="com.generic.events.CustomReportEvent")]
+	  	 [Event(name="structureCompleteEvent", type="com.generic.events.CustomReportEvent")]
+	</mx:Metadata> 
+	
+ 	<mx:Script source="../scripts/GenCustomReportDataGridScript.as"/>
+</mx:AdvancedDataGrid>

@@ -1,0 +1,30 @@
+<% box :type => "dialog", :id => "new-distribution", :title => "New Distribution", :icon => "ui-icon-person" do %>
+	<% box :type => "simple", :title => "New Distribution" do %>
+		<% form_for @distribution, :html => {:class => "forms"} do |f| %>
+		<ul>
+			<li>
+				<label>Distributor</label>
+				<%= f.select :distributor_id, Distributor.all.collect {|d| [d.bname, d.id]} %>
+			</li>
+			<li>
+				<label>Value</label>
+				<%= f.select :value, [["$2 - Avail: #{Card.available(2)}", "2"], ["$5 - Avail: #{Card.available(5)}", "5"]] %>
+			</li>
+			<li>
+				<label>Number of Cards</label>
+				<%= f.text_field :num_cards, :size => 5 %>
+			</li>
+			<li>
+				<label>Activation Date</label>
+				<%= f.text_field :activation_date, :size => 10 %>
+			</li>
+		</ul>
+		<% end -%>
+	<% end -%>
+<% end -%>
+
+<%= javascript_include_tag "/js/ap.dialog.js" %>
+
+<script>
+	$('#distribution_activation_date').datepicker();
+</script>

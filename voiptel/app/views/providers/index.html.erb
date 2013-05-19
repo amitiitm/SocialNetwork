@@ -1,0 +1,24 @@
+<h1>Listing providers</h1>
+
+<table cellspacing="0">
+  <tr>
+    <th>Name</th>
+    <th>Termination</th>
+    <th>Origination</th>
+		<th>Actions</th>
+  </tr>
+
+<% @providers.each do |provider| %>
+  <tr>
+    <td><%=h provider.name %></td>
+    <td><%=h provider.termination %></td>
+    <td><%=h provider.origination %></td>
+    <td><%= link_to 'Edit', edit_provider_path(provider) %> | 
+    	<%= link_to 'Destroy', provider, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New provider', new_provider_path %>

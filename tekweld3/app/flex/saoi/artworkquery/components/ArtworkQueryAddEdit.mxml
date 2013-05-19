@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<gencomponents:AddEdit xmlns:mx="http://www.adobe.com/2006/mxml"
+	height="100%" width="100%" verticalGap="0"
+	xmlns:customcomponents="com.generic.customcomponents.*"
+	xmlns:gencomponents="com.generic.components.*"
+	creationPolicy="all" creationComplete="init()">
+	
+	<mx:Script source="../scripts/ArtworkQueryAddEditScript.as"/>
+	
+	<mx:VBox width="100%" height="100%" >
+		<mx:HBox id="HBoxHeader" width="100%"  horizontalGap="0" verticalGap="0" verticalAlign="top"
+			paddingBottom="0" paddingTop="0">
+			<mx:VBox width="25%" height="100%" horizontalGap="0" verticalGap="3" paddingBottom="0" paddingTop="0">
+				<mx:Spacer height="4%"/>
+				<mx:HBox width="100%" height="4%" verticalAlign="middle"  verticalGap="0" enabled="false" styleName="disableAsEnable">
+					<mx:Label text="Query #" width="100" textAlign="right" height="20" />
+					<customcomponents:GenTextInput id="tiQueryCode" width="149" xmlTag="serial_no"
+						updatableFlag="true" tabIndex="19" tableName="query"
+						defaultValue="" validationFlag="false" toolTip="Customer Contact" height="20" 
+						maxChars="50" />
+				</mx:HBox>
+				
+				<!--<mx:HBox width="100%"  verticalAlign="middle" enabled="false" styleName="disableAsEnable">
+					<mx:Label text="Query Date" width="100" textAlign="right" height="20" />
+					<customcomponents:GenDateField id="dfQuery_date" width="110" xmlTag="date_added"
+												   updatableFlag="true" tabIndex="10" tableName="query" height="20" 
+												   validationFlag="false" toolTip="Customer PO Date" />
+				</mx:HBox>-->
+				
+				<customcomponents:GenCheckBox labelPlacement="left" label="Query Answered ?" id="cbAnswerFlag" width="121" 
+											  xmlTag="answer_flag" updatableFlag="true" tableName="query" defaultValue="N" textAlign="right" tabIndex="11"
+											  dataValueForOn ="Y" dataValueForOff ="N" enabled="false" />
+			</mx:VBox>				
+			
+			<mx:VBox width="25%" height="100%" verticalGap="3" horizontalGap="0" paddingBottom="0" paddingTop="0" visible="false" includeInLayout="false">
+				<mx:Spacer height="4%"/>
+			</mx:VBox>
+			<mx:VRule height="100%"/>
+			<mx:VBox width="25%" height="100%" verticalGap="3" horizontalGap="0" paddingBottom="0" paddingTop="0" >
+				<mx:Spacer height="4%"/>
+				<mx:HBox width="100%" height="10%" verticalGap="0" >						
+					<mx:LinkButton label="Order #" styleName="promoLinkButton" width="95" textAlign="right" height="20" click="viewDetailOrder()" />
+					<customcomponents:GenTextInput id="tiTrans_bk" width="35" height="20" visible="true" enabled="false"
+						xmlTag="trans_bk" updatableFlag="false" tableName="query" fontWeight="bold" />
+					<customcomponents:GenTextInput id="tiTrans_no" width="71" xmlTag="trans_no" enabled="false" 
+						updatableFlag="true"  tableName="query"  height="20" 
+						defaultValue="" validationFlag="false" toolTip="Trans #" fontWeight="bold" />	
+				</mx:HBox>				
+				<mx:HBox width="100%" height="10%" verticalGap="0" enabled="false" styleName="disableAsEnable">
+					<mx:Label text="Order Date" width="95" textAlign="right" height="20" />
+					<customcomponents:GenDateField id="dfTrans_date" width="116" xmlTag="trans_date" enabled="false"
+						updatableFlag="true" tabIndex="13" tableName="query" height="20" 
+					 	validationFlag="false" toolTip="Trans Date"
+					/>
+				</mx:HBox>
+				
+				<mx:HBox width="100%" height="10%" verticalGap="0" enabled="false" styleName="disableAsEnable">
+					<mx:Label text="Ship Date" width="95" textAlign="right" height="20" />
+					<customcomponents:GenDateField id="dfShip_date" width="116" xmlTag="ship_date"
+												   updatableFlag="true" tabIndex="13" tableName="query" height="20" 
+												   validationFlag="false" toolTip="Trans Date"
+												   />
+				</mx:HBox>
+				
+				<mx:HBox width="0" height="0" verticalGap="0" includeInLayout="false" visible="false">		
+					<mx:Label text="Status" width="95" textAlign="right" height="20" />
+					<customcomponents:GenComboBox id="cbTrans_flag" width="116" cornerRadius="0" xmlTag="trans_flag" updatableFlag="true"
+						tableName="query" enabled="false" defaultValue="A" labelField="label" height="20" editable="false"
+						dataProvider="{__genModel.masterData.child('trans_flag').trans_flag}"
+						toolTip="Status" />
+					<customcomponents:GenTextInput id="tiSalesOrderid" width="470" tabIndex="3" height="20"  updatableFlag="true" maxChars="100" xmlTag="sales_order_id" tableName="query"
+												   />
+				</mx:HBox>
+				
+			</mx:VBox>
+			<!--<mx:LinkButton label="InComplete Artwork" styleName="promoLinkButton" width="138" textAlign="right" height="20" click="openIncompleteArtworkScreen()" />-->
+		</mx:HBox>	
+		<mx:Spacer height="5"/>
+		<mx:HBox height="20" width="100%" horizontalGap="2" verticalAlign="middle" enabled="false" styleName="disableAsEnable">
+			<mx:Label text="Created By" width="100" textAlign="right"/>
+			<customcomponents:GenTextInput id="tiUser_name" width="470" tabIndex="3" height="20"  updatableFlag="true" maxChars="100" xmlTag="user_name" tableName="query"
+										   />
+		</mx:HBox>
+		<mx:HBox width="100%" horizontalGap="2" verticalAlign="middle" visible="false" includeInLayout="false">
+			<mx:Label text="Type" width="92" textAlign="right"/>
+			<customcomponents:GenComboBox id="tiQueriesType" width="225" cornerRadius="0" xmlTag="query_type" updatableFlag="true"
+										  tableName="query"  tabIndex="1" labelField="label" height="20" defaultValue="Artwork"  		
+										  dataProvider="{__genModel.masterData.child('saoi_query_type').saoi_query_type}" toolTip="Query Type"/>
+		</mx:HBox>
+		<mx:HBox width="100%" horizontalGap="2" verticalAlign="middle" enabled="false" styleName="disableAsEnable">
+			<mx:Label text="Category" width="100" textAlign="right"/>
+			<customcomponents:GenComboBox id="tiQueriesCategory" width="225" cornerRadius="0" xmlTag="query_category" updatableFlag="true"
+										  tableName="query"  tabIndex="2" labelField="label" height="20" defaultValue="Art"  		
+										  dataProvider="{__genModel.masterData.child('saoi_query_category').saoi_query_category}" toolTip="Query Category"/>
+		</mx:HBox>
+		
+		<!--<mx:HBox height="20" width="100%" horizontalGap="2" verticalAlign="middle" enabled="false" styleName="disableAsEnable">
+			<mx:Label text="Subject" width="100" textAlign="right"/>
+			<customcomponents:GenTextInput id="tiSubject" width="470" tabIndex="3" height="20"  updatableFlag="true" maxChars="100" xmlTag="subject" tableName="query"
+										   />
+		</mx:HBox>-->
+		<mx:HBox height="146" width="100%" horizontalGap="2" enabled="false" styleName="disableAsEnable">
+			<mx:Label text="Query" width="100" textAlign="right"/>
+			<customcomponents:GenTextArea id="tiQuery" width="470" height="100%" tabIndex="5" updatableFlag="true" maxChars="1000"  xmlTag="question" tableName="query"
+										   />
+		</mx:HBox>
+		<mx:HBox height="146" width="100%" horizontalGap="2">
+			<mx:Label text="Answer" width="100" textAlign="right"/>
+			<customcomponents:GenTextArea id="tiAnswer" width="470" height="100%" tabIndex="5" updatableFlag="true" maxChars="1000"  xmlTag="answer" tableName="query"
+										    change="setAnswerFlag()"/>
+		</mx:HBox>
+		<customcomponents:GenComboBox id="cbOrder_type" width="150" cornerRadius="0" xmlTag="trans_type" updatableFlag="true"
+									  tableName="query"  tabIndex="7" labelField="label" height="20" defaultValue="S" 		
+									  dataProvider="{__genModel.masterData.child('trans_type').so}" toolTip="Order Type" visible="false" includeInLayout="false"/>
+	</mx:VBox>
+</gencomponents:AddEdit>
+

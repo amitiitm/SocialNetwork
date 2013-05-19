@@ -1,0 +1,117 @@
+<div  class="inner-response">
+  <div id="wrapper">
+    <div id="container1" style="width:721px;">
+      <% form_tag account_credit_cards_path(@account), :id=>'credit_card_form',:class => "forms" do %>
+          <div style="padding-top: 0px;width: 731px">
+            <%= error("Unable to Authorize:") %>
+          </div>
+          <div id="tabsPanel" style="width:731px;	margin:-10px auto;">
+            <div id="tabPanelMiddle" style="width:729px;">
+              <div class="panel1" style="width:429px; min-height:153px; background-color:#f6f6f6; margin:10px 0px 0px 24px;">
+                <div id="title" style="width:100%;">
+                  <h2 style=" margin-left:95px;">Card Holders Name and Billing Address</h2><img height="16" width="16" src="/images/billing/arrow.png" />
+                </div>
+                <div class="divfield">
+                  <div>
+                    <label>First Name: </label>
+                    <%=text_field(@credit_card, :first_name,:style=>'width:118px;height:21px; background:url(/images/billing/txtfield_123_03.jpg) no-repeat;')%>
+                  </div>
+                </div><!--divfield-->
+                <div class="divfield" style="margin-left:20px;">
+                  <div>
+                    <label>Last Name: </label>
+                    <%=text_field(@credit_card, :last_name,:style=>'width:118px;height:21px; background:url(/images/billing/txtfield_123_03.jpg) no-repeat;')%>
+                  </div>
+                </div><!--divfield-->
+
+                <div class="divfield">
+                  <div style="width:400px;">
+                    <label>Street Address: </label>
+                    <%= text_field(:address, :address1,:style=>"background:url(/images/billing/dropdown_b_name_bg.png) no-repeat; width:186px;height:21px;") %>
+                  </div>
+                </div><!--divfield-->
+                <div class="divfield" style="width:162px;">
+                  <div>
+                    <label>City: </label>
+                    <%=  text_field(:address, :city, :style=>"width:118px;height:21px; background:url(/images/billing/txtfield_123_03.jpg) no-repeat;") %>
+                  </div>
+                </div><!--divfield-->
+
+                <div class="divfield" style="width:99px;">
+                  <div>
+                    <label>State: </label>
+                    <%= select(:address, :state, Address::STATES, {},  :style=>"width:58px;") %>
+                  </div>
+                </div>
+
+                <div class="divfield">
+                  <div>
+                    <label>Zip Code: </label>
+                    <%=text_field(:address, :zipcode,:style=>"background:url(/images/billing/text_field_59_gray.png) no-repeat; width:64px;height:21px;") %>
+                  </div>
+                </div>
+                <div class="clear">
+
+                </div>
+              </div>
+              <div class="panel1" style="width:246px; background-color:#f6f6f6; min-height:153px; border-left:none; margin-right:13px; margin-left:0px;">
+                <div id="title" style="width:100%;"><h2 style="margin-left:90px;">Card Info</h2><img src="/images/billing/arrow.png" width="16" height="16" /></div>
+
+                <div class="divfield">
+                  <div>
+                    <label>Card Number: </label>
+                    <%= text_field(@credit_card, :number,:style=>"width:138px;height:21px;; background:url(/images/billing/text_field_143_bg.png) no-repeat;") %>
+                  </div>
+                </div><!--divfield-->
+
+                <div class="divfield" style="width:164px;margin-top: 0;">
+                  <div>
+                    <label>Card Type: </label>
+                    <%=select(@credit_card, :type, CreditCard::TYPES,{},{:style=>"width:78px; margin-left:16px; margin-top:6px;"})%>
+                  </div>
+                </div>
+
+                <div class="divfield" style="width:199px;">
+                  <div>
+                    <label>Exp. Date: </label>
+                    <%=select(@credit_card, :month, (["Month"] + (1..12).to_a),{:selected => "Month"},:style=>"width:45px; margin-left:20px;") +
+                               select(@credit_card, :year, (["Year"] + (Time.now.year..(Time.now.year+10)).to_a),{},:style=>"width:58px;")%>
+                  </div>
+                </div>
+
+                <div class="divfield" style="width:164px;">
+                  <div>
+                    <label>Sec. Code: </label>
+                    <%=text_field(@credit_card, :verification_value, :style => "background:url(/images/billing/text_field_59_gray.png) no-repeat; height:21px;width:64px; margin-left:18px;")%>
+                  </div>
+                </div>
+                <div class="clear">
+                </div>
+              </div>
+              <div class="clear"></div>
+              <%= loading("Please wait...") %>
+              <div id="buttons" style="margin-right:30px;">
+                <img id="cancel" src="/images/billing/reset.png" />
+                <input type="image" src="/images/billing/save.png" style="width:59px;padding: 0; height:27px;">
+              </div>
+              <div class="clear"></div>
+            </div><!--tabPanelMiddle-->
+            <!--</form>-->
+            <div class="clear"></div>
+      <%end%>
+      </div><!--tabsPanel-->
+      <div class="clear"></div>
+    </div><!--container-->
+  </div><!--wrapper-->
+</div>
+
+
+<script type="text/javascript">
+    jQuery(document).ready(function() {
+        jQuery('#cancel').live('click',function(event){
+            jQuery('#credit_card_form')[0].reset();
+
+        })
+    });
+</script>
+

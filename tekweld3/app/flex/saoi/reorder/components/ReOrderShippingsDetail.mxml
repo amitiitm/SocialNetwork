@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8"?>
+<gencomponents:DetailAddEdit xmlns:mx="http://www.adobe.com/2006/mxml"
+							 width="850" height="524" verticalGap="0"
+							 xmlns:customcomponents="com.generic.customcomponents.*"
+							 xmlns:gencomponents="com.generic.components.*" creationComplete="init()"
+							 >
+	<mx:Script>
+		<![CDATA[
+			import saoi.muduleclasses.ApplicationConstant;
+		]]>
+	</mx:Script>
+	
+	<mx:Script source="../scripts/ReOrderShippingDetailScript.as"/>
+	<mx:HBox width="100%" height="263">
+		<mx:VBox height="65%" width="389">
+			
+			
+			
+			<customcomponents:GenCheckBox labelPlacement="left" label="Copy Billing Address" id="cbCopyBillingAddress" width="137" height="20" xmlTag="collection"
+										  updatableFlag="false" tableName="sales_order_shipping" defaultValue="N" textAlign="right" tabIndex="10" enabled="true"
+										  dataValueForOn = "Y" dataValueForOff = "N" itemChangedEvent="setBillingAddress()"/>
+			
+			<mx:HBox width="100%" horizontalGap="2" verticalAlign="middle">
+				<mx:Label text="Quantity" width="120" textAlign="right"/>
+				<customcomponents:GenTextInput id="tiQty" width="55" height="20" visible="true"
+											   editable="true" enabled="true" xmlTag="ship_qty" updatableFlag="true"
+											   tableName="sales_order_shipping" defaultValue="0" tabIndex="40" toolTip="Qty" setDefaultOnEmpty="true" 
+											   textAlign="right" dataType="N" maxValue="99999999" itemChangedEvent="getEstimateShipDate(tiQty.dataValue);"/>
+				
+				
+			</mx:HBox>
+			
+			
+			
+			<mx:HBox width="100%" horizontalGap="2" verticalAlign="middle">
+				<mx:Label text="Ship #" width="120" textAlign="right" height="20" />
+				<customcomponents:GenTextInputWithHelp id="dcCustomer_shipping_id"
+													   width="225" height="20" 
+													   toolTip="Ship #" 			defaultValue=""
+													   dataField="id" 				labelField="code"
+													   xmlTag="customer_shipping_id" labelTag="customer_shipping_code"
+													   filterEnabled="true" 		filterKeyName="customer_id"
+													   dataSourceName="CustomerSpecificShippings" 
+													   tabIndex="10"  itemChangedEvent="getShippingDetail();ticustomer_shipping_code.dataValue= dcCustomer_shipping_id.labelValue"  
+													   validationFlag="false" 
+													   updatableFlag="true" tableName="sales_order_shipping"
+													   lookupFormatUrl	=	"customerSpecificShippingLookupHelpFormat"
+													   />
+				<!--<customcomponents:GenDynamicComboBox id="dcCustomer_shipping_id" width="225" 
+				tabIndex="40" toolTip="Ship #"  defaultValue="" height="20" 
+				dataField="id" labelField="code" 
+				xmlTag="customer_shipping_id" updatableFlag="true" tableName="sales_order_shipping"
+				itemChangedEvent=""  />-->
+				<mx:HBox width="100%" horizontalGap="2" verticalAlign="middle" visible="false" includeInLayout="false">
+					<mx:Label text="customer_shipping_code" width="120" textAlign="right" height="20" />
+					<customcomponents:GenTextInput id="ticustomer_shipping_code" width="225" xmlTag="customer_shipping_code"
+												   updatableFlag="true" tabIndex="30" tableName="sales_order_shipping" editable="true"
+												   defaultValue="" validationFlag="false" toolTip="Ship Code" height="20" maxChars="50" />
+					
+				</mx:HBox>
+				
+				
+			</mx:HBox>
+			<mx:HBox width="100%" horizontalGap="2" verticalAlign="middle">
+				<mx:Label text="Name" width="120" textAlign="right" height="20" />
+				<customcomponents:GenTextInput id="tiShip_nm" width="225" xmlTag="ship_name"
+											   updatableFlag="true" tabIndex="30" tableName="sales_order_shipping" editable="true"
+											   defaultValue="" validationFlag="true" toolTip="Ship Name" height="20" maxChars="50" />
+				
+			</mx:HBox>
+			<mx:HBox width="100%" horizontalGap="2" verticalAlign="middle">
+				<mx:Label text="Attention" width="120" textAlign="right" height="20" />
+				<customcomponents:GenTextInput id="tiShip_Attention" width="225" xmlTag="attention"
+											   updatableFlag="true" tabIndex="5" tableName="sales_order_shipping"
+											   defaultValue="" validationFlag="false" toolTip="Attention" editable="true" height="20" maxChars="20" />
+			</mx:HBox>	
+			
+			<mx:HBox width="100%" horizontalGap="2" verticalAlign="middle">
+				<mx:Label text="Address1" width="120" textAlign="right" height="20" />
+				<customcomponents:GenTextInput id="tiShip_address1" width="224" xmlTag="ship_address1"
+											   updatableFlag="true" tabIndex="50" tableName="sales_order_shipping" editable="true"
+											   defaultValue="" validationFlag="true" toolTip="Ship Address #1" height="20" maxChars="50" />
+				
+			</mx:HBox>
+			<mx:HBox width="100%" horizontalGap="2" verticalAlign="middle">
+				<mx:Label text="Address2" width="120" textAlign="right" height="20" />
+				<customcomponents:GenTextInput id="tiShip_address2" width="224" xmlTag="ship_address2"
+											   updatableFlag="true" tabIndex="60" tableName="sales_order_shipping" editable="true"
+											   defaultValue="" validationFlag="false" toolTip="Ship Address #2" height="20" maxChars="50" />
+				
+			</mx:HBox>
+			<mx:HBox width="100%" horizontalGap="2" verticalAlign="middle">
+				<mx:Label text="City/State/Zip" width="120" textAlign="right" height="20" />	
+				<customcomponents:GenTextInput id="tiShip_city" width="119" xmlTag="ship_city"
+											   updatableFlag="true" tabIndex="70" tableName="sales_order_shipping" itemChangedEvent="cityItemChangeHandler()"
+											   defaultValue="" validationFlag="true" toolTip="City" editable="true" height="20" maxChars="25" />
+				
+				<customcomponents:GenTextInput id="tiShip_state" width="28" xmlTag="ship_state"
+											   updatableFlag="true" tabIndex="80" tableName="sales_order_shipping" itemChangedEvent="stateItemChangeHandler()"
+											   defaultValue="" validationFlag="true" toolTip="State" editable="true" height="20" maxChars="2" upperCaseFlag="true" />
+				<customcomponents:GenTextInput id="tiShip_zip" width="75" xmlTag="ship_zip"
+											   updatableFlag="true" tabIndex="90" tableName="sales_order_shipping"
+											   defaultValue="" validationFlag="true" toolTip="Zip" height="20" maxChars="15" itemChangedEvent="setShippingMethodDetail()" />
+			</mx:HBox>
+			<mx:HBox width="100%" horizontalGap="2" verticalAlign="middle">
+				<mx:Label text="Country" width="120" textAlign="right" height="20" />
+				<customcomponents:GenTextInput id="tiShip_country" width="27" xmlTag="ship_country"
+											   updatableFlag="true" tabIndex="100" tableName="sales_order_shipping" itemChangedEvent="setShippingMethodDetail()"
+											   defaultValue="US" validationFlag="true" toolTip="Country" editable="true" height="20" maxChars="2"/>
+			</mx:HBox>
+			<mx:HBox width="100%" horizontalGap="2" verticalAlign="middle">
+				<mx:Label text="Phone/ Fax" width="120" textAlign="right" height="20" />
+				<customcomponents:GenTextInput id="tiShip_phone1" width="114" xmlTag="ship_phone"
+											   updatableFlag="true" tabIndex="110" tableName="sales_order_shipping"
+											   defaultValue="" validationFlag="false" toolTip="Phone" editable="true" height="20" maxChars="50" />
+				<customcomponents:GenTextInput id="tiShip_fax1" width="115" xmlTag="ship_fax"
+											   updatableFlag="true" tabIndex="120" tableName="sales_order_shipping"
+											   defaultValue="" validationFlag="false" toolTip="Fax" editable="true" height="20" maxChars="50" />
+			</mx:HBox>
+			
+			
+			<customcomponents:GenTextInput id="tiSerial_no" width="0" height="0" visible="false"
+										   editable="true" enabled="true" xmlTag="serial_no" updatableFlag="true"
+										   tableName="sales_order_shipping" defaultValue=""  />
+			
+		</mx:VBox>
+		<mx:VBox height="70%" width="50%">
+			<mx:Spacer height="20"/>
+			<mx:HBox width="100%" height="20" horizontalGap="2" verticalAlign="middle">
+				
+				<mx:Label width="129" height="20" text="Estimated Ship Date" textAlign="right"/>
+				<customcomponents:GenDateField id="dfEstimaedShip_date" defaultValue="" enabled="false"  width="117" tabIndex="170" xmlTag="estimated_ship_date" updatableFlag="true" 
+											   tableName="sales_order_shipping" height="20" toolTip="Estimated Ship Date" />
+				<mx:LinkButton id="lbtnEstimateShipDate" y="1" height="20" label="Get Estimate Ship Date"
+							   click="getEstimateShipDate(tiQty.dataValue)" visible="false" includeInLayout="false"/>
+			</mx:HBox>
+			
+			<mx:HBox width="100%" horizontalGap="2" verticalAlign="middle" >
+				
+				<mx:Label width="129" height="20" text="Estimated Inhand Date" textAlign="right"/>
+				<customcomponents:GenDateField id="dfArrivalShip_date" enabled="false" defaultValue=""  width="117" tabIndex="170" xmlTag="estimated_arrival_date" updatableFlag="true" 
+											   tableName="sales_order_shipping" height="20" toolTip="Estimated Arrival Date" />
+			</mx:HBox>
+			
+			<mx:HBox width="100%" horizontalGap="2" verticalAlign="middle">
+				<mx:Label text="Bill Transportation To" width="129" textAlign="right"/>
+				<customcomponents:GenComboBox id="cbBillingTransportationTo" width="200" cornerRadius="0" xmlTag="bill_transportation_to" updatableFlag="true"
+											  tableName="sales_order_shipping"  tabIndex="1" labelField="label" height="20" defaultValue="Shipper (TEKWELD)"  		
+											  dataProvider="{commonartworkXml.getArtworkList('billingtransportationto')}" toolTip="Bill Transportation To" itemChangedEvent="chnageBillingTransportationTo('')"/>
+			</mx:HBox>
+			
+			<mx:HBox width="100%" height="20" horizontalGap="2" verticalAlign="middle">						
+				<mx:Label text="Provider" width="129" textAlign="right" height="20" />
+				<customcomponents:GenTextInputWithHelp 
+					id="dcShipping_code"
+					width="200" height="20"
+					toolTip="Sales Person #"
+					dataField="code"
+					labelField="code"
+					defaultLabelValue="{ApplicationConstant.SHIPPING_PROVIDER_UPS}"
+					defaultDataValue="{ApplicationConstant.SHIPPING_PROVIDER_UPS}"
+					xmlTag="shipping_code"
+					labelTag="shipping_code"
+					dataSourceName="Shipping" 
+					tabIndex="140"   
+					validationFlag="true" 
+					updatableFlag="true" 
+					tableName="sales_order_shipping"
+					itemChangedEvent="setAccountNo()"
+					/>
+				<!--<customcomponents:GenDynamicComboBoxWithHelp id="dcShipping_code" width="154" 
+				tabIndex="140" toolTip="Ship via"  defaultValue="UPS" height="20" 
+				dataField="code" labelField="code" itemChangedEvent="setAccountNo()"
+				dataSourceName="Shipping" dataProvider="{__genModel.lookupObj.shipping.children()}"   
+				validationFlag="false" xmlTag="shipping_code" updatableFlag="true" tableName="sales_order_shipping"  />-->
+				
+			</mx:HBox>
+			
+			<mx:HBox width="100%" horizontalGap="2" verticalAlign="middle">
+				<mx:Label text="Method" width="129" textAlign="right" height="20" />
+				<customcomponents:GenTextInput id="tiShipMethod" width="200" xmlTag="ship_method" enabled="false"
+											   updatableFlag="true" tabIndex="150" tableName="sales_order_shipping"
+											   defaultValue="" validationFlag="false" toolTip="Ship Method #" height="20" 
+											   maxChars="100" />
+				<mx:Spacer width="10"/>
+				<customcomponents:GenButton id="btnShipMethod"  width="37" height="20" label="Shipping Methods"
+						   click="openShippingApiMethoeds()" icon="{btnShipMethodClass}"/>
+				<customcomponents:GenTextInput id="tiShipMethodCode" width="200" xmlTag="ship_method_code" enabled="false"  visible="false" includeInLayout="false"
+											   updatableFlag="true" tabIndex="150" tableName="sales_order_shipping"
+											   defaultValue="" validationFlag="false" toolTip="Ship Method #" height="20" 
+											   maxChars="100" />
+			</mx:HBox>
+			<mx:HBox width="100%" horizontalGap="2" verticalAlign="middle">
+				<mx:Label text="Account #" width="129" textAlign="right" height="20" />
+				<customcomponents:GenTextInput id="tiAccountNo" width="200" xmlTag="shipvia_accountnumber" enabled="false"
+											   updatableFlag="true" tabIndex="150" tableName="sales_order_shipping"
+											   defaultValue="" validationFlag="false" toolTip="Account #" height="20" 
+											   maxChars="25" />
+			</mx:HBox>
+			<!--<mx:HBox width="100%" horizontalGap="2" verticalAlign="middle" >
+			<mx:Label text="Ship method" width="108" textAlign="right" height="20" />
+			<customcomponents:GenDynamicComboBox id="dcShippingMethods" width="185" toolTip="Shipping Methods" 
+			labelField="ship_method" dataField="ship_method" itemChangedEvent="setShippingMethodToolTip()"
+			xmlTag="ship_method" updatableFlag="true" tabIndex="160" tableName="sales_order_shipping" height="20" 
+			defaultValue="" validationFlag="false" />
+			<mx:Button id="btnRefreshShipMethod" width="14" enabled="{!dcShipping_code.viewOnlyFlag}" label="" cornerRadius="0" height="16" click="setShippingMethods()"
+			toolTip="Refresh" visible="true" textAlign="center" icon="@Embed(source='../../../com/generic/assets/referesh_comp.png')"/>
+			</mx:HBox>-->
+			<mx:HBox width="100%" horizontalGap="2" verticalAlign="middle">
+				<mx:Label text="Requested Ship Date" width="129" textAlign="right" height="20" />
+				<customcomponents:GenDateField id="dfShip_date" defaultValue="" width="117" tabIndex="130" xmlTag="ship_date" updatableFlag="true" 
+											   tableName="sales_order_shipping" height="20" toolTip="Ship Date" itemChangedEvent="setRequestedInhandDate()" />
+			</mx:HBox>
+			<mx:HBox width="100%" horizontalGap="2" verticalAlign="middle">
+				<mx:Label text="Requested Inhand Date"  width="129" textAlign="right" height="20" />
+				<customcomponents:GenDateField id="dfInhand_date" defaultValue=""  width="117" tabIndex="130" xmlTag="inhand_date" updatableFlag="true" 
+											   tableName="sales_order_shipping" height="20" toolTip="Inhand Date" itemChangedEvent="setEstimateArrivalDate()" enabled="false" />
+			</mx:HBox>
+			<mx:HBox width="100%" horizontalGap="2" verticalAlign="middle" >
+				<mx:Label text="Amount" width="129" textAlign="right"/>
+				<customcomponents:GenTextInput id="tiAmount" width="69" height="20" visible="true"
+											   editable="true" enabled="false" xmlTag="ship_amt" updatableFlag="true"
+											   tableName="sales_order_shipping" defaultValue="0.00" tabIndex="180" toolTip="Amount" setDefaultOnEmpty="true" 
+											   textAlign="right" dataType="N" maxValue="99999999.99" />
+				<mx:Spacer width="5"/>
+				<mx:Label id="lblShipAmountFormula" width="212" text=""/> 
+			</mx:HBox>
+			<mx:HBox width="100%" horizontalGap="2" verticalAlign="middle" visible="false" includeInLayout="false">
+				<mx:Label text="Internal Ship Date"  width="129" textAlign="right" height="20" />
+				<customcomponents:GenDateField id="dfInternal_ship_date" defaultValue=""  width="117" tabIndex="130" xmlTag="internal_ship_date" updatableFlag="true" 
+											   tableName="sales_order_shipping" height="20" toolTip="" />
+			</mx:HBox>
+			<mx:HBox width="100%" horizontalGap="2" verticalAlign="middle"  visible="false" includeInLayout="false">
+				<mx:Label text="Internal Inhand Date"  width="129" textAlign="right" height="20" />
+				<customcomponents:GenDateField id="dfInternal_inhand_date" defaultValue=""  width="117" tabIndex="130" xmlTag="internal_inhand_date" updatableFlag="true" 
+											   tableName="sales_order_shipping" height="20" toolTip="" />
+			</mx:HBox>
+			
+		</mx:VBox>
+	</mx:HBox>
+	<mx:TabNavigator width="100%" height="100%" >
+		<mx:VBox label="Packages">
+			<mx:HBox verticalAlign="middle" >
+				<customcomponents:GenButton	id="btnEdit" 
+											icon="{addButtonIcon}"
+											disabledIcon="{add_disabledButtonIcon}"
+											color="#D2C5EB"
+											height="25" 
+											width="25" 
+											toolTip="Edit"
+											cornerRadius="0"
+											click="editRowEventHandler(event)" />
+				<customcomponents:GenButton id="btnRemove" 
+											icon="{deleteButtonIcon}"
+											disabledIcon="{delete_disabledButtonIcon}"
+											color="#D2C5EB"
+											height="25" 
+											width="25" 
+											toolTip="Remove"
+											cornerRadius="0"
+											click="removeRowEventHandler()" />
+				<customcomponents:GenButton id="btnTrackPackage" 
+											icon="{icon_trackingButtonIcon}"
+											disabledIcon="{icon_trackingButtonIcon}"
+											color="#D2C5EB"
+											height="25" 
+											width="25" 
+											toolTip="Track Package"
+											cornerRadius="0"
+											click="trackPackageEventHandler()" />
+			</mx:HBox>
+			<mx:HBox   width="100%" height="100%">
+				<customcomponents:GenDataGrid id="dgPackets"
+											  updatableFlag="true"
+											  rootNode="sales_order_shipping_packages"
+											  formatServiceID="dgItemPacketsGridFormat"
+											  height="100%"
+											  itemDoubleClickGenGridEvent="editRowEventHandler(event);"
+											  width="100%"  visible="true" includeInLayout="true"/>
+			</mx:HBox>
+		</mx:VBox>
+	</mx:TabNavigator>
+	
+	<mx:Label id="lblApiCalling" width="100%" height="20" color="red"  text="{dcShipping_code.dataValue+'Api Calling....'}"/>
+</gencomponents:DetailAddEdit>
+
+
+

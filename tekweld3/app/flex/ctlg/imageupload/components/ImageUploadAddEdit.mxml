@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<gencomponents:AddEdit xmlns:mx="http://www.adobe.com/2006/mxml" 
+	height="100%" width="100%" verticalGap="0"
+	xmlns:customcomponents="com.generic.customcomponents.*"
+	xmlns:gencomponents="com.generic.components.*" 
+	creationPolicy="all" >
+	
+	<mx:Script source="../scripts/ImageUploadAddEditScript.as"/>
+	
+	<mx:HBox height="0" width="0" visible="false">
+		<customcomponents:GenTextInput id="tiDummy" width="0" height="0" visible="false" xmlTag="item" 
+			updatableFlag="false" tableName="image" 
+			validationFlag="false"  fontSize="9"/>	
+	</mx:HBox>
+
+	<mx:HBox height="100%" width="100%">
+		<mx:VBox height="100%" width="10" />
+		
+		<mx:VBox width="750" height="100%">
+			<mx:HBox width="100%" height="30" paddingTop="5">
+				<mx:Button id="btnBrowse_images" label="Upload Images" toolTip="Upload Images" width="200" height="25" tabIndex="1"
+					click="handleClickEvent()" />
+			</mx:HBox>
+			
+			<!--
+			<customcomponents:GenUploadButton id="btnBrowse_images" 
+				label="Upload Images" toolTip="Upload Images" width="200" height="20" tabIndex="1"
+				uploadServiceID="imageUploadUrl" tableName="catalog_images"
+				fileTitle="Import Images" fileTypes="*.jpg" uploadFileNameSetEvent="handleUploadEvent(event)" 
+				downloadCompleteEvent="handleDownloadCompleteEvent(event)"/>
+			-->			
+			<customcomponents:GenDataGrid id="dtlLine"
+				updatableFlag="false"
+				rootNode="image_files"
+				formatServiceID="imageDetailFormat"
+				height="100%" width="730"
+				visible="true" />	
+		</mx:VBox>
+		<mx:VBox width="100%" height="100%">
+				<mx:VRule height="20" width="100%" />
+			
+				<mx:Text width="100%" paddingTop="0" id="emailusHeader" styleName="mainText">
+					<mx:text>
+<![CDATA[
+copywriting for uploading images:-
+
+Before you start uploading your images, 
+take a look at the visual and technical 
+standards we expect from images uploaded on the server.
+
+Please follow below instructions for the best view results:-	
+
+1)	Small images			:	50x50px
+2)	Thumbnail images	:	100x100px
+3)	Normal images		:	250x250px
+4)	Large images			:	1200x1200px
+
+]]>
+					</mx:text>
+				</mx:Text>		
+		</mx:VBox>		
+	</mx:HBox>
+
+
+</gencomponents:AddEdit>

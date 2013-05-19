@@ -1,0 +1,18 @@
+<columns lockedColumnCount='0'>
+
+	<column data='serial_no'	label='Serial #'		editable='false'	visible='true'		width='60'	textAlign='left' 
+			forLevel='false' 	defaultForLevel='' 		booleanFlag='false' sortDataType='N'	columnPrecision="0"/>
+			
+	<column data='trans_flag' 	label='Status' 			editable='false' 	visible='true' 		width='60' 	textAlign='left' 
+			forLevel='false' 	defaultForLevel='' 		booleanFlag='false' sortDataType='S'	columnPrecision="NaN"/>
+			
+	<column data='ranking_date' label='Ranking date' 	editable='false' 	visible='true' 		width='90' 	textAlign='left' 
+			forLevel='false' 	defaultForLevel='' 		booleanFlag='false' sortDataType='D'	columnPrecision="NaN"/>
+
+	<column data='asi_ranking' 	label='ASI Ranking' 	editable='false' 	visible='true' 		width='80' 	textAlign='left' 
+			forLevel='false' 	defaultForLevel='' 		booleanFlag='false' sortDataType='S'	columnPrecision="NaN"/>
+			
+	<column data='remarks' 		label='Remarks' 		editable='false' 	visible='true' 		width='60' 	textAlign='left' 
+			forLevel='false' 	defaultForLevel='' 		booleanFlag='false' sortDataType='S'	columnPrecision="NaN"/>
+			
+</columns>  

@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<gencomponents:DetailAddEdit xmlns:mx="http://www.adobe.com/2006/mxml"
+	width="480" height="450" verticalGap="0"
+	xmlns:customcomponents="com.generic.customcomponents.*"
+	xmlns:gencomponents="com.generic.components.*">
+	
+	<mx:Script source="../scripts/BestPromotionDetailScript.as" />
+
+	<mx:VBox width="100%" height="100%">	
+		<mx:HBox horizontalGap="0" width="100%" borderStyle="none" height="20">
+		<mx:Spacer width="200"/>
+		<mx:Label text="Rate" width="132" textAlign="right" height="20"/>	
+		</mx:HBox>
+		
+		
+		<mx:HBox horizontalGap="0" width="100%" borderStyle="none">
+			<mx:Label text="Item #" width="106" textAlign="right"/>
+			<!--<customcomponents:GenDynamicComboBox id="dcItem_id" width="110"  height="20"
+			tabIndex="1" toolTip="Item #" defaultValue=""
+			dataField="catalog_item_id" itemChangedEvent="setItemCode()"
+			labelField="catalog_item_code" 
+			validationFlag="true" xmlTag="catalog_item_id" updatableFlag="true" tableName="customer_item_pricing"  />-->
+			
+			<customcomponents:GenTextInputWithHelp
+				id="dcItem_id" 
+				width="110"
+				lookupFormatUrl	=  "itemLookupHelpFormat"
+				toolTip="Item #" 
+				dataSourceName="InventorySetupItem"
+				height="20" 
+				tabIndex="1" 
+				xmlTag="catalog_item_id"
+				labelTag="catalog_item_code"
+				dataField="id" 
+				labelField= "store_code"
+				updatableFlag="true" 
+				validationFlag="true"
+				tableName="customer_item_pricing" 
+				itemChangedEvent="setItemCode();"
+				/>
+			
+			<customcomponents:GenTextInput id="tiItem_Code" width="0" visible="true" xmlTag="catalog_item_code" updatableFlag="true" toolTip="Code"
+										   tabIndex="1" tableName="customer_item_pricing" defaultValue="" validationFlag="true"  maxChars="50" height="0"
+										   upperCaseFlag="true"/>
+			
+			<mx:Label text="Blank Price" width="82" textAlign="right"/>
+			<customcomponents:GenTextInput id="tiBlankprice" height="20" width="110" textAlign="right" defaultValue ='0.000'
+										   tabIndex="4" xmlTag="blank_good_price" dataType="N" rounding="false" setDefaultOnEmpty="true" 
+										   itemChangedEvent="" updatableFlag="true" tableName="customer_item_pricing"
+										   maxValue="9999.999" validationFlag="true"/>
+			
+			
+		</mx:HBox>
+		
+		<mx:HBox horizontalGap="0" width="100%" borderStyle="none">
+			<mx:Label text="Discount Code" width="106" textAlign="right"/>
+			<customcomponents:GenComboBox id="cbCharge_Code" type_cd="charge_code" subtype_cd = "charge_code" width="110" height="20" tabIndex="2"
+										  xmlTag="charge_code" updatableFlag="true" tableName="customer_item_pricing" labelField="label"  defaultValue=""
+										  toolTip="Charge Code" itemChangedEvent="setColumnValue()"/>
+			
+		
+			
+		
+			<mx:Label text="Tier 1" width="82" textAlign="right"/>
+			<customcomponents:GenTextInput id="tiColumn1" height="20" width="110" textAlign="right" defaultValue ='0.000'
+										   tabIndex="5" xmlTag="column1" dataType="N" rounding="false" setDefaultOnEmpty="true" 
+										   itemChangedEvent="" updatableFlag="true" tableName="customer_item_pricing"
+										   maxValue="9999.999" validationFlag="true"/>
+		</mx:HBox>
+		
+		<mx:HBox horizontalGap="0" width="100%" borderStyle="none">
+			
+			<mx:Label text="From" textAlign="right" width="106" visible="false" includeInLayout="false"/>
+			<customcomponents:GenDateField id="dfFrom" height="20" xmlTag="from_date" updatableFlag="true" visible="false" includeInLayout="false" 
+				tableName ="customer_item_pricing" width="110" yearNavigationEnabled="true" toolTip="From"
+				validationFlag="true" tabIndex="2" />
+			<mx:Label text="Status" textAlign="right" width="0" visible="false"/>
+			<customcomponents:GenComboBox id="cbTrans_flag" width="0" visible="false" cornerRadius="0" xmlTag="trans_flag" updatableFlag="true"
+				tableName="customer_item_pricing" defaultValue="A" tabIndex="2" height="20" labelField="label"   
+				dataProvider="{GenModelLocator.getInstance().masterData.child('trans_flag').trans_flag}" />	
+				
+		<mx:Label text="Tier 2" width="298" textAlign="right"/>
+			<customcomponents:GenTextInput id="tiColumn2" height="20" width="110" textAlign="right" defaultValue ='0.000'
+				tabIndex="6" xmlTag="column2" dataType="N" rounding="false" setDefaultOnEmpty="true" 
+				itemChangedEvent="" updatableFlag="true" tableName="customer_item_pricing"
+				maxValue="9999.999" validationFlag="true"/>		
+		</mx:HBox>
+			
+		<mx:HBox horizontalGap="0" width="100%" borderStyle="none">
+			<mx:Label text="To" textAlign="right" width="106" visible="false"/>
+			<customcomponents:GenDateField id="dfTo" height="20" xmlTag="to_date" updatableFlag="true"  visible="false"
+				tableName = "customer_item_pricing" width="110" yearNavigationEnabled="true" toolTip="To"
+				validationFlag="true" tabIndex="3" />
+				
+			<mx:Label text="Tier 3" width="82" textAlign="right"/>
+			<customcomponents:GenTextInput id="tiColumn3" height="20" width="110" textAlign="right" defaultValue ='0.000'
+				tabIndex="7" xmlTag="column3" dataType="N" rounding="false" setDefaultOnEmpty="true" 
+				itemChangedEvent="" updatableFlag="true" tableName="customer_item_pricing"
+				maxValue="9999.999" validationFlag="true"/>
+		</mx:HBox>
+				
+		<mx:HBox horizontalGap="0" width="100%" borderStyle="none">
+			
+				
+			<mx:Label text="Tier 4" width="298" textAlign="right"/>
+			<customcomponents:GenTextInput id="tiColumn4" height="20" width="110" textAlign="right" defaultValue ='0.000'
+				tabIndex="8" xmlTag="column4" dataType="N" rounding="false" setDefaultOnEmpty="true" 
+				itemChangedEvent="" updatableFlag="true" tableName="customer_item_pricing"
+				maxValue="9999.999" validationFlag="true"/>
+						
+		</mx:HBox>
+		
+		<mx:HBox horizontalGap="0" width="100%" borderStyle="none">
+			<mx:Label text="Production Time" textAlign="right" width="106" visible="false"/>
+			<customcomponents:GenTextInput id="tiProductionTime" height="20" width="110" textAlign="right" defaultValue ='0'
+										   tabIndex="5" xmlTag="production_time" dataType="N" rounding="false" setDefaultOnEmpty="true" 
+										   itemChangedEvent="" updatableFlag="true" tableName="customer_item_pricing"
+										   maxValue="9999" validationFlag="false" visible="false"/>
+			
+			<mx:Label text="Tier 5" width="82" textAlign="right"/>
+			<customcomponents:GenTextInput id="tiColumn5" height="20" width="110" textAlign="right" defaultValue ='0.000'
+				tabIndex="9" xmlTag="column5" dataType="N" rounding="false" setDefaultOnEmpty="true" 
+				itemChangedEvent="" updatableFlag="true" tableName="customer_item_pricing"
+				maxValue="9999.999" validationFlag="true"/>
+						
+		</mx:HBox>
+		<mx:HBox horizontalGap="0" width="100%" borderStyle="none">
+			<mx:Label text="Tier 6 " width="298" textAlign="right"/>
+			<customcomponents:GenTextInput id="tiColumn6" height="20" width="110" textAlign="right" defaultValue ='0.000'
+				tabIndex="10" xmlTag="column6" dataType="N" rounding="false" setDefaultOnEmpty="true" 
+				itemChangedEvent="" updatableFlag="true" tableName="customer_item_pricing"
+				maxValue="9999.999" validationFlag="true"/>
+						
+		</mx:HBox>
+		<mx:HBox horizontalGap="0" width="100%"  height="20" borderStyle="none">
+			<mx:Label text="Tier 7" width="298" textAlign="right"/>
+			<customcomponents:GenTextInput id="tiColumn7" height="20" width="110" textAlign="right" defaultValue ='0.000'
+				tabIndex="11" xmlTag="column7" dataType="N" rounding="false" setDefaultOnEmpty="true" 
+				itemChangedEvent="" updatableFlag="true" tableName="customer_item_pricing"
+				maxValue="9999.999" validationFlag="true" />
+						
+		</mx:HBox>
+		<mx:HBox horizontalGap="0" width="100%"  height="20" borderStyle="none">
+			<mx:Label text="Tier 8" width="298" textAlign="right"/>
+			<customcomponents:GenTextInput id="tiColumn8" height="20" width="110" textAlign="right" defaultValue ='0.000'
+				tabIndex="12" xmlTag="column8" dataType="N" rounding="false" setDefaultOnEmpty="true" 
+				itemChangedEvent="" updatableFlag="true" tableName="customer_item_pricing"
+				maxValue="9999.999" validationFlag="true" />
+						
+		</mx:HBox>
+		<mx:HBox horizontalGap="0" width="100%"  height="20" borderStyle="none">
+			<mx:Label text="Tier 9" width="298" textAlign="right"/>
+			<customcomponents:GenTextInput id="tiColumn9" height="20" width="110" textAlign="right" defaultValue ='0.000'
+				tabIndex="13" xmlTag="column9" dataType="N" rounding="false" setDefaultOnEmpty="true" 
+				itemChangedEvent="" updatableFlag="true" tableName="customer_item_pricing"
+				maxValue="9999.999" validationFlag="true" />
+						
+		</mx:HBox>
+		<mx:HBox horizontalGap="0" width="100%"  height="20" borderStyle="none">
+			<mx:Label text="Tier 10" width="299" textAlign="right"/>
+			<customcomponents:GenTextInput id="tiColumn10" height="20" width="110" textAlign="right" defaultValue ='0.000'
+				tabIndex="14" xmlTag="column10" dataType="N" rounding="false" setDefaultOnEmpty="true" 
+				itemChangedEvent="" updatableFlag="true" tableName="customer_item_pricing"
+				maxValue="9999.999" validationFlag="true" />
+						
+		</mx:HBox>
+		
+		<mx:HBox horizontalGap="0" width="100%" borderStyle="none">
+			<mx:Label text="Tier 11 " width="298" textAlign="right"/>
+			<customcomponents:GenTextInput id="tiColumn11" height="20" width="110" textAlign="right" defaultValue ='0.000'
+										   tabIndex="15" xmlTag="column11" dataType="N" rounding="false" setDefaultOnEmpty="true" 
+										   itemChangedEvent="" updatableFlag="true" tableName="customer_item_pricing"
+										   maxValue="9999.999" validationFlag="true"/>
+			
+		</mx:HBox>
+		<mx:HBox horizontalGap="0" width="100%"  height="20" borderStyle="none">
+			<mx:Label text="Tier 12" width="298" textAlign="right"/>
+			<customcomponents:GenTextInput id="tiColumn12" height="20" width="110" textAlign="right" defaultValue ='0.000'
+										   tabIndex="16" xmlTag="column12" dataType="N" rounding="false" setDefaultOnEmpty="true" 
+										   itemChangedEvent="" updatableFlag="true" tableName="customer_item_pricing"
+										   maxValue="9999.999" validationFlag="true" />
+			
+		</mx:HBox>
+		<mx:HBox horizontalGap="0" width="100%"  height="20" borderStyle="none">
+			<mx:Label text="Tier 13" width="298" textAlign="right"/>
+			<customcomponents:GenTextInput id="tiColumn13" height="20" width="110" textAlign="right" defaultValue ='0.000'
+										   tabIndex="17" xmlTag="column13" dataType="N" rounding="false" setDefaultOnEmpty="true" 
+										   itemChangedEvent="" updatableFlag="true" tableName="customer_item_pricing"
+										   maxValue="9999.999" validationFlag="true" />
+			
+		</mx:HBox>
+		<mx:HBox horizontalGap="0" width="100%"  height="20" borderStyle="none">
+			<mx:Label text="Tier 14" width="298" textAlign="right"/>
+			<customcomponents:GenTextInput id="tiColumn14" height="20" width="110" textAlign="right" defaultValue ='0.000'
+										   tabIndex="18" xmlTag="column14" dataType="N" rounding="false" setDefaultOnEmpty="true" 
+										   itemChangedEvent="" updatableFlag="true" tableName="customer_item_pricing"
+										   maxValue="9999.999" validationFlag="true" />
+			
+		</mx:HBox>
+		<mx:HBox horizontalGap="0" width="100%"  height="20" borderStyle="none">
+			<mx:Label text="Tier 15" width="299" textAlign="right"/>
+			<customcomponents:GenTextInput id="tiColumn15" height="20" width="110" textAlign="right" defaultValue ='0.000'
+										   tabIndex="19" xmlTag="column15" dataType="N" rounding="false" setDefaultOnEmpty="true" 
+										   itemChangedEvent="" updatableFlag="true" tableName="customer_item_pricing"
+										   maxValue="9999.999" validationFlag="true" />
+			
+		</mx:HBox>
+		
+		<mx:HBox width="0" height="0" visible="false">
+				<customcomponents:GenTextInput id="tiSerial_no" toolTip="Serial #" restrict="1234567890" visible="false"
+					validationFlag="false" 
+					xmlTag="serial_no" updatableFlag="true" tableName="customer_item_pricing"/>
+			</mx:HBox>	
+		
+	</mx:VBox>
+</gencomponents:DetailAddEdit>

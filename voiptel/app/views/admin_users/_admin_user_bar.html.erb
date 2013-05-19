@@ -1,0 +1,8 @@
+<% if logged_in? -%>
+  <div id="admin_user-bar-greeting">Logged in as <%= link_to_current_admin_user :content_method => :login %></div>
+  <div id="admin_user-bar-action" class="openable" >(<%= link_to image_tag('/images/billing/logout.png'), logout_path, {:class=>'openable', :title => "Log out" }    %>)</div>
+<% else -%>
+  <div id="admin_user-bar-greeting"><%= abbr_tag_with_IP 'Not logged in', :style => 'border: none;' %></div>
+  <div id="admin_user-bar-action"  ><%= link_to "Log in",  login_path,  { :title => "Log in" } %> /
+                               <%= link_to "Sign up", signup_path, { :title => "Create an account" } %></div>
+<% end -%>

@@ -1,0 +1,25 @@
+<fieldset>
+	<legend>Editing provider</legend>
+	<% form_for(@provider) do |f| %>
+	  <%= f.error_messages %>
+
+	  <p>
+	    <%= f.label :name %><br />
+	    <%= f.text_field :name %>
+	  </p>
+	  <p>
+	    <%= f.label :termination %><br />
+	    <%= f.check_box :termination %>
+	  </p>
+	  <p>
+	    <%= f.label :origination %><br />
+	    <%= f.check_box :origination %>
+	  </p>
+	  <p>
+	    <%= f.submit 'Update' %>
+	  </p>
+	<% end %>
+
+	<%= link_to 'Show', @provider %> |
+	<%= link_to 'Back', providers_path %>
+</fieldset>

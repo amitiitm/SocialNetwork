@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rds:CommonServices xmlns:rds="business.*" xmlns:mx="http://www.adobe.com/2006/mxml">
+
+	<mx:HTTPService id="saveRecord" url="/purchase/purchase_order/create_orders" />
+	<mx:HTTPService id="getRecord" url="/purchase/purchase_order/show_order" />
+	<mx:HTTPService id="getList" url="/purchase/purchase_order/list_orders" />
+	
+	<mx:HTTPService id="getListFormat" url="puoi/purchaseorder/xmls/PurchaseOrderListStru.xml" />
+	<mx:HTTPService id="getViewFormat" url="puoi/purchaseorder/xmls/PurchaseOrderCriteriaStru.xml" />
+	<mx:HTTPService id="directLineDetailFormat" url="puoi/purchaseorder/xmls/PurchaseOrderDirectLineDetailStru.xml" />
+	
+	<mx:HTTPService id="printRecord" url="/purchase/purchase_report/render_purchase_order_format" />
+	
+	<mx:HTTPService id="importDetailFormat" url="puoi/purchaseorder/xmls/PurchaseOrderImportStru.xml"/>
+	<mx:HTTPService id="recordUploadUrl" url="/purchase/purchase_order/generic_convert_exceltoxml_for_purchase_orders"/>
+	
+	<mx:HTTPService id="detailUploadUrl" url="/purchase/purchase_order/convert_exceltoxml_for_purchase_orders"/>
+	<mx:HTTPService id="saveImportedRecords" url=""/>
+	
+</rds:CommonServices>

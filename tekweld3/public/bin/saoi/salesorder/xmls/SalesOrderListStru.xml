@@ -1,0 +1,51 @@
+<columns  lockedColumnCount='0'>
+
+	<column data='ext_ref_no'		label='Customer PO#'		editable='false'	visible='true'	 width='120'	  textAlign='left'	forLevel='false'
+			print_width = '20'			defaultForLevel=''		booleanFlag='false'	sortDataType='S' columnPrecision="NaN"/>
+	
+	<column data='trans_no'				label='Order #'			editable='false'	visible='true'	 width='90'	  textAlign='left'	forLevel='true'
+			print_width = '16'			defaultForLevel='1'		booleanFlag='false'	sortDataType='N' columnPrecision="0" />
+	
+	<column data='trans_date'			label='Order Date'		editable='false'	visible='true'	 width='90'	  textAlign='left'	forLevel='true' 
+			print_width = '18'			defaultForLevel='5'		booleanFlag='false'	sortDataType='D' columnPrecision="NaN" />
+	
+	<column data='ship_date'			label='Ship Date'		editable='false' 	visible='true' 	 width='90'	  textAlign='left'	forLevel='true' 
+			print_width = '18'			defaultForLevel='0'		booleanFlag='false'	sortDataType='D' columnPrecision="NaN"/>
+			
+	<column data='customer_code'		label='Customer #'		editable='false'	visible='true'	 width='120'	  textAlign='left'	forLevel='true'
+			print_width = '20'			defaultForLevel='2'		booleanFlag='false'	sortDataType='S' columnPrecision="NaN"/>
+	
+	<column data='customer_contact'		label='Customer Contact' editable='false'	visible='true'	 width='120'	  textAlign='left'	forLevel='true'
+			print_width = '20'			defaultForLevel=''		booleanFlag='false'	sortDataType='S' columnPrecision="NaN"/>
+	
+	<column data='customer_phone'		label='Customer Phone'	editable='false'	visible='true'	 width='120'	  textAlign='left'	forLevel='true'
+			print_width = '20'			defaultForLevel=''		booleanFlag='false'	sortDataType='S' columnPrecision="NaN"/>
+	
+	<column data='salesperson_code' 	label='Inside Sales Rep#' 	editable='false' 	visible='true' 		width='80' 		textAlign='left' 
+			print_width = '18'			forLevel='false' 		defaultForLevel='' 		booleanFlag='false'	sortDataType='S'	columnPrecision="NaN"/>
+	
+	<column data='externalsalesperson_code' label='Outside Sales Rep#' 	editable='false' 	visible='true' 		width='80' 		textAlign='left' 
+			print_width = '18'			forLevel='false' 		defaultForLevel='' 		booleanFlag='false'	sortDataType='S'	columnPrecision="NaN"/>
+	
+	<column data='logo_name'			label='Logo #'			editable='false'	visible='true'	 width='120'	  textAlign='left'	forLevel='true'
+			print_width = '20'			defaultForLevel='3'		booleanFlag='false'	sortDataType='S' columnPrecision="NaN"/>
+	
+	<column data='order_status'			label='Current Status'	editable='false'	visible='true'	 width='120'	  textAlign='left'	forLevel='true'
+			print_width = '20'			defaultForLevel='3'		booleanFlag='false'	sortDataType='S' columnPrecision="NaN"/>
+	
+	<column data='shipping_status'		label='Shipping Status'	editable='false'	visible='true'	 width='120'	  textAlign='left'	forLevel='true'
+			print_width = '20'			defaultForLevel='3'		booleanFlag='false'	sortDataType='S' columnPrecision="NaN"/>
+	
+	<column data='artwork_status'		label='Artwork Status'	editable='false'	visible='true'	 width='120'	  textAlign='left'	forLevel='true'
+			print_width = '20'			defaultForLevel='3'		booleanFlag='false'	sortDataType='S' columnPrecision="NaN"/>
+	
+	<column data='paper_proof_status'	label='Paper Proof Status'	editable='false'	visible='true'	 width='120'	  textAlign='left'	forLevel='true'
+			print_width = '20'			defaultForLevel='3'		booleanFlag='false'	sortDataType='S' columnPrecision="NaN"/>
+	
+	<column data='acknowledgment_status'	label='Acknowledgment Status'			editable='false'	visible='true'	 width='120'	  textAlign='left'	forLevel='true'
+			print_width = '20'			defaultForLevel='3'		booleanFlag='false'	sortDataType='S' columnPrecision="NaN"/>
+	
+	<column data='accounting_status'	label='Accounting Statu' editable='false'	visible='true'	 width='120'	  textAlign='left'	forLevel='true'
+			print_width = '20'			defaultForLevel='3'		booleanFlag='false'	sortDataType='S' columnPrecision="NaN"/>
+
+</columns> 

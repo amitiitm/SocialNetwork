@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rds:CommonServices xmlns:rds="business.*" xmlns:mx="http://www.adobe.com/2006/mxml">
+
+	<mx:HTTPService id="saveRecord" url="/sale/sales_invoice/create_invoices"/>
+	<mx:HTTPService id="getRecord" url="/sale/sales_invoice/show_invoice"/>
+	<mx:HTTPService id="getList" url="/sale/sales_invoice/list_invoices"/> 
+	<mx:HTTPService id="getListFormat" url="saoi/salesinvoice/xmls/SalesInvoiceListStru.xml"/>
+	<mx:HTTPService id="getViewFormat" url="saoi/salesinvoice/xmls/SalesInvoiceCriteriaStru.xml"/>
+	<mx:HTTPService id="itemDetailFormat" url="saoi/salesinvoice/xmls/SalesInvoiceItemDetailStru.xml"/>
+	<mx:HTTPService id="directItemDetailFormat" url="saoi/salesinvoice/xmls/SalesInvoiceDirectItemDetailStru.xml"/>
+	<mx:HTTPService id="fetchRecordFormat" url="saoi/salesinvoice/xmls/SalesInvoiceFetchRecordStru.xml"/>
+	<mx:HTTPService id="fetch_open_std_orders" url="/sale/sales_order/list_open_standard_orders"/>
+	
+	<mx:HTTPService id="fetch_open_std_orders_hdr" url="/sale/sales_order/list_open_standard_orders_hdr"/>
+	<mx:HTTPService id="fetchOrderHdrFormat" url="saoi/salesinvoice/xmls/SalesInvoiceFetchOrderHdrStru.xml"/>
+	<mx:HTTPService id="fetchGetSelectedOrderServiceID" url="/sale/sales_order/list_open_standard_order_lines"/>
+	
+	<mx:HTTPService id="setDefaultView" url=""/>
+	<mx:HTTPService id="printRecord" url="/sale/sales_report/render_sales_invoice_format"/>
+	<mx:HTTPService id="resendInvoice" url="/sale/sales_invoice/resend_invoice_acknowledgment"/>
+	
+	
+</rds:CommonServices>

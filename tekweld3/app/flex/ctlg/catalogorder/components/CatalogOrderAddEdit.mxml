@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<gencomponents:AddEdit xmlns:mx="http://www.adobe.com/2006/mxml"
+	height="100%" width="100%" verticalGap="0"
+	xmlns:customcomponents="com.generic.customcomponents.*"
+	xmlns:gencomponents="com.generic.components.*"
+	creationPolicy="all" creationComplete="init()">
+	
+	<mx:Script source="../scripts/CatalogOrderAddEditScript.as"/>
+
+	<mx:VBox width="0" height="0" verticalGap="0" horizontalGap="0" verticalAlign="top" visible="false">
+		<customcomponents:GenTextInput id="tiTrans_qty_pcs" width="0" height="0" visible="false" editable="false"
+			xmlTag="item_qty" updatableFlag="true" tableName="catalog_order" />
+		<!--<customcomponents:GenTextInput id="tiRefTrans_bk" width="0" height="0" visible="true" editable="false"
+			xmlTag="ref_trans_bk" updatableFlag="false" tableName="catalog_order" />
+		<customcomponents:GenTextInput id="tiRef_trans_no" width="116" xmlTag="ref_trans_no"
+			updatableFlag="true" tabIndex="0" tableName="catalog_order"
+			defaultValue="" validationFlag="false" toolTip="Ref #"
+			maxChars="18" />
+		<customcomponents:GenDateField id="dfRef_trans_dt" width="117" xmlTag="ref_trans_dt"
+			updatableFlag="true" tabIndex="0" tableName="catalog_order"
+			defaultValue="" validationFlag="false" toolTip="ref_trans_dt" />
+		<customcomponents:GenTextInput id="tiBill_nm" width="0" height="0" visible="false" editable="false"
+			xmlTag="bill_name" updatableFlag="true" tableName="catalog_order" />	-->
+		
+	</mx:VBox>
+	
+	<mx:VBox width="100%" height="100%" >
+		<mx:HBox id="HBoxHeader" width="100%"  horizontalGap="0" verticalGap="0" verticalAlign="top" 
+			paddingBottom="0" paddingTop="0">
+			<mx:VBox width="100%" height="100%" horizontalGap="0" verticalGap="3" paddingBottom="0" paddingTop="0">
+				<mx:Spacer height="4%"/>
+				<mx:HBox width="100%" height="4%" verticalAlign="middle"  verticalGap="0">
+					<mx:Label text="Customer #" width="95" textAlign="right" height="20" />
+					<customcomponents:GenDynamicComboBoxWithHelp id="dcCustomer_id" width="116" toolTip="Customer #" defaultValue=""
+						dataField="id" labelField="name"  enabled="false"
+						dataSourceName="Customer" dataProvider="{__genModel.lookupObj.customer.children()}"   
+						tabIndex="1"  itemChangedEvent="getCustomerDetails()" height="20" 
+						validationFlag="true" xmlTag="customer_id" updatableFlag="true" tableName="catalog_order"  />
+				</mx:HBox>				
+			</mx:VBox>				
+			<mx:VRule height="100%"/>
+			<mx:VBox width="100%" height="100%" verticalGap="3" horizontalGap="0" paddingBottom="0" paddingTop="0">
+				<mx:Spacer height="4%"/>
+				<mx:HBox width="100%" height="10%" verticalGap="0" >
+					<mx:Label text="Cancel Date" width="95" textAlign="right" height="20" />
+					<customcomponents:GenDateField id="dfCancel_date" width="117" xmlTag="cancel_date"
+						updatableFlag="true" tabIndex="7" tableName="catalog_order" height="20" 
+						validationFlag="false" toolTip="Cancel Date" enabled="false"/>
+				</mx:HBox>
+			</mx:VBox>
+			<mx:VRule height="100%"/>
+			<mx:VBox width="100%" height="100%" verticalGap="3" horizontalGap="0" paddingBottom="0" paddingTop="0">
+				<mx:Spacer height="4%"/>
+				<mx:HBox width="100%"  verticalAlign="middle">
+					<mx:Label text="Customer PO #" width="110" textAlign="right" height="20" />
+					<customcomponents:GenTextInput id="tiCustomer_po_id" width="110" xmlTag="ext_ref_no"
+						updatableFlag="true" tabIndex="8" tableName="catalog_order" enabled="false"
+						defaultValue="" validationFlag="false" toolTip="Customer PO #" height="20" 
+						maxChars="50" />					
+				</mx:HBox>
+				<mx:HBox width="100%"  verticalAlign="middle">
+					<mx:Label text="Customer PO Date" width="110" textAlign="right" height="20" />
+					<customcomponents:GenDateField id="dfCustomer_po_date" width="110" xmlTag="ext_ref_date"
+						updatableFlag="true" tabIndex="9" tableName="catalog_order" height="20" 
+						validationFlag="false" toolTip="Customer PO Date" enabled="false" />
+				</mx:HBox>	
+				<mx:HBox width="100%" height="10%" verticalGap="0" >
+					<mx:Label text="Sales Person #" width="110" textAlign="right" height="20" />
+					<customcomponents:GenDynamicComboBoxWithHelp id="dcSales_person_code" width="110" toolTip="Sales Person #" 
+						dataSourceName="Salesperson" dataProvider="{__genModel.lookupObj.salesperson.children()}" labelField="name" dataField="code"
+						xmlTag="salesperson_code" updatableFlag="true" tabIndex="10" tableName="catalog_order" height="20" 
+						defaultValue="" validationFlag="false" enabled="false"/>
+				</mx:HBox>
+			</mx:VBox>
+			<mx:VRule height="100%"/>
+			<mx:VBox width="100%" height="100%" verticalGap="3" horizontalGap="0" paddingBottom="0" paddingTop="0">
+				<mx:Spacer height="4%"/>
+				<mx:HBox width="100%" height="10%" verticalGap="0">						
+					<mx:Label text="Order #" width="95" textAlign="right" height="20" />
+					<customcomponents:GenTextInput id="tiTrans_no" width="71" xmlTag="trans_no" enabled="false" 
+						updatableFlag="true"  tableName="catalog_order"  height="20" 
+						defaultValue="" validationFlag="false" toolTip="Trans #" />
+					<customcomponents:GenTextInput id="tiTrans_bk" width="35" height="20" visible="true" enabled="false"
+						xmlTag="trans_bk" updatableFlag="false" tableName="catalog_order" />
+				</mx:HBox>				
+				<mx:HBox width="100%" height="10%" verticalGap="0">
+					<mx:Label text="Order Date" width="95" textAlign="right" height="20" />
+					<customcomponents:GenDateField id="dfTrans_date" width="116" xmlTag="trans_date"
+						updatableFlag="true" tabIndex="11" tableName="catalog_order" height="20" 
+					 	itemChangedEvent="__localModel.trans_date=dfTrans_date.text;getAccountPeriod()"
+					 	validationFlag="false" toolTip="Trans Date" enabled="false"
+					/>
+				</mx:HBox>
+				<mx:HBox width="100%" height="10%" verticalGap="0">		
+					<mx:Label text="A/C Period" width="95" textAlign="right" height="20" />
+					<customcomponents:GenDynamicComboBoxWithHelp id="dcAccount_period_code" width="116" 
+						toolTip="A/c Period Code"  defaultValue="" height="20" enabled="false"  
+						dataField="code" labelField="code"
+						dataSourceName="AccountPeriod" dataProvider="{__genModel.lookupObj.accountperiod.children()}"
+						validationFlag="true" xmlTag="account_period_code" updatableFlag="true" tableName="catalog_order"  />
+				</mx:HBox>
+				
+				<mx:HBox width="100%" height="10%" verticalGap="0">		
+					<mx:Label text="Status" width="95" textAlign="right" height="20" />
+					<customcomponents:GenComboBox id="cbTrans_flag" defaultValue="A" width="116" cornerRadius="0" xmlTag="trans_flag" updatableFlag="true"
+						tableName="catalog_order" enabled="false"  labelField="label" height="20" editable="false"
+						dataProvider="{__genModel.masterData.child('trans_flag').trans_flag}"
+						toolTip="Status" />
+				</mx:HBox>
+			</mx:VBox>
+		</mx:HBox>	
+		<mx:Spacer height="5" width="100%" />
+ 		<mx:TabNavigator id="tnDetail" width="100%" height="100%"  >
+			<mx:VBox id="hbHeader" label="Address" width="100%" height="100%" verticalGap="3" tabIndex="20">
+				<mx:VBox id="vbHeader2" width="100%" height="10%" verticalGap="3">
+					<mx:HBox width="100%" horizontalGap="2" verticalAlign="middle">
+						<mx:Label text="Billing Address" width="237" fontSize="10" fontWeight="bold" textAlign="right" visible="true" height="20" />
+						<mx:Label text="Shipping Address" width="379" fontSize="10" fontWeight="bold" textAlign="right" visible="true" height="20" />
+					</mx:HBox>					
+					<mx:HBox width="100%" horizontalGap="2" verticalAlign="middle">
+						<mx:Label text="Address #1" width="95" textAlign="right" height="20" />
+						<customcomponents:GenTextInput id="tiBill_address1" width="233" xmlTag="bill_address1"
+							updatableFlag="true" tabIndex="16" tableName="catalog_order" height="20" enabled="false"
+							defaultValue="" validationFlag="false" toolTip="Bill Address #1" maxChars="50" />	
+							
+						<mx:Label text="Shipping Address #1" width="164" textAlign="right" height="20" />
+						<customcomponents:GenTextInput id="tiShip_address1" width="224" xmlTag="ship_address1"
+							updatableFlag="true" tabIndex="26" tableName="catalog_order" editable="true" enabled="false"
+							defaultValue="" validationFlag="false" toolTip="Ship Address #1" height="20" maxChars="50" />				
+					</mx:HBox>
+					<mx:HBox width="100%" horizontalGap="2" verticalAlign="middle">
+						<mx:Label text="#2" width="95" textAlign="right" height="20" />
+						<customcomponents:GenTextInput id="tiBill_address2" width="233" xmlTag="bill_address2"
+							updatableFlag="true" tabIndex="17" tableName="catalog_order" height="20" enabled="false"
+							defaultValue="" validationFlag="false" toolTip="Bill Address #2" maxChars="50" />					
+					
+						<mx:Label text="#2" width="164" textAlign="right" height="20" />
+						<customcomponents:GenTextInput id="tiShip_address2" width="224" xmlTag="ship_address2"
+							updatableFlag="true" tabIndex="27" tableName="catalog_order" editable="true" enabled="false"
+							defaultValue="" validationFlag="false" toolTip="Ship Address #2" height="20" maxChars="50" />
+					</mx:HBox>
+					
+					<mx:HBox width="100%" horizontalGap="2" verticalAlign="middle">
+						<mx:Label text="City" width="95" textAlign="right" height="20" />
+						<customcomponents:GenTextInput id="tiBill_city" width="233" xmlTag="bill_city"
+							updatableFlag="true" tabIndex="18" tableName="catalog_order" height="20" enabled="false"
+							defaultValue="" validationFlag="false" toolTip="City" maxChars="25" />
+						
+						<mx:Label text="City" width="164" textAlign="right" height="20" />	
+						<customcomponents:GenTextInput id="tiShip_city" width="224" xmlTag="ship_city"
+							updatableFlag="true" tabIndex="28" tableName="catalog_order" enabled="false"
+							defaultValue="" validationFlag="false" toolTip="City" editable="true" height="20" maxChars="25" />
+					
+					</mx:HBox>
+	
+					<mx:HBox width="100%" horizontalGap="2" verticalAlign="middle">
+						<mx:Label text="State/ Zip" width="95" textAlign="right" height="20" />
+						<customcomponents:GenTextInput id="tiBill_state" width="116" xmlTag="bill_state"
+							updatableFlag="true" tabIndex="19" tableName="catalog_order" enabled="false"
+							defaultValue="" validationFlag="false" toolTip="State" height="20" maxChars="25" />
+						
+						<customcomponents:GenTextInput id="tiBill_zip" width="116" xmlTag="bill_zip"
+							updatableFlag="true" tabIndex="20" tableName="catalog_order" enabled="false"
+							defaultValue="" validationFlag="false" toolTip="Zip" height="20" maxChars="15" />
+							
+						<mx:Label text="State/ Zip" width="164" textAlign="right" height="20" />
+						<customcomponents:GenTextInput id="tiShip_state" width="108" xmlTag="ship_state"
+							updatableFlag="true" tabIndex="29" tableName="catalog_order" enabled="false"
+							defaultValue="" validationFlag="false" toolTip="State" editable="true" height="20" maxChars="25" />	
+							
+						<customcomponents:GenTextInput id="tiShip_zip" width="114" xmlTag="ship_zip"
+							updatableFlag="true" tabIndex="30" tableName="catalog_order" enabled="false"
+							defaultValue="" validationFlag="false" toolTip="Zip" height="20" maxChars="15" />				
+					</mx:HBox>
+					
+					<mx:HBox width="100%" horizontalGap="2" verticalAlign="middle">
+						<mx:Label text="Country" width="95" textAlign="right" height="20" />
+						<customcomponents:GenTextInput id="tiBill_country" width="116" xmlTag="bill_country"
+							updatableFlag="true" tabIndex="21" tableName="catalog_order" enabled="false"
+							defaultValue="" validationFlag="false" toolTip="Country" height="20" maxChars="20" />
+					
+						<mx:Label text="Country" width="282" textAlign="right" height="20" />
+						<customcomponents:GenTextInput id="tiShip_country" width="108" xmlTag="ship_country"
+							updatableFlag="true" tabIndex="31" tableName="catalog_order" enabled="false" 
+							defaultValue="" validationFlag="false" toolTip="Country" editable="true" height="20" maxChars="20" />
+					</mx:HBox>
+	
+				</mx:VBox>
+			</mx:VBox>
+			<mx:VBox id="vbDetail"  height="100%" width="100%" label="Item" tabIndex="15">
+					<mx:HBox id="hbDetail" label="Item" width="100%" height="100%" horizontalAlign="center" fontSize="10">
+						<gencomponents:Detail id="dtlLine"
+							updatableFlag="true"
+							checkBlankRowColumn="catalog_item_id"
+							rootNode="catalog_order_lines"
+							formatServiceID="lineDetailFormat"
+							height="100%" width="100%"
+							DetailEditClass="{ctlg.catalogorder.components.CatalogOrderLineDetail}"
+							detailItemClick="changeImage()"
+							title="Catalog Detail"
+							detailAddEditComplete="setGrossAmount();changeImage()"
+							detailRemoveRow="setGrossAmount();changeImage()"
+							/>
+					</mx:HBox>
+					<mx:HBox id="hbFooter" width="100%" height="135" y="625" horizontalAlign="right" horizontalGap="0">
+						<mx:VBox width="120" height="120">
+							<mx:Image id="itemImage" 
+								width="100%"
+								height="100%" 
+								verticalAlign="middle" 
+								horizontalAlign="center" 
+								source="{__genModel.path.image}{image_name}"/>
+						</mx:VBox>
+		
+						<mx:VBox width="180" height="100%" paddingLeft="20">
+							<mx:HBox>
+								<mx:Label text="Total Items" width="80" textAlign="right" />
+								<mx:Label id="lblTotal_items" width="35" textAlign="right" />
+							</mx:HBox>
+							<mx:HBox>
+								<mx:Label text="Item Qty" width="80" textAlign="right" />
+								<mx:Label id="lblItem_qty" width="35" textAlign="right" />
+							</mx:HBox>
+							<mx:HBox height="0" width="0" visible="false">
+								<mx:Label text="Clear Qty" width="80" textAlign="right" />
+								<mx:Label id="lblClear_qty" width="20" textAlign="right" />
+							</mx:HBox>
+						</mx:VBox>
+	
+						<mx:VBox width="220" height="100%">
+							<mx:Label text="Remarks"/>
+							<customcomponents:GenTextArea width="200" height="50" id="taRemarks" maxChars="255"
+								 xmlTag="remarks" updatableFlag="true" tableName="catalog_order" enabled="false"/>
+						</mx:VBox>
+					
+						<mx:VBox height="100%" verticalAlign="top" horizontalAlign="right" verticalGap="1" width="100%">
+							<mx:HBox>
+								<mx:Label text="Item Amount" width="110" textAlign="right"/>
+								<mx:Spacer width="110"/>
+								<customcomponents:GenTextInput id="tiItem_amt"  height="18" width="110" textAlign="right" editable="false" enabled="false"
+									 xmlTag="item_amt" updatableFlag="true" tableName="catalog_order" defaultValue="0.00"
+									dataType="N" rounding="true" setDefaultOnEmpty="true" maxValue="9999999999.99"/>
+							</mx:HBox>
+							
+							<mx:HBox>
+								<mx:Label text="Discount" width="110" textAlign="right"/>
+								<customcomponents:GenTextInput id="tiDiscount_per" height="18" width="110" textAlign="right" tabIndex="69"
+									xmlTag="discount_per" updatableFlag="true" tableName="catalog_order" defaultValue="0.00" 
+									maxValue = "9999.99" validationFlag = "true" toolTip="Discount(%)" enabled="false"
+									itemChangedEvent="discount_perChange()" dataType="N" rounding="false" setDefaultOnEmpty="true"/>
+								<customcomponents:GenTextInput id="tiDiscount_amt" height="18" width="110" textAlign="right" tabIndex="72"
+									xmlTag="discount_amt" updatableFlag="true" tableName="catalog_order" defaultValue="0.00" maxValue = "9999999999.99"
+									itemChangedEvent="discount_amtChange()" dataType="N" rounding="true" setDefaultOnEmpty="true" 
+									validationFlag = "true" toolTip="Discount Amt" enabled="false"/>
+							</mx:HBox>
+							<mx:HBox>
+								<mx:Label text="Sales Tax" width="110" textAlign="right"/>
+								<mx:Spacer width="110"/>
+								<customcomponents:GenTextInput id="tiTax_amt" enabled="false" height="18" width="110" textAlign="right" tabIndex="78"
+									xmlTag="tax_amt" updatableFlag="true" tableName="catalog_order" defaultValue="0.00" itemChangedEvent="tax_amtChange()"
+									dataType="N" rounding="true" setDefaultOnEmpty="true" maxValue = "9999999999.99" 
+									validationFlag = "true" toolTip="Tax Amt"/>
+							</mx:HBox>	
+					<mx:HBox>
+						<mx:Label text="Shipping" width="110" textAlign="right"/>
+						<mx:Spacer width="110"/>
+						<customcomponents:GenTextInput id="tiShip_amt" height="18" width="110" textAlign="right" tabIndex="81"
+							xmlTag="ship_amt" updatableFlag="true" tableName="catalog_order" defaultValue="0.00" itemChangedEvent="ship_amtChange()"
+							dataType="N" rounding="true" setDefaultOnEmpty="true" maxValue = "9999999999.99" 
+							validationFlag = "true" toolTip="Ship Amt" enabled="false"/>
+					</mx:HBox>						
+					<mx:HRule width="300" strokeColor="#000000"/>										
+							<mx:HBox>
+								<mx:Label text="Net Amount" width="110" textAlign="right"/>
+								<mx:Spacer width="110"/>
+								<customcomponents:GenTextInput id="tiNet_amt"  height="18" width="110" textAlign="right" editable="false"
+									enabled="false" xmlTag="net_amt" updatableFlag="true" tableName="catalog_order" defaultValue="0.00"
+									dataType="N" rounding="true" setDefaultOnEmpty="true" maxValue="9999999999.99" />
+							</mx:HBox>			
+						</mx:VBox>
+					</mx:HBox>	
+			</mx:VBox>
+		</mx:TabNavigator>
+	</mx:VBox>
+</gencomponents:AddEdit>
+

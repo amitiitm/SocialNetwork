@@ -1,0 +1,12 @@
+<columns  lockedColumnCount='0'>
+	
+	 <column data='company_cd'	label='Company #'		editable='false'	visible='true'		width='150'	textAlign='left'	
+			forLevel='false' 	defaultForLevel=''		booleanFlag='false'	sortDataType='S'	columnPrecision="NaN"/>
+			
+	<column data='dummy' 		label='dummy flag' 		editable='false' 	visible='false' 	width='100' textAlign='left'
+		 	forLevel='false' 	defaultForLevel='' 		booleanFlag='false'	sortDataType='S'	columnPrecision="NaN"/>
+		 
+	<column data='dummy1' 		label='Company Name'	editable='false' 	visible='true' 		width='100' textAlign='left'
+		 	forLevel='false' 	defaultForLevel='' 		booleanFlag='false'	sortDataType='S'	columnPrecision="NaN"/>
+				
+</columns> 

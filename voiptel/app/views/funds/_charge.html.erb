@@ -1,0 +1,21 @@
+<% form_remote_tag :url => {:controller => :credit_card, :action => "charge", :id => @account.id} do %>
+	<span>
+		Credit Card:
+		<%= select "charge", "credit_card_id", TransactionReference.find(:all, :conditions => {:account_id => @account.id}).map {|tr| ["#{tr.card_type.upcase}-#{tr.card_number}", tr.id]}%>
+	</span>
+	<span>
+		<%= label(:amount, "Amount") %>
+		<%= text_field(:charge, :amount, :size => 5) %>
+	</span>
+	<%= new_line %>
+	
+	<span>
+		<!-- <%= check_box(:auto_recharge, :enabled) %>
+		<%= label(:auto_recharge, "Auto recharge account when the balance is below") %>
+		<%= select(:auto_recharge, :threshold, [["$5", 5], ["$10", 10]]) %>
+		<%= label(:with, " with ")%>
+		<%= select(:auto_recharge, :amount, [["$10", 10],["$15", 15],["$20", 20],["$30", 30],["$40", 40],["$50", 50],["$100", 100]]) %>  -->
+	</span>
+	<%= new_line %>
+	<%= submit_tag "Charge", :onclick => "show_loading()"%>
+<% end -%> 

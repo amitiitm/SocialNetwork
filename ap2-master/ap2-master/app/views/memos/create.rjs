@@ -1,0 +1,1 @@
+response_for(@memo, page, "window.location.reload()")

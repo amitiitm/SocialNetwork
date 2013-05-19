@@ -1,0 +1,13 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  number: MyString
+  rate: 9.99
+  did_id: 1
+  account_id: 1
+
+two:
+  number: MyString
+  rate: 9.99
+  did_id: 1
+  account_id: 1

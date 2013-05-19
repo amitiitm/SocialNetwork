@@ -1,0 +1,18 @@
+<%= page_title :title => "Account DIDs", :class => "ceiling-please" %>
+<% if not @dids.blank? %>
+  <% for did in @dids %>
+ 		<% table :width => "300px" do |t| %>
+			<% t.th '#' %>
+			<% t.th 'Number' %>
+			<% t.th 'Actions' %>
+			
+			<% t.td t.counter %>
+			<% t.td number_to_phone(did.number, :area_code => true) %>
+			<% t.td "" %>
+			
+			<% t.new_row %>
+		<% end %>
+  <% end %>
+<% else %>
+  <span class="bold">This account has no DIDs</span>
+<% end %>

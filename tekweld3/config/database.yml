@@ -1,0 +1,65 @@
+#development:
+#   adapter: sqlserver
+#   dataserver: sql2008ds
+#   code : dblib
+#   encoding: ado
+#   database: jewe1098
+#   username: sa
+#   password: diaspark
+#   host: JEWEL2K8R2\RETAIL2008R2
+#
+#main_schema:
+#   adapter: sqlserver
+#   dataserver: sql2008ds
+#   code : dblib
+#   encoding: ado
+#   database: main
+#   username: sa
+#   password: diaspark
+#   host: JEWEL2K8R2\RETAIL2008R2
+
+development:
+   adapter: sqlserver
+   mode : dblib
+   dataserver: JEWEL2K8R2\RETAIL2008R2
+   database: TEKW1122
+   username: sa
+   password: diaspark
+   session_options: ["SET TEXTSIZE 1000000000","SET LANGUAGE us_english"]
+
+
+main_schema:
+   adapter: sqlserver
+   mode : dblib
+   dataserver: JEWEL2K8R2\RETAIL2008R2
+   database: main
+   username: sa
+   password: diaspark
+   session_options: ["SET TEXTSIZE 1000000000",SET LANGUAGE "us_english"]
+
+
+#jewel_schema:
+#   adapter: sqlserver
+#   encoding: ado
+#   database: jewel_clsq
+#   username: sa
+#   password: flowerpetals01
+#   host: JEWEL2K8R2
+#
+##
+####
+#development:
+#   adapter: sqlserver
+#   encoding: ado
+#   database: dimp1092
+#   username: sa
+#   password: diaspark
+#   host: jeweldb\jewel2005retail
+#
+#main_schema:
+#   adapter: sqlserver
+#   encoding: ado
+#   database: main
+#   username: sa
+#   password: diaspark
+#   host: jeweldb\jewel2005retail

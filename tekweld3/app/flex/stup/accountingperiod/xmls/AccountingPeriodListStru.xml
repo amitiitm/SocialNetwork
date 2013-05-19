@@ -1,0 +1,15 @@
+<columns  lockedColumnCount='0'>
+	
+	<column data='year' 		label='A/c Year'		editable='false' 	visible='true'		width='100' 		textAlign='left'
+		 	print_width = '16'	forLevel='true' 		defaultForLevel='' 	booleanFlag='false'	sortDataType='S'	columnPrecision="NaN"/>
+
+	<column data='from_period'	label='From A/c Period'	editable='false' 	visible='true' 		width='100' 		textAlign='left'
+		 	print_width = '18'	forLevel='true' 		defaultForLevel='' 	booleanFlag='false'	sortDataType='S'	columnPrecision="NaN"/>
+	
+	<column data='to_period' 	label='To A/c Period' 	editable='false' 	visible='true' 		width='100' 		textAlign='left'
+		 	print_width = '18'	forLevel='true' 		defaultForLevel='' 	booleanFlag='false'	sortDataType='S'	columnPrecision="NaN"/>
+		 	
+	<column data='description' 	label='Description' 	editable='false' 	visible='true' 		width='250'			textAlign='left'
+		 	print_width = '24'	forLevel='true' 		defaultForLevel=''	booleanFlag='false'	sortDataType='S'	columnPrecision="NaN"/>
+		 	
+</columns> 

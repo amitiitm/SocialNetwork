@@ -1,0 +1,17 @@
+<columns  lockedColumnCount='0'>
+
+		
+	<column data='artwork_file_name'		label='File Name'			editable='false'	visible='true'	width='150'	textAlign='left'	forLevel='false'
+			defaultForLevel=''				booleanFlag='false'			sortDataType='S'	columnPrecision="NaN"/>
+	
+	<column data='artwork_version'			label='Type'				editable='false'	visible='true'	width='110'	textAlign='left'	forLevel='false'
+			defaultForLevel=''				booleanFlag='false'			sortDataType='S'	columnPrecision="NaN"/>
+				
+	<column data='comment'					label='Comment'				editable='false'	visible='true'	width='200'	textAlign='left'	forLevel='false'
+			defaultForLevel=''				booleanFlag='false'			sortDataType='S'	columnPrecision="NaN"/>
+	
+	<column data='final_artwork_flag'		label='Final'				editable='false'	    visible='true'	width='110'	textAlign='left'	forLevel='false'
+			defaultForLevel=''				booleanFlag='true'			sortDataType='S'	columnPrecision="NaN"/>
+		
+						
+</columns> 

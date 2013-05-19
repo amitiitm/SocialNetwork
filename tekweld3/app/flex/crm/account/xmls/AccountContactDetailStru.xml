@@ -1,0 +1,31 @@
+<columns  lockedColumnCount='0'>
+			
+	<column data='first_name'		label='First Name'		editable='false'	visible='true'	width='200'	textAlign='left'	forLevel='false'
+			defaultForLevel=''		booleanFlag='false'		sortDataType='S'/>
+	
+	<column data='last_name'		label='Last Name'		editable='false'	visible='true'	width='200'	textAlign='left'	forLevel='false'
+			defaultForLevel=''		booleanFlag='false'		sortDataType='S'/>
+	
+	<column data='job_title'		label='Title'			editable='false'	visible='true'	width='150'	textAlign='left'	forLevel='false'
+			defaultForLevel=''		booleanFlag='false'		sortDataType='S'/>	
+	
+	<column data='department'		label='Department'		editable='false'	visible='true'	width='150'	textAlign='left'	forLevel='false'
+			defaultForLevel=''		booleanFlag='false'		sortDataType='S'/>	
+	
+	<column data='cell_phone'		label='Mobile'			editable='false'	visible='true'	width='100'	textAlign='left'	forLevel='false'
+			defaultForLevel=''		booleanFlag='false'		sortDataType='S'/>	
+	
+	<column data='email'			label='Email'			editable='false'	visible='true'	width='120'	textAlign='left'	forLevel='false'
+			defaultForLevel=''		booleanFlag='false'		sortDataType='S'/>	
+	
+	<column data='role'				label='Work'			editable='false'	visible='true'	width='150'	textAlign='left'	forLevel='false'
+			defaultForLevel=''		booleanFlag='false'		sortDataType='S'/>		
+								
+</columns> 
+
+
+
+
+
+
+

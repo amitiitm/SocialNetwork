@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rds:CommonServices xmlns:rds="business.*" xmlns:mx="http://www.adobe.com/2006/mxml">
+
+	<mx:HTTPService id="saveRecord" url="/diamond_purchase/create_memoreturns"/> 
+	<mx:HTTPService id="getRecord" url="/diamond_purchase/show_memoreturn"/>
+	<mx:HTTPService id="getList" url="/diamond_purchase/list_memoreturns"/>
+	<mx:HTTPService id="getListFormat" url="dpuoi/memoreturn/xmls/DiamPurchaseMemoReturnListStru.xml"/>
+	<mx:HTTPService id="getViewFormat" url="dpuoi/memoreturn/xmls/DiamPurchaseMemoReturnCriteriaStru.xml"/>
+	<mx:HTTPService id="itemDetailFormat" url="dpuoi/memoreturn/xmls/DiamPurchaseMemoReturnItemDetailStru.xml"/>
+	<mx:HTTPService id="fetchRecordFormat" url="dpuoi/memoreturn/xmls/DiamPurchaseMemoReturnFetchRecordStru.xml"/>
+
+	<mx:HTTPService id="fetch_open_memos" url="/diamond_purchase/fetch_open_memos"/>
+	<mx:HTTPService id="fetch_open_memos_hdr" url="/diamond_purchase/fetch_open_memos_hdr"/>
+	<mx:HTTPService id="fetchMemoHdrFormat" url="dpuoi/memoreturn/xmls/DiamPurchaseMemoReturnFetchMemoHdrStru.xml"/>
+	<mx:HTTPService id="fetchGetSelectedMemoServiceID" url="/diamond_purchase/fetch_open_memo_lines"/>
+    <mx:HTTPService id="printRecord" url="/diamond_purchase_report/purchase_memo_return_format" />
+
+</rds:CommonServices>
+	

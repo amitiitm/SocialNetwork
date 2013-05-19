@@ -1,0 +1,15 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  account_id: 1
+  name: MyString
+  prefix: MyString
+  days: 1
+  start_at: 2010-11-17
+
+two:
+  account_id: 1
+  name: MyString
+  prefix: MyString
+  days: 1
+  start_at: 2010-11-17

@@ -1,0 +1,27 @@
+<columns  lockedColumnCount='0'>
+
+	<column data='serial_no'	label='Serial #'	editable='false'	visible='true'		width='80'	textAlign='left'	
+			forLevel='false'	defaultForLevel='' 	booleanFlag='false' sortDataType='N' 	columnPrecision="0"/>
+			
+	<column data='gl_account_code' 		label='Account #' 	editable='false' 	visible='true' 		width='80' 	textAlign='left'	
+			forLevel='false'	defaultForLevel='' 	booleanFlag='false' sortDataType='S' 	columnPrecision="NaN"/>
+	
+	<column data='gl_account_name' 		label=' A/c Name' 	editable='false' 	visible='true' 		width='150' textAlign='left' 	
+			forLevel='false' 	defaultForLevel='' 	booleanFlag='false' sortDataType='S' 	columnPrecision="NaN"/>
+	
+	<column data='debit_amt' 	label='Debit Amt' 	editable='false' 	visible='true'		width='100' textAlign='right' 	
+			forLevel='false'	defaultForLevel='' 	booleanFlag='false' sortDataType='N' 	columnPrecision="2"/>
+	
+	<column data='credit_amt' 	label='Credit Amt' 	editable='false' 	visible='true' 		width='100' textAlign='right' 	
+			forLevel='false'	defaultForLevel='' 	booleanFlag='false' sortDataType='N' 	columnPrecision="2"/>
+			
+	<column data='ref_no' 		label='Ref.#' 		editable='false' 	visible='true' 		width='100' textAlign='left' 	
+			forLevel='false'	defaultForLevel='' 	booleanFlag='false' sortDataType='S' 	columnPrecision="NaN"/>
+			
+	<column data='ref_date' 	label='Ref.Date' 	editable='false' 	visible='true' 		width='100' textAlign='left' 	
+			forLevel='false'	defaultForLevel='' 	booleanFlag='false' sortDataType='D' 	columnPrecision="NaN"/>
+
+	<column data='description' 	label='Description' editable='false' 	visible='true' 		width='150'	textAlign='left' 	
+			forLevel='false'	defaultForLevel='' 	booleanFlag='false' sortDataType='S' 	columnPrecision="NaN"/>
+	
+</columns> 

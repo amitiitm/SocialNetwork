@@ -1,0 +1,28 @@
+<script type="text/javascript" src="/js/accounts/ui.js"></script>
+
+<div class="inner-page-title">
+	<h2>Account Details: <div class="nice-blue inline"> <%= "#{@account.name} (##{@account.number})" %></div></h2>
+	<span>Customer Account Details. You can view everything and kollan beterekooni ina!</span>
+</div>
+<div id="tabs" style="display">
+	<ul>
+		<li><a href="/details">Account Overview</a></li>
+		<li><a href="/account/billing.html">Billing And Transactions</a></li>
+		<li><a href="#cdr">CDR</a></li>
+		<li><a href="#follow-ups">Follow Ups</a></li>
+		<li><a href="#stats">Statistics</a></li>
+		<li><a href="#testimonial">Testimonial</a></li>
+		<li><a href="#notifications">Notifications</a></li>
+		<li><a href="#subscriptions">Product Subscriptions</a></li>
+	</ul>
+	<div id="account-overview"></div>
+	<div id="billing">Billing</div>
+
+	<div id="cdr">CDR</div>
+	<div id="follow-ups">Follow Ups</div>
+	<div id="stats">Account Stats</div>
+
+	<div id="testimonial">Testimonial</div>
+	<div id="notifications">TBD - Notifications</div>
+	<div id="subscriptions">TBD - Product Subscriptions</div>
+</div>

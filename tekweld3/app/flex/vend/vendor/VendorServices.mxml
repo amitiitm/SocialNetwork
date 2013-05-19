@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rds:CommonServices xmlns:rds="business.*" xmlns:mx="http://www.adobe.com/2006/mxml">
+
+	<mx:HTTPService id="saveRecord" url="/purchase/vendor/create_vendors"/>
+	<mx:HTTPService id="getRecord" url="/purchase/vendor/show_vendor"/>
+	<mx:HTTPService id="getList" url="/purchase/vendor/list_vendors"/>
+	<mx:HTTPService id="DetailFormat" url="vend/vendor/xmls/VendorDetailStru.xml"/>
+	<mx:HTTPService id="getViewFormat" url="vend/vendor/xmls/VendorCriteriaStru.xml"/>
+	<mx:HTTPService id="getListFormat" url="vend/vendor/xmls/VendorListStru.xml"/>
+	
+	<mx:HTTPService id="imageUploadUrl" url="/inventory/item/upload_image"/>
+	
+	<mx:HTTPService id="importDetailFormat" url="vend/vendor/xmls/VendorImportStru.xml"/>
+	<mx:HTTPService id="recordUploadUrl" url="/purchase/vendor/convert_exceltoxml_for_vendors"/>
+
+
+	<mx:HTTPService id="printRecord" url=""/>
+
+</rds:CommonServices>
+
+
+
+
+

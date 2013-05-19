@@ -1,0 +1,7 @@
+page.replace_html "map-#{@id}", link_to_function("Close", "$('row-#{@id}').fade({afterFinish: function() {
+  $('row-#{@id}').remove();
+  $('map-#{@id}').innerHTML = #{escape_javascript('<a onclick=\"new Ajax.Request(\'/referrals/mapping_info/20\', {asynchronous:true, evalScripts:true}); return false;\" href=\'#\'>Map</a>')}
+  }})")
+
+page.insert_html :after, "referral-#{@id}", render(:partial => "mapping_info")
+page << "$('dialog-#{@id}').appear()"

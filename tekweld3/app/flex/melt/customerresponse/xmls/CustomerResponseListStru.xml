@@ -1,0 +1,61 @@
+<columns lockedColumnCount='0'>
+
+	<column data='select_yn' 			label='Select Y/N' 		editable='true' 	visible='true' 	width='65' 	textAlign='center' 	
+			forLevel='false'			defaultForLevel='' 		sortDataType='S'	dataType='S'	booleanFlag='true'
+			dataValueForOn="Y"			dataValueForOff=" "
+			componentType="CheckBox"	
+	/>
+	
+	<column data='noresponse_yn'		label='No Response ?' 	editable='true' 	visible='true' 	width='90' 	textAlign='center' 	
+			forLevel='false'			defaultForLevel='' 		sortDataType='S'	dataType='S'	booleanFlag='true'
+			dataValueForOn="Y"			dataValueForOff=" "
+			componentType="CheckBox"	
+	/>
+	
+	<column data='accept_yn' 			label='Complete ?' 		editable='true' 	visible='true' 	width='90' 	textAlign='center' 	
+			forLevel='false'			defaultForLevel='' 		sortDataType='S'	dataType='S'	booleanFlag='true'
+			dataValueForOn="Y"			dataValueForOff=" "
+			componentType="CheckBox"	
+	/>
+	
+	<column data='reject_yn' 			label='Reject ?' 		editable='true' 	visible='true' 	width='65' 	textAlign='center' 	
+			forLevel='false'			defaultForLevel='' 		sortDataType='S'	dataType='S'	booleanFlag='true'
+			dataValueForOn="Y"			dataValueForOff=" "
+			componentType="CheckBox"	
+	/>
+	
+	<column data='customer_name' 		label='Customer' 		editable='false' 	visible='true' 	width='180' textAlign='left' 	
+			forLevel='true'				defaultForLevel='' 		sortDataType='S'	dataType='S'	booleanFlag='false'
+			componentType="Text"		columnPrecision="NaN"
+	/>
+	
+	<column data='retailer_name' 		label='Retailer' 		editable='false' 	visible='true' 	width='180' textAlign='left' 	
+			forLevel='true'				defaultForLevel='' 		sortDataType='S'	dataType='S'	booleanFlag='false'
+			componentType="Text"		columnPrecision="NaN"
+	/>
+	
+	<column data='trans_no'				label='Packet #'		editable='false' 	visible='true'	width='70'	textAlign='left'	
+			forLevel='true'				defaultForLevel='2' 	sortDataType='S'	dataType='S'	booleanFlag='false'
+			componentType="Text"		columnPrecision="NaN"
+	/>
+
+	<column data='trans_date' 			label='Packet Date' 	editable='false' 	visible='true' 	width='90' 	textAlign='left' 	
+			forLevel='true' 			defaultForLevel='1'		sortDataType='D' 	dataType='D'	booleanFlag='false'
+			componentType="Date" 		columnPrecision="NaN"
+	/>
+	
+	<column data='account_period_code'		label='A/c Period #' 	editable='false' 	visible='true' 		width='80' 		textAlign='left'
+		 	forLevel='true' 				defaultForLevel='' 	 	booleanFlag='false'		sortDataType='S'	
+		 	componentType="Text" 			columnPrecision="NaN"/>	
+	
+	<column data='customer_ref_no'		label='Cust Ref #'		editable='false' 	visible='true'	width='70'	textAlign='left'	
+			forLevel='false'			defaultForLevel='2' 	sortDataType='N'	dataType='S'	booleanFlag='false'
+			componentType="Text"		columnPrecision="NaN"
+	/>
+
+	<column data='customer_comments'	label='Cust Comment'	editable='true' 	visible='true'	width='200'	textAlign='left'	
+			forLevel='false'			defaultForLevel='2' 	sortDataType='N'	dataType='S'	booleanFlag='false'
+			componentType="Text"		columnPrecision="NaN"
+	/>
+
+</columns> 

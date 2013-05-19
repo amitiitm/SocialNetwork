@@ -1,0 +1,9 @@
+<columns  lockedColumnCount='0'>
+
+	<column data='user_code'		label='User #'		editable='false' 	visible='true' 	width='150'	textAlign='left'	forLevel='false' 
+			defaultForLevel=''	booleanFlag='false'	sortDataType='S'	columnPrecision="NaN"/>
+
+	<column data='user_name'	label='User Name'	editable='false' 	visible='true' 	width='250'	textAlign='left'	forLevel='false' 
+			defaultForLevel=''	booleanFlag='false'	sortDataType='S'	columnPrecision="NaN"/>
+
+</columns> 

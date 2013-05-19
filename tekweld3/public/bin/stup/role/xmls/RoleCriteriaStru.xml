@@ -1,0 +1,8 @@
+<columns Title =''>
+	
+	<column dataType="S"		label="Code"		checkbox="ckAll4"				xmlTagFrom="str1"	from="dcStr1"
+			xmlTagTo="str2" 	to="dcStr2"			multiSelect="mvMultiSelect1" 	xmlTagMultiSelect="multiselect1"
+			lookupFlag="true" 	lookupName="Role"	lookupLabel="code"				dataField="code"	labelField="code"
+	/>
+			
+</columns> 	

@@ -1,0 +1,709 @@
+@namespace mx "http://www.adobe.com/2006/mxml";
+@namespace s "library://ns.adobe.com/flex/spark";
+@namespace customcomponents "com.generic.customcomponents.*";
+@namespace components "com.generic.components.*";
+
+customcomponents|GenDynamicComboBoxWithHelp
+{
+	disabled-overlay-alpha : 0.0;
+}
+customcomponents|GenTextInputWithHelp
+{
+	disabled-overlay-alpha : 0.0;
+}
+.closeButton 
+{
+	upSkin: Embed(source="/com/generic/assets/tab_assets.swf#firefox_close_up");
+	downSkin: Embed(source="/com/generic/assets/tab_assets.swf#firefox_close_down");	
+	overSkin: Embed(source="/com/generic/assets/tab_assets.swf#firefox_close_over");
+	disabledSkin: Embed(source="/com/generic/assets/tab_assets.swf#firefox_close_disabled");
+}
+SuperTab 
+{
+	highlightAlphas: 0.52, 0.4;
+	borderColor: #999999;
+	textRollOverColor: #000000;	
+	textAlign: "left";
+	text-selected-color : #000000;
+	closeButtonStyleName : "closeButton";
+}
+
+SuperTabNavigator
+{
+	popupButtonStyleName: "popupButton";
+	buttonWidth:16px;	
+}
+
+.popupButton
+{
+	text-align : "left";	
+	font-weight : normal;
+	padding-left : 0;
+}
+
+.gridHeader
+{
+	color: #0000FF;
+}
+.nonEditableGridHeader
+{
+	color:#000000;
+}	
+
+.promoButton
+{
+	cornerRadius:5;
+	fontWeight:normal;
+	textRollOverColor:#D4FFFF;
+	fillColors: haloBlue, haloGreen;
+}
+
+mx|TextInput 
+{ 
+	fontFamily:Verdana ;
+	fontSize: 9;
+	fontStyle:normal;
+	borderStyle: solid;
+	borderThickness: 1;
+	cornerRadius: 0;
+	backgroundAlpha: 1.0;
+	textAlign: left;
+	paddingLeft: 2;
+	color:#000000;
+	borderColor:#94937F;
+	themeColor:#404040;
+	disabledColor:#000000; 		
+}
+mx|Button
+{
+	font-family:Verdana ;
+	font-size: 9;
+	font-style:normal;
+	font-weight:bold;
+	corner-radius:0;
+	color:#000000;
+	border-color:#94937F;
+	theme-color:#404040;
+	text-roll-over-color: #0c0c0c;
+	text-selected-color: #0c0c0c;
+	disabled-color: #949393;
+	fill-colors:#ffffff,#bbbab9 ;
+	disabled-color:#000000;
+} 
+.myLinkBar
+{
+	fontSize:			12;
+	fontWeight:			normal;
+	/* backgroundColor: 	#305776; */  
+	themeColor:			#1858A3 ; 
+	fontFamily:			Arial;
+	link-button-style-name:myLinkButton;
+	
+}
+.myLinkButton
+{
+	fontSize:9;
+	themeColor:			#1858A3 ;  
+	corner-radius:5; 
+	disabled-color:#1858A3 ;  
+	background-disabled-color:#1858A3 ; 
+}
+mx|LinkButton
+{
+	font-family:Verdana;
+	font-size:9;
+	text-align:left;
+	text-roll-over-color:#ffffff;
+	color:#0c0c0c;
+	disabled-color:#000000;
+}
+
+mx|ApplicationControlBar
+{
+	shadowDistance: 1;
+	fill-alphas:1.0, 0.5;
+	fill-colors: #dfdede, #969696;
+	border-color:#404040;
+	border-thickness:3;
+	padding-top:0;
+	vertical-gap:0;
+	corner-radius:0; 
+}
+.comboBox2
+{
+	corner-radius: 0;
+	fill-colors:#ffffff,#bbbab9;
+	font-weight:normal;
+	color:#000000;
+	border-color:#94937F;
+	text-roll-over-color:#0c0c0c;
+	selection-color:#ffffff;
+	selected-fill-colors:#ffffff;
+	roll-over-color	: null;
+	dropdown-style-name: comboBoxDropdown;
+	fillAlphas: 0.77, 1.0, 1.0, 0.77;
+	disabled-color:#000000;
+	theme-color:#404040;	
+
+	upSkin: Embed(source="/com/generic/assets/combo2_enable.png",scaleGridTop='1',scaleGridBottom='19',scaleGridLeft='1',scaleGridRight='88');
+	downSkin: Embed(source="/com/generic/assets/combo2_enable.png",scaleGridTop='1',scaleGridBottom='19',scaleGridLeft='1',scaleGridRight='88');	
+	overSkin: Embed(source="/com/generic/assets/combo2_enable.png",scaleGridTop='1',scaleGridBottom='19',scaleGridLeft='1',scaleGridRight='88');
+	disabledSkin: Embed(source="/com/generic/assets/combo2_disable.png",scaleGridTop='1',scaleGridBottom='19',scaleGridLeft='1',scaleGridRight='88');
+	
+}
+mx|ComboBox 
+{
+	corner-radius: 0;
+	fill-colors:#ffffff,#bbbab9;
+	font-weight:normal;
+	color:#000000;
+	border-color:#94937F;
+	text-roll-over-color:#0c0c0c;
+	selection-color:#ffffff;
+	selected-fill-colors:#ffffff;
+	roll-over-color	: null;
+	dropdown-style-name: comboBoxDropdown;
+	fillAlphas: 0.77, 1.0, 1.0, 0.77;
+	disabled-color:#000000;
+	theme-color:#404040;
+	
+	upSkin: Embed(source="/com/generic/assets/combo_enable.png",scaleGridTop='1',scaleGridBottom='19',scaleGridLeft='1',scaleGridRight='162');
+	downSkin: Embed(source="/com/generic/assets/combo_enable.png",scaleGridTop='1',scaleGridBottom='19',scaleGridLeft='1',scaleGridRight='162');	
+	overSkin: Embed(source="/com/generic/assets/combo_enable.png",scaleGridTop='1',scaleGridBottom='19',scaleGridLeft='1',scaleGridRight='162');
+	disabledSkin: Embed(source="/com/generic/assets/combo_disable.png",scaleGridTop='1',scaleGridBottom='19',scaleGridLeft='1',scaleGridRight='162');
+
+}
+
+
+.comboBoxDropdown
+{
+	border-style: solid;
+	border-color:#94937F;
+	vertical-scroll-bar-style-name: listBaseVerticalScrollBar;
+}
+
+.listBaseVerticalScrollBar
+{
+}
+
+mx|MenuBar 
+{ 
+	corner-radius: 0;
+	fill-colors: #ffffff,#bbbab9;
+	border-color: #404040;
+	background-color: #ffffff;
+	letter-spacing:1;
+	color:#0c0c0c;
+	dropdown-border-color:#404040;
+	fillAlphas: 0.77, 1.0, 0.77, 0.77;
+}
+
+mx|TabNavigator 
+{ 
+	font-family:Verdana ;
+	font-size: 9;
+	font-style:normal;
+	font-weight:normal;
+	vertical-grid-lines:false;
+	corner-radius: 0;
+	border-thickness: 1;
+	border-style:solid;
+	vertical-gap:0;
+	vertical-align:top;
+	horizontal-gap:0;
+	horizontal-align: left;
+	tab-offset: 0;
+	color:#949393;
+	background-color:#1E6CBB;
+	backgroundAlpha: 0;
+	border-color:#1E6CBB;
+	disabled-color:#949393;
+	selected-tab-text-style-name: tabNavigatorSelectedTabText;
+	first-tab-style-name: tabNavigatorLastTab;
+	last-tab-style-name: tabNavigatorLastTab;
+	tab-style-name: tabNavigatorLastTab;
+	disabled-color:#000000;
+	popup-button-style-name: popupButtonStyle;
+}
+
+
+.popupButtonStyle
+{
+	text-align : left;
+	font-weight : normal;
+}
+.tabNavigatorSelectedTabText
+{
+	font-family: Verdana;
+	font-size: 9;
+	font-style:normal;
+	text-selected-color:#ffffff;
+	selection-color:#ffffff;
+	border-color:#1E6CBB;
+	color: #ffffff;
+	disabled-color: #949393;
+	text-align: left;
+}
+
+.tabNavigatorLastTab
+{
+	font-family: Verdana;
+	font-size: 9;
+	font-style:normal;
+	borderColor: #404040;
+	themeColor: #404040;
+	color: #0c0c0c;
+	textSelectedColor: #ffffff;
+	disabledColor: #0c0c0c;
+	fillColors: #DCE6EF, #DCE6EF;
+	textAlign: left;
+}
+
+mx|DataGrid
+{
+	font-family:Verdana;
+	font-size: 9;
+	color:#0c0c0c;
+	roll-over-color:#3e80e0;
+	text-roll-over-color: #ffffff;
+	horizontal-grid-lines: false;
+	selection-color: #3e80e0;
+	header-colors:#ffffff,#bbbab9;
+	alternating-item-colors: #f1f4f9,#FFFFFF;
+	header-style-name: dataGridHeader;
+	text-selected-color: #ffffff;
+	header-height:20;
+	vertical-scroll-bar-style-name: dataGridScrollBar;
+	horizontal-scroll-bar-style-name:dataGridScrollBar;
+	border-style: solid;
+	border-color: #404040;
+	border-thickness: 1;
+	theme-color:#404040;
+	verticalGridLineColor: #DDDDDD;
+	disabled-color:#000000;
+
+}
+
+mx|AdvancedDataGrid
+{
+	font-family:Verdana;
+	font-size: 9;
+	color:#0c0c0c;
+	horizontal-grid-lines: false;
+	selection-color: #3e80e0;
+	header-colors:#ffffff,#bbbab9;
+	header-style-name: dataGridHeader;
+	text-selected-color: #ffffff;
+	header-height:20;
+	vertical-scroll-bar-style-name: dataGridScrollBar;
+	horizontal-scroll-bar-style-name:dataGridScrollBar;
+	border-style: solid;
+	border-color: #404040;
+	border-thickness: 1;
+	theme-color:#404040;
+	verticalGridLineColor: #DDDDDD;
+	disabled-color:#000000;
+}
+
+.dataGridHeader
+{
+	color: #0c0c0c;
+	font-family: Verdana;
+	font-size: 9;
+	font-style:normal;
+	font-weight:bold;
+	disabled-color:#000000;
+}
+
+.dataGridScrollBar
+{
+	thumb-offset:0;
+	fill-alphas: 1.0, 1.0;
+	fill-colors:#c4d0e0,#98acc5;
+	border-color: #404040;
+	track-colors: #ffffff,#f7f3f7;
+	
+}
+
+mx|Tree
+{
+	border-style: solid;
+	border-color: #404040;
+	background-color:#dee3ef;
+	background-disabled-color: #FFFFFF;
+	roll-over-color: #3e80e0;
+	selection-color: #3e80e0;
+	selection-disabled-color: #3e80e0;
+	vertical-scroll-bar-style-name: dataGridScrollBar;
+	color: #0c0c0c;
+	text-roll-over-color: #ffffff;
+	text-selected-color: #ffffff;
+	disabled-color: #0c0c0c;
+	background-alpha: 1.0;
+	folderClosedIcon: ClassReference(null);
+	folderOpenIcon: ClassReference(null);
+	defaultLeafIcon: ClassReference(null);
+	disabled-color:#000000;
+}
+
+mx|List
+{
+	borderStyle: solid;
+	borderColor: #404040;
+	fontSize: 9;
+	color: #0c0c0c;
+	textRollOverColor: #ffffff;
+	textSelectedColor: #ffffff;
+	disabledColor: #0c0c0c;
+	roll-over-color: #3e80e0;
+	selection-color: #3e80e0;
+	verticalScrollBarStyleName: listVerticalScrollBar;
+	disabled-color:#000000;
+}
+
+.listVerticalScrollBar
+{
+	color: #0c0c0c;
+	font-family: Verdana;
+	font-size: 9;
+}
+
+mx|Accordion 
+{ 
+	drop-shadow-enabled: false;
+	border-thickness: 1;
+	border-style:solid;
+	background-color: #DAD8C2;
+	border-color:#404040;
+	backgroundAlpha: 0.0;
+	font-family:Verdana;
+	fontSize: 9;
+	color: #949393;
+	textSelectedColor: #0C0C0C;
+	textRollOverColor: #0C0C0C;
+	roll-over-color:#D9DABB;
+	disabledColor: #949393;
+	headerStyleName: accordionHeader;
+	theme-color:#D9DABB;
+	disabled-color:#000000;
+}
+
+.accordionHeader
+{
+	borderColor: #94927F;
+	themeColor: #94927F;
+	color: #0C0C0C;
+	textRollOverColor: #0C0C0C;
+	textSelectedColor: #0C0C0C;
+	disabledColor: #949393;
+	fill-colors:#dad8c2,#f9f9f5;
+	disabled-color:#000000;
+}
+
+mx|DateField
+{
+	font-family:Verdana;
+	font-size: 9;
+	color: #0C0C0C;
+	theme-color:#404040;
+	border-color: #94937f;
+	disabled-color:#000000;
+}
+
+mx|TitleWindow
+{
+	font-family:Verdana;
+	font-size:9;
+	font-style:normal;
+	color:#0c0c0c;
+	background-color:#dce6ef;
+	border-style:outset;
+	border-color:#404040;
+	drop-shadow-enabled: true;
+	shadow-distance: 2;
+	header-height:25;
+	backgroundAlpha: 1.0;
+	disabled-color:#000000;
+}
+
+mx|Application 
+{ 
+	background-color:#dee3ef;
+	background-gradient-alphas: 0, 0;
+	font-family:Verdana;
+	font-size:9;
+}
+mx|WindowedApplication
+{
+	background-color:#dee3ef;
+	background-gradient-alphas: 0, 0;
+	font-family:Verdana;
+	font-size:9;	
+}	
+
+mx|Label
+{
+	color:#0c0c0c;
+	padding-top:0;
+	text-align:left;
+	font-family:Verdana;
+	font-size:9;
+	font-style:normal;
+	disabled-color:#000000;
+} 
+
+mx|Canvas
+{ 
+	border-thickness:0;
+	border-style:none;
+	disabled-color:#000000;
+}
+
+mx|Panel 
+{ 
+	corner-radius: 0;
+	header-height: 0;
+	drop-shadow-enabled: false;
+	shadow-distance: 0;
+	background-alpha: 1;
+	border-alpha: 0;
+	highlight-alphas: 0, 0;
+	border-style: none;
+	background-color: #e6e6ff;
+	border-color: #ffffff;
+	font-family:Verdana ;
+	font-size: 9;
+	font-style:normal;
+	vertical-align:top;
+	vertical-gap: 0;
+	padding-bottom:0;
+	padding-left:0;
+	padding-right:0;
+	padding-top:0;
+	horizontal-gap: 0;
+	label-gap:0;
+	disabled-color:#000000;
+} 
+
+mx|TextArea 
+{ 
+	font-family:Verdana ;
+	font-size: 9;
+	font-style:normal;
+	border-style: solid;
+	border-thickness: 1;
+	cornerRadius: 0;
+	background-alpha: 1.0;
+	text-align: left;
+	padding-left: 2;
+	color:#000000;
+	border-color:#94937F;
+	theme-color:#404040;
+	disabled-color:#000000;
+}
+
+mx|CheckBox 
+{
+	color:#000000;
+	border-color:#94937F;
+	border-style:solid;
+	fillAlphas: 0.0, 0.0, 0.0, 0.0;
+	themeColor: #404040;
+	disabled-color:#000000;
+}
+
+mx|RadioButton 
+{
+	highlight-alphas: 0, 0;
+	fill-alphas: 1, 1, 0, 0;
+	fill-colors: #ffffff, #ffffff, #ffffff, #ffffff;
+	disabled-color:#000000;
+}
+
+.aboutUs
+{
+	border-sides:top;
+	border-thickness:4;
+	border-style:solid;
+	border-color:#C1D6E7;
+	tab-style-name:aboutUsTab;
+	first-tab-style-name:aboutUsTab;
+	last-tab-style-name:aboutUsTab;
+}
+.aboutUsTab
+{
+	color:#305776;
+	fontSize:12;
+	
+	upSkin:Embed(source='com/generic/assets/tabWhiteWithBorder.png'); 
+	overSkin:Embed(source='com/generic/assets/tabBlue.png'); 
+	
+	selectedUpSkin:Embed(source='com/generic/assets/tabBlue.png');
+	selectedOverSkin:Embed(source='com/generic/assets/tabBlue.png');
+	selectedDownSkin:Embed(source='com/generic/assets/tabBlue.png'); 
+	
+}
+.myHeader
+{
+	fontSize:12;
+	color:#305776;
+	font-family:Arial;
+}	
+.H1
+{
+	fontSize:18  ;
+	color:#305776 ;
+	fontFamily:Century;
+	fontWeight:bold;
+}
+.H2
+{
+	fontSize:16  ;
+	color:#3D4E77 ;
+	fontFamily:Arial;
+	fontWeight:bold;	
+}
+.H3
+{
+	fontSize:12  ;
+	color:#3D4E77 ;
+	fontFamily:Arial;
+	fontWeight:bold;	
+	
+}
+.H4
+{
+	fontSize:17  ;
+	color:#305776 ;
+	fontFamily:Arial;
+	fontWeight:bold;
+}	
+.mainText
+{
+	fontSize:12  ;
+	color:#3C4D78 ;
+	fontFamily:Arial;
+	fontWeight:normal;	 
+}
+/* this comment color */
+.mainText2 
+{
+	fontSize:12  ;
+	color:#5A5656 ;
+	fontFamily:Arial;
+	fontWeight:normal;	 		
+}
+.mainText3
+{
+	fontSize:12  ;
+	color:#0A82C6 ;
+	fontFamily:Arial;
+	fontWeight:normal;	 		
+}					
+.mainTextSmall
+{
+	fontSize:10 ;
+	color:#3C4D78 ;
+	fontFamily:Arial;
+	fontWeight:normal;
+}
+.mainText2Small
+{
+	fontSize:10  ;
+	color:#5A5656 ;
+	fontFamily:Arial;
+	fontWeight:normal;	
+}	
+.mainText3Small
+{
+	fontSize:10  ;
+	color:#0A82C6 ;
+	fontFamily:Arial;
+	fontWeight:normal;	 		
+}
+
+mx|OLAPDataGrid
+{
+	color:#0c0c0c;
+	background-color: #FFFFFF;
+	fontWeight:normal;	
+ 	roll-over-alpha:0;
+ 	roll-over-color: #3e80e0  ; 
+	text-roll-over-color: #0c0c0c;  
+	horizontal-grid-lines: false;
+	selection-color: #3e80e0; 
+	header-colors:#FFFFFF,#EBEBEB; 
+	alternating-item-colors: #f1f4f9,#FFFFFF;
+	row-axis-header-style-name:rowAxisHeadetStyle;
+	column-axis-header-style-name:columnAxisHeadetStyle;
+	text-selected-color: #0c0c0c; 
+	header-height:20;
+	vertical-scroll-bar-style-name: dataGridScrollBar;
+	horizontal-scroll-bar-style-name:dataGridScrollBar; 
+	border-style: solid;
+	border-color: #404040;
+	border-thickness: 1;
+	verticalGridLineColor: #DDDDDD;
+	disabled-color:#000000; 
+}
+
+ .rowAxisHeadetStyle
+{
+	color: #0c0c0c;
+	text-align:center;
+	theme-color:#404040;
+	background-color: #404040;
+	font-family: Verdana;
+	font-size: 9;
+	font-style:normal;
+	font-weight:bold;
+	disabled-color:#000000;
+}
+
+.columnAxisHeadetStyle
+{
+	color: #0c0c0c;
+	theme-color:#404040;
+	background-color: #404040;
+	text-align:center;
+	font-family: Verdana;
+	font-size: 9;
+	font-style:normal;
+	font-weight:bold;
+	disabled-color:#000000; 
+} 
+.disableAsEnable
+{
+	disabled-overlay-alpha : 0.5;
+}
+.disableSameEnable
+{
+	disabled-overlay-alpha : 0.0;
+}
+
+.promoLinkButton
+{
+	fontSize		:12;
+	fontFamily		:Arial;
+	fontWeight		:normal;
+	color			:#067AB4;
+	textRollOverColor:#067ab4;
+	themeColor		:#EFF5F9 ;
+	corner-radius	:5; 
+	disabled-color	:#1858A3 ;  
+	background-disabled-color:#1858A3 ;
+	textDecoration	:underline;
+	paddingRight    :0;
+}
+components|GroupBox
+{
+	titleBoxStyleName  : 'titleBoxStyleName';
+}
+.titleBoxStyleName
+{	
+	borderStyle: solid;
+	backgroundColor: #FFFFD5;
+}
+ColumnChart {
+	fontFamily: Arial;
+}

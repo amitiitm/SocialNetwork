@@ -1,0 +1,12 @@
+<columns Title=''>
+
+	<column dataType="S" label="A/c Period #" checkbox="ckAll4" xmlTagFrom="str5" from="tiStr5" xmlTagTo="str6" to="tiStr6" multiSelect="mvMultiSelect3" xmlTagMultiSelect="multiselect3" lookupFlag="true" lookupName="AccountPeriod"		lookupLabel="code"		dataField="code" 			labelField="code" />
+	<column dataType="D" label="Return Date" checkbox="ckAll3" xmlTagFrom="dt1" from="dfDt1" xmlTagTo="dt2" to="dfDt2" multiSelect="" xmlTagMultiSelect="" lookupFlag="false" lookupName="" />
+	<column dataType="S" label="Return #" checkbox="ckAll2" xmlTagFrom="str3" from="tiStr3" xmlTagTo="str4" to="tiStr4" multiSelect="tiMultiSelect2" xmlTagMultiSelect="multiselect2" lookupFlag="false" lookupName="" />
+    <column dataType="S" label="Return Bk" checkbox="ckAll7" xmlTagFrom="str9" from="tiStr9" xmlTagTo="str10" to="tiStr10" multiSelect="tiMultiSelect5" xmlTagMultiSelect="multiselect5" lookupFlag="false" lookupName="" />
+	<column dataType="S" label="Vendor #" checkbox="ckAll1" xmlTagFrom="str1" from="tiStr1" xmlTagTo="str2" to="tiStr2" multiSelect="mvMultiSelect1" xmlTagMultiSelect="multiselect1" lookupFlag="true" lookupName="Vendor"			lookupLabel="code" dataField="code" 			labelField="code" />
+    <column dataType="S" label="Vend Category #" checkbox="ckAll6" xmlTagFrom="str7" from="tiStr7" xmlTagTo="str8" to="tiStr8" multiSelect="tiMultiSelect4" xmlTagMultiSelect="multiselect4" lookupFlag="true" lookupName="VendorCategory" lookupLabel="code" dataField="code" labelField="code"/>
+    <column dataType="D" label="Ship Date" checkbox="ckAll5" xmlTagFrom="dt3" from="dfDt3" xmlTagTo="dt4" to="dfDt4" multiSelect="" xmlTagMultiSelect="" lookupFlag="false" lookupName="" />
+    <column dataType="S" label="Tracking #" checkbox="ckAll8" xmlTagFrom="str11" from="tiStr11" xmlTagTo="str12" to="tiStr12" multiSelect="tiMultiSelect6" xmlTagMultiSelect="multiselect6" lookupFlag="false" lookupName="" />
+    
+</columns>

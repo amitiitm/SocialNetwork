@@ -1,0 +1,290 @@
+--- 
+email_configs_012: 
+  email_to: vijay.jain@diaspark.com
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  subject: Please view our offer.
+  updated_by: 
+  id: 198
+  email_from: retail@diaspark.com
+  email_cc: vijay.jain@diaspark.com
+  company_id: 1
+  trigger_event: FIRSTOFFERREMINDER
+  email_bcc: 
+  event_type: AUTO
+  created_at: 
+email_configs_001: 
+  email_to: vijay.jain@diaspark.com
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  subject: Retail Company Registered User
+  updated_by: 
+  id: 100
+  email_from: retail@diaspark.com
+  email_cc: vijay.jain@diaspark.com
+  company_id: 1
+  trigger_event: New User Create
+  email_bcc: ""
+  event_type: AUTO
+  created_at: 
+email_configs_013: 
+  email_to: vijay.jain@diaspark.com
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  subject: Your check is ready to be mailed.
+  updated_by: 
+  id: 199
+  email_from: retail@diaspark.com
+  email_cc: vijay.jain@diaspark.com
+  company_id: 1
+  trigger_event: SECONDOFFERREMINDER
+  email_bcc: 
+  event_type: AUTO
+  created_at: 
+email_configs_002: 
+  email_to: vijay.jain@diaspark.com
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  subject: Password Reset
+  updated_by: 
+  id: 120
+  email_from: retail@diasark.com
+  email_cc: ""
+  company_id: 1
+  trigger_event: Forgot Password
+  email_bcc: 
+  event_type: AUTO
+  created_at: 
+email_configs_014: 
+  email_to: vijay.jain@diaspark.com
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  subject: Have you received your check?
+  updated_by: 
+  id: 200
+  email_from: retail@diaspark.com
+  email_cc: vijay.jain@diaspark.com
+  company_id: 1
+  trigger_event: FIRSTDEPOSITREMINDER
+  email_bcc: 
+  event_type: AUTO
+  created_at: 
+email_configs_003: 
+  email_to: 
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  subject: 
+  updated_by: 
+  id: 140
+  email_from: retail@diaspark.com
+  email_cc: 
+  company_id: 1
+  trigger_event: Notes
+  email_bcc: 
+  event_type: AUTO
+  created_at: 
+email_configs_015: 
+  email_to: vijay.jain@diaspark.com
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  subject: Have you received your check? Second Reminder*
+  updated_by: 
+  id: 201
+  email_from: retail@diaspark.com
+  email_cc: vijay.jain@diaspark.com
+  company_id: 1
+  trigger_event: SECONDDEPOSITREMINDER
+  email_bcc: 
+  event_type: AUTO
+  created_at: 
+email_configs_004: 
+  email_to: vijay.jain@diaspark.com
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  subject: New Order
+  updated_by: 
+  id: 160
+  email_from: retail@diaspark.com
+  email_cc: vijay.jain@diaspark.com
+  company_id: 1
+  trigger_event: New Catalog Order
+  email_bcc: 
+  event_type: AUTO
+  created_at: 
+email_configs_016: 
+  email_to: vijay.jain@diaspark.com
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  subject: Your jewelry is being returned to you.
+  updated_by: 
+  id: 202
+  email_from: retail@diaspark.com
+  email_cc: vijay.jain@diaspark.com
+  company_id: 1
+  trigger_event: STOPPAYMENT
+  email_bcc: 
+  event_type: AUTO
+  created_at: 
+email_configs_005: 
+  email_to: vijay.jain@diaspark.com
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  subject: New User Created
+  updated_by: 
+  id: 161
+  email_from: retail@diaspark.com
+  email_cc: vijay.jain@diaspark.com
+  company_id: 1
+  trigger_event: New Catalog User Create
+  email_bcc: 
+  event_type: AUTO
+  created_at: 
+email_configs_017: 
+  email_to: vijay.jain@diaspark.com
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  subject: Your jewelry is being returned to you.
+  updated_by: 
+  id: 203
+  email_from: retail@diaspark.com
+  email_cc: vijay.jain@diaspark.com
+  company_id: 1
+  trigger_event: RETURNPACKET
+  email_bcc: 
+  event_type: AUTO
+  created_at: 
+email_configs_006: 
+  email_to: vijay.jain@diaspark.com
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  subject: Store Transfer
+  updated_by: 
+  id: 180
+  email_from: retail@diaspark.com
+  email_cc: vijay.jain@diaspark.com
+  company_id: 1
+  trigger_event: Store Transfer
+  email_bcc: 
+  event_type: AUTO
+  created_at: 
+email_configs_007: 
+  email_to: vijay.jain@diaspark.com
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  subject: Store Transafer Issue
+  updated_by: 
+  id: 181
+  email_from: retail@diaspark.com
+  email_cc: vijay.jain@diaspark.com
+  company_id: 1
+  trigger_event: Store Transfer Issue
+  email_bcc: 
+  event_type: AUTO
+  created_at: 
+email_configs_008: 
+  email_to: vijay.jain@diaspark.com
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  subject: Store Transafer Receive
+  updated_by: 
+  id: 182
+  email_from: retail@diaspark.com
+  email_cc: vijay.jain@diaspark.com
+  company_id: 1
+  trigger_event: Store Transfer Receive
+  email_bcc: 
+  event_type: AUTO
+  created_at: 
+email_configs_010: 
+  email_to: vijay.jain@diaspark.com
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  subject: We have received your packet.
+  updated_by: 
+  id: 196
+  email_from: retail@diaspark.com
+  email_cc: vijay.jain@diaspark.com
+  company_id: 1
+  trigger_event: SENDOFFERWITHVIDEO
+  email_bcc: 
+  event_type: AUTO
+  created_at: 
+email_configs_009: 
+  email_to: vijay.jain@diaspark.com
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  subject: Your jewelry is being returned to you.
+  updated_by: 
+  id: 189
+  email_from: retail@diaspark.com
+  email_cc: vijay.jain@diaspark.com
+  company_id: 1
+  trigger_event: METALANALYSIS
+  email_bcc: 
+  event_type: AUTO
+  created_at: 
+email_configs_011: 
+  email_to: vijay.jain@diaspark.com
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  subject: Your return tracking number.
+  updated_by: 
+  id: 197
+  email_from: retail@diaspark.com
+  email_cc: vijay.jain@diaspark.com
+  company_id: 1
+  trigger_event: UPDATECUSTOMERRESPONSE
+  email_bcc: 
+  event_type: AUTO
+  created_at: 

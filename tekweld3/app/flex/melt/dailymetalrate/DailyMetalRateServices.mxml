@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rds:CommonServices xmlns:rds="business.*" xmlns:mx="http://www.adobe.com/2006/mxml">
+
+	<mx:HTTPService id="saveRecord" url="/melting/create_metal_rates" />
+	<mx:HTTPService id="getRecord" url="/melting/show_metal_rate" />
+	<mx:HTTPService id="getList" url="/melting/list_metal_rates" />
+	<mx:HTTPService id="getListFormat" url="melt/dailymetalrate/xmls/DailyMetalRateListStru.xml" />
+	<mx:HTTPService id="getViewFormat" url="melt/dailymetalrate/xmls/DailyMetalRateCriteriaStru.xml" />
+	<mx:HTTPService id="printRecord" url="" />
+	
+</rds:CommonServices>

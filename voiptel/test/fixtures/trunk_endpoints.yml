@@ -1,0 +1,9 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  trunk_id: 1
+  endpoint_id: 1
+
+two:
+  trunk_id: 1
+  endpoint_id: 1

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:TitleWindow xmlns:mx="http://www.adobe.com/2006/mxml"
+	xmlns:components="com.generic.components.*" xmlns:customcomponents="com.generic.customcomponents.*" 
+	paddingTop="10" verticalAlign="top" verticalGap="0"  borderStyle="outset" 
+	showCloseButton="true" 
+	creationPolicy="all"
+	backgroundAlpha="0.9"
+	creationComplete="creationCompleteHandler()"
+	close="closeHandler()"
+	height="450" width="70%"
+	initialize="{this.parentApplication.focusManager.deactivate()}"
+	keyDown="detailKeyDownHandler(event)">
+ 	
+ 	<mx:Script source="../scripts/FetchRecordsScript.as"/>
+ 	
+ 	<mx:VBox id="vbMain" height="100%" width="100%"  verticalGap="2" verticalAlign="top" verticalCenter="-8" x="0">
+	 	
+		 	<mx:HBox id="hbSearchBox" width="100%" height="22" horizontalGap="0" borderThickness="0" borderStyle="none">
+		 		
+		 	</mx:HBox>
+		 	<customcomponents:GenDataGrid 
+				id="dgFetchDtl"
+				paddingTop="0"
+				paddingLeft="0"
+				paddingRight="0"
+				paddingBottom="0"
+				height="100%" width="100%"
+				editable="true"
+				itemFocusOut="itemFocusOutEventHandler(event)"
+				columnStretch="changeColumnSizeHandler(event)"
+				itemClick="selectRow()"
+				scroll="onScroll(event)" 	
+				 /> 
+	 
+		<mx:HBox>
+			<mx:Button label="Select" click="selectButtonClickHandler()"/>
+			<mx:Button label="Cancel" click="closeHandler()"/>
+		</mx:HBox>	
+ 	</mx:VBox>
+</mx:TitleWindow>

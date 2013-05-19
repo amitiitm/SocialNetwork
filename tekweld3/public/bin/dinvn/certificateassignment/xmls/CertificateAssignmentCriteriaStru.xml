@@ -1,0 +1,21 @@
+<columns Title =''>
+	
+	
+	<column dataType="S" 			label="Certificate #" 			checkbox="ckAll1" 		xmlTagFrom="str1" 			from="tiStr1" 
+			xmlTagTo="str2" 		to="tiStr2"					multiSelect="tiMultiSelect1" 	xmlTagMultiSelect="multiselect1"
+			lookupFlag="false" 		lookupName="" 				/>
+	
+	<column dataType="D" 			label="Certificate Date" 			checkbox="ckAll2" 		xmlTagFrom="dt1" 			from="dfDt1" 
+			xmlTagTo="dt2" 			to="dfDt2"					
+			lookupFlag="false" 		lookupName="" 				/>
+	
+	<column dataType="S" 			label="A/C Period" 			checkbox="ckAll3" 		xmlTagFrom="str3" 			from="dcStr3" 
+			xmlTagTo="str4" 		to="dcStr4"					multiSelect="mvMultiSelect2" 	xmlTagMultiSelect="multiselect2"
+			lookupFlag="true" 		lookupName="AccountPeriod"		lookupLabel="code"		dataField="code" 			labelField="code"/>
+	
+	<column dataType="S" 			label="Ref#" 				checkbox="ckAll4" 		xmlTagFrom="str5" 			from="tiStr5" 
+			xmlTagTo="str6" 		to="tiStr6"					multiSelect="tiMultiSelect3" 	xmlTagMultiSelect="multiselect3"
+			lookupFlag="false" 		lookupName="" 				/>
+	
+</columns> 	
+

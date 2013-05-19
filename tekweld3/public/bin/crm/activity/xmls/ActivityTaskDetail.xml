@@ -1,0 +1,34 @@
+<columns  >
+
+	<column data='trans_date'		label='Trans Date'		editable='false' visible='true' width='100'	textAlign='left'
+		forLevel='false'	defaultForLevel=''	booleanFlag='false'/>
+	<column data='crm_contact_id' 	label='Contact #' 		editable='false' visible='true' width='100' textAlign='left' 
+		forLevel='false'	defaultForLevel=''	booleanFlag='false'/>
+	<column data='crm_account_id' 	label='Account #' 		editable='false' visible='true' width='100' textAlign='left' 
+		forLevel='false'	defaultForLevel=''	booleanFlag='false'/>
+	<column data='assigned_user_id' label='User #' 			editable='false' visible='true' width='100'	textAlign='left' 
+		forLevel='false'	defaultForLevel=''	booleanFlag='false'/>
+	<column data='start_date' 		label='Start Date' 		editable='false' visible='true' width='100' textAlign='left' 
+		forLevel='false'	defaultForLevel=''	booleanFlag='false'/>
+	<column data='end_date' 		label='End Date'		editable='false' visible='true' width='100'	textAlign='left' 
+		forLevel='false'	defaultForLevel=''	booleanFlag='false'/>
+	<column data='due_date' 		label='Due Date' 		editable='false' visible='true' width='100' textAlign='left' 
+		forLevel='false'	defaultForLevel=''	booleanFlag='false'/>
+	<column data='duration'			label='Duration' 		editable='false' visible='true' width='100' textAlign='left' 
+		forLevel='false'	defaultForLevel=''	booleanFlag='false'/>
+	<column data='subject' 			label='Subject' 		editable='false' visible='true' width='100' textAlign='left' 
+		forLevel='false'	defaultForLevel=''	booleanFlag='false'/>
+	<column data='location' 		label='Location' 		editable='false' visible='true' width='100' textAlign='left' 
+		forLevel='false'	defaultForLevel=''	booleanFlag='false'/>
+	<column data='description' 		label='Description' 	editable='false' visible='true' width='100' textAlign='left' 
+		forLevel='false'	defaultForLevel=''	booleanFlag='false'/>
+	<column data='priority' 		label='Priority' 		editable='false' visible='true' width='100' textAlign='left' 
+		forLevel='false'	defaultForLevel=''	booleanFlag='false'/>
+	<column data='status' 			label='Status' 			editable='false' visible='true' width='100' textAlign='left' 
+		forLevel='false'	defaultForLevel=''	booleanFlag='false'/>
+	<column data='reminder_flag' 	label='Reminder Flag' 	editable='false' visible='true' width='100' textAlign='left' 
+		forLevel='false'	defaultForLevel=''	booleanFlag='false'/>
+	<column data='reminder_date_time' label='Reminder Date' editable='false' visible='true' width='100' textAlign='left' 
+		forLevel='false' 	defaultForLevel=''	booleanFlag='false'/>
+
+</columns> 

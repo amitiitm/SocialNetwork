@@ -1,0 +1,4336 @@
+--- 
+report_layouts_264: 
+  name: NewTest1
+  updated_at: 2011/03/04 12:44:34
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lockedcolumncount: 0
+  layout_type: U
+  lock_version: 5
+  updated_by: 1
+  id: 1912
+  report_id: 340
+  company_id: 1
+  print_orientation: ""
+  created_at: 2011/03/04 11:59:03
+report_layouts_238: 
+  name: TEMP
+  updated_at: 2011/01/21 13:01:03
+  update_flag: Y
+  trans_flag: A
+  created_by: 2
+  lockedcolumncount: 0
+  layout_type: S
+  lock_version: 7
+  updated_by: 2
+  id: 1885
+  report_id: 888
+  company_id: 1
+  print_orientation: 
+  created_at: 2011/01/18 00:00:00
+report_layouts_076: 
+  name: "By Customer #"
+  updated_at: 2011/01/19 12:50:50
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lockedcolumncount: 0
+  layout_type: S
+  lock_version: 8
+  updated_by: 1
+  id: 1210
+  report_id: 480
+  company_id: 1
+  print_orientation: 
+  created_at: 2010/07/13 00:00:00
+report_layouts_157: 
+  name: "By Lab #"
+  updated_at: 2010/08/31 14:29:07
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  lockedcolumncount: 0
+  layout_type: S
+  lock_version: 20
+  updated_by: 180
+  id: 1467
+  report_id: 680
+  company_id: 1
+  print_orientation: 
+  created_at: 2010/08/19 12:22:50
+report_layouts_183: 
+  name: "By A/c Period #"
+  updated_at: 2011/03/28 16:27:10
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  lockedcolumncount: 0
+  layout_type: S
+  lock_version: 24
+  updated_by: 1
+  id: 1688
+  report_id: 466
+  company_id: 1
+  print_orientation: ""
+  created_at: 2010/09/09 00:00:00
+report_layouts_265: 
+  name: NewTest2
+  updated_at: 2011/03/04 13:03:47
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lockedcolumncount: 2
+  layout_type: U
+  lock_version: 3
+  updated_by: 1
+  id: 1913
+  report_id: 340
+  company_id: 1
+  print_orientation: ""
+  created_at: 2011/03/04 12:05:27
+report_layouts_239: 
+  name: TEMP
+  updated_at: 2011/01/21 12:57:31
+  update_flag: Y
+  trans_flag: A
+  created_by: 2
+  lockedcolumncount: 0
+  layout_type: S
+  lock_version: 4
+  updated_by: 2
+  id: 1886
+  report_id: 889
+  company_id: 1
+  print_orientation: 
+  created_at: 2011/01/18 00:00:00
+report_layouts_077: 
+  name: "By Store #"
+  updated_at: 2011/01/19 12:50:53
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lockedcolumncount: 0
+  layout_type: S
+  lock_version: 6
+  updated_by: 1
+  id: 1211
+  report_id: 480
+  company_id: 1
+  print_orientation: 
+  created_at: 2010/07/13 00:00:00
+report_layouts_158: 
+  name: "By Store #"
+  updated_at: 2010/08/31 14:27:21
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  lockedcolumncount: 0
+  layout_type: S
+  lock_version: 24
+  updated_by: 180
+  id: 1468
+  report_id: 680
+  company_id: 1
+  print_orientation: 
+  created_at: 2010/08/19 12:22:51
+report_layouts_184: 
+  name: "By Account #"
+  updated_at: 2011/03/28 16:27:06
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  lockedcolumncount: 0
+  layout_type: S
+  lock_version: 34
+  updated_by: 1
+  id: 1689
+  report_id: 466
+  company_id: 1
+  print_orientation: ""
+  created_at: 2010/09/09 00:00:00
+report_layouts_266: 
+  name: NewTest3
+  updated_at: 2011/03/04 12:44:03
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lockedcolumncount: 1
+  layout_type: U
+  lock_version: 7
+  updated_by: 1
+  id: 1914
+  report_id: 340
+  company_id: 1
+  print_orientation: ""
+  created_at: 2011/03/04 12:13:01
+report_layouts_078: 
+  name: "By Store #"
+  updated_at: 2011/01/25 14:31:16
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lockedcolumncount: 0
+  layout_type: S
+  lock_version: 4
+  updated_by: 1
+  id: 1212
+  report_id: 445
+  company_id: 1
+  print_orientation: 
+  created_at: 2010/07/13 00:00:00
+report_layouts_159: 
+  name: TEMP
+  updated_at: 2011/01/17 16:47:53
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lockedcolumncount: 0
+  layout_type: S
+  lock_version: 5
+  updated_by: 1
+  id: 1480
+  report_id: 701
+  company_id: 1
+  print_orientation: 
+  created_at: 2010/08/23 00:00:00
+report_layouts_185: 
+  name: "By Bank #"
+  updated_at: 2011/01/21 10:44:03
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  lockedcolumncount: 0
+  layout_type: S
+  lock_version: 30
+  updated_by: 1
+  id: 1690
+  report_id: 466
+  company_id: 1
+  print_orientation: 
+  created_at: 2010/09/09 00:00:00
+report_layouts_267: 
+  name: NewTest5
+  updated_at: 2011/03/04 12:43:55
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lockedcolumncount: 2
+  layout_type: U
+  lock_version: 5
+  updated_by: 1
+  id: 1915
+  report_id: 340
+  company_id: 1
+  print_orientation: ""
+  created_at: 2011/03/04 12:31:13
+report_layouts_079: 
+  name: By A/c Period
+  updated_at: 2011/01/25 14:31:18
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lockedcolumncount: 0
+  layout_type: S
+  lock_version: 6
+  updated_by: 1
+  id: 1213
+  report_id: 445
+  company_id: 1
+  print_orientation: 
+  created_at: 2010/07/13 00:00:00
+report_layouts_186: 
+  name: "By Store #"
+  updated_at: 2011/03/28 16:27:18
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  lockedcolumncount: 0
+  layout_type: S
+  lock_version: 31
+  updated_by: 1
+  id: 1691
+  report_id: 466
+  company_id: 1
+  print_orientation: ""
+  created_at: 2010/09/09 00:00:00
+report_layouts_268: 
+  name: layout001
+  updated_at: 2011/03/04 12:33:29
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lockedcolumncount: 0
+  layout_type: U
+  lock_version: 1
+  updated_by: 1
+  id: 1916
+  report_id: 341
+  company_id: 1
+  print_orientation: P
+  created_at: 2011/03/04 12:33:29
+report_layouts_187: 
+  name: "By A/c Period #"
+  updated_at: 2011/01/19 16:46:23
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  lockedcolumncount: 0
+  layout_type: S
+  lock_version: 29
+  updated_by: 1
+  id: 1692
+  report_id: 383
+  company_id: 1
+  print_orientation: 
+  created_at: 2010/09/09 00:00:00
+report_layouts_269: 
+  name: NewTest9
+  updated_at: 2011/03/04 12:44:51
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lockedcolumncount: 3
+  layout_type: U
+  lock_version: 1
+  updated_by: 1
+  id: 1917
+  report_id: 340
+  company_id: 1
+  print_orientation: ""
+  created_at: 2011/03/04 12:44:51
+report_layouts_188: 
+  name: "By Bank #"
+  updated_at: 2011/01/19 16:46:25
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  lockedcolumncount: 0
+  layout_type: S
+  lock_version: 32
+  updated_by: 1
+  id: 1693
+  report_id: 383
+  company_id: 1
+  print_orientation: 
+  created_at: 2010/09/09 00:00:00
+report_layouts_189: 
+  name: "By Store #"
+  updated_at: 2011/01/19 16:46:26
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  lockedcolumncount: 0
+  layout_type: S
+  lock_version: 27
+  updated_by: 1
+  id: 1694
+  report_id: 383
+  company_id: 1
+  print_orientation: 
+  created_at: 2010/09/09 00:00:00
+report_layouts_001: 
+  name: "By A/c Period #"
+  updated_at: 2011/01/19 17:04:44
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lockedcolumncount: 0
+  layout_type: S
+  lock_version: 9
+  updated_by: 1
+  id: 764
+  report_id: 382
+  company_id: 1
+  print_orientation: 
+  created_at: 2010/06/17 00:00:00
+report_layouts_002: 
+  name: "By Store #"
+  updated_at: 2011/03/11 17:37:39
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lockedcolumncount: 0
+  layout_type: S
+  lock_version: 107
+  updated_by: 1
+  id: 767
+  report_id: 342
+  company_id: 1
+  print_orientation: L
+  created_at: 2010/06/17 00:00:00
+report_layouts_003: 
+  name: TEMP
+  updated_at: 2010/08/07 11:23:23
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  lockedcolumncount: 0
+  layout_type: S
+  lock_version: 11
+  updated_by: 100
+  id: 785
+  report_id: 420
+  company_id: 1
+  print_orientation: 
+  created_at: 2010/06/17 00:00:00
+report_layouts_110: 
+  name: "By Store #"
+  updated_at: 2011/02/24 11:25:15
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lockedcolumncount: 0
+  layout_type: S
+  lock_version: 9
+  updated_by: 1
+  id: 1323
+  report_id: 541
+  company_id: 1
+  print_orientation: L
+  created_at: 2010/07/24 00:00:00
+report_layouts_004: 
+  name: TEMP
+  updated_at: 2010/08/07 11:58:16
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  lockedcolumncount: 0
+  layout_type: S
+  lock_version: 19
+  updated_by: 100
+  id: 786
+  report_id: 421
+  company_id: 1
+  print_orientation: 
+  created_at: 2010/06/17 00:00:00
+report_layouts_030: 
+  name: By A/c Period
+  updated_at: 2011/01/17 16:15:23
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lockedcolumncount: 0
+  layout_type: S
+  lock_version: 25
+  updated_by: 1
+  id: 955
+  report_id: 283
+  company_id: 1
+  print_orientation: 
+  created_at: 2010/06/21 00:00:00
+report_layouts_111: 
+  name: "By Diam Category #"
+  updated_at: 2011/02/24 11:46:33
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lockedcolumncount: 0
+  layout_type: S
+  lock_version: 13
+  updated_by: 1
+  id: 1324
+  report_id: 541
+  company_id: 1
+  print_orientation: L
+  created_at: 2010/07/24 00:00:00
+report_layouts_005: 
+  name: "By Account #"
+  updated_at: 2011/01/19 15:47:39
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  lockedcolumncount: 0
+  layout_type: S
+  lock_version: 11
+  updated_by: 1
+  id: 807
+  report_id: 464
+  company_id: 1
+  print_orientation: 
+  created_at: 2010/06/18 00:00:00
+report_layouts_031: 
+  name: "By Vendor #"
+  updated_at: 2011/01/17 16:15:24
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lockedcolumncount: 0
+  layout_type: S
+  lock_version: 27
+  updated_by: 1
+  id: 956
+  report_id: 283
+  company_id: 1
+  print_orientation: 
+  created_at: 2010/06/21 00:00:00
+report_layouts_112: 
+  name: "By A/c Period #"
+  updated_at: 2011/02/24 11:46:36
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lockedcolumncount: 0
+  layout_type: S
+  lock_version: 7
+  updated_by: 1
+  id: 1325
+  report_id: 541
+  company_id: 1
+  print_orientation: L
+  created_at: 2010/07/24 00:00:00
+report_layouts_006: 
+  name: "By Account #"
+  updated_at: 2010/08/07 12:42:16
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  lockedcolumncount: 0
+  layout_type: S
+  lock_version: 10
+  updated_by: 100
+  id: 820
+  report_id: 467
+  company_id: 1
+  print_orientation: 
+  created_at: 2010/06/18 00:00:00
+report_layouts_032: 
+  name: "By Vendor #"
+  updated_at: 2011/02/21 11:49:06
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lockedcolumncount: 0
+  layout_type: S
+  lock_version: 39
+  updated_by: 1
+  id: 957
+  report_id: 282
+  company_id: 1
+  print_orientation: 
+  created_at: 2010/06/21 00:00:00
+report_layouts_113: 
+  name: "By Store #"
+  updated_at: 2011/01/31 12:37:49
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  lockedcolumncount: 0
+  layout_type: S
+  lock_version: 4
+  updated_by: 1
+  id: 1326
+  report_id: 543
+  company_id: 1
+  print_orientation: 
+  created_at: 2010/07/24 00:00:00
+report_layouts_220: 
+  name: "By Retailer #"
+  updated_at: 2011/01/28 12:37:29
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lockedcolumncount: 0
+  layout_type: S
+  lock_version: 11
+  updated_by: 1
+  id: 1862
+  report_id: 882
+  company_id: 1
+  print_orientation: 
+  created_at: 2010/11/30 00:00:00
+report_layouts_033: 
+  name: By A/c Period
+  updated_at: 2011/02/17 10:38:12
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lockedcolumncount: 0
+  layout_type: S
+  lock_version: 61
+  updated_by: 1
+  id: 958
+  report_id: 282
+  company_id: 1
+  print_orientation: 
+  created_at: 2010/06/21 00:00:00
+report_layouts_114: 
+  name: "By Diam Category #"
+  updated_at: 2011/01/31 12:37:51
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  lockedcolumncount: 0
+  layout_type: S
+  lock_version: 6
+  updated_by: 1
+  id: 1327
+  report_id: 543
+  company_id: 1
+  print_orientation: 
+  created_at: 2010/07/24 00:00:00
+report_layouts_140: 
+  name: "By A/c Period #"
+  updated_at: 2011/01/19 16:21:24
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lockedcolumncount: 0
+  layout_type: S
+  lock_version: 9
+  updated_by: 1
+  id: 1423
+  report_id: 401
+  company_id: 1
+  print_orientation: 
+  created_at: 2010/08/10 00:00:00
+report_layouts_221: 
+  name: "By A/c Period #"
+  updated_at: 2011/01/28 12:37:30
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lockedcolumncount: 0
+  layout_type: S
+  lock_version: 16
+  updated_by: 1
+  id: 1863
+  report_id: 882
+  company_id: 1
+  print_orientation: 
+  created_at: 2010/11/30 00:00:00
+report_layouts_007: 
+  name: "By Account #"
+  updated_at: 2011/01/19 15:43:55
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lockedcolumncount: 0
+  layout_type: S
+  lock_version: 57
+  updated_by: 1
+  id: 822
+  report_id: 463
+  company_id: 1
+  print_orientation: 
+  created_at: 2010/06/18 00:00:00
+report_layouts_034: 
+  name: By A/c Period
+  updated_at: 2011/01/17 16:32:26
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lockedcolumncount: 0
+  layout_type: S
+  lock_version: 20
+  updated_by: 1
+  id: 959
+  report_id: 285
+  company_id: 1
+  print_orientation: 
+  created_at: 2010/06/21 00:00:00
+report_layouts_060: 
+  name: "By Customer #"
+  updated_at: 2011/01/31 11:04:32
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lockedcolumncount: 0
+  layout_type: S
+  lock_version: 26
+  updated_by: 1
+  id: 1160
+  report_id: 441
+  company_id: 1
+  print_orientation: 
+  created_at: 2010/07/12 00:00:00
+report_layouts_115: 
+  name: "By A/c Period #"
+  updated_at: 2011/01/31 12:37:53
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  lockedcolumncount: 0
+  layout_type: S
+  lock_version: 4
+  updated_by: 1
+  id: 1328
+  report_id: 543
+  company_id: 1
+  print_orientation: 
+  created_at: 2010/07/24 00:00:00
+report_layouts_141: 
+  name: "By Store #"
+  updated_at: 2011/01/19 18:12:11
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lockedcolumncount: 0
+  layout_type: S
+  lock_version: 8
+  updated_by: 1
+  id: 1424
+  report_id: 401
+  company_id: 1
+  print_orientation: 
+  created_at: 2010/08/10 00:00:00
+report_layouts_222: 
+  name: "By Retailer #"
+  updated_at: 2011/01/05 12:33:48
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lockedcolumncount: 0
+  layout_type: S
+  lock_version: 9
+  updated_by: 2
+  id: 1866
+  report_id: 881
+  company_id: 1
+  print_orientation: 
+  created_at: 2010/11/30 00:00:00
+report_layouts_008: 
+  name: "By Vendor #"
+  updated_at: 2011/01/17 16:44:10
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lockedcolumncount: 0
+  layout_type: S
+  lock_version: 31
+  updated_by: 1
+  id: 848
+  report_id: 321
+  company_id: 1
+  print_orientation: 
+  created_at: 2010/06/19 00:00:00
+report_layouts_223: 
+  name: "By A/c Period #"
+  updated_at: 2011/01/19 18:09:34
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lockedcolumncount: 0
+  layout_type: S
+  lock_version: 13
+  updated_by: 1
+  id: 1867
+  report_id: 881
+  company_id: 1
+  print_orientation: 
+  created_at: 2010/11/30 00:00:00
+report_layouts_061: 
+  name: By A/c Period
+  updated_at: 2011/01/31 11:04:34
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lockedcolumncount: 0
+  layout_type: S
+  lock_version: 13
+  updated_by: 1
+  id: 1180
+  report_id: 441
+  company_id: 1
+  print_orientation: 
+  created_at: 2010/07/12 00:00:00
+report_layouts_116: 
+  name: "By Store #"
+  updated_at: 2011/02/24 11:26:47
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lockedcolumncount: 0
+  layout_type: S
+  lock_version: 6
+  updated_by: 1
+  id: 1329
+  report_id: 542
+  company_id: 1
+  print_orientation: L
+  created_at: 2010/07/24 00:00:00
+report_layouts_142: 
+  name: "By Vendor #"
+  updated_at: 2011/01/19 18:12:14
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  lockedcolumncount: 0
+  layout_type: S
+  lock_version: 8
+  updated_by: 1
+  id: 1425
+  report_id: 401
+  company_id: 1
+  print_orientation: 
+  created_at: 2010/08/10 00:00:00
+report_layouts_009: 
+  name: By A/c Period
+  updated_at: 2011/03/22 18:58:54
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lockedcolumncount: 0
+  layout_type: S
+  lock_version: 64
+  updated_by: 1
+  id: 865
+  report_id: 284
+  company_id: 1
+  print_orientation: L
+  created_at: 2010/06/20 00:00:00
+report_layouts_035: 
+  name: "By Vendor #"
+  updated_at: 2011/01/19 17:44:42
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lockedcolumncount: 0
+  layout_type: S
+  lock_version: 24
+  updated_by: 1
+  id: 960
+  report_id: 285
+  company_id: 1
+  print_orientation: 
+  created_at: 2010/06/21 00:00:00
+report_layouts_250: 
+  name: no group
+  updated_at: 2011/02/16 18:11:12
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lockedcolumncount: 0
+  layout_type: U
+  lock_version: 33
+  updated_by: 1
+  id: 1898
+  report_id: 282
+  company_id: 1
+  print_orientation: 
+  created_at: 2011/02/03 11:11:18
+report_layouts_224: 
+  name: By Check Date
+  updated_at: 2011/01/19 18:09:36
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lockedcolumncount: 0
+  layout_type: S
+  lock_version: 15
+  updated_by: 1
+  id: 1868
+  report_id: 881
+  company_id: 1
+  print_orientation: 
+  created_at: 2010/11/30 00:00:00
+report_layouts_062: 
+  name: "By Store #"
+  updated_at: 2011/01/31 11:04:37
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lockedcolumncount: 0
+  layout_type: S
+  lock_version: 11
+  updated_by: 1
+  id: 1181
+  report_id: 441
+  company_id: 1
+  print_orientation: 
+  created_at: 2010/07/12 00:00:00
+report_layouts_117: 
+  name: "By Lot #"
+  updated_at: 2011/02/24 11:46:50
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lockedcolumncount: 0
+  layout_type: S
+  lock_version: 10
+  updated_by: 1
+  id: 1330
+  report_id: 542
+  company_id: 1
+  print_orientation: L
+  created_at: 2010/07/24 14:36:02
+report_layouts_143: 
+  name: "By A/c Period #"
+  updated_at: 2011/01/19 16:11:16
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lockedcolumncount: 0
+  layout_type: S
+  lock_version: 10
+  updated_by: 1
+  id: 1426
+  report_id: 403
+  company_id: 1
+  print_orientation: 
+  created_at: 2010/08/10 00:00:00
+report_layouts_036: 
+  name: By A/c Period
+  updated_at: 2011/01/17 16:38:18
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lockedcolumncount: 0
+  layout_type: S
+  lock_version: 22
+  updated_by: 1
+  id: 961
+  report_id: 286
+  company_id: 1
+  print_orientation: 
+  created_at: 2010/06/21 00:00:00
+report_layouts_251: 
+  name: two group
+  updated_at: 2011/02/21 11:49:43
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lockedcolumncount: 0
+  layout_type: U
+  lock_version: 29
+  updated_by: 1
+  id: 1899
+  report_id: 282
+  company_id: 1
+  print_orientation: 
+  created_at: 2011/02/03 11:12:01
+report_layouts_225: 
+  name: Commission Date
+  updated_at: 2011/01/19 18:09:41
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lockedcolumncount: 0
+  layout_type: S
+  lock_version: 11
+  updated_by: 1
+  id: 1869
+  report_id: 881
+  company_id: 1
+  print_orientation: 
+  created_at: 2010/11/30 00:00:00
+report_layouts_118: 
+  name: "By Store #"
+  updated_at: 2011/02/24 11:26:13
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lockedcolumncount: 0
+  layout_type: S
+  lock_version: 7
+  updated_by: 1
+  id: 1331
+  report_id: 582
+  company_id: 1
+  print_orientation: L
+  created_at: 2010/07/24 00:00:00
+report_layouts_144: 
+  name: "By Store #"
+  updated_at: 2011/01/19 16:11:18
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lockedcolumncount: 0
+  layout_type: S
+  lock_version: 14
+  updated_by: 1
+  id: 1427
+  report_id: 403
+  company_id: 1
+  print_orientation: 
+  created_at: 2010/08/10 00:00:00
+report_layouts_170: 
+  name: "By Lot #"
+  updated_at: 2011/02/01 15:25:38
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lockedcolumncount: 0
+  layout_type: S
+  lock_version: 39
+  updated_by: 1
+  id: 1641
+  report_id: 780
+  company_id: 1
+  print_orientation: 
+  created_at: 2010/09/07 00:00:00
+report_layouts_037: 
+  name: "By Vendor #"
+  updated_at: 2011/01/17 16:38:19
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lockedcolumncount: 0
+  layout_type: S
+  lock_version: 24
+  updated_by: 1
+  id: 962
+  report_id: 286
+  company_id: 1
+  print_orientation: 
+  created_at: 2010/06/21 00:00:00
+report_layouts_063: 
+  name: "By A/c Period #"
+  updated_at: 2011/01/19 12:18:18
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lockedcolumncount: 0
+  layout_type: S
+  lock_version: 20
+  updated_by: 1
+  id: 1182
+  report_id: 440
+  company_id: 1
+  print_orientation: 
+  created_at: 2010/07/12 00:00:00
+report_layouts_252: 
+  name: three group
+  updated_at: 2011/02/16 14:54:22
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lockedcolumncount: 0
+  layout_type: U
+  lock_version: 9
+  updated_by: 1
+  id: 1900
+  report_id: 282
+  company_id: 1
+  print_orientation: 
+  created_at: 2011/02/03 11:12:28
+report_layouts_226: 
+  name: "By Packet #"
+  updated_at: 2011/01/05 12:03:42
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lockedcolumncount: 0
+  layout_type: S
+  lock_version: 4
+  updated_by: 2
+  id: 1870
+  report_id: 885
+  company_id: 1
+  print_orientation: 
+  created_at: 2010/12/01 00:00:00
+report_layouts_090: 
+  name: "By Vendor #"
+  updated_at: 2011/01/19 12:02:51
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lockedcolumncount: 0
+  layout_type: S
+  lock_version: 5
+  updated_by: 1
+  id: 1243
+  report_id: 481
+  company_id: 1
+  print_orientation: 
+  created_at: 2010/07/14 00:00:00
+report_layouts_119: 
+  name: "By Diam Category #"
+  updated_at: 2011/02/24 11:26:15
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lockedcolumncount: 0
+  layout_type: S
+  lock_version: 5
+  updated_by: 1
+  id: 1332
+  report_id: 582
+  company_id: 1
+  print_orientation: L
+  created_at: 2010/07/24 00:00:00
+report_layouts_145: 
+  name: "By Vendor #"
+  updated_at: 2011/01/19 16:11:19
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lockedcolumncount: 0
+  layout_type: S
+  lock_version: 12
+  updated_by: 1
+  id: 1428
+  report_id: 403
+  company_id: 1
+  print_orientation: 
+  created_at: 2010/08/10 00:00:00
+report_layouts_171: 
+  name: "By Diam Category #"
+  updated_at: 2011/01/31 14:51:58
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lockedcolumncount: 0
+  layout_type: S
+  lock_version: 12
+  updated_by: 1
+  id: 1660
+  report_id: 800
+  company_id: 1
+  print_orientation: 
+  created_at: 2010/09/08 00:00:00
+report_layouts_038: 
+  name: By A/c Period
+  updated_at: 2011/01/17 16:44:12
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lockedcolumncount: 0
+  layout_type: S
+  lock_version: 29
+  updated_by: 1
+  id: 963
+  report_id: 321
+  company_id: 1
+  print_orientation: 
+  created_at: 2010/06/21 00:00:00
+report_layouts_064: 
+  name: "By Customer #"
+  updated_at: 2011/01/19 12:18:21
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lockedcolumncount: 0
+  layout_type: S
+  lock_version: 15
+  updated_by: 1
+  id: 1183
+  report_id: 440
+  company_id: 1
+  print_orientation: 
+  created_at: 2010/07/12 00:00:00
+report_layouts_253: 
+  name: No Group
+  updated_at: 2011/03/01 11:52:56
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lockedcolumncount: 0
+  layout_type: U
+  lock_version: 5
+  updated_by: 1
+  id: 1901
+  report_id: 482
+  company_id: 1
+  print_orientation: 
+  created_at: 2011/02/09 16:35:31
+report_layouts_227: 
+  name: print
+  updated_at: 2011/01/18 18:10:02
+  update_flag: Y
+  trans_flag: A
+  created_by: 2
+  lockedcolumncount: 0
+  layout_type: U
+  lock_version: 7
+  updated_by: 1
+  id: 1874
+  report_id: 381
+  company_id: 1
+  print_orientation: 
+  created_at: 2010/12/28 11:12:21
+report_layouts_146: 
+  name: "By Store #"
+  updated_at: 2011/01/25 11:49:18
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lockedcolumncount: 0
+  layout_type: S
+  lock_version: 33
+  updated_by: 1
+  id: 1440
+  report_id: 641
+  company_id: 1
+  print_orientation: 
+  created_at: 2010/08/16 00:00:00
+report_layouts_172: 
+  name: "By Store #"
+  updated_at: 2011/01/31 14:52:37
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lockedcolumncount: 0
+  layout_type: S
+  lock_version: 13
+  updated_by: 1
+  id: 1661
+  report_id: 800
+  company_id: 1
+  print_orientation: 
+  created_at: 2010/09/08 00:00:00
+report_layouts_039: 
+  name: By A/c Period
+  updated_at: 2011/01/14 16:32:49
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  lockedcolumncount: 0
+  layout_type: S
+  lock_version: 31
+  updated_by: 1
+  id: 964
+  report_id: 320
+  company_id: 1
+  print_orientation: 
+  created_at: 2010/06/21 00:00:00
+report_layouts_065: 
+  name: "By Store #"
+  updated_at: 2011/01/19 12:18:22
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  lockedcolumncount: 0
+  layout_type: S
+  lock_version: 9
+  updated_by: 1
+  id: 1184
+  report_id: 440
+  company_id: 1
+  print_orientation: 
+  created_at: 2010/07/12 00:00:00
+report_layouts_091: 
+  name: By A/c Period
+  updated_at: 2011/01/19 12:02:55
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lockedcolumncount: 0
+  layout_type: S
+  lock_version: 7
+  updated_by: 1
+  id: 1244
+  report_id: 481
+  company_id: 1
+  print_orientation: 
+  created_at: 2010/07/14 00:00:00
+report_layouts_280: 
+  name: "By A/c Period #"
+  updated_at: 2011/03/17 15:09:53
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lockedcolumncount: 
+  layout_type: S
+  lock_version: 0
+  updated_by: 1
+  id: 1928
+  report_id: 899
+  company_id: 1
+  print_orientation: P
+  created_at: 2011/03/17 15:09:53
+report_layouts_254: 
+  name: one group with summary
+  updated_at: 2011/02/17 12:57:41
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lockedcolumncount: 0
+  layout_type: U
+  lock_version: 11
+  updated_by: 1
+  id: 1902
+  report_id: 282
+  company_id: 1
+  print_orientation: 
+  created_at: 2011/02/10 10:58:01
+report_layouts_228: 
+  name: print
+  updated_at: 2011/01/20 12:17:27
+  update_flag: Y
+  trans_flag: A
+  created_by: 2
+  lockedcolumncount: 0
+  layout_type: U
+  lock_version: 7
+  updated_by: 1
+  id: 1875
+  report_id: 380
+  company_id: 1
+  print_orientation: 
+  created_at: 2010/12/28 11:16:10
+report_layouts_147: 
+  name: "By Item Category #"
+  updated_at: 2011/01/25 11:49:18
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lockedcolumncount: 0
+  layout_type: S
+  lock_version: 37
+  updated_by: 1
+  id: 1441
+  report_id: 641
+  company_id: 1
+  print_orientation: 
+  created_at: 2010/08/16 00:00:00
+report_layouts_173: 
+  name: "By Store #"
+  updated_at: 2011/01/31 14:06:56
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lockedcolumncount: 0
+  layout_type: S
+  lock_version: 7
+  updated_by: 1
+  id: 1662
+  report_id: 801
+  company_id: 1
+  print_orientation: 
+  created_at: 2010/09/08 00:00:00
+report_layouts_066: 
+  name: "By Customer #"
+  updated_at: 2011/01/25 17:52:19
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lockedcolumncount: 0
+  layout_type: S
+  lock_version: 14
+  updated_by: 1
+  id: 1200
+  report_id: 442
+  company_id: 1
+  print_orientation: 
+  created_at: 2010/07/12 00:00:00
+report_layouts_092: 
+  name: "By Store #"
+  updated_at: 2011/01/19 12:03:00
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lockedcolumncount: 0
+  layout_type: S
+  lock_version: 7
+  updated_by: 1
+  id: 1245
+  report_id: 481
+  company_id: 1
+  print_orientation: 
+  created_at: 2010/07/14 00:00:00
+report_layouts_281: 
+  name: "By Vendor #"
+  updated_at: 2011/03/17 15:09:55
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lockedcolumncount: 
+  layout_type: S
+  lock_version: 0
+  updated_by: 1
+  id: 1929
+  report_id: 899
+  company_id: 1
+  print_orientation: P
+  created_at: 2011/03/17 15:09:55
+report_layouts_255: 
+  name: User Layout
+  updated_at: 2011/03/01 12:19:09
+  update_flag: Y
+  trans_flag: D
+  created_by: 1
+  lockedcolumncount: 0
+  layout_type: S
+  lock_version: 10
+  updated_by: 1
+  id: 1903
+  report_id: 482
+  company_id: 1
+  print_orientation: P
+  created_at: 2011/03/01 00:00:00
+report_layouts_229: 
+  name: print
+  updated_at: 2010/12/28 11:19:23
+  update_flag: Y
+  trans_flag: A
+  created_by: 2
+  lockedcolumncount: 0
+  layout_type: U
+  lock_version: 1
+  updated_by: 2
+  id: 1876
+  report_id: 402
+  company_id: 1
+  print_orientation: 
+  created_at: 2010/12/28 11:19:23
+report_layouts_148: 
+  name: "By Item Category #"
+  updated_at: 2011/01/19 11:01:46
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lockedcolumncount: 0
+  layout_type: S
+  lock_version: 18
+  updated_by: 1
+  id: 1442
+  report_id: 640
+  company_id: 1
+  print_orientation: 
+  created_at: 2010/08/16 00:00:00
+report_layouts_174: 
+  name: "By Diam Category #"
+  updated_at: 2011/01/31 14:06:56
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lockedcolumncount: 0
+  layout_type: S
+  lock_version: 4
+  updated_by: 1
+  id: 1663
+  report_id: 801
+  company_id: 1
+  print_orientation: 
+  created_at: 2010/09/08 00:00:00
+report_layouts_067: 
+  name: By A/c Period
+  updated_at: 2011/01/25 17:52:21
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lockedcolumncount: 0
+  layout_type: S
+  lock_version: 14
+  updated_by: 1
+  id: 1201
+  report_id: 442
+  company_id: 1
+  print_orientation: 
+  created_at: 2010/07/12 00:00:00
+report_layouts_093: 
+  name: By A/c Period
+  updated_at: 2011/03/14 19:10:34
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lockedcolumncount: 0
+  layout_type: S
+  lock_version: 57
+  updated_by: 1
+  id: 1246
+  report_id: 341
+  company_id: 1
+  print_orientation: L
+  created_at: 2010/07/14 00:00:00
+report_layouts_282: 
+  name: "By Customer #"
+  updated_at: 2011/03/17 16:53:11
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lockedcolumncount: 
+  layout_type: S
+  lock_version: 1
+  updated_by: 1
+  id: 1930
+  report_id: 898
+  company_id: 1
+  print_orientation: P
+  created_at: 2011/03/17 00:00:00
+report_layouts_256: 
+  name: "By Item #"
+  updated_at: 2011/03/01 12:35:52
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lockedcolumncount: 0
+  layout_type: U
+  lock_version: 11
+  updated_by: 1
+  id: 1904
+  report_id: 482
+  company_id: 1
+  print_orientation: ""
+  created_at: 2011/03/01 12:22:39
+report_layouts_175: 
+  name: "By A/c Period #"
+  updated_at: 2011/01/19 18:13:57
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  lockedcolumncount: 0
+  layout_type: S
+  lock_version: 66
+  updated_by: 1
+  id: 1680
+  report_id: 384
+  company_id: 1
+  print_orientation: 
+  created_at: 2010/09/09 00:00:00
+report_layouts_068: 
+  name: "By Store #"
+  updated_at: 2011/01/25 17:52:23
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lockedcolumncount: 0
+  layout_type: S
+  lock_version: 14
+  updated_by: 1
+  id: 1202
+  report_id: 442
+  company_id: 1
+  print_orientation: 
+  created_at: 2010/07/12 00:00:00
+report_layouts_094: 
+  name: "By Item Category #"
+  updated_at: 2011/03/31 17:36:57
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lockedcolumncount: 0
+  layout_type: S
+  lock_version: 58
+  updated_by: 1
+  id: 1247
+  report_id: 341
+  company_id: 1
+  print_orientation: L
+  created_at: 2010/07/14 00:00:00
+report_layouts_149: 
+  name: "By Store #"
+  updated_at: 2011/01/19 17:32:28
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lockedcolumncount: 0
+  layout_type: S
+  lock_version: 22
+  updated_by: 1
+  id: 1443
+  report_id: 640
+  company_id: 1
+  print_orientation: 
+  created_at: 2010/08/16 00:00:00
+report_layouts_283: 
+  name: "By A/c Period #"
+  updated_at: 2011/03/17 16:53:13
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lockedcolumncount: 
+  layout_type: S
+  lock_version: 1
+  updated_by: 1
+  id: 1931
+  report_id: 898
+  company_id: 1
+  print_orientation: P
+  created_at: 2011/03/17 00:00:00
+report_layouts_257: 
+  name: test
+  updated_at: 2011/03/02 19:24:57
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lockedcolumncount: 0
+  layout_type: U
+  lock_version: 1
+  updated_by: 1
+  id: 1905
+  report_id: 500
+  company_id: 1
+  print_orientation: P
+  created_at: 2011/03/02 19:24:57
+report_layouts_176: 
+  name: "By Account #"
+  updated_at: 2011/01/19 18:13:53
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  lockedcolumncount: 0
+  layout_type: S
+  lock_version: 57
+  updated_by: 1
+  id: 1681
+  report_id: 384
+  company_id: 1
+  print_orientation: 
+  created_at: 2010/09/09 00:00:00
+report_layouts_069: 
+  name: "By Store #"
+  updated_at: 2011/01/19 12:38:46
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lockedcolumncount: 0
+  layout_type: S
+  lock_version: 4
+  updated_by: 1
+  id: 1203
+  report_id: 443
+  company_id: 1
+  print_orientation: 
+  created_at: 2010/07/12 00:00:00
+report_layouts_095: 
+  name: "By Store #"
+  updated_at: 2011/03/31 17:00:51
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lockedcolumncount: 0
+  layout_type: S
+  lock_version: 48
+  updated_by: 1
+  id: 1248
+  report_id: 341
+  company_id: 1
+  print_orientation: L
+  created_at: 2010/07/14 00:00:00
+report_layouts_284: 
+  name: "By A/c Period #"
+  updated_at: 2011/03/22 12:10:10
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lockedcolumncount: 
+  layout_type: S
+  lock_version: 2
+  updated_by: 1
+  id: 1932
+  report_id: 900
+  company_id: 1
+  print_orientation: P
+  created_at: 2011/03/22 11:35:59
+report_layouts_258: 
+  name: test
+  updated_at: 2011/03/04 12:28:56
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lockedcolumncount: 0
+  layout_type: U
+  lock_version: 17
+  updated_by: 1
+  id: 1906
+  report_id: 340
+  company_id: 1
+  print_orientation: L
+  created_at: 2011/03/03 16:12:49
+report_layouts_096: 
+  name: By A/c Period
+  updated_at: 2011/03/14 19:08:14
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lockedcolumncount: 0
+  layout_type: S
+  lock_version: 46
+  updated_by: 1
+  id: 1249
+  report_id: 340
+  company_id: 1
+  print_orientation: L
+  created_at: 2010/07/14 00:00:00
+report_layouts_177: 
+  name: "By Bank #"
+  updated_at: 2011/01/19 16:45:14
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  lockedcolumncount: 0
+  layout_type: S
+  lock_version: 54
+  updated_by: 1
+  id: 1682
+  report_id: 384
+  company_id: 1
+  print_orientation: 
+  created_at: 2010/09/09 00:00:00
+report_layouts_285: 
+  name: "By Packet #"
+  updated_at: 2011/03/22 12:10:06
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lockedcolumncount: 
+  layout_type: S
+  lock_version: 2
+  updated_by: 1
+  id: 1933
+  report_id: 900
+  company_id: 1
+  print_orientation: P
+  created_at: 2011/03/22 11:36:00
+report_layouts_259: 
+  name: test1
+  updated_at: 2011/03/09 11:53:49
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lockedcolumncount: 0
+  layout_type: U
+  lock_version: 5
+  updated_by: 1
+  id: 1907
+  report_id: 340
+  company_id: 1
+  print_orientation: ""
+  created_at: 2011/03/03 16:57:47
+report_layouts_097: 
+  name: "By Item Category #"
+  updated_at: 2011/03/14 19:08:10
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lockedcolumncount: 0
+  layout_type: S
+  lock_version: 51
+  updated_by: 1
+  id: 1250
+  report_id: 340
+  company_id: 1
+  print_orientation: L
+  created_at: 2010/07/14 00:00:00
+report_layouts_178: 
+  name: "By Store #"
+  updated_at: 2011/01/19 18:13:43
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  lockedcolumncount: 0
+  layout_type: S
+  lock_version: 50
+  updated_by: 1
+  id: 1683
+  report_id: 384
+  company_id: 1
+  print_orientation: 
+  created_at: 2010/09/09 00:00:00
+report_layouts_286: 
+  name: "By Retailer #"
+  updated_at: 2011/03/22 12:10:08
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lockedcolumncount: 
+  layout_type: S
+  lock_version: 2
+  updated_by: 1
+  id: 1934
+  report_id: 900
+  company_id: 1
+  print_orientation: P
+  created_at: 2011/03/22 11:36:01
+report_layouts_098: 
+  name: "By Store #"
+  updated_at: 2011/03/09 11:55:25
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lockedcolumncount: 0
+  layout_type: S
+  lock_version: 48
+  updated_by: 1
+  id: 1251
+  report_id: 340
+  company_id: 1
+  print_orientation: L
+  created_at: 2010/07/14 00:00:00
+report_layouts_179: 
+  name: "By A/c Period #"
+  updated_at: 2011/01/19 16:45:51
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  lockedcolumncount: 0
+  layout_type: S
+  lock_version: 23
+  updated_by: 1
+  id: 1684
+  report_id: 385
+  company_id: 1
+  print_orientation: 
+  created_at: 2010/09/09 00:00:00
+report_layouts_287: 
+  name: "By A/c Period #"
+  updated_at: 2011/03/22 12:14:13
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lockedcolumncount: 
+  layout_type: S
+  lock_version: 1
+  updated_by: 1
+  id: 1935
+  report_id: 901
+  company_id: 1
+  print_orientation: P
+  created_at: 2011/03/22 00:00:00
+report_layouts_099: 
+  name: "By Item Category #"
+  updated_at: 2011/02/24 11:18:19
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lockedcolumncount: 0
+  layout_type: S
+  lock_version: 20
+  updated_by: 1
+  id: 1252
+  report_id: 581
+  company_id: 1
+  print_orientation: L
+  created_at: 2010/07/14 00:00:00
+report_layouts_288: 
+  name: "By Retailer #"
+  updated_at: 2011/03/22 12:14:14
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lockedcolumncount: 
+  layout_type: S
+  lock_version: 1
+  updated_by: 1
+  id: 1936
+  report_id: 901
+  company_id: 1
+  print_orientation: P
+  created_at: 2011/03/22 00:00:00
+report_layouts_289: 
+  name: "By Packet #"
+  updated_at: 2011/03/22 12:14:15
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lockedcolumncount: 
+  layout_type: S
+  lock_version: 1
+  updated_by: 1
+  id: 1937
+  report_id: 901
+  company_id: 1
+  print_orientation: P
+  created_at: 2011/03/22 00:00:00
+report_layouts_100: 
+  name: "By A/c Period #"
+  updated_at: 2011/02/24 11:18:20
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lockedcolumncount: 0
+  layout_type: S
+  lock_version: 14
+  updated_by: 1
+  id: 1253
+  report_id: 581
+  company_id: 1
+  print_orientation: L
+  created_at: 2010/07/14 00:00:00
+report_layouts_020: 
+  name: By A/c Period
+  updated_at: 2011/01/19 18:08:13
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  lockedcolumncount: 0
+  layout_type: S
+  lock_version: 42
+  updated_by: 1
+  id: 945
+  report_id: 400
+  company_id: 1
+  print_orientation: 
+  created_at: 2010/06/21 00:00:00
+report_layouts_101: 
+  name: "By Store #"
+  updated_at: 2011/02/24 11:18:22
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lockedcolumncount: 0
+  layout_type: S
+  lock_version: 25
+  updated_by: 1
+  id: 1254
+  report_id: 581
+  company_id: 1
+  print_orientation: L
+  created_at: 2010/07/14 00:00:00
+report_layouts_021: 
+  name: "By Customer #"
+  updated_at: 2011/01/19 18:08:09
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  lockedcolumncount: 0
+  layout_type: S
+  lock_version: 42
+  updated_by: 1
+  id: 946
+  report_id: 400
+  company_id: 1
+  print_orientation: 
+  created_at: 2010/06/21 00:00:00
+report_layouts_102: 
+  name: By A/c Period
+  updated_at: 2011/03/22 15:48:40
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lockedcolumncount: 0
+  layout_type: S
+  lock_version: 53
+  updated_by: 1
+  id: 1255
+  report_id: 482
+  company_id: 1
+  print_orientation: ""
+  created_at: 2010/07/14 00:00:00
+report_layouts_022: 
+  name: By A/c Period
+  updated_at: 2011/01/12 15:10:11
+  update_flag: Y
+  trans_flag: A
+  created_by: 2
+  lockedcolumncount: 0
+  layout_type: S
+  lock_version: 26
+  updated_by: 1
+  id: 947
+  report_id: 265
+  company_id: 1
+  print_orientation: 
+  created_at: 2010/06/21 00:00:00
+report_layouts_103: 
+  name: "By Item Category #"
+  updated_at: 2011/03/07 12:56:02
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lockedcolumncount: 0
+  layout_type: S
+  lock_version: 53
+  updated_by: 1
+  id: 1256
+  report_id: 482
+  company_id: 1
+  print_orientation: ""
+  created_at: 2010/07/14 00:00:00
+report_layouts_210: 
+  name: "By Store # (Print Version)"
+  updated_at: 2011/01/18 14:17:46
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  lockedcolumncount: 0
+  layout_type: S
+  lock_version: 8
+  updated_by: 1
+  id: 1807
+  report_id: 400
+  company_id: 1
+  print_orientation: 
+  created_at: 2010/10/05 00:00:00
+report_layouts_023: 
+  name: "By Customer #"
+  updated_at: 2011/01/12 15:10:13
+  update_flag: Y
+  trans_flag: A
+  created_by: 2
+  lockedcolumncount: 0
+  layout_type: S
+  lock_version: 30
+  updated_by: 1
+  id: 948
+  report_id: 265
+  company_id: 1
+  print_orientation: 
+  created_at: 2010/06/21 00:00:00
+report_layouts_104: 
+  name: "By Store #"
+  updated_at: 2011/03/07 12:56:03
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lockedcolumncount: 0
+  layout_type: S
+  lock_version: 59
+  updated_by: 1
+  id: 1257
+  report_id: 482
+  company_id: 1
+  print_orientation: ""
+  created_at: 2010/07/14 00:00:00
+report_layouts_130: 
+  name: "By Cust Category #"
+  updated_at: 2011/03/22 14:46:51
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lockedcolumncount: 0
+  layout_type: S
+  lock_version: 12
+  updated_by: 1
+  id: 1383
+  report_id: 500
+  company_id: 1
+  print_orientation: ""
+  created_at: 2010/08/07 00:00:00
+report_layouts_211: 
+  name: By A/c Period (Print Version)
+  updated_at: 2011/01/07 12:05:40
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  lockedcolumncount: 0
+  layout_type: S
+  lock_version: 10
+  updated_by: 2
+  id: 1808
+  report_id: 264
+  company_id: 1
+  print_orientation: 
+  created_at: 2010/10/05 00:00:00
+report_layouts_024: 
+  name: By A/c Period
+  updated_at: 2011/01/07 12:05:35
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  lockedcolumncount: 0
+  layout_type: S
+  lock_version: 27
+  updated_by: 2
+  id: 949
+  report_id: 264
+  company_id: 1
+  print_orientation: 
+  created_at: 2010/06/21 00:00:00
+report_layouts_050: 
+  name: "By Store #"
+  updated_at: 2011/01/07 12:05:39
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  lockedcolumncount: 0
+  layout_type: S
+  lock_version: 11
+  updated_by: 2
+  id: 1008
+  report_id: 264
+  company_id: 1
+  print_orientation: 
+  created_at: 2010/06/24 00:00:00
+report_layouts_105: 
+  name: "By Item #"
+  updated_at: 2011/02/24 11:47:07
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lockedcolumncount: 0
+  layout_type: S
+  lock_version: 117
+  updated_by: 1
+  id: 1260
+  report_id: 342
+  company_id: 1
+  print_orientation: L
+  created_at: 2010/07/15 11:07:16
+report_layouts_131: 
+  name: "By Store #"
+  updated_at: 2011/03/02 19:21:29
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lockedcolumncount: 0
+  layout_type: S
+  lock_version: 14
+  updated_by: 1
+  id: 1384
+  report_id: 500
+  company_id: 1
+  print_orientation: 
+  created_at: 2010/08/07 00:00:00
+report_layouts_212: 
+  name: "By Customer # (Print Version)"
+  updated_at: 2011/01/07 12:05:42
+  update_flag: Y
+  trans_flag: A
+  created_by: 2
+  lockedcolumncount: 0
+  layout_type: S
+  lock_version: 8
+  updated_by: 2
+  id: 1809
+  report_id: 264
+  company_id: 1
+  print_orientation: 
+  created_at: 2010/10/05 00:00:00
+report_layouts_025: 
+  name: "By Customer #"
+  updated_at: 2011/01/07 12:05:37
+  update_flag: Y
+  trans_flag: A
+  created_by: 2
+  lockedcolumncount: 0
+  layout_type: S
+  lock_version: 33
+  updated_by: 2
+  id: 950
+  report_id: 264
+  company_id: 1
+  print_orientation: 
+  created_at: 2010/06/21 00:00:00
+report_layouts_051: 
+  name: "By Store #"
+  updated_at: 2011/01/19 18:22:06
+  update_flag: Y
+  trans_flag: A
+  created_by: 2
+  lockedcolumncount: 0
+  layout_type: S
+  lock_version: 88
+  updated_by: 1
+  id: 1009
+  report_id: 131
+  company_id: 1
+  print_orientation: 
+  created_at: 2010/06/24 00:00:00
+report_layouts_106: 
+  name: "By Item Category #"
+  updated_at: 2011/01/19 10:47:55
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lockedcolumncount: 0
+  layout_type: S
+  lock_version: 14
+  updated_by: 1
+  id: 1261
+  report_id: 560
+  company_id: 1
+  print_orientation: 
+  created_at: 2010/07/15 00:00:00
+report_layouts_132: 
+  name: "By Store #"
+  updated_at: 2011/01/19 16:02:47
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lockedcolumncount: 0
+  layout_type: S
+  lock_version: 4
+  updated_by: 1
+  id: 1385
+  report_id: 520
+  company_id: 1
+  print_orientation: 
+  created_at: 2010/08/07 17:10:49
+report_layouts_213: 
+  name: "By Store # (Print Version)"
+  updated_at: 2011/01/07 12:05:43
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  lockedcolumncount: 0
+  layout_type: S
+  lock_version: 6
+  updated_by: 2
+  id: 1810
+  report_id: 264
+  company_id: 1
+  print_orientation: 
+  created_at: 2010/10/05 00:00:00
+report_layouts_240: 
+  name: "By A/c Period #"
+  updated_at: 2011/01/19 17:57:43
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lockedcolumncount: 0
+  layout_type: S
+  lock_version: 4
+  updated_by: 1
+  id: 1887
+  report_id: 362
+  company_id: 1
+  print_orientation: 
+  created_at: 2011/01/19 15:24:53
+report_layouts_026: 
+  name: By A/c Period
+  updated_at: 2011/03/09 19:09:39
+  update_flag: Y
+  trans_flag: A
+  created_by: 2
+  lockedcolumncount: 0
+  layout_type: S
+  lock_version: 100
+  updated_by: 1
+  id: 951
+  report_id: 131
+  company_id: 1
+  print_orientation: ""
+  created_at: 2010/06/21 00:00:00
+report_layouts_052: 
+  name: "By Store #"
+  updated_at: 2011/01/19 17:45:12
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lockedcolumncount: 0
+  layout_type: S
+  lock_version: 17
+  updated_by: 1
+  id: 1010
+  report_id: 281
+  company_id: 1
+  print_orientation: 
+  created_at: 2010/06/24 00:00:00
+report_layouts_107: 
+  name: "By Diam Category #"
+  updated_at: 2011/02/24 11:23:43
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lockedcolumncount: 0
+  layout_type: S
+  lock_version: 10
+  updated_by: 1
+  id: 1320
+  report_id: 540
+  company_id: 1
+  print_orientation: L
+  created_at: 2010/07/24 00:00:00
+report_layouts_133: 
+  name: "By Vend Category #"
+  updated_at: 2011/01/19 16:02:48
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lockedcolumncount: 0
+  layout_type: S
+  lock_version: 4
+  updated_by: 1
+  id: 1386
+  report_id: 520
+  company_id: 1
+  print_orientation: 
+  created_at: 2010/08/07 17:10:50
+report_layouts_214: 
+  name: By A/c Period (Print Version)
+  updated_at: 2011/02/23 17:49:18
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lockedcolumncount: 0
+  layout_type: S
+  lock_version: 9
+  updated_by: 1
+  id: 1811
+  report_id: 284
+  company_id: 1
+  print_orientation: L
+  created_at: 2010/10/05 00:00:00
+report_layouts_241: 
+  name: "By Customer #"
+  updated_at: 2011/01/19 17:57:41
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lockedcolumncount: 0
+  layout_type: S
+  lock_version: 4
+  updated_by: 1
+  id: 1888
+  report_id: 362
+  company_id: 1
+  print_orientation: 
+  created_at: 2011/01/19 15:24:54
+report_layouts_027: 
+  name: "By Customer #"
+  updated_at: 2011/03/09 19:44:34
+  update_flag: Y
+  trans_flag: A
+  created_by: 2
+  lockedcolumncount: 0
+  layout_type: S
+  lock_version: 110
+  updated_by: 1
+  id: 952
+  report_id: 131
+  company_id: 1
+  print_orientation: ""
+  created_at: 2010/06/21 00:00:00
+report_layouts_053: 
+  name: "By Store #"
+  updated_at: 2011/01/17 16:15:27
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lockedcolumncount: 0
+  layout_type: S
+  lock_version: 13
+  updated_by: 1
+  id: 1011
+  report_id: 283
+  company_id: 1
+  print_orientation: 
+  created_at: 2010/06/24 00:00:00
+report_layouts_108: 
+  name: "By Store #"
+  updated_at: 2011/02/24 11:23:45
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lockedcolumncount: 0
+  layout_type: S
+  lock_version: 10
+  updated_by: 1
+  id: 1321
+  report_id: 540
+  company_id: 1
+  print_orientation: L
+  created_at: 2010/07/24 00:00:00
+report_layouts_134: 
+  name: "By Vendor #"
+  updated_at: 2011/01/19 15:58:07
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lockedcolumncount: 0
+  layout_type: S
+  lock_version: 4
+  updated_by: 1
+  id: 1400
+  report_id: 521
+  company_id: 1
+  print_orientation: 
+  created_at: 2010/08/09 00:00:00
+report_layouts_160: 
+  name: TEMP
+  updated_at: 2011/01/17 16:18:59
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lockedcolumncount: 0
+  layout_type: S
+  lock_version: 7
+  updated_by: 1
+  id: 1481
+  report_id: 700
+  company_id: 1
+  print_orientation: 
+  created_at: 2010/08/23 00:00:00
+report_layouts_215: 
+  name: "By Vendor # (Print Version)"
+  updated_at: 2011/02/23 17:49:19
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lockedcolumncount: 0
+  layout_type: S
+  lock_version: 7
+  updated_by: 1
+  id: 1812
+  report_id: 284
+  company_id: 1
+  print_orientation: L
+  created_at: 2010/10/05 00:00:00
+report_layouts_242: 
+  name: "By Store #"
+  updated_at: 2011/01/19 17:57:04
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lockedcolumncount: 0
+  layout_type: S
+  lock_version: 2
+  updated_by: 1
+  id: 1889
+  report_id: 362
+  company_id: 1
+  print_orientation: 
+  created_at: 2011/01/19 15:24:56
+report_layouts_028: 
+  name: "By Vendor #"
+  updated_at: 2011/01/17 16:07:50
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lockedcolumncount: 0
+  layout_type: S
+  lock_version: 34
+  updated_by: 1
+  id: 953
+  report_id: 281
+  company_id: 1
+  print_orientation: 
+  created_at: 2010/06/21 00:00:00
+report_layouts_054: 
+  name: "By Store #"
+  updated_at: 2011/02/17 14:41:51
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lockedcolumncount: 0
+  layout_type: S
+  lock_version: 27
+  updated_by: 1
+  id: 1012
+  report_id: 282
+  company_id: 1
+  print_orientation: 
+  created_at: 2010/06/24 00:00:00
+report_layouts_080: 
+  name: "By Vendor #"
+  updated_at: 2011/01/25 14:31:20
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lockedcolumncount: 0
+  layout_type: S
+  lock_version: 6
+  updated_by: 1
+  id: 1214
+  report_id: 445
+  company_id: 1
+  print_orientation: 
+  created_at: 2010/07/13 00:00:00
+report_layouts_109: 
+  name: "By A/c Period #"
+  updated_at: 2011/02/24 11:23:46
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lockedcolumncount: 0
+  layout_type: S
+  lock_version: 8
+  updated_by: 1
+  id: 1322
+  report_id: 540
+  company_id: 1
+  print_orientation: L
+  created_at: 2010/07/24 00:00:00
+report_layouts_135: 
+  name: By Vendor Name
+  updated_at: 2011/01/19 15:58:08
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lockedcolumncount: 0
+  layout_type: S
+  lock_version: 6
+  updated_by: 1
+  id: 1401
+  report_id: 521
+  company_id: 1
+  print_orientation: 
+  created_at: 2010/08/09 00:00:00
+report_layouts_161: 
+  name: "By Store #"
+  updated_at: 2011/01/19 11:14:31
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lockedcolumncount: 0
+  layout_type: S
+  lock_version: 7
+  updated_by: 1
+  id: 1500
+  report_id: 720
+  company_id: 1
+  print_orientation: 
+  created_at: 2010/08/26 00:00:00
+report_layouts_216: 
+  name: "By Store # (Print Version)"
+  updated_at: 2011/02/23 17:49:21
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lockedcolumncount: 0
+  layout_type: S
+  lock_version: 7
+  updated_by: 1
+  id: 1813
+  report_id: 284
+  company_id: 1
+  print_orientation: L
+  created_at: 2010/10/05 00:00:00
+report_layouts_243: 
+  name: "By A/c Period #"
+  updated_at: 2011/01/20 12:17:29
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lockedcolumncount: 0
+  layout_type: S
+  lock_version: 5
+  updated_by: 1
+  id: 1890
+  report_id: 380
+  company_id: 1
+  print_orientation: 
+  created_at: 2011/01/19 00:00:00
+report_layouts_029: 
+  name: By A/c Period
+  updated_at: 2011/01/19 17:45:09
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lockedcolumncount: 0
+  layout_type: S
+  lock_version: 37
+  updated_by: 1
+  id: 954
+  report_id: 281
+  company_id: 1
+  print_orientation: 
+  created_at: 2010/06/21 00:00:00
+report_layouts_055: 
+  name: "By Store #"
+  updated_at: 2011/01/19 17:44:45
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lockedcolumncount: 0
+  layout_type: S
+  lock_version: 15
+  updated_by: 1
+  id: 1013
+  report_id: 285
+  company_id: 1
+  print_orientation: 
+  created_at: 2010/06/24 00:00:00
+report_layouts_081: 
+  name: "By Vendor #"
+  updated_at: 2011/01/25 14:30:35
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lockedcolumncount: 0
+  layout_type: S
+  lock_version: 8
+  updated_by: 1
+  id: 1215
+  report_id: 444
+  company_id: 1
+  print_orientation: 
+  created_at: 2010/07/13 00:00:00
+report_layouts_136: 
+  name: "By Store #"
+  updated_at: 2011/01/19 15:58:09
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lockedcolumncount: 0
+  layout_type: S
+  lock_version: 4
+  updated_by: 1
+  id: 1402
+  report_id: 521
+  company_id: 1
+  print_orientation: 
+  created_at: 2010/08/09 00:00:00
+report_layouts_162: 
+  name: "By Item #"
+  updated_at: 2011/03/30 11:47:07
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lockedcolumncount: 0
+  layout_type: S
+  lock_version: 9
+  updated_by: 1
+  id: 1501
+  report_id: 720
+  company_id: 1
+  print_orientation: ""
+  created_at: 2010/08/26 00:00:00
+report_layouts_217: 
+  name: By A/c Period (Print Version)
+  updated_at: 2011/01/19 17:45:38
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  lockedcolumncount: 0
+  layout_type: S
+  lock_version: 7
+  updated_by: 1
+  id: 1814
+  report_id: 320
+  company_id: 1
+  print_orientation: 
+  created_at: 2010/10/05 00:00:00
+report_layouts_270: 
+  name: NewTest10
+  updated_at: 2011/03/04 12:56:11
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lockedcolumncount: 3
+  layout_type: U
+  lock_version: 1
+  updated_by: 1
+  id: 1918
+  report_id: 340
+  company_id: 1
+  print_orientation: ""
+  created_at: 2011/03/04 12:56:10
+report_layouts_244: 
+  name: "By Store #"
+  updated_at: 2011/01/20 12:17:24
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lockedcolumncount: 0
+  layout_type: S
+  lock_version: 7
+  updated_by: 1
+  id: 1891
+  report_id: 380
+  company_id: 1
+  print_orientation: 
+  created_at: 2011/01/19 00:00:00
+report_layouts_056: 
+  name: "By Store #"
+  updated_at: 2011/01/17 16:38:21
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lockedcolumncount: 0
+  layout_type: S
+  lock_version: 11
+  updated_by: 1
+  id: 1014
+  report_id: 286
+  company_id: 1
+  print_orientation: 
+  created_at: 2010/06/24 00:00:00
+report_layouts_082: 
+  name: By A/c Period
+  updated_at: 2011/01/25 14:30:38
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lockedcolumncount: 0
+  layout_type: S
+  lock_version: 8
+  updated_by: 1
+  id: 1216
+  report_id: 444
+  company_id: 1
+  print_orientation: 
+  created_at: 2010/07/13 00:00:00
+report_layouts_137: 
+  name: "By A/c Period #"
+  updated_at: 2011/01/19 16:15:46
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lockedcolumncount: 0
+  layout_type: S
+  lock_version: 21
+  updated_by: 1
+  id: 1420
+  report_id: 402
+  company_id: 1
+  print_orientation: 
+  created_at: 2010/08/10 00:00:00
+report_layouts_163: 
+  name: TEMP
+  updated_at: 2011/01/19 10:53:18
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lockedcolumncount: 0
+  layout_type: S
+  lock_version: 3
+  updated_by: 1
+  id: 1504
+  report_id: 660
+  company_id: 1
+  print_orientation: 
+  created_at: 2010/08/26 14:54:13
+report_layouts_218: 
+  name: "By Vendor # (Print Version)"
+  updated_at: 2011/01/19 17:45:43
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  lockedcolumncount: 0
+  layout_type: S
+  lock_version: 7
+  updated_by: 1
+  id: 1815
+  report_id: 320
+  company_id: 1
+  print_orientation: 
+  created_at: 2010/10/05 00:00:00
+report_layouts_271: 
+  name: "By A/c Period #"
+  updated_at: 2011/03/21 12:42:12
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lockedcolumncount: 
+  layout_type: S
+  lock_version: 10
+  updated_by: 1
+  id: 1919
+  report_id: 890
+  company_id: 1
+  print_orientation: P
+  created_at: 2011/03/15 00:00:00
+report_layouts_245: 
+  name: "By Customer #"
+  updated_at: 2011/01/20 12:17:21
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lockedcolumncount: 0
+  layout_type: S
+  lock_version: 5
+  updated_by: 1
+  id: 1892
+  report_id: 380
+  company_id: 1
+  print_orientation: 
+  created_at: 2011/01/19 00:00:00
+report_layouts_057: 
+  name: "By Store #"
+  updated_at: 2011/01/17 16:44:14
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lockedcolumncount: 0
+  layout_type: S
+  lock_version: 14
+  updated_by: 1
+  id: 1015
+  report_id: 321
+  company_id: 1
+  print_orientation: 
+  created_at: 2010/06/24 00:00:00
+report_layouts_083: 
+  name: "By Store #"
+  updated_at: 2011/01/25 14:30:40
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lockedcolumncount: 0
+  layout_type: S
+  lock_version: 8
+  updated_by: 1
+  id: 1217
+  report_id: 444
+  company_id: 1
+  print_orientation: 
+  created_at: 2010/07/13 00:00:00
+report_layouts_138: 
+  name: "By Vendor #"
+  updated_at: 2011/01/19 16:15:47
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lockedcolumncount: 0
+  layout_type: S
+  lock_version: 15
+  updated_by: 1
+  id: 1421
+  report_id: 402
+  company_id: 1
+  print_orientation: 
+  created_at: 2010/08/10 00:00:00
+report_layouts_164: 
+  name: "By Item Category #"
+  updated_at: 2010/10/06 18:06:24
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  lockedcolumncount: 0
+  layout_type: S
+  lock_version: 12
+  updated_by: 100
+  id: 1505
+  report_id: 740
+  company_id: 1
+  print_orientation: 
+  created_at: 2010/08/26 00:00:00
+report_layouts_190: 
+  name: "By Account #(Print Version)"
+  updated_at: 2011/01/19 19:03:17
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lockedcolumncount: 0
+  layout_type: S
+  lock_version: 15
+  updated_by: 1
+  id: 1720
+  report_id: 465
+  company_id: 1
+  print_orientation: 
+  created_at: 2010/09/23 00:00:00
+report_layouts_219: 
+  name: "By Store # (Print Version)"
+  updated_at: 2011/01/19 17:45:48
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  lockedcolumncount: 0
+  layout_type: S
+  lock_version: 5
+  updated_by: 1
+  id: 1816
+  report_id: 320
+  company_id: 1
+  print_orientation: 
+  created_at: 2010/10/05 00:00:00
+report_layouts_272: 
+  name: "By Retailer #"
+  updated_at: 2011/03/21 12:42:13
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lockedcolumncount: 
+  layout_type: S
+  lock_version: 10
+  updated_by: 1
+  id: 1920
+  report_id: 890
+  company_id: 1
+  print_orientation: P
+  created_at: 2011/03/15 00:00:00
+report_layouts_246: 
+  name: Demo
+  updated_at: 2011/01/21 15:11:19
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lockedcolumncount: 0
+  layout_type: S
+  lock_version: 2
+  updated_by: 1
+  id: 1894
+  report_id: 381
+  company_id: 1
+  print_orientation: 
+  created_at: 2011/01/21 15:03:24
+report_layouts_058: 
+  name: "By Store #"
+  updated_at: 2011/01/14 16:32:52
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  lockedcolumncount: 0
+  layout_type: S
+  lock_version: 16
+  updated_by: 1
+  id: 1016
+  report_id: 320
+  company_id: 1
+  print_orientation: 
+  created_at: 2010/06/24 00:00:00
+report_layouts_084: 
+  name: "By Store #"
+  updated_at: 2011/01/25 14:29:12
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lockedcolumncount: 0
+  layout_type: S
+  lock_version: 3
+  updated_by: 1
+  id: 1218
+  report_id: 460
+  company_id: 1
+  print_orientation: 
+  created_at: 2010/07/13 00:00:00
+report_layouts_139: 
+  name: "By Store #"
+  updated_at: 2011/01/19 16:15:48
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lockedcolumncount: 0
+  layout_type: S
+  lock_version: 11
+  updated_by: 1
+  id: 1422
+  report_id: 402
+  company_id: 1
+  print_orientation: 
+  created_at: 2010/08/10 00:00:00
+report_layouts_165: 
+  name: "By A/c Period #"
+  updated_at: 2010/10/07 10:02:59
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  lockedcolumncount: 0
+  layout_type: S
+  lock_version: 10
+  updated_by: 100
+  id: 1506
+  report_id: 740
+  company_id: 1
+  print_orientation: 
+  created_at: 2010/08/26 15:58:58
+report_layouts_191: 
+  name: By Payment Type
+  updated_at: 2010/10/05 13:04:10
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  lockedcolumncount: 0
+  layout_type: S
+  lock_version: 32
+  updated_by: 100
+  id: 1761
+  report_id: 820
+  company_id: 1
+  print_orientation: 
+  created_at: 2010/09/29 00:00:00
+report_layouts_273: 
+  name: "By A/c Period #"
+  updated_at: 2011/03/17 12:36:05
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lockedcolumncount: 
+  layout_type: S
+  lock_version: 1
+  updated_by: 1
+  id: 1921
+  report_id: 891
+  company_id: 1
+  print_orientation: P
+  created_at: 2011/03/15 00:00:00
+report_layouts_247: 
+  name: NoGrouping
+  updated_at: 2011/03/22 18:57:37
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lockedcolumncount: 0
+  layout_type: U
+  lock_version: 15
+  updated_by: 1
+  id: 1895
+  report_id: 284
+  company_id: 1
+  print_orientation: P
+  created_at: 2011/01/27 10:32:25
+report_layouts_059: 
+  name: "By Store #"
+  updated_at: 2011/03/22 19:38:30
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lockedcolumncount: 0
+  layout_type: S
+  lock_version: 54
+  updated_by: 1
+  id: 1017
+  report_id: 284
+  company_id: 1
+  print_orientation: L
+  created_at: 2010/06/24 00:00:00
+report_layouts_085: 
+  name: By A/c Period
+  updated_at: 2011/01/25 14:29:14
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lockedcolumncount: 0
+  layout_type: S
+  lock_version: 5
+  updated_by: 1
+  id: 1219
+  report_id: 460
+  company_id: 1
+  print_orientation: 
+  created_at: 2010/07/13 00:00:00
+report_layouts_166: 
+  name: "By Store #"
+  updated_at: 2011/01/19 14:26:55
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lockedcolumncount: 0
+  layout_type: S
+  lock_version: 3
+  updated_by: 1
+  id: 1520
+  report_id: 741
+  company_id: 1
+  print_orientation: 
+  created_at: 2010/08/27 00:00:00
+report_layouts_192: 
+  name: By Order Status
+  updated_at: 2010/10/04 15:23:35
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  lockedcolumncount: 0
+  layout_type: S
+  lock_version: 26
+  updated_by: 100
+  id: 1762
+  report_id: 820
+  company_id: 1
+  print_orientation: 
+  created_at: 2010/09/29 00:00:00
+report_layouts_274: 
+  name: "By Packet #"
+  updated_at: 2011/03/17 12:36:08
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lockedcolumncount: 
+  layout_type: S
+  lock_version: 1
+  updated_by: 1
+  id: 1922
+  report_id: 891
+  company_id: 1
+  print_orientation: P
+  created_at: 2011/03/15 00:00:00
+report_layouts_248: 
+  name: two Group
+  updated_at: 2011/03/22 18:59:08
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lockedcolumncount: 0
+  layout_type: U
+  lock_version: 5
+  updated_by: 1
+  id: 1896
+  report_id: 284
+  company_id: 1
+  print_orientation: ""
+  created_at: 2011/01/27 11:36:03
+report_layouts_086: 
+  name: "By Vendor #"
+  updated_at: 2011/01/25 14:29:16
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lockedcolumncount: 0
+  layout_type: S
+  lock_version: 5
+  updated_by: 1
+  id: 1220
+  report_id: 460
+  company_id: 1
+  print_orientation: 
+  created_at: 2010/07/13 00:00:00
+report_layouts_167: 
+  name: "By Lot #"
+  updated_at: 2011/01/19 14:26:56
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lockedcolumncount: 0
+  layout_type: S
+  lock_version: 2
+  updated_by: 1
+  id: 1521
+  report_id: 741
+  company_id: 1
+  print_orientation: 
+  created_at: 2010/08/27 10:36:17
+report_layouts_193: 
+  name: "By Customer #"
+  updated_at: 2010/10/02 12:19:28
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  lockedcolumncount: 0
+  layout_type: S
+  lock_version: 13
+  updated_by: 100
+  id: 1763
+  report_id: 820
+  company_id: 1
+  print_orientation: 
+  created_at: 2010/09/29 12:17:17
+report_layouts_275: 
+  name: "By Retailer #"
+  updated_at: 2011/03/17 12:36:10
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lockedcolumncount: 
+  layout_type: S
+  lock_version: 1
+  updated_by: 1
+  id: 1923
+  report_id: 891
+  company_id: 1
+  print_orientation: P
+  created_at: 2011/03/15 00:00:00
+report_layouts_249: 
+  name: three Group
+  updated_at: 2011/01/27 11:45:36
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lockedcolumncount: 0
+  layout_type: U
+  lock_version: 1
+  updated_by: 1
+  id: 1897
+  report_id: 284
+  company_id: 1
+  print_orientation: 
+  created_at: 2011/01/27 11:45:36
+report_layouts_087: 
+  name: "By Store #"
+  updated_at: 2011/01/25 14:29:51
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lockedcolumncount: 0
+  layout_type: S
+  lock_version: 4
+  updated_by: 1
+  id: 1240
+  report_id: 461
+  company_id: 1
+  print_orientation: 
+  created_at: 2010/07/14 00:00:00
+report_layouts_168: 
+  name: TEMP
+  updated_at: 2011/03/02 12:10:31
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  lockedcolumncount: 0
+  layout_type: S
+  lock_version: 5
+  updated_by: 1
+  id: 1621
+  report_id: 760
+  company_id: 1
+  print_orientation: ""
+  created_at: 2010/09/06 00:00:00
+report_layouts_194: 
+  name: By Payment type
+  updated_at: 2010/10/04 10:46:08
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  lockedcolumncount: 0
+  layout_type: S
+  lock_version: 8
+  updated_by: 100
+  id: 1764
+  report_id: 840
+  company_id: 1
+  print_orientation: 
+  created_at: 2010/09/29 12:28:09
+report_layouts_276: 
+  name: TEMP
+  updated_at: 2011/03/17 15:10:34
+  update_flag: Y
+  trans_flag: D
+  created_by: 1
+  lockedcolumncount: 
+  layout_type: S
+  lock_version: 5
+  updated_by: 1
+  id: 1924
+  report_id: 898
+  company_id: 1
+  print_orientation: P
+  created_at: 2011/03/17 00:00:00
+report_layouts_088: 
+  name: By A/c Period
+  updated_at: 2011/01/25 14:29:53
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lockedcolumncount: 0
+  layout_type: S
+  lock_version: 6
+  updated_by: 1
+  id: 1241
+  report_id: 461
+  company_id: 1
+  print_orientation: 
+  created_at: 2010/07/14 00:00:00
+report_layouts_169: 
+  name: By Store Type
+  updated_at: 2011/02/04 14:34:11
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lockedcolumncount: 0
+  layout_type: S
+  lock_version: 38
+  updated_by: 1
+  id: 1640
+  report_id: 780
+  company_id: 1
+  print_orientation: 
+  created_at: 2010/09/07 00:00:00
+report_layouts_195: 
+  name: "By Item #"
+  updated_at: 2010/10/04 16:00:11
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  lockedcolumncount: 0
+  layout_type: S
+  lock_version: 8
+  updated_by: 100
+  id: 1765
+  report_id: 840
+  company_id: 1
+  print_orientation: 
+  created_at: 2010/09/29 12:28:11
+report_layouts_277: 
+  name: TEMP
+  updated_at: 2011/03/17 14:48:56
+  update_flag: Y
+  trans_flag: D
+  created_by: 1
+  lockedcolumncount: 
+  layout_type: S
+  lock_version: 2
+  updated_by: 1
+  id: 1925
+  report_id: 899
+  company_id: 1
+  print_orientation: P
+  created_at: 2011/03/17 00:00:00
+report_layouts_089: 
+  name: "By Vendor #"
+  updated_at: 2011/01/25 14:29:55
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lockedcolumncount: 0
+  layout_type: S
+  lock_version: 6
+  updated_by: 1
+  id: 1242
+  report_id: 461
+  company_id: 1
+  print_orientation: 
+  created_at: 2010/07/14 00:00:00
+report_layouts_196: 
+  name: By Order Status
+  updated_at: 2010/10/04 16:00:21
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  lockedcolumncount: 0
+  layout_type: S
+  lock_version: 6
+  updated_by: 100
+  id: 1766
+  report_id: 840
+  company_id: 1
+  print_orientation: 
+  created_at: 2010/09/29 12:28:13
+report_layouts_278: 
+  name: "By A/c Period #"
+  updated_at: 2011/03/17 15:03:30
+  update_flag: Y
+  trans_flag: D
+  created_by: 1
+  lockedcolumncount: 
+  layout_type: S
+  lock_version: 3
+  updated_by: 1
+  id: 1926
+  report_id: 899
+  company_id: 1
+  print_orientation: P
+  created_at: 2011/03/17 00:00:00
+report_layouts_197: 
+  name: "By Customer #"
+  updated_at: 2010/10/02 12:19:03
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  lockedcolumncount: 0
+  layout_type: S
+  lock_version: 8
+  updated_by: 100
+  id: 1767
+  report_id: 840
+  company_id: 1
+  print_orientation: 
+  created_at: 2010/09/29 12:28:15
+report_layouts_279: 
+  name: "By Vendor #"
+  updated_at: 2011/03/17 15:03:30
+  update_flag: Y
+  trans_flag: D
+  created_by: 1
+  lockedcolumncount: 
+  layout_type: S
+  lock_version: 3
+  updated_by: 1
+  id: 1927
+  report_id: 899
+  company_id: 1
+  print_orientation: P
+  created_at: 2011/03/17 00:00:00
+report_layouts_198: 
+  name: "By Customer #"
+  updated_at: 2010/10/04 10:38:57
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  lockedcolumncount: 0
+  layout_type: S
+  lock_version: 18
+  updated_by: 100
+  id: 1770
+  report_id: 841
+  company_id: 1
+  print_orientation: 
+  created_at: 2010/09/29 00:00:00
+report_layouts_199: 
+  name: By Payment Type
+  updated_at: 2010/10/04 10:38:59
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  lockedcolumncount: 0
+  layout_type: S
+  lock_version: 20
+  updated_by: 100
+  id: 1771
+  report_id: 841
+  company_id: 1
+  print_orientation: 
+  created_at: 2010/09/29 13:09:42
+report_layouts_010: 
+  name: By A/c Period
+  updated_at: 2011/01/12 15:15:17
+  update_flag: Y
+  trans_flag: A
+  created_by: 2
+  lockedcolumncount: 0
+  layout_type: S
+  lock_version: 31
+  updated_by: 1
+  id: 900
+  report_id: 280
+  company_id: 1
+  print_orientation: 
+  created_at: 2010/06/21 00:00:00
+report_layouts_011: 
+  name: "By Customer #"
+  updated_at: 2011/01/12 15:15:18
+  update_flag: Y
+  trans_flag: A
+  created_by: 2
+  lockedcolumncount: 0
+  layout_type: S
+  lock_version: 34
+  updated_by: 1
+  id: 901
+  report_id: 280
+  company_id: 1
+  print_orientation: 
+  created_at: 2010/06/21 00:00:00
+report_layouts_200: 
+  name: By Order Status
+  updated_at: 2010/10/04 10:39:02
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  lockedcolumncount: 0
+  layout_type: S
+  lock_version: 14
+  updated_by: 100
+  id: 1772
+  report_id: 841
+  company_id: 1
+  print_orientation: 
+  created_at: 2010/09/29 13:09:44
+report_layouts_012: 
+  name: By A/c Period
+  updated_at: 2011/01/12 15:27:32
+  update_flag: Y
+  trans_flag: A
+  created_by: 2
+  lockedcolumncount: 0
+  layout_type: S
+  lock_version: 37
+  updated_by: 1
+  id: 902
+  report_id: 262
+  company_id: 1
+  print_orientation: 
+  created_at: 2010/06/21 00:00:00
+report_layouts_201: 
+  name: By Date
+  updated_at: 2010/10/01 15:57:50
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  lockedcolumncount: 0
+  layout_type: S
+  lock_version: 0
+  updated_by: 100
+  id: 1780
+  report_id: 860
+  company_id: 1
+  print_orientation: 
+  created_at: 2010/10/01 15:57:50
+report_layouts_013: 
+  name: "By Customer #"
+  updated_at: 2011/01/19 18:07:38
+  update_flag: Y
+  trans_flag: A
+  created_by: 2
+  lockedcolumncount: 0
+  layout_type: S
+  lock_version: 51
+  updated_by: 1
+  id: 903
+  report_id: 262
+  company_id: 1
+  print_orientation: 
+  created_at: 2010/06/21 00:00:00
+report_layouts_120: 
+  name: "By A/c Period #"
+  updated_at: 2011/02/24 11:26:17
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lockedcolumncount: 0
+  layout_type: S
+  lock_version: 5
+  updated_by: 1
+  id: 1333
+  report_id: 582
+  company_id: 1
+  print_orientation: L
+  created_at: 2010/07/24 00:00:00
+report_layouts_202: 
+  name: By Date
+  updated_at: 2010/10/01 16:08:04
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  lockedcolumncount: 0
+  layout_type: S
+  lock_version: 1
+  updated_by: 100
+  id: 1781
+  report_id: 861
+  company_id: 1
+  print_orientation: 
+  created_at: 2010/10/01 16:03:45
+report_layouts_014: 
+  name: By A/c Period
+  updated_at: 2011/01/12 15:02:11
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  lockedcolumncount: 0
+  layout_type: S
+  lock_version: 38
+  updated_by: 1
+  id: 920
+  report_id: 261
+  company_id: 1
+  print_orientation: 
+  created_at: 2010/06/21 00:00:00
+report_layouts_040: 
+  name: "By Vendor #"
+  updated_at: 2011/01/14 16:32:50
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  lockedcolumncount: 0
+  layout_type: S
+  lock_version: 39
+  updated_by: 1
+  id: 965
+  report_id: 320
+  company_id: 1
+  print_orientation: 
+  created_at: 2010/06/21 00:00:00
+report_layouts_121: 
+  name: "By Diam Category #"
+  updated_at: 2010/07/29 16:13:58
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  lockedcolumncount: 0
+  layout_type: S
+  lock_version: 4
+  updated_by: 100
+  id: 1334
+  report_id: 580
+  company_id: 1
+  print_orientation: 
+  created_at: 2010/07/24 00:00:00
+report_layouts_203: 
+  name: "By Store # (Print Version)"
+  updated_at: 2011/03/09 19:09:44
+  update_flag: Y
+  trans_flag: A
+  created_by: 2
+  lockedcolumncount: 0
+  layout_type: S
+  lock_version: 77
+  updated_by: 1
+  id: 1800
+  report_id: 131
+  company_id: 1
+  print_orientation: ""
+  created_at: 2010/10/05 00:00:00
+report_layouts_015: 
+  name: "By Customer #"
+  updated_at: 2011/01/12 15:02:13
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  lockedcolumncount: 0
+  layout_type: S
+  lock_version: 42
+  updated_by: 1
+  id: 940
+  report_id: 261
+  company_id: 1
+  print_orientation: 
+  created_at: 2010/06/21 00:00:00
+report_layouts_041: 
+  name: "By Vendor #"
+  updated_at: 2011/03/22 19:21:56
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lockedcolumncount: 0
+  layout_type: S
+  lock_version: 79
+  updated_by: 1
+  id: 966
+  report_id: 284
+  company_id: 1
+  print_orientation: L
+  created_at: 2010/06/21 00:00:00
+report_layouts_122: 
+  name: "By Store #"
+  updated_at: 2010/07/29 16:14:01
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  lockedcolumncount: 0
+  layout_type: S
+  lock_version: 4
+  updated_by: 100
+  id: 1335
+  report_id: 580
+  company_id: 1
+  print_orientation: 
+  created_at: 2010/07/24 15:36:55
+report_layouts_230: 
+  name: print
+  updated_at: 2011/01/19 18:12:17
+  update_flag: Y
+  trans_flag: A
+  created_by: 2
+  lockedcolumncount: 0
+  layout_type: U
+  lock_version: 3
+  updated_by: 1
+  id: 1877
+  report_id: 401
+  company_id: 1
+  print_orientation: 
+  created_at: 2010/12/28 11:21:10
+report_layouts_016: 
+  name: By A/c Period
+  updated_at: 2011/01/12 14:48:16
+  update_flag: Y
+  trans_flag: A
+  created_by: 2
+  lockedcolumncount: 0
+  layout_type: S
+  lock_version: 21
+  updated_by: 1
+  id: 941
+  report_id: 260
+  company_id: 1
+  print_orientation: 
+  created_at: 2010/06/21 00:00:00
+report_layouts_042: 
+  name: "By Account #"
+  updated_at: 2011/01/19 19:05:02
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lockedcolumncount: 0
+  layout_type: S
+  lock_version: 38
+  updated_by: 1
+  id: 1000
+  report_id: 465
+  company_id: 1
+  print_orientation: 
+  created_at: 2010/06/24 00:00:00
+report_layouts_123: 
+  name: By Store Type
+  updated_at: 2011/01/19 10:46:02
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lockedcolumncount: 0
+  layout_type: S
+  lock_version: 11
+  updated_by: 1
+  id: 1340
+  report_id: 600
+  company_id: 1
+  print_orientation: 
+  created_at: 2010/08/03 00:00:00
+report_layouts_204: 
+  name: "By A/c Period # (Print Version)"
+  updated_at: 2011/03/09 19:09:47
+  update_flag: Y
+  trans_flag: A
+  created_by: 2
+  lockedcolumncount: 0
+  layout_type: S
+  lock_version: 46
+  updated_by: 1
+  id: 1801
+  report_id: 131
+  company_id: 1
+  print_orientation: ""
+  created_at: 2010/10/05 00:00:00
+report_layouts_231: 
+  name: print
+  updated_at: 2010/12/28 11:22:30
+  update_flag: Y
+  trans_flag: A
+  created_by: 2
+  lockedcolumncount: 0
+  layout_type: U
+  lock_version: 1
+  updated_by: 2
+  id: 1878
+  report_id: 403
+  company_id: 1
+  print_orientation: 
+  created_at: 2010/12/28 11:22:29
+report_layouts_017: 
+  name: "By Customer #"
+  updated_at: 2011/01/19 18:07:23
+  update_flag: Y
+  trans_flag: A
+  created_by: 2
+  lockedcolumncount: 0
+  layout_type: S
+  lock_version: 24
+  updated_by: 1
+  id: 942
+  report_id: 260
+  company_id: 1
+  print_orientation: 
+  created_at: 2010/06/21 00:00:00
+report_layouts_043: 
+  name: "By Store #"
+  updated_at: 2011/01/12 15:15:20
+  update_flag: Y
+  trans_flag: A
+  created_by: 2
+  lockedcolumncount: 0
+  layout_type: S
+  lock_version: 22
+  updated_by: 1
+  id: 1001
+  report_id: 280
+  company_id: 1
+  print_orientation: 
+  created_at: 2010/06/24 00:00:00
+report_layouts_124: 
+  name: "By Item #"
+  updated_at: 2011/01/19 10:46:03
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lockedcolumncount: 0
+  layout_type: S
+  lock_version: 11
+  updated_by: 1
+  id: 1341
+  report_id: 600
+  company_id: 1
+  print_orientation: 
+  created_at: 2010/08/03 00:00:00
+report_layouts_150: 
+  name: "By A/c Period #"
+  updated_at: 2010/08/19 11:42:43
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  lockedcolumncount: 0
+  layout_type: S
+  lock_version: 0
+  updated_by: 100
+  id: 1460
+  report_id: 682
+  company_id: 1
+  print_orientation: 
+  created_at: 2010/08/19 11:42:43
+report_layouts_205: 
+  name: "By A/c Period # (Print Version)"
+  updated_at: 2011/01/12 15:02:17
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  lockedcolumncount: 0
+  layout_type: S
+  lock_version: 9
+  updated_by: 1
+  id: 1802
+  report_id: 261
+  company_id: 1
+  print_orientation: 
+  created_at: 2010/10/05 00:00:00
+report_layouts_232: 
+  name: "By A/c  Period #"
+  updated_at: 2011/03/11 10:26:01
+  update_flag: Y
+  trans_flag: A
+  created_by: 2
+  lockedcolumncount: 0
+  layout_type: S
+  lock_version: 14
+  updated_by: 1
+  id: 1879
+  report_id: 883
+  company_id: 1
+  print_orientation: ""
+  created_at: 2011/01/05 00:00:00
+report_layouts_018: 
+  name: By Ac/ Period
+  updated_at: 2011/01/12 15:47:12
+  update_flag: Y
+  trans_flag: A
+  created_by: 2
+  lockedcolumncount: 0
+  layout_type: S
+  lock_version: 18
+  updated_by: 1
+  id: 943
+  report_id: 263
+  company_id: 1
+  print_orientation: 
+  created_at: 2010/06/21 00:00:00
+report_layouts_044: 
+  name: "By Store #"
+  updated_at: 2011/01/19 18:07:43
+  update_flag: Y
+  trans_flag: A
+  created_by: 2
+  lockedcolumncount: 0
+  layout_type: S
+  lock_version: 31
+  updated_by: 1
+  id: 1002
+  report_id: 262
+  company_id: 1
+  print_orientation: 
+  created_at: 2010/06/24 00:00:00
+report_layouts_070: 
+  name: By A/c Period
+  updated_at: 2011/01/19 12:38:49
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lockedcolumncount: 0
+  layout_type: S
+  lock_version: 6
+  updated_by: 1
+  id: 1204
+  report_id: 443
+  company_id: 1
+  print_orientation: 
+  created_at: 2010/07/12 00:00:00
+report_layouts_125: 
+  name: By Account Name
+  updated_at: 2011/01/19 15:43:56
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lockedcolumncount: 0
+  layout_type: S
+  lock_version: 55
+  updated_by: 1
+  id: 1361
+  report_id: 463
+  company_id: 1
+  print_orientation: 
+  created_at: 2010/08/07 00:00:00
+report_layouts_151: 
+  name: "By Lab #"
+  updated_at: 2010/08/19 11:42:45
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  lockedcolumncount: 0
+  layout_type: S
+  lock_version: 0
+  updated_by: 100
+  id: 1461
+  report_id: 682
+  company_id: 1
+  print_orientation: 
+  created_at: 2010/08/19 11:42:45
+report_layouts_206: 
+  name: "By Customer # (Print Version)"
+  updated_at: 2011/01/12 15:02:20
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  lockedcolumncount: 0
+  layout_type: S
+  lock_version: 8
+  updated_by: 1
+  id: 1803
+  report_id: 261
+  company_id: 1
+  print_orientation: 
+  created_at: 2010/10/05 00:00:00
+report_layouts_233: 
+  name: "By Retailer #"
+  updated_at: 2011/03/22 15:36:34
+  update_flag: Y
+  trans_flag: A
+  created_by: 2
+  lockedcolumncount: 0
+  layout_type: S
+  lock_version: 18
+  updated_by: 1
+  id: 1880
+  report_id: 883
+  company_id: 1
+  print_orientation: ""
+  created_at: 2011/01/05 00:00:00
+report_layouts_019: 
+  name: "By Customer #"
+  updated_at: 2011/01/12 15:47:14
+  update_flag: Y
+  trans_flag: A
+  created_by: 2
+  lockedcolumncount: 0
+  layout_type: S
+  lock_version: 21
+  updated_by: 1
+  id: 944
+  report_id: 263
+  company_id: 1
+  print_orientation: 
+  created_at: 2010/06/21 00:00:00
+report_layouts_045: 
+  name: "By Store #"
+  updated_at: 2011/01/12 15:02:16
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  lockedcolumncount: 0
+  layout_type: S
+  lock_version: 23
+  updated_by: 1
+  id: 1003
+  report_id: 261
+  company_id: 1
+  print_orientation: 
+  created_at: 2010/06/24 00:00:00
+report_layouts_071: 
+  name: "By Customer #"
+  updated_at: 2011/01/19 12:38:53
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lockedcolumncount: 0
+  layout_type: S
+  lock_version: 6
+  updated_by: 1
+  id: 1205
+  report_id: 443
+  company_id: 1
+  print_orientation: 
+  created_at: 2010/07/12 00:00:00
+report_layouts_126: 
+  name: By Account Name
+  updated_at: 2011/03/25 17:36:06
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lockedcolumncount: 0
+  layout_type: S
+  lock_version: 26
+  updated_by: 1
+  id: 1362
+  report_id: 465
+  company_id: 1
+  print_orientation: ""
+  created_at: 2010/08/07 00:00:00
+report_layouts_152: 
+  name: "By Store #"
+  updated_at: 2010/08/19 11:42:46
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  lockedcolumncount: 0
+  layout_type: S
+  lock_version: 0
+  updated_by: 100
+  id: 1462
+  report_id: 682
+  company_id: 1
+  print_orientation: 
+  created_at: 2010/08/19 11:42:46
+report_layouts_207: 
+  name: "By Store # (Print Version)"
+  updated_at: 2011/01/12 15:02:21
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  lockedcolumncount: 0
+  layout_type: S
+  lock_version: 5
+  updated_by: 1
+  id: 1804
+  report_id: 261
+  company_id: 1
+  print_orientation: 
+  created_at: 2010/10/05 00:00:00
+report_layouts_260: 
+  name: temp
+  updated_at: 2011/03/04 18:41:27
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lockedcolumncount: 7
+  layout_type: S
+  lock_version: 17
+  updated_by: 1
+  id: 1908
+  report_id: 340
+  company_id: 1
+  print_orientation: P
+  created_at: 2011/03/03 00:00:00
+report_layouts_234: 
+  name: "By Packet #"
+  updated_at: 2011/03/11 10:35:37
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lockedcolumncount: 9
+  layout_type: S
+  lock_version: 18
+  updated_by: 1
+  id: 1881
+  report_id: 884
+  company_id: 1
+  print_orientation: ""
+  created_at: 2011/01/05 00:00:00
+report_layouts_046: 
+  name: "By Store #"
+  updated_at: 2011/01/19 18:07:27
+  update_flag: Y
+  trans_flag: A
+  created_by: 2
+  lockedcolumncount: 0
+  layout_type: S
+  lock_version: 12
+  updated_by: 1
+  id: 1004
+  report_id: 260
+  company_id: 1
+  print_orientation: 
+  created_at: 2010/06/24 00:00:00
+report_layouts_072: 
+  name: "By Store #"
+  updated_at: 2011/01/19 12:45:07
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lockedcolumncount: 0
+  layout_type: S
+  lock_version: 2
+  updated_by: 1
+  id: 1206
+  report_id: 462
+  company_id: 1
+  print_orientation: 
+  created_at: 2010/07/12 00:00:00
+report_layouts_127: 
+  name: "By Customer #"
+  updated_at: 2011/01/19 15:22:04
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lockedcolumncount: 0
+  layout_type: S
+  lock_version: 17
+  updated_by: 1
+  id: 1380
+  report_id: 501
+  company_id: 1
+  print_orientation: 
+  created_at: 2010/08/07 00:00:00
+report_layouts_153: 
+  name: "By A/c Period #"
+  updated_at: 2010/08/19 12:24:40
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  lockedcolumncount: 0
+  layout_type: S
+  lock_version: 2
+  updated_by: 100
+  id: 1463
+  report_id: 681
+  company_id: 1
+  print_orientation: 
+  created_at: 2010/08/19 11:55:06
+report_layouts_208: 
+  name: By A/c Period (Print Version)
+  updated_at: 2011/01/19 18:08:02
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  lockedcolumncount: 0
+  layout_type: S
+  lock_version: 10
+  updated_by: 1
+  id: 1805
+  report_id: 400
+  company_id: 1
+  print_orientation: 
+  created_at: 2010/10/05 00:00:00
+report_layouts_261: 
+  name: temp1
+  updated_at: 2011/03/09 11:54:05
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lockedcolumncount: 0
+  layout_type: U
+  lock_version: 7
+  updated_by: 1
+  id: 1909
+  report_id: 340
+  company_id: 1
+  print_orientation: ""
+  created_at: 2011/03/03 17:47:56
+report_layouts_235: 
+  name: By Customer store
+  updated_at: 2011/03/09 19:09:50
+  update_flag: Y
+  trans_flag: A
+  created_by: 2
+  lockedcolumncount: 0
+  layout_type: U
+  lock_version: 11
+  updated_by: 1
+  id: 1882
+  report_id: 131
+  company_id: 1
+  print_orientation: ""
+  created_at: 2011/01/07 10:59:04
+report_layouts_047: 
+  name: "By Store #"
+  updated_at: 2011/01/12 15:47:16
+  update_flag: Y
+  trans_flag: A
+  created_by: 2
+  lockedcolumncount: 0
+  layout_type: S
+  lock_version: 10
+  updated_by: 1
+  id: 1005
+  report_id: 263
+  company_id: 1
+  print_orientation: 
+  created_at: 2010/06/24 00:00:00
+report_layouts_073: 
+  name: By A/c Period
+  updated_at: 2011/02/01 15:30:26
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lockedcolumncount: 0
+  layout_type: S
+  lock_version: 6
+  updated_by: 1
+  id: 1207
+  report_id: 462
+  company_id: 1
+  print_orientation: 
+  created_at: 2010/07/12 00:00:00
+report_layouts_128: 
+  name: By Customer Name
+  updated_at: 2011/01/19 16:35:33
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lockedcolumncount: 0
+  layout_type: S
+  lock_version: 21
+  updated_by: 1
+  id: 1381
+  report_id: 501
+  company_id: 1
+  print_orientation: 
+  created_at: 2010/08/07 00:00:00
+report_layouts_154: 
+  name: "By Lab #"
+  updated_at: 2010/08/19 12:24:48
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  lockedcolumncount: 0
+  layout_type: S
+  lock_version: 6
+  updated_by: 100
+  id: 1464
+  report_id: 681
+  company_id: 1
+  print_orientation: 
+  created_at: 2010/08/19 11:55:07
+report_layouts_180: 
+  name: "By Account #"
+  updated_at: 2011/01/19 16:45:52
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  lockedcolumncount: 0
+  layout_type: S
+  lock_version: 27
+  updated_by: 1
+  id: 1685
+  report_id: 385
+  company_id: 1
+  print_orientation: 
+  created_at: 2010/09/09 00:00:00
+report_layouts_209: 
+  name: "By Customer # (Print Version)"
+  updated_at: 2011/01/19 18:08:00
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  lockedcolumncount: 0
+  layout_type: S
+  lock_version: 9
+  updated_by: 1
+  id: 1806
+  report_id: 400
+  company_id: 1
+  print_orientation: 
+  created_at: 2010/10/05 00:00:00
+report_layouts_262: 
+  name: temp2
+  updated_at: 2011/03/09 11:55:58
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lockedcolumncount: 0
+  layout_type: U
+  lock_version: 9
+  updated_by: 1
+  id: 1910
+  report_id: 340
+  company_id: 1
+  print_orientation: ""
+  created_at: 2011/03/03 17:53:54
+report_layouts_236: 
+  name: TEMP
+  updated_at: 2011/01/21 13:02:34
+  update_flag: Y
+  trans_flag: A
+  created_by: 2
+  lockedcolumncount: 0
+  layout_type: S
+  lock_version: 6
+  updated_by: 2
+  id: 1883
+  report_id: 886
+  company_id: 1
+  print_orientation: 
+  created_at: 2011/01/18 00:00:00
+report_layouts_048: 
+  name: "By Store #"
+  updated_at: 2011/01/19 18:08:06
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  lockedcolumncount: 0
+  layout_type: S
+  lock_version: 27
+  updated_by: 1
+  id: 1006
+  report_id: 400
+  company_id: 1
+  print_orientation: 
+  created_at: 2010/06/24 00:00:00
+report_layouts_074: 
+  name: "By Customer #"
+  updated_at: 2011/02/01 15:30:32
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lockedcolumncount: 0
+  layout_type: S
+  lock_version: 6
+  updated_by: 1
+  id: 1208
+  report_id: 462
+  company_id: 1
+  print_orientation: 
+  created_at: 2010/07/12 00:00:00
+report_layouts_129: 
+  name: "By Store #"
+  updated_at: 2011/01/19 15:22:06
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lockedcolumncount: 0
+  layout_type: S
+  lock_version: 15
+  updated_by: 1
+  id: 1382
+  report_id: 501
+  company_id: 1
+  print_orientation: 
+  created_at: 2010/08/07 15:36:07
+report_layouts_155: 
+  name: "By Store #"
+  updated_at: 2010/08/19 12:24:36
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  lockedcolumncount: 0
+  layout_type: S
+  lock_version: 2
+  updated_by: 100
+  id: 1465
+  report_id: 681
+  company_id: 1
+  print_orientation: 
+  created_at: 2010/08/19 11:55:09
+report_layouts_181: 
+  name: "By Bank #"
+  updated_at: 2011/01/19 16:45:53
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  lockedcolumncount: 0
+  layout_type: S
+  lock_version: 22
+  updated_by: 1
+  id: 1686
+  report_id: 385
+  company_id: 1
+  print_orientation: 
+  created_at: 2010/09/09 00:00:00
+report_layouts_263: 
+  name: NewTest
+  updated_at: 2011/03/09 11:54:02
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lockedcolumncount: 2
+  layout_type: S
+  lock_version: 22
+  updated_by: 1
+  id: 1911
+  report_id: 340
+  company_id: 1
+  print_orientation: P
+  created_at: 2011/03/04 00:00:00
+report_layouts_237: 
+  name: TEMP
+  updated_at: 2011/01/21 12:55:20
+  update_flag: Y
+  trans_flag: A
+  created_by: 2
+  lockedcolumncount: 0
+  layout_type: S
+  lock_version: 4
+  updated_by: 2
+  id: 1884
+  report_id: 887
+  company_id: 1
+  print_orientation: 
+  created_at: 2011/01/18 00:00:00
+report_layouts_049: 
+  name: "By Store #"
+  updated_at: 2011/01/12 15:10:15
+  update_flag: Y
+  trans_flag: A
+  created_by: 2
+  lockedcolumncount: 0
+  layout_type: S
+  lock_version: 11
+  updated_by: 1
+  id: 1007
+  report_id: 265
+  company_id: 1
+  print_orientation: 
+  created_at: 2010/06/24 00:00:00
+report_layouts_075: 
+  name: By A/c Period
+  updated_at: 2011/01/19 12:50:48
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lockedcolumncount: 0
+  layout_type: S
+  lock_version: 6
+  updated_by: 1
+  id: 1209
+  report_id: 480
+  company_id: 1
+  print_orientation: 
+  created_at: 2010/07/13 00:00:00
+report_layouts_156: 
+  name: "By A/c Period #"
+  updated_at: 2010/08/31 14:28:53
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  lockedcolumncount: 0
+  layout_type: S
+  lock_version: 18
+  updated_by: 180
+  id: 1466
+  report_id: 680
+  company_id: 1
+  print_orientation: 
+  created_at: 2010/08/19 12:22:49
+report_layouts_182: 
+  name: "By Store #"
+  updated_at: 2011/01/19 16:45:55
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  lockedcolumncount: 0
+  layout_type: S
+  lock_version: 22
+  updated_by: 1
+  id: 1687
+  report_id: 385
+  company_id: 1
+  print_orientation: 
+  created_at: 2010/09/09 00:00:00

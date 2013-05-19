@@ -1,0 +1,150 @@
+<html><head>
+
+
+<meta content="text/html; charset=UTF-8" http-equiv="Content-Type"/>
+<title>Please Update Your Records - New Access Numbers</title>
+<meta name="author" content="aranea"/>
+
+
+<style type="text/css">
+a:hover { text-decoration: none !important; }
+.user {font-size: 14px; color: rgb(0, 0, 0);}
+</style>
+</head><body>
+
+<table width="100%" cellspacing="0" cellpadding="0" border="0">
+ <tbody><tr>
+
+  <td style="text-align: center;">
+   <center>
+    <table width="700" cellspacing="0" cellpadding="0" border="0" align="center">
+     <tbody><tr>
+      <td height="35" class="head" style="padding: 0px 0px 0px 16px; background: rgb(45, 45, 45) none repeat scroll 0% 0%; font-size: 12px; -moz-background-clip: border; -moz-background-origin: padding; -moz-background-inline-policy: continuous; font-family: Arial,Helvetica,sans-serif; color: rgb(161, 161, 161);">
+       You are receiving this email because you are a registered member of OpenFo network.
+      </td>
+
+     </tr>
+
+     <tr>
+    <!-- CENTER -->
+      <td class="center" style="border: 1px solid rgb(239, 239, 239);">
+       <table width="100%" cellspacing="0" cellpadding="0" border="0">
+        <tbody><tr>
+         <td class="logo" style="padding: 16px 0px 0px 19px;">
+          <img width="183" height="66" border="0" src="http://sip.openfo.com/images/logo.jpg" alt="logo"/>
+
+         </td>
+        </tr>
+
+        <tr>
+         <td height="29">
+          <table width="100%" cellspacing="0" cellpadding="0" border="0">
+           <tbody><tr>
+            <td width="477" valign="top" class="date_lft" style="padding: 0px;"><img width="477" height="29" border="0" src="http://sip.openfo.com/images/date_lft.jpg" alt=""/></td>
+            <td valign="top" class="date_rht">
+
+             <table width="100%" cellspacing="0" cellpadding="0" border="0">
+              <tbody><tr>
+               <td height="23" class="date_txt" style="font-weight: bold; font-size: 12px; line-height: 23px; background-color: rgb(233, 125, 0); font-family: Georgia,Arial,Helvetica,sans-serif; color: rgb(255, 255, 255); font-style: italic; text-align: center;"><%= Time.now.strftime("%B %d, %Y" ) %></td>
+
+              </tr>
+             </tbody></table>
+            </td>
+           </tr>
+          </tbody></table>
+         </td>
+        </tr>
+
+        
+        <tr>
+         <td class="cont_cell" style="padding: 17px 36px 15px 22px; font-size: 12px;">
+          <p style="padding: 0px 0px 7px; line-height: 20px;">
+						<b class="user" style="">Dear <span style="color: rgb(238, 118, 0);"><%= @user.first_name %></span>,</b>
+					</p>
+
+          <p class="txt" style="padding: 0px 0px 7px; font-size: 12px; line-height: 20px; font-family: Arial,Helvetica,sans-serif; color: rgb(51, 51, 51); width:600px">
+          	You have been assigned with new Access Numbers.<br>
+ 						
+							Effective immediately, please update your records with the following list of new Access Numbers and disregard your old ones:<br><br>
+							<% for phone in @user.phones -%>
+
+								For <b class="user" style="font-size: 12px; color: #000;"><%= number_to_phone(phone.complete_phone_number, :area_code => true) %></b>, please use <b><span style="color: #EE7600;"><%=   if (phone.assigned_did) then number_to_phone(phone.assigned_did.did.number , :area_code => true) else "1(888) 221-9265 (Toll Free Number)" end %></span></b><br>
+
+							<% end %>
+						<br>
+						You may also view this information in your OpenFo account by clicking <%= link_to "here", "http://openfo.com/account/my/phones" %> <br>
+						<br>
+						This change was due to our sudden business growth. In order to assure you a higher quality of service we needed to switch to larger carriers.
+						<br>
+						<br>
+						We apologize for any inconvenience that this may have caused you.
+						<br>
+						<br>
+						Thank you for using OpenFo network.
+						<p class="txt" style="padding: 0px 0px 7px; font-size: 12px; line-height: 20px; font-family: Arial,Helvetica,sans-serif; color: rgb(51, 51, 51);">
+							Best regards,<br>
+							<b>OpenFo Management Team</b>
+						</p>
+          </p>
+         </td>
+        </tr>        
+        <tr>
+         <td class="art_sep" style="padding: 10px 0px 0px;"><img width="697" height="1" border="0" src="http://sip.openfo.com/images/art_sep_abs.gif" alt=""/></td>
+        </tr>
+        <tr>
+         <td class="cont_cell" style="padding: 17px 36px 15px 22px; font-size: 12px;">
+          <table width="100%" cellspacing="0" cellpadding="0" border="0">
+           <tbody><tr>
+            <td width="4"><img width="3" height="34" border="0" src="http://sip.openfo.com/images/art_head.gif" alt=""/></td>
+
+            <td><h4 style="margin: 0px 0px 15px; padding: 0px 0px 0px 5px; font-weight: normal; font-size: 18px; font-family: Georgia; color: rgb(0, 0, 0);">Customer Support: </h4></td>
+           </tr>
+          </tbody></table>
+
+          <table width="100%" cellspacing="0" cellpadding="0" border="0">
+           <tbody><tr>
+            <td width="460">
+             <p class="txt" style="padding: 0px 0px 7px; font-size: 12px; line-height: 20px; font-family: Arial,Helvetica,sans-serif; color: rgb(51, 51, 51);">
+							For customer support you may contact <b>support@openfo.com</b> or call your Access Number and press 2 to connect to one of our customer support representatives.<br/> 
+             </p>
+
+
+            </td>
+           </tr>
+
+       </tbody></table>
+      </td>
+    <!-- /CENTER -->
+     </tr>
+     <tr>
+    <!-- FOOTER -->
+      <td class="footer">
+
+       <table width="100%" cellspacing="0" cellpadding="0" border="0">
+
+        <tbody><tr>
+         <td height="31" class="foot_top" style="padding: 0px; background: rgb(226, 226, 226) none repeat scroll 0% 0%; font-size: 12px; -moz-background-clip: border; -moz-background-origin: padding; -moz-background-inline-policy: continuous; font-family: Arial,Helvetica,sans-serif; color: rgb(124, 124, 124); text-align: center;">
+					© OpenFo, Inc.
+					<br/>
+					2967 Michelson Dr.  #G480, Irvine, CA 92612
+         </td>
+        </tr>
+        <!--<tr>
+
+         <td class="foot_btm" height="40" style="font-size: 12px; background: #E2E2E2; padding: 0px 0px 0px 0px; font-family: Arial, Helvetica, sans-serif; color: #7C7C7C; text-align: center; border-top: 1px solid #D0D0D0;">
+
+          OpenFo Logo are registered trademarks of OpenFo Group.
+         </td>
+        </tr>-->
+       </tbody></table>
+      </td>
+    <!-- /FOOTER -->
+     </tr>
+    </tbody></table>
+
+    
+  </td>
+
+ </tr>
+</tbody></table>
+</center></td></tr></tbody></table></body></html>

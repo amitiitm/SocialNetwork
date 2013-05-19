@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rds:CommonServices xmlns:rds="business.*" xmlns:mx="http://www.adobe.com/2006/mxml">
+
+	<mx:HTTPService id="saveRecord" url="/purchase/create_order_cancels" />
+	<mx:HTTPService id="getRecord" url="/purchase/show_order_cancel" />
+	<mx:HTTPService id="getList" url="/purchase/list_order_cancels" />
+	
+	<mx:HTTPService id="getListFormat" url="puoi/purchasecancellation/xmls/PurchaseCancellationListStru.xml" />
+	<mx:HTTPService id="getViewFormat" url="puoi/purchasecancellation/xmls/PurchaseCancellationCriteriaStru.xml" />
+	<mx:HTTPService id="itemDetailFormat" url="puoi/purchasecancellation/xmls/PurchaseCancellationLineDetailStru.xml" />
+	
+	<mx:HTTPService id="fetchRecordFormat" url="puoi/purchasecancellation/xmls/PurchaseCancellationFetchRecordStru.xml"/>
+	<mx:HTTPService id="fetch_open_orders" url="/purchase/list_open_orders"/>
+
+	<mx:HTTPService id="fetch_open_order_hdr" url="/purchase/list_open_orders_hdr"/>
+	<mx:HTTPService id="fetchOrderHdrFormat" url="puoi/purchasecancellation/xmls/PurchaseCancellationFetchOrderHdrStru.xml"/>
+	<mx:HTTPService id="fetchGetSelectedOrderServiceID" url="/purchase/list_open_order_lines"/>
+	
+	<mx:HTTPService id="printRecord" url="" />
+
+</rds:CommonServices>	

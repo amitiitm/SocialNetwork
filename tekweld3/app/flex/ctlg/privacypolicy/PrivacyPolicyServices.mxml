@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rds:ApplicationServices xmlns:rds="business.*" xmlns:mx="http://www.adobe.com/2006/mxml">
+
+	<mx:HTTPService id="saveRecord" url="/catalog/create_catalog_private_policies"/>
+	<mx:HTTPService id="getRecord" url="/catalog/show_catalog_private_policy"/>
+	<mx:HTTPService id="getDefaultPolicy" url="/catalog/reset_privacy_policies"/>
+	<mx:HTTPService id="getParagraphDetailFormat" url="ctlg/privacypolicy/xmls/ParagraphDetailStructure.xml"/>
+		
+</rds:ApplicationServices>

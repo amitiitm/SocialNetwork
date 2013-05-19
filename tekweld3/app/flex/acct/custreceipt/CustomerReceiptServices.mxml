@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rds:CommonServices xmlns:rds="business.*" xmlns:mx="http://www.adobe.com/2006/mxml">
+
+	<mx:HTTPService id="saveRecord" url="/sale/customer_receipt/create_receipts" />
+	<mx:HTTPService id="getRecord" url="/sale/customer_receipt/show_receipts" />
+	<mx:HTTPService id="getListFormat" url="acct/custreceipt/xmls/CustomerReceiptListStru.xml" />
+	<mx:HTTPService id="getList" url="/sale/customer_receipt/list_receipts" />
+	<mx:HTTPService id="getViewFormat" url="acct/custreceipt/xmls/CustomerReceiptCriteriaStru.xml" />
+	<mx:HTTPService id="printRecord" url="/sale/customer_report/customer_receipt_format" />
+	<mx:HTTPService id="lineDetailFormat" url="acct/custreceipt/xmls/CustomerReceiptLineDetailStru.xml" />
+	<mx:HTTPService id="invoiceList" url="/sale/customer_invoice/fetch_invoices_for_receipts" />
+	<mx:HTTPService id="GLFormat" url="acct/custreceipt/xmls/CustomerReceiptGLStru.xml"/>
+
+</rds:CommonServices>

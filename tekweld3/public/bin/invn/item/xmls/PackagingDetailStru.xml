@@ -1,0 +1,12 @@
+<columns  lockedColumnCount='0'>
+
+   <column data='carton_size'			label='Carton Size'			editable='false' 	visible='true' 		width='100' textAlign='left'
+		forLevel='false' 				defaultForLevel=''			booleanFlag='false'	sortDataType='S'	columnPrecision="NaN"/>
+
+	<column data='pcs_per_carton'		label='Pcs/Carton'			editable='false'	visible='true'		width='80'	textAlign='right' 
+		forLevel='false'				defaultForLevel='' 			booleanFlag='false'	sortDataType='N' 	columnPrecision="2"/>
+		
+	<column data='carton_wt'			label='Carton Weight'		editable='false'	visible='true'		width='80'	textAlign='right'
+		forLevel='false'				defaultForLevel='' 			booleanFlag='false'	sortDataType='N' 	columnPrecision="2"/>
+
+</columns> 

@@ -1,0 +1,43 @@
+<% if @account.endpoints.blank? %>
+	<p>
+		No Endpoint defined.
+	</p>
+<% else %>
+	<% table :width => "450px" do |t| %>
+		<% t.th "Name" %>
+		<% t.th "IP" %>
+		<% t.th "In" %>
+		<% t.th "Out" %>
+		<% t.th "Actions" %>
+		
+		<% for e in @account.endpoints.find(:all, :order => "name asc") %>
+			<% t.td  e.name %>
+			<% t.td  e.ip %>
+			<% t.td  (if e.in then "Yes" else "No" end) %>
+			<% t.td  (if e.out then "Yes" else "No" end) %>
+			<% t.td 	(
+									link_to("Edit", edit_account_endpoint_path(@account, e), :class => "ajax", :ajax => "eval") + " | " +
+									link_to("Delete", account_endpoint_path(@account,e), :class => "ajax-delete")
+								) 
+			%>
+			<% t.new_row %>
+		<% end -%>
+	<% end -%>
+<% end -%>
+<br>
+<button id="dialog-new-endpoint-link">New Endpoint</button>
+
+<%= render :partial => "carriers/endpoints/endpoint_dialog", :locals => {:obj => @account, :endpoint => Endpoint.new, :id => "dialog-new-endpoint", :title => "New Endpoint"} %>
+
+<div id="edit-endpoint" class="hide"></div>
+
+<script type="text/javascript" src="/js/accounts/endpoint_ui.js"></script>
+<!--
+<script type="text/javascript" src="/js/tablesorter.js"></script>
+<script>
+	$(document).ready(function() {
+		$("#sort-table").tablesorter({ widgets: ['zebra']});
+		$(".header").append('<span class="ui-icon ui-icon-carat-2-n-s"></span>');
+	});
+</script>
+-->

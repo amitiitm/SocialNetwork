@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rds:CommonServices xmlns:rds="business.*"
+	xmlns:mx="http://www.adobe.com/2006/mxml">
+
+	<mx:HTTPService id="saveRecord" url="/account/gl_category/create_gl_category"/>
+	<mx:HTTPService id="getRecord" url="/account/gl_category/show_gl_category"/>
+	<mx:HTTPService id="getListFormat" url="acct/glcategory/xmls/GLCategoryListStru.xml"/>
+	<mx:HTTPService id="getList" url="/account/gl_category/list_gl_category"/>
+	<mx:HTTPService id="getViewFormat" url="acct/glcategory/xmls/GLCategoryCriteriaStru.xml"/>
+	<mx:HTTPService id="printRecord" url=""/>
+	
+	<mx:HTTPService id="DetailFormat" url="acct/glcategory/xmls/GLCategoryImportStru.xml"/>
+	<mx:HTTPService id="recordUploadUrl" url="/account/gl_category/convert_exceltoxml_for_glcategory"/>
+	
+</rds:CommonServices>

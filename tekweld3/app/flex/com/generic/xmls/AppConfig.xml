@@ -1,0 +1,7 @@
+<appConfigs>
+             
+  <main_url>.promo.diasparkonline.com:4009</main_url>
+<!--            	     <main_url>.promo:3000</main_url>-->
+					<update_url>http://download.diasparkonline.com/tekweld/update.xml</update_url>
+            
+</appConfigs> 

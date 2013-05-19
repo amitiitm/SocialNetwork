@@ -1,0 +1,17 @@
+<columns lockedColumnCount='0'>
+	
+	
+	<column data='trans_date'			label='Date'			editable='false'	visible='true'	width='80'	textAlign='left'	forLevel='false'
+			defaultForLevel=''			booleanFlag='false'		sortDataType='D'/>
+	
+	<column data='trans_no'				label='Receipt #'		editable='false'	visible='true'	width='60'	textAlign='left'	forLevel='false'
+			defaultForLevel=''			booleanFlag='false'		sortDataType='N'/>
+	
+	<column data='last_name'			label='Last Name' 		editable='false'	visible='true'	width='80'	textAlign='left'	forLevel='false'
+			defaultForLevel=''			booleanFlag='false'		sortDataType='S'/>
+	
+	<column data='first_name'			label='First Name' 		editable='false'	visible='true'	width='80'	textAlign='left'	forLevel='false'
+			defaultForLevel=''			booleanFlag='false'		sortDataType='S'/>
+
+			
+</columns>  

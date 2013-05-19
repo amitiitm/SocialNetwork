@@ -1,0 +1,2 @@
+page << "$('#edit-endpoint').html('#{ escape_javascript render :partial => "carriers/endpoints/endpoint_dialog", :locals => {:obj => @account, :endpoint => @endpoint, :id => "dialog-edit-endpoint", :title => "Edit Endpoint"}}');"
+page << "show_edit_endpoint_dialog(#{@endpoint.id})"

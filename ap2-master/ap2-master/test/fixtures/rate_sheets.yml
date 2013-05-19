@@ -1,0 +1,13 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  name: MyString
+  effective_date: MyString
+  active: false
+  carrier_id: 1
+
+two:
+  name: MyString
+  effective_date: MyString
+  active: false
+  carrier_id: 1

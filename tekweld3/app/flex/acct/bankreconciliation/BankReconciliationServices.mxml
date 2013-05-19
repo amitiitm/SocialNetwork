@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rds:CommonServices xmlns:rds="business.*" xmlns:mx="http://www.adobe.com/2006/mxml">
+
+	<mx:HTTPService id="saveRecord" url="/account/bank/create_bank_reconciliations" />
+	<mx:HTTPService id="getRecord" url="/account/bank/show_bank_reconciliations" />
+	<mx:HTTPService id="getList" url="/account/bank/list_bank_reconciliations" />
+	
+	<mx:HTTPService id="geTransactionInfo" url="/account/bank/fetch_bank_transaction_details" />
+	
+	<mx:HTTPService id="getListFormat" url="acct/bankreconciliation/xmls/BankReconciliationListStru.xml" />
+	<mx:HTTPService id="getViewFormat" url="acct/bankreconciliation/xmls/BankReconciliationCriteriaStru.xml" />
+	
+	
+	<mx:HTTPService id="getDepositFormat" url="acct/bankreconciliation/xmls/DepositDetailLineStru.xml" />
+	<mx:HTTPService id="getPaymentFormat" url="acct/bankreconciliation/xmls/PaymentDetailLineStru.xml" />
+	<mx:HTTPService id="getTransactionFormat" url="acct/bankreconciliation/xmls/TransactionLineDetailStru.xml" />
+	<mx:HTTPService id="getClearCheckFormat" url="acct/bankreconciliation/xmls/ClearCheckLineDetailStru.xml" />
+	
+	
+	<mx:HTTPService id="printRecord" url="" />
+	
+	
+	
+
+</rds:CommonServices>

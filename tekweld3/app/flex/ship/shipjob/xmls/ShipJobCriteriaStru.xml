@@ -1,0 +1,35 @@
+<columns Title =''>
+	
+	<column dataType="S" 			label="A/C Period" 			checkbox="ckAll4" 		xmlTagFrom="str5" 			from="dcStr5" 
+			xmlTagTo="str6" 		to="dcStr6"					multiSelect="mvMultiSelect3" 	xmlTagMultiSelect="multiselect3"
+			lookupFlag="true" 		lookupName="AccountPeriod"	lookupLabel="code"		dataField="code" 			labelField="code"	lookupFormatUrl=""/>
+
+	<column dataType="D"			label="Order Date" 			checkbox="ckAll3" 		xmlTagFrom="dt1" 			from="dfDt1" 
+			xmlTagTo="dt2" 			to="dfDt2"					
+			lookupFlag="false" 		lookupName="" 				/>
+
+	<column dataType="S" 			label="Order #" 			checkbox="ckAll2" 		xmlTagFrom="str3" 			from="tiStr3" 
+			xmlTagTo="str4" 		to="tiStr4"					multiSelect="tiMultiSelect2" 	xmlTagMultiSelect="multiselect2"
+			lookupFlag="false" 		lookupName="" 				/>
+
+	<column dataType="S" 			label="Customer #" 			checkbox="ckAll1" 		xmlTagFrom="str1" 			from="dcStr1"
+			xmlTagTo="str2" 		to="dcStr2"					multiSelect="mvMultiSelect1" 	xmlTagMultiSelect="multiselect1"
+			lookupFlag="true" 		lookupName="Customer"		lookupLabel="code"  dataField="code" 			labelField="code"	lookupFormatUrl="retailCustomerLookupHelpFormat"/>
+	
+	<column dataType="S" 			label="Customer PO #" 		checkbox="ckAll6" 		xmlTagFrom="str9" 			from="dcStr9"
+			xmlTagTo="str10" 		to="dcStr10"				multiSelect="mvMultiSelect5" 	xmlTagMultiSelect="multiselect5"
+			lookupFlag="false" 		lookupName=""				lookupLabel=""  dataField="" 			labelField=""/>	
+	
+	<column dataType="S" 			label="Logo" 				checkbox="ckAll5" 		xmlTagFrom="str7" 			from="tiStr7"
+			xmlTagTo="str8" 		to="tiStr8"					multiSelect="mvMultiSelect4" 	xmlTagMultiSelect="multiselect4"
+			lookupFlag="false" 		lookupName=""				lookupLabel=""  dataField="" 			labelField=""/>
+		
+	<column dataType="S" 			label="Address 1" 			checkbox="ckAll7" 		xmlTagFrom="str11" 			from="tiStr11"
+			xmlTagTo="str12" 		to="tiStr12"				multiSelect="mvMultiSelect6" 	xmlTagMultiSelect="multiselect6"
+			lookupFlag="false" 		lookupName=""				lookupLabel=""  dataField="" 			labelField=""/>				
+	
+	<column dataType="D"			label="Ship Date" 			checkbox="ckAll8" 		xmlTagFrom="dt2" 			from="dfDt2" 
+			xmlTagTo="dt3" 			to="dfDt3"					
+			lookupFlag="false" 		lookupName="" 				/>
+			
+</columns> 	

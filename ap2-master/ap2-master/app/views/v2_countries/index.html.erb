@@ -1,0 +1,41 @@
+<%= page_title :title => "List of Countries" %>
+
+<% table :width => "650px;" do |t| %>
+	<% t.th "#" %>
+	<% t.th "Name" %>
+	<% t.th "CC" %>
+	<% t.th "2L" %>
+	<% t.th "3L" %>
+	<% t.th "Validation" %>
+	<% t.th "Min.D#" %>
+	<% t.th "Max.D#" %>
+	<% t.th "miCNS" %>
+	<% t.th "mxCNS" %>
+	<% t.th "SC" %>
+	<% t.th "Publish" %>
+	<% t.th "Actions" %>
+	
+	<% counter = 0 %>
+	<% for c in @countries %>
+		<% t.td(counter += 1) %>
+		<% t.td c.name %>
+		<% t.td c.country_code %>
+		<% t.td c.country_name_2_letters %>
+		<% t.td c.country_name_3_letters %>
+		<% t.td V2Country::VALIDATION_STRINGS[c.validation] %>
+		<% t.td c.min_digits %>
+		<% t.td c.max_digits %>
+		<% t.td c.min_cns %>
+		<% t.td c.max_cns %>
+		<% t.td  yes_no(c.special_case) %>
+		<% t.td check_box "country", "publish", :checked => c.publish, :class => "observe-publish", :"record-id" => c.id %>
+		<% t.td  link_to("Edit", edit_v2_country_path(c), :class => "ajax", :update => "container") %>
+		
+		<% t.new_row %>
+	<% end -%>
+<% end -%>
+<div id="container"></div>
+
+<%= javascript_include_tag "/js/countries/observe_publish.js" %>
+<script src="/js/tablesorter.js" type="text/javascript"></script>
+<script src="/js/accounts/index.js" type="text/javascript"></script>

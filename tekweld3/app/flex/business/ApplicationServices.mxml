@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rds:ServiceLocator xmlns:rds="com.adobe.cairngorm.business.*" xmlns:mx="http://www.adobe.com/2006/mxml">
+
+	<mx:HTTPService id="getLogin" url="/setup/main/main_user_login"/>
+	<mx:HTTPService id="loginPwdChange" url="/setup/user/change_password"/>
+	<mx:HTTPService id="resetPassword" url="/setup/user/reset_password"/>
+	<mx:HTTPService id="createUser" url="/setup/main/create_main_user"/>
+	<mx:HTTPService id="createCompany" url="/setup/main/create_main_company"/>
+	<mx:HTTPService id="getModules" url="/setup/moodule/moodule_list"/>
+	<mx:HTTPService id="getMenus" url="/setup/menu/menu_list"/>
+	<mx:HTTPService id="getMasterData" url="/setup/type/list_all_types"/>
+	<mx:HTTPService id="getPaths" url="/setup/type/list_paths"/>
+	<mx:HTTPService id="getLogout" url="/setup/session/destroy"/>
+	<mx:HTTPService id="getViews" url="/report/criteria/list_by_user_doc"/>
+	<mx:HTTPService id="saveView" url="/report/criteria/create_criterias"/>
+	<mx:HTTPService id="getLayouts" url="/report/report/list_system_user_layouts"/>
+	<mx:HTTPService id="saveLayout" url="/report/report/create_report_layouts"/>
+	<mx:HTTPService id="updateUserLastModule" url="/setup/user/update_user_last_moodule"/>
+												
+	<mx:HTTPService id="getAppConfig" url="com/generic/xmls/AppConfig.xml"/>
+	<mx:HTTPService id="getInformation" url="/setup/setup/fetch_info_for_action"/>
+	<mx:HTTPService id="userStoreAccessLookupHelpFormat" url="com/generic/xmls/UserStoreAccessLookupHelpStru.xml"/>
+	<mx:HTTPService id="getDefaultSetupData" url="/inventory/item/fetch_default_rush_setup_item"/>
+
+</rds:ServiceLocator>

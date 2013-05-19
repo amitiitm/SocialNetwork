@@ -1,0 +1,29 @@
+<columns lockedColumnCount='0'>
+
+	<column data='select_yn' 			label='Attended' 		editable='true' 	visible='true' 	width='70' 	textAlign='center' 	
+			forLevel='false'			defaultForLevel='' 		sortDataType='S'	dataType='S'	booleanFlag='true'
+			dataValueForOn="Y"			dataValueForOff=" "		
+			componentType="CheckBox"	columnPrecision="NaN"
+	/>
+	
+	<column data='full_name' 	        label='Name' 			editable='false' 	visible='true' 	width='180' textAlign='left' 	
+			forLevel='true' 			defaultForLevel='1'		sortDataType='S' 	dataType='S'	booleanFlag='false'
+			componentType="Text"		columnPrecision="NaN"
+	/>
+	
+	<column data='comments'				label='Message' 		editable='false' 	visible='true' 	width='450' textAlign='left' 	
+			forLevel='true'				defaultForLevel='' 		sortDataType='S'	dataType='S'	booleanFlag='false'
+			componentType="Text"		columnPrecision="NaN"
+	/>
+
+	<column data='phone' 	            label='Phone' 			editable='false' 	visible='true' 	width='120' textAlign='left' 	
+			forLevel='false'			defaultForLevel=''		sortDataType='S'	dataType='N'	booleanFlag='false'
+			componentType="Text"		columnPrecision="NaN"
+	/>	 
+	
+	<column data='email' 				label='Email' 			editable='false' 	visible='true' 	width='120' textAlign='left' 	
+			forLevel='false'			defaultForLevel='' 		sortDataType='S'	dataType='S'	booleanFlag='false'
+			componentType="Text"		columnPrecision="NaN"
+	/>
+	
+</columns> 

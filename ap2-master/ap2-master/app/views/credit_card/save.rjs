@@ -1,0 +1,12 @@
+if @errors.size > 0
+  page.replace_html :errors, ''
+  @errors.keys.each do |model|
+    @errors[model].keys.each do |atr|
+      page.insert_html :top, :errors, "<li>#{ActiveSupport::Inflector.humanize(atr)} #{@errors[model][atr]}</li>"
+    end
+  end  
+  page << "$('loading').hide()"
+  page << "$('error_block').appear()"
+else
+  page << "window.location.href = '/accounts/details/#{params[:id]}'"
+end

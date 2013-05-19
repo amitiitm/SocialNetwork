@@ -1,0 +1,901 @@
+--- 
+account_periods_027: 
+  in_frdt: 2011/03/01 00:00:00
+  ar_post_flag: N
+  updated_at: 2011/01/28 19:00:34
+  iv: ""
+  code: "201103"
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  account_year_id: 141
+  ap: O
+  lock_version: 3
+  gl: O
+  updated_by: 1
+  id: 305
+  description: Mar 201103
+  ar: O
+  to_date: 2011/03/31 00:00:00
+  from_date: 2011/03/01 00:00:00
+  company_id: 1
+  in_todt: 2011/03/31 00:00:00
+  ap_post_flag: N
+  in_post_flag: ""
+  gl_post_flag: N
+  created_at: 2010/12/31 00:00:00
+account_periods_016: 
+  in_frdt: 2010/04/01 00:00:00
+  ar_post_flag: ""
+  updated_at: 2010/12/20 12:19:08
+  iv: ""
+  code: "201004"
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  account_year_id: 134
+  ap: C
+  lock_version: 1
+  gl: C
+  updated_by: 1
+  id: 288
+  description: April 10
+  ar: C
+  to_date: 2010/04/30 00:00:00
+  from_date: 2010/04/01 00:00:00
+  company_id: 1
+  in_todt: 2010/04/30 00:00:00
+  ap_post_flag: ""
+  in_post_flag: ""
+  gl_post_flag: ""
+  created_at: 2010/11/11 00:00:00
+account_periods_005: 
+  in_frdt: 2009/05/01 00:00:00
+  ar_post_flag: ""
+  updated_at: 2011/01/14 11:09:10
+  iv: ""
+  code: "200905"
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  account_year_id: 133
+  ap: C
+  lock_version: 2
+  gl: C
+  updated_by: 2
+  id: 277
+  description: May 09
+  ar: C
+  to_date: 2009/05/31 00:00:00
+  from_date: 2009/05/01 00:00:00
+  company_id: 1
+  in_todt: 2009/05/31 00:00:00
+  ap_post_flag: ""
+  in_post_flag: ""
+  gl_post_flag: ""
+  created_at: 2010/11/11 00:00:00
+account_periods_028: 
+  in_frdt: 2011/04/01 00:00:00
+  ar_post_flag: N
+  updated_at: 2011/01/28 19:00:34
+  iv: ""
+  code: "201104"
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  account_year_id: 141
+  ap: C
+  lock_version: 3
+  gl: C
+  updated_by: 1
+  id: 306
+  description: Apr 201104
+  ar: C
+  to_date: 2011/04/30 00:00:00
+  from_date: 2011/04/01 00:00:00
+  company_id: 1
+  in_todt: 2011/04/30 00:00:00
+  ap_post_flag: N
+  in_post_flag: ""
+  gl_post_flag: N
+  created_at: 2010/12/31 00:00:00
+account_periods_017: 
+  in_frdt: 2010/05/01 00:00:00
+  ar_post_flag: ""
+  updated_at: 2010/12/20 12:19:08
+  iv: ""
+  code: "201005"
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  account_year_id: 134
+  ap: C
+  lock_version: 1
+  gl: C
+  updated_by: 1
+  id: 289
+  description: May 10
+  ar: C
+  to_date: 2010/05/31 00:00:00
+  from_date: 2010/05/01 00:00:00
+  company_id: 1
+  in_todt: 2010/05/31 00:00:00
+  ap_post_flag: ""
+  in_post_flag: ""
+  gl_post_flag: ""
+  created_at: 2010/11/11 00:00:00
+account_periods_006: 
+  in_frdt: 2009/06/01 00:00:00
+  ar_post_flag: ""
+  updated_at: 2011/01/14 11:09:10
+  iv: ""
+  code: "200906"
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  account_year_id: 133
+  ap: C
+  lock_version: 2
+  gl: C
+  updated_by: 2
+  id: 278
+  description: June 09
+  ar: C
+  to_date: 2009/06/30 00:00:00
+  from_date: 2009/06/01 00:00:00
+  company_id: 1
+  in_todt: 2009/06/30 00:00:00
+  ap_post_flag: ""
+  in_post_flag: ""
+  gl_post_flag: ""
+  created_at: 2010/11/11 00:00:00
+account_periods_029: 
+  in_frdt: 2011/05/01 00:00:00
+  ar_post_flag: Y
+  updated_at: 2011/01/28 19:00:34
+  iv: ""
+  code: "201105"
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  account_year_id: 141
+  ap: C
+  lock_version: 3
+  gl: C
+  updated_by: 1
+  id: 307
+  description: May 201105
+  ar: C
+  to_date: 2011/05/31 00:00:00
+  from_date: 2011/05/01 00:00:00
+  company_id: 1
+  in_todt: 2011/05/31 00:00:00
+  ap_post_flag: Y
+  in_post_flag: ""
+  gl_post_flag: Y
+  created_at: 2010/12/31 00:00:00
+account_periods_018: 
+  in_frdt: 2010/06/01 00:00:00
+  ar_post_flag: ""
+  updated_at: 2010/12/20 12:19:08
+  iv: ""
+  code: "201006"
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  account_year_id: 134
+  ap: C
+  lock_version: 1
+  gl: C
+  updated_by: 1
+  id: 290
+  description: June 10
+  ar: C
+  to_date: 2010/06/30 00:00:00
+  from_date: 2010/06/01 00:00:00
+  company_id: 1
+  in_todt: 2010/06/30 00:00:00
+  ap_post_flag: ""
+  in_post_flag: ""
+  gl_post_flag: ""
+  created_at: 2010/11/11 00:00:00
+account_periods_007: 
+  in_frdt: 2009/07/01 00:00:00
+  ar_post_flag: ""
+  updated_at: 2011/01/14 11:09:10
+  iv: ""
+  code: "200907"
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  account_year_id: 133
+  ap: C
+  lock_version: 2
+  gl: C
+  updated_by: 2
+  id: 279
+  description: July 09
+  ar: C
+  to_date: 2009/07/31 00:00:00
+  from_date: 2009/07/01 00:00:00
+  company_id: 1
+  in_todt: 2009/07/31 00:00:00
+  ap_post_flag: ""
+  in_post_flag: ""
+  gl_post_flag: ""
+  created_at: 2010/11/11 00:00:00
+account_periods_030: 
+  in_frdt: 2011/06/01 00:00:00
+  ar_post_flag: Y
+  updated_at: 2011/01/28 19:00:34
+  iv: ""
+  code: "201106"
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  account_year_id: 141
+  ap: O
+  lock_version: 3
+  gl: O
+  updated_by: 1
+  id: 308
+  description: Jun 201106
+  ar: O
+  to_date: 2011/06/30 00:00:00
+  from_date: 2011/06/01 00:00:00
+  company_id: 1
+  in_todt: 2011/06/30 00:00:00
+  ap_post_flag: Y
+  in_post_flag: ""
+  gl_post_flag: Y
+  created_at: 2010/12/31 00:00:00
+account_periods_019: 
+  in_frdt: 2010/07/01 00:00:00
+  ar_post_flag: ""
+  updated_at: 2010/12/20 12:19:08
+  iv: ""
+  code: "201007"
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  account_year_id: 134
+  ap: C
+  lock_version: 1
+  gl: C
+  updated_by: 1
+  id: 291
+  description: July 10
+  ar: C
+  to_date: 2010/07/31 00:00:00
+  from_date: 2010/07/01 00:00:00
+  company_id: 1
+  in_todt: 2010/07/31 00:00:00
+  ap_post_flag: ""
+  in_post_flag: ""
+  gl_post_flag: ""
+  created_at: 2010/11/11 00:00:00
+account_periods_008: 
+  in_frdt: 2009/08/01 00:00:00
+  ar_post_flag: ""
+  updated_at: 2011/01/14 11:09:10
+  iv: ""
+  code: "200908"
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  account_year_id: 133
+  ap: C
+  lock_version: 2
+  gl: C
+  updated_by: 2
+  id: 280
+  description: August 09
+  ar: C
+  to_date: 2009/08/31 00:00:00
+  from_date: 2009/08/01 00:00:00
+  company_id: 1
+  in_todt: 2009/08/31 00:00:00
+  ap_post_flag: ""
+  in_post_flag: ""
+  gl_post_flag: ""
+  created_at: 2010/11/11 00:00:00
+account_periods_031: 
+  in_frdt: 2011/07/01 00:00:00
+  ar_post_flag: N
+  updated_at: 2011/01/28 19:00:34
+  iv: ""
+  code: "201107"
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  account_year_id: 141
+  ap: O
+  lock_version: 2
+  gl: O
+  updated_by: 1
+  id: 323
+  description: Jul 201107
+  ar: O
+  to_date: 2011/07/31 00:00:00
+  from_date: 2011/07/01 00:00:00
+  company_id: 1
+  in_todt: 2011/07/31 00:00:00
+  ap_post_flag: N
+  in_post_flag: ""
+  gl_post_flag: N
+  created_at: 2011/01/28 00:00:00
+account_periods_020: 
+  in_frdt: 2010/09/01 00:00:00
+  ar_post_flag: ""
+  updated_at: 2010/12/20 12:19:08
+  iv: ""
+  code: "201008"
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  account_year_id: 134
+  ap: C
+  lock_version: 1
+  gl: C
+  updated_by: 1
+  id: 292
+  description: September 10
+  ar: C
+  to_date: 2010/09/30 00:00:00
+  from_date: 2010/09/01 00:00:00
+  company_id: 1
+  in_todt: 2010/09/30 00:00:00
+  ap_post_flag: ""
+  in_post_flag: ""
+  gl_post_flag: ""
+  created_at: 2010/11/11 00:00:00
+account_periods_009: 
+  in_frdt: 2009/09/01 00:00:00
+  ar_post_flag: ""
+  updated_at: 2011/01/14 11:09:10
+  iv: ""
+  code: "200909"
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  account_year_id: 133
+  ap: C
+  lock_version: 2
+  gl: C
+  updated_by: 2
+  id: 281
+  description: September 09
+  ar: C
+  to_date: 2009/09/30 00:00:00
+  from_date: 2009/09/01 00:00:00
+  company_id: 1
+  in_todt: 2009/09/30 00:00:00
+  ap_post_flag: ""
+  in_post_flag: ""
+  gl_post_flag: ""
+  created_at: 2010/11/11 00:00:00
+account_periods_032: 
+  in_frdt: 2011/08/01 00:00:00
+  ar_post_flag: N
+  updated_at: 2011/01/28 19:00:34
+  iv: ""
+  code: "201108"
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  account_year_id: 141
+  ap: O
+  lock_version: 2
+  gl: O
+  updated_by: 1
+  id: 324
+  description: Aug 201108
+  ar: O
+  to_date: 2011/08/31 00:00:00
+  from_date: 2011/08/01 00:00:00
+  company_id: 1
+  in_todt: 2011/08/31 00:00:00
+  ap_post_flag: N
+  in_post_flag: ""
+  gl_post_flag: N
+  created_at: 2011/01/28 00:00:00
+account_periods_021: 
+  in_frdt: 2010/08/01 00:00:00
+  ar_post_flag: ""
+  updated_at: 2010/12/20 12:19:08
+  iv: ""
+  code: "201009"
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  account_year_id: 134
+  ap: C
+  lock_version: 1
+  gl: C
+  updated_by: 1
+  id: 293
+  description: August 10
+  ar: C
+  to_date: 2010/08/31 00:00:00
+  from_date: 2010/08/01 00:00:00
+  company_id: 1
+  in_todt: 2010/08/31 00:00:00
+  ap_post_flag: ""
+  in_post_flag: ""
+  gl_post_flag: ""
+  created_at: 2010/11/11 00:00:00
+account_periods_010: 
+  in_frdt: 2009/10/01 00:00:00
+  ar_post_flag: ""
+  updated_at: 2011/01/14 11:09:10
+  iv: ""
+  code: "200910"
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  account_year_id: 133
+  ap: C
+  lock_version: 2
+  gl: C
+  updated_by: 2
+  id: 282
+  description: October 09
+  ar: C
+  to_date: 2009/10/31 00:00:00
+  from_date: 2009/10/01 00:00:00
+  company_id: 1
+  in_todt: 2009/10/31 00:00:00
+  ap_post_flag: ""
+  in_post_flag: ""
+  gl_post_flag: ""
+  created_at: 2010/11/11 00:00:00
+account_periods_033: 
+  in_frdt: 2011/09/01 00:00:00
+  ar_post_flag: N
+  updated_at: 2011/01/28 19:00:34
+  iv: ""
+  code: "201109"
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  account_year_id: 141
+  ap: O
+  lock_version: 2
+  gl: O
+  updated_by: 1
+  id: 325
+  description: Sep 201109
+  ar: O
+  to_date: 2011/09/30 00:00:00
+  from_date: 2011/09/01 00:00:00
+  company_id: 1
+  in_todt: 2011/09/30 00:00:00
+  ap_post_flag: N
+  in_post_flag: ""
+  gl_post_flag: N
+  created_at: 2011/01/28 00:00:00
+account_periods_022: 
+  in_frdt: 2010/10/01 00:00:00
+  ar_post_flag: ""
+  updated_at: 2010/12/20 12:19:08
+  iv: ""
+  code: "201010"
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  account_year_id: 134
+  ap: C
+  lock_version: 1
+  gl: C
+  updated_by: 1
+  id: 294
+  description: October 10
+  ar: C
+  to_date: 2010/10/31 00:00:00
+  from_date: 2010/10/01 00:00:00
+  company_id: 1
+  in_todt: 2010/10/31 00:00:00
+  ap_post_flag: ""
+  in_post_flag: ""
+  gl_post_flag: ""
+  created_at: 2010/11/11 00:00:00
+account_periods_011: 
+  in_frdt: 2009/11/01 00:00:00
+  ar_post_flag: ""
+  updated_at: 2011/01/14 11:09:10
+  iv: ""
+  code: "200911"
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  account_year_id: 133
+  ap: C
+  lock_version: 2
+  gl: C
+  updated_by: 2
+  id: 283
+  description: November 09
+  ar: C
+  to_date: 2009/11/30 00:00:00
+  from_date: 2009/11/01 00:00:00
+  company_id: 1
+  in_todt: 2009/11/30 00:00:00
+  ap_post_flag: ""
+  in_post_flag: ""
+  gl_post_flag: ""
+  created_at: 2010/11/11 00:00:00
+account_periods_034: 
+  in_frdt: 2011/10/01 00:00:00
+  ar_post_flag: N
+  updated_at: 2011/01/28 19:00:34
+  iv: ""
+  code: "201110"
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  account_year_id: 141
+  ap: O
+  lock_version: 2
+  gl: O
+  updated_by: 1
+  id: 326
+  description: Oct 201110
+  ar: O
+  to_date: 2011/10/31 00:00:00
+  from_date: 2011/10/01 00:00:00
+  company_id: 1
+  in_todt: 2011/10/31 00:00:00
+  ap_post_flag: N
+  in_post_flag: ""
+  gl_post_flag: N
+  created_at: 2011/01/28 00:00:00
+account_periods_023: 
+  in_frdt: 2010/11/01 00:00:00
+  ar_post_flag: N
+  updated_at: 2010/12/20 12:19:08
+  iv: 
+  code: "201011"
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  account_year_id: 134
+  ap: O
+  lock_version: 1
+  gl: O
+  updated_by: 1
+  id: 295
+  description: November 10
+  ar: O
+  to_date: 2010/11/30 00:00:00
+  from_date: 2010/11/01 00:00:00
+  company_id: 1
+  in_todt: 2010/11/30 00:00:00
+  ap_post_flag: N
+  in_post_flag: ""
+  gl_post_flag: N
+  created_at: 2010/11/11 14:30:29
+account_periods_012: 
+  in_frdt: 2009/12/01 00:00:00
+  ar_post_flag: N
+  updated_at: 2011/01/14 11:09:10
+  iv: ""
+  code: "200912"
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  account_year_id: 133
+  ap: O
+  lock_version: 2
+  gl: O
+  updated_by: 2
+  id: 284
+  description: December 09
+  ar: O
+  to_date: 2009/12/31 00:00:00
+  from_date: 2009/12/01 00:00:00
+  company_id: 1
+  in_todt: 2009/12/31 00:00:00
+  ap_post_flag: N
+  in_post_flag: ""
+  gl_post_flag: N
+  created_at: 2010/11/11 00:00:00
+account_periods_001: 
+  in_frdt: 2009/01/01 00:00:00
+  ar_post_flag: ""
+  updated_at: 2011/01/14 11:09:10
+  iv: ""
+  code: "200901"
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  account_year_id: 133
+  ap: C
+  lock_version: 2
+  gl: C
+  updated_by: 2
+  id: 273
+  description: January 09
+  ar: C
+  to_date: 2009/01/31 00:00:00
+  from_date: 2009/01/01 00:00:00
+  company_id: 1
+  in_todt: 2013/01/31 00:00:00
+  ap_post_flag: ""
+  in_post_flag: ""
+  gl_post_flag: ""
+  created_at: 2010/11/11 00:00:00
+account_periods_035: 
+  in_frdt: 2011/11/01 00:00:00
+  ar_post_flag: N
+  updated_at: 2011/01/28 19:00:34
+  iv: ""
+  code: "201111"
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  account_year_id: 141
+  ap: O
+  lock_version: 2
+  gl: O
+  updated_by: 1
+  id: 327
+  description: Nov 201111
+  ar: O
+  to_date: 2011/11/30 00:00:00
+  from_date: 2011/11/01 00:00:00
+  company_id: 1
+  in_todt: 2011/11/30 00:00:00
+  ap_post_flag: N
+  in_post_flag: ""
+  gl_post_flag: N
+  created_at: 2011/01/28 00:00:00
+account_periods_024: 
+  in_frdt: 2010/12/01 00:00:00
+  ar_post_flag: N
+  updated_at: 2010/12/20 12:19:08
+  iv: 
+  code: "201012"
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  account_year_id: 134
+  ap: O
+  lock_version: 1
+  gl: O
+  updated_by: 1
+  id: 296
+  description: December 10
+  ar: O
+  to_date: 2010/12/31 00:00:00
+  from_date: 2010/12/01 00:00:00
+  company_id: 1
+  in_todt: 2010/12/31 00:00:00
+  ap_post_flag: N
+  in_post_flag: ""
+  gl_post_flag: N
+  created_at: 2010/11/11 14:30:29
+account_periods_013: 
+  in_frdt: 2010/01/01 00:00:00
+  ar_post_flag: ""
+  updated_at: 2010/12/20 12:19:08
+  iv: ""
+  code: "201001"
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  account_year_id: 134
+  ap: C
+  lock_version: 1
+  gl: C
+  updated_by: 1
+  id: 285
+  description: January 10
+  ar: C
+  to_date: 2010/01/31 00:00:00
+  from_date: 2010/01/01 00:00:00
+  company_id: 1
+  in_todt: 2010/01/31 00:00:00
+  ap_post_flag: ""
+  in_post_flag: ""
+  gl_post_flag: ""
+  created_at: 2010/11/11 00:00:00
+account_periods_002: 
+  in_frdt: 2009/02/01 00:00:00
+  ar_post_flag: ""
+  updated_at: 2011/01/14 11:09:10
+  iv: ""
+  code: "200902"
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  account_year_id: 133
+  ap: C
+  lock_version: 2
+  gl: C
+  updated_by: 2
+  id: 274
+  description: February 09
+  ar: C
+  to_date: 2009/02/28 00:00:00
+  from_date: 2009/02/01 00:00:00
+  company_id: 1
+  in_todt: 2009/02/28 00:00:00
+  ap_post_flag: ""
+  in_post_flag: ""
+  gl_post_flag: ""
+  created_at: 2010/11/11 00:00:00
+account_periods_036: 
+  in_frdt: 2011/12/01 00:00:00
+  ar_post_flag: N
+  updated_at: 2011/01/28 19:00:34
+  iv: ""
+  code: "201112"
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  account_year_id: 141
+  ap: O
+  lock_version: 2
+  gl: O
+  updated_by: 1
+  id: 328
+  description: Dec 201112
+  ar: O
+  to_date: 2011/12/31 00:00:00
+  from_date: 2011/12/01 00:00:00
+  company_id: 1
+  in_todt: 2011/12/31 00:00:00
+  ap_post_flag: N
+  in_post_flag: ""
+  gl_post_flag: N
+  created_at: 2011/01/28 00:00:00
+account_periods_025: 
+  in_frdt: 2011/01/01 00:00:00
+  ar_post_flag: Y
+  updated_at: 2011/01/28 19:00:34
+  iv: ""
+  code: "201101"
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  account_year_id: 141
+  ap: O
+  lock_version: 3
+  gl: O
+  updated_by: 1
+  id: 303
+  description: Jan 201101
+  ar: O
+  to_date: 2011/01/31 00:00:00
+  from_date: 2011/01/01 00:00:00
+  company_id: 1
+  in_todt: 2011/01/31 00:00:00
+  ap_post_flag: Y
+  in_post_flag: ""
+  gl_post_flag: Y
+  created_at: 2010/12/31 00:00:00
+account_periods_014: 
+  in_frdt: 2010/02/01 00:00:00
+  ar_post_flag: ""
+  updated_at: 2010/12/20 12:19:08
+  iv: ""
+  code: "201002"
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  account_year_id: 134
+  ap: C
+  lock_version: 1
+  gl: C
+  updated_by: 1
+  id: 286
+  description: February 10
+  ar: C
+  to_date: 2010/02/28 00:00:00
+  from_date: 2010/02/01 00:00:00
+  company_id: 1
+  in_todt: 2010/02/28 00:00:00
+  ap_post_flag: ""
+  in_post_flag: ""
+  gl_post_flag: ""
+  created_at: 2010/11/11 00:00:00
+account_periods_003: 
+  in_frdt: 2009/03/01 00:00:00
+  ar_post_flag: ""
+  updated_at: 2011/01/14 11:09:10
+  iv: ""
+  code: "200903"
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  account_year_id: 133
+  ap: C
+  lock_version: 2
+  gl: C
+  updated_by: 2
+  id: 275
+  description: March 09
+  ar: C
+  to_date: 2009/03/31 00:00:00
+  from_date: 2009/03/01 00:00:00
+  company_id: 1
+  in_todt: 2009/03/31 00:00:00
+  ap_post_flag: ""
+  in_post_flag: ""
+  gl_post_flag: ""
+  created_at: 2010/11/11 00:00:00
+account_periods_026: 
+  in_frdt: 2011/02/01 00:00:00
+  ar_post_flag: Y
+  updated_at: 2011/01/28 19:00:34
+  iv: ""
+  code: "201102"
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  account_year_id: 141
+  ap: O
+  lock_version: 3
+  gl: O
+  updated_by: 1
+  id: 304
+  description: Feb 201102
+  ar: O
+  to_date: 2011/02/28 00:00:00
+  from_date: 2011/02/01 00:00:00
+  company_id: 1
+  in_todt: 2011/02/28 00:00:00
+  ap_post_flag: Y
+  in_post_flag: ""
+  gl_post_flag: Y
+  created_at: 2010/12/31 00:00:00
+account_periods_015: 
+  in_frdt: 2010/03/01 00:00:00
+  ar_post_flag: ""
+  updated_at: 2010/12/20 12:19:08
+  iv: ""
+  code: "201003"
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  account_year_id: 134
+  ap: C
+  lock_version: 1
+  gl: C
+  updated_by: 1
+  id: 287
+  description: March 10
+  ar: C
+  to_date: 2010/03/31 00:00:00
+  from_date: 2010/03/01 00:00:00
+  company_id: 1
+  in_todt: 2010/03/31 00:00:00
+  ap_post_flag: ""
+  in_post_flag: ""
+  gl_post_flag: ""
+  created_at: 2010/11/11 00:00:00
+account_periods_004: 
+  in_frdt: 2009/04/01 00:00:00
+  ar_post_flag: ""
+  updated_at: 2011/01/14 11:09:10
+  iv: ""
+  code: "200904"
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  account_year_id: 133
+  ap: C
+  lock_version: 2
+  gl: C
+  updated_by: 2
+  id: 276
+  description: April 09
+  ar: C
+  to_date: 2009/04/30 00:00:00
+  from_date: 2009/04/01 00:00:00
+  company_id: 1
+  in_todt: 2009/04/30 00:00:00
+  ap_post_flag: ""
+  in_post_flag: ""
+  gl_post_flag: ""
+  created_at: 2010/11/11 00:00:00

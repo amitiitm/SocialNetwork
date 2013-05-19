@@ -1,0 +1,7 @@
+response_for(@errors, page, :default, '#billing')
+balance = number_to_currency(Account.find(params[:account_id]).balance)
+page << "$('baghali').html('#{balance}')"
+
+if @errors.blank?
+ page <<  "$('.dialog').remove();"
+end

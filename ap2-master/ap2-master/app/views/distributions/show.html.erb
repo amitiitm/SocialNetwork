@@ -1,0 +1,23 @@
+<%= page_title :title => "Distribution Details - Distributor: #{@distribution.distributor.bname}" %>
+
+<div id="tabs">
+	<ul>
+		<li><%= link_to("Used Cards", used_distribution_cards_path(@distribution)) %></li>
+		<% if allowed? %>
+			<li><%= link_to("All Cards", distribution_cards_path(@distribution)) %></li>
+		<% end -%>
+		<li><a href="#trends">Trends</a></li>
+	</ul>
+	<div id="trends">
+		TBD - Charts
+	</div>
+</div>
+<script>
+	$(document).ready(function(){
+		$('#tabs').tabs({
+			cookie: { expires: 30 },
+			fx: { opacity: 'toggle', duration : 'slow' },
+			async: true
+		});		
+	});
+</script>

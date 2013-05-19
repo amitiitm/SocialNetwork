@@ -1,0 +1,18 @@
+<columns  lockedColumnCount='0'>
+
+	<column data='ship_date'				label='Ship Date'			editable='false'	visible='true'	width='110'	textAlign='left'	forLevel='false'
+			defaultForLevel=''				booleanFlag='false'			sortDataType='D'	columnPrecision="NaN"/>
+	
+	<column data='trans_no'					label='Order #'				editable='false'	visible='true'	width='110'	textAlign='left'	forLevel='false'
+			defaultForLevel=''				booleanFlag='false'			sortDataType='S'	columnPrecision="NaN"/>
+	
+	<column data='ext_ref_no'				label='Customer PO #'		editable='false'	visible='true'	width='110'	textAlign='left'	forLevel='false'
+			defaultForLevel=''				booleanFlag='false'			sortDataType='S'	columnPrecision="NaN"/>
+			
+	<column data='customer_code'			label='Customer #'			editable='false'	visible='true'	width='110'	textAlign='left'	forLevel='false'
+			defaultForLevel=''				booleanFlag='false'			sortDataType='S'	columnPrecision="NaN"/>		
+	
+	<column data='artwork_status'			label='Artwork Status'		editable='false'	visible='true'	width='110'	textAlign='left'	forLevel='false'
+			defaultForLevel=''				booleanFlag='false'			sortDataType='S'	columnPrecision="NaN"/>
+			
+</columns> 

@@ -1,0 +1,9 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  did_id: 1
+  account_id: 1
+
+two:
+  did_id: 1
+  account_id: 1

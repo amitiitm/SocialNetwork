@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rds:CommonServices xmlns:rds="business.*" xmlns:mx="http://www.adobe.com/2006/mxml">
+
+	<mx:HTTPService id="saveRecord" url="/account/payment/create_payments"/>
+	<mx:HTTPService id="getRecord" url="/account/payment/show_payments"/>
+	<mx:HTTPService id="getListFormat" url="acct/bankpayment/xmls/BankPaymentListStru.xml"/>
+	<mx:HTTPService id="getList" url="/account/payment/list_payments"/>
+	<mx:HTTPService id="getViewFormat" url="acct/bankpayment/xmls/BankPaymentCriteriaStru.xml"/>
+	<mx:HTTPService id="GLFormat" url="acct/bankpayment/xmls/BankPaymentGLStru.xml"/>
+	<mx:HTTPService id="lineDetailFormat" url="acct/bankpayment/xmls/BankPaymentDetailStru.xml"/>
+	
+	<mx:HTTPService id="printRecord" url="/account/general_ledger_report/bank_payment_format"/>
+	
+
+</rds:CommonServices>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:HBox xmlns:mx="http://www.adobe.com/2006/mxml" 
+	 width="100%" 
+	 height="30"
+	 horizontalAlign="left" 
+	 horizontalGap="0" 
+	 verticalGap="0"
+	 xmlns:customcomponents="com.generic.customcomponents.*"
+	 verticalAlign="middle">
+
+	<mx:Script source="../scripts/ButtonControlPanelDetailImportScript.as"/>
+	
+	<mx:HBox>
+			<mx:Label width="95" text="Upload File" textAlign="right"/>
+   			<customcomponents:GenTextInput id="tiFileName"  width="150" enabled="false" />
+			<customcomponents:GenUploadButton id="btnBrowse_Xls"
+				enabled="{tiFileName.text == '' ? true : false}" 
+				icon="@Embed('../assets/browseFile.png')" 
+				label="..." toolTip="Import" width="82" height="18" tabIndex="2"
+				uploadServiceID="{uploadServiceID}" tableName="{downloadedRootNode}"
+				fileTitle="Import" fileTypes="*.xls,*.xlsx" uploadFileNameSetEvent="handleUploadEvent(event)" 
+				downloadCompleteEvent="handleDownloadCompleteEvent(event)"/>
+			<mx:VRule width="20" height="0" />
+			
+	</mx:HBox>
+	<mx:Spacer width="10"/>
+	<customcomponents:GenButton 
+		id="btnSave" 
+		icon="@Embed('../assets/save.png')" 
+		disabledIcon="@Embed('../assets/save_disabled.png')" 
+		color="#D2C5EB"
+		height="25" 
+		width="25" 
+		toolTip="Save"
+		cornerRadius="0"
+		click="btnSaveClickHandler()"	
+		enabled="{__genModel.activeModelLocator.detailEditObj.editStatus}" />
+	
+	
+
+	<customcomponents:GenButton
+		id="btnCancel" 
+		icon="@Embed('../assets/close.png')" 
+		disabledIcon="@Embed('../assets/close_disabled.png')"
+		height="25" 
+		width="25" 
+		toolTip="Cancel"
+		cornerRadius="0"
+		click="btnCancelClickHandler()"
+		enabled="{__genModel.activeModelLocator.detailEditObj.editStatus}" />
+
+	<mx:Spacer width="10"/>
+
+</mx:HBox>

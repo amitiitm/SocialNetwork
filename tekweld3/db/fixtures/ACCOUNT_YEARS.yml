@@ -1,0 +1,52 @@
+--- 
+account_years_001: 
+  updated_at: 2011/01/14 11:09:10
+  update_flag: Y
+  trans_flag: A
+  created_by: 2
+  from_period: "200901"
+  lock_version: 2
+  to_period: "200912"
+  updated_by: 2
+  id: 133
+  gl_flag: ""
+  description: "2009"
+  year: "2009"
+  company_id: 752
+  ar_flag: ""
+  ap_flag: ""
+  created_at: 2010/11/11 14:15:04
+account_years_002: 
+  updated_at: 2010/12/20 12:19:08
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  from_period: "201001"
+  lock_version: 1
+  to_period: "201012"
+  updated_by: 1
+  id: 134
+  gl_flag: ""
+  description: "2010"
+  year: "2010"
+  company_id: 1
+  ar_flag: ""
+  ap_flag: ""
+  created_at: 2010/11/11 14:30:29
+account_years_003: 
+  updated_at: 2011/01/28 19:00:34
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  from_period: "201101"
+  lock_version: 3
+  to_period: "201112"
+  updated_by: 1
+  id: 141
+  gl_flag: ""
+  description: "2011"
+  year: "2011"
+  company_id: 1
+  ar_flag: ""
+  ap_flag: ""
+  created_at: 2010/12/31 14:49:10

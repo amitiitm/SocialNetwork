@@ -1,0 +1,43 @@
+<% box :type => "dialog", :id => "dialog-match-referral", :title => "Match Referral", :icon => "ui-icon-person" do %>
+	<% box :type => "simple", :title => "Match Referral" do %>
+		<% form_for @referral, :html => {:class => "forms"} do |f| %>
+			<ul>
+				<li>
+					<label class='no-under-line'>Customer Name: <%= "#{@referral.referred_account.name}" %></label>
+				</li>
+				<li>
+					<label class='no-under-line'>Referrer Name: <%= "#{@referral.referrer_first_name} #{@referral.referrer_last_name}" %></label>
+				</li>
+				<li>
+					<label class='no-under-line'>Referrer Phone: <%= "#{(@referral.referrer_phone_number.blank?) ? 'N/A' : @referral.referrer_phone_number}" %></label>
+				</li>
+				<li><hr></li>
+				<li>
+					<label>Match:</label>
+					<% if @referral.phone %>
+						<%= f.radio_button :match_user_id, @referral.phone.user.id, :checked => true %> <%= "#{@referral.phone.account.name} ##{@referral.phone.account.number}" %><br><br>									
+					<% end -%>
+					<%= f.radio_button :match_user_id, "", :checked => (@referral.phone == nil) %> Other: <input type="text" id="locator" class="field text" size="30">
+				</li>
+			</ul>
+			<%= f.hidden_field :referred, :value => "no" %>
+		<% end -%>
+	<% end -%>
+<% end -%>
+<%= javascript_include_tag "/js/ap.dialog.js" %>
+<%= javascript_include_tag "/js/autocomplete.js" %>
+<%= stylesheet_link_tag "/css/autocomplete.css" %>
+<script>
+	$("#locator").focus(function(){
+		$("#referral_match_user_id_").click();
+	});
+	$("#locator").autocomplete("/service/account_finder", {selectFirst: false, formatItem: function(item) {
+		console.log(item);
+		data = JSON.parse(item[0]);
+		return data.options;
+	}}).result(function(event, item){
+		data = JSON.parse(item[0]);
+		$("#locator").val(data.text);
+		$("#referral_match_user_id_").val(data.user_id);
+	});
+</script>

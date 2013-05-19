@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<gencomponents:AddEdit xmlns:mx="http://www.adobe.com/2006/mxml" 
+	height="100%" width="100%" verticalGap="0"
+	xmlns:customcomponents="com.generic.customcomponents.*"
+	xmlns:gencomponents="com.generic.components.*">
+	<mx:Script source="../scripts/MetalUnitConversionAddEditscript.as"/>
+	
+	<mx:VBox width="100%" height="100%" verticalGap="3">
+		<mx:HBox width="100%">
+					
+		<mx:Label id="lblItem" text="Item"  width="84" height="20" textAlign="right"/>
+		<customcomponents:GenComboBox id="dcItem" defaultValue="Gold" width="130" toolTip="Item" 
+					labelField="value" 
+					dataProvider="{__genModel.masterData.child('unit_conversion').item}"
+					tabIndex="1" height="20" validationFlag="true" xmlTag="item" 
+					updatableFlag="true" tableName="jewelry_unit_conversion"  />
+	</mx:HBox>
+	<mx:HBox width="100%">
+		<mx:Label id="lblMetal_type" text="Type"  width="84" height="20" textAlign="right"/>
+		<customcomponents:GenComboBox id="dcbMetal_type" defaultValue="COLR"  width="130" toolTip="Metal Type" 
+					labelField="value" 
+					dataProvider="{__genModel.masterData.child('unit_conversion').metal_type}"
+					tabIndex="2" height="20" validationFlag="true" xmlTag="metal_type" 
+					updatableFlag="true" tableName="jewelry_unit_conversion" />
+		<mx:Label text="Status" width="84" height="20" textAlign="right"/>
+		<customcomponents:GenComboBox id="cbTrans_flag" defaultValue="A" width="130" cornerRadius="0" xmlTag="trans_flag" updatableFlag="true"
+			tableName="jewelry_unit_conversion"  tabIndex="3" height="20" labelField="label" 
+			dataProvider="{__genModel.masterData.child('trans_flag').trans_flag}" />
+	</mx:HBox>
+	<mx:HBox width="100%">
+		<mx:Label  text="From Unit"  width="84" height="20" textAlign="right"/>
+		<customcomponents:GenComboBox id="dcbFrom_unit" defaultValue="9KT" width="130" toolTip="From Unit" 
+					 labelField="value" 
+					dataProvider="{__genModel.masterData.child('unit_conversion').unit}"
+					tabIndex="4" height="20" validationFlag="true" xmlTag="from_unit" 
+					updatableFlag="true" tableName="jewelry_unit_conversion" change="setDescription()"/>
+	
+		<mx:Label  text="To Unit"  width="84" height="20" textAlign="right"/>
+		<customcomponents:GenComboBox id="dcbTo_unit" defaultValue="24KT" width="130" toolTip="To Unit" 
+					  labelField="value" 
+					dataProvider="{__genModel.masterData.child('unit_conversion').unit}"
+					tabIndex="5" height="20" validationFlag="true" xmlTag="to_unit" 
+					updatableFlag="true" tableName="jewelry_unit_conversion"  change="setDescription()"/>
+	</mx:HBox>
+	<mx:HBox width="100%">
+		<mx:Label  text="Factor"  width="84" height="20" textAlign="right"/>
+		<customcomponents:GenTextInput id="tiFactor" width="130" textAlign="right" tabIndex="6"
+							xmlTag="factor" updatableFlag="true" tableName="jewelry_unit_conversion" defaultValue="0.00" 
+							maxValue = "9999.999999" validationFlag = "true" toolTip="Factor" height="20"
+							 dataType="N" rounding="false" setDefaultOnEmpty="true"/>
+	</mx:HBox>
+	
+	<mx:HBox width="100%">
+		<mx:Label  text="Description"  width="84" height="20" textAlign="right"/>
+		<customcomponents:GenTextInput id="tiDescription" width="130" textAlign="right" tabIndex="7" 
+							xmlTag="description" updatableFlag="true" tableName="jewelry_unit_conversion"
+							 validationFlag = "true" toolTip="Description" height="20"
+							 rounding="false" setDefaultOnEmpty="true" />
+	</mx:HBox>
+	</mx:VBox>
+	
+</gencomponents:AddEdit>

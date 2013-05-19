@@ -1,0 +1,42 @@
+<table cellspacing="5" border="1">
+  <th>#</th>
+	<th>ID</th>
+  <th>Account Number</th>
+  <th>Account Holder</th>
+  <th>Sub Acct(s)</th>
+	<th>Deposits</th>
+  <th>Balance</th>
+	<th>Auto Rech</th>
+  <th>Reg Date</th>
+	<th>Last Activity</th>
+	<th>Next Action</th>
+	<th>NA Due Date</th>
+	<th>CC</th>
+	<th>Last Contact By</th>
+	<th>Referred By</th>
+  <th>Status</th>
+  <% counter = @accounts.size + 1%>
+  <% for account in @accounts do %>
+		<% unless account.status == 3 -%>
+  	<% counter -= 1 %>
+	  	<tr>
+				<td><%= counter %></td>
+				<td><%= account.id %> </td>
+				<td><%= link_to account.number, :controller => "accounts", :action => "details", :id => account.id %> | <%= link_to "CDR", :controller => "reports", :action => "test", :id => account.id %></td>
+				<td><%= account_holder(account.account_holder_id) %> </td>
+				<td><%= (account.users.count) -1 %> </td>
+				<td><%= number_to_currency(account.deposits) %> </td>
+				<td><%= number_to_currency(account.balance) %> </td>
+				<td><%= (account.auto_recharge) ? "<span style='color:green;padding:0px;'>Enabled ($#{account.recharge_amount})</span>" : "<span style='color:red;padding:0px;'>Disabled</span>"  %></td>
+				<td><%= account.created_at.strftime("%a %Y-%m-%d %H:%M") %></td>
+				<td><%= show_last_activity(account) %></td>
+				<td><%= next_action(account) %></td>
+				<td><%= na_due_date(account) %></td>
+				<td></td>
+				<td><%= last_contact_by(account) %></td>
+				<td></td>
+				<td><%= if account.status == 1 then "Active" else "Inactive" end %> </td>
+			</tr>
+		<% end -%>
+  <%  end %>
+</table>

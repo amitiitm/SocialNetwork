@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rds:CommonServices xmlns:rds="business.*" xmlns:mx="http://www.adobe.com/2006/mxml">
+
+	<mx:HTTPService id="saveRecord" url="/point_of_sale/create_pos_order_repairs" />
+	<mx:HTTPService id="save_workbag" url="/workbag/create_workbag_from_spo" />
+	
+	<mx:HTTPService id="getRecord" url="/point_of_sale/show_pos_order_repair" />
+	<mx:HTTPService id="getList" url="/point_of_sale/list_pos_order_repairs" />
+	
+	<mx:HTTPService id="getListFormat" url="pos/repairentry/xmls/RepairEntryListStru.xml" />
+	<mx:HTTPService id="getViewFormat" url="pos/repairentry/xmls/RepairEntryCriteriaStru.xml" />
+	<mx:HTTPService id="EstimateDetailFormat" url="pos/repairentry/xmls/RepairEstimateDetailStru.xml" />
+	<mx:HTTPService id="ActualDetailFormat" url="pos/repairentry/xmls/RepairActualDetailStru.xml" />
+	<mx:HTTPService id="ActivityDetailFormat" url="pos/repairentry/xmls/ActivityDetailStru.xml"/>
+	
+	<mx:HTTPService id="printRecord" url="/production_report/print_repair_order" />
+	<mx:HTTPService id="printWorkbag" url="/production_report/workbag_repair_format" />
+	
+
+</rds:CommonServices>

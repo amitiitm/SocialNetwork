@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rds:CommonServices xmlns:rds="business.*" xmlns:mx="http://www.adobe.com/2006/mxml">
+
+	<mx:HTTPService id="getListFormat" 	url="saoi/discountcoupons/xmls/DiscountCouponsListStru.xml" />
+	<mx:HTTPService id="getViewFormat" 	url="saoi/discountcoupons/xmls/DiscountCouponsCriteriaStru.xml" />
+	<mx:HTTPService id="getList" 		url="/setup/discount_coupon/list_discount_coupons"/>
+	<mx:HTTPService id="saveRecord" 	url="/setup/discount_coupon/create_discount_coupons"/>
+	<mx:HTTPService id="getRecord" 		url="/setup/discount_coupon/show_discount_coupon"/>	
+	
+	<mx:HTTPService id="discountCouponServiceDetailFormat" 		url="saoi/discountcoupons/xmls/DiscountCouponsServiceDetailStru.xml" />
+</rds:CommonServices>	

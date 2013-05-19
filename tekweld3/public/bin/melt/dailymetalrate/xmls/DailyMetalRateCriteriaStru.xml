@@ -1,0 +1,7 @@
+<columns Title =''>
+	
+	<column dataType="D"	label="Date"	checkbox="ckAll1"	xmlTagFrom="dt1"	from="dfDt1" 
+			xmlTagTo="dt2"	to="dfDt2"		lookupFlag="false" 	lookupName=""	/>
+
+</columns> 	
+   

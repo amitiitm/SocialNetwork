@@ -1,0 +1,25 @@
+<columns lockedColumnCount='0'>
+			
+	<column data='trans_no' 				label='Memo #' 				editable='false'	visible='true'		width='100'		textAlign='left'
+			forLevel='false' 				defaultForLevel=''			booleanFlag='false'	sortDataType='S'	columnPrecision="NaN"/>
+			
+	<column data='trans_date' 				label='Memo Date' 			editable='false'	visible='true'		width='100'		textAlign='left'
+			forLevel='false' 				defaultForLevel=''			booleanFlag='false'	sortDataType='D'	columnPrecision="NaN"/>
+
+	<column data='contractor_id'			label='Vendor #'			editable='false'	visible='true'		width='250'		textAlign='left'
+			forLevel='false' 				defaultForLevel=''			booleanFlag='false'	sortDataType='S'	columnPrecision="NaN"/>
+
+	<column data='ship_date' 				label='Ship Date' 			editable='false'	visible='true'		width='100'		textAlign='left'
+			forLevel='false' 				defaultForLevel=''			booleanFlag='false'	sortDataType='D'	columnPrecision="NaN"/>
+				
+	<column data='status' 					label='Status' 			editable='false'	visible='true'		width='100'		textAlign='left'
+			forLevel='false' 				defaultForLevel=''			booleanFlag='false'	sortDataType='S'	columnPrecision="NaN"/>
+			
+	<column data='invoice_no' 				label='Invoice #' 			editable='false'	visible='true'		width='100'		textAlign='left'
+			forLevel='false' 				defaultForLevel=''			booleanFlag='false'	sortDataType='S'	columnPrecision="NaN"/>
+	
+	<column data='invoice_date' 			label='Invoice Date' 		editable='false'	visible='true'		width='100'		textAlign='left'
+			forLevel='false' 				defaultForLevel=''			booleanFlag='false'	sortDataType='D'	columnPrecision="NaN"/>
+			
+	
+</columns>  

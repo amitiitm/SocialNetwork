@@ -1,0 +1,13 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  name: MyString
+  description: MyString
+  protocol: MyString
+  tech_prefix: MyString
+
+two:
+  name: MyString
+  description: MyString
+  protocol: MyString
+  tech_prefix: MyString

@@ -1,0 +1,41 @@
+<% box :type => "dialog", :id => "memo-notes", :width => "320", :title => "Latest Notes", :icon => "ui-icon-person" do %>
+  <% box :type => "simple", :title => "Latest Notes" do %>
+    <p>
+      <% if !@memo.blank? %>
+      <ul style="height:100px; overflow:auto;">
+        <li>
+          <% if @memo.created_by %>
+            <label>Memo <%= "(By #{@memo.created_by.name})" %>:</label>
+          <% else %>
+            <label>Memo: </label>
+          <% end %>
+          <% if !@memo.new_record? %>
+            <%= (@memo.content.strip.blank?) ? "No memo" : @memo.content %>
+          <% end -%>
+        </li>
+        <% if !@memo.memo_updates.blank? %>
+          <% for update in @memo.memo_updates.find(:all, :order => "created_at DESC") %>
+            <li>
+              <label>Update by <%= update.followup_by.name %> on <%= user_date(update.created_at) %>: </label>
+              <%= update.content %>
+              <br><br>
+              <%= "Emails Sent: #{update.emails}" if not update.emails.blank? %>
+            </li>
+          <% end -%>
+        <% end %>
+      </ul>
+    <% else %>
+      No Memo.
+    <% end %>
+    </p>
+  <% end -%>
+<% end -%>
+
+<script type="text/javascript">
+  $('#memo-notes').dialog({
+    autoOpen:true,
+    width:'500px',
+    bgiframe:false,
+    modal:false
+  });
+</script>

@@ -1,0 +1,36 @@
+<columns  lockedColumnCount='0'>
+
+	
+	<column data='credit_invoice_no' 		label='Cr.Invoice #' 		editable='false' 	visible='true' 		width='90' 	textAlign='left' 	forLevel='true' 
+			print_width = '18'			defaultForLevel='0' 	booleanFlag='false' sortDataType='S'	columnPrecision="NaN"/>
+	
+	<column data='credit_invoice_date' 	label='Cr.Invoice Date' 	editable='false' 	visible='true' 		width='100' 	textAlign='left' 	forLevel='true' 
+			print_width = '18'			defaultForLevel='2' 	booleanFlag='false' sortDataType='D'	columnPrecision="NaN"/>
+	
+	<column data='customer_code' 		label='Customer #' 		editable='false' 	visible='true' 		width='80' 	textAlign='left' 	forLevel='false' 
+			print_width = '20'			defaultForLevel='' 		booleanFlag='false' sortDataType='S' 	columnPrecision="NaN"/>
+	
+	<column data='receipt_type' 		label='Credit Type' 	editable='false' 	visible='true' 		width='80' 	textAlign='left' 	forLevel='false' 
+			print_width = '18'			defaultForLevel='' 		booleanFlag='false' sortDataType='S'	columnPrecision="NaN"/>
+	
+	<column data='received_amt' 		label='Credit Amt' 	editable='false' 	visible='true' 		width='80' 	textAlign='right'	forLevel='false' 
+			print_width = '18'			defaultForLevel='' 		booleanFlag='false' sortDataType='N'	columnPrecision="2"/>
+	
+	<column data='term_code' 			label='Term' 			editable='false' 	visible='true' 		width='80' 	textAlign='left' 	forLevel='false' 
+			print_width = '15'			defaultForLevel='' 		booleanFlag='false' sortDataType='S'	columnPrecision="NaN"/>	
+
+	<column data='due_date' 			label='Due Date' 		editable='false' 	visible='true' 		width='80' 	textAlign='left' 	forLevel='false' 
+			print_width = '18'			defaultForLevel='' 		booleanFlag='false' sortDataType='D'	columnPrecision="NaN"/>							
+
+	<column data='ref_no' 				label='Ref #' 		    editable='false' 	visible='true' 		width='60' 	textAlign='left' 	forLevel='true' 
+			print_width = '18'			defaultForLevel='1' 	booleanFlag='false' sortDataType='S'	columnPrecision="NaN"/>
+	
+	<column data='ref_date' 			label='Ref Date' 	editable='false' 	visible='true' 		width='80' 	textAlign='left' 	forLevel='true' 
+			print_width = '18'			defaultForLevel='2' 	booleanFlag='false' sortDataType='D'	columnPrecision="NaN"/>
+				
+
+	<column data='description' 			label='Description' 	editable='false' 	visible='true' 		width='100' textAlign='left' 	forLevel='false' 
+			print_width = '24'			defaultForLevel='' 		booleanFlag='false' sortDataType='S'	columnPrecision="NaN"/>	
+			
+
+</columns> 

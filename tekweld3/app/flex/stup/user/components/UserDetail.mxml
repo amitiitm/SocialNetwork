@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<gencomponents:DetailAddEdit xmlns:mx="http://www.adobe.com/2006/mxml"
+	width="450" height="120" verticalGap="0"
+	xmlns:customcomponents="com.generic.customcomponents.*"
+	xmlns:gencomponents="com.generic.components.*">
+
+	<mx:Script source="../scripts/UserDetailScript.as"/>
+	
+	<mx:VBox height="100%" width="100%">
+		
+		<mx:HBox height="20" verticalAlign="middle" horizontalGap="2" width="100%">
+			<mx:Label text="Store #" width="120" textAlign="right" height="20" />
+			<customcomponents:GenTextInputWithHelp
+				lookupFormatUrl	=  "companyStoreLookupHelpFormat"
+				id="dcCompany_id" 
+				width="130" 
+				toolTip="Store #" 
+				dataSourceName="CompanyStore"
+				height="20" 
+				tabIndex="1" 
+				validationFlag="true" 
+				xmlTag="default_company_id" 
+				updatableFlag="true"
+				labelTag="company_cd"
+				dataField="id" 
+				labelField= "company_cd"
+				tableName="user_company"
+				itemChangedEvent="getCompanyDetails()"
+				/>
+			<!--<customcomponents:GenDynamicComboBoxWithHelp id="dcCompany_id" width="130" toolTip="Company Id" 
+				defaultValue="" dataField="id" labelField="code" dataSourceName="CompanyStore" 
+				dataProvider="{__genModel.lookupObj.companystore.children()}"
+				tabIndex="1" height="20" validationFlag="true" xmlTag="default_company_id" 
+				updatableFlag="true" tableName="user_company" itemChangedEvent="getCompanyDetails()" />-->
+			<customcomponents:GenTextInput id="tiCompany_code" width="0" height="0"
+				xmlTag="company_cd" updatableFlag="true" tableName="user_company" enabled="false" validationFlag="false" />		
+		</mx:HBox>		
+	
+		<mx:HBox height="20" verticalAlign="middle" horizontalGap="2" width="100%">
+			<mx:Label text="Store Name" width="120" textAlign="right" height="20" />
+			<customcomponents:GenTextInput id="tiCompany_name" width="250" tabIndex="2" height="20"  toolTip="Company Name"
+				xmlTag="dummy1" updatableFlag="true" tableName="user_company" enabled="false" validationFlag="false" />	
+		</mx:HBox>
+	
+		<mx:HBox height="20" verticalAlign="middle" horizontalGap="2" width="100%">
+			<customcomponents:GenCheckBox labelPlacement="left" label="Set As Default Store" id="cbDefault_store_yn" width="135"  height="20"
+				updatableFlag="true" tableName="user_company" defaultValue="N" textAlign="right" tabIndex="3" enabled="true" xmlTag="dummy"
+				dataValueForOn="Y" dataValueForOff="N" />
+		</mx:HBox>
+	
+	</mx:VBox>	
+			<customcomponents:GenTextInput id="tiSerial_no" width="0" height="0" visible="false"
+				editable="false" enabled="false" xmlTag="serial_no" updatableFlag="true"  
+				tableName="user_company" defaultValue=""  />
+	
+</gencomponents:DetailAddEdit>
+
+
+

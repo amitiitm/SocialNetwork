@@ -1,0 +1,19 @@
+o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1343657367.4698172:@value{	I"length:EFiJI"digest;
+F"%51d3ac3ade32375463b13d35b0c84fdbI"source;
+FI"J/*
+	Halcyonic 1.0 by nodethirtythree design
+	http://nodethirtythree.com | @nodethirtythree
+	Released under the Creative Commons Attribution 3.0 license (nodethirtythree.com/license)
+*/
+
+
+.button-big {
+	background-image: url('images/button-big.svg');
+}
+
+.button-big:hover {
+	background-image: url('images/button-big-hover.svg');
+}
+;
+FI"_version;
+F"%7a122e09e6373589bfc2fe32cd4a0f1e

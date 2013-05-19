@@ -1,0 +1,26 @@
+{
+	"aaData": [
+ 	<% counter = @accounts.size + 1%>
+	<% for account in @accounts do %>
+		<% unless account.status == 3 -%>
+		<% counter -= 1 %>
+				["<%= counter %>",
+				"<%= account.id %> ",
+				"<%= escape_javascript link_to account.number, :controller => "accounts", :action => "details", :id => account.id %> | <%= escape_javascript link_to "CDR", :controller => "reports", :action => "test", :id => account.id %>",
+				"<%= account_holder(account.account_holder_id) %> ",
+				"<%= (account.users.count) -1 %> ",
+				"<%= number_to_currency(account.deposits) %> ",
+				"<%= number_to_currency(account.balance) %> ",
+				"<%= (account.auto_recharge) ? escape_javascript("<span style='color:green;padding:0px;'>Enabled ($#{account.recharge_amount})</span>") : escape_javascript("<span style='color:red;padding:0px;'>Disabled</span>")  %>",
+				"<%= account.created_at.strftime("%a %Y-%m-%d %H:%M") %>",
+				"<%= show_last_activity(account) %>",
+				"<%= next_action(account) %>",
+				"<%= na_due_date(account) %>",
+				"",
+				"<%= last_contact_by(account) %>",
+				"",
+				"<%= if account.status == 1 then "Active" else "Inactive" end %> "]<%= if counter != 1 then "," end %>
+		<% end -%>
+	<%  end %>
+	]
+}

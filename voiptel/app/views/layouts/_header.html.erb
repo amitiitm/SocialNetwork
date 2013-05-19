@@ -1,0 +1,48 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />	
+	<title>OpenFo AP <%= unless RAILS_ENV == "production" then "[#{RAILS_ENV}]" end %> <%= if not @header_title.blank? then " - #{@header_title}" end%></title>
+
+	<%= javascript_include_tag "jquery.min-1.5.0" %>
+	<%= javascript_include_tag "/js/ui/effects.core.js" %>
+	<%= javascript_include_tag "/js/ui/effects.slide.js" %>	
+	<%= javascript_include_tag "/js/ui/ui.core.js" %>
+	<%= javascript_include_tag "/js/ui/ui.widget.js" %>
+	<%= javascript_include_tag "/js/live_search.js" %>
+	<%= javascript_include_tag "/js/ui/ui.mouse.js" %>
+	<%= javascript_include_tag "/js/tooltip.js" %>
+	<%= javascript_include_tag "/js/cookie.js" %>
+	<%= javascript_include_tag "/js/ui/ui.tabs.js" %>
+	<%= javascript_include_tag "/js/ui/ui.sortable.js" %>
+	<%= javascript_include_tag "/js/ui/ui.draggable.js" %>
+	<%= javascript_include_tag "/js/ui/ui.resizable.js" %>
+	<%= javascript_include_tag "/js/ui/ui.position.js" %>
+	<%= javascript_include_tag "/js/ui/ui.button.js" %>
+	<%= javascript_include_tag "/js/ui/ui.dialog.js" %>
+	<%= javascript_include_tag "/js/blink.js" %>	
+	<%= javascript_include_tag "/js/custom.js" %>
+	<%= javascript_include_tag "/js/ui/ui.datepicker.js" %>
+	<%= javascript_include_tag "jquery.ba-bbq.min.js" %>
+	
+	<%= javascript_include_tag "ap.hotkeys.js" %>
+
+	<%= javascript_include_tag "/js/jshashtable", "/js/jquery.progressbar.js" %>
+	<%= javascript_include_tag "jq.blockui.js" %>
+	<%= stylesheet_link_tag "/css/ui/ui.datepicker.css" %>
+	<%= stylesheet_link_tag "/css/ui/ui.base.css" %>
+	<%= stylesheet_link_tag "/css/themes/black_rose/ui.css" %>
+	<%= stylesheet_link_tag "/css/custom.css" %>
+  <link href="/css/advance-search/styles.css" rel="stylesheet" type="text/css" />
+
+</head>
+<body id="sidebar-left">
+<div id="page_wrapper">
+		<div id="page-header">
+		</div>
+
+<script type="text/javascript" charset="utf-8">
+	$(function(){
+		close_sidebar();
+	});
+</script>

@@ -1,0 +1,40 @@
+<div class="inner-page-title">
+	<h2>Account Overview</h2>
+	<span></span>
+</div>
+<% unless params[:compact] %>
+	<div class="three-column sortable">
+		<div class="three-col-mid">
+
+			<div class="column col1" id="middle">
+				<% for ui in @ui_middle %>
+					<%= render :partial => ui.partial_location %>
+				<% end -%>
+			</div>
+
+			<div class="column col2" id="left">
+				<% for ui in @ui_left %>
+					<%= render :partial => ui.partial_location %>
+				<% end -%>
+			</div>		
+
+			<div class="column col3" id="right">
+				<% for ui in @ui_right %>
+					<%= render :partial => ui.partial_location %>
+				<% end -%>
+			</div>
+
+		</div>
+	</div>
+<% else %>
+	<div class="two-column">
+		<div class="column">
+			<%= render :partial => "v2/accounts/ui/account_overview/portlet_account_info" %>
+		</div>		
+		<div class="column column-right" >
+			<%= render :partial => "v2/accounts/ui/account_overview/portlet_sub_accounts" %>
+			<%= render :partial => "v2/accounts/ui/account_overview/portlet_phones_and_dids" %>
+		</div>		
+	</div>
+<% end %>
+<div class="clear"></div>

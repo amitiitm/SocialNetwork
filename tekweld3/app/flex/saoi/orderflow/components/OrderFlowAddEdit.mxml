@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<gencomponents:AddEdit xmlns:mx="http://www.adobe.com/2006/mxml"
+	height="100%" width="100%" verticalGap="0"
+	xmlns:customcomponents="com.generic.customcomponents.*"
+	xmlns:gencomponents="com.generic.components.*" 
+	creationPolicy="all" creationComplete="init()" >
+	
+	<mx:Script source="../scripts/OrderFlowAddEditScript.as"/>
+	
+	<mx:Canvas height="100%" width="100%" horizontalScrollPolicy="off" verticalScrollPolicy="off">
+		
+		<mx:LinkButton label="Order Received" id="SAOIREGULER"  height="40" width="120" x="22" y="30" 
+			icon="@Embed(source='../../../com/generic/assets/Order_received.png')" skin="{null}" toolTip="Reguler Order" 
+			click="clickHandler(event)" textAlign="center"/>
+		
+		
+		<mx:LinkButton  label="Artwork Received" id="REORDER" height="40" width="120" x="22" y="184" 
+			 icon="@Embed(source='../../../com/generic/assets/Artwork_received.png')" skin="{null}" toolTip="ReOrder" 
+			click="clickHandler(event)" textAlign="center"/>
+			
+		<!--<mx:LinkButton  label="ReOrder" id="REORDER" height="40" width="100" x="75" y="103" 
+			 skin="{null}" toolTip="ReOrder" 
+			click="clickHandler(event)" textAlign="center"/>-->
+		
+		<mx:LinkButton label="Order Entry" id="SAOIASSIGNEDORDER" height="40" width="120" x="379" y="30" 
+			 icon="@Embed(source='../../../com/generic/assets/Order_entry.png')" skin="{null}" toolTip="Quality Check" textAlign="center"
+			 click="clickHandler(event)"/>
+		
+		<mx:LinkButton label="Assign Artwork" id="SAOIASSIGNEDARTWORK" height="40" width="120" x="379" y="184"
+			 icon="@Embed(source='../../../com/generic/assets/Assign_artwork.png')" skin="{null}" toolTip="Assign Artwotk"
+			  click="clickHandler(event)" textAlign="center"/>
+			  
+		
+		<mx:LinkButton label="Pick Order" id="PICKORDER" x="196" y="30" height="40" width="120" 
+			 icon="@Embed(source='../../../com/generic/assets/Pick_order.png')" skin="{null}" toolTip="Pick Order"
+			 click="clickHandler(event)" textAlign="center" useHandCursor="true"/>
+			 
+		<mx:LinkButton label="Pick Artwork" id="SAOIPICKARTWORK" height="40" width="120" x="196" y="184"
+			  icon="@Embed(source='../../../com/generic/assets/Pick_artwork.png')" skin="{null}" toolTip="Review Artwotk"
+			  click="clickHandler(event)" textAlign="center"/>
+	
+		<mx:LinkButton label="QC Order" id="QCORDER" height="40" width="120" x="564" y="30" 
+			 icon="@Embed(source='../../../com/generic/assets/QC_order.png')" skin="{null}" toolTip="Quality Check" textAlign="center"
+			 click="clickHandler(event)"/>	  
+		
+		<mx:LinkButton label="Review Artwork" id="REVIEWARTWORK" height="40" width="120" x="564" y="184"
+			  icon="@Embed(source='../../../com/generic/assets/Review_artwork.png')" skin="{null}" toolTip="Review Artwotk"
+			  click="clickHandler(event)" textAlign="center"/>
+	
+		
+		<mx:LinkButton label="Account  Approved" id="ACCTACCOUNTINGINBOX" height="40" width="120" x="746" y="30" 
+			 icon="@Embed(source='../../../com/generic/assets/Account_approved.png')" skin="{null}" toolTip="Quality Check" textAlign="center"
+			 click="clickHandler(event)"/>
+			  
+		<mx:LinkButton label="To production" id="PRODUCTIONFLOW" height="40" width="120" x="746" y="184"
+			  icon="@Embed(source='../../../com/generic/assets/To_production.png')" skin="{null}" toolTip="Review Artwotk"
+			  click="clickToProductionHandler(event)" textAlign="center"/>
+	</mx:Canvas>
+	<customcomponents:GenTextInput id="tiDummy" width="0" height="0" toolTip="Dummy" enabled="false" visible="false"
+		xmlTag="dummy" updatableFlag="false" tableName="melting_flow" defaultValue=""  />
+</gencomponents:AddEdit>			  

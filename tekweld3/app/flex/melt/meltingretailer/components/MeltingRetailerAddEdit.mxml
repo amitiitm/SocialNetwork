@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<gencomponents:AddEdit xmlns:mx="http://www.adobe.com/2006/mxml"
+	height="100%" width="100%" verticalGap="0"
+	xmlns:customcomponents="com.generic.customcomponents.*"
+	xmlns:gencomponents="com.generic.components.*"
+	creationPolicy="all">
+	
+	<mx:Script source="../scripts/MeltingRetailerAddEditScript.as"/>
+	
+	<mx:VBox width="100%" height="100%" verticalGap="3">
+		<mx:HBox width="100%" horizontalGap="4" verticalAlign="middle">
+			<mx:Label text="Code #" width="105" textAlign="right" height="20" />
+			<customcomponents:GenTextInput id="tiCode" width="137" visible="true" xmlTag="code" updatableFlag="true" toolTip="Code"
+				height="20" tabIndex="1" tableName="melting_retailer" defaultValue="" validationFlag="true" maxChars="25" upperCaseFlag="true"/>
+			<mx:Label text="Status" width="95" textAlign="right" height="20" />
+			<customcomponents:GenComboBox id="cbTrans_flag" defaultValue="A" width="105" cornerRadius="0" xmlTag="trans_flag" updatableFlag="true"
+				tableName="melting_retailer"  tabIndex="2" labelField="label" height="20"
+				dataProvider="{__genModel.masterData.child('trans_flag').trans_flag}"/>
+		</mx:HBox>
+		<mx:HBox width="100%" horizontalGap="4" verticalAlign="middle">
+			<mx:Label text="First Name" width="105" textAlign="right" height="20" />
+			<customcomponents:GenTextInput id="tiFirstName" width="137" xmlTag="first_name" updatableFlag="true" tabIndex="3" tableName="melting_retailer"
+				defaultValue="" validationFlag="true" toolTip="First Name" maxChars="50" height="20" />
+				
+			<mx:Label text="Last Name" width="95" textAlign="right" height="20" />
+			<customcomponents:GenTextInput id="tiLastName" width="137" xmlTag="last_name" updatableFlag="true" tabIndex="4" tableName="melting_retailer"
+				defaultValue="" validationFlag="true" toolTip="Last Name" maxChars="50" height="20" />
+		</mx:HBox>		
+		<mx:HBox width="100%" horizontalGap="4" verticalAlign="middle">
+			<mx:Label text="Name" width="105" textAlign="right" height="20" />
+			<customcomponents:GenTextInput id="tiName" width="240" xmlTag="name" updatableFlag="true" tabIndex="5" tableName="melting_retailer"
+				defaultValue="" validationFlag="true" toolTip="Name" maxChars="50" height="20" />
+		</mx:HBox>
+		<mx:HBox width="100%" horizontalGap="4" verticalAlign="middle">
+			<mx:Label text="Association Name" width="105" textAlign="right" height="20" />
+			<customcomponents:GenTextInput id="tiAssociationName" width="240" xmlTag="association_name" updatableFlag="true" tabIndex="6" tableName="melting_retailer"
+				defaultValue="" validationFlag="false" toolTip="Association Name" maxChars="100" height="20" />
+		</mx:HBox>
+		<mx:HBox width="100%" horizontalGap="4" verticalAlign="middle">
+			<mx:Label text="Password" width="105" textAlign="right" height="20" />
+			<customcomponents:GenTextInput id="tiPassword" displayAsPassword="true" text="" height="20" width="137" tabIndex="7"
+				validationFlag="true" toolTip="Password" xmlTag ="password" tableName="melting_retailer" updatableFlag="true" maxChars="20"/>
+		</mx:HBox>
+		<mx:Spacer height="7"/>
+		<mx:HBox width="100%" horizontalGap="4" verticalAlign="middle">
+				<mx:Label width="105"  height="20" text=" Upload logo 1" textAlign="right"/>
+		   		<customcomponents:GenTextInput id="tiLogoFileName"  width="300" height="20" enabled="false"
+					xmlTag="logo_file_name" updatableFlag="true" tableName="melting_retailer"/>
+				<customcomponents:GenUploadButton id="btnBrowse_logo"
+					label="..." toolTip="Browse Logo" width="40" height="20" tabIndex="8"
+					uploadServiceID="imageUploadUrl"
+					fileTitle="Image Name" fileTypes="*.jpg,*.bmp,*.png" uploadFileNameSetEvent="handleThumnailEvent(event)" />
+				<mx:Label text="Size must be 250 X 47"  width="140" textAlign="right"/>
+		</mx:HBox>		
+		<mx:HBox width="100%" horizontalGap="4" verticalAlign="middle">
+				<mx:Label width="105"  height="20" text=" Upload logo 2" textAlign="right"/>
+		   		<customcomponents:GenTextInput id="tiLogoFileName2"  width="300" height="20" enabled="false"
+		   		xmlTag="logo_file_name2" updatableFlag="true" tableName="melting_retailer"/>
+				<customcomponents:GenUploadButton id="btnBrowse_logo2"
+					label="..." toolTip="Browse Logo" width="40" height="20" tabIndex="9"
+					uploadServiceID="imageUploadUrl"
+					fileTitle="Image Name" fileTypes="*.jpg,*.bmp,*.png" uploadFileNameSetEvent="handleThumnailEvent2(event)" />
+				<mx:Label text="Size must be 125 X 25"  width="141" textAlign="right"/>
+		</mx:HBox>
+		<mx:Spacer height="7"/>
+		<mx:HBox width="100%" horizontalGap="4" verticalAlign="middle">
+			<mx:Label text="Description" width="105" textAlign="right" height="20" />
+			<customcomponents:GenTextInput id="taDescription" width="300" xmlTag="description" updatableFlag="true" tabIndex="10" tableName="melting_retailer"
+				defaultValue="" validationFlag="false" toolTip="Description" maxChars="100" height="20" />
+		</mx:HBox>
+		<mx:Spacer height="4"/>	
+		<mx:HBox width="100%" horizontalGap="4" verticalAlign="middle">
+			<mx:Label text="Email" width="105" textAlign="right" height="20" />
+			<customcomponents:GenTextInput id="tiEmail_id" width="236" xmlTag="email_id"
+				updatableFlag="true" tabIndex="11" tableName="melting_retailer" height="20" 
+				defaultValue="" validationFlag="true" toolTip="Email" maxChars="50" />
+		</mx:HBox>
+		<mx:HBox width="100%" horizontalGap="4" verticalAlign="middle">
+			<mx:Label text="Phone/ Fax" width="105" textAlign="right" height="20" />
+			<customcomponents:GenTextInput id="Phone1" width="116" xmlTag="phone"
+				updatableFlag="true" tabIndex="12" tableName="melting_retailer"
+				defaultValue="" validationFlag="true" toolTip="Phone" height="20" maxChars="50" />
+			<customcomponents:GenTextInput id="tiFax1" width="116" xmlTag="fax"
+				updatableFlag="true" tabIndex="13" tableName="melting_retailer"
+				defaultValue="" validationFlag="false" toolTip="Fax" height="20" maxChars="50" />
+		</mx:HBox>
+		<mx:Spacer height="4"/>	
+		<mx:HBox width="100%" horizontalGap="4" verticalAlign="middle">
+			<mx:Label text="Address #1" width="105" textAlign="right" height="20" />
+			<customcomponents:GenTextInput id="tiAddress1" width="236" xmlTag="address1"
+				updatableFlag="true" tabIndex="14" tableName="melting_retailer" height="20" 
+				defaultValue="" validationFlag="false" toolTip="Address #1" maxChars="50" />
+		</mx:HBox>
+		<mx:HBox width="100%" horizontalGap="4" verticalAlign="middle">
+			<mx:Label text="#2" width="105" textAlign="right" height="20" />
+			<customcomponents:GenTextInput id="tiAddress2" width="236" xmlTag="address2"
+				updatableFlag="true" tabIndex="15" tableName="melting_retailer" height="20" 
+				defaultValue="" validationFlag="false" toolTip="Address #2" maxChars="50" />
+		</mx:HBox>
+		<mx:HBox width="100%" horizontalGap="4" verticalAlign="middle">
+			<mx:Label text="City" width="105" textAlign="right" height="20" />
+			<customcomponents:GenTextInput id="tiCity" width="236" xmlTag="city"
+				updatableFlag="true" tabIndex="16" tableName="melting_retailer" height="20" 
+				defaultValue="" validationFlag="false" toolTip="City" maxChars="25" />
+		</mx:HBox>
+		<mx:HBox width="100%" horizontalGap="4" verticalAlign="middle">
+			<mx:Label text="State/ Zip" width="105" textAlign="right" height="20" />
+			<customcomponents:GenTextInput id="tiState" width="116" xmlTag="state"
+				updatableFlag="true" tabIndex="17" tableName="melting_retailer"
+				defaultValue="" validationFlag="false" toolTip="State" height="20" maxChars="25" />
+						
+			<customcomponents:GenTextInput id="tiZip" width="116" xmlTag="zip"
+				updatableFlag="true" tabIndex="18" tableName="melting_retailer"
+				defaultValue="" validationFlag="false" toolTip="Zip" height="20" maxChars="15" />
+		</mx:HBox>
+		<mx:HBox width="100%" horizontalGap="4" verticalAlign="middle">
+			<mx:Label text="Country" width="105" textAlign="right" height="20" />
+			<customcomponents:GenTextInput id="Country" width="116" xmlTag="country"
+				updatableFlag="true" tabIndex="19" tableName="melting_retailer"
+				defaultValue="" validationFlag="false" toolTip="Country" height="20" maxChars="20" />
+		</mx:HBox>
+	</mx:VBox>
+</gencomponents:AddEdit>

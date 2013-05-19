@@ -1,0 +1,17 @@
+o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1343657370.184973:@value{I"
+class:EFI"StaticAsset;
+FI"id;
+F"%d2e2d8c45c99b2330c024acaa3d5c953I"logical_path;
+FI"images/icon-checkmark.png;
+TI"pathname;
+FI";$root/app/assets/stylesheets/images/icon-checkmark.png;
+FI"content_type;
+FI"image/png;
+FI"
+mtime;
+FI"2012-07-30T19:39:14+05:30;
+FI"length;
+FI"315;
+FI"digest;
+F"%0ae8353843c92e8bd77c6e57771ae02bI"_version;
+F"%0868aba5d4b750d3a9421721ea3d9b9c

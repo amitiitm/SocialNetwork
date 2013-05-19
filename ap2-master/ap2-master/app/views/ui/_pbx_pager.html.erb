@@ -1,0 +1,59 @@
+<div id="pager">
+  <% if @page > 1 %>
+    <%= link_to(
+                '<span style="margin-left:15px" class="ui-icon ui-icon-circle-arrow-w prev_icon"></span>',
+                "#",
+                :class => "btn_no_text btn prev pager-link ignore-me",
+                :title => "Previous Page",
+                :indicator => "pager",
+                :page => "prev"
+        )%>
+  <% end -%>
+  <label class="text" style="margin-left: 0px; padding-left:20px">Page: </label>
+  <input id = "page_num" type="text" style="background:url(/images/billing/textField_63_bg.jpg) no-repeat; border:0;padding-top: 1px;width:58px;" value="<%= @page %>" size="1"/>
+  <label class="text" style="margin-left: 0px">/ <%= @pages %></label>
+  <% if @page < @pages %>
+    <%= link_to(
+                '<span class="ui-icon ui-icon-circle-arrow-e"></span>',
+                "#",
+                :class => "btn_no_text btn next pager-link ignore-me",
+                :title => "Next Page",
+                :indicator => "pager",
+                :page => "next"
+        )%>
+
+  <% end -%>
+  <%= select "pager", "limit", UiHelper::PAGER_LIMITS, {:selected => @limit}, {:style=>"padding-top: 1px;",:class => "pagesize pager-limit"} %>
+  <div style="padding-top:7px;" class="hidden" id="loading-pager"><%= image_tag("load.gif", :class => "icon") %> Loading...</div>
+  <input type="hidden" id="pager_url" name="url" value="<%= path %>"></input>
+  <form id="ghatogh">
+    <% @params_filter.keys.each do |k| -%>
+      <input type="hidden" id="filter_<%= k %>" name="filter[<%= k %>]" value="<%= @conditions[k] %>">
+    <% end -%>
+    <%unless params[:account_id].blank?%>
+    <input type="hidden" name="account_id" id="type" value="<%= params[:account_id] %>">
+    <%end%>
+    <input type="hidden" name="type" id="type" value="<%= params[:type] %>">
+    <input type="hidden" name="page" id="page" value="<%= @page %>">
+    <input type="hidden" name="limit" id="limit" value="<%= @limit %>">
+    <input type="hidden" name="size" id="size" value="<%= @size %>">
+  </form>
+</div>
+<script>
+  $("#page_num").keydown(function(e){
+    if (e.keyCode == 13) {
+      $("#page").val($("#page_num").val());
+      $("#loading-pager").fadeIn('slow');
+      var url = $("#pager_url").val();
+      var form = $("#ghatogh");
+      var filters = $('#form_filter');
+      var args = form.serialize();
+      if (filters) {
+        args += "&" + filters.serialize();
+      };
+      $.get(url, args, function(response){
+        $('.inner-response').html(response);
+      });
+    };
+  });
+</script>

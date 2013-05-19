@@ -1,0 +1,2 @@
+module VoiceTestimonialsHelper
+end

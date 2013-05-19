@@ -1,0 +1,11 @@
+one:
+  did_id: 1
+  account_id: 1
+  rate: 9.99
+  priority: 1
+
+two:
+  did_id: 1
+  account_id: 1
+  rate: 9.99
+  priority: 1

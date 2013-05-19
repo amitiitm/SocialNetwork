@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:TitleWindow xmlns:fx="http://ns.adobe.com/mxml/2009" 
+		 xmlns:s="library://ns.adobe.com/flex/spark" 
+		 xmlns:mx="library://ns.adobe.com/flex/mx" width="918" height="206" xmlns:customcomponents="com.generic.customcomponents.*"
+		 creationComplete="creationComplete()"
+		 title="Order Tracking" showCloseButton="true" backgroundColor="#FFFFE1" close="closeHandler()">
+	<fx:Declarations>
+		<!-- Place non-visual elements (e.g., services, value objects) here -->
+	</fx:Declarations>
+	<fx:Script>
+		<![CDATA[
+			import com.adobe.cairngorm.business.ServiceLocator;
+			import com.generic.genclass.URL;
+			
+			import model.GenModelLocator;
+			
+			import mx.controls.Alert;
+			import mx.core.Application;
+			import mx.managers.CursorManager;
+			import mx.managers.PopUpManager;
+			import mx.rpc.AsyncToken;
+			import mx.rpc.IResponder;
+			import mx.rpc.events.FaultEvent;
+			import mx.rpc.events.ResultEvent;
+			import mx.rpc.http.HTTPService;
+			[Bindable]
+			public var orderDetail:XML= new XML();
+			
+			private var __genModel:GenModelLocator = GenModelLocator.getInstance();
+			private var __service:ServiceLocator = __genModel.services;
+			private var __responderTrack:IResponder;
+			
+			[Embed("com/generic/assets/notes_dot.png")]
+			private const greenIcon:Class;
+			
+			[Embed("com/generic/assets/note.PNG")]
+			private const redIcon:Class;
+			
+			public function dataService(service:HTTPService):HTTPService
+			{
+				var urlObj:URL				=	new URL();
+				service.url					=	urlObj.getURL(service.url);
+				service.resultFormat 		= "e4x";					
+				service.method 				= "POST";
+				service.useProxy			= false;
+				service.contentType			="application/xml";
+				service.requestTimeout	 	= 1800
+				
+				return service;
+			}
+			private function getDataForTracking(id:String):void
+			{
+				var trackData:HTTPService = dataService(__service.getHTTPService("getDataForTracking"));
+				__responderTrack = new mx.rpc.Responder(trackDataResultHandler,trackDataFaultHandler);
+				
+				var token:AsyncToken = trackData.send(new XML(	<params>
+																	<id>{id}</id>
+																</params>
+				                                             )
+													 );
+				token.addResponder(__responderTrack);	
+				
+				CursorManager.setBusyCursor();
+				Application.application.enabled = false;
+			}
+			public function trackDataResultHandler(event:ResultEvent):void
+			{
+				CursorManager.removeBusyCursor();
+				Application.application.enabled = true;
+				
+				var result:XML = XML(event.result);
+				setView(result);
+				
+			}
+			public function trackDataFaultHandler(event:FaultEvent):void
+			{
+				Alert.show("trackDataFaultHandler"+event.fault.faultDetail);
+				
+				CursorManager.removeBusyCursor();
+				Application.application.enabled = true;
+			}
+			private function setView(xml:XML):void
+			{
+				var xmlChild:XML = xml.children()[0];
+				
+				
+				// order pick
+				if(xmlChild.orderpickstatus_flag.toString()=='Y')
+				{
+					lbtnOrderPicked.setStyle("icon", greenIcon);
+				}
+				else
+				{
+					lbtnOrderPicked.setStyle("icon", redIcon);
+				}
+				
+				// order entry
+				if(xmlChild.orderentrycomplete_flag.toString()=='Y')
+				{
+					lbtnOrderEntry.setStyle("icon", greenIcon);
+				}
+				else
+				{
+					lbtnOrderEntry.setStyle("icon", redIcon);
+				}
+				
+				// order ack sent
+				if(xmlChild.orderacksent_flag.toString()=='Y')
+				{
+					lbtnOrderAckSent.setStyle("icon", greenIcon);
+				}
+				else
+				{
+					lbtnOrderAckSent.setStyle("icon", redIcon);
+				}
+				
+				
+				// order qc
+				if(xmlChild.orderqcstatus_flag.toString()=='Y')
+				{
+					lbtnOrderQC.setStyle("icon", greenIcon);
+				}
+				else
+				{
+					lbtnOrderQC.setStyle("icon", redIcon);
+				}
+				
+				// accounting review
+				if(xmlChild.accountreviewed_flag.toString()=='Y')
+				{
+					lbtnOrderAccounting.setStyle("icon", greenIcon);
+				}
+				else
+				{
+					lbtnOrderAccounting.setStyle("icon", redIcon);
+				}
+				
+				
+				// artwork received
+				if(xmlChild.artworkreceived_flag.toString()=='Y')
+				{
+					lbtnArtworkReceived.setStyle("icon", greenIcon);
+				}
+				else
+				{
+					lbtnArtworkReceived.setStyle("icon", redIcon);
+				}
+				
+				//artwork assigned_flag
+				if(xmlChild.artworkassigned_flag.toString()=='Y')
+				{
+					lbtnArtworkPicked.setStyle("icon", greenIcon);
+				}
+				else
+				{
+					lbtnArtworkPicked.setStyle("icon", redIcon);
+				}
+				
+				//artwork ready for review 
+				if(xmlChild.artworkcompleted_flag.toString()=='Y')
+				{
+					lbtnArtworkReady.setStyle("icon", greenIcon);
+				}
+				else
+				{
+					lbtnArtworkReady.setStyle("icon", redIcon);
+				}
+				
+				//artwork review 
+				if(xmlChild.artworkreviewed_flag.toString()=='Y')
+				{
+					lbtnArtworkReview.setStyle("icon", greenIcon);
+				}
+				else
+				{
+					lbtnArtworkReview.setStyle("icon", redIcon);
+				}
+				
+				//artwork artworksenttocust_flag 
+				if(xmlChild.artworksenttocust_flag.toString()=='Y')
+				{
+					lbtnArtworkSendToCust.setStyle("icon", greenIcon);
+				}
+				else
+				{
+					lbtnArtworkSendToCust.setStyle("icon", redIcon);
+				}
+				
+				//artwork artworkapprovedbycust_flag 
+				if(xmlChild.artworkapprovedbycust_flag.toString()=='A')
+				{
+					lbtnArtworkAppByCust.setStyle("icon", greenIcon);
+				}
+				else
+				{
+					lbtnArtworkAppByCust.setStyle("icon", redIcon);
+				}
+				
+				
+				
+			}
+			private function creationComplete():void
+			{
+				var id:String  = orderDetail.id.toString();
+				if(id!='' && id !=null)
+				{
+					getDataForTracking(id);
+				}
+				else
+				{
+					setDefaaultView();
+				}
+			}
+			private function setDefaaultView():void
+			{
+				
+			}
+			private function closeHandler():void
+			{
+				PopUpManager.removePopUp(this);
+			}
+		]]>
+	</fx:Script>
+	<mx:HBox width="100%" height="70" verticalGap="0" horizontalGap="5" verticalAlign="middle">
+		<mx:LinkButton width="113" label="Order ---&gt;"/>
+		<mx:LinkButton id="lbtnOrderPicked" label="Picked" styleName="promoLinkButton"/>
+		<mx:LinkButton id="lbtnOrderEntry" label="OrderEntry" styleName="promoLinkButton"/>
+		<mx:LinkButton id="lbtnOrderQC" label="Quality Check" styleName="promoLinkButton"/>
+		<mx:LinkButton id="lbtnOrderAckSent" label="Acknowledgment Sent" styleName="promoLinkButton"/>
+		<mx:LinkButton id="lbtnOrderAccounting" label="Accounting Approved" styleName="promoLinkButton"/>
+		
+	</mx:HBox>
+	<mx:HBox width="100%" height="70" verticalAlign="middle" horizontalGap="5"  verticalGap="0">
+		<mx:LinkButton width="113" label="Artwork---&gt;"/>
+		<mx:LinkButton id="lbtnArtworkReceived" label="Received" styleName="promoLinkButton"/>
+		<mx:LinkButton id="lbtnArtworkPicked" label="Picked" styleName="promoLinkButton"/>
+		<mx:LinkButton id="lbtnArtworkReady" label="Ready for internal Proofing" styleName="promoLinkButton"/>
+		<mx:LinkButton id="lbtnArtworkReview" label="Review" styleName="promoLinkButton"/>
+		<mx:LinkButton id="lbtnArtworkSendToCust" label="Send to customer" styleName="promoLinkButton"/>
+		<mx:LinkButton id="lbtnArtworkAppByCust" label="Approved by customer" styleName="promoLinkButton"/>
+	</mx:HBox>
+</mx:TitleWindow>

@@ -1,0 +1,17 @@
+<%= javascript_include_tag "/js/raphael.js" %>
+<% box :type => "simple_title", :title => "Testing Raphael", :id => "notepad" do %>
+<div id="rarara">
+	
+</div>
+<% end -%>	
+<script>
+	$(document).ready(function(){
+		// Each of the following examples create a canvas that is 320px wide by 200px high
+		// Canvas is created at the viewport’s 10,50 coordinate
+		var paper = Raphael(10, 50, 320, 200);
+		// Canvas is created at the top left corner of the #notepad element
+		// (or its top right corner in dir="rtl" elements)
+		var paper = Raphael(document.getElementById("rarara"), 320, 200);
+		var c = paper.circle(50, 50, 40);
+	});
+</script>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<gencomponents:AddEdit xmlns:mx="http://www.adobe.com/2006/mxml" 
+	height="100%" width="100%" verticalGap="0"
+	xmlns:customcomponents="com.generic.customcomponents.*"
+	xmlns:gencomponents="com.generic.components.*" 
+	creationPolicy="all">
+	
+	<mx:Script source="../scripts/VendorCategoryAddEditScript.as"/>
+
+	<mx:VBox width="100%" height="100%" verticalGap="3">
+		<mx:HBox width="100%" horizontalGap="2" verticalAlign="middle">
+			<mx:Label text="Code" width="120" height="20" textAlign="right"/>
+			<customcomponents:GenTextInput id="tiCode" width="116" xmlTag="code" upperCaseFlag="true"
+				updatableFlag="true" tableName="vendor_category" defaultValue="" tabIndex="1" height="20"
+				validationFlag="true" toolTip="Code" maxChars="25" fontSize="9"/>
+			<mx:Label text="Status" width="120" height="20" textAlign="right"/>
+			<customcomponents:GenComboBox id="cbTrans_flag" defaultValue="A" width="115" cornerRadius="0" xmlTag="trans_flag" updatableFlag="true"
+				tableName="vendor_category"  tabIndex="6" height="20" labelField="label"
+				dataProvider="{__genModel.masterData.child('trans_flag').trans_flag}" />
+		</mx:HBox>
+
+		<mx:HBox width="100%" horizontalGap="2" verticalAlign="middle">
+			<mx:Label text="Name" width="120" height="20" textAlign="right"/>
+			<customcomponents:GenTextInput id="tiName" width="240" xmlTag="name" updatableFlag="true" tabIndex="2" tableName="vendor_category"
+				defaultValue="" validationFlag = "false" toolTip="Name" height="20" maxChars="50" />
+		</mx:HBox>
+		
+	
+		<mx:HBox width="100%" horizontalGap="2" verticalAlign="middle">
+			<mx:Label text="Term #" width="120" textAlign="right" height="20" />
+			<customcomponents:GenTextInputWithHelp
+				id="dcInvoice_term_code" 
+				width="116" 
+				toolTip="Term #" 
+				tabIndex="3"
+				dataSourceName="Term"
+				minimumChar = "{__genModel.masterData.child('lookup').term.value}"
+				height="20" 
+				updatableFlag="true"
+				validationFlag="true"
+				xmlTag="invoice_term_code"
+				labelTag="invoice_term_code"
+				dataField="code"  
+				labelField= "code"
+				tableName="vendor_category" 
+				itemChangedEvent="setMemoTerm()"
+				/>
+			<!--<customcomponents:GenDynamicComboBoxWithHelp id="dcInvoice_term_code" width="116" 
+				tabIndex="3" toolTip="Invoice Term" defaultValue="" height="20"
+				dataField="code" 
+				dataSourceName="Term" dataProvider="{GenModelLocator.getInstance().lookupObj.term.children()}" labelField="code" 
+				validationFlag="true" xmlTag="invoice_term_code" updatableFlag="true" tableName="vendor_category" />-->
+			<customcomponents:GenTextInputWithHelp
+				id="dcMemo_term_code" 
+				width="0" 
+				toolTip="Memo Term #" 
+				dataSourceName="Term"
+				minimumChar = "{__genModel.masterData.child('lookup').term.value}"
+				height="0" 
+				visible="false"
+				updatableFlag="true"
+				validationFlag="true"
+				xmlTag="memo_term_code"
+				labelTag="memo_term_code"
+				dataField="code"  
+				labelField= "code"
+				tableName="vendor_category" 
+				/>
+			<!--<customcomponents:GenDynamicComboBoxWithHelp id="dcMemo_term_code" width="115" 
+				tabIndex="4" toolTip="Memo Term" defaultValue="" height="20"
+				dataField="code" 
+				dataSourceName="Term" dataProvider="{GenModelLocator.getInstance().lookupObj.term.children()}" labelField="code" 
+				validationFlag="true" xmlTag="memo_term_code" updatableFlag="true" tableName="vendor_category" />-->
+		</mx:HBox>
+
+		<mx:HBox width="100%" horizontalGap="2" verticalAlign="middle">
+			<mx:Label text="Discount (%)" width="120" textAlign="right" height="20" />
+			<customcomponents:GenTextInput id="tiDiscount_per" width="116" xmlTag="discount_per" height="20"
+				updatableFlag="true" tableName="vendor_category" defaultValue="0.00" dataType="N" maxValue="9999.99" textAlign="right"
+				tabIndex="5" validationFlag="false" toolTip="Discount (%)" />
+		</mx:HBox>
+	</mx:VBox>
+
+	<mx:HBox horizontalGap="0" width="0" visible="false" verticalAlign="middle">
+		<!--<mx:Label text="Accounts Payable A/c" width="0" height="0" textAlign="right"/>
+		<customcomponents:GenDynamicComboBoxWithHelp id="dcGl_account_payable_id" width="0" 
+			toolTip="Accounts Payable A/c" defaultValue=""
+			dataField="id"
+			dataSourceName="GLAccount" dataProvider="{GenModelLocator.getInstance().lookupObj.glaccount.children()}" labelField="code" 
+			validationFlag="false" xmlTag="gl_account_payable_id" updatableFlag="true" tableName="vendor_category" />
+		<mx:Label text="Default Expense A/c" width="0" height="0" textAlign="right"/>
+		<customcomponents:GenDynamicComboBoxWithHelp id="dcGl_account_expense_id" width="0" 
+			toolTip="Default Expense A/c" defaultValue="" height="0"
+			dataField="id"
+			dataSourceName="GLAccount" dataProvider="{GenModelLocator.getInstance().lookupObj.glaccount.children()}" labelField="code" 
+			validationFlag="false" xmlTag="gl_account_expense_id" updatableFlag="true" tableName="vendor_category" />-->
+	</mx:HBox>
+</gencomponents:AddEdit>

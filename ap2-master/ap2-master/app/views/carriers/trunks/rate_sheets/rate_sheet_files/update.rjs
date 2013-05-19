@@ -1,0 +1,5 @@
+if @errors
+  page.alert("error happened")
+else
+  page << "$('#rate-sheet-response').replaceWith('#{escape_javascript render :file => 'carriers/trunks/rate_sheets/index'}')"
+end

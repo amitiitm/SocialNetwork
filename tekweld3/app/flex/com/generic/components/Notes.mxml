@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:TitleWindow xmlns:mx="http://www.adobe.com/2006/mxml" 
+	xmlns:components="com.generic.components.*" 
+	xmlns:customcomponents="com.generic.customcomponents.*"
+	width="640" height="470"  
+	paddingTop="20" verticalAlign="top" verticalGap="0" title="Notes" 
+	showCloseButton="true" creationPolicy="all" close="closeHandler()"
+	creationComplete="creationCompleteHandler()"
+	initialize="{this.parentApplication.focusManager.deactivate()}"
+	keyDown="detailKeyDownHandler(event)">
+
+ 	<mx:Script source="../scripts/NotesScript.as"/>
+	
+	<mx:VBox id="vbMain" width="605" height="400"  verticalGap="2" verticalAlign="top">
+		<components:ButtonControlPanelPopUp id="bcp" horizontalGap="0" verticalGap="0" 
+			addRowEvent="addRowHandler()"
+			saveRowEvent="saveHandler()"
+			lastRowEvent="lastRowHandler()"
+			nextRowEvent="nextRowHandler()"
+			previousRowEvent="previousRowHandler()"
+			firstRowEvent="firstRowHandler()"/>
+	<mx:Spacer height="2"/>
+	<customcomponents:GenDataGrid 
+		id="dgNotes"
+		rootNode="notes"
+		handleDoubleClick="true"
+		itemClick="dgItemClickHandler()" 
+		height="130"
+		width="100%"
+		formatServiceID="noteFormat"
+		dataProvider="{notes.children()}"/>
+    
+	
+	<mx:Spacer height="10" width="100%" />
+		<mx:HBox height="20" width="100%">
+			<mx:Label text="Category" width="56"/>
+			<customcomponents:GenComboBox id="cbNotesCategory" width="181" cornerRadius="0" xmlTag="notes_category" updatableFlag="true"
+						tabIndex="3" labelField="label" height="20" defaultValue="Others"  		
+						dataProvider="{__genModel.masterData.child('notes_category').notes_category}" toolTip="Notes Category" 
+						itemChangedEvent="setWindowStatus()" recordStatusEnabled = "{false}"/>
+		</mx:HBox>
+		<mx:HBox height="20" width="100%">
+			<mx:Label text="To" width="56"/>
+			<customcomponents:GenTextInput id="tiEmail_To" width="540" height="20" 
+				itemChangedEvent="setWindowStatus()" recordStatusEnabled = "{false}"/>
+		</mx:HBox><mx:HBox height="20" width="100%">
+			<mx:Label text="CC" width="56"/>
+			<customcomponents:GenTextInput id="tiEmail_Cc" width="540" height="20" 
+				itemChangedEvent="setWindowStatus()" recordStatusEnabled = "{false}"/>
+		</mx:HBox>	
+		<mx:HBox height="20" width="100%" visible="false" includeInLayout="false">
+			<mx:Label text="Subject" width="56"/>
+			<customcomponents:GenTextInput id="tiSubject" width="540" height="20" 
+				itemChangedEvent="setWindowStatus()" recordStatusEnabled = "{false}"/>
+		</mx:HBox>
+		<mx:VBox width="100%">
+			<mx:Label text="Notes"  width="56"/>
+			<customcomponents:GenTextArea id="taNotes" width="100%" height="100" verticalScrollPolicy="auto" horizontalScrollPolicy="off"
+				backgroundColor="#FFFFFF" fontSize="9"
+				change="setWindowStatus()" recordStatusEnabled = "{false}"/>
+		</mx:VBox>
+		<customcomponents:GenTextInput id="tiId" width="0" height="0" visible="false" editable="false"/>
+		<mx:HBox width="0" height="0" visible="false">
+			<customcomponents:GenTextInput id="tiSerial_no" toolTip="Serial #" restrict="1234567890" visible="false"/>
+			
+		</mx:HBox>
+		
+	</mx:VBox>
+</mx:TitleWindow>

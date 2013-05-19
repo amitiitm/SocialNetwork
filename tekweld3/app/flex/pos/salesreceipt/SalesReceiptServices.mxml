@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rds:CommonServices xmlns:rds="business.*" xmlns:mx="http://www.adobe.com/2006/mxml">
+
+	<mx:HTTPService id="saveRecord" url="/point_of_sale/create_pos_invoices" />
+	<mx:HTTPService id="getRecord" url="/point_of_sale/show_pos_invoices" />
+	<mx:HTTPService id="getList" url="/point_of_sale/list_pos_invoices" />
+	
+	<mx:HTTPService id="getListFormat" url="pos/salesreceipt/xmls/SalesReceiptListStru.xml" />
+	<mx:HTTPService id="getViewFormat" url="pos/salesreceipt/xmls/SalesReceiptCriteriaStru.xml" />
+	<mx:HTTPService id="lineDetailFormat" url="pos/salesreceipt/xmls/SalesReceiptItemDetailStru.xml" />
+	<mx:HTTPService id="salespersonDetailFormat" url="pos/salesreceipt/xmls/SalesPersonDetailStru.xml" />
+
+	<!--held items related -->
+	<mx:HTTPService id="getHeldList" url="/point_of_sale/list_hold_pos_invoices" />
+	<mx:HTTPService id="getHeldItemListFormat" url="pos/salesreceipt/xmls/SalesReceiptHeldItemList.xml" />
+	<mx:HTTPService id="getHeldItemDetailFormat" url="pos/salesreceipt/xmls/SalesReceiptHeldItemDetailStru.xml" />	
+
+	
+	<!--we have taken invisible data grid for storing payment and address to send at the time of save-->
+	<mx:HTTPService id="paymentFormat" url="pos/salesreceipt/xmls/SalesReceiptPaymentStru.xml" />
+	<!--<mx:HTTPService id="addressFormat" url="pos/salesreceipt/xmls/SalesReceiptAddressStru.xml" />	-->	
+	
+	
+	<!--for getting all items list on click of find Items button-->
+	<mx:HTTPService id="fetchRecordFormat" url="pos/salesreceipt/xmls/SalesReceiptFetchAllItemStru.xml"/>
+	<mx:HTTPService id="fetch_all_items" url="/point_of_sale/list_items"/>
+
+	<!--for getting items of particullar receipt#  on click of Find Receipt button-->
+	<mx:HTTPService id="fetchReceiptItemsFormat" url="pos/salesreceipt/xmls/SalesReceiptFetchReceiptItemStru.xml"/>
+	<mx:HTTPService id="fetch_receipt_items" url="/point_of_sale/list_return_items"/>	
+	
+	<!--for getting items of particullar Order#  on click of Find Receipt button-->
+	<mx:HTTPService id="fetchOrderItemsFormat" url="pos/salesreceipt/xmls/SalesReceiptFetchOrderItemStru.xml"/>
+	<mx:HTTPService id="fetch_order_items" url="/point_of_sale/fetch_open_stock_orders"/>	
+
+	<!--for getting items of particullar Rapair Order #  on click of Find Receipt button-->
+	<mx:HTTPService id="fetchRepairItemsFormat" url="pos/salesreceipt/xmls/SalesReceiptFetchRepairItemStru.xml"/>
+	<mx:HTTPService id="fetch_repair_items" url="/point_of_sale/fetch_open_repair_orders"/>	
+
+	<mx:HTTPService id="printRecord" url="/point_of_sale_report/render_point_of_sale_format" />
+
+	
+	
+	
+
+</rds:CommonServices>

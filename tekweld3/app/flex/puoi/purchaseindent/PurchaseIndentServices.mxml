@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rds:CommonServices xmlns:rds="business.*" xmlns:mx="http://www.adobe.com/2006/mxml">
+
+	<mx:HTTPService id="saveRecord" url="/purchase/create_purchase_indents" />
+	<mx:HTTPService id="getRecord" url="/purchase/show_purchase_indent" />
+	<mx:HTTPService id="getList" url="/purchase/list_purchase_indents" />
+	
+	<mx:HTTPService id="getListFormat" url="puoi/purchaseindent/xmls/PurchaseIndentListStru.xml" />
+	<mx:HTTPService id="getViewFormat" url="puoi/purchaseindent/xmls/PurchaseIndentCriteriaStru.xml" />
+	<mx:HTTPService id="lineDetailFormat" url="puoi/purchaseindent/xmls/PurchaseIndentLineDetailStru.xml" />
+	
+	<mx:HTTPService id="printRecord" url="" />
+	
+</rds:CommonServices>

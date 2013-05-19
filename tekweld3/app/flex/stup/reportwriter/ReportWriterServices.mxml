@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rds:CommonServices xmlns:rds="business.*" xmlns:mx="http://www.adobe.com/2006/mxml">
+
+	<mx:HTTPService id="saveRecord" url="/report/report/create_reports"/>
+	<mx:HTTPService id="getRecord" url="/report/report/show_report"/>
+	<mx:HTTPService id="getList" url="/report/report/list_reports"/>
+	
+	<mx:HTTPService id="allColumnsListStruXml" url="com/generic/xmls/ConfigureColumnListStruForReportWriter.xml"/>
+	<mx:HTTPService id="selectedColumnsListStruXml" url="com/generic/xmls/SelectedConfigureColumnStruForReportWriter.xml"/>
+	<mx:HTTPService id="getListFormat" url="stup/reportwriter/xmls/ReportWriterListStru.xml"/>
+	<mx:HTTPService id="getViewFormat" url="stup/reportwriter/xmls/ReportWriterCriteriaStru.xml"/>
+	
+	<mx:HTTPService id="columnsDetailFormat" url="stup/reportwriter/xmls/ColumnsDetailStru.xml"/>
+	<mx:HTTPService id="styleDetailFormat" url="stup/reportwriter/xmls/StyleDetailStru.xml"/>
+		
+	<mx:HTTPService id="fixedFormatDetail" url="stup/reportwriter/xmls/FixedFormatDetailStru.xml"/>
+	
+	<mx:HTTPService id="printRecord" url=""/>	
+	
+</rds:CommonServices>

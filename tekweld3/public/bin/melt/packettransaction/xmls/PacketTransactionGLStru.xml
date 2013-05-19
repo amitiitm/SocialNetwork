@@ -1,0 +1,9 @@
+<columns lockedColumnCount='0'>
+
+	<column data='activity_date' 		label='Activity Date' 		editable='false' 	visible='true' 		width='100' 	textAlign='left' 
+			forLevel='false' 		defaultForLevel='' 			booleanFlag='false' sortDataType='D'/>
+	<column data='stage_name' 		label='Melting Stage #' 	editable='false' 	visible='true' 		width='150' 	textAlign='left' 
+			forLevel='false' 		defaultForLevel='' 			booleanFlag='false' sortDataType='S'/>			
+	<column data='remarks'          label='Remarks'  			editable='false' 	visible='true' 		width='300' 	textAlign='left' 
+			forLevel='false' 		defaultForLevel='' 			booleanFlag='false' sortDataType='S'/>	
+</columns>  

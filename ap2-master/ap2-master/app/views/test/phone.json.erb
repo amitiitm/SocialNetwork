@@ -1,0 +1,6 @@
+{
+	query: '<%= @q %>',
+	suggestions: [<%= @phones.map {|p| "'#{p.user.name}<br>#{p.number}'"}.join(",") %>],
+	data: [<%= @phones.map {|p| "'#{p.account.id}'"}.join(",") %>],
+	show_val: [<%= @phones.map {|p| "'#{p.number}'"}.join(",") %>]
+}

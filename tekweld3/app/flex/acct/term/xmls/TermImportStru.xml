@@ -1,0 +1,89 @@
+<columns  lockedColumnCount='0'>
+	
+	<column data='code'			label='Term #'			editable='false'	visible='true'		width='100'	textAlign='left'	forLevel='true'
+			print_width = '15'	defaultForLevel=''		booleanFlag='false'	sortDataType='S' 	columnPrecision="NaN"/>
+			
+	<column data='name'			label='Name'			editable='false'	visible='true'		width='160'	textAlign='left'	forLevel='true'
+			print_width = '18'	defaultForLevel=''		booleanFlag='false'	sortDataType='S'	columnPrecision="NaN"/>
+
+	<column data='pay1_per'		label='1st Payment %'	editable='false'	visible='true'		width='100'	textAlign='right'	forLevel='false' 
+			print_width = '18'	defaultForLevel=''		booleanFlag='false' sortDataType='N'	columnPrecision="2"/>
+			
+	<column data='pay1_days'	label='1st Payment Days' editable='false'	visible='true'		width='100'	textAlign='right'	forLevel='false'
+			print_width = '18'	defaultForLevel=''		booleanFlag='false'	sortDataType='N'	columnPrecision="0"/>
+	
+	<column data='pay2_per'		label='2nd Payment %'	editable='false'	visible='true'		width='100'	textAlign='right'	forLevel='false' 
+			print_width = '18'	defaultForLevel=''		booleanFlag='false' sortDataType='N'	columnPrecision="2"/>
+			
+	<column data='pay2_days'	label='2nd Payment Days' editable='false'	visible='true'		width='100'	textAlign='right'	forLevel='false'
+			print_width = '18'	defaultForLevel=''		booleanFlag='false'	sortDataType='N'	columnPrecision="0"/>
+			
+	<column data='pay3_per'		label='3rd Payment %'	editable='false'	visible='true'		width='100'	textAlign='right'	forLevel='false' 
+			print_width = '18'	defaultForLevel=''		booleanFlag='false' sortDataType='N'	columnPrecision="2"/>
+			
+	<column data='pay3_days'	label='3rd Payment Days' editable='false'	visible='true'		width='100'	textAlign='right'	forLevel='false'
+			print_width = '18'	defaultForLevel=''		booleanFlag='false'	sortDataType='N'	columnPrecision="0"/>
+			
+	<column data='pay4_per'		label='4th Payment %'	editable='false'	visible='true'		width='100'	textAlign='right'	forLevel='false' 
+			print_width = '18'	defaultForLevel=''		booleanFlag='false' sortDataType='N'	columnPrecision="2"/>
+			
+	<column data='pay4_days'	label='4th Payment Days' editable='false'	visible='true'		width='100'	textAlign='right'	forLevel='false'
+			print_width = '18'	defaultForLevel=''		booleanFlag='false'	sortDataType='N'	columnPrecision="0"/>
+			
+	<column data='pay5_per'		label='5th Payment %'	editable='false'	visible='true'		width='100'	textAlign='right'	forLevel='false' 
+			print_width = '18'	defaultForLevel=''		booleanFlag='false' sortDataType='N'	columnPrecision="2"/>
+			
+	<column data='pay5_days'	label='5th Payment Days' editable='false'	visible='true'		width='100'	textAlign='right'	forLevel='false'
+			print_width = '18'	defaultForLevel=''		booleanFlag='false'	sortDataType='N'	columnPrecision="0"/>
+			
+	<column data='pay6_per'		label='6th Payment %'	editable='false'	visible='true'		width='100'	textAlign='right'	forLevel='false' 
+			print_width = '18'	defaultForLevel=''		booleanFlag='false' sortDataType='N'	columnPrecision="2"/>
+			
+	<column data='pay6_days'	label='6th Payment Days' editable='false'	visible='true'		width='100'	textAlign='right'	forLevel='false'
+			print_width = '18'	defaultForLevel=''		booleanFlag='false'	sortDataType='N'	columnPrecision="0"/>
+			
+	<column data='pay7_per'		label='7th Payment %'	editable='false'	visible='true'		width='100'	textAlign='right'	forLevel='false' 
+			print_width = '18'	defaultForLevel=''		booleanFlag='false' sortDataType='N'	columnPrecision="2"/>
+			
+	<column data='pay7_days'	label='7th Payment Days' editable='false'	visible='true'		width='100'	textAlign='right'	forLevel='false'
+			print_width = '18'	defaultForLevel=''		booleanFlag='false'	sortDataType='N'	columnPrecision="0"/>
+			
+	<column data='pay8_per'		label='8th Payment %'	editable='false'	visible='true'		width='100'	textAlign='right'	forLevel='false' 
+			print_width = '18'	defaultForLevel=''		booleanFlag='false' sortDataType='N'	columnPrecision="2"/>
+			
+	<column data='pay8_days'	label='8th Payment Days' editable='false'	visible='true'		width='100'	textAlign='right'	forLevel='false'
+			print_width = '18'	defaultForLevel=''		booleanFlag='false'	sortDataType='N'	columnPrecision="0"/>
+			
+	<column data='pay9_per'		label='9th Payment %'	editable='false'	visible='true'		width='100'	textAlign='right'	forLevel='false' 
+			print_width = '18'	defaultForLevel=''		booleanFlag='false' sortDataType='N'	columnPrecision="2"/>
+			
+	<column data='pay9_days'	label='9th Payment Days' editable='false'	visible='true'		width='100'	textAlign='right'	forLevel='false'
+			print_width = '18'	defaultForLevel=''		booleanFlag='false'	sortDataType='N'	columnPrecision="0"/>						
+
+	<column data='pay10_per'	label='10th Payment %'	editable='false'	visible='true'		width='100'	textAlign='right'	forLevel='false' 
+			print_width = '18'	defaultForLevel=''		booleanFlag='false' sortDataType='N'	columnPrecision="2"/>
+			
+	<column data='pay10_days'	label='10th Payment Days' editable='false'	visible='true'		width='100'	textAlign='right'	forLevel='false'
+			print_width = '18'	defaultForLevel=''		booleanFlag='false'	sortDataType='N'	columnPrecision="0"/>
+			
+	<column data='pay11_per'	label='11th Payment %'	editable='false'	visible='true'		width='100'	textAlign='right'	forLevel='false' 
+			print_width = '18'	defaultForLevel=''		booleanFlag='false' sortDataType='N'	columnPrecision="2"/>
+			
+	<column data='pay11_days'	label='11th Payment Days' editable='false'	visible='true'		width='100'	textAlign='right'	forLevel='false'
+			print_width = '18'	defaultForLevel=''		booleanFlag='false'	sortDataType='N'	columnPrecision="0"/>
+			
+	<column data='pay12_per'	label='12th Payment %'	editable='false'	visible='true'		width='100'	textAlign='right'	forLevel='false' 
+			print_width = '18'	defaultForLevel=''		booleanFlag='false' sortDataType='N'	columnPrecision="2"/>
+			
+	<column data='pay12_days'	label='12th Payment Days' editable='false'	visible='true'		width='100'	textAlign='right'	forLevel='false'
+			print_width = '18'	defaultForLevel=''		booleanFlag='false'	sortDataType='N'	columnPrecision="0"/>
+	
+	<column data='disc_per'		label='Discount %' 		editable='false'	visible='true'		width='100'	textAlign='right'	forLevel='false'
+			print_width = '18'	defaultForLevel=''		booleanFlag='false'	sortDataType='N'	columnPrecision="2"/>
+	
+	<column data='disc_days'	label='Discount Days' 	editable='false'	visible='true'		width='100'	textAlign='right'	forLevel='false'
+			print_width = '18'	defaultForLevel=''		booleanFlag='false'	sortDataType='N'	columnPrecision="0"/>
+									
+	<column data='message'		label='Message'			editable='false'	visible='true'		width='160'	textAlign='left'	forLevel='true'
+			print_width = '18'	defaultForLevel=''		booleanFlag='false'	sortDataType='S'	columnPrecision="NaN"/>		
+</columns> 

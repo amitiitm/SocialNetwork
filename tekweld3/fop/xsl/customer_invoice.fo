@@ -1,0 +1,382 @@
+<?xml version="1.0" encoding="UTF-8"?><xsl:transform version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:j4lext="xalan://com.java4less.xreport.fop.XLSTExtension" extension-element-prefixes="j4lext"  >
+<xsl:template match="/"><fo:root xmlns:fo="http://www.w3.org/1999/XSL/Format">
+<fo:layout-master-set>
+<fo:simple-page-master master-name="master1" page-width="24.0cm" page-height="29.7cm" margin-top="2.0cm"   margin-bottom="2.0cm" margin-left="2.0cm"  margin-right="2.0cm"  > 
+  <fo:region-body   margin-top="7.3cm"/> 
+  <fo:region-before extent="7.3cm"/> 
+  <fo:region-after  extent="-0.22cm"/> 
+  </fo:simple-page-master>
+</fo:layout-master-set>
+<fo:page-sequence master-reference="master1">
+<fo:static-content flow-name="xsl-region-before">
+<fo:table width="20.0cm"  >
+  <fo:table-column column-width="2.73cm"/>
+  <fo:table-column column-width="1.27cm"/>
+  <fo:table-column column-width="0.49cm"/>
+  <fo:table-column column-width="5.51cm"/>
+  <fo:table-column column-width="2.73cm"/>
+  <fo:table-column column-width="2.27cm"/>
+  <fo:table-column column-width="2.0cm"/>
+  <fo:table-column column-width="0.49cm"/>
+  <fo:table-column column-width="2.51cm"/>
+  <fo:table-body>
+    <fo:table-row   background-color="#ffffff" height="1.0cm">
+        <fo:table-cell   number-rows-spanned="5"  number-columns-spanned="1">
+      <fo:block    margin-left="0.24cm" margin-right="0.11cm"  margin-top="0.24cm" ><xsl:variable name="imagepath" select="invoices/invoice/company_logo_file"/><fo:external-graphic content-width="scale-to-fit" content-height="scale-to-fit" width="2.38cm"  height="2.49cm" src= "url({$imagepath})"  ></fo:external-graphic>
+</fo:block>
+        </fo:table-cell>
+        <fo:table-cell   number-columns-spanned="4">
+      <fo:block   margin-left="0.27cm" margin-right="0.92cm"  margin-top="0.24cm"  font-size="14pt"  font-family="SansSerif"  font-style="bold"  color="#000000"  text-align="left"><xsl:value-of select="invoices/invoice/company_name"></xsl:value-of></fo:block>
+        </fo:table-cell>
+        <fo:table-cell   number-columns-spanned="1">
+        <fo:block></fo:block>        </fo:table-cell>
+        <fo:table-cell   number-columns-spanned="3">
+      <fo:block  background-color="#808080" margin-left="0.0cm" margin-right="0.0cm"  margin-top="0.24cm"  font-size="14pt"  font-family="SansSerif"  font-style="bold"  color="#ffffff"  text-align="center">CUSTOMER INVOICE</fo:block>
+        </fo:table-cell>
+    </fo:table-row>
+    <fo:table-row   background-color="#ffffff" height="0.49cm">
+        <fo:table-cell   number-columns-spanned="4">
+      <fo:block   margin-left="0.27cm" margin-right="1.27cm"  margin-top="0.0cm"  font-size="10pt"  font-family="SansSerif"  font-style="bold"  color="#000000"  text-align="left"><xsl:value-of select="invoices/invoice/company_address1"></xsl:value-of></fo:block>
+        </fo:table-cell>
+        <fo:table-cell   number-columns-spanned="1">
+        <fo:block></fo:block>        </fo:table-cell>
+        <fo:table-cell   number-columns-spanned="1">
+      <fo:block   margin-left="0.49cm" margin-right="0.16cm"  margin-top="0.0cm"  font-size="8pt"  font-family="SansSerif"  color="#000000"  text-align="left">Page</fo:block>
+        </fo:table-cell>
+        <fo:table-cell   number-columns-spanned="1">
+      <fo:block   margin-left="0.0cm" margin-right="0.22cm"  margin-top="0.0cm"  font-size="8pt"  font-family="SansSerif"  color="#000000"  text-align="left"> :</fo:block>
+        </fo:table-cell>
+        <fo:table-cell   number-columns-spanned="1">
+      <fo:block   margin-left="0.0cm" margin-right="0.27cm"  margin-top="0.0cm"  font-size="8pt"  font-family="SansSerif"  color="#000000"  text-align="left"><fo:page-number/> of <fo:page-number-citation ref-id="last-page"/></fo:block>
+        </fo:table-cell>
+    </fo:table-row>
+    <fo:table-row   background-color="#ffffff" height="0.51cm">
+        <fo:table-cell   number-columns-spanned="4">
+      <fo:block   margin-left="0.27cm" margin-right="1.27cm"  margin-top="0.0cm"  font-size="10pt"  font-family="SansSerif"  font-style="bold"  color="#000000"  text-align="left"><xsl:value-of select="invoices/invoice/company_address2"></xsl:value-of></fo:block>
+        </fo:table-cell>
+        <fo:table-cell   number-columns-spanned="1">
+        <fo:block></fo:block>        </fo:table-cell>
+        <fo:table-cell   number-columns-spanned="1">
+      <fo:block   margin-left="0.49cm" margin-right="0.08cm"  margin-top="0.0cm"  font-size="8pt"  font-family="SansSerif"  color="#000000"  text-align="left">Invoice #</fo:block>
+        </fo:table-cell>
+        <fo:table-cell   number-columns-spanned="1">
+      <fo:block   margin-left="0.0cm" margin-right="0.17cm"  margin-top="0.0cm"  font-size="8pt"  font-family="SansSerif"  color="#000000"  text-align="left"> :</fo:block>
+        </fo:table-cell>
+        <fo:table-cell   number-columns-spanned="1">
+      <fo:block   margin-left="0.0cm" margin-right="0.19cm"  margin-top="0.0cm"  font-size="8pt"  font-family="SansSerif"  color="#000000"  text-align="left"><xsl:value-of select="invoices/invoice/trans_no"></xsl:value-of></fo:block>
+        </fo:table-cell>
+    </fo:table-row>
+    <fo:table-row   background-color="#ffffff" height="0.49cm">
+        <fo:table-cell   number-columns-spanned="4">
+      <fo:block   margin-left="0.27cm" margin-right="1.27cm"  margin-top="0.0cm"  font-size="10pt"  font-family="SansSerif"  font-style="bold"  color="#000000"  text-align="left"><xsl:value-of select="concat(/invoices/invoice/company_city ,',     ',/invoices/invoice/company_state ,',     ',/invoices/invoice/company_zip)"></xsl:value-of></fo:block>
+        </fo:table-cell>
+        <fo:table-cell   number-columns-spanned="1">
+        <fo:block></fo:block>        </fo:table-cell>
+        <fo:table-cell   number-columns-spanned="1">
+      <fo:block   margin-left="0.49cm" margin-right="0.05cm"  margin-top="0.0cm"  font-size="8pt"  font-family="SansSerif"  color="#000000"  text-align="left">Date</fo:block>
+        </fo:table-cell>
+        <fo:table-cell   number-columns-spanned="1">
+      <fo:block   margin-left="0.0cm" margin-right="0.19cm"  margin-top="0.0cm"  font-size="8pt"  font-family="SansSerif"  color="#000000"  text-align="left"> :</fo:block>
+        </fo:table-cell>
+        <fo:table-cell   number-columns-spanned="1">
+      <fo:block   margin-left="0.0cm" margin-right="0.22cm"  margin-top="0.0cm"  font-size="8pt"  font-family="SansSerif"  color="#000000"  text-align="left"><xsl:value-of select="invoices/invoice/trans_date"></xsl:value-of></fo:block>
+        </fo:table-cell>
+    </fo:table-row>
+    <fo:table-row   background-color="#ffffff" height="0.51cm">
+        <fo:table-cell   number-columns-spanned="2">
+      <fo:block   margin-left="0.27cm" margin-right="0.11cm"  margin-top="0.0cm"  font-size="10pt"  font-family="SansSerif"  font-style="bold"  color="#000000"  text-align="left">Phone :</fo:block>
+        </fo:table-cell>
+        <fo:table-cell   number-columns-spanned="1">
+      <fo:block   margin-left="0.0cm" margin-right="2.24cm"  margin-top="0.0cm"  font-size="10pt"  font-family="SansSerif"  font-style="bold"  color="#000000"  text-align="left"><xsl:value-of select="invoices/invoice/company_phone"></xsl:value-of></fo:block>
+        </fo:table-cell>
+        <fo:table-cell   number-columns-spanned="1">
+        <fo:block></fo:block>        </fo:table-cell>
+        <fo:table-cell   number-columns-spanned="1">
+        <fo:block></fo:block>        </fo:table-cell>
+        <fo:table-cell   number-columns-spanned="1">
+      <fo:block   margin-left="0.49cm" margin-right="0.0cm"  margin-top="0.0cm"  font-size="8pt"  font-family="SansSerif"  color="#000000"  text-align="left">Due Date</fo:block>
+        </fo:table-cell>
+        <fo:table-cell   number-columns-spanned="1">
+      <fo:block   margin-left="0.0cm" margin-right="0.17cm"  margin-top="0.0cm"  font-size="8pt"  font-family="SansSerif"  color="#000000"  text-align="left"> :</fo:block>
+        </fo:table-cell>
+        <fo:table-cell   number-columns-spanned="1">
+      <fo:block   margin-left="0.0cm" margin-right="0.22cm"  margin-top="0.0cm"  font-size="8pt"  font-family="SansSerif"  color="#000000"  text-align="left"><xsl:value-of select="invoices/invoice/due_date"></xsl:value-of></fo:block>
+        </fo:table-cell>
+    </fo:table-row>
+    <fo:table-row   background-color="#ffffff" height="0.24cm">
+        <fo:table-cell   number-columns-spanned="1">
+        <fo:block></fo:block>        </fo:table-cell>
+        <fo:table-cell   number-columns-spanned="2">
+      <fo:block   margin-left="0.27cm" margin-right="0.14cm"  margin-top="0.0cm"  font-size="10pt"  font-family="SansSerif"  color="#000000"  text-align="left">Fax :</fo:block>
+        </fo:table-cell>
+        <fo:table-cell   number-columns-spanned="1">
+      <fo:block   margin-left="0.0cm" margin-right="2.27cm"  margin-top="0.0cm"  font-size="10pt"  font-family="SansSerif"  font-style="bold"  color="#000000"  text-align="left"><xsl:value-of select="invoices/invoice/company_fax"></xsl:value-of></fo:block>
+        </fo:table-cell>
+        <fo:table-cell   number-columns-spanned="1">
+        <fo:block></fo:block>        </fo:table-cell>
+        <fo:table-cell   number-columns-spanned="1">
+        <fo:block></fo:block>        </fo:table-cell>
+        <fo:table-cell   number-columns-spanned="1">
+        <fo:block></fo:block>        </fo:table-cell>
+        <fo:table-cell   number-columns-spanned="1">
+        <fo:block></fo:block>        </fo:table-cell>
+        <fo:table-cell   number-columns-spanned="1">
+        <fo:block></fo:block>        </fo:table-cell>
+    </fo:table-row>
+    <fo:table-row   background-color="#ffffff" height="0.25cm">
+        <fo:table-cell   number-columns-spanned="9">
+      <fo:block margin-left="0.0cm" margin-right="0.0cm"  margin-top="0.0cm" ><fo:leader leader-pattern="rule"  color="#000000"  rule-thickness="1.0pt"  rule-style="solid"  leader-length="100%"/></fo:block>
+        </fo:table-cell>
+    </fo:table-row>
+    <fo:table-row   background-color="#ffffff" height="0.51cm">
+        <fo:table-cell   number-columns-spanned="1">
+      <fo:block   margin-left="0.73cm" margin-right="0.08cm"  margin-top="0.0cm"  font-size="9pt"  font-family="SansSerif"  font-style="bold"  color="#000000"  text-align="left">Customer :</fo:block>
+        </fo:table-cell>
+        <fo:table-cell   number-columns-spanned="3">
+      <fo:block   margin-left="0.0cm" margin-right="4.97cm"  margin-top="0.0cm"  font-size="8pt"  font-family="SansSerif"  color="#000000"  text-align="left"><xsl:value-of select="invoices/invoice/customer_name"></xsl:value-of></fo:block>
+        </fo:table-cell>
+        <fo:table-cell   number-columns-spanned="1">
+        <fo:block></fo:block>        </fo:table-cell>
+        <fo:table-cell   number-columns-spanned="2">
+      <fo:block   margin-left="2.0cm" margin-right="0.27cm"  margin-top="0.0cm"  font-size="8pt"  font-family="SansSerif"  color="#000000"  text-align="right">Invoice Type :</fo:block>
+        </fo:table-cell>
+        <fo:table-cell   number-columns-spanned="2">
+      <fo:block   margin-left="0.0cm" margin-right="0.95cm"  margin-top="0.0cm"  font-size="8pt"  font-family="SansSerif"  color="#000000"  text-align="left"><xsl:value-of select="invoices/invoice/inv_type"></xsl:value-of></fo:block>
+        </fo:table-cell>
+    </fo:table-row>
+    <fo:table-row   background-color="#ffffff" height="0.49cm">
+        <fo:table-cell   number-columns-spanned="1">
+        <fo:block></fo:block>        </fo:table-cell>
+        <fo:table-cell   number-columns-spanned="3">
+      <fo:block   margin-left="0.0cm" margin-right="3.27cm"  margin-top="0.0cm"  font-size="8pt"  font-family="SansSerif"  color="#000000"  text-align="left"><xsl:value-of select="invoices/invoice/customer_address1"></xsl:value-of></fo:block>
+        </fo:table-cell>
+        <fo:table-cell   number-columns-spanned="1">
+        <fo:block></fo:block>        </fo:table-cell>
+        <fo:table-cell   number-columns-spanned="1">
+        <fo:block></fo:block>        </fo:table-cell>
+        <fo:table-cell   number-columns-spanned="1">
+      <fo:block   margin-left="0.0cm" margin-right="0.24cm"  margin-top="0.0cm"  font-size="8pt"  font-family="SansSerif"  color="#000000"  text-align="right">PO # :</fo:block>
+        </fo:table-cell>
+        <fo:table-cell   number-columns-spanned="2">
+      <fo:block   margin-left="0.0cm" margin-right="0.97cm"  margin-top="0.0cm"  font-size="8pt"  font-family="SansSerif"  color="#000000"  text-align="left"><xsl:value-of select="invoices/invoice/inv_no"></xsl:value-of></fo:block>
+        </fo:table-cell>
+    </fo:table-row>
+    <fo:table-row   background-color="#ffffff" height="0.51cm">
+        <fo:table-cell   number-columns-spanned="1">
+        <fo:block></fo:block>        </fo:table-cell>
+        <fo:table-cell   number-columns-spanned="3">
+      <fo:block   margin-left="0.0cm" margin-right="3.22cm"  margin-top="0.0cm"  font-size="8pt"  font-family="SansSerif"  color="#000000"  text-align="left"><xsl:value-of select="invoices/invoice/customer_address2"></xsl:value-of></fo:block>
+        </fo:table-cell>
+        <fo:table-cell   number-columns-spanned="1">
+        <fo:block></fo:block>        </fo:table-cell>
+        <fo:table-cell   number-columns-spanned="1">
+        <fo:block></fo:block>        </fo:table-cell>
+        <fo:table-cell   number-columns-spanned="1">
+      <fo:block   margin-left="0.0cm" margin-right="0.22cm"  margin-top="0.0cm"  font-size="8pt"  font-family="SansSerif"  color="#000000"  text-align="right">PO Date :</fo:block>
+        </fo:table-cell>
+        <fo:table-cell   number-columns-spanned="2">
+      <fo:block   margin-left="0.0cm" margin-right="0.97cm"  margin-top="0.0cm"  font-size="8pt"  font-family="SansSerif"  color="#000000"  text-align="left"><xsl:value-of select="invoices/invoice/inv_date"></xsl:value-of></fo:block>
+        </fo:table-cell>
+    </fo:table-row>
+    <fo:table-row   background-color="#ffffff" height="0.49cm">
+        <fo:table-cell   number-columns-spanned="1">
+        <fo:block></fo:block>        </fo:table-cell>
+        <fo:table-cell   number-columns-spanned="3">
+      <fo:block   margin-left="0.0cm" margin-right="3.14cm"  margin-top="0.0cm"  font-size="8pt"  font-family="SansSerif"  color="#000000"  text-align="left"><xsl:value-of select="concat(/invoices/invoice/customer_city ,',     ', /invoices/invoice/customer_state ,',     ', /invoices/invoice/customer_country ,',     ',/invoices/invoice/customer_zip)"></xsl:value-of></fo:block>
+        </fo:table-cell>
+        <fo:table-cell   number-columns-spanned="1">
+        <fo:block></fo:block>        </fo:table-cell>
+        <fo:table-cell   number-columns-spanned="2">
+      <fo:block   margin-left="2.0cm" margin-right="0.3cm"  margin-top="0.0cm"  font-size="8pt"  font-family="SansSerif"  color="#000000"  text-align="right">Sales Date :</fo:block>
+        </fo:table-cell>
+        <fo:table-cell   number-columns-spanned="2">
+      <fo:block   margin-left="0.0cm" margin-right="1.16cm"  margin-top="0.0cm"  font-size="8pt"  font-family="SansSerif"  color="#000000"  text-align="left"><xsl:value-of select="invoices/invoice/sale_date"></xsl:value-of></fo:block>
+        </fo:table-cell>
+    </fo:table-row>
+    <fo:table-row   background-color="#ffffff" height="0.51cm">
+        <fo:table-cell   number-columns-spanned="1">
+        <fo:block></fo:block>        </fo:table-cell>
+        <fo:table-cell   number-columns-spanned="1">
+      <fo:block   margin-left="0.0cm" margin-right="0.11cm"  margin-top="0.0cm"  font-size="8pt"  font-family="SansSerif"  color="#000000"  text-align="left">Phone :</fo:block>
+        </fo:table-cell>
+        <fo:table-cell   number-columns-spanned="2">
+      <fo:block   margin-left="0.0cm" margin-right="3.19cm"  margin-top="0.0cm"  font-size="8pt"  font-family="SansSerif"  color="#000000"  text-align="left"><xsl:value-of select="invoices/invoice/customer_phone1"></xsl:value-of></fo:block>
+        </fo:table-cell>
+        <fo:table-cell   number-columns-spanned="1">
+        <fo:block></fo:block>        </fo:table-cell>
+        <fo:table-cell   number-columns-spanned="1">
+        <fo:block></fo:block>        </fo:table-cell>
+        <fo:table-cell   number-columns-spanned="1">
+      <fo:block   margin-left="0.0cm" margin-right="0.24cm"  margin-top="0.0cm"  font-size="8pt"  font-family="SansSerif"  color="#000000"  text-align="right">Terms :</fo:block>
+        </fo:table-cell>
+        <fo:table-cell   number-columns-spanned="2">
+      <fo:block   margin-left="0.0cm" margin-right="0.95cm"  margin-top="0.0cm"  font-size="8pt"  font-family="SansSerif"  color="#000000"  text-align="left"><xsl:value-of select="invoices/invoice/term_code"></xsl:value-of></fo:block>
+        </fo:table-cell>
+    </fo:table-row>
+    <fo:table-row   background-color="#ffffff" height="0.24cm">
+        <fo:table-cell   number-columns-spanned="1">
+      <fo:block   margin-left="0.49cm" margin-right="0.0cm"  margin-top="0.0cm"  font-size="9pt"  font-family="SansSerif"  color="#000000"  text-align="left">Sales Person :</fo:block>
+        </fo:table-cell>
+        <fo:table-cell   number-columns-spanned="3">
+      <fo:block   margin-left="0.0cm" margin-right="4.35cm"  margin-top="0.0cm"  font-size="8pt"  font-family="SansSerif"  color="#000000"  text-align="left"><xsl:value-of select="invoices/invoice/salesperson_code"></xsl:value-of></fo:block>
+        </fo:table-cell>
+        <fo:table-cell   number-columns-spanned="1">
+        <fo:block></fo:block>        </fo:table-cell>
+        <fo:table-cell   number-columns-spanned="1">
+        <fo:block></fo:block>        </fo:table-cell>
+        <fo:table-cell   number-columns-spanned="1">
+      <fo:block   margin-left="0.0cm" margin-right="0.24cm"  margin-top="0.0cm"  font-size="8pt"  font-family="SansSerif"  color="#000000"  text-align="right">Description :</fo:block>
+        </fo:table-cell>
+        <fo:table-cell   number-columns-spanned="2">
+      <fo:block   margin-left="0.0cm" margin-right="0.97cm"  margin-top="0.0cm"  font-size="8pt"  font-family="SansSerif"  color="#000000"  text-align="left"><xsl:value-of select="invoices/invoice/description"></xsl:value-of></fo:block>
+        </fo:table-cell>
+    </fo:table-row>
+    <fo:table-row   background-color="#ffffff" height="1.06cm">
+        <fo:table-cell   number-columns-spanned="9">
+      <fo:block margin-left="0.0cm" margin-right="0.0cm"  margin-top="0.0cm" ><fo:leader leader-pattern="rule"  color="#000000"  rule-thickness="1.0pt"  rule-style="solid"  leader-length="100%"/></fo:block>
+        </fo:table-cell>
+    </fo:table-row>
+  </fo:table-body>
+</fo:table>
+</fo:static-content>
+<fo:static-content flow-name="xsl-region-after">
+<fo:table width="20.0cm"  >
+  <fo:table-column column-width="20.0cm"/>
+  <fo:table-body>
+    <fo:table-row   background-color="#ffffff" height="-0.22cm">
+      <fo:table-cell><fo:table>
+      <fo:table-column column-width="20.0cm"/>
+      <fo:table-body>
+      <fo:table-row  background-color="#ffffff" height="-0.22cm">
+        <fo:table-cell   number-columns-spanned="1">
+        <fo:block></fo:block>        </fo:table-cell>
+    </fo:table-row>
+    </fo:table-body>
+    </fo:table></fo:table-cell>
+    </fo:table-row>
+  </fo:table-body>
+</fo:table>
+</fo:static-content>
+<fo:flow flow-name="xsl-region-body"> 
+
+<!-- START Area Header -->
+<fo:table width="20.0cm"  >
+  <fo:table-column column-width="20.0cm"/>
+  <fo:table-body>
+    <fo:table-row   background-color="#ffffff" height="-0.22cm">
+      <fo:table-cell><fo:table>
+      <fo:table-column column-width="20.0cm"/>
+      <fo:table-body>
+      <fo:table-row  background-color="#ffffff" height="-0.22cm">
+        <fo:table-cell   number-columns-spanned="1">
+        <fo:block></fo:block>        </fo:table-cell>
+    </fo:table-row>
+    </fo:table-body>
+    </fo:table></fo:table-cell>
+    </fo:table-row>
+<fo:table-row>
+<fo:table-cell number-columns-spanned="1">
+<fo:block>
+
+<!-- START Area Detail -->
+<xsl:if test="count(invoices/invoice/invoice_lines/invoice_line) &gt; 0" >
+<fo:table width="20.0cm"  border-color="#000000" border-style="solid" border-width="medium" >
+  <fo:table-column column-width="4.0cm"/>
+  <fo:table-column column-width="5.73cm"/>
+  <fo:table-column column-width="2.0cm"/>
+  <fo:table-column column-width="8.27cm"/>
+  <fo:table-header>
+    <fo:table-row   background-color="#ffffff" height="0.65cm">
+        <fo:table-cell  border-color="#000000" border-style="solid" border-width="medium"  number-columns-spanned="1">
+      <fo:block   margin-left="0.24cm" margin-right="1.16cm"  margin-top="0.24cm"  font-size="8pt"  font-family="SansSerif"  font-style="bold"  color="#000000"  text-align="left">GL Account #</fo:block>
+        </fo:table-cell>
+        <fo:table-cell  border-color="#000000" border-style="solid" border-width="medium"  number-columns-spanned="1">
+      <fo:block   margin-left="0.24cm" margin-right="2.62cm"  margin-top="0.24cm"  font-size="8pt"  font-family="SansSerif"  font-style="bold"  color="#000000"  text-align="left">GL Account Name</fo:block>
+        </fo:table-cell>
+        <fo:table-cell  border-color="#000000" border-style="solid" border-width="medium"  number-columns-spanned="1">
+      <fo:block   margin-left="0.51cm" margin-right="0.14cm"  margin-top="0.24cm"  font-size="8pt"  font-family="SansSerif"  font-style="bold"  color="#000000"  text-align="right">Amount</fo:block>
+        </fo:table-cell>
+        <fo:table-cell  border-color="#000000" border-style="solid" border-width="medium"  number-columns-spanned="1">
+      <fo:block   margin-left="0.27cm" margin-right="4.95cm"  margin-top="0.24cm"  font-size="8pt"  font-family="SansSerif"  font-style="bold"  color="#000000"  text-align="left">Description</fo:block>
+        </fo:table-cell>
+    </fo:table-row>
+  </fo:table-header>
+  <fo:table-body>
+  <xsl:for-each select="invoices/invoice/invoice_lines/invoice_line">
+    <fo:table-row   background-color="#ffffff" height="0.81cm">
+        <fo:table-cell  border-color="#000000" border-style="solid" border-width="medium"  number-columns-spanned="1">
+      <fo:block   margin-left="0.24cm" margin-right="0.3cm"  margin-top="0.24cm"  font-size="8pt"  font-family="SansSerif"  color="#000000"  text-align="left"><xsl:value-of select="gl_account_code"></xsl:value-of></fo:block>
+        </fo:table-cell>
+        <fo:table-cell  border-color="#000000" border-style="solid" border-width="medium"  number-columns-spanned="1">
+      <fo:block   margin-left="0.24cm" margin-right="0.35cm"  margin-top="0.24cm"  font-size="8pt"  font-family="SansSerif"  color="#000000"  text-align="left"><xsl:value-of select="gl_account_name"></xsl:value-of></fo:block>
+        </fo:table-cell>
+        <fo:table-cell  border-color="#000000" border-style="solid" border-width="medium"  number-columns-spanned="1">
+      <fo:block   margin-left="0.51cm" margin-right="0.05cm"  margin-top="0.24cm"  font-size="8pt"  font-family="SansSerif"  color="#000000"  text-align="right"><xsl:value-of select="gl_amt"></xsl:value-of></fo:block>
+        </fo:table-cell>
+        <fo:table-cell  border-color="#000000" border-style="solid" border-width="medium"  number-columns-spanned="1">
+      <fo:block   margin-left="0.27cm" margin-right="2.05cm"  margin-top="0.24cm"  font-size="10pt"  font-family="SansSerif"  color="#000000"  text-align="left"><xsl:value-of select="description"></xsl:value-of></fo:block>
+        </fo:table-cell>
+    </fo:table-row>
+  </xsl:for-each>
+  </fo:table-body>
+</fo:table>
+</xsl:if>
+
+<!-- END Area Detail -->
+</fo:block>
+</fo:table-cell>
+</fo:table-row>
+<fo:table-row>
+<fo:table-cell number-columns-spanned="1">
+<fo:block>
+
+<!-- START Area Footer -->
+<fo:table width="20.0cm"  >
+  <fo:table-column column-width="18.0cm"/>
+  <fo:table-column column-width="2.0cm"/>
+  <fo:table-body>
+    <fo:table-row   background-color="#ffffff" height="0.49cm">
+        <fo:table-cell   number-columns-spanned="2">
+      <fo:block margin-left="0.0cm" margin-right="0.0cm"  margin-top="0.24cm" ><fo:leader leader-pattern="rule"  color="#000000"  rule-thickness="1.0pt"  rule-style="solid"  leader-length="100%"/></fo:block>
+        </fo:table-cell>
+    </fo:table-row>
+    <fo:table-row   background-color="#ffffff" height="0.51cm">
+        <fo:table-cell   number-columns-spanned="1">
+      <fo:block   margin-left="15.73cm" margin-right="0.14cm"  margin-top="0.0cm"  font-size="8pt"  font-family="SansSerif"  color="#000000"  text-align="left">Invoice Amount </fo:block>
+        </fo:table-cell>
+        <fo:table-cell   number-columns-spanned="1">
+      <fo:block   margin-left="0.0cm" margin-right="0.22cm"  margin-top="0.0cm"  font-size="8pt"  font-family="SansSerif"  color="#000000"  text-align="right"><xsl:value-of select="invoices/invoice/inv_amt"></xsl:value-of></fo:block>
+        </fo:table-cell>
+    </fo:table-row>
+    <fo:table-row   background-color="#ffffff" height="0.49cm">
+        <fo:table-cell   number-columns-spanned="1">
+      <fo:block   margin-left="15.73cm" margin-right="0.92cm"  margin-top="0.0cm"  font-size="8pt"  font-family="SansSerif"  color="#000000"  text-align="left">Paid</fo:block>
+        </fo:table-cell>
+        <fo:table-cell   number-columns-spanned="1">
+      <fo:block   margin-left="0.0cm" margin-right="0.22cm"  margin-top="0.0cm"  font-size="8pt"  font-family="SansSerif"  color="#000000"  text-align="right"><xsl:value-of select="invoices/invoice/paid_amt"></xsl:value-of></fo:block>
+        </fo:table-cell>
+    </fo:table-row>
+    <fo:table-row   background-color="#ffffff" height="0.46cm">
+        <fo:table-cell   number-columns-spanned="1">
+      <fo:block   margin-left="15.73cm" margin-right="0.92cm"  margin-top="0.0cm"  font-size="8pt"  font-family="SansSerif"  color="#000000"  text-align="left">Balance</fo:block>
+        </fo:table-cell>
+        <fo:table-cell   number-columns-spanned="1">
+      <fo:block   margin-left="0.0cm" margin-right="0.22cm"  margin-top="0.0cm"  font-size="8pt"  font-family="SansSerif"  color="#000000"  text-align="right"><xsl:value-of select="invoices/invoice/balance_amt"></xsl:value-of></fo:block>
+        </fo:table-cell>
+    </fo:table-row>
+  </fo:table-body>
+</fo:table>
+
+<!-- END Area Footer -->
+</fo:block>
+</fo:table-cell>
+</fo:table-row>
+  </fo:table-body>
+</fo:table>
+<fo:block id="last-page"/>
+<!-- END Area Header -->
+</fo:flow>
+</fo:page-sequence>
+</fo:root>
+</xsl:template>
+</xsl:transform>

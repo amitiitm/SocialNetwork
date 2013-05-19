@@ -1,0 +1,41 @@
+<columns Title = 'Lead'>
+
+	<column dataType="S" 	label="Lead #" 					checkbox="ckAll1" 						xmlTagFrom="str1" 	from="tiStr1" 		
+		xmlTagTo="str2"		to="tiStr2" 					multiSelect="mvMultiSelect1" 			xmlTagMultiSelect="multiselect1" 		
+	 	lookupFlag="false" 	lookupName=""		 />
+	
+	<column dataType="D" 	label="Lead Date" 				checkbox="ckAll10" 						xmlTagFrom="dt1"  	from="dfDt1"  		
+		xmlTagTo="dt2"  	to="dfDt2"  					lookupFlag="false" 						lookupName="" />
+		
+	<column dataType="S" 	label="Category #" 				checkbox="ckAll2" 						xmlTagFrom="str3" 	from="tiStr3" 		
+		xmlTagTo="str4" 	to="tiStr4" 					multiSelect="mvMultiSelect2" 			xmlTagMultiSelect="multiselect2"
+		lookupFlag="true" 	lookupName="CrmAccountCategory"	lookupLabel="code"  					dataField="code" 	labelField="code"	/>
+		
+	<column dataType="S" 	label="Company Name" 			checkbox="ckAll3" 						xmlTagFrom="str5" 	from="tiStr5"
+	 	xmlTagTo="str6" 	to="tiStr6" 					multiSelect="mvMultiSelect3" 			xmlTagMultiSelect="multiselect3"
+	 	lookupFlag="false" 	lookupName=""	  />
+		
+	<column dataType="S" 	label="Phone #" 				checkbox="ckAll4" 						xmlTagFrom="str7" 	from="tiStr7"
+	 	xmlTagTo="str8" 	to="tiStr8" 					multiSelect="mvMultiSelect4" 			xmlTagMultiSelect="multiselect4"
+	 	lookupFlag="false" 	lookupName=""	   />
+	 	
+	<column dataType="C" 	label="Lead Source"				checkbox="ckAll5"						xmlTagFrom="str9"	from="cbStr9"		
+		xmlTagTo="str10"	to="cbStr10"					multiSelect=""							xmlTagMultiSelect="multiselect5"
+		lookupFlag="false"	lookupName=""					type_cd="crm"							subtype_cd ="lead_source" />		
+		
+	<column dataType="C" 	label="Ownership Type"			checkbox="ckAll6"						xmlTagFrom="str11"	from="cbStr11"
+		xmlTagTo="str12"	to="cbStr12"					multiSelect=""							xmlTagMultiSelect="multiselect6"
+		lookupFlag="false"	lookupName=""					type_cd="crm"							subtype_cd ="ownership_type" />
+		
+	<column dataType="C" 	label="Relationship"			checkbox="ckAll7"						xmlTagFrom="str13"	from="cbStr13"
+		xmlTagTo="str14"	to="cbStr14"					multiSelect=""							xmlTagMultiSelect="multiselect7"	
+		lookupFlag="false"	lookupName=""					type_cd="crm"							subtype_cd ="relationship_type" />	
+		
+	<column dataType="C" 	label="Industry"				checkbox="ckAll8"						xmlTagFrom="str15"	from="cbStr15"	
+		xmlTagTo="str16"	to="cbStr16"					multiSelect=""							xmlTagMultiSelect="multiselect8"
+		lookupFlag="false"	lookupName=""					type_cd="crm"							subtype_cd ="industry" />		
+		
+	<column dataType="C" 	label="Rating"					checkbox="ckAll9"						xmlTagFrom="str17"	from="cbStr17"				
+		xmlTagTo="str18"	to="cbStr18"					multiSelect=""							xmlTagMultiSelect="multiselect9"		
+		lookupFlag="false"	lookupName=""					type_cd="crm"							subtype_cd ="rating" />	
+</columns>

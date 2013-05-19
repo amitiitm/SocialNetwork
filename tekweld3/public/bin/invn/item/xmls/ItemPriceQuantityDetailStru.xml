@@ -1,0 +1,39 @@
+<columns>
+				
+	<column data='from_date' 	label='From Date' 		editable='false' 	visible='true' 	width='80' textAlign='left' forLevel='false' 
+			defaultForLevel=''	booleanFlag='false'	sortDataType='D'	columnPrecision="NaN"/>
+			
+	<column data='to_date' 		label='To Date' 		editable='false' 	visible='true' 	width='80' textAlign='left' forLevel='false' 
+			defaultForLevel=''	booleanFlag='false'	sortDataType='D'	columnPrecision="NaN"/>		
+	
+	<column data='column1' 		label='Tier 1' 		editable='false' 	visible='true' 	width='80' textAlign='right' forLevel='false' 
+			defaultForLevel=''	booleanFlag='false'	sortDataType='N'	columnPrecision="2"/>
+	
+	<column data='column2' 		label='Tier 2' 		editable='false' 	visible='true' 	width='80' textAlign='right' forLevel='false' 
+			defaultForLevel=''	booleanFlag='false'	sortDataType='N'	columnPrecision="2"/>
+	
+	<column data='column3' 		label='Tier 3' 		editable='false' 	visible='true' 	width='80' textAlign='right' forLevel='false' 
+			defaultForLevel=''	booleanFlag='false'	sortDataType='N'	columnPrecision="2"/>
+	
+	<column data='column4' 		label='Tier 4' 		editable='false' 	visible='true' 	width='80' textAlign='right' forLevel='false' 
+			defaultForLevel=''	booleanFlag='false'	sortDataType='N'	columnPrecision="2"/>
+	
+	<column data='column5' 		label='Tier 5' 		editable='false' 	visible='true' 	width='80' textAlign='right' forLevel='false' 
+			defaultForLevel=''	booleanFlag='false'	sortDataType='N'	columnPrecision="2"/>	
+	
+	<column data='column6' 		label='Tier 6' 		editable='false' 	visible='true' 	width='80' textAlign='right' forLevel='false' 
+			defaultForLevel=''	booleanFlag='false'	sortDataType='N'	columnPrecision="2"/>	
+			
+	<column data='column7' 		label='Tier 7' 		editable='false' 	visible='true' 	width='80' textAlign='right' forLevel='false' 
+			defaultForLevel=''	booleanFlag='false'	sortDataType='N'	columnPrecision="2"/>	
+	
+	<column data='column8' 		label='Tier 8' 		editable='false' 	visible='true' 	width='80' textAlign='right' forLevel='false' 
+			defaultForLevel=''	booleanFlag='false'	sortDataType='N'	columnPrecision="2"/>	
+	
+	<column data='column9' 		label='Tier 9' 		editable='false' 	visible='true' 	width='80' textAlign='right' forLevel='false' 
+			defaultForLevel=''	booleanFlag='false'	sortDataType='N'	columnPrecision="2"/>										
+	
+	<column data='column10' 	label='Tier 10' 	editable='false' 	visible='true' 	width='80' textAlign='right' forLevel='false' 
+			defaultForLevel=''	booleanFlag='false'	sortDataType='N'	columnPrecision="2"/>
+	
+</columns> 

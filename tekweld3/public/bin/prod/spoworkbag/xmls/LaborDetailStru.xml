@@ -1,0 +1,20 @@
+<columns lockedColumnCount='0'>
+			
+	<column data='other_type'				label='Labor Type'			editable='false'	visible='true'		width='100'		textAlign='left'
+			forLevel='false' 				defaultForLevel=''			booleanFlag='false'	sortDataType='S'	columnPrecision="NaN"/>
+			
+	<column data='other_code' 				label='Code' 				editable='false'	visible='true'		width='100'		textAlign='left'
+			forLevel='false' 				defaultForLevel=''			booleanFlag='false'	sortDataType='S'	columnPrecision="NaN"/>
+			
+	<column data='cost' 					label='Cost' 				editable='false' 	visible='true' 		width='100' 	textAlign='right' 
+			forLevel='false' 				defaultForLevel='' 			booleanFlag='false' sortDataType='N'	columnPrecision="2"/>
+			
+	<column data='qty' 						label='Qty' 				editable='false' 	visible='true' 		width='100' 	textAlign='right' 
+			forLevel='false' 				defaultForLevel='' 			booleanFlag='false' sortDataType='N'	columnPrecision="2"/>
+			
+	<column data='total_cost' 				label='Total Cost' 			editable='false' 	visible='true' 		width='100' 	textAlign='right' 
+			forLevel='false' 				defaultForLevel='' 			booleanFlag='false' sortDataType='N'	columnPrecision="2"/>
+			
+	<column data='remarks' 					label='Remarks' 				editable='false'	visible='true'		width='100'		textAlign='left'
+			forLevel='false' 				defaultForLevel=''			booleanFlag='false'	sortDataType='S'	columnPrecision="NaN"/>
+</columns>  

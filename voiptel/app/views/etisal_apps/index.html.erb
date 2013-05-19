@@ -1,0 +1,26 @@
+<%= page_title :title => "Etisal Apps" %>
+
+<% box :type => "simple" do %>
+	<% table :width => "500px" do |t| %>
+		<% t.th "#" %>
+	  <% t.th "Name"  %>
+	  <% t.th "Description"  %>
+		<% t.th "Actions" if allowed? %>
+
+		<% counter = 0 %>	
+		<% for etisal_app in @etisal_apps %>
+			<% t.td (counter += 1) %>
+		  <% t.td etisal_app.name %>
+		  <% t.td etisal_app.description %>
+			<% t.td action_links(
+				(link_to "Edit", edit_etisal_app_path(etisal_app), :class => "ajax", :update => "container"),
+				(link_to "Delete", etisal_app_path(etisal_app), :class => "ajax-delete")
+			) if allowed?%>
+			<% t.new_row %>
+		<% end %>		
+	<% end %>
+	<br>
+	<%= button "new_etisal_app", "New Etisal App", :href => new_etisal_app_path, :update => "container"  if allowed? %>
+<% end %>
+
+<div class="hide" id="container"></div>

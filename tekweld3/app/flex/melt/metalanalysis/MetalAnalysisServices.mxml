@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rds:CommonServices xmlns:rds="business.*" xmlns:mx="http://www.adobe.com/2006/mxml">
+
+	<mx:HTTPService id="saveRecord" url="/melting/create_melting_transactions"/>
+	<mx:HTTPService id="getList" url="/melting/list_melting_transaction_metal_analysis"/> 
+	
+	<mx:HTTPService id="getViewFormat" url="melt/metalanalysis/xmls/MetalAnalysisCriteriaStru.xml"/>
+	<mx:HTTPService id="getListFormat" url="melt/metalanalysis/xmls/MetalAnalysisListStru.xml"/>
+	<mx:HTTPService id="getRecord" url="/melting/show_melting_transaction"/>
+	<mx:HTTPService id="printRecord" url=""/>
+	
+	<mx:HTTPService id="lineDetailFormat" url="melt/metalanalysis/xmls/MetalAnalysisLineDetailStru.xml"/>
+</rds:CommonServices>

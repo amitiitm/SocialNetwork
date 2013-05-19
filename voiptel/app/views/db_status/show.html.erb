@@ -1,0 +1,38 @@
+<%= page_title :title => "DB Status" %>
+
+<% box :type => "simple" do %>
+
+	<h2>Master Status</h2><br>
+	<% table :width => "300px" do |t| %>
+		<% t.th "Name" %>
+		<% t.th "Value" %>
+		
+		<% t.td "Host" %>
+		<% t.td "db1.openfo.com (10.0.0.27)" %>
+		<% t.new_row %>
+		
+		<% for key in @db.master.keys %>
+			<% t.td key.gsub("_", " ") %>
+			<% t.td @db.master[key] %>
+			<% t.new_row %>
+		<% end %>
+		
+	<% end %>
+	<br><br>
+	<h2>Slave Status</h2><br>
+	<% table :width => "500px" do |t| %>
+		<% t.th "Name" %>
+		<% t.th "Value" %>
+		
+		<% t.td "Host" %>
+		<% t.td "db3.openfo.com (10.0.0.23)" %>
+		<% t.new_row %>
+		
+		<% for key in @db.slave.keys %>
+			<% t.td key.gsub("_", " ") %>
+			<% t.td @db.slave[key] %>
+			<% t.new_row %>
+		<% end %>		
+	<% end %>
+	
+<% end %>

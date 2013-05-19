@@ -1,0 +1,58 @@
+<%= page_title :title => "Etisal Live Console" %>
+
+<% box :type => "simple" do %>
+	<%= button_function "clear-console", "Clear Console", "clear_console()" %>
+	<div id="status" style="padding-top:14px;font-size:14px;font-weight:bold">
+	</div>
+	<div class="clear"></div><br>
+	<textarea id="log" readonly></textarea>
+	
+<% end %>
+<script type="text/javascript" charset="utf-8">
+  $(function() {
+	function clear_console() {
+		$("#log").html("");
+	}
+	
+	var update_status = function update_status(text, image) {
+		$("#status").html(text + "<img class='icon' src='/images/" + image + ".png'>");
+	}
+	
+	var log = function log(data) {
+		var logs = $("#log").html();
+		$("#log").html(logs + "\n" + data);
+	}
+	
+
+  var jug = new Juggernaut({
+    host: document.location.hostname,
+    port: 8080
+  });
+
+  jug.on("connect", function(){ update_status("Status: Connected", 'green'); });
+  jug.on("disconnect", function(){ update_status("Status: Not Connected", 'red'); });
+  jug.on("reconnect", function(){ update_status("Status: Reconnecting", 'yellow'); });
+  
+  log("Subscribing to Etisal");
+
+  jug.subscribe("etisal", function(data){
+    log(data.log);
+		$("#log").scrollTop($("#log").attr("scrollHeight"));
+  });
+
+  window.jug = jug;
+  });
+</script>
+<style type="text/css" media="screen">
+  #log {
+		font-family:Monaco,'Lucida Console' !important;
+    padding: 5px;
+    background: #CCC;
+    height: 700px;
+    width: 1100px;
+  }
+
+	.icon {
+		vertical-align: top;
+	}
+</style>

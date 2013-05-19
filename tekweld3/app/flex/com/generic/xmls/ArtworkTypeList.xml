@@ -1,0 +1,204 @@
+<rows>
+	
+	<row screen="billingtransportationto">
+	<label>Shipper (TEKWELD)</label>
+	<value>Shipper (TEKWELD)</value>
+	</row>
+	<row screen="billingtransportationto">
+	<label>Third Party</label>
+	<value>Third Party</value>
+	</row>
+	<row screen="billingtransportationto">
+	<label>Receiver</label>
+	<value>Receiver</value>
+	</row>
+	
+	<row screen="orderreceive">
+	<label>Customer PO</label>
+	<value>Customer PO</value>
+	</row>
+	<row screen="orderreceive">
+	<label>Customer PO-2</label>
+	<value>Customer PO-2</value>
+	</row>
+	<row screen="orderreceive">
+	<label>Customer PO-3</label>
+	<value>Customer PO-3</value>
+	</row>
+	<row screen="orderreceive">
+	<label>Customer Art</label>
+	<value>Customer Art</value>
+	</row>
+	<row screen="orderreceive">
+	<label>Customer Art-2</label>
+	<value>Customer Art-2</value>
+	</row>
+	<row screen="orderreceive">
+	<label>Customer Email</label>
+	<value>Customer Email</value>
+	</row>
+	
+	
+	<row screen="incompleteartowrk">
+	<label>Version 1.0</label>
+	<value>Version 1.0</value>
+	</row>
+	<row screen="incompleteartowrk">
+	<label>Version 2.0</label>
+	<value>Version 2.0</value>
+	</row>
+	<row screen="incompleteartowrk">
+	<label>Version 3.0</label>
+	<value>Version 3.0</value>
+	</row>
+	<row screen="incompleteartowrk">
+	<label>Version 4.0</label>
+	<value>Version 4.0</value>
+	</row>
+	<row screen="incompleteartowrk">
+	<label>Version 5.0</label>
+	<value>Version 5.0</value>
+	</row>
+	
+	<row screen="reviewartwork">
+	<label>Version 1.0</label>
+	<value>Version 1.0</value>
+	</row>
+	<row screen="reviewartwork">
+	<label>Version 2.0</label>
+	<value>Version 2.0</value>
+	</row>
+	<row screen="reviewartwork">
+	<label>Version 3.0</label>
+	<value>Version 3.0</value>
+	</row>
+	<row screen="reviewartwork">
+	<label>Version 4.0</label>
+	<value>Version 4.0</value>
+	</row>
+	<row screen="reviewartwork">
+	<label>Version 5.0</label>
+	<value>Version 5.0</value>
+	</row>
+	
+	<row screen="filminbox">
+	<label>Film Artwork</label>
+	<value>Film Artwork</value>
+	</row>
+	<row screen="filminbox">
+	<label>Film Artwork 2</label>
+	<value>Film Artwork 2</value>
+	</row>
+	<row screen="filminbox">
+	<label>Film Artwork 3</label>
+	<value>Film Artwork 3</value>
+	</row>
+	
+	<row screen="receivedigitizedjob">
+	<label>Digitized Artwork</label>
+	<value>Digitized Artwork</value>>
+	</row>
+	<row screen="receivedigitizedjob">
+	<label>Digitized Artwork2</label>
+	<value>Digitized Artwork2</value>>
+	</row>
+	<row screen="receivedigitizedjob">
+	<label>Digitized Artwork3</label>
+	<value>Digitized Artwork3</value>>
+	</row>
+	<row screen="receivedigitizedjob">
+	<label>Digitized Artwork4</label>
+	<value>Digitized Artwork4</value>>
+	</row>
+	
+	<row screen="indigojob">
+	<label>Imposition Ready</label>
+	<value>Imposition Ready</value>>
+	</row>
+	
+	<row screen="end_quantity_price">
+	<label>1</label>
+	<value>1</value>>
+	</row>
+	<row screen="end_quantity_price">
+	<label>2</label>
+	<value>2</value>>
+	</row>
+	<row screen="end_quantity_price">
+	<label>3</label>
+	<value>3</value>>
+	</row>
+	<row screen="end_quantity_price">
+	<label>4</label>
+	<value>4</value>>
+	</row>
+	<row screen="end_quantity_price">
+	<label>5</label>
+	<value>5</value>>
+	</row>
+	<row screen="end_quantity_price">
+	<label>6</label>
+	<value>6</value>>
+	</row>
+	<row screen="end_quantity_price">
+	<label>7</label>
+	<value>7</value>>
+	</row>
+	<row screen="end_quantity_price">
+	<label>8</label>
+	<value>8</value>>
+	</row>
+	<row screen="end_quantity_price">
+	<label>9</label>
+	<value>9</value>>
+	</row>
+	<row screen="end_quantity_price">
+	<label>10</label>
+	<value>10</value>>
+	</row>
+	<row screen="end_quantity_price">
+	<label>11</label>
+	<value>11</value>>
+	</row>
+	<row screen="end_quantity_price">
+	<label>12</label>
+	<value>12</value>>
+	</row>
+	<row screen="end_quantity_price">
+	<label>13</label>
+	<value>13</value>>
+	</row>
+	<row screen="end_quantity_price">
+	<label>14</label>
+	<value>14</value>>
+	</row>
+	<row screen="end_quantity_price">
+	<label>15</label>
+	<value>15</value>>
+	</row>
+	
+	
+	<row screen="reorder_type">
+	<label>Exact</label>
+	<value>Exact</value>
+	</row>
+	<row screen="reorder_type">
+	<label>Change No Art</label>
+	<value>Change No Art</value>
+	</row>
+	<row screen="reorder_type">
+	<label>Change w / Art</label>
+	<value>Change w / Art</value>
+	</row>
+	
+	<row screen="defaultitemshipper">
+	<label>Company</label>
+	<value>C</value>
+	</row>
+	<row screen="defaultitemshipper">
+	<label>Vendor</label>
+	<value>V</value>
+	</row>
+	
+					
+</rows> 

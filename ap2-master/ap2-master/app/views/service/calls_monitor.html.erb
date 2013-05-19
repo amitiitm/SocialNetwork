@@ -1,0 +1,8 @@
+Media1: <span id="media_1"><%= @mcl1 %> / <%= @mch1 %></span><br>
+Media2: <span id="media_2"><%= @mcl2 %> / <%= @mch2 %></span><br>
+Media3: <span id="media_3"><%= @mcl3 %> / <%= @mch3 %></span><br>
+Total: <span id="total"><%= @total_cl %> / <%= @total_ch %></span><br>
+Minutes: <span id="minutes"><%= duration(@seconds) %></span><br>
+<% if Time.now.hour >= 0 && Time.now.hour <= 3 %>
+Yesterday: <%= (CachedApDailyCdr.duration_on(Time.now.yesterday) / 60).to_i %><br>
+<% end %>

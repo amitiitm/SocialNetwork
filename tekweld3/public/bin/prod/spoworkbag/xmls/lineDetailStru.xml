@@ -1,0 +1,13 @@
+<columns lockedColumnCount='0'>
+				
+	<column data='ref_trans_bk' 	label='Trans Bk' 		editable='false' 	visible='true' 		width='100' textAlign='left' 
+			forLevel='false' 	defaultForLevel='' 	booleanFlag='false' sortDataType='S'	columnPrecision="0"/>
+
+
+	<column data='ref_trans_no' 	label='Trans #' 		editable='false' 	visible='true' 		width='100' textAlign='left' 
+			forLevel='false' 	defaultForLevel='' 	booleanFlag='false' sortDataType='N'	columnPrecision="0"/>
+				
+	<column data='ref_trans_date' 	label='Trans Date' 	editable='false' 	visible='true' 		width='100' textAlign='left' 
+			forLevel='false' 	defaultForLevel='' 	booleanFlag='false' sortDataType='D'	columnPrecision="NaN"/>
+					
+</columns> 

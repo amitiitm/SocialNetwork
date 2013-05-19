@@ -1,0 +1,134 @@
+@charset "utf-8";
+/* CSS Document */
+
+body{
+	background-color:#fff;
+}
+#mainWrapper{
+	width:1372px;
+    height:128px;
+    position:relative;
+}
+#searchBarWrapper{
+	width:1370px;
+    /*height:98px; */
+    float:left;
+    opacity: 0.95;
+    background-color:#000000;
+    border:solid 1px #000; border-radius:10px; padding:15px 15px;
+}
+#searchBarWrapper h1{
+	font-family:Arial, Helvetica, sans-serif; font-size:11px; color:#FFF; font-weight:bold; margin:0px; padding:0px;
+	
+}
+#lineBox{
+	width:125px;
+    height:66px;
+    float:left;
+    border:solid 1px #FFF;
+    margin:6px 15px 0 0;
+    padding:5px 10px;
+}
+#lineBox h1{
+	font-family:Arial, Helvetica, sans-serif; font-size:11px; color:#FFF; font-weight:normal; margin:0px; padding:0px; padding-left:4px;
+}
+#lineBoxFields{background:url(/images/advance_search/billing_first_last_name.png) no-repeat; height:21px; width:123px;  padding:0 0 0 4px;  margin: 4px 0 0 0px;}
+.inputField_heading{
+	font-family:Arial, Helvetica, sans-serif; font-size:11px; color:#000; font-weight:normal; margin:0px; padding:0px;
+}
+#lineBoxFields input{
+    background: none repeat scroll 0 0 white;
+    border:none;
+    outline:none;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight:normal;
+    color: #f00;
+    font-size: 11px;
+    height: 15px;
+    *height: 15px;
+    margin: 1px 0;
+    padding-left:4px;
+    width: 78px;
+}
+
+.transparent {
+	/* Required for IE 5, 6, 7 */
+	/* ...or something to trigger hasLayout, like zoom: 1; */
+	width: 100%; 
+
+	/* Theoretically for IE 8 & 9 (more valid) */
+	/* ...but not required as filter works too */
+	/* should come BEFORE filter */
+	-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+
+	/* This works in IE 8 & 9 too */
+	/* ... but also 5, 6, 7 */
+	filter: alpha(opacity=50);
+
+	/* Older than Firefox 0.9 */
+	-moz-opacity:0.5;
+
+	/* Safari 1.x (pre WebKit!) */
+	-khtml-opacity: 0.5;
+
+	/* Modern!
+	/* Firefox 0.9+, Safari 2?, Chrome any?
+	/* Opera 9+, IE 9+ */
+	/*opacity: 0.5;*/
+}
+
+.plus_image {
+    background-image: url(/VOT_Admin_RecordedCalls_Inbound_files/img_plus.png);
+    background-position: right center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    width: 16px;
+    height:16px;
+    float: right;
+    margin-right: 0;
+    padding-left: 0;
+    padding-right: 3px;
+}
+
+.minus_image {
+    background-image: url(/images/billing/red.png);
+    background-position: right center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    width: 16px;
+    height:16px;
+    float: right;
+    margin-right: 0;
+    padding-left: 0;
+    padding-right: 3px;
+}
+
+.ob_plus_image {
+    background-image: url(/VOT_Admin_RecordedCalls_Inbound_files/img_plus.png);
+    background-position: right center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    width: 16px;
+    height:16px;
+    float: right;
+    margin-right: 0;
+    padding-left: 0;
+    padding-right: 3px;
+}
+
+.ob_minus_image {
+    background-image: url(/images/billing/red.png);
+    background-position: right center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    width: 16px;
+    height:16px;
+    float: right;
+    margin-right: 0;
+    padding-left: 0;
+    padding-right: 3px;
+}
+
+
+
+

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rds:CommonServices xmlns:rds="business.*" xmlns:mx="http://www.adobe.com/2006/mxml">
+
+	<mx:HTTPService id="saveRecord" url="/artwork/artwork/create_accept_reject_paperproof_records"/>
+	<mx:HTTPService id="getList" url="/artwork/artwork/list_accept_reject_paperproof_records"/> 
+	<mx:HTTPService id="getRecord" url="/artwork/artwork/show_accept_reject_paperproof_records"/>
+	<mx:HTTPService id="printRecord" url="/sale/sales_report/render_sales_order_format" />
+	<mx:HTTPService id="artworkUploadUrl" url="/artwork/artwork/upload_artwork_attachments"/>
+	<mx:HTTPService id="sendToCustomer" url="/artwork/artwork/send_artwork_to_customer" />
+	
+	<mx:HTTPService id="getListFormat" url="saoi/artworkapprovedcustomermanual/xmls/ArtworkApprovedCustomerManualListStru.xml" />
+	<mx:HTTPService id="getViewFormat" url="saoi/artworkapprovedcustomermanual/xmls/ArtworkApprovedCustomerManualCriteriaStru.xml" />
+	<mx:HTTPService id="lineDetailFormat" url="saoi/artworkapprovedcustomermanual/xmls/ArtworkApprovedCustomerManualLineDetailStru.xml" />
+	<mx:HTTPService id="artworkDetailFormat" url="saoi/artworkapprovedcustomermanual/xmls/ArtworkApprovedCustomerManualArtworkDetailStru.xml" />
+	
+	
+	
+</rds:CommonServices>

@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<gencomponents:AddEdit xmlns:mx="http://www.adobe.com/2006/mxml" 
+	height="100%" width="100%" verticalGap="0"
+	xmlns:customcomponents="com.generic.customcomponents.*"
+	xmlns:gencomponents="com.generic.components.*" 
+	creationPolicy="all" >
+	
+	<mx:Script source="../scripts/OtherParametersAddEditScript.as"/>
+
+	<mx:VBox height="100%" width="100%" verticalGap="3" horizontalGap="2" paddingBottom="0" paddingTop="0">
+	  
+	  <mx:HBox width="100%">
+		 <mx:Label text="Name" width="100" textAlign="right" height="20" />
+		 <customcomponents:GenTextInput id="tiFull_name" width="220" height="20" visible="true"
+				xmlTag="company_full_name" updatableFlag="true" tabIndex="1"
+				validationFlag="false" defaultValue=""
+				tableName="catalog_parameter" textAlign="left" dataType="S"  maxChars="100" />
+	  </mx:HBox>
+		
+	  <mx:HBox width="100%"> 
+	      <mx:Label text="Short Name" width="100" textAlign="right" height="20" />
+		 <customcomponents:GenTextInput id="tiShort_name" width="220" height="20" visible="true"
+				xmlTag="company_short_name" updatableFlag="true" maxChars="50" tabIndex="2"
+				validationFlag="false" defaultValue=""
+				tableName="catalog_parameter" textAlign="left" dataType="S"  />
+	  </mx:HBox>
+
+	  <mx:HBox width="100%"> 
+	      <mx:Label text="Logo" width="100" textAlign="right" height="20" />
+		 <customcomponents:GenTextInput id="tiLogo" width="220" height="20" visible="true"
+				xmlTag="company_logo_file" updatableFlag="true" maxChars="50" 
+				validationFlag="false" defaultValue=""
+				tableName="catalog_parameter" textAlign="left" dataType="S"  />
+		<customcomponents:GenUploadButton id="btnBrowse_imageThumnail"
+				label="..." toolTip="Browse Logo" width="40" height="20" tabIndex="3"
+				uploadServiceID="imageUploadUrl"
+				fileTitle="Image Name" fileTypes="*.jpg,*.bmp,*.png" uploadFileNameSetEvent="handleThumnailEvent(event)" />
+		<mx:Label text="Size 300x45"/>				
+	  </mx:HBox>
+	  
+	  <mx:HBox width="100%"> 
+	      <mx:Label text="Address #" width="100" textAlign="right" height="20" />
+	      <customcomponents:GenTextInput width="220" height="20" id="taAddress1" maxChars="100" toolTip="Address1"
+				 xmlTag="address1" updatableFlag="true" tableName="catalog_parameter" tabIndex="4"
+				 visible="true" validationFlag="false"/>
+	  </mx:HBox>
+	    <mx:HBox width="100%"> 
+	      <mx:Label text="" width="100" textAlign="right" height="20" />
+	      <customcomponents:GenTextInput width="220" height="20" id="taAddress2" maxChars="100" toolTip="Address2"
+				 xmlTag="address2" updatableFlag="true" tableName="catalog_parameter" tabIndex="5"
+				 visible="true" validationFlag="false"/>
+	  </mx:HBox>
+      <mx:HBox width="100%">			
+	       <mx:Label text="City" width="100" textAlign="right" height="20" />
+		   <customcomponents:GenTextInput id="tiCity" width="106" xmlTag="city"
+				updatableFlag="true" tabIndex="6" tableName="catalog_parameter"
+				defaultValue="" validationFlag="false" toolTip="City" height="20" maxChars="25" />
+      </mx:HBox>		
+      <mx:HBox width="100%">			
+	       <mx:Label text="State" width="100" textAlign="right" height="20" />
+		   <customcomponents:GenTextInput id="tiState" width="106" xmlTag="state"
+				updatableFlag="true" tabIndex="7" tableName="catalog_parameter"
+				defaultValue="" validationFlag="false" toolTip="State" height="20" maxChars="25" />
+      </mx:HBox>		
+      <mx:HBox width="100%">
+            <mx:Label text="Country" width="100" textAlign="right" height="20" />
+            <customcomponents:GenTextInput id="tiCountry" width="106" xmlTag="country"
+				updatableFlag="true" tabIndex="8" tableName="catalog_parameter"
+				defaultValue="" validationFlag="false" toolTip="Country" height="20" maxChars="20" />
+      </mx:HBox>
+      <mx:HBox width="100%">
+            <mx:Label text="Zip" width="100" textAlign="right" height="20" />
+		   <customcomponents:GenTextInput id="tiZip" width="106" xmlTag="zip"
+				updatableFlag="true" tabIndex="9" tableName="catalog_parameter"
+				defaultValue="" validationFlag="false" toolTip="Zip" height="20" maxChars="20" />
+      </mx:HBox>
+      
+      <mx:HBox width="100%">
+            <mx:Label text="Theme Type" width="100" textAlign="right" height="20" />
+		   <customcomponents:GenComboBox id="cbThemeType" defaultValue="BLACK" width="106" xmlTag="theme_type"
+				updatableFlag="true" tabIndex="10" tableName="catalog_parameter"
+				 validationFlag="false" toolTip="Theme Type" height="20"
+				dataProvider="{__genModel.masterData.child('catalog').theme_type}" labelField="label" />
+  			<customcomponents:GenCheckBox labelPlacement="left" label="Secure Access" id="cbSecureAccess" width="125" xmlTag="secure_access"
+				updatableFlag="true" tableName="catalog_parameter" defaultValue="N" textAlign="right" tabIndex="10" 
+				dataValueForOn = "Y" dataValueForOff = "N"/>
+				
+			
+  			<customcomponents:GenCheckBox labelPlacement="left" label="Inventory Check" id="cbInventoryCheck" width="125" xmlTag="catalog_invn_check"
+				updatableFlag="true" tableName="catalog_parameter" defaultValue="N" textAlign="right" tabIndex="10" 
+				dataValueForOn = "Y" dataValueForOff = "N"/>
+				
+			<customcomponents:GenCheckBox labelPlacement="left" label="Item's multiple images" id="cbItemMultipleImages" width="158" xmlTag="itemmultipleimageflag"
+				updatableFlag="true" tableName="catalog_parameter" defaultValue="N" textAlign="right" tabIndex="11" 
+				dataValueForOn = "Y" dataValueForOff = "N"/>	
+      </mx:HBox>
+      
+	    <mx:HBox width="100%">
+            <mx:Label text="Integrated App" width="100" textAlign="right" height="20" />
+		   <customcomponents:GenComboBox id="cbIntegrated_application" defaultValue="Retail" width="106" xmlTag="integrated_application"
+				updatableFlag="true" tabIndex="10" tableName="catalog_parameter"
+				 validationFlag="false" toolTip="Integrated Application" height="20"
+				dataProvider="{__genModel.masterData.child('catalog').integrated_app}" labelField="label" />
+  		</mx:HBox>	
+	  <mx:VRule height="5" width="100%" />
+	  
+	  <mx:TabNavigator width="100%" height="100%">
+	  	<mx:VBox label="Contact Information" height="100%" width="100%">
+		      <mx:HBox width="100%">			 
+			       <mx:Label text="Phone" width="140" textAlign="right" height="20" />
+				   <customcomponents:GenTextInput id="tiPhone" width="220" xmlTag="phone"
+						updatableFlag="true" tabIndex="10" tableName="catalog_parameter"
+						defaultValue="" validationFlag="false" toolTip="Phone" height="20" maxChars="50" />
+			  </mx:HBox>
+		
+		      <mx:HBox width="100%">			 
+			       <mx:Label text="Fax" width="140" textAlign="right" height="20" />
+				   <customcomponents:GenTextInput id="tiFax1" width="220" xmlTag="fax"
+						updatableFlag="true" tabIndex="11" tableName="catalog_parameter"
+						defaultValue="" validationFlag="false" toolTip="Fax" height="20" maxChars="50" />
+			  </mx:HBox>
+
+				<mx:HBox width="100%"> 
+			     <mx:Label text="Email" width="140" textAlign="right" height="20" />
+				 <customcomponents:GenTextInput id="tiEmail_personal" width="220" height="20" visible="true"
+						xmlTag="personalshopper" updatableFlag="true" maxChars="50" tabIndex="12"
+						validationFlag="false" defaultValue=""
+						tableName="catalog_parameter" textAlign="left" dataType="S"  />
+				</mx:HBox>
+		
+			  <mx:HBox width="100%"> 
+			      <mx:Label text="Customer Service" width="140" textAlign="right" height="20" />
+				 <customcomponents:GenTextInput id="tiContact_no" width="220" height="20" visible="true"
+						xmlTag="store_inquires_contact_no" updatableFlag="true" maxChars="50" tabIndex="13"
+						validationFlag="false" defaultValue=""
+						tableName="catalog_parameter" textAlign="left" dataType="S"  />
+			  </mx:HBox>
+			  
+			  <mx:HBox width="100%"> 
+			     <mx:Label text="Store Enquiry" width="140" textAlign="right" height="20" />
+				 <customcomponents:GenTextInput id="tiEmail_store" width="220" height="20" visible="true"
+						xmlTag="store_inquires" updatableFlag="true" maxChars="50" tabIndex="14"
+						validationFlag="false" defaultValue=""
+						tableName="catalog_parameter" textAlign="left" dataType="S"  />
+			  </mx:HBox>
+			  
+			  <mx:HBox width="100%"> 
+			      <mx:Label text="Online Inquiry" width="140" textAlign="right" height="20" />
+				  <customcomponents:GenTextInput id="tiEmail_online" width="220" height="20" visible="true"
+						xmlTag="online_inquiries" updatableFlag="true" maxChars="50" tabIndex="15"
+						validationFlag="false" defaultValue=""
+						tableName="catalog_parameter" textAlign="left" dataType="S"  />
+			  </mx:HBox>
+	  	</mx:VBox>
+	  	<mx:VBox label="Paypal Configuration" height="100%" width="100%">
+		<mx:HBox width="100%"> 
+			<customcomponents:GenCheckBox labelPlacement="left" label="Paypal?" id="cbPaypal_enable_flag" width="161" enabled="true"
+				xmlTag="paypal_enable_flag" updatableFlag="true" tableName="catalog_parameter" defaultValue="Y" textAlign="right" tabIndex="16"
+				dataValueForOn="Y" dataValueForOff="N" click="handlePaypal_enable_flag()" />
+		</mx:HBox>
+
+		<mx:HBox width="100%"> 
+	    	<mx:Label text="Merchant A/c" width="140" textAlign="right" height="20" />
+		 	<customcomponents:GenTextInput id="tiMerchant_id" width="220" height="20" visible="true"
+				xmlTag="merchant_id" updatableFlag="true" maxChars="100" tabIndex="17"
+				validationFlag="false" defaultValue="" itemChangedEvent="handleMerchant_id(event)"
+				tableName="catalog_parameter" textAlign="left" dataType="S"  />
+		</mx:HBox>
+
+		<mx:HBox width="100%"> 
+	    	<mx:Label text="Merchant Email" width="140" textAlign="right" height="20" />
+		 	<customcomponents:GenTextInput id="tiPaypal_business_email" width="220" height="20" visible="true"
+				xmlTag="paypal_business_email" updatableFlag="true" maxChars="100" tabIndex="18"
+				validationFlag="false" defaultValue=""
+				tableName="catalog_parameter" textAlign="left" dataType="S"  />
+		</mx:HBox>
+		
+		<mx:HBox width="100%"> 
+	    	<mx:Label text="PDT Identity Token" width="140" textAlign="right" height="20" />
+		 	<customcomponents:GenTextInput id="tiPdt_identity_token" width="451" height="20" visible="true"
+				xmlTag="pdt_identity_token" updatableFlag="true" maxChars="150" tabIndex="19"
+				validationFlag="false" defaultValue=""
+				tableName="catalog_parameter" textAlign="left" dataType="S"  />
+		</mx:HBox>
+	  		
+	  	</mx:VBox>
+	  	
+	  </mx:TabNavigator>
+	  
+	</mx:VBox>
+</gencomponents:AddEdit>			  

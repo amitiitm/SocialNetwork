@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<gencomponents:DetailAddEdit xmlns:mx="http://www.adobe.com/2006/mxml"
+	width="600" height="300" verticalGap="0"
+	xmlns:customcomponents="com.generic.customcomponents.*"
+	xmlns:gencomponents="com.generic.components.*"
+	creationComplete="creationComplete()"
+	>
+
+	<mx:Script source="../scripts/ArtworkApprovedCustomerManualArtworkDetailScript.as"/>
+	
+	<mx:VBox height="100%" width="100%">
+		<mx:HBox width="100%" horizontalGap="2" verticalAlign="middle">
+			<mx:Label text="Type" width="92" textAlign="right"/>
+			<customcomponents:GenComboBox id="tiVersion" width="225" cornerRadius="0" xmlTag="artwork_version" updatableFlag="true"
+										  tableName="sales_order_artwork"  tabIndex="3" labelField="label" height="20" defaultValue="Customer Art"  		
+										  dataProvider="{__genModel.masterData.child('artwork_version').artwork_version}" toolTip="Artwork Version"/>
+			<customcomponents:GenCheckBox labelPlacement="left" label="final version ?" id="cbArtworkFinalVersion" width="114" 
+										  xmlTag="final_artwork_flag" updatableFlag="true" tableName="sales_order_artwork" defaultValue="N" textAlign="right" tabIndex="11"
+										  dataValueForOn ="Y" dataValueForOff ="N" />
+		</mx:HBox>
+		
+		
+		<mx:HBox width="100%" height="20" horizontalGap="2" verticalAlign="middle">
+			<mx:Label width="92" text="Upload File" textAlign="right"/>
+   			<customcomponents:GenTextInput id="tiFileName"  width="225" height="20" validationFlag='true'
+				xmlTag="artwork_file_name" updatableFlag="true" tableName="sales_order_artwork" tabIndex="3" enabled="false" />
+			<mx:Button id="btnUpload" label="Upload" toolTip="Upload Artwork" width="114" height="20" tabIndex="1"
+					click="handleUploadArtwork()"/>
+			<mx:VRule width="20" height="0" />
+		</mx:HBox>
+		
+		<mx:HBox height="137" width="100%" horizontalGap="2">
+				<mx:Label text="Comment" width="92" textAlign="right"/>
+				<customcomponents:GenTextInput id="tiComment" width="341" height="121" tabIndex="4" updatableFlag="true" maxChars="1000"  xmlTag="comment" tableName="sales_order_artwork"
+					/>
+		</mx:HBox>
+		<mx:HBox height="28" width="100%" paddingLeft="92" horizontalGap="2">		
+		<mx:Button id="btnDownload" label="Download" click="downloadHandler()"  width="114"/>
+		<mx:Button id="btnViewArtwork" label="View" click="viewArtworkHandler()" width="114"/>
+		</mx:HBox>
+		<mx:HBox height="0" width="0" includeInLayout="false">
+				<mx:Label text="Status" width="0" height="0" textAlign="right"/>
+				<customcomponents:GenComboBox id="cbTrans_flag" width="0" height="0" cornerRadius="0" xmlTag="trans_flag" updatableFlag="true"
+					tableName="sales_order_artwork"  labelField="label" defaultValue="A"  dataProvider="{__genModel.masterData.child('trans_flag').trans_flag}" />
+			</mx:HBox>
+		<mx:HBox height="0" width="0" includeInLayout="false">
+			<customcomponents:GenTextInput id="tiFilePath" width="225"  height="20"  updatableFlag="true" maxChars="100" xmlTag="artwork_file_path" tableName="sales_order_artwork"/>
+		</mx:HBox>	
+		<customcomponents:GenTextInput id="tiSerial_no" width="0" height="0" visible="false"
+				editable="true" enabled="true" xmlTag="serial_no" updatableFlag="true"
+				tableName="sales_order_artwork" defaultValue=""  />
+		
+	</mx:VBox>
+</gencomponents:DetailAddEdit>
+
+
+

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rds:CommonServices xmlns:rds="business.*" xmlns:mx="http://www.adobe.com/2006/mxml">
+
+<!-- criteria format service-->
+
+<mx:HTTPService id="getGLAllTransactionCriteriaFormat" url="acct/glinfo/xmls/GLAllTransactionCriteriaStru.xml" /> <!--Date Summary -->
+<mx:HTTPService id="getGLPeriodSummaryCriteriaFormat" url="acct/glinfo/xmls/GLPeriodSummaryCriteriaStru.xml" /> <!--All Transaction-->
+<mx:HTTPService id="getGLDateSummaryCriteriaFormat" url="acct/glinfo/xmls/GLDateSummaryCriteriaStru.xml" /> <!--Date Summary-->
+
+<!--format service-->
+<mx:HTTPService id="getGLAllTransactionFormat" url="acct/glinfo/xmls/GLAllTransactionListStru.xml" /> <!--All Transaction-->
+<mx:HTTPService id="getGLPeriodSummaryFormat" url="acct/glinfo/xmls/GLPeriodSummaryListStru.xml" /> <!--Period Summary-->
+<mx:HTTPService id="getGLDateSummaryFormat" url="acct/glinfo/xmls/GLDateSummaryListStru.xml" /> <!--Date Summary-->
+
+<!--data service-->
+<mx:HTTPService id="getListAllTransaction" url="/account/gl_info/list_gl_all_transactions" /> <!--All Transaction -->
+<mx:HTTPService id="getListPeriodSummary" url="/account/gl_info/list_gl_transactions_period_summary" /> <!--Period Summary-->
+<mx:HTTPService id="getListDateSummary" url="/account/gl_info/list_gl_transactions_date_summary" /> <!--Date Summary-->
+
+<mx:HTTPService id="getListFormat" url="acct/glinfo/xmls/GLInfoListStru.xml" />
+<mx:HTTPService id="getViewFormat" url="acct/glinfo/xmls/GLInfoCriteriaStru.xml" />
+<mx:HTTPService id="getList" url="/account/gl_info/list_gl_accounts" />
+
+<mx:HTTPService id="showGL" url="/account/gl_account/show_gl_account"/> <!--gl detail-->
+
+<mx:HTTPService id="printRecord" url="" />
+</rds:CommonServices>

@@ -1,0 +1,30 @@
+<columns  lockedColumnCount='0'>
+	
+	<column data='category' 				label='Category' 			editable='false' 	visible='true' 		width='80' 		    textAlign='left'
+		 	print_width = '18'				forLevel='true' 			defaultForLevel='' 	booleanFlag='false'	sortDataType='S'	columnPrecision="NaN"/>	
+	
+	 <column data='code' 					label='Code' 				editable='false' 	visible='true' 		width='80' 			textAlign='left'
+		 	print_width = '20'				forLevel='true' 			defaultForLevel='' 	booleanFlag='false'	sortDataType='S'	columnPrecision="NaN"/>		 		 			 			 			 			 			 			 		
+	
+	<column data='name' 					label='Name' 				editable='false' 	visible='true' 		width='80' 		    textAlign='left'
+		 	print_width = '20'				forLevel='true' 			defaultForLevel='' 	booleanFlag='false'	sortDataType='S'	columnPrecision="NaN"/>	
+  
+  	<column data='phone1' 					label='Phone' 				editable='false' 	visible='true' 		width='80' 			textAlign='right'
+		 	print_width = '18'				forLevel='false' 			defaultForLevel='' 	booleanFlag='false'	sortDataType='S'	columnPrecision="NaN"/>
+  	
+	<column data='address1' 				label='Address1' 			editable='false' 	visible='true' 		width='80' 			textAlign='left'
+		 	print_width = '26'				forLevel='false' 			defaultForLevel='' 	booleanFlag='false'	sortDataType='S'	columnPrecision="NaN"/>
+	
+	<column data='address2' 				label='Address2' 			editable='false' 	visible='true' 		width='80' 			textAlign='left'
+		 	print_width = '26'				forLevel='false' 			defaultForLevel='' 	booleanFlag='false'	sortDataType='S'	columnPrecision="NaN"/>
+   
+    <column data='city' 					label='City' 				editable='false' 	visible='true' 		width='80' 			textAlign='left'
+		 	print_width = '18'				forLevel='false' 			defaultForLevel='' 	booleanFlag='false'	sortDataType='S'	columnPrecision="NaN"/>
+	
+	<column data='state' 					label='State' 				editable='false' 	visible='true' 		width='80' 			textAlign='left'
+		 	print_width = '18'				forLevel='false' 			defaultForLevel='' 	booleanFlag='false'	sortDataType='S'	columnPrecision="NaN"/>
+ 	
+ 	<column data='zip' 						label='Zip' 				editable='false' 	visible='true' 		width='80' 			textAlign='left'
+		 	print_width = '18'				forLevel='false' 			defaultForLevel='' 	booleanFlag='false'	sortDataType='S'	columnPrecision="NaN"/>
+    
+</columns> 

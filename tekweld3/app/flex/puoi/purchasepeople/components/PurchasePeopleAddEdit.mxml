@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<gencomponents:AddEdit xmlns:mx="http://www.adobe.com/2006/mxml" 
+	height="100%" width="100%" verticalGap="0"
+	xmlns:customcomponents="com.generic.customcomponents.*"
+	xmlns:gencomponents="com.generic.components.*" 
+	creationPolicy="all">
+	
+	<mx:Script source="../scripts/PurchasePeopleAddEditScript.as"/>
+	
+	<mx:VBox width="100%" height="100%" verticalGap="3">
+		<mx:HBox width="100%" horizontalGap="2" verticalAlign="middle" height="20">
+			<mx:Label text="Code" width="120" height="20" textAlign="right"/>
+			<customcomponents:GenTextInput id="tiCode" width="116" xmlTag="code" upperCaseFlag="true"
+				updatableFlag="true" tableName="purchasepeople" defaultValue="" tabIndex="1"
+				validationFlag="true" toolTip="Code" maxChars="25" fontSize="9" height="20"/>
+			
+		</mx:HBox>
+		<mx:HBox width="100%" horizontalGap="2" verticalAlign="middle" height="20">
+			<mx:Label text="Name" width="120" height="20" textAlign="right"/>
+			<customcomponents:GenTextInput id="tiName" width="233" xmlTag="name" updatableFlag="true" tabIndex="2" tableName="purchasepeople"
+				defaultValue="" validationFlag = "false" toolTip="Name" height="20"
+				maxChars="50" />
+		</mx:HBox>
+	  <mx:HBox width="100%" horizontalGap="2" verticalAlign="middle" height="20">
+			<mx:Label text="Address # 1" width="120" height="20" textAlign="right"/>
+			<customcomponents:GenTextInput id="tiAddress1" width="233" xmlTag="address1"
+				updatableFlag="true" tabIndex="3" tableName="purchasepeople"
+				defaultValue="" validationFlag="false" toolTip="Address #1" height="20" maxChars="50" />
+	</mx:HBox>
+	<mx:HBox width="100%" horizontalGap="2" verticalAlign="middle" height="20">
+			<mx:Label text="# 2" width="120" height="20" textAlign="right"/>
+			<customcomponents:GenTextInput id="tiAddress2" width="233" xmlTag="address2"
+				updatableFlag="true" tabIndex="4" tableName="purchasepeople"
+				defaultValue="" validationFlag="false" toolTip="Address #2" height="20" maxChars="50" />
+	</mx:HBox>
+	<mx:HBox width="100%" horizontalGap="2" verticalAlign="middle" height="20">
+		<mx:Label text="City/State" width="120" textAlign="right" height="20" />
+		<customcomponents:GenTextInput id="tiCity" width="116" xmlTag="city"
+			updatableFlag="true" tabIndex="5" tableName="purchasepeople"
+			defaultValue="" validationFlag="false" toolTip="City" height="20" maxChars="25" />
+		<customcomponents:GenTextInput id="tiState" width="115" xmlTag="state"
+			updatableFlag="true" tabIndex="6" tableName="purchasepeople"
+			defaultValue="" validationFlag="false" toolTip="State" height="20" maxChars="2" upperCaseFlag="true" />
+	</mx:HBox>
+	<mx:HBox width="100%" horizontalGap="2" verticalAlign="middle" height="20">
+		<mx:Label text="Country" width="120" textAlign="right" height="20" />
+		<customcomponents:GenTextInput id="tiCountry" width="116" xmlTag="country"
+			updatableFlag="true" tabIndex="7" tableName="purchasepeople"
+			defaultValue="" validationFlag="false" toolTip="Country" height="20" maxChars="20" />
+	</mx:HBox>
+	<mx:HBox width="100%" horizontalGap="2" verticalAlign="middle" height="20">
+		<mx:Label text="Zip" width="120" textAlign="right" height="20" />
+		<customcomponents:GenTextInput id="tiZip" width="116" xmlTag="zip"
+			updatableFlag="true" tabIndex="8" tableName="purchasepeople"
+			defaultValue="" validationFlag="false" toolTip="Zip" height="20" maxChars="20" />
+	</mx:HBox>
+	<mx:HBox width="100%" horizontalGap="2" verticalAlign="middle" height="20">
+		<mx:Label text="Phone/Fax" width="120" textAlign="right" height="20" />
+		<customcomponents:GenTextInput id="tiPhone1" width="116" xmlTag="phone1"
+			updatableFlag="true" tabIndex="9" tableName="purchasepeople"
+			defaultValue="" validationFlag="false" toolTip="Phone1" height="20" maxChars="50" />
+		<customcomponents:GenTextInput id="tiFax1" width="115" xmlTag="fax1"
+			updatableFlag="true" tabIndex="10" tableName="purchasepeople"
+			defaultValue="" validationFlag="false" toolTip="Fax" height="20" maxChars="50" />
+	</mx:HBox>
+	<mx:HBox width="100%" horizontalGap="2" verticalAlign="middle" height="20">
+		<mx:Label text="Contact" width="120" textAlign="right" height="20" />
+		<customcomponents:GenTextInput id="tiContact1" width="116" xmlTag="contact1"
+			updatableFlag="true" tabIndex="11" tableName="purchasepeople"
+			defaultValue="" validationFlag="false" toolTip="Contact1" height="20" maxChars="50" />
+	</mx:HBox>
+	</mx:VBox>
+</gencomponents:AddEdit>

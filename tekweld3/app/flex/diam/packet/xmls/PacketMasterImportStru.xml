@@ -1,0 +1,84 @@
+<columns  lockedColumnCount='0'>
+
+	<column data='diamond_lot_number' label='Diamond Lot #' 	editable='false' 	visible='true' 		width='100' 	textAlign='left' forLevel='true' 
+			print_width = '18'		defaultForLevel='0' 	booleanFlag='false' sortDataType='S'	columnPrecision="NaN"/>
+			
+	<column data='vendor_code' 		label='Vendor #' 		editable='false' 	visible='true' 		width='80' 	textAlign='left' forLevel='true' 
+			print_width = '18'		defaultForLevel='0'		booleanFlag='false' sortDataType='S' 	columnPrecision="NaN"/>	
+									
+	<column data='packet_no' 		label='Packet #' 		editable='false' 	visible='true' 		width='100' textAlign='left' forLevel='false' 
+			print_width = '24'		defaultForLevel='0' 	booleanFlag='false' sortDataType='S'	columnPrecision="NaN"/>
+			
+	<column data='shape' 		 	label='Shape' 			editable='false' 	visible='true' 		width='60' 	textAlign='left' forLevel='false' 
+			print_width = '18'		defaultForLevel='0' 	booleanFlag='false' sortDataType='S' 	columnPrecision="NaN"/>
+				
+	<column data='location' 		label='Location' 		editable='false' 	visible='true' 		width='60' 	textAlign='left' forLevel='false' 
+			print_width = '18'		defaultForLevel='0' 	booleanFlag='false' sortDataType='S' 	columnPrecision="NaN"/>	
+								
+	<column data='weight' 			label='Weight' 			editable='false' 	visible='true' 		width='80' 	textAlign='left' forLevel='false' 
+			print_width = '18'		defaultForLevel='0' 	booleanFlag='false' sortDataType='N'	columnPrecision="4"/>	
+	
+	<column data='color' 			label='Color' 			editable='false' 	visible='true' 		width='60' 	textAlign='left' forLevel='false' 
+			print_width = '18'		defaultForLevel='0' 	booleanFlag='false' sortDataType='S' 	columnPrecision="NaN"/>
+			
+	<column data='clarity' 		 	label='Clarity' 		editable='false' 	visible='true' 		width='60' 	textAlign='left' forLevel='false' 
+			print_width = '16'		defaultForLevel='0' 	booleanFlag='false' sortDataType='S'	columnPrecision="NaN"/>
+
+	<column data='barcode_no' 		 label='Barcode #' 		editable='false' 	visible='true' 		width='60' 	textAlign='left' forLevel='false' 
+			print_width = '16'		defaultForLevel='0' 	booleanFlag='false' sortDataType='S'	columnPrecision="NaN"/>		
+			
+	<column data='depth_per' 		label='depth(%)' 		editable='false' 	visible='true' 		width='80' 	textAlign='left' forLevel='false' 
+			print_width = '18'		defaultForLevel='0' 	booleanFlag='false' sortDataType='N'	columnPrecision="2"/>		
+				
+	<column data='table_per'		label='table(%)' 		editable='false' 	visible='true' 		width='80' 	textAlign='left' forLevel='false' 
+			print_width = '18'		defaultForLevel='0' 	booleanFlag='false' sortDataType='N'	columnPrecision="2"/>
+			
+	<column data='size' 			label='Size' 			editable='false' 	visible='true' 		width='80' 	textAlign='left' forLevel='false' 
+			print_width = '18'		defaultForLevel='0' 	booleanFlag='false' sortDataType='N'	columnPrecision="2"/>
+						
+	<column data='certificate_no' 	label='Certificate #' 	editable='false'	visible='true' 		width='80' 	textAlign='left' forLevel='false' 
+			print_width = '18'		defaultForLevel='0' 	booleanFlag='false' sortDataType='S'	columnPrecision="NaN"/>
+			
+	<column data='laboratory' 		 label='Laboratory' 	editable='false' 	visible='true' 		width='60' 	textAlign='left' forLevel='false' 
+			print_width = '16'		defaultForLevel='0' 	booleanFlag='false' sortDataType='S'	columnPrecision="NaN"/>
+
+	<column data='client_no' 		 label='Client #' 		editable='false' 	visible='true' 		width='80' 	textAlign='left' forLevel='false' 
+			print_width = '18'		defaultForLevel='0'	 	booleanFlag='false' sortDataType='S'	columnPrecision="NaN"/>	
+		
+	<column data='rapaport_price' 	label='rapaport_price' 	editable='false' 	visible='true' 		width='80' 	textAlign='left' forLevel='false' 
+			print_width = '18'		defaultForLevel='0' 	booleanFlag='false' sortDataType='N'	columnPrecision="2"/>
+			
+	<column data='cost' 		    label='Cost' 			editable='false' 	visible='true' 		width='80' 	textAlign='left' forLevel='false' 
+			print_width = '18'		defaultForLevel='0' 	booleanFlag='false' sortDataType='N'	columnPrecision="2"/>
+			
+	<column data='web_discount1' 	label='Web Discount' 	editable='false' 	visible='true' 		width='80' 	textAlign='left' forLevel='false' 
+			print_width = '15'		defaultForLevel='0' 	booleanFlag='false' sortDataType='N'	columnPrecision="2"/>	
+			
+	<column data='web_price1' 		label='Web Price' 		editable='false' 	visible='true' 		width='80' 	textAlign='left' forLevel='false' 
+			print_width = '15'		defaultForLevel='0' 	booleanFlag='false' sortDataType='N'	columnPrecision="2"/>
+			
+	<column data='web_discount2' 	label='Web Discount 2' 	editable='false' 	visible='true' 		width='80' 	textAlign='left' forLevel='false' 
+			print_width = '15'		defaultForLevel='0' 	booleanFlag='false' sortDataType='N'	columnPrecision="2"/>	
+			
+	<column data='web_price2' 		label='Web Price 2' 	editable='false' 	visible='true' 		width='80' 	textAlign='left' forLevel='false' 
+			print_width = '15'		defaultForLevel='0' 	booleanFlag='false' sortDataType='N'	columnPrecision="2"/>
+			
+	<column data='web_discount3' 	label='Web Discount 3' 	editable='false' 	visible='true' 		width='80' 	textAlign='left' forLevel='false' 
+			print_width = '15'		defaultForLevel='0' 	booleanFlag='false' sortDataType='N'	columnPrecision="2"/>	
+			
+	<column data='web_price3' 		label='Web Price 3' 	editable='false' 	visible='true' 		width='80' 	textAlign='left' forLevel='false' 
+			print_width = '15'		defaultForLevel='0' 	booleanFlag='false' sortDataType='N'	columnPrecision="2"/>
+			
+	<column data='length' 			label='Length' 			editable='false' 	visible='true' 		width='60' 	textAlign='left' forLevel='false' 
+			print_width = '15'		defaultForLevel='0' 	booleanFlag='false' sortDataType='N'	columnPrecision="2"/>		
+	
+	<column data='width' 			label='Width' 			editable='false' 	visible='true' 		width='60' 	textAlign='left' forLevel='false' 
+			print_width = '15'		defaultForLevel='0' 	booleanFlag='false' sortDataType='N'	columnPrecision="2"/>		
+	
+	<column data='depth' 			label='Depth' 			editable='false' 	visible='true' 		width='60' 	textAlign='left' forLevel='false' 
+			print_width = '15'		defaultForLevel='0' 	booleanFlag='false' sortDataType='N'	columnPrecision="2"/>		
+						
+	<column data='message' 		 	label='Message' 		editable='false' 	visible='true' 		width='60' 	textAlign='left' forLevel='false' 
+			print_width = '16'		defaultForLevel='0' 	booleanFlag='false' sortDataType='S'	columnPrecision="NaN"/>												
+	
+</columns> 

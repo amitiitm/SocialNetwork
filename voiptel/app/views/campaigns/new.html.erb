@@ -1,0 +1,7 @@
+<% box :type => "dialog", :id => "dialog-new-campain", :title => "New Campaign" do %>
+	<% box :type => "simple", :title => "New Campaign" do %>
+		<%= render :partial => "form" %>
+	<% end -%>
+<% end -%>
+
+<%= javascript_include_tag "/js/ap.ddialog.js" %>

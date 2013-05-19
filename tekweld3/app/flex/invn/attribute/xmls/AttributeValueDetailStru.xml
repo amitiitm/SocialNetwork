@@ -1,0 +1,29 @@
+<columns  lockedColumnCount='0'>
+
+	<column data='code'			label='Code'		editable='false'	visible='true'	width='150'	textAlign='left'	forLevel='false'
+			defaultForLevel=''	booleanFlag='false'	sortDataType='S' 	columnPrecision="NaN"/>
+			
+	<column data='name'			label='Name'		editable='false'	visible='true'	width='400'	textAlign='left'	forLevel='false'
+			defaultForLevel=''	booleanFlag='false'	sortDataType='S'	columnPrecision="NaN"/>
+
+	<column data='setup_item_code'		label='Charge Code 1'		editable='false'	visible='true'	width='200'	textAlign='left'	forLevel='false'
+			defaultForLevel=''			booleanFlag='false'			sortDataType='S'	columnPrecision="NaN"/>
+	
+	<column data='setup_item_code2'		label='Charge Code 2'		editable='false'	visible='true'	width='200'	textAlign='left'	forLevel='false'
+			defaultForLevel=''			booleanFlag='false'			sortDataType='S'	columnPrecision="NaN"/>		
+			
+	<column data='invn_item_code'		label='Inventory'			editable='false'	visible='true'	width='400'	textAlign='left'	forLevel='false'
+			defaultForLevel=''			booleanFlag='false'			sortDataType='S'	columnPrecision="NaN"/>	
+			
+	<column data='setup_item_id'		label='Charge Code'			editable='false'	visible='true'	width='200'	textAlign='left'	forLevel='false'
+			defaultForLevel=''			booleanFlag='false'			sortDataType='S'	columnPrecision="NaN"/>
+			
+	<column data='setup_item_id2'		label='Charge Code 2'		editable='false'	visible='true'	width='200'	textAlign='left'	forLevel='false'
+			defaultForLevel=''			booleanFlag='false'			sortDataType='S'	columnPrecision="NaN"/>
+			
+	<column data='invn_item_id'			label='Inventory Code 2'	editable='false'	visible='true'	width='200'	textAlign='left'	forLevel='false'
+			defaultForLevel=''			booleanFlag='false'			sortDataType='S'	columnPrecision="NaN"/>							
+	
+</columns> 
+
+

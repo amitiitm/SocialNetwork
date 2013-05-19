@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:TitleWindow xmlns:fx="http://ns.adobe.com/mxml/2009" 
+		 xmlns:s="library://ns.adobe.com/flex/spark" 
+		 xmlns:mx="library://ns.adobe.com/flex/mx" width="496" height="236" xmlns:customcomponents="com.generic.customcomponents.*"
+		 creationComplete="creationComplete()"
+		 title="Payment Profile" showCloseButton="true" close="closeHandler()">
+	<fx:Declarations>
+		<!-- Place non-visual elements (e.g., services, value objects) here -->
+	</fx:Declarations>
+	<fx:Script>
+		<![CDATA[
+			import business.events.GetInformationEvent;
+			import business.events.PreSaveEvent;
+			
+			import model.GenModelLocator;
+			
+			import mx.controls.Alert;
+			import mx.core.Application;
+			import mx.managers.CursorManager;
+			import mx.managers.PopUpManager;
+			import mx.rpc.IResponder;
+			
+			import saoi.muduleclasses.event.MissingInfoEvent;
+			
+			[Bindable]
+			public var orderDetail:XML= new XML();
+			[Bindable]
+			private var customer_id:String = '';
+			[Bindable]
+			private var __genModel:GenModelLocator = GenModelLocator.getInstance();
+			private var xmlMissingInfo:XML = new XML();
+			private var getInformationEvent:GetInformationEvent;
+			
+			private function creationComplete():void
+			{
+				customer_id 				= orderDetail.customer_id.toString();
+				cbCard_type.dataValue		= cbCard_type.defaultValue;
+				tiCardNO.dataValue			= tiCardNO.defaultValue;
+				tiExp_Month.dataValue		= tiExp_Month.defaultValue;
+				tiExp_Year.dataValue		= tiExp_Year.defaultValue;
+				tiNameOnCard.dataValue		= tiNameOnCard.defaultValue;
+				tiCvvNO.dataValue			= tiCvvNO.defaultValue;
+			}
+			private function closeHandler():void
+			{
+				PopUpManager.removePopUp(this);
+			}
+			private function saveClickHandler():void
+			{
+				if(customer_id!='' && tiCardNO.dataValue!='' && cbCard_type.dataValue!='' && tiExp_Year.dataValue!='' && tiExp_Month.dataValue!='')
+				{
+					var callbacks:IResponder	=	new mx.rpc.Responder(paymentProfileDetailsHandler, null);
+					getInformationEvent			=	new GetInformationEvent('create_customer_payment_profile', callbacks, customer_id,cbCard_type.dataValue,tiCardNO.dataValue,tiExp_Month.dataValue,tiExp_Year.dataValue);
+					getInformationEvent.dispatch();
+					
+					this.enabled  = false;
+					CursorManager.setBusyCursor();
+				}
+				else
+				{
+					Alert.show("Enter payment information.");
+				}
+			}
+			private function paymentProfileDetailsHandler(resultXml:XML):void
+			{
+				this.enabled  = true;
+				CursorManager.removeBusyCursor();
+				
+				var result:XML		 = XML(resultXml);
+				Alert.show(resultXml.toString());
+				
+				xmlMissingInfo  					   = new XML(<missing_info></missing_info>);
+				dispatchEvent(new MissingInfoEvent(MissingInfoEvent.MissingInfoEvent_Type,xmlMissingInfo));
+				closeHandler();
+			}				
+		]]>
+	</fx:Script>
+	<mx:VBox width="100%" height="100%" verticalGap="3">
+		<mx:HBox width="100%" height="4%" verticalAlign="middle"  verticalGap="0" >
+			<mx:Label text="Card Type" width="150" textAlign="right" height="20" />
+			<customcomponents:GenComboBox id="cbCard_type" width="181" cornerRadius="0" xmlTag="card_type" updatableFlag="true"
+										  tableName="sales_order"  tabIndex="810" labelField="label" height="20" defaultValue="VISA"  		
+										  dataProvider="{__genModel.masterData.child('card_type').card_type}" toolTip="Card Type"/>
+			
+		</mx:HBox>
+		
+		<mx:HBox width="100%" height="4%" verticalAlign="middle"  verticalGap="0" >
+			<mx:Label text="Name On Card" width="150" textAlign="right" height="20" />
+			<customcomponents:GenTextInput id="tiNameOnCard" width="180" xmlTag="name_on_card"
+										   updatableFlag="true" tabIndex="820" tableName="sales_order"
+										   defaultValue="" validationFlag="false" toolTip="Accounts" height="20" 
+										   maxChars="50" />
+			
+		</mx:HBox>
+		
+		<mx:HBox width="100%" height="4%" verticalAlign="middle"  verticalGap="0" >
+			<mx:Label text="Card #" width="150" textAlign="right" height="20" />
+			<customcomponents:GenTextInput id="tiCardNO" width="180" xmlTag="credit_card_no"
+										   updatableFlag="true" tabIndex="830" tableName="sales_order"
+										   defaultValue="" validationFlag="false" toolTip="Sales" height="20" restrict="0123456789"
+										   maxChars="16" textAlign="left" dataType="N"/>
+		</mx:HBox>
+		
+		<mx:HBox width="100%" height="4%" verticalAlign="middle"  verticalGap="0" visible="false" includeInLayout="false">
+			<mx:Label text="Cvv #" width="150" textAlign="right" height="20" />
+			<customcomponents:GenTextInput id="tiCvvNO" width="180" xmlTag="cvv_number"
+										   updatableFlag="true" tabIndex="840" tableName="sales_order"
+										   validationFlag="false" toolTip="Sales" height="20" restrict="0123456789"
+										   maxChars="4" textAlign="left" dataType="N" />
+		</mx:HBox>
+		
+		<mx:HBox width="100%" height="4%" verticalAlign="middle"  verticalGap="0">
+			<mx:Label text="Expiration " width="150" textAlign="right" height="20" />
+			<customcomponents:GenTextInput id="tiExp_Month" width="41" xmlTag="expiration_month"
+										   updatableFlag="true" tabIndex="850" tableName="sales_order"
+										   defaultValue="" validationFlag="false" toolTip="Art Work" height="20" 
+										   maxChars="2" textAlign="left" dataType="N" />
+			<customcomponents:GenTextInput id="tiExp_Year" width="41" xmlTag="expiration_year"
+										   updatableFlag="true" tabIndex="860" tableName="sales_order"
+										   defaultValue="" validationFlag="false" toolTip="Art Work" height="20" 
+										   maxChars="2" textAlign="left" dataType="N" />
+		</mx:HBox>
+		
+		<mx:HBox width="100%" height="45" verticalAlign="middle"  verticalGap="0">
+			<s:Spacer width="146"/>
+			<s:Button label="Create" click="saveClickHandler()"/>
+			<s:Button label="Cancel" click="closeHandler()" />
+		</mx:HBox>
+	</mx:VBox>
+		
+		
+</mx:TitleWindow>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rds:CommonServices xmlns:rds="business.*" xmlns:mx="http://www.adobe.com/2006/mxml">
+
+	<mx:HTTPService id="getViewFormat" url="rept/invn/issuereport/xmls/IssueReportCriteriaStru.xml" />
+	<mx:HTTPService id="getList" url="/inventory/inventory_report/issue_report" />
+	<mx:HTTPService id="printRecord" url="" />
+	<mx:HTTPService id="printDataInSpecificFormat" url="/inventory/inventory_fixed_report/fixed_issue_register" />
+</rds:CommonServices>

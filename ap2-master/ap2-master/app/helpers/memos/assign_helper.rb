@@ -1,0 +1,2 @@
+module Memos::AssignHelper
+end

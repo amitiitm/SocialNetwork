@@ -1,0 +1,33 @@
+<columns  lockedColumnCount='0'>
+
+	<column data='catalog_item_category_code'	label='Category #'				editable='false'	visible='true'		width='125'			textAlign='left'
+			print_width = '16'					forLevel='true'					defaultForLevel='1' booleanFlag='false' sortDataType='S'	columnPrecision="NaN"/>
+			
+	<column data='name' 						label='Name'  					editable='false' 	visible='true' 		width='150' 		textAlign='left' 	
+			print_width = '20'					forLevel='true'					defaultForLevel='2' booleanFlag='false'	sortDataType='S'	columnPrecision="NaN"/>
+			
+	<column data='store_code'					label='Item #'					editable='false' 	visible='true'		width='100'			textAlign='left'
+			print_width = '18'					forLevel='true'					defaultForLevel=''	booleanFlag='false'	sortDataType='S' 	columnPrecision="NaN"/>
+
+	<column data='web_code'						label='Web #'					editable='false' 	visible='true'		width='100'			textAlign='left' 
+			print_width = '18'					forLevel='true'					defaultForLevel='' 	booleanFlag='false'	sortDataType='S'	columnPrecision="NaN"/>
+
+	<column data='purchase_description'			label='Purchase Description'	editable='false' 	visible='true' 		width='180' 		textAlign='left' 	
+			print_width = '24'					forLevel='false'				defaultForLevel='' 	booleanFlag='false' sortDataType='S'	columnPrecision="NaN"/>
+
+	<column data='sale_description'				label='Sale Description'  		editable='false' 	visible='true' 		width='180' 		textAlign='left' 	
+			print_width = '24'					forLevel='false'				defaultForLevel='' 	booleanFlag='false' sortDataType='S'	columnPrecision="NaN"/>
+			
+	<column data='item_date' 					label='Item Date' 				editable='false' 	visible='true' 		width='80' 			textAlign='left'  	
+			print_width = '18'					forLevel='false'				defaultForLevel='' 	booleanFlag='false' sortDataType='D'	columnPrecision="NaN"/>
+			
+	<column data='priority' 					label='Prioriy' 				editable='false' 	visible='true' 		width='60' 			textAlign='left'  	
+			print_width = '16'					forLevel='true'					defaultForLevel=''	booleanFlag='false' sortDataType='S'	columnPrecision="NaN"/>	
+					
+	<column data='barcode' 						label='Barcode'					editable='false' 	visible='true' 		width='100' 		textAlign='left'  	
+			print_width = '18'					forLevel='false'				defaultForLevel='' 	booleanFlag='false' sortDataType='S'	columnPrecision="NaN"/>
+			
+	<column data='cost' 						label='Cost' 					editable='false' 	visible='true' 		width='80' 			textAlign='right'  	
+			print_width = '16'					forLevel='false'				defaultForLevel=''	booleanFlag='false' sortDataType='N'	columnPrecision="2"/>
+
+</columns> 

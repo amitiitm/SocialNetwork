@@ -1,0 +1,23 @@
+retailAir Application is simillar to the web application 
+
+just we have done changes in the following files
+
+1)retailAir.mxml
+2)GenModelLocator.as   (change main_url:String = "http://demo.retail.diasparkonline.com")
+3)Delegate.as file
+4)UserLoginDelegate.as
+5)LogoutDelegate.as
+6)LoginBox.mxml
+7)LoginBoxScript.as
+
+whenever you want to update application from Web Retail remember changes in above files must not affect.
+
+
+
+maikng update available to client
+1)do the changes in the application as you wanted to do.
+1)now change the version in retailAir-App.xml file .
+2)build/release the air application with same certificate as you build first one, change build name which specify latest version.
+3)uplaod this build(.air) file to the server.
+4)change latestversion.txt file on server to latest version and path of latest build.
+5)change in default_badge.html file set the url for latest build(since you have changed the build name to latest version.)

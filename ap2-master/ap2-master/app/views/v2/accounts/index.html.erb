@@ -1,0 +1,79 @@
+<script type="text/javascript" src="/js/tablesorter.js"></script>
+<script type="text/javascript" src="/js/tablesorter-pager.js"></script>
+<script type="text/javascript" src="/js/accounts/index.js"></script>
+
+<div class="inner-page-title">
+	<h2>View Open Accounts</h2>
+	<span>List of Accounts who's status is Open</span>
+</div>
+<div class="hastable">	
+<form name="myform" class="pager-form" method="post" action="">	
+		<table id="table"> 
+		<thead> 
+			<tr>				
+			  <th><input type="checkbox" value="check_none" onclick="this.value=check(this.form.list)" class="submit"/</th>
+				<th>ID</th>
+			  <th>Account Number</th>
+			  <th>Account Holder</th>
+			  <th>Sub Acct(s)</th>
+				<th>Deposits</th>
+			  <th>Balance</th>
+				<th>Auto Rech</th>
+			  <th>Reg Date</th>
+				<th>Last Activity</th>
+				<th>Next Action</th>
+				<th>NA Due Date</th>
+				<th>Last Contact By</th>
+				<th>Referred By</th>
+			  <th>Status</th>				
+			</tr> 
+		</thead> 
+		<tbody>
+			<% counter = @accounts.size + 1%>
+		  <% for account in @accounts do %>
+				<% unless account.status == 3 -%>
+		  	<% counter -= 1 %>
+			  	<tr>
+						<td><input type="checkbox" value="1" name="list" class="checkbox table-checkbox"/> <%= counter %></td>
+						<td><%= account.id %></span></td>
+						<td><%= link_to account.number, :controller => "accounts", :action => "details", :id => account.id %> | <%= link_to "CDR", :controller => "reports", :action => "test", :id => account.id %></td>
+						<td><%= account_holder(account.account_holder_id) %> </td>
+						<td><%= (account.users.count) -1 %> </td>
+						<td><%= number_to_currency(account.deposits) %> </td>
+						<td><%= number_to_currency(account.balance) %> </td>
+						<td><%= (account.auto_recharge) ? "<span style='color:green;padding:0px;'>Enabled ($#{account.recharge_amount})</span>" : "<span style='color:red;padding:0px;'>Disabled</span>"  %></td>
+						<td><%= account.created_at.strftime("%a %Y-%m-%d %H:%M") %></td>
+						<td><%= show_last_activity(account) %></td>
+						<td><%= next_action(account) %></td>
+						<td><%= na_due_date(account) %></td>
+						<td><%= last_contact_by(account) %></td>
+						<td></td>
+						<td><%= if account.status == 1 then "Active" else "Inactive" end %> </td>
+					</tr>
+				<% end -%>
+		  <%  end %>
+		</tbody>
+	 </table>
+	<div id="pager">
+			<a class="btn_no_text btn ui-state-default ui-corner-all first" title="First Page" href="#">
+				<span class="ui-icon ui-icon-arrowthickstop-1-w"></span>
+			</a>
+			<a class="btn_no_text btn ui-state-default ui-corner-all prev" title="Previous Page" href="#">
+				<span class="ui-icon ui-icon-circle-arrow-w"></span>
+			</a>
+
+			<input type="text" class="pagedisplay"/>
+			<a class="btn_no_text btn ui-state-default ui-corner-all next" title="Next Page" href="#">
+				<span class="ui-icon ui-icon-circle-arrow-e"></span>
+			</a>
+			<a class="btn_no_text btn ui-state-default ui-corner-all last" title="Last Page" href="#">
+				<span class="ui-icon ui-icon-arrowthickstop-1-e"></span>
+			</a>
+			<select class="pagesize">
+				<option value="25" selected="selected">25 accounts</option>
+				<option value="50">50 accounts</option>
+				<option value="100">100 accounts</option>
+			</select>
+	</div>					
+</form>	 
+</div> 

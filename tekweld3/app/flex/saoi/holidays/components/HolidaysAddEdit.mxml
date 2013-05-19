@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<gencomponents:AddEdit xmlns:mx="http://www.adobe.com/2006/mxml" 
+	height="100%" width="100%" verticalGap="0"
+	xmlns:customcomponents="com.generic.customcomponents.*"
+	xmlns:gencomponents="com.generic.components.*">
+	<mx:Script source="../scripts/HolidaysAddEditscript.as"/>
+	
+	<mx:VBox horizontalGap="0" width="100%">
+		<mx:HBox height="20" verticalAlign="middle" horizontalGap="2">
+			<mx:Label text="Holiday Date" width="90" textAlign="right" height="20" />
+			<customcomponents:GenDateField id="dfHoliday_date" width="116" xmlTag="holiday_date"
+										   updatableFlag="true" tabIndex="1" tableName="holiday" height="20" 
+										   validationFlag="true" toolTip="Holiday Date"
+										   />	
+			<mx:Label text="Status" width="90" textAlign="right" height="20"/>
+			<customcomponents:GenComboBox id="cbTrans_flag" defaultValue="A" width="100" cornerRadius="0" xmlTag="trans_flag" updatableFlag="true"
+				tableName="holiday" tabIndex="3"  labelField="label" height="20" 
+				dataProvider="{__genModel.masterData.child('trans_flag').trans_flag}" />
+		</mx:HBox>
+
+		<mx:HBox height="20" verticalAlign="middle" horizontalGap="2" width="100%">
+			<mx:Label text="Event Name" width="90" textAlign="right" height="20" />
+			<customcomponents:GenTextInput id="tiEvent_name" width="150" tabIndex="2" height="20"  
+				xmlTag="event" updatableFlag="true" tableName="holiday" maxChars="50"/>	
+		</mx:HBox>
+	</mx:VBox>
+</gencomponents:AddEdit>

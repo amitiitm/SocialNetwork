@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<gencomponents:AddEdit xmlns:mx="http://www.adobe.com/2006/mxml"
+	height="100%" width="100%" verticalGap="0"
+	xmlns:customcomponents="com.generic.customcomponents.*"
+	xmlns:gencomponents="com.generic.components.*"
+	creationPolicy="all" creationComplete="init()">
+	
+	<mx:Script source="../scripts/PurchaseIndentAddEditScript.as"/>
+	<mx:VBox width="0" height="0" verticalGap="0" horizontalGap="0" verticalAlign="top" visible="false">
+		<customcomponents:GenTextInput id="tiTrans_qty_pcs" width="0" height="0" visible="false" editable="false"
+			xmlTag="item_qty" updatableFlag="true" tableName="purchase_indent" />
+		<customcomponents:GenTextInput id="tiRefTrans_bk" width="0" height="0" visible="true" editable="false"
+			xmlTag="ref_trans_bk" updatableFlag="false" tableName="purchase_indent" />
+		<customcomponents:GenTextInput id="tiRef_trans_no" width="116" xmlTag="ref_trans_no"
+			updatableFlag="true"  tableName="purchase_indent"
+			defaultValue="" validationFlag="false" toolTip="Ref #"	maxChars="18" />
+		<customcomponents:GenDateField id="dfRef_trans_dt" width="117" xmlTag="ref_trans_date"
+			updatableFlag="true"  tableName="purchase_indent"
+			defaultValue="" validationFlag="false" toolTip="ref_trans_dt" />
+	    <customcomponents:GenTextInput id="tiShip_zip" width="0" height="0"  visible="false" editable="false"
+			xmlTag="ship_zip" updatableFlag="true" tableName="purchase_indent" />	
+	</mx:VBox>
+	
+	<mx:VBox width="100%" height="100%" >
+		<mx:HBox id="HBoxHeader" width="100%"  horizontalGap="0" verticalGap="0" verticalAlign="top" 
+			paddingBottom="0" paddingTop="0">
+		
+			<mx:VBox width="100%" height="100%" horizontalGap="0" verticalGap="3" paddingBottom="0" paddingTop="0">
+				<mx:Spacer height="4%"/>
+				
+				<mx:HBox width="100%" height="10%" verticalGap="0" >
+					<mx:Label text="Terms #" width="95" textAlign="right" height="20" />
+					<customcomponents:GenDynamicComboBoxWithHelp id="dcTerm_code" width="116" toolTip="Term #" itemChangedEvent="getDueDate()"
+						dataSourceName="Term" dataProvider="{__genModel.lookupObj.term.children()}" labelField="code" dataField="code"
+						xmlTag="term_code" updatableFlag="true" tabIndex="1" tableName="purchase_indent" height="20" 
+						defaultValue="" validationFlag="false" />
+				</mx:HBox>
+				<mx:HBox > 
+					<mx:Label text="Due Date" width="95" textAlign="right" height="20" />
+					<customcomponents:GenDateField id="dfDue_date" width="117" xmlTag="due_date"
+						updatableFlag="true" tabIndex="2" tableName="purchase_indent" height="20" 
+						validationFlag="false" toolTip="Due Date"/>
+				</mx:HBox>
+				<mx:HBox width="100%" height="10%" verticalGap="0" >						
+					<mx:Label text="Ship Date" width="95" textAlign="right" height="20" />
+					<customcomponents:GenDateField id="dfShip_date"  width="117" tabIndex="3" xmlTag="ship_date" updatableFlag="true" 
+						tableName="purchase_indent" height="20" />
+				</mx:HBox>	
+			</mx:VBox>				
+			<mx:VRule height="100%"/>
+			<mx:VBox width="100%" height="100%" verticalGap="3" horizontalGap="0" paddingBottom="0" paddingTop="0">
+				<mx:Spacer height="4%"/>
+				
+				<mx:HBox >
+				<mx:Label text="Ref #" width="95" textAlign="right" height="20" />
+				<customcomponents:GenTextInput id="tiIndent_no" width="116" tabIndex="4" height="20"   
+					xmlTag="ext_ref_no" updatableFlag="true" tableName="purchase_indent" maxChars="50"/>	
+			</mx:HBox>		
+			<mx:HBox >
+				<mx:Label text="Ref Date" height="20" width="95" textAlign="right" />
+				<customcomponents:GenDateField id="dfIndent_date" width="116" height="20" toolTip="Indent Date" 
+					tabIndex="5" xmlTag="ext_ref_date" updatableFlag="true" tableName="purchase_indent"/>
+			</mx:HBox>
+			<mx:HBox width="100%" height="10%" verticalGap="0" >						
+				<mx:Label text="Ship Via" height="20" width="95" textAlign="right"/>
+				<customcomponents:GenDynamicComboBoxWithHelp id="dcShipping_code" width="116" 
+					tabIndex="6" toolTip="Ship via"  defaultValue="" height="20" 
+					dataField="code" labelField="code" 
+					dataSourceName="Shipping" dataProvider="{__genModel.lookupObj.shipping.children()}"   
+					validationFlag="false" xmlTag="shipping_code" updatableFlag="true" tableName="purchase_indent"  />
+			</mx:HBox>
+			</mx:VBox>
+			<mx:VRule height="100%"/>
+			<mx:VBox width="100%" height="100%" verticalGap="3" horizontalGap="0" paddingBottom="0" paddingTop="0">
+				<mx:Spacer height="4%"/>
+				<mx:HBox width="100%" height="10%" verticalGap="0">						
+					<mx:Label text="Indent #" width="95" textAlign="right" height="20" />
+					<customcomponents:GenTextInput id="tiTrans_no" width="71" xmlTag="trans_no" enabled="false" 
+						updatableFlag="true"  tableName="purchase_indent" height="20"  
+						defaultValue="" validationFlag="false" toolTip="Trans #" />	
+					<customcomponents:GenTextInput id="tiTrans_bk" width="35" height="20" visible="true" enabled="false"
+						xmlTag="trans_bk" updatableFlag="false" tableName="purchase_indent" />
+				</mx:HBox>				
+				<mx:HBox width="100%" height="10%" verticalGap="0">
+					<mx:Label text="Indent Date" width="95" textAlign="right" height="20" />
+					<customcomponents:GenDateField id="dfTrans_date" width="116" xmlTag="trans_date"
+						updatableFlag="true" tabIndex="7" tableName="purchase_indent" height="20" 
+					 	itemChangedEvent="__localModel.trans_date=dfTrans_date.text;dfShip_date.text=dfTrans_date.text;getAccountPeriod();getDueDate()"
+					 	validationFlag="false" toolTip="Trans Date"	/>
+				</mx:HBox>
+				<mx:HBox width="100%" height="10%" verticalGap="0">		
+					<mx:Label text="A/c Period" height="20" width="95" textAlign="right" />
+					<customcomponents:GenDynamicComboBoxWithHelp id="dcAccount_period_code" width="116" 
+						toolTip="A/c Period Code"  defaultValue="" enabled="false" height="20"  
+						dataField="code" labelField="code"
+						dataSourceName="AccountPeriod" dataProvider="{__genModel.lookupObj.accountperiod.children()}"
+						validationFlag="true" xmlTag="account_period_code" updatableFlag="true" tableName="purchase_indent"  />
+				</mx:HBox>
+
+				<mx:HBox width="100%" height="10%" verticalGap="0">		
+					<mx:Label text="Status" width="95" textAlign="right" height="20"/>
+					<customcomponents:GenComboBox id="cbTrans_flag" defaultValue="A" width="116" cornerRadius="0" xmlTag="trans_flag" updatableFlag="true"
+						tableName="purchase_indent" tabIndex="8"  labelField="label" height="20" enabled="false"
+						dataProvider="{__genModel.masterData.child('trans_flag').trans_flag}" />
+				</mx:HBox>
+			</mx:VBox>
+		</mx:HBox>	
+		<mx:Spacer height="5" width="100%" />
+ 		<mx:TabNavigator id="tnDetail" width="100%" height="100%" >
+			<mx:VBox id="hbHeader" label="Address" width="100%" height="100%" verticalGap="3" tabIndex="100">
+				<mx:VBox id="vbHeader2" width="100%" height="10%" verticalGap="3">
+					<mx:HBox width="100%" horizontalGap="2" verticalAlign="middle">
+						<mx:Label text="Ship To Store" width="200" fontSize="10" fontWeight="bold" textAlign="right" visible="true" height="20" />
+					</mx:HBox>					
+					<mx:HBox width="100%" horizontalGap="2" verticalAlign="middle" >
+						
+						<mx:Label text="Name" width="120" textAlign="right" height="20" />
+						<customcomponents:GenTextInput id="tiShip_nm" width="225" xmlTag="ship_name" enabled="false"
+							updatableFlag="true" tabIndex="18" tableName="purchase_indent" editable="false"
+							defaultValue="" validationFlag="false" toolTip="Ship Name" height="20" maxChars="50" />
+					</mx:HBox>
+					<mx:HBox width="100%" horizontalGap="2" verticalAlign="middle">
+						
+						<mx:Label text="Address #1" width="120" textAlign="right" height="20" />
+						<customcomponents:GenTextInput id="tiShip_address1" width="224" xmlTag="ship_address1"
+							updatableFlag="true" tabIndex="19" tableName="purchase_indent" editable="false" enabled="false"
+							defaultValue="" validationFlag="false" toolTip="Ship Address #1" height="20" maxChars="50" />
+					</mx:HBox>
+	
+					<mx:HBox width="100%" horizontalGap="2" verticalAlign="middle">
+						
+						<mx:Label text="#2" width="120" textAlign="right" height="20" />
+						<customcomponents:GenTextInput id="tiShip_address2" width="224" xmlTag="ship_address2"
+							updatableFlag="true" tabIndex="20" tableName="purchase_indent" editable="false" enabled="false"
+							defaultValue="" validationFlag="false" toolTip="Ship Address #2" height="20" maxChars="50" />
+					</mx:HBox>
+	
+					<mx:HBox width="100%" horizontalGap="2" verticalAlign="middle">
+						
+						<mx:Label text="City/State" width="120" textAlign="right" height="20" />
+						<customcomponents:GenTextInput id="tiShip_city" width="109" xmlTag="ship_city"
+							updatableFlag="true" tabIndex="21" tableName="purchase_indent" enabled="false"
+							defaultValue="" validationFlag="false" toolTip="City" editable="false" height="20" maxChars="25" />
+						<customcomponents:GenTextInput id="tiShip_state" width="113" xmlTag="ship_state"
+							updatableFlag="true" tabIndex="22" tableName="purchase_indent" enabled="false"
+							defaultValue="" validationFlag="false" toolTip="State" editable="false" height="20" maxChars="2" upperCaseFlag="true" />
+					</mx:HBox>
+	
+					<mx:HBox width="100%" horizontalGap="2" verticalAlign="middle">
+						<mx:Label text="Country" width="120" textAlign="right" height="20" />
+						<customcomponents:GenTextInput id="tiShip_country" width="110" xmlTag="ship_country"
+							updatableFlag="true" tabIndex="23" tableName="purchase_indent" enabled="false"
+							defaultValue="" validationFlag="false" toolTip="Country" editable="false" height="20" maxChars="20" />
+					</mx:HBox>
+	
+					<mx:HBox width="100%" horizontalGap="2" verticalAlign="middle">
+						<mx:Label text="Phone/Fax" width="120" textAlign="right" height="20" />
+						<customcomponents:GenTextInput id="tiShip_phone1" width="109" xmlTag="ship_phone"
+							updatableFlag="true" tabIndex="24" tableName="purchase_indent" enabled="false"
+							defaultValue="" validationFlag="false" toolTip="Phone" editable="false" height="20" maxChars="50" />
+						<customcomponents:GenTextInput id="tiShip_fax1" width="115" xmlTag="ship_fax"
+							updatableFlag="true" tabIndex="25" tableName="purchase_indent" enabled="false"
+							defaultValue="" validationFlag="false" toolTip="Fax" editable="false" height="20" maxChars="50" />
+					</mx:HBox>
+				</mx:VBox>
+			</mx:VBox>
+			<mx:VBox id="vbDetail"  height="100%" width="100%" label="Item">
+					<mx:HBox id="hbDetail" label="Item" width="100%" height="100%" horizontalAlign="center" fontSize="10">
+						<gencomponents:Detail id="dtlLine"
+							updatableFlag="true"
+							checkBlankRowColumn="catalog_item_id"
+							rootNode="purchase_indent_lines"
+							formatServiceID="lineDetailFormat"
+							height="100%" width="100%"
+							DetailEditClass="{puoi.purchaseindent.components.PurchaseIndentLineDetail}"
+							detailItemClick="changeImage()"
+							title="Purchase Detail"
+							detailAddEditComplete="changeImage();setTotalItem()"
+							detailRemoveRow="changeImage();setTotalItem()"
+							/>
+					</mx:HBox>
+					<mx:HBox id="hbFooter" width="100%" height="135" y="625" horizontalAlign="right" horizontalGap="0">
+						<mx:VBox width="120" height="120">
+							<mx:Image id="itemImage" 
+								width="100%"
+								height="100%" 
+								verticalAlign="middle" 
+								horizontalAlign="center" 
+								source="{__genModel.path.image}{image_name}"/>
+						</mx:VBox>
+		
+						<mx:VBox width="180" height="100%" paddingLeft="20">
+							<mx:HBox>
+								<mx:Label text="Total Items" width="80" textAlign="right" />
+								<mx:Label id="lblTotal_items" width="35" textAlign="right" />
+							</mx:HBox>
+							<mx:HBox>
+								<mx:Label text="Item Qty" width="80" textAlign="right" />
+								<mx:Label id="lblItem_qty" width="35" textAlign="right" />
+							</mx:HBox>
+							<mx:HBox height="0" width="0" visible="false">
+								<mx:Label text="Clear Qty" width="80" textAlign="right" />
+								<mx:Label id="lblClear_qty" width="20" textAlign="right" />
+							</mx:HBox>
+						</mx:VBox>
+	
+						<mx:VBox width="100%" height="100%">
+							<mx:Label text="Remarks"/>
+							<customcomponents:GenTextArea width="200" height="50" id="taRemarks" maxChars="255"
+								 xmlTag="remarks" updatableFlag="true" tableName="purchase_indent"/>
+						</mx:VBox>
+				  </mx:HBox>	
+			</mx:VBox>
+		</mx:TabNavigator>
+	</mx:VBox>
+      <mx:VBox id="vbGetOrder"  width="0" height="0" verticalGap="0" horizontalGap="0" verticalAlign="top" visible="false">
+     	 <customcomponents:GenDynamicComboBoxWithHelp id="dcVendor_id" width="0" toolTip="Vendor #" defaultValue=""
+		   dataField="id" labelField="name"
+		   dataSourceName="Vendor"  dataProvider="{__genModel.lookupObj.vendor.children()}"   
+		    itemChangedEvent="getVendorDetails()" height="0" visible="false"
+		   validationFlag="false" xmlTag="vendor_id" updatableFlag="true" tableName="purchase_indent"  />
+		</mx:VBox>		
+	<mx:Label text="Posting Status" width="0" textAlign="right" visible="false" height="0"/>
+	<customcomponents:GenComboBox id="cbPost_flag" defaultValue="P" visible="false" width="0" cornerRadius="0" xmlTag="post_flag" updatableFlag="true"
+		tableName="purchase_indent" labelField="label" height="0"
+		dataProvider="{__genModel.masterData.child('post_flag').post_flag}" />
+	
+</gencomponents:AddEdit>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rds:ServiceLocator xmlns:rds="com.adobe.cairngorm.business.*" xmlns:mx="http://www.adobe.com/2006/mxml">
+
+	<mx:HTTPService id="Lookup" url="/setup/lookup/list_lookups" />
+
+	<!--<mx:HTTPService id="UserStoreAccess" url="/setup/lookup/list" />--> <!-- should be on top -->
+	<!--<mx:HTTPService id="AccountPeriod" url="/setup/lookup/list" />-->
+	<!--<mx:HTTPService id="CompanyStore" url="/setup/lookup/list" />-->
+	<!--<mx:HTTPService id="Customer" url="/setup/lookup/list" />-->
+	<!--<mx:HTTPService id="Term" url="/setup/lookup/list" />-->
+	<!--<mx:HTTPService id="CustomerCategory" url="/setup/lookup/list" />-->
+	<!--<mx:HTTPService id="VendorCategory" url="/setup/lookup/list" />-->
+	<!--<mx:HTTPService id="ItemCategory" url="/setup/lookup/list" />-->
+	<!--<mx:HTTPService id="Vendor" url="/setup/lookup/list" /> -->
+	<!--<mx:HTTPService id="Item" url="/setup/lookup/list" />-->
+	<!--<mx:HTTPService id="SetupItem" url="/setup/lookup/list" />-->
+	<!--<mx:HTTPService id="AccessoriesItem" url="/setup/lookup/list" />-->
+	<!--<mx:HTTPService id="AssembleItem" url="/setup/lookup/list" />-->
+	<!--<mx:HTTPService id="Salesperson" url="/setup/lookup/list" />-->
+	<!--<mx:HTTPService id="ExternalSalesPerson" url="/setup/lookup/list" />-->
+	<!--<mx:HTTPService id="Purchaseperson" url="/setup/lookup/list" />-->
+	<!--<mx:HTTPService id="Location" url="/setup/lookup/list" />-->
+	<!--<mx:HTTPService id="Bank" url="/setup/lookup/list" />-->
+	<!--<mx:HTTPService id="GLAccount" url="/setup/lookup/list" />-->
+	<!--<mx:HTTPService id="DiamondCategory" url="/setup/lookup/list" />-->
+	<!--<mx:HTTPService id="DiamondLot" url="/setup/lookup/list" />-->
+	<!--<mx:HTTPService id="GlCategory" url="/setup/lookup/list" />-->
+	<!--<mx:HTTPService id="GLBankAccount" url="/setup/lookup/list" />-->
+	<!--<mx:HTTPService id="ItemGroup" url="/setup/lookup/list" />-->
+	<!--
+	<mx:HTTPService id="MeltingRetailer" url="/setup/lookup/list" />
+	<mx:HTTPService id="MeltingStageMaster" url="/setup/lookup/list" />
+	-->
+	<!--<mx:HTTPService id="Labor" url="/setup/lookup/list" />-->
+	<!--<mx:HTTPService id="Lab" url="/setup/lookup/list" />-->
+	<!--<mx:HTTPService id="Document" url="/setup/lookup/list" />-->
+	<!--<mx:HTTPService id="Menu" url="/setup/lookup/list" />-->
+	<!--<mx:HTTPService id="Role" url="/setup/lookup/list" />-->
+	<!--<mx:HTTPService id="Moodule" url="/setup/lookup/list" />-->
+	<!--<mx:HTTPService id="User" url="/setup/lookup/list" />-->
+	<!--<mx:HTTPService id="WorkbagStages" url="/setup/lookup/list" />-->
+	<!--<mx:HTTPService id="CatalogAttribute" url="/setup/lookup/list" />-->
+	<!--<mx:HTTPService id="CatalogAttributeValue" url="/setup/lookup/list" />-->
+	<!--<mx:HTTPService id="CatalogOrderStatus" url="/setup/lookup/list" />-->
+	<!--<mx:HTTPService id="CrmAccount" url="/setup/lookup/list" />-->
+	<!--<mx:HTTPService id="CrmContact" url="/setup/lookup/list" />-->
+	<!--<mx:HTTPService id="CrmAccountCategory" url="/setup/lookup/list" />-->
+	<!--<mx:HTTPService id="CrmTask" url="/setup/lookup/list" />-->
+	<!--<mx:HTTPService id="CrmOpportunity" url="/setup/lookup/list" />-->
+	<!--<mx:HTTPService id="Shipping" url="/setup/lookup/list" />-->
+	<!--<mx:HTTPService id="CustomerShipping" url="/setup/lookup/list" />-->
+	
+	
+	
+</rds:ServiceLocator>

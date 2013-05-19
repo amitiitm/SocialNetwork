@@ -1,0 +1,1 @@
+DidRateCenterLocation.connection.execute("TRUNCATE `did_rate_center_locations`")

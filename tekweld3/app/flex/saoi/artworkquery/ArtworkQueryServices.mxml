@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rds:CommonServices xmlns:rds="business.*" xmlns:mx="http://www.adobe.com/2006/mxml">
+
+	<mx:HTTPService id="saveRecord" url="/sale/query/create_queries" />
+	<mx:HTTPService id="getRecord" url="/sale/query/show_query"/>
+	<mx:HTTPService id="getList" url="/sale/query/list_artwork_query_inbox" />
+	<mx:HTTPService id="printRecord" url="/sale/sales_report/render_sales_order_format" />
+	
+	<mx:HTTPService id="getListFormat" url="saoi/artworkquery/xmls/ArtworkQueryListStru.xml" />
+	<mx:HTTPService id="getViewFormat" url="saoi/artworkquery/xmls/ArtworkQueryCriteriaStru.xml" />
+</rds:CommonServices>

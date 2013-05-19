@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:DataGrid xmlns:mx="http://www.adobe.com/2006/mxml"
+	width="100%" 
+	height="100%"
+	doubleClickEnabled="true"
+	horizontalScrollPolicy="on"
+ 	itemClick="itemClickHandler(event)"
+  	itemDoubleClick="itemDoubleClickEventHandler(event)"
+ 	itemEditBegin="editBeginHandler(event)"
+ 	itemFocusOut="itemFocusOutHandler(event)"
+ 	rowHeight="24">
+	<mx:Metadata>
+		 [Event(name="itemClickGenGridEvent", type="com.generic.events.GenDataGridEvent")]
+	  	 [Event(name="itemDoubleClickGenGridEvent", type="com.generic.events.GenDataGridEvent")]
+	  	 [Event(name="structureCompleteEvent", type="com.generic.events.GenDataGridEvent")]
+	</mx:Metadata> 
+	
+ 	<mx:Script source="../scripts/GenDataGridScript.as"/>
+</mx:DataGrid>

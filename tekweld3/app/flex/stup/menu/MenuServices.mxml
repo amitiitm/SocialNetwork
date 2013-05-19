@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rds:CommonServices xmlns:rds="business.*" xmlns:mx="http://www.adobe.com/2006/mxml">
+
+	<mx:HTTPService id="getListFormat" url="stup/menu/xmls/MenuListStru.xml" />
+	<mx:HTTPService id="getViewFormat" url="stup/menu/xmls/MenuCriteriaStru.xml" />
+	<mx:HTTPService id="getList" url="/setup/menu/list_menus"/>
+	<mx:HTTPService id="saveRecord" url="/setup/menu/create_menus"/>
+	<mx:HTTPService id="getRecord" url="/setup/menu/show_menu"/>	
+
+</rds:CommonServices>	

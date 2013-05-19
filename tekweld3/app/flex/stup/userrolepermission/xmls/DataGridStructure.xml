@@ -1,0 +1,8 @@
+<columns>
+	 <column data='user_id'		label='User_id'		editable='false' 	visible='true' width='200' textAlign='left'	
+			dataType='N' 		sortDataType='N' 	booleanFlag='false'	componentType="Text"	columnPrecision="0"	/>
+	
+ 	<column data='role_id' 		label='Role_id' 	editable='false' 	visible='true' width='100' textAlign='left' 	
+				dataType='N'  	sortDataType='N'	booleanFlag='false' componentType="Text"	columnPrecision="0"/>
+
+</columns> 

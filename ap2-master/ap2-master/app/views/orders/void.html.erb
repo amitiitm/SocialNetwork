@@ -1,0 +1,47 @@
+<%= page_title :title => "Void Transaction" %>
+<% box :type => "box_title", :title => "Find Transaction", :style => "width:600px" do %>
+<br>
+	<form class="forms">
+		<ul>
+			<li class="horizental">
+				<label class="desc">Customer Name</label>
+				<input type="text" id="locator" class="field text" size="20">
+			</li>
+			<li class="horizental">
+				<label class="desc">Transaction Date</label>
+				<input type="text" id="date" name="transaction[date]"class="field text" size="20">
+			</li>
+			<li class="horizental">
+				<%= button_function("find-transactions", "Find Transactions", "find_transactions()") %>
+			</li>
+			<li></li>
+		</ul>
+		<input type="hidden" id="account_id" value ="" name="transaction[account_id]" class="field text" size="50">		
+	</form>	
+	<div class="clear"></div>
+	<div id="transactions"></div>
+<% end %>
+
+<%= javascript_include_tag "/js/autocomplete.js" %>
+<%= stylesheet_link_tag "/css/autocomplete.css" %>
+<script>
+	function find_transactions(){
+		var params = $(".forms").serialize();
+		$.get("/orders/get_transactions", params, function(resp){
+			$("#transactions").html(resp);
+		});
+	}
+	
+	$(function(){
+		$("#date").datepicker();
+		
+		$("#locator").autocomplete("/service/account_finder", {selectFirst: false, formatItem: function(item) {
+			data = JSON.parse(item[0]);
+			return data.options;
+		}}).result(function(event, baghali){
+			data = JSON.parse(baghali[0]);
+			$("#locator").val(data.text);
+			$("#account_id").val(data.account_id);
+		});
+	});
+</script>

@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:TitleWindow xmlns:fx="http://ns.adobe.com/mxml/2009" 
+		 xmlns:s="library://ns.adobe.com/flex/spark" 
+		 xmlns:mx="library://ns.adobe.com/flex/mx" width="500" height="314" xmlns:customcomponents="com.generic.customcomponents.*"
+		 title="Multi Options" showCloseButton="true" close="closeHandler()" defaultButton="{btnOk}" creationComplete="titlewindow1_creationCompleteHandler(event)">
+	<fx:Declarations>
+		<!-- Place non-visual elements (e.g., services, value objects) here -->
+	</fx:Declarations>
+	<fx:Script>
+		<![CDATA[
+			import com.adobe.cairngorm.business.ServiceLocator;
+			import com.generic.components.Inbox;
+			import com.generic.customcomponents.GenTextInput;
+			import com.generic.events.GenDataGridEvent;
+			import com.generic.events.GenTextInputEvent;
+			import com.generic.events.InboxEvent;
+			import com.generic.events.NewGenDataGridEvent;
+			import com.generic.genclass.URL;
+			
+			import model.GenModelLocator;
+			
+			import mx.controls.Alert;
+			import mx.controls.ComboBox;
+			import mx.controls.Label;
+			import mx.core.Application;
+			import mx.events.DataGridEvent;
+			import mx.events.FlexEvent;
+			import mx.managers.CursorManager;
+			import mx.managers.PopUpManager;
+			import mx.rpc.AsyncToken;
+			import mx.rpc.IResponder;
+			import mx.rpc.events.FaultEvent;
+			import mx.rpc.events.ResultEvent;
+			import mx.rpc.http.HTTPService;
+			
+			import saoi.muduleclasses.event.MissingInfoEvent;
+			import saoi.salesorder.SalesOrderModelLocator;
+			
+			private var __genModel:GenModelLocator 			= GenModelLocator.getInstance();
+			private var __service:ServiceLocator 			= __genModel.services;
+			public  var inbox:Inbox;
+			
+			protected function titlewindow1_creationCompleteHandler(event:FlexEvent):void
+			{
+				this.parentApplication.focusManager.deactivate();
+				var optionsXml:XML							= getMultioptionsXml(inbox);
+				drawMultiOptions(optionsXml.copy());
+			}
+			
+			private function closeHandler():void
+			{
+				PopUpManager.removePopUp(this);
+			}
+			private function updateRemarks():void
+			{
+				var result:String		= getSaveValue();
+				if(isMultiOptionsQtyValid(inbox.selectedRows.children()[0].ship_qty.toString(),result)==0)
+				{
+					
+				}
+				else
+				{
+					result	= '';
+					Alert.show("Ship Qty Mis-Match");
+				}
+				inbox.selectedRows.children()[0].multi_description = result;
+				inbox.reset();
+				closeHandler();
+				
+			}
+			private function isMultiOptionsQtyValid(main_item_qty:String,multiDescriptions:String):int
+			{
+				if(multiDescriptions==null || multiDescriptions=='' || main_item_qty=='' || main_item_qty==null)
+				{
+					return 0;
+				}
+				var item_qty:Number 	   = Number(main_item_qty);
+				var total_multi_qty:Number = Number(0);
+				
+				var returnValue:int = 0;
+				var params:Array = multiDescriptions.split(";");
+				
+				for (var i:int=0;i<params.length-1;i++)
+				{
+					var paramElement:String  	= params[i].toString();
+					var colonIndex:int			= paramElement.indexOf("=");
+					var code:String 			= paramElement.substr(0,colonIndex);
+					var code_value:String 		= paramElement.substr(colonIndex+1,paramElement.length);
+					total_multi_qty  			= total_multi_qty + Number(code_value);
+				}
+				if(item_qty==total_multi_qty)
+				{
+					returnValue  = 0;
+				}
+				else if(total_multi_qty>item_qty)
+				{
+					returnValue  = 1;  
+				}
+				else
+				{
+					returnValue	 = -1;
+				}
+				
+				return returnValue;
+			}
+			private function getSaveValue():String
+			{
+				var __saveOption:String 				= new String();
+				for(var i:int=0;i<vbMultiOptions.getChildren().length;i++)
+				{
+					
+					var hbox:HBox 						= HBox(vbMultiOptions.getChildByName('hb'+i));
+					var inputValue:GenTextInput  		= GenTextInput(hbox.getChildAt(2));
+					if(Number(inputValue.dataValue)>0)
+					{
+						__saveOption = __saveOption.concat(Label(hbox.getChildAt(0)).text+"=");
+						__saveOption = __saveOption.concat(inputValue.dataValue,';');
+					}
+				}
+				return __saveOption;
+			}
+			private function inputChnageHandler(event:Event):void
+			{
+				
+			}
+			public function getMultioptionsXml(inbox:Inbox):XML
+			{
+				var multiDescriptions:String			= inbox.selectedRows.children()[0].order_multi_description.toString();
+				var params:Array = multiDescriptions.split(";");
+				var tempXml:XML  						= new XML(<rows></rows>);
+				var xmlChild:XMLList					= new XMLList(<row></row>);
+				
+				for (var i:int=0;i<params.length-1;i++)
+				{
+					var paramElement:String  	= params[i].toString();
+					var colonIndex:int			= paramElement.indexOf("=");
+					var code:String 			= paramElement.substr(0,colonIndex);
+					var code_value:String 		= paramElement.substr(colonIndex+1,paramElement.length);
+					xmlChild.code				= code;
+					xmlChild.value				= code_value;
+					tempXml.appendChild(xmlChild.copy());
+				}
+				return tempXml.copy();
+			}
+			private function drawMultiOptions(xml:XML):void
+			{
+				var startTabIndex:int   = 10000;
+				
+				for(var i:int=0;i<xml.children().length();i++)
+				{
+					var hbox:HBox = new HBox();
+					hbox.percentWidth	  	= 100;
+					hbox.height 		 	= 22;
+					hbox.name         		= 'hb'+i;	
+					hbox.setStyle('verticalAlign','middle');
+					
+					// multioptionsValue
+					var lblAttributeName:Label						= new Label();
+					lblAttributeName.text 							= xml.children()[i].code;
+					lblAttributeName.width							= 150;
+					lblAttributeName.tabEnabled						= false;
+					lblAttributeName.setStyle('textAlign','right');
+					lblAttributeName.setStyle('borderStyle','none');
+					
+					
+					// multioptionsOrderValue
+					var tiOrderValue:GenTextInput					= new GenTextInput();
+					tiOrderValue.id									= i.toString()
+					tiOrderValue.enabled							= false;
+					tiOrderValue.width								= 100;
+					tiOrderValue.dataType							= 'N';
+					tiOrderValue.dataValue							= xml.children()[i].value;
+					tiOrderValue.tabEnabled							= false;
+					tiOrderValue.tabIndex							= (startTabIndex+1);
+					
+					
+					//// for input
+					var tiRemarksValue:GenTextInput					= new GenTextInput();
+					tiRemarksValue.id								= i.toString()
+					tiRemarksValue.width							= 100;
+					tiRemarksValue.dataType							= 'N';
+					tiRemarksValue.dataValue						= '0';
+					tiRemarksValue.tabEnabled						= true;
+					tiRemarksValue.enabled							= !__genModel.activeModelLocator.addEditObj.isRecordViewOnly;
+					tiRemarksValue.tabIndex							= (startTabIndex+1);
+					tiRemarksValue.addEventListener(GenTextInputEvent.ITEMCHANGED_EVENT,inputChnageHandler);
+					
+					hbox.addChildAt(lblAttributeName,0);
+					hbox.addChildAt(tiOrderValue,1);
+					hbox.addChildAt(tiRemarksValue,2);
+					
+					vbMultiOptions.addChildAt(hbox,i);
+					startTabIndex   = startTabIndex +1;
+				}
+				var multiDescriptions:String			= inbox.selectedRows.children()[0].multi_description.toString();
+				if(multiDescriptions!='')
+				{
+					setShippingOptionsValue();
+				}
+				
+			}
+			private function setShippingOptionsValue():void
+			{
+				var tempXml:XML		= getShippingOptionsValueXml();
+				for(var i:int =0 ;i<vbMultiOptions.getChildren().length;i++)
+				{
+					var hbox:HBox 								= HBox(vbMultiOptions.getChildByName('hb'+i));
+					var codeValue:String						= Label(hbox.getChildAt(0)).text;
+					GenTextInput(hbox.getChildAt(2)).dataValue	=  tempXml.children().(code==codeValue).toString();
+				}
+			}
+			private function getShippingOptionsValueXml():XML
+			{
+				var multiDescriptions:String			= inbox.selectedRows.children()[0].multi_description.toString();
+				var params:Array = multiDescriptions.split(";");
+				var tempXml:XML  						= new XML(<rows></rows>);
+				var xmlChild:XMLList					= new XMLList(<row></row>);
+				
+				for (var i:int=0;i<params.length-1;i++)
+				{
+					var paramElement:String  	= params[i].toString();
+					var colonIndex:int			= paramElement.indexOf("=");
+					var code:String 			= paramElement.substr(0,colonIndex);
+					var code_value:String 		= paramElement.substr(colonIndex+1,paramElement.length);
+					xmlChild.code				= code;
+					xmlChild.value				= code_value;
+					tempXml.appendChild(xmlChild.copy());
+				}
+				return tempXml.copy();
+			}
+			
+		]]>
+	</fx:Script>
+	<mx:HBox width="100%" height="25" verticalAlign="middle">
+		<mx:Label text="Option" width="150" textAlign="right"/>
+		<mx:Label text="Order Qty" width="100"/>
+		<mx:Label text="Ship Qty" width="100"/>
+	</mx:HBox>
+	<mx:VBox id="vbMultiOptions" verticalGap="3" width="100%" height="200"/>
+	<mx:HBox width="100%" height="38" verticalAlign="middle" horizontalGap="5" horizontalAlign="center"  verticalGap="0">
+		<mx:Button id="btnOk" label="Save" click="updateRemarks()"/>
+		<mx:Button label="Cancel" click="closeHandler()"/>
+	</mx:HBox>
+</mx:TitleWindow>

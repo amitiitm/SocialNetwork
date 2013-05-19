@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rds:CommonServices xmlns:rds="business.*" xmlns:mx="http://www.adobe.com/2006/mxml">
+
+	<mx:HTTPService id="saveRecord" url=""/>
+	<mx:HTTPService id="getList" url="/artwork/artwork/list_noresponse_paperproof_records"/> 
+	<mx:HTTPService id="getViewFormat" url="saoi/invalidcustomeremailorder/xmls/InvalidCustomerEmailCriteriaStru.xml"/>
+	<mx:HTTPService id="getListFormat" url="saoi/invalidcustomeremailorder/xmls/InvalidCustomerEmailListStru.xml"/>
+	<mx:HTTPService id="printRecord" url=""/>
+
+</rds:CommonServices>

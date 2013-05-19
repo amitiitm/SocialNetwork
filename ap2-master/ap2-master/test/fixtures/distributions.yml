@@ -1,0 +1,15 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  distributor_id: 1
+  cards_start: 1
+  cards_end: 1
+  value: 1
+  activation_date: 2010-07-27 17:33:33
+
+two:
+  distributor_id: 1
+  cards_start: 1
+  cards_end: 1
+  value: 1
+  activation_date: 2010-07-27 17:33:33

@@ -1,0 +1,32 @@
+<%= page_title :title => "Notification Templates" %>
+
+<% table :width => "500px" do |t| %>
+	<% t.th "#" %>
+	<% t.th "Category" %>
+	<% t.th "Name" %>
+	<% t.th "Actions" %>
+	
+	<% counter = 0 %>
+	<% for template in @templates %>
+		<% t.td (counter += 1) %>
+		<% t.td template.category.name %>
+		<% t.td template.name %>
+		<% t.td action_links(
+			link_to("Edit", edit_notification_template_path(template)),
+			link_to("Preview", "/notification_templates/preview/#{template.id}?original=yes", :class => "fn", :function => "preview(this)"),
+			link_to("Archive"),
+			link_to("Delete", notification_template_path(template), :class => "ajax-delete")
+		) %>
+		
+		<% t.new_row %>
+	<% end %>	
+<% end %>
+<br>
+<%= button("new-template", "New Template", :class => "link", :url => new_notification_template_path) %>
+
+<script type="text/javascript" charset="utf-8">
+	function preview(el){
+		var path = $(el).attr("href");
+		window.open(path,"Window1","menubar=no,width=790,height=900,toolbar=no");
+	}
+</script>

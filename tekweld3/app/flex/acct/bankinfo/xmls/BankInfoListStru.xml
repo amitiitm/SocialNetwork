@@ -1,0 +1,9 @@
+<columns lockedColumnCount='0'>
+
+	<column data='code' 			label='Bank #' 			editable='false' 		visible='true' 		width='80' 			textAlign='left'
+			print_width = '20'		forLevel='false' 		defaultForLevel='' 		booleanFlag='false'	sortDataType='S'	columnPrecision="NaN"/>
+						
+	<column data='current_balance' 	label='Balance' 		editable='false' 		visible='true' 		width='52' 			textAlign='right' 
+			print_width = '18'		forLevel='false' 		defaultForLevel='' 		booleanFlag='false'	sortDataType='N'	columnPrecision="2"/>
+						
+</columns>

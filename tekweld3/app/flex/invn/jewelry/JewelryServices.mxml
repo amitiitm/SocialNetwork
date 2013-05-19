@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rds:CommonServices xmlns:rds="business.*" xmlns:mx="http://www.adobe.com/2006/mxml">
+
+	<mx:HTTPService id="saveRecord" url="/inventory/item/create_catalog_items"/>
+	<mx:HTTPService id="getRecord" url="/inventory/item/show_catalog_item"/>
+	<mx:HTTPService id="getList" url="/inventory/item/list_catalog_items"/>
+	<mx:HTTPService id="getListFormat" url="invn/jewelry/xmls/JewelryListStru.xml"/>
+	<mx:HTTPService id="getViewFormat" url="invn/jewelry/xmls/JewelryCriteriaStru.xml"/>
+
+	<mx:HTTPService id="priceDetailFormat" url="invn/jewelry/xmls/JewelryPriceDetailStru.xml"/>
+	
+	<mx:HTTPService id="custParameterFormat" url="invn/jewelry/xmls/JewelryCustomerDetailStru.xml"/>
+	<mx:HTTPService id="vendParameterFormat" url="invn/jewelry/xmls/JewelryVendorDetailStru.xml"/>
+	
+	<mx:HTTPService id="laborDetailFormat" url="invn/jewelry/xmls/JewelryLaborsDetailStru.xml"/>
+	<mx:HTTPService id="castingDetailFormat" url="invn/jewelry/xmls/JewelryCastingDetailStru.xml"/>
+	<mx:HTTPService id="findingDetailFormat" url="invn/jewelry/xmls/JewelryFindingDetailStru.xml"/>
+	<mx:HTTPService id="diamondDetailFormat" url="invn/jewelry/xmls/JewelryDiamondsDetailStru.xml"/>
+	<mx:HTTPService id="stoneDetailFormat" url="invn/jewelry/xmls/JewelryStonesDetailStru.xml"/>
+	
+	<mx:HTTPService id="assembleDetailFormat" url="invn/jewelry/xmls/JewelryAssembleDetailStru.xml"/>
+	<mx:HTTPService id="otherImgesDetailFormat" url="invn/jewelry/xmls/JewelryOtherImagesDetailStru.xml"/>
+	<mx:HTTPService id="similarItemDetailFormat" url="invn/jewelry/xmls/SimilarJewelryDetailStru.xml"/>
+	<mx:HTTPService id="valueDetailFormat" url="invn/jewelry/xmls/JewelryValueDetailStru.xml"/>
+	<mx:HTTPService id="attributeDetailFormat" url="invn/jewelry/xmls/JewelryAttributeDetailStru.xml"/>
+	<mx:HTTPService id="attributeList" url="" />
+	<mx:HTTPService id="imageUploadUrl" url="/inventory/item/upload_image"/>
+	<mx:HTTPService id="printRecord" url="/inventory/inventory_report/render_jewelry_format"/>
+
+</rds:CommonServices>

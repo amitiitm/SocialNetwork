@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<gencomponents:DetailAddEdit xmlns:mx="http://www.adobe.com/2006/mxml"
+	width="450" height="135" verticalGap="0"
+	xmlns:customcomponents="com.generic.customcomponents.*"
+	xmlns:gencomponents="com.generic.components.*">
+
+    <mx:Script source="../scripts/StoreDetailScript.as"/>
+
+	<mx:VBox height="100%" width="100%">
+		<mx:HBox>
+			<mx:Label text="User #" width="95" textAlign="right"/>
+			<customcomponents:GenTextInputWithHelp
+				lookupFormatUrl	=	"userLookupHelpFormat"
+				id="dcUser_id" 
+				width="115" 
+				toolTip="Performed User #" 
+				dataSourceName="User"
+				height="20" 
+				tabIndex="1"
+				validationFlag="true" 
+				xmlTag="user_id"
+				labelTag="user_cd"
+				dataField="id" 
+				labelField= "user_cd"
+				updatableFlag="true" 
+				tableName="user_company"
+				itemChangedEvent="handleUser_id();tiUser_cd.dataValue	=	dcUser_id.labelValue"
+				/>
+			
+			<!--<customcomponents:GenDynamicComboBoxWithHelp id="dcUser_id" width="115" height="20" itemChangedEvent="handleUser_id()"
+				tabIndex="1" toolTip="User #" dataField="id" 
+				dataSourceName="User" dataProvider="{__genModel.lookupObj.user.children()}" labelField="code" 
+				validationFlag="true" xmlTag="user_id" updatableFlag="true" tableName="user_company" />-->
+		</mx:HBox>
+		
+		<mx:HBox>
+			<mx:Label text="User Name" width="95" textAlign="right"/>
+			<customcomponents:GenTextInput id="tiUser_name" width="190" height="20" visible="true"
+				editable="true" xmlTag="user_name" updatableFlag="true" defaultValue="" enabled="false"
+				tableName="user_company" validationFlag="false"  />
+		</mx:HBox>
+	
+		<customcomponents:GenTextInput id="tiSerial_no" toolTip="Serial #" restrict="1234567890" visible="false" width="0" height="0"
+			validationFlag="false" xmlTag="serial_no" updatableFlag="false" tableName="user_company"/>
+
+		<mx:Label text="User Code" width="0" height="0" visible="false" textAlign="right"/>
+		<customcomponents:GenTextInput id="tiUser_cd" width="0" height="0" visible="false"
+			editable="true" xmlTag="user_cd" updatableFlag="true" defaultValue=""  
+			tableName="user_company" toolTip="User Code"  validationFlag="false"/>
+	</mx:VBox>
+</gencomponents:DetailAddEdit>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rds:CommonServices xmlns:rds="business.*" xmlns:mx="http://www.adobe.com/2006/mxml">
+
+	<mx:HTTPService id="getListFormat" url="stup/document/xmls/DocumentListStru.xml" />
+	<mx:HTTPService id="getViewFormat" url="stup/document/xmls/DocumentCriteriaStru.xml" />
+	<mx:HTTPService id="getList" url="/setup/document/list_documents"/>
+	<mx:HTTPService id="saveRecord" url="/setup/document/create_documents"/>
+	<mx:HTTPService id="getRecord" url="/setup/document/show_document"/>	
+
+</rds:CommonServices>	

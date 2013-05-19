@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:WindowedApplication 	
+	xmlns:mx="http://www.adobe.com/2006/mxml"
+	xmlns:components="com.generic.components.*"
+	layout="vertical"
+	horizontalAlign="center"
+	verticalAlign="top"
+	paddingLeft="0"
+	paddingRight="0"
+	paddingTop="0"
+	paddingBottom="0"
+	width="100%"
+	height="100%"
+	applicationComplete="setMainUrl();maximize();"
+	historyManagementEnabled="false" showStatusBar="false">
+	
+	<mx:Script>
+		<![CDATA[
+			import air.update.ApplicationUpdaterUI;
+			import air.update.events.UpdateEvent;
+			
+			import business.ApplicationController;
+			import business.ApplicationServices;
+			import business.events.InitializeApplicationEvent;
+			import business.events.InitializeLookupEvent;
+			
+			import com.adobe.cairngorm.business.ServiceLocator;
+			import com.generic.components.LoginBox;
+			import com.generic.customcomponents.GenModuleLoader;
+			import com.generic.events.GenModuleLoaderEvent;
+			import com.generic.events.LoginEvent;
+			import com.generic.genclass.URL;
+			
+			import model.GenModelLocator;
+			
+			import mx.controls.Alert;
+			import mx.rpc.AsyncToken;
+			import mx.rpc.IResponder;
+			import mx.rpc.events.FaultEvent;
+			import mx.rpc.events.ResultEvent;
+			import mx.rpc.http.HTTPService;
+			
+			[Bindable]
+			private var __genModel:GenModelLocator = GenModelLocator.getInstance();
+			
+			
+			
+			// Instantiate the updater
+			private var appUpdater:ApplicationUpdaterUI = new ApplicationUpdaterUI();
+			
+			private var __responderMainUrl:IResponder;
+			private var updateUrl:String = '';
+			private function checkForUpdate():void 
+			{
+				loginBox.tiPassword.enabled	=	false;
+				ifUpdateAvailableThanDisableApplication();
+				
+				// The code below is a hack to work around a bug in the framework so that CMD-Q still works on MacOS
+				// This is a temporary fix until the framework is updated
+				// See http://www.adobe.com/cfusion/webforums/forum/messageview.cfm?forumid=72&catid=670&threadid=1373568
+				NativeApplication.nativeApplication.addEventListener( Event.EXITING, 
+					function(e:Event):void {
+						var opened:Array = NativeApplication.nativeApplication.openedWindows;
+						for (var i:int = 0; i < opened.length; i ++) {
+							opened[i].close();
+						}
+					});    
+				
+				// Configuration stuff - see update framework docs for more details
+				appUpdater.updateURL = updateUrl; // Server-side XML file describing update
+				appUpdater.isCheckForUpdateVisible 	=	false; // We won't ask permission to check for an update
+				appUpdater.isDownloadUpdateVisible	=	false;// we are forcing update on client machine
+				appUpdater.isInstallUpdateVisible	=	false;// we are forcing update on clienr machine
+				appUpdater.addEventListener(UpdateEvent.INITIALIZED, onUpdate); // Once initialized, run onUpdate
+				appUpdater.addEventListener(ErrorEvent.ERROR, onError); // If something goes wrong, run onError
+				appUpdater.initialize(); // Initialize the update framework
+			}
+			
+			// we have to disable login box if update is available , if he completes update than it will enable.
+			var currentVersion:String;
+			var latestVersion:String;
+			private function ifUpdateAvailableThanDisableApplication():void
+			{
+				var descriptor:XML 			=		NativeApplication.nativeApplication.applicationDescriptor;
+				var air:Namespace 			= 		descriptor.namespaceDeclarations()[0];
+				currentVersion				= 		descriptor.air::versionNumber
+				
+				var loader:URLLoader = new URLLoader();
+				loader.addEventListener(Event.COMPLETE, getUpdateXMLCompleteHandler);
+				loader.load(new URLRequest(updateUrl));
+			}
+			private function getUpdateXMLCompleteHandler(event:Event):void
+			{
+				var loader:URLLoader 		= 		event.target as URLLoader;
+				var updateXML:XML			=		XML(loader.data)
+				
+				var air:Namespace 			= 		updateXML.namespaceDeclarations()[0];
+				latestVersion				= 		updateXML.air::versionNumber
+				
+				GenModelLocator.currentVersion  = 'Current Version : PROMOGEEK '+latestVersion;
+					
+				if(currentVersion.toString()	==	latestVersion.toString())
+				{
+					loginBox.tiPassword.enabled	=	true;
+					loginBox.lblWait.text		=	"";
+					///loginBox.enabled	=	true;
+				}
+				else
+				{
+					//loginBox.enabled	=	false;
+				}
+				
+			}
+			private function onError(event:ErrorEvent):void {
+				Alert.show(event.toString());
+			}
+			
+			private function onUpdate(event:UpdateEvent):void {
+				appUpdater.checkNow(); // Go check for an update now
+			}
+			
+			private function initEntry():void
+			{
+				stage.addEventListener(KeyboardEvent.KEY_DOWN, keyDownEventHandler);
+				
+				__genModel.controller		= 	new ApplicationController();
+				__genModel.services			=	new ApplicationServices();
+				mainStack.selectedChild 	= loginBox;
+				
+				if(loginBox.tiLogin.text=='')
+				{
+					loginBox.tiLogin.setFocus();
+				}
+				else
+				{
+					loginBox.tiPassword.setFocus();
+				}
+			}
+			
+			private function handleNewLogin(event:LoginEvent):void 
+			{
+				mainStack.selectedChild = loginBox;
+				loginBox.tiPassword.setFocus();
+			} 
+			
+			private function handleLogin(event:LoginEvent):void 
+			{ 
+				mainStack.selectedChild = home;
+				
+				var initializeApplicationEvent:InitializeApplicationEvent = new InitializeApplicationEvent();
+				initializeApplicationEvent.dispatch();
+				
+				var initializeLookupEvent:InitializeLookupEvent = new InitializeLookupEvent();
+				initializeLookupEvent.dispatch();
+			}
+			protected function formatService(service:HTTPService):HTTPService
+			{
+				service.resultFormat = "e4x";
+				service.method = "POST";
+				service.useProxy = false;
+				
+				return service;
+			}
+			private function setMainUrl():void
+			{
+				loginBox.tiPassword.enabled	=	false;
+				var httpMainUrlService:HTTPService = new ApplicationServices().getHTTPService('getAppConfig');
+				formatService(httpMainUrlService);
+				__responderMainUrl = new mx.rpc.Responder(mainUrlResultHandler,mainUrlFaultHandler);
+				var token:AsyncToken = httpMainUrlService.send();
+				token.addResponder(__responderMainUrl);
+			}
+			private function mainUrlResultHandler(event:ResultEvent):void
+			{
+				var xmlAppConfig:XML        	= 	XML(event.result);
+				GenModelLocator.main_url		= 	xmlAppConfig.main_url.toString();
+				updateUrl						= 	xmlAppConfig.update_url.toString();
+				initEntry();
+				checkForUpdate();
+			}
+			private function mainUrlFaultHandler(event:FaultEvent):void
+			{
+				Alert.show("AppConfig File Not Found"+event.fault.faultDetail+event.fault.faultString+event.fault.faultCode);
+			}
+			
+			private function keyDownEventHandler(event:KeyboardEvent):void
+			{
+				if(mainStack.selectedChild == home)
+				{
+					if(event.ctrlKey)
+					{
+						if(__genModel.tabMain.getChildren().length > 1) //1 for home child
+						{
+							GenModuleLoader(__genModel.tabMain.selectedChild).dispatchEvent(new GenModuleLoaderEvent(GenModuleLoaderEvent.SHORTCUTKEY_EVENT,event))	
+						}
+					}	
+				}
+			}
+		]]>
+	</mx:Script>
+	
+	<mx:Style source="style.css"/>
+	
+	<mx:ViewStack id="mainStack" width="100%" height="100%"> 
+		
+		<components:LoginBox id="loginBox" login="handleLogin(event)" />
+		<components:Home id="home" 
+						 lsUser="User: {__genModel.user.first_name} {__genModel.user.last_name }"
+						 lsCompany="Company: {__genModel.user.company_name}"
+						 lsType_name="{__genModel.user.login_type_desc}"
+						 selectedModule="{__genModel.applicationObject.selectedModule}" 
+						 xmlModule="{__genModel.applicationObject.module}"
+						 xmlFilteredMenu="{__genModel.applicationObject.filteredMenu}" />
+	</mx:ViewStack>
+</mx:WindowedApplication>

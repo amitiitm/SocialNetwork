@@ -1,0 +1,769 @@
+--- 
+TERMS_016: 
+  pay3_days: 0
+  name: NET 90 DAYS
+  pay4_date: 
+  pay6_days: 0
+  pay2_days: 0
+  pay2_per: "0.00"
+  updated_at: 
+  pay6_date: 
+  pay3_date: 
+  pay5_days: 0
+  pay3_per: "0.00"
+  pay1_days: 90
+  update_flag: Y
+  code: "90"
+  pay2_date: 
+  trans_flag: A
+  created_by: 
+  pay5_date: 
+  pay1_date: 1900-01-01 00:00:00
+  pay5_per: "0.00"
+  lock_version: 0
+  pay6_per: "0.00"
+  disc_days: 0
+  updated_by: 
+  id: 17
+  pay1_per: "100.00"
+  company_id: 1
+  disc_per: "0.00"
+  pay4_days: 0
+  pay4_per: "0.00"
+  created_at: 
+TERMS_005: 
+  pay3_days: 0
+  name: NET 150 DAYS
+  pay4_date: 
+  pay6_days: 0
+  pay2_days: 0
+  pay2_per: "0.00"
+  updated_at: 
+  pay6_date: 
+  pay3_date: 
+  pay5_days: 0
+  pay3_per: "0.00"
+  pay1_days: 150
+  update_flag: Y
+  code: "150"
+  pay2_date: 
+  trans_flag: A
+  created_by: 
+  pay5_date: 
+  pay1_date: 1900-01-01 00:00:00
+  pay5_per: "0.00"
+  lock_version: 0
+  pay6_per: "0.00"
+  disc_days: 0
+  updated_by: 
+  id: 6
+  pay1_per: "100.00"
+  company_id: 1
+  disc_per: "0.00"
+  pay4_days: 0
+  pay4_per: "0.00"
+  created_at: 
+TERMS_017: 
+  pay3_days: 0
+  name: AS HAD
+  pay4_date: 
+  pay6_days: 0
+  pay2_days: 0
+  pay2_per: "0.00"
+  updated_at: 
+  pay6_date: 
+  pay3_date: 
+  pay5_days: 0
+  pay3_per: "0.00"
+  pay1_days: 0
+  update_flag: Y
+  code: AS HAD
+  pay2_date: 
+  trans_flag: A
+  created_by: 
+  pay5_date: 
+  pay1_date: 
+  pay5_per: "0.00"
+  lock_version: 0
+  pay6_per: "0.00"
+  disc_days: 0
+  updated_by: 
+  id: 18
+  pay1_per: "100.00"
+  company_id: 1
+  disc_per: "0.00"
+  pay4_days: 0
+  pay4_per: "0.00"
+  created_at: 
+TERMS_006: 
+  pay3_days: 0
+  name: NET 18 DAYS
+  pay4_date: 
+  pay6_days: 0
+  pay2_days: 0
+  pay2_per: "0.00"
+  updated_at: 
+  pay6_date: 
+  pay3_date: 
+  pay5_days: 0
+  pay3_per: "0.00"
+  pay1_days: 18
+  update_flag: Y
+  code: "18"
+  pay2_date: 
+  trans_flag: A
+  created_by: 
+  pay5_date: 
+  pay1_date: 1900-01-01 00:00:00
+  pay5_per: "0.00"
+  lock_version: 0
+  pay6_per: "0.00"
+  disc_days: 0
+  updated_by: 
+  id: 7
+  pay1_per: "100.00"
+  company_id: 1
+  disc_per: "0.00"
+  pay4_days: 0
+  pay4_per: "0.00"
+  created_at: 
+TERMS_018: 
+  pay3_days: 0
+  name: Credit Card
+  pay4_date: 
+  pay6_days: 0
+  pay2_days: 0
+  pay2_per: "0.00"
+  updated_at: 
+  pay6_date: 
+  pay3_date: 
+  pay5_days: 0
+  pay3_per: "0.00"
+  pay1_days: 1
+  update_flag: Y
+  code: CC
+  pay2_date: 
+  trans_flag: A
+  created_by: 
+  pay5_date: 
+  pay1_date: 1900-01-01 00:00:00
+  pay5_per: "0.00"
+  lock_version: 0
+  pay6_per: "0.00"
+  disc_days: 0
+  updated_by: 
+  id: 19
+  pay1_per: "100.00"
+  company_id: 1
+  disc_per: "0.00"
+  pay4_days: 0
+  pay4_per: "0.00"
+  created_at: 
+TERMS_007: 
+  pay3_days: 0
+  name: NET 180 DAYS
+  pay4_date: 
+  pay6_days: 0
+  pay2_days: 0
+  pay2_per: "0.00"
+  updated_at: 
+  pay6_date: 
+  pay3_date: 
+  pay5_days: 0
+  pay3_per: "0.00"
+  pay1_days: 180
+  update_flag: Y
+  code: "180"
+  pay2_date: 
+  trans_flag: A
+  created_by: 
+  pay5_date: 
+  pay1_date: 1900-01-01 00:00:00
+  pay5_per: "0.00"
+  lock_version: 0
+  pay6_per: "0.00"
+  disc_days: 0
+  updated_by: 
+  id: 8
+  pay1_per: "100.00"
+  company_id: 1
+  disc_per: "0.00"
+  pay4_days: 0
+  pay4_per: "0.00"
+  created_at: 
+TERMS_020: 
+  pay3_days: 0
+  name: NA
+  pay4_date: 
+  pay6_days: 0
+  pay2_days: 0
+  pay2_per: "0.00"
+  updated_at: 
+  pay6_date: 
+  pay3_date: 
+  pay5_days: 0
+  pay3_per: "0.00"
+  pay1_days: 0
+  update_flag: V
+  code: NA
+  pay2_date: 
+  trans_flag: A
+  created_by: 
+  pay5_date: 
+  pay1_date: 
+  pay5_per: "0.00"
+  lock_version: 0
+  pay6_per: "0.00"
+  disc_days: 0
+  updated_by: 
+  id: 21
+  pay1_per: "100.00"
+  company_id: 1
+  disc_per: "0.00"
+  pay4_days: 0
+  pay4_per: "0.00"
+  created_at: 
+TERMS_019: 
+  pay3_days: 0
+  name: COD (Cash on Delivery)
+  pay4_date: 
+  pay6_days: 0
+  pay2_days: 0
+  pay2_per: "0.00"
+  updated_at: 
+  pay6_date: 
+  pay3_date: 
+  pay5_days: 0
+  pay3_per: "0.00"
+  pay1_days: 1
+  update_flag: Y
+  code: COD
+  pay2_date: 
+  trans_flag: A
+  created_by: 
+  pay5_date: 
+  pay1_date: 1900-01-01 00:00:00
+  pay5_per: "0.00"
+  lock_version: 0
+  pay6_per: "0.00"
+  disc_days: 0
+  updated_by: 
+  id: 20
+  pay1_per: "100.00"
+  company_id: 1
+  disc_per: "0.00"
+  pay4_days: 0
+  pay4_per: "0.00"
+  created_at: 
+TERMS_008: 
+  pay3_days: 0
+  name: NET 30 DAYS
+  pay4_date: 
+  pay6_days: 0
+  pay2_days: 0
+  pay2_per: "0.00"
+  updated_at: 
+  pay6_date: 
+  pay3_date: 
+  pay5_days: 0
+  pay3_per: "0.00"
+  pay1_days: 30
+  update_flag: Y
+  code: "30"
+  pay2_date: 
+  trans_flag: A
+  created_by: 
+  pay5_date: 
+  pay1_date: 1900-01-01 00:00:00
+  pay5_per: "0.00"
+  lock_version: 0
+  pay6_per: "0.00"
+  disc_days: 0
+  updated_by: 
+  id: 9
+  pay1_per: "100.00"
+  company_id: 1
+  disc_per: "0.00"
+  pay4_days: 0
+  pay4_per: "0.00"
+  created_at: 
+TERMS_021: 
+  pay3_days: 0
+  name: net 10 days
+  pay4_date: 
+  pay6_days: 0
+  pay2_days: 0
+  pay2_per: "0.00"
+  updated_at: 
+  pay6_date: 
+  pay3_date: 
+  pay5_days: 0
+  pay3_per: "0.00"
+  pay1_days: 10
+  update_flag: Y
+  code: NET 10
+  pay2_date: 
+  trans_flag: A
+  created_by: 
+  pay5_date: 
+  pay1_date: 1900-01-01 00:00:00
+  pay5_per: "0.00"
+  lock_version: 0
+  pay6_per: "0.00"
+  disc_days: 0
+  updated_by: 
+  id: 22
+  pay1_per: "100.00"
+  company_id: 1
+  disc_per: "0.00"
+  pay4_days: 0
+  pay4_per: "0.00"
+  created_at: 
+TERMS_010: 
+  pay3_days: 0
+  name: NET 5%/30 DAYS
+  pay4_date: 
+  pay6_days: 0
+  pay2_days: 0
+  pay2_per: "0.00"
+  updated_at: 
+  pay6_date: 
+  pay3_date: 
+  pay5_days: 0
+  pay3_per: "0.00"
+  pay1_days: 30
+  update_flag: Y
+  code: 30/5
+  pay2_date: 
+  trans_flag: A
+  created_by: 
+  pay5_date: 
+  pay1_date: 1900-01-01 00:00:00
+  pay5_per: "0.00"
+  lock_version: 0
+  pay6_per: "0.00"
+  disc_days: 30
+  updated_by: 
+  id: 11
+  pay1_per: "100.00"
+  company_id: 1
+  disc_per: "5.00"
+  pay4_days: 0
+  pay4_per: "0.00"
+  created_at: 
+TERMS_009: 
+  pay3_days: 0
+  name: 5% if paid within 30 days
+  pay4_date: 
+  pay6_days: 0
+  pay2_days: 0
+  pay2_per: "0.00"
+  updated_at: 
+  pay6_date: 
+  pay3_date: 
+  pay5_days: 0
+  pay3_per: "0.00"
+  pay1_days: 30
+  update_flag: Y
+  code: 30 / 5
+  pay2_date: 
+  trans_flag: D
+  created_by: 
+  pay5_date: 
+  pay1_date: 1900-01-01 00:00:00
+  pay5_per: "0.00"
+  lock_version: 0
+  pay6_per: "0.00"
+  disc_days: 30
+  updated_by: 
+  id: 10
+  pay1_per: "100.00"
+  company_id: 1
+  disc_per: "5.00"
+  pay4_days: 0
+  pay4_per: "0.00"
+  created_at: 
+TERMS_022: 
+  pay3_days: 0
+  name: open terms
+  pay4_date: 
+  pay6_days: 0
+  pay2_days: 0
+  pay2_per: "0.00"
+  updated_at: 
+  pay6_date: 
+  pay3_date: 
+  pay5_days: 0
+  pay3_per: "0.00"
+  pay1_days: 0
+  update_flag: Y
+  code: OPEN
+  pay2_date: 
+  trans_flag: A
+  created_by: 
+  pay5_date: 
+  pay1_date: 
+  pay5_per: "0.00"
+  lock_version: 0
+  pay6_per: "0.00"
+  disc_days: 0
+  updated_by: 
+  id: 23
+  pay1_per: "100.00"
+  company_id: 1
+  disc_per: "0.00"
+  pay4_days: 0
+  pay4_per: "0.00"
+  created_at: 
+TERMS_011: 
+  pay3_days: 0
+  name: 5% 30 DAYS NET 90
+  pay4_date: 
+  pay6_days: 0
+  pay2_days: 0
+  pay2_per: "0.00"
+  updated_at: 
+  pay6_date: 
+  pay3_date: 
+  pay5_days: 0
+  pay3_per: "0.00"
+  pay1_days: 90
+  update_flag: Y
+  code: 30/5/90
+  pay2_date: 
+  trans_flag: A
+  created_by: 
+  pay5_date: 
+  pay1_date: 1900-01-01 00:00:00
+  pay5_per: "0.00"
+  lock_version: 0
+  pay6_per: "0.00"
+  disc_days: 30
+  updated_by: 
+  id: 12
+  pay1_per: "100.00"
+  company_id: 1
+  disc_per: "5.00"
+  pay4_days: 0
+  pay4_per: "0.00"
+  created_at: 
+TERMS_023: 
+  pay3_days: 0
+  name: PAID
+  pay4_date: 
+  pay6_days: 0
+  pay2_days: 0
+  pay2_per: "0.00"
+  updated_at: 
+  pay6_date: 
+  pay3_date: 
+  pay5_days: 0
+  pay3_per: "0.00"
+  pay1_days: 1
+  update_flag: Y
+  code: PAID
+  pay2_date: 
+  trans_flag: A
+  created_by: 
+  pay5_date: 
+  pay1_date: 1900-01-01 00:00:00
+  pay5_per: "0.00"
+  lock_version: 0
+  pay6_per: "0.00"
+  disc_days: 0
+  updated_by: 
+  id: 24
+  pay1_per: "100.00"
+  company_id: 1
+  disc_per: "0.00"
+  pay4_days: 0
+  pay4_per: "0.00"
+  created_at: 
+TERMS_012: 
+  pay3_days: 0
+  name: NET 45 DAYS
+  pay4_date: 
+  pay6_days: 0
+  pay2_days: 0
+  pay2_per: "0.00"
+  updated_at: 
+  pay6_date: 
+  pay3_date: 
+  pay5_days: 0
+  pay3_per: "0.00"
+  pay1_days: 45
+  update_flag: Y
+  code: "45"
+  pay2_date: 
+  trans_flag: A
+  created_by: 
+  pay5_date: 
+  pay1_date: 1900-01-01 00:00:00
+  pay5_per: "0.00"
+  lock_version: 0
+  pay6_per: "0.00"
+  disc_days: 0
+  updated_by: 
+  id: 13
+  pay1_per: "100.00"
+  company_id: 1
+  disc_per: "0.00"
+  pay4_days: 0
+  pay4_per: "0.00"
+  created_at: 
+TERMS_001: 
+  pay3_days: 0
+  name: COD
+  pay4_date: 
+  pay6_days: 0
+  pay2_days: 0
+  pay2_per: "0.00"
+  updated_at: 
+  pay6_date: 
+  pay3_date: 
+  pay5_days: 0
+  pay3_per: "0.00"
+  pay1_days: 15
+  update_flag: Y
+  code: "10"
+  pay2_date: 
+  trans_flag: D
+  created_by: 
+  pay5_date: 
+  pay1_date: 1900-01-01 00:00:00
+  pay5_per: "0.00"
+  lock_version: 0
+  pay6_per: "0.00"
+  disc_days: 0
+  updated_by: 
+  id: 2
+  pay1_per: "100.00"
+  company_id: 1
+  disc_per: "0.00"
+  pay4_days: 0
+  pay4_per: "0.00"
+  created_at: 
+TERMS_024: 
+  pay3_days: 0
+  name: Net 10% / 90 Days
+  pay4_date: 
+  pay6_days: 0
+  pay2_days: 0
+  pay2_per: "0.00"
+  updated_at: 
+  pay6_date: 
+  pay3_date: 
+  pay5_days: 0
+  pay3_per: "0.00"
+  pay1_days: 90
+  update_flag: Y
+  code: 90/10
+  pay2_date: 
+  trans_flag: A
+  created_by: 
+  pay5_date: 
+  pay1_date: 1900-01-01 00:00:00
+  pay5_per: "0.00"
+  lock_version: 0
+  pay6_per: "0.00"
+  disc_days: 0
+  updated_by: 
+  id: 100
+  pay1_per: "100.00"
+  company_id: 1
+  disc_per: "0.00"
+  pay4_days: 0
+  pay4_per: "0.00"
+  created_at: 
+TERMS_013: 
+  pay3_days: 0
+  name: NET 5 DAYS
+  pay4_date: 
+  pay6_days: 0
+  pay2_days: 0
+  pay2_per: "0.00"
+  updated_at: 
+  pay6_date: 
+  pay3_date: 
+  pay5_days: 0
+  pay3_per: "0.00"
+  pay1_days: 5
+  update_flag: Y
+  code: "5"
+  pay2_date: 
+  trans_flag: A
+  created_by: 
+  pay5_date: 
+  pay1_date: 1900-01-01 00:00:00
+  pay5_per: "0.00"
+  lock_version: 0
+  pay6_per: "0.00"
+  disc_days: 0
+  updated_by: 
+  id: 14
+  pay1_per: "100.00"
+  company_id: 1
+  disc_per: "0.00"
+  pay4_days: 0
+  pay4_per: "0.00"
+  created_at: 
+TERMS_002: 
+  pay3_days: 0
+  name: NET 12 DAYS
+  pay4_date: 
+  pay6_days: 0
+  pay2_days: 0
+  pay2_per: "0.00"
+  updated_at: 
+  pay6_date: 
+  pay3_date: 
+  pay5_days: 0
+  pay3_per: "0.00"
+  pay1_days: 12
+  update_flag: Y
+  code: "12"
+  pay2_date: 
+  trans_flag: A
+  created_by: 
+  pay5_date: 
+  pay1_date: 1900-01-01 00:00:00
+  pay5_per: "0.00"
+  lock_version: 0
+  pay6_per: "0.00"
+  disc_days: 0
+  updated_by: 
+  id: 3
+  pay1_per: "100.00"
+  company_id: 1
+  disc_per: "1.00"
+  pay4_days: 0
+  pay4_per: "0.00"
+  created_at: 
+TERMS_014: 
+  pay3_days: 0
+  name: NET 60 DAYS
+  pay4_date: 
+  pay6_days: 0
+  pay2_days: 0
+  pay2_per: "0.00"
+  updated_at: 
+  pay6_date: 
+  pay3_date: 
+  pay5_days: 0
+  pay3_per: "0.00"
+  pay1_days: 60
+  update_flag: Y
+  code: "60"
+  pay2_date: 
+  trans_flag: A
+  created_by: 
+  pay5_date: 
+  pay1_date: 1900-01-01 00:00:00
+  pay5_per: "0.00"
+  lock_version: 0
+  pay6_per: "0.00"
+  disc_days: 0
+  updated_by: 
+  id: 15
+  pay1_per: "100.00"
+  company_id: 1
+  disc_per: "0.00"
+  pay4_days: 0
+  pay4_per: "0.00"
+  created_at: 
+TERMS_003: 
+  pay3_days: 0
+  name: NET 120 DAYS
+  pay4_date: 
+  pay6_days: 0
+  pay2_days: 120
+  pay2_per: "50.00"
+  updated_at: 
+  pay6_date: 
+  pay3_date: 
+  pay5_days: 0
+  pay3_per: "0.00"
+  pay1_days: 60
+  update_flag: Y
+  code: "120"
+  pay2_date: 
+  trans_flag: A
+  created_by: 
+  pay5_date: 
+  pay1_date: 1900-01-01 00:00:00
+  pay5_per: "0.00"
+  lock_version: 0
+  pay6_per: "0.00"
+  disc_days: 0
+  updated_by: 
+  id: 4
+  pay1_per: "50.00"
+  company_id: 1
+  disc_per: "4.00"
+  pay4_days: 0
+  pay4_per: "0.00"
+  created_at: 
+TERMS_015: 
+  pay3_days: 0
+  name: NET 5%/60 DAYS
+  pay4_date: 
+  pay6_days: 0
+  pay2_days: 0
+  pay2_per: "0.00"
+  updated_at: 
+  pay6_date: 
+  pay3_date: 
+  pay5_days: 0
+  pay3_per: "0.00"
+  pay1_days: 60
+  update_flag: Y
+  code: 60/5
+  pay2_date: 
+  trans_flag: A
+  created_by: 
+  pay5_date: 
+  pay1_date: 1900-01-01 00:00:00
+  pay5_per: "0.00"
+  lock_version: 0
+  pay6_per: "0.00"
+  disc_days: 60
+  updated_by: 
+  id: 16
+  pay1_per: "100.00"
+  company_id: 1
+  disc_per: "5.00"
+  pay4_days: 0
+  pay4_per: "0.00"
+  created_at: 
+TERMS_004: 
+  pay3_days: 0
+  name: NET 15 DAYS
+  pay4_date: 
+  pay6_days: 0
+  pay2_days: 0
+  pay2_per: "0.00"
+  updated_at: 
+  pay6_date: 
+  pay3_date: 
+  pay5_days: 0
+  pay3_per: "0.00"
+  pay1_days: 15
+  update_flag: Y
+  code: "15"
+  pay2_date: 
+  trans_flag: A
+  created_by: 
+  pay5_date: 
+  pay1_date: 1900-01-01 00:00:00
+  pay5_per: "0.00"
+  lock_version: 0
+  pay6_per: "0.00"
+  disc_days: 0
+  updated_by: 
+  id: 5
+  pay1_per: "100.00"
+  company_id: 1
+  disc_per: "0.00"
+  pay4_days: 0
+  pay4_per: "0.00"
+  created_at: 

@@ -1,0 +1,99 @@
+<columns lockedColumnCount='0'>
+
+	<column data='trans_no' 			label='JOB#' 			editable='false' 	visible='true' 	width='180' textAlign='left' 	
+			forLevel='true'				defaultForLevel='' 		sortDataType='S'	dataType='S'	booleanFlag='false'
+			componentType="Text"		columnPrecision="NaN"
+	/>
+	
+	<column data='catalog_item_code'	label='Item #'			editable='false' 	visible='true'	width='200'	textAlign='left'	
+			forLevel='false'			defaultForLevel='2' 	sortDataType='S'	dataType='S'	booleanFlag='false'
+			componentType="Text"		columnPrecision="NaN"
+	/>
+	
+	<column data='catalog_item_description'	label='Item Description'			editable='false' 	visible='true'	width='200'	textAlign='left'	
+			forLevel='false'			defaultForLevel='2' 	sortDataType='S'	dataType='S'	booleanFlag='false'
+			componentType="Text"		columnPrecision="NaN"
+	/>
+	
+	<column data='logo'					label='LOGO'			editable='false' 	visible='true'	width='70'	textAlign='left'	
+			forLevel='false'			defaultForLevel='2' 	sortDataType='S'	dataType='S'	booleanFlag='false'
+			componentType="Text"		columnPrecision="NaN"
+	/>
+	
+	<column data='small_image'			label='Small Image'		editable='false' 	visible='true'	width='70'	textAlign='left'	
+			forLevel='false'			defaultForLevel='2' 	sortDataType='S'	dataType='S'	booleanFlag='false'
+			componentType="Text"		columnPrecision="NaN"
+	/>
+	
+	<column data='ship_date'			label='Ship Date' 		editable='false' 	visible='true' 	width='90' 	textAlign='left' 	
+			forLevel='false'			defaultForLevel='' 		sortDataType='D'	dataType='D'	booleanFlag='false'
+			componentType="Date"	
+	/>
+	
+	<column data='qty'					label='Quantity'		editable='false' 	visible='true'	width='70'	textAlign='right'	
+			forLevel='false'			defaultForLevel='2' 	sortDataType='N'	dataType='N'	booleanFlag='false'
+			componentType="Text"		columnPrecision="NaN"
+	/>
+	
+	<column data='select_yn' 			label='Print Pick Slip' 		editable='false' 	visible='true' 	width='65' 	textAlign='center' 	
+			forLevel='false'			defaultForLevel='' 		sortDataType='S'	dataType='S'	booleanFlag='true'
+			dataValueForOn="Y"			dataValueForOff="N"
+			componentType="CheckBox"	
+	/>
+	
+	<column data='select_yn' 			label='Print Box Sticker' 			editable='false' 	visible='true' 	width='65' 	textAlign='center' 	
+			forLevel='false'			defaultForLevel='' 		sortDataType='S'	dataType='S'	booleanFlag='true'
+			dataValueForOn="Y"			dataValueForOff="N"
+			componentType="CheckBox"	
+	/>
+	
+	<column data='select_yn' 			label='Assembly' 		editable='false' 	visible='true' 	width='65' 	textAlign='center' 	
+			forLevel='false'			defaultForLevel='' 		sortDataType='S'	dataType='S'	booleanFlag='true'
+			dataValueForOn="Y"			dataValueForOff="N"
+			componentType="CheckBox"	
+	/>
+	
+	<column data='select_yn' 			label='Direct print' 		editable='false' 	visible='true' 	width='65' 	textAlign='center' 	
+			forLevel='false'			defaultForLevel='' 		sortDataType='S'	dataType='S'	booleanFlag='true'
+			dataValueForOn="Y"			dataValueForOff="N"
+			componentType="CheckBox"	
+	/>
+	
+	<column data='select_yn' 			label='Embroidery' 		editable='false' 	visible='true' 	width='65' 	textAlign='center' 	
+			forLevel='false'			defaultForLevel='' 		sortDataType='S'	dataType='S'	booleanFlag='true'
+			dataValueForOn="Y"			dataValueForOff="N"
+			componentType="CheckBox"	
+	/>
+	
+	<column data='select_yn' 			label='Pad' 		editable='false' 	visible='true' 	width='65' 	textAlign='center' 	
+			forLevel='false'			defaultForLevel='' 		sortDataType='S'	dataType='S'	booleanFlag='true'
+			dataValueForOn="Y"			dataValueForOff="N"
+			componentType="CheckBox"	
+	/>
+	
+	<column data='select_yn' 			label='Decal' 		editable='false' 	visible='true' 	width='65' 	textAlign='center' 	
+			forLevel='false'			defaultForLevel='' 		sortDataType='S'	dataType='S'	booleanFlag='true'
+			dataValueForOn="Y"			dataValueForOff="N"
+			componentType="CheckBox"	
+	/>
+	<column data='select_yn' 			label='Take Image' 		editable='false' 	visible='true' 	width='65' 	textAlign='center' 	
+			forLevel='false'			defaultForLevel='' 		sortDataType='S'	dataType='S'	booleanFlag='true'
+			dataValueForOn="Y"			dataValueForOff="N"
+			componentType="CheckBox"	
+	/>
+	
+	<column data='select_yn' 			label='Print Packing Slip' 		editable='false' 	visible='true' 	width='65' 	textAlign='center' 	
+			forLevel='false'			defaultForLevel='' 		sortDataType='S'	dataType='S'	booleanFlag='true'
+			dataValueForOn="Y"			dataValueForOff="N"
+			componentType="CheckBox"	
+	/>
+	
+	<column data='select_yn' 			label='Print Shipping Label' 		editable='false' 	visible='true' 	width='65' 	textAlign='center' 	
+			forLevel='false'			defaultForLevel='' 		sortDataType='S'	dataType='S'	booleanFlag='true'
+			dataValueForOn="Y"			dataValueForOff="N"
+			componentType="CheckBox"	
+	/>
+	
+	
+
+</columns> 

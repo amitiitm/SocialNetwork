@@ -1,0 +1,45 @@
+--- 
+main_companies_001: 
+  city: Mumbai
+  address1: "WICEL, Unit No E-4, Ground Floor, "
+  name: Adora
+  remarks: ""
+  zip: "400093"
+  address2: Opp Seepz Main Gate, MIDC, Andheri (East)
+  updated_at: 2009-12-01 11:33:02
+  schema_name: JEWE1112
+  code: ADORA
+  update_flag: Y
+  trans_flag: A
+  created_by: 230
+  aboutus: ""
+  lock_version: 0
+  updated_by: 230
+  id: 1
+  fax: "28324762"
+  phone: "28260260"
+  email_address: administrator@myadora.com
+  state: Maharashtra
+  created_at: 2009-12-01 11:33:02
+main_companies_002: 
+  city: New York
+  address1: "100 Thompson Street "
+  name: Margo
+  remarks: 
+  zip: "10012"
+  address2: 
+  updated_at: 
+  schema_name: MARG1000
+  code: MARGO
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  aboutus: 
+  lock_version: 0
+  updated_by: 100
+  id: 2
+  fax: 
+  phone: 
+  email_address: info@margomanhattan.com
+  state: NY
+  created_at: 

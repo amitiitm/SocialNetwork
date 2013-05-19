@@ -1,0 +1,26 @@
+<columns  lockedColumnCount='0'>
+
+	
+	<column data='transaction_code'					label='Transaction #'							editable='false' 	visible='true' 	width='150'	textAlign='left'	forLevel='false' 
+			defaultForLevel=''						booleanFlag='false'								sortDataType='S'	columnPrecision="NaN"/>
+	
+	<column data='customer_profile_code'			label='Customer Profile #'						editable='false'	visible='true'	width='150'	textAlign='left'	forLevel='false'
+			defaultForLevel=''						booleanFlag='false'								sortDataType='S'	columnPrecision="NaN"/>
+			
+	<column data='customer_payment_profile_code'	label='Customer Payment Profile #'				editable='false'	visible='true'	width='150'	textAlign='left'	forLevel='false'
+			defaultForLevel=''						booleanFlag='false'								sortDataType='S'	columnPrecision="NaN"/>
+			
+	<column data='account_number'					label='Account #'								editable='false' 	visible='true' 	width='200'	textAlign='left'	forLevel='false' 
+			defaultForLevel=''						booleanFlag='false'								sortDataType='S'	columnPrecision="NaN"/>	
+	
+	<column data='amount'							label='Amount'									editable='false'	visible='true'	width='100'	textAlign='right'	forLevel='false'
+			defaultForLevel=''						booleanFlag='false'								sortDataType='N'	columnPrecision="2"/>
+
+	<column data='message_text'						label='Message'									editable='false'	visible='true'	width='200'	textAlign='left'	forLevel='false'
+			defaultForLevel=''						booleanFlag='false'								sortDataType='S'	columnPrecision="NaN"/>		
+	
+	
+	<column data='response_reason_text'				label='Result'									editable='false' 	visible='true' 	width='200'	textAlign='left'	forLevel='false' 
+			defaultForLevel=''						booleanFlag='false'								sortDataType='S'	columnPrecision="NaN"/>	
+	
+</columns> 

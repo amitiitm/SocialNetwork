@@ -1,0 +1,12 @@
+<columns  lockedColumnCount='0'>
+
+	<column data='serial_no'				label='Serial #' 		editable='false' 	visible='true' 	width='60'	textAlign='left' 
+			forLevel='false' 				defaultForLevel='' 		booleanFlag='false' sortDataType='N' columnPrecision="NaN"/>
+
+	<column data='salesperson_code'			label='SalesPerson #'	editable='false'	visible='true'	width='120'	textAlign='left'	
+			forLevel='false'				defaultForLevel=''		booleanFlag='false'	sortDataType='S' columnPrecision="NaN"/>
+
+	<column data='share'					label='Share' 			editable='false'	visible='true'	width='220'	textAlign='left'	
+			forLevel='false'				defaultForLevel=''		booleanFlag='false'	sortDataType='N' columnPrecision="2"/>
+
+</columns> 

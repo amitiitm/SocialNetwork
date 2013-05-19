@@ -1,0 +1,60 @@
+<columns  lockedColumnCount='0'>
+
+	<column data='trans_bk'					label='Memo Bk'			editable='false'	visible='true'		width='60'	textAlign='left'	forLevel='true'
+			print_width = '18'				defaultForLevel=''		booleanFlag='false'	sortDataType='S'	columnPrecision="NaN" />
+			
+	<column data='trans_no'					label='Memo #'			editable='false'	visible='true'		width='60'	textAlign='left'	forLevel='true'
+			print_width = '16'				defaultForLevel='2'		booleanFlag='false'	sortDataType='N'	columnPrecision="0"/>
+			
+	<column data='trans_date'				label='Memo Date'		editable='false'	visible='true'		width='80'	textAlign='left'	forLevel='true' 
+			print_width = '18'				defaultForLevel='1'		booleanFlag='false'	sortDataType='D'	columnPrecision="NaN"/>
+	
+	<column data='customer_id'				label='Customer id'		editable='false'	visible='false'		width='0'	textAlign='left'	forLevel='true'
+			print_width = '20'				defaultForLevel=''		booleanFlag='false'	sortDataType='S'	columnPrecision="NaN"/>
+				
+	<column data='customer_code'			label='Customer #'		editable='false'	visible='true'		width='80'	textAlign='left'	forLevel='true'
+			print_width = '20'				defaultForLevel=''		booleanFlag='false'	sortDataType='S'	columnPrecision="NaN"/>
+			
+	<column data='account_period_code'		label='A/c Period'		editable='false'	visible='true'		width='80'	textAlign='left'	forLevel='true'
+			print_width = '18'				defaultForLevel='0'		booleanFlag='false'	sortDataType='S'	columnPrecision="NaN"/>
+
+	<column data='customer_shipping_code' 	label='Ship #'			editable='false' 	visible='true' 		width='80'	textAlign='left'	forLevel='false'
+			print_width = '16'				defaultForLevel=''		booleanFlag='false'	sortDataType='S'	columnPrecision="NaN"/>
+			
+	<column data='shipping_code'			label='Ship Via'		editable='false' 	visible='true' 		width='80'	textAlign='left'	forLevel='false'
+			print_width = '16'				defaultForLevel=''		booleanFlag='false'	sortDataType='S'	columnPrecision="NaN"/>
+			
+	<column data='term_code'				label='Term'			editable='false' 	visible='true' 		width='60'	textAlign='left'	forLevel='false' 
+			print_width = '15'				defaultForLevel=''		booleanFlag='false'	sortDataType='S'	columnPrecision="NaN"/>	
+
+	<column data='po_no'					label='PO #'			editable='false' 	visible='true' 		width='60'	textAlign='left'	forLevel='false' 
+			print_width = '15'				defaultForLevel=''		booleanFlag='false'	sortDataType='S'	columnPrecision="NaN"/>	
+	
+	<column data='ship_date'				label='Ship Date'		editable='false' 	visible='true' 		width='80'	textAlign='left'	forLevel='false' 
+			print_width = '18'				defaultForLevel=''		booleanFlag='false'	sortDataType='D'	columnPrecision="NaN"/>	
+
+	<column data='due_date'					label='Due Date'		editable='false' 	visible='true' 		width='80'	textAlign='left'	forLevel='false' 
+			print_width = '18'				defaultForLevel=''		booleanFlag='false'	sortDataType='D'	columnPrecision="NaN"/>	
+
+	<column data='lines_amt'				label='Item Amt'		editable='false' 	visible='true' 		width='80'	textAlign='right'	forLevel='false' 
+			print_width = '18'				defaultForLevel=''		booleanFlag='false'	sortDataType='N'	columnPrecision="2"/>
+			
+	<column data='net_amt'					label='Net Amt'			editable='false' 	visible='true' 		width='80'	textAlign='right'	forLevel='false' 
+			print_width = '20'				defaultForLevel=''		booleanFlag='false'	sortDataType='N'	columnPrecision="2"/>
+			
+	<column data='discount_amt'				label='Disc Amt'		editable='false' 	visible='true' 		width='80'	textAlign='right'	forLevel='false' 
+			print_width = '18'				defaultForLevel=''		booleanFlag='false'	sortDataType='N'	columnPrecision="2"/>	
+			
+	<column data='ship_amt'					label='Ship Amt'		editable='false' 	visible='true' 		width='80'	textAlign='right'	forLevel='false'
+			print_width = '18'				defaultForLevel=''		booleanFlag='false'	sortDataType='N'	columnPrecision="2"/>
+			
+	<column data='insurance_amt'			label='Insu Amt'		editable='false' 	visible='true' 		width='80'	textAlign='right'	forLevel='false' 
+			print_width = '18'				defaultForLevel=''		booleanFlag='false'	sortDataType='N'	columnPrecision="2"/>
+			
+	<column data='tax_amt'					label='Tax Amt'			editable='false' 	visible='true' 		width='80'	textAlign='right'	forLevel='false' 
+			print_width = '18'				defaultForLevel=''		booleanFlag='false'	sortDataType='N'	columnPrecision="2"/>
+			
+	<column data='other_amt'				label='Other Amt'		editable='false' 	visible='true' 		width='80'	textAlign='right'	forLevel='false' 
+			print_width = '18'				defaultForLevel=''		booleanFlag='false'	sortDataType='N'	columnPrecision="2"/>
+	
+</columns> 

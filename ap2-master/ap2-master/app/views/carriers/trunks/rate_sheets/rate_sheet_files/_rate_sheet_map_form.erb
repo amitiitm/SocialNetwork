@@ -1,0 +1,46 @@
+<p>
+	File Name: <%= rate_sheet_file.my_file.name %><br>
+	Sample:
+	<% sample = rate_sheet_file.sample %>	
+	<% table do |t| %>
+		<% for h in sample[0] %>
+			<% t.th h %>
+		<% end -%>
+		<% for r in sample[1..-1] %>
+			<% for field in r %>
+				<% t.td field %>
+			<% end -%>
+			<% t.new_row %>
+		<% end -%>
+	<% end -%>
+</p>
+<% form_for([rate_sheet_file.rate_sheet.trunk.carrier, rate_sheet_file.rate_sheet.trunk, rate_sheet_file.rate_sheet, rate_sheet_file], :html => {:class => "forms"}) do |f| %>
+	<ul>
+		<li>
+			<label>Include First Row? <%= f.check_box :include_first_row %></label>
+		</li>
+		<li>
+			<div class="left">
+				<label>Description Column</label>
+				<%= f.select :col_desc, rate_sheet_file.select_options, {:include_blank => true} %>
+			</div>
+			<div class="left">
+				<label>Prefix Column</label>
+				<%= f.select :col_prefix, rate_sheet_file.select_options, {:include_blank => true} %>
+			</div>
+			<div class="left">
+				<label>Rate Column</label>
+				<%= f.select :col_rate, rate_sheet_file.select_options, {:include_blank => true} %>
+			</div>
+		</li>
+		<li>
+			<label>Remove Prefix</label>
+			<%= f.text_field :remove_prefix, :size => 10 %>
+		</li>
+		<li>
+			<label>Add Prefix</label>
+			<%= f.text_field :add_prefix, :size => 10 %>
+		</li>
+		
+	</ul>
+<% end -%>

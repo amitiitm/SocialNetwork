@@ -1,0 +1,33 @@
+<% form_for [carrier, trunk], :html => {:class => "forms"} do |f|%>
+	<ui>
+		<li>
+			<label>Trunk Name (ie: default, quality, direct, etc...)</label>
+			<%= f.text_field :name, :size => 10 %>
+		</li>
+		<li>
+			<label>Description</label>
+			<%= f.text_field :description %>
+		</li>
+		<li>
+			<div class="left">
+				<label>Protocol</label>
+				<%= f.text_field :protocol, :size => 10 %>
+			</div>
+			<div class="left">
+				<label>Tech Prefix</label>
+				<%= f.text_field :tech_prefix, :size => 10 %>
+			</div>
+		</li>
+		<li>
+			<label>Endpoints:</label>
+			<% if carrier.endpoints.blank? %>
+				There are no endpoints availbale!
+			<% else %>
+				<% for endpoint in carrier.endpoints.find(:all, :order => "name ASC") %>
+					<label><%= check_box "trunk[use_endpoint]", endpoint.id, :checked => trunk.using_endpoint?(endpoint.id) %> <%= endpoint.name %></label>				
+				<% end -%>
+			<% end -%>
+		</li>
+	</ui>
+	<!--<button type="submit">Save</button>-->
+<% end -%>

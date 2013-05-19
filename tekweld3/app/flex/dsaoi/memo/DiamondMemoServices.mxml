@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rds:CommonServices xmlns:rds="business.*" xmlns:mx="http://www.adobe.com/2006/mxml">
+
+	<mx:HTTPService id="saveRecord" url="/diamond_sale/create_memos" />
+	<mx:HTTPService id="getRecord" url="/diamond_sale/show_memo" />
+	<mx:HTTPService id="getList" url="/diamond_sale/list_memos" />
+	<mx:HTTPService id="getListFormat" url="dsaoi/memo/xmls/DiamondMemoListStru.xml" />
+	<mx:HTTPService id="getViewFormat" url="dsaoi/memo/xmls/DiamondMemoCriteriaStru.xml" />
+	<mx:HTTPService id="lineDetailFormat" url="dsaoi/memo/xmls/DiamondMemoLineDetailStru.xml" />
+
+	<mx:HTTPService id="printRecord" url="/diamond_sale_report/sales_memo_format" />
+	<mx:HTTPService id="show_lots" url="/diamond/show_lot" />
+
+</rds:CommonServices>

@@ -1,0 +1,19 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  name: MyString
+  trunk_name: MyString
+  channel_limit: 1
+  set_cid: 1
+  cid: MyString
+  enabled: 1
+  signaling: MyString
+
+two:
+  name: MyString
+  trunk_name: MyString
+  channel_limit: 1
+  set_cid: 1
+  cid: MyString
+  enabled: 1
+  signaling: MyString

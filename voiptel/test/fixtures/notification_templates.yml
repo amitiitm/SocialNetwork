@@ -1,0 +1,11 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  template: MyText
+  notification_type_id: 1
+  notification_category_id: 1
+
+two:
+  template: MyText
+  notification_type_id: 1
+  notification_category_id: 1

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<gencomponents:DetailAddEdit xmlns:mx="http://www.adobe.com/2006/mxml"
+	width="481" height="300" verticalGap="0"
+	xmlns:customcomponents="com.generic.customcomponents.*"
+	xmlns:gencomponents="com.generic.components.*">
+
+	<mx:Script source="../scripts/JournalDetailScript.as"/>
+	
+	<mx:VBox height="100%" width="100%">
+		<mx:HBox>
+			<mx:Label text="Account #" width="95" textAlign="right"/>
+			
+			<customcomponents:GenTextInputWithHelp
+							id="tiGlAccount" 
+							width="150" 
+							toolTip="GL Account" 
+							dataSourceName="GLAccount"
+							minimumChar = "{__genModel.masterData.child('lookup').glaccount.value}"
+							height="20" 
+							tabIndex="1" 
+							validationFlag="true" 
+							xmlTag="gl_account_id"
+							labelTag="gl_account_code"
+							dataField="id" 
+							labelField= "code"
+							updatableFlag="true" 
+							tableName="gl_transaction_line" 
+							itemChangedEvent="handleGLAccountItemChanged()"
+							/>
+			
+			<!--<customcomponents:GenDynamicComboBoxWithHelp id="tiGlAccount" width="150" 
+				toolTip="GL Account"  defaultValue="" tabIndex="1"
+				dataField="id" labelField="code" height="20" itemChangedEvent="handleGLAccountItemChanged(event)"
+				dataSourceName="GLAccount" dataProvider="{__genModel.lookupObj.glaccount.children()}"   
+				validationFlag="true" xmlTag="gl_account_id" updatableFlag="true" tableName="gl_transaction_line"  />-->
+				
+			<customcomponents:GenTextInput id="tiGlCode" xmlTag="gl_account_code" updatableFlag="true"  text="{tiGlAccount.labelValue}"
+				validationFlag="false" tableName = "gl_transaction_line" tabIndex="1" maxChars="20" width="0" height="0" visible="false"/>
+		</mx:HBox>
+		<mx:HBox>
+			<mx:Label text="Account Name" width="95" textAlign="right"/>
+			<customcomponents:GenTextInput id="tiGlName" xmlTag="gl_account_name" height="20" updatableFlag="true"
+				validationFlag="false" tableName = "gl_transaction_line" tabIndex="0"  width="330" enabled="false"  visible="true"/>	
+		</mx:HBox>
+		<mx:HBox>
+			<mx:Label text="Debit Amt" width="95" textAlign="right"/>
+			<customcomponents:GenTextInput id="tiDebit_amt" width="110" height="20" visible="true"
+				editable="true" xmlTag="debit_amt" updatableFlag="true" defaultValue="0.00" setDefaultOnEmpty="TRUE" 
+				tableName="gl_transaction_line" tabIndex="2" toolTip="Debit Amt"  negativeFlag= "false"  
+				textAlign="right" dataType="N" maxValue="9999999999.99"   itemChangedEvent="debitAmtFocusOutHandler()"/>
+	
+			<mx:Label text="Credit Amt" width="95" textAlign="right"/>
+			<customcomponents:GenTextInput id="tiCredit_amt" width="110" height="20" visible="true"
+				editable="true" xmlTag="credit_amt" updatableFlag="true" defaultValue="0.00" setDefaultOnEmpty="TRUE" 
+				tableName="gl_transaction_line" tabIndex="3" toolTip="Credit Amt" negativeFlag= "false" 
+				textAlign="right" dataType="N" maxValue="9999999999.99" itemChangedEvent="creditAmtFocusOutHandler()" />
+		</mx:HBox>
+	
+		<mx:HBox>
+			<mx:Label text="Ref #" width="95" textAlign="right"/>
+			<customcomponents:GenTextInput id="tiRef_no" width="110" height="20" visible="true"
+				editable="true" xmlTag="ref_no" updatableFlag="true" maxChars="18"
+				tableName="gl_transaction_line" tabIndex="4" toolTip="Ref #"  
+				textAlign="left" dataType="S" />
+	
+			<mx:Label text="Ref Date" width="95" textAlign="right"/>
+			<customcomponents:GenDateField id="dfRef_dt" width="110" height="20" visible="true"
+				xmlTag="ref_date" updatableFlag="true"
+				tableName="gl_transaction_line" tabIndex="5" toolTip="Ref dt" />
+		</mx:HBox>
+	
+		<mx:HBox>
+			<mx:Label text="Description" width="95" textAlign="right"/>
+			<customcomponents:GenTextArea id="taDescription" width="330" height="80" visible="true"
+				editable="true" xmlTag="description" updatableFlag="true" 
+				tableName="gl_transaction_line" tabIndex="6" toolTip="Description"  
+				textAlign="left" dataType="S"  validationFlag="true"/>
+		</mx:HBox>
+
+		<mx:Spacer height="50" />
+		<mx:HBox>
+			<mx:Label text="Debit Amt" width="180" textAlign="right"/>
+			<mx:Label text="Credit Amt" width="95" textAlign="right"/>
+		</mx:HBox>
+		<mx:HBox>
+			<mx:Label text="Total" width="95" textAlign="right"/>
+			<mx:TextInput id="tiTotal_debit_amt" width="95" height="20" visible="true"
+				editable="false" enabled="false" toolTip="Total Debit Amt" textAlign="right"
+				text="{__localModel.total_debit_amt}"/>
+			<mx:TextInput id="tiTotai_credit_amt" width="95" height="20" visible="true"
+				editable="false" enabled="false" toolTip="Total Credit Amt" textAlign="right" 
+				text="{__localModel.total_credit_amt}"/>
+		</mx:HBox>
+		<mx:HBox width="0" height="0" visible="false">
+			<customcomponents:GenTextInput id="tiSerial_no" toolTip="Serial #" restrict="1234567890" visible="false"
+				validationFlag="false" 
+				xmlTag="serial_no" updatableFlag="true" tableName="gl_transaction_line"/>
+			<customcomponents:GenComboBox id="cbTrans_flag" defaultValue="A" width="90" cornerRadius="0" xmlTag="trans_flag" updatableFlag="true"
+				tableName="gl_transaction_line"   height="18" labelField="label" 
+				dataProvider="{__genModel.masterData.child('trans_flag').trans_flag}" />	
+		</mx:HBox>
+	</mx:VBox>
+</gencomponents:DetailAddEdit>

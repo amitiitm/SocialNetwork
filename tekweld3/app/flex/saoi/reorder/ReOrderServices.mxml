@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rds:CommonServices xmlns:rds="business.*" xmlns:mx="http://www.adobe.com/2006/mxml">
+
+	<mx:HTTPService id="saveRecord" 				url="/sale/reorder/create_reorders" />
+	<mx:HTTPService id="getRecord" 					url="/sale/reorder/show_reorder" />
+	<mx:HTTPService id="getList"					url="/sale/reorder/list_sales_reorders" />
+	<mx:HTTPService id="sendToCustomer" 			url="/artwork/artwork/send_artwork_to_customer" />
+	<mx:HTTPService id="artworkUploadUrl" 			url="/artwork/artwork/upload_artwork_attachments" />
+	<mx:HTTPService id="printRecord" 				url="/sale/sales_report/render_sales_reorder_format" />
+	<mx:HTTPService id="fetch_orders" 				url="/sale/sales/list_shipped_order_hdrs" />
+	<mx:HTTPService id="selectOrderService" 		url="/sale/sales/list_shipped_order_dtls" />
+	<mx:HTTPService id="resendAcknowledgment" 		url="/sale/sales/resend_order_acknowledgment" />
+	<mx:HTTPService id="printJob" 					url="/sales_report/render_reorder_job_format" />
+	<mx:HTTPService id="validateUniqueness" 		url="/setup/setup/validate_uniqueness" />
+	<mx:HTTPService id="validateCreditCard" 		url="/payment/payment/validate_credit_card" />
+	<mx:HTTPService id="getEstimatedShipDate" 		url="/shipping/shipping/calculate_estimated_ship_date_and_packages" />
+	<mx:HTTPService id="getPaymentUrl" 				url="/payment/payment/make_payment" />
+	<mx:HTTPService id="shippingUploadUrl" 			url="/shipping/shipping/convert_exceltoxml_to_for_sales_order_shippings" />
+	<mx:HTTPService id="createAndCapture" 			url="/payment/payment/create_payment_profile_and_authorize" />
+	<mx:HTTPService id="getThreads" 				url="/production/production_embroidery/list_embroidery_threads"/>
+	<mx:HTTPService id="generatePO" 				url="/purchase/purchase_order/create_po_from_so"/>
+	<mx:HTTPService id="cancelAuthorizePayment" 	url="/payment/payment/cancel_authorized_transaction"/>
+	<mx:HTTPService id="getInhandDate" 				url="/shipping/shipping/get_inhand_date"/>
+	<mx:HTTPService id="getShippingmethodsFromApi" 	url="/shipping/shipping/get_shipping_methods"/>
+	
+	<mx:HTTPService id="detailFormat" 				url="saoi/reorder/xmls/ReOrderShippingImportStru.xml"/>
+	<mx:HTTPService id="getListFormat" 				url="saoi/reorder/xmls/ReOrderListStru.xml" />
+	<mx:HTTPService id="getViewFormat" 				url="saoi/reorder/xmls/ReOrderCriteriaStru.xml" />
+	<mx:HTTPService id="lineDetailFormat" 			url="saoi/reorder/xmls/ReOrderLineDetailStru.xml" />
+	<mx:HTTPService id="lineActivityFormat" 		url="saoi/reorder/xmls/ReOrderActivityDetailStru.xml" />
+	<mx:HTTPService id="serviceDetailFormat" 		url="saoi/reorder/xmls/ReOrderServiceDetailStru.xml" />
+	<mx:HTTPService id="shippingDetailFormat" 		url="saoi/reorder/xmls/ReOrderShippingDetailStru.xml" />
+	<mx:HTTPService id="shippingHeaderDetailFormat" url="saoi/reorder/xmls/ReOrderShippingHeaderDetailStru.xml" />
+	<mx:HTTPService id="notesDetailFormat" 			url="saoi/reorder/xmls/SalesNotesStru.xml" />
+	<mx:HTTPService id="optionDetailFormat" 		url="saoi/reorder/xmls/OptionDetailStru.xml" />
+	<mx:HTTPService id="artworkDetailFormat" 		url="saoi/reorder/xmls/ReOrderArtworkDetailStru.xml" />  
+	<mx:HTTPService id="orderDetailFormat" 			url="saoi/reorder/xmls/ReOrderEditLineDetailStru.xml" />
+	<mx:HTTPService id="fetchRecordFormat" 			url="saoi/reorder/xmls//FetchRecordOrderDetailStru.xml" />
+	<mx:HTTPService id="paymentInfoActivityDetailFormat" 	url="saoi/reorder/xmls/ReOrderPaymentActivityDetailStru.xml" />
+	<mx:HTTPService id="dgItemPacketsGridFormat" 			url="saoi/reorder/xmls/ReOrderItemPacketsDetailStru.xml" />
+	<mx:HTTPService id="queryDetailFormat" 					url="saoi/reorder/xmls/ReOrderQueriesDetailStru.xml" />
+	<mx:HTTPService id="dgInvoicesFormat" 					url="saoi/reorder/xmls/SalesOrderInvoiceslStru.xml" />
+	<mx:HTTPService id="subRecordGridFormatService" 		url="saoi/reorder/xmls/SalesOrderSubRecordStru.xml" />
+	
+</rds:CommonServices>

@@ -1,0 +1,27 @@
+<% if !@transactions.blank? %>
+	<% table :width => "350px" do |t| %>
+		<% t.th "#" %>
+		<% t.th "Amount" %>
+		<% t.th "Status" %>
+		<% t.th "Date" %>				
+		<% t.th "Actions" %>
+
+	  <% counter = 0 %>
+	  <% for tr in @transactions do %>
+	  	<% counter += 1 %>
+			<% t.td counter %>
+			<% t.td number_to_currency(tr.amount / 100) %>
+			<% t.td tr.status_string %>
+			<% t.td user_date(tr.order.created_at) %>
+			<% t.td  action_links(
+				link_to("Log", "/orders/log/#{tr.id}", :class => "ajax", :update => "container"),
+				link_to("Void", "/orders/do_void/#{tr.id}", :class => "ajax", :update => "transactions")
+			) %>
+			<% t.new_row %>
+		<%  end -%>
+	<% end -%>
+	
+<% else %>
+  No Transactions found!
+<% end %>
+<div id="container" class="hide"></div>

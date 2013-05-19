@@ -1,0 +1,15 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  phone_number: MyString
+  easy_dial_number: MyString
+  freq: 1
+  tmp_phone_id: 1
+  duration: 1
+
+two:
+  phone_number: MyString
+  easy_dial_number: MyString
+  freq: 1
+  tmp_phone_id: 1
+  duration: 1

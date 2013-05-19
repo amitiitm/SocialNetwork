@@ -1,0 +1,1019 @@
+<?xml version="1.0" encoding="utf-8"?>
+<gencomponents:DetailAddEdit xmlns:mx="http://www.adobe.com/2006/mxml"
+	width="810" height="538" verticalGap="0"
+	xmlns:customcomponents="com.generic.customcomponents.*"
+	xmlns:gencomponents="com.generic.components.*"
+	creationComplete="creationCompleteHandler()">
+
+	<mx:Script source="../scripts/SalesQuotationLineDetailScript.as"/>
+	<mx:VBox height="100%" width="100%">
+	
+		<mx:HBox width="100%">
+			<mx:Label text="Item #" width="100" textAlign="right"/>
+			<customcomponents:GenTextInputWithHelp
+				lookupFormatUrl	=  "itemLookupHelpFormat"
+				id="dcItemId" 
+				width="150" 
+				toolTip="Item #" 
+				dataSourceName="NonInventoryItem"
+				height="20" 
+				tabIndex="50" 
+				validationFlag="true" 
+				xmlTag="catalog_item_id"
+				labelTag="catalog_item_code"
+				dataField="id" 
+				labelField= "store_code"
+				updatableFlag="true" 
+				tableName="sales_quotation_line" 
+				itemChangedEvent="getItemDetails();tiItemCode.dataValue	=	dcItemId.labelValue"
+				/>
+			
+				<customcomponents:GenTextInput id="tiItemCode" width="0" height="0" visible="false"
+				xmlTag="catalog_item_code" updatableFlag="true" tabIndex="3" maxChars="100"
+				tableName="sales_quotation_line" />
+				<mx:Label text="Unit" width="54" textAlign="right" visible="false" includeInLayout="false"/>
+				<customcomponents:GenComboBox id="cbUnit" width="110" cornerRadius="0" xmlTag="unit" updatableFlag="true"
+						tableName="sales_quotation_line" defaultValue="Pcs" labelField="label" tabIndex="207"
+						dataProvider="{__genModel.masterData.child('sell_unit').sell_unit}" height="20" enabled="false" visible="false" includeInLayout="false"/>
+				
+		</mx:HBox>
+		
+		<mx:HBox visible="false" includeInLayout="false" >
+			<mx:Label text="Type" width="95" textAlign="right"/>
+			<customcomponents:GenTextInput id="tiType" width="55" height="20" visible="true" editable="false"
+				enabled="true" xmlTag="item_type" updatableFlag="true"
+				tableName="sales_quotation_line"  tabIndex="4" toolTip="Type" setDefaultOnEmpty="true" 
+				textAlign="right" defaultValue="C"/>
+			<customcomponents:GenTextInput id="tiLineType" width="55" height="20" visible="true" editable="false"
+				enabled="true" xmlTag="line_type" updatableFlag="true"
+				tableName="sales_quotation_line"  tabIndex="4" toolTip="Type" setDefaultOnEmpty="true" 
+				textAlign="right" defaultValue="M"/>	
+		</mx:HBox>
+		
+		<mx:HBox width="100%">
+			<mx:Label text="Description" width="100" textAlign="right"/>
+			<customcomponents:GenTextInput id="taItemDescription" width="327" height="113"
+				xmlTag="item_description" updatableFlag="true" tabIndex="60" maxChars="1000"
+				tableName="sales_quotation_line" />
+			<mx:Image id="itemImage" 
+				width="120"
+				height="113" 
+				verticalAlign="middle" 
+				horizontalAlign="center" 
+				source="{__genModel.path.image}{tiImage_thumnail.text}"/>	
+		</mx:HBox>
+
+		<mx:HBox height="0" width="0" visible="false">
+			<mx:HBox>
+				<mx:Label text="Status" width="0" height="0" textAlign="right"/>
+				<customcomponents:GenComboBox id="cbTrans_flag" width="0" height="0" cornerRadius="0" xmlTag="trans_flag" updatableFlag="true"
+					tableName="sales_quotation_line"  labelField="label" defaultValue="A" dataProvider="{__genModel.masterData.child('trans_flag').trans_flag}" />
+			</mx:HBox>
+			<customcomponents:GenTextInput id="tiTrans_bk" width="0" height="0" visible="true"
+				editable="true" enabled="true" xmlTag="trans_bk" updatableFlag="true"
+				tableName="sales_quotation_line" defaultValue=""/>
+			<customcomponents:GenTextInput id="tiTrans_no" width="0" height="0" visible="true"
+				editable="true" enabled="true" xmlTag="trans_no" updatableFlag="true"
+				tableName="sales_quotation_line" defaultValue=""/>
+			<customcomponents:GenDateField id="dfTrans_date" width="0" xmlTag="trans_date"
+				updatableFlag="true" tableName="sales_quotation_line" defaultValue="" 
+				validationFlag="false" toolTip="Ref Trans Dt"/>
+			<customcomponents:GenTextInput id="tiSerial_no" width="0" height="0" visible="true"
+				editable="true" enabled="true" xmlTag="serial_no" updatableFlag="true"
+				tableName="sales_quotation_line" defaultValue=""  />
+			<customcomponents:GenTextInput id="tiImage_thumnail" width="0" height="0" visible="false"
+				editable="false" enabled="true" xmlTag="image_thumnail" updatableFlag="true"
+				tableName="sales_quotation_line" defaultValue="" />
+		</mx:HBox>
+		<mx:HBox width="0" height="0" verticalAlign="middle" horizontalGap="3" visible="false" includeInLayout="false">
+			<customcomponents:GenTextInput id="taMissingInfoDescription" width="0" height="0" visible="false" includeInLayout="false"
+										   xmlTag="missing_info_description" updatableFlag="true" tabIndex="3" maxChars="1000"
+										   tableName="sales_quotation_line" editable="false" />
+		</mx:HBox>
+		<mx:HBox width="0" height="0" verticalAlign="middle" horizontalGap="3" visible="false" includeInLayout="false">
+			<customcomponents:GenTextInput id="taOptionsDescription" width="0" height="0" visible="false" includeInLayout="false"
+				xmlTag="option_description" updatableFlag="true" tabIndex="3" maxChars="1000"
+				tableName="sales_quotation_line" editable="false" />
+		</mx:HBox>
+		<mx:TabNavigator width="100%" height="100%">
+			<mx:VBox id="vbMain" label="Options" height="100%" width="100%"  verticalGap="1"/>
+			<!--<mx:VBox id="vbTier" label="Tier" height="100%" width="100%" >    
+				<mx:VBox height="100%" width="100%" enabled="false" styleName="disableAsEnable">
+					<mx:HBox>
+						<mx:Label text="Tier 1" width="95" textAlign="right"/>
+						<customcomponents:GenTextInput id="tiColumn1"  height="20" textAlign="right"
+													   updatableFlag="true" width="110" tabIndex="113" xmlTag="tier1" defaultValue = '0'
+													   tableName="sales_quotation_line"
+													   dataType="N" rounding="false" setDefaultOnEmpty="true"
+													   maxValue="9999999999" toolTip="Quantity"/>
+						
+						<mx:Label text="Tier 6" width="95" textAlign="right"/>
+						<customcomponents:GenTextInput id="tiColumn6"  height="20" textAlign="right" 
+													   updatableFlag="true" width="110" tabIndex="118" xmlTag="tier6" defaultValue = '0'
+													   tableName="sales_quotation_line"
+													   dataType="N" rounding="false" setDefaultOnEmpty="true"
+													   maxValue="9999999999" toolTip="Quantity"/>	
+					</mx:HBox>
+					
+					<mx:HBox >
+						<mx:Label text="Tier 2" width="95" textAlign="right"/>
+						<customcomponents:GenTextInput id="tiColumn2"  height="20" textAlign="right" 
+													   updatableFlag="true" width="110" tabIndex="114" xmlTag="tier2" defaultValue = '0'
+													   tableName="sales_quotation_line"
+													   dataType="N" rounding="false" setDefaultOnEmpty="true"
+													   maxValue="9999999999"  toolTip="Quantity"/>
+						<mx:Label text="Tier 7" width="95" textAlign="right"/>
+						<customcomponents:GenTextInput id="tiColumn7"  height="20" textAlign="right" 
+													   updatableFlag="true" width="110" tabIndex="119" xmlTag="tier7" defaultValue = '0'
+													   tableName="sales_quotation_line"
+													   dataType="N" rounding="false" setDefaultOnEmpty="true"
+													   maxValue="9999999999"  toolTip="Quantity"/>	
+					</mx:HBox>
+					<mx:HBox >
+						<mx:Label text="Tier 3" width="95" textAlign="right"/>
+						<customcomponents:GenTextInput id="tiColumn3"  height="20" textAlign="right" 
+													   updatableFlag="true" width="110" tabIndex="115" xmlTag="tier3" defaultValue = '0'
+													   tableName="sales_quotation_line"
+													   dataType="N" rounding="false" setDefaultOnEmpty="true"
+													   maxValue="9999999999"  toolTip="Quantity"/>
+						<mx:Label text="Tier 8" width="95" textAlign="right"/>
+						<customcomponents:GenTextInput id="tiColumn8"  height="20" textAlign="right" 
+													   updatableFlag="true" width="110" tabIndex="120" xmlTag="tier8" defaultValue = '0'
+													   tableName="sales_quotation_line"
+													   dataType="N" rounding="false" setDefaultOnEmpty="true"
+													   maxValue="9999999999"  toolTip="Quantity"/>	
+					</mx:HBox>
+					<mx:HBox>
+						<mx:Label text="Tier 4" width="95" textAlign="right"/>
+						<customcomponents:GenTextInput id="tiColumn4"  height="20" textAlign="right" 
+													   updatableFlag="true" width="110" tabIndex="116" xmlTag="tier4" defaultValue = '0'
+													   tableName="sales_quotation_line"
+													   dataType="N" rounding="false" setDefaultOnEmpty="true"
+													   maxValue="9999999999" toolTip="Quantity"/>
+						<mx:Label text="Tier 9" width="95" textAlign="right"/>
+						<customcomponents:GenTextInput id="tiColumn9"  height="20" textAlign="right" 
+													   updatableFlag="true" width="110" tabIndex="121" xmlTag="tier9" defaultValue = '0'
+													   tableName="sales_quotation_line"
+													   dataType="N" rounding="false" setDefaultOnEmpty="true"
+													   maxValue="9999999999"  toolTip="Quantity"/>	
+					</mx:HBox>
+					<mx:HBox>
+						<mx:Label text="Tier 5" width="95" textAlign="right"/>
+						<customcomponents:GenTextInput id="tiColumn5"  height="20" textAlign="right" 
+													   updatableFlag="true" width="110" tabIndex="117" xmlTag="tier5" defaultValue = '0'
+													   tableName="sales_quotation_line"
+													   dataType="N" rounding="false" setDefaultOnEmpty="true"
+													   maxValue="9999999999"  toolTip="Quantity"/>
+						<mx:Label text="Tier 10" width="95" textAlign="right"/>
+						<customcomponents:GenTextInput id="tiColumn10"  height="20" textAlign="right" 
+													   updatableFlag="true" width="110" tabIndex="122" xmlTag="tier10" defaultValue = '0'
+													   tableName="sales_quotation_line"
+													   dataType="N" rounding="false" setDefaultOnEmpty="true"
+													   maxValue="9999999999"  toolTip="Quantity"/>	
+					</mx:HBox>
+				</mx:VBox>
+				
+				
+				
+			</mx:VBox>-->
+			
+			
+			
+			<mx:HBox  label="Service Charges" width="100%" height="100%">
+				<customcomponents:GenDataGrid id="dgItemServiceCharges"
+											  updatableFlag="false"
+											  rootNode="sales_quotation_line_charges"
+											  formatServiceID="dgItemServiceChargeGridFormat"
+											  height="100%"
+											  doubleClickEnabled="true"
+											  itemDoubleClickGenGridEvent="setSetUpAmount(event)"
+											  width="100%"/>
+			</mx:HBox>
+			<mx:VBox  label="Accessories" width="100%" height="100%">
+				<mx:HBox verticalAlign="middle" >
+					<customcomponents:GenButton	id="btnEdit" 
+												icon="{addButtonIcon}"
+												disabledIcon="{add_disabledButtonIcon}"
+												color="#D2C5EB"
+												height="25" 
+												width="25" 
+												toolTip="Edit"
+												cornerRadius="0"
+												click="editRowEventHandler(event)" />
+					<customcomponents:GenButton id="btnRemove" 
+												icon="{deleteButtonIcon}"
+												disabledIcon="{delete_disabledButtonIcon}"
+												color="#D2C5EB"
+												height="25" 
+												width="25" 
+												toolTip="Remove"
+												cornerRadius="0"
+												click="removeRowEventHandler()" />
+				</mx:HBox>
+				<customcomponents:GenDataGrid id="dgItemAccessories"
+											  updatableFlag="false"
+											  rootNode="sales_quotation_line_charges"
+											  formatServiceID="dgItemServiceChargeGridFormat"
+											  height="100%"
+											  doubleClickEnabled="true"
+											  itemDoubleClickGenGridEvent="editRowEventHandler(event);setSetUpAmount(event)"
+											  width="100%"/>
+			</mx:VBox>
+			
+			<mx:VBox  id="vbPrice" label="Price" height="100%" width="100%" paddingLeft="4"> 
+				<mx:HBox width="100%">
+					<mx:Label text="Tiers" width="95" textAlign="right"/>
+					
+					<mx:Label text="Price" width="66" textAlign="right"/>
+					<mx:Label text="Amount" width="100%" textAlign="center"/>
+				</mx:HBox>
+				<mx:HBox width="100%">
+					
+					<mx:Label text="Item" width="265" textAlign="right"/>
+					
+					<mx:Label text="ID Service" width="73" textAlign="right"/>
+					<mx:Label text="II Service" width="78" textAlign="right"/>
+					
+					<mx:Label text="Accessories" width="86" textAlign="right"/>
+					<mx:Label text="Shipping Amt" width="103" textAlign="right"/>
+					<mx:Label text="Net Amt" width="77" textAlign="right"/>
+				
+				</mx:HBox>
+				<mx:HBox>
+					<mx:Label text="Blank Price" width="93" textAlign="right"/>
+					<customcomponents:GenTextInput id="tiBlankPrice"  height="20" textAlign="right"
+												   updatableFlag="true" width="80" tabIndex="1" xmlTag="blank_good_price" defaultValue ="0.000"
+												   tableName="sales_quotation_line" itemChangedEvent="setItemAmount()"
+												   dataType="N" rounding="false" setDefaultOnEmpty="true"
+												   maxValue="9999999999.999" validationFlag="true" toolTip="Quantity"/>
+					<customcomponents:GenTextInput id="tiBlankAmount"  height="20" textAlign="right" enabled="false"
+												   updatableFlag="true" width="80" tabIndex="3" xmlTag="blank_amount" defaultValue ="0.00"
+												   tableName="sales_quotation_line" itemChangedEvent="setColumnsOrder()"
+												   dataType="N" rounding="false" setDefaultOnEmpty="true"
+												   maxValue="9999999999.99" validationFlag="true" toolTip="Quantity"/>
+					<customcomponents:GenTextInput id="tiSetupAmountItemDepenedableBlank"  height="20" textAlign="right" enabled="false"
+												   updatableFlag="true" width="80" tabIndex="3" xmlTag="setup_amt_item_dependableblank" defaultValue ="0.00"
+												   tableName="sales_quotation_line" itemChangedEvent="setColumnsOrder()"
+												   dataType="N" rounding="false" setDefaultOnEmpty="true"
+												   maxValue="9999999999.99" validationFlag="true" toolTip="Quantity"/>
+					<customcomponents:GenTextInput id="tiSetupAmountBlank"  height="20" textAlign="right" enabled="false"
+												   updatableFlag="true" width="80" tabIndex="3" xmlTag="setup_amtblank" defaultValue ="0.00"
+												   tableName="sales_quotation_line" itemChangedEvent="setColumnsOrder()"
+												   dataType="N" rounding="false" setDefaultOnEmpty="true"
+												   maxValue="9999999999.99" validationFlag="true" toolTip="Quantity"/>
+					<customcomponents:GenTextInput id="tiAccessoryAmountBlank"  height="20" textAlign="right" enabled="false"
+												   updatableFlag="true" width="80" tabIndex="3" xmlTag="accessory_amtblank" defaultValue ="0.00"
+												   tableName="sales_quotation_line" itemChangedEvent="setColumnsOrder()"
+												   dataType="N" rounding="false" setDefaultOnEmpty="true"
+												   maxValue="9999999999.99" validationFlag="true" toolTip="Quantity"/>
+					<mx:Spacer width="103"/>
+					<customcomponents:GenTextInput id="tiNetAmountBlank"  height="20" textAlign="right" enabled="false"
+												   updatableFlag="true" width="120" tabIndex="3" xmlTag="net_amtblank" defaultValue ="0.00"
+												   tableName="sales_quotation_line" itemChangedEvent="setColumnsOrder()"
+												   dataType="N" rounding="false" setDefaultOnEmpty="true"
+												   maxValue="9999999999.99" validationFlag="true" toolTip="Quantity"/>
+					
+					
+				</mx:HBox>
+				<mx:HBox name="hbox1">
+					<customcomponents:GenCheckBox labelPlacement="left" label="" id="chkSelect1" width="15" height="20" xmlTag="column1_quotation_flag"
+							  updatableFlag="true" tableName="sales_quotation_line" defaultValue="N" textAlign="right" enabled="true"
+							  dataValueForOn = "Y" dataValueForOff = "N" itemChangedEvent="checkBoxSelectHandler(event)"/>
+					<mx:Label id="lblColumn1" text="Tier 1" width="70" textAlign="right"/>
+					<customcomponents:GenTextInput id="tiColumn1Price"  height="20" textAlign="right" 
+												   updatableFlag="true" width="80" tabIndex="2" xmlTag="column1" defaultValue ="0.000"
+												   tableName="sales_quotation_line" itemChangedEvent="setItemAmount()"
+												   dataType="N" rounding="false" setDefaultOnEmpty="true"
+												   maxValue="9999999999.999" validationFlag="true" toolTip="Quantity"/>
+					<customcomponents:GenTextInput id="tiColumn1Amount"  height="20" textAlign="right" enabled="false"
+												   updatableFlag="true" width="80" tabIndex="3" xmlTag="column1_amt" defaultValue ="0.00"
+												   tableName="sales_quotation_line" itemChangedEvent="setColumnsOrder()"
+												   dataType="N" rounding="false" setDefaultOnEmpty="true"
+												   maxValue="9999999999.99" validationFlag="true" toolTip="Quantity"/>
+					<customcomponents:GenTextInput id="tiSetupAmountItemDepenedable1"  height="20" textAlign="right" enabled="false"
+												   updatableFlag="true" width="80" tabIndex="3" xmlTag="setup_amt_item_dependable1" defaultValue ="0.00"
+												   tableName="sales_quotation_line" itemChangedEvent="setColumnsOrder()"
+												   dataType="N" rounding="false" setDefaultOnEmpty="true"
+												   maxValue="9999999999.99" validationFlag="true" toolTip="Quantity"/>
+					<customcomponents:GenTextInput id="tiSetupAmount1"  height="20" textAlign="right" enabled="false"
+												   updatableFlag="true" width="80" tabIndex="3" xmlTag="setup_amt1" defaultValue ="0.00"
+												   tableName="sales_quotation_line" itemChangedEvent="setColumnsOrder()"
+												   dataType="N" rounding="false" setDefaultOnEmpty="true"
+												   maxValue="9999999999.99" validationFlag="true" toolTip="Quantity"/>
+					
+					<customcomponents:GenTextInput id="tiAccessoryAmount1"  height="20" textAlign="right" enabled="false"
+												   updatableFlag="true" width="80" tabIndex="3" xmlTag="accessory_amt1" defaultValue ="0.00"
+												   tableName="sales_quotation_line" itemChangedEvent="setColumnsOrder()"
+												   dataType="N" rounding="false" setDefaultOnEmpty="true"
+												   maxValue="9999999999.99" validationFlag="true" toolTip="Quantity"/>
+					<customcomponents:GenCheckBox labelPlacement="left" label="" id="chkShippingSelect1" width="15" height="20" xmlTag="column1_shipping_flag"
+												  updatableFlag="true" tableName="sales_quotation_line" defaultValue="N" textAlign="right" enabled="false"
+												  dataValueForOn = "Y" dataValueForOff = "N" itemChangedEvent="shippingCheckBoxSelectHandler(event)" />
+					
+					<customcomponents:GenTextInput id="tiShippingAmount1"  height="20" textAlign="right" enabled="false"
+												   updatableFlag="true" width="80" tabIndex="3" xmlTag="column1_ship_amt" defaultValue ="0.00"
+												   tableName="sales_quotation_line"	dataType="N" rounding="false" setDefaultOnEmpty="true"
+												   maxValue="9999999999.99" validationFlag="true" toolTip="Ship Amt"/>
+					<customcomponents:GenTextInput id="tiNetAmount1"  height="20" textAlign="right" enabled="false"
+												   updatableFlag="true" width="120" tabIndex="3" xmlTag="net_amt1" defaultValue ="0.00"
+												   tableName="sales_quotation_line" itemChangedEvent="setColumnsOrder()"
+												   dataType="N" rounding="false" setDefaultOnEmpty="true"
+												   maxValue="9999999999.99" validationFlag="true" toolTip="Quantity"/>
+				</mx:HBox>
+				
+				<mx:HBox name="hbox2">
+					<customcomponents:GenCheckBox labelPlacement="left" label="" id="chkSelect2" width="15" height="20" xmlTag="column2_quotation_flag"
+												  updatableFlag="true" tableName="sales_quotation_line" defaultValue="N" textAlign="right" enabled="true"
+												  dataValueForOn = "Y" dataValueForOff = "N" itemChangedEvent="checkBoxSelectHandler(event)"/>
+					<mx:Label id="lblColumn2" text="Tier 2" width="70" textAlign="right"/>
+					<customcomponents:GenTextInput id="tiColumn2Price"  height="20" textAlign="right"
+												   updatableFlag="true" width="80" tabIndex="3" xmlTag="column2" defaultValue ="0.000"
+												   tableName="sales_quotation_line" itemChangedEvent="setItemAmount()"
+												   dataType="N" rounding="false" setDefaultOnEmpty="true"
+												   maxValue="9999999999.999" validationFlag="true" toolTip="Quantity"/>
+					<customcomponents:GenTextInput id="tiColumn2Amount"  height="20" textAlign="right" enabled="false"
+												   updatableFlag="true" width="80" tabIndex="3" xmlTag="column2_amt" defaultValue ="0.00"
+												   tableName="sales_quotation_line" itemChangedEvent="setColumnsOrder()"
+												   dataType="N" rounding="false" setDefaultOnEmpty="true"
+												   maxValue="9999999999.99" validationFlag="true" toolTip="Quantity"/>
+					
+					<customcomponents:GenTextInput id="tiSetupAmountItemDepenedable2"  height="20" textAlign="right" enabled="false"
+												   updatableFlag="true" width="80" tabIndex="3" xmlTag="setup_amt_item_dependable2" defaultValue ="0.00"
+												   tableName="sales_quotation_line" itemChangedEvent="setColumnsOrder()"
+												   dataType="N" rounding="false" setDefaultOnEmpty="true"
+												   maxValue="9999999999.99" validationFlag="true" toolTip="Quantity"/>
+					
+					<customcomponents:GenTextInput id="tiSetupAmount2"  height="20" textAlign="right" enabled="false"
+												   updatableFlag="true" width="80" tabIndex="3" xmlTag="setup_amt2" defaultValue ="0.00"
+												   tableName="sales_quotation_line" itemChangedEvent="setColumnsOrder()"
+												   dataType="N" rounding="false" setDefaultOnEmpty="true"
+												   maxValue="9999999999.99" validationFlag="true" toolTip="Quantity"/>
+					
+					<customcomponents:GenTextInput id="tiAccessoryAmount2"  height="20" textAlign="right" enabled="false"
+												   updatableFlag="true" width="80" tabIndex="3" xmlTag="accessory_amt2" defaultValue ="0.00"
+												   tableName="sales_quotation_line" itemChangedEvent="setColumnsOrder()"
+												   dataType="N" rounding="false" setDefaultOnEmpty="true"
+												   maxValue="9999999999.99" validationFlag="true" toolTip="Quantity"/>
+					<customcomponents:GenCheckBox labelPlacement="left" label="" id="chkShippingSelect2" width="15" height="20" xmlTag="column2_shipping_flag"
+												  updatableFlag="true" tableName="sales_quotation_line" defaultValue="N" textAlign="right" enabled="false"
+												  dataValueForOn = "Y" dataValueForOff = "N" itemChangedEvent="shippingCheckBoxSelectHandler(event)" />
+					
+					<customcomponents:GenTextInput id="tiShippingAmount2"  height="20" textAlign="right" enabled="false"
+												   updatableFlag="true" width="80" tabIndex="3" xmlTag="column2_ship_amt" defaultValue ="0.00"
+												   tableName="sales_quotation_line"	dataType="N" rounding="false" setDefaultOnEmpty="true"
+												   maxValue="9999999999.99" validationFlag="true" toolTip="Ship Amt"/>
+					<customcomponents:GenTextInput id="tiNetAmount2"  height="20" textAlign="right" enabled="false"
+												   updatableFlag="true" width="120" tabIndex="3" xmlTag="net_amt2" defaultValue ="0.00"
+												   tableName="sales_quotation_line" itemChangedEvent="setColumnsOrder()"
+												   dataType="N" rounding="false" setDefaultOnEmpty="true"
+												   maxValue="9999999999.99" validationFlag="true" toolTip="Quantity"/>
+				</mx:HBox>
+				<mx:HBox name="hbox3">
+					<customcomponents:GenCheckBox labelPlacement="left" label="" id="chkSelect3" width="15" height="20" xmlTag="column3_quotation_flag"
+												  updatableFlag="true" tableName="sales_quotation_line" defaultValue="N" textAlign="right" enabled="true"
+												  dataValueForOn = "Y" dataValueForOff = "N" itemChangedEvent="checkBoxSelectHandler(event)"/>
+					<mx:Label id="lblColumn3" text="Tier 3" width="70" textAlign="right"/>
+					<customcomponents:GenTextInput id="tiColumn3Price"  height="20" textAlign="right"
+												   updatableFlag="true" width="80" tabIndex="4" xmlTag="column3" defaultValue ="0.000"
+												   tableName="sales_quotation_line" itemChangedEvent="setItemAmount()"
+												   dataType="N" rounding="false" setDefaultOnEmpty="true"
+												   maxValue="9999999999.999" validationFlag="true" toolTip="Quantity"/>
+					<customcomponents:GenTextInput id="tiColumn3Amount"  height="20" textAlign="right" enabled="false"
+												   updatableFlag="true" width="80" tabIndex="3" xmlTag="column3_amt" defaultValue ="0.00"
+												   tableName="sales_quotation_line" itemChangedEvent="setColumnsOrder()"
+												   dataType="N" rounding="false" setDefaultOnEmpty="true"
+												   maxValue="9999999999.99" validationFlag="true" toolTip="Quantity"/>
+					
+					<customcomponents:GenTextInput id="tiSetupAmountItemDepenedable3"  height="20" textAlign="right" enabled="false"
+												   updatableFlag="true" width="80" tabIndex="3" xmlTag="setup_amt_item_dependable3" defaultValue ="0.00"
+												   tableName="sales_quotation_line" itemChangedEvent="setColumnsOrder()"
+												   dataType="N" rounding="false" setDefaultOnEmpty="true"
+												   maxValue="9999999999.99" validationFlag="true" toolTip="Quantity"/>
+					
+					<customcomponents:GenTextInput id="tiSetupAmount3"  height="20" textAlign="right" enabled="false"
+												   updatableFlag="true" width="80" tabIndex="3" xmlTag="setup_amt3" defaultValue ="0.00"
+												   tableName="sales_quotation_line" itemChangedEvent="setColumnsOrder()"
+												   dataType="N" rounding="false" setDefaultOnEmpty="true"
+												   maxValue="9999999999.99" validationFlag="true" toolTip="Quantity"/>
+					
+					<customcomponents:GenTextInput id="tiAccessoryAmount3"  height="20" textAlign="right" enabled="false"
+												   updatableFlag="true" width="80" tabIndex="3" xmlTag="accessory_amt3" defaultValue ="0.00"
+												   tableName="sales_quotation_line" itemChangedEvent="setColumnsOrder()"
+												   dataType="N" rounding="false" setDefaultOnEmpty="true"
+												   maxValue="9999999999.99" validationFlag="true" toolTip="Quantity"/>
+					
+					<customcomponents:GenCheckBox labelPlacement="left" label="" id="chkShippingSelect3" width="15" height="20" xmlTag="column3_shipping_flag"
+												  updatableFlag="true" tableName="sales_quotation_line" defaultValue="N" textAlign="right" enabled="false"
+												  dataValueForOn = "Y" dataValueForOff = "N" itemChangedEvent="shippingCheckBoxSelectHandler(event)" />
+					
+					<customcomponents:GenTextInput id="tiShippingAmount3"  height="20" textAlign="right" enabled="false"
+												   updatableFlag="true" width="80" tabIndex="3" xmlTag="column3_ship_amt" defaultValue ="0.00"
+												   tableName="sales_quotation_line"	dataType="N" rounding="false" setDefaultOnEmpty="true"
+												   maxValue="9999999999.99" validationFlag="true" toolTip="Ship Amt"/>
+					
+					<customcomponents:GenTextInput id="tiNetAmount3"  height="20" textAlign="right" enabled="false"
+												   updatableFlag="true" width="120" tabIndex="3" xmlTag="net_amt3" defaultValue ="0.00"
+												   tableName="sales_quotation_line" itemChangedEvent="setColumnsOrder()"
+												   dataType="N" rounding="false" setDefaultOnEmpty="true"
+												   maxValue="9999999999.99" validationFlag="true" toolTip="Quantity"/>
+				</mx:HBox>
+				<mx:HBox name="hbox4">
+					<customcomponents:GenCheckBox labelPlacement="left" label="" id="chkSelect4" width="15" height="20" xmlTag="column4_quotation_flag"
+												  updatableFlag="true" tableName="sales_quotation_line" defaultValue="N" textAlign="right" enabled="true"
+												  dataValueForOn = "Y" dataValueForOff = "N" itemChangedEvent="checkBoxSelectHandler(event)"/>
+					<mx:Label id="lblColumn4" text="Tier 4" width="70" textAlign="right"/>
+					<customcomponents:GenTextInput id="tiColumn4Price"  height="20" textAlign="right"
+												   updatableFlag="true" width="80" tabIndex="5" xmlTag="column4" defaultValue ="0.000"
+												   tableName="sales_quotation_line" itemChangedEvent="setItemAmount()"
+												   dataType="N" rounding="false" setDefaultOnEmpty="true"
+												   maxValue="9999999999.999" validationFlag="true" toolTip="Quantity"/>
+					<customcomponents:GenTextInput id="tiColumn4Amount"  height="20" textAlign="right" enabled="false"
+												   updatableFlag="true" width="80" tabIndex="3" xmlTag="column4_amt" defaultValue ="0.00"
+												   tableName="sales_quotation_line" itemChangedEvent="setColumnsOrder()"
+												   dataType="N" rounding="false" setDefaultOnEmpty="true"
+												   maxValue="9999999999.99" validationFlag="true" toolTip="Quantity"/>
+					
+					<customcomponents:GenTextInput id="tiSetupAmountItemDepenedable4"  height="20" textAlign="right" enabled="false"
+												   updatableFlag="true" width="80" tabIndex="3" xmlTag="setup_amt_item_dependable4" defaultValue ="0.00"
+												   tableName="sales_quotation_line" itemChangedEvent="setColumnsOrder()"
+												   dataType="N" rounding="false" setDefaultOnEmpty="true"
+												   maxValue="9999999999.99" validationFlag="true" toolTip="Quantity"/>
+					
+					<customcomponents:GenTextInput id="tiSetupAmount4"  height="20" textAlign="right" enabled="false"
+												   updatableFlag="true" width="80" tabIndex="3" xmlTag="setup_amt4" defaultValue ="0.00"
+												   tableName="sales_quotation_line" itemChangedEvent="setColumnsOrder()"
+												   dataType="N" rounding="false" setDefaultOnEmpty="true"
+												   maxValue="9999999999.99" validationFlag="true" toolTip="Quantity"/>
+					
+					<customcomponents:GenTextInput id="tiAccessoryAmount4"  height="20" textAlign="right" enabled="false"
+												   updatableFlag="true" width="80" tabIndex="3" xmlTag="accessory_amt4" defaultValue ="0.00"
+												   tableName="sales_quotation_line" itemChangedEvent="setColumnsOrder()"
+												   dataType="N" rounding="false" setDefaultOnEmpty="true"
+												   maxValue="9999999999.99" validationFlag="true" toolTip="Quantity"/>
+					<customcomponents:GenCheckBox labelPlacement="left" label="" id="chkShippingSelect4" width="15" height="20" xmlTag="column4_shipping_flag"
+												  updatableFlag="true" tableName="sales_quotation_line" defaultValue="N" textAlign="right" enabled="false"
+												  dataValueForOn = "Y" dataValueForOff = "N" itemChangedEvent="shippingCheckBoxSelectHandler(event)" />
+					
+					<customcomponents:GenTextInput id="tiShippingAmount4"  height="20" textAlign="right" enabled="false"
+												   updatableFlag="true" width="80" tabIndex="3" xmlTag="column4_ship_amt" defaultValue ="0.00"
+												   tableName="sales_quotation_line"	dataType="N" rounding="false" setDefaultOnEmpty="true"
+												   maxValue="9999999999.99" validationFlag="true" toolTip="Ship Amt"/>
+					<customcomponents:GenTextInput id="tiNetAmount4"  height="20" textAlign="right" enabled="false"
+												   updatableFlag="true" width="120" tabIndex="3" xmlTag="net_amt4" defaultValue ="0.00"
+												   tableName="sales_quotation_line" itemChangedEvent="setColumnsOrder()"
+												   dataType="N" rounding="false" setDefaultOnEmpty="true"
+												   maxValue="9999999999.99" validationFlag="true" toolTip="Quantity"/>
+				</mx:HBox>
+				<mx:HBox name="hbox5">
+					<customcomponents:GenCheckBox labelPlacement="left" label="" id="chkSelect5" width="15" height="20" xmlTag="column5_quotation_flag"
+												  updatableFlag="true" tableName="sales_quotation_line" defaultValue="N" textAlign="right" enabled="true"
+												  dataValueForOn = "Y" dataValueForOff = "N" itemChangedEvent="checkBoxSelectHandler(event)"/>
+					<mx:Label id="lblColumn5" text="Tier 5" width="70" textAlign="right"/>
+					<customcomponents:GenTextInput id="tiColumn5Price"  height="20" textAlign="right"
+												   updatableFlag="true" width="80" tabIndex="6" xmlTag="column5" defaultValue ="0.000"
+												   tableName="sales_quotation_line" itemChangedEvent="setItemAmount()"
+												   dataType="N" rounding="false" setDefaultOnEmpty="true"
+												   maxValue="9999999999.999" validationFlag="true" toolTip="Quantity"/>
+					<customcomponents:GenTextInput id="tiColumn5Amount"  height="20" textAlign="right" enabled="false"
+												   updatableFlag="true" width="80" tabIndex="3" xmlTag="column5_amt" defaultValue ="0.00"
+												   tableName="sales_quotation_line" itemChangedEvent="setColumnsOrder()"
+												   dataType="N" rounding="false" setDefaultOnEmpty="true"
+												   maxValue="9999999999.99" validationFlag="true" toolTip="Quantity"/>
+					
+					<customcomponents:GenTextInput id="tiSetupAmountItemDepenedable5"  height="20" textAlign="right" enabled="false"
+												   updatableFlag="true" width="80" tabIndex="3" xmlTag="setup_amt_item_dependable5" defaultValue ="0.00"
+												   tableName="sales_quotation_line" itemChangedEvent="setColumnsOrder()"
+												   dataType="N" rounding="false" setDefaultOnEmpty="true"
+												   maxValue="9999999999.99" validationFlag="true" toolTip="Quantity"/>
+					
+					<customcomponents:GenTextInput id="tiSetupAmount5"  height="20" textAlign="right" enabled="false"
+												   updatableFlag="true" width="80" tabIndex="3" xmlTag="setup_amt5" defaultValue ="0.00"
+												   tableName="sales_quotation_line" itemChangedEvent="setColumnsOrder()"
+												   dataType="N" rounding="false" setDefaultOnEmpty="true"
+												   maxValue="9999999999.99" validationFlag="true" toolTip="Quantity"/>
+					
+					
+					<customcomponents:GenTextInput id="tiAccessoryAmount5"  height="20" textAlign="right" enabled="false"
+												   updatableFlag="true" width="80" tabIndex="3" xmlTag="accessory_amt5" defaultValue ="0.00"
+												   tableName="sales_quotation_line" itemChangedEvent="setColumnsOrder()"
+												   dataType="N" rounding="false" setDefaultOnEmpty="true"
+												   maxValue="9999999999.99" validationFlag="true" toolTip="Quantity"/>
+					<customcomponents:GenCheckBox labelPlacement="left" label="" id="chkShippingSelect5" width="15" height="20" xmlTag="column5_shipping_flag"
+												  updatableFlag="true" tableName="sales_quotation_line" defaultValue="N" textAlign="right" enabled="false"
+												  dataValueForOn = "Y" dataValueForOff = "N" itemChangedEvent="shippingCheckBoxSelectHandler(event)" />
+					
+					<customcomponents:GenTextInput id="tiShippingAmount5"  height="20" textAlign="right" enabled="false"
+												   updatableFlag="true" width="80" tabIndex="3" xmlTag="column5_ship_amt" defaultValue ="0.00"
+												   tableName="sales_quotation_line"	dataType="N" rounding="false" setDefaultOnEmpty="true"
+												   maxValue="9999999999.99" validationFlag="true" toolTip="Ship Amt"/>
+					<customcomponents:GenTextInput id="tiNetAmount5"  height="20" textAlign="right" enabled="false"
+												   updatableFlag="true" width="120" tabIndex="3" xmlTag="net_amt5" defaultValue ="0.00"
+												   tableName="sales_quotation_line" itemChangedEvent="setColumnsOrder()"
+												   dataType="N" rounding="false" setDefaultOnEmpty="true"
+												   maxValue="9999999999.99" validationFlag="true" toolTip="Quantity"/>
+				</mx:HBox>
+				<mx:HBox name="hbox6">
+					<customcomponents:GenCheckBox labelPlacement="left" label="" id="chkSelect6" width="15" height="20" xmlTag="column6_quotation_flag"
+												  updatableFlag="true" tableName="sales_quotation_line" defaultValue="N" textAlign="right" enabled="true"
+												  dataValueForOn = "Y" dataValueForOff = "N" itemChangedEvent="checkBoxSelectHandler(event)"/>
+					<mx:Label id="lblColumn6" text="Tier 6" width="70" textAlign="right"/>
+					<customcomponents:GenTextInput id="tiColumn6Price"  height="20" textAlign="right"
+												   updatableFlag="true" width="80" tabIndex="7" xmlTag="column6" defaultValue ="0.000"
+												   tableName="sales_quotation_line" itemChangedEvent="setItemAmount()"
+												   dataType="N" rounding="false" setDefaultOnEmpty="true"
+												   maxValue="9999999999.999" validationFlag="true" toolTip="Quantity"/>	
+					<customcomponents:GenTextInput id="tiColumn6Amount"  height="20" textAlign="right" enabled="false"
+												   updatableFlag="true" width="80" tabIndex="3" xmlTag="column6_amt" defaultValue ="0.00"
+												   tableName="sales_quotation_line" itemChangedEvent="setColumnsOrder()"
+												   dataType="N" rounding="false" setDefaultOnEmpty="true"
+												   maxValue="9999999999.99" validationFlag="true" toolTip="Quantity"/>
+					
+					<customcomponents:GenTextInput id="tiSetupAmountItemDepenedable6"  height="20" textAlign="right" enabled="false"
+												   updatableFlag="true" width="80" tabIndex="3" xmlTag="setup_amt_item_dependable6" defaultValue ="0.00"
+												   tableName="sales_quotation_line" itemChangedEvent="setColumnsOrder()"
+												   dataType="N" rounding="false" setDefaultOnEmpty="true"
+												   maxValue="9999999999.99" validationFlag="true" toolTip="Quantity"/>
+					
+					<customcomponents:GenTextInput id="tiSetupAmount6"  height="20" textAlign="right" enabled="false"
+												   updatableFlag="true" width="80" tabIndex="3" xmlTag="setup_amt6" defaultValue ="0.00"
+												   tableName="sales_quotation_line" itemChangedEvent="setColumnsOrder()"
+												   dataType="N" rounding="false" setDefaultOnEmpty="true"
+												   maxValue="9999999999.99" validationFlag="true" toolTip="Quantity"/>
+					
+					<customcomponents:GenTextInput id="tiAccessoryAmount6"  height="20" textAlign="right" enabled="false"
+												   updatableFlag="true" width="80" tabIndex="3" xmlTag="accessory_amt6" defaultValue ="0.00"
+												   tableName="sales_quotation_line" itemChangedEvent="setColumnsOrder()"
+												   dataType="N" rounding="false" setDefaultOnEmpty="true"
+												   maxValue="9999999999.99" validationFlag="true" toolTip="Quantity"/>
+					<customcomponents:GenCheckBox labelPlacement="left" label="" id="chkShippingSelect6" width="15" height="20" xmlTag="column6_shipping_flag"
+												  updatableFlag="true" tableName="sales_quotation_line" defaultValue="N" textAlign="right" enabled="false"
+												  dataValueForOn = "Y" dataValueForOff = "N" itemChangedEvent="shippingCheckBoxSelectHandler(event)" />
+					
+					<customcomponents:GenTextInput id="tiShippingAmount6"  height="20" textAlign="right" enabled="false"
+												   updatableFlag="true" width="80" tabIndex="3" xmlTag="column6_ship_amt" defaultValue ="0.00"
+												   tableName="sales_quotation_line"	dataType="N" rounding="false" setDefaultOnEmpty="true"
+												   maxValue="9999999999.99" validationFlag="true" toolTip="Ship Amt"/>
+					<customcomponents:GenTextInput id="tiNetAmount6"  height="20" textAlign="right" enabled="false"
+												   updatableFlag="true" width="120" tabIndex="3" xmlTag="net_amt6" defaultValue ="0.00"
+												   tableName="sales_quotation_line" itemChangedEvent="setColumnsOrder()"
+												   dataType="N" rounding="false" setDefaultOnEmpty="true"
+												   maxValue="9999999999.99" validationFlag="true" toolTip="Quantity"/>
+				</mx:HBox>
+				
+				<mx:HBox name="hbox7">
+					<customcomponents:GenCheckBox labelPlacement="left" label="" id="chkSelect7" width="15" height="20" xmlTag="column7_quotation_flag"
+												  updatableFlag="true" tableName="sales_quotation_line" defaultValue="N" textAlign="right" enabled="true"
+												  dataValueForOn = "Y" dataValueForOff = "N" itemChangedEvent="checkBoxSelectHandler(event)"/>
+					<mx:Label id="lblColumn7" text="Tier 7" width="70" textAlign="right"/>
+					<customcomponents:GenTextInput id="tiColumn7Price"  height="20" textAlign="right"
+												   updatableFlag="true" width="80" tabIndex="8" xmlTag="column7" defaultValue ="0.000"
+												   tableName="sales_quotation_line" itemChangedEvent="setItemAmount()"
+												   dataType="N" rounding="false" setDefaultOnEmpty="true"
+												   maxValue="9999999999.999" validationFlag="true" toolTip="Quantity"/>	
+					
+					
+					
+					<customcomponents:GenTextInput id="tiColumn7Amount"  height="20" textAlign="right" enabled="false"
+												   updatableFlag="true" width="80" tabIndex="3" xmlTag="column7_amt" defaultValue ="0.00"
+												   tableName="sales_quotation_line" itemChangedEvent="setColumnsOrder()"
+												   dataType="N" rounding="false" setDefaultOnEmpty="true"
+												   maxValue="9999999999.99" validationFlag="true" toolTip="Quantity"/>
+					
+					<customcomponents:GenTextInput id="tiSetupAmountItemDepenedable7"  height="20" textAlign="right" enabled="false"
+												   updatableFlag="true" width="80" tabIndex="3" xmlTag="setup_amt_item_dependable7" defaultValue ="0.00"
+												   tableName="sales_quotation_line" itemChangedEvent="setColumnsOrder()"
+												   dataType="N" rounding="false" setDefaultOnEmpty="true"
+												   maxValue="9999999999.99" validationFlag="true" toolTip="Quantity"/>
+					
+					<customcomponents:GenTextInput id="tiSetupAmount7"  height="20" textAlign="right" enabled="false"
+												   updatableFlag="true" width="80" tabIndex="3" xmlTag="setup_amt7" defaultValue ="0.00"
+												   tableName="sales_quotation_line" itemChangedEvent="setColumnsOrder()"
+												   dataType="N" rounding="false" setDefaultOnEmpty="true"
+												   maxValue="9999999999.99" validationFlag="true" toolTip="Quantity"/>
+					
+					<customcomponents:GenTextInput id="tiAccessoryAmount7"  height="20" textAlign="right" enabled="false"
+												   updatableFlag="true" width="80" tabIndex="3" xmlTag="accessory_amt7" defaultValue ="0.00"
+												   tableName="sales_quotation_line" itemChangedEvent="setColumnsOrder()"
+												   dataType="N" rounding="false" setDefaultOnEmpty="true"
+												   maxValue="9999999999.99" validationFlag="true" toolTip="Quantity"/>
+					<customcomponents:GenCheckBox labelPlacement="left" label="" id="chkShippingSelect7" width="15" height="20" xmlTag="column7_shipping_flag"
+												  updatableFlag="true" tableName="sales_quotation_line" defaultValue="N" textAlign="right" enabled="false"
+												  dataValueForOn = "Y" dataValueForOff = "N" itemChangedEvent="shippingCheckBoxSelectHandler(event)" />
+					
+					<customcomponents:GenTextInput id="tiShippingAmount7"  height="20" textAlign="right" enabled="false"
+												   updatableFlag="true" width="80" tabIndex="3" xmlTag="column7_ship_amt" defaultValue ="0.00"
+												   tableName="sales_quotation_line"	dataType="N" rounding="false" setDefaultOnEmpty="true"
+												   maxValue="9999999999.99" validationFlag="true" toolTip="Ship Amt"/>
+					<customcomponents:GenTextInput id="tiNetAmount7"  height="20" textAlign="right" enabled="false"
+												   updatableFlag="true" width="120" tabIndex="3" xmlTag="net_amt7" defaultValue ="0.00"
+												   tableName="sales_quotation_line" itemChangedEvent="setColumnsOrder()"
+												   dataType="N" rounding="false" setDefaultOnEmpty="true"
+												   maxValue="9999999999.99" validationFlag="true" toolTip="Quantity"/>
+				</mx:HBox>
+				<mx:HBox name="hbox8">
+					<customcomponents:GenCheckBox labelPlacement="left" label="" id="chkSelect8" width="15" height="20" xmlTag="column8_quotation_flag"
+												  updatableFlag="true" tableName="sales_quotation_line" defaultValue="N" textAlign="right" enabled="true"
+												  dataValueForOn = "Y" dataValueForOff = "N" itemChangedEvent="checkBoxSelectHandler(event)"/>
+					<mx:Label id="lblColumn8" text="Tier 8" width="70" textAlign="right"/>
+					<customcomponents:GenTextInput id="tiColumn8Price"  height="20" textAlign="right"
+												   updatableFlag="true" width="80" tabIndex="9" xmlTag="column8" defaultValue ="0.000"
+												   tableName="sales_quotation_line" itemChangedEvent="setItemAmount()"
+												   dataType="N" rounding="false" setDefaultOnEmpty="true"
+												   maxValue="9999999999.999" validationFlag="true" toolTip="Quantity"/>	
+					<customcomponents:GenTextInput id="tiColumn8Amount"  height="20" textAlign="right" enabled="false"
+												   updatableFlag="true" width="80" tabIndex="3" xmlTag="column8_amt" defaultValue ="0.00"
+												   tableName="sales_quotation_line" itemChangedEvent="setColumnsOrder()"
+												   dataType="N" rounding="false" setDefaultOnEmpty="true"
+												   maxValue="9999999999.99" validationFlag="true" toolTip="Quantity"/>
+					
+					<customcomponents:GenTextInput id="tiSetupAmountItemDepenedable8"  height="20" textAlign="right" enabled="false"
+												   updatableFlag="true" width="80" tabIndex="3" xmlTag="setup_amt_item_dependable8" defaultValue ="0.00"
+												   tableName="sales_quotation_line" itemChangedEvent="setColumnsOrder()"
+												   dataType="N" rounding="false" setDefaultOnEmpty="true"
+												   maxValue="9999999999.99" validationFlag="true" toolTip="Quantity"/>
+					
+					<customcomponents:GenTextInput id="tiSetupAmount8"  height="20" textAlign="right" enabled="false"
+												   updatableFlag="true" width="80" tabIndex="3" xmlTag="setup_amt8" defaultValue ="0.00"
+												   tableName="sales_quotation_line" itemChangedEvent="setColumnsOrder()"
+												   dataType="N" rounding="false" setDefaultOnEmpty="true"
+												   maxValue="9999999999.99" validationFlag="true" toolTip="Quantity"/>
+					
+					<customcomponents:GenTextInput id="tiAccessoryAmount8"  height="20" textAlign="right" enabled="false"
+												   updatableFlag="true" width="80" tabIndex="3" xmlTag="accessory_amt8" defaultValue ="0.00"
+												   tableName="sales_quotation_line" itemChangedEvent="setColumnsOrder()"
+												   dataType="N" rounding="false" setDefaultOnEmpty="true"
+												   maxValue="9999999999.99" validationFlag="true" toolTip="Quantity"/>
+					<customcomponents:GenCheckBox labelPlacement="left" label="" id="chkShippingSelect8" width="15" height="20" xmlTag="column8_shipping_flag"
+												  updatableFlag="true" tableName="sales_quotation_line" defaultValue="N" textAlign="right" enabled="false"
+												  dataValueForOn = "Y" dataValueForOff = "N" itemChangedEvent="shippingCheckBoxSelectHandler(event)" />
+					
+					<customcomponents:GenTextInput id="tiShippingAmount8"  height="20" textAlign="right" enabled="false"
+												   updatableFlag="true" width="80" tabIndex="3" xmlTag="column8_ship_amt" defaultValue ="0.00"
+												   tableName="sales_quotation_line"	dataType="N" rounding="false" setDefaultOnEmpty="true"
+												   maxValue="9999999999.99" validationFlag="true" toolTip="Ship Amt"/>
+					<customcomponents:GenTextInput id="tiNetAmount8"  height="20" textAlign="right" enabled="false"
+												   updatableFlag="true" width="120" tabIndex="3" xmlTag="net_amt8" defaultValue ="0.00"
+												   tableName="sales_quotation_line" itemChangedEvent="setColumnsOrder()"
+												   dataType="N" rounding="false" setDefaultOnEmpty="true"
+												   maxValue="9999999999.99" validationFlag="true" toolTip="Quantity"/>
+				</mx:HBox>
+				<mx:HBox name="hbox9">
+					<customcomponents:GenCheckBox labelPlacement="left" label="" id="chkSelect9" width="15" height="20" xmlTag="column9_quotation_flag"
+												  updatableFlag="true" tableName="sales_quotation_line" defaultValue="N" textAlign="right" enabled="true"
+												  dataValueForOn = "Y" dataValueForOff = "N" itemChangedEvent="checkBoxSelectHandler(event)"/>
+					<mx:Label id="lblColumn9" text="Tier 9" width="70" textAlign="right"/>
+					<customcomponents:GenTextInput id="tiColumn9Price"  height="20" textAlign="right"
+												   updatableFlag="true" width="80" tabIndex="10" xmlTag="column9" defaultValue ="0.000"
+												   tableName="sales_quotation_line" itemChangedEvent="setItemAmount()"
+												   dataType="N" rounding="false" setDefaultOnEmpty="true"
+												   maxValue="9999999999.999" validationFlag="true" toolTip="Quantity"/>
+					<customcomponents:GenTextInput id="tiColumn9Amount"  height="20" textAlign="right" enabled="false"
+												   updatableFlag="true" width="80" tabIndex="3" xmlTag="column9_amt" defaultValue ="0.00"
+												   tableName="sales_quotation_line" itemChangedEvent="setColumnsOrder()"
+												   dataType="N" rounding="false" setDefaultOnEmpty="true"
+												   maxValue="9999999999.99" validationFlag="true" toolTip="Quantity"/>
+					
+					<customcomponents:GenTextInput id="tiSetupAmountItemDepenedable9"  height="20" textAlign="right" enabled="false"
+												   updatableFlag="true" width="80" tabIndex="3" xmlTag="setup_amt_item_dependable9" defaultValue ="0.00"
+												   tableName="sales_quotation_line" itemChangedEvent="setColumnsOrder()"
+												   dataType="N" rounding="false" setDefaultOnEmpty="true"
+												   maxValue="9999999999.99" validationFlag="true" toolTip="Quantity"/>
+					
+					<customcomponents:GenTextInput id="tiSetupAmount9"  height="20" textAlign="right" enabled="false"
+												   updatableFlag="true" width="80" tabIndex="3" xmlTag="setup_amt9" defaultValue ="0.00"
+												   tableName="sales_quotation_line" itemChangedEvent="setColumnsOrder()"
+												   dataType="N" rounding="false" setDefaultOnEmpty="true"
+												   maxValue="9999999999.99" validationFlag="true" toolTip="Quantity"/>
+					
+					<customcomponents:GenTextInput id="tiAccessoryAmount9"  height="20" textAlign="right" enabled="false"
+												   updatableFlag="true" width="80" tabIndex="3" xmlTag="accessory_amt9" defaultValue ="0.00"
+												   tableName="sales_quotation_line" itemChangedEvent="setColumnsOrder()"
+												   dataType="N" rounding="false" setDefaultOnEmpty="true"
+												   maxValue="9999999999.99" validationFlag="true" toolTip="Quantity"/>
+					<customcomponents:GenCheckBox labelPlacement="left" label="" id="chkShippingSelect9" width="15" height="20" xmlTag="column9_shipping_flag"
+												  updatableFlag="true" tableName="sales_quotation_line" defaultValue="N" textAlign="right" enabled="false"
+												  dataValueForOn = "Y" dataValueForOff = "N" itemChangedEvent="shippingCheckBoxSelectHandler(event)" />
+					
+					<customcomponents:GenTextInput id="tiShippingAmount9"  height="20" textAlign="right" enabled="false"
+												   updatableFlag="true" width="80" tabIndex="3" xmlTag="column9_ship_amt" defaultValue ="0.00"
+												   tableName="sales_quotation_line"	dataType="N" rounding="false" setDefaultOnEmpty="true"
+												   maxValue="9999999999.99" validationFlag="true" toolTip="Ship Amt"/>
+					<customcomponents:GenTextInput id="tiNetAmount9"  height="20" textAlign="right" enabled="false"
+												   updatableFlag="true" width="120" tabIndex="3" xmlTag="net_amt9" defaultValue ="0.00"
+												   tableName="sales_quotation_line" itemChangedEvent="setColumnsOrder()"
+												   dataType="N" rounding="false" setDefaultOnEmpty="true"
+												   maxValue="9999999999.99" validationFlag="true" toolTip="Quantity"/>
+				</mx:HBox>
+				<mx:HBox name="hbox10">
+					<customcomponents:GenCheckBox labelPlacement="left" label="" id="chkSelect10" width="15" height="20" xmlTag="column10_quotation_flag"
+												  updatableFlag="true" tableName="sales_quotation_line" defaultValue="N" textAlign="right" enabled="true"
+												  dataValueForOn = "Y" dataValueForOff = "N" itemChangedEvent="checkBoxSelectHandler(event)"/>
+					<mx:Label id="lblColumn10" text="Tier 10" width="70" textAlign="right"/>
+					<customcomponents:GenTextInput id="tiColumn10Price"  height="20" textAlign="right"
+												   updatableFlag="true" width="80" tabIndex="11" xmlTag="column10" defaultValue ="0.000"
+												   tableName="sales_quotation_line" itemChangedEvent="setItemAmount()"
+												   dataType="N" rounding="false" setDefaultOnEmpty="true"
+												   maxValue="9999999999.999" validationFlag="true" toolTip="Quantity"/>	
+					<customcomponents:GenTextInput id="tiColumn10Amount"  height="20" textAlign="right" enabled="false"
+												   updatableFlag="true" width="80" tabIndex="3" xmlTag="column10_amt" defaultValue ="0.00"
+												   tableName="sales_quotation_line" itemChangedEvent="setColumnsOrder()"
+												   dataType="N" rounding="false" setDefaultOnEmpty="true"
+												   maxValue="9999999999.99" validationFlag="true" toolTip="Quantity"/>
+					
+					<customcomponents:GenTextInput id="tiSetupAmountItemDepenedable10"  height="20" textAlign="right" enabled="false"
+												   updatableFlag="true" width="80" tabIndex="3" xmlTag="setup_amt_item_dependable10" defaultValue ="0.00"
+												   tableName="sales_quotation_line" itemChangedEvent="setColumnsOrder()"
+												   dataType="N" rounding="false" setDefaultOnEmpty="true"
+												   maxValue="9999999999.99" validationFlag="true" toolTip="Quantity"/>
+					
+					<customcomponents:GenTextInput id="tiSetupAmount10"  height="20" textAlign="right" enabled="false"
+												   updatableFlag="true" width="80" tabIndex="3" xmlTag="setup_amt10" defaultValue ="0.00"
+												   tableName="sales_quotation_line" itemChangedEvent="setColumnsOrder()"
+												   dataType="N" rounding="false" setDefaultOnEmpty="true"
+												   maxValue="9999999999.99" validationFlag="true" toolTip="Quantity"/>
+					
+					<customcomponents:GenTextInput id="tiAccessoryAmount10"  height="20" textAlign="right" enabled="false"
+												   updatableFlag="true" width="80" tabIndex="3" xmlTag="accessory_amt10" defaultValue ="0.00"
+												   tableName="sales_quotation_line" itemChangedEvent="setColumnsOrder()"
+												   dataType="N" rounding="false" setDefaultOnEmpty="true"
+												   maxValue="9999999999.99" validationFlag="true" toolTip="Quantity"/>
+					<customcomponents:GenCheckBox labelPlacement="left" label="" id="chkShippingSelect10" width="15" height="20" xmlTag="column10_shipping_flag"
+												  updatableFlag="true" tableName="sales_quotation_line" defaultValue="N" textAlign="right" enabled="false"
+												  dataValueForOn = "Y" dataValueForOff = "N" itemChangedEvent="shippingCheckBoxSelectHandler(event)" />
+					
+					<customcomponents:GenTextInput id="tiShippingAmount10"  height="20" textAlign="right" enabled="false"
+												   updatableFlag="true" width="80" tabIndex="3" xmlTag="column10_ship_amt" defaultValue ="0.00"
+												   tableName="sales_quotation_line"	dataType="N" rounding="false" setDefaultOnEmpty="true"
+												   maxValue="9999999999.99" validationFlag="true" toolTip="Ship Amt"/>
+					<customcomponents:GenTextInput id="tiNetAmount10"  height="20" textAlign="right" enabled="false"
+												   updatableFlag="true" width="120" tabIndex="3" xmlTag="net_amt10" defaultValue ="0.00"
+												   tableName="sales_quotation_line" itemChangedEvent="setColumnsOrder()"
+												   dataType="N" rounding="false" setDefaultOnEmpty="true"
+												   maxValue="9999999999.99" validationFlag="true" toolTip="Quantity"/>
+				</mx:HBox>
+				<mx:HBox name="hbox11">
+					<customcomponents:GenCheckBox labelPlacement="left" label="" id="chkSelect11" width="15" height="20" xmlTag="column11_quotation_flag"
+												  updatableFlag="true" tableName="sales_quotation_line" defaultValue="N" textAlign="right" enabled="true"
+												  dataValueForOn = "Y" dataValueForOff = "N" itemChangedEvent="checkBoxSelectHandler(event)"/>
+					<mx:Label id="lblColumn11" text="Tier 11" width="70" textAlign="right"/>
+					<customcomponents:GenTextInput id="tiColumn11Price"  height="20" textAlign="right"
+												   updatableFlag="true" width="80" tabIndex="11" xmlTag="column11" defaultValue ="0.000"
+												   tableName="sales_quotation_line" itemChangedEvent="setItemAmount()"
+												   dataType="N" rounding="false" setDefaultOnEmpty="true"
+												   maxValue="9999999999.999" validationFlag="true" toolTip="Quantity"/>	
+					<customcomponents:GenTextInput id="tiColumn11Amount"  height="20" textAlign="right" enabled="false"
+												   updatableFlag="true" width="80" tabIndex="3" xmlTag="column11_amt" defaultValue ="0.00"
+												   tableName="sales_quotation_line" itemChangedEvent="setColumnsOrder()"
+												   dataType="N" rounding="false" setDefaultOnEmpty="true"
+												   maxValue="9999999999.99" validationFlag="true" toolTip="Quantity"/>
+					
+					<customcomponents:GenTextInput id="tiSetupAmountItemDepenedable11"  height="20" textAlign="right" enabled="false"
+												   updatableFlag="true" width="80" tabIndex="3" xmlTag="setup_amt_item_dependable11" defaultValue ="0.00"
+												   tableName="sales_quotation_line" itemChangedEvent="setColumnsOrder()"
+												   dataType="N" rounding="false" setDefaultOnEmpty="true"
+												   maxValue="9999999999.99" validationFlag="true" toolTip="Quantity"/>
+					
+					<customcomponents:GenTextInput id="tiSetupAmount11"  height="20" textAlign="right" enabled="false"
+												   updatableFlag="true" width="80" tabIndex="3" xmlTag="setup_amt11" defaultValue ="0.00"
+												   tableName="sales_quotation_line" itemChangedEvent="setColumnsOrder()"
+												   dataType="N" rounding="false" setDefaultOnEmpty="true"
+												   maxValue="9999999999.99" validationFlag="true" toolTip="Quantity"/>
+					
+					<customcomponents:GenTextInput id="tiAccessoryAmount11"  height="20" textAlign="right" enabled="false"
+												   updatableFlag="true" width="80" tabIndex="3" xmlTag="accessory_amt11" defaultValue ="0.00"
+												   tableName="sales_quotation_line" itemChangedEvent="setColumnsOrder()"
+												   dataType="N" rounding="false" setDefaultOnEmpty="true"
+												   maxValue="9999999999.99" validationFlag="true" toolTip="Quantity"/>
+					<customcomponents:GenCheckBox labelPlacement="left" label="" id="chkShippingSelect11" width="15" height="20" xmlTag="column11_shipping_flag"
+												  updatableFlag="true" tableName="sales_quotation_line" defaultValue="N" textAlign="right" enabled="false"
+												  dataValueForOn = "Y" dataValueForOff = "N" itemChangedEvent="shippingCheckBoxSelectHandler(event)" />
+					
+					<customcomponents:GenTextInput id="tiShippingAmount11"  height="20" textAlign="right" enabled="false"
+												   updatableFlag="true" width="80" tabIndex="3" xmlTag="column11_ship_amt" defaultValue ="0.00"
+												   tableName="sales_quotation_line"	dataType="N" rounding="false" setDefaultOnEmpty="true"
+												   maxValue="9999999999.99" validationFlag="true" toolTip="Ship Amt"/>
+					<customcomponents:GenTextInput id="tiNetAmount11"  height="20" textAlign="right" enabled="false"
+												   updatableFlag="true" width="120" tabIndex="3" xmlTag="net_amt11" defaultValue ="0.00"
+												   tableName="sales_quotation_line" itemChangedEvent="setColumnsOrder()"
+												   dataType="N" rounding="false" setDefaultOnEmpty="true"
+												   maxValue="9999999999.99" validationFlag="true" toolTip="Quantity"/>
+				</mx:HBox>
+				<mx:HBox name="hbox12">
+					<customcomponents:GenCheckBox labelPlacement="left" label="" id="chkSelect12" width="15" height="20" xmlTag="column12_quotation_flag"
+												  updatableFlag="true" tableName="sales_quotation_line" defaultValue="N" textAlign="right" enabled="true"
+												  dataValueForOn = "Y" dataValueForOff = "N" itemChangedEvent="checkBoxSelectHandler(event)"/>
+					<mx:Label id="lblColumn12" text="Tier 12" width="70" textAlign="right"/>
+					<customcomponents:GenTextInput id="tiColumn12Price"  height="20" textAlign="right"
+												   updatableFlag="true" width="80" tabIndex="11" xmlTag="column12" defaultValue ="0.000"
+												   tableName="sales_quotation_line" itemChangedEvent="setItemAmount()"
+												   dataType="N" rounding="false" setDefaultOnEmpty="true"
+												   maxValue="9999999999.999" validationFlag="true" toolTip="Quantity"/>	
+					<customcomponents:GenTextInput id="tiColumn12Amount"  height="20" textAlign="right" enabled="false"
+												   updatableFlag="true" width="80" tabIndex="3" xmlTag="column12_amt" defaultValue ="0.00"
+												   tableName="sales_quotation_line" itemChangedEvent="setColumnsOrder()"
+												   dataType="N" rounding="false" setDefaultOnEmpty="true"
+												   maxValue="9999999999.99" validationFlag="true" toolTip="Quantity"/>
+					
+					<customcomponents:GenTextInput id="tiSetupAmountItemDepenedable12"  height="20" textAlign="right" enabled="false"
+												   updatableFlag="true" width="80" tabIndex="3" xmlTag="setup_amt_item_dependable12" defaultValue ="0.00"
+												   tableName="sales_quotation_line" itemChangedEvent="setColumnsOrder()"
+												   dataType="N" rounding="false" setDefaultOnEmpty="true"
+												   maxValue="9999999999.99" validationFlag="true" toolTip="Quantity"/>
+					
+					<customcomponents:GenTextInput id="tiSetupAmount12"  height="20" textAlign="right" enabled="false"
+												   updatableFlag="true" width="80" tabIndex="3" xmlTag="setup_amt12" defaultValue ="0.00"
+												   tableName="sales_quotation_line" itemChangedEvent="setColumnsOrder()"
+												   dataType="N" rounding="false" setDefaultOnEmpty="true"
+												   maxValue="9999999999.99" validationFlag="true" toolTip="Quantity"/>
+					
+					<customcomponents:GenTextInput id="tiAccessoryAmount12"  height="20" textAlign="right" enabled="false"
+												   updatableFlag="true" width="80" tabIndex="3" xmlTag="accessory_amt12" defaultValue ="0.00"
+												   tableName="sales_quotation_line" itemChangedEvent="setColumnsOrder()"
+												   dataType="N" rounding="false" setDefaultOnEmpty="true"
+												   maxValue="9999999999.99" validationFlag="true" toolTip="Quantity"/>
+					<customcomponents:GenCheckBox labelPlacement="left" label="" id="chkShippingSelect12" width="15" height="20" xmlTag="column12_shipping_flag"
+												  updatableFlag="true" tableName="sales_quotation_line" defaultValue="N" textAlign="right" enabled="false"
+												  dataValueForOn = "Y" dataValueForOff = "N" itemChangedEvent="shippingCheckBoxSelectHandler(event)" />
+					
+					<customcomponents:GenTextInput id="tiShippingAmount12"  height="20" textAlign="right" enabled="false"
+												   updatableFlag="true" width="80" tabIndex="3" xmlTag="column12_ship_amt" defaultValue ="0.00"
+												   tableName="sales_quotation_line"	dataType="N" rounding="false" setDefaultOnEmpty="true"
+												   maxValue="9999999999.99" validationFlag="true" toolTip="Ship Amt"/>
+					<customcomponents:GenTextInput id="tiNetAmount12"  height="20" textAlign="right" enabled="false"
+												   updatableFlag="true" width="120" tabIndex="3" xmlTag="net_amt12" defaultValue ="0.00"
+												   tableName="sales_quotation_line" itemChangedEvent="setColumnsOrder()"
+												   dataType="N" rounding="false" setDefaultOnEmpty="true"
+												   maxValue="9999999999.99" validationFlag="true" toolTip="Quantity"/>
+				</mx:HBox>
+				<mx:HBox name="hbox13">
+					<customcomponents:GenCheckBox labelPlacement="left" label="" id="chkSelect13" width="15" height="20" xmlTag="column13_quotation_flag"
+												  updatableFlag="true" tableName="sales_quotation_line" defaultValue="N" textAlign="right" enabled="true"
+												  dataValueForOn = "Y" dataValueForOff = "N" itemChangedEvent="checkBoxSelectHandler(event)"/>
+					<mx:Label id="lblColumn13" text="Tier 13" width="70" textAlign="right"/>
+					<customcomponents:GenTextInput id="tiColumn13Price"  height="20" textAlign="right"
+												   updatableFlag="true" width="80" tabIndex="11" xmlTag="column13" defaultValue ="0.000"
+												   tableName="sales_quotation_line" itemChangedEvent="setItemAmount()"
+												   dataType="N" rounding="false" setDefaultOnEmpty="true"
+												   maxValue="9999999999.999" validationFlag="true" toolTip="Quantity"/>	
+					<customcomponents:GenTextInput id="tiColumn13Amount"  height="20" textAlign="right" enabled="false"
+												   updatableFlag="true" width="80" tabIndex="3" xmlTag="column13_amt" defaultValue ="0.00"
+												   tableName="sales_quotation_line" itemChangedEvent="setColumnsOrder()"
+												   dataType="N" rounding="false" setDefaultOnEmpty="true"
+												   maxValue="9999999999.99" validationFlag="true" toolTip="Quantity"/>
+					
+					<customcomponents:GenTextInput id="tiSetupAmountItemDepenedable13"  height="20" textAlign="right" enabled="false"
+												   updatableFlag="true" width="80" tabIndex="3" xmlTag="setup_amt_item_dependable13" defaultValue ="0.00"
+												   tableName="sales_quotation_line" itemChangedEvent="setColumnsOrder()"
+												   dataType="N" rounding="false" setDefaultOnEmpty="true"
+												   maxValue="9999999999.99" validationFlag="true" toolTip="Quantity"/>
+					
+					<customcomponents:GenTextInput id="tiSetupAmount13"  height="20" textAlign="right" enabled="false"
+												   updatableFlag="true" width="80" tabIndex="3" xmlTag="setup_amt13" defaultValue ="0.00"
+												   tableName="sales_quotation_line" itemChangedEvent="setColumnsOrder()"
+												   dataType="N" rounding="false" setDefaultOnEmpty="true"
+												   maxValue="9999999999.99" validationFlag="true" toolTip="Quantity"/>
+					
+					<customcomponents:GenTextInput id="tiAccessoryAmount13"  height="20" textAlign="right" enabled="false"
+												   updatableFlag="true" width="80" tabIndex="3" xmlTag="accessory_amt13" defaultValue ="0.00"
+												   tableName="sales_quotation_line" itemChangedEvent="setColumnsOrder()"
+												   dataType="N" rounding="false" setDefaultOnEmpty="true"
+												   maxValue="9999999999.99" validationFlag="true" toolTip="Quantity"/>
+					<customcomponents:GenCheckBox labelPlacement="left" label="" id="chkShippingSelect13" width="15" height="20" xmlTag="column13_shipping_flag"
+												  updatableFlag="true" tableName="sales_quotation_line" defaultValue="N" textAlign="right" enabled="false"
+												  dataValueForOn = "Y" dataValueForOff = "N" itemChangedEvent="shippingCheckBoxSelectHandler(event)" />
+					
+					<customcomponents:GenTextInput id="tiShippingAmount13"  height="20" textAlign="right" enabled="false"
+												   updatableFlag="true" width="80" tabIndex="3" xmlTag="column13_ship_amt" defaultValue ="0.00"
+												   tableName="sales_quotation_line"	dataType="N" rounding="false" setDefaultOnEmpty="true"
+												   maxValue="9999999999.99" validationFlag="true" toolTip="Ship Amt"/>
+					<customcomponents:GenTextInput id="tiNetAmount13"  height="20" textAlign="right" enabled="false"
+												   updatableFlag="true" width="120" tabIndex="3" xmlTag="net_amt13" defaultValue ="0.00"
+												   tableName="sales_quotation_line" itemChangedEvent="setColumnsOrder()"
+												   dataType="N" rounding="false" setDefaultOnEmpty="true"
+												   maxValue="9999999999.99" validationFlag="true" toolTip="Quantity"/>
+				</mx:HBox>
+				
+				<mx:HBox name="hbox14">
+					<customcomponents:GenCheckBox labelPlacement="left" label="" id="chkSelect14" width="15" height="20" xmlTag="column14_quotation_flag"
+												  updatableFlag="true" tableName="sales_quotation_line" defaultValue="N" textAlign="right" enabled="true"
+												  dataValueForOn = "Y" dataValueForOff = "N" itemChangedEvent="checkBoxSelectHandler(event)"/>
+					<mx:Label id="lblColumn14" text="Tier 14" width="70" textAlign="right"/>
+					<customcomponents:GenTextInput id="tiColumn14Price"  height="20" textAlign="right"
+												   updatableFlag="true" width="80" tabIndex="11" xmlTag="column14" defaultValue ="0.000"
+												   tableName="sales_quotation_line" itemChangedEvent="setItemAmount()"
+												   dataType="N" rounding="false" setDefaultOnEmpty="true"
+												   maxValue="9999999999.999" validationFlag="true" toolTip="Quantity"/>	
+					<customcomponents:GenTextInput id="tiColumn14Amount"  height="20" textAlign="right" enabled="false"
+												   updatableFlag="true" width="80" tabIndex="3" xmlTag="column14_amt" defaultValue ="0.00"
+												   tableName="sales_quotation_line" itemChangedEvent="setColumnsOrder()"
+												   dataType="N" rounding="false" setDefaultOnEmpty="true"
+												   maxValue="9999999999.99" validationFlag="true" toolTip="Quantity"/>
+					
+					<customcomponents:GenTextInput id="tiSetupAmountItemDepenedable14"  height="20" textAlign="right" enabled="false"
+												   updatableFlag="true" width="80" tabIndex="3" xmlTag="setup_amt_item_dependable14" defaultValue ="0.00"
+												   tableName="sales_quotation_line" itemChangedEvent="setColumnsOrder()"
+												   dataType="N" rounding="false" setDefaultOnEmpty="true"
+												   maxValue="9999999999.99" validationFlag="true" toolTip="Quantity"/>
+					
+					<customcomponents:GenTextInput id="tiSetupAmount14"  height="20" textAlign="right" enabled="false"
+												   updatableFlag="true" width="80" tabIndex="3" xmlTag="setup_amt14" defaultValue ="0.00"
+												   tableName="sales_quotation_line" itemChangedEvent="setColumnsOrder()"
+												   dataType="N" rounding="false" setDefaultOnEmpty="true"
+												   maxValue="9999999999.99" validationFlag="true" toolTip="Quantity"/>
+					
+					<customcomponents:GenTextInput id="tiAccessoryAmount14"  height="20" textAlign="right" enabled="false"
+												   updatableFlag="true" width="80" tabIndex="3" xmlTag="accessory_amt14" defaultValue ="0.00"
+												   tableName="sales_quotation_line" itemChangedEvent="setColumnsOrder()"
+												   dataType="N" rounding="false" setDefaultOnEmpty="true"
+												   maxValue="9999999999.99" validationFlag="true" toolTip="Quantity"/>
+					<customcomponents:GenCheckBox labelPlacement="left" label="" id="chkShippingSelect14" width="15" height="20" xmlTag="column14_shipping_flag"
+												  updatableFlag="true" tableName="sales_quotation_line" defaultValue="N" textAlign="right" enabled="false"
+												  dataValueForOn = "Y" dataValueForOff = "N" itemChangedEvent="shippingCheckBoxSelectHandler(event)" />
+					
+					<customcomponents:GenTextInput id="tiShippingAmount14"  height="20" textAlign="right" enabled="false"
+												   updatableFlag="true" width="80" tabIndex="3" xmlTag="column14_ship_amt" defaultValue ="0.00"
+												   tableName="sales_quotation_line"	dataType="N" rounding="false" setDefaultOnEmpty="true"
+												   maxValue="9999999999.99" validationFlag="true" toolTip="Ship Amt"/>
+					<customcomponents:GenTextInput id="tiNetAmount14"  height="20" textAlign="right" enabled="false"
+												   updatableFlag="true" width="120" tabIndex="3" xmlTag="net_amt14" defaultValue ="0.00"
+												   tableName="sales_quotation_line" itemChangedEvent="setColumnsOrder()"
+												   dataType="N" rounding="false" setDefaultOnEmpty="true"
+												   maxValue="9999999999.99" validationFlag="true" toolTip="Quantity"/>
+				</mx:HBox>
+				<mx:HBox name="hbox15">
+					<customcomponents:GenCheckBox labelPlacement="left" label="" id="chkSelect15" width="15" height="20" xmlTag="column15_quotation_flag"
+												  updatableFlag="true" tableName="sales_quotation_line" defaultValue="N" textAlign="right" enabled="true"
+												  dataValueForOn = "Y" dataValueForOff = "N" itemChangedEvent="checkBoxSelectHandler(event)"/>
+					<mx:Label id="lblColumn15" text="Tier 15" width="70" textAlign="right"/>
+					<customcomponents:GenTextInput id="tiColumn15Price"  height="20" textAlign="right"
+												   updatableFlag="true" width="80" tabIndex="11" xmlTag="column15" defaultValue ="0.000"
+												   tableName="sales_quotation_line" itemChangedEvent="setItemAmount()"
+												   dataType="N" rounding="false" setDefaultOnEmpty="true"
+												   maxValue="9999999999.999" validationFlag="true" toolTip="Quantity"/>	
+					<customcomponents:GenTextInput id="tiColumn15Amount"  height="20" textAlign="right" enabled="false"
+												   updatableFlag="true" width="80" tabIndex="3" xmlTag="column15_amt" defaultValue ="0.00"
+												   tableName="sales_quotation_line" itemChangedEvent="setColumnsOrder()"
+												   dataType="N" rounding="false" setDefaultOnEmpty="true"
+												   maxValue="9999999999.99" validationFlag="true" toolTip="Quantity"/>
+					
+					<customcomponents:GenTextInput id="tiSetupAmountItemDepenedable15"  height="20" textAlign="right" enabled="false"
+												   updatableFlag="true" width="80" tabIndex="3" xmlTag="setup_amt_item_dependable15" defaultValue ="0.00"
+												   tableName="sales_quotation_line" itemChangedEvent="setColumnsOrder()"
+												   dataType="N" rounding="false" setDefaultOnEmpty="true"
+												   maxValue="9999999999.99" validationFlag="true" toolTip="Quantity"/>
+					
+					<customcomponents:GenTextInput id="tiSetupAmount15"  height="20" textAlign="right" enabled="false"
+												   updatableFlag="true" width="80" tabIndex="3" xmlTag="setup_amt15" defaultValue ="0.00"
+												   tableName="sales_quotation_line" itemChangedEvent="setColumnsOrder()"
+												   dataType="N" rounding="false" setDefaultOnEmpty="true"
+												   maxValue="9999999999.99" validationFlag="true" toolTip="Quantity"/>
+					
+					<customcomponents:GenTextInput id="tiAccessoryAmount15"  height="20" textAlign="right" enabled="false"
+												   updatableFlag="true" width="80" tabIndex="3" xmlTag="accessory_amt15" defaultValue ="0.00"
+												   tableName="sales_quotation_line" itemChangedEvent="setColumnsOrder()"
+												   dataType="N" rounding="false" setDefaultOnEmpty="true"
+												   maxValue="9999999999.99" validationFlag="true" toolTip="Quantity"/>
+					<customcomponents:GenCheckBox labelPlacement="left" label="" id="chkShippingSelect15" width="15" height="20" xmlTag="column15_shipping_flag"
+												  updatableFlag="true" tableName="sales_quotation_line" defaultValue="N" textAlign="right" enabled="false"
+												  dataValueForOn = "Y" dataValueForOff = "N" itemChangedEvent="shippingCheckBoxSelectHandler(event)" />
+					
+					<customcomponents:GenTextInput id="tiShippingAmount15"  height="20" textAlign="right" enabled="false"
+												   updatableFlag="true" width="80" tabIndex="3" xmlTag="column15_ship_amt" defaultValue ="0.00"
+												   tableName="sales_quotation_line"	dataType="N" rounding="false" setDefaultOnEmpty="true"
+												   maxValue="9999999999.99" validationFlag="true" toolTip="Ship Amt"/>
+					<customcomponents:GenTextInput id="tiNetAmount15"  height="20" textAlign="right" enabled="false"
+												   updatableFlag="true" width="120" tabIndex="3" xmlTag="net_amt15" defaultValue ="0.00"
+												   tableName="sales_quotation_line" itemChangedEvent="setColumnsOrder()"
+												   dataType="N" rounding="false" setDefaultOnEmpty="true"
+												   maxValue="9999999999.99" validationFlag="true" toolTip="Quantity"/>
+				</mx:HBox>
+				<mx:Spacer height="20"/>
+			</mx:VBox>
+			
+			
+			
+		</mx:TabNavigator>
+		<mx:VBox id="hbItemOptions" label="ItemOptions" width="0" height="0" visible="false" includeInLayout="false" verticalGap="3" tabIndex="20">
+			<customcomponents:GenDataGrid id="dgItemOptions"
+										  updatableFlag="true"
+										  rootNode="sales_quotation_attributes_values"
+										  height="100%"
+										  formatServiceID="dgItemOptionsGridFormat"
+										  width="100%"  visible="true" includeInLayout="true"/>
+		</mx:VBox>
+		
+	</mx:VBox>
+	<mx:HBox  label="Service Charges" width="100%" height="100%" visible="false" includeInLayout="false">
+		<customcomponents:GenDataGrid id="dgItemCharges"
+									  updatableFlag="true"
+									  rootNode="sales_quotation_line_charges"
+									  formatServiceID="dgItemServiceChargeGridFormat"
+									  height="100%"
+									  doubleClickEnabled="true"
+									  itemDoubleClickGenGridEvent="setSetUpAmount(event)"
+									  width="100%"/>
+	</mx:HBox>
+</gencomponents:DetailAddEdit>
+
+
+

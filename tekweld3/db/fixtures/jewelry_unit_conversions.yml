@@ -1,0 +1,689 @@
+--- 
+jewelry_unit_conversions_036: 
+  metal_type: KTWT
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 36
+  description: 
+  from_unit: STER
+  company_id: 1
+  factor: "2.062"
+  to_unit: PLAT
+  item: GOLD
+  created_at: 
+jewelry_unit_conversions_025: 
+  metal_type: KTWT
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 25
+  description: 
+  from_unit: 10KT
+  company_id: 1
+  factor: "0.899"
+  to_unit: STER
+  item: GOLD
+  created_at: 
+jewelry_unit_conversions_014: 
+  metal_type: KT
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 14
+  description: 
+  from_unit: 24KT
+  company_id: 1
+  factor: "0.585"
+  to_unit: 14KT
+  item: GOLD
+  created_at: 
+jewelry_unit_conversions_003: 
+  metal_type: COLR
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 3
+  description: 18K YELLOW TO 18K WHITE
+  from_unit: 18KW
+  company_id: 1
+  factor: "1"
+  to_unit: 18KY
+  item: GOLD
+  created_at: 
+jewelry_unit_conversions_037: 
+  metal_type: WT
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 37
+  description: 
+  from_unit: DWT
+  company_id: 1
+  factor: "1.5552"
+  to_unit: GM
+  item: GOLD
+  created_at: 
+jewelry_unit_conversions_026: 
+  metal_type: KTWT
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 26
+  description: 
+  from_unit: 14KT
+  company_id: 1
+  factor: "0.852"
+  to_unit: 10KT
+  item: GOLD
+  created_at: 
+jewelry_unit_conversions_015: 
+  metal_type: KT
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 15
+  description: 
+  from_unit: 24KT
+  company_id: 1
+  factor: "0.75"
+  to_unit: 18KT
+  item: GOLD
+  created_at: 
+jewelry_unit_conversions_004: 
+  metal_type: KT
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 4
+  description: 
+  from_unit: 10KT
+  company_id: 1
+  factor: "0.3"
+  to_unit: 3KT
+  item: GOLD
+  created_at: 
+jewelry_unit_conversions_038: 
+  metal_type: WT
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 38
+  description: 
+  from_unit: FIN
+  company_id: 1
+  factor: "0.15"
+  to_unit: CAST
+  item: GOLD
+  created_at: 
+jewelry_unit_conversions_027: 
+  metal_type: KTWT
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 27
+  description: 
+  from_unit: 14KT
+  company_id: 1
+  factor: "0.926"
+  to_unit: PALD
+  item: GOLD
+  created_at: 
+jewelry_unit_conversions_016: 
+  metal_type: KT
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 16
+  description: 
+  from_unit: 24KT
+  company_id: 1
+  factor: "0.12"
+  to_unit: 3KT
+  item: GOLD
+  created_at: 
+jewelry_unit_conversions_005: 
+  metal_type: KT
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 5
+  description: 
+  from_unit: 10KT
+  company_id: 1
+  factor: "0.9"
+  to_unit: 9KT
+  item: GOLD
+  created_at: 
+jewelry_unit_conversions_039: 
+  metal_type: WT
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 39
+  description: 
+  from_unit: KILO
+  company_id: 1
+  factor: "643"
+  to_unit: DWT
+  item: GOLD
+  created_at: 
+jewelry_unit_conversions_028: 
+  metal_type: KTWT
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 28
+  description: 
+  from_unit: 14KT
+  company_id: 1
+  factor: "1.602"
+  to_unit: PLAT
+  item: GOLD
+  created_at: 
+jewelry_unit_conversions_017: 
+  metal_type: KT
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 17
+  description: 
+  from_unit: 24KT
+  company_id: 1
+  factor: "0.37"
+  to_unit: 9KT
+  item: GOLD
+  created_at: 
+jewelry_unit_conversions_006: 
+  metal_type: KT
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 6
+  description: 
+  from_unit: 14KT
+  company_id: 1
+  factor: "0.714285"
+  to_unit: 10KT
+  item: GOLD
+  created_at: 
+jewelry_unit_conversions_040: 
+  metal_type: WT
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 40
+  description: 
+  from_unit: KILO
+  company_id: 1
+  factor: "1000"
+  to_unit: GM
+  item: GOLD
+  created_at: 
+jewelry_unit_conversions_029: 
+  metal_type: KTWT
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 29
+  description: 
+  from_unit: 14KT
+  company_id: 1
+  factor: "0.796"
+  to_unit: STER
+  item: GOLD
+  created_at: 
+jewelry_unit_conversions_018: 
+  metal_type: KT
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 18
+  description: 
+  from_unit: 24KT
+  company_id: 1
+  factor: "1"
+  to_unit: PALD
+  item: GOLD
+  created_at: 
+jewelry_unit_conversions_007: 
+  metal_type: KT
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 7
+  description: 
+  from_unit: 14KT
+  company_id: 1
+  factor: "0.21"
+  to_unit: 3KT
+  item: GOLD
+  created_at: 
+jewelry_unit_conversions_041: 
+  metal_type: WT
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 41
+  description: 
+  from_unit: KILO
+  company_id: 1
+  factor: "32.15"
+  to_unit: OZ
+  item: GOLD
+  created_at: 
+jewelry_unit_conversions_030: 
+  metal_type: KTWT
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 30
+  description: 
+  from_unit: 18KT
+  company_id: 1
+  factor: "0.742"
+  to_unit: 10KT
+  item: GOLD
+  created_at: 
+jewelry_unit_conversions_019: 
+  metal_type: KT
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 19
+  description: 
+  from_unit: 24KT
+  company_id: 1
+  factor: "1"
+  to_unit: PLAT
+  item: GOLD
+  created_at: 
+jewelry_unit_conversions_008: 
+  metal_type: KT
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 8
+  description: 
+  from_unit: 14KT
+  company_id: 1
+  factor: "0.64"
+  to_unit: 9KT
+  item: GOLD
+  created_at: 
+jewelry_unit_conversions_042: 
+  metal_type: WT
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 42
+  description: 
+  from_unit: OZ
+  company_id: 1
+  factor: "19.9995"
+  to_unit: DWT
+  item: GOLD
+  created_at: 
+jewelry_unit_conversions_031: 
+  metal_type: KTWT
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 31
+  description: "0.839000"
+  from_unit: 18KT
+  company_id: 1
+  factor: "0.871"
+  to_unit: 14KT
+  item: GOLD
+  created_at: 
+jewelry_unit_conversions_020: 
+  metal_type: KT
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 20
+  description: 
+  from_unit: 24KT
+  company_id: 1
+  factor: "1"
+  to_unit: STER
+  item: GOLD
+  created_at: 
+jewelry_unit_conversions_009: 
+  metal_type: KT
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 9
+  description: 
+  from_unit: 18KT
+  company_id: 1
+  factor: "0.555555"
+  to_unit: 10KT
+  item: GOLD
+  created_at: 
+jewelry_unit_conversions_043: 
+  metal_type: WT
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 43
+  description: 
+  from_unit: OZ
+  company_id: 1
+  factor: "31.1035"
+  to_unit: GM
+  item: GOLD
+  created_at: 
+jewelry_unit_conversions_032: 
+  metal_type: KTWT
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 32
+  description: "1.377000"
+  from_unit: 18KT
+  company_id: 1
+  factor: "0.806"
+  to_unit: PALD
+  item: GOLD
+  created_at: 
+jewelry_unit_conversions_021: 
+  metal_type: KT
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 21
+  description: 
+  from_unit: 9KT
+  company_id: 1
+  factor: "0.33"
+  to_unit: 3KT
+  item: GOLD
+  created_at: 
+jewelry_unit_conversions_010: 
+  metal_type: KT
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 10
+  description: 
+  from_unit: 18KT
+  company_id: 1
+  factor: "0.777777"
+  to_unit: 14KT
+  item: GOLD
+  created_at: 
+jewelry_unit_conversions_033: 
+  metal_type: KTWT
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 33
+  description: "1.377000"
+  from_unit: 18KT
+  company_id: 1
+  factor: "1.395"
+  to_unit: PLAT
+  item: GOLD
+  created_at: 
+jewelry_unit_conversions_022: 
+  metal_type: KTWT
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 22
+  description: 
+  from_unit: 10KT
+  company_id: 1
+  factor: "1.1696"
+  to_unit: 14xx
+  item: GOLD
+  created_at: 
+jewelry_unit_conversions_011: 
+  metal_type: KT
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 11
+  description: 
+  from_unit: 18KT
+  company_id: 1
+  factor: "0.16"
+  to_unit: 3KT
+  item: GOLD
+  created_at: 
+jewelry_unit_conversions_034: 
+  metal_type: KTWT
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 34
+  description: 
+  from_unit: 18KT
+  company_id: 1
+  factor: "0.668"
+  to_unit: STER
+  item: GOLD
+  created_at: 
+jewelry_unit_conversions_023: 
+  metal_type: KTWT
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 23
+  description: 
+  from_unit: 10KT
+  company_id: 1
+  factor: "1.087"
+  to_unit: PALD
+  item: GOLD
+  created_at: 
+jewelry_unit_conversions_012: 
+  metal_type: KT
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 12
+  description: 
+  from_unit: 18KT
+  company_id: 1
+  factor: "0.5"
+  to_unit: 9KT
+  item: GOLD
+  created_at: 
+jewelry_unit_conversions_001: 
+  metal_type: COLR
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 1
+  description: 10K YELLOW TO 10K WHITE
+  from_unit: 10KW
+  company_id: 1
+  factor: "1"
+  to_unit: 10KY
+  item: GOLD
+  created_at: 
+jewelry_unit_conversions_035: 
+  metal_type: KTWT
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 35
+  description: 
+  from_unit: PLAT
+  company_id: 1
+  factor: "0.578"
+  to_unit: PALD
+  item: GOLD
+  created_at: 
+jewelry_unit_conversions_024: 
+  metal_type: KTWT
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 24
+  description: 
+  from_unit: 10KT
+  company_id: 1
+  factor: "1.881"
+  to_unit: PLAT
+  item: GOLD
+  created_at: 
+jewelry_unit_conversions_013: 
+  metal_type: KT
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 13
+  description: 
+  from_unit: 24KT
+  company_id: 1
+  factor: "0.417"
+  to_unit: 10KT
+  item: GOLD
+  created_at: 
+jewelry_unit_conversions_002: 
+  metal_type: COLR
+  updated_at: 
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  updated_by: 
+  id: 2
+  description: 14K YELLOW TO 14K WHITE
+  from_unit: 14KW
+  company_id: 1
+  factor: "1"
+  to_unit: 14KY
+  item: GOLD
+  created_at: 

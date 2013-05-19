@@ -1,0 +1,2 @@
+module Carriers::EndpointsHelper
+end

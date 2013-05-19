@@ -1,0 +1,50 @@
+<div class="toppanel" id="topbar">
+  <div class="transparency"></div>
+  <div style="clear:both;"></div>
+
+  <%# form_for nil, accounts_path,{:method => :get, :class => "forms"} do |f|%>
+  <%  form_for '/accounts/index', :method=>:post,:class =>"forms" do |f|%>
+    <table>
+    <tr>
+      <th style="text-align: left;width: 100px;color: white;">Balance:</th>
+      <th style="text-align: left;width: 100px;color: white;"> Auto Recharge</th>
+      <th style="text-align: left;width: 100px;color: white;">Last Deposit Amount</th>
+      <th style="text-align: left;width: 100px;color: white;">Deposit</th>
+      <th style="text-align: left;width: 100px;color: white;">Last Deposit Date</th>
+    </tr>
+    <tr>
+      <td style="width: 100px"><%= text_field :search, :min_balance, :style => 'bgcolor:white; width:64px;' %></td>
+      <td style="width: 100px"><%= text_field :search, :min_ar, :style => 'bgcolor:white; width:64px;' %></td>
+      <td style="width: 100px"><%= text_field :search, :min_deposit, :style => 'bgcolor:white; width:64px;' %></td>
+      <td style="width: 100px"><%= text_field :search, :min_lda, :style => 'bgcolor:white; width:64px;' %></td>
+      <td style="width: 100px"><%= text_field :search, :min_ldd, :style => 'bgcolor:white;width:64px;' %></td>
+    </tr>
+    <tr>
+      <td style="width: 100px"><%= text_field :search, :max_balance, :style => 'bgcolor:white;:color:white; width:64px;' %></td>
+      <td style="width: 100px"><%= text_field :search, :max_ar, :style => 'bgcolor:white;:color:white; width:64px;' %></td>
+      <td style="width: 100px"><%= text_field :search, :max_deposit, :style => 'bgcolor:white;:color:white; width:64px;' %></td>
+      <td style="width: 100px"><%= text_field :search, :max_lda, :style => 'bgcolor:white;:color:white; width:64px;' %></td>
+      <td style="width: 100px"><%= text_field :search, :max_ldd, :style => 'bgcolor:white;:color:white; width:64px;' %></td>
+    </tr>
+  </table>
+  <br/>
+  <%= submit_tag "Search",{:id=>'aaa'} %>
+  <%end%>
+</div>
+</div>
+<div style="clear:both;"></div>
+<script type="text/javascript" charset="utf-8">
+    	$(function() {
+    		$( "#search_min_ldd" ).datepicker({
+          changeMonth: true,
+          changeYear: true
+        });
+        $( "#search_max_ldd" ).datepicker({
+          changeMonth: true,
+          changeYear: true
+        });
+        $("#aaa").live('click', function(e){
+          $('.panel').toggle();
+        });
+    	});
+</script>

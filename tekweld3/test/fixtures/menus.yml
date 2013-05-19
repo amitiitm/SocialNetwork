@@ -1,0 +1,5628 @@
+--- 
+menus_276: 
+  sequence: 20
+  updated_at: 
+  document_id: 230
+  code: SALESCUSTOMERMASTER
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  menu_name: Customer
+  lock_version: 0
+  updated_by: 
+  id: 1700
+  moodule_id: 41
+  company_id: 1
+  menu_type: S
+  menu_id: 773
+  created_at: 
+menus_088: 
+  sequence: 40
+  updated_at: 
+  document_id: 
+  code: SAOISETUP
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  menu_name: Setup
+  lock_version: 0
+  updated_by: 
+  id: 773
+  moodule_id: 41
+  company_id: 1
+  menu_type: M
+  menu_id: 
+  created_at: 
+menus_169: 
+  sequence: 0
+  updated_at: 2010/07/06 12:46:04
+  document_id: 763
+  code: DIAMSTORETRANSFERINWARD
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  menu_name: Store Transfer Inward
+  lock_version: 2
+  updated_by: 100
+  id: 1148
+  moodule_id: 112
+  company_id: 1
+  menu_type: S
+  menu_id: 502
+  created_at: 2010/07/05 15:13:54
+menus_195: 
+  sequence: 0
+  updated_at: 2010/07/24 17:38:14
+  document_id: 901
+  code: CTLGITEMCATEGORY
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  menu_name: Item Category
+  lock_version: 0
+  updated_by: 100
+  id: 1291
+  moodule_id: 111
+  company_id: 1
+  menu_type: S
+  menu_id: 1289
+  created_at: 2010/07/24 17:38:14
+menus_277: 
+  sequence: 60
+  updated_at: 
+  document_id: 167
+  code: PURCHASEVENDORMASTER
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  menu_name: Vendor
+  lock_version: 0
+  updated_by: 
+  id: 1701
+  moodule_id: 2
+  company_id: 1
+  menu_type: S
+  menu_id: 765
+  created_at: 
+menus_089: 
+  sequence: 50
+  updated_at: 
+  document_id: 
+  code: SAOIREPORT
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  menu_name: Reports
+  lock_version: 0
+  updated_by: 
+  id: 774
+  moodule_id: 41
+  company_id: 1
+  menu_type: M
+  menu_id: 
+  created_at: 
+menus_196: 
+  sequence: 0
+  updated_at: 2010/07/24 17:38:14
+  document_id: 900
+  code: CTLGITEM
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  menu_name: Item
+  lock_version: 0
+  updated_by: 100
+  id: 1292
+  moodule_id: 111
+  company_id: 1
+  menu_type: S
+  menu_id: 1289
+  created_at: 2010/07/24 17:38:14
+menus_278: 
+  sequence: 121
+  updated_at: 2010/12/23 17:25:30
+  document_id: 1080
+  code: SA
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  menu_name: sa
+  lock_version: 0
+  updated_by: 1
+  id: 1703
+  moodule_id: 600
+  company_id: 1
+  menu_type: S
+  menu_id: 504
+  created_at: 2010/12/23 17:25:30
+menus_197: 
+  sequence: 60
+  updated_at: 
+  document_id: 920
+  code: INVNALLSTORESTOCKREPORT
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  menu_name: Stock Report (HO/Store wise)
+  lock_version: 4
+  updated_by: 100
+  id: 1305
+  moodule_id: 1
+  company_id: 1
+  menu_type: S
+  menu_id: 776
+  created_at: 
+menus_279: 
+  sequence: 90
+  updated_at: 
+  document_id: 167
+  code: INVNVENDOR
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  menu_name: Vendor
+  lock_version: 0
+  updated_by: 
+  id: 1704
+  moodule_id: 1
+  company_id: 1
+  menu_type: S
+  menu_id: 71
+  created_at: 
+menus_198: 
+  sequence: 100
+  updated_at: 
+  document_id: 948
+  code: INVNSTOCKAGINGSUMMARY
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  menu_name: Stock Aging Summary Report
+  lock_version: 0
+  updated_by: 100
+  id: 1326
+  moodule_id: 1
+  company_id: 1
+  menu_type: S
+  menu_id: 776
+  created_at: 
+menus_199: 
+  sequence: 110
+  updated_at: 
+  document_id: 947
+  code: INVNSTOCKAGINGDETAIL
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  menu_name: Stock Aging Detail Report
+  lock_version: 0
+  updated_by: 100
+  id: 1327
+  moodule_id: 1
+  company_id: 1
+  menu_type: S
+  menu_id: 776
+  created_at: 
+menus_010: 
+  sequence: 20
+  updated_at: 2010/05/14 10:57:23
+  document_id: 63
+  code: PUOI03
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  menu_name: Cancel Order
+  lock_version: 3
+  updated_by: 100
+  id: 66
+  moodule_id: 2
+  company_id: 1
+  menu_type: S
+  menu_id: 62
+  created_at: 2009/12/22 15:29:37
+menus_011: 
+  sequence: 10
+  updated_at: 2010/05/14 10:57:23
+  document_id: 65
+  code: PUOI05
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  menu_name: Invoice
+  lock_version: 3
+  updated_by: 100
+  id: 67
+  moodule_id: 2
+  company_id: 1
+  menu_type: S
+  menu_id: 63
+  created_at: 2009/12/22 15:29:37
+menus_012: 
+  sequence: 20
+  updated_at: 2010/05/14 10:57:23
+  document_id: 64
+  code: PUOI04
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  menu_name: Credit Invoice
+  lock_version: 3
+  updated_by: 100
+  id: 68
+  moodule_id: 2
+  company_id: 1
+  menu_type: S
+  menu_id: 63
+  created_at: 2009/12/22 15:29:37
+menus_200: 
+  sequence: 30
+  updated_at: 
+  document_id: 960
+  code: PRODLABMEMO
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  menu_name: Lab Memo
+  lock_version: 0
+  updated_by: 100
+  id: 1345
+  moodule_id: 61
+  company_id: 1
+  menu_type: S
+  menu_id: 1365
+  created_at: 
+menus_120: 
+  sequence: 0
+  updated_at: 2010/07/06 12:45:38
+  document_id: 600
+  code: INVNISSUE
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  menu_name: Issue
+  lock_version: 5
+  updated_by: 100
+  id: 987
+  moodule_id: 1
+  company_id: 1
+  menu_type: S
+  menu_id: 986
+  created_at: 2010/05/21 13:26:09
+menus_201: 
+  sequence: 40
+  updated_at: 
+  document_id: 961
+  code: PRODLABMEMORETURN
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  menu_name: Lab Return
+  lock_version: 0
+  updated_by: 100
+  id: 1346
+  moodule_id: 61
+  company_id: 1
+  menu_type: S
+  menu_id: 1365
+  created_at: 
+menus_013: 
+  sequence: 10
+  updated_at: 2010/05/14 10:57:23
+  document_id: 62
+  code: PUOI02
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  menu_name: Memo
+  lock_version: 3
+  updated_by: 100
+  id: 69
+  moodule_id: 2
+  company_id: 1
+  menu_type: S
+  menu_id: 64
+  created_at: 2009/12/22 15:29:37
+menus_040: 
+  sequence: 10
+  updated_at: 2010/06/22 18:02:15
+  document_id: 155
+  code: AGJ
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  menu_name: Enter Journal
+  lock_version: 23
+  updated_by: 100
+  id: 485
+  moodule_id: 110
+  company_id: 1
+  menu_type: S
+  menu_id: 479
+  created_at: 
+menus_121: 
+  sequence: 0
+  updated_at: 2010/07/06 12:45:38
+  document_id: 601
+  code: INVNRECEIVE
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  menu_name: Receive
+  lock_version: 5
+  updated_by: 100
+  id: 988
+  moodule_id: 1
+  company_id: 1
+  menu_type: S
+  menu_id: 986
+  created_at: 2010/05/21 13:26:09
+menus_202: 
+  sequence: 10
+  updated_at: 
+  document_id: 
+  code: PUOIIND
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  menu_name: Indent
+  lock_version: 0
+  updated_by: 
+  id: 1347
+  moodule_id: 2
+  company_id: 1
+  menu_type: M
+  menu_id: 
+  created_at: 
+menus_014: 
+  sequence: 20
+  updated_at: 2010/05/14 10:57:23
+  document_id: 300
+  code: PUOI06
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  menu_name: Memo Return
+  lock_version: 3
+  updated_by: 100
+  id: 70
+  moodule_id: 2
+  company_id: 1
+  menu_type: S
+  menu_id: 64
+  created_at: 2009/12/22 15:29:37
+menus_310: 
+  sequence: 20
+  updated_at: 
+  document_id: 230
+  code: POSCUSTOMER
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  menu_name: Customer
+  lock_version: 0
+  updated_by: 
+  id: 1735
+  moodule_id: 113
+  company_id: 1
+  menu_type: S
+  menu_id: 693
+  created_at: 
+menus_122: 
+  sequence: 0
+  updated_at: 2010/07/06 12:45:39
+  document_id: 602
+  code: STORETRFR
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  menu_name: Store Transfer
+  lock_version: 5
+  updated_by: 100
+  id: 989
+  moodule_id: 1
+  company_id: 1
+  menu_type: S
+  menu_id: 986
+  created_at: 2010/05/21 13:26:09
+menus_203: 
+  sequence: 10
+  updated_at: 
+  document_id: 962
+  code: PUOI07
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  menu_name: Indent
+  lock_version: 0
+  updated_by: 
+  id: 1348
+  moodule_id: 2
+  company_id: 1
+  menu_type: S
+  menu_id: 1347
+  created_at: 
+menus_015: 
+  sequence: 10
+  updated_at: 
+  document_id: 
+  code: INVN01
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  menu_name: Setup
+  lock_version: 0
+  updated_by: 
+  id: 71
+  moodule_id: 1
+  company_id: 1
+  menu_type: M
+  menu_id: 
+  created_at: 
+menus_041: 
+  sequence: 30
+  updated_at: 2010/06/22 18:02:15
+  document_id: 159
+  code: ACSCA
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  menu_name: Customer Category
+  lock_version: 23
+  updated_by: 100
+  id: 489
+  moodule_id: 110
+  company_id: 1
+  menu_type: S
+  menu_id: 625
+  created_at: 
+menus_311: 
+  sequence: 30
+  updated_at: 
+  document_id: 1121
+  code: POSSHIPPING
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  menu_name: Ship Via
+  lock_version: 0
+  updated_by: 
+  id: 1736
+  moodule_id: 113
+  company_id: 1
+  menu_type: S
+  menu_id: 693
+  created_at: 
+menus_230: 
+  sequence: 20
+  updated_at: 
+  document_id: 1182
+  code: CTLGRPTODRREG
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  menu_name: Order Register
+  lock_version: 0
+  updated_by: 
+  id: 1528
+  moodule_id: 111
+  company_id: 1
+  menu_type: S
+  menu_id: 101
+  created_at: 
+menus_123: 
+  sequence: 0
+  updated_at: 2010/07/06 12:45:39
+  document_id: 603
+  code: TNFRINWARD
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  menu_name: Store Transfer Inward
+  lock_version: 5
+  updated_by: 100
+  id: 990
+  moodule_id: 1
+  company_id: 1
+  menu_type: S
+  menu_id: 986
+  created_at: 2010/05/21 13:26:09
+menus_204: 
+  sequence: 20
+  updated_at: 
+  document_id: 963
+  code: PUOI08
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  menu_name: Indent Approval
+  lock_version: 0
+  updated_by: 
+  id: 1349
+  moodule_id: 2
+  company_id: 1
+  menu_type: S
+  menu_id: 1347
+  created_at: 
+menus_016: 
+  sequence: 20
+  updated_at: 2010/07/06 12:45:38
+  document_id: 301
+  code: INVN03
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  menu_name: Item Category
+  lock_version: 10
+  updated_by: 100
+  id: 76
+  moodule_id: 1
+  company_id: 1
+  menu_type: S
+  menu_id: 71
+  created_at: 2009/12/22 15:46:52
+menus_042: 
+  sequence: 10
+  updated_at: 2010/06/22 18:02:15
+  document_id: 161
+  code: VEND_INV
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  menu_name: Invoice
+  lock_version: 23
+  updated_by: 100
+  id: 491
+  moodule_id: 110
+  company_id: 1
+  menu_type: S
+  menu_id: 477
+  created_at: 
+menus_312: 
+  sequence: 60
+  updated_at: 
+  document_id: 60
+  code: POSUSER
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  menu_name: User
+  lock_version: 0
+  updated_by: 
+  id: 1737
+  moodule_id: 113
+  company_id: 1
+  menu_type: S
+  menu_id: 693
+  created_at: 
+menus_231: 
+  sequence: 30
+  updated_at: 
+  document_id: 1183
+  code: CTLGRPTODRSTSRPT
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  menu_name: Order Status Report
+  lock_version: 0
+  updated_by: 
+  id: 1529
+  moodule_id: 111
+  company_id: 1
+  menu_type: S
+  menu_id: 101
+  created_at: 
+menus_124: 
+  sequence: 0
+  updated_at: 2010/07/06 12:45:39
+  document_id: 604
+  code: TRFROUTWARD
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  menu_name: Transfer Outward
+  lock_version: 5
+  updated_by: 100
+  id: 991
+  moodule_id: 1
+  company_id: 1
+  menu_type: S
+  menu_id: 986
+  created_at: 2010/05/21 13:26:09
+menus_150: 
+  sequence: 100
+  updated_at: 2010/07/06 12:46:04
+  document_id: 691
+  code: DIAMPURMEMORETREGISTER
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  menu_name: Purchase Memo Return Register
+  lock_version: 3
+  updated_by: 100
+  id: 1077
+  moodule_id: 112
+  company_id: 1
+  menu_type: S
+  menu_id: 503
+  created_at: 2010/06/17 17:58:04
+menus_205: 
+  sequence: 10
+  updated_at: 
+  document_id: 964
+  code: PURCHASEINDENTREGISTER
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  menu_name: Indent Register
+  lock_version: 0
+  updated_by: 100
+  id: 1350
+  moodule_id: 2
+  company_id: 1
+  menu_type: S
+  menu_id: 770
+  created_at: 
+menus_017: 
+  sequence: 10
+  updated_at: 
+  document_id: 
+  code: SETUP_2000
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  menu_name: User
+  lock_version: 0
+  updated_by: 
+  id: 77
+  moodule_id: 600
+  company_id: 1
+  menu_type: M
+  menu_id: 
+  created_at: 
+menus_043: 
+  sequence: 30
+  updated_at: 2010/06/22 18:02:15
+  document_id: 162
+  code: VEND_CI
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  menu_name: Credit Invoice
+  lock_version: 23
+  updated_by: 100
+  id: 492
+  moodule_id: 110
+  company_id: 1
+  menu_type: S
+  menu_id: 477
+  created_at: 
+menus_070: 
+  sequence: 30
+  updated_at: 
+  document_id: 
+  code: POSREP
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  menu_name: Reports
+  lock_version: 0
+  updated_by: 100
+  id: 694
+  moodule_id: 113
+  company_id: 1
+  menu_type: M
+  menu_id: 
+  created_at: 
+menus_313: 
+  sequence: 4
+  updated_at: 2011/01/12 14:29:32
+  document_id: 1316
+  code: APPSET
+  update_flag: Y
+  trans_flag: A
+  created_by: 2
+  menu_name: Application Setting
+  lock_version: 0
+  updated_by: 2
+  id: 1738
+  moodule_id: 600
+  company_id: 1
+  menu_type: S
+  menu_id: 1669
+  created_at: 2011/01/12 14:29:32
+menus_232: 
+  sequence: 40
+  updated_at: 
+  document_id: 1184
+  code: CTLGRPTOPNODRRPT
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  menu_name: Open Order Report
+  lock_version: 0
+  updated_by: 
+  id: 1530
+  moodule_id: 111
+  company_id: 1
+  menu_type: S
+  menu_id: 101
+  created_at: 
+menus_125: 
+  sequence: 10
+  updated_at: 2010/07/06 12:45:38
+  document_id: 620
+  code: INVNRECEIPTREPORT
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  menu_name: Receipt Report
+  lock_version: 4
+  updated_by: 100
+  id: 1005
+  moodule_id: 1
+  company_id: 1
+  menu_type: S
+  menu_id: 776
+  created_at: 2010/05/26 10:17:27
+menus_151: 
+  sequence: 30
+  updated_at: 2010/07/06 12:45:38
+  document_id: 700
+  code: INVNTRANSFERREPORT
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  menu_name: Store Transfer Report
+  lock_version: 3
+  updated_by: 100
+  id: 1085
+  moodule_id: 1
+  company_id: 1
+  menu_type: S
+  menu_id: 776
+  created_at: 2010/06/18 10:50:01
+menus_206: 
+  sequence: 80
+  updated_at: 
+  document_id: 965
+  code: PURCHASEOPENINDENTREPORT
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  menu_name: Open Indent Report
+  lock_version: 0
+  updated_by: 100
+  id: 1351
+  moodule_id: 2
+  company_id: 1
+  menu_type: S
+  menu_id: 770
+  created_at: 
+menus_018: 
+  sequence: 20
+  updated_at: 
+  document_id: 
+  code: SETUP_3000
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  menu_name: Miscellaneous
+  lock_version: 0
+  updated_by: 
+  id: 78
+  moodule_id: 600
+  company_id: 1
+  menu_type: M
+  menu_id: 
+  created_at: 
+menus_044: 
+  sequence: 20
+  updated_at: 2010/06/22 18:02:15
+  document_id: 163
+  code: VEND_CHCK
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  menu_name: Write Check
+  lock_version: 23
+  updated_by: 100
+  id: 493
+  moodule_id: 110
+  company_id: 1
+  menu_type: S
+  menu_id: 477
+  created_at: 
+menus_071: 
+  sequence: 0
+  updated_at: 2010/06/17 12:40:12
+  document_id: 360
+  code: POSReceipt
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  menu_name: Sales/Returns Receipts
+  lock_version: 1
+  updated_by: 100
+  id: 711
+  moodule_id: 113
+  company_id: 1
+  menu_type: S
+  menu_id: 692
+  created_at: 2010/02/01 11:58:14
+menus_314: 
+  sequence: 25
+  updated_at: 
+  document_id: 159
+  code: CUSTCATEGORY
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  menu_name: Customer Category
+  lock_version: 0
+  updated_by: 
+  id: 1739
+  moodule_id: 41
+  company_id: 1
+  menu_type: S
+  menu_id: 773
+  created_at: 
+menus_233: 
+  sequence: 110
+  updated_at: 
+  document_id: 1185
+  code: ACCTSETUPGLSETUP
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  menu_name: GL Setup
+  lock_version: 0
+  updated_by: 
+  id: 1531
+  moodule_id: 110
+  company_id: 1
+  menu_type: S
+  menu_id: 625
+  created_at: 
+menus_126: 
+  sequence: 20
+  updated_at: 2010/07/06 12:45:38
+  document_id: 621
+  code: INVNISSUEREPORT
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  menu_name: Issue Report
+  lock_version: 4
+  updated_by: 100
+  id: 1006
+  moodule_id: 1
+  company_id: 1
+  menu_type: S
+  menu_id: 776
+  created_at: 2010/05/26 10:17:27
+menus_152: 
+  sequence: 40
+  updated_at: 2010/07/06 12:45:38
+  document_id: 701
+  code: INVNACTIVITYREPORT
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  menu_name: Activity Report
+  lock_version: 3
+  updated_by: 100
+  id: 1086
+  moodule_id: 1
+  company_id: 1
+  menu_type: S
+  menu_id: 776
+  created_at: 2010/06/18 10:50:01
+menus_207: 
+  sequence: 10
+  updated_at: 
+  document_id: 966
+  code: PRODLABMEMOREGISTER
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  menu_name: Lab Memo Register
+  lock_version: 0
+  updated_by: 100
+  id: 1354
+  moodule_id: 61
+  company_id: 1
+  menu_type: S
+  menu_id: 1227
+  created_at: 
+menus_019: 
+  sequence: 40
+  updated_at: 2010/06/22 18:02:15
+  document_id: 320
+  code: VEND_PA
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  menu_name: Apply Payments
+  lock_version: 7
+  updated_by: 100
+  id: 81
+  moodule_id: 110
+  company_id: 1
+  menu_type: S
+  menu_id: 477
+  created_at: 2010/01/06 15:21:52
+menus_045: 
+  sequence: 50
+  updated_at: 2010/06/22 18:02:15
+  document_id: 166
+  code: AVC
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  menu_name: Vendor Category
+  lock_version: 23
+  updated_by: 100
+  id: 496
+  moodule_id: 110
+  company_id: 1
+  menu_type: S
+  menu_id: 625
+  created_at: 
+menus_315: 
+  sequence: 33
+  updated_at: 2011/01/14 15:08:27
+  document_id: 301
+  code: ITEMCATEGORY
+  update_flag: Y
+  trans_flag: A
+  created_by: 2
+  menu_name: Item Category
+  lock_version: 9
+  updated_by: 2
+  id: 1740
+  moodule_id: 41
+  company_id: 1
+  menu_type: S
+  menu_id: 773
+  created_at: 2011/01/14 14:51:43
+menus_260: 
+  sequence: 20
+  updated_at: 
+  document_id: 
+  code: MELTPAYMENT
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  menu_name: Payment
+  lock_version: 0
+  updated_by: 
+  id: 1650
+  moodule_id: 83
+  company_id: 1
+  menu_type: M
+  menu_id: 
+  created_at: 
+menus_234: 
+  sequence: 20
+  updated_at: 
+  document_id: 1200
+  code: CTLGENQUIRY
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  menu_name: Enquiry
+  lock_version: 0
+  updated_by: 
+  id: 1545
+  moodule_id: 111
+  company_id: 1
+  menu_type: S
+  menu_id: 1525
+  created_at: 
+menus_153: 
+  sequence: 60
+  updated_at: 2010/07/06 12:45:38
+  document_id: 702
+  code: INVNBACKDATEDSTOCKREPORT
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  menu_name: Backdated Stock Report
+  lock_version: 3
+  updated_by: 100
+  id: 1087
+  moodule_id: 1
+  company_id: 1
+  menu_type: S
+  menu_id: 776
+  created_at: 2010/06/18 10:50:01
+menus_180: 
+  sequence: 0
+  updated_at: 2010/07/06 12:46:04
+  document_id: 803
+  code: DIAMUPDATECERTIFICATEASSI
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  menu_name: Update Certificate Parameter
+  lock_version: 0
+  updated_by: 100
+  id: 1188
+  moodule_id: 112
+  company_id: 1
+  menu_type: S
+  menu_id: 502
+  created_at: 2010/07/06 12:46:04
+menus_208: 
+  sequence: 20
+  updated_at: 
+  document_id: 967
+  code: PRODLABRETURNREGISTER
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  menu_name: Lab Return Register
+  lock_version: 0
+  updated_by: 100
+  id: 1355
+  moodule_id: 61
+  company_id: 1
+  menu_type: S
+  menu_id: 1227
+  created_at: 
+menus_046: 
+  sequence: 60
+  updated_at: 2010/06/22 18:02:15
+  document_id: 167
+  code: AVS
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  menu_name: Vendor
+  lock_version: 23
+  updated_by: 100
+  id: 497
+  moodule_id: 110
+  company_id: 1
+  menu_type: S
+  menu_id: 625
+  created_at: 
+menus_072: 
+  sequence: 0
+  updated_at: 2010/06/17 12:40:12
+  document_id: 361
+  code: POSPay
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  menu_name: Take Payment
+  lock_version: 1
+  updated_by: 100
+  id: 712
+  moodule_id: 113
+  company_id: 1
+  menu_type: S
+  menu_id: 692
+  created_at: 2010/02/01 11:58:14
+menus_127: 
+  sequence: 50
+  updated_at: 2010/07/06 12:45:38
+  document_id: 622
+  code: INVNSTOCKREPORT
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  menu_name: Stock Report
+  lock_version: 4
+  updated_by: 100
+  id: 1007
+  moodule_id: 1
+  company_id: 1
+  menu_type: S
+  menu_id: 776
+  created_at: 2010/05/26 10:17:27
+menus_316: 
+  sequence: 5
+  updated_at: 
+  document_id: 301
+  code: ITEMCATEGORY
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  menu_name: Item Category
+  lock_version: 0
+  updated_by: 
+  id: 1741
+  moodule_id: 2
+  company_id: 1
+  menu_type: S
+  menu_id: 765
+  created_at: 
+menus_261: 
+  sequence: 30
+  updated_at: 
+  document_id: 
+  code: MELTEMAIL
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  menu_name: Email
+  lock_version: 0
+  updated_by: 
+  id: 1651
+  moodule_id: 83
+  company_id: 1
+  menu_type: M
+  menu_id: 
+  created_at: 
+menus_235: 
+  sequence: 50
+  updated_at: 
+  document_id: 1220
+  code: CTLGRPTENQRYRGSTR
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  menu_name: Enquiry Register
+  lock_version: 0
+  updated_by: 
+  id: 1565
+  moodule_id: 111
+  company_id: 1
+  menu_type: S
+  menu_id: 101
+  created_at: 
+menus_154: 
+  sequence: 70
+  updated_at: 2010/06/18 11:00:18
+  document_id: 703
+  code: SALESNETSALESREGISTER
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  menu_name: Net Sales Register
+  lock_version: 0
+  updated_by: 100
+  id: 1088
+  moodule_id: 41
+  company_id: 1
+  menu_type: S
+  menu_id: 774
+  created_at: 2010/06/18 11:00:18
+menus_181: 
+  sequence: 20
+  updated_at: 2010/07/24 17:38:14
+  document_id: 820
+  code: CTLGABOUTUS
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  menu_name: About us
+  lock_version: 3
+  updated_by: 100
+  id: 1205
+  moodule_id: 111
+  company_id: 1
+  menu_type: S
+  menu_id: 100
+  created_at: 2010/07/12 15:13:58
+menus_209: 
+  sequence: 30
+  updated_at: 
+  document_id: 968
+  code: PRODOPENLABMEMOREPORT
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  menu_name: Open Lab Memo Report
+  lock_version: 0
+  updated_by: 100
+  id: 1356
+  moodule_id: 61
+  company_id: 1
+  menu_type: S
+  menu_id: 1227
+  created_at: 
+menus_047: 
+  sequence: 10
+  updated_at: 2010/06/22 18:02:15
+  document_id: 168
+  code: AGSC
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  menu_name: GL Account Category
+  lock_version: 23
+  updated_by: 100
+  id: 498
+  moodule_id: 110
+  company_id: 1
+  menu_type: S
+  menu_id: 625
+  created_at: 
+menus_073: 
+  sequence: 0
+  updated_at: 2010/06/17 12:40:12
+  document_id: 363
+  code: POSEOD
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  menu_name: End Of Day Reports
+  lock_version: 1
+  updated_by: 100
+  id: 714
+  moodule_id: 113
+  company_id: 1
+  menu_type: S
+  menu_id: 694
+  created_at: 2010/02/01 11:58:14
+menus_128: 
+  sequence: 10
+  updated_at: 2010/06/22 18:02:15
+  document_id: 643
+  code: ACCTCUSTINVOICEREGISTER
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  menu_name: Customer Invoice Register
+  lock_version: 4
+  updated_by: 100
+  id: 1025
+  moodule_id: 110
+  company_id: 1
+  menu_type: S
+  menu_id: 775
+  created_at: 2010/06/15 15:54:25
+menus_317: 
+  sequence: 55
+  updated_at: 
+  document_id: 166
+  code: VENDORCATEGORY
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  menu_name: Vendor Category
+  lock_version: 0
+  updated_by: 
+  id: 1742
+  moodule_id: 2
+  company_id: 1
+  menu_type: S
+  menu_id: 765
+  created_at: 
+menus_262: 
+  sequence: 40
+  updated_at: 
+  document_id: 
+  code: MELTCOMMISSION
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  menu_name: Commission
+  lock_version: 0
+  updated_by: 
+  id: 1665
+  moodule_id: 83
+  company_id: 1
+  menu_type: M
+  menu_id: 
+  created_at: 
+menus_236: 
+  sequence: 60
+  updated_at: 
+  document_id: 1221
+  code: CTLGRPTOPNENQRYRPT
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  menu_name: Open Enquiry Report
+  lock_version: 0
+  updated_by: 
+  id: 1566
+  moodule_id: 111
+  company_id: 1
+  menu_type: S
+  menu_id: 101
+  created_at: 
+menus_048: 
+  sequence: 20
+  updated_at: 2010/06/22 18:02:15
+  document_id: 169
+  code: AGSA
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  menu_name: GL Account
+  lock_version: 23
+  updated_by: 100
+  id: 499
+  moodule_id: 110
+  company_id: 1
+  menu_type: S
+  menu_id: 625
+  created_at: 
+menus_074: 
+  sequence: 10
+  updated_at: 
+  document_id: 
+  code: SAOIORD
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  menu_name: Order
+  lock_version: 0
+  updated_by: 
+  id: 725
+  moodule_id: 41
+  company_id: 1
+  menu_type: M
+  menu_id: 
+  created_at: 
+menus_129: 
+  sequence: 20
+  updated_at: 2010/06/22 18:02:15
+  document_id: 641
+  code: ACCTCUSTRECEIPTREGISTER
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  menu_name: Customer Receipt Register
+  lock_version: 4
+  updated_by: 100
+  id: 1026
+  moodule_id: 110
+  company_id: 1
+  menu_type: S
+  menu_id: 775
+  created_at: 2010/06/15 15:54:25
+menus_155: 
+  sequence: 190
+  updated_at: 2010/06/22 18:02:15
+  document_id: 704
+  code: ACCTGLSUMMARY
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  menu_name: General Ledger Summary
+  lock_version: 2
+  updated_by: 100
+  id: 1089
+  moodule_id: 110
+  company_id: 1
+  menu_type: S
+  menu_id: 775
+  created_at: 2010/06/18 11:43:17
+menus_318: 
+  sequence: 55
+  updated_at: 
+  document_id: 1317
+  code: ACCTCUSTSTATEMENT
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  menu_name: Customer Statement
+  lock_version: 0
+  updated_by: 
+  id: 1743
+  moodule_id: 110
+  company_id: 1
+  menu_type: S
+  menu_id: 775
+  created_at: 
+menus_290: 
+  sequence: 60
+  updated_at: 
+  document_id: 1122
+  code: SALESTERMS
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  menu_name: Terms
+  lock_version: 0
+  updated_by: 
+  id: 1715
+  moodule_id: 41
+  company_id: 1
+  menu_type: S
+  menu_id: 773
+  created_at: 
+menus_263: 
+  sequence: 30
+  updated_at: 
+  document_id: 1300
+  code: MELTUPDATECOMMISSIONITEM
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  menu_name: Update Commission
+  lock_version: 0
+  updated_by: 
+  id: 1666
+  moodule_id: 83
+  company_id: 1
+  menu_type: S
+  menu_id: 1665
+  created_at: 
+menus_237: 
+  sequence: 20
+  updated_at: 
+  document_id: 1240
+  code: PURCHASEPEOPLE
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  menu_name: Purchase People
+  lock_version: 0
+  updated_by: 
+  id: 1585
+  moodule_id: 2
+  company_id: 1
+  menu_type: S
+  menu_id: 765
+  created_at: 
+menus_182: 
+  sequence: 30
+  updated_at: 2010/07/24 17:38:14
+  document_id: 821
+  code: CTLGSTORELOCATION
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  menu_name: Store Location
+  lock_version: 3
+  updated_by: 100
+  id: 1206
+  moodule_id: 111
+  company_id: 1
+  menu_type: S
+  menu_id: 100
+  created_at: 2010/07/12 15:13:58
+menus_049: 
+  sequence: 10
+  updated_at: 
+  document_id: 
+  code: DMSL
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  menu_name: Sale
+  lock_version: 0
+  updated_by: 
+  id: 500
+  moodule_id: 112
+  company_id: 1
+  menu_type: M
+  menu_id: 
+  created_at: 
+menus_075: 
+  sequence: 30
+  updated_at: 
+  document_id: 
+  code: SAOIINV
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  menu_name: Invoice
+  lock_version: 0
+  updated_by: 
+  id: 726
+  moodule_id: 41
+  company_id: 1
+  menu_type: M
+  menu_id: 
+  created_at: 
+menus_156: 
+  sequence: 200
+  updated_at: 2010/06/22 18:02:15
+  document_id: 705
+  code: ACCTGLDETAIL
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  menu_name: General Ledger Detail
+  lock_version: 2
+  updated_by: 100
+  id: 1090
+  moodule_id: 110
+  company_id: 1
+  menu_type: S
+  menu_id: 775
+  created_at: 2010/06/18 11:43:17
+menus_319: 
+  sequence: 115
+  updated_at: 
+  document_id: 1318
+  code: ACCTVENDSTATEMENT
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  menu_name: Vendor Statement
+  lock_version: 0
+  updated_by: 
+  id: 1744
+  moodule_id: 110
+  company_id: 1
+  menu_type: S
+  menu_id: 775
+  created_at: 
+menus_291: 
+  sequence: 10
+  updated_at: 
+  document_id: 1302
+  code: SALESACCTPERIOD
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  menu_name: Accounting Period
+  lock_version: 0
+  updated_by: 
+  id: 1716
+  moodule_id: 41
+  company_id: 1
+  menu_type: S
+  menu_id: 773
+  created_at: 
+menus_264: 
+  sequence: 50
+  updated_at: 
+  document_id: 1301
+  code: MELTPACKETSTATUS
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  menu_name: Packet Status
+  lock_version: 0
+  updated_by: 
+  id: 1667
+  moodule_id: 83
+  company_id: 1
+  menu_type: S
+  menu_id: 1607
+  created_at: 
+menus_238: 
+  sequence: 40
+  updated_at: 
+  document_id: 1241
+  code: SALESPEOPLE
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  menu_name: Sales People
+  lock_version: 0
+  updated_by: 
+  id: 1586
+  moodule_id: 41
+  company_id: 1
+  menu_type: S
+  menu_id: 773
+  created_at: 
+menus_076: 
+  sequence: 20
+  updated_at: 
+  document_id: 
+  code: SAOIMEMO
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  menu_name: Memo
+  lock_version: 0
+  updated_by: 
+  id: 727
+  moodule_id: 41
+  company_id: 1
+  menu_type: M
+  menu_id: 
+  created_at: 
+menus_157: 
+  sequence: 210
+  updated_at: 2010/06/22 18:02:15
+  document_id: 706
+  code: ACCTTRIALBALANCESUMMARY
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  menu_name: Trial Balance Summary
+  lock_version: 2
+  updated_by: 100
+  id: 1091
+  moodule_id: 110
+  company_id: 1
+  menu_type: S
+  menu_id: 775
+  created_at: 2010/06/18 11:43:17
+menus_183: 
+  sequence: 10
+  updated_at: 2010/07/24 17:38:14
+  document_id: 822
+  code: CTLGPARAMETER
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  menu_name: Company Information
+  lock_version: 3
+  updated_by: 100
+  id: 1207
+  moodule_id: 111
+  company_id: 1
+  menu_type: S
+  menu_id: 100
+  created_at: 2010/07/12 15:13:58
+menus_265: 
+  sequence: 80
+  updated_at: 
+  document_id: 1302
+  code: SETUPACCOUNTINGPERIOD
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  menu_name: Accounting Period
+  lock_version: 0
+  updated_by: 
+  id: 1668
+  moodule_id: 600
+  company_id: 1
+  menu_type: S
+  menu_id: 78
+  created_at: 
+menus_239: 
+  sequence: 50
+  updated_at: 
+  document_id: 
+  code: METLTINGSETUP
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  menu_name: Setup
+  lock_version: 0
+  updated_by: 
+  id: 1606
+  moodule_id: 83
+  company_id: 1
+  menu_type: M
+  menu_id: 
+  created_at: 
+menus_077: 
+  sequence: 10
+  updated_at: 2010/06/18 11:00:18
+  document_id: 380
+  code: SAOI01
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  menu_name: Order
+  lock_version: 6
+  updated_by: 100
+  id: 728
+  moodule_id: 41
+  company_id: 1
+  menu_type: S
+  menu_id: 725
+  created_at: 2010/02/08 10:52:06
+menus_158: 
+  sequence: 220
+  updated_at: 2010/06/22 18:02:15
+  document_id: 707
+  code: ACCTTRIALBALANCEDETAIL
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  menu_name: Trial Balance Detail
+  lock_version: 2
+  updated_by: 100
+  id: 1092
+  moodule_id: 110
+  company_id: 1
+  menu_type: S
+  menu_id: 775
+  created_at: 2010/06/18 11:43:17
+menus_184: 
+  sequence: 10
+  updated_at: 
+  document_id: 
+  code: PRDTRN
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  menu_name: Transaction
+  lock_version: 0
+  updated_by: 
+  id: 1225
+  moodule_id: 61
+  company_id: 1
+  menu_type: M
+  menu_id: 
+  created_at: 
+menus_292: 
+  sequence: 30
+  updated_at: 
+  document_id: 101
+  code: SALESITEM
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  menu_name: Item
+  lock_version: 0
+  updated_by: 
+  id: 1717
+  moodule_id: 41
+  company_id: 1
+  menu_type: S
+  menu_id: 773
+  created_at: 
+menus_266: 
+  sequence: 15
+  updated_at: 
+  document_id: 
+  code: SETUPAPPLICATION
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  menu_name: Application
+  lock_version: 0
+  updated_by: 
+  id: 1669
+  moodule_id: 600
+  company_id: 1
+  menu_type: M
+  menu_id: 
+  created_at: 
+menus_078: 
+  sequence: 20
+  updated_at: 2010/06/18 11:00:18
+  document_id: 382
+  code: SAOI03
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  menu_name: Cancel Order
+  lock_version: 6
+  updated_by: 100
+  id: 729
+  moodule_id: 41
+  company_id: 1
+  menu_type: S
+  menu_id: 725
+  created_at: 2010/02/08 10:52:06
+menus_159: 
+  sequence: 50
+  updated_at: 2010/06/22 18:02:15
+  document_id: 709
+  code: ACCTCUSTBACKDATEDAGINDETL
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  menu_name: Customer Backdated Aging Detail Report
+  lock_version: 1
+  updated_by: 100
+  id: 1093
+  moodule_id: 110
+  company_id: 1
+  menu_type: S
+  menu_id: 775
+  created_at: 2010/06/18 12:00:59
+menus_185: 
+  sequence: 30
+  updated_at: 
+  document_id: 
+  code: PRDSTP
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  menu_name: Setup
+  lock_version: 0
+  updated_by: 
+  id: 1226
+  moodule_id: 61
+  company_id: 1
+  menu_type: M
+  menu_id: 
+  created_at: 
+menus_293: 
+  sequence: 30
+  updated_at: 
+  document_id: 1120
+  code: PRODSTORE
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  menu_name: Store
+  lock_version: 0
+  updated_by: 
+  id: 1718
+  moodule_id: 61
+  company_id: 1
+  menu_type: S
+  menu_id: 1226
+  created_at: 
+menus_267: 
+  sequence: 30
+  updated_at: 
+  document_id: 1303
+  code: CTLGORDERINBOX
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  menu_name: Order Inbox
+  lock_version: 0
+  updated_by: 
+  id: 1670
+  moodule_id: 111
+  company_id: 1
+  menu_type: S
+  menu_id: 1525
+  created_at: 
+menus_079: 
+  sequence: 10
+  updated_at: 2010/06/18 11:00:18
+  document_id: 384
+  code: SAOI05
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  menu_name: Invoice
+  lock_version: 6
+  updated_by: 100
+  id: 730
+  moodule_id: 41
+  company_id: 1
+  menu_type: S
+  menu_id: 726
+  created_at: 2010/02/08 10:52:06
+menus_186: 
+  sequence: 40
+  updated_at: 
+  document_id: 
+  code: PRDRPT
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  menu_name: Report
+  lock_version: 0
+  updated_by: 
+  id: 1227
+  moodule_id: 61
+  company_id: 1
+  menu_type: M
+  menu_id: 
+  created_at: 
+menus_294: 
+  sequence: 10
+  updated_at: 
+  document_id: 101
+  code: PRODITEM
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  menu_name: Item
+  lock_version: 0
+  updated_by: 
+  id: 1719
+  moodule_id: 61
+  company_id: 1
+  menu_type: S
+  menu_id: 1226
+  created_at: 
+menus_268: 
+  sequence: 12
+  updated_at: 2010/11/25 10:03:41
+  document_id: 1268
+  code: XYZ
+  update_flag: Y
+  trans_flag: A
+  created_by: 2
+  menu_name: xyz
+  lock_version: 0
+  updated_by: 2
+  id: 1677
+  moodule_id: 2
+  company_id: 1
+  menu_type: M
+  menu_id: 987
+  created_at: 2010/11/25 10:03:41
+menus_187: 
+  sequence: 10
+  updated_at: 2010/07/12 16:46:34
+  document_id: 840
+  code: PRODPRODUCTIONREQUEST
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  menu_name: Production Request
+  lock_version: 0
+  updated_by: 100
+  id: 1228
+  moodule_id: 61
+  company_id: 1
+  menu_type: S
+  menu_id: 1225
+  created_at: 2010/07/12 16:46:34
+menus_295: 
+  sequence: 50
+  updated_at: 
+  document_id: 167
+  code: PRODVENDOR
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  menu_name: Vendor
+  lock_version: 0
+  updated_by: 
+  id: 1720
+  moodule_id: 61
+  company_id: 1
+  menu_type: S
+  menu_id: 1226
+  created_at: 
+menus_269: 
+  sequence: 12
+  updated_at: 2010/11/25 10:48:12
+  document_id: 1268
+  code: abc
+  update_flag: Y
+  trans_flag: A
+  created_by: 2
+  menu_name: abc
+  lock_version: 0
+  updated_by: 2
+  id: 1678
+  moodule_id: 41
+  company_id: 1
+  menu_type: M
+  menu_id: 988
+  created_at: 2010/11/25 10:48:12
+menus_188: 
+  sequence: 20
+  updated_at: 2010/07/12 16:46:34
+  document_id: 841
+  code: PRODGENRERATEPO
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  menu_name: Generate PO
+  lock_version: 0
+  updated_by: 100
+  id: 1229
+  moodule_id: 61
+  company_id: 1
+  menu_type: S
+  menu_id: 1225
+  created_at: 2010/07/12 16:46:34
+menus_296: 
+  sequence: 40
+  updated_at: 
+  document_id: 1122
+  code: PRODTERM
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  menu_name: Terms
+  lock_version: 0
+  updated_by: 
+  id: 1721
+  moodule_id: 61
+  company_id: 1
+  menu_type: S
+  menu_id: 1226
+  created_at: 
+menus_189: 
+  sequence: 0
+  updated_at: 2010/07/24 17:38:14
+  document_id: 860
+  code: CTLGITEMUPLOAD
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  menu_name: Item Upload
+  lock_version: 2
+  updated_by: 100
+  id: 1245
+  moodule_id: 111
+  company_id: 1
+  menu_type: S
+  menu_id: 1288
+  created_at: 2010/07/19 10:54:27
+menus_297: 
+  sequence: 20
+  updated_at: 
+  document_id: 1121
+  code: PRODSHIPPING
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  menu_name: Ship Via
+  lock_version: 0
+  updated_by: 
+  id: 1722
+  moodule_id: 61
+  company_id: 1
+  menu_type: S
+  menu_id: 1226
+  created_at: 
+menus_298: 
+  sequence: 40
+  updated_at: 
+  document_id: 1121
+  code: MELTINGSHIPPING
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  menu_name: Ship Via
+  lock_version: 0
+  updated_by: 
+  id: 1723
+  moodule_id: 83
+  company_id: 1
+  menu_type: S
+  menu_id: 1606
+  created_at: 
+menus_001: 
+  sequence: 40
+  updated_at: 2010/07/06 12:46:04
+  document_id: 1
+  code: DIAM_MEMO_RTN
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  menu_name: Memo Return
+  lock_version: 5
+  updated_by: 100
+  id: 1
+  moodule_id: 112
+  company_id: 1
+  menu_type: S
+  menu_id: 500
+  created_at: 2009/12/03 10:56:55
+menus_299: 
+  sequence: 90
+  updated_at: 
+  document_id: 1241
+  code: ACCTSALESPERSON
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  menu_name: Sales People
+  lock_version: 0
+  updated_by: 
+  id: 1724
+  moodule_id: 110
+  company_id: 1
+  menu_type: S
+  menu_id: 625
+  created_at: 
+menus_002: 
+  sequence: 70
+  updated_at: 2010/06/22 18:02:15
+  document_id: 154
+  code: ABA
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  menu_name: Bank Account
+  lock_version: 11
+  updated_by: 100
+  id: 21
+  moodule_id: 110
+  company_id: 1
+  menu_type: S
+  menu_id: 625
+  created_at: 2009/12/14 14:34:33
+menus_003: 
+  sequence: 10
+  updated_at: 2010/06/22 18:02:15
+  document_id: 21
+  code: PAYM
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  menu_name: Payment
+  lock_version: 9
+  updated_by: 100
+  id: 22
+  moodule_id: 110
+  company_id: 1
+  menu_type: S
+  menu_id: 478
+  created_at: 2009/12/14 14:38:24
+menus_110: 
+  sequence: 20
+  updated_at: 2010/05/14 10:57:23
+  document_id: 560
+  code: PURCHASEORDERREGISTER
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  menu_name: Order Register
+  lock_version: 2
+  updated_by: 100
+  id: 945
+  moodule_id: 2
+  company_id: 1
+  menu_type: S
+  menu_id: 770
+  created_at: 2010/05/12 10:47:45
+menus_004: 
+  sequence: 20
+  updated_at: 2010/06/22 18:02:15
+  document_id: 22
+  code: DEPS
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  menu_name: Deposits
+  lock_version: 9
+  updated_by: 100
+  id: 23
+  moodule_id: 110
+  company_id: 1
+  menu_type: S
+  menu_id: 478
+  created_at: 2009/12/14 14:38:24
+menus_030: 
+  sequence: 40
+  updated_at: 2010/04/29 14:37:00
+  document_id: 66
+  code: VI4
+  update_flag: Y
+  trans_flag: A
+  created_by: 45
+  menu_name: Role Permission
+  lock_version: 32
+  updated_by: 100
+  id: 466
+  moodule_id: 600
+  company_id: 1
+  menu_type: S
+  menu_id: 77
+  created_at: 
+menus_111: 
+  sequence: 30
+  updated_at: 2010/05/14 10:57:23
+  document_id: 562
+  code: PURCHASEINVOICEREGISTER
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  menu_name: Invoice Register
+  lock_version: 2
+  updated_by: 100
+  id: 946
+  moodule_id: 2
+  company_id: 1
+  menu_type: S
+  menu_id: 770
+  created_at: 2010/05/12 10:47:45
+menus_300: 
+  sequence: 100
+  updated_at: 
+  document_id: 1240
+  code: ACCTPURCHASEPEOPLE
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  menu_name: Purchase People
+  lock_version: 0
+  updated_by: 
+  id: 1725
+  moodule_id: 110
+  company_id: 1
+  menu_type: S
+  menu_id: 625
+  created_at: 
+menus_005: 
+  sequence: 30
+  updated_at: 2010/06/22 18:02:15
+  document_id: 23
+  code: TRFR
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  menu_name: Transfer
+  lock_version: 9
+  updated_by: 100
+  id: 24
+  moodule_id: 110
+  company_id: 1
+  menu_type: S
+  menu_id: 478
+  created_at: 2009/12/14 14:38:24
+menus_031: 
+  sequence: 50
+  updated_at: 2010/04/29 14:37:00
+  document_id: 119
+  code: V18
+  update_flag: Y
+  trans_flag: A
+  created_by: 45
+  menu_name: User Role Permission
+  lock_version: 32
+  updated_by: 100
+  id: 467
+  moodule_id: 600
+  company_id: 1
+  menu_type: S
+  menu_id: 77
+  created_at: 
+menus_112: 
+  sequence: 40
+  updated_at: 2010/05/14 10:57:23
+  document_id: 561
+  code: PURCHASEMEMOREGISTER
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  menu_name: Memo Register
+  lock_version: 2
+  updated_by: 100
+  id: 947
+  moodule_id: 2
+  company_id: 1
+  menu_type: S
+  menu_id: 770
+  created_at: 2010/05/12 10:47:45
+menus_301: 
+  sequence: 40
+  updated_at: 
+  document_id: 230
+  code: DIAMCUSTOMER
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  menu_name: Customer
+  lock_version: 0
+  updated_by: 
+  id: 1726
+  moodule_id: 112
+  company_id: 1
+  menu_type: S
+  menu_id: 504
+  created_at: 
+menus_006: 
+  sequence: 20
+  updated_at: 
+  document_id: 
+  code: PUOIORD
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  menu_name: Order
+  lock_version: 0
+  updated_by: 
+  id: 62
+  moodule_id: 2
+  company_id: 1
+  menu_type: M
+  menu_id: 
+  created_at: 
+menus_032: 
+  sequence: 10
+  updated_at: 2010/04/29 14:37:00
+  document_id: 60
+  code: S7
+  update_flag: Y
+  trans_flag: A
+  created_by: 45
+  menu_name: User
+  lock_version: 27
+  updated_by: 100
+  id: 475
+  moodule_id: 600
+  company_id: 1
+  menu_type: S
+  menu_id: 77
+  created_at: 
+menus_113: 
+  sequence: 50
+  updated_at: 2010/05/14 10:57:23
+  document_id: 563
+  code: PURCHASECRINVOICEREGISTER
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  menu_name: Credit Invoice Register
+  lock_version: 2
+  updated_by: 100
+  id: 948
+  moodule_id: 2
+  company_id: 1
+  menu_type: S
+  menu_id: 770
+  created_at: 2010/05/12 10:47:45
+menus_220: 
+  sequence: 6
+  updated_at: 
+  document_id: 1111
+  code: DINVNSTOCKAGINGSUMMARY
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  menu_name: Stock Aging Summary Report
+  lock_version: 0
+  updated_by: 
+  id: 1447
+  moodule_id: 112
+  company_id: 1
+  menu_type: S
+  menu_id: 503
+  created_at: 
+menus_302: 
+  sequence: 50
+  updated_at: 
+  document_id: 167
+  code: DIAMVENDOR
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  menu_name: Vendor
+  lock_version: 0
+  updated_by: 
+  id: 1727
+  moodule_id: 112
+  company_id: 1
+  menu_type: S
+  menu_id: 504
+  created_at: 
+menus_007: 
+  sequence: 40
+  updated_at: 
+  document_id: 
+  code: PUOIINV
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  menu_name: Invoice
+  lock_version: 0
+  updated_by: 
+  id: 63
+  moodule_id: 2
+  company_id: 1
+  menu_type: M
+  menu_id: 
+  created_at: 
+menus_033: 
+  sequence: 10
+  updated_at: 
+  document_id: 
+  code: ARC
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  menu_name: Customer
+  lock_version: 0
+  updated_by: 
+  id: 476
+  moodule_id: 110
+  company_id: 1
+  menu_type: M
+  menu_id: 
+  created_at: 
+menus_060: 
+  sequence: 50
+  updated_at: 
+  document_id: 
+  code: STUP
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  menu_name: Setup
+  lock_version: 0
+  updated_by: 
+  id: 625
+  moodule_id: 110
+  company_id: 1
+  menu_type: M
+  menu_id: 
+  created_at: 
+menus_114: 
+  sequence: 60
+  updated_at: 2010/05/14 10:57:23
+  document_id: 564
+  code: PURCHASEMEMORETREGISTER
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  menu_name: Memo Return Register
+  lock_version: 2
+  updated_by: 100
+  id: 949
+  moodule_id: 2
+  company_id: 1
+  menu_type: S
+  menu_id: 770
+  created_at: 2010/05/12 10:47:45
+menus_140: 
+  sequence: 20
+  updated_at: 2010/07/06 12:46:04
+  document_id: 682
+  code: DIAMSALESINVEREGISTER
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  menu_name: Sales Invoice Register
+  lock_version: 3
+  updated_by: 100
+  id: 1067
+  moodule_id: 112
+  company_id: 1
+  menu_type: S
+  menu_id: 503
+  created_at: 2010/06/17 17:58:04
+menus_221: 
+  sequence: 9
+  updated_at: 
+  document_id: 1112
+  code: DINVNSTOCKAGINGDETAIL
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  menu_name: Stock Aging Detail Report
+  lock_version: 0
+  updated_by: 
+  id: 1448
+  moodule_id: 112
+  company_id: 1
+  menu_type: S
+  menu_id: 503
+  created_at: 
+menus_303: 
+  sequence: 70
+  updated_at: 
+  document_id: 1121
+  code: DIAMSHIPPING
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  menu_name: Ship Via
+  lock_version: 0
+  updated_by: 
+  id: 1728
+  moodule_id: 112
+  company_id: 1
+  menu_type: S
+  menu_id: 504
+  created_at: 
+menus_008: 
+  sequence: 30
+  updated_at: 
+  document_id: 
+  code: PUOIMEMO
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  menu_name: Memo
+  lock_version: 0
+  updated_by: 
+  id: 64
+  moodule_id: 2
+  company_id: 1
+  menu_type: M
+  menu_id: 
+  created_at: 
+menus_034: 
+  sequence: 20
+  updated_at: 
+  document_id: 
+  code: ARV
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  menu_name: Vendor
+  lock_version: 0
+  updated_by: 
+  id: 477
+  moodule_id: 110
+  company_id: 1
+  menu_type: M
+  menu_id: 
+  created_at: 
+menus_115: 
+  sequence: 60
+  updated_at: 2010/06/18 11:00:18
+  document_id: 565
+  code: SALESCANCELLATIONREGISTER
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  menu_name: Cancellation Register
+  lock_version: 1
+  updated_by: 100
+  id: 950
+  moodule_id: 41
+  company_id: 1
+  menu_type: S
+  menu_id: 774
+  created_at: 2010/05/12 11:49:02
+menus_141: 
+  sequence: 50
+  updated_at: 2010/07/06 12:46:04
+  document_id: 686
+  code: DIAMSALESNETREGISTER
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  menu_name: Net Sales Register
+  lock_version: 3
+  updated_by: 100
+  id: 1068
+  moodule_id: 112
+  company_id: 1
+  menu_type: S
+  menu_id: 503
+  created_at: 2010/06/17 17:58:04
+menus_222: 
+  sequence: 60
+  updated_at: 
+  document_id: 1120
+  code: SETUPSTORE
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  menu_name: Store
+  lock_version: 0
+  updated_by: 
+  id: 1465
+  moodule_id: 600
+  company_id: 1
+  menu_type: S
+  menu_id: 78
+  created_at: 
+menus_330: 
+  sequence: 80
+  updated_at: 2011/03/22 10:50:13
+  document_id: 1343
+  code: MELTOPTINREPORT
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  menu_name: Customer Opt In Report
+  lock_version: 0
+  updated_by: 1
+  id: 1772
+  moodule_id: 83
+  company_id: 1
+  menu_type: S
+  menu_id: 1607
+  created_at: 2011/03/22 10:50:13
+menus_304: 
+  sequence: 60
+  updated_at: 
+  document_id: 1122
+  code: DIAMTERMS
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  menu_name: Terms
+  lock_version: 0
+  updated_by: 
+  id: 1729
+  moodule_id: 112
+  company_id: 1
+  menu_type: S
+  menu_id: 504
+  created_at: 
+menus_223: 
+  sequence: 70
+  updated_at: 
+  document_id: 1121
+  code: SETUPSHIPPING
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  menu_name: Ship Via
+  lock_version: 0
+  updated_by: 
+  id: 1466
+  moodule_id: 600
+  company_id: 1
+  menu_type: S
+  menu_id: 78
+  created_at: 
+menus_009: 
+  sequence: 10
+  updated_at: 2010/05/14 10:57:23
+  document_id: 61
+  code: PUOI01
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  menu_name: Order
+  lock_version: 3
+  updated_by: 100
+  id: 65
+  moodule_id: 2
+  company_id: 1
+  menu_type: S
+  menu_id: 62
+  created_at: 2009/12/22 15:29:37
+menus_035: 
+  sequence: 30
+  updated_at: 
+  document_id: 
+  code: ARB
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  menu_name: Bank
+  lock_version: 0
+  updated_by: 
+  id: 478
+  moodule_id: 110
+  company_id: 1
+  menu_type: M
+  menu_id: 
+  created_at: 
+menus_061: 
+  sequence: 30
+  updated_at: 2010/07/06 12:46:04
+  document_id: 290
+  code: DIAM_CRDT_INV
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  menu_name: Credit Invoice
+  lock_version: 7
+  updated_by: 100
+  id: 645
+  moodule_id: 112
+  company_id: 1
+  menu_type: S
+  menu_id: 500
+  created_at: 2009/11/18 11:06:40
+menus_116: 
+  sequence: 70
+  updated_at: 2010/05/14 10:57:23
+  document_id: 566
+  code: PURCHASECANCELLATIONREG
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  menu_name: Cancellation Register
+  lock_version: 1
+  updated_by: 100
+  id: 951
+  moodule_id: 2
+  company_id: 1
+  menu_type: S
+  menu_id: 770
+  created_at: 2010/05/12 11:52:14
+menus_142: 
+  sequence: 30
+  updated_at: 2010/07/06 12:46:04
+  document_id: 683
+  code: DIAMSALESCRINVEREGISTER
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  menu_name: Sales Credit Invoice Register
+  lock_version: 3
+  updated_by: 100
+  id: 1069
+  moodule_id: 112
+  company_id: 1
+  menu_type: S
+  menu_id: 503
+  created_at: 2010/06/17 17:58:04
+menus_331: 
+  sequence: 90
+  updated_at: 2011/03/22 11:06:02
+  document_id: 1344
+  code: MELTOPTOUTREPORT
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  menu_name: Customer Opt Out Report
+  lock_version: 0
+  updated_by: 1
+  id: 1773
+  moodule_id: 83
+  company_id: 1
+  menu_type: S
+  menu_id: 1607
+  created_at: 2011/03/22 11:06:02
+menus_305: 
+  sequence: 80
+  updated_at: 
+  document_id: 1241
+  code: DIAMSALESPEOPLE
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  menu_name: Sales People
+  lock_version: 0
+  updated_by: 
+  id: 1730
+  moodule_id: 112
+  company_id: 1
+  menu_type: S
+  menu_id: 504
+  created_at: 
+menus_250: 
+  sequence: 20
+  updated_at: 
+  document_id: 1273
+  code: SENDREMINDEROFFER
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  menu_name: Send Reminder (Offer)
+  lock_version: 0
+  updated_by: 
+  id: 1620
+  moodule_id: 83
+  company_id: 1
+  menu_type: S
+  menu_id: 1651
+  created_at: 
+menus_224: 
+  sequence: 80
+  updated_at: 
+  document_id: 1122
+  code: ACCTTERM
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  menu_name: Term
+  lock_version: 0
+  updated_by: 
+  id: 1467
+  moodule_id: 110
+  company_id: 1
+  menu_type: S
+  menu_id: 625
+  created_at: 
+menus_036: 
+  sequence: 40
+  updated_at: 
+  document_id: 
+  code: ARGL
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  menu_name: General Ledger
+  lock_version: 0
+  updated_by: 
+  id: 479
+  moodule_id: 110
+  company_id: 1
+  menu_type: M
+  menu_id: 
+  created_at: 
+menus_062: 
+  sequence: 40
+  updated_at: 2010/06/22 18:02:15
+  document_id: 230
+  code: CUST
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  menu_name: Customer
+  lock_version: 13
+  updated_by: 100
+  id: 665
+  moodule_id: 110
+  company_id: 1
+  menu_type: S
+  menu_id: 625
+  created_at: 2009/12/01 11:03:21
+menus_117: 
+  sequence: 90
+  updated_at: 2010/05/14 10:57:23
+  document_id: 581
+  code: OPENPURCHASEORDER
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  menu_name: Open Order
+  lock_version: 0
+  updated_by: 100
+  id: 965
+  moodule_id: 2
+  company_id: 1
+  menu_type: S
+  menu_id: 770
+  created_at: 2010/05/14 10:57:23
+menus_143: 
+  sequence: 10
+  updated_at: 2010/07/06 12:46:04
+  document_id: 684
+  code: DIAMSALESMEMOREGISTER
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  menu_name: Sales Memo Register
+  lock_version: 3
+  updated_by: 100
+  id: 1070
+  moodule_id: 112
+  company_id: 1
+  menu_type: S
+  menu_id: 503
+  created_at: 2010/06/17 17:58:04
+menus_170: 
+  sequence: 0
+  updated_at: 2010/07/06 12:46:04
+  document_id: 764
+  code: DIAMLOTTRANSFER
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  menu_name: Lot Transfer
+  lock_version: 2
+  updated_by: 100
+  id: 1149
+  moodule_id: 112
+  company_id: 1
+  menu_type: S
+  menu_id: 502
+  created_at: 2010/07/05 15:13:54
+menus_306: 
+  sequence: 90
+  updated_at: 
+  document_id: 1240
+  code: DIAMPURCHASEPEOPLE
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  menu_name: Purchase People
+  lock_version: 0
+  updated_by: 
+  id: 1731
+  moodule_id: 112
+  company_id: 1
+  menu_type: S
+  menu_id: 504
+  created_at: 
+menus_251: 
+  sequence: 50
+  updated_at: 
+  document_id: 1274
+  code: CUSTOMERRESPONSEMANUAL
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  menu_name: Customer Response (Manual)
+  lock_version: 0
+  updated_by: 
+  id: 1621
+  moodule_id: 83
+  company_id: 1
+  menu_type: S
+  menu_id: 1649
+  created_at: 
+menus_225: 
+  sequence: 50
+  updated_at: 
+  document_id: 1140
+  code: PRIVACYPOLICY
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  menu_name: Privacy Policy
+  lock_version: 0
+  updated_by: 
+  id: 1485
+  moodule_id: 111
+  company_id: 1
+  menu_type: S
+  menu_id: 100
+  created_at: 
+menus_037: 
+  sequence: 20
+  updated_at: 2010/06/22 18:02:15
+  document_id: 151
+  code: ARCR
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  menu_name: Receipt
+  lock_version: 23
+  updated_by: 100
+  id: 481
+  moodule_id: 110
+  company_id: 1
+  menu_type: S
+  menu_id: 476
+  created_at: 
+menus_063: 
+  sequence: 10
+  updated_at: 
+  document_id: 
+  code: CRM_ACCT
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  menu_name: Accounts
+  lock_version: 0
+  updated_by: 
+  id: 686
+  moodule_id: 21
+  company_id: 1
+  menu_type: M
+  menu_id: 
+  created_at: 
+menus_090: 
+  sequence: 60
+  updated_at: 
+  document_id: 
+  code: REPORT
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  menu_name: Reports
+  lock_version: 0
+  updated_by: 
+  id: 775
+  moodule_id: 110
+  company_id: 1
+  menu_type: M
+  menu_id: 
+  created_at: 
+menus_118: 
+  sequence: 100
+  updated_at: 2010/05/14 10:57:23
+  document_id: 580
+  code: OPENPURCHASEMEMO
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  menu_name: Open Memo
+  lock_version: 0
+  updated_by: 100
+  id: 966
+  moodule_id: 2
+  company_id: 1
+  menu_type: S
+  menu_id: 770
+  created_at: 2010/05/14 10:57:23
+menus_144: 
+  sequence: 60
+  updated_at: 2010/07/06 12:46:04
+  document_id: 687
+  code: DIAMSALESOPENMEMOREPORT
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  menu_name: Sales Open Memo Report
+  lock_version: 3
+  updated_by: 100
+  id: 1071
+  moodule_id: 112
+  company_id: 1
+  menu_type: S
+  menu_id: 503
+  created_at: 2010/06/17 17:58:04
+menus_307: 
+  sequence: 40
+  updated_at: 
+  document_id: 1241
+  code: POSSALESPERSON
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  menu_name: Sales People
+  lock_version: 0
+  updated_by: 
+  id: 1732
+  moodule_id: 113
+  company_id: 1
+  menu_type: S
+  menu_id: 693
+  created_at: 
+menus_252: 
+  sequence: 10
+  updated_at: 2011/03/16 16:05:24
+  document_id: 1275
+  code: CHECKPRINT
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  menu_name: Print/Mail Check
+  lock_version: 1
+  updated_by: 1
+  id: 1622
+  moodule_id: 83
+  company_id: 1
+  menu_type: S
+  menu_id: 1650
+  created_at: 
+menus_226: 
+  sequence: 60
+  updated_at: 
+  document_id: 1141
+  code: CUSTOMERSERVICES
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  menu_name: Customer Services
+  lock_version: 0
+  updated_by: 
+  id: 1486
+  moodule_id: 111
+  company_id: 1
+  menu_type: S
+  menu_id: 100
+  created_at: 
+menus_038: 
+  sequence: 30
+  updated_at: 2010/06/22 18:02:15
+  document_id: 152
+  code: ARCCI
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  menu_name: Credit Invoice
+  lock_version: 23
+  updated_by: 100
+  id: 482
+  moodule_id: 110
+  company_id: 1
+  menu_type: S
+  menu_id: 476
+  created_at: 
+menus_064: 
+  sequence: 20
+  updated_at: 
+  document_id: 
+  code: CRM_ACTS
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  menu_name: Activities
+  lock_version: 0
+  updated_by: 
+  id: 688
+  moodule_id: 21
+  company_id: 1
+  menu_type: M
+  menu_id: 
+  created_at: 
+menus_091: 
+  sequence: 20
+  updated_at: 
+  document_id: 
+  code: INVN02
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  menu_name: Reports
+  lock_version: 0
+  updated_by: 
+  id: 776
+  moodule_id: 1
+  company_id: 1
+  menu_type: M
+  menu_id: 
+  created_at: 
+menus_119: 
+  sequence: 0
+  updated_at: 
+  document_id: 
+  code: INVN03
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  menu_name: Transaction
+  lock_version: 0
+  updated_by: 
+  id: 986
+  moodule_id: 1
+  company_id: 1
+  menu_type: M
+  menu_id: 
+  created_at: 
+menus_145: 
+  sequence: 40
+  updated_at: 2010/07/06 12:46:04
+  document_id: 685
+  code: DIAMSALESMEMORETEREGISTER
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  menu_name: Sales Memo Return Register
+  lock_version: 3
+  updated_by: 100
+  id: 1072
+  moodule_id: 112
+  company_id: 1
+  menu_type: S
+  menu_id: 503
+  created_at: 2010/06/17 17:58:04
+menus_171: 
+  sequence: 0
+  updated_at: 2010/07/06 12:46:04
+  document_id: 781
+  code: DIAMRECEIPTREPORT
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  menu_name: Receive Report
+  lock_version: 1
+  updated_by: 100
+  id: 1165
+  moodule_id: 112
+  company_id: 1
+  menu_type: S
+  menu_id: 503
+  created_at: 2010/07/05 18:05:34
+menus_308: 
+  sequence: 10
+  updated_at: 
+  document_id: 101
+  code: POSITEM
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  menu_name: Item
+  lock_version: 0
+  updated_by: 
+  id: 1733
+  moodule_id: 113
+  company_id: 1
+  menu_type: S
+  menu_id: 693
+  created_at: 
+menus_280: 
+  sequence: 70
+  updated_at: 
+  document_id: 230
+  code: INVNCUSTOMER
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  menu_name: Customer
+  lock_version: 0
+  updated_by: 
+  id: 1705
+  moodule_id: 1
+  company_id: 1
+  menu_type: S
+  menu_id: 71
+  created_at: 
+menus_253: 
+  sequence: 20
+  updated_at: 
+  document_id: 1276
+  code: UPDATECHECKSTATUS
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  menu_name: Update Encash Date
+  lock_version: 0
+  updated_by: 
+  id: 1623
+  moodule_id: 83
+  company_id: 1
+  menu_type: S
+  menu_id: 1650
+  created_at: 
+menus_227: 
+  sequence: 40
+  updated_at: 
+  document_id: 1161
+  code: CTLGTERMUSAGE
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  menu_name: Terms of usage
+  lock_version: 0
+  updated_by: 
+  id: 1505
+  moodule_id: 111
+  company_id: 1
+  menu_type: S
+  menu_id: 100
+  created_at: 
+menus_039: 
+  sequence: 40
+  updated_at: 2010/06/22 18:02:15
+  document_id: 153
+  code: ARCAR
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  menu_name: Apply Receipts
+  lock_version: 23
+  updated_by: 100
+  id: 483
+  moodule_id: 110
+  company_id: 1
+  menu_type: S
+  menu_id: 476
+  created_at: 
+menus_065: 
+  sequence: 10
+  updated_at: 2010/02/22 10:46:44
+  document_id: 340
+  code: CRM_ACCOUNTS
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  menu_name: Account
+  lock_version: 10
+  updated_by: 100
+  id: 689
+  moodule_id: 21
+  company_id: 1
+  menu_type: S
+  menu_id: 686
+  created_at: 2010/01/29 11:33:58
+menus_092: 
+  sequence: 10
+  updated_at: 2010/07/06 12:46:04
+  document_id: 420
+  code: DIAM_PURMEMO
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  menu_name: Memo
+  lock_version: 4
+  updated_by: 100
+  id: 785
+  moodule_id: 112
+  company_id: 1
+  menu_type: S
+  menu_id: 501
+  created_at: 2010/02/18 11:06:25
+menus_146: 
+  sequence: 80
+  updated_at: 2010/07/06 12:46:04
+  document_id: 688
+  code: DIAMPURINVOICEREGISTER
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  menu_name: Purchase Invoice Register
+  lock_version: 3
+  updated_by: 100
+  id: 1073
+  moodule_id: 112
+  company_id: 1
+  menu_type: S
+  menu_id: 503
+  created_at: 2010/06/17 17:58:04
+menus_172: 
+  sequence: 0
+  updated_at: 2010/07/06 12:46:04
+  document_id: 780
+  code: DIAMISSUEREPORT
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  menu_name: Issue Report
+  lock_version: 1
+  updated_by: 100
+  id: 1166
+  moodule_id: 112
+  company_id: 1
+  menu_type: S
+  menu_id: 503
+  created_at: 2010/07/05 18:05:34
+menus_309: 
+  sequence: 50
+  updated_at: 
+  document_id: 1120
+  code: POSSTORE
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  menu_name: Store
+  lock_version: 0
+  updated_by: 
+  id: 1734
+  moodule_id: 113
+  company_id: 1
+  menu_type: S
+  menu_id: 693
+  created_at: 
+menus_254: 
+  sequence: 30
+  updated_at: 
+  document_id: 1277
+  code: SENDREMINDERCHECKDEPOSIT
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  menu_name: Send Reminder (Check Deposit)
+  lock_version: 0
+  updated_by: 
+  id: 1624
+  moodule_id: 83
+  company_id: 1
+  menu_type: S
+  menu_id: 1651
+  created_at: 
+menus_228: 
+  sequence: 45
+  updated_at: 
+  document_id: 
+  code: CTLGADMNORDER
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  menu_name: Order/Enquiry
+  lock_version: 0
+  updated_by: 
+  id: 1525
+  moodule_id: 111
+  company_id: 1
+  menu_type: M
+  menu_id: 
+  created_at: 
+menus_066: 
+  sequence: 20
+  updated_at: 2010/02/22 10:46:44
+  document_id: 341
+  code: CRM_CONTACTS
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  menu_name: Contact
+  lock_version: 10
+  updated_by: 100
+  id: 690
+  moodule_id: 21
+  company_id: 1
+  menu_type: S
+  menu_id: 686
+  created_at: 2010/01/29 11:33:58
+menus_093: 
+  sequence: 20
+  updated_at: 2010/07/06 12:46:04
+  document_id: 421
+  code: DIAM_PURINV
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  menu_name: Invoice
+  lock_version: 4
+  updated_by: 100
+  id: 786
+  moodule_id: 112
+  company_id: 1
+  menu_type: S
+  menu_id: 501
+  created_at: 2010/02/18 11:06:25
+menus_147: 
+  sequence: 90
+  updated_at: 2010/07/06 12:46:04
+  document_id: 689
+  code: DIAMPURCRINVOICEREGISTER
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  menu_name: Purchase Credit Invoice Register
+  lock_version: 3
+  updated_by: 100
+  id: 1074
+  moodule_id: 112
+  company_id: 1
+  menu_type: S
+  menu_id: 503
+  created_at: 2010/06/17 17:58:04
+menus_173: 
+  sequence: 0
+  updated_at: 2010/07/06 12:46:04
+  document_id: 782
+  code: DIAMSTORETRANSFERREPORT
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  menu_name: Store Transfer Report
+  lock_version: 1
+  updated_by: 100
+  id: 1167
+  moodule_id: 112
+  company_id: 1
+  menu_type: S
+  menu_id: 503
+  created_at: 2010/07/05 18:05:34
+menus_281: 
+  sequence: 60
+  updated_at: 
+  document_id: 1120
+  code: INVNSTORE
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  menu_name: Store
+  lock_version: 0
+  updated_by: 
+  id: 1706
+  moodule_id: 1
+  company_id: 1
+  menu_type: S
+  menu_id: 71
+  created_at: 
+menus_255: 
+  sequence: 30
+  updated_at: 
+  document_id: 1278
+  code: STOPPAYMENT
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  menu_name: Stop Payment
+  lock_version: 0
+  updated_by: 
+  id: 1625
+  moodule_id: 83
+  company_id: 1
+  menu_type: S
+  menu_id: 1650
+  created_at: 
+menus_229: 
+  sequence: 10
+  updated_at: 
+  document_id: 1180
+  code: CTLGADMNCHNGSTS
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  menu_name: Change Status
+  lock_version: 0
+  updated_by: 
+  id: 1526
+  moodule_id: 111
+  company_id: 1
+  menu_type: S
+  menu_id: 1525
+  created_at: 
+menus_067: 
+  sequence: 10
+  updated_at: 2010/02/22 10:46:44
+  document_id: 342
+  code: CRM_OPPTY
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  menu_name: Opportunity
+  lock_version: 10
+  updated_by: 100
+  id: 691
+  moodule_id: 21
+  company_id: 1
+  menu_type: S
+  menu_id: 826
+  created_at: 2010/01/29 11:33:58
+menus_148: 
+  sequence: 70
+  updated_at: 2010/07/06 12:46:04
+  document_id: 690
+  code: DIAMPURMEMOREGISTER
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  menu_name: Purchase Memo Register
+  lock_version: 3
+  updated_by: 100
+  id: 1075
+  moodule_id: 112
+  company_id: 1
+  menu_type: S
+  menu_id: 503
+  created_at: 2010/06/17 17:58:04
+menus_174: 
+  sequence: 0
+  updated_at: 2010/07/06 12:46:04
+  document_id: 783
+  code: DIAMACTIVITYREPORT
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  menu_name: Activity Report
+  lock_version: 1
+  updated_by: 100
+  id: 1168
+  moodule_id: 112
+  company_id: 1
+  menu_type: S
+  menu_id: 503
+  created_at: 2010/07/05 18:05:34
+menus_282: 
+  sequence: 50
+  updated_at: 
+  document_id: 1122
+  code: PURCHASETERMS
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  menu_name: Terms
+  lock_version: 0
+  updated_by: 
+  id: 1707
+  moodule_id: 2
+  company_id: 1
+  menu_type: S
+  menu_id: 765
+  created_at: 
+menus_256: 
+  sequence: 80
+  updated_at: 
+  document_id: 1279
+  code: RETURNPACKET
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  menu_name: Return Packet
+  lock_version: 0
+  updated_by: 
+  id: 1626
+  moodule_id: 83
+  company_id: 1
+  menu_type: S
+  menu_id: 1649
+  created_at: 
+menus_068: 
+  sequence: 10
+  updated_at: 
+  document_id: 0
+  code: POSTRANS
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  menu_name: Sales
+  lock_version: 0
+  updated_by: 
+  id: 692
+  moodule_id: 113
+  company_id: 1
+  menu_type: M
+  menu_id: 
+  created_at: 
+menus_094: 
+  sequence: 30
+  updated_at: 2010/07/06 12:46:04
+  document_id: 422
+  code: DIAM_PURCRDINV
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  menu_name: Credit Invoice
+  lock_version: 4
+  updated_by: 100
+  id: 787
+  moodule_id: 112
+  company_id: 1
+  menu_type: S
+  menu_id: 501
+  created_at: 2010/02/18 11:06:25
+menus_149: 
+  sequence: 110
+  updated_at: 2010/07/06 12:46:04
+  document_id: 692
+  code: DIAMPUROPEMEMOREPORT
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  menu_name: Purchase Open Memo Report
+  lock_version: 3
+  updated_by: 100
+  id: 1076
+  moodule_id: 112
+  company_id: 1
+  menu_type: S
+  menu_id: 503
+  created_at: 2010/06/17 17:58:04
+menus_175: 
+  sequence: 0
+  updated_at: 2010/07/06 12:46:04
+  document_id: 785
+  code: DIAMBACKDTSTOCKREPORT
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  menu_name: Backdated Stock Report
+  lock_version: 1
+  updated_by: 100
+  id: 1169
+  moodule_id: 112
+  company_id: 1
+  menu_type: S
+  menu_id: 503
+  created_at: 2010/07/05 18:05:34
+menus_283: 
+  sequence: 30
+  updated_at: 
+  document_id: 1121
+  code: PURCHASESHIPPING
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  menu_name: Ship Via
+  lock_version: 0
+  updated_by: 
+  id: 1708
+  moodule_id: 2
+  company_id: 1
+  menu_type: S
+  menu_id: 765
+  created_at: 
+menus_257: 
+  sequence: 30
+  updated_at: 
+  document_id: 1280
+  code: MELTPACKETACTIVITYREPORT
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  menu_name: Packet Activity Report
+  lock_version: 0
+  updated_by: 
+  id: 1645
+  moodule_id: 83
+  company_id: 1
+  menu_type: S
+  menu_id: 1607
+  created_at: 
+menus_069: 
+  sequence: 20
+  updated_at: 
+  document_id: 
+  code: POSSETUP
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  menu_name: Setup
+  lock_version: 0
+  updated_by: 100
+  id: 693
+  moodule_id: 113
+  company_id: 1
+  menu_type: M
+  menu_id: 
+  created_at: 
+menus_095: 
+  sequence: 40
+  updated_at: 2010/07/06 12:46:04
+  document_id: 423
+  code: DIAM_PURMEMRTN
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  menu_name: Memo Return
+  lock_version: 4
+  updated_by: 100
+  id: 788
+  moodule_id: 112
+  company_id: 1
+  menu_type: S
+  menu_id: 501
+  created_at: 2010/02/18 11:06:25
+menus_176: 
+  sequence: 0
+  updated_at: 2010/07/06 12:46:04
+  document_id: 784
+  code: DIAMSTOCKREPORT
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  menu_name: Stock Report
+  lock_version: 1
+  updated_by: 100
+  id: 1170
+  moodule_id: 112
+  company_id: 1
+  menu_type: S
+  menu_id: 503
+  created_at: 2010/07/05 18:05:34
+menus_284: 
+  sequence: 10
+  updated_at: 
+  document_id: 101
+  code: PURCHASEITEM
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  menu_name: Item
+  lock_version: 0
+  updated_by: 
+  id: 1709
+  moodule_id: 2
+  company_id: 1
+  menu_type: S
+  menu_id: 765
+  created_at: 
+menus_258: 
+  sequence: 90
+  updated_at: 
+  document_id: 1281
+  code: MELTPACKETTRANSACTION
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  menu_name: Packet Transaction
+  lock_version: 0
+  updated_by: 
+  id: 1646
+  moodule_id: 83
+  company_id: 1
+  menu_type: S
+  menu_id: 1649
+  created_at: 
+menus_096: 
+  sequence: 20
+  updated_at: 2010/02/22 10:46:44
+  document_id: 440
+  code: CRM_LOGACT
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  menu_name: Log an Activity
+  lock_version: 8
+  updated_by: 100
+  id: 805
+  moodule_id: 21
+  company_id: 1
+  menu_type: S
+  menu_id: 688
+  created_at: 2010/02/19 10:04:09
+menus_177: 
+  sequence: 0
+  updated_at: 2010/07/06 12:45:39
+  document_id: 800
+  code: INVNPACKETASSIGNMENT
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  menu_name: Packet Assignment
+  lock_version: 0
+  updated_by: 100
+  id: 1185
+  moodule_id: 1
+  company_id: 1
+  menu_type: S
+  menu_id: 986
+  created_at: 2010/07/06 12:45:39
+menus_285: 
+  sequence: 40
+  updated_at: 
+  document_id: 1120
+  code: PURCHASESOTRE
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  menu_name: Store
+  lock_version: 0
+  updated_by: 
+  id: 1710
+  moodule_id: 2
+  company_id: 1
+  menu_type: S
+  menu_id: 765
+  created_at: 
+menus_259: 
+  sequence: 10
+  updated_at: 
+  document_id: 
+  code: MELTPACKET
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  menu_name: Packet
+  lock_version: 0
+  updated_by: 
+  id: 1649
+  moodule_id: 83
+  company_id: 1
+  menu_type: M
+  menu_id: 
+  created_at: 
+menus_097: 
+  sequence: 10
+  updated_at: 2010/02/22 10:46:44
+  document_id: 441
+  code: CRM_ACCTCAT
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  menu_name: Account Category
+  lock_version: 7
+  updated_by: 100
+  id: 806
+  moodule_id: 21
+  company_id: 1
+  menu_type: S
+  menu_id: 771
+  created_at: 2010/02/19 12:14:08
+menus_178: 
+  sequence: 0
+  updated_at: 2010/07/06 12:45:39
+  document_id: 801
+  code: INVNUPDATEPACKETASSIGN
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  menu_name: Update Packet Parameter
+  lock_version: 0
+  updated_by: 100
+  id: 1186
+  moodule_id: 1
+  company_id: 1
+  menu_type: S
+  menu_id: 986
+  created_at: 2010/07/06 12:45:39
+menus_286: 
+  sequence: 20
+  updated_at: 
+  document_id: 1121
+  code: CRMSHIPPING
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  menu_name: Ship Via
+  lock_version: 0
+  updated_by: 
+  id: 1711
+  moodule_id: 21
+  company_id: 1
+  menu_type: S
+  menu_id: 771
+  created_at: 
+menus_098: 
+  sequence: 20
+  updated_at: 2010/02/22 10:46:44
+  document_id: 442
+  code: CRM_ADDRESS
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  menu_name: Address
+  lock_version: 3
+  updated_by: 100
+  id: 809
+  moodule_id: 21
+  company_id: 1
+  menu_type: S
+  menu_id: 686
+  created_at: 2010/02/19 14:56:07
+menus_179: 
+  sequence: 0
+  updated_at: 2010/07/06 12:46:04
+  document_id: 802
+  code: DIAMCERTIFICATEASSIGNMENT
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  menu_name: Certificate Assignment
+  lock_version: 0
+  updated_by: 100
+  id: 1187
+  moodule_id: 112
+  company_id: 1
+  menu_type: S
+  menu_id: 502
+  created_at: 2010/07/06 12:46:04
+menus_287: 
+  sequence: 30
+  updated_at: 
+  document_id: 1122
+  code: CRMTERMS
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  menu_name: Terms
+  lock_version: 0
+  updated_by: 
+  id: 1712
+  moodule_id: 21
+  company_id: 1
+  menu_type: S
+  menu_id: 771
+  created_at: 
+menus_099: 
+  sequence: 20
+  updated_at: 2010/02/22 10:46:44
+  document_id: 443
+  code: CRM_CNTADD
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  menu_name: Address
+  lock_version: 2
+  updated_by: 100
+  id: 810
+  moodule_id: 21
+  company_id: 1
+  menu_type: S
+  menu_id: 687
+  created_at: 2010/02/19 15:23:53
+menus_288: 
+  sequence: 40
+  updated_at: 
+  document_id: 60
+  code: CRMUSER
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  menu_name: User
+  lock_version: 0
+  updated_by: 
+  id: 1713
+  moodule_id: 21
+  company_id: 1
+  menu_type: S
+  menu_id: 771
+  created_at: 
+menus_289: 
+  sequence: 50
+  updated_at: 
+  document_id: 1121
+  code: SALESSHIPPING
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  menu_name: Ship Via
+  lock_version: 0
+  updated_by: 
+  id: 1714
+  moodule_id: 41
+  company_id: 1
+  menu_type: S
+  menu_id: 773
+  created_at: 
+menus_100: 
+  sequence: 30
+  updated_at: 
+  document_id: 
+  code: CRM_OPPR
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  menu_name: Opportunities
+  lock_version: 0
+  updated_by: 
+  id: 826
+  moodule_id: 21
+  company_id: 1
+  menu_type: M
+  menu_id: 
+  created_at: 
+menus_020: 
+  sequence: 41
+  updated_at: 2010/06/22 18:02:15
+  document_id: 321
+  code: ARAC
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  menu_name: Apply Credit Invoice
+  lock_version: 6
+  updated_by: 100
+  id: 82
+  moodule_id: 110
+  company_id: 1
+  menu_type: S
+  menu_id: 476
+  created_at: 2010/01/06 16:38:43
+menus_101: 
+  sequence: 10
+  updated_at: 2010/07/06 12:45:38
+  document_id: 460
+  code: INVN04
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  menu_name: Attribute
+  lock_version: 6
+  updated_by: 100
+  id: 847
+  moodule_id: 1
+  company_id: 1
+  menu_type: S
+  menu_id: 71
+  created_at: 2010/04/06 15:24:52
+menus_021: 
+  sequence: 50
+  updated_at: 2010/06/22 18:02:15
+  document_id: 322
+  code: VEND_ACR
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  menu_name: Apply Credit Invoice
+  lock_version: 5
+  updated_by: 100
+  id: 83
+  moodule_id: 110
+  company_id: 1
+  menu_type: S
+  menu_id: 477
+  created_at: 2010/01/06 16:39:06
+menus_102: 
+  sequence: 60
+  updated_at: 2010/04/29 14:37:00
+  document_id: 480
+  code: RPTCNGH
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  menu_name: Configure Report
+  lock_version: 0
+  updated_by: 100
+  id: 865
+  moodule_id: 600
+  company_id: 1
+  menu_type: S
+  menu_id: 1669
+  created_at: 2010/04/29 14:37:00
+menus_022: 
+  sequence: 30
+  updated_at: 
+  document_id: 
+  code: CAD_1000
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  menu_name: Setup
+  lock_version: 0
+  updated_by: 
+  id: 100
+  moodule_id: 111
+  company_id: 1
+  menu_type: M
+  menu_id: 
+  created_at: 
+menus_103: 
+  sequence: 10
+  updated_at: 2010/06/18 11:00:18
+  document_id: 500
+  code: SALESORDERREGISTER
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  menu_name: Order Register
+  lock_version: 5
+  updated_by: 100
+  id: 885
+  moodule_id: 41
+  company_id: 1
+  menu_type: S
+  menu_id: 774
+  created_at: 2010/05/07 15:27:00
+menus_210: 
+  sequence: 120
+  updated_at: 
+  document_id: 969
+  code: INVNITEMPRICEHISTREPORT
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  menu_name: Item Price History Report
+  lock_version: 0
+  updated_by: 100
+  id: 1357
+  moodule_id: 1
+  company_id: 1
+  menu_type: S
+  menu_id: 776
+  created_at: 
+menus_023: 
+  sequence: 50
+  updated_at: 
+  document_id: 
+  code: CAD_2000
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  menu_name: Reports
+  lock_version: 0
+  updated_by: 
+  id: 101
+  moodule_id: 111
+  company_id: 1
+  menu_type: M
+  menu_id: 
+  created_at: 
+menus_104: 
+  sequence: 20
+  updated_at: 2010/06/18 11:00:18
+  document_id: 520
+  code: SALESINVOICEREGISTER
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  menu_name: Invoice Register
+  lock_version: 4
+  updated_by: 100
+  id: 905
+  moodule_id: 41
+  company_id: 1
+  menu_type: S
+  menu_id: 774
+  created_at: 2010/05/10 16:19:38
+menus_130: 
+  sequence: 30
+  updated_at: 2010/06/22 18:02:15
+  document_id: 642
+  code: ACCTCUSTCRINVOICEREGISTER
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  menu_name: Customer Credit Invoice Register
+  lock_version: 4
+  updated_by: 100
+  id: 1027
+  moodule_id: 110
+  company_id: 1
+  menu_type: S
+  menu_id: 775
+  created_at: 2010/06/15 15:54:25
+menus_211: 
+  sequence: 20
+  updated_at: 
+  document_id: 
+  code: PRODLAB
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  menu_name: Lab
+  lock_version: 0
+  updated_by: 
+  id: 1365
+  moodule_id: 61
+  company_id: 1
+  menu_type: M
+  menu_id: 
+  created_at: 
+menus_024: 
+  sequence: 30
+  updated_at: 2010/07/06 12:45:38
+  document_id: 101
+  code: CA2
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  menu_name: Item
+  lock_version: 14
+  updated_by: 100
+  id: 103
+  moodule_id: 1
+  company_id: 1
+  menu_type: S
+  menu_id: 71
+  created_at: 
+menus_050: 
+  sequence: 20
+  updated_at: 
+  document_id: 
+  code: DMPU
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  menu_name: Purchase
+  lock_version: 0
+  updated_by: 
+  id: 501
+  moodule_id: 112
+  company_id: 1
+  menu_type: M
+  menu_id: 
+  created_at: 
+menus_105: 
+  sequence: 30
+  updated_at: 2010/06/18 11:00:18
+  document_id: 521
+  code: SALESMEMOREGISTER
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  menu_name: Memo Register
+  lock_version: 4
+  updated_by: 100
+  id: 906
+  moodule_id: 41
+  company_id: 1
+  menu_type: S
+  menu_id: 774
+  created_at: 2010/05/10 16:19:38
+menus_131: 
+  sequence: 130
+  updated_at: 2010/06/22 18:02:15
+  document_id: 646
+  code: ACCTBANKDEPOSITREGISTER
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  menu_name: Bank Deposit Register
+  lock_version: 4
+  updated_by: 100
+  id: 1028
+  moodule_id: 110
+  company_id: 1
+  menu_type: S
+  menu_id: 775
+  created_at: 2010/06/15 15:54:25
+menus_212: 
+  sequence: 40
+  updated_at: 
+  document_id: 980
+  code: CTLGJEWELRY
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  menu_name: Jewelry
+  lock_version: 0
+  updated_by: 100
+  id: 1385
+  moodule_id: 1
+  company_id: 1
+  menu_type: S
+  menu_id: 71
+  created_at: 
+menus_320: 
+  sequence: 120
+  updated_at: 
+  document_id: 1319
+  code: ACCTVENDORLEDGER
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  menu_name: Vendor Ledger
+  lock_version: 0
+  updated_by: 
+  id: 1745
+  moodule_id: 110
+  company_id: 1
+  menu_type: S
+  menu_id: 775
+  created_at: 
+menus_025: 
+  sequence: 10
+  updated_at: 2010/07/24 17:38:14
+  document_id: 120
+  code: CA3
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  menu_name: Navigation Menu
+  lock_version: 6
+  updated_by: 100
+  id: 104
+  moodule_id: 111
+  company_id: 1
+  menu_type: S
+  menu_id: 1285
+  created_at: 
+menus_051: 
+  sequence: 30
+  updated_at: 
+  document_id: 
+  code: DMIN
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  menu_name: Inventory
+  lock_version: 0
+  updated_by: 
+  id: 502
+  moodule_id: 112
+  company_id: 1
+  menu_type: M
+  menu_id: 
+  created_at: 
+menus_106: 
+  sequence: 50
+  updated_at: 2010/06/18 11:00:18
+  document_id: 522
+  code: SALESCRINVOICEREGISTER
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  menu_name: Credit Invoice Register
+  lock_version: 4
+  updated_by: 100
+  id: 907
+  moodule_id: 41
+  company_id: 1
+  menu_type: S
+  menu_id: 774
+  created_at: 2010/05/10 16:19:38
+menus_132: 
+  sequence: 140
+  updated_at: 2010/06/22 18:02:15
+  document_id: 645
+  code: ACCTBANKPAYMENTREGISTER
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  menu_name: Bank Payment Register
+  lock_version: 4
+  updated_by: 100
+  id: 1029
+  moodule_id: 110
+  company_id: 1
+  menu_type: S
+  menu_id: 775
+  created_at: 2010/06/15 15:54:25
+menus_213: 
+  sequence: 60
+  updated_at: 
+  document_id: 1000
+  code: INVNSTOCKWITHPACKETREPORT
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  menu_name: Stock Report (with Packet)
+  lock_version: 0
+  updated_by: 100
+  id: 1405
+  moodule_id: 1
+  company_id: 1
+  menu_type: S
+  menu_id: 776
+  created_at: 
+menus_321: 
+  sequence: 60
+  updated_at: 
+  document_id: 1320
+  code: ACCTCUSTLEDGER
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  menu_name: Customer Ledger
+  lock_version: 0
+  updated_by: 
+  id: 1746
+  moodule_id: 110
+  company_id: 1
+  menu_type: S
+  menu_id: 775
+  created_at: 
+menus_240: 
+  sequence: 60
+  updated_at: 
+  document_id: 
+  code: MELTINGREPORTS
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  menu_name: Reports
+  lock_version: 0
+  updated_by: 
+  id: 1607
+  moodule_id: 83
+  company_id: 1
+  menu_type: M
+  menu_id: 
+  created_at: 
+menus_026: 
+  sequence: 70
+  updated_at: 2010/07/24 17:38:14
+  document_id: 121
+  code: CA4
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  menu_name: Enquiry
+  lock_version: 6
+  updated_by: 100
+  id: 105
+  moodule_id: 111
+  company_id: 1
+  menu_type: S
+  menu_id: 100
+  created_at: 
+menus_052: 
+  sequence: 50
+  updated_at: 
+  document_id: 
+  code: DMRP
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  menu_name: Reports
+  lock_version: 0
+  updated_by: 
+  id: 503
+  moodule_id: 112
+  company_id: 1
+  menu_type: M
+  menu_id: 
+  created_at: 
+menus_107: 
+  sequence: 40
+  updated_at: 2010/06/18 11:00:18
+  document_id: 540
+  code: SALESMEMORETREGISTER
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  menu_name: Memo Return Register
+  lock_version: 3
+  updated_by: 100
+  id: 925
+  moodule_id: 41
+  company_id: 1
+  menu_type: S
+  menu_id: 774
+  created_at: 2010/05/11 15:12:30
+menus_133: 
+  sequence: 150
+  updated_at: 2010/06/22 18:02:15
+  document_id: 644
+  code: ACCTBANKTRANSFERREGISTER
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  menu_name: Bank Transfer Register
+  lock_version: 4
+  updated_by: 100
+  id: 1030
+  moodule_id: 110
+  company_id: 1
+  menu_type: S
+  menu_id: 775
+  created_at: 2010/06/15 15:54:25
+menus_214: 
+  sequence: 5
+  updated_at: 
+  document_id: 1001
+  code: DIAMSTOCKWITHPACKETREPORT
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  menu_name: Stock Report (with Packet)
+  lock_version: 0
+  updated_by: 100
+  id: 1406
+  moodule_id: 112
+  company_id: 1
+  menu_type: S
+  menu_id: 503
+  created_at: 
+menus_322: 
+  sequence: 6
+  updated_at: 
+  document_id: 1321
+  code: METALUNITCONV
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  menu_name: Metal Unit Conversion
+  lock_version: 0
+  updated_by: 
+  id: 1747
+  moodule_id: 600
+  company_id: 1
+  menu_type: S
+  menu_id: 1669
+  created_at: 
+menus_241: 
+  sequence: 40
+  updated_at: 
+  document_id: 1262
+  code: COMMISSIONREPORT
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  menu_name: Commission Report
+  lock_version: 0
+  updated_by: 
+  id: 1608
+  moodule_id: 83
+  company_id: 1
+  menu_type: S
+  menu_id: 1607
+  created_at: 
+menus_027: 
+  sequence: 30
+  updated_at: 2010/04/29 14:37:00
+  document_id: 69
+  code: V17
+  update_flag: Y
+  trans_flag: A
+  created_by: 45
+  menu_name: Role
+  lock_version: 5
+  updated_by: 100
+  id: 167
+  moodule_id: 600
+  company_id: 1
+  menu_type: S
+  menu_id: 77
+  created_at: 
+menus_053: 
+  sequence: 40
+  updated_at: 
+  document_id: 
+  code: DMST
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  menu_name: Setup
+  lock_version: 0
+  updated_by: 
+  id: 504
+  moodule_id: 112
+  company_id: 1
+  menu_type: M
+  menu_id: 
+  created_at: 
+menus_080: 
+  sequence: 20
+  updated_at: 2010/06/18 11:00:18
+  document_id: 383
+  code: SAOI04
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  menu_name: Credit Invoice
+  lock_version: 6
+  updated_by: 100
+  id: 731
+  moodule_id: 41
+  company_id: 1
+  menu_type: S
+  menu_id: 726
+  created_at: 2010/02/08 10:52:06
+menus_108: 
+  sequence: 80
+  updated_at: 2010/06/18 11:00:18
+  document_id: 541
+  code: OPENSALESORDER
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  menu_name: Open Order
+  lock_version: 2
+  updated_by: 100
+  id: 926
+  moodule_id: 41
+  company_id: 1
+  menu_type: S
+  menu_id: 774
+  created_at: 2010/05/11 18:47:25
+menus_134: 
+  sequence: 180
+  updated_at: 2010/06/22 18:02:15
+  document_id: 640
+  code: ACCTJOURNALREGISTER
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  menu_name: Journal Register
+  lock_version: 4
+  updated_by: 100
+  id: 1031
+  moodule_id: 110
+  company_id: 1
+  menu_type: S
+  menu_id: 775
+  created_at: 2010/06/15 15:54:25
+menus_160: 
+  sequence: 40
+  updated_at: 2010/06/22 18:02:15
+  document_id: 708
+  code: ACCTCUSTBACKDATEDAGINSMRY
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  menu_name: Customer Backdated Aging Summary Report
+  lock_version: 1
+  updated_by: 100
+  id: 1094
+  moodule_id: 110
+  company_id: 1
+  menu_type: S
+  menu_id: 775
+  created_at: 2010/06/18 12:00:59
+menus_215: 
+  sequence: 0
+  updated_at: 
+  document_id: 1002
+  code: POSPRICEEXCEPTIONREPORT
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  menu_name: Price Exception Report
+  lock_version: 0
+  updated_by: 100
+  id: 1407
+  moodule_id: 113
+  company_id: 1
+  menu_type: S
+  menu_id: 694
+  created_at: 
+menus_323: 
+  sequence: 100
+  updated_at: 
+  document_id: 1322
+  code: DIAMLOCAION
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  menu_name: Location
+  lock_version: 0
+  updated_by: 
+  id: 1748
+  moodule_id: 112
+  company_id: 1
+  menu_type: S
+  menu_id: 504
+  created_at: 
+menus_242: 
+  sequence: 10
+  updated_at: 
+  document_id: 1260
+  code: METALPACKETREGISTER
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  menu_name: Metal Packet Register
+  lock_version: 0
+  updated_by: 
+  id: 1609
+  moodule_id: 83
+  company_id: 1
+  menu_type: S
+  menu_id: 1607
+  created_at: 
+menus_028: 
+  sequence: 10
+  updated_at: 2010/04/29 14:37:00
+  document_id: 68
+  code: V16
+  update_flag: Y
+  trans_flag: A
+  created_by: 45
+  menu_name: Document
+  lock_version: 32
+  updated_by: 100
+  id: 463
+  moodule_id: 600
+  company_id: 1
+  menu_type: S
+  menu_id: 1669
+  created_at: 
+menus_054: 
+  sequence: 10
+  updated_at: 2010/07/06 12:46:04
+  document_id: 171
+  code: DCAT
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  menu_name: Category
+  lock_version: 12
+  updated_by: 100
+  id: 506
+  moodule_id: 112
+  company_id: 1
+  menu_type: S
+  menu_id: 504
+  created_at: 2009/10/26 14:59:24
+menus_081: 
+  sequence: 10
+  updated_at: 2010/06/18 11:00:18
+  document_id: 381
+  code: SAOI02
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  menu_name: Memo
+  lock_version: 6
+  updated_by: 100
+  id: 732
+  moodule_id: 41
+  company_id: 1
+  menu_type: S
+  menu_id: 727
+  created_at: 2010/02/08 10:52:06
+menus_109: 
+  sequence: 90
+  updated_at: 2010/06/18 11:00:18
+  document_id: 542
+  code: OPENSALESMEMO
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  menu_name: Open Memo
+  lock_version: 2
+  updated_by: 100
+  id: 927
+  moodule_id: 41
+  company_id: 1
+  menu_type: S
+  menu_id: 774
+  created_at: 2010/05/11 18:47:25
+menus_135: 
+  sequence: 70
+  updated_at: 2010/06/22 18:02:15
+  document_id: 660
+  code: ACCTVENDINVOICEREGISTER
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  menu_name: Vendor Invoice Register
+  lock_version: 3
+  updated_by: 100
+  id: 1045
+  moodule_id: 110
+  company_id: 1
+  menu_type: S
+  menu_id: 775
+  created_at: 2010/06/16 14:49:20
+menus_161: 
+  sequence: 100
+  updated_at: 2010/06/22 18:02:15
+  document_id: 711
+  code: ACCTVENDBACKDATEDAGINSMRY
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  menu_name: Vendor Backdated Aging Summary Report
+  lock_version: 1
+  updated_by: 100
+  id: 1096
+  moodule_id: 110
+  company_id: 1
+  menu_type: S
+  menu_id: 775
+  created_at: 2010/06/18 12:00:59
+menus_216: 
+  sequence: 0
+  updated_at: 
+  document_id: 1003
+  code: CTLGPROMOTIONUPLOAD
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  menu_name: Image Upload (Home Page)
+  lock_version: 1
+  updated_by: 100
+  id: 1408
+  moodule_id: 111
+  company_id: 1
+  menu_type: S
+  menu_id: 1288
+  created_at: 
+menus_324: 
+  sequence: 60
+  updated_at: 
+  document_id: 1323
+  code: COMMDUEREPORT
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  menu_name: Commission Due Report
+  lock_version: 0
+  updated_by: 
+  id: 1749
+  moodule_id: 83
+  company_id: 1
+  menu_type: S
+  menu_id: 1607
+  created_at: 
+menus_243: 
+  sequence: 20
+  updated_at: 
+  document_id: 1261
+  code: OPENPACKETREGISTER
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  menu_name: Open Packet Report
+  lock_version: 0
+  updated_by: 
+  id: 1611
+  moodule_id: 83
+  company_id: 1
+  menu_type: S
+  menu_id: 1607
+  created_at: 
+menus_029: 
+  sequence: 20
+  updated_at: 2010/04/29 14:37:00
+  document_id: 67
+  code: VI5
+  update_flag: Y
+  trans_flag: A
+  created_by: 45
+  menu_name: Menu
+  lock_version: 32
+  updated_by: 100
+  id: 465
+  moodule_id: 600
+  company_id: 1
+  menu_type: S
+  menu_id: 1669
+  created_at: 
+menus_055: 
+  sequence: 10
+  updated_at: 2010/07/06 12:46:04
+  document_id: 190
+  code: DMEMO
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  menu_name: Memo
+  lock_version: 12
+  updated_by: 100
+  id: 525
+  moodule_id: 112
+  company_id: 1
+  menu_type: S
+  menu_id: 500
+  created_at: 
+menus_082: 
+  sequence: 20
+  updated_at: 2010/06/18 11:00:18
+  document_id: 385
+  code: SAOI06
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  menu_name: Memo Return
+  lock_version: 6
+  updated_by: 100
+  id: 733
+  moodule_id: 41
+  company_id: 1
+  menu_type: S
+  menu_id: 727
+  created_at: 2010/02/08 10:52:06
+menus_136: 
+  sequence: 80
+  updated_at: 2010/06/22 18:02:15
+  document_id: 661
+  code: ACCTVENDPAYMENTREGISTER
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  menu_name: Vendor Payment Register
+  lock_version: 3
+  updated_by: 100
+  id: 1046
+  moodule_id: 110
+  company_id: 1
+  menu_type: S
+  menu_id: 775
+  created_at: 2010/06/16 14:49:20
+menus_162: 
+  sequence: 110
+  updated_at: 2010/06/22 18:02:15
+  document_id: 712
+  code: ACCTVENDBACKDATEDAGINDETL
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  menu_name: Vendor Backdated Aging Detail Report
+  lock_version: 1
+  updated_by: 100
+  id: 1097
+  moodule_id: 110
+  company_id: 1
+  menu_type: S
+  menu_id: 775
+  created_at: 2010/06/18 12:00:59
+menus_217: 
+  sequence: 40
+  updated_at: 
+  document_id: 1081
+  code: CTLGITEMPRICEUPDATE
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  menu_name: Update Item Price
+  lock_version: 0
+  updated_by: 100
+  id: 1426
+  moodule_id: 111
+  company_id: 1
+  menu_type: S
+  menu_id: 1288
+  created_at: 
+menus_325: 
+  sequence: 70
+  updated_at: 
+  document_id: 1324
+  code: COMMPAIDREPORT
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  menu_name: Commission Paid Report
+  lock_version: 0
+  updated_by: 
+  id: 1750
+  moodule_id: 83
+  company_id: 1
+  menu_type: S
+  menu_id: 1607
+  created_at: 
+menus_270: 
+  sequence: 8
+  updated_at: 
+  document_id: 1305
+  code: STUPMOODULE
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  menu_name: Module
+  lock_version: 0
+  updated_by: 
+  id: 1690
+  moodule_id: 600
+  company_id: 1
+  menu_type: S
+  menu_id: 1669
+  created_at: 
+menus_244: 
+  sequence: 30
+  updated_at: 
+  document_id: 1264
+  code: RETAILER
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  menu_name: Retailer
+  lock_version: 0
+  updated_by: 
+  id: 1613
+  moodule_id: 83
+  company_id: 1
+  menu_type: S
+  menu_id: 1606
+  created_at: 
+menus_056: 
+  sequence: 20
+  updated_at: 2010/07/06 12:46:04
+  document_id: 191
+  code: DLOT
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  menu_name: Lot
+  lock_version: 11
+  updated_by: 100
+  id: 526
+  moodule_id: 112
+  company_id: 1
+  menu_type: S
+  menu_id: 504
+  created_at: 2009/10/27 10:34:38
+menus_137: 
+  sequence: 90
+  updated_at: 2010/06/22 18:02:15
+  document_id: 662
+  code: ACCTVENDCRINVOICEREGISTER
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  menu_name: Vendor Credit Invoice Register
+  lock_version: 3
+  updated_by: 100
+  id: 1047
+  moodule_id: 110
+  company_id: 1
+  menu_type: S
+  menu_id: 775
+  created_at: 2010/06/16 14:49:20
+menus_163: 
+  sequence: 160
+  updated_at: 2010/06/22 18:02:15
+  document_id: 714
+  code: ACCTBANKTRANSACTIONREGIST
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  menu_name: Bank Transaction Register
+  lock_version: 1
+  updated_by: 100
+  id: 1099
+  moodule_id: 110
+  company_id: 1
+  menu_type: S
+  menu_id: 775
+  created_at: 2010/06/18 12:00:59
+menus_190: 
+  sequence: 0
+  updated_at: 2010/07/24 17:38:14
+  document_id: 880
+  code: CTLGIMAGEUPLOAD
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  menu_name: Image Upload
+  lock_version: 1
+  updated_by: 100
+  id: 1265
+  moodule_id: 111
+  company_id: 1
+  menu_type: S
+  menu_id: 1288
+  created_at: 2010/07/20 12:15:09
+menus_218: 
+  sequence: 10
+  updated_at: 
+  document_id: 1082
+  code: CTLGMISSINGIMAGEREPORT
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  menu_name: Missing Image Report
+  lock_version: 0
+  updated_by: 100
+  id: 1427
+  moodule_id: 111
+  company_id: 1
+  menu_type: S
+  menu_id: 101
+  created_at: 
+menus_326: 
+  sequence: 10
+  updated_at: 
+  document_id: 1325
+  code: PRINTCOMMCHECK
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  menu_name: Print Commission Check
+  lock_version: 0
+  updated_by: 
+  id: 1751
+  moodule_id: 83
+  company_id: 1
+  menu_type: S
+  menu_id: 1665
+  created_at: 
+menus_271: 
+  sequence: 40
+  updated_at: 
+  document_id: 1308
+  code: MELTINGFLOW
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  menu_name: Flow
+  lock_version: 0
+  updated_by: 
+  id: 1694
+  moodule_id: 83
+  company_id: 1
+  menu_type: S
+  menu_id: 1695
+  created_at: 
+menus_245: 
+  sequence: 20
+  updated_at: 
+  document_id: 1267
+  code: DAILYMETALRATE
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  menu_name: Daily Metal Rate
+  lock_version: 0
+  updated_by: 
+  id: 1615
+  moodule_id: 83
+  company_id: 1
+  menu_type: S
+  menu_id: 1606
+  created_at: 
+menus_057: 
+  sequence: 30
+  updated_at: 2010/07/06 12:46:04
+  document_id: 210
+  code: DPKT
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  menu_name: Certificate
+  lock_version: 10
+  updated_by: 100
+  id: 545
+  moodule_id: 112
+  company_id: 1
+  menu_type: S
+  menu_id: 504
+  created_at: 2009/10/27 16:16:42
+menus_083: 
+  sequence: 10
+  updated_at: 2010/02/22 10:46:44
+  document_id: 400
+  code: CRM_TASK
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  menu_name: Task
+  lock_version: 9
+  updated_by: 100
+  id: 745
+  moodule_id: 21
+  company_id: 1
+  menu_type: S
+  menu_id: 688
+  created_at: 2010/02/09 21:38:53
+menus_138: 
+  sequence: 0
+  updated_at: 2010/06/17 12:40:12
+  document_id: 680
+  code: POSSALESRECEIPTREGISTER
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  menu_name: Sales Receipt Register
+  lock_version: 0
+  updated_by: 100
+  id: 1065
+  moodule_id: 113
+  company_id: 1
+  menu_type: S
+  menu_id: 694
+  created_at: 2010/06/17 12:40:12
+menus_164: 
+  sequence: 50
+  updated_at: 2010/07/06 12:45:38
+  document_id: 720
+  code: INVNITEMPACKET
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  menu_name: Item Packet
+  lock_version: 2
+  updated_by: 100
+  id: 1105
+  moodule_id: 1
+  company_id: 1
+  menu_type: S
+  menu_id: 71
+  created_at: 2010/06/26 15:00:52
+menus_191: 
+  sequence: 20
+  updated_at: 
+  document_id: 
+  code: CAD_3000
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  menu_name: Configure
+  lock_version: 0
+  updated_by: 100
+  id: 1285
+  moodule_id: 111
+  company_id: 1
+  menu_type: M
+  menu_id: 
+  created_at: 
+menus_219: 
+  sequence: 1
+  updated_at: 
+  document_id: 1100
+  code: DINVNALLSTORESTOCKREPORT
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  menu_name: Stock Report (HO/Store wise)
+  lock_version: 0
+  updated_by: 
+  id: 1446
+  moodule_id: 112
+  company_id: 1
+  menu_type: S
+  menu_id: 503
+  created_at: 
+menus_327: 
+  sequence: 20
+  updated_at: 
+  document_id: 1326
+  code: UPDATECOMMENCASHDATE
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  menu_name: Update Commission Encash Date
+  lock_version: 0
+  updated_by: 
+  id: 1752
+  moodule_id: 83
+  company_id: 1
+  menu_type: S
+  menu_id: 1665
+  created_at: 
+menus_272: 
+  sequence: 70
+  updated_at: 
+  document_id: 
+  code: MELTFLOW
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  menu_name: Melting Flow
+  lock_version: 0
+  updated_by: 
+  id: 1695
+  moodule_id: 83
+  company_id: 1
+  menu_type: M
+  menu_id: 
+  created_at: 
+menus_246: 
+  sequence: 10
+  updated_at: 
+  document_id: 1268
+  code: RECEIVEPACKET
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  menu_name: Receive Packet
+  lock_version: 0
+  updated_by: 
+  id: 1616
+  moodule_id: 83
+  company_id: 1
+  menu_type: S
+  menu_id: 1649
+  created_at: 
+menus_058: 
+  sequence: 10
+  updated_at: 2010/06/22 18:02:15
+  document_id: 250
+  code: CUST_INV
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  menu_name: Invoice
+  lock_version: 20
+  updated_by: 100
+  id: 587
+  moodule_id: 110
+  company_id: 1
+  menu_type: S
+  menu_id: 476
+  created_at: 2009/11/03 11:12:28
+menus_084: 
+  sequence: 50
+  updated_at: 
+  document_id: 
+  code: PUOISETUP
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  menu_name: Setup
+  lock_version: 0
+  updated_by: 
+  id: 765
+  moodule_id: 2
+  company_id: 1
+  menu_type: M
+  menu_id: 
+  created_at: 
+menus_139: 
+  sequence: 0
+  updated_at: 2010/06/17 12:40:12
+  document_id: 681
+  code: POSSALESRETURNREGISTER
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  menu_name: Sales Return Register
+  lock_version: 0
+  updated_by: 100
+  id: 1066
+  moodule_id: 113
+  company_id: 1
+  menu_type: S
+  menu_id: 694
+  created_at: 2010/06/17 12:40:12
+menus_165: 
+  sequence: 0
+  updated_at: 2010/07/06 12:45:39
+  document_id: 740
+  code: INVNITEMTRANSFER
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  menu_name: Item Transfer
+  lock_version: 1
+  updated_by: 100
+  id: 1125
+  moodule_id: 1
+  company_id: 1
+  menu_type: S
+  menu_id: 986
+  created_at: 2010/07/01 16:42:02
+menus_192: 
+  sequence: 10
+  updated_at: 
+  document_id: 
+  code: CAD_4000
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  menu_name: Upload
+  lock_version: 0
+  updated_by: 100
+  id: 1288
+  moodule_id: 111
+  company_id: 1
+  menu_type: M
+  menu_id: 
+  created_at: 
+menus_328: 
+  sequence: 25
+  updated_at: 2011/03/17 15:30:34
+  document_id: 1341
+  code: SALESINVOICEREGISTEROL
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  menu_name: Sales Invoice Register (One Line)
+  lock_version: 1
+  updated_by: 1
+  id: 1770
+  moodule_id: 41
+  company_id: 1
+  menu_type: S
+  menu_id: 774
+  created_at: 
+menus_273: 
+  sequence: 14
+  updated_at: 2010/11/30 11:41:48
+  document_id: 1060
+  code: QWE
+  update_flag: Y
+  trans_flag: A
+  created_by: 2
+  menu_name: qwe
+  lock_version: 0
+  updated_by: 2
+  id: 1696
+  moodule_id: 2
+  company_id: 1
+  menu_type: M
+  menu_id: 986
+  created_at: 2010/11/30 11:41:48
+menus_247: 
+  sequence: 20
+  updated_at: 
+  document_id: 1269
+  code: ATTACHVIDEO
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  menu_name: Attach Video
+  lock_version: 0
+  updated_by: 
+  id: 1617
+  moodule_id: 83
+  company_id: 1
+  menu_type: S
+  menu_id: 1649
+  created_at: 
+menus_059: 
+  sequence: 20
+  updated_at: 2010/07/06 12:46:04
+  document_id: 270
+  code: DIAM_INV
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  menu_name: Invoice
+  lock_version: 8
+  updated_by: 100
+  id: 605
+  moodule_id: 112
+  company_id: 1
+  menu_type: S
+  menu_id: 500
+  created_at: 2009/11/04 16:37:59
+menus_085: 
+  sequence: 60
+  updated_at: 
+  document_id: 
+  code: PUOIREPORT
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  menu_name: Reports
+  lock_version: 0
+  updated_by: 
+  id: 770
+  moodule_id: 2
+  company_id: 1
+  menu_type: M
+  menu_id: 
+  created_at: 
+menus_166: 
+  sequence: 0
+  updated_at: 2010/07/06 12:46:04
+  document_id: 760
+  code: DIAMISSUE
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  menu_name: Issue
+  lock_version: 2
+  updated_by: 100
+  id: 1145
+  moodule_id: 112
+  company_id: 1
+  menu_type: S
+  menu_id: 502
+  created_at: 2010/07/05 15:13:53
+menus_329: 
+  sequence: 25
+  updated_at: 2011/03/17 15:38:42
+  document_id: 1342
+  code: PURCHASEINVOICEREGISTEROL
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  menu_name: Purchase Invoice Register (One Line)
+  lock_version: 1
+  updated_by: 1
+  id: 1771
+  moodule_id: 2
+  company_id: 1
+  menu_type: S
+  menu_id: 770
+  created_at: 
+menus_274: 
+  sequence: 30
+  updated_at: 
+  document_id: 1311
+  code: METALANALYSIS
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  menu_name: Metal Analysis
+  lock_version: 0
+  updated_by: 
+  id: 1698
+  moodule_id: 83
+  company_id: 1
+  menu_type: S
+  menu_id: 1649
+  created_at: 
+menus_248: 
+  sequence: 10
+  updated_at: 
+  document_id: 1271
+  code: SENDOFFERWITHVIDEO
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  menu_name: Send Offer With Video
+  lock_version: 0
+  updated_by: 
+  id: 1618
+  moodule_id: 83
+  company_id: 1
+  menu_type: S
+  menu_id: 1651
+  created_at: 
+menus_086: 
+  sequence: 40
+  updated_at: 
+  document_id: 
+  code: CRM_SETUP
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  menu_name: Setup
+  lock_version: 0
+  updated_by: 
+  id: 771
+  moodule_id: 21
+  company_id: 1
+  menu_type: M
+  menu_id: 
+  created_at: 
+menus_167: 
+  sequence: 0
+  updated_at: 2010/07/06 12:46:04
+  document_id: 761
+  code: DIAMRECEIVE
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  menu_name: Receive
+  lock_version: 2
+  updated_by: 100
+  id: 1146
+  moodule_id: 112
+  company_id: 1
+  menu_type: S
+  menu_id: 502
+  created_at: 2010/07/05 15:13:54
+menus_193: 
+  sequence: 40
+  updated_at: 
+  document_id: 
+  code: CAD_5000
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  menu_name: Item
+  lock_version: 0
+  updated_by: 100
+  id: 1289
+  moodule_id: 111
+  company_id: 1
+  menu_type: M
+  menu_id: 
+  created_at: 
+menus_275: 
+  sequence: 15
+  updated_at: 
+  document_id: 1312
+  code: VERIFYCHECKSTATUS
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  menu_name: Verify Check Status
+  lock_version: 0
+  updated_by: 
+  id: 1699
+  moodule_id: 83
+  company_id: 1
+  menu_type: S
+  menu_id: 1650
+  created_at: 
+menus_249: 
+  sequence: 40
+  updated_at: 
+  document_id: 1272
+  code: CALCULATEOFFER
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  menu_name: Calculate Offer
+  lock_version: 0
+  updated_by: 
+  id: 1619
+  moodule_id: 83
+  company_id: 1
+  menu_type: S
+  menu_id: 1649
+  created_at: 
+menus_087: 
+  sequence: 50
+  updated_at: 
+  document_id: 
+  code: CRM_REPORT
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  menu_name: Reports
+  lock_version: 0
+  updated_by: 
+  id: 772
+  moodule_id: 21
+  company_id: 1
+  menu_type: M
+  menu_id: 
+  created_at: 
+menus_168: 
+  sequence: 0
+  updated_at: 2010/07/06 12:46:04
+  document_id: 762
+  code: DIAMSTORETRANSFER
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  menu_name: Store Transfer
+  lock_version: 2
+  updated_by: 100
+  id: 1147
+  moodule_id: 112
+  company_id: 1
+  menu_type: S
+  menu_id: 502
+  created_at: 2010/07/05 15:13:54
+menus_194: 
+  sequence: 0
+  updated_at: 2010/07/24 17:38:14
+  document_id: 902
+  code: CTLGITEMATTRIBUTE
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  menu_name: Attribute
+  lock_version: 0
+  updated_by: 100
+  id: 1290
+  moodule_id: 111
+  company_id: 1
+  menu_type: S
+  menu_id: 1289
+  created_at: 2010/07/24 17:38:14

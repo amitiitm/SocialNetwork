@@ -1,0 +1,11 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  seconds: 1
+  minutes: 1
+  date: 2010-03-25
+
+two:
+  seconds: 1
+  minutes: 1
+  date: 2010-03-25

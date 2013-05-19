@@ -1,0 +1,68 @@
+<div class="inner-response">
+	<div class="hastable">
+	<form name="myform" class="pager-form" method="post" action="">	
+		<table id="card-cdrs-table" class="tbl card_cdr" style="font-size:10px"> 
+			<thead> 
+				<tr>
+					<th>SID</th>
+			    <th>Date</th>
+					<th>Card</th>
+					<th>CID</th>
+					<th>Dur</th>
+					<th>Disposition</th>
+					<th>Destination</th>
+					<th>User Input</th>
+					<% if allowed? %>
+						<th>Carrier</th>
+					<% end -%>
+					<th>Dst Country</th>
+					<th>Zone</th>
+                  <th>Sell Rate</th>
+                  <th>Sell Price</th>
+					<th>DID</th>
+					<% if allowed? %>
+						<th>DID Provider</th>
+					<% end -%>
+	  	</tr>
+	</thead>
+	<tbody>
+	<% @cdrs.each do |cdr| %>
+	  <tr>
+			<td><%= link_to(("#{cdr.session_id} : #{cdr.ivr_seq} : #{cdr.sequence}"), "/card_cdrs/etisal_logs/#{cdr.id}", :class => "fn", :function => "preview(this)") %></td>
+	    <td><%= cdr.date.strftime("%d/%m/%y %H:%M:%S %a") %></td>
+			<td><%= cdr.card.formatted_serial %></td>
+			<td><%= cdr.src %></td>
+			<td><%= "#{cdr.duration / 60}: #{cdr.duration % 60}" %></td>
+			<td><%= cdr.disposition %></td>
+			<td><%= cdr.dst_number %></td>
+			<td><%= cdr.user_input %></td>
+			<% if allowed? %>
+				<td><%= carrier(cdr.carrier) %></td>
+			<% end -%>
+			<td><%= if cdr.country then cdr.country.name else "---" end %></td>
+			<td><%= zone(cdr) %></td>
+			<td><%= number_to_currency(cdr.rate, :precision => 4) %></td>
+			<td><%= number_to_currency(cdr.cost, :precision => 4) %></td>
+			<td><%= did(cdr) %></td>
+			<% if allowed? %>
+				<td><%= did_provider(cdr.did) %></td>
+			<% end -%>
+	  </tr>
+	<% end %>
+			</tbody>
+		 </table>
+	</form>
+	</div>
+	<%= pager(card_cdrs_path ,"inner-ajax") %>
+	<div class="clearfix"></div>
+</div>
+<script>
+	function preview(el){
+		var path = $(el).attr("href");
+		window.open(path,"Window1","menubar=no,width=1200,height=700,toolbar=no");
+	}
+	$(function(){
+		$("#card-cdrs-table").tablesorter({widgets: ['zebra']});
+		$("#card-cdrs-table .header").append('<span class="ui-icon ui-icon-carat-2-n-s"></span>');
+	});
+</script>

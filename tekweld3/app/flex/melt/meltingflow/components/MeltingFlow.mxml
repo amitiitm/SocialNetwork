@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DataEntryWithNoList xmlns="com.generic.components.*" 
+	xmlns:mx="http://www.adobe.com/2006/mxml" width="100%" height="100%" creationPolicy="all" 
+	genModuleActive="handleOtherParametersAcitve(event)"
+	creationComplete="handleCreationComplete(event)" >
+
+	<mx:Script source="../scripts/MeltingFlowScript.as" />
+	
+</DataEntryWithNoList>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rds:CommonServices xmlns:rds="business.*" xmlns:mx="http://www.adobe.com/2006/mxml">
+
+	<mx:HTTPService id="getListFormat" url="stup/role/xmls/RoleListStru.xml" />
+	<mx:HTTPService id="getViewFormat" url="stup/role/xmls/RoleCriteriaStru.xml" />
+	<mx:HTTPService id="getList" url="/setup/role/list_roles"/>
+	<mx:HTTPService id="saveRecord" url="/setup/role/create_roles"/>
+	<mx:HTTPService id="getRecord" url="/setup/role/show_role"/>	
+
+</rds:CommonServices>	

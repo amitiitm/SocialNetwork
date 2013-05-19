@@ -1,0 +1,14 @@
+<columns Title = 'Catalog Items'>
+	
+	<column dataType="S" label="Item Category" checkbox="ckAll4" xmlTagFrom="str7" from="tiStr7" xmlTagTo="str8" to="tiStr8" multiSelect="tiMultiSelect4" xmlTagMultiSelect="multiselect4" lookupFlag="true" lookupName="ItemCategory" lookupLabel="code" dataField="code" labelField="code" />
+	<column dataType="S" label="Item #" checkbox="ckAll1" xmlTagFrom="str1" from="tiStr1" xmlTagTo="str2" to="tiStr2" multiSelect="tiMultiSelect1" xmlTagMultiSelect="multiselect1" lookupFlag="true" lookupName="Item" lookupLabel="code" dataField="code" labelField="code" />
+	<column dataType="S" label="Name" checkbox="ckAll2" xmlTagFrom="str3" from="tiStr3" xmlTagTo="str4" to="tiStr4" multiSelect="tiMultiSelect2" xmlTagMultiSelect="multiselect2" lookupFlag="false" lookupName="" />
+	<column dataType="C" label="Item Type"				checkbox="ckAll3"	xmlTagFrom="str5"	from="cbStr5"		xmlTagTo="str6"
+		to="cbStr6"		multiSelect="tiMultiSelect3"					xmlTagMultiSelect="multiselect3"		lookupFlag="false"	lookupName=""	
+		type_cd="invn_item_type"		subtype_cd ="invn_item_type" defaultValue="I" labelField="label" />
+	
+	<column dataType="C" label="WorkFlow"	checkbox="ckAll5"	xmlTagFrom="str9"	from="cbStr9"		xmlTagTo="str10"
+		to="cbStr10"		multiSelect="tiMultiSelect5"					xmlTagMultiSelect="multiselect5"		lookupFlag="false"	lookupName=""	
+		type_cd="workflow"		subtype_cd ="step" defaultValue="" labelField="label" />	
+	
+</columns>

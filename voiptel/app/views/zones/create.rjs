@@ -1,0 +1,5 @@
+if @zone.valid?
+  page << "reload_zones()"
+else
+  page.alert(@zone.errors.full_messages.join(". "))
+end

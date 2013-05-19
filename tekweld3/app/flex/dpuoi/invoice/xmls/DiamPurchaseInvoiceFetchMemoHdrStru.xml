@@ -1,0 +1,19 @@
+<columns lockedColumnCount='0'>
+	
+	<column data='select_yn'	label='Select YN'	editable='true' 	visible='true' 		width='60'	textAlign='center'	
+			forLevel='false' 	defaultForLevel=''	booleanFlag='true'	sortDataType='S'	columnPrecision="NaN"/>
+				
+	<column data='trans_no' 	label='Memo #' 		editable='false' 	visible='true' 		width='100' textAlign='left' 
+			forLevel='false' 	defaultForLevel='' 	booleanFlag='false' sortDataType='N'	columnPrecision="0"/>
+				
+	<column data='trans_date' 	label='Memo Date' 	editable='false' 	visible='true' 		width='100' textAlign='left' 
+			forLevel='false' 	defaultForLevel='' 	booleanFlag='false' sortDataType='D'	columnPrecision="NaN"/>
+			
+	<column data='ext_ref_no' 	label='Reference #'	editable='false' 	visible='true' 		width='100' textAlign='left' 
+			forLevel='false' 	defaultForLevel='' 	booleanFlag='false' sortDataType='S'	columnPrecision="NaN"/>	
+					
+</columns>  
+
+
+
+

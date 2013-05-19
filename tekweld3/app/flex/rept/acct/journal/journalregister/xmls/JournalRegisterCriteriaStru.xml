@@ -1,0 +1,11 @@
+<columns Title = 'journal'>
+
+	<column dataType="S" label="A/c Period #" checkbox="ckAll1" xmlTagFrom="str1" from="tiStr1" xmlTagTo="str2" to="tiStr2" multiSelect="mvMultiSelect1" xmlTagMultiSelect="multiselect1" lookupFlag="true" lookupName="AccountPeriod"		lookupLabel="code"		dataField="code" 			labelField="code" 
+			lookupFormatUrl=""/>
+	<column dataType="D" label="Journal Date" checkbox="ckAll2" xmlTagFrom="dt1" from="dfDt1" xmlTagTo="dt2" to="dfDt2" multiSelect="" xmlTagMultiSelect="" lookupFlag="false" lookupName="" />
+    <column dataType="S" label="Journal #" checkbox="ckAll3" xmlTagFrom="str3" from="tiStr3" xmlTagTo="str4" to="tiStr4" multiSelect="tiMultiSelect2" xmlTagMultiSelect="multiselect2" lookupFlag="false" lookupName="" />
+	<column dataType="S" label="Journal Bk" checkbox="ckAll4" xmlTagFrom="str5" from="tiStr5" xmlTagTo="str6" to="tiStr6" multiSelect="tiMultiSelect3" xmlTagMultiSelect="multiselect3" lookupFlag="false" lookupName="" />
+
+</columns>
+
+ 

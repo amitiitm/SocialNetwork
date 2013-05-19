@@ -1,0 +1,3 @@
+class DownloadController < ApplicationController
+
+end

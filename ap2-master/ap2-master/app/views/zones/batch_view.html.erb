@@ -1,0 +1,82 @@
+<%= render :partial => "new" %>
+
+<%= link_to("Single View", "/zones/show/#{@country.id}", :class => "ajax", :update => "zone_settings") %> | <%= link_to("Batch View", "/zones/batch_view/#{@country.id}", :class => "ajax", :update => "zone_settings") %>
+<br><br>
+
+<div id="zones">
+	<% table :no_sort => true do |t|%>
+		<% t.th check_box(:select, :all, :id => "select_all", :class => "select-all") %>
+		<% t.th "#" %>
+		<% t.th "Name" %>
+		<% t.th "Prefix" %>
+		<% t.th "Buy" %>
+		<% t.th "AC Margin" %>
+		<% t.th "AC Sell" %>
+		
+		<% t.th "CC Margin" %>
+		<% t.th "CC Sell" %>
+		
+		
+		<% t.th "Publish" %>
+		<% @country.max_routes.times do |i| %>
+			<% t.th "Route #{i+1}<br>"  + select(:route, "#{i+1}", Carrier.select_options, {:include_blank => true}, {:class => "bulk-change", :priority => "#{i+1}"})%>
+		<% end -%>
+		<% t.th "Actions" %>
+		
+		<% counter = 0 %>
+		<% for z in @zones %>
+			<% t.td check_box(:select, :single, :record_id => z.id, :class => "select-row"), :style=>"text-align: center;" %>
+			<% t.td (counter += 1) %>
+			<% t.td z.name, :class => "editable", :id => "name" %>
+			<% t.td z.prefix,  :class => "editable", :id => "prefix" %>
+			<% t.td((z.buy_rate * 100).to_s, :class => "editable", :callback => "buy_updated(#{z.id})", :id => "buy") %>					
+			<% t.td  sprintf( "%00.02f", (((z.sell_rate - z.buy_rate) / z.buy_rate) * 100)), :class => "editable", :id => "margin", :callback => "margin_updated(#{z.id})" %>
+			<% t.td((z.sell_rate * 100).to_s, :class => "editable", :id => "sell", :callback => "sell_updated(#{z.id})")%>
+			
+			<% t.td  sprintf( "%00.02f", ( calculate_margin(z.cc_sell_rate, z.buy_rate, 0.002, 5, 0.4) * 100 ) ), :class => "editable", :id => "cc_margin", :callback => "cc_margin_updated(#{z.id})" %>
+			<% t.td((z.cc_sell_rate.to_f * 100).to_s, :class => "editable", :id => "cc_sell", :callback => "cc_sell_updated(#{z.id})")%>
+			
+			
+			<% t.td(check_box(z, :publish, :checked => z.publish, :id => "publish"), :style=>"text-align: center;") %>
+			<% p = 0 %>
+			<% for r in z.routes.find(:all, :order => "priority asc") %>
+				<% p += 1 %>
+				<% t.td select("route", :carrier_id, Carrier.select_options, {:include_blank => true, :selected => r.carrier_id}, {:class => "route-#{p} route", :priority => p, :try => r.try}), :style => "text-align: center;" %>
+			<% end -%>
+			<% (@country.max_routes - z.routes.count).times do |i| %>
+				<% p += 1 %>
+				<% t.td select("route", :carrier_id, Carrier.select_options, {:include_blank => true}, {:class => "route-#{p} route", :priority => p, :try => "1"}), :style => "text-align: center;" %>
+			<% end -%>
+			<% t.td  (
+				link_to("Save", "#", :class => "fn", :function => 'save(this)') + " | " + 
+				link_to("Delete", zone_path(z), :class => "ajax-delete")
+			) %>
+			<% t.new_row :id => "zone-#{z.id}", :record_id => z.id %>
+		<% end -%>
+	<% end -%>
+	<br>
+	<%= button_function("save-changes", "Save All", "save_all_with_routes()") %> <%= button_function("delete-all", "Delete Selected", "delete_all()") %>
+	<%= loading("Loading...") %>
+	<div class="clear"></div>
+</div>
+<br>
+<%= javascript_include_tag "/js/ap.zones.js" %>
+<input type="hidden" value="batch_view" id="zone_action">
+<script type="text/javascript" charset="utf-8">
+	$(function(){
+		$(".bulk-change").change(function(){
+			var priority = $(this).attr("priority");
+			var carrier_id = $(this).val();
+			var one_selected = false;
+			$(".route-" + priority).each(function(index, dom){
+				if ($(dom).parent().parent().find(".select-row").attr("checked")) {
+					$(dom).val(carrier_id);
+					one_selected = true;
+				};
+			});
+			if (!one_selected) {
+				alert("No zone was selected! Please select at least one zone for changes to take effect.");
+			};
+		});
+	});
+</script>

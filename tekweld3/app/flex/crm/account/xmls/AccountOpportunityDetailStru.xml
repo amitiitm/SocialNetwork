@@ -1,0 +1,24 @@
+<columns  lockedColumnCount=''>
+
+	<column data='name' 			label='Opportunity Name' editable='false' 	visible='true' 	width='120' textAlign='left' 	forLevel='false'
+			defaultForLevel='' 		booleanFlag='false' 	sortDataType='S'/>
+			
+	<column data='close_date' 		label='Close Date'		editable='false'	visible='true'	width='80'	textAlign='left'	forLevel='false'
+			defaultForLevel=''		booleanFlag='false' 	sortDataType='D'/>
+	
+	<column data='stage' 			label='Stage' 			editable='false' 	visible='true' 	width='80' 	textAlign='left' 	forLevel='false'
+			defaultForLevel='' 		booleanFlag='false' 	sortDataType='S'/>
+	
+	<column data='probability_per' 	label='Probability %' 	editable='false' 	visible='true' 	width='80' 	textAlign='right' 	forLevel='false' 
+			defaultForLevel='' 		booleanFlag='false' 	sortDataType='N' />
+			
+	<column data='amount' 			label='Amount'			editable='false'	visible='true'	width='80'	textAlign='right'	forLevel='false'
+			defaultForLevel=''		booleanFlag='false' 	sortDataType='N'/>
+	
+	<column data='subject' 			label='Subject'			editable='false'	visible='true'	width='100'	textAlign='left'	forLevel='false'
+			defaultForLevel=''		booleanFlag='false' 	sortDataType='S'/>
+			
+	<column data='description'		label='Description' 	editable='false' 	visible='true' width='80' 	textAlign='left' 	forLevel='false' 
+			defaultForLevel='' 		booleanFlag='false' 	sortDataType='S'/>
+			
+</columns> 

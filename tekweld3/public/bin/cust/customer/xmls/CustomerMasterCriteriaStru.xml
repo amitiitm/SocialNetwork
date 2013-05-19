@@ -1,0 +1,24 @@
+<columns Title ='Customer Master'>
+
+	<column dataType="S"				label="Customer #"		checkbox="ckAll1" 		xmlTagFrom="str1" 				from="dcStr1" 	
+			xmlTagTo="str2" 			to="dcStr2"				multiSelect="mvMultiSelect1" 	xmlTagMultiSelect="multiselect1"				
+			lookupFlag="true" 		 	lookupName="Customer"	lookupLabel="code"  dataField="code" 			labelField="code" />
+
+	<column dataType="S" 				label="Name"			checkbox="ckAll2" 		xmlTagFrom="str3" 				from="tiStr3" 	
+			xmlTagTo="str4" 			to="tiStr4" 			multiSelect="tiMultiSelect2" 	xmlTagMultiSelect="multiselect2"
+			lookupFlag="false"			lookupName=""			/>
+
+
+	<column dataType="S" 				label="Category #" 		checkbox="ckAll3" 		xmlTagFrom="str5" 				from="dcStr5" 	
+			xmlTagTo="str6"				to="dcStr6" 			multiSelect="mvMultiSelect3" 	xmlTagMultiSelect="multiselect3"
+			lookupFlag="true" 			lookupName="CustomerCategory" 	lookupLabel="code"		dataField="code" 			labelField="code" />
+
+	<column dataType="S" 				label="Price Level"		checkbox="ckAll4" 		xmlTagFrom="str7" 				from="tiStr7" 
+			xmlTagTo="str8" 			to="tiStr8"			multiSelect="tiMultiSelect4" 	xmlTagMultiSelect="multiselect4" 			
+			lookupFlag="false" 			lookupName=""			/>
+
+	<column dataType="S" 				label="Sales Person"	checkbox="ckAll5" 		xmlTagFrom="str9" 				from="dcStr9" 
+			xmlTagTo="str10" 			to="dcStr10" 			multiSelect="mvMultiSelect5" 	xmlTagMultiSelect="multiselect5"	
+			lookupFlag="true" 			lookupName="Salesperson" 	lookupLabel="code" 	dataField="code" 			labelField="code"/>
+
+</columns> 	

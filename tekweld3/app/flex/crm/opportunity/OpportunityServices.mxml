@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rds:CommonServices xmlns:rds="business.*" xmlns:mx="http://www.adobe.com/2006/mxml">
+
+	<mx:HTTPService id="saveRecord" url="/crm/crm_opportunity/create_opportunities"/>
+	<mx:HTTPService id="getRecord" url="/crm/crm_opportunity/show_opportunities"/>
+	<mx:HTTPService id="getList" url="/crm/crm_opportunity/list_opportunities"/>
+	<mx:HTTPService id="getListFormat" url="crm/opportunity/xmls/OpportunityListStru.xml"/>
+	<mx:HTTPService id="getViewFormat" url="crm/opportunity/xmls/OpportunityCriteriaStru.xml"/>
+	<mx:HTTPService id="taskDetailFormat" url="crm/opportunity/xmls/OpportunityTaskDetailStru.xml"/>
+	<mx:HTTPService id="contactDetailFormat" url="crm/opportunity/xmls/OpportunityContactDetailStru.xml"/>
+	<mx:HTTPService id="printRecord" url=""/>
+
+</rds:CommonServices>

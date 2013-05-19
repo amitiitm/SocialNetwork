@@ -1,0 +1,35 @@
+<columns lockedColumnCount='0'>
+
+	<column data='' 			label='Item Code'		editable='false' 	visible='true' 		width='100' 	textAlign='left' 
+			forLevel='false' 	defaultForLevel='' 		booleanFlag='false' sortDataType='S'	columnPrecision="NaN"/>
+			
+	<column data='' 			label='From' 			editable='false' 	visible='true' 		width='100' 	textAlign='left' 
+			forLevel='false' 	defaultForLevel='' 		booleanFlag='false' sortDataType='D'	columnPrecision="NaN"/>
+
+    <column data='' 			label='To' 				editable='false' 	visible='true' 		width='100' 	textAlign='left' 
+			forLevel='false' 	defaultForLevel='' 		booleanFlag='false' sortDataType='D'	columnPrecision="NaN"/>
+			
+	<column data='' 	label='Charge Code' 			editable='false' 	visible='true' 		width='100' 	textAlign='left' 
+			forLevel='false' 	defaultForLevel='' 		booleanFlag='false' sortDataType='S'	columnPrecision="NaN"/>
+			
+	<column data='' 		label='100' 			editable='false' 	visible='true' 		width='60' 	textAlign='right' 
+			forLevel='false' 	defaultForLevel='' 		booleanFlag='false' sortDataType='N'	columnPrecision="NaN"/>
+
+	<column data='' 		label='250' 			editable='false' 	visible='true' 		width='60' 	textAlign='right' 
+			forLevel='false' 	defaultForLevel='' 		booleanFlag='false' sortDataType='N'	columnPrecision="NaN"/>
+							
+	<column data='' 		label='500' 			editable='false' 	visible='true' 		width='60' 	textAlign='right' 
+			forLevel='false' 	defaultForLevel='' 		booleanFlag='false' sortDataType='N'	columnPrecision="NaN"/>
+	
+	<column data='' 		label='1000' 			editable='false' 	visible='true' 		width='60' 	textAlign='right' 
+			forLevel='false' 	defaultForLevel='' 		booleanFlag='false' sortDataType='N'	columnPrecision="NaN"/>
+			
+	<column data='' 		label='2500' 			editable='false' 	visible='true' 		width='60' 	textAlign='right' 
+			forLevel='false' 	defaultForLevel='' 		booleanFlag='false' sortDataType='N'	columnPrecision="NaN"/>
+			
+	<column data='' 		label='5000' 			editable='false' 	visible='true' 		width='60' 	textAlign='right' 
+			forLevel='false' 	defaultForLevel='' 		booleanFlag='false' sortDataType='N'	columnPrecision="NaN"/>
+  			
+	<column data='' 		label='5000+' 			editable='false' 	visible='true' 		width='60' 	textAlign='right' 
+			forLevel='false' 	defaultForLevel='' 		booleanFlag='false' sortDataType='N'	columnPrecision="NaN"/>										
+</columns>  

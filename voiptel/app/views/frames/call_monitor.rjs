@@ -1,0 +1,19 @@
+if @client_calls != @calls
+  page.replace_html "calls", @calls
+  page << "$('calls_hidden').value = #{@calls}"
+  page << "$('calls_container').highlight()"  
+end
+
+if @client_channels != @channels
+  page.replace_html "channels", @channels
+  page << "$('channels_hidden').value = #{@channels}"
+  page << "$('channels_container').highlight()"
+end
+
+if @client_seconds.to_i != @seconds.to_i
+  page.replace_html "minutes", duration(@seconds)
+  page << "$('seconds_hidden').value = #{@seconds}"
+  page << "$('minutes_container').highlight()"
+end
+
+

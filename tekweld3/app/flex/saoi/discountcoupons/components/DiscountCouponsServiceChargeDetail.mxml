@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<gencomponents:DetailAddEdit xmlns:mx="http://www.adobe.com/2006/mxml"
+	width="500" height="150" verticalGap="0"
+	xmlns:customcomponents="com.generic.customcomponents.*"
+	xmlns:gencomponents="com.generic.components.*"
+	creationComplete="creationCompleteHandler()">
+
+	<mx:Script source="../scripts/DiscountCouponsServiceChargeDetailScript.as"/>
+	
+	<mx:VBox height="100%" width="100%">
+		
+		<mx:HBox verticalAlign="middle" horizontalGap="2" width="100%">
+			<mx:Label text="Service Charge" width="116" textAlign="right"/>
+			<customcomponents:GenTextInputWithHelp id="dcServiceCharge_id"
+												   width="158" height="20" 
+												   toolTip="Coupons #" defaultValue=""
+												   dataField="id" 		labelField="store_code"
+												   xmlTag="catalog_item_id" labelTag="catalog_item_code"
+												   dataSourceName="ServiceCharges" 
+												   tabIndex="10"  itemChangedEvent="getItemDetails();tiServiceChargesCode.dataValue=dcServiceCharge_id.labelValue"  
+												   validationFlag="true" 
+												   updatableFlag="true" tableName="discount_coupon_charge"
+												   filterEnabled="false" 		filterKeyName=""
+												   />
+				<customcomponents:GenTextInput id="tiServiceChargesCode" width="0" height="0" includeInLayout="false" visible="false"
+				xmlTag="catalog_item_code" updatableFlag="true" tabIndex="3" maxChars="100"
+				tableName="discount_coupon_charge" />				
+		</mx:HBox>
+		<mx:HBox verticalAlign="middle" horizontalGap="2" width="100%">
+			<mx:Label text="Original Price" width="115" textAlign="right"/>
+			<customcomponents:GenTextInput id="tiOriginalPrice" width="80" height="20" dataType="N"
+										   defaultValue="0.000" enabled="false"
+										   maxValue="9999999999.999" rounding="false"
+										   setDefaultOnEmpty="true" tabIndex="240"
+										   tableName="discount_coupon_charge" textAlign="right"
+										   toolTip="Original Price" updatableFlag="true"
+										   validationFlag="true" xmlTag="original_price"/>	
+		</mx:HBox>
+		<mx:HBox verticalAlign="middle" horizontalGap="2" width="100%">
+			<mx:Label text="Discounted Price" width="115" textAlign="right"/>
+			<customcomponents:GenTextInput id="tiDiscountedPrice" width="80" height="20" dataType="N"
+										   defaultValue="0.000" enabled="true"
+										   maxValue="9999999999.999" rounding="false"
+										   setDefaultOnEmpty="true" tabIndex="240"
+										   tableName="discount_coupon_charge" textAlign="right"
+										   toolTip="Discounted Price" updatableFlag="true"
+										   validationFlag="true" xmlTag="discounted_rate" itemChangedEvent="setDiscount_Per();"/>	
+		</mx:HBox>
+		<mx:Label width="201" text="OR" textAlign="center"/>
+		<mx:HBox verticalAlign="middle" horizontalGap="2" width="100%">
+			<mx:Label text="Discount %" width="115" textAlign="right"/>
+			<customcomponents:GenTextInput id="tiDiscountPer" width="80" height="20" dataType="N"
+										   defaultValue="0.000" enabled="true"
+										   maxValue="9999999999.999" rounding="false"
+										   setDefaultOnEmpty="true" tabIndex="240"
+										   tableName="discount_coupon_charge" textAlign="right"
+										   toolTip="Discount %" updatableFlag="true"
+										   validationFlag="true" xmlTag="discount_per" itemChangedEvent="setDiscount_Amt()"/>	
+		</mx:HBox>
+		
+		<mx:HBox height="0" width="0" visible="false">
+			<mx:HBox>
+				<mx:Label text="Status" width="0" height="0" textAlign="right"/>
+				<customcomponents:GenComboBox id="cbTrans_flag" width="0" height="0" cornerRadius="0" xmlTag="trans_flag" updatableFlag="true"
+					tableName="discount_coupon_charge"  labelField="label" defaultValue="A"  dataProvider="{__genModel.masterData.child('trans_flag').trans_flag}" />
+			</mx:HBox>
+			<customcomponents:GenTextInput id="tiTrans_bk" width="0" height="0" visible="true"
+				editable="true" enabled="true" xmlTag="trans_bk" updatableFlag="true"
+				tableName="discount_coupon_charge" defaultValue=""/>
+			<customcomponents:GenTextInput id="tiTrans_no" width="0" height="0" visible="true"
+				editable="true" enabled="true" xmlTag="trans_no" updatableFlag="true"
+				tableName="discount_coupon_charge" defaultValue=""/>
+			<customcomponents:GenDateField id="dfTrans_date" width="0" xmlTag="trans_date"
+				updatableFlag="true" tableName="discount_coupon_charge" defaultValue="" 
+				validationFlag="false" toolTip="Ref Trans Dt"/>
+			<customcomponents:GenTextInput id="tiSerial_no" width="0" height="0" visible="true"
+				editable="true" enabled="true" xmlTag="serial_no" updatableFlag="true"
+				tableName="discount_coupon_charge" defaultValue=""  />
+		
+		</mx:HBox>
+	</mx:VBox>
+</gencomponents:DetailAddEdit>
+
+
+

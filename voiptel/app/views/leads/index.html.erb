@@ -1,0 +1,78 @@
+<div class="inner-response">
+	<%= page_title :title => "Unassigned Leads" %>
+	<% box :type => 'box_title', :title => "Filters" do %>
+		<br>
+		<% form_for @filter, :url => "", :html => {:class => "forms", :id => "form_filter"} do |f| %>
+			<ul>
+				<li class="horizental">
+					<label>Area Code</label>
+					<%= f.select :area_code, Lead.area_codes, :include_blank => true %>
+				</li>
+				<li class="horizental">
+					<label>Zip Code</label>
+					<%= f.select :zip_code, Lead.zip_codes, :include_blank => true %>
+				</li>
+				<li class="horizental">
+					<label>State</label>
+					<%= f.select :state, Lead.states, :include_blank => true %>
+				</li>
+				<li class="horizental">
+					<label>Timezone</label>
+					<%= f.select :time_zone, Lead.time_zones, :include_blank => true %>
+				</li>
+				<li class="horizental" style="margin-top:15px">
+					<a id="filter_reload" href="" class="btn ui-state-default ui-corner-all ignore-me">
+						Reload
+					</a>
+				</li>
+				<li class="horizental" style="margin-top:25px"> Total records found: <%= @size %></li>
+				<li class="horizental" style="margin-top:22px"><%= loading("Loading...", "loading-filter") %></li>
+				<li></li>
+			</ul>		
+		<% end -%>
+		<div class="clear-fix"></div>
+	<% end %>
+	<% box :type => "simple" do %>
+		<% table :class => "for-memos" do |t| %>
+			<% t.th(check_box :check, :all, :class => "select-all") %>
+			<% t.th "#" %>
+			<% t.th "Phone" %>
+			<% t.th "Rate Center" %>
+			<% t.th "State" %>				
+			<% t.th "City" %>
+			<% t.th "Zip" %>
+			<% t.th "Timezone" %>
+			<% t.th "Last Followup By" %>
+			<% t.th "Last Followup Date" %>
+			<% t.th "Followup Due" %>
+			<% t.th "Created By" %>
+			<% t.th "Assigned To" %>
+			<% t.th "Status" %>		
+			<% t.th "Date Added" %>
+
+			<% counter = (((@page - 1) * @limit)) %>
+			<% for l in @leads do %>
+				<% t.td check_box(:check, "#{l.id}", :class => "select-row", :record_id => l.id) %>
+				<% t.td counter += 1 %>
+				<% t.td number_to_phone(l.phone, :area_code => true) %>
+				<% t.td l.rate_center %>
+				<% t.td l.state %>
+				<% t.td l.city %>
+				<% t.td l.zip_code %>
+				<% t.td l.time_zone %>
+				<% t.td  followup_by(l.memo) %>
+				<% t.td  followup_date(l.memo) %>
+				<% t.td  followup_date(l.memo) %>
+				<% t.td  admin_user(l.created_by) %>
+				<% t.td  assigned_to(l.memo, "Not Assigned") %>
+				<% t.td  l.status_string %>
+				<% t.td  user_date(l.created_at)%>
+
+				<% t.new_row  %>
+			<%  end -%>
+		<% end -%>
+		<%= pager(@path, "inner-ajax") %>
+		<div class="clear"></div>
+	<% end -%>
+	<%= render :partial => "memos/batch_assign", :locals => {:action => "create"} %>
+</div>

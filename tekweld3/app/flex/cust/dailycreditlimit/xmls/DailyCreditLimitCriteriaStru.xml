@@ -1,0 +1,9 @@
+<columns Title = 'Contact'>
+	
+	<column dataType="D" 			label="Credit Limit Date" 	checkbox="ckAll1" 		xmlTagFrom="dt1" 			from="dfDt1" 
+			xmlTagTo="dt2" 			to="dfDt2"					lookupFlag="false" 		lookupName="" 				/>
+
+	<column dataType="N" 			label="Credit Limit" 		checkbox="ckAll2" 		xmlTagFrom="dec1" 	from="tiDec1" xmlTagTo="dec2" to="tiDec2" 
+		multiSelect="tiMultiSelect1" 	xmlTagMultiSelect="multiselect1" 	lookupFlag="false" lookupName="" />
+
+</columns>

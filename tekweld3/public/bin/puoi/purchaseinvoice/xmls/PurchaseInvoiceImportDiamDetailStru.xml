@@ -1,0 +1,45 @@
+<columns lockedColumnCount='0'>
+	
+	<column data='stone_type' 				label='Stone Type' 		editable='false' 	visible='true' 		width='100' 	textAlign='left' 
+			forLevel='false' 				defaultForLevel='' 		booleanFlag='false' sortDataType='S' columnPrecision="NaN"/>
+	
+	<column data='cut' 						label='Cut' 			editable='false' 	visible='true' 		width='100' 	textAlign='left' 
+			forLevel='false' 				defaultForLevel='' 		booleanFlag='false' sortDataType='S' columnPrecision="NaN"/>
+
+	<column data='shade' 				label='Stone Shade' 		editable='false' 	visible='true' 		width='100' 	textAlign='left' 
+			forLevel='false' 				defaultForLevel='' 		booleanFlag='false' sortDataType='S' columnPrecision="NaN"/>
+
+	<column data='stone_shape' 				label='Stone Shape' 		editable='false' 	visible='true' 		width='100' 	textAlign='left' 
+			forLevel='false' 				defaultForLevel='' 		booleanFlag='false' sortDataType='S' columnPrecision="NaN"/>
+
+	<column data='stone_color' 				label='Stone Color' 		editable='false' 	visible='true' 		width='100' 	textAlign='left' 
+			forLevel='false' 				defaultForLevel='' 		booleanFlag='false' sortDataType='S' columnPrecision="NaN"/>
+
+	<column data='stone_clarity' 			label='Stone Clarity' 		editable='false' 	visible='true' 		width='100' 	textAlign='left' 
+			forLevel='false' 				defaultForLevel='' 		booleanFlag='false' sortDataType='S' columnPrecision="NaN"/>
+	
+	<column data='stone_size' 				label='Stone Size' 		editable='false' 	visible='true' 		width='100' 	textAlign='left' 
+			forLevel='false' 				defaultForLevel='' 		booleanFlag='false' sortDataType='S' columnPrecision="NaN"/>
+
+	<column data='stone_sizemm' 			label='Stone mmSize' 		editable='false' 	visible='true' 		width='100' 	textAlign='left' 
+			forLevel='false' 				defaultForLevel='' 		booleanFlag='false' sortDataType='S' columnPrecision="NaN"/>
+
+	<column data='stone_quality' 			label='Diam Quality' 		editable='false' 	visible='true' 		width='100' 	textAlign='left' 
+			forLevel='false' 				defaultForLevel='' 		booleanFlag='false' sortDataType='S' columnPrecision="NaN"/>
+
+	<column data='qty' 				label='Stone Qty' 		editable='false' 	visible='true' 			width='80' 	textAlign='left' 
+			forLevel='false' 				defaultForLevel='' 		booleanFlag='false' sortDataType='N' columnPrecision="0"/>
+
+	<column data='wt' 				label='Stone Wt' 			editable='false' 	visible='true' 			width='80' 		textAlign='left' 
+			forLevel='false' 				defaultForLevel='' 		booleanFlag='false' sortDataType='N' columnPrecision="2"/>
+	
+	<column data='cost' 					label='Rate' 			editable='false' 	visible='true' 			width='80' 	textAlign='left' 
+			forLevel='false' 				defaultForLevel='' 		booleanFlag='false' sortDataType='N' columnPrecision="2"/>
+
+	<column data='diam_value' 				label='Diam Value' 		editable='false' 	visible='true' 			width='80' 	textAlign='left' 
+			forLevel='false' 				defaultForLevel='' 		booleanFlag='false' sortDataType='N' columnPrecision="2"/>
+
+	<column data='message' 					label='Message' 				editable='false' 	visible='true' 			width='80' 		textAlign='left' 
+			forLevel='false' 				defaultForLevel='' 			booleanFlag='false' sortDataType='S' columnPrecision="NaN"/>
+
+</columns>  

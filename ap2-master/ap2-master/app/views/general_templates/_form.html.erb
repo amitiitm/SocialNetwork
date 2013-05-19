@@ -1,0 +1,26 @@
+<% form_for @general_template, :html => {:class => "forms"} do |f| %>
+  <%= error("Could not create general_template:") %>
+	<ul>
+	  <li>
+	    <%= f.label :name %>
+	    <%= f.text_field :name %>
+	  </li>
+	  <li>
+	    <%= f.label "Identifier" %>
+	    <%= f.text_field :uid %>
+	  </li>
+	  <li>
+	    <%= f.label :template %>
+	    <%= f.text_area :template %>
+	  </li>
+	</ul>
+
+<% end %>
+<script type="text/javascript" charset="utf-8">
+	$(function(){
+		$("#general_template_name").keyup(function(e){
+			var name = $(this).val()
+			$("#general_template_uid").val(name.replace(/\./,"").replace(/ /g, "-").toLowerCase());
+		});
+	});
+</script>

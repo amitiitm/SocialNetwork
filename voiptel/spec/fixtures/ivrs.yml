@@ -1,0 +1,13 @@
+one:
+  name: MyString
+  en_text: MyText
+  fa_text: MyText
+  en_sound: false
+  fa_sound: false
+
+two:
+  name: MyString
+  en_text: MyText
+  fa_text: MyText
+  en_sound: false
+  fa_sound: false

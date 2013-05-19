@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<gencomponents:DetailAddEdit xmlns:mx="http://www.adobe.com/2006/mxml"
+	width="700" height="210" verticalGap="0"
+	xmlns:customcomponents="com.generic.customcomponents.*"
+	xmlns:gencomponents="com.generic.components.*">
+	
+	<mx:Script source="../scripts/OtherAddressDetailScript.as"/>
+		
+	<mx:VBox width="100%" height="100%">	
+	
+		<mx:HBox width="100%">
+			<mx:Label text="Address Name" textAlign="right" width="130" height="20"/>
+			<customcomponents:GenTextInput id="tiAddress_Name" width="184" visible="true" editable="true"
+				tabIndex="1" xmlTag="address_name" updatableFlag="true" height="20" tableName="crm_address" maxChars="50"/>
+		</mx:HBox>
+		<mx:HBox width="100%">
+			<mx:Label text="Contact" textAlign="right" width="130" height="20"/>
+			<customcomponents:GenTextInput id="tiAddress_contact" width="184" visible="true" editable="true" height="20"
+				tabIndex="2" xmlTag="address_contact" updatableFlag="true" tableName="crm_address" maxChars="50"/>
+			<mx:Label text="Address For #" textAlign="right" width="121" visible="false" height="20"/>
+			<customcomponents:GenTextInput id="tiAddress_for_id" width="0" visible="false" editable="false" height="20"
+				 defaultValue="{__genModel.activeModelLocator.address_for}" xmlTag="address_for_id" updatableFlag="true" tableName="crm_address"/>
+		</mx:HBox>
+		<mx:HBox width="100%">
+			<mx:Label text="Address" textAlign="right" width="130" height="20"/>
+			<customcomponents:GenTextInput id="tiAddress_1" width="403" visible="true" editable="true" height="20"
+				tabIndex="3" xmlTag="address1" updatableFlag="true" tableName="crm_address" maxChars="50"/>
+		</mx:HBox>
+		<mx:HBox width="100%">
+			<mx:Label textAlign="right" width="130" height="20"/>
+			<customcomponents:GenTextInput id="tiAddress_2" width="403" visible="true" editable="true" height="20"
+				tabIndex="4" xmlTag="address2" updatableFlag="true" tableName="crm_address" maxChars="50"/>
+		</mx:HBox>
+		<mx:HBox width="100%">
+			<mx:Label text="City/State/Zip" textAlign="right" width="130" height="20"/>
+			<customcomponents:GenTextInput id="tiCity" width="133" visible="true" editable="true" height="20"
+				tabIndex="5" xmlTag="city" updatableFlag="true" tableName="crm_address" maxChars="25"/>
+			<customcomponents:GenTextInput id="tiState" width="133" visible="true" editable="true" height="20"
+				tabIndex="6" xmlTag="state" updatableFlag="true" tableName="crm_address" maxChars="25"/>
+			<customcomponents:GenTextInput id="tiZip" width="121" visible="true" editable="true" height="20"
+				tabIndex="7" xmlTag="zip" updatableFlag="true" tableName="crm_address" maxChars="15"/>
+		
+		</mx:HBox>
+		<mx:HBox width="100%">
+			<mx:Label text="Country" textAlign="right" width="130" height="20"/>
+			<customcomponents:GenTextInput id="tiCountry" width="133" visible="true" editable="true" height="20"
+				tabIndex="8" xmlTag="country" updatableFlag="true" tableName="crm_address" maxChars="20"/>
+		</mx:HBox>
+		<mx:HBox width="100%">
+			<mx:Label text="Phone/Fax" textAlign="right" width="130" height="20"/>
+			<customcomponents:GenTextInput id="tiPhone" width="133" visible="true" editable="true" height="20"
+				tabIndex="9" xmlTag="phone" updatableFlag="true" tableName="crm_address" maxChars="50"/>
+			<customcomponents:GenTextInput id="tiFax_no" width="133" visible="true" editable="true" height="20"
+				tabIndex="10" xmlTag="fax" updatableFlag="true" tableName="crm_address" maxChars="50"/>
+		</mx:HBox>
+		<mx:HBox width="100%">
+			<mx:Label text="Email" textAlign="right" width="130" height="20"/>
+			<customcomponents:GenTextInput id="tiEmail" width="403" visible="true" editable="true" height="20"
+				tabIndex="11" xmlTag="email" updatableFlag="true" tableName="crm_address" maxChars="50"/>
+		</mx:HBox>
+	
+		<customcomponents:GenTextInput id="tiSerial_no" width="0" height="0" visible="true"
+			editable="false" enabled="false" xmlTag="serial_no" updatableFlag="true"
+			tableName="crm_address" defaultValue=""  maxChars="4" />
+	
+	</mx:VBox>
+</gencomponents:DetailAddEdit>

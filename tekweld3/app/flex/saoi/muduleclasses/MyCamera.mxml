@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:TitleWindow xmlns:fx="http://ns.adobe.com/mxml/2009"
+				xmlns:s="library://ns.adobe.com/flex/spark"
+				xmlns:mx="library://ns.adobe.com/flex/mx"
+				width="500" height="530" title="Camera" showCloseButton="true" close="closeHandler()" creationComplete="init()">
+	<fx:Declarations>
+		<!-- Place non-visual elements (e.g., services, value objects) here -->
+		<s:HTTPService id="http" showBusyCursor="true" useProxy="false" method="POST" />
+	</fx:Declarations>
+	<fx:Script>
+		<![CDATA[
+			import com.generic.genclass.URL;
+			
+			import mx.controls.Alert;
+			import mx.graphics.codec.JPEGEncoder;
+			import mx.managers.PopUpManager;
+			import mx.rpc.AsyncToken;
+			import mx.rpc.IResponder;
+			import mx.rpc.events.FaultEvent;
+			import mx.rpc.events.ResultEvent;
+			import mx.utils.Base64Encoder;
+			
+			public var xml:XML					= new XML();
+			private var camera:Camera  			= Camera.getCamera();
+			private var bmpd:BitmapData 		;
+			private var jpgenc:JPEGEncoder 		=  new JPEGEncoder(80);
+			private var imgByteArray:ByteArray  =  new ByteArray();
+			private var date:Date				=  new Date();
+
+			private function getFileName():String
+			{
+				var returnValue:String	= '';
+				if(xml.children().length()>0)
+				{
+					returnValue =  xml.children()[0].trans_no.toString()+ xml.children()[0].ext_ref_no.toString()+".jpeg";
+				}
+				return returnValue;
+			}
+			private function init():void
+			{
+				vd.attachCamera(camera);
+			}
+			public static function base64Encode(data:ByteArray):String 
+			{ 
+				var encoder:Base64Encoder = new Base64Encoder(); 
+				encoder.encodeBytes(data); 
+				return encoder.flush(); 
+			} 
+			private function completeListner(event:Event):void
+			{
+				Alert.show("Save On Local Successfully");
+				//saveImageOnServer();
+			}
+			private function saveImageOnServer():void
+			{
+				var myencoder:Base64Encoder = new Base64Encoder(); 
+				var encodeString:String 	= base64Encode(imgByteArray);
+				
+				var urlObj:URL				=	new URL();
+				http.url					=	urlObj.getURL("/shipping/shipping/take_picture");
+				
+				var data:Object 			= new Object();
+				data.fileData 				= encodeString;
+				var date:Date 				= new Date();
+				data.fileName 				= getFileName();
+				data.trans_no 				= xml.children()[0].trans_no.toString();
+				http.request 				= data;
+				var responder:IResponder 	= new mx.rpc.Responder(resultHandler,faultHandler);
+				var token:AsyncToken 		= http.send();
+				token.addResponder(responder);
+			}
+			private function resultHandler(event:ResultEvent):void
+			{
+				Alert.show("Image Save Successfully");
+			}
+			private function faultHandler(event:FaultEvent):void
+			{
+				Alert.show(event.fault+event.fault.faultCode+event.fault.faultDetail+event.fault.faultDetail);
+			}
+			private function selectListner(event:Event):void 
+			{ 
+				//Alert.show((FileReference(event.target).extension));
+			}
+			protected function captureClickHandler(event:MouseEvent):void
+			{
+				var bitmapData:BitmapData 	= new BitmapData(vd.width,vd.height);
+				bitmapData.draw(vd); 
+				
+				var jpgenc:JPEGEncoder 		= new JPEGEncoder(100);    // 80 
+				imgByteArray 				= jpgenc.encode(bitmapData);
+				
+				saveImageOnServer();
+				/* var fl:FileReference 		= new FileReference(); 
+				fl.addEventListener(Event.SELECT,selectListner);
+				fl.addEventListener(Event.COMPLETE,completeListner);
+				try
+				{
+					fl.save(imgByteArray,getFileName());
+				}
+				
+				catch(e:Error)
+				{
+					Alert.show(e.message);
+				} */
+			}
+			private function closeHandler():void
+			{
+				PopUpManager.removePopUp(this);
+			}
+			
+		]]>
+	</fx:Script>
+	<mx:VBox width="100%" height="100%" horizontalAlign="center">
+		<mx:VideoDisplay id="vd" width="450" height="450"/>
+		
+		<s:Button click="captureClickHandler(event)" label="Capture"/>
+	</mx:VBox>
+</mx:TitleWindow>

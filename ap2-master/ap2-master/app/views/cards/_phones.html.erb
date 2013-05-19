@@ -1,0 +1,11 @@
+<% table :width => "200px" do |t| %>
+	<% t.th "#" %>
+	<% t.th "Phone Number" %>
+
+	<% counter = 0 %>
+	<% for p in @card.tmp_phones do %>
+		<% t.td counter += 1 %>
+		<% t.td phone(p.number, :contactable_type => "Card", :contactable_id => @card.id) %>
+		<% t.new_row %>
+	<%  end -%>
+<% end -%>

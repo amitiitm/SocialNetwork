@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<gencomponents:DetailAddEdit xmlns:mx="http://www.adobe.com/2006/mxml"
+	width="600" height="400" verticalGap="0"
+	xmlns:customcomponents="com.generic.customcomponents.*"
+	xmlns:gencomponents="com.generic.components.*" creationComplete="creationComplete()">
+	
+	<mx:Script source="../scripts/CustomerPaymentProfileDetailScript.as" />
+
+	<mx:VBox width="100%" height="100%">	
+		
+		<mx:HBox width="100%" height="4%"  verticalAlign="middle" horizontalGap="2"  verticalGap="0" >
+			<mx:Label text="Payment Profile #" width="130" textAlign="right" height="20" />
+			<customcomponents:GenTextInput id="tiCustomerPaymentProfileCode" width="180" xmlTag="customer_payment_profile_code"
+										   updatableFlag="true" tabIndex="820" tableName="customer_payment_profile" enabled="false"
+										   defaultValue="" validationFlag="false" toolTip="customer_payment_profile" height="20" 
+										   maxChars="50" />
+			
+		</mx:HBox>
+		
+		<mx:HBox width="100%" height="4%" horizontalGap="2" verticalAlign="middle"  verticalGap="0" visible="{!isProfileSaved}" includeInLayout="{!isProfileSaved}" >
+			<mx:Label text="Card Type" width="130" textAlign="right" height="20" />
+			<customcomponents:GenComboBox id="cbCard_type" width="181" cornerRadius="0" xmlTag="card_type" updatableFlag="true"
+										  tableName="customer_payment_profile"  tabIndex="830" labelField="label" height="20" defaultValue="VISA"  		
+										  dataProvider="{__genModel.masterData.child('card_type').card_type}" toolTip="Card Type"/>
+			
+		</mx:HBox>
+		<mx:HBox horizontalGap="2" verticalAlign="middle" width="100%" >
+			<mx:Label text="Card #" width="130" textAlign="right" height="20" />
+			<customcomponents:GenTextInput id="tiCardNO" width="180" xmlTag="card_number"
+										   updatableFlag="true" tabIndex="4" tableName="customer_payment_profile"
+										   defaultValue="" validationFlag="true" toolTip="Card #" height="20" maxValue="99999999999999999" restrict="0123456789"
+										   maxChars="16" textAlign="left" dataType="N"/>
+		</mx:HBox>
+		<mx:HBox horizontalGap="2" verticalAlign="middle" width="100%">
+			<mx:Label text="Expiration " width="130" textAlign="right" height="20" />
+			<customcomponents:GenTextInput id="tiExp_Month" width="23" xmlTag="expiration_month"
+										   updatableFlag="true" tabIndex="5" tableName="customer_payment_profile"
+										   defaultValue="" maxValue="12" validationFlag="true" toolTip="Exp. Month" height="20" 
+										   maxChars="2" textAlign="left" dataType="N" />
+			<customcomponents:GenTextInput id="tiExp_Year" width="26" xmlTag="expiration_year"
+										   updatableFlag="true" tabIndex="6" tableName="customer_payment_profile"
+										   defaultValue="" validationFlag="true" toolTip="Exp. Year" height="20" 
+										   maxChars="2" textAlign="left" dataType="N" maxValue="99" />
+		</mx:HBox>
+		
+		<mx:HBox horizontalGap="2" verticalAlign="middle" width="100%"  >
+			<mx:Label text="Organization" width="130" textAlign="right"/>
+			<customcomponents:GenTextInput id="tiCampany" width="190" xmlTag="company" updatableFlag="true"
+										   tableName="customer_payment_profile" defaultValue="" tabIndex="7" maxChars="50" height="20" />
+			
+		</mx:HBox>
+		<mx:HBox horizontalGap="2" verticalAlign="middle" width="100%">
+			<mx:Label text="First Name / Last Name" width="130" textAlign="right" height="20" />
+			<customcomponents:GenTextInput id="tiFirstName" width="180" xmlTag="first_name"
+										   updatableFlag="true" tabIndex="8" tableName="customer_payment_profile"
+										   defaultValue="" validationFlag="false" toolTip="First Name" height="20" 
+										   maxChars="50" />
+			<customcomponents:GenTextInput id="tiLastName" width="211" xmlTag="last_name"
+										   updatableFlag="true" tabIndex="9" tableName="customer_payment_profile"
+										   defaultValue="" validationFlag="false" toolTip="Last name" height="20" 
+										   maxChars="50" />
+			
+		</mx:HBox>
+		<mx:HBox id="hbContact_Info" label="Billing Info" width="100%" horizontalGap="2">
+			<mx:VBox  width="100%" height="100%" verticalGap="3" tabIndex="100">
+				<mx:HBox horizontalGap="2" verticalAlign="middle" width="100%">
+					<mx:Label text="Address" textAlign="right" width="130"/>
+					<customcomponents:GenTextInput id="tiAddress1" width="393" xmlTag="address" updatableFlag="true"
+												   tableName="customer_payment_profile" defaultValue="" tabIndex="10" maxChars="50" height="20" toolTip="Address"/>
+					
+				</mx:HBox>
+				<mx:HBox horizontalGap="2" verticalAlign="middle" width="100%">
+					<mx:Label text="City/State/Zip" textAlign="right" width="130"/>
+					<customcomponents:GenTextInput id="tiCity" width="231" xmlTag="city" updatableFlag="true" tableName="customer_payment_profile"
+												   defaultValue="" tabIndex="11" maxChars="25" height="20" validationFlag="true" toolTip="City" />
+					
+					<customcomponents:GenTextInput id="tiState" width="50" xmlTag="state" updatableFlag="true" tableName="customer_payment_profile"
+												   defaultValue="" tabIndex="12" maxChars="2" upperCaseFlag="true" height="20" validationFlag="true" toolTip="State" />
+					
+					<customcomponents:GenTextInput id="tiZip" width="108" xmlTag="zip" updatableFlag="true" tableName="customer_payment_profile"
+												   defaultValue="" tabIndex="13" maxChars="15" restrict="0123456789-" height="20" validationFlag="true" toolTip="Zip" />
+				</mx:HBox>
+				<mx:HBox horizontalGap="2" verticalAlign="middle" width="100%">
+					<mx:Label text="Country" textAlign="right" width="130"/>
+					<customcomponents:GenTextInput id="tiCountry" width="40" xmlTag="country" updatableFlag="true"
+												   tableName="customer_payment_profile" defaultValue="US" tabIndex="14" maxChars="2" height="20" validationFlag="true" />
+					
+				</mx:HBox>
+				<mx:HBox horizontalGap="2" verticalAlign="middle" width="100%">
+					<mx:Label text="Phone" width="130" textAlign="right"/>
+					<customcomponents:GenTextInput id="tiPhone1" width="190" xmlTag="phone" updatableFlag="true"
+												   tableName="customer_payment_profile" defaultValue="" tabIndex="15" maxChars="50" height="20"/>
+				</mx:HBox>
+				<mx:HBox horizontalGap="2" verticalAlign="middle" width="100%"  >
+					<mx:Label text="Fax" width="130" textAlign="right"/>
+					<customcomponents:GenTextInput id="tiFax1" width="190" xmlTag="fax" updatableFlag="true"
+												   tableName="customer_payment_profile" defaultValue="" tabIndex="16" maxChars="50" height="20" />
+					
+				</mx:HBox>
+				
+			</mx:VBox>
+		</mx:HBox>
+		
+		<mx:HBox width="100%" height="33" verticalAlign="middle"  verticalGap="0" visible="{!isProfileSaved}" includeInLayout="{!isProfileSaved}">
+			<mx:Spacer width="150"/>
+			<mx:Button label="Create" click="saveClickHandler()" enabled="{__genModel.activeModelLocator.detailEditObj.editStatus}"/>
+			<!--<mx:Button label="Delete" click="deleteClickHandler()" enabled="{!__genModel.activeModelLocator.detailEditObj.editStatus}"/>-->
+		</mx:HBox>	
+		<mx:HBox width="0" height="0" visible="false">
+			<customcomponents:GenTextInput id="tiSerial_no" toolTip="Serial #" restrict="1234567890" visible="false"
+				xmlTag="serial_no" updatableFlag="true" tableName="customer_payment_profile"/>
+		</mx:HBox>
+		
+	</mx:VBox>
+</gencomponents:DetailAddEdit>

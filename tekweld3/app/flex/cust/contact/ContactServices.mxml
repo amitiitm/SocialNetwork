@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rds:CommonServices xmlns:rds="business.*" xmlns:mx="http://www.adobe.com/2006/mxml">
+
+	<mx:HTTPService id="saveRecord" url="/sale/customer_contact/create_contacts"/>
+	<mx:HTTPService id="getRecord" url="/sale/customer_contact/show_contacts"/>
+	<mx:HTTPService id="getList" url="/sale/customer_contact/list_contacts"/>
+	<mx:HTTPService id="getListFormat" url="cust/contact/xmls/ContactListStru.xml"/>
+	<mx:HTTPService id="getViewFormat" url="cust/contact/xmls/ContactCriteriaStru.xml"/>
+	<mx:HTTPService id="taskDetailFormat" url="cust/contact/xmls/ContactTaskDetailStru.xml"/>
+	<mx:HTTPService id="contactDetailFormat" url="cust/contact/xmls/ContactContactDetailStru.xml"/>
+	<mx:HTTPService id="otherAddressDetailFormat" url="cust/otheraddress/xmls/OtherAddressDetailStru.xml"/>
+	<mx:HTTPService id="printRecord" url=""/>
+
+</rds:CommonServices>

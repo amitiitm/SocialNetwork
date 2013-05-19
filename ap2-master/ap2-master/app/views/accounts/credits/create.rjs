@@ -1,0 +1,8 @@
+if !@credit.errors.blank?
+  response_for(@credit, page, :default, '#billing')
+else
+    @credit = Credit.new(:admin_user_id => session[:admin_user_id])
+    @credits = Credit.find(:all, :conditions => @conditions, :order => "created_at DESC", :offset => @start, :limit => @limit)
+    page <<  "$('.inner-response').html('#{escape_javascript render :partial => '/accounts/billing/credit'}');"
+    page << "$('#success_credit').fadeIn(400).delay(800).slideUp(300);"
+end

@@ -1,0 +1,10 @@
+<columns>
+		<column data='sequence' label='#' editable='false' visible='true' width='80' textAlign='left' 	
+				dataType='S'  sortDataType='S' columnPrecision="NaN"	 booleanFlag='false' componentType="Text"	/>
+
+		<column data='code' 	label='City' editable='false' visible='true' width='80' textAlign='left' 	
+				dataType='S'  sortDataType='S' columnPrecision="NaN"	booleanFlag='false' componentType="Text"	/>
+
+		<column data='description' label='Location' editable='false' visible='true' width='80' textAlign='left' 	
+				dataType='S'  sortDataType='S' columnPrecision="NaN"	booleanFlag='false' componentType="Text"	/>
+</columns> 

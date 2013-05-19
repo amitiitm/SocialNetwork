@@ -1,0 +1,44 @@
+<%= page_title :title => "OpenFo IVRs" %>
+
+<% box :type => "simple" do %>
+	<% for c in IvrCategory.all %>
+		<span class="bold">Category: <%= c.name %></span>
+		<% table :width => "700px" do |t| %>
+			<% t.th "#" %>
+		  <% t.th "Name"  %>
+		  <% t.th "En Sound"  %>
+		  <% t.th "Fa Sound"  %>
+		  <% t.th "En Translation"  %>
+		  <% t.th "Fa Tranlation"  %>
+			<% t.th "Actions" %>
+
+			<% counter = 0 %>	
+			<% for ivr in c.ivrs %>
+				<% t.td (counter += 1) %>
+			  <% t.td (image_tag("icons/script.png", :class => "vtip", :style=> "vertical-align:text-bottom", :title => "English:<br>#{ivr.en_text}<br><br<span class='rtl'>فارسی:<br> #{ivr.fa_text}</span>") + " #{ivr.name}") %>
+			  <% t.td boolean(ivr.en_sound, 'Available', 'Not Available') %>
+			  <% t.td boolean(ivr.fa_sound, 'Available', 'Not Available') %>
+				<% t.td boolean(!ivr.en_text.blank?, 'Translated', 'Not Translated') %>
+				<% t.td boolean(!ivr.fa_text.blank?, 'Translated', 'Not Translated') %>
+				<% t.td action_links(
+					(link_to "Edit", edit_ivr_path(ivr), :class => "ajax", :update => "container"),
+					(link_to "Delete", ivr_path(ivr), :class => "ajax-delete")
+				)%>
+				<% t.new_row %>
+			<% end %>		
+		<% end %>
+	<% end %>
+	<%= button "new_ivr", "New IVR", :href => new_ivr_path, :update => "container" %>
+<% end %>
+
+<div class="hide" id="container"></div>
+
+<script type="text/javascript" charset="utf-8">
+	$(function(){
+		
+	});
+</script>
+
+<%= javascript_include_tag "vtip" %>
+<%= stylesheet_link_tag "vtip" %>
+

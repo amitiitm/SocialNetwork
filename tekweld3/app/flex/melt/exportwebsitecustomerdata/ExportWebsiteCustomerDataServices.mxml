@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rds:ApplicationServices xmlns:rds="business.*" xmlns:mx="http://www.adobe.com/2006/mxml">
+
+	<mx:HTTPService id="saveRecord" url=""/>
+	<mx:HTTPService id="getRecord" url=""/>
+	<mx:HTTPService id="printRecord" url=""/>
+	<mx:HTTPService id="exportWebsiteCustomerData" url="/melting/export_file_for_customer_data"/>
+
+</rds:ApplicationServices>

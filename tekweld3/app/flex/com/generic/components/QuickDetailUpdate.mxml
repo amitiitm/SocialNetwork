@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:TitleWindow xmlns:mx="http://www.adobe.com/2006/mxml" xmlns:components="com.generic.components.*" 
+	paddingTop="20" verticalAlign="top" verticalGap="0"  borderStyle="outset"
+	showCloseButton="true" 
+	creationPolicy="all"
+	backgroundAlpha="0.9"
+	creationComplete="creationCompleteHandler()"
+	close="closeHandler()"
+	initialize="{this.parentApplication.focusManager.deactivate()}">
+ 	
+ 	<mx:Script source="../scripts/QuickDetailUpdateScript.as"/>
+ 	
+ 	<mx:VBox id="vbMain"  verticalGap="2" verticalAlign="top" verticalCenter="-8" x="0" height="100%" width="100%">
+	 	<components:ButtonControlViewPanelQuickDetailUpdate id="bcp" horizontalGap="0" verticalGap="0" />
+	 	<mx:Spacer height="2"/>
+	 	<mx:VBox id="vbAddEdit" height="100%" width="100%"/>
+ 	</mx:VBox>
+</mx:TitleWindow>

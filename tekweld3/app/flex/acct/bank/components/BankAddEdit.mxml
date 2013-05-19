@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<gencomponents:AddEdit xmlns:mx="http://www.adobe.com/2006/mxml" 
+	height="100%" width="100%" verticalGap="0"
+	xmlns:customcomponents="com.generic.customcomponents.*"
+	xmlns:gencomponents="com.generic.components.*" 
+	creationPolicy="all">
+	
+	<mx:Script source="../scripts/BankAddEditScript.as"/>
+	
+	<mx:VBox width="100%" height="100%" verticalGap="3">
+		<mx:HBox width="100%" horizontalGap="0" verticalAlign="middle">
+			<mx:Label text="Code" width="95" height="20" textAlign="right"/>
+			<customcomponents:GenTextInput id="tiCode" width="116" xmlTag="code" upperCaseFlag="true"
+				updatableFlag="true" tableName="bank" defaultValue="" tabIndex="1" height="20"
+				validationFlag="true" toolTip="Code" maxChars="25" fontSize="9"/>
+			<mx:Label text="Status" width="95" height="20" textAlign="right"/>
+			<customcomponents:GenComboBox id="cbTrans_flag" defaultValue="A" width="116" cornerRadius="0" xmlTag="trans_flag" updatableFlag="true"
+				tableName="bank"  tabIndex="2" height="20" labelField="label" 
+				dataProvider="{__genModel.masterData.child('trans_flag').trans_flag}" />
+		</mx:HBox>
+		<mx:HBox width="100%" horizontalGap="0" verticalAlign="middle">
+			<mx:Label text="Name" width="95" height="20" textAlign="right"/>
+			<customcomponents:GenTextInput id="tiName" width="210" xmlTag="name" updatableFlag="true" 
+				tabIndex="3" tableName="bank" defaultValue="" height="20" validationFlag="true" toolTip="Name"
+				maxChars="50" />
+		</mx:HBox>
+		<mx:HBox width="100%" horizontalGap="0" verticalAlign="middle">
+			<mx:Label text="A/c #" width="95" height="20" textAlign="right"/>
+			<customcomponents:GenTextInput id="tiBank_acct_no" width="116" xmlTag="bank_acct_no"
+				updatableFlag="true" tableName="bank" defaultValue="" tabIndex="4" height="20"
+				validationFlag="true" toolTip="A/c #" maxChars="30"/>
+			<mx:Label text="Transit #" width="95" height="20" textAlign="right"/>
+			<customcomponents:GenTextInput id="tiTransit_no" width="116" xmlTag="transit_no" updatableFlag="true" tableName="bank"
+				defaultValue="" tabIndex="5" validationFlag="false" height="20" toolTip="Transit #" maxChars="30" />
+			<mx:Label text="GL Category #" height="20" width="95" textAlign="right"/>
+			
+			<customcomponents:GenTextInputWithHelp
+				id="dcCategory" 
+				width="116" 
+				toolTip="GL Category #" 
+				dataSourceName="GlCategory"
+				height="20" 
+				tabIndex="6" 
+				validationFlag="true" 
+				xmlTag="gl_category_id"
+				labelTag="gl_category_code"
+				dataField="id" 
+				minimumChar = "{__genModel.masterData.child('lookup').glcategory.value}"
+				labelField= "code"
+				updatableFlag="true" 
+				tableName="banks" 
+				itemChangedEvent="tiCategory_code.dataValue	=	dcCategory.labelValue"
+				/>
+			
+			<!--<customcomponents:GenDynamicComboBoxWithHelp id="dcCategory" width="116" 
+				tabIndex="6" toolTip="Category" defaultValue=""
+				dataField="id" 
+				dataSourceName="GlCategory" dataProvider="{GenModelLocator.getInstance().lookupObj.glcategory.children()}" labelField="code" 
+				validationFlag="true" xmlTag="gl_category_id" height="20" updatableFlag="true" tableName="bank"  />-->
+		</mx:HBox>
+		<mx:HBox width="100%" horizontalGap="0" verticalAlign="middle">
+			<mx:Label text="Start Date" width="95" height="20" textAlign="right"/>
+			<customcomponents:GenDateField id="dfStart_date" width="116" xmlTag="start_date"
+				updatableFlag="true" tableName="bank" defaultValue="" tabIndex="7" height="20"
+				validationFlag="true" toolTip="Start Date" />
+			<mx:Label text="Account Type" width="95" height="20" textAlign="right"/>
+			<customcomponents:GenComboBox id="cbAcc_Type" defaultValue="B" width="116" cornerRadius="0" xmlTag="account_type" updatableFlag="true"
+				tableName="bank"  tabIndex="8" height="20" labelField="label" enabled="false"  
+				dataProvider="{__genModel.masterData.child('bank').account_type}" />
+			
+			<mx:Label text="Credit Limit" height="20" width="95" textAlign="right"/>
+			<customcomponents:GenTextInput id="tiCredit_limit" width="116" xmlTag="credit_limit" updatableFlag="true" tableName="bank"
+				defaultValue="0.00" tabIndex="9" validationFlag="true" height="20" dataType="N" textAlign="right" maxValue="9999999999.99" 
+				toolTip="Credit Limit" setDefaultOnEmpty="true"  rounding="true" />
+		</mx:HBox>
+
+		<mx:HBox width="100%" horizontalGap="0" verticalAlign="middle">
+			<mx:Label text="Contact Name" height="20" width="95" textAlign="right"/>
+			<customcomponents:GenTextInput id="tiContact_nm" width="116" xmlTag="contact_nm" updatableFlag="true" tableName="bank"
+				defaultValue="" tabIndex="10" height="20" validationFlag="false" toolTip="Contact Name" maxChars="30" />
+			<mx:Label text="Balance Type" width="95" height="20" textAlign="right"/>
+			<customcomponents:GenComboBox id="cbBalance_Type" defaultValue="DB" width="116" cornerRadius="0" xmlTag="balance_type" updatableFlag="true"
+				tableName="bank"  tabIndex="11" height="20" labelField="label" 
+				dataProvider="{__genModel.masterData.child('bank').balance_type}" />
+			<mx:Label text="Payment Type" width="95" height="20" textAlign="right"/>
+			<customcomponents:GenComboBox id="cbPayment_type" defaultValue="CHCK" width="116" cornerRadius="0" xmlTag="payment_type" updatableFlag="true"
+			 	tableName="bank"  tabIndex="12" height="20"  
+				dataProvider="{__genModel.masterData.child('faxx').pay_type}" labelField="label"  />		
+		</mx:HBox>
+
+		<mx:Spacer height="4"/>
+		
+		<mx:HBox width="100%" horizontalGap="0" verticalAlign="middle">
+			<mx:Label text="Address #1" height="20" width="95" textAlign="right"/>
+			<customcomponents:GenTextInput id="tiAddress1" width="210" xmlTag="address1" updatableFlag="true" tableName="bank"
+				defaultValue="" tabIndex="13"  height="20" validationFlag="false" toolTip="Address #1" maxChars="50" />
+		</mx:HBox>
+
+		<mx:HBox width="100%" horizontalGap="0" verticalAlign="middle">
+			<mx:Label text="Address #2" height="20" width="95" textAlign="right"/>
+			<customcomponents:GenTextInput id="tiAddress2" width="210" xmlTag="address2" updatableFlag="true" tableName="bank"
+				defaultValue="" tabIndex="14" height="20" validationFlag="false" toolTip="Address #2" maxChars="50" />
+		</mx:HBox>
+
+		<mx:HBox width="100%" horizontalGap="0" verticalAlign="middle">
+			<mx:Label text="City/State/Zip" height="20" width="95" textAlign="right"/>
+			<mx:HBox horizontalGap="3">
+				<customcomponents:GenTextInput id="tiCity" width="116" xmlTag="city" updatableFlag="true" tableName="bank"
+				defaultValue="" tabIndex="15" validationFlag="false" toolTip="City" height="20" maxChars="20" />
+				<customcomponents:GenTextInput id="tiState" width="75" xmlTag="state" updatableFlag="true" tableName="bank"
+					defaultValue="" tabIndex="16" height="20" validationFlag="false" toolTip="State" maxChars="25" />
+				<customcomponents:GenTextInput id="tiZip" width="116" xmlTag="zip" updatableFlag="true" tableName="bank"
+					defaultValue="" tabIndex="17" height="20" validationFlag="false" toolTip="Zip" maxChars="15" />	
+			</mx:HBox>
+				
+		</mx:HBox>
+
+		<mx:HBox width="100%" horizontalGap="0" verticalAlign="middle">
+			<mx:Label text="Country" height="20" width="95" textAlign="right"/>
+			<customcomponents:GenTextInput id="tiCountry" width="116" height="20" xmlTag="country" updatableFlag="true" tableName="bank"
+				defaultValue="" tabIndex="18" validationFlag="false" toolTip="Country" maxChars="20" />
+		</mx:HBox>
+
+		<mx:HBox width="100%" horizontalGap="0" verticalAlign="middle">
+			<mx:Label text="Current Balance" height="20" width="95" textAlign="right"/>
+			<customcomponents:GenTextInput id="tiBalance" width="116" xmlTag="current_balance" updatableFlag="true" tableName="bank"
+				enabled="false" validationFlag="false" textAlign="right" toolTip="Current Balance" height="20"
+				defaultValue="0.00" dataType="N" maxValue="99999999.99" setDefaultOnEmpty="true" />
+		</mx:HBox>
+		
+		<mx:VBox label="Check Range" width="100%" height="100%" verticalGap="3" tabIndex="17">
+			<gencomponents:Detail id="dtlLine"
+				updatableFlag="true"
+				checkBlankRowColumn="check_from"
+				rootNode="bank_checks"
+				formatServiceID="detailFormat"
+				height="100%" width="100%"
+				DetailEditClass="{acct.bank.components.BankDetail}"
+				title="Bank Detail"/>
+		</mx:VBox>
+	</mx:VBox>
+	<customcomponents:GenTextInput id="tiCategory_code" width="0" height="0" xmlTag="gl_category_code" updatableFlag="true" tableName="bank"
+				defaultValue="" visible="false"/>
+</gencomponents:AddEdit>

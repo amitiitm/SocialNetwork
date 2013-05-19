@@ -1,0 +1,5 @@
+#!/bin/bash
+#records=464400
+#tasks=8
+#../../../script/runner create_cached_account_cdrs.rb $records $tasks $1
+nohup ../../../script/runner create_cached_stuff.rb &

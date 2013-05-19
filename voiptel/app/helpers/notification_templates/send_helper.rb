@@ -1,0 +1,2 @@
+module NotificationTemplates::SendHelper
+end

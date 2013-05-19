@@ -1,0 +1,24 @@
+<% form_for @admin_user, :html => {:class => "forms"} do |f| -%>
+	<ul>
+		<li>
+			<label>Name</label>
+			<%= f.text_field :name %>
+		</li>
+		<li>
+			<label>Email</label>
+			<%= f.text_field :email %>
+		</li>		
+		<li>
+			<label>Login</label>
+			<%= f.text_field :login %>
+		</li>
+		<li>
+			<label>Password</label>
+			<%= f.text_field :new_password %>
+		</li>
+		<li>
+			<label>Extension</label>
+			<%= f.text_field :ext, :size => 5 %>
+		</li>		
+	</ul>
+<% end -%>

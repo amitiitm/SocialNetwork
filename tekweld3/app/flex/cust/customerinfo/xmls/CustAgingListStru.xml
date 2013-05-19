@@ -1,0 +1,91 @@
+<columns  lockedColumnCount='0'>
+
+
+	<column data='serial_no'		label='Serial #'			editable='false'	visible='true'		
+			width='80'	textAlign='left'			forLevel='false'			print_width='18'	defaultForLevel=''		
+			booleanFlag='false'	sortDataType='S' 	columnPrecision="NaN"/>
+	
+	<column data='inv_no'		label='Inv #'			editable='false'	visible='true'		
+			width='80'	textAlign='left'			forLevel='false'			print_width='18'	defaultForLevel=''		
+			booleanFlag='false'	sortDataType='S' 	columnPrecision="NaN"/>
+	
+	<column data='inv_dt'	label='Inv Date'		editable='false'	visible='true'		width='100'	textAlign='left'	forLevel='false' 
+			print_width='20'	defaultForLevel=''		booleanFlag='false' sortDataType='D'	columnPrecision="NaN"/>			
+	
+	<column data='due_dt'	label='Due Date'		editable='false'	visible='true'		width='100'	textAlign='left'	forLevel='false' 
+			print_width='20'	defaultForLevel=''		booleanFlag='false' sortDataType='D'	columnPrecision="NaN"/>
+			
+	<column data='due_days'				label='Due Days'			editable='false'	visible='true'		
+			width='80'	textAlign='left'			forLevel='false'				print_width='20'	defaultForLevel=''		
+			booleanFlag='false'	sortDataType='S' 	columnPrecision="NaN"/>	
+			
+	<column data='group1_amt'						label='Group1 Amt'				editable='false'	visible='true'		
+			width='100'	textAlign='right'			forLevel='false'				print_width='22'	defaultForLevel=''	
+			booleanFlag='false'	sortDataType='N'	columnPrecision="2"/>
+			
+
+	<column data='group2_amt'						label='Group2 Amt'				editable='false'	visible='true'		
+			width='100'	textAlign='right'			forLevel='false'				print_width='22'	defaultForLevel=''	
+			booleanFlag='false'	sortDataType='N'	columnPrecision="2"/>
+
+	<column data='group3_amt'						label='Group3 Amt'				editable='false'	visible='true'		
+			width='100'	textAlign='right'			forLevel='false'				print_width='22'	defaultForLevel=''	
+			booleanFlag='false'	sortDataType='N'	columnPrecision="2"/>
+
+	<column data='group4_amt'						label='Group4 Amt'				editable='false'	visible='true'		
+			width='100'	textAlign='right'			forLevel='false'				print_width='22'	defaultForLevel=''	
+			booleanFlag='false'	sortDataType='N'	columnPrecision="2"/>
+
+	<column data='group5_amt'						label='Group5 Amt'				editable='false'	visible='true'		
+			width='100'	textAlign='right'			forLevel='false'				print_width='22'	defaultForLevel=''	
+			booleanFlag='false'	sortDataType='N'	columnPrecision="2"/>
+
+	<column data='group6_amt'						label='Group6 Amt'				editable='false'	visible='true'		
+			width='100'	textAlign='right'			forLevel='false'				print_width='22'	defaultForLevel=''	
+			booleanFlag='false'	sortDataType='N'	columnPrecision="2"/>
+
+	<column data='group7_amt'						label='Group7 Amt'				editable='false'	visible='true'		
+			width='100'	textAlign='right'			forLevel='false'				print_width='22'	defaultForLevel=''	
+			booleanFlag='false'	sortDataType='N'	columnPrecision="2"/>
+
+	<column data='credit_amt'						label='Credit Amt'				editable='false'	visible='true'		
+			width='100'	textAlign='right'			forLevel='false'				print_width='22'	defaultForLevel=''	
+			booleanFlag='false'	sortDataType='N'	columnPrecision="2"/>
+			
+	<column data='current_amt'						label='Current Amt'				editable='false'	visible='true'		
+			width='100'	textAlign='right'			forLevel='false'				print_width='22'	defaultForLevel=''	
+			booleanFlag='false'	sortDataType='N'	columnPrecision="2"/>
+			
+	<column data='inv_amt'						label='Inv Amt'				editable='false'	visible='true'		
+			width='100'	textAlign='right'			forLevel='false'				print_width='22'	defaultForLevel=''	
+			booleanFlag='false'	sortDataType='N'	columnPrecision="2"/>			
+				
+	<column data='inv_bk'		label='Inv Bk'			editable='false'	visible='true'		
+			width='80'	textAlign='left'			forLevel='false'			print_width='18'	defaultForLevel=''		
+			booleanFlag='false'	sortDataType='S' 	columnPrecision="NaN"/>
+			
+	<column data='sale_dt'	label='Sale Date'		editable='false'	visible='true'		width='100'	textAlign='left'	forLevel='false' 
+			print_width='20'	defaultForLevel=''		booleanFlag='false' sortDataType='D'	columnPrecision="NaN"/>		
+			
+	<column data='balance_amt'						label='Balance Amt'				editable='false'	visible='true'		
+			width='100'	textAlign='right'			forLevel='false'				print_width='22'	defaultForLevel=''	
+			booleanFlag='false'	sortDataType='N'	columnPrecision="2"/>
+			
+	<column data='term_code'						label='Term #'					editable='false'	visible='true'		
+			width='120'	textAlign='left'			forLevel='false'				print_width='22'	defaultForLevel=''		
+			booleanFlag='false'	sortDataType='S'	columnPrecision="NaN"/>
+
+	<column data='salesperson_code'					label='Salesperson #'					editable='false'	visible='true'		
+			width='120'	textAlign='left'			forLevel='false'				print_width='22'	defaultForLevel=''		
+			booleanFlag='false'	sortDataType='S'	columnPrecision="NaN"/>	
+			
+	<column data='company_code'					label='Company #'					editable='false'	visible='true'		
+			width='120'	textAlign='left'			forLevel='false'				print_width='22'	defaultForLevel=''		
+			booleanFlag='false'	sortDataType='S'	columnPrecision="NaN"/>
+			
+																	
+	<column data='company_name'					label='Company Name'					editable='false'	visible='true'		
+			width='120'	textAlign='left'			forLevel='false'				print_width='22'	defaultForLevel=''		
+			booleanFlag='false'	sortDataType='S'	columnPrecision="NaN"/>
+
+</columns>

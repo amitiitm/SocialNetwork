@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<gencomponents:AddEdit xmlns:mx="http://www.adobe.com/2006/mxml"
+	xmlns:customcomponents="com.generic.customcomponents.*"
+	xmlns:gencomponents="com.generic.components.*"
+	height="100%" width="100%" verticalGap="0"
+	creationPolicy="all">
+	
+	<mx:Script source="../scripts/ReportWriterAddEditScript.as"/>
+	
+	<mx:VBox width="100%" height="100%" verticalGap="3">
+		<customcomponents:GenTextInput id="tiId" height="0" width="0" visible="false"  validationFlag="false"
+			xmlTag="id" updatableFlag="false" tableName="report"/>
+		<mx:VBox width="100%">
+			<mx:HBox width="100%">
+				<mx:Label text="Code" textAlign="right" width="100" height="20" />
+				<customcomponents:GenTextInput id="tiCode" width="160" visible="true" tabIndex="1" validationFlag="true"
+					height="20" xmlTag="code" updatableFlag="true" tableName="report"/>
+				<mx:Label textAlign="right" width="127" text="Document #" height="20" />
+				<customcomponents:GenTextInputWithHelp
+					lookupFormatUrl	=	"documentLookupHelpFormat"
+					id="dcDocument_id" 
+					width="347" 
+					toolTip="Document #" 
+					dataSourceName="Document"
+					height="20" 
+					tabIndex="2" 
+					validationFlag="true" 
+					xmlTag="document_id"
+					labelTag="document_path"
+					dataField="id" 
+					labelField= "component_cd"
+					updatableFlag="true" 
+					tableName="report" 
+					itemChangedEvent="tiDocument_code.dataValue = dcDocument_id.labelValue"
+					/>
+				
+				<!--<customcomponents:GenDynamicComboBoxWithHelp id="dcDocument_id" width="347"
+					tabIndex="2" toolTip="Document #" defaultValue="" height="20" cornerRadius="0" 
+					dataField="id"
+					dataSourceName="Document" dataProvider="{GenModelLocator.getInstance().lookupObj.document.children()}" labelField="component_cd" 
+					validationFlag="true" xmlTag="document_id" updatableFlag="true" tableName="report" />-->
+			</mx:HBox>
+			<mx:HBox width="100%">
+				<mx:Label textAlign="right" width="100" text="Name" height="20" />
+				<customcomponents:GenTextInput id="tiName" width="160" visible="true" tabIndex="3" validationFlag="true"
+					xmlTag="name" updatableFlag="true" tableName="report" height="20" />
+				<mx:Label text="Service" textAlign="right" width="127" height="20" />
+				<customcomponents:GenTextInput id="service_url" width="347" visible="true" editable="true" height="20" 
+					tabIndex="4" xmlTag="service_url" updatableFlag="true" tableName="report"/>
+			</mx:HBox>
+			<mx:HBox width="100%">
+				<mx:Label text="Trans Flag" textAlign="right" width="100" height="20" />
+				<customcomponents:GenComboBox id="cbTransFlag" defaultValue="A" width="162" cornerRadius="0" xmlTag="trans_flag" updatableFlag="true" height="20" 
+					tableName="report"  tabIndex="5" labelField="label" dataProvider="{__genModel.masterData.child('trans_flag').trans_flag}" />
+			</mx:HBox>
+			<mx:HBox width="100%">
+				<mx:Label text="Description" textAlign="right" width="100" height="20" />
+				<customcomponents:GenTextArea id="taDescription" width="650" visible="true" editable="true" height="20" 
+					tabIndex="6" xmlTag="description" updatableFlag="true" tableName="report"/>
+			</mx:HBox>	
+			<mx:HBox width="100%">
+				<customcomponents:GenCheckBox labelPlacement="left" label="Drill Down Row" id="cbDrillDownColumn" width="150" xmlTag="isdrilldownrow"
+					updatableFlag="true" tableName="report" defaultValue="N" textAlign="right" tabIndex="10" enabled="true" height="20" 
+					dataValueForOn = "Y" dataValueForOff = "N" change="changeHandler()"/>
+				<customcomponents:GenCheckBox labelPlacement="left" label="Fixed URL" id="cbFixedUrl" width="120" xmlTag="isfixedurl"
+					updatableFlag="true" tableName="report" defaultValue="N" textAlign="right" tabIndex="11" enabled="true" height="20" 
+					dataValueForOn="Y" dataValueForOff="N" visible="{cbDrillDownColumn.selected}"/>
+				<mx:HBox visible="{cbFixedUrl.selected}" width="100%">
+					<mx:Label  id="lblDoc_id" textAlign="right" width="65" text="Doc#" height="20" visible="{cbFixedUrl.selected}" />
+					<customcomponents:GenTextInputWithHelp
+						lookupFormatUrl	=	"documentLookupHelpFormat"
+						id="dcDoc_id" 
+						width="347" 
+						toolTip="Document #" 
+						dataSourceName="Document"
+						height="20" 
+						tabIndex="14" 
+						validationFlag="false" 
+						xmlTag="drilldown_component_code"
+						labelTag="drilldown_component_code"
+						dataField="component_cd" 
+						labelField= "component_cd"
+						updatableFlag="true" 
+						tableName="report" 
+						visible="{cbFixedUrl.selected}"
+						/>
+					<!--<customcomponents:GenDynamicComboBoxWithHelp id="dcDoc_id" width="347" visible="{cbFixedUrl.selected}"
+						tabIndex="14" toolTip="Document #" defaultValue="" height="20" cornerRadius="0" dataField="component_cd"
+						dataSourceName="Document" dataProvider="{__genModel.lookupObj.document.children()}" labelField="component_cd" 
+						validationFlag="false" xmlTag="drilldown_component_code" updatableFlag="true" tableName="report" />-->
+				</mx:HBox>
+			</mx:HBox>					
+		</mx:VBox>
+		<mx:Spacer height="5"/>
+		<mx:TabNavigator id="tnDtl" width="100%" height="100%" change="handleTabChange(event)">
+			<mx:VBox label="Columns" width="100%" height="100%">
+				<gencomponents:Detail id="dtlColumns"
+					updatableFlag="true"
+					checkBlankRowColumn=""
+					rootNode="report_columns"
+					formatServiceID="columnsDetailFormat"
+					height="100%" width="100%"
+					DetailEditClass="{stup.reportwriter.components.ReportWriterColumnsDetail}"
+					title="Column Details" />
+			</mx:VBox>
+			<mx:VBox label="Layout" width="100%" height="100%" enabled="{tiId.text != ''  ? true : false}">
+				<gencomponents:Detail id="dtlStyle"
+					updatableFlag="true"
+					checkBlankRowColumn=""
+					rootNode="report_layouts"
+					formatServiceID="styleDetailFormat"
+					height="100%" width="100%"
+					DetailEditClass="{stup.reportwriter.components.ReportWriterStyleLayoutDetail}"
+					title="Style Layout Details" />				
+			</mx:VBox>
+			<mx:VBox label="Fixed Format" width="100%" height="100%">
+				<gencomponents:Detail id="dtlfixedFormat"
+					updatableFlag="true"
+					checkBlankRowColumn=""
+					rootNode="report_fixed_formats"
+					formatServiceID="fixedFormatDetail"
+					height="100%" width="100%"
+					DetailEditClass="{stup.reportwriter.components.ReportWriterFixedFormatDetail}"
+					title="Fixed Format Details" />
+			</mx:VBox>
+		</mx:TabNavigator>
+	</mx:VBox>
+	<customcomponents:GenTextInput id="tiDocument_code" width="0"  height="0"  
+				xmlTag="document_path" updatableFlag="true" tableName="report"/>
+</gencomponents:AddEdit>

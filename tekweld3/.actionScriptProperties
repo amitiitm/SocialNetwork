@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<actionScriptProperties analytics="false" mainApplicationPath="TekweldAIR.mxml" projectUUID="9b5638ed-f20a-42a6-8e75-eb33c761968d" version="10">
+  <compiler additionalCompilerArguments="-locale en_US" autoRSLOrdering="true" copyDependentFiles="true" fteInMXComponents="false" generateAccessible="true" htmlExpressInstall="true" htmlGenerate="false" htmlHistoryManagement="false" htmlPlayerVersionCheck="true" includeNetmonSwc="false" outputFolderPath="public/bin" removeUnusedRSL="true" sourceFolderPath="app/flex" strict="true" targetPlayerVersion="0.0.0" useApolloConfig="true" useDebugRSLSwfs="true" verifyDigests="true" warn="true">
+    <compilerSourcePath/>
+    <libraryPath defaultLinkType="3">
+      <libraryPathEntry kind="4" path="">
+        <excludedEntries>
+          <libraryPathEntry kind="3" linkType="1" path="${PROJECT_FRAMEWORKS}/libs/flex.swc" useDefaultLinkType="false"/>
+          <libraryPathEntry kind="3" linkType="1" path="${PROJECT_FRAMEWORKS}/libs/core.swc" useDefaultLinkType="false"/>
+        </excludedEntries>
+      </libraryPathEntry>
+      <libraryPathEntry kind="1" linkType="1" path="libs"/>
+    </libraryPath>
+    <sourceAttachmentPath/>
+  </compiler>
+  <theme themeIsDefault="false" themeIsSDK="true" themeLocation="${SDK_THEMES_DIR}/frameworks/themes/Halo"/>
+  <applications>
+    <application path="TekweldAIR.mxml">
+      <airExcludes/>
+    </application>
+  </applications>
+  <modules>
+    <module application="app/flex/TekweldAIR.mxml" destPath="puoi/purchaseinvoice/components/PurchaseInvoice.swf" optimize="true" sourcePath="app/flex/puoi/purchaseinvoice/components/PurchaseInvoice.mxml"/>
+    <module application="app/flex/TekweldAIR.mxml" destPath="cust/quickcustomer/components/QuickCustomerMaster.swf" optimize="true" sourcePath="app/flex/cust/quickcustomer/components/QuickCustomerMaster.mxml"/>
+    <module application="app/flex/TekweldAIR.mxml" destPath="rept/saoi/breakpointsummaryreport/components/BreakPointSummary.swf" optimize="true" sourcePath="app/flex/rept/saoi/breakpointsummaryreport/components/BreakPointSummary.mxml"/>
+    <module application="app/flex/TekweldAIR.mxml" destPath="saoi/salesorderinvoices/components/SalesOrderInvoices.swf" optimize="true" sourcePath="app/flex/saoi/salesorderinvoices/components/SalesOrderInvoices.mxml"/>
+    <module application="app/flex/TekweldAIR.mxml" destPath="rept/ctlg/missingimagereport/components/MissingImageReport.swf" optimize="true" sourcePath="app/flex/rept/ctlg/missingimagereport/components/MissingImageReport.mxml"/>
+    <module application="app/flex/TekweldAIR.mxml" destPath="rept/acct/cust/customerledger/components/CustomerLedger.swf" optimize="true" sourcePath="app/flex/rept/acct/cust/customerledger/components/CustomerLedger.mxml"/>
+    <module application="app/flex/TekweldAIR.mxml" destPath="rept/invn/issuereport/components/IssueReport.swf" optimize="true" sourcePath="app/flex/rept/invn/issuereport/components/IssueReport.mxml"/>
+    <module application="app/flex/TekweldAIR.mxml" destPath="rept/invn/activityreport/components/ActivityReport.swf" optimize="true" sourcePath="app/flex/rept/invn/activityreport/components/ActivityReport.mxml"/>
+    <module application="app/flex/TekweldAIR.mxml" destPath="rept/pos/salesreceiptregister/components/SalesReceiptRegister.swf" optimize="true" sourcePath="app/flex/rept/pos/salesreceiptregister/components/SalesReceiptRegister.mxml"/>
+    <module application="app/flex/TekweldAIR.mxml" destPath="rept/acct/bank/transactionregister/components/TransactionRegister.swf" optimize="true" sourcePath="app/flex/rept/acct/bank/transactionregister/components/TransactionRegister.mxml"/>
+    <module application="app/flex/TekweldAIR.mxml" destPath="rept/prod/workbagregister/components/WorkbagRegister.swf" optimize="true" sourcePath="app/flex/rept/prod/workbagregister/components/WorkbagRegister.mxml"/>
+    <module application="app/flex/TekweldAIR.mxml" destPath="rept/saoi/memoanalysisreport/components/MemoAnalysisReport.swf" optimize="true" sourcePath="app/flex/rept/saoi/memoanalysisreport/components/MemoAnalysisReport.mxml"/>
+    <module application="app/flex/TekweldAIR.mxml" destPath="crm/task/components/Task.swf" optimize="true" sourcePath="app/flex/crm/task/components/Task.mxml"/>
+    <module application="app/flex/TekweldAIR.mxml" destPath="prod/padfilmjob/components/PadFilmJob.swf" optimize="true" sourcePath="app/flex/prod/padfilmjob/components/PadFilmJob.mxml"/>
+    <module application="app/flex/TekweldAIR.mxml" destPath="saoi/pickorder/components/PickOrder.swf" optimize="true" sourcePath="app/flex/saoi/pickorder/components/PickOrder.mxml"/>
+    <module application="app/flex/TekweldAIR.mxml" destPath="rept/puoi/invoiceregister/components/InvoiceRegister.swf" optimize="true" sourcePath="app/flex/rept/puoi/invoiceregister/components/InvoiceRegister.mxml"/>
+    <module application="app/flex/TekweldAIR.mxml" destPath="rept/invn/allstorestockreport/components/AllStoreStockReport.swf" optimize="true" sourcePath="app/flex/rept/invn/allstorestockreport/components/AllStoreStockReport.mxml"/>
+    <module application="app/flex/TekweldAIR.mxml" destPath="rept/dinvn/stockwithpacketreport/components/StockWithPacketReport.swf" optimize="true" sourcePath="app/flex/rept/dinvn/stockwithpacketreport/components/StockWithPacketReport.mxml"/>
+    <module application="app/flex/TekweldAIR.mxml" destPath="rept/ctlg/openenquiryreport/components/OpenEnquiryReport.swf" optimize="true" sourcePath="app/flex/rept/ctlg/openenquiryreport/components/OpenEnquiryReport.mxml"/>
+    <module application="app/flex/TekweldAIR.mxml" destPath="ship/embroideryshipping/components/EmbroideryShipping.swf" optimize="true" sourcePath="app/flex/ship/embroideryshipping/components/EmbroideryShipping.mxml"/>
+    <module application="app/flex/TekweldAIR.mxml" destPath="invn/jewelry/components/Jewelry.swf" optimize="true" sourcePath="app/flex/invn/jewelry/components/Jewelry.mxml"/>
+    <module application="app/flex/TekweldAIR.mxml" destPath="rept/saoi/memoreturnregister/components/MemoReturnRegister.swf" optimize="true" sourcePath="app/flex/rept/saoi/memoreturnregister/components/MemoReturnRegister.mxml"/>
+    <module application="app/flex/TekweldAIR.mxml" destPath="rept/acct/cust/customerstatement/components/CustomerStatement.swf" optimize="true" sourcePath="app/flex/rept/acct/cust/customerstatement/components/CustomerStatement.mxml"/>
+    <module application="app/flex/TekweldAIR.mxml" destPath="saoi/salesquotation/components/SalesQuotation.swf" optimize="true" sourcePath="app/flex/saoi/salesquotation/components/SalesQuotation.mxml"/>
+    <module application="app/flex/TekweldAIR.mxml" destPath="rept/pos/salesreturnregister/components/SalesReturnRegister.swf" optimize="true" sourcePath="app/flex/rept/pos/salesreturnregister/components/SalesReturnRegister.mxml"/>
+    <module application="app/flex/TekweldAIR.mxml" destPath="acct/bank/components/Bank.swf" optimize="true" sourcePath="app/flex/acct/bank/components/Bank.mxml"/>
+    <module application="app/flex/TekweldAIR.mxml" destPath="saoi/sampleorder/components/SampleOrder.swf" optimize="true" sourcePath="app/flex/saoi/sampleorder/components/SampleOrder.mxml"/>
+    <module application="app/flex/TekweldAIR.mxml" destPath="rept/acct/vend/vendorledger/components/VendorLedger.swf" optimize="true" sourcePath="app/flex/rept/acct/vend/vendorledger/components/VendorLedger.mxml"/>
+    <module application="app/flex/TekweldAIR.mxml" destPath="acct/vendcreditinvoice/components/VendorCreditInvoice.swf" optimize="true" sourcePath="app/flex/acct/vendcreditinvoice/components/VendorCreditInvoice.mxml"/>
+    <module application="app/flex/TekweldAIR.mxml" destPath="saoi/pickartwork/components/PickArtwork.swf" optimize="true" sourcePath="app/flex/saoi/pickartwork/components/PickArtwork.mxml"/>
+    <module application="app/flex/TekweldAIR.mxml" destPath="stup/user/components/User.swf" optimize="true" sourcePath="app/flex/stup/user/components/User.mxml"/>
+    <module application="app/flex/TekweldAIR.mxml" destPath="acct/vendpayment/components/VendorPayment.swf" optimize="true" sourcePath="app/flex/acct/vendpayment/components/VendorPayment.mxml"/>
+    <module application="app/flex/TekweldAIR.mxml" destPath="acct/accountingapproved/components/AccountingApproved.swf" optimize="true" sourcePath="app/flex/acct/accountingapproved/components/AccountingApproved.mxml"/>
+    <module application="app/flex/TekweldAIR.mxml" destPath="acct/glacct/components/GLAccount.swf" optimize="true" sourcePath="app/flex/acct/glacct/components/GLAccount.mxml"/>
+    <module application="app/flex/TekweldAIR.mxml" destPath="saoi/artworkapprovedcustomermanual/components/ArtworkApprovedCustomerManual.swf" optimize="true" sourcePath="app/flex/saoi/artworkapprovedcustomermanual/components/ArtworkApprovedCustomerManual.mxml"/>
+    <module application="app/flex/TekweldAIR.mxml" destPath="prod/embroiderydigitization/components/EmbroideryDigitization.swf" optimize="true" sourcePath="app/flex/prod/embroiderydigitization/components/EmbroideryDigitization.mxml"/>
+    <module application="app/flex/TekweldAIR.mxml" destPath="rept/saoi/breakpointdetailreport/components/BreakPointDetail.swf" optimize="true" sourcePath="app/flex/rept/saoi/breakpointdetailreport/components/BreakPointDetail.mxml"/>
+    <module application="app/flex/TekweldAIR.mxml" destPath="rept/dsaoi/memoreturnregister/components/MemoReturnRegister.swf" optimize="true" sourcePath="app/flex/rept/dsaoi/memoreturnregister/components/MemoReturnRegister.mxml"/>
+    <module application="app/flex/TekweldAIR.mxml" destPath="rept/dinvn/backdatedstockreport/components/BackdatedStockReport.swf" optimize="true" sourcePath="app/flex/rept/dinvn/backdatedstockreport/components/BackdatedStockReport.mxml"/>
+    <module application="app/flex/TekweldAIR.mxml" destPath="rept/puoi/creditinvoiceregister/components/CreditInvoiceRegister.swf" optimize="true" sourcePath="app/flex/rept/puoi/creditinvoiceregister/components/CreditInvoiceRegister.mxml"/>
+    <module application="app/flex/TekweldAIR.mxml" destPath="ship/gumshipping/components/GumShipping.swf" optimize="true" sourcePath="app/flex/ship/gumshipping/components/GumShipping.mxml"/>
+    <module application="app/flex/TekweldAIR.mxml" destPath="rept/prod/opencontractormemoreport/components/OpenContractorMemoReport.swf" optimize="true" sourcePath="app/flex/rept/prod/opencontractormemoreport/components/OpenContractorMemoReport.mxml"/>
+    <module application="app/flex/TekweldAIR.mxml" destPath="stup/applicationsetting/components/ApplicationSetting.swf" optimize="true" sourcePath="app/flex/stup/applicationsetting/components/ApplicationSetting.mxml"/>
+    <module application="app/flex/TekweldAIR.mxml" destPath="saoi/cancelorder/components/CancelOrder.swf" optimize="true" sourcePath="app/flex/saoi/cancelorder/components/CancelOrder.mxml"/>
+    <module application="app/flex/TekweldAIR.mxml" destPath="rept/dpuoi/memoregister/components/MemoRegister.swf" optimize="true" sourcePath="app/flex/rept/dpuoi/memoregister/components/MemoRegister.mxml"/>
+    <module application="app/flex/TekweldAIR.mxml" destPath="rept/melt/metalpacketregister/components/MetalPacketRegister.swf" optimize="true" sourcePath="app/flex/rept/melt/metalpacketregister/components/MetalPacketRegister.mxml"/>
+    <module application="app/flex/TekweldAIR.mxml" destPath="crm/category/components/AccountCategory.swf" optimize="true" sourcePath="app/flex/crm/category/components/AccountCategory.mxml"/>
+    <module application="app/flex/TekweldAIR.mxml" destPath="rept/melt/policelogreport/components/PoliceLogReport.swf" optimize="true" sourcePath="app/flex/rept/melt/policelogreport/components/PoliceLogReport.mxml"/>
+    <module application="app/flex/TekweldAIR.mxml" destPath="rept/saoi/invoiceanalysisreport/components/InvoiceAnalysisReport.swf" optimize="true" sourcePath="app/flex/rept/saoi/invoiceanalysisreport/components/InvoiceAnalysisReport.mxml"/>
+    <module application="app/flex/TekweldAIR.mxml" destPath="cust/customer/components/CustomerMaster.swf" optimize="true" sourcePath="app/flex/cust/customer/components/CustomerMaster.mxml"/>
+    <module application="app/flex/TekweldAIR.mxml" destPath="rept/saoi/orderstatus/components/OrderStatus.swf" optimize="true" sourcePath="app/flex/rept/saoi/orderstatus/components/OrderStatus.mxml"/>
+    <module application="app/flex/TekweldAIR.mxml" destPath="rept/melt/commissionpaidreport/components/CommissionPaidReport.swf" optimize="true" sourcePath="app/flex/rept/melt/commissionpaidreport/components/CommissionPaidReport.mxml"/>
+    <module application="app/flex/TekweldAIR.mxml" destPath="rept/puoi/indentregister/components/IndentRegister.swf" optimize="true" sourcePath="app/flex/rept/puoi/indentregister/components/IndentRegister.mxml"/>
+    <module application="app/flex/TekweldAIR.mxml" destPath="acct/vendpaymentapply/components/VendorPaymentApply.swf" optimize="true" sourcePath="app/flex/acct/vendpaymentapply/components/VendorPaymentApply.mxml"/>
+    <module application="app/flex/TekweldAIR.mxml" destPath="prod/gumimposition/components/GumImposition.swf" optimize="true" sourcePath="app/flex/prod/gumimposition/components/GumImposition.mxml"/>
+    <module application="app/flex/TekweldAIR.mxml" destPath="ship/indigoshipping/components/IndigoShipping.swf" optimize="true" sourcePath="app/flex/ship/indigoshipping/components/IndigoShipping.mxml"/>
+    <module application="app/flex/TekweldAIR.mxml" destPath="rept/acct/vend/backdatedagingdetail/components/BackdatedAgingDetail.swf" optimize="true" sourcePath="app/flex/rept/acct/vend/backdatedagingdetail/components/BackdatedAgingDetail.mxml"/>
+    <module application="app/flex/TekweldAIR.mxml" destPath="saoi/customerstitchapproval/components/CustomerStitchApproval.swf" optimize="true" sourcePath="app/flex/saoi/customerstitchapproval/components/CustomerStitchApproval.mxml"/>
+    <module application="app/flex/TekweldAIR.mxml" destPath="rept/melt/checkprintregister/components/CheckPrintRegister.swf" optimize="true" sourcePath="app/flex/rept/melt/checkprintregister/components/CheckPrintRegister.mxml"/>
+    <module application="app/flex/TekweldAIR.mxml" destPath="prod/mimaki/components/Mimaki.swf" optimize="true" sourcePath="app/flex/prod/mimaki/components/Mimaki.mxml"/>
+    <module application="app/flex/TekweldAIR.mxml" destPath="rept/saoi/orderanalysisreport/components/OrderAnalysisReport.swf" optimize="true" sourcePath="app/flex/rept/saoi/orderanalysisreport/components/OrderAnalysisReport.mxml"/>
+    <module application="app/flex/TekweldAIR.mxml" destPath="rept/acct/vend/invoiceregister/components/InvoiceRegister.swf" optimize="true" sourcePath="app/flex/rept/acct/vend/invoiceregister/components/InvoiceRegister.mxml"/>
+    <module application="app/flex/TekweldAIR.mxml" destPath="rept/acct/gl/trialbalancesummary/components/TrialBalanceSummary.swf" optimize="true" sourcePath="app/flex/rept/acct/gl/trialbalancesummary/components/TrialBalanceSummary.mxml"/>
+    <module application="app/flex/TekweldAIR.mxml" destPath="rept/melt/openpacketreport/components/OpenPacketReport.swf" optimize="true" sourcePath="app/flex/rept/melt/openpacketreport/components/OpenPacketReport.mxml"/>
+    <module application="app/flex/TekweldAIR.mxml" destPath="saoi/sendmultipleartworktocustomer/components/SendMultipleArtworkToCustomer.swf" optimize="true" sourcePath="app/flex/saoi/sendmultipleartworktocustomer/components/SendMultipleArtworkToCustomer.mxml"/>
+    <module application="app/flex/TekweldAIR.mxml" destPath="saoi/artworkquery/components/ArtworkQuery.swf" optimize="true" sourcePath="app/flex/saoi/artworkquery/components/ArtworkQuery.mxml"/>
+    <module application="app/flex/TekweldAIR.mxml" destPath="rept/saoi/marginreport/components/Margin.swf" optimize="true" sourcePath="app/flex/rept/saoi/marginreport/components/Margin.mxml"/>
+    <module application="app/flex/TekweldAIR.mxml" destPath="rept/puoi/orderregister/components/OrderRegister.swf" optimize="true" sourcePath="app/flex/rept/puoi/orderregister/components/OrderRegister.mxml"/>
+    <module application="app/flex/TekweldAIR.mxml" destPath="crm/opportunity/components/Opportunity.swf" optimize="true" sourcePath="app/flex/crm/opportunity/components/Opportunity.mxml"/>
+    <module application="app/flex/TekweldAIR.mxml" destPath="rept/puoi/openorderreport/components/OpenOrderReport.swf" optimize="true" sourcePath="app/flex/rept/puoi/openorderreport/components/OpenOrderReport.mxml"/>
+    <module application="app/flex/TekweldAIR.mxml" destPath="saoi/accountingapproved/components/AccountingApproved.swf" optimize="true" sourcePath="app/flex/saoi/accountingapproved/components/AccountingApproved.mxml"/>
+    <module application="app/flex/TekweldAIR.mxml" destPath="saoi/orderrevertstage/components/OrderRevertstage.swf" optimize="true" sourcePath="app/flex/saoi/orderrevertstage/components/OrderRevertstage.mxml"/>
+    <module application="app/flex/TekweldAIR.mxml" destPath="stup/menu/components/Menu.swf" optimize="true" sourcePath="app/flex/stup/menu/components/Menu.mxml"/>
+    <module application="app/flex/TekweldAIR.mxml" destPath="invn/category/components/ItemCategory.swf" optimize="true" sourcePath="app/flex/invn/category/components/ItemCategory.mxml"/>
+    <module application="app/flex/TekweldAIR.mxml" destPath="prod/directprint/components/DirectPrint.swf" optimize="true" sourcePath="app/flex/prod/directprint/components/DirectPrint.mxml"/>
+    <module application="app/flex/TekweldAIR.mxml" destPath="rept/dinvn/stockreport/components/StockReport.swf" optimize="true" sourcePath="app/flex/rept/dinvn/stockreport/components/StockReport.mxml"/>
+    <module application="app/flex/TekweldAIR.mxml" destPath="prod/decalprint/components/DecalPrint.swf" optimize="true" sourcePath="app/flex/prod/decalprint/components/DecalPrint.mxml"/>
+    <module application="app/flex/TekweldAIR.mxml" destPath="rept/pos/repairorderregister/components/RepairOrderRegister.swf" optimize="true" sourcePath="app/flex/rept/pos/repairorderregister/components/RepairOrderRegister.mxml"/>
+    <module application="app/flex/TekweldAIR.mxml" destPath="cust/customerinfo/components/CustomerInfo.swf" optimize="true" sourcePath="app/flex/cust/customerinfo/components/CustomerInfo.mxml"/>
+    <module application="app/flex/TekweldAIR.mxml" destPath="saoi/specorderapproved/components/SpecOrderApproved.swf" optimize="true" sourcePath="app/flex/saoi/specorderapproved/components/SpecOrderApproved.mxml"/>
+    <module application="app/flex/TekweldAIR.mxml" destPath="prod/productionorder/components/ProductionOrder.swf" optimize="true" sourcePath="app/flex/prod/productionorder/components/ProductionOrder.mxml"/>
+    <module application="app/flex/TekweldAIR.mxml" destPath="prod/filmjob/components/FilmJob.swf" optimize="true" sourcePath="app/flex/prod/filmjob/components/FilmJob.mxml"/>
+    <module application="app/flex/TekweldAIR.mxml" destPath="rept/invn/stockreport/components/StockReport.swf" optimize="true" sourcePath="app/flex/rept/invn/stockreport/components/StockReport.mxml"/>
+    <module application="app/flex/TekweldAIR.mxml" destPath="rept/ctlg/openreport/components/OpenReport.swf" optimize="true" sourcePath="app/flex/rept/ctlg/openreport/components/OpenReport.mxml"/>
+    <module application="app/flex/TekweldAIR.mxml" destPath="rept/puoi/memoregister/components/MemoRegister.swf" optimize="true" sourcePath="app/flex/rept/puoi/memoregister/components/MemoRegister.mxml"/>
+    <module application="app/flex/TekweldAIR.mxml" destPath="rept/pos/spostockorderregister/components/SPOStockRegister.swf" optimize="true" sourcePath="app/flex/rept/pos/spostockorderregister/components/SPOStockRegister.mxml"/>
+    <module application="app/flex/TekweldAIR.mxml" destPath="saoi/makecancelorder/components/MakeCancelOrder.swf" optimize="true" sourcePath="app/flex/saoi/makecancelorder/components/MakeCancelOrder.mxml"/>
+    <module application="app/flex/TekweldAIR.mxml" destPath="rept/saoi/openorderreport/components/OpenOrderReport.swf" optimize="true" sourcePath="app/flex/rept/saoi/openorderreport/components/OpenOrderReport.mxml"/>
+    <module application="app/flex/TekweldAIR.mxml" destPath="rept/acct/cust/backdatedagingsummary/components/BackdatedAgingSummary.swf" optimize="true" sourcePath="app/flex/rept/acct/cust/backdatedagingsummary/components/BackdatedAgingSummary.mxml"/>
+    <module application="app/flex/TekweldAIR.mxml" destPath="prod/shiptovendor/components/ShipToVendor.swf" optimize="true" sourcePath="app/flex/prod/shiptovendor/components/ShipToVendor.mxml"/>
+    <module application="app/flex/TekweldAIR.mxml" destPath="rept/saoi/salesprofitreport/components/SalesProfit.swf" optimize="true" sourcePath="app/flex/rept/saoi/salesprofitreport/components/SalesProfit.mxml"/>
+    <module application="app/flex/TekweldAIR.mxml" destPath="crm/contact/components/Contact.swf" optimize="true" sourcePath="app/flex/crm/contact/components/Contact.mxml"/>
+    <module application="app/flex/TekweldAIR.mxml" destPath="saoi/orderquery/components/OrderQuery.swf" optimize="true" sourcePath="app/flex/saoi/orderquery/components/OrderQuery.mxml"/>
+    <module application="app/flex/TekweldAIR.mxml" destPath="rept/pos/activityreport/components/ActivityReport.swf" optimize="true" sourcePath="app/flex/rept/pos/activityreport/components/ActivityReport.mxml"/>
+    <module application="app/flex/TekweldAIR.mxml" destPath="crm/lead/components/Lead.swf" optimize="true" sourcePath="app/flex/crm/lead/components/Lead.mxml"/>
+    <module application="app/flex/TekweldAIR.mxml" destPath="rept/melt/packetstatusreport/components/PacketStatusReport.swf" optimize="true" sourcePath="app/flex/rept/melt/packetstatusreport/components/PacketStatusReport.mxml"/>
+    <module application="app/flex/TekweldAIR.mxml" destPath="rept/acct/vend/paymentregister/components/PaymentRegister.swf" optimize="true" sourcePath="app/flex/rept/acct/vend/paymentregister/components/PaymentRegister.mxml"/>
+    <module application="app/flex/TekweldAIR.mxml" destPath="rept/acct/vend/vendorstatement/components/VendorStatement.swf" optimize="true" sourcePath="app/flex/rept/acct/vend/vendorstatement/components/VendorStatement.mxml"/>
+    <module application="app/flex/TekweldAIR.mxml" destPath="vend/vendor/components/Vendor.swf" optimize="true" sourcePath="app/flex/vend/vendor/components/Vendor.mxml"/>
+    <module application="app/flex/TekweldAIR.mxml" destPath="acct/custreceipt/components/CustomerReceipt.swf" optimize="true" sourcePath="app/flex/acct/custreceipt/components/CustomerReceipt.mxml"/>
+    <module application="app/flex/TekweldAIR.mxml" destPath="saoi/holidays/components/Holidays.swf" optimize="true" sourcePath="app/flex/saoi/holidays/components/Holidays.mxml"/>
+    <module application="app/flex/TekweldAIR.mxml" destPath="stup/userrolepermission/components/UserRolePermission.swf" optimize="true" sourcePath="app/flex/stup/userrolepermission/components/UserRolePermission.mxml"/>
+    <module application="app/flex/TekweldAIR.mxml" destPath="rept/acct/bank/depositregister/components/DepositRegister.swf" optimize="true" sourcePath="app/flex/rept/acct/bank/depositregister/components/DepositRegister.mxml"/>
+    <module application="app/flex/TekweldAIR.mxml" destPath="rept/acct/vend/backdatedagingsummary/components/BackdatedAgingSummary.swf" optimize="true" sourcePath="app/flex/rept/acct/vend/backdatedagingsummary/components/BackdatedAgingSummary.mxml"/>
+    <module application="app/flex/TekweldAIR.mxml" destPath="rept/acct/cust/creditinvoiceregister/components/CreditInvoiceRegister.swf" optimize="true" sourcePath="app/flex/rept/acct/cust/creditinvoiceregister/components/CreditInvoiceRegister.mxml"/>
+    <module application="app/flex/TekweldAIR.mxml" destPath="rept/ctlg/orderstatusreport/components/OrderStatusReport.swf" optimize="true" sourcePath="app/flex/rept/ctlg/orderstatusreport/components/OrderStatusReport.mxml"/>
+    <module application="app/flex/TekweldAIR.mxml" destPath="rept/ctlg/enquiryregister/components/EnquiryRegister.swf" optimize="true" sourcePath="app/flex/rept/ctlg/enquiryregister/components/EnquiryRegister.mxml"/>
+    <module application="app/flex/TekweldAIR.mxml" destPath="prod/embroideryfilm/components/EmbroideryFilm.swf" optimize="true" sourcePath="app/flex/prod/embroideryfilm/components/EmbroideryFilm.mxml"/>
+    <module application="app/flex/TekweldAIR.mxml" destPath="rept/dinvn/stockagingdetailreport/components/StockAgingDetailReport.swf" optimize="true" sourcePath="app/flex/rept/dinvn/stockagingdetailreport/components/StockAgingDetailReport.mxml"/>
+    <module application="app/flex/TekweldAIR.mxml" destPath="rept/saoi/creditinvoiceregister/components/CreditInvoiceRegister.swf" optimize="true" sourcePath="app/flex/rept/saoi/creditinvoiceregister/components/CreditInvoiceRegister.mxml"/>
+    <module application="app/flex/TekweldAIR.mxml" destPath="rept/dsaoi/creditinvoiceregister/components/CreditInvoiceRegister.swf" optimize="true" sourcePath="app/flex/rept/dsaoi/creditinvoiceregister/components/CreditInvoiceRegister.mxml"/>
+    <module application="app/flex/TekweldAIR.mxml" destPath="acct/custcreditinvoiceapply/components/CustomerCreditInvoiceApply.swf" optimize="true" sourcePath="app/flex/acct/custcreditinvoiceapply/components/CustomerCreditInvoiceApply.mxml"/>
+    <module application="app/flex/TekweldAIR.mxml" destPath="saoi/orderreceive/components/OrderReceive.swf" optimize="true" sourcePath="app/flex/saoi/orderreceive/components/OrderReceive.mxml"/>
+    <module application="app/flex/TekweldAIR.mxml" destPath="saoi/salespeople/components/SalesPeople.swf" optimize="true" sourcePath="app/flex/saoi/salespeople/components/SalesPeople.mxml"/>
+    <module application="app/flex/TekweldAIR.mxml" destPath="dashboard/components/Dashboardmodule.swf" optimize="true" sourcePath="app/flex/dashboard/components/Dashboardmodule.mxml"/>
+    <module application="app/flex/TekweldAIR.mxml" destPath="rept/ctlg/orderregister/components/OrderRegister.swf" optimize="true" sourcePath="app/flex/rept/ctlg/orderregister/components/OrderRegister.mxml"/>
+    <module application="app/flex/TekweldAIR.mxml" destPath="rept/melt/packetactivityreport/components/PacketActivityReport.swf" optimize="true" sourcePath="app/flex/rept/melt/packetactivityreport/components/PacketActivityReport.mxml"/>
+    <module application="app/flex/TekweldAIR.mxml" destPath="rept/invn/physicalstockchecklistreport/components/PhysicalStockCheckListReport.swf" optimize="true" sourcePath="app/flex/rept/invn/physicalstockchecklistreport/components/PhysicalStockCheckListReport.mxml"/>
+    <module application="app/flex/TekweldAIR.mxml" destPath="rept/saoi/orderregister/components/OrderRegister.swf" optimize="true" sourcePath="app/flex/rept/saoi/orderregister/components/OrderRegister.mxml"/>
+    <module application="app/flex/TekweldAIR.mxml" destPath="rept/dinvn/storetransferreport/components/StoreTransferReport.swf" optimize="true" sourcePath="app/flex/rept/dinvn/storetransferreport/components/StoreTransferReport.mxml"/>
+    <module application="app/flex/TekweldAIR.mxml" destPath="stup/moodule/components/Moodule.swf" optimize="true" sourcePath="app/flex/stup/moodule/components/Moodule.mxml"/>
+    <module application="app/flex/TekweldAIR.mxml" destPath="acct/custreceiptapply/components/CustomerReceiptApply.swf" optimize="true" sourcePath="app/flex/acct/custreceiptapply/components/CustomerReceiptApply.mxml"/>
+    <module application="app/flex/TekweldAIR.mxml" destPath="saoi/assignedartwork/components/AssignedArtwork.swf" optimize="true" sourcePath="app/flex/saoi/assignedartwork/components/AssignedArtwork.mxml"/>
+    <module application="app/flex/TekweldAIR.mxml" destPath="crm/activity/components/Activity.swf" optimize="true" sourcePath="app/flex/crm/activity/components/Activity.mxml"/>
+    <module application="app/flex/TekweldAIR.mxml" destPath="ship/padshipping/components/PadShipping.swf" optimize="true" sourcePath="app/flex/ship/padshipping/components/PadShipping.mxml"/>
+    <module application="app/flex/TekweldAIR.mxml" destPath="rept/acct/cust/backdatedagingdetail/components/BackdatedAgingDetail.swf" optimize="true" sourcePath="app/flex/rept/acct/cust/backdatedagingdetail/components/BackdatedAgingDetail.mxml"/>
+    <module application="app/flex/TekweldAIR.mxml" destPath="invn/itemtransfer/components/ItemTransfer.swf" optimize="true" sourcePath="app/flex/invn/itemtransfer/components/ItemTransfer.mxml"/>
+    <module application="app/flex/TekweldAIR.mxml" destPath="saoi/reorder/components/ReOrder.swf" optimize="true" sourcePath="app/flex/saoi/reorder/components/ReOrder.mxml"/>
+    <module application="app/flex/TekweldAIR.mxml" destPath="rept/pos/openorderreport/components/OpenOrderReport.swf" optimize="true" sourcePath="app/flex/rept/pos/openorderreport/components/OpenOrderReport.mxml"/>
+    <module application="app/flex/TekweldAIR.mxml" destPath="rept/dinvn/stockagingsummaryreport/components/StockAgingSummaryReport.swf" optimize="true" sourcePath="app/flex/rept/dinvn/stockagingsummaryreport/components/StockAgingSummaryReport.mxml"/>
+    <module application="app/flex/TekweldAIR.mxml" destPath="rept/acct/gl/generalledgersummary/components/GeneralLedgerSummary.swf" optimize="true" sourcePath="app/flex/rept/acct/gl/generalledgersummary/components/GeneralLedgerSummary.mxml"/>
+    <module application="app/flex/TekweldAIR.mxml" destPath="saoi/qcorder/components/QcOrder.swf" optimize="true" sourcePath="app/flex/saoi/qcorder/components/QcOrder.mxml"/>
+    <module application="app/flex/TekweldAIR.mxml" destPath="puoi/purchaseorder/components/PurchaseOrder.swf" optimize="true" sourcePath="app/flex/puoi/purchaseorder/components/PurchaseOrder.mxml"/>
+    <module application="app/flex/TekweldAIR.mxml" destPath="rept/invn/receivereport/components/ReceiveReport.swf" optimize="true" sourcePath="app/flex/rept/invn/receivereport/components/ReceiveReport.mxml"/>
+    <module application="app/flex/TekweldAIR.mxml" destPath="rept/dsaoi/memoregister/components/MemoRegister.swf" optimize="true" sourcePath="app/flex/rept/dsaoi/memoregister/components/MemoRegister.mxml"/>
+    <module application="app/flex/TekweldAIR.mxml" destPath="acct/vendinvoice/components/VendorInvoice.swf" optimize="true" sourcePath="app/flex/acct/vendinvoice/components/VendorInvoice.mxml"/>
+    <module application="app/flex/TekweldAIR.mxml" destPath="rept/dpuoi/memoreturnregister/components/MemoReturnRegister.swf" optimize="true" sourcePath="app/flex/rept/dpuoi/memoreturnregister/components/MemoReturnRegister.mxml"/>
+    <module application="app/flex/TekweldAIR.mxml" destPath="acct/bankreconciliation/components/BankReconciliation.swf" optimize="true" sourcePath="app/flex/acct/bankreconciliation/components/BankReconciliation.mxml"/>
+    <module application="app/flex/TekweldAIR.mxml" destPath="rept/puoi/cancellationregister/components/CancellationRegister.swf" optimize="true" sourcePath="app/flex/rept/puoi/cancellationregister/components/CancellationRegister.mxml"/>
+    <module application="app/flex/TekweldAIR.mxml" destPath="ship/directshipping/components/DirectShipping.swf" optimize="true" sourcePath="app/flex/ship/directshipping/components/DirectShipping.mxml"/>
+    <module application="app/flex/TekweldAIR.mxml" destPath="prod/embroiderystich/components/EmbroideryStich.swf" optimize="true" sourcePath="app/flex/prod/embroiderystich/components/EmbroideryStich.mxml"/>
+    <module application="app/flex/TekweldAIR.mxml" destPath="ship/shipjob/components/ShipJob.swf" optimize="true" sourcePath="app/flex/ship/shipjob/components/ShipJob.mxml"/>
+    <module application="app/flex/TekweldAIR.mxml" destPath="rept/melt/optoutreport/components/OptOutReport.swf" optimize="true" sourcePath="app/flex/rept/melt/optoutreport/components/OptOutReport.mxml"/>
+    <module application="app/flex/TekweldAIR.mxml" destPath="rept/invn/stockwithpacketreport/components/StockWithPacketReport.swf" optimize="true" sourcePath="app/flex/rept/invn/stockwithpacketreport/components/StockWithPacketReport.mxml"/>
+    <module application="app/flex/TekweldAIR.mxml" destPath="invn/attribute/components/Attribute.swf" optimize="true" sourcePath="app/flex/invn/attribute/components/Attribute.mxml"/>
+    <module application="app/flex/TekweldAIR.mxml" destPath="rept/acct/bank/bankbalancereport/components/BankBalanceReport.swf" optimize="true" sourcePath="app/flex/rept/acct/bank/bankbalancereport/components/BankBalanceReport.mxml"/>
+    <module application="app/flex/TekweldAIR.mxml" destPath="acct/glsetup/components/GLSetup.swf" optimize="true" sourcePath="app/flex/acct/glsetup/components/GLSetup.mxml"/>
+    <module application="app/flex/TekweldAIR.mxml" destPath="acct/glcategory/components/GLCategory.swf" optimize="true" sourcePath="app/flex/acct/glcategory/components/GLCategory.mxml"/>
+    <module application="app/flex/TekweldAIR.mxml" destPath="rept/ctlg/openaccountreceivablereport/components/OpenAccountReceivableReport.swf" optimize="true" sourcePath="app/flex/rept/ctlg/openaccountreceivablereport/components/OpenAccountReceivableReport.mxml"/>
+    <module application="app/flex/TekweldAIR.mxml" destPath="saoi/virtualorder/components/VirtualOrder.swf" optimize="true" sourcePath="app/flex/saoi/virtualorder/components/VirtualOrder.mxml"/>
+    <module application="app/flex/TekweldAIR.mxml" destPath="rept/dsaoi/netsalesregister/components/NetSalesRegister.swf" optimize="true" sourcePath="app/flex/rept/dsaoi/netsalesregister/components/NetSalesRegister.mxml"/>
+    <module application="app/flex/TekweldAIR.mxml" destPath="crm/address/components/Address.swf" optimize="true" sourcePath="app/flex/crm/address/components/Address.mxml"/>
+    <module application="app/flex/TekweldAIR.mxml" destPath="rept/saoi/invoiceregisteroneline/components/InvoiceRegisterOneLine.swf" optimize="true" sourcePath="app/flex/rept/saoi/invoiceregisteroneline/components/InvoiceRegisterOneLine.mxml"/>
+    <module application="app/flex/TekweldAIR.mxml" destPath="rept/melt/commissionduereport/components/CommissionDueReport.swf" optimize="true" sourcePath="app/flex/rept/melt/commissionduereport/components/CommissionDueReport.mxml"/>
+    <module application="app/flex/TekweldAIR.mxml" destPath="acct/banktransfer/components/BankTransfer.swf" optimize="true" sourcePath="app/flex/acct/banktransfer/components/BankTransfer.mxml"/>
+    <module application="app/flex/TekweldAIR.mxml" destPath="rept/dpuoi/invoiceregister/components/InvoiceRegister.swf" optimize="true" sourcePath="app/flex/rept/dpuoi/invoiceregister/components/InvoiceRegister.mxml"/>
+    <module application="app/flex/TekweldAIR.mxml" destPath="rept/puoi/invoiceregisteroneline/components/InvoiceRegisterOneLine.swf" optimize="true" sourcePath="app/flex/rept/puoi/invoiceregisteroneline/components/InvoiceRegisterOneLine.mxml"/>
+    <module application="app/flex/TekweldAIR.mxml" destPath="prod/decalimposition/components/DecalImposition.swf" optimize="true" sourcePath="app/flex/prod/decalimposition/components/DecalImposition.mxml"/>
+    <module application="app/flex/TekweldAIR.mxml" destPath="rept/invn/storetransferreport/components/StoreTransferReport.swf" optimize="true" sourcePath="app/flex/rept/invn/storetransferreport/components/StoreTransferReport.mxml"/>
+    <module application="app/flex/TekweldAIR.mxml" destPath="cust/customerpaymentprofile/components/CustomerPaymentProfile.swf" optimize="true" sourcePath="app/flex/cust/customerpaymentprofile/components/CustomerPaymentProfile.mxml"/>
+    <module application="app/flex/TekweldAIR.mxml" destPath="prod/productionflow/components/ProductionFlow.swf" optimize="true" sourcePath="app/flex/prod/productionflow/components/ProductionFlow.mxml"/>
+    <module application="app/flex/TekweldAIR.mxml" destPath="saoi/assignedorder/components/AssignedOrder.swf" optimize="true" sourcePath="app/flex/saoi/assignedorder/components/AssignedOrder.mxml"/>
+    <module application="app/flex/TekweldAIR.mxml" destPath="acct/custcreditinvoice/components/CustomerCreditInvoice.swf" optimize="true" sourcePath="app/flex/acct/custcreditinvoice/components/CustomerCreditInvoice.mxml"/>
+    <module application="app/flex/TekweldAIR.mxml" destPath="rept/dpuoi/creditinvoiceregister/components/CreditInvoiceRegister.swf" optimize="true" sourcePath="app/flex/rept/dpuoi/creditinvoiceregister/components/CreditInvoiceRegister.mxml"/>
+    <module application="app/flex/TekweldAIR.mxml" destPath="saoi/orderflow/components/OrderFlow.swf" optimize="true" sourcePath="app/flex/saoi/orderflow/components/OrderFlow.mxml"/>
+    <module application="app/flex/TekweldAIR.mxml" destPath="acct/bankdeposit/components/BankDeposit.swf" optimize="true" sourcePath="app/flex/acct/bankdeposit/components/BankDeposit.mxml"/>
+    <module application="app/flex/TekweldAIR.mxml" destPath="rept/dsaoi/invoiceregister/components/InvoiceRegister.swf" optimize="true" sourcePath="app/flex/rept/dsaoi/invoiceregister/components/InvoiceRegister.mxml"/>
+    <module application="app/flex/TekweldAIR.mxml" destPath="rept/ctlg/opensalesmemoreport/components/OpenSalesMemoReport.swf" optimize="true" sourcePath="app/flex/rept/ctlg/opensalesmemoreport/components/OpenSalesMemoReport.mxml"/>
+    <module application="app/flex/TekweldAIR.mxml" destPath="rept/saoi/cancellationregister/components/CancellationRegister.swf" optimize="true" sourcePath="app/flex/rept/saoi/cancellationregister/components/CancellationRegister.mxml"/>
+    <module application="app/flex/TekweldAIR.mxml" destPath="rept/invn/itempricehistoryreport/components/ItemPriceHistoryReport.swf" optimize="true" sourcePath="app/flex/rept/invn/itempricehistoryreport/components/ItemPriceHistoryReport.mxml"/>
+    <module application="app/flex/TekweldAIR.mxml" destPath="invn/issue/components/Issue.swf" optimize="true" sourcePath="app/flex/invn/issue/components/Issue.mxml"/>
+    <module application="app/flex/TekweldAIR.mxml" destPath="rept/dinvn/issuereport/components/IssueReport.swf" optimize="true" sourcePath="app/flex/rept/dinvn/issuereport/components/IssueReport.mxml"/>
+    <module application="app/flex/TekweldAIR.mxml" destPath="prod/threadcolormaster/components/ThreadColorMaster.swf" optimize="true" sourcePath="app/flex/prod/threadcolormaster/components/ThreadColorMaster.mxml"/>
+    <module application="app/flex/TekweldAIR.mxml" destPath="invn/item/components/Item.swf" optimize="true" sourcePath="app/flex/invn/item/components/Item.mxml"/>
+    <module application="app/flex/TekweldAIR.mxml" destPath="rept/acct/gl/trialbalancedetail/components/TrialBalanceDetail.swf" optimize="true" sourcePath="app/flex/rept/acct/gl/trialbalancedetail/components/TrialBalanceDetail.mxml"/>
+    <module application="app/flex/TekweldAIR.mxml" destPath="rept/puoi/openmemoreport/components/OpenMemoReport.swf" optimize="true" sourcePath="app/flex/rept/puoi/openmemoreport/components/OpenMemoReport.mxml"/>
+    <module application="app/flex/TekweldAIR.mxml" destPath="invn/transactionBOM/components/TransactionBOM.swf" optimize="true" sourcePath="app/flex/invn/transactionBOM/components/TransactionBOM.mxml"/>
+    <module application="app/flex/TekweldAIR.mxml" destPath="rept/puoi/memoreturnregister/components/MemoReturnRegister.swf" optimize="true" sourcePath="app/flex/rept/puoi/memoreturnregister/components/MemoReturnRegister.mxml"/>
+    <module application="app/flex/TekweldAIR.mxml" destPath="acct/vendcreditinvoiceapply/components/VendorCreditInvoiceApply.swf" optimize="true" sourcePath="app/flex/acct/vendcreditinvoiceapply/components/VendorCreditInvoiceApply.mxml"/>
+    <module application="app/flex/TekweldAIR.mxml" destPath="rept/melt/packetrequestreport/components/PacketRequestReport.swf" optimize="true" sourcePath="app/flex/rept/melt/packetrequestreport/components/PacketRequestReport.mxml"/>
+    <module application="app/flex/TekweldAIR.mxml" destPath="rept/invn/backdatedstockreport/components/BackdatedStockReport.swf" optimize="true" sourcePath="app/flex/rept/invn/backdatedstockreport/components/BackdatedStockReport.mxml"/>
+    <module application="app/flex/TekweldAIR.mxml" destPath="puoi/purchasecreditinvoice/components/PurchaseCreditInvoice.swf" optimize="true" sourcePath="app/flex/puoi/purchasecreditinvoice/components/PurchaseCreditInvoice.mxml"/>
+    <module application="app/flex/TekweldAIR.mxml" destPath="prod/receivedigitizedjob/components/ReceiveDigitizedJob.swf" optimize="true" sourcePath="app/flex/prod/receivedigitizedjob/components/ReceiveDigitizedJob.mxml"/>
+    <module application="app/flex/TekweldAIR.mxml" destPath="stup/reportwriter/components/ReportWriter.swf" optimize="true" sourcePath="app/flex/stup/reportwriter/components/ReportWriter.mxml"/>
+    <module application="app/flex/TekweldAIR.mxml" destPath="rept/acct/bank/paymentregister/components/PaymentRegister.swf" optimize="true" sourcePath="app/flex/rept/acct/bank/paymentregister/components/PaymentRegister.mxml"/>
+    <module application="app/flex/TekweldAIR.mxml" destPath="rept/saoi/memoregister/components/MemoRegister.swf" optimize="true" sourcePath="app/flex/rept/saoi/memoregister/components/MemoRegister.mxml"/>
+    <module application="app/flex/TekweldAIR.mxml" destPath="rept/dinvn/allstorestockreport/components/AllStoreStockReport.swf" optimize="true" sourcePath="app/flex/rept/dinvn/allstorestockreport/components/AllStoreStockReport.mxml"/>
+    <module application="app/flex/TekweldAIR.mxml" destPath="cust/contact/components/Contact.swf" optimize="true" sourcePath="app/flex/cust/contact/components/Contact.mxml"/>
+    <module application="app/flex/TekweldAIR.mxml" destPath="rept/saoi/netsalesregister/components/NetSalesRegister.swf" optimize="true" sourcePath="app/flex/rept/saoi/netsalesregister/components/NetSalesRegister.mxml"/>
+    <module application="app/flex/TekweldAIR.mxml" destPath="stup/shipping/components/Shipping.swf" optimize="true" sourcePath="app/flex/stup/shipping/components/Shipping.mxml"/>
+    <module application="app/flex/TekweldAIR.mxml" destPath="stup/document/components/Document.swf" optimize="true" sourcePath="app/flex/stup/document/components/Document.mxml"/>
+    <module application="app/flex/TekweldAIR.mxml" destPath="rept/saoi/invoiceregister/components/InvoiceRegister.swf" optimize="true" sourcePath="app/flex/rept/saoi/invoiceregister/components/InvoiceRegister.mxml"/>
+    <module application="app/flex/TekweldAIR.mxml" destPath="rept/melt/commissionreport/components/CommissionReport.swf" optimize="true" sourcePath="app/flex/rept/melt/commissionreport/components/CommissionReport.mxml"/>
+    <module application="app/flex/TekweldAIR.mxml" destPath="stup/role/components/Role.swf" optimize="true" sourcePath="app/flex/stup/role/components/Role.mxml"/>
+    <module application="app/flex/TekweldAIR.mxml" destPath="acct/custinvoice/components/CustomerInvoice.swf" optimize="true" sourcePath="app/flex/acct/custinvoice/components/CustomerInvoice.mxml"/>
+    <module application="app/flex/TekweldAIR.mxml" destPath="cust/dailycreditlimit/components/DailyCreditLimit.swf" optimize="true" sourcePath="app/flex/cust/dailycreditlimit/components/DailyCreditLimit.mxml"/>
+    <module application="app/flex/TekweldAIR.mxml" destPath="stup/accountingperiod/components/AccountingPeriod.swf" optimize="true" sourcePath="app/flex/stup/accountingperiod/components/AccountingPeriod.mxml"/>
+    <module application="app/flex/TekweldAIR.mxml" destPath="rept/acct/bank/transferregister/components/TransferRegister.swf" optimize="true" sourcePath="app/flex/rept/acct/bank/transferregister/components/TransferRegister.mxml"/>
+    <module application="app/flex/TekweldAIR.mxml" destPath="vend/category/components/VendorCategory.swf" optimize="true" sourcePath="app/flex/vend/category/components/VendorCategory.mxml"/>
+    <module application="app/flex/TekweldAIR.mxml" destPath="rept/saoi/openmemoreport/components/OpenMemoReport.swf" optimize="true" sourcePath="app/flex/rept/saoi/openmemoreport/components/OpenMemoReport.mxml"/>
+    <module application="app/flex/TekweldAIR.mxml" destPath="prod/indigojob/components/IndigoJob.swf" optimize="true" sourcePath="app/flex/prod/indigojob/components/IndigoJob.mxml"/>
+    <module application="app/flex/TekweldAIR.mxml" destPath="prod/gumprint/components/GumPrint.swf" optimize="true" sourcePath="app/flex/prod/gumprint/components/GumPrint.mxml"/>
+    <module application="app/flex/TekweldAIR.mxml" destPath="rept/dinvn/receivereport/components/ReceiveReport.swf" optimize="true" sourcePath="app/flex/rept/dinvn/receivereport/components/ReceiveReport.mxml"/>
+    <module application="app/flex/TekweldAIR.mxml" destPath="saoi/invalidcustomeremailorder/components/InvalidCustomerEmail.swf" optimize="true" sourcePath="app/flex/saoi/invalidcustomeremailorder/components/InvalidCustomerEmail.mxml"/>
+    <module application="app/flex/TekweldAIR.mxml" destPath="acct/bounceandvoidcheck/components/BounceAndVoidCheck.swf" optimize="true" sourcePath="app/flex/acct/bounceandvoidcheck/components/BounceAndVoidCheck.mxml"/>
+    <module application="app/flex/TekweldAIR.mxml" destPath="rept/prod/contractormemoregister/components/ContractorMemoRegister.swf" optimize="true" sourcePath="app/flex/rept/prod/contractormemoregister/components/ContractorMemoRegister.mxml"/>
+    <module application="app/flex/TekweldAIR.mxml" destPath="rept/saoi/useractivity/components/UserActivity.swf" optimize="true" sourcePath="app/flex/rept/saoi/useractivity/components/UserActivity.mxml"/>
+    <module application="app/flex/TekweldAIR.mxml" destPath="acct/term/components/Term.swf" optimize="true" sourcePath="app/flex/acct/term/components/Term.mxml"/>
+    <module application="app/flex/TekweldAIR.mxml" destPath="rept/dinvn/activityreport/components/ActivityReport.swf" optimize="true" sourcePath="app/flex/rept/dinvn/activityreport/components/ActivityReport.mxml"/>
+    <module application="app/flex/TekweldAIR.mxml" destPath="rept/acct/cust/receiptregister/components/ReceiptRegister.swf" optimize="true" sourcePath="app/flex/rept/acct/cust/receiptregister/components/ReceiptRegister.mxml"/>
+    <module application="app/flex/TekweldAIR.mxml" destPath="rept/puoi/openindentreport/components/OpenIndentReport.swf" optimize="true" sourcePath="app/flex/rept/puoi/openindentreport/components/OpenIndentReport.mxml"/>
+    <module application="app/flex/TekweldAIR.mxml" destPath="rept/invn/stockagingdetailreport/components/StockAgingDetailReport.swf" optimize="true" sourcePath="app/flex/rept/invn/stockagingdetailreport/components/StockAgingDetailReport.mxml"/>
+    <module application="app/flex/TekweldAIR.mxml" destPath="prod/paidprint/components/PaidPrint.swf" optimize="true" sourcePath="app/flex/prod/paidprint/components/PaidPrint.mxml"/>
+    <module application="app/flex/TekweldAIR.mxml" destPath="saoi/reviewartwork/components/ReviewArtwork.swf" optimize="true" sourcePath="app/flex/saoi/reviewartwork/components/ReviewArtwork.mxml"/>
+    <module application="app/flex/TekweldAIR.mxml" destPath="rept/prod/plansheet/components/PlanSheet.swf" optimize="true" sourcePath="app/flex/rept/prod/plansheet/components/PlanSheet.mxml"/>
+    <module application="app/flex/TekweldAIR.mxml" destPath="rept/prod/labmemoreturnregister/components/LabMemoReturnRegister.swf" optimize="true" sourcePath="app/flex/rept/prod/labmemoreturnregister/components/LabMemoReturnRegister.mxml"/>
+    <module application="app/flex/TekweldAIR.mxml" destPath="rept/invn/stockagingsummaryreport/components/StockAgingSummaryReport.swf" optimize="true" sourcePath="app/flex/rept/invn/stockagingsummaryreport/components/StockAgingSummaryReport.mxml"/>
+    <module application="app/flex/TekweldAIR.mxml" destPath="rept/prod/openworkbagreport/components/OpenWorkbagReport.swf" optimize="true" sourcePath="app/flex/rept/prod/openworkbagreport/components/OpenWorkbagReport.mxml"/>
+    <module application="app/flex/TekweldAIR.mxml" destPath="rept/pos/priceexceptionreport/components/PriceExceptionReport.swf" optimize="true" sourcePath="app/flex/rept/pos/priceexceptionreport/components/PriceExceptionReport.mxml"/>
+    <module application="app/flex/TekweldAIR.mxml" destPath="crm/account/components/Account.swf" optimize="true" sourcePath="app/flex/crm/account/components/Account.mxml"/>
+    <module application="app/flex/TekweldAIR.mxml" destPath="prod/packagejob/components/PackageJob.swf" optimize="true" sourcePath="app/flex/prod/packagejob/components/PackageJob.mxml"/>
+    <module application="app/flex/TekweldAIR.mxml" destPath="saoi/salesinvoice/components/SalesInvoice.swf" optimize="true" sourcePath="app/flex/saoi/salesinvoice/components/SalesInvoice.mxml"/>
+    <module application="app/flex/TekweldAIR.mxml" destPath="rept/prod/openlabmemoreport/components/OpenLabMemoReport.swf" optimize="true" sourcePath="app/flex/rept/prod/openlabmemoreport/components/OpenLabMemoReport.mxml"/>
+    <module application="app/flex/TekweldAIR.mxml" destPath="saoi/salesorder/components/SalesOrder.swf" optimize="true" sourcePath="app/flex/saoi/salesorder/components/SalesOrder.mxml"/>
+    <module application="app/flex/TekweldAIR.mxml" destPath="prod/cut/components/Cut.swf" optimize="true" sourcePath="app/flex/prod/cut/components/Cut.mxml"/>
+    <module application="app/flex/TekweldAIR.mxml" destPath="rept/acct/vend/creditinvoiceregister/components/CreditInvoiceRegister.swf" optimize="true" sourcePath="app/flex/rept/acct/vend/creditinvoiceregister/components/CreditInvoiceRegister.mxml"/>
+    <module application="app/flex/TekweldAIR.mxml" destPath="rept/acct/journal/journalregister/components/JournalRegister.swf" optimize="true" sourcePath="app/flex/rept/acct/journal/journalregister/components/JournalRegister.mxml"/>
+    <module application="app/flex/TekweldAIR.mxml" destPath="rept/prod/labmemoregister/components/LabMemoRegister.swf" optimize="true" sourcePath="app/flex/rept/prod/labmemoregister/components/LabMemoRegister.mxml"/>
+    <module application="app/flex/TekweldAIR.mxml" destPath="rept/invn/physicalstockvariancereport/components/PhysicalStockVarianceReport.swf" optimize="true" sourcePath="app/flex/rept/invn/physicalstockvariancereport/components/PhysicalStockVarianceReport.mxml"/>
+    <module application="app/flex/TekweldAIR.mxml" destPath="stup/rolepermission/components/RolePermission.swf" optimize="true" sourcePath="app/flex/stup/rolepermission/components/RolePermission.mxml"/>
+    <module application="app/flex/TekweldAIR.mxml" destPath="saoi/orderestimationinbox/components/OrderEstimationInbox.swf" optimize="true" sourcePath="app/flex/saoi/orderestimationinbox/components/OrderEstimationInbox.mxml"/>
+    <module application="app/flex/TekweldAIR.mxml" destPath="saoi/sendforestimation/components/SendForEstimation.swf" optimize="true" sourcePath="app/flex/saoi/sendforestimation/components/SendForEstimation.mxml"/>
+    <module application="app/flex/TekweldAIR.mxml" destPath="acct/journal/components/Journal.swf" optimize="true" sourcePath="app/flex/acct/journal/components/Journal.mxml"/>
+    <module application="app/flex/TekweldAIR.mxml" destPath="rept/melt/upspacketreport/components/UpsPacketReport.swf" optimize="true" sourcePath="app/flex/rept/melt/upspacketreport/components/UpsPacketReport.mxml"/>
+    <module application="app/flex/TekweldAIR.mxml" destPath="invn/receive/components/Receive.swf" optimize="true" sourcePath="app/flex/invn/receive/components/Receive.mxml"/>
+    <module application="app/flex/TekweldAIR.mxml" destPath="rept/prod/productiontracking/components/ProductionTracking.swf" optimize="true" sourcePath="app/flex/rept/prod/productiontracking/components/ProductionTracking.mxml"/>
+    <module application="app/flex/TekweldAIR.mxml" destPath="rept/acct/cust/invoiceregister/components/InvoiceRegister.swf" optimize="true" sourcePath="app/flex/rept/acct/cust/invoiceregister/components/InvoiceRegister.mxml"/>
+    <module application="app/flex/TekweldAIR.mxml" destPath="rept/acct/gl/generalledgerdetail/components/GeneralLedgerDetail.swf" optimize="true" sourcePath="app/flex/rept/acct/gl/generalledgerdetail/components/GeneralLedgerDetail.mxml"/>
+    <module application="app/flex/TekweldAIR.mxml" destPath="rept/dsaoi/openmemoreport/components/OpenMemoReport.swf" optimize="true" sourcePath="app/flex/rept/dsaoi/openmemoreport/components/OpenMemoReport.mxml"/>
+    <module application="app/flex/TekweldAIR.mxml" destPath="prod/pickjob/components/PickJob.swf" optimize="true" sourcePath="app/flex/prod/pickjob/components/PickJob.mxml"/>
+    <module application="app/flex/TekweldAIR.mxml" destPath="acct/bankpayment/components/BankPayment.swf" optimize="true" sourcePath="app/flex/acct/bankpayment/components/BankPayment.mxml"/>
+    <module application="app/flex/TekweldAIR.mxml" destPath="rept/melt/optinreport/components/OptInReport.swf" optimize="true" sourcePath="app/flex/rept/melt/optinreport/components/OptInReport.mxml"/>
+    <module application="app/flex/TekweldAIR.mxml" destPath="rept/dpuoi/openmemoreport/components/OpenMemoReport.swf" optimize="true" sourcePath="app/flex/rept/dpuoi/openmemoreport/components/OpenMemoReport.mxml"/>
+    <module application="app/flex/TekweldAIR.mxml" destPath="saoi/salescreditinvoice/components/SalesCreditInvoice.swf" optimize="true" sourcePath="app/flex/saoi/salescreditinvoice/components/SalesCreditInvoice.mxml"/>
+    <module application="app/flex/TekweldAIR.mxml" destPath="saoi/waitingartwork/components/WaitingArtwork.swf" optimize="true" sourcePath="app/flex/saoi/waitingartwork/components/WaitingArtwork.mxml"/>
+    <module application="app/flex/TekweldAIR.mxml" destPath="prod/directproduction/components/DirectProduction.swf" optimize="true" sourcePath="app/flex/prod/directproduction/components/DirectProduction.mxml"/>
+    <module application="app/flex/TekweldAIR.mxml" destPath="rept/saoi/incompletestatus/components/IncompleteStatus.swf" optimize="true" sourcePath="app/flex/rept/saoi/incompletestatus/components/IncompleteStatus.mxml"/>
+    <module application="app/flex/TekweldAIR.mxml" destPath="rept/saoi/paymentholdregister/components/PaymentHoldRegister.swf" optimize="true" sourcePath="app/flex/rept/saoi/paymentholdregister/components/PaymentHoldRegister.mxml"/>
+  </modules>
+  <buildCSSFiles/>
+  <flashCatalyst validateFlashCatalystCompatibility="false"/>
+  <buildTargets>
+    <buildTarget buildTargetName="default">
+      <airSettings airCertificatePath="D:/projects/flex45/tekweld_release/tekweld_certificate.p12" airTimestamp="false" version="1">
+        <airExcludes/>
+      </airSettings>
+      <actionScriptSettings version="1"/>
+    </buildTarget>
+  </buildTargets>
+</actionScriptProperties>

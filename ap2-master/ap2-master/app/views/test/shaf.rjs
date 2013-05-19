@@ -1,0 +1,7 @@
+msg = "Name: " + @user.name + "\n"
+msg += "Email:" + @user.email + "\n"
+msg += "Phones:" + "\n"
+@user.phones.each do |p|
+  msg += "\t" + p.number + "\n"
+end
+page.alert(msg)

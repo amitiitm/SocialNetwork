@@ -1,0 +1,15 @@
+<columns lockedColumnCount='0'>
+
+	<column data='serial_no'	label='Serial #'	editable='false'	visible='true'		width='60'	textAlign='left' 
+			forLevel='false' 	defaultForLevel='' 	booleanFlag='false' sortDataType='N'	columnPrecision="0"/>
+			
+	<column data='trans_dt' 	label='Date' 		editable='false' 	visible='true' 		width='60' 	textAlign='left' 
+			forLevel='false' 	defaultForLevel='' 	booleanFlag='false' sortDataType='D'	columnPrecision="NaN"/>
+			
+	<column data='trans_flag' 	label='Status' 		editable='false' 	visible='true' 		width='60' 	textAlign='left' 
+			forLevel='false' 	defaultForLevel='' 	booleanFlag='false' sortDataType='S'	columnPrecision="NaN"/>
+			
+	<column data='daily_notes' 	label='Notes' 		editable='false' 	visible='true' 		width='60' 	textAlign='left' 
+			forLevel='false' 	defaultForLevel='' 	booleanFlag='false' sortDataType='S'	columnPrecision="NaN"/>
+			
+</columns>  

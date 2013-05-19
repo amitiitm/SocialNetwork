@@ -1,0 +1,2 @@
+module GeneralTemplatesHelper
+end

@@ -1,0 +1,13 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  domain: MyString
+  transport: MyString
+  enabled: false
+  account_id: 1
+
+two:
+  domain: MyString
+  transport: MyString
+  enabled: false
+  account_id: 1

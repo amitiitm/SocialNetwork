@@ -1,0 +1,20 @@
+--- 
+CATALOG_PROMOTIONS_001: 
+  image4_link: A449,A448
+  image3_link: A448,A450
+  updated_at: 2010-09-17 10:44:42
+  image2_link: A447,A450
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  image1: Template2.jpg
+  lock_version: 18
+  image2: Thumb1.jpg
+  updated_by: 100
+  id: 100
+  image3: Thumb2.jpg
+  image1_link: A447,A450
+  image4: Thumb3.jpg
+  company_id: 1
+  template_type: t1
+  created_at: 2010-09-07 14:39:59

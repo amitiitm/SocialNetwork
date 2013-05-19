@@ -1,0 +1,16 @@
+<columns>
+		<column data='section' label='Section' editable='false' visible='true' width='80' textAlign='left' 	
+				dataType='S'  sortDataType='S' columnPrecision="NaN" booleanFlag='false' componentType="Text"	/>
+
+		<column data='main_heading' label='Main Heading' editable='false' visible='true' width='80' textAlign='left' 	
+				dataType='S'  sortDataType='S' columnPrecision="NaN" booleanFlag='false' componentType="Text"	/>	
+				
+		<column data='main_heading_code' label='Main Heading Code' editable='false' visible='true' width='80' textAlign='left' 	
+				dataType='S'  sortDataType='S' columnPrecision="NaN" booleanFlag='false' componentType="Text"	/>	
+		
+		<column data='visible_flag' label='Visible Flag' editable='false' visible='true' width='80' textAlign='left' 	
+				dataType='S'  sortDataType='S' columnPrecision="NaN" booleanFlag='false' componentType="Text"	/>			
+		
+		<column data='sequence_no' label='Sequence #' editable='false' visible='true' width='80' textAlign='left' 	
+				dataType='S'  sortDataType='S' columnPrecision="NaN" booleanFlag='false' componentType="Text"	/>				
+</columns> 

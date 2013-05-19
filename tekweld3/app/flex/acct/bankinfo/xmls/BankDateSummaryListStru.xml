@@ -1,0 +1,18 @@
+<columns  lockedColumnCount='0'>
+	
+	<column data='trans_date'			label='Trans Date'			editable='false'	visible='true'		width='100'	textAlign='left'	forLevel='false' 
+		print_width='20'				defaultForLevel=''			booleanFlag='false' sortDataType='D'	columnPrecision="NaN"/>			
+	
+	<column data='begning_bal'			label='Begnning Balance'	editable='false'	visible='true'		width='100'		 textAlign='right'	
+		forLevel='false'				print_width='22'			defaultForLevel=''	booleanFlag='false'	sortDataType='N' columnPrecision="2"/>
+	
+	<column data='receipt_amt'			label='Receipt'				editable='false'	visible='true'		width='100'		 textAlign='right'	
+		forLevel='false'				print_width='22'			defaultForLevel=''	booleanFlag='false'	sortDataType='N' columnPrecision="2"/>
+	
+	<column data='payment_amt'			label='Payment'				editable='false'	visible='true'		width='100'		 textAlign='right'	
+		forLevel='false'				print_width='22'			defaultForLevel=''	booleanFlag='false'	sortDataType='N' columnPrecision="2"/>
+			
+	<column data='closing_bal'			label='Closing Balance'		editable='false'	visible='true'		width='100'		 textAlign='right'	
+		forLevel='false'				print_width='22'			defaultForLevel=''	booleanFlag='false'	sortDataType='N' columnPrecision="2"/>
+		
+</columns>

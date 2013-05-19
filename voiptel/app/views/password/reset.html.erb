@@ -1,0 +1,23 @@
+<h1> Reset Passwords</h1>
+<% form_remote_tag :url => { :action => "do_reset", :id => @user.id } do |f| %>  
+<fieldset>
+	<legend>Caller's Name: <%= @user.name %></legend>
+	
+	<div>
+		<label class="lbl">Login:</label>
+		<%= text_field :login, :login, :class => "input", :value => @user.auth_user.login, :disabled => "true"%>
+		<%= new_line %>
+
+		<label class="lbl">Password:</label>
+		<% if @user.auth_user.tmp_password %>
+			<%= text_field :login, :password, :class => "input", :value => @user.auth_user.tmp_password.password, :style => "width:70px"%>
+		<% else %>
+			<%= text_field :login, :password, :class => "input", :style => "width:70px"%>
+			* User has password
+		<% end %>
+		<%= new_line %>
+	</div>	
+	<%= submit_tag "Save" %>
+	
+</fieldset>
+<% end -%>

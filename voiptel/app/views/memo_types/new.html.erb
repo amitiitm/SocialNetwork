@@ -1,0 +1,7 @@
+<% box :type => "dialog", :id => "dialog-memo-type", :title => "New Memo Type" do %>
+	<% box :type => "simple", :title => "New Memo Type" do %>
+		<%= render :partial => "form" %>
+	<% end -%>
+<% end -%>
+
+<%= javascript_include_tag "/js/ap.ddialog.js" %>

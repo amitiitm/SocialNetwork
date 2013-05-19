@@ -1,0 +1,19 @@
+<columns Title =''>
+	
+	<column dataType="S" 			label="Code #" 				checkbox="ckAll1" 		xmlTagFrom="str1" 			from="tiStr1"
+			xmlTagTo="str2" 		to="tiStr2"					multiSelect="mvMultiSelect1" 	xmlTagMultiSelect="multiselect1"
+			lookupFlag="false" 		lookupName=""				lookupLabel=""  dataField="" 			labelField=""/>		
+			
+	<column dataType="S"			label="Customer #" 			checkbox="ckAll2" 		xmlTagFrom="str3" 			from="dcStr3"
+			xmlTagTo="str4" 		to="dcStr4"					multiSelect="mvMultiSelect2" 	xmlTagMultiSelect="multiselect2"
+			lookupFlag="true" 		lookupName="Customer"		lookupLabel="code"  dataField="code" 			labelField="code"	lookupFormatUrl="retailCustomerLookupHelpFormat"/>
+	
+	<column dataType="S" 			label="Item #" 				checkbox="ckAll3" 		xmlTagFrom="str5" 			from="dcStr5"
+			xmlTagTo="str6" 		to="dcStr6"					multiSelect="mvMultiSelect3" 	xmlTagMultiSelect="multiselect3"
+			lookupFlag="true" 		lookupName="NonInventoryItem"		lookupLabel="store_code"  dataField="store_code" 			labelField="store_code" lookupFormatUrl="itemLookupHelpFormat"/>
+	
+	<column dataType="C" 			label="Approved" 					checkbox="ckAll4" 		xmlTagFrom="str7" 			from="cbStr7"
+			xmlTagTo="str8" 		to="cbStr8"							multiSelect="mvMultiSelect4" 	xmlTagMultiSelect="multiselect4"
+			lookupFlag="false" 		type_cd  ="ds_coupon_approved" 	subtype_cd="value"	/>		
+			
+</columns> 	

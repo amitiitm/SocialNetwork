@@ -1,0 +1,15 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  group_id: 1
+  dst_uri: MyString
+  resources: MyString
+  probe_mode: 1
+  description: MyString
+
+two:
+  group_id: 1
+  dst_uri: MyString
+  resources: MyString
+  probe_mode: 1
+  description: MyString

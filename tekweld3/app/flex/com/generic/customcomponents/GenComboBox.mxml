@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:ComboBox xmlns:mx="http://www.adobe.com/2006/mxml" xmlns:display="flash.display.*"
+	focusIn="onFocusIn()" focusOut="onFocusOut()" change="onChange()" >
+	
+	<mx:Metadata>
+		[Event(name="itemChangedEvent", type="com.generic.events.GenComboBoxEvent")]
+	</mx:Metadata> 
+
+ 	<mx:Script source="../scripts/GenComboBoxScript.as"/>
+</mx:ComboBox>

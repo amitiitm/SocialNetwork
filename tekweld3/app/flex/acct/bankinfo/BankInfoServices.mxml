@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rds:CommonServices xmlns:rds="business.*" xmlns:mx="http://www.adobe.com/2006/mxml">
+
+<!-- criteria format service-->
+<mx:HTTPService id="getBankBalanceCriteriaFormat" url="acct/bankinfo/xmls/BankDateSummaryCriteriaStru.xml" /> <!--Date Summary -->
+<mx:HTTPService id="getBankTransactionCriteriaFormat" url="acct/bankinfo/xmls/BankAllTransactionCriteriaStru.xml" /> <!--Transaction-->
+<mx:HTTPService id="getBankReceiptCriteriaFormat" url="acct/bankinfo/xmls/BankReceiptCriteriaStru.xml" /> <!--Receipt-->
+<mx:HTTPService id="getBankTransferCriteriaFormat" url="acct/bankinfo/xmls/BankTransferCriteriaStru.xml" /> <!--Transfer-->
+<mx:HTTPService id="getBankPaymentCriteriaFormat" url="acct/bankinfo/xmls/BankPaymentCriteriaStru.xml" /> <!--Payment-->
+
+<!--format service-->
+<mx:HTTPService id="getBankBalanceFormat" url="acct/bankinfo/xmls/BankDateSummaryListStru.xml" /> <!--Date Summary-->
+<mx:HTTPService id="getBankTransactionFormat" url="acct/bankinfo/xmls/BankAllTransactionListStru.xml" /> <!--Transaction-->
+<mx:HTTPService id="getBankReceiptFormat" url="acct/bankinfo/xmls/BankReceiptListStru.xml" /> <!--Receipt-->
+<mx:HTTPService id="getBankTransferFormat" url="acct/bankinfo/xmls/BankTransferListStru.xml" /> <!--Transfer-->
+<mx:HTTPService id="getBankPaymentFormat" url="acct/bankinfo/xmls/BankPaymentListStru.xml" /> <!--Payment-->
+
+<!--data service-->
+<mx:HTTPService id="getListBankBalance" url="/account/bank_info/bank_balance_info" /> <!--Date Summary-->
+<mx:HTTPService id="getListBankTransaction" url="/account/bank_info/bank_transaction_info" /> <!--Transaction-->
+<mx:HTTPService id="getListBankReceipt" url="/account/bank_info/bank_receipt_info" /> <!--Receipt-->
+<mx:HTTPService id="getListBankTransfer" url="/account/bank_info/bank_transfer_info" /> <!--Transfer-->
+<mx:HTTPService id="getListBankPayment" url="/account/bank_info/bank_payment_info" /> <!--Payment-->
+
+<mx:HTTPService id="getListFormat" url="acct/bankinfo/xmls/BankInfoListStru.xml" />
+<mx:HTTPService id="getViewFormat" url="acct/bankinfo/xmls/BankInfoCriteriaStru.xml" />
+<mx:HTTPService id="getList" url="/account/bank/list_banks" />
+
+<mx:HTTPService id="showBank" url="/account/bank/show_bank"/> <!--bank detail-->
+
+<mx:HTTPService id="printRecord" url="" />
+</rds:CommonServices>

@@ -1,0 +1,10 @@
+<columns>
+			
+	<column data='seq_no' 		label='Seq #' 		editable='false' 	visible='true' 	width='80' textAlign='right' forLevel='false' 
+			defaultForLevel=''	booleanFlag='false'	sortDataType='N'	columnPrecision="0"/>		
+	
+	<column data='step' 		label='Step' 		editable='false' 	visible='true' 	width='80' textAlign='left' forLevel='false' 
+			defaultForLevel=''	booleanFlag='false'	sortDataType='S'	columnPrecision="NaN"/>
+
+	
+</columns> 

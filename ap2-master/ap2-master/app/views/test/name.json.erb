@@ -1,0 +1,7 @@
+<%= if @users.size > 0 %>
+{
+	query: '<%= @q %>',
+	suggestions: [<%= @users.map {|u| "'#{u.name}'"}.join(",") %>],
+	data: [<%= @users.map {|u| "'#{u.id}'"}.join(",") %>]
+}
+<% end -%>

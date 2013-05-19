@@ -1,0 +1,36 @@
+<%= javascript_include_tag "country.js" %>
+<%= error("Could not save promotion:") %>
+<% form_for @promotion, :html => {:class => "forms"} do |f| %>	
+	<ul>
+		<li>
+			<label>Promo Name:</label>
+			<%= f.text_field :name %>
+		</li>
+		<li class="horizental">
+			<label>Country:</label>
+			<%= f.select :country_id, V2Country.select_options, :include_blank => true %>
+		</li>
+		<li class="horizental">
+			<label>Prefix:</label>
+			<%= f.text_field :prefix, :size => 15 %>
+		</li>
+		<li>
+			<label>Rate (in cents ie: 4.9):</label>
+			<%= f.text_field :rate_in_cents, :size => 5 %>
+		</li>
+		<li>
+			<label>Days:</label>
+			<%= f.text_field :days, :size => 5 %>
+		</li>
+	</ul>
+<% end -%>
+
+<script type="text/javascript" charset="utf-8">
+	$(function(){
+		$("#promotion_country_id").change(function(){
+			var country_id = $(this).val();
+			$("#promotion_prefix").val(countries[country_id]);
+			$("#promotion_prefix").focus();
+		})
+	});
+</script>

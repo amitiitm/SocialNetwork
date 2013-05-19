@@ -1,0 +1,24 @@
+<%= page_title :title => "New DID(s)" %>
+<% box :type => "simple" do %>
+	<% form_for @did, :html => {:class => "forms"} do |f| %>
+		<ul>
+			<li>
+				<label>DID Provider</label>
+				<%= f.select :did_provider, DidProvider.find(:all, :order => "id desc").collect {|d| [ d.name, d.id ]}%>
+			</li>
+			<li>
+				<label>Handler</label>
+				<%= f.select :did_type, Did::TYPES %>
+			</li>
+			<li>
+				<label>Assign <%= f.check_box :active%></label>				
+			</li>
+			<li>
+				<label>DID Number(s)<br>*format: complete 11 digits<br>*one number per line</label>
+				<%= f.text_area :numbers, :cols => 15, :rows => 5 %>
+			</li>
+		</ul>
+		<button class="ui-state-default float-left ui-corner-all ui-button" type="submit">Save</button>
+	<% end -%>
+	<div class="clearfix"></div>
+<% end -%>

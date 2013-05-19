@@ -1,0 +1,1 @@
+response_for(@memo, page, "reload_filter();reset_memo_page()")

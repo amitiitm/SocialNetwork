@@ -1,0 +1,1 @@
+<%= select "memo", "contactable_number_id", @memoable.select_options_for_contactable_number(params[:contactable_id]), {}, {:args => @memoable.args_for_call_link(params[:contactable_id], @memo, session[:user])} %>

@@ -1,0 +1,32 @@
+<columns  lockedColumnCount='0'>
+
+	<column data='trans_bk'			label='Trans.Bk'		editable='false'	visible='true'	width='60'	textAlign='left'	forLevel='true'
+			print_width = '16'		defaultForLevel='0'		booleanFlag='false'		sortDataType='S' 	columnPrecision="NaN"/>
+	<column data='trans_no'			label='Receipt#'			editable='false'	visible='true'	width='60'	textAlign='left'	forLevel='true'
+			print_width = '16'		defaultForLevel='2'		booleanFlag='false'		sortDataType='N'	columnPrecision="NaN"/>
+	<column data='trans_date'		label='Receipt Date'		editable='false'	visible='true'	width='80'	textAlign='left'	forLevel='true' 
+			print_width = '18'		defaultForLevel='1'		booleanFlag='false'		sortDataType='D'	columnPrecision="NaN"/>
+	
+	<column data='promo_code'		label='Promo Code'		editable='false'	visible='true'	width='80'	textAlign='left'	forLevel='false'
+			print_width = '16'		defaultForLevel=''		booleanFlag='false'		sortDataType='S'	columnPrecision="NaN"/>
+	<column data='company_store_code'	label='Comapny Store#'	editable='false' visible='true'	width='100'	textAlign='left'	forLevel='false'
+			print_width = '18'			defaultForLevel=''		booleanFlag='false'		sortDataType='S'	columnPrecision="0"/>		
+	<column data='cashier_id'			label='Cashier#'	editable='false'	visible='true'	width='80'	textAlign='right'	forLevel='false'
+			print_width = '16'			defaultForLevel=''		booleanFlag='false'		sortDataType='N'	columnPrecision="NaN"/>
+	<column data='assosiate_id'			label='Assosiate#'	editable='false'	visible='true'	width='80'	textAlign='right'	forLevel='false'
+			print_width = '16'			defaultForLevel=''		booleanFlag='false'		sortDataType='N'	columnPrecision="NaN"/>
+	<column data='customer_id'			label='Customer#'	editable='false'	visible='true'	width='80'	textAlign='right'	forLevel='false'
+			print_width = '10'			defaultForLevel=''		booleanFlag='false'		sortDataType='N'	columnPrecision="NaN"/>
+			
+	<column data='item_amt'			label='Sub Total'		editable='false'	visible='true'	width='80'	textAlign='right'	forLevel='false'
+			print_width = '18'		defaultForLevel=''		booleanFlag='false'		sortDataType='N'	columnPrecision="2"/>
+	<column data='discount_amt'		label='Disc.Amt'		editable='false'	visible='true'	width='80'	textAlign='right'	forLevel='false'
+			print_width = '18'		defaultForLevel=''		booleanFlag='false'		sortDataType='N'	columnPrecision="2"/>					
+	<column data='tax_amt'			label='Tax Amt'			editable='false'	visible='true'	width='80'	textAlign='right'	forLevel='false'
+			print_width = '18'		defaultForLevel=''		booleanFlag='false'		sortDataType='N'	columnPrecision="2"/>		
+			
+	<column data='net_amt'			label='Net Amt'			editable='false'	visible='true'	width='80'	textAlign='right'	forLevel='false'
+			print_width = '20'		defaultForLevel=''		booleanFlag='false'		sortDataType='N'	columnPrecision="2"/>		
+		
+</columns> 
+

@@ -1,0 +1,38 @@
+<columns  lockedColumnCount=''>
+
+
+	<column	data='select_yn'		label='Select'		editable='true'		visible='true'		width='50'
+			textAlign='center' 		forLevel='false' 	sortDataType='S'	dataType='S' 		booleanFlag='true'	/>
+	
+	<column data='code' 			label='Ship #'			    editable='false'	visible='true'	width='80'	textAlign='left'	forLevel='true'
+			print_width = '20'		defaultForLevel='1'			booleanFlag='false' 	sortDataType='S'	columnPrecision="NaN"/>
+		
+		
+	<column data='name' 			label='Name'		    editable='false'	visible='true'	width='80'	textAlign='left'	forLevel='true'
+			print_width = '20'			defaultForLevel='0'			booleanFlag='false' 	sortDataType='S'	columnPrecision="NaN"/>
+	
+	
+	<column data='address1' 			label='Address1'		    editable='false'	visible='true'	width='80'	textAlign='left'	forLevel='true'
+			print_width = '20'			defaultForLevel='0'			booleanFlag='false' 	sortDataType='S'	columnPrecision="NaN"/>
+						
+						
+	<column data='address2' 			label='Address2'		    editable='false'	visible='true'	width='80'	textAlign='left'	forLevel='true'
+			print_width = '20'			defaultForLevel='0'			booleanFlag='false' 	sortDataType='S'	columnPrecision="NaN"/>
+						
+	
+	
+	<column data='city' 				label='City'		    editable='false'	visible='true'	width='80'	textAlign='left'	forLevel='true'
+			print_width = '20'			defaultForLevel='0'			booleanFlag='false' 	sortDataType='S'	columnPrecision="NaN"/>
+																
+	<column data='state' 				label='State'		    editable='false'	visible='true'	width='80'	textAlign='left'	forLevel='true'
+			print_width = '20'			defaultForLevel='0'			booleanFlag='false' 	sortDataType='S'	columnPrecision="NaN"/>
+				
+	<column data='zip' 					label='Zip'		    editable='false'	visible='true'	width='80'	textAlign='left'	forLevel='true'
+			print_width = '20'			defaultForLevel='0'			booleanFlag='false' 	sortDataType='S'	columnPrecision="NaN"/>
+				
+				
+			
+											
+								
+														
+</columns> 

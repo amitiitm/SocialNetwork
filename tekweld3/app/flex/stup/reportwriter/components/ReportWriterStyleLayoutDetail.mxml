@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<gencomponents:DetailAddEdit xmlns:mx="http://www.adobe.com/2006/mxml"
+	width="700" height="400" verticalGap="0"
+	xmlns:customcomponents="com.generic.customcomponents.*"
+	xmlns:gencomponents="com.generic.components.*"
+	creationPolicy="all" creationComplete="creationCompleteHandler()">
+	
+	<mx:Script source="../scripts/ReportWriterStyleLayoutDetailScript.as"/>
+	
+	<mx:VBox height="100%" width="100%">
+		<mx:VBox width="100%" height="100%">
+			<mx:HBox width="100%" height="70" horizontalGap="20" verticalAlign="middle" paddingLeft="20">
+				<mx:HBox>
+					<mx:Label text="Save as" textAlign="right"/>
+					<customcomponents:GenTextInput id="tiLayoutName"  tableName="report_layout" xmlTag="name" 
+						itemChangedEvent="layoutNameChangeEventHandler()" width="530"
+						validationFlag="true" updatableFlag="true"/>
+				</mx:HBox>
+			</mx:HBox>
+			<mx:TabNavigator width="100%" height="100%">
+				<mx:VBox label="Columns" height="100%" width="100%" >
+					<mx:HBox width="100%" height="95%" verticalAlign="middle" paddingLeft="20">
+						<mx:VBox height="100%" width="200">
+							<customcomponents:GenDataGrid id="dgList1" height="100%" width="100%"
+								updatableFlag="false" rootNode="none"
+								rows="{columnListXml}"
+								formatServiceID="allColumnsListStruXml" editable="true" />
+						</mx:VBox>
+						<mx:VBox height="100%" verticalAlign="middle" horizontalAlign="center">
+							<mx:Button  id="btnAdd" click="btnAddClickHandler()" label="&gt;&gt;" cornerRadius="0"/>
+							<mx:Button  id="btnRemove" click="btnRemoveClickHandler()" label="&lt;&lt;" cornerRadius="0"/>
+						</mx:VBox>
+						<mx:VBox height="100%" width="300">
+							<customcomponents:GenDataGrid id="dgList2" height="100%" width="100%" rootNode="none"
+								updatableFlag="false" rows="{selectedColumnListXml}" editable="true"
+								formatServiceID="selectedColumnsListStruXml"  itemRollOver="selectedColumnsRollOverHandler(event)"/>
+						</mx:VBox>
+						<mx:VBox height="100%" verticalAlign="middle" horizontalAlign="center">
+							<mx:Button  id="btnTop" click="btnTopClickHandler()" label="Top" width="70" cornerRadius="0"/>
+							<mx:Button  id="btnUp" click="btnUpClickHandler()" label="Up" width="70" cornerRadius="0"/>
+							<mx:Button 	id="btnDown" click="btnDownClickHandler()" label="Down" width="70" cornerRadius="0"/>
+							<mx:Button 	id="btnBottom" click="btnBottomClickHandler()" label="Bottom" width="70" cornerRadius="0"/>
+						</mx:VBox>
+					</mx:HBox>
+				</mx:VBox>
+				<mx:VBox label="Groups">
+					<mx:HBox width="100%" height="95%" verticalAlign="middle" paddingLeft="20" >
+						<mx:VBox height="100%" width="200">
+							<customcomponents:GenDataGrid id="dgListGrp1" 
+								height="100%" rootNode="none"
+								width="100%"
+								updatableFlag="false" 
+								rows="{groupColumnListXml}"
+								formatServiceID="allColumnsListStruXml" editable="true" />
+						</mx:VBox>
+						<mx:VBox height="100%" verticalAlign="middle" horizontalAlign="center">
+							<mx:Button  id="btnAddGrp" click="btnAddGrpClickHandler()" label="&gt;&gt;" cornerRadius="0"/>
+							<mx:Button  id="btnRemoveGrp" click="btnRemoveGrpClickHandler()" label="&lt;&lt;" cornerRadius="0"/>
+						</mx:VBox>
+						<mx:VBox height="100%" width="200"  horizontalAlign="center">
+							<customcomponents:GenDataGrid id="dgListGrp2" 
+								height="100%" rootNode="none"
+								width="100%"
+								updatableFlag="false" rows="{selectedGroupListXml}" editable="true"
+								formatServiceID="allColumnsListStruXml"/>
+						</mx:VBox>
+						<mx:VBox height="100%" verticalAlign="middle" horizontalAlign="center">
+							<mx:Button  id="btnTopGrp" click="btnTopGrpClickHandler()" label="Top" width="70" cornerRadius="0"/>
+							<mx:Button  id="btnUpGrp" click="btnUpGrpClickHandler()" label="Up" width="70" cornerRadius="0"/>
+							<mx:Button 	id="btnDownGrp" click="btnDownGrpClickHandler()" label="Down" width="70" cornerRadius="0"/>
+							<mx:Button 	id="btnBottomGrp" click="btnBottomGrpClickHandler()" label="Bottom" width="70" cornerRadius="0"/>
+						</mx:VBox>
+					</mx:HBox>
+				</mx:VBox>
+			</mx:TabNavigator>
+			
+			<mx:HBox>
+				<customcomponents:GenCheckBox labelPlacement="left" label="Print Landscape" id="cbPrintOrientation" width="120" xmlTag="print_orientation"
+					updatableFlag="true" tableName="report_layout" defaultValue="P" textAlign="right" tabIndex="9" enabled="true" height="20" 
+					dataValueForOn="L" dataValueForOff="P"/>	
+				<mx:Spacer width="20"/>
+				<mx:Label text="Lock Column" textAlign="right"/>
+				<mx:NumericStepper id="nsLockedColumnCount" minimum="0" stepSize="1" maximum="50" change="nsLockedColumnCountChangeHandler()"/>
+			</mx:HBox>
+			<customcomponents:GenTextInput id="tiLockedColumnCount"   
+				width="0" height="0" visible="false" updatableFlag="true" xmlTag="lockedcolumncount" tableName="report_layout" text="{nsLockedColumnCount.value}" />
+			<customcomponents:GenTextInput id="tiReportId"   
+				width="0" height="0" visible="false" updatableFlag="true" xmlTag="report_id" tableName="report_layout" />
+			<customcomponents:GenTextInput id="tiUserId"   
+				width="0" height="0" visible="false" updatableFlag="true" xmlTag="user_id" tableName="report_layout" />
+			<customcomponents:GenTextInput id="tiDefaultYn"   
+				width="0" height="0" visible="false" updatableFlag="true" xmlTag="default_yn" tableName="report_layout" />
+			<customcomponents:GenTextInput id="tiLayoutType"   
+				width="0" height="0" visible="false" updatableFlag="true" xmlTag="layout_type" tableName="report_layout" />
+			<customcomponents:GenTextInput id="tiSerial_no" width="0" height="0" visible="true"
+				editable="false" enabled="false" xmlTag="serial_no" updatableFlag="true"
+				tableName="report_layout" defaultValue=""  maxChars="4" />
+			<customcomponents:GenDataGrid 
+				id="dgLayout"
+				checkBlankRowColumn="" 
+				height="0"
+				updatableFlag="true"  
+				visible="false"
+				formatServiceID="selectedColumnsListStruXml" 
+				rootNode="report_layout_columns"/>
+		</mx:VBox>	
+	</mx:VBox>
+</gencomponents:DetailAddEdit>	

@@ -1,0 +1,17 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  distribution_id: 1
+  serial_start: MyString
+  serial_end: MyString
+  cards_start: 1
+  cards_end: 1
+  num_cards: 1
+
+two:
+  distribution_id: 1
+  serial_start: MyString
+  serial_end: MyString
+  cards_start: 1
+  cards_end: 1
+  num_cards: 1

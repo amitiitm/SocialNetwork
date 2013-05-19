@@ -1,0 +1,35 @@
+<fieldset>
+	<% form_remote_tag :url => {:controller => "did", :action => "get_distance"}  do %>
+		<span>
+			(PHONE 1) NPA: 
+			<%= text_field :phone1, "npa", :size =>3 %>
+			NXX : <%= text_field :phone1, "nxx", :size =>3 %>
+		</span>
+		<%= new_line %>
+		<span>
+			(PHONE 2) NPA: 
+			<%= text_field :phone2, "npa", :size =>3 %>
+			NXX : <%= text_field :phone2, "nxx", :size =>3 %>
+		</span>
+		<%= new_line %>
+		<%= new_line %>
+		<%= submit_tag "Calculate" %>
+	<% end -%>
+
+	<hr>
+	<span><h2>Results: </h2></span>
+	<%= new_line %>
+	<span>
+		(PHONE 1) Rate Center: <%= text_field :phone1, "rate_center", :size => 10 %>
+		Lat/Long <%= text_field :phone1, "lat_long", :size => 20 %>
+	</span>
+	<%= new_line %>
+	<span>
+		(PHONE 2) Rate Center: <%= text_field :phone2, "rate_center", :size => 10 %>
+		Lat/Long <%= text_field :phone2, "lat_long", :size => 20 %>
+	</span>
+	<%= new_line %>
+	<span>
+		Distance: <%= text_field :distance, "distance", :size => 10 %>
+	</span>
+</fieldset>	

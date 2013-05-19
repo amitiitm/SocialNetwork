@@ -1,0 +1,30 @@
+<div id="portlet_phones_and_dids" class="portlet ui-widget ui-widget-content ui-helper-clearfix ui-corner-all">
+	<div class="portlet-header ui-widget-header">Phones & Access Numbers<span class="ui-icon ui-icon-circle-arrow-s"></span></div>
+	<div class="portlet-content hastable">
+		<% for user in @account.users -%>			
+			<%# box :type => "box_title", :title => user.name do %>
+				<% if user.phones.size > 0 %>
+					<br>
+					<table id="table"> 
+						<thead> 
+							<tr>				  
+							  <th style='width:150px'><%= user.name %> Phones</th>
+							  <th>Access Number</th>
+							</tr> 
+						</thead> 
+						<tbody>
+						  <% for p in user.phones do %>
+							<tr>
+								<td><%= phone([p.number, "(#{p.type_name_short})"], {:contactable_type => "User", :contactable_id => user.id}) %></td>
+								<td><%= display_assigned_did2(p) %></td>
+							 </tr>
+						  <%  end %>
+						</tbody>
+					</table>
+				<% else %>
+					<br>No Phones Registered
+				<% end -%>
+			<%# end -%>			
+		<% end -%>
+	</div>
+</div>

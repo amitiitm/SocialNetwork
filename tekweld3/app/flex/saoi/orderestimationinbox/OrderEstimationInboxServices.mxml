@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rds:CommonServices xmlns:rds="business.*" xmlns:mx="http://www.adobe.com/2006/mxml">
+
+	<mx:HTTPService id="saveRecord" 		url="/production/production_embroidery/create_receive_stitch_estimation_inbox"/>
+	<mx:HTTPService id="getList" 			url="/production/production_embroidery/receive_stitch_estimation_inbox"/>
+	<mx:HTTPService id="genratePackageSlip" url="/production/production_report/render_package_slip_format"/>
+	<mx:HTTPService id="genrateUpsLabel" 	url="/shipping/shipping/print_multipackage_label" />
+	
+	<mx:HTTPService id="getViewFormat" 		url="saoi/orderestimationinbox/xmls/OrderEstimationInboxCriteriaStru.xml"/>
+	<mx:HTTPService id="getListFormat" 		url="saoi/orderestimationinbox/xmls/OrderEstimationInboxListStru.xml"/>
+	
+	
+	<mx:HTTPService id="printRecord" 	url=""/>
+
+</rds:CommonServices>

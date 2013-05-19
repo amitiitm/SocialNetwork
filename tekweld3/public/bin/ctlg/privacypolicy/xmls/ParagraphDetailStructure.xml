@@ -1,0 +1,31 @@
+<columns>
+		
+		
+		<column data='heading' label='Heading' editable='false' visible='true' width='80' textAlign='left' 	
+				dataType='S'  sortDataType='S' columnPrecision="NaN"	 booleanFlag='false' componentType="Text"	/>
+
+		<column data='paragraph' label='Paragraph' editable='false' visible='true' width='80' textAlign='left' 	
+				dataType='S'  sortDataType='S' columnPrecision="NaN"	booleanFlag='false' componentType="Text"	/>	
+				
+		<column data='link1' label='Link1' editable='false' visible='true' width='80' textAlign='left' 	
+				dataType='S'  sortDataType='S' columnPrecision="NaN"	booleanFlag='false' componentType="Text"	/>
+		
+		<column data='link2' label='Link2' editable='false' visible='true' width='80' textAlign='left' 	
+				dataType='S'  sortDataType='S' columnPrecision="NaN"	booleanFlag='false' componentType="Text"	/>
+		
+		<column data='link3' label='Link3' editable='false' visible='true' width='80' textAlign='left' 	
+				dataType='S'  sortDataType='S' columnPrecision="NaN"	booleanFlag='false' componentType="Text"	/>
+
+		<column data='url1' label='Url1' editable='false' visible='true' width='80' textAlign='left' 	
+				dataType='S'  sortDataType='S' columnPrecision="NaN"	 booleanFlag='false' componentType="Text"	/>
+	
+		<column data='url2' label='Url2' editable='false' visible='true' width='80' textAlign='left' 	
+			dataType='S'  sortDataType='S'  columnPrecision="NaN"	booleanFlag='false' componentType="Text"	/>
+			
+		<column data='url3' label='Url3' editable='false' visible='true' width='80' textAlign='left' 	
+			dataType='S'  sortDataType='S'  columnPrecision="NaN"	booleanFlag='false' componentType="Text"	/>
+		
+		<column data='sequence_no' label='Sequence #' editable='false' visible='true' width='80' textAlign='left' 	
+				dataType='S'  sortDataType='S'  columnPrecision="NaN"	booleanFlag='false' componentType="Text"	/>				
+
+</columns> 

@@ -1,0 +1,9 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  data: MyText
+  cdr_id: 1
+
+two:
+  data: MyText
+  cdr_id: 1

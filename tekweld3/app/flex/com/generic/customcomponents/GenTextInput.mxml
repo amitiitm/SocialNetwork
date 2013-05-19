@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:TextInput xmlns:mx="http://www.adobe.com/2006/mxml" 
+	focusIn="onFocusIn()" 
+	focusOut="onFocusOut()" 
+	textInput="onTextInput()" 
+	creationComplete="onCreationComplete()" 
+	updateComplete="onUpdateComplete()"
+	keyDown="onKeyPress(event)"
+	height="18">
+	
+	<mx:Metadata>
+		[Event(name="itemChangedEvent", type="com.generic.events.GenTextInputEvent")]
+	</mx:Metadata> 
+
+ 	<mx:Script source="../scripts/GenTextInputScript.as"/>
+</mx:TextInput>

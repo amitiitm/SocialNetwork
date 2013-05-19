@@ -1,0 +1,43 @@
+--- 
+main_users_001: 
+  last_login: 
+  salt: 308e1a9d7d7cb1aee536e74c9e147ec9a7c72035
+  updated_at: 2009-12-01 11:33:02
+  crypted_password: ec68ae06b8b5684d18f882fb3e494856e1749851
+  update_flag: Y
+  password_change_date: 
+  user_cd: 
+  trans_flag: A
+  created_by: 100
+  main_company_id: 1
+  remember_token_expires_at: 
+  lock_version: 1
+  updated_by: 230
+  id: 230
+  remember_token: 
+  first_name: Administrator
+  last_name: Administrator
+  login: administrator@myadora.com
+  email: administrator@myadora.com
+  created_at: 2009-12-01 11:33:00
+main_users_002: 
+  last_login: 
+  salt: 308e1a9d7d7cb1aee536e74c9e147ec9a7c72035
+  updated_at: 
+  crypted_password: ec68ae06b8b5684d18f882fb3e494856e1749851
+  update_flag: Y
+  password_change_date: 
+  user_cd: 
+  trans_flag: A
+  created_by: 100
+  main_company_id: 2
+  remember_token_expires_at: 
+  lock_version: 1
+  updated_by: 100
+  id: 332
+  remember_token: 
+  first_name: Margo
+  last_name: Manhattan
+  login: info@margomanhattan.com
+  email: info@margomanhattan.com
+  created_at: 

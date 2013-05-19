@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<gencomponents:AddEdit xmlns:mx="http://www.adobe.com/2006/mxml"
+	height="100%" width="100%" verticalGap="0"
+	xmlns:customcomponents="com.generic.customcomponents.*"
+	xmlns:gencomponents="com.generic.components.*"
+	creationPolicy="all" creationComplete="init()" >
+
+	<mx:Script source="../scripts/PayBillAddEditScript.as"/>
+	<mx:VBox id="vbHeader" height="0" width="0" visible="false">
+		<customcomponents:GenTextInput id="tidummy"  xmlTag="dummy"  
+						updatableFlag="false" tableName="vendor_payment" defaultValue=""  visible="false"  enabled="false"/>
+	
+		<customcomponents:GenTextInput id="tiBank_code"  width="0" xmlTag="bank_code" 
+						updatableFlag="true" tableName="vendor_payment" defaultValue="" height="0" visible="false" />
+	</mx:VBox>	
+	<mx:TabNavigator id="tnDetail" width="100%" height="100%">
+		<mx:VBox id="vbOpenInvoices" label="Select Invoice" width="100%" height="100%" verticalGap="0" tabIndex="40">
+			<mx:HBox id="hbFilterOpenInvoice" width="{dgVendorOpenInvoices.width}" height="23"
+				 	horizontalGap="0" borderThickness="0" borderStyle="none"
+					horizontalScrollPolicy="off" visible="true" verticalAlign="middle">
+		 		
+			</mx:HBox> 
+			<customcomponents:GenDataGrid 
+				id="dgVendorOpenInvoices"
+				paddingTop="0"
+				paddingLeft="0"
+				paddingRight="0"
+				paddingBottom="0"
+				height="100%" width="100%"
+				editable="true"
+				formatServiceID="getPayBillsOenInvoicesFormat"
+				rootNode="vendor_payment_lines"
+				itemFocusOut="handleOpenInvoicesFocusOut(event)"
+				structureCompleteEvent="openInvoicesStructureCompleteEventHandler()"
+				resize="handleOpenInvoiceResize(event)" 	
+				 /> 
+			<mx:Spacer height="3"/>
+			<mx:HBox id="hbOpenInvoiceTotal" width="{dgVendorOpenInvoices.width}" height="22"
+				 	horizontalGap="0" borderThickness="0" borderStyle="none"
+					horizontalScrollPolicy="off" visible="true">
+		 		
+			</mx:HBox> 	 
+		</mx:VBox>	
+		<mx:VBox id="vbPrepareCheck" label="Prapare Check" width="100%" height="100%" verticalGap="3" tabIndex="40">
+			
+			<mx:VBox id="hbHeader" width="100%" verticalGap="2">
+				<!--<mx:HBox horizontalGap="2">
+					<mx:Label text="Serial#" width="80" height="20" textAlign="right"/>
+					<customcomponents:GenTextInput id="tiSerail_no"  xmlTag="serial_no"  height="20" width="90"
+						updatableFlag="true" tableName="vendor_payment" defaultValue=""  visible="true"  enabled="false"/>	
+				</mx:HBox>-->
+				<mx:HBox horizontalGap="2">
+					<mx:Label text="Bank#" width="80" height="20" textAlign="right"/>
+					<customcomponents:GenTextInputWithHelp
+							id="dcBank_id" 
+							width="90" 
+							toolTip="Bank #" 
+							dataSourceName="GLBankAccount"
+							minimumChar = "{__genModel.masterData.child('lookup').glbankaccount.value}"
+							height="20" 
+							tabIndex="7" 
+							validationFlag="true" 
+							xmlTag="bank_id"
+							labelTag="bank_code"
+							dataField="id" 
+							labelField= "code"
+							updatableFlag="true" 
+							tableName="vendor_payment" 
+							itemChangedEvent="handleBankIdChange()"
+							/>
+					 		
+					<mx:HBox horizontalGap="2">
+						<mx:Label text="Payment Type" width="80" height="20" textAlign="right"/>
+						<customcomponents:GenComboBox id="cbPayment_type" defaultValue="CHCK" width="90" cornerRadius="0" xmlTag="payment_type" 
+							updatableFlag="true" tableName="vendor_payment"  tabIndex="4" 
+							type_cd="pay_type" subtype_cd="pay_type" height="20" change="handlePaymentTypeChange()"  
+							dataProvider="{__genModel.masterData.child('faxx').pay_type}" labelField="label" />
+					</mx:HBox>
+				
+				</mx:HBox>
+				
+				
+				<mx:HBox horizontalGap="2">
+					<mx:Label text="Check # From" width="80" height="20" textAlign="right"/>
+					<customcomponents:GenTextInput id="tiCheck_no_from"  xmlTag="check_no"  height="20"  width="90"
+						updatableFlag="true" tableName="vendor_payment" defaultValue=""  visible="true" validationFlag = "true" />	
+				
+					<mx:HBox horizontalGap="2">
+						<mx:Label text="Check # To" width="80" height="20" textAlign="right"/>
+						<customcomponents:GenTextInput id="tiCheck_no_to"  xmlTag="check_no_to"  height="20"  width="90"
+							updatableFlag="true" tableName="vendor_payment" defaultValue="" visible="true"   enabled="false"
+							text="{dgPrapareCheckDtl.dataProvider.length  == 0 ? '' : int(tiCheck_no_from.text)  + (dgPrapareCheckDtl.dataProvider.length  == 0  ? 0:  dgPrapareCheckDtl.dataProvider.length -1)}"/>	
+					</mx:HBox>
+				
+				</mx:HBox>
+				
+				<mx:HBox horizontalGap="2">
+					<mx:Label text="Check Date" width="80" height="20" textAlign="right"/>
+					<customcomponents:GenDateField id="dfCheck_date" tabIndex="10" xmlTag="check_date" width="90" toolTip="Deposit Date"
+						updatableFlag="true" tableName="vendor_payment" height="20" validationFlag = "true"/>
+				
+					<mx:HBox horizontalGap="2">
+						<mx:Label text="A/c Period #" width="80" height="20" textAlign="right"/>
+						<customcomponents:GenTextInputWithHelp
+							id="dcAccount_period_code" 
+							width="90" 
+							toolTip="A/c Period #" 
+							dataSourceName="AccountPeriod"
+							height="20" 
+							enabled="false"
+							minimumChar = "{__genModel.masterData.child('lookup').accountperiod.value}"
+							updatableFlag="true"
+							validationFlag="true" 
+							xmlTag="account_period_code"
+							labelTag="account_period_code"
+							dataField="code" 
+							labelField= "code"
+							tableName="vendor_payment" 
+							/>
+						</mx:HBox>
+				</mx:HBox>
+
+				<mx:HBox horizontalGap="2">
+					<mx:Label text="Remarks" width="80" height="20" textAlign="right"/>
+					<customcomponents:GenTextInput id="tiRemarks"  xmlTag="description" width="264" 
+						updatableFlag="true" tableName="vendor_payment" defaultValue="" visible="true" height="20" />	
+				</mx:HBox>
+				<mx:HBox horizontalGap="2">
+					<mx:Label text="Total Checks" width="80" height="20" textAlign="right"/>
+					<customcomponents:GenTextInput id="tiTotalChecks"  xmlTag="total_check"  width="90"
+						updatableFlag="true" tableName="vendor_payment" defaultValue="0" height="20" visible="true"
+						 maxValue = '99999999' enabled="false" text="{dgPrapareCheckDtl.dataProvider.length}"/>	
+					
+					<mx:HBox horizontalGap="2">
+						<mx:Label text="Total Amount" width="80" height="20" textAlign="right"/>
+						<customcomponents:GenTextInput id="tiTotalPaidAmt"  xmlTag="paid_amt" width="90"
+							updatableFlag="true" tableName="vendor_payment" defaultValue="0.00" height="20" visible="true" 
+							 maxValue = '99999999.99' enabled="false"/>	
+						<customcomponents:GenTextInput id="tiTotalAppliedAmt"  xmlTag="applied_amt" width="0" 
+							updatableFlag="true" tableName="vendor_payment" defaultValue="0.00" height="0" visible="false" 
+							 maxValue = '99999999.99' enabled="false"/>	
+						<customcomponents:GenTextInput id="tiTotalBalanceAmt"  xmlTag="balance_amt" width="0" 
+							updatableFlag="true" tableName="vendor_payment" defaultValue="0.00" height="0" visible="false" 
+							 maxValue = '99999999.99' enabled="false"/>		 	 
+					</mx:HBox>
+					<mx:HBox horizontalGap="2">
+						<mx:Spacer width="25"/>
+						<mx:Button id="btnPrepareCheck" styleName="myButton" width="100" height="20" label="Prepare Check"
+							click="prepareCheckClickHandler()"/>
+								
+					</mx:HBox>
+				</mx:HBox>
+				
+			</mx:VBox>
+
+			<!--<mx:HBox id="hbFilterPrepareCheck" width="{dgPrapareCheckDtl.width}" height="22"
+				 	horizontalGap="0" borderThickness="0" borderStyle="none"
+					horizontalScrollPolicy="off" visible="true">
+		 		
+			</mx:HBox>-->
+			<customcomponents:GenDataGrid
+				  id="dgPrapareCheckDtl"
+				  updatableFlag="false"
+				  checkBlankRowColumn="trans_no"
+				  rootNode="apply_lines"
+				  formatServiceID="getPrepareCheckFormat"
+				  height="100%" 
+				  width="100%"
+				 />	
+		</mx:VBox>
+		<mx:VBox id="vbPrintCheck" label="Print Check" width="100%" height="100%" verticalGap="3" tabIndex="40">
+			<mx:HBox horizontalGap="2">
+				<mx:Spacer width="5"/>		
+				<mx:Button id="btnPrintCheck" styleName="myButton" width="85" height="20" label="Print Check"
+					click="printCheckClickHandler()"/>
+								
+			</mx:HBox>
+			<mx:Spacer height="4"/>
+			<customcomponents:GenDataGrid
+				  id="dgPPrintCheckDtl"
+				  updatableFlag="false"
+				  checkBlankRowColumn="trans_no"
+				  rootNode="print_checks"
+				  formatServiceID="getPrintCheckCheckFormat"
+				  height="100%" 
+				  width="100%"
+				 />	
+		</mx:VBox>								
+	</mx:TabNavigator>
+
+</gencomponents:AddEdit>
+

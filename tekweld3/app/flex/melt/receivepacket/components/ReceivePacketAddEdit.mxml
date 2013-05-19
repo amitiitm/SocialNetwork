@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<gencomponents:AddEdit  xmlns:gencomponents="com.generic.components.*" 
+ 	xmlns:customcomponents="com.generic.customcomponents.*" 
+	xmlns:mx="http://www.adobe.com/2006/mxml" 
+	width="100%" height="100%" verticalGap="0" paddingTop="0" creationComplete="init()">
+
+	<mx:Script source="../Scripts/ReceivePacketAddEditScript.as"/>
+	
+	<mx:HBox id="HBoxHeader" width="100%"  horizontalGap="0" verticalGap="0" verticalAlign="top" paddingBottom="0" paddingTop="0">		
+		<mx:VBox width="335" height="100%" verticalGap="3" horizontalGap="0" paddingBottom="0" paddingTop="0">
+			<mx:HBox width="100%" height="10%" verticalGap="0">						
+				<mx:Label text="Packet #" height="20" width="86" textAlign="right" />
+				<customcomponents:GenTextInput id="tiTrans_no" width="114" height="20" toolTip="Trans #" editable="true" validationFlag="true" maxChars="18"
+					xmlTag="trans_no" updatableFlag="true" tabIndex="1" tableName="melting_transaction" defaultValue="" itemChangedEvent="getCustomerInfo()"/>
+				<customcomponents:GenTextInput id="tiTrans_bk" width="0" height="0" visible="false" enabled="false"
+					xmlTag="trans_bk" updatableFlag="false" tableName="melting_transaction"  />
+			</mx:HBox>
+			<mx:HBox width="100%">
+				<mx:Label text="Retailer" width="86" height="20" textAlign="right"/>
+				<customcomponents:GenDynamicComboBoxWithHelp id="dcRetailer" width="109" toolTip="Retailer #" 
+					defaultValue="" dataField="id" labelField="name" dataSourceName="MeltingRetailer" 
+					dataProvider="{__genModel.lookupObj.meltingretailer.children()}"
+					tabIndex="2" height="20" validationFlag="true" xmlTag="melting_retailer_id" 
+					updatableFlag="true" tableName="melting_transaction" />
+			</mx:HBox>
+			<mx:HBox width="100%" horizontalAlign="left">
+			   	<mx:Label text="Store #" width="86" height="20" textAlign="right"/>
+			<customcomponents:GenTextInput id="tiRetailerRef" width="109" height="20" toolTip="Store #" 
+				validationFlag="true"  maxChars="25" xmlTag="retailer_ref_no" updatableFlag="true" tableName="melting_transaction" tabIndex="3"/>
+			</mx:HBox>
+			
+	</mx:VBox>
+	<mx:VRule height="100%"/>
+	
+	
+	<mx:VBox width="270" height="100%" verticalGap="3">
+			
+			<mx:HBox width="100%" height="10%" verticalGap="0">						
+			<mx:Label text="Receive Date" height="20" width="110" textAlign="right" />
+				<customcomponents:GenDateField id="dfReceive_Date" width="109" height="20" toolTip="Received Date"
+					xmlTag="receive_date" updatableFlag="true" tableName="melting_transaction" defaultValue="" tabIndex="4" />
+			</mx:HBox>
+			<mx:HBox width="100%" height="10%" verticalGap="0">						
+				<mx:Label text="Received Via #" height="20" width="110" textAlign="right" />
+				<customcomponents:GenDynamicComboBoxWithHelp id="dcReceived_Via" width="109" toolTip="Received Via" 
+					defaultValue="" dataField="name" labelField="code" dataSourceName="Shipping" 
+					dataProvider="{__genModel.lookupObj.shipping.children()}"
+					tabIndex="5" height="20" validationFlag="true" xmlTag="receive_ship_via" 
+					updatableFlag="true" tableName="melting_transaction" />
+			</mx:HBox>
+			
+			<mx:HBox width="100%" horizontalAlign="left">
+				<mx:Label text="Tracking #" width="110" textAlign="right" height="20" />
+				<customcomponents:GenTextInput id="tiReceive_Tracking_no" width="144" height="20" maxChars="25"  
+				xmlTag="receive_tracking_no" updatableFlag="true" tableName="melting_transaction" tabIndex="6" toolTip="Receive Tracking #" />
+	 		</mx:HBox>
+    </mx:VBox>
+	<mx:VRule height="100%"/>
+	<mx:VBox width="270" height="100%" verticalGap="3">
+			
+			<mx:HBox width="100%" height="10%" verticalGap="0">
+				<mx:Label text="Packet Date" height="20" width="100" textAlign="right"/>
+				<customcomponents:GenDateField id="dfTrans_date" width="114" height="20" toolTip="Trans Date" 
+					validationFlag="true" itemChangedEvent="getAccountPeriod();"
+					tabIndex="7" xmlTag="trans_date" updatableFlag="true" tableName="melting_transaction"/>
+			</mx:HBox>
+			
+			<mx:HBox width="100%" height="10%" verticalGap="0">		
+				<mx:Label text="A/c Period #" height="20" width="100" textAlign="right" />
+				<customcomponents:GenDynamicComboBoxWithHelp id="dcAccount_period_code" width="114" 
+					toolTip="A/c Period" defaultValue="" enabled="false" dataField="code" labelField="code" 
+					dataSourceName="AccountPeriod" dataProvider="{__genModel.lookupObj.accountperiod.children()}"
+					height="20" validationFlag="true" xmlTag="account_period_code" 
+					updatableFlag="true" tableName="melting_transaction" />
+			</mx:HBox>
+	</mx:VBox>
+	</mx:HBox>
+      <mx:Spacer height="20"/>
+	<mx:VBox id="vbAddress" label="Customer" width="100%" height="100%" verticalGap="3">
+				<mx:HBox width="100%" verticalGap="0" horizontalGap="3">						
+				<mx:Label text="Customer Name" height="20" width="96" textAlign="right" />
+				<customcomponents:GenTextInput id="tiCustomer_Name" width="234" height="21" toolTip="Customer Name"
+					xmlTag="customer_name" updatableFlag="true" validationFlag="true" tableName="melting_transaction" defaultValue=""  maxChars="50" tabIndex="8"/>
+				<mx:Label text="Email" width="121" textAlign="right" height="20" />
+				<customcomponents:GenTextInput id="tiEmail" width="233" xmlTag="customer_email_id" 
+					updatableFlag="true" tabIndex="19" tableName="melting_transaction" 
+					defaultValue="" validationFlag="false" toolTip="Email" height="21" maxChars="50" />
+			</mx:HBox>
+			<mx:HBox width="100%" horizontalGap="3">
+				 <mx:Label text="Ref #/Date" width="96" height="20" textAlign="right"/>
+					<customcomponents:GenTextInput id="tiCustomerRef" width="116" height="20" toolTip="Customer_Ref#" 
+					validationFlag="false"  maxChars="25" xmlTag="customer_ref_no" updatableFlag="true" tableName="melting_transaction" tabIndex="9"/>
+				<customcomponents:GenDateField id="dfCustomerDate" width="115" xmlTag="customer_ref_date"
+				updatableFlag="true" tabIndex="10" tableName="melting_transaction" height="20" 
+				validationFlag="false" toolTip="Customer Ref Date" />
+				<mx:Label text="Re Type Email" width="121" textAlign="right" height="20" />
+				<customcomponents:GenTextInput id="tiReTypeEmail" width="233" xmlTag="customer_email_id"
+					updatableFlag="true" tabIndex="20" tableName="melting_transaction"
+					defaultValue="" validationFlag="false" toolTip="Email" height="20" maxChars="50" itemChangedEvent="checkReTypeEmail()"/>
+			</mx:HBox>
+			<mx:Spacer height="10"/>
+				<mx:HBox width="100%" horizontalGap="3" verticalAlign="middle" >
+					<mx:Label text="Address " width="96" textAlign="right" height="20" />
+					<customcomponents:GenTextInput id="tiaddress1" width="233" xmlTag="customer_address1"
+						updatableFlag="true" tabIndex="11" tableName="melting_transaction" height="20"  
+						defaultValue="" validationFlag="false" toolTip="Address #1" maxChars="50" />
+					<mx:Spacer width="47"/>
+					<customcomponents:GenCheckBox id="cbUnsubscribe" labelPlacement="left" label="Subscribe" xmlTag="offer_solicited_flag"
+						updatableFlag="true"  tableName="melting_transaction" defaultValue="N" textAlign="right" enabled="true" tabIndex="21"
+						dataValueForOn="N" dataValueForOff="Y"   height="20" width="105"/>
+				</mx:HBox>
+				
+				<mx:HBox width="100%" horizontalGap="3" verticalAlign="middle">
+					<mx:Spacer width="96"/>
+					<customcomponents:GenTextInput id="tiaddress2" width="233" xmlTag="customer_address2"
+						updatableFlag="true" tabIndex="12" tableName="melting_transaction" height="20"  
+						defaultValue="" validationFlag="false" toolTip="Address #2" maxChars="50" />
+					<mx:Spacer width="23"/>
+					<customcomponents:GenCheckBox id="cbReceived" labelPlacement="left" label="Packet Received" xmlTag="receivepacket"
+						updatableFlag="true"  tableName="melting_transaction" defaultValue="Y" textAlign="right" enabled="true" tabIndex="24"
+						dataValueForOn="Y" dataValueForOff="N"   width="0" validationFlag = "true" height="0" visible="false"/>
+				</mx:HBox>
+				
+				<mx:HBox width="100%" horizontalGap="2" verticalAlign="middle">
+					<mx:Label text="City" width="96" textAlign="right" height="20" />
+					<customcomponents:GenTextInput id="ticity" width="233" xmlTag="customer_city"
+						updatableFlag="true" tabIndex="13" tableName="melting_transaction"
+						defaultValue="" validationFlag="false" toolTip="City" height="20" maxChars="25" />
+				</mx:HBox>
+				<mx:HBox width="100%" horizontalGap="2" verticalAlign="middle">
+					<mx:Label text="State/Zip" width="96" textAlign="right" height="20" />
+					<customcomponents:GenTextInput id="tistate" width="115" xmlTag="customer_state"
+						updatableFlag="true" tabIndex="14" tableName="melting_transaction"
+						defaultValue="" validationFlag="false" toolTip="State" height="20" maxChars="25" />
+				
+					<customcomponents:GenTextInput id="tizip" width="115" xmlTag="customer_zip"
+						updatableFlag="true" tabIndex="15" tableName="melting_transaction"
+						defaultValue="" validationFlag="false" toolTip="Zip" height="20" maxChars="15" />
+				</mx:HBox>
+
+				<mx:HBox width="100%" horizontalGap="2" verticalAlign="middle">
+					<mx:Label text="Country" width="96" textAlign="right" height="20" />
+					<customcomponents:GenTextInput id="ticountry" width="116" xmlTag="customer_country" 
+						updatableFlag="true" tabIndex="16" tableName="melting_transaction"
+						defaultValue="" validationFlag="false" toolTip="Country" height="20" maxChars="20" />
+				</mx:HBox>
+
+				<mx:HBox width="100%" horizontalGap="2" verticalAlign="middle">
+					<mx:Label text="Phone/Fax" width="96" textAlign="right" height="20" />
+					<customcomponents:GenTextInput id="tiphone1" width="116" xmlTag="customer_phone"
+						updatableFlag="true" tabIndex="17" tableName="melting_transaction"
+						defaultValue="" validationFlag="false" toolTip="Phone" height="20" maxChars="50" />
+					<customcomponents:GenTextInput id="tifax1" width="115" xmlTag="customer_fax"
+						updatableFlag="true" tabIndex="18" tableName="melting_transaction"
+						defaultValue="" validationFlag="false" toolTip="Fax" height="20" maxChars="50" />
+				</mx:HBox>
+				<mx:VBox width="100%" paddingTop="10">
+					
+					<customcomponents:GenButton id="next" skin="{null}" icon="@Embed(source='../../../com/generic/assets/nextbutton.JPG')"
+						 click="nextClickHandler()" width="72" height="72" textAlign="center" />	
+				</mx:VBox>
+
+
+		</mx:VBox>
+		
+		<customcomponents:GenComboBox id="cbAction_flag" width="0" cornerRadius="0" xmlTag="status" updatableFlag="true"
+				tableName="melting_transaction" defaultValue="" height="0" visible="false"
+				dataProvider="{GenModelLocator.getInstance().masterData.child('action_flag').action_flag}" labelField="label" />
+		
+		<customcomponents:GenTextInput id="tiMelting_packet_request_id" width="0" xmlTag="melting_packet_request_id"
+					updatableFlag="true"  tableName="melting_transaction" visible="false" 
+					validationFlag="false" toolTip="Melting Packet Request ID" height="0"  />
+		
+		<customcomponents:GenTextInput id="tiCurrent_melting_stage_code" width="0" xmlTag="current_melting_stage_code"
+					updatableFlag="true"  tableName="melting_transaction" visible="false" 
+					defaultValue="RECEIVEPACKET" validationFlag="false" toolTip="Current Melting Stage #" height="0"  />
+	
+		<mx:EmailValidator source="{tiEmail}" property="text" id="emailValidator" triggerEvent=""/>
+			
+</gencomponents:AddEdit>

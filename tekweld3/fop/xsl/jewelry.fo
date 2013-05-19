@@ -1,0 +1,1214 @@
+<?xml version="1.0" encoding="UTF-8"?><xsl:transform version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:j4lext="xalan://com.java4less.xreport.fop.XLSTExtension" extension-element-prefixes="j4lext"  >
+<xsl:template match="/"><fo:root xmlns:fo="http://www.w3.org/1999/XSL/Format">
+<fo:layout-master-set>
+<fo:simple-page-master master-name="master1" page-width="23.0cm" page-height="29.7cm" margin-top="0.0cm"   margin-bottom="1.0cm" margin-left="1.0cm"  margin-right="2.0cm"  > 
+  <fo:region-body   margin-top="5.32cm"/> 
+  <fo:region-before extent="5.32cm"/> 
+  <fo:region-after  extent="-0.22cm"/> 
+  </fo:simple-page-master>
+</fo:layout-master-set>
+<fo:page-sequence master-reference="master1">
+<fo:static-content flow-name="xsl-region-before">
+<fo:table width="20.0cm"  >
+  <fo:table-column column-width="2.73cm"/>
+  <fo:table-column column-width="3.27cm"/>
+  <fo:table-column column-width="1.0cm"/>
+  <fo:table-column column-width="8.0cm"/>
+  <fo:table-column column-width="2.73cm"/>
+  <fo:table-column column-width="2.27cm"/>
+  <fo:table-body>
+    <fo:table-row   background-color="#ffffff" height="0.73cm">
+        <fo:table-cell   number-columns-spanned="1">
+        <fo:block></fo:block>        </fo:table-cell>
+        <fo:table-cell   number-columns-spanned="1">
+        <fo:block></fo:block>        </fo:table-cell>
+        <fo:table-cell   number-columns-spanned="2">
+      <fo:block   margin-left="0.0cm" margin-right="2.41cm"  margin-top="0.24cm"  font-size="12pt"  font-family="SansSerif"  font-style="bold"  color="#000000"  text-align="left"><xsl:value-of select="catalog_items/catalog_item/company_name"></xsl:value-of></fo:block>
+        </fo:table-cell>
+        <fo:table-cell   number-columns-spanned="1">
+        <fo:block></fo:block>        </fo:table-cell>
+        <fo:table-cell   number-columns-spanned="1">
+        <fo:block></fo:block>        </fo:table-cell>
+    </fo:table-row>
+    <fo:table-row   background-color="#ffffff" height="0.51cm">
+        <fo:table-cell   number-columns-spanned="1">
+        <fo:block></fo:block>        </fo:table-cell>
+        <fo:table-cell   number-columns-spanned="1">
+        <fo:block></fo:block>        </fo:table-cell>
+        <fo:table-cell   number-columns-spanned="2">
+      <fo:block   margin-left="0.0cm" margin-right="2.32cm"  margin-top="0.0cm"  font-size="11pt"  font-family="SansSerif"  font-style="bold"  color="#000000"  text-align="left"><xsl:value-of select="catalog_items/catalog_item/company_address1"></xsl:value-of></fo:block>
+        </fo:table-cell>
+        <fo:table-cell   number-columns-spanned="1">
+        <fo:block></fo:block>        </fo:table-cell>
+        <fo:table-cell   number-columns-spanned="1">
+        <fo:block></fo:block>        </fo:table-cell>
+    </fo:table-row>
+    <fo:table-row   background-color="#ffffff" height="0.49cm">
+        <fo:table-cell   number-columns-spanned="1">
+        <fo:block></fo:block>        </fo:table-cell>
+        <fo:table-cell   number-columns-spanned="1">
+        <fo:block></fo:block>        </fo:table-cell>
+        <fo:table-cell   number-columns-spanned="2">
+      <fo:block   margin-left="0.0cm" margin-right="2.38cm"  margin-top="0.0cm"  font-size="11pt"  font-family="SansSerif"  font-style="bold"  color="#000000"  text-align="left"><xsl:value-of select="catalog_items/catalog_item/company_address2"></xsl:value-of></fo:block>
+        </fo:table-cell>
+        <fo:table-cell   number-columns-spanned="1">
+        <fo:block></fo:block>        </fo:table-cell>
+        <fo:table-cell   number-columns-spanned="1">
+        <fo:block></fo:block>        </fo:table-cell>
+    </fo:table-row>
+    <fo:table-row   background-color="#ffffff" height="0.51cm">
+        <fo:table-cell   number-columns-spanned="1">
+        <fo:block></fo:block>        </fo:table-cell>
+        <fo:table-cell   number-columns-spanned="1">
+        <fo:block></fo:block>        </fo:table-cell>
+        <fo:table-cell   number-columns-spanned="2">
+      <fo:block   margin-left="0.0cm" margin-right="2.43cm"  margin-top="0.0cm"  font-size="11pt"  font-family="SansSerif"  font-style="bold"  color="#000000"  text-align="left"><xsl:value-of select="concat(/catalog_items/catalog_item/company_city,',     ', /catalog_items/catalog_item/company_state ,',     ', /catalog_items/catalog_item/company_zip ,',     ', /catalog_items/catalog_item/company_country)"></xsl:value-of></fo:block>
+        </fo:table-cell>
+        <fo:table-cell   number-columns-spanned="1">
+        <fo:block></fo:block>        </fo:table-cell>
+        <fo:table-cell   number-columns-spanned="1">
+        <fo:block></fo:block>        </fo:table-cell>
+    </fo:table-row>
+    <fo:table-row   background-color="#ffffff" height="0.49cm">
+        <fo:table-cell   number-columns-spanned="1">
+        <fo:block></fo:block>        </fo:table-cell>
+        <fo:table-cell   number-columns-spanned="1">
+        <fo:block></fo:block>        </fo:table-cell>
+        <fo:table-cell   number-columns-spanned="1">
+      <fo:block   margin-left="0.0cm" margin-right="0.05cm"  margin-top="0.0cm"  font-size="11pt"  font-family="SansSerif"  font-style="bold"  color="#000000"  text-align="left">Tel :</fo:block>
+        </fo:table-cell>
+        <fo:table-cell   number-columns-spanned="1">
+      <fo:block   margin-left="0.0cm" margin-right="4.59cm"  margin-top="0.0cm"  font-size="11pt"  font-family="SansSerif"  font-style="bold"  color="#000000"  text-align="left"><xsl:value-of select="catalog_items/catalog_item/company_phone"></xsl:value-of></fo:block>
+        </fo:table-cell>
+        <fo:table-cell   number-columns-spanned="1">
+        <fo:block></fo:block>        </fo:table-cell>
+        <fo:table-cell   number-columns-spanned="1">
+        <fo:block></fo:block>        </fo:table-cell>
+    </fo:table-row>
+    <fo:table-row   background-color="#ffffff" height="0.51cm">
+        <fo:table-cell   number-columns-spanned="1">
+        <fo:block></fo:block>        </fo:table-cell>
+        <fo:table-cell   number-columns-spanned="1">
+        <fo:block></fo:block>        </fo:table-cell>
+        <fo:table-cell   number-columns-spanned="1">
+      <fo:block   margin-left="0.0cm" margin-right="0.0cm"  margin-top="0.0cm"  font-size="11pt"  font-family="SansSerif"  font-style="bold"  color="#000000"  text-align="left">Fax :</fo:block>
+        </fo:table-cell>
+        <fo:table-cell   number-columns-spanned="1">
+      <fo:block   margin-left="0.0cm" margin-right="4.89cm"  margin-top="0.0cm"  font-size="11pt"  font-family="SansSerif"  font-style="bold"  color="#000000"  text-align="left"><xsl:value-of select="catalog_items/catalog_item/company_fax"></xsl:value-of></fo:block>
+        </fo:table-cell>
+        <fo:table-cell   number-columns-spanned="1">
+        <fo:block></fo:block>        </fo:table-cell>
+        <fo:table-cell   number-columns-spanned="1">
+        <fo:block></fo:block>        </fo:table-cell>
+    </fo:table-row>
+    <fo:table-row   background-color="#ffffff" height="0.49cm">
+        <fo:table-cell   number-columns-spanned="1">
+      <fo:block   margin-left="0.49cm" margin-right="0.89cm"  margin-top="0.0cm"  font-size="9pt"  font-family="SansSerif"  font-style="bold"  color="#000000"  text-align="left">Item #</fo:block>
+        </fo:table-cell>
+        <fo:table-cell   number-columns-spanned="1">
+      <fo:block   margin-left="0.0cm" margin-right="0.59cm"  margin-top="0.0cm"  font-size="8pt"  font-family="SansSerif"  color="#000000"  text-align="left"><xsl:value-of select="catalog_items/catalog_item/store_code"></xsl:value-of></fo:block>
+        </fo:table-cell>
+        <fo:table-cell   number-columns-spanned="1">
+        <fo:block></fo:block>        </fo:table-cell>
+        <fo:table-cell   number-columns-spanned="1">
+        <fo:block></fo:block>        </fo:table-cell>
+        <fo:table-cell   number-columns-spanned="1">
+      <fo:block   margin-left="1.0cm" margin-right="0.0cm"  margin-top="0.0cm"  font-size="9pt"  font-family="SansSerif"  font-style="bold"  color="#000000"  text-align="right">Metal Base</fo:block>
+        </fo:table-cell>
+        <fo:table-cell   number-columns-spanned="1">
+      <fo:block   margin-left="0.0cm" margin-right="0.27cm"  margin-top="0.0cm"  font-size="8pt"  font-family="SansSerif"  color="#000000"  text-align="right"><xsl:value-of select="catalog_items/catalog_item/gold_total_rate"></xsl:value-of></fo:block>
+        </fo:table-cell>
+    </fo:table-row>
+    <fo:table-row   background-color="#ffffff" height="0.51cm">
+        <fo:table-cell   number-columns-spanned="1">
+      <fo:block   margin-left="0.49cm" margin-right="0.11cm"  margin-top="0.0cm"  font-size="9pt"  font-family="SansSerif"  font-style="bold"  color="#000000"  text-align="left">Item Category</fo:block>
+        </fo:table-cell>
+        <fo:table-cell   number-columns-spanned="1">
+      <fo:block   margin-left="0.0cm" margin-right="0.3cm"  margin-top="0.0cm"  font-size="8pt"  font-family="SansSerif"  color="#000000"  text-align="left"><xsl:value-of select="catalog_items/catalog_item/item_category_name"></xsl:value-of></fo:block>
+        </fo:table-cell>
+        <fo:table-cell   number-columns-spanned="1">
+        <fo:block></fo:block>        </fo:table-cell>
+        <fo:table-cell   number-columns-spanned="1">
+        <fo:block></fo:block>        </fo:table-cell>
+        <fo:table-cell   number-columns-spanned="1">
+      <fo:block   margin-left="1.0cm" margin-right="0.0cm"  margin-top="0.0cm"  font-size="9pt"  font-family="SansSerif"  font-style="bold"  color="#000000"  text-align="right">W. Price</fo:block>
+        </fo:table-cell>
+        <fo:table-cell   number-columns-spanned="1">
+      <fo:block   margin-left="0.0cm" margin-right="0.27cm"  margin-top="0.0cm"  font-size="8pt"  font-family="SansSerif"  color="#000000"  text-align="right"><xsl:value-of select="catalog_items/catalog_item/price"></xsl:value-of></fo:block>
+        </fo:table-cell>
+    </fo:table-row>
+    <fo:table-row   background-color="#ffffff" height="0.49cm">
+        <fo:table-cell   number-columns-spanned="1">
+      <fo:block   margin-left="0.49cm" margin-right="0.89cm"  margin-top="0.0cm"  font-size="9pt"  font-family="SansSerif"  font-style="bold"  color="#000000"  text-align="left">Name</fo:block>
+        </fo:table-cell>
+        <fo:table-cell   number-columns-spanned="1">
+      <fo:block   margin-left="0.0cm" margin-right="0.0cm"  margin-top="0.0cm"  font-size="8pt"  font-family="SansSerif"  color="#000000"  text-align="left"><xsl:value-of select="catalog_items/catalog_item/name"></xsl:value-of></fo:block>
+        </fo:table-cell>
+        <fo:table-cell   number-columns-spanned="1">
+        <fo:block></fo:block>        </fo:table-cell>
+        <fo:table-cell   number-columns-spanned="1">
+        <fo:block></fo:block>        </fo:table-cell>
+        <fo:table-cell   number-columns-spanned="1">
+        <fo:block></fo:block>        </fo:table-cell>
+        <fo:table-cell   number-columns-spanned="1">
+        <fo:block></fo:block>        </fo:table-cell>
+    </fo:table-row>
+    <fo:table-row   background-color="#ffffff" height="0.59cm">
+        <fo:table-cell   number-columns-spanned="6">
+      <fo:block margin-left="0.0cm" margin-right="0.0cm"  margin-top="0.0cm" ><fo:leader leader-pattern="rule"  color="#000000"  rule-thickness="1.0pt"  rule-style="solid"  leader-length="100%"/></fo:block>
+        </fo:table-cell>
+    </fo:table-row>
+  </fo:table-body>
+</fo:table>
+</fo:static-content>
+<fo:static-content flow-name="xsl-region-after">
+<fo:table width="20.0cm"  >
+  <fo:table-column column-width="20.0cm"/>
+  <fo:table-body>
+    <fo:table-row   background-color="#ffffff" height="-0.22cm">
+      <fo:table-cell><fo:table>
+      <fo:table-column column-width="20.0cm"/>
+      <fo:table-body>
+      <fo:table-row  background-color="#ffffff" height="-0.22cm">
+        <fo:table-cell   number-columns-spanned="1">
+        <fo:block></fo:block>        </fo:table-cell>
+    </fo:table-row>
+    </fo:table-body>
+    </fo:table></fo:table-cell>
+    </fo:table-row>
+  </fo:table-body>
+</fo:table>
+</fo:static-content>
+<fo:flow flow-name="xsl-region-body"> 
+
+<!-- START Area Header -->
+<fo:table width="20.0cm"  >
+  <fo:table-column column-width="20.0cm"/>
+  <fo:table-body>
+    <fo:table-row   background-color="#ffffff" height="-0.22cm">
+      <fo:table-cell><fo:table>
+      <fo:table-column column-width="20.0cm"/>
+      <fo:table-body>
+      <fo:table-row  background-color="#ffffff" height="-0.22cm">
+        <fo:table-cell   number-columns-spanned="1">
+        <fo:block></fo:block>        </fo:table-cell>
+    </fo:table-row>
+    </fo:table-body>
+    </fo:table></fo:table-cell>
+    </fo:table-row>
+<fo:table-row>
+<fo:table-cell number-columns-spanned="1">
+<fo:block>
+
+<!-- START Area Detail 1 -->
+<xsl:if test="count(catalog_items/catalog_item/catalog_item_castings/catalog_item_casting) &gt; 0" >
+<fo:table width="20.0cm"  border-color="#000000" border-style="solid" border-width="medium" >
+  <fo:table-column column-width="3.0cm"/>
+  <fo:table-column column-width="2.24cm"/>
+  <fo:table-column column-width="1.76cm"/>
+  <fo:table-column column-width="2.24cm"/>
+  <fo:table-column column-width="2.25cm"/>
+  <fo:table-column column-width="2.75cm"/>
+  <fo:table-column column-width="2.49cm"/>
+  <fo:table-column column-width="3.27cm"/>
+  <fo:table-header>
+    <fo:table-row   background-color="#ffffff" height="0.49cm">
+        <fo:table-cell  border-right-color="#000000" border-right-style="solid" border-right-width="medium"  number-columns-spanned="1">
+      <fo:block   margin-left="0.0cm" margin-right="0.14cm"  margin-top="0.0cm"  font-size="11pt"  font-family="SansSerif"  font-style="bold"  color="#000000"  text-align="left"><fo:wrapper ><fo:inline
+text-decoration = "underline"> CASTING</fo:inline></fo:wrapper></fo:block>
+        </fo:table-cell>
+        <fo:table-cell  border-right-color="#000000" border-right-style="solid" border-right-width="medium"  number-columns-spanned="1">
+        <fo:block></fo:block>        </fo:table-cell>
+        <fo:table-cell  border-right-color="#000000" border-right-style="solid" border-right-width="medium"  number-columns-spanned="1">
+        <fo:block></fo:block>        </fo:table-cell>
+        <fo:table-cell  border-right-color="#000000" border-right-style="solid" border-right-width="medium"  number-columns-spanned="1">
+        <fo:block></fo:block>        </fo:table-cell>
+        <fo:table-cell  border-right-color="#000000" border-right-style="solid" border-right-width="medium"  number-columns-spanned="1">
+        <fo:block></fo:block>        </fo:table-cell>
+        <fo:table-cell  border-right-color="#000000" border-right-style="solid" border-right-width="medium"  number-columns-spanned="1">
+        <fo:block></fo:block>        </fo:table-cell>
+        <fo:table-cell  border-right-color="#000000" border-right-style="solid" border-right-width="medium"  number-columns-spanned="1">
+        <fo:block></fo:block>        </fo:table-cell>
+        <fo:table-cell   number-columns-spanned="1">
+        <fo:block></fo:block>        </fo:table-cell>
+    </fo:table-row>
+    <fo:table-row   background-color="#ffffff" height="0.29cm">
+        <fo:table-cell  border-right-color="#000000" border-right-style="solid" border-right-width="medium"  number-columns-spanned="1">
+      <fo:block   margin-left="0.24cm" margin-right="0.73cm"  margin-top="0.0cm"  font-size="9pt"  font-family="SansSerif"  font-style="bold"  color="#000000"  text-align="left">Type</fo:block>
+        </fo:table-cell>
+        <fo:table-cell  border-right-color="#000000" border-right-style="solid" border-right-width="medium"  number-columns-spanned="1">
+      <fo:block   margin-left="0.24cm" margin-right="0.65cm"  margin-top="0.0cm"  font-size="9pt"  font-family="SansSerif"  font-style="bold"  color="#000000"  text-align="left">Color</fo:block>
+        </fo:table-cell>
+        <fo:table-cell  border-right-color="#000000" border-right-style="solid" border-right-width="medium"  number-columns-spanned="1">
+      <fo:block   margin-left="0.25cm" margin-right="0.16cm"  margin-top="0.0cm"  font-size="9pt"  font-family="SansSerif"  font-style="bold"  color="#000000"  text-align="right">Qty</fo:block>
+        </fo:table-cell>
+        <fo:table-cell  border-right-color="#000000" border-right-style="solid" border-right-width="medium"  number-columns-spanned="1">
+      <fo:block   margin-left="0.73cm" margin-right="0.21cm"  margin-top="0.0cm"  font-size="9pt"  font-family="SansSerif"  font-style="bold"  color="#000000"  text-align="right">Cast Wt</fo:block>
+        </fo:table-cell>
+        <fo:table-cell  border-right-color="#000000" border-right-style="solid" border-right-width="medium"  number-columns-spanned="1">
+      <fo:block   margin-left="0.25cm" margin-right="0.08cm"  margin-top="0.0cm"  font-size="9pt"  font-family="SansSerif"  font-style="bold"  color="#000000"  text-align="right">Finished Wt</fo:block>
+        </fo:table-cell>
+        <fo:table-cell  border-right-color="#000000" border-right-style="solid" border-right-width="medium"  number-columns-spanned="1">
+      <fo:block   margin-left="0.24cm" margin-right="0.1cm"  margin-top="0.0cm"  font-size="9pt"  font-family="SansSerif"  font-style="bold"  color="#000000"  text-align="left">Unit Of Measure</fo:block>
+        </fo:table-cell>
+        <fo:table-cell  border-right-color="#000000" border-right-style="solid" border-right-width="medium"  number-columns-spanned="1">
+      <fo:block   margin-left="1.0cm" margin-right="0.16cm"  margin-top="0.0cm"  font-size="9pt"  font-family="SansSerif"  font-style="bold"  color="#000000"  text-align="right">Cost</fo:block>
+        </fo:table-cell>
+        <fo:table-cell   number-columns-spanned="1">
+      <fo:block   margin-left="0.27cm" margin-right="1.65cm"  margin-top="0.0cm"  font-size="9pt"  font-family="SansSerif"  font-style="bold"  color="#000000"  text-align="left">Supplier</fo:block>
+        </fo:table-cell>
+    </fo:table-row>
+  </fo:table-header>
+  <fo:table-body>
+  <xsl:for-each select="catalog_items/catalog_item/catalog_item_castings/catalog_item_casting">
+    <fo:table-row   background-color="#ffffff" height="0.54cm">
+        <fo:table-cell  border-color="#000000" border-style="solid" border-width="medium"  number-columns-spanned="1">
+      <fo:block   margin-left="0.24cm" margin-right="0.89cm"  margin-top="0.24cm"  font-size="8pt"  font-family="SansSerif"  color="#000000"  text-align="left"><xsl:value-of select="metal_type"></xsl:value-of></fo:block>
+        </fo:table-cell>
+        <fo:table-cell  border-color="#000000" border-style="solid" border-width="medium"  number-columns-spanned="1">
+      <fo:block   margin-left="0.24cm" margin-right="0.46cm"  margin-top="0.24cm"  font-size="8pt"  font-family="SansSerif"  color="#000000"  text-align="left"><xsl:value-of select="metal_color"></xsl:value-of></fo:block>
+        </fo:table-cell>
+        <fo:table-cell  border-color="#000000" border-style="solid" border-width="medium"  number-columns-spanned="1">
+      <fo:block   margin-left="0.25cm" margin-right="0.16cm"  margin-top="0.24cm"  font-size="8pt"  font-family="SansSerif"  color="#000000"  text-align="right"><xsl:value-of select="qty"></xsl:value-of></fo:block>
+        </fo:table-cell>
+        <fo:table-cell  border-color="#000000" border-style="solid" border-width="medium"  number-columns-spanned="1">
+      <fo:block   margin-left="0.24cm" margin-right="0.1cm"  margin-top="0.24cm"  font-size="8pt"  font-family="SansSerif"  color="#000000"  text-align="right"><xsl:value-of select="wt"></xsl:value-of></fo:block>
+        </fo:table-cell>
+        <fo:table-cell  border-color="#000000" border-style="solid" border-width="medium"  number-columns-spanned="1">
+      <fo:block   margin-left="0.25cm" margin-right="0.11cm"  margin-top="0.24cm"  font-size="8pt"  font-family="SansSerif"  color="#000000"  text-align="right"><xsl:value-of select="finished_wt"></xsl:value-of></fo:block>
+        </fo:table-cell>
+        <fo:table-cell  border-color="#000000" border-style="solid" border-width="medium"  number-columns-spanned="1">
+      <fo:block   margin-left="0.24cm" margin-right="0.89cm"  margin-top="0.24cm"  font-size="8pt"  font-family="SansSerif"  color="#000000"  text-align="left"><xsl:value-of select="unit"></xsl:value-of></fo:block>
+        </fo:table-cell>
+        <fo:table-cell  border-color="#000000" border-style="solid" border-width="medium"  number-columns-spanned="1">
+      <fo:block   margin-left="0.25cm" margin-right="0.14cm"  margin-top="0.24cm"  font-size="8pt"  font-family="SansSerif"  color="#000000"  text-align="right"><xsl:value-of select="total_cost"></xsl:value-of></fo:block>
+        </fo:table-cell>
+        <fo:table-cell  border-color="#000000" border-style="solid" border-width="medium"  number-columns-spanned="1">
+      <fo:block   margin-left="0.27cm" margin-right="1.16cm"  margin-top="0.24cm"  font-size="8pt"  font-family="SansSerif"  color="#000000"  text-align="left"><xsl:value-of select="supplier_flag"></xsl:value-of></fo:block>
+        </fo:table-cell>
+    </fo:table-row>
+  </xsl:for-each>
+  </fo:table-body>
+</fo:table>
+</xsl:if>
+
+<!-- END Area Detail 1 -->
+</fo:block>
+</fo:table-cell>
+</fo:table-row>
+<fo:table-row>
+<fo:table-cell number-columns-spanned="1">
+<fo:block>
+
+<!-- START Area Detail 3 -->
+<xsl:if test="count(catalog_items/catalog_item/catalog_item_findings/catalog_item_finding) &gt; 0" >
+<fo:table width="20.0cm"  border-color="#000000" border-style="solid" border-width="medium" >
+  <fo:table-column column-width="3.0cm"/>
+  <fo:table-column column-width="2.24cm"/>
+  <fo:table-column column-width="1.76cm"/>
+  <fo:table-column column-width="2.24cm"/>
+  <fo:table-column column-width="2.25cm"/>
+  <fo:table-column column-width="2.75cm"/>
+  <fo:table-column column-width="2.49cm"/>
+  <fo:table-column column-width="3.27cm"/>
+  <fo:table-header>
+    <fo:table-row   background-color="#ffffff" height="0.49cm">
+        <fo:table-cell  border-right-color="#000000" border-right-style="solid" border-right-width="medium"  number-columns-spanned="1">
+      <fo:block   margin-left="0.24cm" margin-right="0.16cm"  margin-top="0.0cm"  font-size="11pt"  font-family="SansSerif"  font-style="bold"  color="#000000"  text-align="left"><fo:wrapper ><fo:inline
+text-decoration = "underline"> FINDING</fo:inline></fo:wrapper></fo:block>
+        </fo:table-cell>
+        <fo:table-cell  border-right-color="#000000" border-right-style="solid" border-right-width="medium"  number-columns-spanned="1">
+        <fo:block></fo:block>        </fo:table-cell>
+        <fo:table-cell  border-right-color="#000000" border-right-style="solid" border-right-width="medium"  number-columns-spanned="1">
+        <fo:block></fo:block>        </fo:table-cell>
+        <fo:table-cell  border-right-color="#000000" border-right-style="solid" border-right-width="medium"  number-columns-spanned="1">
+        <fo:block></fo:block>        </fo:table-cell>
+        <fo:table-cell  border-right-color="#000000" border-right-style="solid" border-right-width="medium"  number-columns-spanned="1">
+        <fo:block></fo:block>        </fo:table-cell>
+        <fo:table-cell  border-right-color="#000000" border-right-style="solid" border-right-width="medium"  number-columns-spanned="1">
+        <fo:block></fo:block>        </fo:table-cell>
+        <fo:table-cell  border-right-color="#000000" border-right-style="solid" border-right-width="medium"  number-columns-spanned="1">
+        <fo:block></fo:block>        </fo:table-cell>
+        <fo:table-cell   number-columns-spanned="1">
+        <fo:block></fo:block>        </fo:table-cell>
+    </fo:table-row>
+    <fo:table-row   background-color="#ffffff" height="0.27cm">
+        <fo:table-cell  border-right-color="#000000" border-right-style="solid" border-right-width="medium"  number-columns-spanned="1">
+      <fo:block   margin-left="0.24cm" margin-right="1.11cm"  margin-top="0.0cm"  font-size="9pt"  font-family="SansSerif"  font-style="bold"  color="#000000"  text-align="left">Type</fo:block>
+        </fo:table-cell>
+        <fo:table-cell  border-right-color="#000000" border-right-style="solid" border-right-width="medium"  number-columns-spanned="1">
+      <fo:block   margin-left="0.24cm" margin-right="0.65cm"  margin-top="0.0cm"  font-size="9pt"  font-family="SansSerif"  font-style="bold"  color="#000000"  text-align="left">Color</fo:block>
+        </fo:table-cell>
+        <fo:table-cell  border-right-color="#000000" border-right-style="solid" border-right-width="medium"  number-columns-spanned="1">
+      <fo:block   margin-left="0.25cm" margin-right="0.16cm"  margin-top="0.0cm"  font-size="9pt"  font-family="SansSerif"  font-style="bold"  color="#000000"  text-align="right">Qty</fo:block>
+        </fo:table-cell>
+        <fo:table-cell  border-right-color="#000000" border-right-style="solid" border-right-width="medium"  number-columns-spanned="1">
+      <fo:block   margin-left="0.73cm" margin-right="0.16cm"  margin-top="0.0cm"  font-size="9pt"  font-family="SansSerif"  font-style="bold"  color="#000000"  text-align="right">Cast Wt</fo:block>
+        </fo:table-cell>
+        <fo:table-cell  border-right-color="#000000" border-right-style="solid" border-right-width="medium"  number-columns-spanned="1">
+      <fo:block   margin-left="0.25cm" margin-right="0.17cm"  margin-top="0.0cm"  font-size="9pt"  font-family="SansSerif"  font-style="bold"  color="#000000"  text-align="right">Finished Wt</fo:block>
+        </fo:table-cell>
+        <fo:table-cell  border-right-color="#000000" border-right-style="solid" border-right-width="medium"  number-columns-spanned="1">
+      <fo:block   margin-left="0.24cm" margin-right="0.16cm"  margin-top="0.0cm"  font-size="9pt"  font-family="SansSerif"  font-style="bold"  color="#000000"  text-align="left">Unit Of Measure</fo:block>
+        </fo:table-cell>
+        <fo:table-cell  border-right-color="#000000" border-right-style="solid" border-right-width="medium"  number-columns-spanned="1">
+      <fo:block   margin-left="1.0cm" margin-right="0.14cm"  margin-top="0.0cm"  font-size="10pt"  font-family="SansSerif"  font-style="bold"  color="#000000"  text-align="right">Cost</fo:block>
+        </fo:table-cell>
+        <fo:table-cell   number-columns-spanned="1">
+      <fo:block   margin-left="0.27cm" margin-right="1.65cm"  margin-top="0.0cm"  font-size="9pt"  font-family="SansSerif"  font-style="bold"  color="#000000"  text-align="left">Supplier</fo:block>
+        </fo:table-cell>
+    </fo:table-row>
+  </fo:table-header>
+  <fo:table-body>
+  <xsl:for-each select="catalog_items/catalog_item/catalog_item_findings/catalog_item_finding">
+    <fo:table-row   background-color="#ffffff" height="0.54cm">
+        <fo:table-cell  border-color="#000000" border-style="solid" border-width="medium"  number-columns-spanned="1">
+      <fo:block   margin-left="0.24cm" margin-right="1.41cm"  margin-top="0.24cm"  font-size="8pt"  font-family="SansSerif"  color="#000000"  text-align="left"><xsl:value-of select="metal_type"></xsl:value-of></fo:block>
+        </fo:table-cell>
+        <fo:table-cell  border-color="#000000" border-style="solid" border-width="medium"  number-columns-spanned="1">
+      <fo:block   margin-left="0.24cm" margin-right="0.38cm"  margin-top="0.24cm"  font-size="8pt"  font-family="SansSerif"  color="#000000"  text-align="left"><xsl:value-of select="metal_color"></xsl:value-of></fo:block>
+        </fo:table-cell>
+        <fo:table-cell  border-color="#000000" border-style="solid" border-width="medium"  number-columns-spanned="1">
+      <fo:block   margin-left="0.25cm" margin-right="0.16cm"  margin-top="0.24cm"  font-size="8pt"  font-family="SansSerif"  color="#000000"  text-align="right"><xsl:value-of select="qty"></xsl:value-of></fo:block>
+        </fo:table-cell>
+        <fo:table-cell  border-color="#000000" border-style="solid" border-width="medium"  number-columns-spanned="1">
+      <fo:block   margin-left="0.24cm" margin-right="0.13cm"  margin-top="0.24cm"  font-size="8pt"  font-family="SansSerif"  color="#000000"  text-align="right"><xsl:value-of select="wt"></xsl:value-of></fo:block>
+        </fo:table-cell>
+        <fo:table-cell  border-color="#000000" border-style="solid" border-width="medium"  number-columns-spanned="1">
+      <fo:block   margin-left="0.25cm" margin-right="0.14cm"  margin-top="0.24cm"  font-size="8pt"  font-family="SansSerif"  color="#000000"  text-align="right"><xsl:value-of select="finished_wt"></xsl:value-of></fo:block>
+        </fo:table-cell>
+        <fo:table-cell  border-color="#000000" border-style="solid" border-width="medium"  number-columns-spanned="1">
+      <fo:block   margin-left="0.24cm" margin-right="1.16cm"  margin-top="0.24cm"  font-size="8pt"  font-family="SansSerif"  color="#000000"  text-align="left"><xsl:value-of select="unit"></xsl:value-of></fo:block>
+        </fo:table-cell>
+        <fo:table-cell  border-color="#000000" border-style="solid" border-width="medium"  number-columns-spanned="1">
+      <fo:block   margin-left="0.25cm" margin-right="0.05cm"  margin-top="0.24cm"  font-size="8pt"  font-family="SansSerif"  color="#000000"  text-align="right"><xsl:value-of select="total_cost"></xsl:value-of></fo:block>
+        </fo:table-cell>
+        <fo:table-cell  border-color="#000000" border-style="solid" border-width="medium"  number-columns-spanned="1">
+      <fo:block   margin-left="0.27cm" margin-right="1.3cm"  margin-top="0.24cm"  font-size="8pt"  font-family="SansSerif"  color="#000000"  text-align="left"><xsl:value-of select="supplier_flag"></xsl:value-of></fo:block>
+        </fo:table-cell>
+    </fo:table-row>
+  </xsl:for-each>
+  </fo:table-body>
+</fo:table>
+</xsl:if>
+
+<!-- END Area Detail 3 -->
+</fo:block>
+</fo:table-cell>
+</fo:table-row>
+<fo:table-row>
+<fo:table-cell number-columns-spanned="1">
+<fo:block>
+
+<!-- START Area Detail 4 -->
+<xsl:if test="count(catalog_items/catalog_item/catalog_item_stones/catalog_item_stone) &gt; 0" >
+<fo:table width="20.0cm"  border-color="#000000" border-style="solid" border-width="medium" >
+  <fo:table-column column-width="3.0cm"/>
+  <fo:table-column column-width="1.24cm"/>
+  <fo:table-column column-width="1.25cm"/>
+  <fo:table-column column-width="1.24cm"/>
+  <fo:table-column column-width="1.27cm"/>
+  <fo:table-column column-width="1.24cm"/>
+  <fo:table-column column-width="1.25cm"/>
+  <fo:table-column column-width="1.24cm"/>
+  <fo:table-column column-width="1.76cm"/>
+  <fo:table-column column-width="1.51cm"/>
+  <fo:table-column column-width="1.49cm"/>
+  <fo:table-column column-width="1.75cm"/>
+  <fo:table-column column-width="1.76cm"/>
+  <fo:table-header>
+    <fo:table-row   background-color="#ffffff" height="0.49cm">
+        <fo:table-cell  border-right-color="#000000" border-right-style="solid" border-right-width="medium"  number-columns-spanned="1">
+      <fo:block   margin-left="0.0cm" margin-right="0.0cm"  margin-top="0.0cm"  font-size="11pt"  font-family="SansSerif"  font-style="bold"  color="#000000"  text-align="left"><fo:wrapper ><fo:inline
+text-decoration = "underline"> COLOR STONE</fo:inline></fo:wrapper></fo:block>
+        </fo:table-cell>
+        <fo:table-cell  border-right-color="#000000" border-right-style="solid" border-right-width="medium"  number-columns-spanned="1">
+        <fo:block></fo:block>        </fo:table-cell>
+        <fo:table-cell  border-right-color="#000000" border-right-style="solid" border-right-width="medium"  number-columns-spanned="1">
+        <fo:block></fo:block>        </fo:table-cell>
+        <fo:table-cell  border-right-color="#000000" border-right-style="solid" border-right-width="medium"  number-columns-spanned="1">
+        <fo:block></fo:block>        </fo:table-cell>
+        <fo:table-cell  border-right-color="#000000" border-right-style="solid" border-right-width="medium"  number-columns-spanned="1">
+        <fo:block></fo:block>        </fo:table-cell>
+        <fo:table-cell  border-right-color="#000000" border-right-style="solid" border-right-width="medium"  number-columns-spanned="1">
+        <fo:block></fo:block>        </fo:table-cell>
+        <fo:table-cell  border-right-color="#000000" border-right-style="solid" border-right-width="medium"  number-columns-spanned="1">
+        <fo:block></fo:block>        </fo:table-cell>
+        <fo:table-cell  border-right-color="#000000" border-right-style="solid" border-right-width="medium"  number-columns-spanned="1">
+        <fo:block></fo:block>        </fo:table-cell>
+        <fo:table-cell  border-right-color="#000000" border-right-style="solid" border-right-width="medium"  number-columns-spanned="1">
+        <fo:block></fo:block>        </fo:table-cell>
+        <fo:table-cell  border-right-color="#000000" border-right-style="solid" border-right-width="medium"  number-columns-spanned="1">
+        <fo:block></fo:block>        </fo:table-cell>
+        <fo:table-cell  border-right-color="#000000" border-right-style="solid" border-right-width="medium"  number-columns-spanned="1">
+        <fo:block></fo:block>        </fo:table-cell>
+        <fo:table-cell  border-right-color="#000000" border-right-style="solid" border-right-width="medium"  number-columns-spanned="1">
+        <fo:block></fo:block>        </fo:table-cell>
+        <fo:table-cell   number-columns-spanned="1">
+        <fo:block></fo:block>        </fo:table-cell>
+    </fo:table-row>
+    <fo:table-row   background-color="#ffffff" height="0.35cm">
+        <fo:table-cell  border-right-color="#000000" border-right-style="solid" border-right-width="medium"  number-columns-spanned="1">
+      <fo:block   margin-left="0.24cm" margin-right="1.0cm"  margin-top="0.0cm"  font-size="9pt"  font-family="SansSerif"  font-style="bold"  color="#000000"  text-align="left">Color Stone</fo:block>
+        </fo:table-cell>
+        <fo:table-cell  border-right-color="#000000" border-right-style="solid" border-right-width="medium"  number-columns-spanned="1">
+      <fo:block   margin-left="0.0cm" margin-right="0.05cm"  margin-top="0.0cm"  font-size="9pt"  font-family="SansSerif"  font-style="bold"  color="#000000"  text-align="left">Shape</fo:block>
+        </fo:table-cell>
+        <fo:table-cell  border-right-color="#000000" border-right-style="solid" border-right-width="medium"  number-columns-spanned="1">
+      <fo:block   margin-left="0.0cm" margin-right="0.06cm"  margin-top="0.0cm"  font-size="9pt"  font-family="SansSerif"  font-style="bold"  color="#000000"  text-align="left">Color</fo:block>
+        </fo:table-cell>
+        <fo:table-cell  border-right-color="#000000" border-right-style="solid" border-right-width="medium"  number-columns-spanned="1">
+      <fo:block   margin-left="0.0cm" margin-right="0.0cm"  margin-top="0.0cm"  font-size="9pt"  font-family="SansSerif"  font-style="bold"  color="#000000"  text-align="left">Size</fo:block>
+        </fo:table-cell>
+        <fo:table-cell  border-right-color="#000000" border-right-style="solid" border-right-width="medium"  number-columns-spanned="1">
+      <fo:block   margin-left="0.0cm" margin-right="0.0cm"  margin-top="0.0cm"  font-size="9pt"  font-family="SansSerif"  font-style="bold"  color="#000000"  text-align="left">Length</fo:block>
+        </fo:table-cell>
+        <fo:table-cell  border-right-color="#000000" border-right-style="solid" border-right-width="medium"  number-columns-spanned="1">
+      <fo:block   margin-left="0.0cm" margin-right="0.13cm"  margin-top="0.0cm"  font-size="9pt"  font-family="SansSerif"  font-style="bold"  color="#000000"  text-align="left">Quality</fo:block>
+        </fo:table-cell>
+        <fo:table-cell  border-right-color="#000000" border-right-style="solid" border-right-width="medium"  number-columns-spanned="1">
+      <fo:block   margin-left="0.0cm" margin-right="0.0cm"  margin-top="0.0cm"  font-size="9pt"  font-family="SansSerif"  font-style="bold"  color="#000000"  text-align="right">Avg Wt</fo:block>
+        </fo:table-cell>
+        <fo:table-cell  border-right-color="#000000" border-right-style="solid" border-right-width="medium"  number-columns-spanned="1">
+      <fo:block   margin-left="0.0cm" margin-right="0.24cm"  margin-top="0.0cm"  font-size="9pt"  font-family="SansSerif"  font-style="bold"  color="#000000"  text-align="right">Qty</fo:block>
+        </fo:table-cell>
+        <fo:table-cell  border-right-color="#000000" border-right-style="solid" border-right-width="medium"  number-columns-spanned="1">
+      <fo:block   margin-left="0.0cm" margin-right="0.08cm"  margin-top="0.0cm"  font-size="9pt"  font-family="SansSerif"  font-style="bold"  color="#000000"  text-align="right">Unit Price</fo:block>
+        </fo:table-cell>
+        <fo:table-cell  border-right-color="#000000" border-right-style="solid" border-right-width="medium"  number-columns-spanned="1">
+      <fo:block   margin-left="0.0cm" margin-right="0.05cm"  margin-top="0.0cm"  font-size="9pt"  font-family="SansSerif"  font-style="bold"  color="#000000"  text-align="left">Set Type</fo:block>
+        </fo:table-cell>
+        <fo:table-cell  border-right-color="#000000" border-right-style="solid" border-right-width="medium"  number-columns-spanned="1">
+      <fo:block   margin-left="0.0cm" margin-right="0.0cm"  margin-top="0.0cm"  font-size="9pt"  font-family="SansSerif"  font-style="bold"  color="#000000"  text-align="right">Set Labor</fo:block>
+        </fo:table-cell>
+        <fo:table-cell  border-right-color="#000000" border-right-style="solid" border-right-width="medium"  number-columns-spanned="1">
+      <fo:block   margin-left="0.24cm" margin-right="0.02cm"  margin-top="0.0cm"  font-size="9pt"  font-family="SansSerif"  font-style="bold"  color="#000000"  text-align="right">Total Cost</fo:block>
+        </fo:table-cell>
+        <fo:table-cell   number-columns-spanned="1">
+      <fo:block   margin-left="0.25cm" margin-right="0.16cm"  margin-top="0.0cm"  font-size="9pt"  font-family="SansSerif"  font-style="bold"  color="#000000"  text-align="left">Supplier</fo:block>
+        </fo:table-cell>
+    </fo:table-row>
+  </fo:table-header>
+  <fo:table-body>
+  <xsl:for-each select="catalog_items/catalog_item/catalog_item_stones/catalog_item_stone">
+    <fo:table-row   background-color="#ffffff" height="0.54cm">
+        <fo:table-cell  border-color="#000000" border-style="solid" border-width="medium"  number-columns-spanned="1">
+      <fo:block   margin-left="0.24cm" margin-right="1.03cm"  margin-top="0.24cm"  font-size="8pt"  font-family="SansSerif"  color="#000000"  text-align="left"><xsl:value-of select="stone_type"></xsl:value-of></fo:block>
+        </fo:table-cell>
+        <fo:table-cell  border-color="#000000" border-style="solid" border-width="medium"  number-columns-spanned="1">
+      <fo:block   margin-left="0.0cm" margin-right="0.02cm"  margin-top="0.24cm"  font-size="8pt"  font-family="SansSerif"  color="#000000"  text-align="left"><xsl:value-of select="stone_shape"></xsl:value-of></fo:block>
+        </fo:table-cell>
+        <fo:table-cell  border-color="#000000" border-style="solid" border-width="medium"  number-columns-spanned="1">
+      <fo:block   margin-left="0.25cm" margin-right="0.0cm"  margin-top="0.24cm"  font-size="8pt"  font-family="SansSerif"  color="#000000"  text-align="left"><xsl:value-of select="color_from"></xsl:value-of></fo:block>
+        </fo:table-cell>
+        <fo:table-cell  border-color="#000000" border-style="solid" border-width="medium"  number-columns-spanned="1">
+      <fo:block   margin-left="0.0cm" margin-right="0.27cm"  margin-top="0.24cm"  font-size="8pt"  font-family="SansSerif"  color="#000000"  text-align="left"><xsl:value-of select="stone_size"></xsl:value-of></fo:block>
+        </fo:table-cell>
+        <fo:table-cell  border-color="#000000" border-style="solid" border-width="medium"  number-columns-spanned="1">
+      <fo:block   margin-left="0.0cm" margin-right="0.05cm"  margin-top="0.24cm"  font-size="8pt"  font-family="SansSerif"  color="#000000"  text-align="left"><xsl:value-of select="sizemm_from"></xsl:value-of></fo:block>
+        </fo:table-cell>
+        <fo:table-cell  border-color="#000000" border-style="solid" border-width="medium"  number-columns-spanned="1">
+      <fo:block   margin-left="0.24cm" margin-right="0.19cm"  margin-top="0.24cm"  font-size="8pt"  font-family="SansSerif"  color="#000000"  text-align="left"><xsl:value-of select="stone_quality"></xsl:value-of></fo:block>
+        </fo:table-cell>
+        <fo:table-cell  border-color="#000000" border-style="solid" border-width="medium"  number-columns-spanned="1">
+      <fo:block   margin-left="0.0cm" margin-right="0.06cm"  margin-top="0.24cm"  font-size="8pt"  font-family="SansSerif"  color="#000000"  text-align="right"><xsl:value-of select="wt"></xsl:value-of></fo:block>
+        </fo:table-cell>
+        <fo:table-cell  border-color="#000000" border-style="solid" border-width="medium"  number-columns-spanned="1">
+      <fo:block   margin-left="0.0cm" margin-right="0.08cm"  margin-top="0.24cm"  font-size="8pt"  font-family="SansSerif"  color="#000000"  text-align="right"><xsl:value-of select="qty"></xsl:value-of></fo:block>
+        </fo:table-cell>
+        <fo:table-cell  border-color="#000000" border-style="solid" border-width="medium"  number-columns-spanned="1">
+      <fo:block   margin-left="0.27cm" margin-right="0.08cm"  margin-top="0.24cm"  font-size="8pt"  font-family="SansSerif"  color="#000000"  text-align="right"><xsl:value-of select="cost"></xsl:value-of></fo:block>
+        </fo:table-cell>
+        <fo:table-cell  border-color="#000000" border-style="solid" border-width="medium"  number-columns-spanned="1">
+      <fo:block   margin-left="0.24cm" margin-right="0.03cm"  margin-top="0.24cm"  font-size="8pt"  font-family="SansSerif"  color="#000000"  text-align="left"><xsl:value-of select="stone_setting"></xsl:value-of></fo:block>
+        </fo:table-cell>
+        <fo:table-cell  border-color="#000000" border-style="solid" border-width="medium"  number-columns-spanned="1">
+      <fo:block   margin-left="0.0cm" margin-right="0.06cm"  margin-top="0.24cm"  font-size="8pt"  font-family="SansSerif"  color="#000000"  text-align="right"><xsl:value-of select="setting_cost"></xsl:value-of></fo:block>
+        </fo:table-cell>
+        <fo:table-cell  border-color="#000000" border-style="solid" border-width="medium"  number-columns-spanned="1">
+      <fo:block   margin-left="0.24cm" margin-right="0.05cm"  margin-top="0.24cm"  font-size="8pt"  font-family="SansSerif"  color="#000000"  text-align="right"><xsl:value-of select="total_cost"></xsl:value-of></fo:block>
+        </fo:table-cell>
+        <fo:table-cell  border-color="#000000" border-style="solid" border-width="medium"  number-columns-spanned="1">
+      <fo:block   margin-left="0.25cm" margin-right="0.24cm"  margin-top="0.24cm"  font-size="8pt"  font-family="SansSerif"  color="#000000"  text-align="left"><xsl:value-of select="supplier_flag"></xsl:value-of></fo:block>
+        </fo:table-cell>
+    </fo:table-row>
+  </xsl:for-each>
+  </fo:table-body>
+</fo:table>
+</xsl:if>
+
+<!-- END Area Detail 4 -->
+</fo:block>
+</fo:table-cell>
+</fo:table-row>
+<fo:table-row>
+<fo:table-cell number-columns-spanned="1">
+<fo:block>
+
+<!-- START Area Detail 5 -->
+<xsl:if test="count(catalog_items/catalog_item/catalog_item_diamonds/catalog_item_diamond) &gt; 0" >
+<fo:table width="20.0cm"  border-color="#000000" border-style="solid" border-width="medium" >
+  <fo:table-column column-width="3.0cm"/>
+  <fo:table-column column-width="1.24cm"/>
+  <fo:table-column column-width="1.25cm"/>
+  <fo:table-column column-width="1.24cm"/>
+  <fo:table-column column-width="1.27cm"/>
+  <fo:table-column column-width="1.24cm"/>
+  <fo:table-column column-width="2.0cm"/>
+  <fo:table-column column-width="1.76cm"/>
+  <fo:table-column column-width="2.0cm"/>
+  <fo:table-column column-width="1.49cm"/>
+  <fo:table-column column-width="1.75cm"/>
+  <fo:table-column column-width="1.76cm"/>
+  <fo:table-header>
+    <fo:table-row   background-color="#ffffff" height="0.49cm">
+        <fo:table-cell  border-right-color="#000000" border-right-style="solid" border-right-width="medium"  number-columns-spanned="1">
+      <fo:block   margin-left="0.0cm" margin-right="0.62cm"  margin-top="0.0cm"  font-size="11pt"  font-family="SansSerif"  font-style="bold"  color="#000000"  text-align="left"><fo:wrapper ><fo:inline
+text-decoration = "underline"> DIAMOND</fo:inline></fo:wrapper></fo:block>
+        </fo:table-cell>
+        <fo:table-cell  border-right-color="#000000" border-right-style="solid" border-right-width="medium"  number-columns-spanned="1">
+        <fo:block></fo:block>        </fo:table-cell>
+        <fo:table-cell  border-right-color="#000000" border-right-style="solid" border-right-width="medium"  number-columns-spanned="1">
+        <fo:block></fo:block>        </fo:table-cell>
+        <fo:table-cell  border-right-color="#000000" border-right-style="solid" border-right-width="medium"  number-columns-spanned="1">
+        <fo:block></fo:block>        </fo:table-cell>
+        <fo:table-cell  border-right-color="#000000" border-right-style="solid" border-right-width="medium"  number-columns-spanned="1">
+        <fo:block></fo:block>        </fo:table-cell>
+        <fo:table-cell  border-right-color="#000000" border-right-style="solid" border-right-width="medium"  number-columns-spanned="1">
+        <fo:block></fo:block>        </fo:table-cell>
+        <fo:table-cell  border-right-color="#000000" border-right-style="solid" border-right-width="medium"  number-columns-spanned="1">
+        <fo:block></fo:block>        </fo:table-cell>
+        <fo:table-cell  border-right-color="#000000" border-right-style="solid" border-right-width="medium"  number-columns-spanned="1">
+        <fo:block></fo:block>        </fo:table-cell>
+        <fo:table-cell  border-right-color="#000000" border-right-style="solid" border-right-width="medium"  number-columns-spanned="1">
+        <fo:block></fo:block>        </fo:table-cell>
+        <fo:table-cell  border-right-color="#000000" border-right-style="solid" border-right-width="medium"  number-columns-spanned="1">
+        <fo:block></fo:block>        </fo:table-cell>
+        <fo:table-cell  border-right-color="#000000" border-right-style="solid" border-right-width="medium"  number-columns-spanned="1">
+        <fo:block></fo:block>        </fo:table-cell>
+        <fo:table-cell   number-columns-spanned="1">
+        <fo:block></fo:block>        </fo:table-cell>
+    </fo:table-row>
+    <fo:table-row   background-color="#ffffff" height="0.35cm">
+        <fo:table-cell  border-right-color="#000000" border-right-style="solid" border-right-width="medium"  number-columns-spanned="1">
+      <fo:block   margin-left="0.24cm" margin-right="1.0cm"  margin-top="0.0cm"  font-size="9pt"  font-family="SansSerif"  font-style="bold"  color="#000000"  text-align="left">Color</fo:block>
+        </fo:table-cell>
+        <fo:table-cell  border-right-color="#000000" border-right-style="solid" border-right-width="medium"  number-columns-spanned="1">
+      <fo:block   margin-left="0.0cm" margin-right="0.08cm"  margin-top="0.0cm"  font-size="9pt"  font-family="SansSerif"  font-style="bold"  color="#000000"  text-align="left">Shape</fo:block>
+        </fo:table-cell>
+        <fo:table-cell  border-right-color="#000000" border-right-style="solid" border-right-width="medium"  number-columns-spanned="1">
+      <fo:block   margin-left="0.0cm" margin-right="0.03cm"  margin-top="0.0cm"  font-size="9pt"  font-family="SansSerif"  font-style="bold"  color="#000000"  text-align="left">Clarity</fo:block>
+        </fo:table-cell>
+        <fo:table-cell  border-right-color="#000000" border-right-style="solid" border-right-width="medium"  number-columns-spanned="1">
+      <fo:block   margin-left="0.0cm" margin-right="0.19cm"  margin-top="0.0cm"  font-size="9pt"  font-family="SansSerif"  font-style="bold"  color="#000000"  text-align="left">Quality</fo:block>
+        </fo:table-cell>
+        <fo:table-cell  border-right-color="#000000" border-right-style="solid" border-right-width="medium"  number-columns-spanned="1">
+      <fo:block   margin-left="0.0cm" margin-right="0.03cm"  margin-top="0.0cm"  font-size="9pt"  font-family="SansSerif"  font-style="bold"  color="#000000"  text-align="left">Shade</fo:block>
+        </fo:table-cell>
+        <fo:table-cell  border-right-color="#000000" border-right-style="solid" border-right-width="medium"  number-columns-spanned="1">
+      <fo:block   margin-left="0.24cm" margin-right="0.02cm"  margin-top="0.0cm"  font-size="9pt"  font-family="SansSerif"  font-style="bold"  color="#000000"  text-align="right">Qty</fo:block>
+        </fo:table-cell>
+        <fo:table-cell  border-right-color="#000000" border-right-style="solid" border-right-width="medium"  number-columns-spanned="1">
+      <fo:block   margin-left="0.25cm" margin-right="0.13cm"  margin-top="0.0cm"  font-size="9pt"  font-family="SansSerif"  font-style="bold"  color="#000000"  text-align="right">Carat Wt</fo:block>
+        </fo:table-cell>
+        <fo:table-cell  border-right-color="#000000" border-right-style="solid" border-right-width="medium"  number-columns-spanned="1">
+      <fo:block   margin-left="0.25cm" margin-right="0.19cm"  margin-top="0.0cm"  font-size="9pt"  font-family="SansSerif"  font-style="bold"  color="#000000"  text-align="right">Price/Ct</fo:block>
+        </fo:table-cell>
+        <fo:table-cell  border-right-color="#000000" border-right-style="solid" border-right-width="medium"  number-columns-spanned="1">
+      <fo:block   margin-left="0.49cm" margin-right="0.16cm"  margin-top="0.0cm"  font-size="9pt"  font-family="SansSerif"  font-style="bold"  color="#000000"  text-align="right">Total Wt</fo:block>
+        </fo:table-cell>
+        <fo:table-cell  border-right-color="#000000" border-right-style="solid" border-right-width="medium"  number-columns-spanned="1">
+      <fo:block   margin-left="0.0cm" margin-right="0.08cm"  margin-top="0.0cm"  font-size="9pt"  font-family="SansSerif"  font-style="bold"  color="#000000"  text-align="left">Set Type</fo:block>
+        </fo:table-cell>
+        <fo:table-cell  border-right-color="#000000" border-right-style="solid" border-right-width="medium"  number-columns-spanned="1">
+      <fo:block   margin-left="0.0cm" margin-right="0.02cm"  margin-top="0.0cm"  font-size="9pt"  font-family="SansSerif"  font-style="bold"  color="#000000"  text-align="right">Total Cost</fo:block>
+        </fo:table-cell>
+        <fo:table-cell   number-columns-spanned="1">
+      <fo:block   margin-left="0.25cm" margin-right="0.35cm"  margin-top="0.0cm"  font-size="9pt"  font-family="SansSerif"  font-style="bold"  color="#000000"  text-align="left">Supplier</fo:block>
+        </fo:table-cell>
+    </fo:table-row>
+  </fo:table-header>
+  <fo:table-body>
+  <xsl:for-each select="catalog_items/catalog_item/catalog_item_diamonds/catalog_item_diamond">
+    <fo:table-row   background-color="#ffffff" height="0.54cm">
+        <fo:table-cell  border-color="#000000" border-style="solid" border-width="medium"  number-columns-spanned="1">
+      <fo:block   margin-left="0.24cm" margin-right="1.0cm"  margin-top="0.24cm"  font-size="8pt"  font-family="SansSerif"  color="#000000"  text-align="left"><xsl:value-of select="color_from"></xsl:value-of></fo:block>
+        </fo:table-cell>
+        <fo:table-cell  border-color="#000000" border-style="solid" border-width="medium"  number-columns-spanned="1">
+      <fo:block   margin-left="0.0cm" margin-right="0.02cm"  margin-top="0.24cm"  font-size="8pt"  font-family="SansSerif"  color="#000000"  text-align="left"><xsl:value-of select="stone_shape"></xsl:value-of></fo:block>
+        </fo:table-cell>
+        <fo:table-cell  border-color="#000000" border-style="solid" border-width="medium"  number-columns-spanned="1">
+      <fo:block   margin-left="0.25cm" margin-right="0.0cm"  margin-top="0.24cm"  font-size="8pt"  font-family="SansSerif"  color="#000000"  text-align="left"><xsl:value-of select="clarity_from"></xsl:value-of></fo:block>
+        </fo:table-cell>
+        <fo:table-cell  border-color="#000000" border-style="solid" border-width="medium"  number-columns-spanned="1">
+      <fo:block   margin-left="0.24cm" margin-right="0.0cm"  margin-top="0.24cm"  font-size="8pt"  font-family="SansSerif"  color="#000000"  text-align="left"><xsl:value-of select="stone_quality"></xsl:value-of></fo:block>
+        </fo:table-cell>
+        <fo:table-cell  border-color="#000000" border-style="solid" border-width="medium"  number-columns-spanned="1">
+      <fo:block   margin-left="0.27cm" margin-right="0.0cm"  margin-top="0.24cm"  font-size="8pt"  font-family="SansSerif"  color="#000000"  text-align="left"><xsl:value-of select="shade"></xsl:value-of></fo:block>
+        </fo:table-cell>
+        <fo:table-cell  border-color="#000000" border-style="solid" border-width="medium"  number-columns-spanned="1">
+      <fo:block   margin-left="0.24cm" margin-right="0.08cm"  margin-top="0.24cm"  font-size="8pt"  font-family="SansSerif"  color="#000000"  text-align="right"><xsl:value-of select="qty"></xsl:value-of></fo:block>
+        </fo:table-cell>
+        <fo:table-cell  border-color="#000000" border-style="solid" border-width="medium"  number-columns-spanned="1">
+      <fo:block   margin-left="0.25cm" margin-right="0.13cm"  margin-top="0.24cm"  font-size="8pt"  font-family="SansSerif"  color="#000000"  text-align="right"><xsl:value-of select="wt"></xsl:value-of></fo:block>
+        </fo:table-cell>
+        <fo:table-cell  border-color="#000000" border-style="solid" border-width="medium"  number-columns-spanned="1">
+      <fo:block   margin-left="0.25cm" margin-right="0.16cm"  margin-top="0.24cm"  font-size="8pt"  font-family="SansSerif"  color="#000000"  text-align="right"><xsl:value-of select="cost"></xsl:value-of></fo:block>
+        </fo:table-cell>
+        <fo:table-cell  border-color="#000000" border-style="solid" border-width="medium"  number-columns-spanned="1">
+      <fo:block   margin-left="0.24cm" margin-right="0.14cm"  margin-top="0.24cm"  font-size="8pt"  font-family="SansSerif"  color="#000000"  text-align="right"><xsl:value-of select="total_wt"></xsl:value-of></fo:block>
+        </fo:table-cell>
+        <fo:table-cell  border-color="#000000" border-style="solid" border-width="medium"  number-columns-spanned="1">
+      <fo:block   margin-left="0.24cm" margin-right="0.0cm"  margin-top="0.24cm"  font-size="8pt"  font-family="SansSerif"  color="#000000"  text-align="left"><xsl:value-of select="stone_setting"></xsl:value-of></fo:block>
+        </fo:table-cell>
+        <fo:table-cell  border-color="#000000" border-style="solid" border-width="medium"  number-columns-spanned="1">
+      <fo:block   margin-left="0.0cm" margin-right="0.08cm"  margin-top="0.24cm"  font-size="8pt"  font-family="SansSerif"  color="#000000"  text-align="right"><xsl:value-of select="total_cost"></xsl:value-of></fo:block>
+        </fo:table-cell>
+        <fo:table-cell  border-color="#000000" border-style="solid" border-width="medium"  number-columns-spanned="1">
+      <fo:block   margin-left="0.25cm" margin-right="0.16cm"  margin-top="0.24cm"  font-size="8pt"  font-family="SansSerif"  color="#000000"  text-align="left"><xsl:value-of select="supplier_flag"></xsl:value-of></fo:block>
+        </fo:table-cell>
+    </fo:table-row>
+  </xsl:for-each>
+  </fo:table-body>
+</fo:table>
+</xsl:if>
+
+<!-- END Area Detail 5 -->
+</fo:block>
+</fo:table-cell>
+</fo:table-row>
+<fo:table-row>
+<fo:table-cell number-columns-spanned="1">
+<fo:block>
+
+<!-- START Area Detail -->
+<xsl:if test="count(catalog_items/catalog_item/catalog_item_others/catalog_item_other) &gt; 0" >
+<fo:table width="20.0cm"  border-color="#000000" border-style="solid" border-width="medium" >
+  <fo:table-column column-width="3.0cm"/>
+  <fo:table-column column-width="2.49cm"/>
+  <fo:table-column column-width="2.51cm"/>
+  <fo:table-column column-width="12.0cm"/>
+  <fo:table-header>
+    <fo:table-row   background-color="#ffffff" height="0.49cm">
+        <fo:table-cell  border-right-color="#000000" border-right-style="solid" border-right-width="medium"  number-columns-spanned="1">
+      <fo:block   margin-left="0.0cm" margin-right="0.11cm"  margin-top="0.0cm"  font-size="11pt"  font-family="SansSerif"  font-style="bold"  color="#000000"  text-align="left"><fo:wrapper ><fo:inline
+text-decoration = "underline"> OTHER COST</fo:inline></fo:wrapper></fo:block>
+        </fo:table-cell>
+        <fo:table-cell  border-right-color="#000000" border-right-style="solid" border-right-width="medium"  number-columns-spanned="1">
+        <fo:block></fo:block>        </fo:table-cell>
+        <fo:table-cell  border-right-color="#000000" border-right-style="solid" border-right-width="medium"  number-columns-spanned="1">
+        <fo:block></fo:block>        </fo:table-cell>
+        <fo:table-cell   number-columns-spanned="1">
+        <fo:block></fo:block>        </fo:table-cell>
+    </fo:table-row>
+    <fo:table-row   background-color="#ffffff" height="0.29cm">
+        <fo:table-cell  border-right-color="#000000" border-right-style="solid" border-right-width="medium"  number-columns-spanned="1">
+      <fo:block   margin-left="0.24cm" margin-right="0.27cm"  margin-top="0.0cm"  font-size="9pt"  font-family="SansSerif"  font-style="bold"  color="#000000"  text-align="left">Type</fo:block>
+        </fo:table-cell>
+        <fo:table-cell  border-right-color="#000000" border-right-style="solid" border-right-width="medium"  number-columns-spanned="1">
+      <fo:block   margin-left="0.24cm" margin-right="0.9cm"  margin-top="0.0cm"  font-size="9pt"  font-family="SansSerif"  font-style="bold"  color="#000000"  text-align="left">Code</fo:block>
+        </fo:table-cell>
+        <fo:table-cell  border-right-color="#000000" border-right-style="solid" border-right-width="medium"  number-columns-spanned="1">
+      <fo:block   margin-left="0.24cm" margin-right="0.19cm"  margin-top="0.0cm"  font-size="9pt"  font-family="SansSerif"  font-style="bold"  color="#000000"  text-align="right">Total Cost</fo:block>
+        </fo:table-cell>
+        <fo:table-cell   number-columns-spanned="1">
+      <fo:block   margin-left="0.24cm" margin-right="9.19cm"  margin-top="0.0cm"  font-size="9pt"  font-family="SansSerif"  font-style="bold"  color="#000000"  text-align="left">Remarks</fo:block>
+        </fo:table-cell>
+    </fo:table-row>
+  </fo:table-header>
+  <fo:table-body>
+  <xsl:for-each select="catalog_items/catalog_item/catalog_item_others/catalog_item_other">
+    <fo:table-row   background-color="#ffffff" height="0.57cm">
+        <fo:table-cell  border-color="#000000" border-style="solid" border-width="medium"  number-columns-spanned="1">
+      <fo:block   margin-left="0.24cm" margin-right="0.11cm"  margin-top="0.24cm"  font-size="8pt"  font-family="SansSerif"  color="#000000"  text-align="left"><xsl:value-of select="other_type"></xsl:value-of></fo:block>
+        </fo:table-cell>
+        <fo:table-cell  border-color="#000000" border-style="solid" border-width="medium"  number-columns-spanned="1">
+      <fo:block   margin-left="0.24cm" margin-right="0.0cm"  margin-top="0.24cm"  font-size="8pt"  font-family="SansSerif"  color="#000000"  text-align="left"><xsl:value-of select="other_code"></xsl:value-of></fo:block>
+        </fo:table-cell>
+        <fo:table-cell  border-color="#000000" border-style="solid" border-width="medium"  number-columns-spanned="1">
+      <fo:block   margin-left="0.24cm" margin-right="0.08cm"  margin-top="0.24cm"  font-size="8pt"  font-family="SansSerif"  color="#000000"  text-align="right"><xsl:value-of select="total_cost"></xsl:value-of></fo:block>
+        </fo:table-cell>
+        <fo:table-cell  border-color="#000000" border-style="solid" border-width="medium"  number-columns-spanned="1">
+      <fo:block   margin-left="0.24cm" margin-right="6.43cm"  margin-top="0.24cm"  font-size="8pt"  font-family="SansSerif"  color="#000000"  text-align="left"><xsl:value-of select="remarks"></xsl:value-of></fo:block>
+        </fo:table-cell>
+    </fo:table-row>
+  </xsl:for-each>
+  </fo:table-body>
+</fo:table>
+</xsl:if>
+
+<!-- END Area Detail -->
+</fo:block>
+</fo:table-cell>
+</fo:table-row>
+<fo:table-row>
+<fo:table-cell number-columns-spanned="1">
+<fo:block>
+
+<!-- START Area Footer -->
+<fo:table width="20.0cm"  >
+  <fo:table-column column-width="3.24cm"/>
+  <fo:table-column column-width="2.0cm"/>
+  <fo:table-column column-width="2.25cm"/>
+  <fo:table-column column-width="2.0cm"/>
+  <fo:table-column column-width="2.0cm"/>
+  <fo:table-column column-width="2.0cm"/>
+  <fo:table-column column-width="1.75cm"/>
+  <fo:table-column column-width="2.0cm"/>
+  <fo:table-column column-width="2.76cm"/>
+  <fo:table-body>
+    <fo:table-row   background-color="#ffffff" height="0.73cm">
+        <fo:table-cell   number-columns-spanned="1">
+      <fo:block   margin-left="0.24cm" margin-right="0.08cm"  margin-top="0.24cm"  font-size="9pt"  font-family="SansSerif"  color="#000000"  text-align="left">10% SURCHARGE</fo:block>
+        </fo:table-cell>
+        <fo:table-cell   number-columns-spanned="1">
+      <fo:block   margin-left="0.0cm" margin-right="0.0cm"  margin-top="0.24cm"  font-size="10pt"  font-family="SansSerif"  color="#000000"  text-align="right"><xsl:value-of select="catalog_items/catalog_item/surcharge_amt"></xsl:value-of></fo:block>
+        </fo:table-cell>
+        <fo:table-cell   number-columns-spanned="1">
+        <fo:block></fo:block>        </fo:table-cell>
+        <fo:table-cell   number-columns-spanned="1">
+        <fo:block></fo:block>        </fo:table-cell>
+        <fo:table-cell   number-columns-spanned="1">
+        <fo:block></fo:block>        </fo:table-cell>
+        <fo:table-cell   number-columns-spanned="1">
+        <fo:block></fo:block>        </fo:table-cell>
+        <fo:table-cell   number-columns-spanned="1">
+        <fo:block></fo:block>        </fo:table-cell>
+        <fo:table-cell   number-columns-spanned="1">
+        <fo:block></fo:block>        </fo:table-cell>
+        <fo:table-cell   number-columns-spanned="1">
+        <fo:block></fo:block>        </fo:table-cell>
+    </fo:table-row>
+    <fo:table-row   background-color="#ffffff" height="0.51cm">
+        <fo:table-cell   number-columns-spanned="1">
+      <fo:block   margin-left="0.24cm" margin-right="0.08cm"  margin-top="0.0cm"  font-size="9pt"  font-family="SansSerif"  color="#000000"  text-align="left">10% DISCOUNT</fo:block>
+        </fo:table-cell>
+        <fo:table-cell   number-columns-spanned="1">
+      <fo:block   margin-left="0.0cm" margin-right="0.0cm"  margin-top="0.0cm"  font-size="10pt"  font-family="SansSerif"  color="#000000"  text-align="right"><xsl:value-of select="catalog_items/catalog_item/discount_amt"></xsl:value-of></fo:block>
+        </fo:table-cell>
+        <fo:table-cell   number-columns-spanned="1">
+        <fo:block></fo:block>        </fo:table-cell>
+        <fo:table-cell   number-columns-spanned="1">
+        <fo:block></fo:block>        </fo:table-cell>
+        <fo:table-cell   number-columns-spanned="1">
+        <fo:block></fo:block>        </fo:table-cell>
+        <fo:table-cell   number-columns-spanned="1">
+        <fo:block></fo:block>        </fo:table-cell>
+        <fo:table-cell   number-columns-spanned="1">
+        <fo:block></fo:block>        </fo:table-cell>
+        <fo:table-cell   number-columns-spanned="1">
+        <fo:block></fo:block>        </fo:table-cell>
+        <fo:table-cell   number-columns-spanned="1">
+        <fo:block></fo:block>        </fo:table-cell>
+    </fo:table-row>
+    <fo:table-row   background-color="#ffffff" height="0.49cm">
+        <fo:table-cell   number-columns-spanned="1">
+      <fo:block   margin-left="0.24cm" margin-right="0.08cm"  margin-top="0.0cm"  font-size="9pt"  font-family="SansSerif"  color="#000000"  text-align="left">Duty at 10%</fo:block>
+        </fo:table-cell>
+        <fo:table-cell   number-columns-spanned="1">
+      <fo:block   margin-left="0.0cm" margin-right="0.0cm"  margin-top="0.0cm"  font-size="10pt"  font-family="SansSerif"  color="#000000"  text-align="right"><xsl:value-of select="catalog_items/catalog_item/duty_amt"></xsl:value-of></fo:block>
+        </fo:table-cell>
+        <fo:table-cell   number-columns-spanned="1">
+        <fo:block></fo:block>        </fo:table-cell>
+        <fo:table-cell   number-columns-spanned="1">
+        <fo:block></fo:block>        </fo:table-cell>
+        <fo:table-cell   number-columns-spanned="1">
+        <fo:block></fo:block>        </fo:table-cell>
+        <fo:table-cell   number-columns-spanned="1">
+        <fo:block></fo:block>        </fo:table-cell>
+        <fo:table-cell   number-columns-spanned="1">
+        <fo:block></fo:block>        </fo:table-cell>
+        <fo:table-cell   number-columns-spanned="1">
+        <fo:block></fo:block>        </fo:table-cell>
+        <fo:table-cell   number-columns-spanned="1">
+        <fo:block></fo:block>        </fo:table-cell>
+    </fo:table-row>
+    <fo:table-row   background-color="#ffffff" height="0.51cm">
+        <fo:table-cell   number-columns-spanned="2">
+      <fo:block   margin-left="0.24cm" margin-right="1.46cm"  margin-top="0.27cm"  font-size="10pt"  font-family="SansSerif"  font-style="bold"  color="#000000"  text-align="left">PRICE SUMMARY</fo:block>
+        </fo:table-cell>
+        <fo:table-cell   number-columns-spanned="1">
+        <fo:block></fo:block>        </fo:table-cell>
+        <fo:table-cell   number-columns-spanned="1">
+        <fo:block></fo:block>        </fo:table-cell>
+        <fo:table-cell   number-columns-spanned="1">
+        <fo:block></fo:block>        </fo:table-cell>
+        <fo:table-cell   number-columns-spanned="1">
+        <fo:block></fo:block>        </fo:table-cell>
+        <fo:table-cell   number-columns-spanned="1">
+        <fo:block></fo:block>        </fo:table-cell>
+        <fo:table-cell   number-columns-spanned="1">
+        <fo:block></fo:block>        </fo:table-cell>
+        <fo:table-cell   number-columns-spanned="1">
+        <fo:block></fo:block>        </fo:table-cell>
+    </fo:table-row>
+    <fo:table-row   background-color="#ffffff" height="0.0cm">
+        <fo:table-cell   number-columns-spanned="1">
+        <fo:block></fo:block>        </fo:table-cell>
+        <fo:table-cell   number-columns-spanned="1">
+        <fo:block></fo:block>        </fo:table-cell>
+        <fo:table-cell   number-columns-spanned="1">
+        <fo:block></fo:block>        </fo:table-cell>
+        <fo:table-cell   number-columns-spanned="1">
+        <fo:block></fo:block>        </fo:table-cell>
+        <fo:table-cell   number-columns-spanned="1">
+        <fo:block></fo:block>        </fo:table-cell>
+        <fo:table-cell   number-columns-spanned="1">
+        <fo:block></fo:block>        </fo:table-cell>
+        <fo:table-cell   number-columns-spanned="1">
+        <fo:block></fo:block>        </fo:table-cell>
+        <fo:table-cell   number-columns-spanned="1">
+        <fo:block></fo:block>        </fo:table-cell>
+        <fo:table-cell   number-columns-spanned="1">
+        <fo:block></fo:block>        </fo:table-cell>
+    </fo:table-row>
+    <fo:table-row   background-color="#ffffff" height="0.25cm">
+        <fo:table-cell   number-columns-spanned="3">
+      <fo:block margin-left="0.24cm" margin-right="2.05cm"  margin-top="0.0cm" ><fo:leader leader-pattern="rule"  color="#000000"  rule-thickness="1.0pt"  rule-style="solid"  leader-length="100%"/></fo:block>
+        </fo:table-cell>
+        <fo:table-cell   number-columns-spanned="1">
+        <fo:block></fo:block>        </fo:table-cell>
+        <fo:table-cell   number-columns-spanned="1">
+        <fo:block></fo:block>        </fo:table-cell>
+        <fo:table-cell   number-columns-spanned="1">
+        <fo:block></fo:block>        </fo:table-cell>
+        <fo:table-cell   number-columns-spanned="1">
+        <fo:block></fo:block>        </fo:table-cell>
+        <fo:table-cell   number-columns-spanned="1">
+        <fo:block></fo:block>        </fo:table-cell>
+        <fo:table-cell   number-columns-spanned="1">
+        <fo:block></fo:block>        </fo:table-cell>
+    </fo:table-row>
+    <fo:table-row   background-color="#ffffff" height="0.24cm">
+        <fo:table-cell   number-columns-spanned="1">
+      <fo:block   margin-left="1.0cm" margin-right="0.27cm"  margin-top="0.0cm"  font-size="10pt"  font-family="SansSerif"  color="#000000"  text-align="left">Type</fo:block>
+        </fo:table-cell>
+        <fo:table-cell   number-columns-spanned="1">
+      <fo:block   margin-left="0.25cm" margin-right="0.21cm"  margin-top="0.0cm"  font-size="10pt"  font-family="SansSerif"  color="#000000"  text-align="right">Cost</fo:block>
+        </fo:table-cell>
+        <fo:table-cell   number-columns-spanned="1">
+        <fo:block></fo:block>        </fo:table-cell>
+        <fo:table-cell   number-columns-spanned="1">
+        <fo:block></fo:block>        </fo:table-cell>
+        <fo:table-cell   number-columns-spanned="1">
+        <fo:block></fo:block>        </fo:table-cell>
+        <fo:table-cell   number-columns-spanned="1">
+        <fo:block></fo:block>        </fo:table-cell>
+        <fo:table-cell   number-columns-spanned="1">
+        <fo:block></fo:block>        </fo:table-cell>
+        <fo:table-cell   number-columns-spanned="1">
+        <fo:block></fo:block>        </fo:table-cell>
+        <fo:table-cell   number-columns-spanned="1">
+        <fo:block></fo:block>        </fo:table-cell>
+    </fo:table-row>
+    <fo:table-row   background-color="#ffffff" height="0.0cm">
+        <fo:table-cell   number-columns-spanned="1">
+        <fo:block></fo:block>        </fo:table-cell>
+        <fo:table-cell   number-columns-spanned="1">
+        <fo:block></fo:block>        </fo:table-cell>
+        <fo:table-cell   number-columns-spanned="1">
+        <fo:block></fo:block>        </fo:table-cell>
+        <fo:table-cell   number-columns-spanned="1">
+        <fo:block></fo:block>        </fo:table-cell>
+        <fo:table-cell   number-columns-spanned="1">
+        <fo:block></fo:block>        </fo:table-cell>
+        <fo:table-cell   number-columns-spanned="1">
+        <fo:block></fo:block>        </fo:table-cell>
+        <fo:table-cell   number-columns-spanned="1">
+        <fo:block></fo:block>        </fo:table-cell>
+        <fo:table-cell   number-columns-spanned="1">
+        <fo:block></fo:block>        </fo:table-cell>
+        <fo:table-cell   number-columns-spanned="1">
+        <fo:block></fo:block>        </fo:table-cell>
+    </fo:table-row>
+    <fo:table-row   background-color="#ffffff" height="0.27cm">
+        <fo:table-cell   number-columns-spanned="3">
+      <fo:block margin-left="0.24cm" margin-right="2.05cm"  margin-top="0.0cm" ><fo:leader leader-pattern="rule"  color="#000000"  rule-thickness="1.0pt"  rule-style="solid"  leader-length="100%"/></fo:block>
+        </fo:table-cell>
+        <fo:table-cell   number-columns-spanned="1">
+        <fo:block></fo:block>        </fo:table-cell>
+        <fo:table-cell   number-columns-spanned="1">
+        <fo:block></fo:block>        </fo:table-cell>
+        <fo:table-cell   number-columns-spanned="1">
+        <fo:block></fo:block>        </fo:table-cell>
+        <fo:table-cell   number-columns-spanned="1">
+        <fo:block></fo:block>        </fo:table-cell>
+        <fo:table-cell   number-columns-spanned="1">
+        <fo:block></fo:block>        </fo:table-cell>
+        <fo:table-cell   number-columns-spanned="1">
+        <fo:block></fo:block>        </fo:table-cell>
+    </fo:table-row>
+    <fo:table-row   background-color="#ffffff" height="0.49cm">
+        <fo:table-cell   number-columns-spanned="1">
+      <fo:block   margin-left="1.0cm" margin-right="0.89cm"  margin-top="0.0cm"  font-size="8pt"  font-family="SansSerif"  color="#000000"  text-align="left">Casting</fo:block>
+        </fo:table-cell>
+        <fo:table-cell   number-columns-spanned="1">
+      <fo:block   margin-left="0.0cm" margin-right="0.13cm"  margin-top="0.0cm"  font-size="8pt"  font-family="SansSerif"  color="#000000"  text-align="right"><xsl:value-of select="catalog_items/catalog_item/casting_cost"></xsl:value-of></fo:block>
+        </fo:table-cell>
+        <fo:table-cell   number-columns-spanned="1">
+        <fo:block></fo:block>        </fo:table-cell>
+        <fo:table-cell   number-columns-spanned="1">
+        <fo:block></fo:block>        </fo:table-cell>
+        <fo:table-cell   number-columns-spanned="1">
+        <fo:block></fo:block>        </fo:table-cell>
+        <fo:table-cell   number-columns-spanned="1">
+        <fo:block></fo:block>        </fo:table-cell>
+        <fo:table-cell   number-columns-spanned="1">
+        <fo:block></fo:block>        </fo:table-cell>
+        <fo:table-cell   number-columns-spanned="1">
+        <fo:block></fo:block>        </fo:table-cell>
+        <fo:table-cell   number-columns-spanned="1">
+        <fo:block></fo:block>        </fo:table-cell>
+    </fo:table-row>
+    <fo:table-row   background-color="#ffffff" height="0.51cm">
+        <fo:table-cell   number-columns-spanned="1">
+      <fo:block   margin-left="1.0cm" margin-right="0.89cm"  margin-top="0.0cm"  font-size="8pt"  font-family="SansSerif"  color="#000000"  text-align="left">Finding</fo:block>
+        </fo:table-cell>
+        <fo:table-cell   number-columns-spanned="1">
+      <fo:block   margin-left="0.0cm" margin-right="0.13cm"  margin-top="0.0cm"  font-size="8pt"  font-family="SansSerif"  color="#000000"  text-align="right"><xsl:value-of select="catalog_items/catalog_item/finding_cost"></xsl:value-of></fo:block>
+        </fo:table-cell>
+        <fo:table-cell   number-columns-spanned="1">
+        <fo:block></fo:block>        </fo:table-cell>
+        <fo:table-cell   number-columns-spanned="1">
+        <fo:block></fo:block>        </fo:table-cell>
+        <fo:table-cell   number-columns-spanned="1">
+        <fo:block></fo:block>        </fo:table-cell>
+        <fo:table-cell   number-columns-spanned="1">
+        <fo:block></fo:block>        </fo:table-cell>
+        <fo:table-cell   number-columns-spanned="1">
+        <fo:block></fo:block>        </fo:table-cell>
+        <fo:table-cell   number-columns-spanned="1">
+        <fo:block></fo:block>        </fo:table-cell>
+        <fo:table-cell   number-columns-spanned="1">
+        <fo:block></fo:block>        </fo:table-cell>
+    </fo:table-row>
+    <fo:table-row   background-color="#ffffff" height="0.49cm">
+        <fo:table-cell   number-columns-spanned="1">
+      <fo:block   margin-left="1.0cm" margin-right="0.48cm"  margin-top="0.0cm"  font-size="8pt"  font-family="SansSerif"  color="#000000"  text-align="left">Diamond</fo:block>
+        </fo:table-cell>
+        <fo:table-cell   number-columns-spanned="1">
+      <fo:block   margin-left="0.0cm" margin-right="0.13cm"  margin-top="0.0cm"  font-size="8pt"  font-family="SansSerif"  color="#000000"  text-align="right"><xsl:value-of select="catalog_items/catalog_item/diamond_cost"></xsl:value-of></fo:block>
+        </fo:table-cell>
+        <fo:table-cell   number-columns-spanned="1">
+        <fo:block></fo:block>        </fo:table-cell>
+        <fo:table-cell   number-columns-spanned="1">
+        <fo:block></fo:block>        </fo:table-cell>
+        <fo:table-cell   number-columns-spanned="1">
+        <fo:block></fo:block>        </fo:table-cell>
+        <fo:table-cell   number-columns-spanned="1">
+        <fo:block></fo:block>        </fo:table-cell>
+        <fo:table-cell   number-columns-spanned="1">
+        <fo:block></fo:block>        </fo:table-cell>
+        <fo:table-cell   number-columns-spanned="1">
+        <fo:block></fo:block>        </fo:table-cell>
+        <fo:table-cell   number-columns-spanned="1">
+        <fo:block></fo:block>        </fo:table-cell>
+    </fo:table-row>
+    <fo:table-row   background-color="#ffffff" height="0.51cm">
+        <fo:table-cell   number-columns-spanned="1">
+      <fo:block   margin-left="1.0cm" margin-right="0.32cm"  margin-top="0.0cm"  font-size="8pt"  font-family="SansSerif"  color="#000000"  text-align="left">Color Stone</fo:block>
+        </fo:table-cell>
+        <fo:table-cell   number-columns-spanned="1">
+      <fo:block   margin-left="0.0cm" margin-right="0.13cm"  margin-top="0.0cm"  font-size="8pt"  font-family="SansSerif"  color="#000000"  text-align="right"><xsl:value-of select="catalog_items/catalog_item/color_stone_cost"></xsl:value-of></fo:block>
+        </fo:table-cell>
+        <fo:table-cell   number-columns-spanned="1">
+        <fo:block></fo:block>        </fo:table-cell>
+        <fo:table-cell   number-columns-spanned="1">
+        <fo:block></fo:block>        </fo:table-cell>
+        <fo:table-cell   number-columns-spanned="1">
+        <fo:block></fo:block>        </fo:table-cell>
+        <fo:table-cell   number-columns-spanned="1">
+        <fo:block></fo:block>        </fo:table-cell>
+        <fo:table-cell   number-columns-spanned="1">
+        <fo:block></fo:block>        </fo:table-cell>
+        <fo:table-cell   number-columns-spanned="1">
+        <fo:block></fo:block>        </fo:table-cell>
+        <fo:table-cell   number-columns-spanned="1">
+        <fo:block></fo:block>        </fo:table-cell>
+    </fo:table-row>
+    <fo:table-row   background-color="#ffffff" height="0.49cm">
+        <fo:table-cell   number-columns-spanned="1">
+      <fo:block   margin-left="1.0cm" margin-right="0.32cm"  margin-top="0.0cm"  font-size="8pt"  font-family="SansSerif"  color="#000000"  text-align="left">Finishing</fo:block>
+        </fo:table-cell>
+        <fo:table-cell   number-columns-spanned="1">
+      <fo:block   margin-left="0.0cm" margin-right="0.13cm"  margin-top="0.0cm"  font-size="8pt"  font-family="SansSerif"  color="#000000"  text-align="right"><xsl:value-of select="catalog_items/catalog_item/finishing_labor_cost"></xsl:value-of></fo:block>
+        </fo:table-cell>
+        <fo:table-cell   number-columns-spanned="1">
+        <fo:block></fo:block>        </fo:table-cell>
+        <fo:table-cell   number-columns-spanned="1">
+        <fo:block></fo:block>        </fo:table-cell>
+        <fo:table-cell   number-columns-spanned="1">
+        <fo:block></fo:block>        </fo:table-cell>
+        <fo:table-cell   number-columns-spanned="1">
+        <fo:block></fo:block>        </fo:table-cell>
+        <fo:table-cell   number-columns-spanned="1">
+        <fo:block></fo:block>        </fo:table-cell>
+        <fo:table-cell   number-columns-spanned="1">
+        <fo:block></fo:block>        </fo:table-cell>
+        <fo:table-cell   number-columns-spanned="1">
+        <fo:block></fo:block>        </fo:table-cell>
+    </fo:table-row>
+    <fo:table-row   background-color="#ffffff" height="0.51cm">
+        <fo:table-cell   number-columns-spanned="1">
+      <fo:block   margin-left="1.0cm" margin-right="0.43cm"  margin-top="0.0cm"  font-size="8pt"  font-family="SansSerif"  color="#000000"  text-align="left">Setting</fo:block>
+        </fo:table-cell>
+        <fo:table-cell   number-columns-spanned="1">
+      <fo:block   margin-left="0.0cm" margin-right="0.13cm"  margin-top="0.0cm"  font-size="8pt"  font-family="SansSerif"  color="#000000"  text-align="right"><xsl:value-of select="catalog_items/catalog_item/settinglabor_cost"></xsl:value-of></fo:block>
+        </fo:table-cell>
+        <fo:table-cell   number-columns-spanned="1">
+        <fo:block></fo:block>        </fo:table-cell>
+        <fo:table-cell   number-columns-spanned="1">
+        <fo:block></fo:block>        </fo:table-cell>
+        <fo:table-cell   number-columns-spanned="1">
+        <fo:block></fo:block>        </fo:table-cell>
+        <fo:table-cell   number-columns-spanned="1">
+        <fo:block></fo:block>        </fo:table-cell>
+        <fo:table-cell   number-columns-spanned="1">
+        <fo:block></fo:block>        </fo:table-cell>
+        <fo:table-cell   number-columns-spanned="1">
+        <fo:block></fo:block>        </fo:table-cell>
+        <fo:table-cell   number-columns-spanned="1">
+        <fo:block></fo:block>        </fo:table-cell>
+    </fo:table-row>
+    <fo:table-row   background-color="#ffffff" height="0.24cm">
+        <fo:table-cell   number-columns-spanned="1">
+      <fo:block   margin-left="1.0cm" margin-right="0.35cm"  margin-top="0.0cm"  font-size="8pt"  font-family="SansSerif"  color="#000000"  text-align="left">Other</fo:block>
+        </fo:table-cell>
+        <fo:table-cell   number-columns-spanned="1">
+      <fo:block   margin-left="0.0cm" margin-right="0.13cm"  margin-top="0.0cm"  font-size="8pt"  font-family="SansSerif"  color="#000000"  text-align="right"><xsl:value-of select="catalog_items/catalog_item/other_cost"></xsl:value-of></fo:block>
+        </fo:table-cell>
+        <fo:table-cell   number-columns-spanned="1">
+        <fo:block></fo:block>        </fo:table-cell>
+        <fo:table-cell   number-columns-spanned="1">
+        <fo:block></fo:block>        </fo:table-cell>
+        <fo:table-cell   number-columns-spanned="1">
+        <fo:block></fo:block>        </fo:table-cell>
+        <fo:table-cell   number-columns-spanned="1">
+        <fo:block></fo:block>        </fo:table-cell>
+        <fo:table-cell   number-columns-spanned="1">
+        <fo:block></fo:block>        </fo:table-cell>
+        <fo:table-cell   number-columns-spanned="1">
+        <fo:block></fo:block>        </fo:table-cell>
+        <fo:table-cell   number-columns-spanned="1">
+        <fo:block></fo:block>        </fo:table-cell>
+    </fo:table-row>
+    <fo:table-row   background-color="#ffffff" height="0.0cm">
+        <fo:table-cell   number-columns-spanned="1">
+        <fo:block></fo:block>        </fo:table-cell>
+        <fo:table-cell   number-columns-spanned="1">
+        <fo:block></fo:block>        </fo:table-cell>
+        <fo:table-cell   number-columns-spanned="1">
+        <fo:block></fo:block>        </fo:table-cell>
+        <fo:table-cell   number-columns-spanned="1">
+        <fo:block></fo:block>        </fo:table-cell>
+        <fo:table-cell   number-columns-spanned="1">
+        <fo:block></fo:block>        </fo:table-cell>
+        <fo:table-cell   number-columns-spanned="1">
+        <fo:block></fo:block>        </fo:table-cell>
+        <fo:table-cell   number-columns-spanned="1">
+        <fo:block></fo:block>        </fo:table-cell>
+        <fo:table-cell   number-columns-spanned="1">
+        <fo:block></fo:block>        </fo:table-cell>
+        <fo:table-cell   number-columns-spanned="1">
+        <fo:block></fo:block>        </fo:table-cell>
+    </fo:table-row>
+    <fo:table-row   background-color="#ffffff" height="0.25cm">
+        <fo:table-cell   number-columns-spanned="3">
+      <fo:block margin-left="0.24cm" margin-right="2.05cm"  margin-top="0.0cm" ><fo:leader leader-pattern="rule"  color="#000000"  rule-thickness="1.0pt"  rule-style="solid"  leader-length="100%"/></fo:block>
+        </fo:table-cell>
+        <fo:table-cell   number-columns-spanned="1">
+        <fo:block></fo:block>        </fo:table-cell>
+        <fo:table-cell   number-columns-spanned="1">
+        <fo:block></fo:block>        </fo:table-cell>
+        <fo:table-cell   number-columns-spanned="1">
+        <fo:block></fo:block>        </fo:table-cell>
+        <fo:table-cell   number-columns-spanned="1">
+        <fo:block></fo:block>        </fo:table-cell>
+        <fo:table-cell   number-columns-spanned="1">
+        <fo:block></fo:block>        </fo:table-cell>
+        <fo:table-cell   number-columns-spanned="1">
+        <fo:block></fo:block>        </fo:table-cell>
+    </fo:table-row>
+    <fo:table-row   background-color="#ffffff" height="0.24cm">
+        <fo:table-cell   number-columns-spanned="1">
+      <fo:block   margin-left="1.0cm" margin-right="0.51cm"  margin-top="0.0cm"  font-size="9pt"  font-family="SansSerif"  font-style="bold"  color="#000000"  text-align="left">Total</fo:block>
+        </fo:table-cell>
+        <fo:table-cell   number-columns-spanned="1">
+      <fo:block   margin-left="0.0cm" margin-right="0.13cm"  margin-top="0.0cm"  font-size="9pt"  font-family="SansSerif"  font-style="bold"  color="#000000"  text-align="right"><xsl:value-of select="catalog_items/catalog_item/total_cost"></xsl:value-of></fo:block>
+        </fo:table-cell>
+        <fo:table-cell   number-columns-spanned="1">
+        <fo:block></fo:block>        </fo:table-cell>
+        <fo:table-cell   number-columns-spanned="1">
+        <fo:block></fo:block>        </fo:table-cell>
+        <fo:table-cell   number-columns-spanned="1">
+        <fo:block></fo:block>        </fo:table-cell>
+        <fo:table-cell   number-columns-spanned="1">
+        <fo:block></fo:block>        </fo:table-cell>
+        <fo:table-cell   number-columns-spanned="1">
+        <fo:block></fo:block>        </fo:table-cell>
+        <fo:table-cell   number-columns-spanned="1">
+        <fo:block></fo:block>        </fo:table-cell>
+        <fo:table-cell   number-columns-spanned="1">
+        <fo:block></fo:block>        </fo:table-cell>
+    </fo:table-row>
+    <fo:table-row   background-color="#ffffff" height="0.27cm">
+        <fo:table-cell   number-columns-spanned="3">
+      <fo:block margin-left="0.24cm" margin-right="2.05cm"  margin-top="0.0cm" ><fo:leader leader-pattern="rule"  color="#000000"  rule-thickness="1.0pt"  rule-style="solid"  leader-length="100%"/></fo:block>
+        </fo:table-cell>
+        <fo:table-cell   number-columns-spanned="1">
+        <fo:block></fo:block>        </fo:table-cell>
+        <fo:table-cell   number-columns-spanned="1">
+        <fo:block></fo:block>        </fo:table-cell>
+        <fo:table-cell   number-columns-spanned="1">
+        <fo:block></fo:block>        </fo:table-cell>
+        <fo:table-cell   number-columns-spanned="1">
+        <fo:block></fo:block>        </fo:table-cell>
+        <fo:table-cell   number-columns-spanned="1">
+        <fo:block></fo:block>        </fo:table-cell>
+        <fo:table-cell   number-columns-spanned="1">
+        <fo:block></fo:block>        </fo:table-cell>
+    </fo:table-row>
+    <fo:table-row   background-color="#ffffff" height="0.49cm">
+        <fo:table-cell   number-columns-spanned="1">
+        <fo:block></fo:block>        </fo:table-cell>
+        <fo:table-cell   number-columns-spanned="1">
+      <fo:block   margin-left="0.0cm" margin-right="0.0cm"  margin-top="0.0cm"  font-size="9pt"  font-family="SansSerif"  font-style="bold"  color="#000000"  text-align="right">Selling Cost :</fo:block>
+        </fo:table-cell>
+        <fo:table-cell   number-columns-spanned="1">
+      <fo:block   margin-left="0.0cm" margin-right="0.54cm"  margin-top="0.0cm"  font-size="9pt"  font-family="SansSerif"  color="#000000"  text-align="right"><xsl:value-of select="catalog_items/catalog_item/price"></xsl:value-of></fo:block>
+        </fo:table-cell>
+        <fo:table-cell   number-columns-spanned="1">
+      <fo:block   margin-left="0.24cm" margin-right="0.0cm"  margin-top="0.0cm"  font-size="9pt"  font-family="SansSerif"  font-style="bold"  color="#000000"  text-align="right">Total Cost :</fo:block>
+        </fo:table-cell>
+        <fo:table-cell   number-columns-spanned="1">
+      <fo:block   margin-left="0.0cm" margin-right="0.52cm"  margin-top="0.0cm"  font-size="9pt"  font-family="SansSerif"  color="#000000"  text-align="right"><xsl:value-of select="catalog_items/catalog_item/total_cost"></xsl:value-of></fo:block>
+        </fo:table-cell>
+        <fo:table-cell   number-columns-spanned="1">
+      <fo:block   margin-left="0.24cm" margin-right="0.03cm"  margin-top="0.0cm"  font-size="9pt"  font-family="SansSerif"  font-style="bold"  color="#000000"  text-align="right">Markup :</fo:block>
+        </fo:table-cell>
+        <fo:table-cell   number-columns-spanned="1">
+      <fo:block   margin-left="0.0cm" margin-right="0.46cm"  margin-top="0.0cm"  font-size="9pt"  font-family="SansSerif"  color="#000000"  text-align="right"><xsl:value-of select="catalog_items/catalog_item/markup_price"></xsl:value-of></fo:block>
+        </fo:table-cell>
+        <fo:table-cell   number-columns-spanned="1">
+      <fo:block   margin-left="0.25cm" margin-right="0.08cm"  margin-top="0.0cm"  font-size="9pt"  font-family="SansSerif"  font-style="bold"  color="#000000"  text-align="right">Markup % :</fo:block>
+        </fo:table-cell>
+        <fo:table-cell   number-columns-spanned="1">
+      <fo:block   margin-left="0.0cm" margin-right="1.95cm"  margin-top="0.0cm"  font-size="9pt"  font-family="SansSerif"  color="#000000"  text-align="right"><xsl:value-of select="catalog_items/catalog_item/markup_per"></xsl:value-of></fo:block>
+        </fo:table-cell>
+    </fo:table-row>
+  </fo:table-body>
+</fo:table>
+
+<!-- END Area Footer -->
+</fo:block>
+</fo:table-cell>
+</fo:table-row>
+  </fo:table-body>
+</fo:table>
+
+<!-- END Area Header -->
+</fo:flow>
+</fo:page-sequence>
+</fo:root>
+</xsl:template>
+</xsl:transform>

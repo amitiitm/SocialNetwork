@@ -1,0 +1,49 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  cnd: MyString
+  country_code: MyString
+  area_code: MyString
+  country_name_2_letters: MyString
+  country_name_3_letters: MyString
+  utc_min: 9.99
+  utc_max: 9.99
+  country_name: MyString
+  phone_type: MyString
+  description: MyString
+  location: MyString
+  registrar: MyString
+  area_code_length: 1
+  area_code_length: 1
+  min_subscr_nr_length: 1
+  max_subscr_nr_length: 1
+  range_activation: 2009-07-27
+  range_deactivation: 2009-07-27
+  range_status: MyString
+  mobile_country_code: MyString
+  mobile_network_code: MyString
+  operating_company_number: MyString
+
+two:
+  cnd: MyString
+  country_code: MyString
+  area_code: MyString
+  country_name_2_letters: MyString
+  country_name_3_letters: MyString
+  utc_min: 9.99
+  utc_max: 9.99
+  country_name: MyString
+  phone_type: MyString
+  description: MyString
+  location: MyString
+  registrar: MyString
+  area_code_length: 1
+  area_code_length: 1
+  min_subscr_nr_length: 1
+  max_subscr_nr_length: 1
+  range_activation: 2009-07-27
+  range_deactivation: 2009-07-27
+  range_status: MyString
+  mobile_country_code: MyString
+  mobile_network_code: MyString
+  operating_company_number: MyString

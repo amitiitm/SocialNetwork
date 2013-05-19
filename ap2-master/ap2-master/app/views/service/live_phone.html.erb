@@ -1,0 +1,28 @@
+<div class="search-results">
+	<ul>
+	<% for p in @phones %>
+		<% if p.class == Phone %>
+			<li>
+				<a href="/accounts/<%= p.account.id %>" title="<%= "#{p.user.name.downcase}" %>" class="pbx_search_result search-result">
+					Account: <%= "#{p.user.name}" %>
+					<span>Phone: <%= "#{number_to_phone(p.number)}" %><br>Acc: #<%= "#{if p.account then p.account.number else 'N/A' end}" %></span>			
+				</a>
+			</li>			
+		<% elsif p.class == TmpPhone %>
+			<li>
+				<a href="/cards/<%= p.card_id %>" title="Calling Card" class="pbx_search_result search-result">
+					Calling Card:
+					<span>Phone: <%= "#{number_to_phone(p.number)}" %></span>			
+				</a>
+			</li>			
+		<% elsif p.class == Lead %>
+			<li>
+				<a href="/leads/<%= p.id %>" title="Lead" class="pbx_search_result search-result">
+					Lead:
+					<span>Phone: <%= "#{number_to_phone(p.phone)}" %></span>			
+				</a>
+			</li>			
+		<% end -%>
+	<% end -%>	
+	</ul>
+</div>

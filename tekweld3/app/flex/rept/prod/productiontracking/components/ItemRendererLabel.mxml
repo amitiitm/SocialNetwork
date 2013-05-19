@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:Label xmlns:mx="http://www.adobe.com/2006/mxml">
+	<mx:Script>
+        <![CDATA[
+        	import mx.controls.Alert;
+
+        override public function set data(value:Object):void
+        {
+           if(XML(data).print_flag.toString()=='Y')
+           {
+           	 this.text	= "print Done";
+           }
+           else
+           {
+           	 this.text	= "NOT";
+           }
+        }
+        ]]>
+    </mx:Script>
+</mx:Label>

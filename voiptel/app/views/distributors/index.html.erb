@@ -1,0 +1,32 @@
+<%= page_title :title => "List of Distributors" %>
+
+<% box :type => "simple" do %>
+	<% table :width => "800px" do |t| %>
+		<% t.th "#" %>
+		<% t.th "Name" %>
+		<% t.th "Business Name" %>
+		<% t.th "# Dists" %>
+		<% t.th "# Cards" %>
+		<% t.th "# Sold" %>
+		<% t.th "# Remain" %>
+
+		<% counter = 0 %>
+		<% for d in @distributors do %>
+			<% t.td counter += 1 %>
+			<% t.td link_to(d.bname, distributor_path(d), :class => "hash") %>
+			<% t.td( (d.business_name.blank?) ? "N/A" : d.business_name ) %> 
+			<% t.td d.distributions.size %>
+			<% t.td d.distributions.sum(:num_cards) %>
+			<% t.td d.distributions.sum(:sold) %>
+			<% t.td d.distributions.sum(:num_cards) - d.distributions.sum(:sold)%>
+			<% t.new_row %>
+		<%  end -%>
+	<% end -%>
+	<br>
+	<% if allowed? %>
+		<button class="ajax" href="<%= new_distributor_path%>" update="container">New Distributor</button>
+		<%= clear %>
+	<% end -%>
+<% end -%>
+
+<div id="container" class="hide"></div>	

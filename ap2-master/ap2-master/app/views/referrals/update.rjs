@@ -1,0 +1,5 @@
+if @success
+
+else
+  page.alert(@referral.errors.full_messages.join("\n"))
+end

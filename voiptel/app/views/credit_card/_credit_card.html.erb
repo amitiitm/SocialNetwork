@@ -1,0 +1,45 @@
+<% form_remote_tag :url => {:controller => :credit_card, :action => "save", :id => @account.id} do %>
+	<label class="lbl">Name on Card</label>
+	<%= text_field(:credit_card, :name_on_card, :class => "input") %>
+	<%= new_line %>
+	
+	<label class="lbl">Type</label>
+	<%= select(:credit_card, :type, CreditCard::TYPES, {}, :class =>"select") %>
+	<%= new_line %>
+	
+	<label class="lbl">Card Number</label>
+	<%= text_field(:credit_card, :number, :class => "input") %>
+	<%= new_line %>
+	
+	<label class="lbl">Exp Date</label>
+	<%= select(:credit_card, :month, (1..12), {}, :class =>"select") %>
+	<%= select(:credit_card, :year, (Time.now.year..Time.now.year+10), {},:class =>"select") %>
+	<%= new_line %>
+	
+	<label class="lbl">Security Code</label>
+	<%= text_field(:credit_card, :verification_value, :class => "input", :style => "width:40px") %>
+	<%= new_line %>
+	
+	<h3>Billing Address</h3>
+	<label class="lbl">Address1</label>
+	<%= text_field(:billing_address, :address1, :class => "input") %>
+	<%= new_line %>
+	
+	<label class="lbl">Address2</label>
+	<%= text_field(:billing_address, :address2, :class => "input") %> (Optional)
+	<%= new_line %>
+	
+	<label class="lbl">City</label>
+	<%= text_field(:billing_address, :city, :class => "input") %>
+	<%= new_line %>
+	
+	<label class="lbl">State</label>
+	<%= select(:billing_address, :state, Address::STATES, {}, :class =>"select") %>
+	<%= new_line %>
+	
+	<label class="lbl">Zip</label>
+	<%= text_field(:billing_address, :zipcode, :class => "input", :style => "width:40px") %>
+	<%= new_line %>
+			
+	<%= submit_tag "Save", :onClick => "show_loading()"%>
+<% end -%>

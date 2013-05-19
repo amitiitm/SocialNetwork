@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:Canvas xmlns:mx="http://www.adobe.com/2006/mxml" xmlns:controls="nl.fxc.controls.*"	xmlns:fus="com.fusiox.ui.*"	creationComplete="initPlayer()"
+	horizontalScrollPolicy="off" 
+	verticalScrollPolicy="off" 
+	backgroundColor="#000000"  width="444" height="285">	
+	
+	<mx:Script source="../scripts/FlvComponentScript.as"/>
+	
+	<mx:VBox id="playerBox" 
+		width="444" height="285" 
+		paddingLeft="5" paddingRight="5" 
+		verticalGap="0" 
+		horizontalAlign="center" verticalAlign="middle" horizontalScrollPolicy="off" verticalScrollPolicy="off">
+		
+	
+		<mx:VideoDisplay id="player"
+			width="444" height="230" 
+			bufferTime="3"
+			autoBandWidthDetection="true" 
+			maintainAspectRatio="true" 			
+			autoPlay="true" 
+			volume="{volumeSlider.value/100}"
+			autoRewind="true" rewind="replay();" />
+		
+		<mx:HBox id="trackBox" width="444" paddingTop="5" >
+			<mx:Label id="positionLabel" text="{positionText(player.playheadTime)}" width="5%" color="#FFFFFF"/>
+			<mx:HSlider id="trackSlider" width="90%" 
+				allowTrackClick="true" showTrackHighlight="true" 
+				liveDragging="false"
+				snapInterval="1" tickInterval="60" 
+				dataTipPlacement="top" showDataTip="false"
+				dataTipFormatFunction="position" 
+				minimum="0" maximum="{player.totalTime}" 
+				value="{player.playheadTime}" 
+				thumbPress="player.pause()"
+				thumbDrag="updatePosition(event)"
+				thumbRelease="seek(event)" />
+			<mx:Label id="lengthLabel" text="{positionText(player.totalTime)}" width="5%" color="#FFFFFF"/>
+		</mx:HBox>
+		
+		<mx:HBox id="controlBox" 
+			width="444" height="32" paddingRight="5" 
+			verticalAlign="middle" horizontalAlign="center" y="302" x="10">
+			
+			
+			<mx:Spacer width="45%" />
+			
+			<mx:Button id="stopButton" click="stop()"
+				toolTip="Stop" 
+				width="16" height="16" 
+				icon="@Embed(source='../assets/player_stop16.png')" />
+
+			<mx:Button id="playButton" click="togglePlay()"
+				toggle="true" toolTip="Play" 
+				width="24" height="24" 
+				icon="@Embed(source='../assets/player_play.png')" />
+																		
+			<mx:Button id="repeatButton" 
+				selected="{autoRepeat}" 
+				click="toggleRepeat()"
+				toggle="true" toolTip="Turn repeat on"
+				width="16" height="16"
+				icon="@Embed(source='../assets/player_repeat16.png')" />
+					
+			<mx:Spacer width="12%"/>
+							
+			<mx:Button id="muteButton" click="toggleSound()"
+				toggle="true" toolTip="Mute" 
+				width="16" height="16"
+				icon="@Embed(source='../assets/player_sound16.png')" />
+				 		
+			<mx:HSlider id="volumeSlider" value="75"
+				liveDragging="true" dataTipPrecision="0" 
+				minimum="0" maximum="100" width="80"/>
+
+			<mx:Button id="viewModeButton" toggle="true"
+				toolTip="Resize"	
+				width="0" height="0"
+				icon="@Embed(source='../assets/player_view.png')" visible="false" />
+
+		</mx:HBox>	
+	
+	</mx:VBox>
+</mx:Canvas>

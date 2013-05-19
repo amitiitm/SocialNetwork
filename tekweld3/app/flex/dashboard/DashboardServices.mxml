@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rds:CommonServices xmlns:rds="business.*" xmlns:mx="http://www.adobe.com/2006/mxml">
+
+	<mx:HTTPService id="todaysShipment" 							url="/setup/dashboard/list_todays_shipments" />
+	<mx:HTTPService id="tomorrowShipment" 							url="/setup/dashboard/list_tomorrows_shipments" />
+	<mx:HTTPService id="orderActivity"								url="/setup/dashboard/list_order_activity" />
+	<mx:HTTPService id="productionType" 							url="/setup/dashboard/list_production_activity" />
+	<mx:HTTPService id="orderTypeCount" 							url="/setup/dashboard/list_order_types" />
+	<mx:HTTPService id="listRushOrder" 								url="/setup/dashboard/list_rush_orders" />
+	<mx:HTTPService id="listTop10Amount" 							url="/setup/dashboard/list_top10_orders" />
+	<mx:HTTPService id="genericSearch" 								url="/setup/dashboard/list_generic_search" />
+	<mx:HTTPService id="listTop10SellingItem" 						url="/setup/dashboard/list_top10_selling_items" />
+	<mx:HTTPService id="listOutOfStockOrder" 						url="/setup/dashboard/list_out_of_stock_orders" />
+	<mx:HTTPService id="listOutOfStockItems" 						url="/setup/dashboard/list_out_of_stock_items" />
+	<mx:HTTPService id="getOrderQuery" 								url="/setup/dashboard/list_order_queries" />
+	<mx:HTTPService id="getArtworkQuery" 							url="/setup/dashboard/list_artwork_queries" />
+	<mx:HTTPService id="getPaymentHoldOrders" 						url="/setup/dashboard/list_payment_hold_orders" />
+	<mx:HTTPService id="getArtworkNotReceivedOrders" 				url="/setup/dashboard/list_artwork_receive_pending_orders" />
+	<mx:HTTPService id="getArtworkNotApprovedOrders" 				url="/setup/dashboard/list_artwork_approval_pending_orders" />
+	<mx:HTTPService id="getTop10Customers" 							url="/setup/dashboard/list_top10_customers" />
+	
+	
+	<!--DASHBOARD 5-->
+	<mx:HTTPService id="getPreProductionNotApprovedOrders" 			url="/setup/dashboard/list_preproduction_not_approved_orders" />
+	<mx:HTTPService id="getEmbroideryArtworkNotReceivedOrders" 		url="/setup/dashboard/list_embroidery_art_not_approved_orders" />
+	<mx:HTTPService id="getEmbroiderySendForEstimationOrders" 		url="/setup/dashboard/list_embroidery_sent_for_estimation_orders" />
+	<mx:HTTPService id="getEmbroideryWaitingForEstimationOrders" 	url="/setup/dashboard/list_embroidery_waiting_for_estimation_orders" />
+	<!---->
+	
+	<!--DASHBOARD 6-->
+	<mx:HTTPService id="getEmbroideryStitchNotApprovedOrders" 		url="/setup/dashboard/list_embroidery_stitch_not_approved_orders" />
+	<mx:HTTPService id="getEmbroiderySendToDigitizedOrders" 		url="/setup/dashboard/list_embroidery_send_to_digitize_orders" />
+	<mx:HTTPService id="getFilmInboxOrders" 						url="/setup/dashboard/list_film_inbox_orders" />
+	<mx:HTTPService id="getDirectPrintInboxOrders" 					url="/setup/dashboard/list_direct_print_inbox_orders" />
+	<!---->
+	
+	<!--DASHBOARD 7-->
+	<mx:HTTPService id="getApprovedCouponList" 						url="/setup/dashboard/list_approved_coupons" />
+	<mx:HTTPService id="getNoResponseOrders" 						url="/setup/dashboard/list_noresponse_paperproof_orders" />
+	<!---->
+	
+	
+	
+</rds:CommonServices>

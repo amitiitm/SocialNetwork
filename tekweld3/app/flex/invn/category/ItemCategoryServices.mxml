@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rds:CommonServices xmlns:rds="business.*" xmlns:mx="http://www.adobe.com/2006/mxml">
+
+	<mx:HTTPService id="saveRecord" url="/inventory/item_category/create_catalog_item_categories"/>
+	<mx:HTTPService id="getRecord" url="/inventory/item_category/show_catalog_item_category"/>
+	<mx:HTTPService id="getList" url="/inventory/item_category/list_catalog_item_categories"/>
+	<mx:HTTPService id="getViewFormat" url="invn/category/xmls/ItemCategoryCriteriaStru.xml"/>
+	<mx:HTTPService id="getListFormat" url="invn/category/xmls/ItemCategoryListStru.xml"/>
+	<mx:HTTPService id="attributeDetailFormat" url="invn/category/xmls/ItemCategoryAttributeDetailStru.xml"/>
+	<mx:HTTPService id="printRecord" url=""/>
+
+	<mx:HTTPService id="importDetailFormat" url="invn/category/xmls/ItemCategoryImportStru.xml"/>
+	<mx:HTTPService id="recordUploadUrl" url="/inventory/item_category/convert_exceltoxml_for_catalog_item_categories"/>
+	
+</rds:CommonServices>
+
+
+

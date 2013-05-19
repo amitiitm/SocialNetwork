@@ -1,0 +1,11 @@
+<columns Title=''>
+
+	<column dataType="D" 			label="Trans Date" 			checkbox="ckAll1" 			xmlTagFrom="dt1"			from="dfDt1" 
+			xmlTagTo="dt2" 			to="dfDt2" 					multiSelect="" 		xmlTagMultiSelect=""
+			lookupFlag="false" 		lookupName=""				lookupLabel="" />
+			
+	<column dataType="S" 			label="A/c Period" 			checkbox="ckAll2" 			xmlTagFrom="str3" 			from="tiStr3"
+			xmlTagTo="str4" 		to="tiStr4" 				multiSelect="mvMultiSelect1" 	xmlTagMultiSelect="multiselect1" 
+			lookupFlag="true" 		lookupName="AccountPeriod"  lookupLabel="code"		dataField="code" 			labelField="code"
+			lookupFormatUrl=""/>			
+</columns>

@@ -1,0 +1,389 @@
+<?xml version="1.0" encoding="utf-8"?>
+<gencomponents:AddEdit  xmlns:gencomponents="com.generic.components.*" 
+ 	xmlns:customcomponents="com.generic.customcomponents.*" creationComplete="init()" 
+	xmlns:mx="http://www.adobe.com/2006/mxml" 
+	width="100%" height="100%" verticalGap="0" paddingTop="0">
+
+	<mx:Script source="../Scripts/PurchaseInvoiceAddEditScript.as"/>
+	
+	<mx:HBox id="HBoxHeader" width="100%"  horizontalGap="0" verticalGap="0" verticalAlign="top" 
+		paddingBottom="0" paddingTop="0">
+		
+		<mx:VBox width="0" height="0" verticalGap="0" horizontalGap="0" verticalAlign="top" visible="false">
+			<customcomponents:GenTextInput id="tiShip_zip" width="0" height="0"  visible="false" editable="false"
+				xmlTag="ship_zip" updatableFlag="true" tableName="purchase_invoice" />	
+			<customcomponents:GenTextInput id="tiBill_zip" width="0" height="0"  visible="false" editable="false"
+				xmlTag="bill_zip" updatableFlag="true" tableName="purchase_invoice" />					
+		</mx:VBox>
+
+		<mx:VRule height="100%" visible="false"/>
+				
+		<mx:VBox width="100%" height="100%" horizontalGap="0" verticalGap="3" paddingBottom="0" paddingTop="0">
+			<mx:Spacer height="4%"/>
+			<mx:HBox width="100%" height="4%" verticalAlign="middle"  verticalGap="0">
+				<mx:Label text="Vendor #"  height="20" width="80" textAlign="right"/>
+				<customcomponents:GenTextInputWithHelp
+					id="dcVendor_id" 
+					width="116" 
+					toolTip="Vendor #" 
+					dataSourceName="Vendor"
+					minimumChar = "{__genModel.masterData.child('lookup').vendor.value}"
+					height="20" 
+					tabIndex="1" 
+					validationFlag="true" 
+					xmlTag="vendor_id"
+					labelTag="vendor_code"
+					dataField="id" 
+					labelField= "code"
+					updatableFlag="true" 
+					tableName="purchase_invoice" 
+					itemChangedEvent="getVendorDetails()"
+					/>
+			</mx:HBox>
+			<mx:HBox width="100%" height="10%" verticalGap="0" >						
+				<mx:Label text="Ship Date" height="20" width="80" textAlign="right"/>
+				<customcomponents:GenDateField id="dfShip_dt" width="116" height="20" toolTip="Ship Date" 
+					validationFlag="true" tabIndex="2" xmlTag="ship_date" updatableFlag="true" tableName="purchase_invoice"/>
+			</mx:HBox>	
+			<mx:HBox width="100%" height="10%" verticalGap="0" >
+				<mx:Label text="Term #" height="20" width="80" textAlign="right"/>
+				<customcomponents:GenTextInputWithHelp
+					id="dcTerm_code" 
+					width="116" 
+					toolTip="Term #" 
+					tabIndex="2"
+					dataSourceName="Term"
+					minimumChar = "{__genModel.masterData.child('lookup').term.value}"
+					height="20" 
+					updatableFlag="true"
+					validationFlag="false"
+					xmlTag="term_code"
+					labelTag="term_code"
+					dataField="code"  
+					labelField= "code"
+					tableName="purchase_invoice" 
+					itemChangedEvent="getDueDate()"
+					/>
+			</mx:HBox>
+			<mx:HBox > 
+				<mx:Label text="Due Date" height="20" width="80" textAlign="right"/>
+				<customcomponents:GenDateField id="dfDue_date" width="116" height="20" toolTip="Due Date"
+					validationFlag="true" tabIndex="4" xmlTag="due_date" updatableFlag="true" tableName="purchase_invoice"/>
+			</mx:HBox>	
+         </mx:VBox>
+		<mx:VRule height="100%"/>
+		<mx:VBox width="100%" height="100%" verticalGap="3" horizontalGap="0" paddingBottom="0" paddingTop="0">
+			<mx:Spacer height="4%"/>
+			<mx:HBox width="100%" >
+				<mx:Label text="Invoice Type" width="115" textAlign="right" height="20" />
+				<customcomponents:GenComboBox id="cbInvoice_type"  defaultValue="O" width="105" cornerRadius="0" xmlTag="trans_type" updatableFlag="true"
+					tableName="purchase_invoice" height="20" tabIndex="5" labelField="label" change="invoiceTypeChangeEvent();"   		
+					dataProvider="{__genModel.masterData.child('trans_type').pi}" />
+			</mx:HBox>			
+			<mx:HBox >
+				<mx:Label text="Ref. Order/Memo #" width="115" textAlign="right" height="20" />
+				<customcomponents:GenTextInput id="tiRef_trans_no" width="105" height="20" enabled="false" 
+					xmlTag="ref_trans_no" updatableFlag="true" tableName="purchase_invoice" editable="false" />
+				<mx:Button id="btnGetData" label="..." width="16" height="16" click="handleBtnGetDataClick(event)" tabIndex="6" />
+			</mx:HBox>				
+			<mx:HBox width="100%" height="10%" verticalGap="0" >						
+				<mx:Label text="Ship Via" height="20" width="115" textAlign="right"/>
+				<customcomponents:GenTextInputWithHelp
+					id="dcShipping_code" 
+					width="116" 
+					toolTip="Ship Via #" 
+					tabIndex="7"
+					dataSourceName="Shipping"
+					minimumChar = "{__genModel.masterData.child('lookup').shipping.value}"
+					height="20" 
+					updatableFlag="true"
+					validationFlag="false"
+					xmlTag="shipping_code"
+					labelTag="shipping_code"
+					dataField="code"  
+					labelField= "code"
+					tableName="purchase_invoice" 
+					/>
+			</mx:HBox>
+			<mx:HBox width="100%" >
+				<mx:Label text="Tracking #" width="115" textAlign="right" height="20" />
+				<customcomponents:GenTextInput id="tiTracking_no" width="105" tabIndex="8" height="20"   
+					xmlTag="tracking_no" updatableFlag="true" tableName="purchase_invoice" maxChars="50" />	
+			</mx:HBox>	
+							
+		</mx:VBox>				
+		<mx:VRule height="100%"/>
+		<mx:VBox width="100%" height="100%" verticalGap="3" horizontalGap="0" paddingBottom="0" paddingTop="0">
+			<mx:Spacer height="4%"/>
+			<mx:HBox >
+				<mx:Label text="Vendor Invoice #" width="120" textAlign="right" height="20" />
+				<customcomponents:GenTextInput id="tiVendorInvoice_no" width="116" tabIndex="9" height="20"   
+					xmlTag="ext_ref_no" updatableFlag="true" tableName="purchase_invoice" maxChars="50"/>	
+			</mx:HBox>		
+			<mx:HBox >
+				<mx:Label text="Vendor Invoice Date" height="20" width="120" textAlign="right" />
+				<customcomponents:GenDateField id="dfVendorInvoice_date" width="116" height="20" toolTip="vendor Invoice Date" 
+					tabIndex="10" xmlTag="ext_ref_date" updatableFlag="true" tableName="purchase_invoice"/>
+			</mx:HBox>
+			<mx:HBox width="100%" height="10%" verticalGap="0" >
+				<mx:Label text="Purchase Person #" width="120" textAlign="right" height="20" />
+				<customcomponents:GenTextInputWithHelp
+					id="dcPurchase_person_code" 
+					width="116" 
+					toolTip="Purchase Person #" 
+					dataSourceName="Purchaseperson"
+					minimumChar = "{__genModel.masterData.child('lookup').purchaseperson.value}"
+					height="20" 
+					tabIndex="11" 
+					validationFlag="false" 
+					xmlTag="purchaseperson_code"
+					labelTag="purchaseperson_code"
+					dataField="code" 
+					labelField= "code"
+					updatableFlag="true" 
+					tableName="purchase_invoice" 
+					/>
+
+			</mx:HBox>
+		</mx:VBox>
+		<mx:VRule height="100%"/>
+		<mx:VBox width="100%" height="100%" verticalGap="3" horizontalGap="0" paddingBottom="0" paddingTop="0">
+			<mx:Spacer height="4%"/>
+			<mx:HBox width="100%" height="10%" verticalGap="0">						
+				<mx:Label text="Invoice #" height="20" width="80" textAlign="right"/>
+				<customcomponents:GenTextInput id="tiTrans_no" width="65" height="20" toolTip="Trans #" enabled="false" 
+					xmlTag="trans_no" updatableFlag="true" tableName="purchase_invoice" defaultValue=""/>
+				<customcomponents:GenTextInput id="tiTrans_bk" width="35" height="20" visible="true" enabled="false"
+					xmlTag="trans_bk" updatableFlag="false" tableName="purchase_invoice" />
+			</mx:HBox>			
+			<mx:HBox width="100%" height="10%" verticalGap="0">
+				<mx:Label text="Invoice Date" height="20" width="80" textAlign="right"/>
+				<customcomponents:GenDateField id="dfTrans_date" width="109" height="20" toolTip="Trans Date" 
+					validationFlag="true" itemChangedEvent="__localModel.trans_date;dfTrans_date.text;dfShip_dt.text=dfTrans_date.text;getAccountPeriod(); getDueDate()"
+					tabIndex="12" xmlTag="trans_date" updatableFlag="true" tableName="purchase_invoice"/>
+			</mx:HBox>
+			<mx:HBox width="100%" height="10%" verticalGap="0">		
+				<mx:Label text="A/C Period" height="20" width="80" textAlign="right" />
+				<customcomponents:GenTextInput id="tiAccount_period_code" width="109" xmlTag="account_period_code" enabled="false" 
+					updatableFlag="true"  tableName="purchase_invoice" height="20"  
+					defaultValue="" validationFlag="false" toolTip="A/c Period #" />
+			</mx:HBox>
+			
+			<mx:HBox width="100%" height="10%" verticalGap="0">		
+				<mx:Label text="Status" width="80" height="20" textAlign="right" />
+				<customcomponents:GenComboBox id="cbTrans_flag"  defaultValue="A"  width="109" cornerRadius="0" xmlTag="trans_flag" updatableFlag="true"
+					tableName="purchase_invoice" tabIndex="13" labelField="label" height="20" enabled="false" 
+					dataProvider="{__genModel.masterData.child('trans_flag').trans_flag}" />
+			</mx:HBox>
+		</mx:VBox>
+	</mx:HBox>
+	<mx:Spacer height="15"/>	
+	<mx:TabNavigator id="tnDetail" width="100%" height="100%">
+		<mx:VBox id="hbHeader" label="Address" width="100%" height="100%" verticalGap="3" tabIndex="100">
+			<mx:VBox id="vbHeader2" width="100%" height="10%" verticalGap="3">
+				<mx:HBox width="100%" horizontalGap="2" verticalAlign="middle">
+					<mx:Label text=" Vendor Address" width="237" fontSize="10" fontWeight="bold" textAlign="right" visible="true" height="20" />
+					<mx:Label text="Ship To Store" width="379" fontSize="10" fontWeight="bold" textAlign="right" visible="true" height="20" />
+				</mx:HBox>
+				<mx:HBox width="100%" horizontalGap="2" verticalAlign="middle">
+					<mx:Label text="Vendor #" width="95" textAlign="right" height="20" />
+					<customcomponents:GenTextInput id="tiBill_code" width="233" xmlTag="bill_code"
+												   updatableFlag="false" tableName="purchase_invoice"  enabled="false"
+												   defaultValue="" validationFlag="false" toolTip="Vendor #" editable="false" height="20" maxChars="50" />
+					<mx:Label text="Store #" width="155" textAlign="right" height="20" />
+					<customcomponents:GenTextInputWithHelp
+						lookupFormatUrl	=  "companyStoreLookupHelpFormat"
+						id="dcStore_id" 
+						width="225" 
+						toolTip="Store #" 
+						dataSourceName="CompanyStore"
+						minimumChar = "{__genModel.masterData.child('lookup').companystore.value}"
+						height="20" 
+						tabIndex="24" 
+						validationFlag="true" 
+						xmlTag="store_id" 
+						updatableFlag="true"
+						labelTag="store_code"
+						dataField="id" 
+						labelField= "company_cd"
+						tableName="purchase_invoice" enabled="false"
+						/>
+					<!--<customcomponents:GenDynamicComboBoxWithHelp id="dcStore_id" width="225" 
+					toolTip="Store #"  defaultValue="{__genModel.user.default_company_id.toString()}" height="20"  enabled="false"
+					dataField="id" labelField="code" 
+					dataSourceName="CompanyStore" dataProvider="{__genModel.lookupObj.companystore.children()}"   
+					validationFlag="true" xmlTag="store_id" updatableFlag="true" tableName="purchase_invoice"
+					/>-->
+				</mx:HBox>
+				<mx:HBox width="100%" horizontalGap="2" verticalAlign="middle">
+					<mx:Label text="Bill From" width="95" textAlign="right" height="20" />
+					<customcomponents:GenTextInput id="tiBill_nm" width="233" xmlTag="bill_name"
+						updatableFlag="true" tableName="purchase_invoice" 
+						defaultValue="" validationFlag="false" toolTip="Bill From" editable="false" height="20" maxChars="50" />
+					<mx:Label text="Name" width="155" textAlign="right" height="20" />
+					<customcomponents:GenTextInput id="tiShip_nm" width="225" xmlTag="ship_name"
+						updatableFlag="true" tableName="purchase_invoice" height="20" enabled="false"
+						defaultValue="" validationFlag="false" toolTip="Ship Name" editable="false" maxChars="50" />
+				</mx:HBox>
+				<mx:HBox width="100%" horizontalGap="2" verticalAlign="middle">
+					<mx:Label text="Address #1" width="95" textAlign="right" height="20" />
+					<customcomponents:GenTextInput id="tiBill_address1" width="233" xmlTag="bill_address1"
+						updatableFlag="true" tabIndex="14" tableName="purchase_invoice" 
+						defaultValue="" validationFlag="false" toolTip="Bill Address #1" height="20" maxChars="50" />
+					<mx:Label text="Address #1" width="155" textAlign="right" height="20" />
+					<customcomponents:GenTextInput id="tiShip_address1" width="225" xmlTag="ship_address1"
+						updatableFlag="true" tableName="purchase_invoice" height="20" enabled="false"
+						defaultValue="" validationFlag="false" toolTip="Ship Address #1" editable="false" maxChars="50" />
+				</mx:HBox>
+				<mx:HBox width="100%" horizontalGap="2" verticalAlign="middle">
+					<mx:Label text="#2" width="95" textAlign="right" height="20" />
+					<customcomponents:GenTextInput id="tiBill_address2" width="233" xmlTag="bill_address2"
+						updatableFlag="true" tabIndex="15" tableName="purchase_invoice" 
+						defaultValue="" validationFlag="false" toolTip="Bill Address #2" height="20" maxChars="50" />
+					<mx:Label text="#2" width="155" textAlign="right" height="20" />
+					<customcomponents:GenTextInput id="tiShip_address2" width="225" xmlTag="ship_address2"
+						updatableFlag="true" tableName="purchase_invoice" height="20" enabled="false"
+						defaultValue="" validationFlag="false" toolTip="Ship Address #2" editable="false" maxChars="50" />
+				</mx:HBox>
+				<mx:HBox width="100%" horizontalGap="2" verticalAlign="middle">
+					<mx:Label text="City/State" width="95" textAlign="right" height="20" />
+					<customcomponents:GenTextInput id="tiBill_city" width="116" xmlTag="bill_city"
+						updatableFlag="true" tabIndex="16" tableName="purchase_invoice"
+						defaultValue="" validationFlag="false" toolTip="City" height="20" maxChars="25" />
+					<customcomponents:GenTextInput id="tiBill_state" width="115" xmlTag="bill_state"
+						updatableFlag="true" tabIndex="17" tableName="purchase_invoice"
+						defaultValue="" validationFlag="false" toolTip="State" height="20" maxChars="2" upperCaseFlag="true" />
+					<mx:Label text="City/State" width="155" textAlign="right" height="20" />
+					<customcomponents:GenTextInput id="tiShip_city" width="109" xmlTag="ship_city"
+						updatableFlag="true" tableName="purchase_invoice" enabled="false"
+						defaultValue="" validationFlag="false" toolTip="City" editable="false" height="20" maxChars="25" />
+					<customcomponents:GenTextInput id="tiShip_state" width="114" xmlTag="ship_state"
+						updatableFlag="true" tableName="purchase_invoice" enabled="false"
+						defaultValue="" validationFlag="false" toolTip="State" editable="false" height="20" maxChars="2" upperCaseFlag="true" />
+				</mx:HBox>
+				<mx:HBox width="100%" horizontalGap="2" verticalAlign="middle">
+					<mx:Label text="Country" width="95" textAlign="right" height="20" />
+					<customcomponents:GenTextInput id="tiBill_country" width="41" xmlTag="bill_country"
+						updatableFlag="true" tabIndex="18" tableName="purchase_invoice"
+						defaultValue="US" validationFlag="false" toolTip="Country" height="20" maxChars="2" />
+					<mx:Label text="Country" width="347" textAlign="right" height="20" />
+					<customcomponents:GenTextInput id="tiShip_country" width="110" xmlTag="ship_country"
+						updatableFlag="true" tableName="purchase_invoice" enabled="false"
+						defaultValue="" validationFlag="false" toolTip="Country" editable="false" height="20" maxChars="20" />
+				</mx:HBox>
+				<mx:HBox width="100%" horizontalGap="2" verticalAlign="middle">
+					<mx:Label text="Phone/Fax" width="95" textAlign="right" height="20" />
+					<customcomponents:GenTextInput id="tiBill_phone1" width="116" xmlTag="bill_phone"
+						updatableFlag="true" tabIndex="19" tableName="purchase_invoice"
+						defaultValue="" validationFlag="false" toolTip="Phone" height="20" maxChars="50" />
+					<customcomponents:GenTextInput id="tiBill_fax1" width="115" xmlTag="bill_fax"
+						updatableFlag="true" tabIndex="20" tableName="purchase_invoice"
+						defaultValue="" validationFlag="false" toolTip="Fax" height="20" maxChars="50" />
+					<mx:Label text="Phone/Fax" width="155" textAlign="right" height="20" />
+					<customcomponents:GenTextInput id="tiShip_phone1" width="109" xmlTag="ship_phone"
+						updatableFlag="true" tableName="purchase_invoice" enabled="false"
+						defaultValue="" validationFlag="false" toolTip="Phone" editable="false" height="20" maxChars="50" />
+					<customcomponents:GenTextInput id="tiShip_fax1" width="114" xmlTag="ship_fax"
+						updatableFlag="true" tableName="purchase_invoice" enabled="false"
+						defaultValue="" validationFlag="false" toolTip="Fax" editable="false" height="20" maxChars="50" />
+				</mx:HBox>
+			</mx:VBox>
+		</mx:VBox>
+		<mx:VBox id="vbDetail" label="Item" width="100%" height="100%" verticalGap="0" verticalAlign="top">
+			<mx:ViewStack id="vsDtl" width="100%" height="100%">
+				<mx:HBox id="hbEditable" width="100%" height="100%" paddingLeft="0" paddingRight="0">
+					<gencomponents:EditableDetail id="dtlLine"
+						updatableFlag="true"
+						height="100%" width="100%"
+						checkBlankRowColumn="catalog_item_id"
+						rootNode="purchase_invoice_lines"
+						formatServiceID="itemDetailFormat"
+						detailItemFocusOut="setGrossAmountEditable(event);updateRecordSummary();changeImage()"
+						detailRemoveRow="calculateGrossAmount();updateRecordSummary();changeImage()"
+						detailItemClick="changeImage()"
+						fetchRecordFlag="{true}"
+						dc_id="{dcVendor_id}" />
+				</mx:HBox>
+
+				<mx:HBox id="hbNonEditable" width="100%" height="100%" paddingLeft="0" paddingRight="0">
+					<gencomponents:Detail id="dtlLineNonEditable"
+						updatableFlag="false"
+						height="100%" width="100%"
+						checkBlankRowColumn="catalog_item_id"
+						rootNode="purchase_invoice_lines"
+						formatServiceID="directItemDetailFormat"
+						DetailEditClass="{puoi.purchaseinvoice.components.PurchaseInvoiceLineDetail}"
+						detailAddEditComplete="setGrossAmountNonEditable(event);updateRecordSummary();changeImage()"
+						detailSaveImportedXMLComplete="setGrossAmountNonEditable(event);updateRecordSummary();changeImage()"
+						detailRemoveRow="setGrossAmountNonEditable(event);updateRecordSummary();changeImage()"
+						detailItemClick="changeImage()"
+						title="Invoice Detail"
+					/>
+				</mx:HBox>
+			</mx:ViewStack>
+
+			<mx:HBox id="hbFooter" width="100%" height="135" y="625" horizontalAlign="right" horizontalGap="0">
+				<mx:VBox width="120" height="120">
+					<mx:Image id="itemImage" 
+						width="100%"
+						height="100%" 
+						verticalAlign="middle" 
+						horizontalAlign="center" 
+						source="{__genModel.path.image}{image_name}"/>
+				</mx:VBox>
+
+				<mx:VBox width="180" height="100%" paddingLeft="20">
+					<mx:HBox>
+						<mx:Label text="Total Items" width="80" textAlign="right" />
+						<mx:Label id="lblTotal_items" width="35" textAlign="right" />
+					</mx:HBox>
+					<mx:HBox>
+						<mx:Label text="Item Qty" width="80" textAlign="right" />
+						<mx:Label id="lblItem_qty" width="35" textAlign="right" />
+					</mx:HBox>
+					<mx:HBox height="0" width="0" visible="false">
+						<mx:Label text="Clear Qty" width="80" textAlign="right" />
+						<mx:Label id="lblClear_qty" width="20" textAlign="right" />
+					</mx:HBox>
+				</mx:VBox>
+
+				<mx:VBox width="220" height="100%">
+					<mx:Label text="Remarks"/>
+					<customcomponents:GenTextArea width="200" height="50" id="taRemarks" maxChars="255"
+						 xmlTag="remarks" updatableFlag="true" tableName="purchase_invoice"/>
+				</mx:VBox>
+				<mx:HBox width="0" height="0" visible="false">
+					<mx:Label text="Taxable Amount"  textAlign="right"/>
+					<customcomponents:GenTextInput id="tiTaxable_amt"  textAlign="right" editable="true"
+						backgroundAlpha="0" xmlTag="taxable_amt" updatableFlag="false" tableName="purchase_invoice" defaultValue="0.00"
+						dataType="N" rounding="true" setDefaultOnEmpty="true" maxValue="9999999999.99"/>
+				</mx:HBox>
+				<mx:VBox width="100%" height="100%">
+					<gencomponents:TransactionFooter id="trFooter" width="100%" height="100%"/>
+				</mx:VBox>
+			</mx:HBox>	
+		</mx:VBox>
+	</mx:TabNavigator>			
+
+	<mx:Label text="Posting Status" width="0" height="0" textAlign="right" visible="false"/>
+	<customcomponents:GenComboBox id="cbPost_flag" defaultValue="P"  visible="false" width="0" cornerRadius="0" xmlTag="post_flag" updatableFlag="true"
+		tableName="purchase_invoice" tabIndex="14" labelField="label" height="0" 
+		dataProvider="{__genModel.masterData.child('post_flag').post_flag}" />
+
+	<mx:HBox height="0" width="0" visible="false" verticalGap="0">						
+		<mx:Label text="Ref. #" height="0" width="0" textAlign="right" visible="false"/>
+		<customcomponents:GenTextInput id="tiPo_no" width="0" height="0" toolTip="Ref. #" visible="false"
+			validationFlag="false"  maxChars="50" xmlTag="po_no" updatableFlag="true" tableName="purchase_invoice"/>
+	</mx:HBox>
+	<mx:HBox width="0" height="0" visible="false" verticalGap="0">						
+		<mx:Label text="Ref.Date" height="0" width="0" textAlign="right" visible="false"/>
+		<customcomponents:GenDateField id="dfPo_dt" width="0" height="0" toolTip="ref Date" visible="false"
+			validationFlag="false"  xmlTag="purchase_date" updatableFlag="true" tableName="purchase_invoice" />
+		<customcomponents:GenTextInput id="tiVendor_code" xmlTag="vendor_code" updatableFlag="true" 
+			text="{dcVendor_id.labelValue}" tableName = "purchase_invoice"  width="0" height="0" visible="false"/>
+		<customcomponents:GenTextInput id="tiStore_code" width="0" height="0" visible="false" editable="false"
+			xmlTag="store_code" updatableFlag="true" tableName="purchase_invoice"/>
+
+	</mx:HBox>
+
+</gencomponents:AddEdit>

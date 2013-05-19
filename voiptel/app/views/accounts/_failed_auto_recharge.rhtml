@@ -1,0 +1,64 @@
+<script type="text/javascript" src="/js/tablesorter.js"></script>
+
+<div class="inner-response">
+  <%= page_title :title => @header_title, :desc => @desc %>
+  <div class="two-column">
+    <div class="clear"></div>
+    <div style="padding-bottom:4px;float: right" class="hidden" id="loading-top-pager"><%= image_tag("load.gif", :class => "icon") %> Loading...</div>
+    <div class="clear"></div>
+    <div class="column">
+      <% table :no_sort => true, :class => "scroll abc", :width => "1300px" do |t| %>
+        <% t.th account_header(params,"#",'id',@advance_search) %>
+        <% t.th account_header(params,"Account Holder",'account_holder_id',@advance_search) %>
+        <% t.th account_header(params,"Acc. #",'number',@advance_search) %>
+        <% t.th account_header(params,'Balance','balance',@advance_search) %>
+        <% t.th account_header(params,"Auto Rech",'recharge_amount',@advance_search) %>
+        <% t.th account_header(params,"Payments",'deposits',@advance_search) %>
+        <% t.th account_header(params,"Last Payment",'last_deposit_amount',@advance_search)%>
+        <% t.th account_header(params,"Last Payment Date",'last_deposit_date',@advance_search) %>
+        <% t.th account_header(params,"Last Answd CDR",'last_answered_cdr',@advance_search) %>
+        <% t.th "Last Cont Agt" %>
+        <% t.th account_header(params,"Cont Date",'last_conversation_date',@advance_search) %>
+        <% t.th "Note" %>
+        <% t.th account_header(params,"Reg Date",'created_at',@advance_search) %>
+        <% t.th "Conv" %>
+        <% counter = (@size - ((@page - 1) * @limit) + 1) %>
+        <% for account in @accounts do %>
+          <% pbx_cdr = PbxCdr.find_by_id(account.last_conversation_id)  %>
+          <% counter -= 1 %>
+          <% t.td counter %>
+          <% t.td(link_to account_holder(account.account_holder_id), account, :class => "hash") + sub_accounts(account) %>
+          <% t.td "# #{account.number}" %>
+          <% t.td number_to_currency(account.balance) %>
+          <% t.td auto_recharge(account) %>
+          <% t.td number_to_currency(account.deposits) %>
+          <% t.td number_to_currency(account.last_deposit_amount) %>
+          <% t.td time_in_word(account.last_deposit_date)  %>
+          <% t.td time_in_word(account.last_answered_cdr)%>
+          <% t.td begin pbx_cdr.admin_user.name rescue '--' end%>
+          <% t.td time_in_word(account.last_conversation_date) %>
+          <% t.td link_to(image_tag("../../images/advance_search/zoom.png"), "/memos/latest_memo_notes/#{account.id}", :class => "ajax", :update => "memo-container")%>
+          <% t.td time_in_word(account.created_at) %>
+          <% t.td pbx_cdr.blank? ? '--' : recording(pbx_cdr) %>
+          <% t.new_row({:id => account.id}, session[:selected_account]) %>
+        <% end -%>
+      <% end -%>
+      <%= account_pager @path %>
+    </div>
+    <div class="column column-right" style="">
+      <div id="player"></div>
+    </div>
+  </div>
+  <div class="clear"></div>
+  <div class="hide" id="container"></div>
+</div>
+<div id="memo-container" class="hide"></div>
+
+<script type="text/javascript">
+
+  $(document).ready(function(){
+        $('#'+$('.abc table').attr('id')).tablesorter({widgets:['zebra'] });
+        $('#'+$('.abc table').attr('id') + " .header").append('<span class="ui-icon ui-icon-carat-2-n-s"></span>');
+  });
+
+</script>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<gencomponents:AddEdit xmlns:mx="http://www.adobe.com/2006/mxml"
+	height="100%" width="100%" verticalGap="0"
+	xmlns:customcomponents="com.generic.customcomponents.*"
+	xmlns:gencomponents="com.generic.components.*"
+	creationPolicy="all">
+	
+	<mx:Script source="../scripts/CutAddEditScript.as"/>
+
+	<gencomponents:Inbox
+		id="inbox"
+		structure="{__localModel.listObj.listFormat}"
+		rows="{__localModel.listObj.filteredList}"
+		inboxItemFocusOut="handleInboxItemFocusOut(event)"
+		tableName="melting_transaction"
+		height="100%"
+		width="100%"
+	/>
+
+</gencomponents:AddEdit>

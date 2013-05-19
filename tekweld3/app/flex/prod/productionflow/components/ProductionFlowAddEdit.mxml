@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<gencomponents:AddEdit xmlns:mx="http://www.adobe.com/2006/mxml"
+	height="100%" width="100%" verticalGap="0"
+	xmlns:customcomponents="com.generic.customcomponents.*"
+	xmlns:gencomponents="com.generic.components.*" 
+	creationPolicy="all" creationComplete="init()" >
+	
+	<mx:Script source="../scripts/ProductionFlowAddEditScript.as"/>
+	
+	<mx:Canvas height="100%" width="100%" horizontalScrollPolicy="off" verticalScrollPolicy="off">
+		
+		<mx:LinkButton  label="From Order" id="ORDERFLOW" height="40" width="80" x="0" y="175" 
+			 skin="{null}" toolTip="ReOrder" 
+			click="clickOrderToHandler(event)" textAlign="center"/>
+		
+		<mx:LinkButton  label="Gum Impostion" id="PRODGUMIMPOSITION" height="40" width="120" x="100" y="25" 
+			 skin="{null}" toolTip="ReOrder" 
+			click="clickHandler(event)" textAlign="center"/>
+		
+		<mx:LinkButton  label="Gum Print" id="PRODGUMPRINT" height="40" width="120" x="250" y="25" 
+			 skin="{null}" toolTip="ReOrder" 
+			click="clickHandler(event)" textAlign="center"/>
+		
+		<mx:LinkButton  label="Heivelberg Die-Cut" id="PRODGUMCUT" height="40" width="120" x="400" y="25" 
+			 skin="{null}" toolTip="ReOrder" 
+			click="clickHandler(event)" textAlign="center"/>
+					
+		
+		<mx:LinkButton  label="Indigo Impostion" id="PRODDECALIMPOSITION" height="40" width="120" x="100" y="100" 
+			 skin="{null}" toolTip="ReOrder" 
+			click="clickHandler(event)" textAlign="center"/>
+		
+		<mx:LinkButton  label="Indigo Print" id="PRODDECALPRINT" height="40" width="120" x="250" y="100" 
+			 skin="{null}" toolTip="ReOrder" 
+			click="clickHandler(event)" textAlign="center"/>
+		
+		<mx:LinkButton  label="ABG Die-Cut" id="PRODDECALCUT" height="40" width="120" x="400" y="100" 
+			 skin="{null}" toolTip="ReOrder" 
+			click="clickHandler(event)" textAlign="center"/>		
+			
+		<mx:LinkButton  label="Direct Film" id="PRODDIRECTFILM" height="40" width="120" x="100" y="175" 
+			 skin="{null}" toolTip="ReOrder" 
+			click="clickHandler(event)" textAlign="center"/>
+		
+		<mx:LinkButton  label="Direct Print" id="PRODDIRECTPRINT" height="40" width="120" x="250" y="175" 
+			 skin="{null}" toolTip="ReOrder" 
+			click="clickHandler(event)" textAlign="center"/>	
+		
+		<mx:LinkButton  label="Pad Film" id="PRODPAIDFILM" height="40" width="120" x="100" y="250" 
+			 skin="{null}" toolTip="ReOrder" 
+			click="clickHandler(event)" textAlign="center"/>
+		
+		<mx:LinkButton  label="Pad Print" id="PRODPADPRINT" height="40" width="120" x="250" y="250" 
+			 skin="{null}" toolTip="ReOrder" 
+			click="clickHandler(event)" textAlign="center"/>	
+			
+		<mx:LinkButton  label="Embroidery Film" id="PRODEMBROIDERYFILMINBOX" height="40" width="120" x="100" y="325" 
+			 skin="{null}" toolTip="ReOrder" 
+			click="clickHandler(event)" textAlign="center"/>
+		
+		<mx:LinkButton  label="Embroidery Stich" id="PRODEMBROIDERYSTITCHINBOX" height="40" width="120" x="250" y="325" 
+			 skin="{null}" toolTip="ReOrder" 
+			click="clickHandler(event)" textAlign="center"/>	
+			
+		
+			
+	</mx:Canvas>
+	<customcomponents:GenTextInput id="tiDummy" width="0" height="0" toolTip="Dummy" enabled="false" visible="false"
+		xmlTag="dummy" updatableFlag="false" tableName="melting_flow" defaultValue=""  />
+</gencomponents:AddEdit>			  

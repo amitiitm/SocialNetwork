@@ -1,0 +1,35 @@
+<columns  lockedColumnCount='0'>
+print_width = '18'
+	<column data='trans_bk'				label='Repair Bk'		editable='false'	visible='true'	 width='70'	  textAlign='left'	forLevel='true'
+			print_width = '16'			defaultForLevel=''		booleanFlag='false'	sortDataType='S' columnPrecision="NaN" />
+
+	<column data='trans_no'				label='Repair #'		editable='false'	visible='true'	 width='70'	  textAlign='left'	forLevel='true'
+			print_width = '16'			defaultForLevel='0'		booleanFlag='false'	sortDataType='N' columnPrecision="0" />
+	
+	<column data='trans_date'			label='Receive Date'	editable='false'	visible='true'	 width='80'	  textAlign='left'	forLevel='true' 
+			print_width = '18'			defaultForLevel='1'		booleanFlag='false'	sortDataType='D' columnPrecision="NaN" />
+	
+	<column data='customer_code'		label='Customer #'		editable='false'	visible='true'	 width='80'	  textAlign='left'	forLevel='true'
+			print_width = '20'			defaultForLevel='3'		booleanFlag='false'	sortDataType='S' columnPrecision="NaN"/>
+	
+	<column data='account_period_code'	label='A/c Period'		editable='false'	visible='true'	 width='80'	  textAlign='left'	forLevel='true'
+			print_width = '18'			defaultForLevel='4'		booleanFlag='false'	sortDataType='S' columnPrecision="NaN"/>
+	
+	<column data='item_amt'				label='Sub Total'		editable='false' 	visible='true' 	 width='100'  textAlign='right'	forLevel='false' 
+			print_width = '18'			defaultForLevel=''		booleanFlag='false'	sortDataType='N' columnPrecision="2"/>
+	
+	<column data='tax_amt'				label='Tax Amt'			editable='false' 	visible='true' 	 width='100'  textAlign='right'	forLevel='false' 
+			print_width = '18'			defaultForLevel=''		booleanFlag='false'	sortDataType='N' columnPrecision="2"/>
+	
+	<column data='discount_amt'			label='Discount Amt'	editable='false' 	visible='true' 	 width='100'  textAlign='right'	forLevel='false' 
+			print_width = '18'			defaultForLevel=''		booleanFlag='false'	sortDataType='N' columnPrecision="2"/>
+			
+	<column data='net_amt'				label='Grand Amt'		editable='false' 	visible='true' 	 width='100'  textAlign='right'	forLevel='false' 
+			print_width = '18'			defaultForLevel=''		booleanFlag='false'	sortDataType='N' columnPrecision="2"/>
+
+	<column data='deposit_amt'			label='Deposit Amt'		editable='false' 	visible='true' 	 width='100'  textAlign='right'	forLevel='false' 
+			print_width = '18'			defaultForLevel=''		booleanFlag='false'	sortDataType='N' columnPrecision="2"/>
+			
+	<column data='balance_amt'			label='Balance Amt'		editable='false' 	visible='true' 	 width='100'  textAlign='right'	forLevel='false' 
+			print_width = '18'			defaultForLevel=''		booleanFlag='false'	sortDataType='N' columnPrecision="2"/>	
+</columns> 

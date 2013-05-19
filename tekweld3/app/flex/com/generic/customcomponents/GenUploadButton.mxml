@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:Button xmlns:mx="http://www.adobe.com/2006/mxml" click="handleClickEvent(event)">
+
+	<mx:Metadata>
+		[Event(name="uploadFileNameSetEvent", type="com.generic.events.GenUploadButtonEvent")]
+		[Event(name="downloadCompleteEvent", type="com.generic.events.GenUploadButtonEvent")]
+		[Event(name="completeEvent", type="com.generic.events.GenUploadButtonEvent")]
+	</mx:Metadata> 
+
+	<mx:Script source="../scripts/GenUploadButtonScript.as"/>
+</mx:Button>
+

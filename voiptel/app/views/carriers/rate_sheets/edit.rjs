@@ -1,0 +1,2 @@
+page << "$('#edit-rate_sheet').html('#{ escape_javascript render :partial => "rate_sheet_dialog", :locals => {:carrier => @carrier, :rate_sheet => @rate_sheet, :id => "dialog-edit-rate_sheet", :title => "Edit rate_sheet"}}');"
+page << "show_edit_rate_sheet_dialog(#{@rate_sheet.id})"

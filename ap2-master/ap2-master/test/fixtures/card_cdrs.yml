@@ -1,0 +1,53 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  did_id: 1
+  card_id: 1
+  tmp_phone_id: 1
+  country_id: MyString
+  src: MyString
+  dst_number: MyString
+  duration: 1
+  disposition: MyString
+  uniqueid: MyString
+  session_log: MyString
+  carrier_id: 1
+  zone_id: 1
+  buy_rate: 9.99
+  sell_rate: 9.99
+  buy_cost: 9.99
+  sell_cost: 9.99
+  profit: 9.99
+  used_easy_dialer: false
+  easy_dial_number: false
+  digits: 1
+  user_input: MyString
+  input_time: 1
+  valid_destination: false
+  traffic_type: 1
+
+two:
+  did_id: 1
+  card_id: 1
+  tmp_phone_id: 1
+  country_id: MyString
+  src: MyString
+  dst_number: MyString
+  duration: 1
+  disposition: MyString
+  uniqueid: MyString
+  session_log: MyString
+  carrier_id: 1
+  zone_id: 1
+  buy_rate: 9.99
+  sell_rate: 9.99
+  buy_cost: 9.99
+  sell_cost: 9.99
+  profit: 9.99
+  used_easy_dialer: false
+  easy_dial_number: false
+  digits: 1
+  user_input: MyString
+  input_time: 1
+  valid_destination: false
+  traffic_type: 1

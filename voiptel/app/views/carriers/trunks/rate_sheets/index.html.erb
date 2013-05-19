@@ -1,0 +1,32 @@
+<div id="rate-sheet-response">
+	<button class="ajax" href="<%= new_carrier_trunk_rate_sheet_path(@trunk.carrier, @trunk)%>" update="container">New Rate Sheet</button>
+	<br><br>
+
+	<% table :width => "1000px;" do |t| %>
+		<% t.th "#" %>
+		<% t.th "RID" %>
+		<% t.th "Uploaded Date" %>
+		<% t.th "Effective Date (Local)" %>
+		<% t.th "Effective Date (Carrier)" %>
+		<% t.th "Timezone" %>
+		<% t.th "Files" %>
+		<% t.th "Status" %>
+		
+
+		<% counter = @rate_sheets.size + 1 %>
+		<% for rs in @rate_sheets %>
+			<% t.td (counter -= 1) %>
+			<% t.td rs.id %>
+			<% t.td rs.created_at %>
+			<% t.td rs.effective_date %>
+			<% t.td rs.effective_date.in_time_zone(rs.time_zone) %>
+			<% t.td rs.time_zone %>
+			<% t.td rate_sheet_files(rs) %>
+			<% t.td rate_sheet_status(rs) %>			
+			
+			<% t.new_row %>
+		<% end -%>
+	<% end -%>
+
+	<div id="container" class="hide"></div>	
+</div>

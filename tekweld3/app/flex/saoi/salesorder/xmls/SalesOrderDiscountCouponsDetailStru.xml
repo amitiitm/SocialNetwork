@@ -1,0 +1,10 @@
+<columns  lockedColumnCount='0'>
+
+		
+	<column data='coupon_code'				label='Coupon #'			editable='false'	visible='true'	width='150'	textAlign='left'	forLevel='false'
+			defaultForLevel=''				booleanFlag='false'			sortDataType='S'	columnPrecision="NaN"/>
+	
+	<column data='remarks'					label='Remark'				editable='false'	visible='true'	width='110'	textAlign='left'	forLevel='false'
+			defaultForLevel=''				booleanFlag='false'			sortDataType='S'	columnPrecision="NaN"/>
+						
+</columns> 

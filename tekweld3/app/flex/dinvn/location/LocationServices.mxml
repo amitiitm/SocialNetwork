@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rds:CommonServices xmlns:rds="business.*" xmlns:mx="http://www.adobe.com/2006/mxml">
+
+	<mx:HTTPService id="getListFormat" url="dinvn/location/xmls/LocationListStru.xml" />
+	<mx:HTTPService id="getViewFormat" url="dinvn/location/xmls/LocationCriteriaStru.xml" />
+	<mx:HTTPService id="getList" url="/diamond/list_diamond_locations"/>
+	<mx:HTTPService id="saveRecord" url="/diamond/create_diamond_locations"/>
+	<mx:HTTPService id="getRecord" url="/diamond/show_diamond_location"/>	
+	
+	<mx:HTTPService id="detailFormat" url="dinvn/location/xmls/LocationImportStru.xml"/>
+	<mx:HTTPService id="recordUploadUrl" url="/diamond/convert_exceltoxml_for_diamond_locations"/>
+
+
+</rds:CommonServices>	

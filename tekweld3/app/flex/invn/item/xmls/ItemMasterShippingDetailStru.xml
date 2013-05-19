@@ -1,0 +1,40 @@
+<columns lockedColumnCount='0'>
+
+	
+	<column data='imprint_type_code' label='Imprint #' 				editable='false' 	visible='true' 		width='60' 		textAlign='left' 
+			forLevel='false' 		defaultForLevel='' 			booleanFlag='false' sortDataType='S'	columnPrecision="NaN"/>
+	
+	<column data='ship_code' 		label='Ship #' 				editable='false' 	visible='true' 		width='60' 		textAlign='left' 
+			forLevel='false' 		defaultForLevel='' 			booleanFlag='false' sortDataType='S'	columnPrecision="NaN"/>
+			
+<!--	<column data='name' 			label='Ship name' 			editable='false' 	visible='true' 		width='150' 	textAlign='left' -->
+<!--			forLevel='false' 		defaultForLevel='' 			booleanFlag='false' sortDataType='S'	columnPrecision="NaN"/>-->
+<!--			-->
+	<column data='ship_contact' 	label='Attention' 			editable='false' 	visible='true' 		width='80' 		textAlign='left' 
+			forLevel='false' 		defaultForLevel='' 			booleanFlag='false' sortDataType='S'	columnPrecision="NaN"/>
+			
+	<column data='ship_address1' 	label='Address #1' 			editable='false' 	visible='true' 		width='180' 	textAlign='left' 
+			forLevel='false' 		defaultForLevel='' 			booleanFlag='false' sortDataType='S'	columnPrecision="NaN"/>
+			
+	<column data='ship_address2' 	label='Address #2' 			editable='false' 	visible='true' 		width='180' 	textAlign='left' 
+			forLevel='false' 		defaultForLevel='' 			booleanFlag='false' sortDataType='S'	columnPrecision="NaN"/>
+			
+	<column data='ship_city' 		label='City' 				editable='false' 	visible='true' 		width='80' 		textAlign='left' 
+			forLevel='false' 		defaultForLevel='' 			booleanFlag='false' sortDataType='S'	columnPrecision="NaN"/>
+			
+	<column data='ship_state' 		label='State' 				editable='false' 	visible='true' 		width='60' 		textAlign='left' 
+			forLevel='false' 		defaultForLevel='' 			booleanFlag='false' sortDataType='S'	columnPrecision="NaN"/>
+			
+	<column data='ship_zip' 		label='Zip' 				editable='false' 	visible='true' 		width='60' 		textAlign='left' 
+			forLevel='false' 		defaultForLevel='' 			booleanFlag='false' sortDataType='S'	columnPrecision="NaN"/>
+			
+	<column data='ship_country' 	label='Country' 			editable='false' 	visible='true' 		width='60' 		textAlign='left' 
+			forLevel='false' 		defaultForLevel='' 			booleanFlag='false' sortDataType='S'	columnPrecision="NaN"/>
+			
+	<column data='ship_phone' 		label='Phone' 				editable='false' 	visible='true' 		width='60' 		textAlign='left' 
+			forLevel='false' 		defaultForLevel='' 			booleanFlag='false' sortDataType='S'	columnPrecision="NaN"/>
+			
+	<column data='ship_fax' 		label='Fax' 				editable='false' 	visible='true' 		width='60' 		textAlign='left' 
+			forLevel='false' 		defaultForLevel='' 			booleanFlag='false' sortDataType='S'	columnPrecision="NaN"/>
+			
+</columns>  

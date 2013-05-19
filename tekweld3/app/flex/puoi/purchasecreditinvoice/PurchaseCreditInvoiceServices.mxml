@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rds:CommonServices xmlns:rds="business.*" xmlns:mx="http://www.adobe.com/2006/mxml">
+
+	<mx:HTTPService id="saveRecord" url="/purchase/purchase_invoice/create_credit_invoices"/>
+	<mx:HTTPService id="getRecord" url="/purchase/purchase_invoice/show_credit_invoice"/>
+	<mx:HTTPService id="getList" url="/purchase/purchase_invoice/list_credit_invoices"/> 
+	
+	<mx:HTTPService id="getListFormat" url="puoi/purchasecreditinvoice/xmls/PurchaseCreditInvoiceListStru.xml"/>
+	<mx:HTTPService id="getViewFormat" url="puoi/purchasecreditinvoice/xmls/PurchaseCreditInvoiceCriteriaStru.xml"/>
+	<mx:HTTPService id="itemDetailFormat" url="puoi/purchasecreditinvoice/xmls/PurchaseCreditInvoiceItemDetailStru.xml"/>
+	<mx:HTTPService id="directItemDetailFormat" url="puoi/purchasecreditinvoice/xmls/PurchaseCreditInvoiceDirectItemDetailStru.xml"/>
+	
+	<mx:HTTPService id="fetchRecordFormat" url="puoi/purchasecreditinvoice/xmls/PurchaseCreditInvoiceFetchRecordStru.xml"/>
+	<mx:HTTPService id="fetch_open_invoices" url="/purchase/purchase_invoice/list_open_invoices"/>
+
+	<mx:HTTPService id="fetch_open_invoices_hdr" url="/purchase/purchase_invoice/list_open_invoices_hdr"/>
+	<mx:HTTPService id="fetchInvoiceHdrFormat" url="puoi/purchasecreditinvoice/xmls/PurchaseCreditInvoiceFetchInvoiceHdrStru.xml"/>
+	<mx:HTTPService id="fetchGetSelectedInvoiceServiceID" url="/purchase/purchase_invoice/list_open_invoice_lines"/>
+
+
+	<mx:HTTPService id="setDefaultView" url=""/>
+	<mx:HTTPService id="printRecord" url="/purchase/purchase_report/render_purchase_credit_invoice_format"/>
+
+</rds:CommonServices>

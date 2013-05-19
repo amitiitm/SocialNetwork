@@ -1,0 +1,85 @@
+development:
+    host: 127.0.0.1
+    adapter: mysql2
+    database: openfo
+    port: 3306
+    username: moe
+    password:
+
+vot_development:
+    host: db
+    adapter: mysql2
+    database: billing_development
+    port: 3306
+    username: moe
+    password: m03p4ssw0rd
+
+opensips_vot_development:
+    host: db
+    adapter: mysql2
+    database: opensips_development
+    port: 3306
+    username: moe
+    password: m03p4ssw0rd
+
+vot_production:
+    host: 10.0.0.7
+    adapter: mysql2
+    database: billing_production
+    port: 3306
+    username: moe
+    password: m03p4ssw0rd
+
+test:
+      host: localhost
+      adapter: mysql
+      #socket: /var/lib/mysql/mysql.sock
+      database: billing_test
+      port: 3306
+      username: root
+      password: sp110q
+
+production:
+      host: db
+      adapter: mysql2
+      database: billing_production
+      port: 3306
+      username: root
+      password: sp110q
+      pool: 5
+      
+opensips_development:
+      host: db1
+      adapter: mysql
+      #socket: /var/lib/mysql/mysql.sock
+      database: openfo
+      port: 3306
+      username: root
+      password: sp110q
+
+opensips_mac_joon:
+      host: 127.0.0.1
+      adapter: mysql2
+      database: opensips
+      port: 3306
+      username: moe
+      password:
+      pool: 10
+
+opensips_test:
+      host: localhost
+      adapter: mysql
+      #socket: /var/lib/mysql/mysql.sock
+      database: opensips
+      port: 3306
+      username: root
+      password: sp110q
+
+opensips_production:
+      host: db
+      adapter: mysql2
+      database: opensips_production
+      port: 3306
+      username: root
+      password: sp110q
+      pool: 5      

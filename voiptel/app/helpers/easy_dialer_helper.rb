@@ -1,0 +1,2 @@
+module EasyDialerHelper
+end

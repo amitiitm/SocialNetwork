@@ -1,0 +1,139 @@
+Ext.onReady(function(){
+	Ext.BLANK_IMAGE_URL = "http://sip.openfo.com/extjs/resources/images/default/s.gif";
+	counter = 0;
+	function duration(val){			
+		if (val == 0) {
+			return "00:00";
+		} else if(val < 10) {
+			return "00:0" + val;
+		} else {
+			//return (parseInt(val/60) + ":" + val % 60 );
+			var min = parseInt(val/60);
+			var sec = val % 60;
+			if (sec < 10) {
+				return (min + ":" + "0" + sec);
+      } else {
+				return (min + ":" +  sec);
+			};
+		}				
+	}
+	
+	function index() {
+		counter++;
+		return counter;
+	}
+	function session_log(val) {
+		var data = val.split(",");
+		var feedback_color = "green";
+		//alert(data[2]);
+		if(data[2] == "true") {
+			feedback_color = "red";
+		}
+				
+		var actions =  '<a href="#" onclick="Popup.open({url: \'/reports/session_log/' + data[0] + '\', width:750, height:350});; return false;">Log</a>'
+						+ ' | '
+						+ '<a style="color:'+ feedback_color + ';" href="#" onclick="Popup.open({url: \'/reports/feedback/' + data[0] + '\', width:400, height:400});; return false;">Feedback</a>'
+		
+		if (data[3] == "true") {
+			actions = actions + 
+								' | ' +
+								'<a href="http://sip.openfo.com/.jinrecs1qaz2wsx/' + data[4] + '.wav" target="_blank">Play</a>';			
+		};
+		return actions;						
+	}
+
+	function format_used_easy_dialer(val) {
+		if(val == "Yes") {
+			return '<span style="color: green; padding: 0px;">Yes</span>';
+		} else {
+			return '<span style="color: red; padding: 0px;">No</span>';
+		}
+	}
+
+	function format_user_input(val) {
+		if(val == "Redial") {
+			return '<span style="color: red; padding: 0px;">Redial</span>';
+		} else {
+			return val;
+		}
+	}
+	
+	function format_valid_destination(val) {
+		if (val == "Y") {
+			return '<span style="color: green; padding: 0px;">Yes</span>';
+		} else {
+			return '<span style="color: red; padding: 0px;">No</span>';
+		};
+	}
+
+	/* Pagination */
+
+	// create the Data Store
+	var store = new Ext.data.Store(
+		{			
+			url: '/reports/cdr<%= if @id then "/#{@id}/" end %>?<%= request.env["QUERY_STRING"]%>',			
+			reader: new Ext.data.XmlReader(
+				{
+					record: 'item',
+					id: 'id',
+					totalRecords: "size"
+				},
+				[
+					'id', 'idid_number', 'idid', 'caller_name', 'cid', 'did', 'did_provider', 'destination',
+					'dst_country', 'zone', 'carrier', {name: 'duration', mapping: 'duration', type: 'int'},
+					'rate','cost', 'date', 'session_log', 'disposition', 'used_easy_dialer', 'easy_dial_number',
+					'digits', 'user_input', 'input_time', 'valid_destination', 'll', 'pcap'
+				]
+			)
+		}
+	);
+
+  var pagingBar = new Ext.PagingToolbar({
+	    pageSize: 100,
+			store: store,
+			displayInfo: true,
+			displayMsg : 'Displaying CDRs {0} - {1} of {2}',
+			emptyMsg: "No CDR to display"
+		});
+
+
+	// create the grid
+	var grid = new Ext.grid.GridPanel(
+		{
+			store: store,
+			loadMask: true,
+			columns:
+			[
+        {header: "#ID", width: 40, dataIndex: 'id', sortable: true},
+        {header: "Date", width: 120, dataIndex: 'date', sortable: true},
+				{header: "Caller's Name", width: 170, dataIndex: 'caller_name', sortable: true}, 			
+				{header: "Duration", width: 60, dataIndex: 'duration', renderer: duration, sortable: true},
+				{header: "Disposition", width: 100, dataIndex: 'disposition', sortable: true},
+				{header: "Destination", width: 100, dataIndex: 'destination', sortable: true},
+				{header: "Valid", width: 50, dataIndex: 'valid_destination', sortable: true, renderer: format_valid_destination},
+				{header: "Digits", width: 40, dataIndex: 'digits', sortable: true},
+				{header: "User Input", width: 100, dataIndex: 'user_input', sortable: true, renderer: format_user_input},
+				{header: "UIT", width: 40, dataIndex: 'input_time', sortable: true},
+				{header: "EasyD", width: 40, dataIndex: 'used_easy_dialer', sortable: true, renderer: format_used_easy_dialer},
+				{header: "EasyD#", width: 50, dataIndex: 'easy_dial_number', sortable: true},
+				{header: "Carrier", width: 100, dataIndex: 'carrier', sortable: true},
+				{header: "Dst Country", width: 100, dataIndex: 'dst_country', sortable: true},
+				{header: "Location", width: 100, dataIndex: 'll', sortable: true},
+				{header: "Zone", width: 50, dataIndex: 'zone', sortable: true},
+				{header: "Rate", width: 50, dataIndex: 'rate', sortable: true},
+				{header: "Cost", width: 50, dataIndex: 'cost', sortable: true},
+				{header: "CID", width: 130, dataIndex: 'cid', sortable: true},
+				{header: "DID", width: 115, dataIndex: 'did', sortable: true},
+				{header: "DID Provider", width: 100, dataIndex: 'did_provider', sortable: true},
+        {header: "Action", width: 120, dataIndex: 'idid', renderer: session_log},
+        {header: "PCAP", width: 40, dataIndex: 'pcap'}
+			],
+			renderTo:'cdrs',
+			width:1850,
+	 		height:750,
+			bbar: pagingBar
+		}
+	);
+
+	store.load({params:{start:0, limit:100}});
+});

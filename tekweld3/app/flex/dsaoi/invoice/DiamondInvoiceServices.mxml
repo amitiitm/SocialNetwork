@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rds:CommonServices xmlns:rds="business.*" xmlns:mx="http://www.adobe.com/2006/mxml">
+
+	<mx:HTTPService id="saveRecord" url="/diamond_sale/create_invoices"/> 
+	<mx:HTTPService id="getRecord" url="/diamond_sale/show_invoice"/>
+	<mx:HTTPService id="getList" url="/diamond_sale/list_invoices"/>
+	<mx:HTTPService id="getListFormat" url="dsaoi/invoice/xmls/DiamondInvoiceListStru.xml"/>
+	<mx:HTTPService id="getViewFormat" url="dsaoi/invoice/xmls/DiamondInvoiceCriteriaStru.xml"/>
+	<mx:HTTPService id="itemDetailFormat" url="dsaoi/invoice/xmls/DiamondInvoiceItemDetailStru.xml"/>
+	<mx:HTTPService id="directItemDetailFormat" url="dsaoi/invoice/xmls/DiamondInvoiceDirectItemDetailStru.xml"/>
+	<mx:HTTPService id="fetchRecordFormat" url="dsaoi/invoice/xmls/DiamondInvoiceFetchRecordStru.xml"/>
+
+	<mx:HTTPService id="fetch_open_memos" url="/diamond_sale/fetch_open_memos"/>
+	<mx:HTTPService id="fetch_open_memos_hdr" url="/diamond_sale/fetch_open_memos_hdr"/>
+	<mx:HTTPService id="fetchMemoHdrFormat" url="dsaoi/invoice/xmls/DiamondInvoiceFetchMemoHdrStru.xml"/>
+	<mx:HTTPService id="fetchGetSelectedMemoServiceID" url="/diamond_sale/fetch_open_memo_lines"/>
+
+	<mx:HTTPService id="setDefaultView" url=""/>
+	<mx:HTTPService id="printRecord" url="/diamond_sale_report/sales_invoice_format"/>
+
+</rds:CommonServices>
+
+

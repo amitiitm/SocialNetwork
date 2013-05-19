@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:Box xmlns:mx="http://www.adobe.com/2006/mxml" xmlns:customcomponents="com.generic.customcomponents.*"
+	xmlns:components="com.generic.components.*" width="100%" height="100%"  	
+	verticalAlign="top" verticalGap="0">
+
+ 	<mx:Metadata>
+		[Event(name="itemClickEvent", type="com.generic.events.ListControlEvent")]
+		[Event(name="itemDoubleClickEvent", type="com.generic.events.ListControlEvent")]
+	</mx:Metadata>
+	
+	<mx:Script source="../scripts/ListControlScript.as"/>
+	
+	<mx:HBox id="hbSearchBox" width="{dgList.width}" height="22" horizontalGap="0" borderThickness="0" borderStyle="none"
+		horizontalScrollPolicy="off">
+		 		
+	</mx:HBox>
+	<customcomponents:GenDataGrid id="dgList" width="100%" height="100%"  
+		rows="{_filteredList}" 
+		updatableFlag="false" 
+		structure="{_listFormat}"
+		handleDoubleClick="true"
+		itemClickGenGridEvent="itemClickHandler(event)" 
+		itemDoubleClickGenGridEvent="itemDoubleClickHandler(event)"
+		columnStretch="changeColumnSizeHandler(event)"
+		scroll="onScroll(event)" 
+		resize="handleResize(event)"	
+				/>
+</mx:Box>

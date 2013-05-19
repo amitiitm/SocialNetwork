@@ -1,0 +1,36 @@
+<columns  lockedColumnCount='0'>
+
+
+	<column data='trans_bk'		label='Trans Bk'			editable='false'	visible='true'		
+			width='80'	textAlign='left'			forLevel='false'			print_width='18'	defaultForLevel=''		
+			booleanFlag='false'	sortDataType='S' 	columnPrecision="NaN"/>
+	
+	<column data='trans_no'		label='Trans #'			editable='false'	visible='true'		
+			width='100'	textAlign='left'			forLevel='false'				print_width='20'	defaultForLevel=''		
+			booleanFlag='false'	sortDataType='S' 	columnPrecision="NaN"/>		
+
+	<column data='trans_date'	label='Trans Date'		editable='false'	visible='true'		width='100'	textAlign='left'	forLevel='false' 
+			print_width='20'	defaultForLevel=''		booleanFlag='false' sortDataType='D'	columnPrecision="NaN"/>			
+	
+
+	<column data='account_period_code'				label='Account Period #'			editable='false'	visible='true'		
+			width='120'	textAlign='left'			forLevel='false'				print_width='26'	defaultForLevel=''		
+			booleanFlag='false'	sortDataType='S' 	columnPrecision="NaN"/>	
+			
+	<column data='received_amt'						label='Receive Amt'				editable='false'	visible='true'		
+			width='100'	textAlign='right'			forLevel='false'				print_width='22'	defaultForLevel=''	
+			booleanFlag='false'	sortDataType='N'	columnPrecision="2"/>
+			
+	<column data='applied_amt'						label='Applied Amt'				editable='false'	visible='true'		
+			width='100'	textAlign='right'			forLevel='false'				print_width='22'	defaultForLevel=''	
+			booleanFlag='false'	sortDataType='N'	columnPrecision="2"/>
+			
+	<column data='balance_amt'						label='Balance Amt'				editable='false'	visible='true'		
+			width='100'	textAlign='right'			forLevel='false'				print_width='22'	defaultForLevel=''	
+			booleanFlag='false'	sortDataType='N'	columnPrecision="2"/>
+				
+	<column data='item_qty'						label='Item Qty'				editable='false'	visible='true'		
+			width='100'	textAlign='right'			forLevel='false'				print_width='22'	defaultForLevel=''	
+			booleanFlag='false'	sortDataType='N'	columnPrecision="2"/>
+
+</columns>

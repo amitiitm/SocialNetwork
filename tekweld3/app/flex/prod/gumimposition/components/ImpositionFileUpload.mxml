@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:TitleWindow xmlns:fx="http://ns.adobe.com/mxml/2009" 
+		 xmlns:s="library://ns.adobe.com/flex/spark" 
+		 xmlns:mx="library://ns.adobe.com/flex/mx" width="636" height="636" xmlns:customcomponents="com.generic.customcomponents.*" verticalGap="3"
+		 creationComplete="creationComplete()"
+		 title="Imposition File" showCloseButton="true" close="closeHandler()">
+	<fx:Declarations>
+		<!-- Place non-visual elements (e.g., services, value objects) here -->
+		<fx:XML id="jobLineStructure" source="../xmls/ImpositionFileUploadApiStr.xml"/>
+	</fx:Declarations>
+	<fx:Script>
+		<![CDATA[
+			import business.events.PreSaveEvent;
+			import business.events.RecordStatusEvent;
+			
+			import com.adobe.cairngorm.business.ServiceLocator;
+			import com.generic.genclass.URL;
+			
+			import model.GenModelLocator;
+			
+			import mx.controls.Alert;
+			import mx.core.Application;
+			import mx.managers.CursorManager;
+			import mx.managers.PopUpManager;
+			import mx.rpc.AsyncToken;
+			import mx.rpc.IResponder;
+			import mx.rpc.events.FaultEvent;
+			import mx.rpc.events.ResultEvent;
+			import mx.rpc.http.HTTPService;
+			
+			public  var fileRef:FileReference = new FileReference();
+			import saoi.muduleclasses.event.MissingInfoEvent;
+			
+			[Bindable]
+			private var __genModel:GenModelLocator = GenModelLocator.getInstance();
+			private var urlObj:URL	=	new URL();
+			private var urlartworkUploadUrl:String  =	urlObj.getURL(__genModel.services.getHTTPService("artworkUploadUrl").url.toString());
+			private var _request:URLRequest = new URLRequest(urlartworkUploadUrl);
+			private var __service:ServiceLocator = __genModel.services;
+			[Bindable]
+			public var xml:XML= new XML();
+			public var indigo_code:String= '';
+			private var __generateIndigo:IResponder;
+			
+			private function getIndigoCode():String
+			{
+				var returnValue:String	= '';
+				if(xml.children().length()>0)
+				{
+					returnValue =  xml.children()[0].doc_code.toString();
+				}
+				return returnValue;
+			}
+			private function creationComplete():void
+			{
+				getJobs();
+				tiFileName.dataValue		= tiFileName.defaultValue;
+				tiVersion.dataValue			= tiVersion.defaultValue;
+				cbPrintReady.dataValue		= cbPrintReady.defaultValue;
+				taComment.dataValue			= taComment.defaultValue;
+			}
+			
+			private function closeHandler():void
+			{
+				PopUpManager.removePopUp(this);
+			}
+			private function saveClickHandler():void
+			{
+				createImpositionFile();
+			}
+			private function handleUploadArtwork():void
+			{
+				try
+				{
+					fileRef.addEventListener(Event.SELECT,selectArtworkHandler);
+					fileRef.addEventListener(Event.COMPLETE, handleComplete);
+					fileRef.addEventListener(DataEvent.UPLOAD_COMPLETE_DATA,handleResponseCompleteData);
+					fileRef.browse();
+				}
+				catch(error:Error)
+				{
+					Alert.show(error.message);
+				}
+				
+			}
+			public function selectArtworkHandler(event:Event):void
+			{
+				tiFileName.text = fileRef.name;
+				
+				var _variables:URLVariables = new URLVariables();
+				_variables.file_name 		= 	 fileRef.name.toString();
+				
+				_request.method 			= 	URLRequestMethod.POST;
+				_request.data 				= 	_variables;	
+				
+				uploadFile(fileRef)
+				
+				CursorManager.setBusyCursor();
+				Application.application.enabled = false;
+				
+			}
+			
+			public  function uploadFile(file:FileReference):void
+			{
+				try
+				{	
+					fileRef.upload(_request);
+				}
+				catch (error:Error)
+				{
+					Alert.show("unable to load Artwork"+error.message);
+				}
+				
+			}
+			
+			public function handleComplete(event:Event):void
+			{
+				CursorManager.removeBusyCursor();
+				Application.application.enabled = true;
+			}
+			private function handleResponseCompleteData(event:DataEvent):void
+			{
+				var result:String = event.data.toString();
+				if(result=='Attachment Upload Successfull')
+				{
+					
+					var recordStatusEvent:RecordStatusEvent = new RecordStatusEvent('MODIFY');
+					recordStatusEvent.dispatch();
+					btnUpload.enabled = false;
+				}
+				else
+				{
+					tiFileName.text = '';
+				}
+				Alert.show(result);
+			}
+			private function createImpositionFile():void
+			{
+				if(tiFileName.dataValue!='')
+				{
+					var tempXml:XML							= new XML(				<params>
+																												<doc_code>{getIndigoCode()}</doc_code>
+																												<imposition_file_name>{tiFileName.dataValue}</imposition_file_name>
+																												<imposition_file_type>{tiVersion.dataValue}</imposition_file_type>
+																												<print_ready_flag>{cbPrintReady.dataValue}</print_ready_flag>
+																												<comments>{taComment.dataValue}</comments>
+																											</params>);
+						this.enabled    = false;
+						CursorManager.setBusyCursor();
+						
+						var generateIndigo:HTTPService 			= dataService(__service.getHTTPService("createImpositionFile"));
+						__generateIndigo 						= new mx.rpc.Responder(createImpositionFileResultHandler,createImpositionFileFaultHandler);
+						var token:AsyncToken 					= generateIndigo.send(tempXml);
+						token.addResponder(__generateIndigo);
+				}
+				else
+				{
+					Alert.show("Please Upload File");
+				}
+					
+			}
+			public function dataService(service:HTTPService):HTTPService
+			{
+				var urlObj:URL				=	new URL();
+				service.url					=	urlObj.getURL(service.url);
+				service.resultFormat 		= 	"e4x";					
+				service.method 				= 	"POST";
+				service.useProxy			= 	false;
+				service.contentType			=	"application/xml";
+				service.requestTimeout	 	= 	1800
+				
+				return service;
+			}
+			private function createImpositionFileResultHandler(event:ResultEvent):void
+			{
+				this.enabled = true;
+				CursorManager.removeBusyCursor();
+				
+				var result:String  = event.result.toString();
+				
+				if(result.toUpperCase()=='SUCCESS')
+				{
+					Alert.show("Record Saved Successfully");
+					dispatchEvent(new MissingInfoEvent(MissingInfoEvent.MissingInfoEvent_Type,new XML(<rows>
+																											<result>{result}</result>
+																											<print_ready_flag>{cbPrintReady.dataValue}</print_ready_flag>
+																										</rows>)));
+					closeHandler();
+				}
+				else
+				{
+					Alert.show(result);
+				}
+				CursorManager.removeBusyCursor();
+				Application.application.enabled = true;
+			}
+			public function createImpositionFileFaultHandler(event:FaultEvent):void
+			{
+				this.enabled = true;
+				CursorManager.removeBusyCursor();
+				
+				
+				Alert.show("Indigo#"+event.fault.faultDetail);
+				
+				CursorManager.removeBusyCursor();
+				Application.application.enabled = true;
+			}
+			private function getJobs():void
+			{
+				CursorManager.setBusyCursor();
+				Application.application.enabled  = false;
+				
+				if(getIndigoCode()!='')
+				{
+					var tempXml:XML							= new XML(				<params>
+																						<doc_code>{indigo_code}</doc_code>
+																					</params>);
+					var generateIndigo:HTTPService 			= dataService(__service.getHTTPService("getJobs"));
+					__generateIndigo 						= new mx.rpc.Responder(getJobsResultHandler,getJobsFaultHandler);
+					var token:AsyncToken 					= generateIndigo.send(tempXml);
+					token.addResponder(__generateIndigo);
+				}
+				else
+				{
+					CursorManager.removeBusyCursor();
+					Application.application.enabled  = true;
+				}
+			}
+			private function getJobsResultHandler(event:ResultEvent):void
+			{
+				var recordxml:XML  		= XML(event.result);
+				
+				var xmlForGrid:XML 		= XML(recordxml.children()[0].sales_order_lines).copy();
+				xml				   		= xmlForGrid;
+				
+				gdShippingMethod.rows	= xml;
+				tiFileName.dataValue	= recordxml.children()[0].imposition_file_name.toString();
+				tiVersion.dataValue		= recordxml.children()[0].imposition_file_type.toString();
+				cbPrintReady.dataValue	= recordxml.children()[0].print_ready_flag.toString();
+				taComment.dataValue		= recordxml.children()[0].comments.toString(); 
+				
+				CursorManager.removeBusyCursor();
+				Application.application.enabled = true;
+			}
+			public function getJobsFaultHandler(event:FaultEvent):void
+			{
+				Alert.show("Get JObs#"+event.fault.faultDetail);
+				
+				CursorManager.removeBusyCursor();
+				Application.application.enabled = true;
+			}
+		]]>
+	</fx:Script>
+	
+	
+	
+	<mx:HBox width="100%" height="31" verticalAlign="middle"  verticalGap="0">
+			<mx:Label width="73" text="Upload File" textAlign="right"/>
+			<customcomponents:GenTextInput id="tiFileName"  width="225" height="20"
+										   xmlTag="artwork_file_name" updatableFlag="true" tableName="sales_order_artwork" tabIndex="4" enabled="false" />
+			<mx:Button id="btnUpload" label="Upload" toolTip="Upload Artwork" width="114" height="20" tabIndex="1"
+					   click="handleUploadArtwork()"/>
+			<mx:VRule width="20" height="0" />
+	</mx:HBox>
+	<mx:HBox width="100%"  verticalAlign="middle" visible="false" includeInLayout="false">
+		<mx:Label text="Type" width="73" textAlign="right"/>
+		<customcomponents:GenComboBox id="tiVersion" width="225" cornerRadius="0" xmlTag="artwork_version" updatableFlag="true"
+									  tableName="sales_order_artwork"  tabIndex="1" labelField="label" height="20" defaultValue="CMYK"  		
+									  dataProvider="{__genModel.masterData.child('indigo_file_type').indigo_file_type}" toolTip="Artwork Version"/>
+	</mx:HBox>
+	<mx:HBox width="100%" height="60%" verticalAlign="top"  verticalGap="0">
+		<s:Spacer width="73"/>
+		<customcomponents:GenDataGrid id="gdShippingMethod" width="496" height="297" itemClick=""
+									  itemFocusOut="" structure="{jobLineStructure}"/>
+	</mx:HBox>
+	<mx:HBox width="100%" height="30" verticalAlign="middle"  verticalGap="0">
+		<customcomponents:GenCheckBox labelPlacement="left" label="Print Ready ?" id="cbPrintReady" width="94" height="20" xmlTag="collection"
+									  updatableFlag="false" tableName="customer_contact" defaultValue="N" textAlign="right" tabIndex="10" enabled="true"
+									  dataValueForOn = "Y" dataValueForOff = "N" itemChangedEvent=""/>
+	</mx:HBox>
+	<mx:HBox width="100%" height="136" verticalAlign="middle">
+		<mx:Label width="73" height="16" text="Comment:" textAlign="right"/>
+		<customcomponents:GenTextArea id="taComment" y="3" width="498" height="100%"
+									  defaultValue="" maxChars="500" tabIndex="20"
+									  tableName="sales_order" toolTip="Comment"
+									  updatableFlag="true" validationFlag="false"
+									  xmlTag="missing_order_info"/>
+	</mx:HBox>
+	<mx:HBox width="100%" height="45" verticalAlign="middle"  verticalGap="0">
+		<s:Spacer width="73"/>
+		<s:Button label="Save" click="saveClickHandler()"/>
+		<s:Button label="Cancel" click="closeHandler()" />
+	</mx:HBox>
+	
+</mx:TitleWindow>

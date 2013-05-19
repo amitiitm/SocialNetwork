@@ -1,0 +1,1765 @@
+--- 
+reports_097: 
+  name: Customer Opt In Report
+  updated_at: 2011/03/22 11:36:01
+  document_id: 1343
+  code: MELTOPTINREPORT
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 1
+  updated_by: 1
+  id: 900
+  description: ""
+  isdrilldownrow: N
+  company_id: 1
+  isfixedurl: N
+  service_url: ""
+  drilldown_component_code: ""
+  created_at: 2011/03/22 11:33:29
+reports_076: 
+  name: Stock Report (HO/Store wise)
+  updated_at: 2011/01/19 14:20:34
+  document_id: 1100
+  code: DINVNALLSTORESTOCKREPORT
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 20
+  updated_by: 1
+  id: 780
+  description: ""
+  isdrilldownrow: N
+  company_id: 1
+  isfixedurl: N
+  service_url: ""
+  drilldown_component_code: ""
+  created_at: 2010/09/07 12:57:07
+reports_013: 
+  name: Memo Register
+  updated_at: 2011/01/17 16:32:32
+  document_id: 561
+  code: PURCHASEMEMOREGISTER
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 31
+  updated_by: 1
+  id: 285
+  description: Purchase Memo Register Columns
+  isdrilldownrow: Y
+  company_id: 1
+  isfixedurl: Y
+  service_url: ""
+  drilldown_component_code: puoi/purchasememo/components/PurchaseMemo.swf
+  created_at: 2010/05/12 12:26:49
+reports_034: 
+  name: Sales Credit Invoice Register
+  updated_at: 2011/01/31 11:04:37
+  document_id: 683
+  code: DIAMSALECREINVREGISTER
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 26
+  updated_by: 1
+  id: 441
+  description: ""
+  isdrilldownrow: Y
+  company_id: 1
+  isfixedurl: Y
+  service_url: ""
+  drilldown_component_code: dsaoi/creditinvoice/components/DiamondCreditInvoice.swf
+  created_at: 2010/06/17 14:44:14
+reports_055: 
+  name: Receive Report
+  updated_at: 2011/02/24 11:25:19
+  document_id: 781
+  code: DINVRECEIVEREPORT
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 19
+  updated_by: 1
+  id: 541
+  description: ""
+  isdrilldownrow: Y
+  company_id: 1
+  isfixedurl: N
+  service_url: ""
+  drilldown_component_code: dinvn/receive/components/Receive.swf
+  created_at: 2010/07/05 17:29:07
+reports_098: 
+  name: Customer Opt Out Report
+  updated_at: 2011/03/22 12:14:15
+  document_id: 1344
+  code: MELTOPTOUTREPORT
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 2
+  updated_by: 1
+  id: 901
+  description: ""
+  isdrilldownrow: N
+  company_id: 1
+  isfixedurl: N
+  service_url: ""
+  drilldown_component_code: ""
+  created_at: 2011/03/22 11:41:59
+reports_077: 
+  name: Stoc Aging Detail Report
+  updated_at: 2011/01/31 14:51:59
+  document_id: 1112
+  code: DINVNSTOCKAGINGDETAIL
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 9
+  updated_by: 1
+  id: 800
+  description: ""
+  isdrilldownrow: N
+  company_id: 1
+  isfixedurl: N
+  service_url: ""
+  drilldown_component_code: ""
+  created_at: 2010/09/08 12:31:10
+reports_014: 
+  name: Memo Return Register
+  updated_at: 2011/01/17 16:38:21
+  document_id: 564
+  code: PURCHASEMEMORETURNREG
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 33
+  updated_by: 1
+  id: 286
+  description: Purchase Memo Return Register Columns
+  isdrilldownrow: Y
+  company_id: 1
+  isfixedurl: Y
+  service_url: ""
+  drilldown_component_code: puoi/purchasememoreturn/components/PurchaseMemoReturn.swf
+  created_at: 2010/05/12 12:27:58
+reports_035: 
+  name: Sales Memo Register
+  updated_at: 2011/01/25 17:52:23
+  document_id: 684
+  code: DIAMSALEMEMOREGISTER
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 18
+  updated_by: 1
+  id: 442
+  description: ""
+  isdrilldownrow: Y
+  company_id: 1
+  isfixedurl: Y
+  service_url: ""
+  drilldown_component_code: dsaoi/memo/components/DiamondMemo.swf
+  created_at: 2010/06/17 15:14:17
+reports_056: 
+  name: Stock Report
+  updated_at: 2011/02/24 11:26:49
+  document_id: 784
+  code: DINVSTOCKREPORT
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 13
+  updated_by: 1
+  id: 542
+  description: ""
+  isdrilldownrow: N
+  company_id: 1
+  isfixedurl: N
+  service_url: ""
+  drilldown_component_code: ""
+  created_at: 2010/07/05 17:52:51
+reports_078: 
+  name: Stock Aging Summary Report
+  updated_at: 2011/01/31 14:06:57
+  document_id: 1111
+  code: DINVNSTOCKAGINGSUMMARY
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 7
+  updated_by: 1
+  id: 801
+  description: ""
+  isdrilldownrow: Y
+  company_id: 1
+  isfixedurl: Y
+  service_url: ""
+  drilldown_component_code: rept/dinvn/stockagingdetailreport/components/StockAgingDetailReport.swf
+  created_at: 2010/09/08 12:54:17
+reports_015: 
+  name: Open Order
+  updated_at: 2011/01/14 16:32:57
+  document_id: 581
+  code: PURCHASEOPENORDER
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 35
+  updated_by: 1
+  id: 320
+  description: Purchase Open Order Column Register
+  isdrilldownrow: Y
+  company_id: 1
+  isfixedurl: Y
+  service_url: ""
+  drilldown_component_code: puoi/purchaseorder/components/PurchaseOrder.swf
+  created_at: 2010/05/14 12:00:43
+reports_036: 
+  name: Sales Memo Return Register
+  updated_at: 2011/01/19 12:38:53
+  document_id: 685
+  code: DIAMSALEMEMORETREGISTER
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 17
+  updated_by: 1
+  id: 443
+  description: ""
+  isdrilldownrow: N
+  company_id: 1
+  isfixedurl: N
+  service_url: ""
+  drilldown_component_code: ""
+  created_at: 2010/06/17 15:56:32
+reports_057: 
+  name: Activity Report
+  updated_at: 2011/01/31 12:37:53
+  document_id: 783
+  code: DINVACTIVITYREPORT
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 14
+  updated_by: 1
+  id: 543
+  description: ""
+  isdrilldownrow: Y
+  company_id: 1
+  isfixedurl: N
+  service_url: ""
+  drilldown_component_code: ""
+  created_at: 2010/07/05 18:03:13
+reports_080: 
+  name: Open Order Report
+  updated_at: 2010/09/29 12:28:15
+  document_id: 1184
+  code: CTLGOPENORDERREPORT
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  lock_version: 6
+  updated_by: 100
+  id: 840
+  description: ""
+  isdrilldownrow: N
+  company_id: 1
+  isfixedurl: N
+  service_url: ""
+  drilldown_component_code: 
+  created_at: 2010/09/29 11:26:41
+reports_079: 
+  name: Order Status Report
+  updated_at: 2010/09/29 12:33:12
+  document_id: 1183
+  code: CTLGORDERSTATUSREPORT
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  lock_version: 18
+  updated_by: 100
+  id: 820
+  description: ""
+  isdrilldownrow: N
+  company_id: 1
+  isfixedurl: N
+  service_url: ""
+  drilldown_component_code: 
+  created_at: 2010/09/28 17:56:21
+reports_016: 
+  name: Open Memo
+  updated_at: 2011/01/17 16:44:15
+  document_id: 580
+  code: PURCHASEOPEMMEMO
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 37
+  updated_by: 1
+  id: 321
+  description: Purchase Open Memo Columns
+  isdrilldownrow: Y
+  company_id: 1
+  isfixedurl: Y
+  service_url: ""
+  drilldown_component_code: puoi/purchasememo/components/PurchaseMemo.swf
+  created_at: 2010/05/14 12:16:27
+reports_037: 
+  name: Purchase Invoice Register
+  updated_at: 2011/01/25 14:30:41
+  document_id: 688
+  code: DIAMPURINVREGISTER
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 17
+  updated_by: 1
+  id: 444
+  description: ""
+  isdrilldownrow: Y
+  company_id: 1
+  isfixedurl: Y
+  service_url: ""
+  drilldown_component_code: dpuoi/invoice/components/DiamPurchaseInvoice.swf
+  created_at: 2010/06/17 17:27:12
+reports_058: 
+  name: Backdated Stock Report
+  updated_at: 2011/01/19 10:47:55
+  document_id: 702
+  code: INVNBACKDATEDSTOCKREPORT
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 14
+  updated_by: 1
+  id: 560
+  description: ""
+  isdrilldownrow: N
+  company_id: 1
+  isfixedurl: N
+  service_url: ""
+  drilldown_component_code: ""
+  created_at: 2010/07/10 15:21:33
+reports_081: 
+  name: Order Register Report
+  updated_at: 2010/09/29 13:09:44
+  document_id: 1182
+  code: CTLGORDERREGISTER
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  lock_version: 6
+  updated_by: 100
+  id: 841
+  description: ""
+  isdrilldownrow: N
+  company_id: 1
+  isfixedurl: N
+  service_url: ""
+  drilldown_component_code: 
+  created_at: 2010/09/29 12:41:11
+reports_038: 
+  name: Purchase Cr Invoice Register
+  updated_at: 2011/01/25 14:31:21
+  document_id: 689
+  code: DIAMPURCREINVREGISTER
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 17
+  updated_by: 1
+  id: 445
+  description: ""
+  isdrilldownrow: Y
+  company_id: 1
+  isfixedurl: Y
+  service_url: ""
+  drilldown_component_code: dpuoi/creditinvoice/components/DiamPurchaseCreditInvoice.swf
+  created_at: 2010/06/17 18:13:56
+reports_060: 
+  name: Store Transfer Report
+  updated_at: 2011/02/24 11:18:22
+  document_id: 700
+  code: INVNSTORETRANSFERREPORT
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 15
+  updated_by: 1
+  id: 581
+  description: ""
+  isdrilldownrow: Y
+  company_id: 1
+  isfixedurl: Y
+  service_url: ""
+  drilldown_component_code: invn/storetransfer/components/StoreTransfer.swf
+  created_at: 2010/07/11 11:43:03
+reports_059: 
+  name: Backdated Stock Report
+  updated_at: 2010/07/24 15:36:56
+  document_id: 785
+  code: DINVBACKDATEDSTOCKREPORT
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  lock_version: 11
+  updated_by: 100
+  id: 580
+  description: ""
+  isdrilldownrow: N
+  company_id: 1
+  isfixedurl: N
+  service_url: ""
+  drilldown_component_code: 
+  created_at: 2010/07/11 11:04:57
+reports_017: 
+  name: Issue Report
+  updated_at: 2011/03/04 18:41:27
+  document_id: 621
+  code: INVNISSUEREPORT
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 55
+  updated_by: 1
+  id: 340
+  description: Invn Issue Report
+  isdrilldownrow: Y
+  company_id: 1
+  isfixedurl: N
+  service_url: ""
+  drilldown_component_code: invn/issue/components/Issue.swf
+  created_at: 2010/05/25 11:25:25
+reports_082: 
+  name: Open Enquiry Report
+  updated_at: 2010/10/01 15:57:51
+  document_id: 1221
+  code: CTLGOPENENQUIRYREPORT
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  lock_version: 2
+  updated_by: 100
+  id: 860
+  description: ""
+  isdrilldownrow: N
+  company_id: 1
+  isfixedurl: N
+  service_url: ""
+  drilldown_component_code: 
+  created_at: 2010/10/01 13:04:17
+reports_018: 
+  name: Receive Report
+  updated_at: 2011/02/24 11:15:27
+  document_id: 620
+  code: INVNRECEIVEREPORT
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 27
+  updated_by: 1
+  id: 341
+  description: Invn Receive Report
+  isdrilldownrow: Y
+  company_id: 1
+  isfixedurl: N
+  service_url: ""
+  drilldown_component_code: invn/receive/components/Receive.swf
+  created_at: 2010/05/25 11:33:49
+reports_040: 
+  name: Purchase Memo Return Register
+  updated_at: 2011/01/25 14:29:55
+  document_id: 691
+  code: DIAMPURMEMORETEREGISTER
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 16
+  updated_by: 1
+  id: 461
+  description: ""
+  isdrilldownrow: Y
+  company_id: 1
+  isfixedurl: Y
+  service_url: ""
+  drilldown_component_code: dpuoi/memoreturn/components/DiamPurchaseMemoReturn.swf
+  created_at: 2010/06/18 11:25:47
+reports_039: 
+  name: Purchase Memo Register
+  updated_at: 2011/01/25 14:29:17
+  document_id: 690
+  code: DIAMPURMEMOREGISTER
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 17
+  updated_by: 1
+  id: 460
+  description: ""
+  isdrilldownrow: Y
+  company_id: 1
+  isfixedurl: Y
+  service_url: ""
+  drilldown_component_code: dpuoi/memo/components/DiamPurchaseMemo.swf
+  created_at: 2010/06/18 10:59:09
+reports_061: 
+  name: Store Transfer
+  updated_at: 2011/02/24 11:26:18
+  document_id: 782
+  code: DINVSTORETRANSFER
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 21
+  updated_by: 1
+  id: 582
+  description: ""
+  isdrilldownrow: Y
+  company_id: 1
+  isfixedurl: Y
+  service_url: ""
+  drilldown_component_code: dinvn/storetransfer/components/StoreTransfer.swf
+  created_at: 2010/07/11 16:10:45
+reports_083: 
+  name: Enquiry Register
+  updated_at: 2010/10/01 16:08:04
+  document_id: 1220
+  code: CTLGENQUIRYREGISTER
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  lock_version: 2
+  updated_by: 100
+  id: 861
+  description: ""
+  isdrilldownrow: N
+  company_id: 1
+  isfixedurl: N
+  service_url: ""
+  drilldown_component_code: 
+  created_at: 2010/10/01 15:59:11
+reports_020: 
+  name: Customer Invoice Register
+  updated_at: 2011/01/19 15:24:56
+  document_id: 643
+  code: ACCTCUSTINVOICEREGISTER
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 13
+  updated_by: 1
+  id: 362
+  description: ""
+  isdrilldownrow: Y
+  company_id: 1
+  isfixedurl: Y
+  service_url: ""
+  drilldown_component_code: acct/custinvoice/components/CustomerInvoice.swf
+  created_at: 2010/06/11 17:37:15
+reports_019: 
+  name: Stock Report
+  updated_at: 2011/02/24 11:27:41
+  document_id: 622
+  code: INVNSTOCKREPORT
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 46
+  updated_by: 1
+  id: 342
+  description: Invn Stock Report
+  isdrilldownrow: N
+  company_id: 1
+  isfixedurl: N
+  service_url: ""
+  drilldown_component_code: ""
+  created_at: 2010/05/25 15:48:18
+reports_041: 
+  name: Net Sales Register
+  updated_at: 2011/01/19 12:45:14
+  document_id: 686
+  code: DIAMSALESNETREGISTER
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 14
+  updated_by: 1
+  id: 462
+  description: ""
+  isdrilldownrow: N
+  company_id: 1
+  isfixedurl: N
+  service_url: ""
+  drilldown_component_code: ""
+  created_at: 2010/06/18 14:31:58
+reports_062: 
+  name: Stock Report (HO/Store wise)
+  updated_at: 2011/01/19 10:46:03
+  document_id: 920
+  code: INVNALLSTORESTOCKREPORT
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 8
+  updated_by: 1
+  id: 600
+  description: ""
+  isdrilldownrow: N
+  company_id: 1
+  isfixedurl: N
+  service_url: ""
+  drilldown_component_code: ""
+  created_at: 2010/08/03 14:40:31
+reports_084: 
+  name: Commission Report
+  updated_at: 2011/01/05 12:32:03
+  document_id: 1262
+  code: MELTCOMMISSIONREPORT
+  update_flag: Y
+  trans_flag: A
+  created_by: 2
+  lock_version: 9
+  updated_by: 2
+  id: 881
+  description: ""
+  isdrilldownrow: N
+  company_id: 1
+  isfixedurl: N
+  service_url: ""
+  drilldown_component_code: ""
+  created_at: 2010/10/29 11:41:14
+reports_021: 
+  name: Customer Receipt Register
+  updated_at: 2011/01/20 11:08:44
+  document_id: 641
+  code: ACCTCUSTRECEIPTREGISTER
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 31
+  updated_by: 1
+  id: 380
+  description: ""
+  isdrilldownrow: Y
+  company_id: 1
+  isfixedurl: Y
+  service_url: ""
+  drilldown_component_code: acct/custreceipt/components/CustomerReceipt.swf
+  created_at: 2010/06/14 12:30:19
+reports_042: 
+  name: General Ledger Summary
+  updated_at: 2011/01/19 15:43:56
+  document_id: 704
+  code: ACCTGENERALLEDGERSUMRY
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 47
+  updated_by: 1
+  id: 463
+  description: ""
+  isdrilldownrow: Y
+  company_id: 1
+  isfixedurl: Y
+  service_url: ""
+  drilldown_component_code: rept/acct/gl/generalledgerdetail/components/GeneralLedgerDetail.swf
+  created_at: 2010/06/18 16:12:04
+reports_063: 
+  name: Activity Report
+  updated_at: 2010/08/07 12:34:05
+  document_id: 441
+  code: POSACTIVITYREPORT
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  lock_version: 2
+  updated_by: 100
+  id: 620
+  description: ""
+  isdrilldownrow: N
+  company_id: 1
+  isfixedurl: N
+  service_url: ""
+  drilldown_component_code: 
+  created_at: 2010/08/07 11:59:54
+reports_085: 
+  name: Open Packet Report
+  updated_at: 2011/01/28 12:37:31
+  document_id: 1261
+  code: MELTOPENPACKETREPORT
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 6
+  updated_by: 1
+  id: 882
+  description: ""
+  isdrilldownrow: Y
+  company_id: 1
+  isfixedurl: Y
+  service_url: ""
+  drilldown_component_code: rept/melt/packetstatusreport/components/PacketStatusReport.swf
+  created_at: 2010/10/29 15:02:00
+reports_001: 
+  name: Order Register
+  updated_at: 2011/01/13 11:09:40
+  document_id: 500
+  code: SALESORDERREGISTER
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 177
+  updated_by: 1
+  id: 131
+  description: Sales order register columns!!
+  isdrilldownrow: Y
+  company_id: 1
+  isfixedurl: Y
+  service_url: /sales_report/sales_order_register
+  drilldown_component_code: saoi/salesorder/components/SalesOrder.swf
+  created_at: 2010/04/29 17:04:06
+reports_022: 
+  name: Customer Credit Invoice Register
+  updated_at: 2011/01/21 15:03:24
+  document_id: 642
+  code: ACCTCUSTCRINVOICEREGISTER
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 29
+  updated_by: 1
+  id: 381
+  description: ""
+  isdrilldownrow: Y
+  company_id: 1
+  isfixedurl: Y
+  service_url: ""
+  drilldown_component_code: acct/custcreditinvoice/components/CustomerCreditInvoice.swf
+  created_at: 2010/06/14 13:12:07
+reports_043: 
+  name: Trail Balance Summary
+  updated_at: 2011/01/19 15:47:39
+  document_id: 706
+  code: ACCTTRAILBALSUMARY
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 11
+  updated_by: 1
+  id: 464
+  description: ""
+  isdrilldownrow: N
+  company_id: 1
+  isfixedurl: N
+  service_url: ""
+  drilldown_component_code: ""
+  created_at: 2010/06/18 16:23:29
+reports_064: 
+  name: Stock Aging Detail Report
+  updated_at: 2011/01/19 11:01:48
+  document_id: 947
+  code: INVNSTOCKAGINGDETAIL
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 11
+  updated_by: 1
+  id: 640
+  description: ""
+  isdrilldownrow: N
+  company_id: 1
+  isfixedurl: N
+  service_url: ""
+  drilldown_component_code: ""
+  created_at: 2010/08/16 10:50:29
+reports_086: 
+  name: Metal Packet Register
+  updated_at: 2011/01/05 12:02:09
+  document_id: 1260
+  code: MELTMETALPACKETREGISTER
+  update_flag: Y
+  trans_flag: A
+  created_by: 2
+  lock_version: 8
+  updated_by: 2
+  id: 883
+  description: ""
+  isdrilldownrow: N
+  company_id: 1
+  isfixedurl: N
+  service_url: ""
+  drilldown_component_code: ""
+  created_at: 2010/10/29 17:02:42
+reports_002: 
+  name: Memo Register
+  updated_at: 2011/01/12 14:48:20
+  document_id: 521
+  code: SALESMEMOREGISTER
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 61
+  updated_by: 1
+  id: 260
+  description: Sales memo register columns
+  isdrilldownrow: Y
+  company_id: 1
+  isfixedurl: Y
+  service_url: ""
+  drilldown_component_code: saoi/salesmemo/components/SalesMemo.swf
+  created_at: 2010/05/11 12:08:59
+reports_023: 
+  name: Journal Register
+  updated_at: 2011/01/19 17:04:45
+  document_id: 640
+  code: ACCTJOURNALREGISTER
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 18
+  updated_by: 1
+  id: 382
+  description: ""
+  isdrilldownrow: Y
+  company_id: 1
+  isfixedurl: Y
+  service_url: ""
+  drilldown_component_code: acct/journal/components/Journal.swf
+  created_at: 2010/06/14 15:32:45
+reports_044: 
+  name: General Ledger Detail
+  updated_at: 2011/01/19 16:22:56
+  document_id: 705
+  code: ACCTGENERALLEDGERDETAIL
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 25
+  updated_by: 1
+  id: 465
+  description: ""
+  isdrilldownrow: Y
+  company_id: 1
+  isfixedurl: N
+  service_url: ""
+  drilldown_component_code: ""
+  created_at: 2010/06/18 17:38:53
+reports_065: 
+  name: Stock Aging Summary Report
+  updated_at: 2011/01/25 11:49:19
+  document_id: 948
+  code: INVNSTOCKAGINGSUMMARY
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 17
+  updated_by: 1
+  id: 641
+  description: ""
+  isdrilldownrow: Y
+  company_id: 1
+  isfixedurl: Y
+  service_url: ""
+  drilldown_component_code: rept/invn/stockagingdetailreport/components/StockAgingDetailReport.swf
+  created_at: 2010/08/16 11:07:29
+reports_087: 
+  name: Packet Status Report
+  updated_at: 2011/03/11 10:35:38
+  document_id: 1301
+  code: MELTPACKETSTATUSREPORT
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 44
+  updated_by: 1
+  id: 884
+  description: ""
+  isdrilldownrow: Y
+  company_id: 1
+  isfixedurl: Y
+  service_url: ""
+  drilldown_component_code: melt/packettransaction/components/PacketTransaction.swf
+  created_at: 2010/11/23 13:12:27
+reports_003: 
+  name: Invoice Register
+  updated_at: 2011/01/12 15:02:22
+  document_id: 520
+  code: SALESINVOICEREGISTER
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 34
+  updated_by: 1
+  id: 261
+  description: Sales Invoice Register Columns
+  isdrilldownrow: Y
+  company_id: 1
+  isfixedurl: Y
+  service_url: ""
+  drilldown_component_code: saoi/salesinvoice/components/SalesInvoice.swf
+  created_at: 2010/05/11 12:33:03
+reports_024: 
+  name: Bank Transfer Register
+  updated_at: 2011/01/19 16:46:26
+  document_id: 644
+  code: ACCTBANKTRANSFERREGISTER
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 27
+  updated_by: 1
+  id: 383
+  description: ""
+  isdrilldownrow: Y
+  company_id: 1
+  isfixedurl: Y
+  service_url: ""
+  drilldown_component_code: acct/banktransfer/components/BankTransfer.swf
+  created_at: 2010/06/14 16:00:03
+reports_045: 
+  name: Bank Transaction Register
+  updated_at: 2011/01/21 10:44:05
+  document_id: 714
+  code: ACCTBANKTRANSREGISTER
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 25
+  updated_by: 1
+  id: 466
+  description: ""
+  isdrilldownrow: Y
+  company_id: 1
+  isfixedurl: Y
+  service_url: ""
+  drilldown_component_code: ""
+  created_at: 2010/06/18 18:00:31
+reports_066: 
+  name: Item Price History Report
+  updated_at: 2011/01/19 10:53:18
+  document_id: 443
+  code: INVNITEMPRICEHISTORY
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 8
+  updated_by: 1
+  id: 660
+  description: ""
+  isdrilldownrow: N
+  company_id: 1
+  isfixedurl: N
+  service_url: ""
+  drilldown_component_code: ""
+  created_at: 2010/08/17 13:52:31
+reports_088: 
+  name: Activity Report
+  updated_at: 2011/01/05 12:03:42
+  document_id: 1280
+  code: MELTACTIVITYREPORT
+  update_flag: Y
+  trans_flag: A
+  created_by: 2
+  lock_version: 5
+  updated_by: 2
+  id: 885
+  description: Melting transaction activity report
+  isdrilldownrow: N
+  company_id: 1
+  isfixedurl: N
+  service_url: ""
+  drilldown_component_code: ""
+  created_at: 2010/12/01 11:25:20
+reports_067: 
+  name: Lab Memo Register
+  updated_at: 2010/08/19 12:22:52
+  document_id: 966
+  code: PRODLABMEMOREGISTER
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  lock_version: 9
+  updated_by: 100
+  id: 680
+  description: ""
+  isdrilldownrow: N
+  company_id: 1
+  isfixedurl: N
+  service_url: ""
+  drilldown_component_code: 
+  created_at: 2010/08/18 16:13:28
+reports_004: 
+  name: Credit Invoice Register
+  updated_at: 2011/01/12 15:27:36
+  document_id: 522
+  code: SALESCRINVOICEREGISTER
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 138
+  updated_by: 1
+  id: 262
+  description: Sales Credit Invoice Register Column
+  isdrilldownrow: Y
+  company_id: 1
+  isfixedurl: Y
+  service_url: ""
+  drilldown_component_code: saoi/salescreditinvoice/components/SalesCreditInvoice.swf
+  created_at: 2010/05/11 12:48:43
+reports_025: 
+  name: Bank Deposit Register
+  updated_at: 2011/01/19 16:45:16
+  document_id: 646
+  code: ACCTBANKDEPOSITREGISTER
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 37
+  updated_by: 1
+  id: 384
+  description: ""
+  isdrilldownrow: Y
+  company_id: 1
+  isfixedurl: Y
+  service_url: ""
+  drilldown_component_code: acct/bankdeposit/components/BankDeposit.swf
+  created_at: 2010/06/14 17:01:23
+reports_046: 
+  name: Trial Balance Detail
+  updated_at: 2010/08/07 12:42:16
+  document_id: 707
+  code: ACCTTRAILBALDETAIL
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  lock_version: 13
+  updated_by: 100
+  id: 467
+  description: ""
+  isdrilldownrow: N
+  company_id: 1
+  isfixedurl: N
+  service_url: ""
+  drilldown_component_code: 
+  created_at: 2010/06/18 18:32:33
+reports_090: 
+  name: Vendor Statement
+  updated_at: 2011/01/21 12:55:21
+  document_id: 1318
+  code: ACCTVENDSTATEMENT
+  update_flag: Y
+  trans_flag: A
+  created_by: 2
+  lock_version: 6
+  updated_by: 2
+  id: 887
+  description: ""
+  isdrilldownrow: N
+  company_id: 1
+  isfixedurl: N
+  service_url: ""
+  drilldown_component_code: ""
+  created_at: 2011/01/18 16:36:32
+reports_089: 
+  name: Customer Statement
+  updated_at: 2011/01/21 13:02:35
+  document_id: 1317
+  code: ACCTCUSTSTATEMENT
+  update_flag: Y
+  trans_flag: A
+  created_by: 2
+  lock_version: 8
+  updated_by: 2
+  id: 886
+  description: ""
+  isdrilldownrow: N
+  company_id: 1
+  isfixedurl: N
+  service_url: ""
+  drilldown_component_code: ""
+  created_at: 2011/01/18 14:52:01
+reports_068: 
+  name: Lab Return Register
+  updated_at: 2010/08/19 11:55:09
+  document_id: 967
+  code: PRODLABMEMORETURN
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  lock_version: 5
+  updated_by: 100
+  id: 681
+  description: ""
+  isdrilldownrow: N
+  company_id: 1
+  isfixedurl: N
+  service_url: ""
+  drilldown_component_code: 
+  created_at: 2010/08/18 17:14:54
+reports_005: 
+  name: Memo Return Register
+  updated_at: 2011/01/12 15:47:16
+  document_id: 540
+  code: SALESMEMORETURNREGISTER
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 40
+  updated_by: 1
+  id: 263
+  description: Sales Memo Return Register Columns
+  isdrilldownrow: Y
+  company_id: 1
+  isfixedurl: Y
+  service_url: ""
+  drilldown_component_code: saoi/salesmemoreturn/components/SalesMemoReturn.swf
+  created_at: 2010/05/11 13:08:55
+reports_026: 
+  name: Bank Payment Register
+  updated_at: 2011/01/19 16:45:55
+  document_id: 645
+  code: ACCTBANKPAYMENTREGISTER
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 20
+  updated_by: 1
+  id: 385
+  description: ""
+  isdrilldownrow: Y
+  company_id: 1
+  isfixedurl: Y
+  service_url: ""
+  drilldown_component_code: acct/bankpayment/components/BankPayment.swf
+  created_at: 2010/06/14 17:27:02
+reports_047: 
+  name: Open Sales Memo
+  updated_at: 2011/01/19 12:50:54
+  document_id: 687
+  code: DIAMSALESOPENMEMOREGISTER
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 15
+  updated_by: 1
+  id: 480
+  description: ""
+  isdrilldownrow: N
+  company_id: 1
+  isfixedurl: N
+  service_url: ""
+  drilldown_component_code: ""
+  created_at: 2010/06/19 10:38:02
+reports_091: 
+  name: Customer Ledger
+  updated_at: 2011/01/21 13:01:04
+  document_id: 1320
+  code: ACCTCUSTLEDGER
+  update_flag: Y
+  trans_flag: A
+  created_by: 2
+  lock_version: 9
+  updated_by: 2
+  id: 888
+  description: ""
+  isdrilldownrow: N
+  company_id: 1
+  isfixedurl: N
+  service_url: ""
+  drilldown_component_code: ""
+  created_at: 2011/01/18 18:05:19
+reports_070: 
+  name: Indent Register
+  updated_at: 2011/01/17 16:19:00
+  document_id: 964
+  code: PURCHASEINDENTREGISTER
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 11
+  updated_by: 1
+  id: 700
+  description: ""
+  isdrilldownrow: Y
+  company_id: 1
+  isfixedurl: Y
+  service_url: ""
+  drilldown_component_code: puoi/purchaseindent/components/PurchaseIndent.swf
+  created_at: 2010/08/23 17:08:17
+reports_069: 
+  name: Open Lab Memo Report
+  updated_at: 2010/08/19 11:42:46
+  document_id: 968
+  code: PRODOPENLABMEMOREPORT
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  lock_version: 5
+  updated_by: 100
+  id: 682
+  description: ""
+  isdrilldownrow: N
+  company_id: 1
+  isfixedurl: N
+  service_url: ""
+  drilldown_component_code: 
+  created_at: 2010/08/18 17:36:37
+reports_027: 
+  name: Net Sales Register
+  updated_at: 2011/01/18 14:17:47
+  document_id: 703
+  code: SALESNETREGISTER
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 34
+  updated_by: 1
+  id: 400
+  description: ""
+  isdrilldownrow: Y
+  company_id: 1
+  isfixedurl: N
+  service_url: ""
+  drilldown_component_code: ""
+  created_at: 2010/06/16 11:03:27
+reports_048: 
+  name: Open Purchase Memo
+  updated_at: 2011/01/19 12:03:01
+  document_id: 692
+  code: DIAMPUROPENMEMOREGISTER
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 15
+  updated_by: 1
+  id: 481
+  description: ""
+  isdrilldownrow: N
+  company_id: 1
+  isfixedurl: N
+  service_url: ""
+  drilldown_component_code: ""
+  created_at: 2010/06/19 11:24:20
+reports_006: 
+  name: Open Order
+  updated_at: 2011/01/07 12:05:44
+  document_id: 541
+  code: SALESOPENORDER
+  update_flag: Y
+  trans_flag: A
+  created_by: 2
+  lock_version: 42
+  updated_by: 2
+  id: 264
+  description: Sales Open Order Column Details
+  isdrilldownrow: Y
+  company_id: 1
+  isfixedurl: Y
+  service_url: ""
+  drilldown_component_code: saoi/salesorder/components/SalesOrder.swf
+  created_at: 2010/05/11 15:49:20
+reports_092: 
+  name: Vendor Ledger
+  updated_at: 2011/01/21 12:57:31
+  document_id: 1319
+  code: ACCTVENDLEDGER
+  update_flag: Y
+  trans_flag: A
+  created_by: 2
+  lock_version: 7
+  updated_by: 2
+  id: 889
+  description: ""
+  isdrilldownrow: N
+  company_id: 1
+  isfixedurl: N
+  service_url: ""
+  drilldown_component_code: ""
+  created_at: 2011/01/18 18:28:57
+reports_071: 
+  name: Open Indent Report
+  updated_at: 2011/01/17 16:47:53
+  document_id: 965
+  code: PURCHASEOPENINDENTREPORT
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 7
+  updated_by: 1
+  id: 701
+  description: ""
+  isdrilldownrow: Y
+  company_id: 1
+  isfixedurl: Y
+  service_url: ""
+  drilldown_component_code: puoi/purchaseindent/components/PurchaseIndent.swf
+  created_at: 2010/08/23 17:30:58
+reports_049: 
+  name: Invn Activity Report
+  updated_at: 2011/03/07 12:56:03
+  document_id: 701
+  code: INVNACTIVITYREPORT
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 31
+  updated_by: 1
+  id: 482
+  description: ""
+  isdrilldownrow: N
+  company_id: 1
+  isfixedurl: N
+  service_url: ""
+  drilldown_component_code: ""
+  created_at: 2010/06/19 12:21:48
+reports_007: 
+  name: Open Memo
+  updated_at: 2011/01/12 15:10:15
+  document_id: 542
+  code: SALESOPENMEMO
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 40
+  updated_by: 1
+  id: 265
+  description: Sales Open Memo Columns Detail
+  isdrilldownrow: Y
+  company_id: 1
+  isfixedurl: Y
+  service_url: ""
+  drilldown_component_code: saoi/salesmemo/components/SalesMemo.swf
+  created_at: 2010/05/11 17:19:23
+reports_028: 
+  name: Vendor Payment Register
+  updated_at: 2011/01/19 16:21:26
+  document_id: 661
+  code: ACCTVENDPAYMENTREGISTER
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 23
+  updated_by: 1
+  id: 401
+  description: ""
+  isdrilldownrow: Y
+  company_id: 1
+  isfixedurl: Y
+  service_url: ""
+  drilldown_component_code: acct/vendpayment/components/VendorPayment.swf
+  created_at: 2010/06/16 11:19:46
+reports_050: 
+  name: BackdatedAgingSummary
+  updated_at: 2011/01/19 15:25:28
+  document_id: 708
+  code: ACCTBACKDATEDAGINGSUMMERY
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 12
+  updated_by: 1
+  id: 500
+  description: ""
+  isdrilldownrow: N
+  company_id: 1
+  isfixedurl: N
+  service_url: ""
+  drilldown_component_code: ""
+  created_at: 2010/06/27 12:16:04
+reports_093: 
+  name: Commission Due Report
+  updated_at: 2011/03/21 12:42:14
+  document_id: 1323
+  code: MELTCOMMISSIONDUEREPORT
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 6
+  updated_by: 1
+  id: 890
+  description: ""
+  isdrilldownrow: N
+  company_id: 1
+  isfixedurl: N
+  service_url: ""
+  drilldown_component_code: ""
+  created_at: 2011/03/15 18:42:07
+reports_072: 
+  name: Stock With Packet Report
+  updated_at: 2011/01/19 11:14:33
+  document_id: 1000
+  code: INVNSTOCKWITHPACKETREPORT
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 11
+  updated_by: 1
+  id: 720
+  description: ""
+  isdrilldownrow: N
+  company_id: 1
+  isfixedurl: N
+  service_url: ""
+  drilldown_component_code: ""
+  created_at: 2010/08/25 18:31:04
+reports_008: 
+  name: Cancellation Register
+  updated_at: 2011/01/12 15:15:20
+  document_id: 565
+  code: SALESCANCELLATIONREGISTER
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 108
+  updated_by: 1
+  id: 280
+  description: Sales Cancellation Register Columns mm
+  isdrilldownrow: Y
+  company_id: 1
+  isfixedurl: Y
+  service_url: ""
+  drilldown_component_code: saoi/salescancellation/components/SalesCancellation.swf
+  created_at: 2010/05/12 12:21:37
+reports_030: 
+  name: Vendor Credit Invoice Register
+  updated_at: 2011/01/19 16:11:19
+  document_id: 662
+  code: ACCTVENDCREINVREGISTER
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 25
+  updated_by: 1
+  id: 403
+  description: ""
+  isdrilldownrow: Y
+  company_id: 1
+  isfixedurl: Y
+  service_url: ""
+  drilldown_component_code: acct/vendcreditinvoice/components/VendorCreditInvoice.swf
+  created_at: 2010/06/16 15:35:07
+reports_029: 
+  name: Vendor Invoice Register
+  updated_at: 2011/01/19 16:15:48
+  document_id: 660
+  code: ACCTVENDINVREGISTER
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 28
+  updated_by: 1
+  id: 402
+  description: ""
+  isdrilldownrow: Y
+  company_id: 1
+  isfixedurl: Y
+  service_url: ""
+  drilldown_component_code: acct/vendinvoice/components/VendorInvoice.swf
+  created_at: 2010/06/16 11:43:42
+reports_051: 
+  name: BackdatedAgingDetail
+  updated_at: 2011/01/19 15:22:07
+  document_id: 709
+  code: ACCTBACKDATEDAGIINGDETAIL
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 25
+  updated_by: 1
+  id: 501
+  description: ""
+  isdrilldownrow: N
+  company_id: 1
+  isfixedurl: N
+  service_url: ""
+  drilldown_component_code: ""
+  created_at: 2010/06/27 12:41:38
+reports_094: 
+  name: Commission Paid Report
+  updated_at: 2011/03/17 12:36:10
+  document_id: 1324
+  code: MELTCOMMISSIONPAIDREPORT
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 2
+  updated_by: 1
+  id: 891
+  description: ""
+  isdrilldownrow: N
+  company_id: 1
+  isfixedurl: N
+  service_url: ""
+  drilldown_component_code: ""
+  created_at: 2011/03/15 19:04:13
+reports_073: 
+  name: Price Exception Report
+  updated_at: 2010/08/26 15:58:58
+  document_id: 1002
+  code: POSPRICEEXCEPTIONREPORT
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  lock_version: 15
+  updated_by: 100
+  id: 740
+  description: ""
+  isdrilldownrow: N
+  company_id: 1
+  isfixedurl: N
+  service_url: ""
+  drilldown_component_code: 
+  created_at: 2010/08/26 11:45:01
+reports_010: 
+  name: Invoice Register
+  updated_at: 2011/01/17 16:26:23
+  document_id: 562
+  code: PURCHASEINVOICEREGISTER
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 40
+  updated_by: 1
+  id: 282
+  description: Purchase Invoice Register Columns
+  isdrilldownrow: Y
+  company_id: 1
+  isfixedurl: Y
+  service_url: purchase_report/purchase_invoice_register
+  drilldown_component_code: puoi/purchaseinvoice/components/PurchaseInvoice.swf
+  created_at: 2010/05/12 12:23:57
+reports_009: 
+  name: Cancellation Register
+  updated_at: 2011/01/17 16:07:54
+  document_id: 566
+  code: PURCHASECANCELLATIONREG
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 44
+  updated_by: 1
+  id: 281
+  description: Purchase Cancellation Register Columns
+  isdrilldownrow: Y
+  company_id: 1
+  isfixedurl: Y
+  service_url: ""
+  drilldown_component_code: puoi/purchasecancellation/components/PurchaseCancellation.swf
+  created_at: 2010/05/12 12:22:56
+reports_031: 
+  name: Sales Receipt Register
+  updated_at: 2010/08/07 11:23:24
+  document_id: 680
+  code: POSSALESRECEIPTREGISTER
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  lock_version: 17
+  updated_by: 100
+  id: 420
+  description: ""
+  isdrilldownrow: N
+  company_id: 1
+  isfixedurl: N
+  service_url: ""
+  drilldown_component_code: 
+  created_at: 2010/06/16 18:31:50
+reports_052: 
+  name: Vendor Backdated Aging Summary
+  updated_at: 2011/01/19 16:02:48
+  document_id: 711
+  code: ACCTVENDBACKDTDAGINGSMRY
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 9
+  updated_by: 1
+  id: 520
+  description: ""
+  isdrilldownrow: N
+  company_id: 1
+  isfixedurl: N
+  service_url: ""
+  drilldown_component_code: ""
+  created_at: 2010/07/03 14:54:03
+reports_095: 
+  name: Sales Invoice Register (One Line)
+  updated_at: 2011/03/17 16:53:14
+  document_id: 1341
+  code: SAOIINVREGONELINE
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 9
+  updated_by: 1
+  id: 898
+  description: ""
+  isdrilldownrow: N
+  company_id: 1
+  isfixedurl: N
+  service_url: ""
+  drilldown_component_code: ""
+  created_at: 2011/03/17 12:32:03
+reports_074: 
+  name: Stock With Packet Report
+  updated_at: 2011/01/19 14:26:57
+  document_id: 1001
+  code: DINVNSTOCKWITHPACKET
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 21
+  updated_by: 1
+  id: 741
+  description: ""
+  isdrilldownrow: N
+  company_id: 1
+  isfixedurl: N
+  service_url: ""
+  drilldown_component_code: ""
+  created_at: 2010/08/26 15:40:38
+reports_011: 
+  name: Credit Invoice Register
+  updated_at: 2011/01/17 16:15:27
+  document_id: 563
+  code: PURCHASECRINVOICEREGISTER
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 45
+  updated_by: 1
+  id: 283
+  description: Purchase Credit Invoice Register Columns
+  isdrilldownrow: Y
+  company_id: 1
+  isfixedurl: Y
+  service_url: ""
+  drilldown_component_code: puoi/purchasecreditinvoice/components/PurchaseCreditInvoice.swf
+  created_at: 2010/05/12 12:24:56
+reports_032: 
+  name: Sales Receipt Return Register
+  updated_at: 2010/08/07 11:58:17
+  document_id: 681
+  code: POSSALESRETURNREGISTER
+  update_flag: Y
+  trans_flag: A
+  created_by: 100
+  lock_version: 23
+  updated_by: 100
+  id: 421
+  description: ""
+  isdrilldownrow: N
+  company_id: 1
+  isfixedurl: N
+  service_url: ""
+  drilldown_component_code: 
+  created_at: 2010/06/16 18:53:47
+reports_053: 
+  name: Vendor Backdated Aging Details
+  updated_at: 2011/01/19 15:58:10
+  document_id: 712
+  code: ACCTVENDBACKDTDAGINGDETAL
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 11
+  updated_by: 1
+  id: 521
+  description: ""
+  isdrilldownrow: N
+  company_id: 1
+  isfixedurl: N
+  service_url: ""
+  drilldown_component_code: ""
+  created_at: 2010/07/03 15:14:57
+reports_096: 
+  name: Purchase Invoice Register (OneLine)
+  updated_at: 2011/03/17 15:09:55
+  document_id: 1342
+  code: PUOIINVREGONELINE
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 9
+  updated_by: 1
+  id: 899
+  description: ""
+  isdrilldownrow: N
+  company_id: 1
+  isfixedurl: N
+  service_url: ""
+  drilldown_component_code: ""
+  created_at: 2011/03/17 13:13:37
+reports_075: 
+  name: Missing Image Report
+  updated_at: 2011/03/02 12:10:32
+  document_id: 1082
+  code: CTLGMISSINGIMAGEREPORT
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 7
+  updated_by: 1
+  id: 760
+  description: ""
+  isdrilldownrow: Y
+  company_id: 1
+  isfixedurl: Y
+  service_url: ""
+  drilldown_component_code: invn/item/components/Item.swf
+  created_at: 2010/09/06 16:26:39
+reports_012: 
+  name: Order Register
+  updated_at: 2011/02/23 17:49:22
+  document_id: 560
+  code: PURCHASEORDERREGISTER
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 61
+  updated_by: 1
+  id: 284
+  description: Purchase Order Register Columns
+  isdrilldownrow: Y
+  company_id: 1
+  isfixedurl: Y
+  service_url: ""
+  drilldown_component_code: puoi/purchaseorder/components/PurchaseOrder.swf
+  created_at: 2010/05/12 12:26:00
+reports_033: 
+  name: Sales Invoice Register
+  updated_at: 2011/01/19 12:18:22
+  document_id: 682
+  code: DIAMSALEINVREGISTER
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 32
+  updated_by: 1
+  id: 440
+  description: ""
+  isdrilldownrow: Y
+  company_id: 1
+  isfixedurl: Y
+  service_url: ""
+  drilldown_component_code: saoi/salesinvoice/components/SalesInvoice.swf
+  created_at: 2010/06/17 12:12:55
+reports_054: 
+  name: Issue Report
+  updated_at: 2011/02/24 11:23:47
+  document_id: 780
+  code: DINVISSUEREPORT
+  update_flag: Y
+  trans_flag: A
+  created_by: 1
+  lock_version: 23
+  updated_by: 1
+  id: 540
+  description: ""
+  isdrilldownrow: Y
+  company_id: 1
+  isfixedurl: N
+  service_url: ""
+  drilldown_component_code: dinvn/issue/components/Issue.swf
+  created_at: 2010/07/05 17:17:52

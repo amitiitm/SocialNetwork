@@ -1,0 +1,30 @@
+<columns Title = 'Catalog Items'>
+
+	<column dataType="S" 	 label="Item #" 		checkbox="ckAll1" 	xmlTagFrom="str1" 	from="tiStr1" 	xmlTagTo="str2" 	to="tiStr2" 
+			multiSelect="tiMultiSelect1" 			xmlTagMultiSelect="multiselect1" 		lookupFlag="true" lookupName="Item" lookupLabel="code" dataField="store_code" labelField="store_code" 	lookupFormatUrl="itemLookupHelpFormat"/>
+			
+	<column dataType="S" 	 label="Name" 			checkbox="ckAll2" 	xmlTagFrom="str3" 	from="tiStr3" 	xmlTagTo="str4" 	to="tiStr4"
+			multiSelect="tiMultiSelect2" 			xmlTagMultiSelect="multiselect2" 		lookupFlag="false" lookupName="" />
+			
+    <column dataType="D" 	 label="Item Date" 		checkbox="ckAll3" 	xmlTagFrom="dt1" 	from="dfDt1" 
+			xmlTagTo="dt2" 	 to="dfDt2"				lookupFlag="false" 	lookupName="" 		/>
+			
+	<column dataType="C"	 label="Diam Qlty" 		checkbox="ckAll4" 	xmlTagFrom="str5" 	from="cbStr5" 	xmlTagTo="str6" 	to="cbStr6"		
+			multiSelect="" 	 xmlTagMultiSelect=""	lookupFlag="false" 	lookupName="" 		type_cd="stone_quality"				subtype_cd ="stone_quality"/>	
+					
+	<column dataType="C"	 label="Stone Type" 	checkbox="ckAll5" 	xmlTagFrom="str7" 	from="cbStr7" 	xmlTagTo="str8" 	to="cbStr8"		
+			multiSelect="" 	 xmlTagMultiSelect=""	lookupFlag="false" 	lookupName="" 		type_cd="stone_type"				subtype_cd ="stone_type"/>	
+			
+	<column dataType="C"	 label="Stone Shape" 	checkbox="ckAll6" 	xmlTagFrom="str9" 	from="cbStr9" 	xmlTagTo="str10" 	to="cbStr10"		
+			multiSelect="" 	 xmlTagMultiSelect=""	lookupFlag="false" 	lookupName="" 		type_cd="stone_shape"				subtype_cd ="stone_shape"/>	
+			
+	<column dataType="C"	 label="Stone Qlty" 	checkbox="ckAll9" 	xmlTagFrom="str15" 	from="cbStr15" 	xmlTagTo="str16" 	to="cbStr16"		
+			multiSelect="" 	 xmlTagMultiSelect=""	lookupFlag="false" 	lookupName="" 		type_cd="stone_quality"				subtype_cd ="stone_quality"/>
+			
+	<column dataType="C"	 label="Casting Type" 	checkbox="ckAll7" 	xmlTagFrom="str11" 	from="cbStr11" 	xmlTagTo="str12" 	to="cbStr12"		
+			multiSelect="" 	 xmlTagMultiSelect=""	lookupFlag="false" 	lookupName="" 		type_cd="metal_type"				subtype_cd ="metal_type"/>							
+
+	<column dataType="C"	 label="Casting Color" 	checkbox="ckAll8" 	xmlTagFrom="str13" 	from="cbStr13" 	xmlTagTo="str14" 	to="cbStr14"		
+			multiSelect="" 	 xmlTagMultiSelect=""	lookupFlag="false" 	lookupName="" 		type_cd="metal_color"				subtype_cd ="metal_color"/>	
+							
+</columns>

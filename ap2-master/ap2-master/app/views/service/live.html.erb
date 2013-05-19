@@ -1,0 +1,46 @@
+<div class="search-results">
+	<% if @search_type != "card" %>		
+		<ul>
+		<% if @users %>
+			<% for u in @users %>
+				<li>
+					<% if u.class == User %>
+						<a href="/accounts/<%= u.account.id %>" title="<%= "#{u.name.downcase}" %>" class="pbx_search_result search-result">
+							<%= "Account: #{u.name}" %>
+							<span>
+								Account : <%= if u.account then "# #{u.account.number}" else 'No Acc!!!' end %>
+								<% if @search_type == "email" %>
+									<br> Email: <%= u.email %>
+								<% end %>
+							</span>
+						</a>
+					<% else %>
+						<a href="/leads/<%= u.id %>" title="<%= "#{u.info}" %>" class="pbx_search_result search-result">
+							<%= "Lead: #{u.info}" %>
+							<% if @search_type == "email" %>
+								<span>Email: <%= u.email %></span>
+							<% end %>
+						</a>
+					<% end %>
+				</li>
+			<% end -%>
+		<% end %>
+		</ul>
+		
+	<% else %>
+		<% if @card %>
+			<ul>
+				<li>
+					<a href="/cards/<%= @card.id %>" title="Serial: <%= "#{@card.formatted_serial}" %>" class="pbx_search_result search-result">
+						Serial: <%= @card.formatted_serial %> <br>
+						<%= "Pin# : #{@card.formatted_number}" %><br>			
+						Used: <%= yes_no(@card.used) %><br>
+						Activated: <%= yes_no(@card.activated) %><br>
+						<%= if @card.activated then "Actv Date: #{@card.activation_date.strftime('%y-%m-%d')}" end %>
+						<%= if @card.activated and @card.distribution then "Distr: #{@card.distribution.distributor.bname}<br>" end %>
+					</a>
+				</li>
+			</ul>
+		<% end -%>
+	<% end -%>
+</div>

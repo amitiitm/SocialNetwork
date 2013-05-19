@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rds:CommonServices xmlns:rds="business.*" xmlns:mx="http://www.adobe.com/2006/mxml">
+
+	<mx:HTTPService id="saveRecord" url="/crm/crm_address/create_addresses"/>
+	<mx:HTTPService id="getRecord" url="/crm/crm_address/show_addresses"/>
+	<mx:HTTPService id="getList" url="/crm/crm_address/list_addresses"/>
+	<mx:HTTPService id="getListFormat" url="crm/address/xmls/AddressListStru.xml"/>
+	<mx:HTTPService id="getViewFormat" url="crm/address/xmls/AddressCriteriaStru.xml"/>
+	<mx:HTTPService id="printRecord" url=""/>
+
+</rds:CommonServices>

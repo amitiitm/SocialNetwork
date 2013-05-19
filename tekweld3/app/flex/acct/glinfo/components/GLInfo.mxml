@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<customcomponents:GenModule xmlns:mx="http://www.adobe.com/2006/mxml" xmlns:customcomponents="com.generic.customcomponents.*"
+	xmlns:components="com.generic.components.*"	width="100%" height="100%" 
+	paddingTop="0" verticalGap="0" creationPolicy="all"
+	initialize="{focusManager.activate()}"
+	genModuleActive				=	"handleGLInfoAcitve(event)" 
+	creationComplete			= 	"handleCreationComplete(event)" >
+	
+	<mx:Script source="../scripts/GLInfoScript.as"/>
+	<mx:Style>
+							.LabelName
+							{
+								font-size:11;
+								color:#A2A2A2;
+								font-weight:normal;
+								text-align:right; 
+								
+							}
+							.LabelData
+							{
+								font-size:11;
+								color:#292929;
+								font-weight:normal;
+							}	
+						</mx:Style>				
+	<mx:VBox width="100%" height="100%" paddingTop="0">
+		<mx:HBox width="100%" height="100%" horizontalGap="2">
+			<mx:VBox id="vbGLList" width="220" height="100%" verticalGap="0">
+				<mx:HBox id="hbGLView" width="100%" height="25" horizontalGap="2"  paddingRight="10">
+								<mx:Label id="lblView" text="View" width="40" textAlign="right" />
+								<mx:ComboBox id="cbGLView" width="120" name="cmbGLView" labelField="name" height="20" 
+									 rowCount="10" change="GLViewChangeHandler(event);" 
+									 dataProvider="{__localModel.viewObj.view.children()}"
+									 selectedItem = "{__localModel.viewObj.selectedView}"/>
+								<customcomponents:GenButton	id="btnGLQuery" 
+									icon="@Embed('com/generic/assets/search.PNG')" 
+									disabledIcon="@Embed('com/generic/assets/search_disabled.png')"
+									height="20" 
+									width="20" 
+									toolTip="Search"
+									cornerRadius="0"
+									click="btnGLQueryClickHandler()"
+								 	textAlign="center"/>
+				</mx:HBox>
+				<customcomponents:GenDataGrid id="listGL" width="100%" height="100%"  
+					rows="{	__localModel.listObj.filteredList}" 
+					updatableFlag="false" 
+					structure="{__localModel.listObj.listFormat}"				
+					handleDoubleClick="true"
+					itemClickGenGridEvent="GLItemClickHandler(event)" 
+					fontSize="9" color="#262624" fontWeight="normal"
+					updateComplete="dgGLUpdateCompleteHandler()"/>
+			</mx:VBox>
+			<mx:VBox width="100%" height="100%" verticalGap="0" backgroundColor="#FFFFFF">
+					<mx:VBox id="vbGLDetailWrapper" width="100%" height="{isShow ? 190 : 0}">
+						<mx:HBox width="100%" height="25" verticalAlign="middle">
+							<mx:Label text="GL Information" color="#0C4673" fontWeight="bold" fontSize="10"/>
+							<mx:Spacer width="10"/>
+							<customcomponents:GenButton	id="btnEditGL" 
+								icon="@Embed('com/generic/assets/edit.PNG')"
+								click="btnEditGLClickHandler()"
+								height="20" 
+								width="20" 
+								toolTip="Edit GL"
+								cornerRadius="0"
+								textAlign="center"/>
+						</mx:HBox>						
+						<mx:HRule width="100%" strokeColor="#CCDDEC" height="5"/>
+						<mx:VBox id="vbGLDetail" width="100%" height="100">
+							<mx:HBox width="100%" height="100%">
+								<mx:VBox verticalGap="0" width="100%" >
+									<mx:HBox width="100%">
+										<mx:Label text="GL#" width="85" styleName="LabelName"/>
+										<mx:Label id="lblGLCode" width="100%" styleName="LabelData"/>
+									</mx:HBox>
+									<mx:HBox width="100%">
+										<mx:Label text="GL Name" width="85" styleName="LabelName"/>
+										<mx:Label id="lblGLName" width="100%" styleName="LabelData"/>
+									</mx:HBox>
+									<mx:HBox width="100%">
+										<mx:Label text="GL Category" width="85" styleName="LabelName"/>
+										<mx:Label id="lblGLCategory" width="100%" styleName="LabelData"/>
+									</mx:HBox>
+									<mx:HBox height="0" width="0" visible="false">
+										<mx:Label text="Start Date" width="85" styleName="LabelName"/>
+										<mx:Label id="lblStartDate" width="100%" styleName="LabelData"/>
+									</mx:HBox>
+									<mx:HBox width="100%">
+										<mx:Label text="Balance Type" width="85" styleName="LabelName"/>
+										<mx:Label id="lblBalanceType" width="100%" styleName="LabelData"/>
+									</mx:HBox>
+								</mx:VBox>
+								<mx:VBox verticalGap="0" width="100%">
+									<mx:HBox width="100%">
+										<mx:Label text="Group #1" width="80" styleName="LabelName"/>
+										<mx:Label id="lblGroup1" width="100%" styleName="LabelData"/>
+									</mx:HBox>
+									<mx:HBox width="100%">
+										<mx:Label text="Group #2" width="80" styleName="LabelName"/>
+										<mx:Label id="lblGroup2" width="100%" styleName="LabelData"/>
+									</mx:HBox>
+									<mx:HBox width="100%">
+										<mx:Label text="Group #3" width="80" styleName="LabelName"/>
+										<mx:Label id="lblGroup3" width="100%" styleName="LabelData"/>
+									</mx:HBox>
+									<mx:HBox width="100%">
+										<mx:Label text="Group #4" width="80" styleName="LabelName"/>
+										<mx:Label id="lblGroup4" width="100%" styleName="LabelData"/>
+									</mx:HBox>
+								</mx:VBox>
+							</mx:HBox>
+						</mx:VBox>
+
+					</mx:VBox>
+					<mx:VBox id="vbGLReports" width="100%" height="100%" verticalGap="0">
+						<mx:HBox height="25" verticalAlign="middle" width="100%" backgroundColor="#DDE7F0">
+							<mx:HBox>
+								<mx:Label text="Show" width="45" textAlign="right" styleName="LabelData" />
+								<mx:ComboBox id="cmbReports" width="192" height="20"  labelField="name"
+									change="changeReportHandler()" rowCount="10">
+									<mx:dataProvider>									
+										<mx:Array>
+											<mx:Object name = "Date Summary"  		code = "GLDATESUMMARY"		formatService	=	"getGLDateSummaryFormat"			listService = "getListDateSummary"			criteriaFormatService	=	"getGLDateSummaryCriteriaFormat"			printType = "LIST"	 RPTService	=	""	/>																
+											<mx:Object name = "All Transaction"  	code = "GLALLTRANSACTION"	formatService	=	"getGLAllTransactionFormat"			listService = "getListAllTransaction"		criteriaFormatService	=	"getGLAllTransactionCriteriaFormat"			printType = "LIST"	 RPTService	=	""	/>
+											<mx:Object name = "Period Summary"  	code = "GLPERIODSUMMARY"	formatService	=	"getGLPeriodSummaryFormat" 			listService = "getListPeriodSummary"		criteriaFormatService	=	"getGLPeriodSummaryCriteriaFormat"			printType = "LIST"	 RPTService	=	""	/>
+										</mx:Array>
+									</mx:dataProvider>
+								</mx:ComboBox>
+							</mx:HBox>
+							<customcomponents:GenVRule id="vrule" height="20" width="15"/>
+							<mx:HBox>
+								<customcomponents:GenButton	id="btnQuery" 
+									icon="@Embed('com/generic/assets/search.PNG')" 
+									disabledIcon="@Embed('com/generic/assets/search_disabled.png')"
+									height="20" 
+									width="20" 
+									toolTip="Search"
+									cornerRadius="0"
+									click="btnQueryReportClickHandler()"
+								 	textAlign="center"/>
+							</mx:HBox>
+							<customcomponents:GenVRule id="vrule1" height="20" width="15"/>
+							<mx:HBox id="hbOutput" horizontalGap="2">
+								<customcomponents:GenButton	id="btnPrint" 
+									icon="@Embed('com/generic/assets/print.png')" 
+									height="20" 
+									width="20" 
+									toolTip="Print"
+									cornerRadius="0"
+									click="btnPrintClickHandler()" 
+								 	textAlign="center"/>
+								
+								<customcomponents:GenButton	id="btnExport" 
+									icon="@Embed('com/generic/assets/export_csv_16x16.png')" 
+									height="20" 
+									width="20" 
+									toolTip="Export"
+									cornerRadius="0"
+									click="exportGridEventHandler()"
+									textAlign="center"/>
+								
+								<customcomponents:GenVRule id="vrule2" height="20" width="15"/>
+						
+							</mx:HBox>
+							<mx:HBox width="100%" horizontalAlign="right">
+								<customcomponents:GenButton id="btnShowHide"  click="{isShow = !isShow}"
+									icon="@Embed('com/generic/assets/sorting.PNG')" 
+									height="20" 
+									width="20" 
+									toolTip="Show/Hide"
+									cornerRadius="0"
+									textAlign="center"/>
+							</mx:HBox>
+						</mx:HBox>
+						<mx:VBox id="vbCustomReport" width="100%" height="100%">
+							<customcomponents:GenDataGrid id="dgReport" width="100%" height="100%"  
+									rows="{filteredReport}" 
+									updatableFlag="false" 
+									structure="{reportFormat}"
+									handleDoubleClick="true"
+									itemClickGenGridEvent="itemClickCustomReportHandler(event)" 
+									itemDoubleClickGenGridEvent="itemDoubleClickCustomReportHandler(event)"
+									/>	
+						</mx:VBox>
+					</mx:VBox>
+			</mx:VBox>
+		</mx:HBox>
+	</mx:VBox>
+
+</customcomponents:GenModule>

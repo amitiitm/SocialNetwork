@@ -1,0 +1,16 @@
+catalog_attribute_code: IMPRINTTYPE
+attribute_value_direct: DIRECT
+attribute_value_digitek: DIGITEK
+attribute_value_decal: DECAL
+attribute_value_embroidery: EMBROIDERY
+attribute_value_laser_etched: LASERETCHED
+attribute_value_fullcolor: FULLCOLOR
+attribute_value_docucolor: DOCUCOLOR
+attribute_value_pad: PAD
+attribute_value_water: WATER
+workflow_water: WATER
+workflow_embroidery: EMBROIDERY
+workflow_pad: PAD
+workflow_docucolor: DOCUCOLOR
+workflow_direct_decal_digitek: DIRECTPRINT/DECAL/DIGITEK
+

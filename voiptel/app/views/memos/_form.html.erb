@@ -1,0 +1,200 @@
+<% form_for [@memoable, @memo], :html => {:class => "forms"} do |f| %>
+	<%= error("Could not save memo:") %>
+	<ul>
+		<li class="horizental">
+			<label>Contact Person</label>
+			<%= f.select :contactable_id, @memoable.select_options_for_contactable %>
+		</li>
+		<li class="horizental">
+			<label>Contact Number</label>
+			<%= f.select :contactable_number_id, @memoable.select_options_for_contactable_number(@memo.contactable_id), {}, {:args => @memoable.args_for_call_link(@memo.contactable_id, @memo, session[:user])} %>
+			<%= link_to (image_icon("telephone_go.png") + " Call") , "", :class => "fn", :function => "call_number('#memo_contactable_number_id')"  unless @memo.new_record? %>
+		</li>
+		<li></li>
+		<li class="horizental">
+			<label>Status</label>
+			<%= f.select :status, Memo::STATUS %>
+		</li>
+		<li class="horizental <%= if @memo.status != 3 then 'hidden' end%>" id="status">
+			<label>Did you succeed?</label>
+			<%= f.select :tmp_success, [["Yes", true], ["No", false]], :selected => @memo.success %>
+		</li>
+		<% if @memo.memo_type_id == 1 %>
+			<li class="horizental">
+				<%= button_function("convert-ac", "Convert", "convert_to_ac()") %>
+			</li>
+		<% end %>
+		<li></li>
+		<li class="horizental">
+			<label>Memo Category</label>
+			<%= f.select :memo_category_id, MemoCategory.all.map {|m| [m.category, m.id]} %>
+		</li>
+		<li class="horizental">
+			<label>Memo Type</label>
+			<% if @memo.new_record? %>
+				<%= f.select :memo_type_id, MemoType.find(:all, :conditions => {:memo_category_id => MemoCategory.first.id}).map {|m| [m.subject, m.id]} %>
+			<% else %>
+				<%= f.select :memo_type_id, MemoType.all.map {|m| [m.subject, m.id]} %>
+			<% end %>
+		</li>
+		<li class="horizental">
+			<label>Priority</label>
+			<%= f.select :priority, Memo::PRIORITIES %>
+		</li>
+		<li></li>
+		<li class="horizental">
+			<label>Needs follow up?</label>
+			<%= f.select :followup, [["Yes", true], ["No", false]] %>
+		</li>
+		<% if allowed? %>
+			<li class="horizental">
+				<label>Assigned To</label>
+				<%= f.select :assigned_to_id, AdminUser.all.map {|u| [u.name, u.id]}, :include_blank => true  %>
+			</li>
+		<% else %>
+			<%= f.hidden_field :assigned_to_id, :value => session[:admin_user_id] %>
+		<% end %>
+		<div class="<%= 'hidden' unless @memo.followup%>" id="followup">
+			<li></li>
+			<li class="horizental">
+				<label>Due Date</label>
+				<%= f.text_field :due_date, :size =>10 %>
+			</li>
+			<li class="horizental">
+				<label>Due Date Time</label>
+				<%= f.select :due_hour, (1..12).map {|h| [h.to_s,h.to_s]}, :include_blank => true %>
+				<%= f.select :due_minute, [["00", "00"], ["15", "15"], ["45", "45"]], :include_blank => true %>
+				<%= f.select :due_baghali, [["AM", "am"], ["PM", "pm"]], :include_blank => true %>
+			</li>
+		</div>
+		<li>
+			<% if @memo.created_by %>
+				<label>Memo <%= "(By #{@memo.created_by.name})" %>:</label>
+			<% else %>
+				<label>Memo: </label>
+			<% end %>
+			<% if @memo.new_record? %>
+				<%= f.text_area :content, :rows => 5 %>
+			<% else %>
+				<%= (@memo.content.strip.blank?)? "No memo" : @memo.content %>
+			<% end -%>
+		</li>
+	</ul>
+	<%= f.hidden_field :created_by_id %>
+	
+	<% if not @memo.new_record? %>
+		<% if not @memo.memo_updates.blank? %>
+			<ul style="height:100px; overflow:auto;">
+				<% for update in @memo.memo_updates.find(:all, :order => "created_at DESC") %>
+					<li>
+						<label>Update by <%= update.followup_by.name %> on <%= user_date(update.created_at) %>: </label>
+						<%= update.content %><br><br>
+						<%= "Emails Sent: #{update.emails}" if not update.emails.blank? %>
+					</li>
+				<% end -%>		
+			</ul>
+		<% end %>
+		<div class="<%= unless params[:no_modal] then 'hidden' end %>" id="memo_update_container">
+			<br>
+			<div class="blue-box ui-corner-all" style="width: auto;">
+			 	<span>Update:</span><br>
+				<% f.fields_for :memo_updates, MemoUpdate.new do |memo_update_fields| %>
+					<ul>
+						<li>
+							<label>Memo:</label>
+							<%= memo_update_fields.text_area :content, :rows => 3, :cols => 29 %>
+						</li>
+						<li class="horizental">
+							<label>Contact Type:</label>
+							<%= memo_update_fields.select :contact_type, MemoUpdate::CONTACT_TYPES, :include_blank => true %>
+						</li>
+						<li class="horizental">
+							<label>Result:</label>
+							<%= memo_update_fields.select :result, MemoUpdate::RESULTS, :include_blank => true %>
+						</li>
+						<li></li>
+						<li>
+							<label>Send Email:</label>
+							<% for nt in @memo.memo_type.notification_templates %>
+								<%= check_box "emails", "#{nt.id}" %> <%= nt.name %> | 
+							<% end %>
+						</li>
+						<%= memo_update_fields.hidden_field :admin_user_id, :value => session[:admin_user_id] %>
+						<%= memo_update_fields.hidden_field :create_record, :value => ( (params[:no_modal]) ? 'true' : 'false' ) %>
+					</ul>					
+				<% end -%>
+				<%= link_to "Cancel", "#", :id => "cancel_update" unless params[:no_modal]%>
+				
+			</div>	
+		</div>
+		<% if params[:no_modal] %>
+			<%= submit_button("Save") %> <%= loading("Saving...") %>
+		<% else %>
+		  <%= link_to "Add Update", "#", :id => "add_update" %>
+		<% end %>
+	<% end -%>
+<% end -%>
+
+<script>	
+	$(function(){
+		$("#memo_contactable_id").change(function(){
+			var params = [];
+			params.push(param("contactable_id", $(this).val()));
+			params.push(param("memoable_type", "<%= @memoable.class.to_s %>"));
+			params.push(param("memoable_id", "<%= @memoable.id %>"));
+			
+			$.get("/memos/contactable_numbers/<%= @memo.id %>", params.join("&"), function(resp){
+				$("#memo_contactable_number_id").replaceWith(resp);
+			});
+		});
+		$("#memo_memo_category_id").change(function(){
+			$.get("/memo_types/select_category/" + $(this).val(), function(resp){
+				$("#memo_memo_type_id").replaceWith(resp);
+			});
+		});
+		$("#add_update").click(function(event){
+			event.preventDefault();
+			$("#memo_update_container").fadeIn(function (){
+				$("#add_update").fadeOut();
+				$("#memo_memo_updates_attributes_0_create_record").val("true");
+			});
+		});
+		
+		$("#cancel_update").click(function(event){
+			event.preventDefault();
+			$("#memo_update_container").fadeOut(function (){
+				$("#add_update").fadeIn();
+				$("#memo_memo_updates_attributes_0_create_record").val("false");				
+			});
+		});
+
+		$("#memo_due_date").datepicker({
+			dateFormat: 'yy-mm-dd'
+		});
+		
+		$("#memo_status").change(function(){
+			var val = $("#memo_status").val();
+			if (val == "3") {
+				$("#status").fadeIn();
+			} else {
+				$("#status").fadeOut();
+			};
+		});
+		
+		$("#memo_followup").change(function(){
+			var val = $("#memo_followup").val();
+			if (val == "true") {
+				$("#followup").fadeIn();
+			} else {
+				$("#followup").fadeOut('fast', function(){
+					$("#followup").find("input").each(function(index, value){
+						$(value).val("");
+					});
+					$("#followup").find("select").each(function(index, value){
+						$(value).val("");
+					});
+				});
+			};
+		});
+	});
+</script>

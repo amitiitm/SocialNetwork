@@ -1,0 +1,40 @@
+<% box :type => "simple" do %>
+	<p>
+		Country: <%= @country.name %>
+	</p>
+	<div class="two-column">
+		<div class="column">		
+			<% box :type => "box_title", :title => "Prefix Groups" do %>
+				<% for c in @country.carriers %>
+					<% box :type => "simple" do%>
+						<p><h3>Carrier Name: <%= c.name %></h3></p>
+						<% descs = c.country_descs(@country) %>
+						<% for d in descs %>
+							<p>Prefix Group: <%= d.desc %></p>
+							<% table :width => "400px" do |t| %>
+								<% t.th "#" %>
+								<% t.th "Prefix" %>
+								<% t.th "Rate" %>
+
+								<% counter = 0 %>
+								<% for r in d.rates do %>
+									<% t.td counter += 1 %>
+									<% t.td r.prefix %>
+									<% t.td r.buy.to_s %> 
+									<% t.new_row %>
+								<%  end -%>
+							<% end -%>		
+						<% end -%>
+					<% end -%>
+				<% end -%>
+			<% end -%>
+		</div>				
+		<div class="column column-right" id="right">
+			<% box :type => "box_title", :title => "Summery" do %>
+			<% end -%>
+		</div>	
+	</div>
+		<div class="clearfix"></div>
+	</div>
+	
+<% end -%>

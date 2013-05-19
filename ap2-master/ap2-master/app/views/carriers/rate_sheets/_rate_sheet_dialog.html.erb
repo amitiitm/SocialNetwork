@@ -1,0 +1,5 @@
+<% box :type => "dialog", :id => id, :title => title, :icon => "ui-icon-person" do %>
+	<% box :type => "simple", :title => title do %>
+		<%= render :partial => "carriers/rate_sheets/rate_sheet_form", :locals => {:trunk => trunk, :rate_sheet => rate_sheet} %>
+	<% end -%>
+<% end -%>

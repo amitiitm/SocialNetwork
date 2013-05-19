@@ -1,0 +1,2 @@
+module Js::TestimonialsHelper
+end

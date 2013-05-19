@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<gencomponents:DetailAddEdit xmlns:mx="http://www.adobe.com/2006/mxml"
+	width="700" height="180" verticalGap="0"
+	xmlns:customcomponents="com.generic.customcomponents.*"
+	xmlns:gencomponents="com.generic.components.*"
+	xmlns:components="invn.jewelry.components.*" xmlns:components1="invn.transactionBOM.components.*"
+	rowInfo = "{__localModel.detailEditObj.selectedRow}"
+	creationComplete="creationCompleteHandler()">
+	
+	<mx:Script source="../scripts/PurchaseOrderLineDetailScript.as"/>
+	
+	<mx:HBox  width="100%" horizontalGap="0">
+	
+		<mx:VBox height="100%" width="100%">
+			
+			<mx:HBox>
+				<mx:Label text="Item #" width="95" textAlign="right"/>
+				
+				<customcomponents:GenTextInputWithHelp
+							lookupFormatUrl	=  "itemLookupHelpFormat"
+							id="dcItemId" 
+							width="150" 
+							toolTip="Item #" 
+							dataSourceName="InventoryItem"
+							minimumChar = "{__genModel.masterData.child('lookup').InventoryItem.value}"
+							height="20" 
+							tabIndex="1" 
+							validationFlag="true" 
+							xmlTag="catalog_item_id"
+							labelTag="catalog_item_code"
+							dataField="id" 
+							labelField= "store_code"
+							updatableFlag="true" 
+							tableName="purchase_order_line" 
+							itemChangedEvent="getItemDetails()"
+							/>
+				
+			<!--	<customcomponents:GenDynamicComboBoxWithHelp id="dcItemId" width="150"  height="20"
+					tabIndex="1" toolTip="Item #"  itemChangedEvent="getItemDetails();getBomTransactionDetails();getBomDetails()"
+					dataField="id" 
+					dataSourceName="Item" dataProvider="{__genModel.lookupObj.item.children()}" labelField="code" 
+					validationFlag="true" xmlTag="catalog_item_id" updatableFlag="true" tableName="purchase_order_line" />-->
+			
+				<mx:Label text="Vendor SKU #" width="95" textAlign="right"/>
+					<customcomponents:GenTextInput id="tiVendorSKUNo" width="150" height="20" maxChars="25" validationFlag="false"
+					tabIndex="2" toolTip="Vendor SKU #" xmlTag="vendor_sku_no" updatableFlag="true" tableName="purchase_order_line" />
+				
+			</mx:HBox>
+			<mx:HBox>
+				<mx:Label text="Description" width="95" textAlign="right"/>
+				<customcomponents:GenTextInput id="tiItemDescription" width="260" height="20"
+					xmlTag="item_description" updatableFlag="true" tabIndex="5" maxChars="100"
+					tableName="purchase_order_line" />
+			</mx:HBox>
+	
+			<mx:HBox>
+				<mx:Label text="Qty" width="95" textAlign="right"/>
+				<customcomponents:GenTextInput id="tiQty" width="55" height="20" visible="true"
+					editable="true" enabled="true" xmlTag="item_qty" updatableFlag="true"
+					tableName="purchase_order_line" defaultValue="0" tabIndex="6" toolTip="Pcs" setDefaultOnEmpty="true" 
+					itemChangedEvent="calculateNetAmount()" textAlign="right" dataType="N" maxValue="99999999" />
+				<mx:Label text="Price" width="53" textAlign="right"/>
+				<customcomponents:GenTextInput id="tiPrice" width="80" height="20" visible="true"
+					xmlTag="item_price" updatableFlag="true" tabIndex="7"
+					tableName="purchase_order_line" defaultValue="0.00"  toolTip="Price" setDefaultOnEmpty="true" 
+					itemChangedEvent="calculateNetAmount()" textAlign="right" dataType="N" maxValue="9999999999.99" />
+				<mx:Label text="Item Amt" width="95" textAlign="right"/>
+				<customcomponents:GenTextInput id="tiItem_amt" width="96" height="20" visible="true"
+					xmlTag="item_amt" updatableFlag="true"  setDefaultOnEmpty="true" editable="false"
+					tableName="purchase_order_line" defaultValue="0.00" enabled="false" toolTip="Item Amt"
+					itemChangedEvent="itemAmountChangeHandler()" textAlign="right" dataType="N" maxValue="9999999999.99" />
+			</mx:HBox>
+			
+			<mx:HBox>
+				<mx:Label text="Disc (%)" width="220" textAlign="right"/>
+				<customcomponents:GenTextInput id="tiDiscount_per" width="80" height="20" visible="true"
+					editable="true" enabled="true" xmlTag="discount_per" updatableFlag="true" setDefaultOnEmpty="true" 
+					tableName="purchase_order_line" defaultValue="0.00" tabIndex="8" toolTip="Discount (%)"
+					itemChangedEvent= "calculateNetAmount();" textAlign="right" dataType="N" maxValue="9999.99" />
+				<mx:Label text="Disc Amt" width="95" textAlign="right"/>
+				<customcomponents:GenTextInput id="tiDiscount_amt" width="96" height="20" visible="true"
+					xmlTag="discount_amt" updatableFlag="true" setDefaultOnEmpty="true" 
+					tableName="purchase_order_line" defaultValue="0.00" tabIndex="9" toolTip="Discount Amt"
+					itemChangedEvent="discPerCalculation();" textAlign="right" dataType="N" maxValue="9999999999.99" />
+			</mx:HBox>
+			<mx:HBox>
+				<mx:Spacer width="350"/>
+				<mx:HRule  width="165" strokeColor="#000000"/>
+			</mx:HBox>
+			<mx:HBox>
+				<mx:Label text="Net Amt" width="410" textAlign="right"/>
+				<customcomponents:GenTextInput id="tiNet_amt" width="96" height="20" editable="false"
+					xmlTag="net_amt" updatableFlag="true"  setDefaultOnEmpty="true"  enabled="false"
+					tableName="purchase_order_line" defaultValue="0.00" toolTip="Net Amt"
+					textAlign="right" dataType="N" maxValue="9999999999.99" />
+			</mx:HBox>
+	
+			<mx:HBox height="0" width="0" visible="false">
+				<mx:HBox>
+					<mx:Label text="Status" width="0" height="0" textAlign="right"/>
+					<customcomponents:GenComboBox id="cbTrans_flag" defaultValue="A" width="0" cornerRadius="0" xmlTag="trans_flag" updatableFlag="true"
+						tableName="purchase_order_line" labelField="label" height="0"  		
+						dataProvider="{__genModel.masterData.child('trans_flag').trans_flag}" />
+				</mx:HBox>
+				<customcomponents:GenTextInput id="tiTaxable" width="0" height="0" visible="true"
+					editable="true" enabled="true" xmlTag="taxable" updatableFlag="true"
+					tableName="purchase_order_line" defaultValue=""/>
+				<customcomponents:GenTextInput id="tiTrans_bk" width="0" height="0" visible="true"
+					editable="true" enabled="true" xmlTag="trans_bk" updatableFlag="true"
+					tableName="purchase_order_line" defaultValue=""/>
+				<customcomponents:GenTextInput id="tiTrans_no" width="0" height="0" visible="true"
+					editable="true" enabled="true" xmlTag="trans_no" updatableFlag="true"
+					tableName="purchase_order_line" defaultValue=""/>
+				<customcomponents:GenDateField id="dfTrans_date" width="0" xmlTag="trans_date"
+					updatableFlag="true" tableName="purchase_order_line" defaultValue="" 
+					validationFlag="false" toolTip="Ref Trans Dt"/>
+				<customcomponents:GenTextInput id="tiRef_trans_bk" width="0" height="0" visible="false"
+					editable="true" enabled="true" xmlTag="ref_trans_bk" updatableFlag="true"
+					tableName="purchase_order_line" defaultValue=""  maxChars="4" toolTip="Ref Trans Bk"/>
+				<customcomponents:GenTextInput id="tiRef_trans_no" width="0" height="0" visible="true"
+					editable="true" enabled="true" xmlTag="ref_trans_no" updatableFlag="true"
+					tableName="purchase_order_line" defaultValue=""  maxChars="18" toolTip="Ref Trans #" />
+				<customcomponents:GenTextInput id="tiRef_type" width="0" height="0" visible="false"
+					editable="true" enabled="true" xmlTag="ref_type" updatableFlag="true"
+					tableName="purchase_order_line" defaultValue=""  maxChars="1" toolTip="Ref Type"/>
+				<customcomponents:GenDateField id="dfRef_trans_date" width="0" xmlTag="ref_trans_date"
+					updatableFlag="true" tableName="purchase_order_line" defaultValue="" 
+					validationFlag="false" toolTip="Ref Trans Dt"/>
+				<customcomponents:GenTextInput id="tiRef_serial_no" width="0" height="0" visible="false"
+					editable="true" enabled="true" xmlTag="ref_serial_no" updatableFlag="true"
+					tableName="purchase_order_line" defaultValue="" maxChars="4" toolTip="Ref Serial #"/>	
+				<customcomponents:GenTextInput id="tiRef_Qty" width="0" height="0" visible="false"
+					editable="true" enabled="true" xmlTag="ref_qty" updatableFlag="true"
+					tableName="purchase_order_line" defaultValue="0.00"  
+					textAlign="right" dataType="N" maxValue="99999999.99" setDefaultOnEmpty="true"/>
+				<customcomponents:GenTextInput id="tiClearQty" width="0" height="0" visible="false"
+					xmlTag="clear_qty" updatableFlag="true" maxValue="99999999.99"
+					tableName="purchase_order_line"  defaultValue="0.00"  dataType="N" setDefaultOnEmpty="true"/>
+				<customcomponents:GenTextInput id="tiSerial_no" width="0" height="0" visible="true"
+					editable="true" enabled="true" xmlTag="serial_no" updatableFlag="true"
+					tableName="purchase_order_line" defaultValue=""  maxChars="4" />
+				<customcomponents:GenTextInput id="tiImage_thumnail" width="0" height="0" visible="false"
+					editable="false" enabled="true" xmlTag="image_thumnail" updatableFlag="true"
+					tableName="purchase_order_line" defaultValue="" />
+				<customcomponents:GenTextInput id="tiItemCode" width="0" height="0" visible="false"
+					xmlTag="catalog_item_code" updatableFlag="true"
+					tableName="purchase_order_line"  text="{dcItemId.labelValue}" />
+				<customcomponents:GenComboBox id="cbItem_type" defaultValue="I" width="0" cornerRadius="0" xmlTag="item_type" updatableFlag="true"
+					tableName="purchase_order_line"  labelField="label"  visible="false" 		
+					dataProvider="{__genModel.masterData.child('invn_item_type').invn_item_type}" />	
+				<customcomponents:GenTextInput id="tiCustomerSKUNo" width="0" height="0" maxChars="25" validationFlag="false"
+					toolTip="Customer SKU #" xmlTag="customer_sku_no" updatableFlag="true" tableName="purchase_order_line"
+					visible="false" includeInLayout="false"/>
+					
+			</mx:HBox>
+		</mx:VBox>
+		<mx:VBox width="120" height="120">
+				<mx:Image id="itemImage" 
+					width="100%"
+					height="100%" 
+					verticalAlign="middle" 
+					horizontalAlign="center" 
+					source="{__genModel.path.image}{tiImage_thumnail.text}"/>
+			</mx:VBox>
+	</mx:HBox>	
+	<mx:Spacer height="10"/>
+</gencomponents:DetailAddEdit>

@@ -1,0 +1,7 @@
+if !@order_transaction.errors.blank?
+    response_for(@order_transaction, page, :default, '#billing')
+else
+    @transactions = OrderTransaction.find(:all, :conditions => @conditions, :order => "created_at DESC", :offset => @start, :limit => @limit)
+    page <<  "$('.inner-response').html('#{escape_javascript render :partial => '/accounts/billing/transaction'}');"
+    # page << "$('#success_credit').fadeIn(400).delay(800).slideUp(300);"
+end

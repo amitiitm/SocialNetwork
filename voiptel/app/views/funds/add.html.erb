@@ -1,0 +1,20 @@
+<h1>Add funds for <%= @account_holder_name %> Acc# <%= @account.number %></h1>
+<%= loading %>
+<%= success("Credit card added successfully.") %>
+<div id="error_block" class="error_block" style="display:none">
+	<bold>Your credit card could not be added:</bold>
+	<ul id="errors">
+	</ul>
+</div>
+<fieldset>
+  <legend>Add Funds</legend>
+	<% unless @account.transaction_references.size > 0%>
+		Currently this account has no credit card. <%= link_to_remote("Click", :url => {:controller => :credit_card, :action => "new", :id => @account.id})%>  to add credit card.
+		<div id="credit_card" style="display:none">
+		</div>
+	<% else %>	
+		<%= render :partial => 'charge' %>
+	<% end %>
+	<div id="charge">
+	</div>
+</fieldset>

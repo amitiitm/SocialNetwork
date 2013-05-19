@@ -1,0 +1,9 @@
+<columns>
+	
+	<column data='similar_item_code'	label='Item #'		editable='false'	visible='true'	width='150'	textAlign='left'	forLevel='false' 	
+			defaultForLevel=''			booleanFlag='false'	sortDataType='S' 	columnPrecision="NaN"/>
+		
+	<column data='item_description'		label='Description'	editable='false' 	visible='true' 	width='300' textAlign='left' 	forLevel='false' 
+			defaultForLevel=''			booleanFlag='false'	sortDataType='S'	columnPrecision="NaN"/>
+	
+</columns> 

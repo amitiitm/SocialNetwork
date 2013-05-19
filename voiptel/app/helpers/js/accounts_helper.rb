@@ -1,0 +1,2 @@
+module Js::AccountsHelper
+end

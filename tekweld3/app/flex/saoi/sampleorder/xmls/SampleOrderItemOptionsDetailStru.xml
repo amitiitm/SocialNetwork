@@ -1,0 +1,10 @@
+<columns  lockedColumnCount='0'>
+
+	
+	<column data='catalog_attribute_code'			label='Attribute'		editable='false'	visible='true'	width='100'	textAlign='left'	forLevel='false'
+			defaultForLevel=''						booleanFlag='false'			sortDataType='S'	columnPrecision="NaN"/>
+			
+	<column data='catalog_attribute_value_code'				label='Value'			editable='false'	visible='true'	width='400'	textAlign='left'	forLevel='false'
+			defaultForLevel=''								booleanFlag='false'			sortDataType='S'	columnPrecision="NaN"/>
+			
+</columns> 

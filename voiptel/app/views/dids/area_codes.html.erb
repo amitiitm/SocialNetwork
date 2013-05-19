@@ -1,0 +1,11 @@
+<h1>List of Available Area Codes</h1>
+<table cellspacing="0">
+	<th>Area Code</th>
+	<th>Quantity</th>
+  <% for area_code in @area_codes do %>
+  	<tr>
+			<td><%= area_code.area_code %></td>
+			<td><%= area_code.dids.count %></td>
+		</tr>
+  <%  end %> 
+</table>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rds:CommonServices xmlns:rds="business.*" xmlns:mx="http://www.adobe.com/2006/mxml">
+
+	<mx:HTTPService id="saveRecord" url=""/>
+	<mx:HTTPService id="getList" url="/sale/sales/list_pick_orders"/> 
+	<mx:HTTPService id="getViewFormat" url="saoi/pickorder/xmls/PickOrderCriteriaStru.xml"/>
+	<mx:HTTPService id="getListFormat" url="saoi/pickorder/xmls/PickOrderListStru.xml"/>
+	<mx:HTTPService id="printRecord" url=""/>
+	<mx:HTTPService id="pickOrder" url="/sale/sales/hold_pick_order"/>
+
+</rds:CommonServices>

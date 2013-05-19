@@ -1,0 +1,10 @@
+<%= page_title :title => 'Financial Stats' %>
+
+<p class="bold">
+	Total Unused Balance: <%= number_to_currency(@total_balance) %><br />
+	Total Deposits: <%= number_to_currency(@total_deposits) %><br />
+	Total Taxes: <%= number_to_currency(@total_taxes) %><br />
+	Deposits + Taxes: <%= number_to_currency(@total_deposits + @total_taxes) %><br />
+	Total +Positive Credits: <%= number_to_currency(@positive_credits) %><br />
+	Total -Negative Credits: <%= number_to_currency(@negative_credits) %><br />
+</p>

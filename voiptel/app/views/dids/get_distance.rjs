@@ -1,0 +1,5 @@
+page << "$('phone1_rate_center').value = '#{@phone1_rate_center}';"
+page << "$('phone1_lat_long').value = '#{@phone1_latitude} / #{@phone1_longitude}';"
+page << "$('phone2_rate_center').value = '#{@phone2_rate_center}';"
+page << "$('phone2_lat_long').value = '#{@phone2_latitude} / #{@phone2_longitude}';"
+page << "$('distance_distance').value ='#{number_with_precision(@distance, 2)} Miles';"

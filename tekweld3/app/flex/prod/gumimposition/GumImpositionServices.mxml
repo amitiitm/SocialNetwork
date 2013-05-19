@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rds:CommonServices xmlns:rds="business.*" xmlns:mx="http://www.adobe.com/2006/mxml">
+
+	<mx:HTTPService id="saveRecord" 			url="/production/production/create_production_imposition_inboxes"/>
+	<mx:HTTPService id="getList" 				url="/production/production_gum/gum_imposition_inbox"/>
+	<mx:HTTPService id="getDocNo" 				url="/production/production_gum/generate_gum_doc_code"/>
+	<mx:HTTPService id="getViewFormat" 			url="prod/gumimposition/xmls/GumImpositionCriteriaStru.xml"/>
+	<mx:HTTPService id="getListFormat" 			url="prod/gumimposition/xmls/GumImpositionListStru.xml"/>
+	<mx:HTTPService id="printPickSlip" 			url="/production/production_report/render_packaging_job_format"/>
+	
+	<mx:HTTPService id="createImpositionFile" 	url="/production/production_gum/create_gum_imposition_sheets"/>
+	<mx:HTTPService id="getJobs" 				url="/production/production_gum/list_gum_imposition_sheets"/>
+	<mx:HTTPService id="artworkUploadUrl" 		url="/artwork/artwork/upload_artwork_attachments" />
+	
+	<mx:HTTPService id="printRecord" 			url=""/>
+
+</rds:CommonServices>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rds:ApplicationServices xmlns:rds="business.*" xmlns:mx="http://www.adobe.com/2006/mxml">
+
+	<mx:HTTPService id="saveRecord" url="/catalog/create_catalog_abouts"/>
+	<mx:HTTPService id="getRecord" url="/catalog/show_catalog_about"/>
+	
+	<mx:HTTPService id="getTabDetailFormat" url="ctlg/aboutus/xmls/TabDetailStructure.xml"/>
+	<mx:HTTPService id="imageUploadUrl" url="/inventory/item/upload_image"/>
+	<mx:HTTPService id="printRecord" url=""/>
+
+</rds:ApplicationServices>

@@ -1,0 +1,20 @@
+<%= page_title :title => "Campaings" %>
+<% box :type => "simple" do %>
+	<% table :width => "400px" do |t| %>
+		<% t.th "#" %>
+		<% t.th "Name" %>
+		<% t.th "Actions" %>
+
+		<% counter = 0 %>
+		<% for c in @campaigns do %>
+			<% t.td counter += 1 %>
+			<% t.td c.name %>
+			<% t.td(link_to("Edit", edit_campaign_path(c), :class => "ajax", :update => "container") + " | " + link_to("Delete", campaign_path(c), :class => "ajax-delete")) %>
+			<% t.new_row %>
+		<%  end -%>
+	<% end -%>
+	<br>
+	<%= button "new_campaign", "New Campaign", :href => new_campaign_path, :update => "container" %>
+	
+<% end -%>
+<div id="container" class="hidden"></div>

@@ -1,0 +1,133 @@
+--- 
+user_permissions_006: 
+  updated_at: 2011/01/24 14:59:53
+  update_flag: Y
+  trans_flag: A
+  created_by: 2
+  role_id: 120
+  lock_version: 0
+  updated_by: 2
+  id: 13984
+  company_id: 1
+  user_id: 1
+  created_at: 2011/01/24 14:59:53
+user_permissions_007: 
+  updated_at: 2011/01/24 14:59:53
+  update_flag: Y
+  trans_flag: A
+  created_by: 2
+  role_id: 121
+  lock_version: 0
+  updated_by: 2
+  id: 13985
+  company_id: 1
+  user_id: 1
+  created_at: 2011/01/24 14:59:53
+user_permissions_008: 
+  updated_at: 2011/01/24 14:59:53
+  update_flag: Y
+  trans_flag: A
+  created_by: 2
+  role_id: 122
+  lock_version: 0
+  updated_by: 2
+  id: 13986
+  company_id: 1
+  user_id: 1
+  created_at: 2011/01/24 14:59:53
+user_permissions_009: 
+  updated_at: 2011/01/24 14:59:53
+  update_flag: Y
+  trans_flag: A
+  created_by: 2
+  role_id: 123
+  lock_version: 0
+  updated_by: 2
+  id: 13987
+  company_id: 1
+  user_id: 1
+  created_at: 2011/01/24 14:59:53
+user_permissions_010: 
+  updated_at: 2011/01/24 14:59:53
+  update_flag: Y
+  trans_flag: A
+  created_by: 2
+  role_id: 124
+  lock_version: 0
+  updated_by: 2
+  id: 13988
+  company_id: 1
+  user_id: 1
+  created_at: 2011/01/24 14:59:53
+user_permissions_011: 
+  updated_at: 2011/01/24 14:59:53
+  update_flag: Y
+  trans_flag: A
+  created_by: 2
+  role_id: 125
+  lock_version: 0
+  updated_by: 2
+  id: 13989
+  company_id: 1
+  user_id: 1
+  created_at: 2011/01/24 14:59:53
+user_permissions_001: 
+  updated_at: 2011/01/24 14:59:53
+  update_flag: Y
+  trans_flag: A
+  created_by: 2
+  role_id: 115
+  lock_version: 0
+  updated_by: 2
+  id: 13979
+  company_id: 1
+  user_id: 1
+  created_at: 2011/01/24 14:59:53
+user_permissions_002: 
+  updated_at: 2011/01/24 14:59:53
+  update_flag: Y
+  trans_flag: A
+  created_by: 2
+  role_id: 116
+  lock_version: 0
+  updated_by: 2
+  id: 13980
+  company_id: 1
+  user_id: 1
+  created_at: 2011/01/24 14:59:53
+user_permissions_003: 
+  updated_at: 2011/01/24 14:59:53
+  update_flag: Y
+  trans_flag: A
+  created_by: 2
+  role_id: 117
+  lock_version: 0
+  updated_by: 2
+  id: 13981
+  company_id: 1
+  user_id: 1
+  created_at: 2011/01/24 14:59:53
+user_permissions_004: 
+  updated_at: 2011/01/24 14:59:53
+  update_flag: Y
+  trans_flag: A
+  created_by: 2
+  role_id: 118
+  lock_version: 0
+  updated_by: 2
+  id: 13982
+  company_id: 1
+  user_id: 1
+  created_at: 2011/01/24 14:59:53
+user_permissions_005: 
+  updated_at: 2011/01/24 14:59:53
+  update_flag: Y
+  trans_flag: A
+  created_by: 2
+  role_id: 119
+  lock_version: 0
+  updated_by: 2
+  id: 13983
+  company_id: 1
+  user_id: 1
+  created_at: 2011/01/24 14:59:53

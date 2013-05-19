@@ -1,0 +1,1 @@
+rake db:extract_fixtures FIXTURES=documents,menus,moodules,criterias,criteria_users,lookups,types,email_configs,reports,report_columns,report_layouts,report_layout_columns,melting_stage_master,sequences,note_templates

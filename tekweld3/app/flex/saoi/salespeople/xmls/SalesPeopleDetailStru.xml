@@ -1,0 +1,12 @@
+<columns  lockedColumnCount='0'>
+	
+	<column data='equipment_number'		label='Equipment Number'	editable='false' 	visible='true' 	width='350'	textAlign='left'	forLevel='false' 
+			defaultForLevel=''			booleanFlag='false'			sortDataType='S'	columnPrecision="NaN"/>
+	
+	<column data='trans_flag'			label='Status'				editable='false' 	visible='true' 	width='150'	textAlign='left'	forLevel='false' 
+			defaultForLevel=''			booleanFlag='false'			sortDataType='S'	columnPrecision="NaN"/>
+</columns> 
+
+
+
+

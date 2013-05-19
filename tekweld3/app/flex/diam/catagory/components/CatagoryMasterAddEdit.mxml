@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<gencomponents:AddEdit xmlns:mx="http://www.adobe.com/2006/mxml" 
+	height="100%" width="100%" verticalGap="0"
+	xmlns:customcomponents="com.generic.customcomponents.*"
+	xmlns:gencomponents="com.generic.components.*" 
+	creationPolicy="all" 
+	creationComplete="init()">
+	
+	<mx:Script source="../scripts/CatagoryMasterAddEditScript.as"/>
+	
+	<mx:VBox width="100%" height="100%" verticalGap="3">
+		<mx:HBox>
+			<mx:Label text="Code" width="95" textAlign="right"/>
+			<customcomponents:GenTextInput id="tiCode" width="90" xmlTag="code" upperCaseFlag="true"
+				updatableFlag="true" tableName="diamond_category" defaultValue="" tabIndex="1"
+				validationFlag = "true" toolTip="Code" maxChars="18" fontSize="9"/>
+			<mx:Label text="Status" width="94" textAlign="right"/>
+			<customcomponents:GenComboBox id="cbTrans_flag" defaultValue="A" width="90" cornerRadius="0" xmlTag="trans_flag" updatableFlag="true"
+				tableName="diamond_category"  tabIndex="2" height="18" labelField="label" 
+				dataProvider="{GenModelLocator.getInstance().masterData.child('trans_flag').trans_flag}" />	
+			
+		</mx:HBox>
+		<mx:HBox>
+			
+		</mx:HBox>
+		<mx:HBox>
+			<mx:Label text="Name" width="95" textAlign="right"/>
+			<customcomponents:GenTextInput id="tiName" width="290" xmlTag="name" 
+				updatableFlag="true" tableName="diamond_category" defaultValue="" tabIndex="3"
+				validationFlag = "true" toolTip="Name" maxChars="25"   />
+		</mx:HBox>
+	</mx:VBox>	
+</gencomponents:AddEdit>

@@ -1,0 +1,6448 @@
+--- 
+- country: SA
+  prefix: "9665"
+  routes: 
+  - trunk: callbiz6
+    priority: 1
+    tech_prefix: "6666"
+  - trunk: voipeden
+    priority: 2
+    tech_prefix: 65248#
+  - trunk: callbiz
+    priority: 3
+    tech_prefix: "6666"
+  - trunk: didforsale
+    priority: 4
+    tech_prefix: "011"
+  desc: Mobile
+- country: SA
+  prefix: "9668"
+  routes: 
+  - trunk: callbiz6
+    priority: 1
+    tech_prefix: "6666"
+  - trunk: voipeden
+    priority: 2
+    tech_prefix: 65248#
+  - trunk: callbiz
+    priority: 3
+    tech_prefix: "6666"
+  - trunk: didforsale
+    priority: 4
+    tech_prefix: "011"
+  desc: Mobile-Other
+- country: SA
+  prefix: "9663"
+  routes: 
+  - trunk: callbiz6
+    priority: 1
+    tech_prefix: "6666"
+  - trunk: voipeden
+    priority: 2
+    tech_prefix: 65248#
+  - trunk: callbiz
+    priority: 3
+    tech_prefix: "6666"
+  - trunk: didforsale
+    priority: 4
+    tech_prefix: "011"
+  desc: DHAHRAN
+- country: IR
+  prefix: "98"
+  routes: 
+  - trunk: pkvoip1
+    priority: 1
+    tech_prefix: ""
+  - trunk: pkvoip2
+    priority: 2
+    tech_prefix: ""
+  - trunk: pkvoip1
+    priority: 3
+    tech_prefix: ""
+  - trunk: pkvoip2
+    priority: 4
+    tech_prefix: ""
+  - trunk: zohakish
+    priority: 5
+    tech_prefix: ""
+  desc: All Cities
+- country: IR
+  prefix: "9821"
+  routes: 
+  - trunk: pkvoip1
+    priority: 1
+    tech_prefix: ""
+  - trunk: pkvoip2
+    priority: 2
+    tech_prefix: ""
+  - trunk: pkvoip1
+    priority: 3
+    tech_prefix: ""
+  - trunk: pkvoip2
+    priority: 4
+    tech_prefix: ""
+  - trunk: zohakish
+    priority: 5
+    tech_prefix: ""
+  desc: Tehran
+- country: IR
+  prefix: "989"
+  routes: 
+  - trunk: zohakish
+    priority: 1
+    tech_prefix: ""
+  - trunk: zohakish
+    priority: 2
+    tech_prefix: ""
+  - trunk: pkvoip2
+    priority: 3
+    tech_prefix: ""
+  - trunk: pkvoip1
+    priority: 4
+    tech_prefix: ""
+  - trunk: zohakish
+    priority: 5
+    tech_prefix: ""
+  desc: Mobile
+- country: US
+  prefix: "1907"
+  routes: 
+  - trunk: callbiz6
+    priority: 1
+    tech_prefix: "6666"
+  - trunk: voipeden
+    priority: 2
+    tech_prefix: 65248#
+  - trunk: callbiz6
+    priority: 3
+    tech_prefix: "6666"
+  - trunk: callbiz
+    priority: 4
+    tech_prefix: "6666"
+  desc: Alaska
+- country: US
+  prefix: "1808"
+  routes: 
+  - trunk: callbiz6
+    priority: 1
+    tech_prefix: "6666"
+  - trunk: callbiz6
+    priority: 2
+    tech_prefix: "6666"
+  - trunk: didforsale
+    priority: 3
+    tech_prefix: ""
+  - trunk: gafachi
+    priority: 4
+    tech_prefix: "011"
+  desc: Hawaii
+- country: US
+  prefix: "1"
+  routes: 
+  - trunk: O1Comm
+    priority: 1
+    tech_prefix: ""
+  - trunk: zeus
+    priority: 2
+    tech_prefix: ""
+  - trunk: voipeden
+    priority: 3
+    tech_prefix: 65248#
+  - trunk: callbiz6
+    priority: 4
+    tech_prefix: "6666"
+  desc: USA
+- country: TR
+  prefix: "90532"
+  routes: 
+  - trunk: voipeden
+    priority: 1
+    tech_prefix: 65248#
+  - trunk: callbiz6
+    priority: 2
+    tech_prefix: "6666"
+  - trunk: connect2dial
+    priority: 3
+    tech_prefix: ""
+  - trunk: simwood
+    priority: 4
+    tech_prefix: ""
+  - trunk: didforsale
+    priority: 5
+    tech_prefix: "011"
+  desc: Mobile Turkcell 53
+- country: TR
+  prefix: "90312"
+  routes: 
+  - trunk: voipeden
+    priority: 1
+    tech_prefix: 65248#
+  - trunk: callbiz6
+    priority: 2
+    tech_prefix: "6666"
+  - trunk: connect2dial
+    priority: 3
+    tech_prefix: ""
+  - trunk: simwood
+    priority: 4
+    tech_prefix: ""
+  - trunk: didforsale
+    priority: 5
+    tech_prefix: "011"
+  desc: Ankara
+- country: TR
+  prefix: "905"
+  routes: 
+  - trunk: voipeden
+    priority: 1
+    tech_prefix: 65248#
+  - trunk: callbiz6
+    priority: 2
+    tech_prefix: "6666"
+  - trunk: connect2dial
+    priority: 3
+    tech_prefix: ""
+  - trunk: simwood
+    priority: 4
+    tech_prefix: ""
+  - trunk: didforsale
+    priority: 5
+    tech_prefix: "011"
+  desc: Mobile
+- country: TR
+  prefix: "90"
+  routes: 
+  - trunk: voipeden
+    priority: 1
+    tech_prefix: 65248#
+  - trunk: callbiz6
+    priority: 2
+    tech_prefix: "6666"
+  - trunk: connect2dial
+    priority: 3
+    tech_prefix: ""
+  - trunk: simwood
+    priority: 4
+    tech_prefix: ""
+  - trunk: didforsale
+    priority: 5
+    tech_prefix: "011"
+  desc: All
+- country: IN
+  prefix: "91"
+  routes: 
+  - trunk: connect2dial
+    priority: 1
+    tech_prefix: ""
+  - trunk: callbiz6
+    priority: 2
+    tech_prefix: "6666"
+  - trunk: megacomm77az
+    priority: 3
+    tech_prefix: ""
+  - trunk: voipeden
+    priority: 4
+    tech_prefix: 65248#
+  desc: Proper
+- country: IN
+  prefix: "919"
+  routes: 
+  - trunk: connect2dial
+    priority: 1
+    tech_prefix: ""
+  - trunk: callbiz6
+    priority: 2
+    tech_prefix: "6666"
+  - trunk: megacomm77az
+    priority: 3
+    tech_prefix: ""
+  - trunk: voipeden
+    priority: 4
+    tech_prefix: 65248#
+  desc: Mobile
+- country: UA
+  prefix: "380"
+  routes: 
+  - trunk: gafachi
+    priority: 1
+    tech_prefix: "011"
+  - trunk: icall-globe
+    priority: 2
+    tech_prefix: ""
+  - trunk: didforsale
+    priority: 3
+    tech_prefix: "011"
+  desc: ALL
+- country: UA
+  prefix: "38067"
+  routes: 
+  - trunk: gafachi
+    priority: 1
+    tech_prefix: "011"
+  - trunk: icall-globe
+    priority: 2
+    tech_prefix: ""
+  - trunk: didforsale
+    priority: 3
+    tech_prefix: "011"
+  desc: Mobile - Kyivstar
+- country: UA
+  prefix: "38044"
+  routes: 
+  - trunk: icall-globe
+    priority: 1
+    tech_prefix: ""
+  - trunk: gafachi
+    priority: 2
+    tech_prefix: "011"
+  - trunk: didforsale
+    priority: 3
+    tech_prefix: "011"
+  desc: Kiev
+- country: UA
+  prefix: "38048"
+  routes: 
+  - trunk: gafachi
+    priority: 1
+    tech_prefix: "011"
+  - trunk: icall-globe
+    priority: 2
+    tech_prefix: ""
+  - trunk: didforsale
+    priority: 3
+    tech_prefix: "011"
+  desc: Odessa
+- country: AE
+  prefix: "971"
+  routes: 
+  - trunk: bti
+    priority: 1
+    tech_prefix: "50752"
+  - trunk: connect2dial
+    priority: 2
+    tech_prefix: ""
+  - trunk: simwood
+    priority: 3
+    tech_prefix: ""
+  - trunk: didforsale
+    priority: 4
+    tech_prefix: "011"
+  - trunk: didforsale
+    priority: 5
+    tech_prefix: "011"
+  desc: ALL
+- country: LK
+  prefix: "94"
+  routes: 
+  - trunk: bti
+    priority: 1
+    tech_prefix: "50752"
+  - trunk: didforsale
+    priority: 2
+    tech_prefix: "011"
+  - trunk: callbiz6
+    priority: 3
+    tech_prefix: "6666"
+  - trunk: callbiz
+    priority: 4
+    tech_prefix: ""
+  desc: ALL
+- country: LK
+  prefix: "9471"
+  routes: 
+  - trunk: bti
+    priority: 1
+    tech_prefix: "50752"
+  - trunk: didforsale
+    priority: 2
+    tech_prefix: "011"
+  - trunk: callbiz6
+    priority: 3
+    tech_prefix: "6666"
+  - trunk: callbiz
+    priority: 4
+    tech_prefix: ""
+  desc: MOBILE - Mobitel
+- country: LK
+  prefix: "9472"
+  routes: 
+  - trunk: bti
+    priority: 1
+    tech_prefix: "50752"
+  - trunk: didforsale
+    priority: 2
+    tech_prefix: "011"
+  - trunk: callbiz6
+    priority: 3
+    tech_prefix: "6666"
+  - trunk: callbiz
+    priority: 4
+    tech_prefix: ""
+  desc: MOBILE - Celltel
+- country: LK
+  prefix: "9477"
+  routes: 
+  - trunk: bti
+    priority: 1
+    tech_prefix: "50752"
+  - trunk: didforsale
+    priority: 2
+    tech_prefix: "011"
+  - trunk: callbiz6
+    priority: 3
+    tech_prefix: "6666"
+  - trunk: callbiz
+    priority: 4
+    tech_prefix: ""
+  desc: MOBILE - DIALOG
+- country: LK
+  prefix: "9478"
+  routes: 
+  - trunk: bti
+    priority: 1
+    tech_prefix: "50752"
+  - trunk: didforsale
+    priority: 2
+    tech_prefix: "011"
+  - trunk: callbiz6
+    priority: 3
+    tech_prefix: "6666"
+  - trunk: callbiz
+    priority: 4
+    tech_prefix: ""
+  desc: MOBILE - Lanka
+- country: LK
+  prefix: "941"
+  routes: 
+  - trunk: bti
+    priority: 1
+    tech_prefix: "50752"
+  - trunk: didforsale
+    priority: 2
+    tech_prefix: "011"
+  - trunk: callbiz6
+    priority: 3
+    tech_prefix: "6666"
+  - trunk: callbiz
+    priority: 4
+    tech_prefix: ""
+  desc: Colombo
+- country: LK
+  prefix: "947"
+  routes: 
+  - trunk: bti
+    priority: 1
+    tech_prefix: "50752"
+  - trunk: didforsale
+    priority: 2
+    tech_prefix: "011"
+  - trunk: callbiz6
+    priority: 3
+    tech_prefix: "6666"
+  - trunk: callbiz
+    priority: 4
+    tech_prefix: ""
+  desc: Mobile
+- country: GB
+  prefix: "44"
+  routes: 
+  - trunk: simwood
+    priority: 1
+    tech_prefix: ""
+  - trunk: bti
+    priority: 2
+    tech_prefix: "50752"
+  - trunk: didforsale
+    priority: 3
+    tech_prefix: "011"
+  - trunk: callbiz6
+    priority: 4
+    tech_prefix: "6666"
+  - trunk: callbiz
+    priority: 5
+    tech_prefix: "6666"
+  desc: ALL
+- country: GB
+  prefix: "44795"
+  routes: 
+  - trunk: simwood
+    priority: 1
+    tech_prefix: ""
+  - trunk: voipeden
+    priority: 2
+    tech_prefix: 65248#
+  - trunk: voipeden
+    priority: 3
+    tech_prefix: 65248#
+  - trunk: didforsale
+    priority: 4
+    tech_prefix: "011"
+  - trunk: callbiz
+    priority: 5
+    tech_prefix: "6666"
+  desc: Mobile O2
+- country: SE
+  prefix: "468"
+  routes: 
+  - trunk: gafachi
+    priority: 1
+    tech_prefix: "011"
+  - trunk: voipeden
+    priority: 2
+    tech_prefix: 65248#
+  - trunk: callbiz
+    priority: 3
+    tech_prefix: "6666"
+  - trunk: gafachi
+    priority: 4
+    tech_prefix: "011"
+  desc: Stockholm
+- country: "NO"
+  prefix: "474"
+  routes: 
+  - trunk: simwood
+    priority: 1
+    tech_prefix: ""
+  - trunk: bti
+    priority: 2
+    tech_prefix: "50752"
+  - trunk: voipeden
+    priority: 3
+    tech_prefix: 65248#
+  - trunk: callbiz6
+    priority: 4
+    tech_prefix: "6666"
+  - trunk: didforsale
+    priority: 5
+    tech_prefix: "011"
+  desc: Mobile
+- country: AU
+  prefix: "614"
+  routes: 
+  - trunk: bti
+    priority: 1
+    tech_prefix: "50752"
+  - trunk: simwood
+    priority: 2
+    tech_prefix: ""
+  - trunk: didforsale
+    priority: 3
+    tech_prefix: "011"
+  - trunk: callbiz6
+    priority: 4
+    tech_prefix: "6666"
+  desc: Mobile II
+- country: NG
+  prefix: "234806"
+  routes: 
+  - trunk: didforsale
+    priority: 1
+    tech_prefix: "011"
+  - trunk: gafachi
+    priority: 2
+    tech_prefix: "011"
+  - trunk: voipeden
+    priority: 3
+    tech_prefix: 65248#
+  - trunk: gafachi
+    priority: 4
+    tech_prefix: "011"
+  desc: Mobile-MTN
+- country: GB
+  prefix: "4484"
+  routes: 
+  - trunk: simwood
+    priority: 1
+    tech_prefix: ""
+  - trunk: voipeden
+    priority: 2
+    tech_prefix: 65248#
+  - trunk: voipeden
+    priority: 3
+    tech_prefix: 65248#
+  - trunk: didforsale
+    priority: 4
+    tech_prefix: "011"
+  - trunk: callbiz
+    priority: 5
+    tech_prefix: "6666"
+  desc: Local 0844
+- country: GB
+  prefix: "447988"
+  routes: 
+  - trunk: simwood
+    priority: 1
+    tech_prefix: ""
+  - trunk: voipeden
+    priority: 2
+    tech_prefix: 65248#
+  - trunk: voipeden
+    priority: 3
+    tech_prefix: 65248#
+  - trunk: didforsale
+    priority: 4
+    tech_prefix: "011"
+  - trunk: callbiz
+    priority: 5
+    tech_prefix: "6666"
+  desc: Mobile 3 G
+- country: GB
+  prefix: "4487"
+  routes: 
+  - trunk: simwood
+    priority: 1
+    tech_prefix: ""
+  - trunk: voipeden
+    priority: 2
+    tech_prefix: 65248#
+  - trunk: voipeden
+    priority: 3
+    tech_prefix: 65248#
+  - trunk: didforsale
+    priority: 4
+    tech_prefix: "011"
+  - trunk: callbiz
+    priority: 5
+    tech_prefix: "6666"
+  desc: Special Services
+- country: GB
+  prefix: "44845"
+  routes: 
+  - trunk: simwood
+    priority: 1
+    tech_prefix: ""
+  - trunk: voipeden
+    priority: 2
+    tech_prefix: 65248#
+  - trunk: voipeden
+    priority: 3
+    tech_prefix: 65248#
+  - trunk: didforsale
+    priority: 4
+    tech_prefix: "011"
+  - trunk: callbiz
+    priority: 5
+    tech_prefix: "6666"
+  desc: N T S - 845
+- country: GB
+  prefix: "44843"
+  routes: 
+  - trunk: simwood
+    priority: 1
+    tech_prefix: ""
+  - trunk: voipeden
+    priority: 2
+    tech_prefix: 65248#
+  - trunk: voipeden
+    priority: 3
+    tech_prefix: 65248#
+  - trunk: didforsale
+    priority: 4
+    tech_prefix: "011"
+  - trunk: callbiz
+    priority: 5
+    tech_prefix: "6666"
+  desc: N T S - 845-3
+- country: GB
+  prefix: "4470"
+  routes: 
+  - trunk: simwood
+    priority: 1
+    tech_prefix: ""
+  - trunk: voipeden
+    priority: 2
+    tech_prefix: 65248#
+  - trunk: voipeden
+    priority: 3
+    tech_prefix: 65248#
+  - trunk: didforsale
+    priority: 4
+    tech_prefix: "011"
+  - trunk: callbiz
+    priority: 5
+    tech_prefix: "6666"
+  desc: Mobile PNS
+- country: GB
+  prefix: "4476"
+  routes: 
+  - trunk: simwood
+    priority: 1
+    tech_prefix: ""
+  - trunk: voipeden
+    priority: 2
+    tech_prefix: 65248#
+  - trunk: voipeden
+    priority: 3
+    tech_prefix: 65248#
+  - trunk: didforsale
+    priority: 4
+    tech_prefix: "011"
+  - trunk: callbiz
+    priority: 5
+    tech_prefix: "6666"
+  desc: Mobile Paging
+- country: GB
+  prefix: "447"
+  routes: 
+  - trunk: simwood
+    priority: 1
+    tech_prefix: ""
+  - trunk: voipeden
+    priority: 2
+    tech_prefix: 65248#
+  - trunk: voipeden
+    priority: 3
+    tech_prefix: 65248#
+  - trunk: didforsale
+    priority: 4
+    tech_prefix: "011"
+  - trunk: callbiz
+    priority: 5
+    tech_prefix: "6666"
+  desc: "Mobile "
+- country: GB
+  prefix: "4478"
+  routes: 
+  - trunk: simwood
+    priority: 1
+    tech_prefix: ""
+  - trunk: voipeden
+    priority: 2
+    tech_prefix: 65248#
+  - trunk: callbiz6
+    priority: 3
+    tech_prefix: "6666"
+  - trunk: didforsale
+    priority: 4
+    tech_prefix: "011"
+  - trunk: callbiz
+    priority: 5
+    tech_prefix: "6666"
+  desc: Mobile 3 G
+- country: AU
+  prefix: "6139"
+  routes: 
+  - trunk: bti
+    priority: 1
+    tech_prefix: "50752"
+  - trunk: simwood
+    priority: 2
+    tech_prefix: ""
+  - trunk: didforsale
+    priority: 3
+    tech_prefix: "011"
+  - trunk: callbiz6
+    priority: 4
+    tech_prefix: "6666"
+  desc: Melbourne
+- country: AU
+  prefix: "6140"
+  routes: 
+  - trunk: bti
+    priority: 1
+    tech_prefix: "50752"
+  - trunk: simwood
+    priority: 2
+    tech_prefix: ""
+  - trunk: didforsale
+    priority: 3
+    tech_prefix: "011"
+  - trunk: callbiz6
+    priority: 4
+    tech_prefix: "6666"
+  desc: Mobile Telstra
+- country: PH
+  prefix: "63"
+  routes: 
+  - trunk: bti
+    priority: 1
+    tech_prefix: "50752"
+  - trunk: didforsale
+    priority: 2
+    tech_prefix: "011"
+  - trunk: callbiz6
+    priority: 3
+    tech_prefix: "6666"
+  - trunk: callbiz
+    priority: 4
+    tech_prefix: "6666"
+  - trunk: gafachi
+    priority: 5
+    tech_prefix: "011"
+  desc: All
+- country: PH
+  prefix: "639"
+  routes: 
+  - trunk: bti
+    priority: 1
+    tech_prefix: "50752"
+  - trunk: didforsale
+    priority: 2
+    tech_prefix: "011"
+  - trunk: callbiz6
+    priority: 3
+    tech_prefix: "6666"
+  - trunk: callbiz
+    priority: 4
+    tech_prefix: "6666"
+  - trunk: gafachi
+    priority: 5
+    tech_prefix: "011"
+  desc: Mobile
+- country: AE
+  prefix: "97150"
+  routes: 
+  - trunk: voipeden-prem
+    priority: 1
+    tech_prefix: 65248#
+  - trunk: connect2dial
+    priority: 2
+    tech_prefix: ""
+  - trunk: bti
+    priority: 3
+    tech_prefix: "50752"
+  - trunk: simwood
+    priority: 4
+    tech_prefix: ""
+  - trunk: didforsale
+    priority: 5
+    tech_prefix: "011"
+  desc: Mobile
+- country: AE
+  prefix: "97155"
+  routes: 
+  - trunk: bti
+    priority: 1
+    tech_prefix: "50752"
+  - trunk: connect2dial
+    priority: 2
+    tech_prefix: ""
+  - trunk: simwood
+    priority: 3
+    tech_prefix: ""
+  - trunk: didforsale
+    priority: 4
+    tech_prefix: "011"
+  - trunk: didforsale
+    priority: 5
+    tech_prefix: "011"
+  desc: Mobile
+- country: AE
+  prefix: "97156"
+  routes: 
+  - trunk: bti
+    priority: 1
+    tech_prefix: "50752"
+  - trunk: connect2dial
+    priority: 2
+    tech_prefix: ""
+  - trunk: simwood
+    priority: 3
+    tech_prefix: ""
+  - trunk: didforsale
+    priority: 4
+    tech_prefix: "011"
+  - trunk: didforsale
+    priority: 5
+    tech_prefix: "011"
+  desc: Mobile
+- country: "NO"
+  prefix: "47"
+  routes: 
+  - trunk: simwood
+    priority: 1
+    tech_prefix: ""
+  - trunk: bti
+    priority: 2
+    tech_prefix: "50752"
+  - trunk: voipeden
+    priority: 3
+    tech_prefix: 65248#
+  - trunk: callbiz6
+    priority: 4
+    tech_prefix: "6666"
+  - trunk: didforsale
+    priority: 5
+    tech_prefix: "011"
+  desc: All
+- country: "NO"
+  prefix: "479"
+  routes: 
+  - trunk: simwood
+    priority: 1
+    tech_prefix: ""
+  - trunk: bti
+    priority: 2
+    tech_prefix: "50752"
+  - trunk: voipeden
+    priority: 3
+    tech_prefix: 65248#
+  - trunk: callbiz6
+    priority: 4
+    tech_prefix: "6666"
+  - trunk: didforsale
+    priority: 5
+    tech_prefix: "011"
+  desc: Mobile
+- country: NL
+  prefix: "31"
+  routes: 
+  - trunk: bti
+    priority: 1
+    tech_prefix: "50752"
+  - trunk: simwood
+    priority: 2
+    tech_prefix: ""
+  - trunk: voipeden
+    priority: 3
+    tech_prefix: 65248#
+  - trunk: callbiz6
+    priority: 4
+    tech_prefix: "6666"
+  - trunk: connect2dial
+    priority: 5
+    tech_prefix: ""
+  desc: All
+- country: NL
+  prefix: "31610"
+  routes: 
+  - trunk: didforsale
+    priority: 1
+    tech_prefix: "011"
+  - trunk: didforsale
+    priority: 2
+    tech_prefix: "011"
+  - trunk: voipeden
+    priority: 3
+    tech_prefix: 65248#
+  - trunk: connect2dial
+    priority: 4
+    tech_prefix: ""
+  desc: Mobile
+- country: AN
+  prefix: "599"
+  routes: 
+  - trunk: voipeden-prem
+    priority: 1
+    tech_prefix: 65248#
+  - trunk: callbiz6
+    priority: 2
+    tech_prefix: "6666"
+  - trunk: bti
+    priority: 3
+    tech_prefix: "50752"
+  - trunk: simwood
+    priority: 4
+    tech_prefix: ""
+  - trunk: voipeden
+    priority: 5
+    tech_prefix: 65248#
+  desc: All
+- country: AN
+  prefix: "5993"
+  routes: 
+  - trunk: voipeden-prem
+    priority: 1
+    tech_prefix: 65248#
+  - trunk: callbiz6
+    priority: 2
+    tech_prefix: "6666"
+  - trunk: bti
+    priority: 3
+    tech_prefix: "50752"
+  - trunk: simwood
+    priority: 4
+    tech_prefix: ""
+  - trunk: voipeden
+    priority: 5
+    tech_prefix: 65248#
+  desc: Mobile
+- country: AN
+  prefix: "5994"
+  routes: 
+  - trunk: voipeden-prem
+    priority: 1
+    tech_prefix: 65248#
+  - trunk: callbiz6
+    priority: 2
+    tech_prefix: "6666"
+  - trunk: bti
+    priority: 3
+    tech_prefix: "50752"
+  - trunk: simwood
+    priority: 4
+    tech_prefix: ""
+  - trunk: voipeden
+    priority: 5
+    tech_prefix: 65248#
+  desc: Mobile
+- country: AN
+  prefix: "5995"
+  routes: 
+  - trunk: voipeden-prem
+    priority: 1
+    tech_prefix: 65248#
+  - trunk: callbiz6
+    priority: 2
+    tech_prefix: "6666"
+  - trunk: bti
+    priority: 3
+    tech_prefix: "50752"
+  - trunk: simwood
+    priority: 4
+    tech_prefix: ""
+  - trunk: voipeden
+    priority: 5
+    tech_prefix: 65248#
+  desc: Mobile
+- country: AN
+  prefix: "59978"
+  routes: 
+  - trunk: voipeden-prem
+    priority: 1
+    tech_prefix: 65248#
+  - trunk: callbiz6
+    priority: 2
+    tech_prefix: "6666"
+  - trunk: bti
+    priority: 3
+    tech_prefix: "50752"
+  - trunk: simwood
+    priority: 4
+    tech_prefix: ""
+  - trunk: voipeden
+    priority: 5
+    tech_prefix: 65248#
+  desc: Mobile
+- country: AN
+  prefix: "5998"
+  routes: 
+  - trunk: voipeden-prem
+    priority: 1
+    tech_prefix: 65248#
+  - trunk: callbiz6
+    priority: 2
+    tech_prefix: "6666"
+  - trunk: bti
+    priority: 3
+    tech_prefix: "50752"
+  - trunk: simwood
+    priority: 4
+    tech_prefix: ""
+  - trunk: voipeden
+    priority: 5
+    tech_prefix: 65248#
+  desc: Mobile
+- country: AN
+  prefix: "5999"
+  routes: 
+  - trunk: voipeden-prem
+    priority: 1
+    tech_prefix: 65248#
+  - trunk: callbiz6
+    priority: 2
+    tech_prefix: "6666"
+  - trunk: bti
+    priority: 3
+    tech_prefix: "50752"
+  - trunk: simwood
+    priority: 4
+    tech_prefix: ""
+  - trunk: voipeden
+    priority: 5
+    tech_prefix: 65248#
+  desc: Mobile
+- country: DE
+  prefix: "49"
+  routes: 
+  - trunk: voipeden
+    priority: 1
+    tech_prefix: 65248#
+  - trunk: gafachi
+    priority: 2
+    tech_prefix: "011"
+  - trunk: gafachi
+    priority: 3
+    tech_prefix: "011"
+  - trunk: simwood
+    priority: 4
+    tech_prefix: ""
+  desc: All
+- country: DE
+  prefix: "491"
+  routes: 
+  - trunk: voipeden
+    priority: 1
+    tech_prefix: 65248#
+  - trunk: bti
+    priority: 2
+    tech_prefix: "50752"
+  - trunk: gafachi
+    priority: 3
+    tech_prefix: "011"
+  desc: Mobile
+- country: SE
+  prefix: "46252"
+  routes: 
+  - trunk: gafachi
+    priority: 1
+    tech_prefix: "011"
+  - trunk: voipeden
+    priority: 2
+    tech_prefix: 65248#
+  - trunk: callbiz
+    priority: 3
+    tech_prefix: "6666"
+  - trunk: gafachi
+    priority: 4
+    tech_prefix: "011"
+  desc: Mobile
+- country: SE
+  prefix: "46376"
+  routes: 
+  - trunk: gafachi
+    priority: 1
+    tech_prefix: "011"
+  - trunk: voipeden
+    priority: 2
+    tech_prefix: 65248#
+  - trunk: callbiz
+    priority: 3
+    tech_prefix: "6666"
+  - trunk: gafachi
+    priority: 4
+    tech_prefix: "011"
+  desc: Mobile
+- country: SE
+  prefix: "46518"
+  routes: 
+  - trunk: gafachi
+    priority: 1
+    tech_prefix: "011"
+  - trunk: voipeden
+    priority: 2
+    tech_prefix: 65248#
+  - trunk: callbiz
+    priority: 3
+    tech_prefix: "6666"
+  - trunk: gafachi
+    priority: 4
+    tech_prefix: "011"
+  desc: Mobile
+- country: SE
+  prefix: "46519"
+  routes: 
+  - trunk: gafachi
+    priority: 1
+    tech_prefix: "011"
+  - trunk: voipeden
+    priority: 2
+    tech_prefix: 65248#
+  - trunk: callbiz
+    priority: 3
+    tech_prefix: "6666"
+  - trunk: gafachi
+    priority: 4
+    tech_prefix: "011"
+  desc: Mobile
+- country: SE
+  prefix: "4667"
+  routes: 
+  - trunk: gafachi
+    priority: 1
+    tech_prefix: "011"
+  - trunk: voipeden
+    priority: 2
+    tech_prefix: 65248#
+  - trunk: callbiz
+    priority: 3
+    tech_prefix: "6666"
+  - trunk: gafachi
+    priority: 4
+    tech_prefix: "011"
+  desc: Mobile
+- country: SE
+  prefix: "467"
+  routes: 
+  - trunk: gafachi
+    priority: 1
+    tech_prefix: "011"
+  - trunk: voipeden
+    priority: 2
+    tech_prefix: 65248#
+  - trunk: callbiz
+    priority: 3
+    tech_prefix: "6666"
+  - trunk: gafachi
+    priority: 4
+    tech_prefix: "011"
+  desc: Mobile
+- country: SE
+  prefix: "46"
+  routes: 
+  - trunk: gafachi
+    priority: 1
+    tech_prefix: "011"
+  - trunk: voipeden
+    priority: 2
+    tech_prefix: 65248#
+  - trunk: callbiz
+    priority: 3
+    tech_prefix: "6666"
+  - trunk: gafachi
+    priority: 4
+    tech_prefix: "011"
+  desc: All
+- country: CN
+  prefix: "86"
+  routes: 
+  - trunk: simwood
+    priority: 1
+    tech_prefix: ""
+  - trunk: callbiz6
+    priority: 2
+    tech_prefix: "6666"
+  - trunk: voipeden-prem
+    priority: 3
+    tech_prefix: 65248#
+  - trunk: connect2dial
+    priority: 4
+    tech_prefix: ""
+  desc: All
+- country: CN
+  prefix: "861"
+  routes: 
+  - trunk: simwood
+    priority: 1
+    tech_prefix: ""
+  - trunk: callbiz6
+    priority: 2
+    tech_prefix: "6666"
+  - trunk: voipeden-prem
+    priority: 3
+    tech_prefix: 65248#
+  - trunk: connect2dial
+    priority: 4
+    tech_prefix: ""
+  desc: Mobile
+- country: CZ
+  prefix: "420"
+  routes: 
+  - trunk: bti
+    priority: 1
+    tech_prefix: "50752"
+  - trunk: didforsale
+    priority: 2
+    tech_prefix: "011"
+  - trunk: callbiz6
+    priority: 3
+    tech_prefix: "6666"
+  - trunk: callbiz
+    priority: 4
+    tech_prefix: "6666"
+  - trunk: callbiz
+    priority: 5
+    tech_prefix: ""
+  desc: All
+- country: CZ
+  prefix: "4207"
+  routes: 
+  - trunk: bti
+    priority: 1
+    tech_prefix: "50752"
+  - trunk: didforsale
+    priority: 2
+    tech_prefix: "011"
+  - trunk: callbiz6
+    priority: 3
+    tech_prefix: "6666"
+  - trunk: callbiz
+    priority: 4
+    tech_prefix: "6666"
+  - trunk: callbiz
+    priority: 5
+    tech_prefix: ""
+  desc: Mobile
+- country: CZ
+  prefix: "4209"
+  routes: 
+  - trunk: bti
+    priority: 1
+    tech_prefix: "50752"
+  - trunk: didforsale
+    priority: 2
+    tech_prefix: "011"
+  - trunk: callbiz6
+    priority: 3
+    tech_prefix: "6666"
+  - trunk: callbiz
+    priority: 4
+    tech_prefix: "6666"
+  - trunk: callbiz
+    priority: 5
+    tech_prefix: ""
+  desc: Mobile
+- country: CZ
+  prefix: "4206"
+  routes: 
+  - trunk: bti
+    priority: 1
+    tech_prefix: "50752"
+  - trunk: didforsale
+    priority: 2
+    tech_prefix: "011"
+  - trunk: callbiz6
+    priority: 3
+    tech_prefix: "6666"
+  - trunk: callbiz
+    priority: 4
+    tech_prefix: "6666"
+  - trunk: callbiz
+    priority: 5
+    tech_prefix: ""
+  desc: Mobile
+- country: AU
+  prefix: "61"
+  routes: 
+  - trunk: bti
+    priority: 1
+    tech_prefix: "50752"
+  - trunk: simwood
+    priority: 2
+    tech_prefix: ""
+  - trunk: didforsale
+    priority: 3
+    tech_prefix: "011"
+  - trunk: callbiz6
+    priority: 4
+    tech_prefix: "6666"
+  desc: All
+- country: AU
+  prefix: "611"
+  routes: 
+  - trunk: bti
+    priority: 1
+    tech_prefix: "50752"
+  - trunk: simwood
+    priority: 2
+    tech_prefix: ""
+  - trunk: didforsale
+    priority: 3
+    tech_prefix: "011"
+  - trunk: callbiz6
+    priority: 4
+    tech_prefix: "6666"
+  desc: Mobile
+- country: AU
+  prefix: "6114"
+  routes: 
+  - trunk: bti
+    priority: 1
+    tech_prefix: "50752"
+  - trunk: simwood
+    priority: 2
+    tech_prefix: ""
+  - trunk: didforsale
+    priority: 3
+    tech_prefix: "011"
+  - trunk: callbiz6
+    priority: 4
+    tech_prefix: "6666"
+  desc: Mobile II
+- country: AU
+  prefix: "6116"
+  routes: 
+  - trunk: bti
+    priority: 1
+    tech_prefix: "50752"
+  - trunk: simwood
+    priority: 2
+    tech_prefix: ""
+  - trunk: didforsale
+    priority: 3
+    tech_prefix: "011"
+  - trunk: callbiz6
+    priority: 4
+    tech_prefix: "6666"
+  desc: Mobile II
+- country: AU
+  prefix: "6129"
+  routes: 
+  - trunk: bti
+    priority: 1
+    tech_prefix: "50752"
+  - trunk: simwood
+    priority: 2
+    tech_prefix: ""
+  - trunk: didforsale
+    priority: 3
+    tech_prefix: "011"
+  - trunk: callbiz6
+    priority: 4
+    tech_prefix: "6666"
+  desc: Sydney
+- country: AU
+  prefix: "6128"
+  routes: 
+  - trunk: bti
+    priority: 1
+    tech_prefix: "50752"
+  - trunk: simwood
+    priority: 2
+    tech_prefix: ""
+  - trunk: didforsale
+    priority: 3
+    tech_prefix: "011"
+  - trunk: callbiz6
+    priority: 4
+    tech_prefix: "6666"
+  desc: Sydney
+- country: DK
+  prefix: "45"
+  routes: 
+  - trunk: voipeden
+    priority: 1
+    tech_prefix: 65248#
+  - trunk: callbiz6
+    priority: 2
+    tech_prefix: "6666"
+  - trunk: callbiz
+    priority: 3
+    tech_prefix: "6666"
+  desc: All
+- country: DK
+  prefix: "453"
+  routes: 
+  - trunk: callbiz
+    priority: 1
+    tech_prefix: ""
+  - trunk: callbiz6
+    priority: 2
+    tech_prefix: "6666"
+  - trunk: callbiz
+    priority: 3
+    tech_prefix: "6666"
+  desc: Mobile
+- country: DK
+  prefix: "454"
+  routes: 
+  - trunk: callbiz
+    priority: 1
+    tech_prefix: ""
+  - trunk: callbiz6
+    priority: 2
+    tech_prefix: "6666"
+  - trunk: callbiz
+    priority: 3
+    tech_prefix: "6666"
+  desc: Mobile
+- country: DK
+  prefix: "455"
+  routes: 
+  - trunk: callbiz
+    priority: 1
+    tech_prefix: ""
+  - trunk: callbiz6
+    priority: 2
+    tech_prefix: "6666"
+  - trunk: callbiz
+    priority: 3
+    tech_prefix: "6666"
+  desc: Mobile
+- country: DK
+  prefix: "456"
+  routes: 
+  - trunk: callbiz
+    priority: 1
+    tech_prefix: ""
+  - trunk: callbiz6
+    priority: 2
+    tech_prefix: "6666"
+  - trunk: callbiz
+    priority: 3
+    tech_prefix: "6666"
+  desc: Mobile
+- country: AU
+  prefix: "6189"
+  routes: 
+  - trunk: bti
+    priority: 1
+    tech_prefix: "50752"
+  - trunk: simwood
+    priority: 2
+    tech_prefix: ""
+  - trunk: didforsale
+    priority: 3
+    tech_prefix: "011"
+  - trunk: callbiz6
+    priority: 4
+    tech_prefix: "6666"
+  desc: Perth II
+- country: AU
+  prefix: "6186"
+  routes: 
+  - trunk: bti
+    priority: 1
+    tech_prefix: "50752"
+  - trunk: simwood
+    priority: 2
+    tech_prefix: ""
+  - trunk: didforsale
+    priority: 3
+    tech_prefix: "011"
+  - trunk: callbiz6
+    priority: 4
+    tech_prefix: "6666"
+  desc: Perth II
+- country: AU
+  prefix: "6187"
+  routes: 
+  - trunk: bti
+    priority: 1
+    tech_prefix: "50752"
+  - trunk: simwood
+    priority: 2
+    tech_prefix: ""
+  - trunk: didforsale
+    priority: 3
+    tech_prefix: "011"
+  - trunk: callbiz6
+    priority: 4
+    tech_prefix: "6666"
+  desc: Adelaide II
+- country: BE
+  prefix: "32"
+  routes: 
+  - trunk: callbiz
+    priority: 1
+    tech_prefix: ""
+  - trunk: callbiz6
+    priority: 2
+    tech_prefix: "6666"
+  - trunk: callbiz
+    priority: 3
+    tech_prefix: "6666"
+  desc: All
+- country: BE
+  prefix: "3248"
+  routes: 
+  - trunk: callbiz
+    priority: 1
+    tech_prefix: ""
+  - trunk: callbiz6
+    priority: 2
+    tech_prefix: "6666"
+  - trunk: callbiz
+    priority: 3
+    tech_prefix: "6666"
+  desc: Mobile Base II
+- country: BE
+  prefix: "3247"
+  routes: 
+  - trunk: callbiz
+    priority: 1
+    tech_prefix: ""
+  - trunk: callbiz6
+    priority: 2
+    tech_prefix: "6666"
+  - trunk: callbiz
+    priority: 3
+    tech_prefix: "6666"
+  desc: Mobile Proximus
+- country: BE
+  prefix: "3249"
+  routes: 
+  - trunk: callbiz
+    priority: 1
+    tech_prefix: ""
+  - trunk: callbiz6
+    priority: 2
+    tech_prefix: "6666"
+  - trunk: callbiz
+    priority: 3
+    tech_prefix: "6666"
+  desc: Mobile Mobistar II
+- country: BE
+  prefix: "3245"
+  routes: 
+  - trunk: callbiz
+    priority: 1
+    tech_prefix: ""
+  - trunk: callbiz6
+    priority: 2
+    tech_prefix: "6666"
+  - trunk: callbiz
+    priority: 3
+    tech_prefix: "6666"
+  desc: Mobile Paging
+- country: PK
+  prefix: "92"
+  routes: 
+  - trunk: connect2dial
+    priority: 1
+    tech_prefix: ""
+  - trunk: voipeden
+    priority: 2
+    tech_prefix: 65248#
+  - trunk: bti
+    priority: 3
+    tech_prefix: "50752"
+  - trunk: callbiz6
+    priority: 4
+    tech_prefix: "6666"
+  - trunk: didforsale
+    priority: 5
+    tech_prefix: "011"
+  desc: All
+- country: PK
+  prefix: "923"
+  routes: 
+  - trunk: connect2dial
+    priority: 1
+    tech_prefix: ""
+  - trunk: voipeden
+    priority: 2
+    tech_prefix: 65248#
+  - trunk: bti
+    priority: 3
+    tech_prefix: "50752"
+  - trunk: callbiz6
+    priority: 4
+    tech_prefix: "6666"
+  - trunk: didforsale
+    priority: 5
+    tech_prefix: "011"
+  desc: Mobile
+- country: FR
+  prefix: "33"
+  routes: 
+  - trunk: voipeden
+    priority: 1
+    tech_prefix: 65248#
+  - trunk: bti
+    priority: 2
+    tech_prefix: "50752"
+  - trunk: gafachi
+    priority: 3
+    tech_prefix: "011"
+  - trunk: connect2dial
+    priority: 4
+    tech_prefix: ""
+  desc: All
+- country: FR
+  prefix: "336"
+  routes: 
+  - trunk: voipeden
+    priority: 1
+    tech_prefix: 65248#
+  - trunk: bti
+    priority: 2
+    tech_prefix: "50752"
+  - trunk: gafachi
+    priority: 3
+    tech_prefix: "011"
+  - trunk: connect2dial
+    priority: 4
+    tech_prefix: ""
+  desc: Mobile
+- country: TR
+  prefix: "90242"
+  routes: 
+  - trunk: voipeden
+    priority: 1
+    tech_prefix: 65248#
+  - trunk: callbiz6
+    priority: 2
+    tech_prefix: "6666"
+  - trunk: connect2dial
+    priority: 3
+    tech_prefix: ""
+  - trunk: simwood
+    priority: 4
+    tech_prefix: ""
+  - trunk: didforsale
+    priority: 5
+    tech_prefix: "011"
+  desc: Antalya/Patara
+- country: TR
+  prefix: "90252"
+  routes: 
+  - trunk: voipeden
+    priority: 1
+    tech_prefix: 65248#
+  - trunk: callbiz6
+    priority: 2
+    tech_prefix: "6666"
+  - trunk: connect2dial
+    priority: 3
+    tech_prefix: ""
+  - trunk: simwood
+    priority: 4
+    tech_prefix: ""
+  - trunk: didforsale
+    priority: 5
+    tech_prefix: "011"
+  desc: Fethiye
+- country: TR
+  prefix: "90384"
+  routes: 
+  - trunk: voipeden
+    priority: 1
+    tech_prefix: 65248#
+  - trunk: callbiz6
+    priority: 2
+    tech_prefix: "6666"
+  - trunk: connect2dial
+    priority: 3
+    tech_prefix: ""
+  - trunk: simwood
+    priority: 4
+    tech_prefix: ""
+  - trunk: didforsale
+    priority: 5
+    tech_prefix: "011"
+  desc: Goreme/Nevsehir
+- country: TR
+  prefix: "905338"
+  routes: 
+  - trunk: voipeden
+    priority: 1
+    tech_prefix: 65248#
+  - trunk: callbiz6
+    priority: 2
+    tech_prefix: "6666"
+  - trunk: connect2dial
+    priority: 3
+    tech_prefix: ""
+  - trunk: simwood
+    priority: 4
+    tech_prefix: ""
+  - trunk: didforsale
+    priority: 5
+    tech_prefix: "011"
+  desc: Icmeler
+- country: TR
+  prefix: "90212"
+  routes: 
+  - trunk: voipeden
+    priority: 1
+    tech_prefix: 65248#
+  - trunk: callbiz6
+    priority: 2
+    tech_prefix: "6666"
+  - trunk: connect2dial
+    priority: 3
+    tech_prefix: ""
+  - trunk: simwood
+    priority: 4
+    tech_prefix: ""
+  - trunk: didforsale
+    priority: 5
+    tech_prefix: "011"
+  desc: Istanbul
+- country: TR
+  prefix: "90232"
+  routes: 
+  - trunk: voipeden
+    priority: 1
+    tech_prefix: 65248#
+  - trunk: callbiz6
+    priority: 2
+    tech_prefix: "6666"
+  - trunk: connect2dial
+    priority: 3
+    tech_prefix: ""
+  - trunk: simwood
+    priority: 4
+    tech_prefix: ""
+  - trunk: didforsale
+    priority: 5
+    tech_prefix: "011"
+  desc: Izmir/Selcuk Ephesus
+- country: TR
+  prefix: "90256"
+  routes: 
+  - trunk: voipeden
+    priority: 1
+    tech_prefix: 65248#
+  - trunk: callbiz6
+    priority: 2
+    tech_prefix: "6666"
+  - trunk: connect2dial
+    priority: 3
+    tech_prefix: ""
+  - trunk: simwood
+    priority: 4
+    tech_prefix: ""
+  - trunk: didforsale
+    priority: 5
+    tech_prefix: "011"
+  desc: Kusadasi
+- country: AE
+  prefix: "9712"
+  routes: 
+  - trunk: bti
+    priority: 1
+    tech_prefix: "50752"
+  - trunk: connect2dial
+    priority: 2
+    tech_prefix: ""
+  - trunk: simwood
+    priority: 3
+    tech_prefix: ""
+  - trunk: didforsale
+    priority: 4
+    tech_prefix: "011"
+  - trunk: didforsale
+    priority: 5
+    tech_prefix: "011"
+  desc: Abu Dhabi
+- country: AE
+  prefix: "9714"
+  routes: 
+  - trunk: bti
+    priority: 1
+    tech_prefix: "50752"
+  - trunk: connect2dial
+    priority: 2
+    tech_prefix: ""
+  - trunk: simwood
+    priority: 3
+    tech_prefix: ""
+  - trunk: didforsale
+    priority: 4
+    tech_prefix: "011"
+  - trunk: didforsale
+    priority: 5
+    tech_prefix: "011"
+  desc: Dubai
+- country: GB
+  prefix: "448"
+  routes: 
+  - trunk: simwood
+    priority: 1
+    tech_prefix: ""
+  - trunk: voipeden
+    priority: 2
+    tech_prefix: 65248#
+  - trunk: voipeden
+    priority: 3
+    tech_prefix: 65248#
+  - trunk: didforsale
+    priority: 4
+    tech_prefix: "011"
+  - trunk: callbiz
+    priority: 5
+    tech_prefix: "6666"
+  desc: FreePhone
+- country: EG
+  prefix: "20"
+  routes: 
+  - trunk: bti
+    priority: 1
+    tech_prefix: "50752"
+  - trunk: connect2dial
+    priority: 2
+    tech_prefix: ""
+  - trunk: didforsale
+    priority: 3
+    tech_prefix: "011"
+  - trunk: callbiz
+    priority: 4
+    tech_prefix: "6666"
+  desc: All
+- country: EG
+  prefix: "203"
+  routes: 
+  - trunk: bti
+    priority: 1
+    tech_prefix: "50752"
+  - trunk: connect2dial
+    priority: 2
+    tech_prefix: ""
+  - trunk: didforsale
+    priority: 3
+    tech_prefix: "011"
+  - trunk: callbiz
+    priority: 4
+    tech_prefix: "6666"
+  desc: Alexandria
+- country: EG
+  prefix: "202"
+  routes: 
+  - trunk: bti
+    priority: 1
+    tech_prefix: "50752"
+  - trunk: connect2dial
+    priority: 2
+    tech_prefix: ""
+  - trunk: didforsale
+    priority: 3
+    tech_prefix: "011"
+  - trunk: callbiz
+    priority: 4
+    tech_prefix: "6666"
+  desc: Cairo
+- country: EG
+  prefix: "201"
+  routes: 
+  - trunk: bti
+    priority: 1
+    tech_prefix: "50752"
+  - trunk: connect2dial
+    priority: 2
+    tech_prefix: ""
+  - trunk: didforsale
+    priority: 3
+    tech_prefix: "011"
+  - trunk: callbiz
+    priority: 4
+    tech_prefix: "6666"
+  desc: Mobile
+- country: HK
+  prefix: "852"
+  routes: 
+  - trunk: voipeden
+    priority: 1
+    tech_prefix: 65248#
+  - trunk: simwood
+    priority: 2
+    tech_prefix: ""
+  - trunk: bti
+    priority: 3
+    tech_prefix: "50752"
+  - trunk: voipeden
+    priority: 4
+    tech_prefix: 65248#
+  desc: All
+- country: HK
+  prefix: "8525"
+  routes: 
+  - trunk: voipeden
+    priority: 1
+    tech_prefix: 65248#
+  - trunk: simwood
+    priority: 2
+    tech_prefix: ""
+  - trunk: bti
+    priority: 3
+    tech_prefix: "50752"
+  - trunk: voipeden
+    priority: 4
+    tech_prefix: 65248#
+  desc: Mobile
+- country: HK
+  prefix: "8521"
+  routes: 
+  - trunk: voipeden
+    priority: 1
+    tech_prefix: 65248#
+  - trunk: simwood
+    priority: 2
+    tech_prefix: ""
+  - trunk: bti
+    priority: 3
+    tech_prefix: "50752"
+  - trunk: didforsale
+    priority: 4
+    tech_prefix: "011"
+  desc: Mobile
+- country: HK
+  prefix: "8526"
+  routes: 
+  - trunk: voipeden
+    priority: 1
+    tech_prefix: 65248#
+  - trunk: simwood
+    priority: 2
+    tech_prefix: ""
+  - trunk: bti
+    priority: 3
+    tech_prefix: "50752"
+  - trunk: didforsale
+    priority: 4
+    tech_prefix: "011"
+  desc: Mobile
+- country: HK
+  prefix: "8529"
+  routes: 
+  - trunk: voipeden
+    priority: 1
+    tech_prefix: 65248#
+  - trunk: simwood
+    priority: 2
+    tech_prefix: ""
+  - trunk: bti
+    priority: 3
+    tech_prefix: "50752"
+  - trunk: didforsale
+    priority: 4
+    tech_prefix: "011"
+  desc: Mobile
+- country: SA
+  prefix: "966"
+  routes: 
+  - trunk: callbiz6
+    priority: 1
+    tech_prefix: "6666"
+  - trunk: voipeden
+    priority: 2
+    tech_prefix: 65248#
+  - trunk: callbiz
+    priority: 3
+    tech_prefix: "6666"
+  - trunk: didforsale
+    priority: 4
+    tech_prefix: "011"
+  desc: All
+- country: JO
+  prefix: "962"
+  routes: 
+  - trunk: voipeden
+    priority: 1
+    tech_prefix: 65248#
+  - trunk: callbiz6
+    priority: 2
+    tech_prefix: "6666"
+  - trunk: didforsale
+    priority: 3
+    tech_prefix: "011"
+  - trunk: callbiz
+    priority: 4
+    tech_prefix: "6666"
+  desc: All
+- country: JO
+  prefix: "9627"
+  routes: 
+  - trunk: voipeden
+    priority: 1
+    tech_prefix: 65248#
+  - trunk: callbiz6
+    priority: 2
+    tech_prefix: "6666"
+  - trunk: callbiz
+    priority: 3
+    tech_prefix: "6666"
+  - trunk: didforsale
+    priority: 4
+    tech_prefix: "011"
+  desc: Mobile
+- country: ES
+  prefix: "34"
+  routes: 
+  - trunk: voipeden
+    priority: 1
+    tech_prefix: 65248#
+  - trunk: simwood
+    priority: 2
+    tech_prefix: ""
+  - trunk: bti
+    priority: 3
+    tech_prefix: "50752"
+  - trunk: didforsale
+    priority: 4
+    tech_prefix: "011"
+  desc: All
+- country: ES
+  prefix: "346"
+  routes: 
+  - trunk: bti
+    priority: 1
+    tech_prefix: "50752"
+  - trunk: voipeden
+    priority: 2
+    tech_prefix: 65248#
+  - trunk: callbiz6
+    priority: 3
+    tech_prefix: "6666"
+  - trunk: didforsale
+    priority: 4
+    tech_prefix: "011"
+  desc: Mobile
+- country: ID
+  prefix: "62"
+  routes: 
+  - trunk: voipeden
+    priority: 1
+    tech_prefix: 65248#
+  - trunk: callbiz6
+    priority: 2
+    tech_prefix: "6666"
+  - trunk: callbiz
+    priority: 3
+    tech_prefix: "6666"
+  - trunk: didforsale
+    priority: 4
+    tech_prefix: "011"
+  desc: All
+- country: ID
+  prefix: "628"
+  routes: 
+  - trunk: voipeden
+    priority: 1
+    tech_prefix: 65248#
+  - trunk: callbiz6
+    priority: 2
+    tech_prefix: "6666"
+  - trunk: callbiz
+    priority: 3
+    tech_prefix: "6666"
+  - trunk: didforsale
+    priority: 4
+    tech_prefix: "011"
+  desc: Mobile
+- country: NZ
+  prefix: "64"
+  routes: 
+  - trunk: bti
+    priority: 1
+    tech_prefix: "50752"
+  - trunk: voipeden
+    priority: 2
+    tech_prefix: 65248#
+  - trunk: simwood
+    priority: 3
+    tech_prefix: ""
+  - trunk: didforsale
+    priority: 4
+    tech_prefix: "011"
+  desc: All
+- country: NZ
+  prefix: "642"
+  routes: 
+  - trunk: voipeden
+    priority: 1
+    tech_prefix: 65248#
+  - trunk: simwood
+    priority: 2
+    tech_prefix: ""
+  - trunk: bti
+    priority: 3
+    tech_prefix: "50752"
+  - trunk: callbiz
+    priority: 4
+    tech_prefix: "6666"
+  desc: Mobile
+- country: KR
+  prefix: "82"
+  routes: 
+  - trunk: bti
+    priority: 1
+    tech_prefix: "50752"
+  - trunk: connect2dial
+    priority: 2
+    tech_prefix: ""
+  - trunk: voipeden
+    priority: 3
+    tech_prefix: 65248#
+  - trunk: simwood
+    priority: 4
+    tech_prefix: ""
+  - trunk: didforsale
+    priority: 5
+    tech_prefix: "011"
+  desc: South
+- country: KR
+  prefix: "821"
+  routes: 
+  - trunk: bti
+    priority: 1
+    tech_prefix: "50752"
+  - trunk: connect2dial
+    priority: 2
+    tech_prefix: ""
+  - trunk: voipeden
+    priority: 3
+    tech_prefix: 65248#
+  - trunk: simwood
+    priority: 4
+    tech_prefix: ""
+  - trunk: didforsale
+    priority: 5
+    tech_prefix: "011"
+  desc: South-Mobile
+- country: KP
+  prefix: "850"
+  routes: 
+  - trunk: didforsale
+    priority: 1
+    tech_prefix: "011"
+  - trunk: callbiz6
+    priority: 2
+    tech_prefix: "6666"
+  - trunk: callbiz
+    priority: 3
+    tech_prefix: "6666"
+  desc: North
+- country: BD
+  prefix: "880"
+  routes: 
+  - trunk: callbiz6
+    priority: 1
+    tech_prefix: "6666"
+  - trunk: callbiz
+    priority: 2
+    tech_prefix: "6666"
+  - trunk: voipeden
+    priority: 3
+    tech_prefix: 65248#
+  - trunk: didforsale
+    priority: 4
+    tech_prefix: "011"
+  desc: All
+- country: BD
+  prefix: "8801"
+  routes: 
+  - trunk: callbiz6
+    priority: 1
+    tech_prefix: "6666"
+  - trunk: callbiz
+    priority: 2
+    tech_prefix: "6666"
+  - trunk: voipeden
+    priority: 3
+    tech_prefix: 65248#
+  - trunk: didforsale
+    priority: 4
+    tech_prefix: "011"
+  desc: Mobile
+- country: MX
+  prefix: "52"
+  routes: 
+  - trunk: bti
+    priority: 1
+    tech_prefix: "50752"
+  - trunk: simwood
+    priority: 2
+    tech_prefix: ""
+  - trunk: callbiz6
+    priority: 3
+    tech_prefix: "6666"
+  - trunk: didforsale
+    priority: 4
+    tech_prefix: "011"
+  desc: All
+- country: MX
+  prefix: "521"
+  routes: 
+  - trunk: bti
+    priority: 1
+    tech_prefix: "50752"
+  - trunk: voipeden
+    priority: 2
+    tech_prefix: 65248#
+  - trunk: callbiz6
+    priority: 3
+    tech_prefix: "6666"
+  - trunk: callbiz
+    priority: 4
+    tech_prefix: "6666"
+  desc: Mobile
+- country: MA
+  prefix: "212"
+  routes: 
+  - trunk: callbiz
+    priority: 1
+    tech_prefix: ""
+  - trunk: callbiz6
+    priority: 2
+    tech_prefix: "6666"
+  - trunk: callbiz
+    priority: 3
+    tech_prefix: "6666"
+  desc: All
+- country: MA
+  prefix: "2126"
+  routes: 
+  - trunk: callbiz
+    priority: 1
+    tech_prefix: ""
+  - trunk: callbiz6
+    priority: 2
+    tech_prefix: "6666"
+  - trunk: callbiz
+    priority: 3
+    tech_prefix: "6666"
+  desc: Mobile
+- country: QA
+  prefix: "974"
+  routes: 
+  - trunk: voipeden
+    priority: 1
+    tech_prefix: 65248#
+  - trunk: connect2dial
+    priority: 2
+    tech_prefix: ""
+  - trunk: bti
+    priority: 3
+    tech_prefix: "50752"
+  - trunk: callbiz6
+    priority: 4
+    tech_prefix: "6666"
+  desc: All
+- country: QA
+  prefix: "9743"
+  routes: 
+  - trunk: voipeden
+    priority: 1
+    tech_prefix: 65248#
+  - trunk: connect2dial
+    priority: 2
+    tech_prefix: ""
+  - trunk: bti
+    priority: 3
+    tech_prefix: "50752"
+  - trunk: callbiz6
+    priority: 4
+    tech_prefix: "6666"
+  desc: Mobile
+- country: IT
+  prefix: "39"
+  routes: 
+  - trunk: bti
+    priority: 1
+    tech_prefix: "50752"
+  - trunk: simwood
+    priority: 2
+    tech_prefix: ""
+  desc: All
+- country: IT
+  prefix: "393"
+  routes: 
+  - trunk: bti
+    priority: 1
+    tech_prefix: "50752"
+  - trunk: simwood
+    priority: 2
+    tech_prefix: ""
+  desc: Mobile
+- country: IL
+  prefix: "972"
+  routes: 
+  - trunk: bti
+    priority: 1
+    tech_prefix: "50752"
+  - trunk: gafachi
+    priority: 2
+    tech_prefix: "011"
+  - trunk: didforsale
+    priority: 3
+    tech_prefix: "011"
+  - trunk: callbiz
+    priority: 4
+    tech_prefix: "6666"
+  - trunk: voipeden
+    priority: 5
+    tech_prefix: 65248#
+  desc: All
+- country: IL
+  prefix: "9725"
+  routes: 
+  - trunk: bti
+    priority: 1
+    tech_prefix: "50752"
+  - trunk: gafachi
+    priority: 2
+    tech_prefix: "011"
+  - trunk: didforsale
+    priority: 3
+    tech_prefix: "011"
+  - trunk: callbiz
+    priority: 4
+    tech_prefix: "6666"
+  - trunk: voipeden
+    priority: 5
+    tech_prefix: 65248#
+  desc: Mobile
+- country: MY
+  prefix: "60"
+  routes: 
+  - trunk: gafachi
+    priority: 1
+    tech_prefix: "011"
+  - trunk: connect2dial
+    priority: 2
+    tech_prefix: ""
+  - trunk: callbiz6
+    priority: 3
+    tech_prefix: "6666"
+  - trunk: voipeden
+    priority: 4
+    tech_prefix: 65248#
+  - trunk: bti
+    priority: 5
+    tech_prefix: "50752"
+  desc: All
+- country: MY
+  prefix: "601"
+  routes: 
+  - trunk: gafachi
+    priority: 1
+    tech_prefix: "011"
+  - trunk: connect2dial
+    priority: 2
+    tech_prefix: ""
+  - trunk: callbiz6
+    priority: 3
+    tech_prefix: "6666"
+  - trunk: voipeden
+    priority: 4
+    tech_prefix: 65248#
+  - trunk: bti
+    priority: 5
+    tech_prefix: "50752"
+  desc: Mobile
+- country: "NO"
+  prefix: "4759"
+  routes: 
+  - trunk: simwood
+    priority: 1
+    tech_prefix: ""
+  - trunk: bti
+    priority: 2
+    tech_prefix: "50752"
+  - trunk: voipeden
+    priority: 3
+    tech_prefix: 65248#
+  - trunk: callbiz6
+    priority: 4
+    tech_prefix: "6666"
+  - trunk: didforsale
+    priority: 5
+    tech_prefix: "011"
+  desc: Olso
+- country: MX
+  prefix: "5255"
+  routes: 
+  - trunk: bti
+    priority: 1
+    tech_prefix: "50752"
+  - trunk: gafachi
+    priority: 2
+    tech_prefix: "011"
+  - trunk: callbiz6
+    priority: 3
+    tech_prefix: "6666"
+  - trunk: callbiz
+    priority: 4
+    tech_prefix: "6666"
+  desc: Mexico City
+- country: MX
+  prefix: "52336"
+  routes: 
+  - trunk: didforsale
+    priority: 1
+    tech_prefix: "011"
+  - trunk: simwood
+    priority: 2
+    tech_prefix: ""
+  - trunk: bti
+    priority: 3
+    tech_prefix: "50752"
+  - trunk: voipeden
+    priority: 4
+    tech_prefix: 65248#
+  - trunk: callbiz6
+    priority: 5
+    tech_prefix: "6666"
+  desc: Guadalaja
+- country: TH
+  prefix: "66"
+  routes: 
+  - trunk: voipeden
+    priority: 1
+    tech_prefix: 65248#
+  - trunk: callbiz6
+    priority: 2
+    tech_prefix: "6666"
+  - trunk: callbiz
+    priority: 3
+    tech_prefix: "6666"
+  - trunk: didforsale
+    priority: 4
+    tech_prefix: "011"
+  desc: All
+- country: TH
+  prefix: "662"
+  routes: 
+  - trunk: voipeden
+    priority: 1
+    tech_prefix: 65248#
+  - trunk: callbiz6
+    priority: 2
+    tech_prefix: "6666"
+  - trunk: callbiz
+    priority: 3
+    tech_prefix: "6666"
+  - trunk: didforsale
+    priority: 4
+    tech_prefix: "011"
+  desc: Bangkok
+- country: TH
+  prefix: "668"
+  routes: 
+  - trunk: voipeden
+    priority: 1
+    tech_prefix: 65248#
+  - trunk: callbiz6
+    priority: 2
+    tech_prefix: "6666"
+  - trunk: callbiz
+    priority: 3
+    tech_prefix: "6666"
+  - trunk: didforsale
+    priority: 4
+    tech_prefix: "011"
+  desc: Mobile
+- country: CH
+  prefix: "41"
+  routes: 
+  - trunk: simwood
+    priority: 1
+    tech_prefix: ""
+  - trunk: bti
+    priority: 2
+    tech_prefix: "50752"
+  - trunk: gafachi
+    priority: 3
+    tech_prefix: "011"
+  - trunk: didforsale
+    priority: 4
+    tech_prefix: "011"
+  - trunk: voipeden
+    priority: 5
+    tech_prefix: 65248#
+  desc: All
+- country: CH
+  prefix: "417"
+  routes: 
+  - trunk: simwood
+    priority: 1
+    tech_prefix: ""
+  - trunk: bti
+    priority: 2
+    tech_prefix: "50752"
+  - trunk: voipeden
+    priority: 3
+    tech_prefix: 65248#
+  desc: Mobile
+- country: CH
+  prefix: "418"
+  routes: 
+  - trunk: simwood
+    priority: 1
+    tech_prefix: ""
+  - trunk: bti
+    priority: 2
+    tech_prefix: "50752"
+  - trunk: voipeden
+    priority: 3
+    tech_prefix: 65248#
+  desc: Mobile -II
+- country: HU
+  prefix: "36"
+  routes: 
+  - trunk: voipeden
+    priority: 1
+    tech_prefix: 65248#
+  - trunk: bti
+    priority: 2
+    tech_prefix: "50752"
+  desc: All
+- country: HU
+  prefix: "3620"
+  routes: 
+  - trunk: voipeden
+    priority: 1
+    tech_prefix: 65248#
+  - trunk: bti
+    priority: 2
+    tech_prefix: "50752"
+  desc: Mobile I
+- country: HU
+  prefix: "3630"
+  routes: 
+  - trunk: voipeden
+    priority: 1
+    tech_prefix: 65248#
+  - trunk: bti
+    priority: 2
+    tech_prefix: "50752"
+  desc: Mobile II
+- country: HU
+  prefix: "3650"
+  routes: 
+  - trunk: voipeden
+    priority: 1
+    tech_prefix: 65248#
+  - trunk: bti
+    priority: 2
+    tech_prefix: "50752"
+  desc: Mobile Select
+- country: HU
+  prefix: "3660"
+  routes: 
+  - trunk: voipeden
+    priority: 1
+    tech_prefix: 65248#
+  - trunk: bti
+    priority: 2
+    tech_prefix: "50752"
+  desc: Mobile Select +
+- country: HU
+  prefix: "3670"
+  routes: 
+  - trunk: voipeden
+    priority: 1
+    tech_prefix: 65248#
+  - trunk: bti
+    priority: 2
+    tech_prefix: "50752"
+  desc: Mobile Plus
+- country: PK
+  prefix: "92300"
+  routes: 
+  - trunk: connect2dial
+    priority: 1
+    tech_prefix: ""
+  - trunk: voipeden
+    priority: 2
+    tech_prefix: 65248#
+  - trunk: bti
+    priority: 3
+    tech_prefix: "50752"
+  - trunk: callbiz6
+    priority: 4
+    tech_prefix: "6666"
+  - trunk: didforsale
+    priority: 5
+    tech_prefix: "011"
+  desc: Mobile-Mobilink
+- country: MX
+  prefix: "52624"
+  routes: 
+  - trunk: bti
+    priority: 1
+    tech_prefix: "50752"
+  - trunk: gafachi
+    priority: 2
+    tech_prefix: "011"
+  - trunk: callbiz6
+    priority: 3
+    tech_prefix: "6666"
+  - trunk: callbiz
+    priority: 4
+    tech_prefix: "6666"
+  desc: San Jose
+- country: PH
+  prefix: "63921"
+  routes: 
+  - trunk: bti
+    priority: 1
+    tech_prefix: "50752"
+  - trunk: didforsale
+    priority: 2
+    tech_prefix: "011"
+  - trunk: callbiz6
+    priority: 3
+    tech_prefix: "6666"
+  - trunk: callbiz
+    priority: 4
+    tech_prefix: "6666"
+  - trunk: gafachi
+    priority: 5
+    tech_prefix: "011"
+  desc: Mobile Smart II
+- country: TR
+  prefix: "9055"
+  routes: 
+  - trunk: voipeden
+    priority: 1
+    tech_prefix: 65248#
+  - trunk: callbiz6
+    priority: 2
+    tech_prefix: "6666"
+  - trunk: connect2dial
+    priority: 3
+    tech_prefix: ""
+  - trunk: simwood
+    priority: 4
+    tech_prefix: ""
+  - trunk: didforsale
+    priority: 5
+    tech_prefix: "011"
+  desc: Mobile 55
+- country: TR
+  prefix: "90352"
+  routes: 
+  - trunk: voipeden
+    priority: 1
+    tech_prefix: 65248#
+  - trunk: callbiz6
+    priority: 2
+    tech_prefix: "6666"
+  - trunk: connect2dial
+    priority: 3
+    tech_prefix: ""
+  - trunk: simwood
+    priority: 4
+    tech_prefix: ""
+  - trunk: didforsale
+    priority: 5
+    tech_prefix: "011"
+  desc: Kayseri and Tonya
+- country: TR
+  prefix: "9054"
+  routes: 
+  - trunk: voipeden
+    priority: 1
+    tech_prefix: 65248#
+  - trunk: callbiz6
+    priority: 2
+    tech_prefix: "6666"
+  - trunk: connect2dial
+    priority: 3
+    tech_prefix: ""
+  - trunk: simwood
+    priority: 4
+    tech_prefix: ""
+  - trunk: didforsale
+    priority: 5
+    tech_prefix: "011"
+  desc: Mobile Telsim/Vodafone
+- country: BA
+  prefix: "886"
+  routes: 
+  - trunk: callbiz6
+    priority: 1
+    tech_prefix: "6666"
+  - trunk: didforsale
+    priority: 2
+    tech_prefix: "011"
+  desc: All
+- country: BA
+  prefix: "8869"
+  routes: 
+  - trunk: callbiz6
+    priority: 1
+    tech_prefix: "6666"
+  - trunk: didforsale
+    priority: 2
+    tech_prefix: "011"
+  desc: Mobile -II
+- country: PK
+  prefix: "92992"
+  routes: 
+  - trunk: connect2dial
+    priority: 1
+    tech_prefix: ""
+  - trunk: voipeden
+    priority: 2
+    tech_prefix: 65248#
+  - trunk: bti
+    priority: 3
+    tech_prefix: "50752"
+  - trunk: callbiz6
+    priority: 4
+    tech_prefix: "6666"
+  - trunk: didforsale
+    priority: 5
+    tech_prefix: "011"
+  desc: "Abbotabad "
+- country: PK
+  prefix: "92621"
+  routes: 
+  - trunk: connect2dial
+    priority: 1
+    tech_prefix: ""
+  - trunk: voipeden
+    priority: 2
+    tech_prefix: 65248#
+  - trunk: bti
+    priority: 3
+    tech_prefix: "50752"
+  - trunk: callbiz6
+    priority: 4
+    tech_prefix: "6666"
+  - trunk: didforsale
+    priority: 5
+    tech_prefix: "011"
+  desc: "Bahawalpur "
+- country: PK
+  prefix: "9241"
+  routes: 
+  - trunk: connect2dial
+    priority: 1
+    tech_prefix: ""
+  - trunk: voipeden
+    priority: 2
+    tech_prefix: 65248#
+  - trunk: bti
+    priority: 3
+    tech_prefix: "50752"
+  - trunk: callbiz6
+    priority: 4
+    tech_prefix: "6666"
+  - trunk: didforsale
+    priority: 5
+    tech_prefix: "011"
+  desc: "Faisalabad "
+- country: PK
+  prefix: "925799"
+  routes: 
+  - trunk: connect2dial
+    priority: 1
+    tech_prefix: ""
+  - trunk: voipeden
+    priority: 2
+    tech_prefix: 65248#
+  - trunk: bti
+    priority: 3
+    tech_prefix: "50752"
+  - trunk: callbiz6
+    priority: 4
+    tech_prefix: "6666"
+  - trunk: didforsale
+    priority: 5
+    tech_prefix: "011"
+  desc: Ghourghushi
+- country: PK
+  prefix: "92431"
+  routes: 
+  - trunk: connect2dial
+    priority: 1
+    tech_prefix: ""
+  - trunk: voipeden
+    priority: 2
+    tech_prefix: 65248#
+  - trunk: bti
+    priority: 3
+    tech_prefix: "50752"
+  - trunk: callbiz6
+    priority: 4
+    tech_prefix: "6666"
+  - trunk: didforsale
+    priority: 5
+    tech_prefix: "011"
+  desc: "Gujranwala "
+- country: PK
+  prefix: "92221"
+  routes: 
+  - trunk: connect2dial
+    priority: 1
+    tech_prefix: ""
+  - trunk: voipeden
+    priority: 2
+    tech_prefix: 65248#
+  - trunk: bti
+    priority: 3
+    tech_prefix: "50752"
+  - trunk: callbiz6
+    priority: 4
+    tech_prefix: "6666"
+  - trunk: didforsale
+    priority: 5
+    tech_prefix: "011"
+  desc: "Hyderabad "
+- country: PK
+  prefix: "9251"
+  routes: 
+  - trunk: connect2dial
+    priority: 1
+    tech_prefix: ""
+  - trunk: voipeden
+    priority: 2
+    tech_prefix: 65248#
+  - trunk: bti
+    priority: 3
+    tech_prefix: "50752"
+  - trunk: callbiz6
+    priority: 4
+    tech_prefix: "6666"
+  - trunk: didforsale
+    priority: 5
+    tech_prefix: "011"
+  desc: "Islamabad "
+- country: PK
+  prefix: "9221"
+  routes: 
+  - trunk: connect2dial
+    priority: 1
+    tech_prefix: ""
+  - trunk: voipeden
+    priority: 2
+    tech_prefix: 65248#
+  - trunk: bti
+    priority: 3
+    tech_prefix: "50752"
+  - trunk: callbiz6
+    priority: 4
+    tech_prefix: "6666"
+  - trunk: didforsale
+    priority: 5
+    tech_prefix: "011"
+  desc: "Karachi "
+- country: PK
+  prefix: "9242"
+  routes: 
+  - trunk: connect2dial
+    priority: 1
+    tech_prefix: ""
+  - trunk: voipeden
+    priority: 2
+    tech_prefix: 65248#
+  - trunk: bti
+    priority: 3
+    tech_prefix: "50752"
+  - trunk: callbiz6
+    priority: 4
+    tech_prefix: "6666"
+  - trunk: didforsale
+    priority: 5
+    tech_prefix: "011"
+  desc: "Lahore "
+- country: PK
+  prefix: "9261"
+  routes: 
+  - trunk: connect2dial
+    priority: 1
+    tech_prefix: ""
+  - trunk: voipeden
+    priority: 2
+    tech_prefix: 65248#
+  - trunk: bti
+    priority: 3
+    tech_prefix: "50752"
+  - trunk: callbiz6
+    priority: 4
+    tech_prefix: "6666"
+  - trunk: didforsale
+    priority: 5
+    tech_prefix: "011"
+  desc: "Multan "
+- country: PK
+  prefix: "92442"
+  routes: 
+  - trunk: connect2dial
+    priority: 1
+    tech_prefix: ""
+  - trunk: voipeden
+    priority: 2
+    tech_prefix: 65248#
+  - trunk: bti
+    priority: 3
+    tech_prefix: "50752"
+  - trunk: callbiz6
+    priority: 4
+    tech_prefix: "6666"
+  - trunk: didforsale
+    priority: 5
+    tech_prefix: "011"
+  desc: "Okara "
+- country: PK
+  prefix: "9291"
+  routes: 
+  - trunk: connect2dial
+    priority: 1
+    tech_prefix: ""
+  - trunk: voipeden
+    priority: 2
+    tech_prefix: 65248#
+  - trunk: bti
+    priority: 3
+    tech_prefix: "50752"
+  - trunk: callbiz6
+    priority: 4
+    tech_prefix: "6666"
+  - trunk: didforsale
+    priority: 5
+    tech_prefix: "011"
+  desc: "Peshawar "
+- country: PK
+  prefix: "9281"
+  routes: 
+  - trunk: connect2dial
+    priority: 1
+    tech_prefix: ""
+  - trunk: voipeden
+    priority: 2
+    tech_prefix: 65248#
+  - trunk: bti
+    priority: 3
+    tech_prefix: "50752"
+  - trunk: callbiz6
+    priority: 4
+    tech_prefix: "6666"
+  - trunk: didforsale
+    priority: 5
+    tech_prefix: "011"
+  desc: "Quetta "
+- country: PK
+  prefix: "92604"
+  routes: 
+  - trunk: connect2dial
+    priority: 1
+    tech_prefix: ""
+  - trunk: voipeden
+    priority: 2
+    tech_prefix: 65248#
+  - trunk: bti
+    priority: 3
+    tech_prefix: "50752"
+  - trunk: callbiz6
+    priority: 4
+    tech_prefix: "6666"
+  - trunk: didforsale
+    priority: 5
+    tech_prefix: "011"
+  desc: Rojhan
+- country: PK
+  prefix: "92441"
+  routes: 
+  - trunk: connect2dial
+    priority: 1
+    tech_prefix: ""
+  - trunk: voipeden
+    priority: 2
+    tech_prefix: 65248#
+  - trunk: bti
+    priority: 3
+    tech_prefix: "50752"
+  - trunk: callbiz6
+    priority: 4
+    tech_prefix: "6666"
+  - trunk: didforsale
+    priority: 5
+    tech_prefix: "011"
+  desc: "Sahiwal "
+- country: PK
+  prefix: "92451"
+  routes: 
+  - trunk: connect2dial
+    priority: 1
+    tech_prefix: ""
+  - trunk: voipeden
+    priority: 2
+    tech_prefix: 65248#
+  - trunk: bti
+    priority: 3
+    tech_prefix: "50752"
+  - trunk: callbiz6
+    priority: 4
+    tech_prefix: "6666"
+  - trunk: didforsale
+    priority: 5
+    tech_prefix: "011"
+  desc: "Sarhodha "
+- country: PK
+  prefix: "92524"
+  routes: 
+  - trunk: connect2dial
+    priority: 1
+    tech_prefix: ""
+  - trunk: voipeden
+    priority: 2
+    tech_prefix: 65248#
+  - trunk: bti
+    priority: 3
+    tech_prefix: "50752"
+  - trunk: callbiz6
+    priority: 4
+    tech_prefix: "6666"
+  - trunk: didforsale
+    priority: 5
+    tech_prefix: "011"
+  desc: "Sialkot "
+- country: PK
+  prefix: "9271"
+  routes: 
+  - trunk: connect2dial
+    priority: 1
+    tech_prefix: ""
+  - trunk: voipeden
+    priority: 2
+    tech_prefix: 65248#
+  - trunk: bti
+    priority: 3
+    tech_prefix: "50752"
+  - trunk: callbiz6
+    priority: 4
+    tech_prefix: "6666"
+  - trunk: didforsale
+    priority: 5
+    tech_prefix: "011"
+  desc: "Sukkur "
+- country: GB
+  prefix: "447595"
+  routes: 
+  - trunk: simwood
+    priority: 1
+    tech_prefix: ""
+  - trunk: voipeden
+    priority: 2
+    tech_prefix: 65248#
+  - trunk: voipeden
+    priority: 3
+    tech_prefix: 65248#
+  - trunk: didforsale
+    priority: 4
+    tech_prefix: "011"
+  - trunk: callbiz
+    priority: 5
+    tech_prefix: "6666"
+  desc: Mobile O2
+- country: SV
+  prefix: "503"
+  routes: 
+  - trunk: voipeden-prem
+    priority: 1
+    tech_prefix: 65248#
+  - trunk: simwood
+    priority: 2
+    tech_prefix: ""
+  - trunk: bti
+    priority: 3
+    tech_prefix: "50752"
+  - trunk: callbiz6
+    priority: 5
+    tech_prefix: "6666"
+  desc: All
+- country: SV
+  prefix: "50374"
+  routes: 
+  - trunk: voipeden-prem
+    priority: 1
+    tech_prefix: 65248#
+  - trunk: simwood
+    priority: 2
+    tech_prefix: ""
+  - trunk: bti
+    priority: 3
+    tech_prefix: "50752"
+  - trunk: callbiz6
+    priority: 5
+    tech_prefix: "6666"
+  desc: Mobile
+- country: SV
+  prefix: "5038"
+  routes: 
+  - trunk: voipeden-prem
+    priority: 1
+    tech_prefix: 65248#
+  - trunk: simwood
+    priority: 2
+    tech_prefix: ""
+  - trunk: bti
+    priority: 3
+    tech_prefix: "50752"
+  - trunk: callbiz6
+    priority: 5
+    tech_prefix: "6666"
+  desc: Mobile II
+- country: CR
+  prefix: "506"
+  routes: 
+  - trunk: bti
+    priority: 1
+    tech_prefix: "50752"
+  - trunk: voipeden
+    priority: 2
+    tech_prefix: 65248#
+  - trunk: didforsale
+    priority: 3
+    tech_prefix: "011"
+  - trunk: callbiz6
+    priority: 4
+    tech_prefix: "6666"
+  desc: All
+- country: CR
+  prefix: "5068"
+  routes: 
+  - trunk: bti
+    priority: 1
+    tech_prefix: "50752"
+  - trunk: voipeden
+    priority: 2
+    tech_prefix: 65248#
+  - trunk: didforsale
+    priority: 3
+    tech_prefix: "011"
+  - trunk: callbiz6
+    priority: 4
+    tech_prefix: "6666"
+  desc: Mobile
+- country: BO
+  prefix: "591"
+  routes: 
+  - trunk: voipeden
+    priority: 1
+    tech_prefix: 65248#
+  - trunk: bti
+    priority: 2
+    tech_prefix: "50752"
+  - trunk: gafachi
+    priority: 3
+    tech_prefix: "011"
+  - trunk: connect2dial
+    priority: 4
+    tech_prefix: ""
+  - trunk: megacomm77az
+    priority: 5
+    tech_prefix: ""
+  desc: All
+- country: BO
+  prefix: "5917"
+  routes: 
+  - trunk: voipeden
+    priority: 1
+    tech_prefix: 65248#
+  - trunk: bti
+    priority: 2
+    tech_prefix: "50752"
+  - trunk: gafachi
+    priority: 3
+    tech_prefix: "011"
+  - trunk: connect2dial
+    priority: 4
+    tech_prefix: ""
+  - trunk: megacomm77az
+    priority: 5
+    tech_prefix: ""
+  desc: Mobile
+- country: AN
+  prefix: "5997176860"
+  routes: 
+  - trunk: voipeden-prem
+    priority: 1
+    tech_prefix: 65248#
+  - trunk: callbiz6
+    priority: 2
+    tech_prefix: "6666"
+  - trunk: bti
+    priority: 3
+    tech_prefix: "50752"
+  - trunk: simwood
+    priority: 4
+    tech_prefix: ""
+  - trunk: voipeden
+    priority: 5
+    tech_prefix: 65248#
+  desc: Hotel Blue Divers Bonaire
+- country: GB
+  prefix: "441202"
+  routes: 
+  - trunk: simwood
+    priority: 1
+    tech_prefix: ""
+  - trunk: didforsale
+    priority: 2
+    tech_prefix: "011"
+  - trunk: callbiz6
+    priority: 3
+    tech_prefix: "6666"
+  - trunk: callbiz
+    priority: 4
+    tech_prefix: "6666"
+  - trunk: callbiz
+    priority: 5
+    tech_prefix: "6666"
+  desc: Bournemouth
+- country: NG
+  prefix: "234"
+  routes: 
+  - trunk: didforsale
+    priority: 1
+    tech_prefix: "011"
+  - trunk: gafachi
+    priority: 2
+    tech_prefix: "011"
+  - trunk: voipeden
+    priority: 3
+    tech_prefix: 65248#
+  - trunk: gafachi
+    priority: 4
+    tech_prefix: "011"
+  desc: All
+- country: PK
+  prefix: "92219242600"
+  routes: 
+  - trunk: megacomm77az
+    priority: 1
+    tech_prefix: ""
+  desc: Test
+- country: PH
+  prefix: "63252"
+  routes: 
+  - trunk: bti
+    priority: 1
+    tech_prefix: "50752"
+  - trunk: callbiz6
+    priority: 3
+    tech_prefix: "6666"
+  - trunk: callbiz
+    priority: 4
+    tech_prefix: "6666"
+  desc: Manila
+- country: PH
+  prefix: "6342"
+  routes: 
+  - trunk: bti
+    priority: 1
+    tech_prefix: "50752"
+  - trunk: callbiz6
+    priority: 3
+    tech_prefix: "6666"
+  - trunk: callbiz
+    priority: 4
+    tech_prefix: "6666"
+  desc: Santa Curz
+- country: AF
+  prefix: "93"
+  routes: 
+  - trunk: bti
+    priority: 1
+    tech_prefix: "50752"
+  - trunk: connect2dial
+    priority: 2
+    tech_prefix: ""
+  - trunk: voipeden
+    priority: 3
+    tech_prefix: 65248#
+  desc: All
+- country: AF
+  prefix: "937"
+  routes: 
+  - trunk: bti
+    priority: 1
+    tech_prefix: "50752"
+  - trunk: connect2dial
+    priority: 2
+    tech_prefix: ""
+  - trunk: voipeden
+    priority: 3
+    tech_prefix: 65248#
+  desc: Mobile
+- country: AL
+  prefix: "355"
+  routes: 
+  - trunk: callbiz6
+    priority: 1
+    tech_prefix: "6666"
+  - trunk: didforsale
+    priority: 2
+    tech_prefix: "011"
+  - trunk: bti
+    priority: 3
+    tech_prefix: "50752"
+  desc: All
+- country: AL
+  prefix: "3556"
+  routes: 
+  - trunk: callbiz6
+    priority: 1
+    tech_prefix: "6666"
+  - trunk: callbiz6
+    priority: 2
+    tech_prefix: "6666"
+  desc: Mobile
+- country: PS
+  prefix: "970"
+  routes: 
+  - trunk: callbiz6
+    priority: 1
+    tech_prefix: "6666"
+  - trunk: bti
+    priority: 2
+    tech_prefix: "50752"
+  - trunk: voipeden
+    priority: 3
+    tech_prefix: 65248#
+  desc: All
+- country: PS
+  prefix: "97059"
+  routes: 
+  - trunk: callbiz6
+    priority: 1
+    tech_prefix: "6666"
+  - trunk: bti
+    priority: 2
+    tech_prefix: "50752"
+  - trunk: voipeden
+    priority: 3
+    tech_prefix: 65248#
+  desc: Mobile
+- country: PS
+  prefix: "97259"
+  routes: 
+  - trunk: callbiz6
+    priority: 1
+    tech_prefix: "6666"
+  - trunk: bti
+    priority: 2
+    tech_prefix: "50752"
+  - trunk: voipeden
+    priority: 3
+    tech_prefix: 65248#
+  desc: Mobile Others
+- country: PS
+  prefix: "97222"
+  routes: 
+  - trunk: callbiz6
+    priority: 1
+    tech_prefix: "6666"
+  - trunk: bti
+    priority: 2
+    tech_prefix: "50752"
+  - trunk: voipeden
+    priority: 3
+    tech_prefix: 65248#
+  desc: All Others
+- country: SV
+  prefix: "503711"
+  routes: 
+  - trunk: voipeden-prem
+    priority: 1
+    tech_prefix: 65248#
+  - trunk: simwood
+    priority: 2
+    tech_prefix: ""
+  - trunk: bti
+    priority: 3
+    tech_prefix: "50752"
+  - trunk: callbiz6
+    priority: 5
+    tech_prefix: "6666"
+  desc: "Special "
+- country: GT
+  prefix: "502"
+  routes: 
+  - trunk: callbiz6
+    priority: 1
+    tech_prefix: "6666"
+  - trunk: voipeden
+    priority: 2
+    tech_prefix: 65248#
+  - trunk: bti
+    priority: 3
+    tech_prefix: "50752"
+  - trunk: didforsale
+    priority: 4
+    tech_prefix: "011"
+  desc: All
+- country: GT
+  prefix: "5024"
+  routes: 
+  - trunk: callbiz6
+    priority: 1
+    tech_prefix: "6666"
+  - trunk: voipeden
+    priority: 2
+    tech_prefix: 65248#
+  - trunk: bti
+    priority: 3
+    tech_prefix: "50752"
+  - trunk: didforsale
+    priority: 4
+    tech_prefix: "011"
+  desc: Mobile
+- country: GT
+  prefix: "5025"
+  routes: 
+  - trunk: callbiz6
+    priority: 1
+    tech_prefix: "6666"
+  - trunk: voipeden
+    priority: 2
+    tech_prefix: 65248#
+  - trunk: bti
+    priority: 3
+    tech_prefix: "50752"
+  - trunk: didforsale
+    priority: 4
+    tech_prefix: "011"
+  desc: Mobile 2
+- country: BA
+  prefix: "387"
+  routes: 
+  - trunk: bti
+    priority: 1
+    tech_prefix: "50752"
+  - trunk: callbiz6
+    priority: 2
+    tech_prefix: "6666"
+  - trunk: callbiz
+    priority: 3
+    tech_prefix: ""
+  - trunk: voipeden
+    priority: 4
+    tech_prefix: 65248#
+  desc: Herzegovina
+- country: BA
+  prefix: "3876"
+  routes: 
+  - trunk: bti
+    priority: 1
+    tech_prefix: "50752"
+  - trunk: callbiz6
+    priority: 2
+    tech_prefix: "6666"
+  - trunk: callbiz
+    priority: 3
+    tech_prefix: ""
+  - trunk: voipeden
+    priority: 4
+    tech_prefix: 65248#
+  desc: Herzegovina Mobile
+- country: HR
+  prefix: "385"
+  routes: 
+  - trunk: bti
+    priority: 1
+    tech_prefix: "50752"
+  - trunk: callbiz6
+    priority: 2
+    tech_prefix: "6666"
+  - trunk: voipeden
+    priority: 3
+    tech_prefix: 65248#
+  - trunk: callbiz
+    priority: 4
+    tech_prefix: ""
+  desc: All
+- country: HR
+  prefix: "3859"
+  routes: 
+  - trunk: bti
+    priority: 1
+    tech_prefix: "50752"
+  - trunk: callbiz6
+    priority: 2
+    tech_prefix: "6666"
+  - trunk: voipeden
+    priority: 3
+    tech_prefix: 65248#
+  - trunk: callbiz
+    priority: 4
+    tech_prefix: ""
+  desc: Mobile
+- country: VN
+  prefix: "84"
+  routes: 
+  - trunk: bti
+    priority: 1
+    tech_prefix: "50752"
+  - trunk: voipeden
+    priority: 2
+    tech_prefix: 65248#
+  - trunk: gafachi
+    priority: 3
+    tech_prefix: "011"
+  - trunk: callbiz6
+    priority: 4
+    tech_prefix: "6666"
+  - trunk: connect2dial
+    priority: 5
+    tech_prefix: ""
+  desc: All
+- country: VN
+  prefix: "841"
+  routes: 
+  - trunk: bti
+    priority: 1
+    tech_prefix: "50752"
+  - trunk: voipeden
+    priority: 2
+    tech_prefix: 65248#
+  - trunk: gafachi
+    priority: 3
+    tech_prefix: "011"
+  - trunk: callbiz6
+    priority: 4
+    tech_prefix: "6666"
+  - trunk: connect2dial
+    priority: 5
+    tech_prefix: ""
+  desc: Mobile
+- country: VN
+  prefix: "8416"
+  routes: 
+  - trunk: bti
+    priority: 1
+    tech_prefix: "50752"
+  - trunk: voipeden
+    priority: 2
+    tech_prefix: 65248#
+  - trunk: gafachi
+    priority: 3
+    tech_prefix: "011"
+  - trunk: callbiz6
+    priority: 4
+    tech_prefix: "6666"
+  - trunk: connect2dial
+    priority: 5
+    tech_prefix: ""
+  desc: Mobile
+- country: VN
+  prefix: "849"
+  routes: 
+  - trunk: bti
+    priority: 1
+    tech_prefix: "50752"
+  - trunk: voipeden
+    priority: 2
+    tech_prefix: 65248#
+  - trunk: gafachi
+    priority: 3
+    tech_prefix: "011"
+  - trunk: callbiz6
+    priority: 4
+    tech_prefix: "6666"
+  - trunk: connect2dial
+    priority: 5
+    tech_prefix: ""
+  desc: Mobile III
+- country: LB
+  prefix: "961"
+  routes: 
+  - trunk: voipeden
+    priority: 1
+    tech_prefix: 65248#
+  - trunk: bti
+    priority: 2
+    tech_prefix: "50752"
+  - trunk: callbiz6
+    priority: 3
+    tech_prefix: "6666"
+  - trunk: didforsale
+    priority: 4
+    tech_prefix: "011"
+  desc: All
+- country: LB
+  prefix: "9613"
+  routes: 
+  - trunk: voipeden
+    priority: 1
+    tech_prefix: 65248#
+  - trunk: bti
+    priority: 2
+    tech_prefix: "50752"
+  - trunk: callbiz6
+    priority: 3
+    tech_prefix: "6666"
+  - trunk: didforsale
+    priority: 4
+    tech_prefix: "011"
+  desc: Mobile
+- country: SG
+  prefix: "65"
+  routes: 
+  - trunk: simwood
+    priority: 1
+    tech_prefix: ""
+  - trunk: bti
+    priority: 2
+    tech_prefix: "50752"
+  - trunk: didforsale
+    priority: 3
+    tech_prefix: "011"
+  - trunk: callbiz6
+    priority: 4
+    tech_prefix: "6666"
+  - trunk: didforsale
+    priority: 5
+    tech_prefix: "011"
+  desc: All
+- country: SG
+  prefix: "658"
+  routes: 
+  - trunk: simwood
+    priority: 1
+    tech_prefix: ""
+  - trunk: bti
+    priority: 2
+    tech_prefix: "50752"
+  - trunk: didforsale
+    priority: 3
+    tech_prefix: "011"
+  - trunk: callbiz6
+    priority: 4
+    tech_prefix: "6666"
+  - trunk: didforsale
+    priority: 5
+    tech_prefix: "011"
+  desc: Mobile
+- country: SG
+  prefix: "659"
+  routes: 
+  - trunk: simwood
+    priority: 1
+    tech_prefix: ""
+  - trunk: bti
+    priority: 2
+    tech_prefix: "50752"
+  - trunk: didforsale
+    priority: 3
+    tech_prefix: "011"
+  - trunk: callbiz6
+    priority: 4
+    tech_prefix: "6666"
+  - trunk: didforsale
+    priority: 5
+    tech_prefix: "011"
+  desc: Mobile II
+- country: MX
+  prefix: "5242"
+  routes: 
+  - trunk: bti
+    priority: 1
+    tech_prefix: "50752"
+  - trunk: callbiz6
+    priority: 2
+    tech_prefix: "6666"
+  - trunk: callbiz
+    priority: 3
+    tech_prefix: ""
+  - trunk: voipeden
+    priority: 4
+    tech_prefix: 65248#
+  - trunk: callbiz
+    priority: 5
+    tech_prefix: "6666"
+  desc: Jalisco
+- country: BO
+  prefix: "591227"
+  routes: 
+  - trunk: voipeden
+    priority: 1
+    tech_prefix: 65248#
+  - trunk: bti
+    priority: 2
+    tech_prefix: "50752"
+  - trunk: gafachi
+    priority: 3
+    tech_prefix: "011"
+  - trunk: connect2dial
+    priority: 4
+    tech_prefix: ""
+  - trunk: megacomm77az
+    priority: 5
+    tech_prefix: ""
+  desc: La Paz
+- country: MX
+  prefix: "52341"
+  routes: 
+  - trunk: bti
+    priority: 1
+    tech_prefix: "50752"
+  - trunk: callbiz6
+    priority: 2
+    tech_prefix: "6666"
+  - trunk: gafachi
+    priority: 3
+    tech_prefix: "011"
+  - trunk: voipeden
+    priority: 4
+    tech_prefix: 65248#
+  - trunk: didforsale
+    priority: 5
+    tech_prefix: "011"
+  desc: Ciudad Guzman
+- country: BR
+  prefix: "5511"
+  routes: 
+  - trunk: voipeden
+    priority: 1
+    tech_prefix: 65248#
+  - trunk: bti
+    priority: 2
+    tech_prefix: "50752"
+  - trunk: didforsale
+    priority: 3
+    tech_prefix: "011"
+  - trunk: gafachi
+    priority: 4
+    tech_prefix: "011"
+  - trunk: simwood
+    priority: 5
+    tech_prefix: ""
+  desc: Sao Paulo
+- country: BR
+  prefix: "551"
+  routes: 
+  - trunk: voipeden
+    priority: 1
+    tech_prefix: 65248#
+  - trunk: bti
+    priority: 2
+    tech_prefix: "50752"
+  - trunk: didforsale
+    priority: 3
+    tech_prefix: "011"
+  - trunk: gafachi
+    priority: 4
+    tech_prefix: "011"
+  - trunk: simwood
+    priority: 5
+    tech_prefix: ""
+  desc: Mobile
+- country: BR
+  prefix: "5512"
+  routes: 
+  - trunk: voipeden
+    priority: 1
+    tech_prefix: 65248#
+  - trunk: bti
+    priority: 2
+    tech_prefix: "50752"
+  - trunk: didforsale
+    priority: 3
+    tech_prefix: "011"
+  - trunk: gafachi
+    priority: 4
+    tech_prefix: "011"
+  - trunk: simwood
+    priority: 5
+    tech_prefix: ""
+  desc: Sao Paulo II
+- country: MX
+  prefix: "52555"
+  routes: 
+  - trunk: bti
+    priority: 1
+    tech_prefix: "50752"
+  - trunk: callbiz6
+    priority: 2
+    tech_prefix: "6666"
+  - trunk: gafachi
+    priority: 3
+    tech_prefix: "011"
+  - trunk: voipeden
+    priority: 4
+    tech_prefix: 65248#
+  - trunk: didforsale
+    priority: 5
+    tech_prefix: "011"
+  desc: Mexico City Mobile
+- country: CM
+  prefix: "2375"
+  routes: 
+  - trunk: didforsale
+    priority: 1
+    tech_prefix: "011"
+  - trunk: gafachi
+    priority: 2
+    tech_prefix: "011"
+  - trunk: voipeden
+    priority: 3
+    tech_prefix: 65248#
+  desc: MOBILE MTN
+- country: CM
+  prefix: "237"
+  routes: 
+  - trunk: voipeden
+    priority: 1
+    tech_prefix: 65248#
+  - trunk: simwood
+    priority: 2
+    tech_prefix: ""
+  - trunk: didforsale
+    priority: 3
+    tech_prefix: "011"
+  - trunk: bti
+    priority: 4
+    tech_prefix: "50752"
+  desc: All
+- country: CM
+  prefix: "2377"
+  routes: 
+  - trunk: simwood
+    priority: 1
+    tech_prefix: ""
+  - trunk: voipeden
+    priority: 2
+    tech_prefix: 65248#
+  - trunk: bti
+    priority: 3
+    tech_prefix: "50752"
+  - trunk: gafachi
+    priority: 4
+    tech_prefix: "011"
+  - trunk: didforsale
+    priority: 5
+    tech_prefix: "011"
+  desc: Mobile II
+- country: DK
+  prefix: "4538"
+  routes: 
+  - trunk: voipeden
+    priority: 1
+    tech_prefix: 65248#
+  - trunk: gafachi
+    priority: 2
+    tech_prefix: "011"
+  - trunk: callbiz6
+    priority: 3
+    tech_prefix: "6666"
+  desc: Copenhaugen
+- country: RU
+  prefix: "7917"
+  routes: 
+  - trunk: simwood
+    priority: 1
+    tech_prefix: ""
+  - trunk: didforsale
+    priority: 2
+    tech_prefix: "011"
+  - trunk: simwood
+    priority: 3
+    tech_prefix: ""
+  - trunk: callbiz
+    priority: 4
+    tech_prefix: "6666"
+  desc: Mobile-Moscow1
+- country: RU
+  prefix: "7"
+  routes: 
+  - trunk: didforsale
+    priority: 1
+    tech_prefix: "011"
+  - trunk: voipeden
+    priority: 2
+    tech_prefix: 65248#
+  - trunk: callbiz6
+    priority: 3
+    tech_prefix: "6666"
+  - trunk: callbiz
+    priority: 4
+    tech_prefix: "6666"
+  desc: All
+- country: ES
+  prefix: "3462"
+  routes: 
+  - trunk: bti
+    priority: 1
+    tech_prefix: "50752"
+  - trunk: voipeden
+    priority: 2
+    tech_prefix: 65248#
+  - trunk: callbiz6
+    priority: 3
+    tech_prefix: "6666"
+  - trunk: didforsale
+    priority: 4
+    tech_prefix: "011"
+  desc: MOBILE - Plus
+- country: CA
+  prefix: "1"
+  routes: 
+  - trunk: zeus
+    priority: 1
+    tech_prefix: ""
+  - trunk: voipeden
+    priority: 2
+    tech_prefix: 65248#
+  - trunk: simwood
+    priority: 3
+    tech_prefix: ""
+  - trunk: bti
+    priority: 4
+    tech_prefix: "50752"
+  desc: All
+- country: KW
+  prefix: "965"
+  routes: 
+  - trunk: voipeden-prem
+    priority: 1
+    tech_prefix: 65248#
+  - trunk: bti
+    priority: 2
+    tech_prefix: "50752"
+  - trunk: callbiz6
+    priority: 3
+    tech_prefix: "6666"
+  - trunk: didforsale
+    priority: 4
+    tech_prefix: "011"
+  - trunk: simwood
+    priority: 5
+    tech_prefix: ""
+  desc: All
+- country: KW
+  prefix: "9659"
+  routes: 
+  - trunk: voipeden-prem
+    priority: 1
+    tech_prefix: 65248#
+  - trunk: bti
+    priority: 2
+    tech_prefix: "50752"
+  - trunk: callbiz6
+    priority: 3
+    tech_prefix: "6666"
+  - trunk: didforsale
+    priority: 4
+    tech_prefix: "011"
+  - trunk: simwood
+    priority: 5
+    tech_prefix: ""
+  desc: Mobile
+- country: KW
+  prefix: "96544"
+  routes: 
+  - trunk: voipeden-prem
+    priority: 1
+    tech_prefix: 65248#
+  - trunk: bti
+    priority: 2
+    tech_prefix: "50752"
+  - trunk: callbiz6
+    priority: 3
+    tech_prefix: "6666"
+  - trunk: didforsale
+    priority: 4
+    tech_prefix: "011"
+  - trunk: simwood
+    priority: 5
+    tech_prefix: ""
+  desc: Mobile
+- country: KW
+  prefix: "9656"
+  routes: 
+  - trunk: voipeden-prem
+    priority: 1
+    tech_prefix: 65248#
+  - trunk: bti
+    priority: 2
+    tech_prefix: "50752"
+  - trunk: callbiz6
+    priority: 3
+    tech_prefix: "6666"
+  - trunk: didforsale
+    priority: 4
+    tech_prefix: "011"
+  - trunk: simwood
+    priority: 5
+    tech_prefix: ""
+  desc: Mobile
+- country: KW
+  prefix: "9657"
+  routes: 
+  - trunk: voipeden-prem
+    priority: 1
+    tech_prefix: 65248#
+  - trunk: bti
+    priority: 2
+    tech_prefix: "50752"
+  - trunk: callbiz6
+    priority: 3
+    tech_prefix: "6666"
+  - trunk: didforsale
+    priority: 4
+    tech_prefix: "011"
+  - trunk: simwood
+    priority: 5
+    tech_prefix: ""
+  desc: Mobile
+- country: MX
+  prefix: "52669"
+  routes: 
+  - trunk: bti
+    priority: 1
+    tech_prefix: "50752"
+  - trunk: simwood
+    priority: 2
+    tech_prefix: ""
+  - trunk: callbiz6
+    priority: 3
+    tech_prefix: "6666"
+  - trunk: voipeden
+    priority: 4
+    tech_prefix: 65248#
+  - trunk: didforsale
+    priority: 5
+    tech_prefix: "011"
+  desc: Mazatlan
+- country: SV
+  prefix: "5032680"
+  routes: 
+  - trunk: voipeden-prem
+    priority: 1
+    tech_prefix: 65248#
+  - trunk: simwood
+    priority: 2
+    tech_prefix: ""
+  - trunk: bti
+    priority: 3
+    tech_prefix: "50752"
+  - trunk: callbiz6
+    priority: 5
+    tech_prefix: "6666"
+  desc: CTE Telecom
+- country: MX
+  prefix: "52664"
+  routes: 
+  - trunk: bti
+    priority: 1
+    tech_prefix: "50752"
+  - trunk: simwood
+    priority: 2
+    tech_prefix: ""
+  - trunk: callbiz6
+    priority: 3
+    tech_prefix: "6666"
+  desc: Tijuana
+- country: AT
+  prefix: "43"
+  routes: 
+  - trunk: simwood
+    priority: 1
+    tech_prefix: ""
+  - trunk: voipeden
+    priority: 2
+    tech_prefix: 65248#
+  - trunk: gafachi
+    priority: 3
+    tech_prefix: "011"
+  - trunk: gafachi
+    priority: 4
+    tech_prefix: "011"
+  - trunk: connect2dial
+    priority: 5
+    tech_prefix: ""
+  desc: Proper
+- country: AT
+  prefix: "436"
+  routes: 
+  - trunk: voipeden
+    priority: 1
+    tech_prefix: 65248#
+  - trunk: bti
+    priority: 2
+    tech_prefix: "50752"
+  - trunk: simwood
+    priority: 3
+    tech_prefix: ""
+  - trunk: gafachi
+    priority: 4
+    tech_prefix: "011"
+  - trunk: connect2dial
+    priority: 5
+    tech_prefix: ""
+  desc: Mobile
+- country: CA
+  prefix: "1778"
+  routes: 
+  - trunk: zeus
+    priority: 1
+    tech_prefix: ""
+  - trunk: voipeden
+    priority: 2
+    tech_prefix: 65248#
+  - trunk: simwood
+    priority: 3
+    tech_prefix: ""
+  - trunk: bti
+    priority: 4
+    tech_prefix: "50752"
+  desc: BC-778
+- country: RO
+  prefix: "40"
+  routes: 
+  - trunk: bti
+    priority: 1
+    tech_prefix: "50752"
+  - trunk: simwood
+    priority: 2
+    tech_prefix: ""
+  - trunk: voipeden
+    priority: 3
+    tech_prefix: 65248#
+  - trunk: callbiz6
+    priority: 4
+    tech_prefix: "6666"
+  desc: All
+- country: RO
+  prefix: "4021"
+  routes: 
+  - trunk: simwood
+    priority: 1
+    tech_prefix: ""
+  - trunk: bti
+    priority: 2
+    tech_prefix: "50752"
+  - trunk: voipeden
+    priority: 3
+    tech_prefix: 65248#
+  - trunk: callbiz6
+    priority: 4
+    tech_prefix: "6666"
+  desc: Bucharest
+- country: RO
+  prefix: "402"
+  routes: 
+  - trunk: bti
+    priority: 1
+    tech_prefix: "50752"
+  - trunk: simwood
+    priority: 2
+    tech_prefix: ""
+  - trunk: voipeden
+    priority: 3
+    tech_prefix: 65248#
+  - trunk: callbiz6
+    priority: 4
+    tech_prefix: "6666"
+  desc: Metro
+- country: RO
+  prefix: "4076"
+  routes: 
+  - trunk: bti
+    priority: 1
+    tech_prefix: "50752"
+  - trunk: simwood
+    priority: 2
+    tech_prefix: ""
+  - trunk: voipeden
+    priority: 3
+    tech_prefix: 65248#
+  - trunk: callbiz6
+    priority: 4
+    tech_prefix: "6666"
+  desc: Mobile - Cosmote
+- country: RO
+  prefix: "4077"
+  routes: 
+  - trunk: bti
+    priority: 1
+    tech_prefix: "50752"
+  - trunk: simwood
+    priority: 2
+    tech_prefix: ""
+  - trunk: voipeden
+    priority: 3
+    tech_prefix: 65248#
+  - trunk: callbiz6
+    priority: 4
+    tech_prefix: "6666"
+  desc: Mobile - Digimobil
+- country: RO
+  prefix: "4074"
+  routes: 
+  - trunk: bti
+    priority: 1
+    tech_prefix: "50752"
+  - trunk: simwood
+    priority: 2
+    tech_prefix: ""
+  - trunk: voipeden
+    priority: 3
+    tech_prefix: 65248#
+  - trunk: callbiz6
+    priority: 4
+    tech_prefix: "6666"
+  desc: Mobile - Orange
+- country: RO
+  prefix: "4075"
+  routes: 
+  - trunk: bti
+    priority: 1
+    tech_prefix: "50752"
+  - trunk: simwood
+    priority: 2
+    tech_prefix: ""
+  - trunk: voipeden
+    priority: 3
+    tech_prefix: 65248#
+  - trunk: callbiz6
+    priority: 4
+    tech_prefix: "6666"
+  desc: Mobile - Orange
+- country: RO
+  prefix: "4072"
+  routes: 
+  - trunk: bti
+    priority: 1
+    tech_prefix: "50752"
+  - trunk: simwood
+    priority: 2
+    tech_prefix: ""
+  - trunk: voipeden
+    priority: 3
+    tech_prefix: 65248#
+  - trunk: callbiz6
+    priority: 4
+    tech_prefix: "6666"
+  desc: Mobile - Vodafone
+- country: RO
+  prefix: "4073"
+  routes: 
+  - trunk: bti
+    priority: 1
+    tech_prefix: "50752"
+  - trunk: simwood
+    priority: 2
+    tech_prefix: ""
+  - trunk: voipeden
+    priority: 3
+    tech_prefix: 65248#
+  - trunk: callbiz6
+    priority: 4
+    tech_prefix: "6666"
+  desc: Mobile - Vodafone
+- country: RO
+  prefix: "4078"
+  routes: 
+  - trunk: simwood
+    priority: 1
+    tech_prefix: ""
+  - trunk: voipeden
+    priority: 2
+    tech_prefix: 65248#
+  - trunk: callbiz6
+    priority: 3
+    tech_prefix: "6666"
+  - trunk: bti
+    priority: 4
+    tech_prefix: "50752"
+  desc: Mobile - Telemobil
+- country: CA
+  prefix: "1514"
+  routes: 
+  - trunk: zeus
+    priority: 1
+    tech_prefix: ""
+  - trunk: voipeden
+    priority: 2
+    tech_prefix: 65248#
+  - trunk: simwood
+    priority: 3
+    tech_prefix: ""
+  - trunk: bti
+    priority: 4
+    tech_prefix: "50752"
+  desc: QUEBEC MONTREAL
+- country: CA
+  prefix: "1867"
+  routes: 
+  - trunk: zeus
+    priority: 1
+    tech_prefix: ""
+  - trunk: voipeden
+    priority: 2
+    tech_prefix: 65248#
+  desc: Yukon Territory
+- country: MX
+  prefix: "5216691598812"
+  routes: 
+  - trunk: bti
+    priority: 1
+    tech_prefix: "50752"
+  - trunk: bti
+    priority: 2
+    tech_prefix: "50752"
+  - trunk: simwood
+    priority: 3
+    tech_prefix: ""
+  - trunk: voipeden
+    priority: 4
+    tech_prefix: 65248#
+  - trunk: voipeden
+    priority: 5
+    tech_prefix: 65248#
+  desc: Ezat
+- country: AQ
+  prefix: "672"
+  routes: 
+  - trunk: bti
+    priority: 1
+    tech_prefix: "50752"
+  - trunk: simwood
+    priority: 2
+    tech_prefix: ""
+  - trunk: callbiz6
+    priority: 3
+    tech_prefix: "6666"
+  desc: Islands
+- country: AQ
+  prefix: "6721"
+  routes: 
+  - trunk: bti
+    priority: 1
+    tech_prefix: "50752"
+  - trunk: simwood
+    priority: 2
+    tech_prefix: ""
+  - trunk: callbiz6
+    priority: 3
+    tech_prefix: "6666"
+  desc: Antartic
+- country: AQ
+  prefix: "6723"
+  routes: 
+  - trunk: bti
+    priority: 1
+    tech_prefix: "50752"
+  - trunk: simwood
+    priority: 2
+    tech_prefix: ""
+  - trunk: callbiz6
+    priority: 3
+    tech_prefix: "6666"
+  desc: Norfolk Island
+- country: ST
+  prefix: "239"
+  routes: 
+  - trunk: bti
+    priority: 1
+    tech_prefix: "50752"
+  - trunk: callbiz6
+    priority: 2
+    tech_prefix: "6666"
+  - trunk: simwood
+    priority: 3
+    tech_prefix: ""
+  desc: Sao Tome
+- country: NR
+  prefix: "674"
+  routes: 
+  - trunk: bti
+    priority: 1
+    tech_prefix: "50752"
+  - trunk: callbiz6
+    priority: 2
+    tech_prefix: "6666"
+  - trunk: simwood
+    priority: 3
+    tech_prefix: ""
+  desc: Nauru
+- country: NR
+  prefix: "674555"
+  routes: 
+  - trunk: bti
+    priority: 1
+    tech_prefix: "50752"
+  - trunk: callbiz6
+    priority: 2
+    tech_prefix: "6666"
+  - trunk: simwood
+    priority: 3
+    tech_prefix: ""
+  desc: Mobile
+- country: SH
+  prefix: "290"
+  routes: 
+  - trunk: bti
+    priority: 1
+    tech_prefix: "50752"
+  - trunk: callbiz6
+    priority: 2
+    tech_prefix: "6666"
+  - trunk: simwood
+    priority: 3
+    tech_prefix: ""
+  desc: St. Helena
+- country: SB
+  prefix: "677"
+  routes: 
+  - trunk: bti
+    priority: 1
+    tech_prefix: "50752"
+  - trunk: voipeden
+    priority: 2
+    tech_prefix: 65248#
+  - trunk: simwood
+    priority: 3
+    tech_prefix: ""
+  desc: Solomon Islands
+- country: DG
+  prefix: "246"
+  routes: 
+  - trunk: bti
+    priority: 1
+    tech_prefix: "50752"
+  - trunk: simwood
+    priority: 2
+    tech_prefix: ""
+  - trunk: callbiz6
+    priority: 3
+    tech_prefix: "6666"
+  desc: Diego Garcia
+- country: IT
+  prefix: "39347"
+  routes: 
+  - trunk: bti
+    priority: 1
+    tech_prefix: "50752"
+  - trunk: simwood
+    priority: 2
+    tech_prefix: ""
+  desc: Mobile - Vodafone
+- country: IT
+  prefix: "39370"
+  routes: 
+  - trunk: bti
+    priority: 1
+    tech_prefix: "50752"
+  - trunk: simwood
+    priority: 2
+    tech_prefix: ""
+  desc: Mobile - Other
+- country: IT
+  prefix: "39319"
+  routes: 
+  - trunk: bti
+    priority: 1
+    tech_prefix: "50752"
+  - trunk: simwood
+    priority: 2
+    tech_prefix: ""
+  desc: Mobile - Other
+- country: IT
+  prefix: "39313"
+  routes: 
+  - trunk: bti
+    priority: 1
+    tech_prefix: "50752"
+  - trunk: simwood
+    priority: 2
+    tech_prefix: ""
+  desc: Mobile - Other
+- country: IT
+  prefix: "3931105"
+  routes: 
+  - trunk: bti
+    priority: 1
+    tech_prefix: "50752"
+  - trunk: simwood
+    priority: 2
+    tech_prefix: ""
+  desc: Mobile - Other
+- country: AU
+  prefix: "6174"
+  routes: 
+  - trunk: simwood
+    priority: 1
+    tech_prefix: ""
+  - trunk: simwood
+    priority: 2
+    tech_prefix: ""
+  - trunk: bti
+    priority: 3
+    tech_prefix: "50752"
+  - trunk: gafachi
+    priority: 4
+    tech_prefix: "011"
+  desc: Cannon Valley
+- country: GB
+  prefix: "44773"
+  routes: 
+  - trunk: bti
+    priority: 1
+    tech_prefix: "50752"
+  - trunk: simwood
+    priority: 2
+    tech_prefix: ""
+  - trunk: didforsale
+    priority: 3
+    tech_prefix: "011"
+  - trunk: voipeden
+    priority: 4
+    tech_prefix: 65248#
+  - trunk: callbiz
+    priority: 5
+    tech_prefix: "6666"
+  desc: Mobile - H3G
+- country: KE
+  prefix: "25420"
+  routes: 
+  - trunk: bti
+    priority: 1
+    tech_prefix: "50752"
+  desc: Nairobi
+- country: KE
+  prefix: "2547"
+  routes: 
+  - trunk: bti
+    priority: 1
+    tech_prefix: "50752"
+  desc: Mobile
+- country: KE
+  prefix: "25471"
+  routes: 
+  - trunk: bti
+    priority: 1
+    tech_prefix: "50752"
+  desc: Mobile-Safaricom
+- country: KE
+  prefix: "25472"
+  routes: 
+  - trunk: bti
+    priority: 1
+    tech_prefix: "50752"
+  desc: Mobile-Safaricom II
+- country: KE
+  prefix: "25473"
+  routes: 
+  - trunk: bti
+    priority: 1
+    tech_prefix: "50752"
+  desc: Mobile - Zain
+- country: AM
+  prefix: "3741"
+  routes: 
+  - trunk: bti
+    priority: 1
+    tech_prefix: "50752"
+  - trunk: didforsale
+    priority: 2
+    tech_prefix: "011"
+  - trunk: gafachi
+    priority: 3
+    tech_prefix: "011"
+  desc: Armenia - Yerevan
+- country: AM
+  prefix: "3749"
+  routes: 
+  - trunk: bti
+    priority: 1
+    tech_prefix: "50752"
+  - trunk: didforsale
+    priority: 2
+    tech_prefix: "011"
+  - trunk: gafachi
+    priority: 3
+    tech_prefix: "011"
+  desc: Mobile - VivaCell
+- country: GR
+  prefix: "30697"
+  routes: 
+  - trunk: gafachi
+    priority: 1
+    tech_prefix: "011"
+  - trunk: simwood
+    priority: 2
+    tech_prefix: ""
+  - trunk: connect2dial
+    priority: 3
+    tech_prefix: ""
+  - trunk: bti
+    priority: 4
+    tech_prefix: "50752"
+  - trunk: callbiz6
+    priority: 5
+    tech_prefix: "6666"
+  desc: Mobile-Cosmote
+- country: GR
+  prefix: "3021"
+  routes: 
+  - trunk: simwood
+    priority: 1
+    tech_prefix: ""
+  - trunk: gafachi
+    priority: 2
+    tech_prefix: "011"
+  - trunk: connect2dial
+    priority: 3
+    tech_prefix: ""
+  - trunk: bti
+    priority: 4
+    tech_prefix: "50752"
+  - trunk: callbiz6
+    priority: 5
+    tech_prefix: "6666"
+  desc: Athens
+- country: GR
+  prefix: "30231"
+  routes: 
+  - trunk: simwood
+    priority: 1
+    tech_prefix: ""
+  - trunk: gafachi
+    priority: 2
+    tech_prefix: "011"
+  - trunk: connect2dial
+    priority: 3
+    tech_prefix: ""
+  - trunk: bti
+    priority: 4
+    tech_prefix: "50752"
+  - trunk: callbiz6
+    priority: 5
+    tech_prefix: "6666"
+  desc: Thessaloniki
+- country: GR
+  prefix: "3022"
+  routes: 
+  - trunk: simwood
+    priority: 1
+    tech_prefix: ""
+  - trunk: gafachi
+    priority: 2
+    tech_prefix: "011"
+  - trunk: connect2dial
+    priority: 3
+    tech_prefix: ""
+  - trunk: bti
+    priority: 4
+    tech_prefix: "50752"
+  - trunk: callbiz6
+    priority: 5
+    tech_prefix: "6666"
+  desc: Thira
+- country: SY
+  prefix: "963"
+  routes: 
+  - trunk: voipeden
+    priority: 1
+    tech_prefix: 65248#
+  - trunk: simwood
+    priority: 2
+    tech_prefix: ""
+  - trunk: connect2dial
+    priority: 3
+    tech_prefix: ""
+  - trunk: bti
+    priority: 4
+    tech_prefix: "50752"
+  desc: All
+- country: LB
+  prefix: "9611"
+  routes: 
+  - trunk: voipeden
+    priority: 1
+    tech_prefix: 65248#
+  - trunk: bti
+    priority: 2
+    tech_prefix: "50752"
+  - trunk: callbiz6
+    priority: 3
+    tech_prefix: "6666"
+  - trunk: didforsale
+    priority: 4
+    tech_prefix: "011"
+  desc: Beirut
+- country: KZ
+  prefix: "732"
+  routes: 
+  - trunk: voipeden
+    priority: 1
+    tech_prefix: 65248#
+  - trunk: bti
+    priority: 2
+    tech_prefix: "50752"
+  desc: All
+- country: KZ
+  prefix: "73182"
+  routes: 
+  - trunk: voipeden
+    priority: 1
+    tech_prefix: 65248#
+  - trunk: bti
+    priority: 2
+    tech_prefix: "50752"
+  desc: Pavlodar
+- country: PL
+  prefix: "48788"
+  routes: 
+  - trunk: simwood
+    priority: 1
+    tech_prefix: ""
+  - trunk: voipeden
+    priority: 2
+    tech_prefix: 65248#
+  - trunk: simwood
+    priority: 3
+    tech_prefix: ""
+  - trunk: didforsale
+    priority: 4
+    tech_prefix: "011"
+  desc: Mobile-ERA
+- country: PL
+  prefix: "4858"
+  routes: 
+  - trunk: didforsale
+    priority: 1
+    tech_prefix: "011"
+  - trunk: voipeden
+    priority: 2
+    tech_prefix: 65248#
+  - trunk: simwood
+    priority: 3
+    tech_prefix: ""
+  - trunk: didforsale
+    priority: 4
+    tech_prefix: "011"
+  desc: GDANSK
+- country: PL
+  prefix: "4832"
+  routes: 
+  - trunk: didforsale
+    priority: 1
+    tech_prefix: "011"
+  - trunk: voipeden
+    priority: 2
+    tech_prefix: 65248#
+  - trunk: simwood
+    priority: 3
+    tech_prefix: ""
+  - trunk: didforsale
+    priority: 4
+    tech_prefix: "011"
+  desc: KATOWICE
+- country: PL
+  prefix: "4812"
+  routes: 
+  - trunk: didforsale
+    priority: 1
+    tech_prefix: "011"
+  - trunk: voipeden
+    priority: 2
+    tech_prefix: 65248#
+  - trunk: simwood
+    priority: 3
+    tech_prefix: ""
+  - trunk: didforsale
+    priority: 4
+    tech_prefix: "011"
+  desc: KRAKOW
+- country: PL
+  prefix: "4888"
+  routes: 
+  - trunk: didforsale
+    priority: 1
+    tech_prefix: "011"
+  - trunk: voipeden
+    priority: 2
+    tech_prefix: 65248#
+  - trunk: simwood
+    priority: 3
+    tech_prefix: ""
+  - trunk: didforsale
+    priority: 4
+    tech_prefix: "011"
+  desc: Mobile
+- country: PL
+  prefix: "4822"
+  routes: 
+  - trunk: didforsale
+    priority: 1
+    tech_prefix: "011"
+  - trunk: voipeden
+    priority: 2
+    tech_prefix: 65248#
+  - trunk: simwood
+    priority: 3
+    tech_prefix: ""
+  - trunk: didforsale
+    priority: 4
+    tech_prefix: "011"
+  desc: WARSAW
+- country: PL
+  prefix: "4851"
+  routes: 
+  - trunk: didforsale
+    priority: 1
+    tech_prefix: "011"
+  - trunk: voipeden
+    priority: 2
+    tech_prefix: 65248#
+  - trunk: simwood
+    priority: 3
+    tech_prefix: ""
+  - trunk: didforsale
+    priority: 4
+    tech_prefix: "011"
+  desc: MOBILE ORANGE
+- country: CA
+  prefix: "1604"
+  routes: 
+  - trunk: zeus
+    priority: 1
+    tech_prefix: ""
+  - trunk: voipeden
+    priority: 2
+    tech_prefix: 65248#
+  - trunk: simwood
+    priority: 3
+    tech_prefix: ""
+  - trunk: bti
+    priority: 4
+    tech_prefix: "50752"
+  desc: BC-Vancouver
+- country: CA
+  prefix: "1226"
+  routes: 
+  - trunk: zeus
+    priority: 1
+    tech_prefix: ""
+  - trunk: voipeden
+    priority: 2
+    tech_prefix: 65248#
+  - trunk: simwood
+    priority: 3
+    tech_prefix: ""
+  - trunk: bti
+    priority: 4
+    tech_prefix: "50752"
+  desc: Ontario 226
+- country: CA
+  prefix: "1403"
+  routes: 
+  - trunk: zeus
+    priority: 1
+    tech_prefix: ""
+  - trunk: voipeden
+    priority: 2
+    tech_prefix: 65248#
+  - trunk: simwood
+    priority: 3
+    tech_prefix: ""
+  - trunk: bti
+    priority: 4
+    tech_prefix: "50752"
+  desc: ALBERTA_403
+- country: CA
+  prefix: "1204"
+  routes: 
+  - trunk: zeus
+    priority: 1
+    tech_prefix: ""
+  - trunk: voipeden
+    priority: 2
+    tech_prefix: 65248#
+  - trunk: simwood
+    priority: 3
+    tech_prefix: ""
+  - trunk: bti
+    priority: 4
+    tech_prefix: "50752"
+  desc: MANITOBA_204
+- country: CA
+  prefix: "1250"
+  routes: 
+  - trunk: zeus
+    priority: 1
+    tech_prefix: ""
+  - trunk: voipeden
+    priority: 2
+    tech_prefix: 65248#
+  - trunk: simwood
+    priority: 3
+    tech_prefix: ""
+  - trunk: bti
+    priority: 4
+    tech_prefix: "50752"
+  desc: BRITISH COLUMBIA_250
+- country: CA
+  prefix: "1289"
+  routes: 
+  - trunk: zeus
+    priority: 1
+    tech_prefix: ""
+  - trunk: voipeden
+    priority: 2
+    tech_prefix: 65248#
+  - trunk: simwood
+    priority: 3
+    tech_prefix: ""
+  - trunk: bti
+    priority: 4
+    tech_prefix: "50752"
+  desc: ONTARIO TORONTO_289
+- country: JP
+  prefix: "81"
+  routes: 
+  - trunk: simwood
+    priority: 1
+    tech_prefix: ""
+  - trunk: bti
+    priority: 2
+    tech_prefix: "50752"
+  - trunk: connect2dial
+    priority: 3
+    tech_prefix: ""
+  - trunk: didforsale
+    priority: 4
+    tech_prefix: "011"
+  - trunk: voipeden
+    priority: 5
+    tech_prefix: 65248#
+  desc: All
+- country: JP
+  prefix: "813"
+  routes: 
+  - trunk: simwood
+    priority: 1
+    tech_prefix: ""
+  - trunk: bti
+    priority: 2
+    tech_prefix: "50752"
+  - trunk: connect2dial
+    priority: 3
+    tech_prefix: ""
+  - trunk: didforsale
+    priority: 4
+    tech_prefix: "011"
+  - trunk: voipeden
+    priority: 5
+    tech_prefix: 65248#
+  desc: Tokyo
+- country: JP
+  prefix: "813160"
+  routes: 
+  - trunk: simwood
+    priority: 1
+    tech_prefix: ""
+  - trunk: bti
+    priority: 2
+    tech_prefix: "50752"
+  - trunk: connect2dial
+    priority: 3
+    tech_prefix: ""
+  - trunk: didforsale
+    priority: 4
+    tech_prefix: "011"
+  - trunk: voipeden
+    priority: 5
+    tech_prefix: 65248#
+  desc: Premium
+- country: JP
+  prefix: "818"
+  routes: 
+  - trunk: simwood
+    priority: 1
+    tech_prefix: ""
+  - trunk: bti
+    priority: 2
+    tech_prefix: "50752"
+  - trunk: connect2dial
+    priority: 3
+    tech_prefix: ""
+  - trunk: didforsale
+    priority: 4
+    tech_prefix: "011"
+  - trunk: voipeden
+    priority: 5
+    tech_prefix: 65248#
+  desc: Mobile-Other
+- country: JP
+  prefix: "819"
+  routes: 
+  - trunk: simwood
+    priority: 1
+    tech_prefix: ""
+  - trunk: bti
+    priority: 2
+    tech_prefix: "50752"
+  - trunk: connect2dial
+    priority: 3
+    tech_prefix: ""
+  - trunk: didforsale
+    priority: 4
+    tech_prefix: "011"
+  - trunk: voipeden
+    priority: 5
+    tech_prefix: 65248#
+  desc: Mobile-Other
+- country: JP
+  prefix: "816"
+  routes: 
+  - trunk: simwood
+    priority: 1
+    tech_prefix: ""
+  - trunk: bti
+    priority: 2
+    tech_prefix: "50752"
+  - trunk: connect2dial
+    priority: 3
+    tech_prefix: ""
+  - trunk: didforsale
+    priority: 4
+    tech_prefix: "011"
+  - trunk: voipeden
+    priority: 5
+    tech_prefix: 65248#
+  desc: Premium
+- country: JP
+  prefix: "815"
+  routes: 
+  - trunk: simwood
+    priority: 1
+    tech_prefix: ""
+  - trunk: bti
+    priority: 2
+    tech_prefix: "50752"
+  - trunk: connect2dial
+    priority: 3
+    tech_prefix: ""
+  - trunk: didforsale
+    priority: 4
+    tech_prefix: "011"
+  - trunk: voipeden
+    priority: 5
+    tech_prefix: 65248#
+  desc: Premium
+- country: GR
+  prefix: "30699"
+  routes: 
+  - trunk: gafachi
+    priority: 1
+    tech_prefix: "011"
+  - trunk: simwood
+    priority: 2
+    tech_prefix: ""
+  - trunk: connect2dial
+    priority: 3
+    tech_prefix: ""
+  - trunk: bti
+    priority: 4
+    tech_prefix: "50752"
+  - trunk: callbiz6
+    priority: 5
+    tech_prefix: "6666"
+  desc: Mobile Q Telecom
+- country: GR
+  prefix: "3069"
+  routes: 
+  - trunk: gafachi
+    priority: 1
+    tech_prefix: "011"
+  - trunk: simwood
+    priority: 2
+    tech_prefix: ""
+  - trunk: connect2dial
+    priority: 3
+    tech_prefix: ""
+  - trunk: bti
+    priority: 4
+    tech_prefix: "50752"
+  - trunk: callbiz6
+    priority: 5
+    tech_prefix: "6666"
+  desc: mobile
+- country: AZ
+  prefix: "99455"
+  routes: 
+  - trunk: bti
+    priority: 1
+    tech_prefix: "50752"
+  - trunk: didforsale
+    priority: 2
+    tech_prefix: "011"
+  - trunk: connect2dial
+    priority: 3
+    tech_prefix: ""
+  - trunk: simwood
+    priority: 4
+    tech_prefix: ""
+  desc: Mobile
+- country: AZ
+  prefix: "99412"
+  routes: 
+  - trunk: bti
+    priority: 1
+    tech_prefix: "50752"
+  - trunk: didforsale
+    priority: 2
+    tech_prefix: "011"
+  - trunk: connect2dial
+    priority: 3
+    tech_prefix: ""
+  - trunk: simwood
+    priority: 4
+    tech_prefix: ""
+  desc: Baku
+- country: AZ
+  prefix: "99470"
+  routes: 
+  - trunk: bti
+    priority: 1
+    tech_prefix: "50752"
+  - trunk: didforsale
+    priority: 2
+    tech_prefix: "011"
+  - trunk: connect2dial
+    priority: 3
+    tech_prefix: ""
+  - trunk: simwood
+    priority: 4
+    tech_prefix: ""
+  desc: Mobile
+- country: AZ
+  prefix: "99450"
+  routes: 
+  - trunk: bti
+    priority: 1
+    tech_prefix: "50752"
+  - trunk: didforsale
+    priority: 2
+    tech_prefix: "011"
+  - trunk: connect2dial
+    priority: 3
+    tech_prefix: ""
+  - trunk: simwood
+    priority: 4
+    tech_prefix: ""
+  desc: Mobile
+- country: AZ
+  prefix: "99451"
+  routes: 
+  - trunk: bti
+    priority: 1
+    tech_prefix: "50752"
+  - trunk: didforsale
+    priority: 2
+    tech_prefix: "011"
+  - trunk: connect2dial
+    priority: 3
+    tech_prefix: ""
+  - trunk: simwood
+    priority: 4
+    tech_prefix: ""
+  desc: Mobile
+- country: AZ
+  prefix: "99451"
+  routes: 
+  - trunk: bti
+    priority: 1
+    tech_prefix: "50752"
+  - trunk: didforsale
+    priority: 2
+    tech_prefix: "011"
+  - trunk: connect2dial
+    priority: 3
+    tech_prefix: ""
+  - trunk: simwood
+    priority: 4
+    tech_prefix: ""
+  desc: Mobile
+- country: AZ
+  prefix: "99460"
+  routes: 
+  - trunk: bti
+    priority: 1
+    tech_prefix: "50752"
+  - trunk: didforsale
+    priority: 2
+    tech_prefix: "011"
+  - trunk: connect2dial
+    priority: 3
+    tech_prefix: ""
+  - trunk: simwood
+    priority: 4
+    tech_prefix: ""
+  desc: Mobile
+- country: AZ
+  prefix: "99444"
+  routes: 
+  - trunk: bti
+    priority: 1
+    tech_prefix: "50752"
+  - trunk: didforsale
+    priority: 2
+    tech_prefix: "011"
+  - trunk: connect2dial
+    priority: 3
+    tech_prefix: ""
+  - trunk: simwood
+    priority: 4
+    tech_prefix: ""
+  desc: Mobile
+- country: AZ
+  prefix: "99440"
+  routes: 
+  - trunk: bti
+    priority: 1
+    tech_prefix: "50752"
+  - trunk: didforsale
+    priority: 2
+    tech_prefix: "011"
+  - trunk: connect2dial
+    priority: 3
+    tech_prefix: ""
+  - trunk: simwood
+    priority: 4
+    tech_prefix: ""
+  desc: Mobile
+- country: KW
+  prefix: "96597426904"
+  routes: 
+  - trunk: voipeden-prem
+    priority: 1
+    tech_prefix: 65248#
+  - trunk: bti
+    priority: 2
+    tech_prefix: "50752"
+  - trunk: callbiz6
+    priority: 3
+    tech_prefix: "6666"
+  - trunk: didforsale
+    priority: 4
+    tech_prefix: "011"
+  - trunk: simwood
+    priority: 5
+    tech_prefix: ""
+  desc: Special-Sariolghalam
+- country: KW
+  prefix: "96599541729"
+  routes: 
+  - trunk: voipeden-prem
+    priority: 1
+    tech_prefix: 65248#
+  - trunk: bti
+    priority: 2
+    tech_prefix: "50752"
+  - trunk: callbiz6
+    priority: 3
+    tech_prefix: "6666"
+  - trunk: didforsale
+    priority: 4
+    tech_prefix: "011"
+  - trunk: simwood
+    priority: 5
+    tech_prefix: ""
+  desc: Special-Sariolghalam 2
+- country: AR
+  prefix: "549"
+  routes: 
+  - trunk: simwood
+    priority: 1
+    tech_prefix: ""
+  - trunk: bti
+    priority: 2
+    tech_prefix: "50752"
+  desc: Mobile
+- country: AR
+  prefix: "5411"
+  routes: 
+  - trunk: simwood
+    priority: 1
+    tech_prefix: ""
+  - trunk: bti
+    priority: 2
+    tech_prefix: "50752"
+  desc: Buenos Aires
+- country: AR
+  prefix: "54"
+  routes: 
+  - trunk: simwood
+    priority: 1
+    tech_prefix: ""
+  - trunk: bti
+    priority: 2
+    tech_prefix: "50752"
+  desc: All
+- country: KN
+  prefix: "1"
+  routes: 
+  - trunk: voipeden
+    priority: 1
+    tech_prefix: 65248#
+  - trunk: gafachi
+    priority: 2
+    tech_prefix: ""
+  - trunk: didforsale
+    priority: 3
+    tech_prefix: ""
+  - trunk: callbiz
+    priority: 4
+    tech_prefix: "6666"
+  - trunk: callbiz
+    priority: 5
+    tech_prefix: ""
+  desc: All
+- country: GB
+  prefix: "44782"
+  routes: 
+  - trunk: gafachi
+    priority: 1
+    tech_prefix: "011"
+  - trunk: simwood
+    priority: 2
+    tech_prefix: ""
+  - trunk: voipeden
+    priority: 3
+    tech_prefix: 65248#
+  - trunk: connect2dial
+    priority: 4
+    tech_prefix: ""
+  - trunk: callbiz
+    priority: 5
+    tech_prefix: "6666"
+  desc: Mobile VODAFONE
+- country: CX
+  prefix: "6188"
+  routes: 
+  - trunk: bti
+    priority: 1
+    tech_prefix: "50752"
+  - trunk: didforsale
+    priority: 2
+    tech_prefix: "011"
+  - trunk: voipeden
+    priority: 3
+    tech_prefix: 65248#
+  - trunk: simwood
+    priority: 4
+    tech_prefix: ""
+  - trunk: connect2dial
+    priority: 5
+    tech_prefix: ""
+  desc: All
+- country: CX
+  prefix: "6189"
+  routes: 
+  - trunk: bti
+    priority: 1
+    tech_prefix: "50752"
+  - trunk: didforsale
+    priority: 2
+    tech_prefix: "011"
+  - trunk: voipeden
+    priority: 3
+    tech_prefix: 65248#
+  - trunk: simwood
+    priority: 4
+    tech_prefix: ""
+  - trunk: connect2dial
+    priority: 5
+    tech_prefix: ""
+  desc: Perth II
+- country: DZ
+  prefix: "21321"
+  routes: 
+  - trunk: simwood
+    priority: 1
+    tech_prefix: ""
+  - trunk: callbiz6
+    priority: 2
+    tech_prefix: "6666"
+  - trunk: connect2dial
+    priority: 3
+    tech_prefix: ""
+  - trunk: callbiz6
+    priority: 4
+    tech_prefix: "6666"
+  - trunk: callbiz6
+    priority: 5
+    tech_prefix: "6666"
+  desc: Algiers
+- country: DZ
+  prefix: "21379"
+  routes: 
+  - trunk: simwood
+    priority: 1
+    tech_prefix: ""
+  - trunk: connect2dial
+    priority: 2
+    tech_prefix: ""
+  - trunk: connect2dial
+    priority: 3
+    tech_prefix: ""
+  - trunk: callbiz6
+    priority: 4
+    tech_prefix: "6666"
+  - trunk: callbiz6
+    priority: 5
+    tech_prefix: "6666"
+  desc: Mobile-Orascom
+- country: DZ
+  prefix: "2134"
+  routes: 
+  - trunk: voipeden
+    priority: 1
+    tech_prefix: 65248#
+  - trunk: simwood
+    priority: 2
+    tech_prefix: ""
+  - trunk: connect2dial
+    priority: 3
+    tech_prefix: ""
+  - trunk: bti
+    priority: 4
+    tech_prefix: "50752"
+  - trunk: callbiz6
+    priority: 5
+    tech_prefix: "6666"
+  desc: Proper
+- country: SY
+  prefix: "9639"
+  routes: 
+  - trunk: voipeden
+    priority: 1
+    tech_prefix: 65248#
+  - trunk: connect2dial
+    priority: 2
+    tech_prefix: ""
+  - trunk: bti
+    priority: 3
+    tech_prefix: "50752"
+  - trunk: didforsale
+    priority: 4
+    tech_prefix: "011"
+  desc: Mobile
+- country: DZ
+  prefix: "21355"
+  routes: 
+  - trunk: bti
+    priority: 1
+    tech_prefix: "50752"
+  - trunk: simwood
+    priority: 2
+    tech_prefix: ""
+  - trunk: callbiz6
+    priority: 3
+    tech_prefix: "6666"
+  - trunk: callbiz6
+    priority: 4
+    tech_prefix: "6666"
+  desc: Mobile-Wataniya
+- country: FR
+  prefix: "33698501051"
+  routes: 
+  - trunk: voipeden
+    priority: 1
+    tech_prefix: 65248#
+  - trunk: bti
+    priority: 2
+    tech_prefix: "50752"
+  - trunk: gafachi
+    priority: 3
+    tech_prefix: "011"
+  - trunk: connect2dial
+    priority: 4
+    tech_prefix: ""
+  desc: Mobile-Bouygues
+- country: IQ
+  prefix: "964771"
+  routes: 
+  - trunk: simwood
+    priority: 1
+    tech_prefix: ""
+  - trunk: voipeden
+    priority: 2
+    tech_prefix: 65248#
+  - trunk: didforsale
+    priority: 3
+    tech_prefix: "011"
+  - trunk: gafachi
+    priority: 4
+    tech_prefix: "011"
+  - trunk: bti
+    priority: 5
+    tech_prefix: "50752"
+  desc: mobile
+- country: IQ
+  prefix: "9641"
+  routes: 
+  - trunk: simwood
+    priority: 1
+    tech_prefix: ""
+  - trunk: voipeden
+    priority: 2
+    tech_prefix: 65248#
+  - trunk: didforsale
+    priority: 3
+    tech_prefix: "011"
+  - trunk: gafachi
+    priority: 4
+    tech_prefix: "011"
+  - trunk: bti
+    priority: 5
+    tech_prefix: "50752"
+  desc: Baghdad
+- country: IQ
+  prefix: "964"
+  routes: 
+  - trunk: simwood
+    priority: 1
+    tech_prefix: ""
+  - trunk: voipeden
+    priority: 2
+    tech_prefix: 65248#
+  - trunk: didforsale
+    priority: 3
+    tech_prefix: "011"
+  - trunk: gafachi
+    priority: 4
+    tech_prefix: "011"
+  - trunk: bti
+    priority: 5
+    tech_prefix: "50752"
+  desc: All
+- country: MX
+  prefix: "5276"
+  routes: 
+  - trunk: voipeden
+    priority: 1
+    tech_prefix: 65248#
+  - trunk: simwood
+    priority: 2
+    tech_prefix: ""
+  - trunk: bti
+    priority: 3
+    tech_prefix: "50752"
+  - trunk: callbiz6
+    priority: 4
+    tech_prefix: "6666"
+  desc: Axochiapan
+- country: CH
+  prefix: "416"
+  routes: 
+  - trunk: simwood
+    priority: 1
+    tech_prefix: ""
+  - trunk: bti
+    priority: 2
+    tech_prefix: "50752"
+  - trunk: voipeden
+    priority: 3
+    tech_prefix: 65248#
+  - trunk: didforsale
+    priority: 4
+    tech_prefix: "011"
+  - trunk: gafachi
+    priority: 5
+    tech_prefix: "011"
+  desc: Proper
+- country: JM
+  prefix: "18768496507"
+  routes: 
+  - trunk: voipeden
+    priority: 1
+    tech_prefix: 65248#
+  - trunk: bti
+    priority: 2
+    tech_prefix: "50752"
+  - trunk: didforsale
+    priority: 3
+    tech_prefix: "011"
+  - trunk: simwood
+    priority: 4
+    tech_prefix: ""
+  desc: Mobile
+- country: JM
+  prefix: "1876"
+  routes: 
+  - trunk: voipeden
+    priority: 1
+    tech_prefix: 65248#
+  - trunk: bti
+    priority: 2
+    tech_prefix: "50752"
+  - trunk: didforsale
+    priority: 3
+    tech_prefix: "011"
+  - trunk: simwood
+    priority: 4
+    tech_prefix: ""
+  desc: All
+- country: PK
+  prefix: "922135223970"
+  routes: 
+  - trunk: megacomm77az
+    priority: 1
+    tech_prefix: ""
+  desc: Test call
+- country: ES
+  prefix: "34691764685"
+  routes: 
+  - trunk: bti
+    priority: 1
+    tech_prefix: "50752"
+  - trunk: voipeden
+    priority: 2
+    tech_prefix: 65248#
+  desc: MOBILE AMENA/RETEVISION
+- country: ES
+  prefix: "349"
+  routes: 
+  - trunk: voipeden
+    priority: 1
+    tech_prefix: 65248#
+  - trunk: simwood
+    priority: 2
+    tech_prefix: ""
+  - trunk: bti
+    priority: 3
+    tech_prefix: "50752"
+  desc: Proper
+- country: TR
+  prefix: "9050"
+  routes: 
+  - trunk: voipeden
+    priority: 1
+    tech_prefix: 65248#
+  - trunk: callbiz6
+    priority: 2
+    tech_prefix: "6666"
+  - trunk: connect2dial
+    priority: 3
+    tech_prefix: ""
+  - trunk: simwood
+    priority: 4
+    tech_prefix: ""
+  - trunk: didforsale
+    priority: 5
+    tech_prefix: "011"
+  desc: Mobile other
+- country: TW
+  prefix: "886"
+  routes: 
+  - trunk: voipeden
+    priority: 1
+    tech_prefix: 65248#
+  - trunk: simwood
+    priority: 2
+    tech_prefix: ""
+  - trunk: didforsale
+    priority: 3
+    tech_prefix: "011"
+  - trunk: bti
+    priority: 4
+    tech_prefix: "50752"
+  - trunk: connect2dial
+    priority: 5
+    tech_prefix: ""
+  desc: Proper
+- country: TW
+  prefix: "8869"
+  routes: 
+  - trunk: simwood
+    priority: 1
+    tech_prefix: ""
+  - trunk: voipeden
+    priority: 2
+    tech_prefix: 65248#
+  - trunk: didforsale
+    priority: 3
+    tech_prefix: "011"
+  - trunk: bti
+    priority: 4
+    tech_prefix: "50752"
+  - trunk: connect2dial
+    priority: 5
+    tech_prefix: ""
+  desc: Mobile
+- country: VE
+  prefix: "58412"
+  routes: 
+  - trunk: voipeden
+    priority: 1
+    tech_prefix: 65248#
+  - trunk: bti
+    priority: 2
+    tech_prefix: "50752"
+  - trunk: simwood
+    priority: 3
+    tech_prefix: ""
+  - trunk: gafachi
+    priority: 4
+    tech_prefix: "011"
+  - trunk: connect2dial
+    priority: 5
+    tech_prefix: ""
+  desc: Mobile
+- country: VE
+  prefix: "582"
+  routes: 
+  - trunk: voipeden
+    priority: 1
+    tech_prefix: 65248#
+  - trunk: bti
+    priority: 2
+    tech_prefix: "50752"
+  - trunk: simwood
+    priority: 3
+    tech_prefix: ""
+  - trunk: gafachi
+    priority: 4
+    tech_prefix: "011"
+  - trunk: connect2dial
+    priority: 5
+    tech_prefix: ""
+  desc: Proper
+- country: VE
+  prefix: "58417"
+  routes: 
+  - trunk: voipeden
+    priority: 1
+    tech_prefix: 65248#
+  - trunk: bti
+    priority: 2
+    tech_prefix: "50752"
+  - trunk: simwood
+    priority: 3
+    tech_prefix: ""
+  - trunk: gafachi
+    priority: 4
+    tech_prefix: "011"
+  - trunk: connect2dial
+    priority: 5
+    tech_prefix: ""
+  desc: Mobile
+- country: VE
+  prefix: "584"
+  routes: 
+  - trunk: voipeden
+    priority: 1
+    tech_prefix: 65248#
+  - trunk: bti
+    priority: 2
+    tech_prefix: "50752"
+  - trunk: gafachi
+    priority: 3
+    tech_prefix: "011"
+  - trunk: simwood
+    priority: 4
+    tech_prefix: ""
+  desc: Mobile Other
+- country: AT
+  prefix: "438"
+  routes: 
+  - trunk: bti
+    priority: 1
+    tech_prefix: "50752"
+  desc: Premium Numbers
+- country: AT
+  prefix: "437"
+  routes: 
+  - trunk: bti
+    priority: 1
+    tech_prefix: "50752"
+  desc: Special Service
+- country: DE
+  prefix: "49180"
+  routes: 
+  - trunk: bti
+    priority: 1
+    tech_prefix: "50752"
+  desc: Premium
+- country: DE
+  prefix: "49170"
+  routes: 
+  - trunk: bti
+    priority: 1
+    tech_prefix: "50752"
+  desc: Premium
+- country: SV
+  prefix: "50377"
+  routes: 
+  - trunk: voipeden-prem
+    priority: 1
+    tech_prefix: 65248#
+  - trunk: simwood
+    priority: 2
+    tech_prefix: ""
+  - trunk: bti
+    priority: 3
+    tech_prefix: "50752"
+  - trunk: didforsale
+    priority: 4
+    tech_prefix: "011"
+  desc: Mobile Telemovil
+- country: SV
+  prefix: "50378"
+  routes: 
+  - trunk: voipeden-prem
+    priority: 1
+    tech_prefix: 65248#
+  - trunk: simwood
+    priority: 2
+    tech_prefix: ""
+  - trunk: bti
+    priority: 3
+    tech_prefix: "50752"
+  - trunk: didforsale
+    priority: 4
+    tech_prefix: "011"
+  desc: Mobile Telefonica
+- country: HU
+  prefix: "361"
+  routes: 
+  - trunk: voipeden
+    priority: 1
+    tech_prefix: 65248#
+  - trunk: bti
+    priority: 2
+    tech_prefix: "50752"
+  - trunk: simwood
+    priority: 3
+    tech_prefix: ""
+  desc: Budapest
+- country: US
+  prefix: "1800"
+  routes: 
+  - trunk: O1Comm
+    priority: 1
+    tech_prefix: ""
+  - trunk: zeus
+    priority: 2
+    tech_prefix: ""
+  - trunk: voipeden
+    priority: 3
+    tech_prefix: 65248#
+  desc: TF-800
+- country: US
+  prefix: "1888"
+  routes: 
+  - trunk: O1Comm
+    priority: 1
+    tech_prefix: ""
+  - trunk: zeus
+    priority: 2
+    tech_prefix: ""
+  - trunk: voipeden
+    priority: 3
+    tech_prefix: 65248#
+  desc: TF-888
+- country: US
+  prefix: "1877"
+  routes: 
+  - trunk: O1Comm
+    priority: 1
+    tech_prefix: ""
+  - trunk: zeus
+    priority: 2
+    tech_prefix: ""
+  - trunk: voipeden
+    priority: 3
+    tech_prefix: 65248#
+  desc: TF-877
+- country: US
+  prefix: "1866"
+  routes: 
+  - trunk: O1Comm
+    priority: 1
+    tech_prefix: ""
+  - trunk: zeus
+    priority: 2
+    tech_prefix: ""
+  - trunk: voipeden
+    priority: 3
+    tech_prefix: 65248#
+  desc: TF-866
+- country: IN
+  prefix: "9194"
+  routes: 
+  - trunk: connect2dial
+    priority: 1
+    tech_prefix: ""
+  - trunk: callbiz6
+    priority: 2
+    tech_prefix: "6666"
+  - trunk: megacomm77az
+    priority: 3
+    tech_prefix: ""
+  - trunk: voipeden
+    priority: 4
+    tech_prefix: 65248#
+  desc: BSNL
+- country: SO
+  prefix: "252"
+  routes: 
+  - trunk: callbiz6
+    priority: 1
+    tech_prefix: "6666"
+  - trunk: bti
+    priority: 2
+    tech_prefix: "50752"
+  - trunk: megacomm77az
+    priority: 3
+    tech_prefix: ""
+  desc: Proper
+- country: SO
+  prefix: "25224"
+  routes: 
+  - trunk: callbiz6
+    priority: 1
+    tech_prefix: "6666"
+  - trunk: bti
+    priority: 2
+    tech_prefix: "50752"
+  - trunk: megacomm77az
+    priority: 3
+    tech_prefix: ""
+  desc: Mobile
+- country: SO
+  prefix: "25260"
+  routes: 
+  - trunk: callbiz6
+    priority: 1
+    tech_prefix: "6666"
+  - trunk: bti
+    priority: 2
+    tech_prefix: "50752"
+  - trunk: megacomm77az
+    priority: 3
+    tech_prefix: ""
+  desc: Mobile
+- country: ET
+  prefix: "251"
+  routes: 
+  - trunk: voipeden
+    priority: 1
+    tech_prefix: 65248#
+  - trunk: bti
+    priority: 2
+    tech_prefix: "50752"
+  - trunk: callbiz6
+    priority: 3
+    tech_prefix: "6666"
+  - trunk: callbiz6
+    priority: 4
+    tech_prefix: "6666"
+  desc: Proper
+- country: ET
+  prefix: "25111"
+  routes: 
+  - trunk: voipeden
+    priority: 1
+    tech_prefix: 65248#
+  - trunk: bti
+    priority: 2
+    tech_prefix: "50752"
+  - trunk: callbiz6
+    priority: 3
+    tech_prefix: "6666"
+  - trunk: callbiz6
+    priority: 4
+    tech_prefix: "6666"
+  desc: Addis Ababa
+- country: ET
+  prefix: "2519"
+  routes: 
+  - trunk: voipeden
+    priority: 1
+    tech_prefix: 65248#
+  - trunk: bti
+    priority: 2
+    tech_prefix: "50752"
+  - trunk: callbiz6
+    priority: 3
+    tech_prefix: "6666"
+  - trunk: callbiz6
+    priority: 4
+    tech_prefix: "6666"
+  desc: Mobile
+- country: SV
+  prefix: "50374594794"
+  routes: 
+  - trunk: voipeden-prem
+    priority: 1
+    tech_prefix: 65248#
+  - trunk: simwood
+    priority: 2
+    tech_prefix: ""
+  - trunk: bti
+    priority: 3
+    tech_prefix: "50752"
+  - trunk: didforsale
+    priority: 4
+    tech_prefix: "011"
+  desc: Mobile-Rahgozar special route 1
+- country: SV
+  prefix: "50378177767"
+  routes: 
+  - trunk: voipeden-prem
+    priority: 1
+    tech_prefix: 65248#
+  - trunk: simwood
+    priority: 2
+    tech_prefix: ""
+  - trunk: bti
+    priority: 3
+    tech_prefix: "50752"
+  - trunk: didforsale
+    priority: 4
+    tech_prefix: "011"
+  desc: Mobile-Rahgozar Special Route 2
+- country: SV
+  prefix: "50377230041"
+  routes: 
+  - trunk: voipeden-prem
+    priority: 1
+    tech_prefix: 65248#
+  - trunk: simwood
+    priority: 2
+    tech_prefix: ""
+  - trunk: bti
+    priority: 3
+    tech_prefix: "50752"
+  - trunk: didforsale
+    priority: 4
+    tech_prefix: "011"
+  desc: Mobile-Rahgozar Special Route 3
+- country: BO
+  prefix: "59122799814"
+  routes: 
+  - trunk: voipeden
+    priority: 1
+    tech_prefix: 65248#
+  - trunk: simwood
+    priority: 2
+    tech_prefix: ""
+  - trunk: gafachi
+    priority: 3
+    tech_prefix: "011"
+  - trunk: connect2dial
+    priority: 4
+    tech_prefix: ""
+  - trunk: megacomm77az
+    priority: 5
+    tech_prefix: ""
+  desc: LaPaz-Katia
+- country: BO
+  prefix: "59170586882"
+  routes: 
+  - trunk: voipeden
+    priority: 1
+    tech_prefix: 65248#
+  - trunk: simwood
+    priority: 2
+    tech_prefix: ""
+  - trunk: gafachi
+    priority: 3
+    tech_prefix: "011"
+  - trunk: connect2dial
+    priority: 4
+    tech_prefix: ""
+  - trunk: megacomm77az
+    priority: 5
+    tech_prefix: ""
+  desc: Mobile-Nuevatel_Katia
+- country: RU
+  prefix: "7917210944"
+  routes: 
+  - trunk: voipeden-prem
+    priority: 1
+    tech_prefix: 65248#
+  - trunk: simwood
+    priority: 2
+    tech_prefix: ""
+  - trunk: bti
+    priority: 3
+    tech_prefix: "50752"
+  - trunk: didforsale
+    priority: 4
+    tech_prefix: "011"
+  desc: Mobile-Saratovskaya-McBride
+- country: AE
+  prefix: "971561498607"
+  routes: 
+  - trunk: bti
+    priority: 1
+    tech_prefix: "50752"
+  - trunk: connect2dial
+    priority: 2
+    tech_prefix: ""
+  - trunk: simwood
+    priority: 3
+    tech_prefix: ""
+  - trunk: didforsale
+    priority: 4
+    tech_prefix: "011"
+  desc: Mobile_Kouranki
+- country: IM
+  prefix: "44845"
+  routes: 
+  - trunk: callbiz6
+    priority: 1
+    tech_prefix: "6666"
+  - trunk: voipeden
+    priority: 2
+    tech_prefix: 65248#
+  - trunk: simwood
+    priority: 3
+    tech_prefix: ""
+  - trunk: bti
+    priority: 4
+    tech_prefix: "50752"
+  desc: Proper
+- country: DZ
+  prefix: "21377"
+  routes: 
+  - trunk: simwood
+    priority: 1
+    tech_prefix: ""
+  - trunk: bti
+    priority: 2
+    tech_prefix: "50752"
+  - trunk: connect2dial
+    priority: 3
+    tech_prefix: ""
+  - trunk: callbiz6
+    priority: 4
+    tech_prefix: "6666"
+  desc: Mobile-OrascomII-Anissa
+- country: DZ
+  prefix: "2136"
+  routes: 
+  - trunk: voipeden
+    priority: 1
+    tech_prefix: 65248#
+  - trunk: simwood
+    priority: 2
+    tech_prefix: ""
+  - trunk: bti
+    priority: 3
+    tech_prefix: "50752"
+  - trunk: connect2dial
+    priority: 4
+    tech_prefix: ""
+  - trunk: callbiz6
+    priority: 5
+    tech_prefix: "6666"
+  desc: Mobile
+- country: FR
+  prefix: "33632680836"
+  routes: 
+  - trunk: didforsale
+    priority: 1
+    tech_prefix: "011"
+  - trunk: simwood
+    priority: 2
+    tech_prefix: ""
+  - trunk: connect2dial
+    priority: 3
+    tech_prefix: ""
+  desc: Mobile
+- country: IR
+  prefix: "982185521770"
+  routes: 
+  - trunk: pkvoip1
+    priority: 1
+    tech_prefix: ""
+  - trunk: pkvoip2
+    priority: 2
+    tech_prefix: ""
+  desc: DID-Test
+- country: IR
+  prefix: "982188870150"
+  routes: 
+  - trunk: pkvoip1
+    priority: 1
+    tech_prefix: ""
+  desc: pdd
+- country: CA
+  prefix: "14165028475"
+  routes: 
+  - trunk: zeus
+    priority: 1
+    tech_prefix: ""
+  - trunk: voipeden
+    priority: 2
+    tech_prefix: 65248#
+  - trunk: simwood
+    priority: 3
+    tech_prefix: ""
+  - trunk: bti
+    priority: 4
+    tech_prefix: "50752"
+  - trunk: connect2dial
+    priority: 5
+    tech_prefix: ""
+  desc: Farman Canada
+- country: TR
+  prefix: "902523820000"
+  routes: 
+  - trunk: voipeden
+    priority: 1
+    tech_prefix: 65248#
+  - trunk: callbiz6
+    priority: 2
+    tech_prefix: "6666"
+  - trunk: connect2dial
+    priority: 3
+    tech_prefix: ""
+  - trunk: simwood
+    priority: 4
+    tech_prefix: ""
+  - trunk: didforsale
+    priority: 5
+    tech_prefix: "011"
+  desc: Test Roya
+- country: IR
+  prefix: "982122235522"
+  routes: 
+  - trunk: zohakish
+    priority: 1
+    tech_prefix: ""
+  - trunk: voipeden
+    priority: 2
+    tech_prefix: 65248#
+  desc: busy-test
+- country: VN
+  prefix: "84127"
+  routes: 
+  - trunk: bti
+    priority: 1
+    tech_prefix: "50752"
+  - trunk: voipeden-prem
+    priority: 2
+    tech_prefix: 65248#
+  - trunk: pkvoip1
+    priority: 3
+    tech_prefix: ""
+  - trunk: callbiz6
+    priority: 4
+    tech_prefix: "6666"
+  - trunk: connect2dial
+    priority: 5
+    tech_prefix: ""
+  desc: Mobile Other
+- country: UZ
+  prefix: "998"
+  routes: 
+  - trunk: bti
+    priority: 1
+    tech_prefix: "50752"
+  - trunk: voipeden
+    priority: 2
+    tech_prefix: 65248#
+  - trunk: connect2dial
+    priority: 3
+    tech_prefix: ""
+  - trunk: simwood
+    priority: 4
+    tech_prefix: ""
+  - trunk: voipeden
+    priority: 5
+    tech_prefix: 65248#
+  desc: Proper
+- country: UZ
+  prefix: "9989"
+  routes: 
+  - trunk: bti
+    priority: 1
+    tech_prefix: "50752"
+  - trunk: voipeden
+    priority: 2
+    tech_prefix: 65248#
+  - trunk: connect2dial
+    priority: 3
+    tech_prefix: ""
+  - trunk: simwood
+    priority: 4
+    tech_prefix: ""
+  - trunk: voipeden
+    priority: 5
+    tech_prefix: 65248#
+  desc: Mobile
+- country: CU
+  prefix: "5399"
+  routes: 
+  - trunk: voipeden
+    priority: 1
+    tech_prefix: 65248#
+  - trunk: voipeden-prem
+    priority: 2
+    tech_prefix: 65248#
+  - trunk: callbiz6
+    priority: 3
+    tech_prefix: "6666"
+  - trunk: simwood
+    priority: 4
+    tech_prefix: ""
+  - trunk: didforsale
+    priority: 5
+    tech_prefix: "011"
+  desc: " Guantanamo Bay"
+- country: CU
+  prefix: "535"
+  routes: 
+  - trunk: voipeden
+    priority: 1
+    tech_prefix: 65248#
+  - trunk: voipeden-prem
+    priority: 2
+    tech_prefix: 65248#
+  - trunk: callbiz6
+    priority: 3
+    tech_prefix: "6666"
+  - trunk: simwood
+    priority: 4
+    tech_prefix: ""
+  - trunk: didforsale
+    priority: 5
+    tech_prefix: "011"
+  desc: Mobile
+- country: CU
+  prefix: "537"
+  routes: 
+  - trunk: voipeden
+    priority: 1
+    tech_prefix: 65248#
+  - trunk: voipeden-prem
+    priority: 2
+    tech_prefix: 65248#
+  - trunk: callbiz6
+    priority: 3
+    tech_prefix: "6666"
+  - trunk: simwood
+    priority: 4
+    tech_prefix: ""
+  - trunk: didforsale
+    priority: 5
+    tech_prefix: "011"
+  desc: Mobile II
+- country: CU
+  prefix: "53"
+  routes: 
+  - trunk: voipeden
+    priority: 1
+    tech_prefix: 65248#
+  - trunk: voipeden-prem
+    priority: 2
+    tech_prefix: 65248#
+  - trunk: callbiz6
+    priority: 3
+    tech_prefix: "6666"
+  - trunk: simwood
+    priority: 4
+    tech_prefix: ""
+  - trunk: didforsale
+    priority: 5
+    tech_prefix: "011"
+  desc: All
+- country: CU
+  prefix: "5322587913"
+  routes: 
+  - trunk: tiger
+    priority: 1
+    tech_prefix: ""
+  desc: ELISA test
+- country: DE
+  prefix: "4961"
+  routes: 
+  - trunk: didforsale
+    priority: 1
+    tech_prefix: "011"
+  - trunk: simwood
+    priority: 2
+    tech_prefix: ""
+  - trunk: voipeden-prem
+    priority: 3
+    tech_prefix: 65248#
+  desc: Mainz
+- country: DE
+  prefix: "492743905398"
+  routes: []
+
+  desc: Ziba-Test
+- country: IN
+  prefix: "912228"
+  routes: 
+  - trunk: connect2dial
+    priority: 1
+    tech_prefix: ""
+  - trunk: callbiz6
+    priority: 2
+    tech_prefix: "6666"
+  - trunk: megacomm77az
+    priority: 3
+    tech_prefix: ""
+  - trunk: voipeden
+    priority: 4
+    tech_prefix: 65248#
+  desc: "Test Hotel Mumbai "

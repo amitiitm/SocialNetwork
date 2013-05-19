@@ -1,0 +1,33 @@
+<columns  lockedColumnCount='0'>
+
+
+	<column data='catalog_item_category_code'		label='Item Category #'			editable='false'	visible='true'		
+			width='120'	textAlign='left'			forLevel='false'				print_width='30'	defaultForLevel=''		
+			booleanFlag='false'	sortDataType='S' 	columnPrecision="NaN"/>
+			
+	<column data='catalog_item_code'				label='Item #'					editable='false'	visible='true'		
+			width='120'	textAlign='left'			forLevel='false'				print_width='24'	defaultForLevel=''		
+			booleanFlag='false'	sortDataType='S'	columnPrecision="NaN"/>
+			
+	<column data='catalog_item_name'				label='Item Name'				editable='false'	visible='true'		
+			width='120'	textAlign='left'			forLevel='false' 				print_width='25'	defaultForLevel=''	
+			booleanFlag='false'	sortDataType='S'	columnPrecision="NaN"/>
+	
+	<column data='diamond_wt'						label='Diamond Wt'				editable='false'	visible='true'		
+			width='100'	textAlign='right'			forLevel='false'				print_width='20'	defaultForLevel=''	
+			booleanFlag='false'	sortDataType='N'	columnPrecision="2"/>
+			
+	<column data='diamond_qty'						label='Diamond Qty'				editable='false'	visible='true'		
+			width='100'	textAlign='right'			forLevel='false' 				print_width='20'	defaultForLevel=''		
+			booleanFlag='false' sortDataType='N'	columnPrecision="2"/>
+			
+	<column data='casting_wt'						label='Casting Wt'				editable='false'	visible='true'		
+			width='100'	textAlign='right'			forLevel='false'				print_width='20'	defaultForLevel=''		
+			booleanFlag='false'	sortDataType='N'	columnPrecision="2"/>
+			
+	<column data='sold_qty'							label='Sold Qty'					editable='false'	visible='true'		
+			width='100'	textAlign='right'			forLevel='false'				print_width='20'	defaultForLevel=''	 
+			booleanFlag='false' sortDataType='N'	columnPrecision="2"/>
+			
+				
+</columns> 

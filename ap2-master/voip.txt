@@ -1,0 +1,15 @@
+ This job has three components 
+1-Session handling between Admin Portal pages (PHP to Ruby and Ruby to PHP)
+2-Session handling in the website www.voipontel.net to up.voipontel.net (website is in PHP and user portal is in Ruby). Login and logout must be handled properly between these sessions.
+3-Help them to point two Ruby pages to their proper table in the system (CDRs and HVC)
+
+
+
+http://www.voipontel.net/
+http://up.voipontel.net/
+http://ap2.voipontel.net/session
+
+http://ap2.voipontel.net/sessions/create?login=test1234&password=test1234
+
+http://ap2.voipontel.net/sessions/destroy
+

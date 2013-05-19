@@ -1,0 +1,42 @@
+<columns  lockedColumnCount='0'>
+	
+	<column data='id'				label='ID'		editable='false' 	visible='false' 	width='0'	textAlign='left'	forLevel='false'
+			defaultForLevel=''			booleanFlag='false'		sortDataType='N'/>		
+
+	<column data='trans_id'				label='Trans.Id'		editable='false' 	visible='false' 	width='0'	textAlign='left'	forLevel='false'
+			defaultForLevel=''			booleanFlag='false'		sortDataType='N'/>		
+
+	<column data='company_id'				label='Company Id'		editable='false' 	visible='false' 	width='0'	textAlign='left'	forLevel='false'
+			defaultForLevel=''			booleanFlag='false'		sortDataType='N'/>		
+	
+	<column data='user_id'				label='User Id'		editable='false' 	visible='false' 	width='0'	textAlign='left'	forLevel='false'
+			defaultForLevel=''			booleanFlag='false'		sortDataType='N'/>		
+
+	<column data='table_name'			label='Table Name'		editable='false' 	visible='false' 	width='0'	textAlign='left'	forLevel='false'
+			defaultForLevel=''			booleanFlag='false'		sortDataType='S'/>		
+
+	<column data='email_from'			label='Table Name'		editable='false' 	visible='false' 	width='0'	textAlign='left'	forLevel='false'
+			defaultForLevel=''			booleanFlag='false'		sortDataType='S'/>		
+
+	
+	
+	
+	<column data='user_name'		label='User'		editable='false' 	visible='true' 	width='80'	textAlign='left'	forLevel='false'
+			defaultForLevel=''			booleanFlag='false'		sortDataType='S'/>		
+
+	<column data='created_at'		 label='Date'	editable='false'	visible='true'	width='80'	textAlign='left'	forLevel='false' 
+			defaultForLevel=''			booleanFlag='false'		sortDataType='D'/>
+	
+	
+	<column data='subject'			label='Subject'		editable='false' 	visible='false' 	width='0'	textAlign='left'	forLevel='false'
+			defaultForLevel=''			booleanFlag='false'		sortDataType='S'/>		
+	
+	<column data='email_to'			label='Email To'		editable='false' 	visible='true' 	width='80'	textAlign='left'	forLevel='false'
+			defaultForLevel=''			booleanFlag='false'		sortDataType='S'/>		
+	
+	<column data='email_cc'			label='Email Cc'		editable='false' 	visible='true' 	width='80'	textAlign='left'	forLevel='false'
+			defaultForLevel=''			booleanFlag='false'		sortDataType='S'/>		
+	
+	<column data='description'		label='Notes'		editable='false' 	visible='true' 	width='80'	textAlign='left'	forLevel='false'
+			defaultForLevel=''			booleanFlag='false'		sortDataType='S'/>		
+</columns> 

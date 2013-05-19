@@ -1,0 +1,17 @@
+<columns>
+		<column data='name'				label='Image'			editable='false' visible='true' width='200' textAlign='left'	
+				dataType='S' 			sortDataType='S'       columnPrecision="NaN"		booleanFlag='false' componentType="Text"	/>
+
+		<column data='type' 			label='Type' 			editable='false' visible='true' width='75' textAlign='left'	
+				dataType='S'  			sortDataType='S' 		columnPrecision="NaN"	booleanFlag='false' componentType="Text"	/>
+
+		<column data='size' 			label='Size' 			editable='false' visible='true' width='75' textAlign='left'	
+				dataType='S'  			sortDataType='S' 		columnPrecision="NaN"	booleanFlag='false' componentType="Text"	/>
+
+		<column data='modificationDate'	label='Last Modified' 	editable='false' visible='true' width='220' textAlign='left'	
+				dataType='S'  			sortDataType='S' 		columnPrecision="NaN"	booleanFlag='false' componentType="Text"	/>
+
+		<column data='status' 			label='Status' 			editable='false' visible='true' width='100' textAlign='left' 	
+				dataType='S'  			sortDataType='S'		columnPrecision="NaN" 		booleanFlag='false' componentType="Text"	/>
+
+</columns> 

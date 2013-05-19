@@ -1,0 +1,3 @@
+html = render(:partial => "credit_card")
+page.replace_html :credit_card, html
+page.visual_effect :appear, :credit_card

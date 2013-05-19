@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<gencomponents:AddEdit xmlns:mx="http://www.adobe.com/2006/mxml" 
+	height="100%" width="100%" verticalGap="0"
+	xmlns:customcomponents="com.generic.customcomponents.*"
+	xmlns:gencomponents="com.generic.components.*">
+	<mx:Script source="../scripts/DocumentAddEditscript.as"/>
+	
+	<mx:VBox horizontalGap="0" width="100%">
+		<mx:HBox height="20" verticalAlign="middle" horizontalGap="2">
+			<mx:Label text="Code" width="90" textAlign="right" height="20" />
+			<customcomponents:GenTextInput id="tiCode" width="150" tabIndex="1" height="20" upperCaseFlag="true"
+				xmlTag="code" updatableFlag="true" tableName="document" editable="true" maxChars="25"/>	
+		</mx:HBox>
+
+		<mx:HBox height="20" verticalAlign="middle" horizontalGap="2" width="100%">
+			<mx:Label text="Name" width="90" textAlign="right" height="20" />
+			<customcomponents:GenTextInput id="tiDocument_name" width="250" editable="true" tabIndex="2" height="20"  
+				xmlTag="document_name" updatableFlag="true" tableName="document" maxChars="100"/>	
+		</mx:HBox>
+		
+		<mx:HBox height="20" verticalAlign="middle" horizontalGap="2" width="100%">
+			<mx:Label text="Component #" width="90" textAlign="right" height="20" />
+			<customcomponents:GenTextInput id="tiComponent_cd" width="250" tabIndex="3" height="20"  
+				xmlTag="component_cd" updatableFlag="true" tableName="document" editable="true" maxChars="100"/>	
+		</mx:HBox>
+		<mx:HBox width="100%" height="10%" verticalGap="0" horizontalGap="2">		
+					<mx:Label text="Status" width="90" textAlign="right" height="20" />
+					<customcomponents:GenComboBox id="cbTrans_flag" defaultValue="A" width="116" cornerRadius="0" xmlTag="trans_flag" updatableFlag="true"
+						tableName="document" enabled="true"  labelField="label" height="20" editable="false"
+						dataProvider="{__genModel.masterData.child('trans_flag').trans_flag}"
+						toolTip="Status" />
+				</mx:HBox>
+	</mx:VBox>
+</gencomponents:AddEdit>

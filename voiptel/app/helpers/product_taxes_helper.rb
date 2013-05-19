@@ -1,0 +1,2 @@
+module ProductTaxesHelper
+end

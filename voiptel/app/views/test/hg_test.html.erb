@@ -1,0 +1,20 @@
+<%= javascript_include_tag :high_charts %>
+
+<% box :type => "box_title", :title => "chart", :style => "width:750px;" do %>
+	<div id="chart"></div>
+<% end -%>
+<%= months %>
+<script type="text/javascript" charset="utf-8">
+	$(function(){
+		$.get("/test/hg", "year=<%= params[:year] %>",function(resp){
+			$("#chart").html(resp);
+		})
+	});
+	$(".years").live('click', function(e){
+		e.preventDefault();
+		var year = $(this).attr("href");
+		$.get("/test/hg", ("year=" + year),function(resp){
+			$("#chart").html(resp);
+		})
+	});
+</script>

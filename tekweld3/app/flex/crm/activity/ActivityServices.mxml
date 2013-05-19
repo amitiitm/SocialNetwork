@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rds:CommonServices xmlns:rds="business.*" xmlns:mx="http://www.adobe.com/2006/mxml">
+
+	<mx:HTTPService id="saveRecord" url="/crm/crm_activity/create_activities"/>
+	<mx:HTTPService id="getRecord" url="/crm/crm_activity/show_activities"/>
+	<mx:HTTPService id="getList" url="/crm/crm_activity/list_activities"/>
+	<mx:HTTPService id="getListFormat" url="crm/activity/xmls/ActivityListStru.xml"/>
+	<mx:HTTPService id="getViewFormat" url="crm/activity/xmls/ActivityCriteriaStru.xml"/>
+	<mx:HTTPService id="taskDetailFormat" url="crm/activity/xmls/ActivityTaskDetail.xml"/>
+	<mx:HTTPService id="opportunityDetailFormat" url="crm/activity/xmls/ActivityOpportunityDetail.xml"/>
+	<mx:HTTPService id="printRecord" url=""/>
+
+</rds:CommonServices>

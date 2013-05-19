@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:TitleWindow xmlns:mx="http://www.adobe.com/2006/mxml" layout="absolute" width="400" height="500"
+	xmlns:customcomponents="com.generic.customcomponents.*"
+	showCloseButton="true" close="btnCancelClickHandler()"
+	backgroundColor="#CAD2DF" creationComplete="init()"
+	initialize="{this.parentApplication.focusManager.deactivate()}">
+	<mx:Script source="../scripts/CustomerServicesSequenceManagerScript.as"/>
+	<mx:VBox height="100%" width="100%" horizontalAlign="center">
+		<mx:Label text="Rearrange Section by drag and drop." fontSize="14" color="#154C8E" fontWeight="bold"/>
+		<mx:DataGrid id="dgSource"  dragEnabled="true" dropEnabled="true" dragMoveEnabled="true" 
+			 textAlign="center" height="100%" width="80%">
+			<mx:columns>
+				<mx:DataGridColumn dataField="heading" headerText="Heading"/>
+			</mx:columns>
+		</mx:DataGrid>
+		<mx:HBox  verticalAlign="middle">
+			<mx:Button label="Save" id="btnSave"  height="20"
+					color="#FFFFFF" click="btnCancelClickHandler()"
+					textRollOverColor="#FFFFFF"
+					buttonMode="{true}"
+					
+					upSkin="@Embed('com/generic/assets/darkGrey.png')"
+			
+				    downSkin="@Embed('com/generic/assets/darkGrey.png')"
+					
+					overSkin="@Embed('com/generic/assets/darkGrey.png')"
+				   
+				    selectedUpSkin="@Embed('com/generic/assets/darkGrey.png')"
+				    selectedOverSkin="@Embed('com/generic/assets/darkGrey.png')"
+				    selectedDownSkin="@Embed('com/generic/assets/darkGrey.png')"
+					
+					disabledSkin="@Embed('com/generic/assets/darkGrey.png')"/>
+			<mx:Button label="Cancel" 	click="btnCancelClickHandler()"  height="20"
+					color="#FFFFFF"
+					textRollOverColor="#FFFFFF"
+					buttonMode="{true}"
+					
+					upSkin="@Embed('com/generic/assets/darkGrey.png')"
+			
+				    downSkin="@Embed('com/generic/assets/darkGrey.png')"
+					
+					overSkin="@Embed('com/generic/assets/darkGrey.png')"
+				   
+				    selectedUpSkin="@Embed('com/generic/assets/darkGrey.png')"
+				    selectedOverSkin="@Embed('com/generic/assets/darkGrey.png')"
+				    selectedDownSkin="@Embed('com/generic/assets/darkGrey.png')"
+					
+					disabledSkin="@Embed('com/generic/assets/darkGrey.png')"/>	
+		</mx:HBox>		
+	</mx:VBox>
+
+</mx:TitleWindow>

@@ -1,0 +1,129 @@
+<link href="/css/style_test.css" type="text/css" rel="stylesheet"/>
+<link href="/css/grid.css" type="text/css" rel="stylesheet"/>
+<link href="/css/temp.css" type="text/css" rel="stylesheet"/>
+
+<style type="text/css">
+  .ui-widget-header {
+    text-transform: uppercase;
+    text-shadow: 0px 0px 0 !important;
+  }
+
+  /*.ui-state-hover, .ui-widget-content .ui-state-hover, .ui-state-focus, .ui-widget-content .ui-state-focus, .pagination a:hover, a.btn:hover, button.ui-state-default:hover, #dashboard-buttons ul li:hover {*/
+    /*border: 0px none;*/
+    /*background: none;*/
+    /*font-weight: normal;*/
+    /*color:#333;*/
+    /*outline: none;*/
+  /*}*/
+
+</style>
+<!--<link href="/css/text_area.css" type="text/css" rel="stylesheet"/>-->
+
+<div id="tabs-billing1" style="display">
+  <ul class="fix">
+    <div id="wrapper">
+      <div id="container2" style="width:721px;">
+        <div id="tabsPanel" style="width:731px; margin-left:1px;margin-top:0 auto;">
+          <div id="tabTitle" style="padding-top: 5px">
+            <span><img src="/images/billing/tabTitle_bg_lft.jpg" width="6" height="26"/></span>
+            <span id="tabTitleBg" style="width:719px;">
+                <div class="btn">
+                  <span class='left_s_boundary'>&nbsp;&nbsp;</span>
+                     <span class="active_center" style="width:120px;">
+                       <li style="background:none;border:0 none !important;font-weight:normal;color:black;outline:none;" class='fix'>
+                         <a class="bill" href="/accounts/<%= params[:account_id] %>/billing/credit_cards">Credit Cards
+                           Onfile</a>
+                       </li>
+                     </span>
+                  <span class="right_s_boundary">&nbsp;&nbsp;</span>
+                </div>
+
+                <div class="btn">
+                  <span class='left_boundary'>&nbsp;&nbsp;</span>
+                    <span class="active-center">
+                      <li style="background:none;border:0 none !important;font-weight:normal;color:black;outline:none;" class='fix'>
+                        <a class="bill" href="/accounts/<%= params[:account_id] %>/billing/transactions">Payments</a>
+                      </li>
+                    </span>
+                  <span class='right_boundary'>&nbsp;&nbsp;</span>
+                </div>
+
+                <div class="btn">
+                  <span class='left_boundary'>&nbsp;&nbsp;</span>
+                    <span class="active-center">
+                      <li style="background:none;border:0 none !important;font-weight:normal;color:black;outline:none;" class='fix'>
+                        <a class="bill" href="/accounts/<%= params[:account_id] %>/billing/credits">Credits</a>
+                      </li>
+                    </span>
+                  <span class='right_boundary'>&nbsp;&nbsp;</span>
+                </div>
+                <!--active_btn-->
+                <div class="btn">
+                  <span class='left_boundary'>&nbsp;&nbsp;</span>
+                     <span class="active-center">
+                       <li style="background:none;border:0 none !important;font-weight:normal;color:black;outline:none;" class='fix'>
+                         <a class="bill" href="/accounts/<%= params[:account_id] %>/credit_cards/new">Add New Card</a>
+                       </li>
+                     </span>
+                  <span class='right_boundary'>&nbsp;&nbsp;</span>
+                </div>
+                <!--btn-->
+                <div class="btn_rAlign btn">
+                  <span class='left_boundary'>&nbsp;&nbsp;</span>
+                     <span class="active-center" style="min-width:95px;">
+                       <li style="background:none;border:0 none !important;font-weight:normal;color:black;outline:none;" class='fix'>
+                         <a class="bill" href="/accounts/<%= params[:account_id] %>/billing/auto_recharge">
+                           <span style="padding-top:4px;float:left; padding-left:4px;">
+                             <span style="float:left;margin:-5px 10px 0px 0px;;"> Auto Recharge </span>
+                             <span id="auto_recharge" class="<%= @account.auto_recharge ? 'on' : 'off' %>">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                           </span>
+                         </a>
+                       </li>
+                     </span>
+                  <span class='right_boundary'>&nbsp;&nbsp;</span>
+                </div><!--btn-->
+            </span><!--tabTitleBg-->
+            <span><img src="/images/billing/tabTitle_bg_rgt.jpg" width="6" height="26"/></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </ul>
+</div>
+
+<script type="text/javascript">
+  $('#tabs-billing1').tabs({ fx:{ opacity:'toggle' }, async:true});
+  $('#tabs-billing1').attr('class', '');
+  $('.fix').attr('class', '');
+  $('#ui-tabs-12').removeClass('ui-widget-content');
+  $('#ui-tabs-13').removeClass('ui-widget-content');
+  $('#ui-tabs-14').removeClass('ui-widget-content');
+  $('#ui-tabs-15').removeClass('ui-widget-content');
+  $('.ui-tabs-panel').removeClass('ui-widget-content');
+
+  jQuery(".bill").click(function (e) {
+    result = jQuery("div.btn:has(span.active_center)").children();
+    //Deselecting the tabs
+    jQuery(result[0]).addClass('left_boundary');
+    jQuery(result[0]).removeClass('left_s_boundary');
+    jQuery(result[1]).addClass('active-center');
+    jQuery(result[1]).removeClass('active_center');
+    jQuery(result[2]).addClass('right_boundary');
+    jQuery(result[2]).removeClass('right_s_boundary');
+    jQuery(this).attr('style', 'color:#CC6400');
+    jQuery('.active-center li a').attr('style', 'color: #414141;');
+    jQuery(this).attr('style', 'color:#CC6400');
+//         Highlight the tabs
+    jQuery(this.parentNode.parentNode).removeClass('active-center');
+    jQuery(this.parentNode.parentNode).addClass('active_center');
+    lb = jQuery(this).parents()[2].children[0];
+    jQuery(lb).removeClass('left_boundary');
+    jQuery(lb).addClass('left_s_boundary');
+    rb = jQuery(this).parents()[2].children[2];
+    jQuery(rb).removeClass('right_boundary');
+    jQuery(rb).addClass('right_s_boundary');
+    $('li.fix').attr('class', '');
+
+  })
+
+</script>

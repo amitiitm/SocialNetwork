@@ -1,0 +1,23 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  first_name: MyString
+  last_name: MyString
+  gender: 1
+  dob: 2008-06-16
+  email: MyString
+  account_status: 1
+  relationship: 1
+  account_holder_id: 1
+  address_id: 1
+
+two:
+  first_name: MyString
+  last_name: MyString
+  gender: 1
+  dob: 2008-06-16
+  email: MyString
+  account_status: 1
+  relationship: 1
+  account_holder_id: 1
+  address_id: 1

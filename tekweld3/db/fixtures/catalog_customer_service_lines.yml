@@ -1,0 +1,85 @@
+--- 
+catalog_customer_service_lines_001: 
+  link1_url: "Order By Item #"
+  sequence: 1
+  link3_text: ""
+  link2_url: "Order By Item #"
+  updated_at: 2010-10-10 11:06:55
+  link2_text: ""
+  update_flag: Y
+  diaspark_default: Y
+  link1_text: ""
+  paragraph: "##companyshortname## guarantees full warranty covering manufacturing and material defects for current branded products purchased from authorised ##companyshortname## retailers and online shops. The warranty only covers damages that are not caused by accidents, inappropriate use or wear and tear. Depending on the degree of damage to the warranted product, the feasibility and the availability of replacement parts, it will either be repaired or replaced by a piece of the same value. This warranty service is free of charge.\r\rThe damaged product should be given to an authorised ##companyshortname## retailer. Please contact ##companyshortname## directly at their toll-free number ##companycontactno##. If products are sent by post, they should be sent by certified mail and insured, as ##companyshortname## cannot be held liable for damage, loss or theft occurring during transport. (This repair service is also valid for ##companyshortname## products which are purchased abroad.) The warranty is valid for a period of two years, from the date of purchase. Please keep the delivery receipt as it serves as a warranty for products purchased from the online shop."
+  trans_flag: A
+  created_by: 100
+  lock_version: 0
+  main_heading_code: B1
+  updated_by: 100
+  id: 160
+  heading: ""
+  company_id: 0
+  link3_url: "Order By Item #"
+  created_at: 2010-10-10 11:06:55
+catalog_customer_service_lines_002: 
+  link1_url: "Order By Item #"
+  sequence: 1
+  link3_text: ""
+  link2_url: "Order By Item #"
+  updated_at: 2010-10-10 11:08:31
+  link2_text: ""
+  update_flag: Y
+  diaspark_default: N
+  link1_text: ""
+  paragraph: "##companyshortname## guarantees full warranty covering manufacturing and material defects for current branded products purchased from authorised ##companyshortname## retailers and online shops. The warranty only covers damages that are not caused by accidents, inappropriate use or wear and tear. Depending on the degree of damage to the warranted product, the feasibility and the availability of replacement parts, it will either be repaired or replaced by a piece of the same value. This warranty service is free of charge.\r\rThe damaged product should be given to an authorised ##companyshortname## retailer. Please contact ##companyshortname## directly at their toll-free number ##companycontactno##. If products are sent by post, they should be sent by certified mail and insured, as ##companyshortname## cannot be held liable for damage, loss or theft occurring during transport. (This repair service is also valid for ##companyshortname## products which are purchased abroad.) The warranty is valid for a period of two years, from the date of purchase. Please keep the delivery receipt as it serves as a warranty for products purchased from the online shop."
+  trans_flag: A
+  created_by: 100
+  lock_version: 0
+  main_heading_code: B1
+  updated_by: 100
+  id: 161
+  heading: ""
+  company_id: 0
+  link3_url: "Order By Item #"
+  created_at: 2010-10-10 11:08:31
+catalog_customer_service_lines_003: 
+  link1_url: "Order By Item #"
+  sequence: 1
+  link3_text: ""
+  link2_url: "Order By Item #"
+  updated_at: 2010-10-10 11:20:03
+  link2_text: ""
+  update_flag: Y
+  diaspark_default: Y
+  link1_text: ""
+  paragraph: "##companyshortname## offers a two-year limited warranty for pieces purchased. The warranty covers manufacturing and material defects under normal use, commencing from the date of purchase.\r\rEach defective product under the warranty will be examined and evaluated by our technical experts. Depending on the circumstances, the product will be repaired, replaced or substituted with a product of comparable value.\r\rIn the case of substitution, we are unfortunately not able to guarantee that you will receive the exact same product or design.\r\r##companyshortname## will not repair, replace or substitute any goods, which have been in our opinion, subject to normal wear and tear, abuse, modification, attempted repair, negligence, misuse or accident.\r\rIf a piece is not covered by the terms of ##companyshortname## warranty policy, we may offer a repair service at a charge. Please note that a defective piece can only be repaired if:\r\r\xE2\x80\xA2\tThe product is a genuine ##companyshortname## product.\r\xE2\x80\xA2\tThe repair is feasible - it must be possible to bring the product back to his original pristine condition\r\xE2\x80\xA2\tSpare parts are still available (this is usually not the case if a product is out of production)\r\rPlease bring the product in its original package to an authorised ##companyshortname## retailer. Please contact ##companyshortname## directly at their toll free number ##companycontactno##."
+  trans_flag: A
+  created_by: 100
+  lock_version: 0
+  main_heading_code: B2
+  updated_by: 100
+  id: 164
+  heading: ""
+  company_id: 0
+  link3_url: "Order By Item #"
+  created_at: 2010-10-10 11:20:03
+catalog_customer_service_lines_004: 
+  link1_url: "Order By Item #"
+  sequence: 1
+  link3_text: ""
+  link2_url: "Order By Item #"
+  updated_at: 2010-10-10 11:20:28
+  link2_text: ""
+  update_flag: Y
+  diaspark_default: N
+  link1_text: ""
+  paragraph: "##companyshortname## offers a two-year limited warranty for pieces purchased. The warranty covers manufacturing and material defects under normal use, commencing from the date of purchase.\r\rEach defective product under the warranty will be examined and evaluated by our technical experts. Depending on the circumstances, the product will be repaired, replaced or substituted with a product of comparable value.\r\rIn the case of substitution, we are unfortunately not able to guarantee that you will receive the exact same product or design.\r\r##companyshortname## will not repair, replace or substitute any goods, which have been in our opinion, subject to normal wear and tear, abuse, modification, attempted repair, negligence, misuse or accident.\r\rIf a piece is not covered by the terms of ##companyshortname## warranty policy, we may offer a repair service at a charge. Please note that a defective piece can only be repaired if:\r\r\xE2\x80\xA2\tThe product is a genuine ##companyshortname## product.\r\xE2\x80\xA2\tThe repair is feasible - it must be possible to bring the product back to his original pristine condition\r\xE2\x80\xA2\tSpare parts are still available (this is usually not the case if a product is out of production)\r\rPlease bring the product in its original package to an authorised ##companyshortname## retailer. Please contact ##companyshortname## directly at their toll free number ##companycontactno##."
+  trans_flag: A
+  created_by: 100
+  lock_version: 0
+  main_heading_code: B2
+  updated_by: 100
+  id: 165
+  heading: ""
+  company_id: 0
+  link3_url: "Order By Item #"
+  created_at: 2010-10-10 11:20:28

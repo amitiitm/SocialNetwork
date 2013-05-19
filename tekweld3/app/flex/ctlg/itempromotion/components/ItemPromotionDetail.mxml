@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:TitleWindow xmlns:mx="http://www.adobe.com/2006/mxml" layout="absolute" width="450" height="350"
+	xmlns:customcomponents="com.generic.customcomponents.*"
+	showCloseButton="true" close="btnCancelClickHandler()"
+	creationComplete="init()"
+	backgroundColor="#CAD2DF"
+	initialize="{this.parentApplication.focusManager.deactivate()}">
+	
+	<mx:Script source="../scripts/ItemPromotionDetailScript.as"/>
+	
+	<mx:VBox width="100%" height="100%">
+		<mx:Label text="Upload Picture" fontSize="14"
+			color="#21346C" fontWeight="bold"/>
+		<mx:HBox>
+			
+			<customcomponents:GenTextInput id="tiImage" width="250"  visible="true" height="20"
+							editable="false" enabled="true"  toolTip="Image Enlarge" />
+			<mx:Spacer width="5" />
+			<customcomponents:GenUploadButton id="btnBrowseImage" buttonMode="{true}"
+							label="Browse" toolTip="Browse Image"  height="18" tabIndex="104"
+							uploadServiceID="imageUploadUrl"
+							fileTitle="Image Name" fileTypes="*.jpg,*.bmp,*.png,*.gif" uploadFileNameSetEvent="handleUploadFileNameSetEvent(event)"
+							completeEvent="handleCompleteEvent(event)"
+							
+							color="#FFFFFF"
+							textRollOverColor="#FFFFFF"
+						
+				
+							upSkin="@Embed('com/generic/assets/darkGrey.png')"
+		
+			   				 downSkin="@Embed('com/generic/assets/darkGrey.png')"
+				
+							overSkin="@Embed('com/generic/assets/darkGrey.png')"
+			   
+			    			selectedUpSkin="@Embed('com/generic/assets/darkGrey.png')"
+			   			 selectedOverSkin="@Embed('com/generic/assets/darkGrey.png')"
+			   			 selectedDownSkin="@Embed('com/generic/assets/darkGrey.png')"
+				
+						disabledSkin="@Embed('com/generic/assets/darkGrey.png')" />
+		</mx:HBox>
+		<mx:Text color="#144D90" fontSize="10">
+				<mx:text>
+					<![CDATA[
+You can upload a JPG, GIF, or PNG file.Do not upload pictures
+containing celebrities, nudity,artwork or copyrighted images.)
+					]]>
+				</mx:text>
+			</mx:Text>
+		
+		<mx:Spacer height="10"/>
+		<mx:Label text="Define internal Link" color="#21346C" fontWeight="bold" fontSize="10"/>
+		
+		<mx:HBox>
+			<mx:ComboBox id="cbGroup1" width="125" cornerRadius="0"
+				 		tabIndex="3" labelField="@element_name" height="20" 
+						  fillAlphas="[1.0, 1.0]" fillColors="[#F8F8F7, #F8F8F7]" borderColor="#F8F8F7"/>
+		
+			<mx:ComboBox id="cbGroup2" width="125" cornerRadius="0" 
+					  tabIndex="4" labelField="@element_name" height="20" 
+						dataProvider="{XML(cbGroup1.selectedItem).children()}"  fillAlphas="[1.0, 1.0]" fillColors="[#F8F8F7, #F8F8F7]" borderColor="#F8F8F7"/>			
+		</mx:HBox>
+		<mx:HBox height="100" horizontalAlign="center" verticalAlign="middle">
+			<mx:Button id="btnUpdate" label="Update" click="btnUpdateClickHandler()"
+				color="#FFFFFF"
+				textRollOverColor="#FFFFFF"
+				buttonMode="{true}"
+				
+				upSkin="@Embed('com/generic/assets/darkGrey.png')"
+		
+			    downSkin="@Embed('com/generic/assets/darkGrey.png')"
+				
+				overSkin="@Embed('com/generic/assets/darkGrey.png')"
+			   
+			    selectedUpSkin="@Embed('com/generic/assets/darkGrey.png')"
+			    selectedOverSkin="@Embed('com/generic/assets/darkGrey.png')"
+			    selectedDownSkin="@Embed('com/generic/assets/darkGrey.png')"
+				
+				disabledSkin="@Embed('com/generic/assets/darkGrey.png')"/>
+			<mx:Button id="btnCancel"  label="Cancel" click="btnCancelClickHandler()"
+				color="#FFFFFF"
+				textRollOverColor="#FFFFFF"
+				buttonMode="{true}"
+				
+				upSkin="@Embed('com/generic/assets/darkGrey.png')"
+		
+			    downSkin="@Embed('com/generic/assets/darkGrey.png')"
+				
+				overSkin="@Embed('com/generic/assets/darkGrey.png')"
+			   
+			    selectedUpSkin="@Embed('com/generic/assets/darkGrey.png')"
+			    selectedOverSkin="@Embed('com/generic/assets/darkGrey.png')"
+			    selectedDownSkin="@Embed('com/generic/assets/darkGrey.png')"
+				
+				disabledSkin="@Embed('com/generic/assets/darkGrey.png')"/>	 
+		</mx:HBox>	
+	</mx:VBox>
+		
+</mx:TitleWindow>

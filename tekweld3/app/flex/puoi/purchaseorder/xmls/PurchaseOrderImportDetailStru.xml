@@ -1,0 +1,18 @@
+<columns lockedColumnCount='0'>
+	
+	<column data='catalog_item_code' label='Item #'		editable='false'	visible='true'		width='100'	textAlign='left'	forLevel='false'
+			print_width = '18'		defaultForLevel=''		booleanFlag='false'	sortDataType='S'	columnPrecision="NaN"/>
+			
+	<column data='item_description' label='Description'	editable='false'	visible='true'	width='125'	textAlign='left'	forLevel='true'
+			print_width = '18'		defaultForLevel=''		booleanFlag='false'	sortDataType='S'	columnPrecision="NaN"/>
+	
+	<column data='item_qty' 		label='Qty'		editable='false'	visible='true'		width='60'	textAlign='right'	forLevel='false'
+			print_width = '18'		defaultForLevel=''		booleanFlag='false'	sortDataType='N'	columnPrecision="0"/>
+	
+	<column data='item_price'		label='Price'			editable='false'	visible='true'		width='85'	textAlign='right'	forLevel='true'
+			print_width = '18'		defaultForLevel=''		booleanFlag='false'	sortDataType='N'	columnPrecision="2"/>
+		
+	<column data='message' 			label='Message' 		editable='false' 	visible='true' 			width='80' 		textAlign='left' 
+			forLevel='false' 		defaultForLevel='' 		booleanFlag='false' sortDataType='S' columnPrecision="NaN"/>
+</columns>  
+

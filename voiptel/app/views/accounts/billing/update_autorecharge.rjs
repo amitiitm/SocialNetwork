@@ -1,0 +1,6 @@
+if !@status
+  page << "$('error-block').show()"
+else
+  page << "$('#auto_recharge').attr('class', '#{@account.auto_recharge ? 'on' : 'off'}');"
+  page << "$('#success_auto_recharge_update').fadeIn(400).delay(800).slideUp(300);"
+end

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<gencomponents:DetailAddEdit xmlns:mx="http://www.adobe.com/2006/mxml"
+	width="600" height="200" verticalGap="0"
+	xmlns:customcomponents="com.generic.customcomponents.*"
+	xmlns:gencomponents="com.generic.components.*"
+	creationComplete="creationCompleteHandler()">
+
+	<mx:Script source="../scripts/RepairActualDetailScript.as"/>
+	
+	
+	<mx:VBox height="100%" width="100%" verticalGap="4">
+		<mx:HBox>
+			<mx:Label text="Item Type" width="90" textAlign="right"/>
+			<customcomponents:GenComboBox id="cbItem_type" defaultValue="I"  width="120" cornerRadius="0" xmlTag="item_type" updatableFlag="true"
+				tableName="actual" enabled="true" labelField="label" height="20" editable="false" tabIndex="1"
+				dataProvider="{__genModel.masterData.child('invn_item_type').invn_item_type}"
+				toolTip="Item Type" />
+		</mx:HBox>
+		<mx:HBox>
+			<mx:Label text="Item #" width="90" textAlign="right"/>
+			<customcomponents:GenDynamicComboBoxWithHelp id="dcItemId" width="120" height="20"
+				tabIndex="2" toolTip="Item #"  itemChangedEvent="getItemDetails()"
+				dataField="id" 
+				dataSourceName="Item" dataProvider="{__genModel.lookupObj.item.children()}" labelField="code" 
+				validationFlag="true" xmlTag="catalog_item_id" updatableFlag="true" tableName="actual" />
+		</mx:HBox>
+		<mx:HBox>					
+				<mx:Label text="Packet #" width="90" textAlign="right"/>
+				<customcomponents:GenTextInput id="tiPacket_code" width="120" xmlTag="catalog_item_packet_id" updatableFlag="true" tableName="actual"
+					defaultValue="" maxChars="50" setDefaultOnEmpty="true" tabIndex="3" toolTip="Packet #" height="20" />	
+			</mx:HBox>
+		<mx:HBox>
+			<mx:Label text="Description" width="90" textAlign="right"/>
+			<customcomponents:GenTextInput id="tiItemDescription" width="230" height="20" enabled="false"
+				xmlTag="item_description" updatableFlag="true"  maxChars="100" tabIndex="4"
+				tableName="actual" />
+		</mx:HBox>
+		
+		<mx:HBox>
+			<mx:Label text="Weight" width="90" textAlign="right"/>
+			<customcomponents:GenTextInput id="tiWeight" width="100" xmlTag="weight" height="20"
+				updatableFlag="true" tableName="actual" tabIndex="5" textAlign="right"
+				defaultValue="0.0000" setDefaultOnEmpty="true" dataType="N" maxValue="999999.9999"
+				validationFlag="false" toolTip="Weight" />
+		</mx:HBox>
+
+		<mx:Spacer height="2" />
+		
+		<mx:HBox>
+			<mx:Label text="Qty" width="90" textAlign="right"/>
+			<customcomponents:GenTextInput id="tiQty" width="55" height="20" visible="true"
+				editable="true" enabled="true" xmlTag="item_qty" updatableFlag="true"
+				tableName="actual" defaultValue="0" tabIndex="6" toolTip="Qty" setDefaultOnEmpty="true" 
+				itemChangedEvent="calculateNetAmount()" textAlign="right" dataType="N" maxValue="99999999" />
+			<mx:Label text="Price" width="53" textAlign="right"/>
+			<customcomponents:GenTextInput id="tiPrice" width="100" height="20" visible="true"
+				xmlTag="item_price" updatableFlag="true" tabIndex="7"
+				tableName="actual" defaultValue="0.00"  toolTip="Price" setDefaultOnEmpty="true" 
+				itemChangedEvent="calculateNetAmount()" textAlign="right" dataType="N" maxValue="9999999999.99" />
+		</mx:HBox>
+		<mx:HBox>
+			<mx:Label text="Item Amt" width="215" textAlign="right"/>
+			<customcomponents:GenTextInput id="tiItem_amt" width="100" visible="true" height="20"
+				xmlTag="item_amt" updatableFlag="true"  setDefaultOnEmpty="true" editable="false" enabled="false"
+				tableName="actual" defaultValue="0.00"  toolTip="Item Amt"
+				itemChangedEvent="itemAmountChangeHandler()" textAlign="right" dataType="N" maxValue="9999999999.99" />
+		</mx:HBox>
+		<mx:HBox height="0" width="0" visible="false">
+			<customcomponents:GenTextInput id="tiSerial_no" width="0" height="0" visible="true"
+				editable="true" enabled="true" xmlTag="serial_no" updatableFlag="true"
+				tableName="actual" defaultValue=""  />
+			<customcomponents:GenTextInput id="tiItemCode" width="0" height="0" visible="false"
+				xmlTag="catalog_item_code" updatableFlag="true"
+				tableName="actual"  text="{dcItemId.dcb.text}" />
+		</mx:HBox>
+	</mx:VBox>
+
+</gencomponents:DetailAddEdit>
+
+
+

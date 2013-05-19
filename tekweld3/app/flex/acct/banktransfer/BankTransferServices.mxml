@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rds:CommonServices xmlns:rds="business.*" xmlns:mx="http://www.adobe.com/2006/mxml">
+
+	<mx:HTTPService id="saveRecord" url="/account/bank_transfer/create_bank_transfers"/>
+	<mx:HTTPService id="getRecord" url="/account/bank_transfer/show_bank_transfers"/>
+	<mx:HTTPService id="getListFormat" url="acct/banktransfer/xmls/BankTransferListStru.xml"/>
+	<mx:HTTPService id="getList" url="/account/bank_transfer/list_bank_transfers"/>
+	<mx:HTTPService id="getViewFormat" url="acct/banktransfer/xmls/BankTransferCriteriaStru.xml"/>
+	<mx:HTTPService id="GLFormat" url="acct/banktransfer/xmls/BankTransferGLStru.xml"/>
+	
+	
+	<mx:HTTPService id="printRecord" url=""/>
+
+</rds:CommonServices>

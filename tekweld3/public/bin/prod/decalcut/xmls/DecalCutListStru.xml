@@ -1,0 +1,73 @@
+<columns lockedColumnCount='0'>
+
+	<column data='date'					label='Date' 			editable='false' 	visible='true' 	width='90' 	textAlign='left' 	
+			forLevel='false'			defaultForLevel='' 		sortDataType='D'	dataType='D'	booleanFlag='false'
+			componentType="Date"	
+	/>
+	
+	<column data='user_name' 			label='UserName' 		editable='false' 	visible='true' 	width='180' textAlign='left' 	
+			forLevel='true'				defaultForLevel='' 		sortDataType='S'	dataType='S'	booleanFlag='false'
+			componentType="Text"		columnPrecision="NaN"
+	/>
+	
+	<column data='trans_no' 			label='JOB#' 			editable='false' 	visible='true' 	width='180' textAlign='left' 	
+			forLevel='true'				defaultForLevel='' 		sortDataType='S'	dataType='S'	booleanFlag='false'
+			componentType="Text"		columnPrecision="NaN"
+	/>
+	
+	<column data='trans_no'				label='INDIGO #'		editable='false' 	visible='true'	width='70'	textAlign='left'	
+			forLevel='true'				defaultForLevel='2' 	sortDataType='S'	dataType='S'	booleanFlag='false'
+			componentType="Text"		columnPrecision="NaN"
+	/>
+	
+	<column data='vs'					label='VS' 				editable='false' 	visible='true' 		width='80' 		textAlign='left'
+		 	forLevel='true' 			defaultForLevel='' 	 	booleanFlag='false'		sortDataType='S'	
+		 	componentType="Text" 		columnPrecision="NaN"/>	
+	
+	<column data='logo'					label='LOGO'			editable='false' 	visible='true'	width='70'	textAlign='left'	
+			forLevel='false'			defaultForLevel='2' 	sortDataType='S'	dataType='S'	booleanFlag='false'
+			componentType="Text"		columnPrecision="NaN"
+	/>
+
+	<column data='catalog_item_code'	label='Item'			editable='false' 	visible='true'	width='200'	textAlign='left'	
+			forLevel='false'			defaultForLevel='2' 	sortDataType='S'	dataType='S'	booleanFlag='false'
+			componentType="Text"		columnPrecision="NaN"
+	/>
+	
+	<column data='qty'					label='Quantity'		editable='false' 	visible='true'	width='70'	textAlign='right'	
+			forLevel='false'			defaultForLevel='2' 	sortDataType='N'	dataType='N'	booleanFlag='false'
+			componentType="Text"		columnPrecision="NaN"
+	/>
+	
+	<column data='ship_date'			label='Ship Date' 		editable='false' 	visible='true' 	width='90' 	textAlign='left' 	
+			forLevel='false'			defaultForLevel='' 		sortDataType='D'	dataType='D'	booleanFlag='false'
+			componentType="Date"	
+	/>
+	
+	<column data='select_yn' 			label='Imposition' 		editable='false' 	visible='true' 	width='65' 	textAlign='center' 	
+			forLevel='false'			defaultForLevel='' 		sortDataType='S'	dataType='S'	booleanFlag='true'
+			dataValueForOn="Y"			dataValueForOff="N"
+			componentType="CheckBox"	
+	/>
+	
+	<column data='select_yn' 			label='Print' 			editable='false' 	visible='true' 	width='65' 	textAlign='center' 	
+			forLevel='false'			defaultForLevel='' 		sortDataType='S'	dataType='S'	booleanFlag='true'
+			dataValueForOn="Y"			dataValueForOff="N"
+			componentType="CheckBox"	
+	/>
+	
+	<column data='select_yn' 			label='Cut' 			editable='false' 	visible='true' 	width='65' 	textAlign='center' 	
+			forLevel='false'			defaultForLevel='' 		sortDataType='S'	dataType='S'	booleanFlag='true'
+			dataValueForOn="Y"			dataValueForOff="N"
+			componentType="CheckBox"	
+	/>
+	
+	<column data='select_yn' 			label='Pick List' 		editable='false' 	visible='true' 	width='65' 	textAlign='center' 	
+			forLevel='false'			defaultForLevel='' 		sortDataType='S'	dataType='S'	booleanFlag='true'
+			dataValueForOn="Y"			dataValueForOff="N"
+			componentType="CheckBox"	
+	/>
+	
+	
+
+</columns> 

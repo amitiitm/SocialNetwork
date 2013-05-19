@@ -1,0 +1,49 @@
+<columns  lockedColumnCount=''>
+
+	<column data='crm_accout_name' 	label='Account #' 		editable='false' 	visible='true' 	width='200' textAlign='left' 	forLevel='false'
+			print_width = '20'		defaultForLevel='' 		booleanFlag='false' 	sortDataType='S'	columnPrecision="NaN"/>
+	
+	<column data='crm_contact_name' label='Contact #' 		editable='false' 	visible='true' 	width='100' textAlign='left' 	forLevel='false'
+			print_width = '20'		defaultForLevel='' 		booleanFlag='false' 	sortDataType='S'	columnPrecision="NaN"/>
+
+	<column data='crm_user_name'	label='Assigned User #'	editable='false'	visible='true'	width='80'	textAlign='left'	forLevel='true'
+			print_width = '20'		defaultForLevel='2'		booleanFlag='false' 	sortDataType='S'	columnPrecision="NaN"/>
+
+	<column data='start_date'		label='Start Date'		editable='false'	visible='true'	width='80'	textAlign='left'	forLevel='true'
+			print_width = '18'		defaultForLevel=''		booleanFlag='false' 	sortDataType='D'	columnPrecision="NaN"/>
+
+	<column data='end_date'			label='End Date'		editable='false'	visible='true'	width='80'	textAlign='left'	forLevel='true'
+			print_width = '18'		defaultForLevel=''		booleanFlag='false' 	sortDataType='D'	columnPrecision="NaN"/>
+
+	<column data='due_date'			label='Due Date'		editable='false'	visible='true'	width='80'	textAlign='left'	forLevel='true'
+			print_width = '18'		defaultForLevel=''		booleanFlag='false' 	sortDataType='D'	columnPrecision="NaN"/>
+
+	<column data='duration' 		label='Duration' 		editable='false' 	visible='true' 	width='60' 	textAlign='left' 	forLevel='false' 
+			print_width = '18'		defaultForLevel='' 		booleanFlag='false' 	sortDataType='S' 	columnPrecision="0"/>
+
+	<column data='location' 		label='Location'		editable='false'	visible='true'	width='100'	textAlign='left'	forLevel='true'
+			print_width = '18'		defaultForLevel='1'		booleanFlag='false' 	sortDataType='S'	columnPrecision="NaN"/>
+
+	<column data='subject' 			label='Subject'			editable='false'	visible='true'	width='100'	textAlign='left'	forLevel='false'
+			print_width = '18'		defaultForLevel=''		booleanFlag='false' 	sortDataType='S'	columnPrecision="NaN"/>
+
+	<column data='status'			label='Status' 			editable='false' 	visible='true' 	width='80' 	textAlign='left' 	forLevel='true' 
+			print_width = '16'		defaultForLevel='' 		booleanFlag='false' 	sortDataType='S'	columnPrecision="NaN"/>
+			
+	<column data='priority'			label='Priority' 		editable='false' 	visible='true' 	width='80' 	textAlign='left' 	forLevel='true' 
+			print_width = '17'		defaultForLevel='' 		booleanFlag='false' 	sortDataType='S'	columnPrecision="NaN"/>
+
+	<column data='description' 		label='Description'		editable='false'	visible='true'	width='100'	textAlign='left'	forLevel='false'
+			print_width = '24'		defaultForLevel=''		booleanFlag='false' 	sortDataType='S'	columnPrecision="NaN"/>
+
+	<column data='trans_bk'			label='Task Bk'		editable='false'	visible='true'	width='80'	textAlign='left'	forLevel='false'
+			print_width = '18'      defaultForLevel=''		booleanFlag='false' 	sortDataType='S'	columnPrecision="NaN"/>
+			
+	<column data='trans_no' 		label='Task #' 		editable='false' 	visible='true' 	width='100' textAlign='left' 	forLevel='false'
+			print_width = '20'		defaultForLevel='' 		booleanFlag='false' 	sortDataType='S'	columnPrecision="NaN"/>
+			
+	<column data='trans_date'		label='Task Date'		editable='false'	visible='true'	width='80'	textAlign='left'	forLevel='true'
+			print_width = '18'		defaultForLevel='0'		booleanFlag='false' 	sortDataType='D'	columnPrecision="NaN"/>
+
+				
+</columns>

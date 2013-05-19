@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<gencomponents:AddEdit xmlns:mx="http://www.adobe.com/2006/mxml" 
+	height="100%" width="100%" verticalGap="0"
+	xmlns:customcomponents="com.generic.customcomponents.*"
+	xmlns:gencomponents="com.generic.components.*"
+	creationPolicy="all" creationComplete="init()">
+	
+	<mx:Script source="../scripts/TaskAddEditScript.as"/>
+	
+	<mx:VBox width="100%" height="100%">
+		<mx:HBox width="100%"  verticalGap="0">						
+			<mx:Label text="Task #" width="125" textAlign="right" height="20" />
+			<customcomponents:GenTextInput id="tiTrans_no" width="71" xmlTag="trans_no" enabled="false" 
+				updatableFlag="true"  tableName="crm_task"  height="20" 
+				defaultValue="" validationFlag="false" toolTip="Trans #" />
+			<customcomponents:GenTextInput id="tiTrans_bk" width="35" height="20" visible="true" enabled="false"
+				xmlTag="trans_bk" updatableFlag="false" tableName="crm_task" />
+		</mx:HBox>	
+		<mx:HBox width="100%">
+			<mx:Label text="Task Date" textAlign="right" width="125" height="20"/>
+			<customcomponents:GenDateField id="dfTrans_date" width="115" xmlTag="trans_date"
+				updatableFlag="true" tableName="crm_task" tabIndex="1" height="20"
+				validationFlag="false" toolTip="Trans Date"/>
+		</mx:HBox>
+		<mx:HBox width="100%">
+			<mx:Label text="Account #" textAlign="right" width="125" visible="true" height="20"/>
+			<customcomponents:GenDynamicComboBoxWithHelp id="dcCRM_account_id" width="170" toolTip="Account #" defaultValue=""
+				dataField="id" labelField="name"
+				dataSourceName="CrmAccount"  dataProvider="{__genModel.lookupObj.crmaccount.children()}"   
+				height="20" tabIndex="2"   visible="true" itemChangedEvent="handleAccountChange()"
+				validationFlag="true" xmlTag="crm_account_id" updatableFlag="true" tableName="crm_task"  />
+			<mx:Label text="Contact #" textAlign="right" width="80" height="20"/>
+			<customcomponents:GenDynamicComboBoxWithHelp id="dcCRM_contact_id" width="130" toolTip="Contact #" defaultValue=""
+				dataField="id" labelField="name" 
+				dataSourceName="CrmContact" dataProvider="{__genModel.lookupObj.crmcontact.children()}"   
+				height="20" tabIndex="3"  filterEnabled="true" filterKeyName="crm_account_id" 
+				validationFlag="false" xmlTag="crm_contact_id" updatableFlag="true" tableName="crm_task"  />			
+		</mx:HBox>
+		<mx:HBox width="100%">
+			<mx:Label text="Assigned User #" textAlign="right" width="125" height="20"/>
+			<customcomponents:GenDynamicComboBoxWithHelp id="dcAssigned_user_id" width="130" toolTip="Assigned User #" defaultValue=""
+				dataField="id" labelField="name"
+				dataSourceName="User" dataProvider="{__genModel.lookupObj.user.children()}"   
+				height="20" tabIndex="4"  
+				validationFlag="false" xmlTag="assigned_user_id" updatableFlag="true" tableName="crm_task"  />		
+		</mx:HBox>
+		<mx:Spacer  height="5"/>
+		<mx:HBox width="100%">
+			<mx:Label text="Subject" textAlign="right" width="125" height="20"/>
+			<customcomponents:GenComboBox id="cbSubject" defaultValue="Email" width="130" cornerRadius="0" xmlTag="subject" updatableFlag="true"
+				tableName="crm_task"  tabIndex="5" height="20" labelField="label" 
+				dataProvider="{__genModel.masterData.child('crm').activity_type}" />
+			<mx:Label text="Location" textAlign="right" width="120" height="20"/>
+			<customcomponents:GenTextInput id="tiLocation" width="130" visible="true" editable="true"
+				tabIndex="6" xmlTag="location" updatableFlag="true" tableName="crm_task" maxChars="50" height="20"/>
+		</mx:HBox>
+		<mx:HBox width="100%">
+			<mx:Label text="Description" textAlign="right" width="125" height="20"/>
+			<customcomponents:GenTextArea id="taDescription" width="396" visible="true" editable="true" height="20"
+				 tabIndex="7" xmlTag="description" updatableFlag="true" tableName="crm_task" maxChars="100"/>
+		</mx:HBox>
+		<mx:Spacer height="5"/>
+		<mx:HBox width="100%">
+			<mx:Label text="Start Date" textAlign="right" width="125" height="20"/>
+			<customcomponents:GenDateField id="dfStart_date" width="130" xmlTag="start_date"
+				updatableFlag="true" tableName="crm_task" tabIndex="8" height="20"
+				validationFlag="false" toolTip="Start Date"/>
+			<mx:Label text="End Date" textAlign="right" width="120" height="20"/>
+			<customcomponents:GenDateField id="dfEnd_date" width="130" xmlTag="end_date"
+				updatableFlag="true" tableName="crm_task" tabIndex="9" height="20"
+				validationFlag="false" toolTip="End Date"/>
+		</mx:HBox>
+		<mx:HBox width="100%">
+			<mx:Label text="Due Date" textAlign="right" width="125" height="20"/>
+			<customcomponents:GenDateField id="dfDue_date" width="130" xmlTag="due_date"
+				updatableFlag="true" tableName="crm_task" tabIndex="10" height="20"
+				validationFlag="false" toolTip="Due Date"/>
+			<mx:Label text="Duration" textAlign="right" width="120" height="20"/>
+			<customcomponents:GenTextInput id="tiDuration" width="130" visible="true" editable="true"
+				tabIndex="11" xmlTag="duration" updatableFlag="true" tableName="crm_task" height="20"
+				dataType="N" setDefaultOnEmpty="true" maxValue="9999" defaultValue="0"/>		
+		</mx:HBox>
+		<mx:Spacer height="5"/>
+		<mx:HBox width="100%">
+			<mx:Label text="Priority" textAlign="right" width="125" height="20"/>
+			<customcomponents:GenComboBox id="cbPriority" defaultValue="High" width="130" cornerRadius="0" xmlTag="priority" updatableFlag="true"
+				tableName="crm_task"  tabIndex="12" height="20" labelField="label" 
+				dataProvider="{__genModel.masterData.child('crm').priority}" />
+			<mx:Label text="Status" textAlign="right" width="120" height="20" />
+			<customcomponents:GenComboBox id="cbStatus" defaultValue="Single" width="130" cornerRadius="0" xmlTag="status" updatableFlag="true"
+				tableName="crm_task"  tabIndex="13" height="20" labelField="label" 
+				dataProvider="{__genModel.masterData.child('crm').status}" />
+		</mx:HBox>
+		<mx:HBox width="100%">
+			<customcomponents:GenCheckBox labelPlacement="left" label="Reminder" id="cbReminder_flag" width="146" xmlTag="reminder_flag"
+				updatableFlag="true" tableName="crm_task" defaultValue="Y" textAlign="right" tabIndex="14" enabled="true"
+				dataValueForOn="Y" dataValueForOff="N" change="handleReminderChange(event)" height="20"/>
+			<mx:Label text="Reminder Date/Time" textAlign="right" width="238"/>
+			<customcomponents:GenDateField id="dfReminder_date_time" width="130" xmlTag="reminder_datetime"
+				updatableFlag="true" tableName="crm_task" tabIndex="15" height="20"
+				validationFlag="false" toolTip="Reminder Date Time"/>				
+		</mx:HBox>
+	</mx:VBox>	
+</gencomponents:AddEdit>

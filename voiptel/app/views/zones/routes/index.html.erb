@@ -1,0 +1,65 @@
+<br>
+<h3>Zone Name: <%= @zone.name %> | Prefix: <%= @zone.prefix %></h3><br>
+<br>
+<div id="routes" class="routes">
+	<ul>
+		<li id="draggable" class="ui-state-default ui-state-highlight new_route">
+			<%= select :route, :carrier, Carrier.select_options, {:include_blank => true} %>
+			Tries: <%= select :route, :try, (1..5).each { |i| [i,i]  } %>
+			<%= link_to("Remove", "#", :onclick => "remove_route(this)", :class => "remove_route") %>
+		</li>
+	</ul>
+	
+	<ul id="sortable" class="routes_ul baghali">
+		<% for r in @routes %>
+			<li class="ui-state-default">
+				<%= select :route, :carrier, Carrier.select_options, :selected => r.carrier_id, :include_blank => true %>
+				Tries: <%= select :route, :try, (1..5).each { |i| [i,i]  }, :selected => r.try %>
+				<%= link_to("Remove", "", :onclick => "remove_route(this)", :class => "ignore-me") %>
+			</li>
+		<% end -%>
+	</ul>
+</div>
+
+<%= button_function("save", "Save Changes", "save_changes()") %>
+<%= loading("Saving changes...", "loading-save-changes", :style => "margin-top:23px;") %>
+<div class="clear"></div>
+<script>
+	var gooz;
+	function save_changes() {
+		$("#loading-save-changes").fadeIn();
+		var routes = [];
+		$("#sortable").children().each(function(index, el){
+			var carrier = $(el).find("#route_carrier").val();
+			var tries = $(el).find("#route_try").val();
+			routes.push("routes[" + (index+1) + "][carrier]=" + carrier);
+			routes.push("routes[" + (index+1) + "][try]=" + tries);
+		});
+		gooz = routes;
+		$.post(<%= "'#{zone_routes_path(@zone)}'" %>, routes.join("&"), null, "script");
+	}
+	function remove_route(obj) {	
+		var parent = $(obj).parent();
+		$(parent).fadeOut(function(){
+			$(parent).remove();
+		});
+	}
+	
+	$(function() {
+		$( "#sortable" ).sortable({
+			revert: true
+		});
+	
+		$( "#draggable" ).draggable({
+			connectToSortable: "#sortable",
+			helper: "clone",
+			revert: "invalid"
+		});
+	
+		$( "ul, li" ).disableSelection();
+	
+		$(function(){
+			$("#route_name").html("Routes For: <%= @zone.name %>")
+		});
+	});
+</script>

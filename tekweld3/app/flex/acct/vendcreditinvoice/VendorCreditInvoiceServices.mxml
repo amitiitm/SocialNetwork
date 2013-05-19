@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rds:CommonServices xmlns:rds="business.*" xmlns:mx="http://www.adobe.com/2006/mxml">
+
+	<mx:HTTPService id="saveRecord" url="/purchase/vendor_invoice/create_credit_invoice"/>
+	<mx:HTTPService id="getRecord" url="/purchase/vendor_invoice/show_credit_invoices"/>
+	<mx:HTTPService id="getList" url="/purchase/vendor_invoice/list_credit_invoices"/>
+	<mx:HTTPService id="getListFormat" url="acct/vendcreditinvoice/xmls/VendorCreditInvoiceListStru.xml"/>
+	<mx:HTTPService id="getViewFormat" url="acct/vendcreditinvoice/xmls/VendorCreditInvoiceCriteriaStru.xml"/>
+	<mx:HTTPService id="lineDetailFormat" url="acct/vendcreditinvoice/xmls/VendorCreditInvoiceDetailStru.xml"/>
+	<mx:HTTPService id="GLFormat" url="acct/vendcreditinvoice/xmls/VendorCreditInvoiceGLStru.xml"/>
+	<mx:HTTPService id="fetch_invoices_for_credit_invoice" url="/purchase/vendor_invoice/fetch_invoices_for_credit_invoice"/>
+	
+	<mx:HTTPService id="setDefaultView" url=""/>
+	<mx:HTTPService id="printRecord" url="/purchase/vendor_report/vendor_credit_invoice_format"/>
+	
+	<mx:HTTPService id="importDetailFormat" url="acct/vendcreditinvoice/xmls/VendorCreditInvoiceImportStru.xml"/>
+	<mx:HTTPService id="recordUploadUrl" url=""/>
+
+</rds:CommonServices>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rds:CommonServices xmlns:rds="business.*" xmlns:mx="http://www.adobe.com/2006/mxml">
+
+	<mx:HTTPService id="saveRecord" url="/sale/cancel_order/create_cancel_orders"/>
+	<mx:HTTPService id="getList" url="/sale/cancel_order/list_orders_to_cancel"/> 
+	<mx:HTTPService id="getViewFormat" url="saoi/makecancelorder/xmls/MakeCancelOrderCriteriaStru.xml"/>
+	<mx:HTTPService id="getListFormat" url="saoi/makecancelorder/xmls/MakeCancelOrderListStru.xml"/>
+	<mx:HTTPService id="printRecord" url=""/>
+	<mx:HTTPService id="pickOrder" url="/sale/sales/hold_pick_order"/>
+
+</rds:CommonServices>

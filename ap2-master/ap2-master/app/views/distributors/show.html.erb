@@ -1,0 +1,30 @@
+<%= page_title :title => "Distributor: #{@distributor.bname}" %>
+<% box :type => "simple" do %>
+	<h3>Distributions:</h3><br>
+	<% table :width => "900px" do |t| %>
+		<% t.th "#" %>
+		<% t.th "Distributor" %>
+		<% t.th "Value" %>
+		<% t.th "Activation Date" %>
+		<% t.th "Serial Start" %>
+		<% t.th "Serial End" %>		
+		<% t.th "# Cards" %>
+		<% t.th "# Sold" %>
+		<% t.th "# Remain" %>
+
+		<% counter = 0 %>
+		<% for d in @distributions do %>
+			<% t.td counter += 1 %>
+			<% t.td link_to(d.distributor.bname, distribution_path(d.id), :class => "hash") %>
+			<% t.td number_to_currency(d.value) %>
+			<% t.td d.activation_date %>
+			<% t.td d.serial_start %> 
+			<% t.td d.serial_end %>			
+			<% t.td d.num_cards %>
+			<% t.td (used = d.num_used) %>
+			<% t.td (d.num_cards - used) %>
+
+			<% t.new_row %>
+		<%  end -%>
+	<% end -%>
+<% end -%>

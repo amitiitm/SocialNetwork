@@ -1,0 +1,9 @@
+<columns  lockedColumnCount='0'>
+
+	<column data='code'		label='Group #'		editable='false'	visible='true'	width='60'	textAlign='left'	forLevel='false'
+		defaultForLevel=''	booleanFlag='false'	sortDataType='S' 	columnPrecision="NaN"/>
+
+	<column data='name'		label='Name' 		editable='false' 	visible='true' 	width='150' textAlign='left'	forLevel='false'
+		defaultForLevel=''	booleanFlag='false'	sortDataType='S' 	columnPrecision="NaN"/>
+
+</columns> 

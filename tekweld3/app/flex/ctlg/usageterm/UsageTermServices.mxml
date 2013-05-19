@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rds:ApplicationServices xmlns:rds="business.*" xmlns:mx="http://www.adobe.com/2006/mxml">
+
+	<mx:HTTPService id="saveRecord" url="/catalog/create_catalog_usage_terms"/>
+	<mx:HTTPService id="getRecord" url="/catalog/show_catalog_usage_term"/>
+	<mx:HTTPService id="getDefaultUsageTerm" url="/catalog/reset_usage_terms"/>
+	<mx:HTTPService id="getParagraphDetailFormat" url="ctlg/usageterm/xmls/ParagraphDetailStructure.xml"/>
+		
+</rds:ApplicationServices>

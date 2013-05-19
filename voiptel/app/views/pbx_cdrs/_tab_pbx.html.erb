@@ -1,0 +1,15 @@
+<br>
+<div id="overview_menu">
+  <ul>
+    <li class="<%=  params[:type] != 'outbound'  ? "menu_tab_selected" : "" %>">
+      <div class="menu_left"></div>
+      <div class="menu_center openable"><%= link_to "Inbound", pbx_cdrs_path(:type => 'inbound') ,:class => "openable" %></div>
+      <div  class="menu_right"></div>
+    </li>
+    <li class="<%=  params[:type] == 'outbound'  ? "menu_tab_selected" : "" %>">
+      <div class="menu_left"></div>
+      <div class="menu_center"><%= link_to "Outbound", pbx_cdrs_path(:type => 'outbound'),:class => "openable" %></div>
+      <div class="menu_right"></div>
+    </li>
+  </ul>
+</div>

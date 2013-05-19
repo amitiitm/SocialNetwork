@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:VBox xmlns:mx="http://www.adobe.com/2006/mxml" xmlns:customcomponents="com.generic.customcomponents.*"
+		 xmlns:components="com.generic.components.*"	width="100%" height="100%" backgroundColor="#FFFFFF"
+		 paddingTop="0" verticalGap="0" creationPolicy="all" creationComplete="module1_creationCompleteHandler(event)" xmlns:customcomponent="dashboard.customcomponent.*">
+	
+	<mx:Script source="../scripts/Dashboard3.as"/>
+	
+	<mx:XML id="top10SellingItemListStr" 	source="../xmls/Top10SellingItemListStr.xml"/>
+	<mx:XML id="outOfStockOrderListStr" 	source="../xmls/ListOutOfStockOrdersListStr.xml"/>
+	<mx:XML id="outOfStockItemListStr" 		source="../xmls/ListOutOfStockItemsListStr.xml"/>
+	<mx:XML id="orderQueryListStr" 			source="../xmls/OrderQueryListStr.xml"/>
+	<mx:XML id="artworkQueryListStr" 		source="../xmls/ArtworkQueryListStr.xml"/>
+	
+	<mx:VBox width="100%" height="100%">
+		<mx:HBox id="vbMain1" width="100%" height="100%" >
+			<customcomponent:BetterTitleWindow id="btwQueryTypeCountRefresh" width="50%" height="100%" title="Query Info" creationComplete="addRefreshButton('btnQueryTypeCountRefresh')">
+				<customcomponent:TitleBar verticalAlign="middle"  horizontalAlign="right" width="100%" paddingRight="5"/>
+				<mx:TabNavigator width="100%" height="100%">
+					<mx:HBox  id="hbOrderQuery" label="Order Query" >
+						<customcomponents:GenDataGrid id="dgOrderQuery" width="100%" height="100%"/>
+					</mx:HBox>
+					<mx:HBox id="hbArtworkQuery" label="Artwork Query">
+						<customcomponents:GenDataGrid id="dgArtworkQuery" width="100%" height="100%"/>
+					</mx:HBox>
+				</mx:TabNavigator>
+				
+				
+				
+			</customcomponent:BetterTitleWindow>
+			<customcomponent:BetterTitleWindow id="btwTop10SellingItemRefresh" width="50%" height="100%" title="Top 10 Selling Item" creationComplete="addRefreshButton('btnTop10SellingItemRefresh')">
+				<customcomponent:TitleBar verticalAlign="middle"  horizontalAlign="right" width="100%" paddingRight="5"/>
+				<customcomponents:GenDataGrid id="dgTop10SellingItem" width="100%" height="100%"/>
+			</customcomponent:BetterTitleWindow>
+		</mx:HBox>
+		<mx:HBox width="100%" height="100%">
+			<customcomponent:BetterTitleWindow id="btwOutOfStockOrderRefresh"  width="50%" height="100%" title="Out Of Stock Orders" creationComplete="addRefreshButton('btnlistOutofStockOrdersRefresh')">
+				<customcomponent:TitleBar verticalAlign="middle"  horizontalAlign="right" width="100%" paddingRight="5"/>
+				<customcomponents:GenDataGrid id="dgListOutOfStockOrders" width="100%" height="100%"/>
+			</customcomponent:BetterTitleWindow>
+			
+			<customcomponent:BetterTitleWindow id="btwOutofStockItem" width="50%" height="100%" title="Out Of Stock Item" creationComplete="addRefreshButton('btnlistOutofStockItemRefresh')">
+				<customcomponent:TitleBar verticalAlign="middle"  horizontalAlign="right" width="100%" paddingRight="5"/>
+				<customcomponents:GenDataGrid id="dgListOutOfStockItems" width="100%" height="100%"/>
+			</customcomponent:BetterTitleWindow>
+		</mx:HBox>
+		
+	</mx:VBox>
+</mx:VBox>

@@ -1,0 +1,28 @@
+<%= page_title :title => "Calling Cards Inventory" %>
+
+<% box :type => "simple" do %>
+	<% table :width => "650px" do |t| %>
+		<% t.th "#" %>
+		<% t.th "Status" %>
+		<% t.th "Value" %>
+		<% t.th "Serial Start" %>
+		<% t.th "Serial End" %>
+		<% t.th "Cards #" %>
+		<% t.th "Actions" %>
+		
+		<% counter = 0 %>
+		<% for inventory in @inventories %>
+			<% t.td (counter += 1) %>
+			<% t.td inventory.status %>
+			<% t.td number_to_currency(inventory.value) %>
+			<% t.td formatted_serial(inventory.serial_start) %>
+			<% t.td formatted_serial(inventory.serial_end) %>
+			<% t.td inventory.num_cards %>
+			<% t.td inventory_actions(inventory) %>
+			
+			<% t.new_row %>	
+		<% end %>		
+	<% end %>
+<% end %>
+
+<div class="hide" id="container"></div>

@@ -1,0 +1,41 @@
+<div class="inner-response">
+	<% table do |t| %>
+		<% t.th "#" %>
+		<% t.th "Amount" %>
+		<% t.th "Tax" %>
+		<% t.th "Tot" %>
+		<% t.th "Status" %>
+		<% t.th "Date" %>
+		<% t.th "Actions" %>	
+	
+		<% counter = (@size - ((@page - 1) * @limit) + 1) %>
+		<% for tr in @transactions do %>
+			<% counter -= 1 %>
+			<% t.td counter %>
+			<% t.td number_to_currency(tr.amount / 100.to_f) %>
+			<% t.td number_to_currency(tr.tax_amount) %>
+			<% t.td number_to_currency(tr.full_amount) %>
+			<% t.td (if tr.message == "Success" then "Success" else "<span class='tooltip' title='#{tr.message}'>Failed</span>" end) %>
+			<% t.td user_date(tr.created_at) %>
+			<% t.td action_links(
+				link_to("Log", "/orders/log/#{tr.order_id}", :class => "ajax", :update => "container"),
+				(link_to("Refund", "/orders/log/#{tr.order_id}", :class => "ajax", :update => "container") if tr.success),
+				(link_to("Void", "/orders/log/#{tr.order_id}", :class => "ajax", :update => "container") if tr.success)
+			)%>
+			<% t.new_row %>
+		<%  end -%>
+	<% end -%>
+	<%= pager(transactions_account_billing_path(@account), "inner-ajax") %>
+</div>
+<div class="clearfix"></div>
+<div id="container" class="hide"></div>
+<script>
+	$('.tooltip').tooltip({
+		track: true,
+		delay: 0,
+		showURL: false,
+		showBody: " - ",
+		fade: 250
+	});
+</script>
+

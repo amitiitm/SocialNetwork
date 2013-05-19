@@ -1,0 +1,39 @@
+<% form_for [obj, endpoint], :html => {:class => "forms"} do |f|%>
+	<ui>
+		<li>
+			<label>Endpoint Name (lower case, ie: pkvoip1, pkvoip2, zoha)</label>
+			<%= f.text_field :name, :size => 10 %>
+		</li>
+		<li>
+			<div class="left">
+				<label>IP</label>
+				<%= f.text_field :ip, :size => 17 %>
+			</div>
+			<div class="left">
+				<label>Port</label>
+				<% if endpoint.new_record? %>
+					<%= f.text_field :port, :size => 4, :value => 5060 %>
+				<% else %>
+					<%= f.text_field :port, :size => 4 %>
+				<% end -%>
+			</div>
+		</li>
+		<li>
+			<label>Settings</label>
+			<% if endpoint.new_record? %>
+				<%= f.text_area :settings, :rows => 5, :cols => 25, :value => Endpoint::DEFAULT_SETTING %>
+			<% else %>
+				<%= f.text_area :settings, :rows => 5, :cols => 25%>
+			<% end -%>
+		</li>
+		<li>
+			<div class="left">
+				<label>Outgoing <%= f.check_box :out %></label>
+			</div>
+			<div class="left">
+				<label>Incomming <%= f.check_box :in %></label>
+			</div>
+		</li>
+	</ui>
+	<!-- <button type="submit">Save</button> -->
+<% end -%>

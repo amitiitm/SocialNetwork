@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<gencomponents:AddEdit xmlns:mx="http://www.adobe.com/2006/mxml"
+	height="100%" width="100%" verticalGap="0"
+	xmlns:customcomponents="com.generic.customcomponents.*"
+	xmlns:gencomponents="com.generic.components.*"
+	creationPolicy="all" creationComplete="init()" >
+
+	<mx:Script source="../scripts/UsageTermAddEditScript.as"/>
+	
+	<mx:HBox width="0" height="0" visible="false">
+		<mx:VBox height="100%" width="320">
+			<mx:HBox>
+				<mx:Label width="95" text="Para Name" textAlign="right" height="20"/>
+				<customcomponents:GenTextInput id="tiParaName" width="150" height="20" 
+					xmlTag="heading" updatableFlag="false" tableName="catalog_usage_term" maxChars="50"/>
+			</mx:HBox>
+		</mx:VBox>
+		<mx:HBox width="100%" height="100%">
+				<mx:Label width="105" text="Para Description" textAlign="right"/>
+				<customcomponents:GenTextArea id="textParagraph" height="100%" width="100%"
+				/>		
+		</mx:HBox>
+		<mx:HBox>
+				<mx:Label width="95" text="Link1" textAlign="right" height="20"/>
+				<customcomponents:GenTextInput id="tiLink1" width="150" height="20"  
+					xmlTag="link1_text" updatableFlag="false" tableName="catalog_usage_term" />
+		</mx:HBox>
+		<mx:HBox>
+				<mx:Label width="95" text="Link2" textAlign="right" height="20"/>
+				<customcomponents:GenTextInput id="tiLink2" width="150" height="20"  
+					xmlTag="link2_text" updatableFlag="false" tableName="catalog_usage_term"/>
+			</mx:HBox>	
+		<mx:HBox>
+				<mx:Label width="95" text="Link3" textAlign="right" height="20"/>
+				<customcomponents:GenTextInput id="tiLink3" width="150" height="20"  
+					xmlTag="link3_text" updatableFlag="false" tableName="catalog_usage_term" />
+		</mx:HBox>	
+		<mx:HBox>
+				<mx:Label width="95" text="Url1" textAlign="right" height="20"/>
+				<customcomponents:GenTextInput id="tiUrl1" width="150" height="20"  
+					xmlTag="link1_url" updatableFlag="false" tableName="catalog_usage_term"/>
+		</mx:HBox>	
+		<mx:HBox>
+				<mx:Label width="95" text="Url2" textAlign="right" height="20"/>
+				<customcomponents:GenTextInput id="tiUrl2" width="150" height="20"  
+					xmlTag="link2_url" updatableFlag="false" tableName="catalog_usage_term" />
+		</mx:HBox>	
+		<mx:HBox>
+				<mx:Label width="95" text="Url3" textAlign="right" height="20"/>
+				<customcomponents:GenTextInput id="tiUrl3" width="150" height="20"  
+					xmlTag="link3_url" updatableFlag="false" tableName="catalog_usage_term" />
+		</mx:HBox>	
+	</mx:HBox>
+	
+	<customcomponents:GenDataGrid id="dtlLine"
+			updatableFlag="true"
+			rootNode="rows"
+			formatServiceID="getParagraphDetailFormat"
+			height="0" width="0"
+			visible="false"
+			/>
+	<mx:ViewStack height="100%" width="100%">
+		<mx:VBox width="100%" height="100%" horizontalAlign="center" >
+			<mx:HBox width="960">
+				<mx:Label text="Usage Term"  styleName="H1"/>	
+				<mx:HBox width="100%" horizontalAlign="right">
+					<mx:Button label="Add New Section" click="btnAddNewParagraphClickHandler()" fontSize="12" color="#546184"/>
+					<mx:Button label="Change Sequence" click="btnArrangeInSequenceClickHandler()" fontSize="12" color="#546184"/>	
+					<mx:Button label="Reset to Default" click="btnResetAllClickHandler()" fontSize="12" color="#546184"/>  
+				</mx:HBox>
+			</mx:HBox>
+			<mx:VBox id="vbMainContainer" height="100%" width="960">
+			
+			</mx:VBox>	
+		</mx:VBox>		
+	</mx:ViewStack>
+
+</gencomponents:AddEdit>
+

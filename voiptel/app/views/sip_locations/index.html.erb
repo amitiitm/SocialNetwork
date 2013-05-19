@@ -1,0 +1,31 @@
+<%= page_title :title => "Online SIP Accounts" %>
+
+<% box :type => "simple" do %>
+	<% table :width => "1500px" do |t| %>
+		<% t.th "#" %>
+	  <% t.th "Account" %>
+		<% t.th "SIP ID" %>
+		<% t.th "User Agent" %>	
+		<% t.th "Last Modified" %>
+		<% t.th "Expires" %>
+		<% t.th "Contact" %>
+		<% t.th "CallID" %>
+		
+		<% counter = 0 %>	
+		<% for l in @locations %>
+			<% t.td (counter += 1) %>
+		  <% t.td l.sip_account.account.name %>
+			<% t.td l.sip_account.username %>
+      <% t.td l.user_agent %>
+			<% t.td user_date(l.last_modified.utc) %>			
+			<% t.td user_date(l.expires.utc) %>
+			<% t.td l.contact %>
+			<% t.td l.callid %>
+			
+			<% t.new_row %>
+		<% end %>		
+	<% end %>
+	<br>
+<% end %>
+
+<div class="hide" id="container"></div>

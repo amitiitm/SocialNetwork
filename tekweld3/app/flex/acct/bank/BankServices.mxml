@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rds:CommonServices xmlns:rds="business.*" xmlns:mx="http://www.adobe.com/2006/mxml">
+
+	<mx:HTTPService id="saveRecord" url="/account/bank/create_banks"/>
+	<mx:HTTPService id="getRecord" url="/account/bank/show_bank"/>
+	<mx:HTTPService id="getListFormat" url="acct/bank/xmls/BankListStru.xml"/>
+	<mx:HTTPService id="getList" url="/account/bank/list_banks"/>
+	<mx:HTTPService id="getViewFormat" url="acct/bank/xmls/BankCriteriaStru.xml"/>
+	<mx:HTTPService id="detailFormat" url="acct/bank/xmls/BankDetailStru.xml"/>
+	<mx:HTTPService id="printRecord" url=""/>
+	
+	<mx:HTTPService id="importDetailFormat" url="acct/bank/xmls/BankImportStru.xml"/>
+	<mx:HTTPService id="recordUploadUrl" url="/account/bank/convert_exceltoxml_for_banks"/>
+
+</rds:CommonServices>

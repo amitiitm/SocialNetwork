@@ -1,0 +1,27 @@
+<%= stylesheet_link_tag "context_menu.css" %>
+<%= javascript_include_tag "jquery.context_menu.js" %>
+
+<ul id="myMenu" class="contextMenu">
+    <li class="new">
+        <a href="#new">Sub IVR</a>
+    </li>
+		<li class="delete">
+        <a href="#delete">Delete</a>
+    </li>
+</ul>
+<script type="text/javascript" charset="utf-8">
+$( function() {
+	$(".ivrs").contextMenu({menu: 'myMenu'},function(action, el, pos){
+		if (action == "new") {
+			$(el).parent().fadeOut();
+			if ($(el).parent().is("li")) {
+				var node_selector = "#" + $(el).parent().attr('id');
+			} else {
+				node_selector = el;
+				alert(el);
+			};
+			$("#demo1").jstree("create", node_selector, "first", "Ente a new name dudes");
+		};
+	});
+});
+</script>

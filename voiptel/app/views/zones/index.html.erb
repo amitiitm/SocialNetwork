@@ -1,0 +1,24 @@
+<%= page_title :title => "Old Rate Engine" %>
+<%= select :zone, :country, Country.find(:all, :order => "name ASC").collect {|c| [c.name, c.id]}, {:include_blank => true} %>
+<br><br>
+<div id="zone_settings"></div>
+
+<script>
+	function reload_zones(){
+		var action;
+		if ($("#zone_action").exists()) {
+			action = $("#zone_action").val();
+		}else {
+			action = "show";
+		};
+		var country_id = $("#zone_country").val();
+		$.get(("/zones/" + action + "/" + country_id), function(resp){
+			$("#zone_settings").html(resp);
+		});
+	}
+	$(function(){
+		$("#zone_country").change(function(){
+			reload_zones();
+		});
+	});
+</script>

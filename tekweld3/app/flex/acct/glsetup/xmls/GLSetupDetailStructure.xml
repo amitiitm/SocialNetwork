@@ -1,0 +1,21 @@
+<columns>
+
+	<column data='item_type_desc'			label='Item Type'		editable='false'		visible='true'	width='80'	textAlign='left' 	
+			dataType='S'  					sortDataType='S' 		columnPrecision="NaN"	booleanFlag='false' 		componentType="Text"	/>
+
+	<column data='sales_account_code' 		label='Sales A/c #' 	editable='false' 		visible='true' width='200' 	textAlign='left' 	
+			dataType='S'  					sortDataType='S' 		columnPrecision="NaN"	booleanFlag='false' 		componentType="Text"	/>
+	
+	<column data='sales_account_name' 		label='Sales A/c Name' 	editable='false' 		visible='true' width='200' 	textAlign='left' 	
+			dataType='S'  					sortDataType='S' 		columnPrecision="NaN"	booleanFlag='false' 		componentType="Text"	/>
+	
+	<column data='purchase_account_code'	label='Purchase A/c #'	editable='false' 		visible='true' width='200' 	textAlign='left' 	
+			dataType='S'  					sortDataType='S' 		columnPrecision="NaN"	booleanFlag='false' 		componentType="Text"	/>		
+				
+	<column data='purchase_account_name'	label='Purchase A/c Name' editable='false' 		visible='true' width='200' 	textAlign='left' 	
+			dataType='S'  					sortDataType='S' 		columnPrecision="NaN"	booleanFlag='false' 		componentType="Text"	/>		
+
+	<column data='item_type' 				label='' 				editable='false' 		visible='false' width='0' 	textAlign='left' 	
+			dataType='S'  					sortDataType='S' 		columnPrecision="NaN"	booleanFlag='false'			componentType="Text"	/>
+	
+</columns> 

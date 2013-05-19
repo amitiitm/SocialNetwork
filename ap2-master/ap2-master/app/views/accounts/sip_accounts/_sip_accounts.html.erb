@@ -1,0 +1,31 @@
+<%= page_title :title => "HVC SIP Accounts" %>
+<% if not @sip_accounts.blank? %>
+	<% table :width => "800px" do |t| %>
+		<% t.th "#" %>
+		<% t.th "Username" %>
+		<% t.th "Password" %>
+		<% t.th "CID" %>
+		<% t.th "Area Code" %>
+		<% t.th "Codec" %>
+		<% t.th "Actions" %>
+		
+		<% for sip in @sip_accounts %>
+			<% t.td t.counter %>
+			<% t.td sip.username, :id => "sip_user" %>
+			<% t.td sip.password %>
+			<% t.td "#{sip.cid_name} #{number_to_phone(sip.cid_number, :area_code => true)}" %>
+			<% t.td sip.area_code %>
+			<% t.td sip.codec %>
+			<% t.td action_links(
+				(link_to("Edit", edit_account_sip_account_path(@account, sip), :class => "ajax")),
+				(link_to("Delete", account_sip_account_path(@account, sip), :class => "ajax-delete"))
+			)%>			
+			<% t.new_row %>
+	  <% end %>
+		
+	<% end %>
+<% else %>
+  <span class="bold">This account has not SIP accounts.</span>
+	<div class="clear"></div>
+<% end %>	
+<%= button "new-sip-account", "New SIP Account", :href => new_account_sip_account_path(@account) %>

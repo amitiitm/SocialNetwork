@@ -1,0 +1,16 @@
+<% box :type => "dialog", :id => "dialog-order-log", :width => "320", :title => "Transaction Logs", :icon => "ui-icon-person" do %>
+	<% box :type => "simple", :title => "Transaction Logs" do %>
+		<p>
+			<%= @log %>
+		</p>
+	<% end -%>
+<% end -%>
+
+<script type="text/javascript">
+$('#dialog-order-log').dialog({
+	autoOpen: true,
+	width: '500px',
+	bgiframe: false,
+	modal: true
+});
+</script>

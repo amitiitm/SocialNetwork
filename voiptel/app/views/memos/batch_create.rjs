@@ -1,0 +1,6 @@
+if not @errors
+  page << "reload_filter()"
+  #page.alert("due #{@memo.followup_due}")
+else
+  page.alert(@errors)
+end

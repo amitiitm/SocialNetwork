@@ -1,0 +1,39 @@
+<columns>
+		<column data='item_category' label='Item Category' editable='false' visible='true' width='80' textAlign='left' 	
+				dataType='S'  sortDataType='S' columnPrecision="NaN" booleanFlag='false' componentType="Text"	/>
+
+		<column data='item_code' label='Item #' editable='false' visible='true' width='80' textAlign='left' 	
+				dataType='S'  sortDataType='S' columnPrecision="NaN" booleanFlag='false' componentType="Text"	/>
+				
+		<column data='sales_description' label='Description' editable='false' visible='true' width='80' textAlign='left' 	
+				dataType='S'  sortDataType='S' columnPrecision="NaN" booleanFlag='false' componentType="Text"	/>	
+				
+		<column data='price' label='Price' editable='false' visible='true' width='80' textAlign='left' 	
+				dataType='N'  sortDataType='N' columnPrecision="2" booleanFlag='false' componentType="Text"	/>	
+				
+		<column data='image_name_thumnail' label='Thumnail Image Name' editable='false' visible='true' width='100' textAlign='left' 	
+				dataType='S'  sortDataType='S' columnPrecision="NaN" booleanFlag='false' componentType="Text"	/>	
+				
+		<column data='image_name_small' label='Small Image Name' editable='false' visible='true' width='100' textAlign='left' 	
+				dataType='S'  sortDataType='S' columnPrecision="NaN" booleanFlag='false' componentType="Text"	/>	
+				
+		<column data='image_name_normal' label='Normal Image Name' editable='false' visible='true' width='100' textAlign='left' 	
+				dataType='S'  sortDataType='S' columnPrecision="NaN" booleanFlag='false' componentType="Text"	/>					
+		
+		<column data='image_name_enlarge' label='Enlarge Image Name' editable='false' visible='true' width='100' textAlign='left' 	
+				dataType='S'  sortDataType='S' columnPrecision="NaN" booleanFlag='false' componentType="Text"	/>	
+						
+		<column data='men' label='Men' editable='false' visible='true' width='80' textAlign='left' 	
+				dataType='S'  sortDataType='S' columnPrecision="NaN" booleanFlag='false' componentType="Text"	/>	
+				
+		<column data='women' label='Women' editable='false' visible='true' width='80' textAlign='left' 	
+				dataType='S'  sortDataType='S' columnPrecision="NaN" booleanFlag='false' componentType="Text"	/>
+				
+		<column data='gift' label='Gift' editable='false' visible='true' width='80' textAlign='left' 	
+				dataType='S'  sortDataType='S' columnPrecision="NaN" booleanFlag='false' componentType="Text"	/>
+				
+		<column data='collection' label='Collection' editable='false' visible='true' width='80' textAlign='left' 	
+				dataType='S'  sortDataType='S' columnPrecision="NaN" booleanFlag='false' componentType="Text"	/>
+														
+
+</columns> 

@@ -1,0 +1,164 @@
+<% form_for @notification_template, :html => {:class => "forms"} do |f| %>
+	<%= error "Could not create template:" %>
+		<div class="two-column-free">
+			<div class="column">
+				<% box :type => "box_title", :title => "Template Settings", :style => "width:1100px" do %>
+					<ul>
+						<li class="horizental">
+							<label>Template Name:</label>
+							<%= f.text_field :name %>
+						</li>
+						<li class="horizental">
+							<label>Unique Identifier:</label>
+							<%= f.text_field :uid %>
+						</li>
+						<li class="horizental">
+							<label>Template Category:</label>
+							<%= f.select :notification_category_id, ((NotificationCategory.all.collect {|c| [c.name, c.id]}) + [["Other", 0]]), :include_blank => true %>
+						</li>
+						<li class="hidden horizental" id="new-category">
+							<label>New Category:</label>
+							<%= f.text_field :new_category %>
+						</li>
+						<li></li>
+						<li class="horizental">
+							<label>From Name (ie: OpenFo Network):</label>
+							<%= f.text_field :from_name %>
+						</li>
+						<li class="horizental">
+							<label>From Address (ie: noreply@openfo.com):</label>
+							<%= f.text_field :from_address, :size => 50 %>
+						</li>
+						<li></li>
+						<li class="horizental">
+							<label>Subject</label>
+							<%= f.text_field :subject %>
+						</li>
+						<% unless @notification_template.new_record? %>
+							<li>
+								<label>Template:</label>
+								<%= f.text_area :template, :cols => 120, :rows => 15, :style => "font-size:15px" %>
+							</li>
+						<% else %>
+						  <%= f.hidden_field :template %>
+						<% end %>
+						<li>
+							<%= submit_button "Save Template" %>
+						</li>
+					</ul>
+				<% end %>
+				<% unless @notification_template.new_record? %>
+					<% box :type => "box_title", :title => "Preview Options", :style => "width:600px" do %>
+						<%= button_function "preview-button", "Preview Template", "preview()" %><br><br>
+						<div style="margin-top:-10px;float:left;margin-right:10px"><span class="bold">Test Email:</span> <%= text_field :preview, :email, :name => "email" %></div>
+						<%= button_function "preview-button", "Send Test Mail", "send_test()", :style=>"margin-top:-11px"  %><br>
+						<%= hidden_field "record", :id, :id => "record_id", :value => @notification_template.id %>
+					<% end %>
+				<% end %>
+				<% unless @notification_template.new_record? %>
+					<% box :type => "box_title", :title => "Send To All", :style => "width:600px" do %>
+						<label><%= check_box :baghali, :ghatogh %> I know what I'm doing!</label><br>
+						<div id="notification_button" class="hidden">
+							<%= button_function "send-all-button", "Send To All", "send_to_all(#{@notification_template.id})" %><br><br>
+						</div>
+						<div id="batch_send_response"></div>
+					<% end %>
+				<% end %>
+				<div class="clear"></div>
+			</div>
+			<% unless @notification_template.new_record? %>
+				<div class="column column-right">
+					<% box :type => "box_title", :title => "Assign To Memo Types", :style => "width:250px" do %>
+						<ul>
+							<li>							
+								<% for c in MemoCategory.all %>
+									<label><%= c.category %>:</label>
+										<p>
+											<% for type in c.memo_types %>
+												<%= check_box "notification_template[mtypes]", "[#{type.id}][checked]", :checked => type.has_template?(@notification_template) %> <%= type.subject %><br>
+											<% end %>
+										</p>
+								<% end %>
+							</li>
+						</ul>
+					<% end %>
+				</div>
+			<% end %>
+		</div>	
+<% end %>
+<div class="clear"></div>
+
+
+<div id="container" class="hide">
+	<div id="dialog"><iframe id="frame" width="800" src="" scrolling="auto" class="autoHeight"></iframe></div>
+</div>
+
+<script type="text/javascript" charset="utf-8">
+	$(function(){
+		$("#notification_template_name").keyup(function(e){
+			var name = $(this).val()
+			$("#notification_template_uid").val(name.replace(/\./,"").replace(/ /g, "-").toLowerCase());
+		});
+		
+		$("#notification_template_notification_category_id").change(function(){
+			val = $("#notification_template_notification_category_id").val();
+			if (val == "0") {
+				$("#new-category").fadeIn();
+			} else {
+				$("#new-category").fadeOut();
+				$("#new-category").val("");
+			};
+		});
+		
+		$("#baghali_ghatogh").change(function(){
+			$("#notification_button").toggle();
+		});		
+	});
+	
+	function send_to_all(id) {
+		$("#batch_send_response").fadeOut(function(){
+			$("#batch_send_response").html("");
+			var url = "/notification_templates/" + id + "/batch_send";
+			$.post(url, function(resp){
+				$("#batch_send_response").html(resp).fadeIn();
+			});
+		});
+	}
+	
+	function preview() {
+		var form = $(".forms");
+		var id = $("#record_id").val();
+		$.post("/notification_templates/create_preview/" + id, form.serialize(), function(resp){
+			var data = JSON.parse(resp);
+			window.open(("/notification_templates/preview/" + data.id),"Window1","menubar=no,width=790,height=900,toolbar=no");
+		});
+	}
+	
+	function send_test(){
+		var form = $(".forms");
+		var id = $("#record_id").val();
+		var email = $("#preview_email").serialize();
+		$.post("/notification_templates/send_preview/" + id, (form.serialize() + "&" + email), function(resp){
+		});
+	}
+	
+	function set_frame_height() {
+		$('.autoHeight').load(function(){
+			var height = $("#frame").contents().find("body").height();
+			$("#frame").height(height + 20);
+		});		
+	}
+	function modal_preview(){
+		set_frame_height();
+		var params = $(".forms").serialize();
+		$("#frame").attr("src", "/notification_templates/preview?" + params);
+
+		$("#dialog").dialog({
+			autoOpen: true,			
+			width:850,
+			close: function(e,ui) {$(this).remove(); $("#container").html(
+				'<div id="dialog"><iframe id="frame" width="800" src="" scrolling="auto" class="autoHeight"></iframe></div>')
+			}
+		});
+	}
+</script>

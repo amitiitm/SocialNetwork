@@ -1,0 +1,36 @@
+<columns  lockedColumnCount='0'>
+
+	<column data='trans_bk' 			label='Invoice Bk'			editable='false'	visible='true' 		width='80'	textAlign='left'	forLevel='true' 
+			print_width = '18'			defaultForLevel='' 			booleanFlag='false' sortDataType='S'	columnPrecision="NaN"/>
+	
+	<column data='trans_no' 			label='Invoice #' 			editable='false' 	visible='true' 		width='80' 	textAlign='left' 	forLevel='true' 
+			print_width = '18'			defaultForLevel='0' 		booleanFlag='false' sortDataType='S'	columnPrecision="NaN"/>
+	
+	<column data='trans_date' 			label='Invoice Date' 		editable='false' 	visible='true' 		width='80' 	textAlign='left' 	forLevel='true' 
+			print_width = '18'			defaultForLevel='2' 		booleanFlag='false' sortDataType='D'	columnPrecision="NaN"/>
+	
+	<column data='vendor_code' 			label='Vendor #' 			editable='false' 	visible='true' 		width='80' 	textAlign='left' 	forLevel='false' 
+			print_width = '20'			defaultForLevel='' 			booleanFlag='false' sortDataType='S' 	columnPrecision="NaN"/>
+			
+	<column data='account_period_code' 	label='A/c Period' 			editable='false' 	visible='true' 		width='80' 	textAlign='left' 	forLevel='true' 
+			print_width = '18'			defaultForLevel='' 			booleanFlag='false' sortDataType='S'	columnPrecision="NaN"/>	
+			
+	<column data='inv_amt' 				label='Invoice Amt' 		editable='false' 	visible='true' 		width='100' textAlign='right' 	forLevel='false' 
+			print_width = '18'			defaultForLevel='' 			booleanFlag='false' sortDataType='N'	columnPrecision="2"/>
+	
+	<column data='paid_amt' 			label='Paid Amt' 			editable='false' 	visible='true' 		width='100' textAlign='right' 	forLevel='false' 
+			print_width = '18'			defaultForLevel='' 			booleanFlag='false' sortDataType='N'	columnPrecision="2"/>
+			
+	<column data='disctaken_amt' 		label='Disc.Taken Amt' 		editable='false' 	visible='true' 		width='100' textAlign='right' 	forLevel='false' 
+			print_width = '18'			defaultForLevel='' 			booleanFlag='false' sortDataType='N'	columnPrecision="2"/>
+			
+	<column data='balance_amt' 			label='Bal Amt' 			editable='false' 	visible='true' 		width='100' textAlign='right' 	forLevel='false' 
+			print_width = '18'			defaultForLevel='' 			booleanFlag='false' sortDataType='N'	columnPrecision="2"/>
+	
+	<column data='inv_type' 			label='Invoice Type' 		editable='false' 	visible='true' 		width='80'	textAlign='left' 	forLevel='false' 
+			print_width = '18'			defaultForLevel='' 			booleanFlag='false' sortDataType='S'	columnPrecision="NaN"/>
+	
+	<column data='inv_no' 				label='PO #' 		    	editable='false' 	visible='true' 		width='80'	textAlign='left' 	forLevel='true' 
+			print_width = '16'			defaultForLevel='1' 		booleanFlag='false' sortDataType='S'	columnPrecision="NaN"/>
+								
+</columns> 

@@ -1,0 +1,23 @@
+<% if @card.other_cards.blank? %>
+	<span class="bold">No other cards found</span>
+<% else %>
+	<% table do |t| %>
+		<% t.th '#' %>
+		<% t.th 'Serial' %>
+		<% t.th 'Value' %>
+		<% t.th 'Used Date' %>
+		<% t.th 'Last Call' %>
+		<% t.th 'Balance' %>
+		
+		<% for card in @card.other_cards %>
+			<% t.td t.counter %>
+			<% t.td link_to(card.formatted_serial, card_path(card)) %>
+			<% t.td number_to_currency(card.value) %>
+			<% t.td user_date(card.used_date) %>
+			<% t.td(if card.last_call then user_date(card.last_call.date) else "N/A" end) %>
+			<% t.td number_to_currency(card.balance) %>
+			
+			<% t.new_row %>
+		<% end %>
+	<% end %>
+<% end %>

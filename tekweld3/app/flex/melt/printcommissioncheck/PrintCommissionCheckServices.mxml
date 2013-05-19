@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rds:CommonServices xmlns:rds="business.*" xmlns:mx="http://www.adobe.com/2006/mxml">
+
+	<mx:HTTPService id="saveRecord" url="/melting/create_melting_transactions"/>
+	<mx:HTTPService id="getRecord" url="/melting/show_melting_transaction"/>
+	<mx:HTTPService id="getList" url="/melting/list_melting_transaction_print_commission_check"/> 
+	<mx:HTTPService id="getListFormat" url="melt/printcommissioncheck/xmls/PrintCommissionCheckListStru.xml"/>
+	<mx:HTTPService id="getViewFormat" url="melt/printcommissioncheck/xmls/PrintCommissionCheckCriteriaStru.xml"/>
+	<mx:HTTPService id="printRecord" url=""/>
+
+</rds:CommonServices>

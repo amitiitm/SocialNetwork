@@ -1,0 +1,50 @@
+<% form_for @notification, :html => {:class => "forms"} do |f| %>
+  <%= error("Could not create notifications:") %>
+	<ul>
+	  <li>
+	    <%= f.label :content %>
+	    <%= f.text_area :content %>
+	  </li>
+	  <li>
+	    <%= f.label :subject %>
+	    <%= f.text_field :subject %>
+	  </li>
+	  <li>
+	    <%= f.label :from_name %>
+	    <%= f.text_field :from_name %>
+	  </li>
+	  <li>
+	    <%= f.label :from_address %>
+	    <%= f.text_field :from_address %>
+	  </li>
+	  <li>
+	    <%= f.label :email %>
+	    <%= f.text_field :email %>
+	  </li>
+	  <li>
+	    <%= f.label :notification_template_id %>
+	    <%= f.text_field :notification_template_id %>
+	  </li>
+	  <li>
+	    <%= f.label :notification_category_id %>
+	    <%= f.text_field :notification_category_id %>
+	  </li>
+	  <li>
+	    <%= f.label :emailable_type %>
+	    <%= f.text_field :emailable_type %>
+	  </li>
+	  <li>
+	    <%= f.label :emailable_id %>
+	    <%= f.text_field :emailable_id %>
+	  </li>
+	  <li>
+	    <%= f.label :memo_id %>
+	    <%= f.text_field :memo_id %>
+	  </li>
+	  <li>
+	    <%= f.label :delivered %>
+	    <%= f.check_box :delivered %>
+	  </li>
+	</ul>
+	<!-- <%= submit_button("Save") %> <%= loading("Please wait...") %> -->
+<% end %>

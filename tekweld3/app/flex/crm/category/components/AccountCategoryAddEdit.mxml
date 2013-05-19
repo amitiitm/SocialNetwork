@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<gencomponents:AddEdit xmlns:mx="http://www.adobe.com/2006/mxml" 
+	height="100%" width="100%" verticalGap="0"
+	xmlns:customcomponents="com.generic.customcomponents.*"
+	xmlns:gencomponents="com.generic.components.*" 
+	creationPolicy="all">
+	
+	<mx:Script source="../scripts/AccountCategoryAddEditScript.as"/>
+
+	<mx:VBox width="100%" height="100%" verticalGap="3">
+		<mx:HBox width="100%" horizontalGap="0" verticalAlign="middle">
+			<mx:Label text="Code" width="100" textAlign="right" height="20"/>
+			<customcomponents:GenTextInput id="tiCode" width="115" xmlTag="code" upperCaseFlag="true"
+				updatableFlag="true" tableName="crm_account_category" defaultValue="" tabIndex="1"
+				validationFlag="true" toolTip="Code" maxChars="25" fontSize="9" height="20"/>
+		</mx:HBox>
+		<mx:HBox width="100%" horizontalGap="0" verticalAlign="middle">
+			<mx:Label text="Name" width="100" textAlign="right" height="20"/>
+			<customcomponents:GenTextInput id="tiName" width="250" xmlTag="name" updatableFlag="true" tabIndex="2" 
+				tableName="crm_account_category" defaultValue="" validationFlag = "false" toolTip="Name"
+				maxChars="50" height="20"/>
+		</mx:HBox>
+		<mx:HBox width="100%" horizontalGap="0" verticalAlign="middle">
+			<mx:Label text="Status" width="100" textAlign="right" height="20"/>
+			<customcomponents:GenComboBox id="cbTrans_flag" defaultValue="A" width="115" cornerRadius="0" xmlTag="trans_flag" updatableFlag="true"
+				tableName="crm_account_category"  tabIndex="3" height="20" labelField="label"
+				dataProvider="{__genModel.masterData.child('trans_flag').trans_flag}" />
+		</mx:HBox>
+	</mx:VBox>
+</gencomponents:AddEdit>

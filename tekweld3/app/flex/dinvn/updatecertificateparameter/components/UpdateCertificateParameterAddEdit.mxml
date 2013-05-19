@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<gencomponents:AddEdit xmlns:mx="http://www.adobe.com/2006/mxml"
+	height="100%" width="100%" verticalGap="0"
+	xmlns:customcomponents="com.generic.customcomponents.*"
+	xmlns:gencomponents="com.generic.components.*"
+	creationPolicy="all" >
+	
+	<mx:Script source="../scripts/UpdateCertificateParameterAddEditScript.as"/>
+	<mx:VBox height="0" width="0" visible="false">
+		<customcomponents:GenTextInput id="tiTrans_bk" width="0" height="0" visible="true" editable="false"
+			xmlTag="trans_bk" updatableFlag="true" tableName="diamond_packet_update" />	
+	</mx:VBox>
+	<mx:VBox width="100%" height="100%" verticalGap="3">
+		<mx:HBox width="100%">
+			<mx:VBox width="100%" height="100%" verticalGap="3" horizontalGap="0" paddingBottom="0" paddingTop="0">
+				<mx:HBox width="100%">
+					<mx:Label text="Import Certificates" width="115" textAlign="right"/>
+					<customcomponents:GenTextInput id="tiXlsFile" width="152" height="20" validationFlag="false"
+						tabIndex="1" toolTip="Import Certificates" xmlTag="file_name" updatableFlag="false" tableName="diamond_packet_update"
+						/>	
+					<customcomponents:GenUploadButton id="btnBrowse_Xls" 
+								label="..." toolTip="Import Certificates" width="40" height="18" tabIndex="1"
+								uploadServiceID="xlsUploadUrl" tableName="diamond_packet_update_lines"
+								fileTitle="Import Certificates" fileTypes="*.xls,*.xlsx" uploadFileNameSetEvent="handleImportEvent(event)" 
+								downloadCompleteEvent="handleDownloadCompleteEvent(event)"/>	
+				</mx:HBox>
+				<mx:HBox>
+					<mx:Spacer width="115"/>	
+					<mx:LinkButton id="lbSampleXLS" textAlign="left" label="Sample/Download Excel format" click="handleSampleXLS()" color="#0000FF" />	
+				</mx:HBox>
+				<mx:HBox>
+					<mx:Label text="Remarks" width="115" textAlign="right"/>
+					<customcomponents:GenTextArea width="200" height="50" id="taRemarks" maxChars="200" validationFlag="true"
+							 xmlTag="remarks" tabIndex="2" updatableFlag="true" tableName="diamond_packet_update"/>
+				</mx:HBox>
+				
+			</mx:VBox>
+			<mx:VBox width="100%" height="100%" verticalGap="3" horizontalGap="0" paddingBottom="0" paddingTop="0">
+				<mx:HBox width="100%" height="10%" verticalGap="0">						
+					<mx:Label text="Trans #" width="105" textAlign="right" height="20" />
+					<customcomponents:GenTextInput id="tiTrans_no" width="116" xmlTag="trans_no" enabled="false" 
+						updatableFlag="true"  tableName="diamond_packet_update" height="20"  
+						defaultValue="" validationFlag="false" toolTip="Trans #"
+					/>	
+				</mx:HBox>				
+				<mx:HBox width="100%"  verticalGap="0">
+					<mx:Label text="Trans Date" width="105" textAlign="right" height="20" />
+					<customcomponents:GenDateField id="dfTrans_date" width="116" xmlTag="trans_date"
+						updatableFlag="true" tabIndex="3" tableName="diamond_packet_update" height="20" 
+					 	itemChangedEvent="getAccountPeriod();"
+					 	validationFlag="false" toolTip="Trans Date"
+					/>
+				</mx:HBox>
+				<mx:HBox width="100%"  verticalGap="0">		
+					<mx:Label text="A/C Period" height="20" width="105" textAlign="right" />
+					<customcomponents:GenDynamicComboBoxWithHelp id="dcAccount_period_code" width="116" 
+						toolTip="A/c Period Code"  defaultValue="" enabled="false" height="20"  
+						dataField="code" labelField="code" 
+						dataSourceName="AccountPeriod" dataProvider="{__genModel.lookupObj.accountperiod.children()}"
+						validationFlag="true" xmlTag="account_period_code" updatableFlag="true" tableName="diamond_packet_update"  />
+				</mx:HBox>			
+			</mx:VBox>			
+		</mx:HBox>
+
+		<mx:HBox id="hbCertificateDetail" label="Certificate Details" width="100%" height="100%" horizontalAlign="center" fontSize="10">
+			<customcomponents:GenDataGrid id="dtlLine"
+				updatableFlag="true"
+				rootNode="diamond_packet_update_lines"
+				formatServiceID="CertificateDetailFormat"
+				height="100%" width="100%"
+			/>
+		</mx:HBox>		
+	</mx:VBox>	
+</gencomponents:AddEdit>

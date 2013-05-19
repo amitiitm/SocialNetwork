@@ -1,0 +1,13 @@
+<% form_for rate_group, :html => {:class => "forms"} do |f|%>
+	<ui>
+		<li>
+			<label>Name</label>
+			<%= f.text_field :name, :size => 10 %>
+		</li>
+		<li>
+			<label>Description</label>
+			<%= f.text_field :desc %>
+		</li>
+	</ui>
+	<!-- <button type="submit">Save</button> -->
+<% end -%>

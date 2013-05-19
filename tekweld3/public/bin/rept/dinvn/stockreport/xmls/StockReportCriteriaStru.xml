@@ -1,0 +1,13 @@
+<columns Title='Dinvn'>
+     
+    <column dataType="S" label="Lot #" checkbox="ckAll6" xmlTagFrom="str11" from="tiStr11" xmlTagTo="str12" to="tiStr12" multiSelect="mvMultiSelect6" xmlTagMultiSelect="multiselect6" lookupFlag="true" lookupName="DiamondLot" lookupLabel="code" dataField="code" labelField="code" />
+    <column dataType="S" label="Packet #" checkbox="ckAll7" xmlTagFrom="str13" from="tiStr13" xmlTagTo="str14" to="tiStr14" multiSelect="mvMultiSelect7" xmlTagMultiSelect="multiselect7" lookupFlag="false" lookupName=""  />
+    <column dataType="S" label="Location #" checkbox="ckAll5" xmlTagFrom="str9" from="tiStr9" xmlTagTo="str10" to="tiStr10" multiSelect="mvMultiSelect5" xmlTagMultiSelect="multiselect5" lookupFlag="true" lookupName="Location" lookupLabel="code" dataField="code" labelField="code" />
+    <column dataType="S" label="Stone Type" checkbox="ckAll1" xmlTagFrom="str1" from="tiStr1" xmlTagTo="str2" to="tiStr2" multiSelect="mvMultiSelect1" xmlTagMultiSelect="multiselect1" lookupFlag="false" lookupName=""	 />
+    <column dataType="S" label="Shape " checkbox="ckAll2" xmlTagFrom="str3" from="tiStr3" xmlTagTo="str4" to="tiStr4" multiSelect="mvMultiSelect2" xmlTagMultiSelect="multiselect2" lookupFlag="false" lookupName=""/>
+	<column dataType="S" label="Color" checkbox="ckAll3" xmlTagFrom="str5" from="tiStr5" xmlTagTo="str6" to="tiStr6" multiSelect="mvMultiSelect3" xmlTagMultiSelect="multiselect3" lookupFlag="false" lookupName=""	 />
+    <column dataType="S" label="Clarity" checkbox="ckAll4" xmlTagFrom="str7" from="tiStr7" xmlTagTo="str8" to="tiStr8" multiSelect="mvMultiSelect4" xmlTagMultiSelect="multiselect4" lookupFlag="false" lookupName=""/>
+   
+</columns>
+
+  

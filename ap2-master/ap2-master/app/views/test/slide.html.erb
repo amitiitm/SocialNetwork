@@ -1,0 +1,22 @@
+<%= link_to "Moe Navid", "/accounts/1" %>
+
+<script type="text/javascript" charset="utf-8">
+	$("a").live('click', function(){
+		history.pushState({ path: this.path }, '', this.href)
+	  $.get(this.href, {}, function(resp) {
+			$("#response").hide();
+	    $("#response").html(resp);
+			$("#response").show('slide', {direction: 'right'});
+	  })
+	  return false
+	});
+	
+	$(window).bind('popstate', function() {
+		var path = location.pathname;
+		$.get(path, {}, function(resp) {
+			$("#response").hide();
+	    $("#response").html(resp);
+			$("#response").show('slide', {direction: 'left'});
+	  })
+	})
+</script>

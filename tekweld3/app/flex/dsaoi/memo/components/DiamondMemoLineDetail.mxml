@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<gencomponents:DetailAddEdit xmlns:mx="http://www.adobe.com/2006/mxml"
+	width="630" height="260" verticalGap="0"
+	xmlns:customcomponents="com.generic.customcomponents.*"
+	xmlns:gencomponents="com.generic.components.*"
+	creationComplete="creationCompleteHandler()">
+
+	<mx:Script source="../scripts/DiamondMemoLineDetailScript.as"/>
+	
+	<mx:VBox height="100%" width="100%">
+		<mx:HBox>
+			<mx:Label text="Lot #" width="95" textAlign="right"/>
+			<customcomponents:GenDynamicComboBoxWithHelp id="dcDiamond_lot_id" width="170"  height="20"
+				tabIndex="1" toolTip="Lot #" defaultValue="" itemChangedEvent="getLotsDetails()"
+				dataField="id" dataSourceName="DiamondLot" dataProvider="{__genModel.lookupObj.diamondlot.children()}" labelField="code" 
+				validationFlag="true" xmlTag="diamond_lot_id" updatableFlag="true" tableName="diamond_sale_line"  />
+  
+            <mx:Label text="Certificate #" width="75" textAlign="right"/>
+			<customcomponents:GenTextInput id="tiDiamond_packet_no" width="140" height="20" 
+				tabIndex="2" toolTip="Certificate #" defaultValue="" itemChangedEvent="getPacketDetails()"
+				xmlTag="diamond_packet_no" updatableFlag="true" tableName="diamond_sale_line" maxChars="25" />
+		</mx:HBox>
+        <mx:Spacer height="4%"/>
+		<mx:HBox>
+			<mx:Label text="Location #" width="95" textAlign="right"/>
+			<customcomponents:GenDynamicComboBoxWithHelp id="dcLocation_code" width="95" height="20"
+				tabIndex="3" toolTip="Location" defaultValue="" dataSourceName="Location"
+				dataField="code" dataProvider="{__genModel.lookupObj.location.children()}" labelField="code" 
+				validationFlag="false" xmlTag="location_code" updatableFlag="true" tableName="diamond_sale_line"  />
+		</mx:HBox>
+        <mx:Spacer height="4%"/>
+		<mx:HBox>
+			<mx:Label text="Pcs" width="95" textAlign="right" />
+				<customcomponents:GenTextInput id="tiPcs" width="95" height="20" visible="true"
+					editable="true" enabled="true" xmlTag="pcs" updatableFlag="true"
+					tableName="diamond_sale_line" defaultValue="0" tabIndex="4" toolTip="Pcs" setDefaultOnEmpty="true" 
+					itemChangedEvent="calculateNetAmount()" textAlign="right" dataType="N" maxValue="99999" />
+
+            <mx:Label text="Price" width="55" textAlign="right"/>
+				<customcomponents:GenTextInput id="tiPrice" width="95" height="20" visible="true"
+					xmlTag="price" updatableFlag="true"
+					tableName="diamond_sale_line" defaultValue="0.00" tabIndex="7" toolTip="Price" setDefaultOnEmpty="true" 
+					itemChangedEvent="calculateNetAmount()" textAlign="right" dataType="N" maxValue="9999999999.99" />  
+            
+            <mx:Label text="Item Amt" width="95" textAlign="right"/>
+				<customcomponents:GenTextInput id="tiLine_amt" width="95" height="20" visible="true"
+					xmlTag="line_amt" updatableFlag="true"  setDefaultOnEmpty="true" 
+					tableName="diamond_sale_line" defaultValue="0.00" enabled="false" toolTip="Item Amt"
+					itemChangedEvent="itemAmountChangeHandler()" textAlign="right" dataType="N" maxValue="9999999999.99" />
+		</mx:HBox>
+       
+		<mx:HBox>
+			<mx:Label text="Carat" width="95" textAlign="right"/>
+			<customcomponents:GenTextInput id="tiWt" width="95" height="20" visible="true"
+				editable="true" enabled="true" xmlTag="wt" updatableFlag="true" setDefaultOnEmpty="true" 
+				tableName="diamond_sale_line" defaultValue="0.000" tabIndex="5" toolTip="Carat"
+				itemChangedEvent="calculateNetAmount()" textAlign="right" dataType="N" maxValue="999999999.999" />
+	
+	        <mx:Label text="Dis (%)" width="55" textAlign="right"/>
+				<customcomponents:GenTextInput id="tiDiscount_per" width="95" height="20" visible="true"
+					editable="true" enabled="true" xmlTag="discount_per" updatableFlag="true" setDefaultOnEmpty="true" 
+					tableName="diamond_sale_line" defaultValue="0.00" tabIndex="8" toolTip="Discount (%)"
+					itemChangedEvent= "calculateNetAmount();" textAlign="right" dataType="N" maxValue="9999.99" />
+
+            <mx:Label text="Dis Amt" width="95" textAlign="right"/>
+				<customcomponents:GenTextInput id="tiDiscount_amt" width="95" height="20" visible="true"
+					xmlTag="discount_amt" updatableFlag="true" setDefaultOnEmpty="true" 
+					tableName="diamond_sale_line" defaultValue="0.00" tabIndex="9" toolTip="Discount Amt"
+					itemChangedEvent="discPerCalculation();" textAlign="right" dataType="N" maxValue="9999999999.99" />
+		</mx:HBox>
+		
+		<mx:HBox>
+		    <mx:Label text="Sell Unit" width="95" textAlign="right"/>
+				<customcomponents:GenComboBox id="cbSell_unit" defaultValue="C" width="95" cornerRadius="0" xmlTag="sell_unit" updatableFlag="true"
+					tableName="diamond_sale_line"  tabIndex="6" change="calculateNetAmount()" labelField="label" 
+					dataProvider="{__genModel.masterData.child('diamond_unit').diamond_unit}" />
+		
+		     <mx:Label text="Net Amt" width="260" textAlign="right"/>
+				<customcomponents:GenTextInput id="tiNet_amt" width="95" height="20" 
+					xmlTag="net_amt" updatableFlag="true"  setDefaultOnEmpty="true"  enabled="false"
+					tableName="diamond_sale_line" defaultValue="0.00" tabIndex="0" toolTip="Net Amt"
+					textAlign="right" dataType="N" maxValue="9999999999.99" />
+		</mx:HBox>
+		 <mx:Spacer height="4%"/>
+		<mx:HBox>
+			<mx:VRule width="95" height="20" />
+			<mx:VBox>
+				<mx:Label text="Stone Type" width="95" textAlign="left"/>
+				<customcomponents:GenComboBox id="cbStone_type" defaultValue="DIAM" width="95" cornerRadius="0" xmlTag="stone_type" updatableFlag="true"
+					tableName="diamond_sale_line"  tabIndex="0" type_cd="" subtype_cd="stone_type"  enabled="false" labelField="label" 	
+					dataProvider="{__genModel.masterData.child('stone_type').stone_type}" />
+			</mx:VBox>
+
+            <mx:VBox>
+				<mx:Label text="Shape" width="95" height="20" textAlign="left"/>
+				<customcomponents:GenComboBox id="cbShape" defaultValue="ROUND" width="95" cornerRadius="0" xmlTag="shape" updatableFlag="true"
+					tableName="diamond_sale_line" height="20" enabled="false" labelField="label" 	 	
+					dataProvider="{__genModel.masterData.child('stone_shape').stone_shape}" />
+			</mx:VBox>
+            <mx:VBox>
+				<mx:Label text="Color" width="95" height="20" textAlign="left"/>
+				<customcomponents:GenComboBox id="cbColor" defaultValue="D" width="95" cornerRadius="0" xmlTag="color" updatableFlag="true"
+					tableName="diamond_sale_line"  height="20" enabled="false" labelField="label" 
+					dataProvider="{__genModel.masterData.child('stone_color').stone_color}" />
+			</mx:VBox>	
+            <mx:VBox>
+				<mx:Label text="Clarity" width="95" textAlign="left"/>
+				<customcomponents:GenComboBox id="cbClarity" defaultValue="SI1" width="95" cornerRadius="0" xmlTag="clarity" updatableFlag="true"
+					tableName="diamond_sale_line"  tabIndex="0" enabled="false" labelField="label" 		
+					dataProvider="{__genModel.masterData.child('stone_clarity').stone_clarity}" />
+			</mx:VBox>
+		</mx:HBox>
+		
+		<mx:HBox height="0" width="0" visible="false">
+			<customcomponents:GenTextInput id="tiRef_trans_bk" width="0" height="0" visible="true"
+				editable="true" enabled="true" xmlTag="ref_trans_bk" updatableFlag="true"
+				tableName="diamond_sale_line" defaultValue=""  maxChars="4" toolTip="Ref Trans Bk" />
+			<customcomponents:GenTextInput id="trans_bk" width="0" height="0" visible="true"
+				editable="true" enabled="true" xmlTag="trans_bk" updatableFlag="true"
+				tableName="diamond_sale_line" defaultValue=""  maxChars="4" toolTip="Trans Bk" />
+			<customcomponents:GenTextInput id="tiRef_trans_no" width="0" height="0" visible="true"
+				editable="true" enabled="true" xmlTag="ref_trans_no" updatableFlag="true"
+				tableName="diamond_sale_line" defaultValue=""  maxChars="18" toolTip="Ref Trans #" />
+			<customcomponents:GenTextInput id="trans_no" width="0" height="0" visible="true"
+				editable="true" enabled="true" xmlTag="trans_no" updatableFlag="true"
+				tableName="diamond_sale_line" defaultValue=""  maxChars="18" toolTip=" Trans #" />	
+			<customcomponents:GenTextInput id="tiRef_type" width="0" height="0" visible="false"
+				editable="true" enabled="true" xmlTag="ref_type" updatableFlag="true"
+				tableName="diamond_sale_line" defaultValue=""  maxChars="1" toolTip="Ref Type" />	
+			<customcomponents:GenDateField id="dfRef_trans_date" width="0" xmlTag="ref_trans_date"
+				updatableFlag="true" tableName="diamond_sale_line" defaultValue="" 
+				validationFlag="false" toolTip="Ref Trans Dt" />
+			<customcomponents:GenDateField id="trans_date" width="0" xmlTag="trans_date"
+				updatableFlag="true" tableName="diamond_sale_line" defaultValue="" 
+				validationFlag="false" toolTip="Ref Trans Dt" />
+			<customcomponents:GenTextInput id="tiRef_serial_no" width="0" height="0" visible="true"
+				editable="true" enabled="true" xmlTag="ref_serial_no" updatableFlag="true"
+				tableName="diamond_sale_line" defaultValue="" maxChars="4" toolTip="Ref Serial #" />	
+			<customcomponents:GenTextInput id="tiRef_pcs" width="0" height="0" visible="true"
+				editable="true" enabled="true" xmlTag="ref_pcs" updatableFlag="true"
+				tableName="diamond_sale_line" defaultValue="0.00"  toolTip="Ref Pcs"
+				textAlign="right" dataType="N" maxValue="99999999.99" />
+			<customcomponents:GenTextInput id="tiRef_wt" width="0" height="0" visible="true"
+				editable="true" enabled="true" xmlTag="ref_wt" updatableFlag="true"
+				tableName="diamond_sale_line" defaultValue="0.000"  toolTip="Ref Wt"
+				textAlign="right" dataType="N" maxValue="999999999.999" />	
+			<customcomponents:GenTextInput id="tiCommission_per" width="0" height="0" visible="true"
+				editable="true" enabled="true" xmlTag="commission_per" updatableFlag="true"
+				tableName="diamond_sale_line" defaultValue="0.00"  toolTip="Commission (%)"
+				textAlign="right" dataType="N" maxValue="9999.99" />
+			<customcomponents:GenTextInput id="tiCommission_amt" width="0" height="0" visible="true"
+				editable="true" enabled="true" xmlTag="commission_amt" updatableFlag="true"
+				tableName="diamond_sale_line" defaultValue="0.00"  toolTip="Commission Amt"
+				textAlign="right" dataType="N" maxValue="999999999.99" />
+			<customcomponents:GenTextInput id="tiCost" width="0" height="0" visible="true"
+				editable="true" enabled="true" xmlTag="cost" updatableFlag="true"
+				tableName="diamond_sale_line" defaultValue="0.00" toolTip="Cost"
+				textAlign="right" dataType="N" maxValue="9999999.99" />	
+			<customcomponents:GenTextInput id="tiDiamond_sale_id" width="0" height="0" visible="true"
+				editable="true" enabled="true" xmlTag="diamond_sale_id" updatableFlag="true"
+				tableName="diamond_sale_line" defaultValue=""  maxChars="4" toolTip="Sale #" />
+			<customcomponents:GenTextInput id="tiSerial_no" width="0" height="0" visible="true"
+				editable="true" enabled="true" xmlTag="serial_no" updatableFlag="true"
+				tableName="diamond_sale_line" defaultValue=""  maxChars="4" toolTip="Sale #" />
+			
+			<mx:Label text="Status" width="95" textAlign="right"/>
+			<customcomponents:GenComboBox id="cbTrans_flag" defaultValue="A" width="110" cornerRadius="0" xmlTag="trans_flag" updatableFlag="true"
+				tableName="diamond_sale_line"  tabIndex="1" labelField="label"  		
+				dataProvider="{__genModel.masterData.child('trans_flag').trans_flag}" />
+			<mx:HBox height="0" width="0" visible="false">
+				<mx:Label text="Clear Pcs" textAlign="right" height="0" width="0" visible="false"/>
+				<customcomponents:GenTextInput id="tiClear_pcs" height="0" width="0" visible="false"
+					xmlTag="clear_pcs" updatableFlag="true" enabled="false" setDefaultOnEmpty="true" 
+					tableName="diamond_sale_line" defaultValue="0.00" tabIndex="0" toolTip="Clear Pcs" 
+					textAlign="right" dataType="N" maxValue="9999999.99" />
+				<mx:Label text="Clear Carat" height="0" width="0" visible="false" textAlign="right"/>
+				<customcomponents:GenTextInput id="tiClear_wt" height="0" width="0" visible="false"
+					xmlTag="clear_wt" updatableFlag="true" enabled="false" setDefaultOnEmpty="true" 
+					tableName="diamond_sale_line" defaultValue="0.000" tabIndex="0" toolTip="Clear Carat"
+					textAlign="right" dataType="N" maxValue="999999999.999" />
+			</mx:HBox>		
+			<mx:HBox>
+				<mx:Label text="Quality" height="0" width="0" visible="false" textAlign="right"/>
+				<customcomponents:GenComboBox id="cbQuality" defaultValue="B1" height="0" width="0" visible="false" cornerRadius="0" xmlTag="quality" updatableFlag="true"
+					tableName="diamond_sale_line"  tabIndex="0" enabled="false" labelField="label"  
+					dataProvider="{__genModel.masterData.child('stone_quality').stone_quality}" />
+				<mx:Label text="Size" height="0" width="0" visible="false" textAlign="right"/>
+				<customcomponents:GenTextInput id="tiSize" height="0" width="0" visible="false" enabled="false"
+					xmlTag="size" updatableFlag="true" setDefaultOnEmpty="true" 
+					tableName="diamond_sale_line" defaultValue="0.00" tabIndex="0" toolTip="Size"
+					textAlign="right" dataType="N" maxValue="9999.99" />
+			</mx:HBox>
+	  </mx:HBox>
+	</mx:VBox>
+	
+   <mx:HBox>
+	    <customcomponents:GenTextInput id="tiDiamond_lot_no" width="0" height="0" visible="false"
+			xmlTag="diamond_lot_no" updatableFlag="true"
+			tableName="diamond_sale_line" />
+	    <customcomponents:GenTextInput id="tiDiamond_packet_id" width="0" height="0" visible="false"
+			xmlTag="diamond_packet_id" updatableFlag="true" tabIndex="0"
+			tableName="diamond_sale_line" />
+	    <customcomponents:GenTextInput id="tiDiamond_cert_flag" width="0" height="0" visible="false"
+			xmlTag="diamond_cert_flag" updatableFlag="true" tabIndex="0"
+			tableName="diamond_sale_line" />
+	</mx:HBox>
+</gencomponents:DetailAddEdit>

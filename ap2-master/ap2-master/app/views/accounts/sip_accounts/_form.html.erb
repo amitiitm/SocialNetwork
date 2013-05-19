@@ -1,0 +1,90 @@
+<% form_for [@account, @sip_account], :html => {:class => "forms"} do |f| -%>
+	<%= error("Could not create SIP Account:")  -%>
+	<ul>
+                <li>
+                        <label>Domain</label>
+                        <%= f.text_field :domain, :size => 25 %>
+                </li>
+
+		<li class="horizental">
+			<label>SIP Username</label>
+			<%= f.text_field :username, :size => 25 %>
+		</li>
+		<li class="horizental">
+			<label>SIP Password</label>
+			<%= f.text_field :password, :size => 25 %>
+		</li>
+		<li class="horizental">
+			<label>Codec</label>
+			<%= f.select :codec, SipAccount::CODECS %>
+		</li>
+	  <li></li>
+		<li class="horizental">
+			<label>Voicemail</label>
+			<%= f.select :vm_enabled, [["Enabled", true], ["Disabled", false]] %>
+		</li>
+		<li class="horizental">
+			<label>Voicemail Email</label>
+			<%= f.text_field :vm_email, :size => 30 %>
+		</li>
+		<li class="horizental">
+			<label>Ring Time</label>
+			<%= f.select :timeout, SipAccount::TIMEOUT %>
+		</li>				
+		<li></li>
+		<% if @sip_account.new_record? %>
+			<div class="blue-box ui-corner-all" style="width: 420;overflow:auto; max-height:170px">
+			<li>
+				<label class="no-under-line">DID Area Code <input type='text' id='did_number'></input></label>
+				<div id="dids"></div>
+			</li>
+		</div>
+		<% end %>
+		<% if @sip_account.new_record? %>
+			<li class="horizental">
+				<label>DID Number</label>
+				<input type='text' id='selected_did_number' disabled='disabled' value="">
+			</li>
+		<% end %>
+		<li class="horizental">
+			<label>Caller ID Number</label>
+			<%= f.text_field :cid_number, :size => 15 %>
+		</li>
+		<li class="horizental">
+			<label>Caller ID Name</label>
+			<%= f.text_field :cid_name, :size => 15 %>
+		</li>
+		<li>
+			<label>Area Code</label>
+			<%= f.text_field :area_code, :size => 5 %>
+		</li>
+		<li>
+			<label>Rating Plan(s)</label>
+			<%= f.select :rate_plan_id, RatePlan.all.map {|r| [r.name, r.id]} %>
+		</li>
+	</ul>
+	<%= f.hidden_field :did_id %>
+<% end -%>
+
+<script>
+	$(function(){
+		$("#did_number").keyup(function(){
+			var dom = $("#did_number");
+			if (dom.val().length >= 3) {
+				$.get("/service/did_finder", ("q=" + dom.val()), function(resp){
+					$("#dids").html(resp);
+				});
+			};
+		});
+	});
+	// $("#did_number").autocomplete("/service/did_finder", {selectFirst: false, formatItem: function(item) {
+	// 	var data = JSON.parse(item[0]);
+	// 	return data.options;
+	// }}).result(function(event, baghali){
+	// 	var data = JSON.parse(baghali[0]);
+	// 	var number = data.text;
+	// 	$("#sip_account_did_number").val(number);
+	// 	$("#sip_account_cid_number").val(number);
+	// 	$("#sip_account_area_code").val(number.substr(1,3));
+	// });
+</script>

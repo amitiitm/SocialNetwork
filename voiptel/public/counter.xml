@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<globals
+	startNumber="38990" 
+	countAll="true" 
+
+	numbersMax="5" 
+	showCommas="true" 
+	commaGroupNum="3" 
+	decimalPlaces="0" 
+
+	numberBgColor="0xCC0098" 
+	numberColor="0xFFFFFF" 
+	numberBorderInnerColor="0x282828" 
+	numberBorderOuterColor="0x141414" 
+	windowHiliteAlpha="75" 
+
+	fadeInTime="0.25" 
+	
+	blurMax="10" 
+	speedMax="60" 
+	snapBack="2" 
+	accelTime="0.5" 
+	accelDelay="0.25" 
+	decelTime="1.25" 
+	decelDelay="0.25" 
+	animationTypeAccel="easeInQuad" 
+	animationTypeDecel="easeOutSine" 
+
+	soundFXon="true" 
+	soundFXvolume="20">
+</globals>

@@ -1,0 +1,353 @@
+--- 
+catalog_customer_services_012: 
+  sequence: 6
+  updated_at: 
+  update_flag: Y
+  diaspark_default: N
+  trans_flag: A
+  created_by: 100
+  lock_version: 0
+  main_heading_code: B1
+  updated_by: 100
+  id: 110
+  main_heading: Warranty
+  visible_flag: Y
+  company_id: 0
+  section: After-Sales Service
+  created_at: 
+catalog_customer_services_001: 
+  sequence: 1
+  updated_at: 
+  update_flag: Y
+  diaspark_default: Y
+  trans_flag: A
+  created_by: 100
+  lock_version: 0
+  main_heading_code: A1
+  updated_by: 100
+  id: 1
+  main_heading: Order process
+  visible_flag: Y
+  company_id: 0
+  section: Online Shop Assistant
+  created_at: 
+catalog_customer_services_013: 
+  sequence: 7
+  updated_at: 
+  update_flag: Y
+  diaspark_default: Y
+  trans_flag: A
+  created_by: 100
+  lock_version: 0
+  main_heading_code: B2
+  updated_by: 100
+  id: 111
+  main_heading: Replacement and Repair
+  visible_flag: Y
+  company_id: 0
+  section: After-Sales Service
+  created_at: 
+catalog_customer_services_002: 
+  sequence: 3
+  updated_at: 
+  update_flag: Y
+  diaspark_default: N
+  trans_flag: A
+  created_by: 100
+  lock_version: 0
+  main_heading_code: A3
+  updated_by: 100
+  id: 104
+  main_heading: Payment
+  visible_flag: Y
+  company_id: 0
+  section: Online Shop Assistant
+  created_at: 
+catalog_customer_services_014: 
+  sequence: 7
+  updated_at: 
+  update_flag: Y
+  diaspark_default: N
+  trans_flag: A
+  created_by: 100
+  lock_version: 0
+  main_heading_code: B2
+  updated_by: 100
+  id: 112
+  main_heading: Replacement and Repair
+  visible_flag: Y
+  company_id: 0
+  section: After-Sales Service
+  created_at: 
+catalog_customer_services_003: 
+  sequence: 1
+  updated_at: 2010-09-24 14:09:04
+  update_flag: Y
+  diaspark_default: N
+  trans_flag: A
+  created_by: 100
+  lock_version: 1
+  main_heading_code: A1
+  updated_by: 100
+  id: 2
+  main_heading: Order process
+  visible_flag: Y
+  company_id: 0
+  section: Online Shop Assistant
+  created_at: 
+catalog_customer_services_015: 
+  sequence: 9
+  updated_at: 
+  update_flag: Y
+  diaspark_default: Y
+  trans_flag: A
+  created_by: 100
+  lock_version: 0
+  main_heading_code: B3
+  updated_by: 100
+  id: 113
+  main_heading: FAQ
+  visible_flag: Y
+  company_id: 0
+  section: After-Sales Service
+  created_at: 
+catalog_customer_services_004: 
+  sequence: 2
+  updated_at: 
+  update_flag: Y
+  diaspark_default: Y
+  trans_flag: A
+  created_by: 100
+  lock_version: 0
+  main_heading_code: A2
+  updated_by: 100
+  id: 101
+  main_heading: Delivery options
+  visible_flag: Y
+  company_id: 0
+  section: Online Shop Assistant
+  created_at: 
+catalog_customer_services_016: 
+  sequence: 9
+  updated_at: 
+  update_flag: Y
+  diaspark_default: N
+  trans_flag: A
+  created_by: 100
+  lock_version: 0
+  main_heading_code: B3
+  updated_by: 100
+  id: 114
+  main_heading: FAQ
+  visible_flag: Y
+  company_id: 0
+  section: After-Sales Service
+  created_at: 
+catalog_customer_services_005: 
+  sequence: 2
+  updated_at: 
+  update_flag: Y
+  diaspark_default: N
+  trans_flag: A
+  created_by: 100
+  lock_version: 0
+  main_heading_code: A2
+  updated_by: 100
+  id: 102
+  main_heading: Delivery options
+  visible_flag: Y
+  company_id: 0
+  section: Online Shop Assistant
+  created_at: 
+catalog_customer_services_017: 
+  sequence: 10
+  updated_at: 
+  update_flag: Y
+  diaspark_default: Y
+  trans_flag: A
+  created_by: 100
+  lock_version: 0
+  main_heading_code: C1
+  updated_by: 100
+  id: 115
+  main_heading: Track the status of your order
+  visible_flag: Y
+  company_id: 0
+  section: Order Tracking
+  created_at: 
+catalog_customer_services_006: 
+  sequence: 3
+  updated_at: 
+  update_flag: Y
+  diaspark_default: Y
+  trans_flag: A
+  created_by: 100
+  lock_version: 0
+  main_heading_code: A3
+  updated_by: 100
+  id: 103
+  main_heading: Payment
+  visible_flag: Y
+  company_id: 0
+  section: Online Shop Assistant
+  created_at: 
+catalog_customer_services_018: 
+  sequence: 10
+  updated_at: 
+  update_flag: Y
+  diaspark_default: N
+  trans_flag: A
+  created_by: 100
+  lock_version: 0
+  main_heading_code: C1
+  updated_by: 100
+  id: 116
+  main_heading: Track the status of your order
+  visible_flag: Y
+  company_id: 0
+  section: Order Tracking
+  created_at: 
+catalog_customer_services_007: 
+  sequence: 4
+  updated_at: 
+  update_flag: Y
+  diaspark_default: Y
+  trans_flag: A
+  created_by: 100
+  lock_version: 0
+  main_heading_code: A4
+  updated_by: 100
+  id: 105
+  main_heading: Shipping FAQ
+  visible_flag: Y
+  company_id: 0
+  section: Online Shop Assistant
+  created_at: 
+catalog_customer_services_019: 
+  sequence: 11
+  updated_at: 
+  update_flag: Y
+  diaspark_default: Y
+  trans_flag: A
+  created_by: 100
+  lock_version: 0
+  main_heading_code: D1
+  updated_by: 100
+  id: 117
+  main_heading: Return products within two weeks of delivery
+  visible_flag: Y
+  company_id: 0
+  section: Returns
+  created_at: 
+catalog_customer_services_008: 
+  sequence: 4
+  updated_at: 
+  update_flag: Y
+  diaspark_default: N
+  trans_flag: A
+  created_by: 100
+  lock_version: 0
+  main_heading_code: A4
+  updated_by: 100
+  id: 106
+  main_heading: Shipping FAQ
+  visible_flag: Y
+  company_id: 0
+  section: Online Shop Assistant
+  created_at: 
+catalog_customer_services_020: 
+  sequence: 11
+  updated_at: 
+  update_flag: Y
+  diaspark_default: N
+  trans_flag: A
+  created_by: 100
+  lock_version: 0
+  main_heading_code: D1
+  updated_by: 100
+  id: 119
+  main_heading: Return products within two weeks of delivery
+  visible_flag: Y
+  company_id: 0
+  section: Returns
+  created_at: 
+catalog_customer_services_009: 
+  sequence: 5
+  updated_at: 
+  update_flag: Y
+  diaspark_default: Y
+  trans_flag: A
+  created_by: 100
+  lock_version: 0
+  main_heading_code: A5
+  updated_by: 100
+  id: 107
+  main_heading: Contact our Online Shop Team
+  visible_flag: Y
+  company_id: 0
+  section: Online Shop Assistant
+  created_at: 
+catalog_customer_services_021: 
+  sequence: 8
+  updated_at: 
+  update_flag: Y
+  diaspark_default: Y
+  trans_flag: A
+  created_by: 100
+  lock_version: 0
+  main_heading_code: B4
+  updated_by: 100
+  id: 120
+  main_heading: Jewelry
+  visible_flag: Y
+  company_id: 0
+  section: After-Sales Service
+  created_at: 
+catalog_customer_services_010: 
+  sequence: 5
+  updated_at: 
+  update_flag: Y
+  diaspark_default: N
+  trans_flag: A
+  created_by: 100
+  lock_version: 0
+  main_heading_code: A5
+  updated_by: 100
+  id: 108
+  main_heading: Contact our Online Shop Team
+  visible_flag: Y
+  company_id: 0
+  section: Online Shop Assistant
+  created_at: 
+catalog_customer_services_022: 
+  sequence: 8
+  updated_at: 
+  update_flag: Y
+  diaspark_default: N
+  trans_flag: A
+  created_by: 100
+  lock_version: 0
+  main_heading_code: B4
+  updated_by: 100
+  id: 121
+  main_heading: Jewelry
+  visible_flag: Y
+  company_id: 0
+  section: After-Sales Service
+  created_at: 
+catalog_customer_services_011: 
+  sequence: 6
+  updated_at: 
+  update_flag: Y
+  diaspark_default: Y
+  trans_flag: A
+  created_by: 100
+  lock_version: 0
+  main_heading_code: B1
+  updated_by: 100
+  id: 109
+  main_heading: Warranty
+  visible_flag: Y
+  company_id: 0
+  section: After-Sales Service
+  created_at: 

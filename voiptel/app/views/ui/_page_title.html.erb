@@ -1,0 +1,33 @@
+<div class="inner-page-title <%= options[:class] %>">
+  <div class="hack-hack-hack" style="float:left">
+    <h2><%= title %></h2>
+    <% if not desc.blank? %>
+        <span style="width: 330px;"> (<%= desc %>)</span>
+    <% end %>
+  </div>
+
+  <% if !params[:account_id]!=nil and params[:controller]=='cdrs' and params[:action]=='index' %>
+  <% elsif params[:account_id].nil? %>
+      <div style="float:right;">
+        <a class="logout_link" href="/accounts">
+          <%= image_tag("/images/advance_search/btn_reset.png") if session[:search_filter] %>
+        </a>
+        <%if mobile_browser?%>
+            <%= javascript_include_tag "ap.sirch.js" %>
+            <div id="ssirch" style="background-color: #3F3F3F !important; height:30px; float:left; margin-right:50px; width:300px;" class="GleeThemeDefault">
+              <input type="text" id="gleeSearchField" value="" autocomplete="off" class="ac_input GleeThemeDefault" style="background-color: #3F3F3F !important;font-size: 20px; ">
+              <div id="gleeSub" style="position:absolute;width:300px;">
+                <div id="gleeSubText" style="width:300px;background-color: #3F3F3F !important;"></div>
+                <div id="gleeSubActivity" style="width:300px;"></div>
+                <div id="gleeSubURL" style="width:300px;"></div>
+              </div>
+            </div>
+        <%end%>
+
+        <a class="logout_link openable" href="/logout">
+          <%= image_tag('/images/billing/logout.png') %>
+        </a></div>
+  <% end %>
+  <div class="clear"></div>
+</div>
+<div class="clear"></div>

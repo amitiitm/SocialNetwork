@@ -1,0 +1,104 @@
+<rows>
+	
+	<row screen="packagetype">
+	<label>Pallet</label>
+	<value>Pallet</value>
+	</row>
+	<row screen="packagetype">
+	<label>Rack</label>
+	<value>Rack</value>
+	</row>
+	<row screen="packagetype">
+	<label>Tank</label>
+	<value>Tank</value>
+	</row>
+	<row screen="packagetype">
+	<label>Tube</label>
+	<value>Tube</value>
+	</row>
+	<row screen="packagetype">
+	<label>Barrel</label>
+	<value>Barrel</value>
+	</row>
+	<row screen="packagetype">
+	<label>Basket</label>
+	<value>Basket</value>
+	</row>
+	<row screen="packagetype">
+	<label>Bin</label>
+	<value>Bin</value>
+	</row>
+	<row screen="freightclass">
+	<label>50</label>
+	<value>50</value>
+	</row>
+	<row screen="freightclass">
+	<label>55</label>
+	<value>55</value>
+	</row>
+	<row screen="freightclass">
+	<label>60</label>
+	<value>60</value>
+	</row>
+	<row screen="freightclass">
+	<label>65</label>
+	<value>65</value>
+	</row>
+	<row screen="freightclass">
+	<label>70</label>
+	<value>70</value>
+	</row>
+	<row screen="freightclass">
+	<label>77.5</label>
+	<value>77.5</value>
+	</row>
+	<row screen="freightclass">
+	<label>85</label>
+	<value>85</value>
+	</row>
+	<row screen="freightclass">
+	<label>92.5</label>
+	<value>92.5</value>
+	</row>
+	<row screen="freightclass">
+	<label>100</label>
+	<value>100</value>
+	</row>
+	<row screen="freightclass">
+	<label>110</label>
+	<value>110</value>
+	</row>
+	<row screen="freightclass">
+	<label>125</label>
+	<value>125</value>
+	</row>
+	<row screen="freightclass">
+	<label>150</label>
+	<value>150</value>
+	</row>
+	<row screen="freightclass">
+	<label>175</label>
+	<value>175</value>
+	</row>
+	<row screen="freightclass">
+	<label>200</label>
+	<value>200</value>
+	</row>
+	<row screen="freightclass">
+	<label>250</label>
+	<value>250</value>
+	</row>
+	<row screen="freightclass">
+	<label>300</label>
+	<value>300</value>
+	</row>
+	<row screen="freightclass">
+	<label>400</label>
+	<value>400</value>
+	</row>
+	<row screen="freightclass">
+	<label>500</label>
+	<value>500</value>
+	</row>
+					
+</rows> 

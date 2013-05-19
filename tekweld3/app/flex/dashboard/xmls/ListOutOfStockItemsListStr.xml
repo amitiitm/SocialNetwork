@@ -1,0 +1,12 @@
+<columns  lockedColumnCount='0'>
+
+	<column data='store_code'				label='Item #'				editable='false'	visible='true'	width='110'	textAlign='left'	forLevel='false'
+			defaultForLevel=''				booleanFlag='false'			sortDataType='S'	columnPrecision="NaN"/>
+	
+	<column data='reorder_level'			label='Reorder Qty'			editable='false'	visible='true'	width='110'	textAlign='left'	forLevel='false'
+			defaultForLevel=''				booleanFlag='false'			sortDataType='N'	columnPrecision="0"/>
+	
+	<column data='stock_qty'				label='Stock Qty'			editable='false'	visible='true'	width='110'	textAlign='left'	forLevel='false'
+			defaultForLevel=''				booleanFlag='false'			sortDataType='N'	columnPrecision="0"/>			
+											
+</columns> 

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<gencomponents:DetailAddEdit xmlns:mx="http://www.adobe.com/2006/mxml"
+	width="500" height="176" verticalGap="0"
+	xmlns:customcomponents="com.generic.customcomponents.*"
+	xmlns:gencomponents="com.generic.components.*">
+
+	<mx:Script source="../scripts/ItemWorkFlowStepDetailScript.as"/>
+	
+	<mx:VBox height="100%" width="100%" >    
+	
+		
+		<mx:HBox width="100%">
+			<mx:Label text="Step" width="95" textAlign="right"/>
+			<customcomponents:GenComboBox id="cbItem_type" width="182" cornerRadius="0" xmlTag="step" updatableFlag="true"
+				tableName="catalog_item_workflow" defaultValue="" tabIndex="3" labelField="label" height="20" 
+				dataProvider="{__genModel.masterData.child('workflow').step}" />
+		</mx:HBox>
+		<mx:HBox width="100%">
+			<mx:Label text="Sequence #" width="95" textAlign="right"/>
+			<customcomponents:GenTextInput id="tiSequence"  height="20" textAlign="right"
+				updatableFlag="true" width="182" tabIndex="3" xmlTag="seq_no" defaultValue ="0"
+				tableName="catalog_item_workflow"
+				dataType="N" rounding="false" setDefaultOnEmpty="true" maxChars="6"
+				maxValue="9999999999" validationFlag="true" toolTip="Sequence No"/>
+		</mx:HBox>
+		
+		<mx:HBox height="0" width="0" visible="false" includeInLayout="false" >
+			<mx:Label text="Status" width="95" textAlign="right"/>
+			<customcomponents:GenComboBox id="cbTrans_flag" width="110" cornerRadius="0" xmlTag="trans_flag" updatableFlag="true"
+				tableName="catalog_item_workflow"  tabIndex="6" defaultValue="A" labelField="label" 
+				dataProvider="{__genModel.masterData.child('trans_flag').trans_flag}" />
+			<mx:Label text="Column 1" width="95" textAlign="right"/>
+		</mx:HBox>
+		
+	
+		<customcomponents:GenTextInput id="tiSerial_no" width="0" height="0" visible="false"
+			editable="true" enabled="true" xmlTag="serial_no" updatableFlag="true"
+			tableName="catalog_item_workflow" defaultValue=""  maxChars="4" toolTip="Serial #" />
+	
+	</mx:VBox>
+</gencomponents:DetailAddEdit>

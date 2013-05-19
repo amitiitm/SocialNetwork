@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rds:CommonServices xmlns:rds="business.*" xmlns:mx="http://www.adobe.com/2006/mxml">
+
+	<mx:HTTPService id="getListFormat" 	url="saoi/holidays/xmls/HolidaysListStru.xml" />
+	<mx:HTTPService id="getViewFormat" 	url="saoi/holidays/xmls/HolidaysCriteriaStru.xml" />
+	<mx:HTTPService id="getList" 		url="/setup/holiday/list_holidays"/>
+	<mx:HTTPService id="saveRecord" 	url="/setup/holiday/create_holidays"/>
+	<mx:HTTPService id="getRecord" 		url="/setup/holiday/show_holiday"/>	
+
+</rds:CommonServices>	

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<gencomponents:AddEdit xmlns:mx="http://www.adobe.com/2006/mxml" 
+	height="100%" width="100%" verticalGap="0"
+	xmlns:customcomponents="com.generic.customcomponents.*"
+	xmlns:gencomponents="com.generic.components.*" 
+	creationPolicy="all">
+	
+	<mx:Script source="../scripts/ItemCategoryAddEditScript.as"/>
+	
+	<mx:VBox width="100%" height="100%" verticalGap="3">
+		<mx:VBox width="100%" height="57" verticalGap="3">
+			<mx:HBox width="100%" horizontalGap="0" verticalAlign="middle">
+				<mx:Label text="Code" width="130" textAlign="right"/>
+				<customcomponents:GenTextInput id="tiCode"  height="20" width="116" xmlTag="code" upperCaseFlag="true"
+					updatableFlag="true" tableName="catalog_item_category" defaultValue="" tabIndex="1"
+					validationFlag="true" toolTip="Code" maxChars="25" fontSize="9"/>
+				<mx:Label text="Status" width="130" textAlign="right"/>
+				<customcomponents:GenComboBox id="cbTrans_flag" height="20" width="95" cornerRadius="0" xmlTag="trans_flag" updatableFlag="true"
+					tableName="catalog_item_category" defaultValue="A" tabIndex="2"  labelField="label"
+					dataProvider="{__genModel.masterData.child('trans_flag').trans_flag}" />
+			</mx:HBox>
+		
+			<mx:HBox width="100%" horizontalGap="0" verticalAlign="middle">
+				<mx:Label text="Name" width="130" textAlign="right"/>
+				<customcomponents:GenTextInput id="tiName" height="20" width="341" xmlTag="name" updatableFlag="true" tabIndex="3" 
+					tableName="catalog_item_category" defaultValue="" validationFlag = "false" toolTip="Name" maxChars="50" />
+			</mx:HBox>
+		</mx:VBox>
+
+		<mx:Spacer height="10" />
+		
+		<mx:TabNavigator id="tnDetail" width="100%" height="100%">
+			<mx:HBox id="hbAttributes" label="Attributes" width="100%" height="100%" horizontalAlign="left">
+				<gencomponents:Detail id="dtlAttribute"
+					updatableFlag="true"
+					checkBlankRowColumn="catalog_attribute_id"
+					rootNode="catalog_item_category_attributes"
+					formatServiceID="attributeDetailFormat"
+					height="100%" width="100%"
+					title="Attribute"
+					DetailEditClass="{invn.category.components.ItemCategoryAttributeDetail}"/>
+			</mx:HBox>
+		</mx:TabNavigator>
+	</mx:VBox>
+</gencomponents:AddEdit>

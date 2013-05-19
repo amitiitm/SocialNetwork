@@ -1,0 +1,19 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  name: MyString
+  ip: MyString
+  port: MyString
+  settings: MyText
+  carrier_id: 1
+  account_id: 1
+  endpoint_type: 1
+
+two:
+  name: MyString
+  ip: MyString
+  port: MyString
+  settings: MyText
+  carrier_id: 1
+  account_id: 1
+  endpoint_type: 1

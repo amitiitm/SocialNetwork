@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<gencomponents:AddEdit xmlns:mx="http://www.adobe.com/2006/mxml" 
+	height="100%" width="100%" verticalGap="0"
+	xmlns:customcomponents="com.generic.customcomponents.*"
+	xmlns:gencomponents="com.generic.components.*" 
+	creationPolicy="all" creationComplete="init()" >
+	
+	<mx:Script source="../scripts/UserRolePermissionAddEditScript.as"/>
+    <customcomponents:GenTextInput id="dummy" tableName="user_permission" height="0" width="0" visible="false"/>
+    <customcomponents:GenDataGrid id="dgSave" rootNode="user_roles" formatServiceID="DGFormat" updatableFlag="true" height="0" width="0" visible="false"/>
+		<mx:HBox width="100%" height="20" horizontalAlign="center">
+			<mx:Button label="Reset"  height="20" click="resetHandler()"/>
+		</mx:HBox>
+		<mx:HBox horizontalAlign="center" width="100%" height="100%">
+			<mx:Spacer width="50%"/>
+			<mx:VBox width="100%" height="100%" paddingBottom="10">
+				<mx:Label text="User" textAlign="center" width="100%"/>
+				<mx:List id="lbUser" width="{accUserRole.width}" height="{accUserRole.height}" dragEnabled="true" labelField="name"
+					dropEnabled="true" left="30" horizontalCenter="30" 
+					dragComplete="dragToAcc(event)"
+					dragDrop="dragToList(event)"/>
+			</mx:VBox>
+			<mx:VBox width="100%" height="100%" paddingBottom="10">
+				<mx:Label text="Role" textAlign="center" width="100%"/>
+				<mx:Accordion id="accUserRole" left="30" width="100%" height="100%"/>
+			</mx:VBox>
+			<mx:Spacer width="50%"/>
+		</mx:HBox>
+		
+		
+</gencomponents:AddEdit>			  

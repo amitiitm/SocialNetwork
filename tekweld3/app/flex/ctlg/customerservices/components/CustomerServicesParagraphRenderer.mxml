@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:VBox xmlns:mx="http://www.adobe.com/2006/mxml"  width="100%">
+	<mx:Spacer height="5"/>
+	<mx:HBox width="100%">
+		<mx:Label id="lblHeading" styleName="H4"/>
+		<mx:HBox width="100%" horizontalAlign="right">
+			<mx:Button label="Edit"  id="btnEdit" height="25"
+				buttonMode="{true}"
+					color="#FFFFFF"
+					textRollOverColor="#FFFFFF"
+					upSkin="@Embed('com/generic/assets/picEdit.png')"
+    		
+				    downSkin="@Embed('com/generic/assets/picEdit.png')"
+					
+					overSkin="@Embed('com/generic/assets/picEdit.png')"
+				   
+				    selectedUpSkin="@Embed('com/generic/assets/picEdit.png')"
+				    selectedOverSkin="@Embed('com/generic/assets/picEdit.png')"
+				    selectedDownSkin="@Embed('com/generic/assets/picEdit.png')"
+					
+					disabledSkin="@Embed('com/generic/assets/picEdit.png')"  />
+			<mx:Button label="Remove"  id="btnRemove" height="25"
+				buttonMode="{true}"
+					color="#FFFFFF"
+					textRollOverColor="#FFFFFF"
+					upSkin="@Embed('com/generic/assets/remove-btn.png')"
+    		
+				    downSkin="@Embed('com/generic/assets/remove-btn.png')"
+					
+					overSkin="@Embed('com/generic/assets/remove-btn.png')"
+				   
+				    selectedUpSkin="@Embed('com/generic/assets/remove-btn.png')"
+				    selectedOverSkin="@Embed('com/generic/assets/remove-btn.png')"
+				    selectedDownSkin="@Embed('com/generic/assets/remove-btn.png')"
+					
+					disabledSkin="@Embed('com/generic/assets/remove-btn.png')"  />			
+		</mx:HBox>
+
+	</mx:HBox>
+
+	<mx:Spacer height="5"/>
+	<mx:Text id="textParagraph"  textAlign="left" styleName="mainText" width="100%">
+		
+	</mx:Text>
+	<mx:Spacer height="5"/>
+	<mx:VBox verticalGap="0">
+		<mx:LinkButton id="lb1" textDecoration="underline" styleName="mainText3Small" textAlign="left" />
+		<mx:LinkButton id="lb2" textDecoration="underline" styleName="mainText3Small" textAlign="left"/>
+		<mx:LinkButton id="lb3" textDecoration="underline" styleName="mainText3Small" textAlign="left"/>
+	</mx:VBox>
+</mx:VBox>

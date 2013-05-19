@@ -1,0 +1,51 @@
+<div class="hastable <%= options[:class] %>" <%= if options[:width] then
+                                                   "style='width:#{options[:width]};'"
+                                                 end %> >
+  <table id="<%= options[:id] %>">
+    <thead>
+    <tr>
+      <%= table.thead.html_safe %>
+    </tr>
+    </thead>
+    <tbody>
+    <%= table.tbody.html_safe %>
+    </tbody>
+  </table>
+</div>
+<script type="text/javascript" charset="utf-8">
+  <% unless options[:no_sort] %>
+  $(function () {
+    var id = "#<%= options[:id] %>";
+    var table_options;
+    if ($(id).parent().attr('class').match('my_account')) {
+    <%if @advance_search == false%>
+      $(id).tablesorter({widgets:['zebra'] });
+      $(id + " .header").append('<span class="ui-icon ui-icon-carat-2-n-s"></span>');
+   <%elsif(params[:action] != 'index' and params[:action] != 'search')%>
+      $(id).tablesorter({widgets:['zebra'] });
+      $(id + " .header").append('<span class="ui-icon ui-icon-carat-2-n-s"></span>');
+   <%end%>
+    }
+    else {
+      if ($(id + " th input").exists()) {
+        table_options = {widgets:['zebra'],
+          headers:{  0:{ sorter:false } },
+          textExtraction:function (node) {
+            var str = node.innerHTML
+            if (str.match('sort_time_format'))
+              return jQuery(str).html();
+            else
+              return node.innerHTML.replace(/[^0-9\.a-zA-Z]/gi, '');
+          }
+        };
+      }
+      else {
+        table_options = {widgets:['zebra'] };
+      }
+      $(id).tablesorter(table_options);
+      $(id + " .header").append('<span class="ui-icon ui-icon-carat-2-n-s"></span>');
+    }
+  });
+  <% end %>
+</script>
+

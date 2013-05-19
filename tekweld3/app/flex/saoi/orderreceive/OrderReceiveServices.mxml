@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rds:CommonServices xmlns:rds="business.*" xmlns:mx="http://www.adobe.com/2006/mxml">
+
+	<mx:HTTPService id="saveRecord" 				url="/sale/regular_order/create_orders" />
+	<mx:HTTPService id="getRecord" 					url="/sale/regular_order/show_order" />
+	<mx:HTTPService id="fetch_orders" 				url="/sale/sales/list_shipped_order_hdrs" />
+	<mx:HTTPService id="fetch_estimates" 			url="/sale/sales_quotation/list_estimates_for_sales_order" />
+	<mx:HTTPService id="selectOrderService" 		url="/sale/sales/list_shipped_order_dtls" />
+	<mx:HTTPService id="getOrderTrail" 				url="/sale/sales/show_order_trail" />
+	<mx:HTTPService id="getList" 					url="/sale/regular_order/list_quick_regular_and_reorders" />
+	<mx:HTTPService id="artworkUploadUrl" 			url="/artwork/artwork/upload_artwork_attachments"/>
+	<mx:HTTPService id="validateUniqueness" 		url="/setup/setup/validate_uniqueness" />
+	<mx:HTTPService id="printRecord" 				url="/sale/sales_report/render_sales_order_format" />
+	
+	<mx:HTTPService id="artworkDetailFormat" 		url="saoi/orderreceive/xmls/OrderReceiveArtworkDetailStru.xml" /> 
+	<mx:HTTPService id="getListFormat" 				url="saoi/orderreceive/xmls/SalesOrderListStru.xml" />
+	<mx:HTTPService id="getViewFormat" 				url="saoi/orderreceive/xmls/SalesOrderCriteriaStru.xml" />
+	<mx:HTTPService id="orderDetailFormat" 			url="saoi/orderreceive/xmls/ReOrderEditLineDetailStru.xml" />
+	<mx:HTTPService id="fetchRecordFormat" 			url="saoi/orderreceive/xmls/FetchRecordOrderDetailStru.xml" />
+	<mx:HTTPService id="fetchEstimateFormat" 		url="saoi/orderreceive/xmls/FetchEstimateDetailStru.xml" />
+	
+	
+</rds:CommonServices>

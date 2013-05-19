@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rds:CommonServices xmlns:rds="business.*"
+	xmlns:mx="http://www.adobe.com/2006/mxml">
+
+	<mx:HTTPService id="saveRecord" url="/purchase/vendor_invoice/create_invoices"/>
+	<mx:HTTPService id="getRecord" url="/purchase/vendor_invoice/show_invoices"/>
+	<mx:HTTPService id="getList" url="/purchase/vendor_invoice/list_invoices"/>
+
+	<mx:HTTPService id="getListFormat" url="acct/vendinvoice/xmls/VendorInvoiceListStru.xml"/>
+	<mx:HTTPService id="getViewFormat" url="acct/vendinvoice/xmls/VendorInvoiceCriteriaStru.xml"/>
+	<mx:HTTPService id="DetailFormat" url="acct/vendinvoice/xmls/VendorInvoiceDetailStru.xml"/>
+	<mx:HTTPService id="GLFormat" url="acct/vendinvoice/xmls/VendorInvoiceGLStru.xml"/>
+	<mx:HTTPService id="PaymentFormat" url="acct/vendinvoice/xmls/VendorInvoicePaymentStru.xml"/>
+
+	<mx:HTTPService id="fetch_invoice_header_details" url="/purchase/vendor_invoice/fetch_lines_for_invoice" />
+	
+	<mx:HTTPService id="setDefaultView" url=""/>
+	<mx:HTTPService id="printRecord" url="/purchase/vendor_report/vendor_invoice_format"/>
+	
+	<mx:HTTPService id="importDetailFormat" url="acct/vendinvoice/xmls/VendorInvoiceImportStru.xml"/>
+	<mx:HTTPService id="recordUploadUrl" url="/purchase/vendor_invoice/convert_exceltoxml_for_vendor_invoices"/>
+
+</rds:CommonServices>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<gencomponents:AddEdit xmlns:mx="http://www.adobe.com/2006/mxml" 
+	height="100%" width="100%" verticalGap="0"
+	xmlns:customcomponents="com.generic.customcomponents.*"
+	xmlns:gencomponents="com.generic.components.*"
+	creationComplete="init()"
+	creationPolicy="all">
+	
+	<mx:Script source="../scripts/JournalAddEditScript.as"/>
+	
+	<mx:VBox width="100%" height="100%">
+		<mx:HBox id="hbHeader1" width="100%" horizontalGap="3">
+			<mx:VBox>
+				<mx:HBox width="250">
+					<mx:Label text="Journal Type" width="85" textAlign="right"/>
+					<customcomponents:GenComboBox id="cbGournal_Type" defaultValue="REGU" width="105" cornerRadius="0" xmlTag="trans_type" updatableFlag="true"
+						tableName="gl_transaction"  height="18" labelField="label" tabIndex="1"
+						dataProvider="{GenModelLocator.getInstance().masterData.child('fagl').journal_type}" />
+				</mx:HBox>
+			</mx:VBox>
+			<mx:VRule height="100%"/>
+			<mx:VBox verticalGap="3" width="255" height="100%">
+				<mx:HBox horizontalGap="3">
+					<mx:Label text="Journal #" width="109" textAlign="right"/>
+					<customcomponents:GenTextInput id="tiTrans_no"  width="65" xmlTag="trans_no"  enabled="false" 
+						updatableFlag="true" tableName="gl_transaction" defaultValue=""  textAlign="left"
+						validationFlag="false" toolTip="Journal No" maxChars="18" fontSize="9"/>
+					<customcomponents:GenTextInput  id="tiTrans_bk" width="41" xmlTag="trans_bk" enabled="false"
+						updatableFlag="true" tableName="gl_transaction" defaultValue=""  
+						validationFlag="false" toolTip="Journal Bk" maxChars="4" fontSize="9"/>
+				</mx:HBox>
+				<mx:HBox horizontalGap="3">
+					<mx:Label text="Date" width="109" textAlign="right"/>
+					<customcomponents:GenDateField id="dfTrans_date" tabIndex="2" xmlTag="trans_date" width="109"
+						updatableFlag="true" tableName="gl_transaction"  focusOut="getAccountPeriod()" />
+				</mx:HBox>
+				<mx:HBox horizontalGap="3" horizontalAlign="center">
+					<mx:Label text="A/c Period" width="109" textAlign="right"/>
+					<customcomponents:GenTextInputWithHelp
+						id="dcAccount_period_code" 
+						width="104" 
+						toolTip="A/c Period #" 
+						dataSourceName="AccountPeriod"
+						minimumChar = "{__genModel.masterData.child('lookup').accountperiod.value}"
+						height="20" 
+						enabled="false"
+						updatableFlag="true"
+						validationFlag="true" 
+						xmlTag="account_period_code"
+						labelTag="account_period_code"
+						dataField="code" 
+						labelField= "code"
+						tableName="gl_transaction" 
+						/>
+					<!--<customcomponents:GenDynamicComboBoxWithHelp id="dcAccount_period_code" width="109" 
+					    toolTip="A/c Period Code"  defaultValue="" enabled="false"
+						dataField="code" labelField="code"  
+						dataSourceName="AccountPeriod" dataProvider="{GenModelLocator.getInstance().lookupObj.accountperiod.children()}" 
+						validationFlag="true" xmlTag="account_period_code" updatableFlag="true" tableName="gl_transaction"  />			-->
+				</mx:HBox>
+			</mx:VBox>	
+		</mx:HBox>
+		<mx:VBox id="vbDetail" label="Detail" width="100%" height="100%"  tabIndex="21">
+			<gencomponents:Detail id="journalDtl"
+				updatableFlag="true"
+				checkBlankRowColumn=""
+				rootNode="gl_transaction_lines"
+				formatServiceID="lineDetailFormat"
+				height="100%" width="100%"
+				DetailEditClass="{acct.journal.components.JournalDetail}"
+				detailAddEditComplete="calculateAmount()"
+				detailRemoveRow="calculateAmount()"
+				title="Journal Detail"/>
+		</mx:VBox>
+
+		<mx:VBox height="20%" verticalGap="1" width="100%">
+			<mx:HBox horizontalGap="2">
+				<mx:Label text="Total" width="310" textAlign="right"/>
+				<customcomponents:GenTextInput id="tiTotal_debit_amt"  height="18" width="100" textAlign="right" editable="false" 
+					enabled="false" xmlTag="total_debit_amt" updatableFlag="false" tableName="gl_transaction" toolTip="Total Debit Amt" defaultValue="0.00"
+					dataType="N"  setDefaultOnEmpty="true" maxValue="999999999.99" />
+				<customcomponents:GenTextInput id="tiTotal_credit_amt" height="18" width="100" textAlign="right" tabIndex="93"
+					xmlTag="total_credit_amt" updatableFlag="false" tableName="gl_transaction" defaultValue="0.00" 
+					toolTip="Total Credit Amt" editable="false" enabled="false" dataType="N" rounding="false" setDefaultOnEmpty="true" maxValue="999999999.99" />
+  			</mx:HBox>
+		</mx:VBox>
+	</mx:VBox>	
+</gencomponents:AddEdit>

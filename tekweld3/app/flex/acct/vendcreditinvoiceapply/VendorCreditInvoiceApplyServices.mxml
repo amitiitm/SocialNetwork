@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rds:CommonServices xmlns:rds="business.*" xmlns:mx="http://www.adobe.com/2006/mxml">
+
+	<mx:HTTPService id="saveRecord" url="/purchase/vendor_invoice/create_apply_credit_invoice"/>
+	<mx:HTTPService id="getRecord" url="/purchase/vendor_invoice/show_apply_credit_invoice"/>
+	<mx:HTTPService id="getList" url="/purchase/vendor_invoice/list_apply_credit_invoices"/>
+	
+
+	<mx:HTTPService id="getViewFormat" url="acct/vendcreditinvoiceapply/xmls/VendorCreditInvoiceApplyCriteriaStru.xml"/>
+	<mx:HTTPService id="getListFormat" url="acct/vendcreditinvoiceapply/xmls/VendorCreditInvoiceApplyListStru.xml"/>
+	<mx:HTTPService id="lineDetailFormat" url="acct/vendcreditinvoiceapply/xmls/VendorCreditInvoiceApplyDetailStru.xml"/>
+	<mx:HTTPService id="GLFormat" url="acct/vendcreditinvoiceapply/xmls/VendorCreditInvoiceApplyGLStru.xml"/>
+	
+	
+	
+	<mx:HTTPService id="setDefaultView" url=""/>
+	<mx:HTTPService id="printRecord" url=""/>
+
+</rds:CommonServices>
+

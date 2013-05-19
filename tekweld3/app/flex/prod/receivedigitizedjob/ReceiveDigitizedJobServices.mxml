@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rds:CommonServices xmlns:rds="business.*" xmlns:mx="http://www.adobe.com/2006/mxml">
+
+	<mx:HTTPService id="saveRecord" url="/production/production_embroidery/create_production_receive_digitization_inboxes"/>
+	<mx:HTTPService id="getList" url="/production/production_embroidery/embroidery_receive_digitization_inbox"/> 
+	<mx:HTTPService id="getRecord" url="/production/production_embroidery/show_receive_digitized_job" />
+	<mx:HTTPService id="printRecord" url="/sale/sales_report/render_sales_order_format" />
+	<mx:HTTPService id="artworkUploadUrl" url="/artwork/artwork/upload_artwork_attachments"/>
+	<mx:HTTPService id="sendToCustomer" url="/artwork/artwork/send_artwork_to_customer" />
+	<mx:HTTPService id="optionDetailFormat" url="prod/receivedigitizedjob/xmls/OptionDetailStru.xml" />
+	<mx:HTTPService id="getListFormat" url="prod/receivedigitizedjob/xmls/ReceiveDigitizedJobListStru.xml" />
+	<mx:HTTPService id="getViewFormat" url="prod/receivedigitizedjob/xmls/ReceiveDigitizedJobCriteriaStru.xml" />
+	<mx:HTTPService id="artworkDetailFormat" url="prod/receivedigitizedjob/xmls/ReceiveDigitizedJobArtworkDetailStru.xml" />
+	<mx:HTTPService id="threadDetailFormat" url="prod/receivedigitizedjob/xmls/ReceiveDigitizedJobThreadDetailStru.xml" />
+	<mx:HTTPService id="printJob" url="/sale/sales_report/render_sales_order_job_format" />
+	<mx:HTTPService id="queryDetailFormat" url="prod/receivedigitizedjob/xmls/ReceiveDigitizedJobQueriesDetailStru.xml" />
+	<mx:HTTPService id="dgColorGridFormat" url="prod/receivedigitizedjob/xmls/threadDetailStr.xml" /> 
+	
+</rds:CommonServices>

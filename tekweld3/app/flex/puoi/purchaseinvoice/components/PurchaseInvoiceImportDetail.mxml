@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<gencomponents:DetailAddEdit xmlns:mx="http://www.adobe.com/2006/mxml"
+	width="850" height="480" verticalGap="0"
+	xmlns:customcomponents="com.generic.customcomponents.*"
+	xmlns:gencomponents="com.generic.components.*"
+	creationComplete="creationCompleteHandler()">
+	
+	<mx:Script source="../scripts/PurchaseInvoiceImportDetailScript.as"/>
+	
+	<mx:XML  id="mainStyleStruXml"	source="../xmls/PurchaseInvoiceMainImportStru.xml"/>
+	<mx:XML  id="diamStruXml" 		source="../xmls/PurchaseInvoiceImportDiamDetailStru.xml"/>
+
+	<mx:VBox height="0" width="0" visible="false">
+		<customcomponents:GenTextInput id="tiDummy" width="0" height="0" 
+			xmlTag="name" updatableFlag="false" tableName="catalog_item"/>
+		
+	</mx:VBox>
+					
+	<mx:VBox height="100%" width="100%">	
+		
+		<mx:VBox height="100%" width="100%">
+			<mx:LinkButton id="lbSampleXLS" label="Sample/Download Excel format" click="handleSampleXLS()" color="#0000FF" />
+			<mx:Label text="Jewelries"/>
+			<customcomponents:GenDataGrid id="dgMain" height="100%" width="100%"
+				updatableFlag="true" rootNode="catalog_item_packets"
+				structure="{mainStyleStruXml}"
+				itemClick="mainStyleItemClickHandler()"/>				
+		</mx:VBox>
+		<mx:HBox horizontalAlign="right" width="100%">
+			<mx:Label text="Net Amount"/>
+			<customcomponents:GenTextInput id="tiNetAmt"  height="18" width="110" textAlign="right" editable="false" 
+				enabled="false"  updatableFlag="false"  defaultValue="0.00"
+				dataType="N" rounding="true" setDefaultOnEmpty="true" maxValue="9999999999.99"/>
+
+		</mx:HBox>
+		
+		<mx:Spacer height="10" width="100%" />	
+		
+		<mx:TabNavigator id="tbDetail" height="200" width="100%">
+			<mx:VBox width="100%" label="Diamond" height="100%">
+				<customcomponents:GenDataGrid id="dgDiam" height="100%" width="100%"
+					updatableFlag="false" rootNode="catalog_item_packet_stones"
+					structure="{diamStruXml}"
+					itemClick="diamondDetailClickHandler()"/>
+			</mx:VBox>
+			<mx:VBox width="100%" label="Stone" height="100%">
+				<customcomponents:GenDataGrid id="dgStone" height="100%" width="100%"
+					updatableFlag="false" rootNode="catalog_item_packet_diamonds"
+					structure="{diamStruXml}"
+					itemClick="stoneDetailClickHandler()"/>
+			</mx:VBox>
+		</mx:TabNavigator>		
+	</mx:VBox>
+</gencomponents:DetailAddEdit>

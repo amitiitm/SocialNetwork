@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<gencomponents:AddEdit xmlns:mx="http://www.adobe.com/2006/mxml" 
+	height="100%" width="100%" verticalGap="0"
+	xmlns:customcomponents="com.generic.customcomponents.*"
+	xmlns:gencomponents="com.generic.components.*" 
+	creationPolicy="all">
+	<mx:Script source="../scripts/StoreAddEditScript.as"/>
+	
+	<mx:VBox width="100%" height="100%" verticalGap="3">
+		<mx:HBox width="100%" horizontalGap="2" verticalAlign="middle">
+			<mx:Label text="Code" width="110" height="20" textAlign="right"/>
+			<customcomponents:GenTextInput id="tiCode" width="116" xmlTag="company_cd" upperCaseFlag="true"
+				updatableFlag="true" tableName="company" defaultValue="" tabIndex="1" height="20"
+				validationFlag="true" toolTip="Code" maxChars="25" fontSize="9"/>
+			<mx:Label text="Status" width="200" height="20" textAlign="right"/>
+			<customcomponents:GenComboBox id="cbTrans_flag" defaultValue="A" width="116" cornerRadius="0" xmlTag="trans_flag" updatableFlag="true"
+				tableName="company"  tabIndex="6" height="20" labelField="label" 
+				dataProvider="{__genModel.masterData.child('trans_flag').trans_flag}" />
+		</mx:HBox>
+		<mx:HBox horizontalGap="2">
+			<mx:Label text="Name" width="110" height="20" textAlign="right"/>
+			<customcomponents:GenTextInput id="tiName" width="212" xmlTag="name" updatableFlag="true" 
+				tabIndex="2" tableName="company" defaultValue="" height="20" validationFlag="false" toolTip="Name"
+				maxChars="50" />
+		</mx:HBox>
+		
+		<mx:HBox horizontalGap="2">
+	    	<mx:Label text="Logo" width="110" textAlign="right" height="20" />
+		 	<customcomponents:GenTextInput id="tiLogo" width="212" height="20" visible="true"
+				xmlTag="company_logo_file" updatableFlag="true" maxChars="50" 
+				validationFlag="false" defaultValue="{__genModel.user.company_logo_file}" enabled="false"
+				tableName="company" textAlign="left" dataType="S"  />
+			<customcomponents:GenUploadButton id="btnBrowse_imageThumnail"
+				label="..." toolTip="Browse Logo" width="40" height="20" tabIndex="3"
+				uploadServiceID="imageUploadUrl"
+				fileTitle="Image Name" fileTypes="*.jpg,*.bmp,*.png" uploadFileNameSetEvent="handleThumnailEvent(event)" />
+		</mx:HBox>
+		
+		<mx:HBox horizontalGap="2">
+	    	<mx:Label text="Business Card" width="110" textAlign="right" height="20" />
+		 	<customcomponents:GenTextInput id="tiBusiness_card" width="212" height="20" visible="true"
+				xmlTag="business_card" updatableFlag="true" maxChars="50" 
+				validationFlag="false"  enabled="false"
+				tableName="company" textAlign="left" dataType="S"  />
+			<customcomponents:GenUploadButton id="btnBrowse_businessCard"
+				label="..." toolTip="Browse Business Card" width="40" height="20" tabIndex="4"
+				uploadServiceID="imageUploadUrl"
+				fileTitle="Image Name" fileTypes="*.jpg,*.bmp,*.png" uploadFileNameSetEvent="handleBusinessCardEvent(event)" />
+		</mx:HBox>
+	   
+	   <mx:HBox horizontalGap="2">
+	    	<mx:Label text="Store Type" width="110" textAlign="right" height="20" />
+		 	<customcomponents:GenComboBox id="cbCompany_type" defaultValue="S" width="116" cornerRadius="0" xmlTag="company_type" updatableFlag="true"
+				tableName="company"  tabIndex="5" height="20" labelField="label" 
+				dataProvider="{__genModel.masterData.child('store_type').store_type}" />
+		</mx:HBox>
+		<mx:VRule height="5" width="100%" />
+		
+		<mx:TabNavigator id="tnSub" width="100%" height="100%">
+			<mx:VBox width="100%" height="100%" label="Details" verticalGap="3">
+			    <mx:HBox width="100%" horizontalGap="2" verticalAlign="middle">
+					<mx:Label text="Address" width="237" fontSize="10" fontWeight="bold" textAlign="right" visible="true" height="20" />
+			    </mx:HBox>
+				<mx:HBox width="100%" horizontalGap="2" verticalAlign="middle" horizontalAlign="left">
+					<mx:Label text="Address #1" height="20" width="110" textAlign="right"/>
+					<customcomponents:GenTextInput id="tiAddress1" width="236" xmlTag="address1" updatableFlag="true" tableName="company"
+						defaultValue="" tabIndex="13"  height="20" validationFlag="false" toolTip="Address #1" maxChars="50" />			
+					
+					<mx:Label text="City Tax no" height="20" width="200" textAlign="right"/>
+					<customcomponents:GenTextInput id="ticitytaxcode" width="150" height="20" xmlTag="city_tax_code" updatableFlag="true" tableName="company"
+						defaultValue="" tabIndex="23" validationFlag="false" toolTip="City Tax Code" maxChars="20" />
+				</mx:HBox>
+		     	<mx:HBox horizontalGap="2" width="100%">
+					<mx:Label text="Address #2" height="20" width="110" textAlign="right"/>
+					<customcomponents:GenTextInput id="tiAddress2" width="236" xmlTag="address2" updatableFlag="true" tableName="company"
+						defaultValue="" tabIndex="14" height="20" validationFlag="false" toolTip="Address #2" maxChars="50" />
+					<mx:Label text="State Tax no" height="20" width="200" textAlign="right"/>
+					<customcomponents:GenTextInput id="tistatetaxcode" width="150" height="20" xmlTag="state_tax_code" updatableFlag="true" tableName="company"
+						defaultValue="" tabIndex="24" validationFlag="false" toolTip="State Tax Code" maxChars="20" />
+		     	</mx:HBox>   
+		        <mx:HBox horizontalGap="2" width="100%" verticalAlign="middle"> 
+					<mx:Label text="City /State" height="20" width="110" textAlign="right"/>
+					<customcomponents:GenTextInput id="tiCity" width="115" xmlTag="city" updatableFlag="true" tableName="company"
+						defaultValue="" tabIndex="15" validationFlag="false" toolTip="City" height="20" maxChars="25" />
+					<customcomponents:GenTextInput id="tiState" width="119" xmlTag="state" updatableFlag="true" tableName="company"
+						defaultValue="" tabIndex="16" height="20" validationFlag="false" toolTip="State" maxChars="25" />
+					<mx:Label text="Country Tax no" height="20" width="200" textAlign="right"/>
+					<customcomponents:GenTextInput id="ticountrytaxcode" width="150" height="20" xmlTag="country_tax_code" updatableFlag="true" tableName="company"
+						defaultValue="" tabIndex="25" validationFlag="false" toolTip="Country Tax Code" maxChars="20" />
+			   </mx:HBox>
+			   <mx:HBox horizontalGap="2" width="100%">
+					<mx:Label text="Zip" height="20" width="110" textAlign="right"/>
+					<customcomponents:GenTextInput id="tiZip" width="115" xmlTag="zip" updatableFlag="true" tableName="company"
+						defaultValue="" tabIndex="17" height="20" validationFlag="false" toolTip="Zip" maxChars="15" />	
+			   </mx:HBox>
+			  <mx:HBox width="100%" horizontalGap="2" verticalAlign="middle">
+					<mx:Label text="Country" height="20" width="110" textAlign="right"/>
+					<customcomponents:GenTextInput id="tiCountry" width="115" height="20" xmlTag="country" updatableFlag="true" tableName="company"
+						defaultValue="" tabIndex="18" validationFlag="false" toolTip="Country" maxChars="20" />
+			  </mx:HBox>
+			  <mx:HBox width="100%" horizontalGap="2" verticalAlign="middle">
+					<mx:Label text="Phone/ Cell" height="20" width="110" textAlign="right"/>
+					<customcomponents:GenTextInput id="tiPhone_no" width="116" height="20" xmlTag="phone" updatableFlag="true" tableName="company"
+						defaultValue="" tabIndex="19" validationFlag="false" toolTip="Phone" maxChars="50" />
+					<customcomponents:GenTextInput id="tiCell_no" width="118" height="20" xmlTag="cell_no" updatableFlag="true" tableName="company"
+						defaultValue="" tabIndex="20" validationFlag="false" toolTip="Cell_No" maxChars="15" />
+			  </mx:HBox>
+			  <mx:HBox width="100%" horizontalGap="2" verticalAlign="middle">
+					<mx:Label text="Email Cc" height="20" width="110" textAlign="right"/>
+					<customcomponents:GenTextInput id="tiEmail_to" width="236" height="20" xmlTag="email_to" updatableFlag="true" tableName="company"
+						defaultValue="" tabIndex="21" validationFlag="false" toolTip="Email_To" maxChars="200" />
+			  </mx:HBox>
+			  <mx:HBox width="100%" horizontalGap="2" verticalAlign="middle">
+					<mx:Label text="Email To" height="20" width="110" textAlign="right"/>
+					<customcomponents:GenTextInput id="tiEmail_cc" width="236" height="20" xmlTag="email_cc" updatableFlag="true" tableName="company"
+						defaultValue="" tabIndex="22" validationFlag="false" toolTip="Email_Cc" maxChars="200" />
+			  </mx:HBox>
+			  <customcomponents:GenTextInput id="tiCompany_name" width="236" height="20" xmlTag="company_name" updatableFlag="true" tableName="company"
+			  	defaultValue="" tabIndex="22" validationFlag="false" visible="false" maxChars="200" />
+		 </mx:VBox>
+		    <mx:VBox label="Users" width="100%" height="100%" verticalGap="3" tabIndex="17">
+			<gencomponents:Detail id="dtlLine"
+				updatableFlag="true"
+				checkBlankRowColumn="check_from"
+				rootNode="user_companies"
+				formatServiceID="detailFormat"
+				height="100%" width="100%"
+				DetailEditClass="{stup.store.components.StoreDetail}"
+				title="User Companies Detail"/>
+		    </mx:VBox>
+   		    <mx:VBox label="Books" width="100%" height="100%" verticalGap="3" tabIndex="18">
+   		    	<gencomponents:Detail id="dtlLineBook"
+				updatableFlag="true"
+				checkBlankRowColumn=""
+				rootNode="user_books"
+				formatServiceID="detailFormatBook"
+				height="100%" width="100%"
+				DetailEditClass="{stup.store.components.StoreDetailBook}"
+				title="User Books Detail"/>
+			</mx:VBox>
+		</mx:TabNavigator>
+	</mx:VBox>
+
+	<mx:HBox width="0" horizontalGap="0" height="0" visible="false" verticalAlign="middle">
+		<mx:Label text="Default_Customer_Id" height="0" width="0" textAlign="right"/>
+		<customcomponents:GenTextInput id="tidefaultcustomerid" width="0" height="0" xmlTag="default_customer_id" updatableFlag="true" tableName="company"
+			defaultValue="" validationFlag="false" maxChars="20" />
+	</mx:HBox>
+	<mx:HBox width="0" height="0" visible="false" horizontalGap="0" verticalAlign="middle">
+		<mx:Label text="Default_Vendor_Id" height="0" width="0" textAlign="right"/>
+		<customcomponents:GenTextInput id="tidefaultvendorid" width="0" height="0" xmlTag="default_vendor_id" updatableFlag="true" tableName="company"
+			defaultValue="" validationFlag="false" maxChars="20" />
+	</mx:HBox>
+</gencomponents:AddEdit>	

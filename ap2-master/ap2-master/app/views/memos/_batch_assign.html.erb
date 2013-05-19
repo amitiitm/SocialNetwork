@@ -1,0 +1,71 @@
+<% if allowed? %>
+	<% box :type => "box_title", :title => "Assign Memos", :style => "width:700px;" do %>
+		<br>
+		<% form_for Memo.new, :url => "/memos/batch_create", :html => {:class => "forms", :id => "batch_assign_form"} do |f| %>
+			<ul>
+				<li class="horizental">
+					<label>Assign To</label>
+					<%= f.select :assigned_to_id, AdminUser.select_options, :include_blank => true %>
+				</li>
+				<li class="horizental">
+					<label>Memo Type</label>
+					<%= f.select :memo_type_id, MemoType.all.map {|m| [m.subject, m.id]}, :include_blank => true %>
+				</li>
+				<li class="horizental">
+					<label>Priority</label>
+					<%= f.select :priority, Memo::PRIORITIES, :include_blank => true %>
+				</li>			
+				<li class="horizental">
+					<label>Due Date</label>
+					<%= f.text_field :due_date, :size =>10 %>
+				</li>
+				<li class="horizental">
+					<label>Due Date Time</label>
+					<%= f.select :due_hour, (1..12).map {|h| [h.to_s,h.to_s]}, :include_blank => true %>
+					<%= f.select :due_minute, [["00", "00"], ["15", "15"], ["45", "45"]], :include_blank => true %>
+					<%= f.select :due_baghali, [["AM", "am"], ["PM", "pm"]], :include_blank => true %>
+				</li>
+				<li class="">
+					<label>Memo</label>
+					<%= f.text_area :content, :rows => 3%>
+				</li>
+			</ul>
+			<%= f.hidden_field :status, :value => 1, :id => "batch_memo_status" %>
+			<% if @memoable_type %>
+				<%= f.hidden_field :memoable_type, :value => @memoable_type %>
+			<% end %>
+			<%= f.hidden_field :followup, :value => true, :id => "batch_followup" %>
+			<%= f.hidden_field :created_by_id, :value => session[:admin_user_id] %>
+		<% end -%>
+		<div class="clear"></div>
+		<%= button_function("create", "Assign Memos", "assign_memos()") %>
+		<div class="clear"></div>
+	<% end -%>
+	<script type="text/javascript" charset="utf-8">
+		function assign_memos() {
+			var ids = selected_rows(".for-memos");
+			var params = [];
+			if (ids) {
+				if ($("#memo_assigned_to_id").val() == "") {
+					alert("Please select a Rep to assign the memo(s) to!");
+					return;
+				};
+				$("#loading").fadeIn();
+				$("#loading-pager").fadeIn();
+				params.push(param("ids", ids.join(",")));
+				params.push($("#batch_assign_form").serialize());
+				params = params.join("&");
+				$.post("/memos/batch_<%= action %>", params);
+			} else {
+				alert("Please select at least one record!");
+				return;
+			};
+		}
+
+		$(function(){
+			$("#memo_due_date").datepicker({
+				dateFormat: 'yy-mm-dd'
+			});
+		});
+	</script>
+<% end %>

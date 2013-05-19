@@ -1,0 +1,22 @@
+<columns  lockedColumnCount='0'>
+
+	<column data='select_yn' 			label='Select' 				editable='true' 	visible='true' 	width='65' 	textAlign='center' 	
+										forLevel='false'			defaultForLevel='' 		sortDataType='S'	dataType='S'	booleanFlag='true'
+										dataValueForOn="Y"			dataValueForOff=" "
+										componentType="CheckBox"	
+	/>
+		
+	<column data='artwork_file_name'		label='File Name'			editable='false'	visible='true'	width='110'	textAlign='left'	forLevel='false'
+			defaultForLevel=''				booleanFlag='false'			sortDataType='S'	columnPrecision="NaN"/>
+	
+	<column data='artwork_version'			label='Type'			editable='false'	visible='true'	width='110'	textAlign='left'	forLevel='false'
+			defaultForLevel=''				booleanFlag='false'			sortDataType='S'	columnPrecision="NaN"/>
+				
+<!--	<column data='subject'					label='Subject'			editable='false'	visible='true'	width='180'	textAlign='left'	forLevel='false'-->
+<!--			defaultForLevel=''				booleanFlag='false'			sortDataType='S'	columnPrecision="NaN"/>-->
+		
+	<column data='comment'					label='Comment'			editable='false'	visible='true'	width='110'	textAlign='left'	forLevel='false'
+			defaultForLevel=''				booleanFlag='false'			sortDataType='S'	columnPrecision="NaN"/>
+		
+						
+</columns> 

@@ -1,0 +1,32 @@
+<% if not @account.tmp_credit_card_infos.blank? %>
+  <br><br>
+  <span class="bold" style="margin-left: 24px">List of over the phone credit card infos:</span>
+  <table id='ccop' class="table" width="680" border="0" cellspacing="0" cellpadding="0" style="margin:12px 23px 0px 23px;">
+    <tr class="header_bg">
+      <th class="th_billing1" style="text-align: center;width:55" scope="col" >#</th>
+      <th class="th_billing1" style="text-align: center;width:55" scope="col">Name on Card</th>
+      <th class="th_billing1" style="text-align: center;width:55" scope="col">Date Added</th>
+      <th class="th_billing1" style="text-align: center;width:55" scope="col">Added By</th>
+      <th class="th_billing1" style="text-align: center;width:55" scope="col">Actions</th>
+    </tr>
+
+    <% row = 0 %>
+    <% for tmp_credit_card_info in @account.tmp_credit_card_infos do %>
+      <% row += 1 %>
+      <% i = row % 2 == 0 ? 2 : 1 %>
+      <tr class="tr<%= i %>" id="<%= tmp_credit_card_info.id %>">
+        <td valign="top"><%= tmp_credit_card_info.id %></td>
+        <td valign="top"><%= "#{tmp_credit_card_info.first_name} #{tmp_credit_card_info.last_name}" %></td>
+        <td valign="top"><%= user_date(tmp_credit_card_info.created_at) %></td>
+        <td valign="top"><%= tmp_credit_card_info.admin_user.name %></td>
+        <td valign="top">
+          <%= button(:ccop_card, image_tag('/images/billing/edit.png'), :update => "ccop-container", :style => "border:0;margin:0px;padding:0px;align:center;background:none", :href => edit_account_tmp_credit_card_info_path(@account,tmp_credit_card_info.id)) %>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <%= link_to(image_tag('/images/billing/red.png'), account_tmp_credit_card_info_path(@account, tmp_credit_card_info), :class => "ajax-delete") %>
+        </td>
+      </tr>
+    <% end -%>
+  </table>
+  <div id='ccop-container'></div>
+<% end -%>
+

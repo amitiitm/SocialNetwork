@@ -1,0 +1,15 @@
+<columns Title =''>
+
+	<column dataType="S" 			label="Code" 				checkbox="ckAll3" 		xmlTagFrom="str5" 			from="dcStr5"
+			xmlTagTo="str6" 		to="dcStr6"					multiSelect="tiMultiSelect5" 	xmlTagMultiSelect="multiselect5"
+			lookupFlag="true" 		lookupName="SalesPerson"	lookupLabel="code"		dataField="code" 			labelField="code"	lookupFormatUrl=""/>
+			
+	<column dataType="S" 			label="Category" 			checkbox="ckAll1" 		xmlTagFrom="str1" 			from="tiStr1" 
+			xmlTagTo="str2" 		to="tiStr2"					multiSelect="tiMultiSelect1" 	xmlTagMultiSelect="multiselect1"
+			lookupFlag="false" 		lookupName="" 				/>
+
+	<column dataType="S" 			label="Name" 				checkbox="ckAll2" 		xmlTagFrom="str3" 			from="dcStr3"
+			xmlTagTo="str4" 		to="dcStr4"					multiSelect="tiMultiSelect3" 	xmlTagMultiSelect="multiselect3"
+			lookupFlag="false" 		lookupName=""				/>
+	
+</columns> 	

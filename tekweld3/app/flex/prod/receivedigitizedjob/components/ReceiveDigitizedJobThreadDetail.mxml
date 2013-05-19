@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<gencomponents:DetailAddEdit xmlns:mx="http://www.adobe.com/2006/mxml"
+	width="600" height="350" verticalGap="0"
+	xmlns:customcomponents="com.generic.customcomponents.*"
+	xmlns:gencomponents="com.generic.components.*"
+	>
+
+	<mx:Script source="../scripts/ReceiveDigitizedJobThreadDetailScript.as"/>
+	
+	<mx:VBox height="100%" width="100%">
+		
+		<mx:HBox height="20" verticalAlign="middle" horizontalGap="2"> 
+			<mx:Label text="Company" width="115" textAlign="right"/>
+			<customcomponents:GenComboBox id="cbComapny" width="150" cornerRadius="0" xmlTag="thread_company" updatableFlag="false"
+										  tableName="sales_order_thread"  tabIndex="1" labelField="label" height="20" itemChangedEvent="setThreadDetail()"  		
+										  dataProvider="{__genModel.masterData.child('thread_company').thread_company}" toolTip="Company"/>
+		</mx:HBox>
+		<mx:HBox height="20" verticalAlign="middle" horizontalGap="2"> 
+			<mx:Label text="Category" width="115" textAlign="right"/>
+			<customcomponents:GenComboBox id="cbCategory" width="150" cornerRadius="0" xmlTag="thread_category" updatableFlag="false"
+										  tableName="sales_order_thread"  tabIndex="3" labelField="label" height="20" itemChangedEvent="setThreadDetail()" 		
+										  dataProvider="{__genModel.masterData.child('thread_category').thread_category}" toolTip="Category"/>
+		</mx:HBox>
+		<mx:VBox width="100%" height="234" verticalAlign="top"  verticalGap="0">
+			<mx:HBox id="hbSearchBox" height="22" horizontalGap="0" borderThickness="0" borderStyle="none">
+				
+			</mx:HBox>
+			<customcomponents:GenDataGrid id="gdColorDetail" itemFocusOut="itemFocusOutEventHandler(event)"
+										  					 rows = "{filterdRows}"
+										                     itemClick="selectRow()" 
+															 formatServiceID="dgColorGridFormat" 
+										  					 rootNode="thread_colors"
+															 columnStretch="changeColumnSizeHandler(event)"
+															 />
+			
+		</mx:VBox>
+		<mx:HBox height="20" verticalAlign="middle" horizontalGap="2" includeInLayout="false" visible="false">
+			<mx:Label text="Color #" width="115" textAlign="right" height="20" />
+			<customcomponents:GenTextInput id="tiColorCode" width="150" tabIndex="7" height="20"  
+										   xmlTag="color_number" updatableFlag="false" tableName="sales_order_thread" maxChars="25" upperCaseFlag="true"/>	
+		</mx:HBox>
+		
+		<mx:HBox height="20" verticalAlign="middle" horizontalGap="2" width="100%" includeInLayout="false" visible="false">
+			<mx:Label text="Cross-Reference" width="115" textAlign="right" height="20" />
+			<customcomponents:GenTextInput id="tiColorCardSequence" width="150" tabIndex="7" height="20"  
+										   xmlTag="color_card_sequence" updatableFlag="false" tableName="sales_order_thread" maxChars="50"/>	
+		</mx:HBox>
+		
+		
+	<mx:HBox>
+		<customcomponents:GenTextInput id="tiSerial_no" width="0" height="0" visible="false"
+				editable="true" enabled="true" xmlTag="serial_no" updatableFlag="false"
+				tableName="sales_order_thread" defaultValue=""  />
+	</mx:HBox>	
+		
+	</mx:VBox>
+	
+	<customcomponents:GenDataGrid id="dgThreads" updatableFlag="false" visible="false" formatServiceID="dgColorGridFormat" 
+								  rootNode="sales_order_threads" includeInLayout="false" 
+								 />
+	
+</gencomponents:DetailAddEdit>
+
+
+

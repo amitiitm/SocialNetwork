@@ -1,0 +1,12 @@
+<columns Title =''>
+	
+	<column dataType="D"		label="Holiday Date"		checkbox="ckAll1"				xmlTagFrom="dt1"	from="dfStr1"
+			xmlTagTo="dt2" 	to="dfStr2"						multiSelect="mvMultiSelect1" 	xmlTagMultiSelect="multiselect2"
+			lookupFlag="false" 	lookupName=""				lookupLabel=""				dataField=""	labelField=""
+	/>
+	<column dataType="S"		label="Event Name"			checkbox="ckAll2"				xmlTagFrom="str1"	from="tiStr1"
+			xmlTagTo="str2" 	to="tiStr2"					multiSelect="mvMultiSelect2" 	xmlTagMultiSelect="multiselect1"
+			lookupFlag="false" 	lookupName=""				lookupLabel=""					dataField=""	labelField=""
+	/>
+			
+</columns> 	

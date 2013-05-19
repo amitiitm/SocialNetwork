@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:ModuleLoader xmlns:mx="http://www.adobe.com/2006/mxml" width="100%" height="100%" preinitialize="onPreinitialize()">
+	
+	<mx:Script source="../scripts/GenModuleLoaderScript.as"/>
+ 	
+ 	<mx:Metadata>
+		[Event(name="genModuleLoaderActive", type="com.generic.events.GenModuleLoaderEvent")]
+		[Event(name="genModuleLoaderShortcutKey", type="com.generic.events.GenModuleLoaderEvent")]
+	</mx:Metadata>
+
+	
+
+</mx:ModuleLoader>

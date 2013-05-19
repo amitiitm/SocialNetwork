@@ -1,0 +1,33 @@
+<columns  lockedColumnCount='0'>
+
+	<column data='code'				label='Code'			editable='false'	visible='true'		width='100'	textAlign='left'	forLevel='true'
+			print_width = '20'		defaultForLevel='2'		booleanFlag='false'	sortDataType='S' 	columnPrecision="NaN"/>
+			
+	<column data='name'				label='Name'			editable='false'	visible='true'		width='160'	textAlign='left'	forLevel='true'
+			print_width = '20'		defaultForLevel=''		booleanFlag='false'	sortDataType='S'	columnPrecision="NaN"/>
+			
+	<column data='group1'			label='Group #1'		editable='false'	visible='true'		width='100'	textAlign='left'	forLevel='true' 
+			print_width = '16'		defaultForLevel='1'		booleanFlag='false'	sortDataType='S'	columnPrecision="NaN"/>
+			
+	<column data='group2'			label='Group #2'		editable='false'	visible='true'		width='100'	textAlign='left'	forLevel='true'
+			print_width = '16'		defaultForLevel=''		booleanFlag='false'	sortDataType='S'	columnPrecision="NaN"/>
+	
+	<column data='group3'			label='Group #3'		editable='false'	visible='true'		width='100'	textAlign='left'	forLevel='true' 
+			print_width = '16'		defaultForLevel=''		booleanFlag='false' sortDataType='S'	columnPrecision="NaN"/>
+	
+	<column data='group4'			label='Group #4'		editable='false'	visible='true'		width='100'	textAlign='left'	forLevel='true'
+			print_width = '16'		defaultForLevel=''		booleanFlag='false'	sortDataType='S'	columnPrecision="NaN"/>
+	
+	<column data='gl_category_id'	label='GL Category #'	editable='false'	visible='true'		width='100'	textAlign='right'	forLevel='false'
+			print_width = '20'		defaultForLevel=''	 	booleanFlag='false' sortDataType='N'	columnPrecision="0"/>
+			
+	<column data='balance'			label='Balance'			editable='false' 	visible='true' 		width='100'	textAlign='right' 	forLevel='false'
+			print_width = '18'		defaultForLevel='' 		booleanFlag='false' sortDataType='N'	columnPrecision="2"/>
+
+	<column data='start_date'		label='Start Date'		editable='false' 	visible='true' 		width='80'	textAlign='left'	forLevel='false'
+			print_width = '18'		defaultForLevel=''		booleanFlag='false'	sortDataType='D'	columnPrecision="NaN"/>
+	
+	<column data='acct_flag'		label='Acct Flag'		editable='false' 	visible='true' 		width='80'	textAlign='left'	forLevel='true' 
+			print_width = '18'		defaultForLevel='0'		booleanFlag='false'	sortDataType='S'	columnPrecision="NaN"/>	
+
+</columns> 

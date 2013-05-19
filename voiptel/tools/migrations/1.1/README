@@ -1,0 +1,4 @@
+1) run mysql client with --local-infile
+2) connect to the db
+3) execute:
+LOAD DATA LOCAL INFILE '/Users/moe/Desktop/numbering_plans.csv' INTO TABLE numbering_plans FIELDS TERMINATED BY ';' ENCLOSED BY '"' LINES TERMINATED BY '\r\n' (cns,country_code,area_code,country_name_2_letters,country_name_3_letters,utc_min,utc_max,country_name,phone_type,description,location,registrar,area_code_length,min_subscr_nr_length,max_subscr_nr_length,range_activation,range_deactivation,range_status,mobile_country_code,mobile_network_code,operating_company_number);  

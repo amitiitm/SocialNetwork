@@ -1,0 +1,10 @@
+*.log
+.DS_Store
+*.pid
+restart.txt
+countries.csv
+*.log*
+db/schema.rb
+db/schema.rb
+tools/new_stuff/2010_11_cached_deposits/logs
+tools/new_stuff/2010_11_cached_deposits/nohup.out

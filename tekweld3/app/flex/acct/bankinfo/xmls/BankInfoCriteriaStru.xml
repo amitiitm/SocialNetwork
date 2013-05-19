@@ -1,0 +1,16 @@
+<columns Title ='Customer Master'>
+
+	<column dataType="S" 				label="Bank #"			checkbox="ckAll1" 				xmlTagFrom="str1" 				from="dcStr1" 	
+			xmlTagTo="str2" 			to="dcStr2"				multiSelect="mvMultiSelect1" 	xmlTagMultiSelect="multiselect1"				
+			lookupFlag="false" 		 	lookupName=""			lookupLabel="" />
+
+	<column dataType="S" 				label="Bank Name" 		checkbox="ckAll2" 				xmlTagFrom="str3" 				from="dcStr3" 	
+			xmlTagTo="str4"				to="dcStr4" 			multiSelect="mvMultiSelect2" 	xmlTagMultiSelect="multiselect2"
+			lookupFlag="false" 			lookupName="" 			lookupLabel=""	/>
+
+	<column dataType="S" 				label="A/c # " 			checkbox="ckAll2" 				xmlTagFrom="str3" 				from="dcStr3" 	
+			xmlTagTo="str4"				to="dcStr4" 			multiSelect="mvMultiSelect2" 	xmlTagMultiSelect="multiselect2"
+			lookupFlag="false" 			lookupName="" 			lookupLabel=""	/>
+	
+
+</columns> 	

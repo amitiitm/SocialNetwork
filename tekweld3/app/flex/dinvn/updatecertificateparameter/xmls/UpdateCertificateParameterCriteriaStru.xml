@@ -1,0 +1,13 @@
+<columns Title =''>
+	
+	
+	<column dataType="S" 			label="Trans #" 			checkbox="ckAll1" 		xmlTagFrom="str1" 			from="tiStr1" 
+			xmlTagTo="str2" 		to="tiStr2"					multiSelect="tiMultiSelect1" 	xmlTagMultiSelect="multiselect1"
+			lookupFlag="false" 		lookupName="" 				/>
+	
+	<column dataType="D" 			label="Trans Date" 			checkbox="ckAll2" 		xmlTagFrom="dt1" 			from="dfDt1" 
+			xmlTagTo="dt2" 			to="dfDt2"					
+			lookupFlag="false" 		lookupName="" 				/>
+	
+</columns> 	
+

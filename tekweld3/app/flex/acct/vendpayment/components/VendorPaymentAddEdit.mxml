@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+ <gencomponents:AddEdit xmlns:mx="http://www.adobe.com/2006/mxml" 
+	height="100%" width="100%" verticalGap="0"
+	xmlns:customcomponents="com.generic.customcomponents.*"
+	xmlns:gencomponents="com.generic.components.*"
+	creationComplete="init()"
+	creationPolicy="all">
+	
+	<mx:Script source="../scripts/VendorPaymentAddEditScript.as"/>
+	
+    <mx:VBox width="100%" height="100%" >
+	   <mx:HBox width="100%" horizontalGap="0" verticalGap="0" verticalAlign="top" 
+	          paddingBottom="0" paddingTop="0">
+		<mx:VBox width="100%" height="100%" horizontalGap="0" verticalGap="3" paddingBottom="0" paddingTop="0" >
+		  <mx:HBox width="100%" horizontalGap="2" verticalAlign="middle">		
+		   	<mx:Label text="Vendor # " width="110" height="20" textAlign="right"/>
+		   	
+		   	<customcomponents:GenTextInputWithHelp
+					id="dcVendor_id" 
+					width="110" 
+					toolTip="Vendor #" 
+					dataSourceName="Vendor"
+					minimumChar = "{__genModel.masterData.child('lookup').vendor.value}"
+					height="20" 
+					tabIndex="1" 
+					validationFlag="true" 
+					xmlTag="vendor_id"
+					labelTag="vendor_code"
+					dataField="id" 
+					labelField= "code"
+					updatableFlag="true" 
+					tableName="vendor_payment" 
+					itemChangedEvent="handleItemChangedVendor_id();tiVendor_code.dataValue = dcVendor_id.labelValue"
+					/>
+		   	
+			<!--  <customcomponents:GenDynamicComboBoxWithHelp id="dcVendor_id" width="110" height="20" tabIndex="1"
+						toolTip="vendor #" defaultValue=""  itemChangedEvent="handleItemChangedVendor_id()"
+						dataField="id"  labelField="code" 
+						dataSourceName="Vendor" dataProvider="{GenModelLocator.getInstance().lookupObj.vendor.children()}" 
+						validationFlag="true" xmlTag="vendor_id" updatableFlag="true" tableName="vendor_payment" />-->
+          </mx:HBox>
+	      <mx:HBox width="100%" horizontalGap="2" verticalAlign="middle">
+			<mx:Spacer width="110"/>
+			  <mx:VBox width="100%" height="100%" verticalGap="0" horizontalGap="0" verticalAlign="top" >
+			    <customcomponents:GenTextArea id="taVendor" width="95%" height="100%" backgroundAlpha="0" editable="false" borderStyle="none" />
+			</mx:VBox>
+	      </mx:HBox>
+	      <mx:HBox width="100%" horizontalGap="2" verticalAlign="middle">
+			<mx:Label text="Purchase Person #" width="110" height="20" textAlign="right"/>
+			<customcomponents:GenTextInputWithHelp
+				id="dcPurchasePerson_code" 
+				width="110" 
+				toolTip="Purchase Person #" 
+				dataSourceName="Purchaseperson"
+				minimumChar = "{__genModel.masterData.child('lookup').purchaseperson.value}"
+				height="20" 
+				tabIndex="2" 
+				validationFlag="false" 
+				xmlTag="purchaseperson_code"
+				labelTag="purchaseperson_code"
+				dataField="code" 
+				labelField= "code"
+				updatableFlag="true" 
+				tableName="vendor_payment" 
+				/>
+              <!--<customcomponents:GenDynamicComboBoxWithHelp id="dcPurchasePerson_code" width="110" height="20"
+					    toolTip="Purchase Person #"  defaultValue="" tabIndex="2"
+						dataField="code" labelField="name"
+						dataSourceName="Purchaseperson" dataProvider="{GenModelLocator.getInstance().lookupObj.purchaseperson.children()}" 		  
+						validationFlag="false" xmlTag="purchaseperson_code" updatableFlag="true" tableName="vendor_payment"  />-->
+           </mx:HBox>
+           <mx:HBox width="100%" horizontalGap="2" verticalAlign="middle">
+			  <mx:Label text="Terms/Due Date" width="110" height="20" textAlign="right"/>
+			  
+			  <customcomponents:GenTextInputWithHelp
+						id="dcTerm_code" 
+						width="110" 
+						toolTip="Term #" 
+						tabIndex="3"
+						dataSourceName="Term"
+						minimumChar = "{__genModel.masterData.child('lookup').term.value}"
+						height="20" 
+						updatableFlag="true"
+						validationFlag="true"
+						xmlTag="term_code"
+						labelTag="term_code"
+						dataField="code"  
+						labelField= "code"
+						tableName="vendor_payment" 
+						itemChangedEvent="getDueDate()"
+						/>
+			  
+			   <!-- <customcomponents:GenDynamicComboBoxWithHelp id="dcTerm_code" width="110" height="20"
+						tabIndex="3" toolTip="Term #" defaultValue="" itemChangedEvent="getDueDate()"
+						dataField="code" 
+						dataSourceName="Term" dataProvider="{GenModelLocator.getInstance().lookupObj.term.children()}" labelField="code"
+						validationFlag="true" xmlTag="term_code" updatableFlag="true" tableName="vendor_payment"  />-->
+				<customcomponents:GenDateField id="dfDue_date"  width="110"  height="20" tabIndex="4" xmlTag="due_date" 
+						updatableFlag="true" tableName="vendor_payment" />
+		   </mx:HBox>
+             <mx:HBox width="100%" horizontalGap="2" verticalAlign="middle" paddingRight="10">
+			  <mx:Label text="Description" width="110" height="20" textAlign="right"/>
+			    <customcomponents:GenTextInput id="tiDescription"  width="223"  height="20" xmlTag="description" updatableFlag="true" tableName="vendor_payment" 
+						defaultValue="" validationFlag="false" toolTip="Description" tabIndex="5" maxChars="50"/>
+           </mx:HBox>
+	    </mx:VBox> 
+	    <mx:VRule height="100%"/>
+        <mx:VBox width="100%" height="100%" horizontalGap="0" verticalGap="3" paddingBottom="0" paddingTop="0">
+	     <mx:HBox width="100%" horizontalGap="2" verticalAlign="middle" horizontalAlign="center">
+		  <mx:Label text="Payment Type" width="85" height="20" textAlign="right"/>
+		    <customcomponents:GenComboBox id="cbPayment_type" defaultValue="CHCK" width="105" cornerRadius="0" xmlTag="payment_type" updatableFlag="true"
+				   tableName="vendor_payment"  tabIndex="6" height="20" change="handlePaymentTypeChange()" 
+				   dataProvider="{__genModel.masterData.child('faxx').pay_type}" labelField="label"  />
+         </mx:HBox>
+         <mx:HBox width="100%" horizontalGap="2" verticalAlign="middle" horizontalAlign="center">
+	        <mx:Label text="Bank #" width="85" height="20" textAlign="right"/> 
+	        
+	        	<customcomponents:GenTextInputWithHelp
+							id="dcBank_id" 
+							width="105" 
+							toolTip="Bank #" 
+							dataSourceName="GLBankAccount"
+							minimumChar = "{__genModel.masterData.child('lookup').glbankaccount.value}"
+							height="20" 
+							tabIndex="7" 
+							validationFlag="true" 
+							xmlTag="bank_id"
+							labelTag="bank_code"
+							dataField="id" 
+							labelField= "code"
+							updatableFlag="true" 
+							tableName="vendor_payment" 
+							itemChangedEvent="handleBankIdChange()"
+							/>
+	        	
+	          <!--<customcomponents:GenDynamicComboBoxWithHelp id="dcBank_id" width="105" height="20" itemChangedEvent="handleBankIdChange()"
+						tabIndex="7" toolTip="Bank #" defaultValue="" dataField="id" labelField="code"
+					 	dataSourceName="GLBankAccount" dataProvider="{GenModelLocator.getInstance().lookupObj.glbankaccount.children()}"
+						validationFlag="true" xmlTag="bank_id" updatableFlag="true" tableName="vendor_payment"/>-->
+         </mx:HBox>
+		 <mx:HBox width="100%" horizontalGap="2" verticalAlign="middle" horizontalAlign="center">
+	        <mx:Label text="Check # " width="85" height="20" textAlign="right"/>
+              <customcomponents:GenTextInput id="tiCheck_no" width="105" height="20" xmlTag="check_no" updatableFlag="true" tableName="vendor_payment" 
+				  defaultValue="" validationFlag="true" toolTip="check_no" tabIndex="8" fontSize="9" maxChars="15"/>
+         </mx:HBox>
+		 <mx:HBox width="100%" horizontalGap="2" verticalAlign="middle" horizontalAlign="center">
+	     	<mx:Label text="Check Date" width="85" height="20" textAlign="right"/>  			 
+              <customcomponents:GenDateField id="dfCheck_date"  width="105"  height="20" tabIndex="9" xmlTag="check_date" 
+					    updatableFlag="true" tableName="vendor_payment" validationFlag="false" toolTip="Check Date" itemChangedEvent="dfTrans_date.text = dfCheck_date.text ;getAccountPeriod();getDueDate()"/>
+         </mx:HBox>
+	    </mx:VBox>
+	    <mx:VRule height="100%"/>
+        <mx:VBox width="100%" height="100%" horizontalGap="0" verticalGap="3" paddingBottom="0" paddingTop="0">
+	      <mx:HBox width="100%" horizontalGap="2" verticalAlign="middle" horizontalAlign="left">
+		    <mx:Label text="Payment  Amt" width="110" height="20" textAlign="right"/> 
+              <customcomponents:GenTextInput id="tiPaid_amt" width="110" height="20" xmlTag="paid_amt" updatableFlag="true" tableName="vendor_payment" 
+					  	defaultValue="0.00" validationFlag="true" toolTip="paid_amt" dataType="N" maxValue="9999999999.99"
+					  	itemChangedEvent="handlePayment_amtItemChanged(event)" tabIndex="10" setDefaultOnEmpty="true"  textAlign="right"/>
+          </mx:HBox>   
+	      <mx:HBox width="100%" horizontalGap="2" verticalAlign="middle" horizontalAlign="left">
+	        <mx:Label text="Applied Amt" width="110" height="20" textAlign="right"/>
+              <customcomponents:GenTextInput id="tiApplied_amt" width="110" height="20" xmlTag="applied_amt" updatableFlag="true" tableName="vendor_payment" 
+						defaultValue="0.00" validationFlag="false" textAlign="right" toolTip="applied_amt" enabled="false" editable="false"
+						setDefaultOnEmpty="true" maxValue="9999999999.99"/>
+          </mx:HBox>
+	      <mx:HBox width="100%" horizontalGap="2" verticalAlign="middle" horizontalAlign="left">
+		    <mx:Label text="Balance Amt" width="110" height="20" textAlign="right"/>
+		      <customcomponents:GenTextInput id="tiBalance_amt" width="110" height="20" xmlTag="balance_amt" updatableFlag="true" 
+		  	           tableName="vendor_payment" dataType="N" textAlign="right" maxValue="9999999999.99" setDefaultOnEmpty="true"
+					  	defaultValue="0.00" validationFlag="true" toolTip="balance_amt" enabled="false" editable="false" />
+		  </mx:HBox>
+         </mx:VBox>
+         <mx:VRule height="100%"/>
+	     <mx:VBox width="100%" height="100%" horizontalGap="0" verticalGap="3" paddingBottom="0" paddingTop="0">
+	       <mx:HBox width="100%" horizontalGap="2" verticalAlign="middle" horizontalAlign="center">
+              <mx:Label text="Payment #" width="95" height="20" textAlign="right"/>
+                <customcomponents:GenTextInput id="tiTrans_no" width="65" height="20" xmlTag="trans_no" updatableFlag="true" tableName="vendor_payment" 
+						defaultValue="" validationFlag = "false" toolTip="trans_no" enabled="false" maxChars="100"/>
+                <customcomponents:GenTextInput id="tiTrans_bk" width="41" height="20" xmlTag="trans_bk" updatableFlag="true" 
+						tableName="vendor_payment" defaultValue="" validationFlag = "true" 
+						maxChars="4" fontSize="9" toolTip="trans_bk" enabled="false"/>
+           </mx:HBox>
+           <mx:HBox width="100%" horizontalGap="2" verticalAlign="middle" horizontalAlign="center"> 
+	         <mx:Label text="Date" width="95" height="20" textAlign="right"/>
+		        <customcomponents:GenDateField id="dfTrans_date"  width="109"  height="20" tabIndex="11" xmlTag="trans_date" 
+			        updatableFlag="true" tableName="vendor_payment" validationFlag="true" toolTip="Trans Date" 
+				    fontSize="9" itemChangedEvent="getAccountPeriod();getDueDate()"/>
+		     </mx:HBox>
+	       <mx:HBox width="100%" horizontalGap="2" verticalAlign="middle" horizontalAlign="center">
+	         <mx:Label text="A/c Period" width="95" height="20" textAlign="right"/>
+	         	<customcomponents:GenTextInputWithHelp
+					id="dcAccount_period_code" 
+					width="109" 
+					toolTip="A/c Period #" 
+					dataSourceName="AccountPeriod"
+					minimumChar = "{__genModel.masterData.child('lookup').accountperiod.value}"
+					height="20" 
+					enabled="false"
+					updatableFlag="true"
+					validationFlag="true" 
+					xmlTag="account_period_code"
+					labelTag="account_period_code"
+					dataField="code" 
+					labelField= "code"
+					tableName="vendor_payment" 
+					/>
+		              <!--<customcomponents:GenDynamicComboBoxWithHelp id="dcAccount_period_code" width="109" height="20" 
+				     toolTip="A/c Period Code"  defaultValue="" enabled="false" 
+				     dataField="code" labelField="code" 
+				     dataSourceName="AccountPeriod" dataProvider="{GenModelLocator.getInstance().lookupObj.accountperiod.children()}"
+	 			     validationFlag="true" xmlTag="account_period_code" updatableFlag="true" tableName="vendor_payment"  />-->
+	      </mx:HBox>			
+		  <mx:HBox width="100%" horizontalGap="2" verticalAlign="middle" horizontalAlign="center">
+		     <mx:Label text="Status" width="95" height="20" textAlign="right"/>			
+                <customcomponents:GenComboBox id="cbTrans_flag" defaultValue="A" width="109" cornerRadius="0" xmlTag="trans_flag" updatableFlag="true"
+						tableName="vendor_payment"  tabIndex="12" height="20" 
+					  	dataProvider="{GenModelLocator.getInstance().masterData.child('trans_flag').trans_flag}" labelField="label" />
+         </mx:HBox>
+	     <mx:HBox width="100%" horizontalGap="2" verticalAlign="middle" horizontalAlign="center">
+	       <mx:Label text="Action Status" width="95" height="20" textAlign="right"/>
+	       <customcomponents:GenComboBox id="cbAction_flag" defaultValue="O" width="109" cornerRadius="0" xmlTag="action_flag" updatableFlag="true"
+						tableName="vendor_payment"  height="20" tabIndex="13" enabled="false"
+						dataProvider="{GenModelLocator.getInstance().masterData.child('action_flag').action_flag}" labelField="label" />
+         </mx:HBox>
+	  </mx:VBox>
+    </mx:HBox>  
+    <mx:Spacer height="5" width="100%" />
+    <mx:VBox width="100%"  height="100%">
+	 <mx:TabNavigator id="tnDetail" width="100%" height="100%" >
+		<mx:VBox id="hbInvoice" label="Invoice" width="100%" height="100%" verticalGap="3" tabIndex="14">
+	          <gencomponents:NewDetail
+						id="dtlLine"
+						updatableFlag="true"
+						checkBlankRowColumn="apply_amt"
+						rootNode="vendor_payment_lines"
+						formatServiceID="lineDetailFormat"
+						height="100%"
+						width="100%"
+						addRecordFlag="false"
+						fetchRecordFlag="false"
+						detailItemFocusOut="handleDetailItemFocusOut(event)" />
+         </mx:VBox>
+		 <mx:VBox id="vbGL" label="GL" width="100%" height="100%" verticalGap="3" tabIndex="14">
+		   <customcomponents:GenDataGrid id="dgGL"	
+						checkBlankRowColumn=""
+						rootNode="gl_transaction_lines"
+						formatServiceID="GLFormat"
+						updatableFlag="true"/>
+	    </mx:VBox>
+        </mx:TabNavigator>	
+	  </mx:VBox>
+     </mx:VBox>	
+     <mx:HBox width="0" height="0" verticalAlign="middle">
+	   <mx:Label text="Post Status" width="0" height="0" textAlign="right"/>
+         <customcomponents:GenComboBox id="cbPost_flag" defaultValue="P" width="0"  cornerRadius="0" xmlTag="post_flag" updatableFlag="true"
+					  	tableName="vendor_payment"  height="0"  visible="false"
+				      	dataProvider="{GenModelLocator.getInstance().masterData.child('post_flag').post_flag}" labelField="label" />
+		 <customcomponents:GenTextInput id="tiBank_code"  width="0" xmlTag="bank_code" 
+					updatableFlag="true" tableName="vendor_payment" defaultValue="" height="0" visible="false" />
+		<customcomponents:GenTextInput id="tiVendor_code" xmlTag="vendor_code" updatableFlag="true" 
+			text="{dcVendor_id.labelValue}" tableName = "vendor_payment"  width="0" height="0" visible="false"/>
+     </mx:HBox>
+ </gencomponents:AddEdit>
+
+

@@ -1,0 +1,78 @@
+--- 
+user_companies_001: 
+  updated_at: 2011/01/24 18:57:53
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 2
+  updated_by: 1
+  id: 100
+  company_id: 1
+  user_id: 1
+  created_at: 
+user_companies_002: 
+  updated_at: 2011/01/24 18:57:53
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 2
+  updated_by: 1
+  id: 142
+  company_id: 1
+  user_id: 181
+  created_at: 
+user_companies_003: 
+  updated_at: 2011/01/24 18:57:53
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 2
+  updated_by: 1
+  id: 146
+  company_id: 1
+  user_id: 180
+  created_at: 
+user_companies_004: 
+  updated_at: 2011/01/24 18:57:53
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 2
+  updated_by: 1
+  id: 151
+  company_id: 1
+  user_id: 182
+  created_at: 
+user_companies_005: 
+  updated_at: 2011/01/24 18:57:53
+  update_flag: Y
+  trans_flag: A
+  created_by: 
+  lock_version: 2
+  updated_by: 1
+  id: 155
+  company_id: 1
+  user_id: 183
+  created_at: 
+user_companies_006: 
+  updated_at: 2011/01/24 18:57:53
+  update_flag: Y
+  trans_flag: A
+  created_by: 2
+  lock_version: 4
+  updated_by: 1
+  id: 191
+  company_id: 1
+  user_id: 20
+  created_at: 2011/01/19 00:00:00
+user_companies_007: 
+  updated_at: 2011/01/24 18:57:53
+  update_flag: Y
+  trans_flag: A
+  created_by: 2
+  lock_version: 1
+  updated_by: 1
+  id: 193
+  company_id: 1
+  user_id: 21
+  created_at: 2011/01/21 00:00:00

@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<gencomponents:AddEdit xmlns:mx="http://www.adobe.com/2006/mxml"
+	height="100%" width="100%" verticalGap="0"
+	xmlns:customcomponents="com.generic.customcomponents.*"
+	xmlns:gencomponents="com.generic.components.*"
+	creationPolicy="all" creationComplete="init()">
+	
+	<mx:Script source="../scripts/OrderRevertstageAddEditScript.as"/>
+
+	<mx:VBox width="0" height="0" verticalGap="0" horizontalGap="0" verticalAlign="top" visible="false">
+		<customcomponents:GenTextInput id="tiTrans_qty_pcs" width="0" height="0" visible="false" editable="false"
+			xmlTag="item_qty" updatableFlag="true" tableName="sales_order" />
+	</mx:VBox>
+	
+	<mx:VBox width="100%" height="100%" >
+		
+		<mx:HBox id="HBoxHeader" width="100%"  horizontalGap="0" verticalGap="0" verticalAlign="top"  
+			paddingBottom="0" paddingTop="0">
+			<mx:VBox width="25%" height="100%" horizontalGap="0" verticalGap="3" paddingBottom="0" paddingTop="0" enabled="false" styleName="disableAsEnable">
+				<mx:Spacer height="4%"/>
+				<mx:HBox width="100%" height="4%" verticalAlign="middle"  verticalGap="0" >
+					<mx:Label text="Customer #" width="95" textAlign="right" height="20" />
+					<!--<customcomponents:GenDynamicComboBoxWithHelp id="dcCustomer_id" width="116" toolTip="Customer #" defaultValue=""
+						dataField="id" labelField="name" refreshEvent=""
+						dataSourceName="Customer" dataProvider="{__genModel.lookupObj.customer.children()}"   
+						tabIndex="1"  itemChangedEvent="getCustomerDetails()" height="20" 
+						validationFlag="true" xmlTag="customer_id" updatableFlag="true" tableName="sales_order"  />-->
+					<customcomponents:GenTextInputWithHelp id="dcCustomer_id"
+														   width="149" height="20" 
+														   toolTip="Customer #" defaultValue=""
+														   dataField="id" 		labelField="code"
+														   xmlTag="customer_id" labelTag="customer_code"
+														   dataSourceName="Customer" 
+														   tabIndex="10"  itemChangedEvent="getCustomerDetails()"  
+														   validationFlag="true" 
+														   updatableFlag="true" tableName="sales_order"
+														   lookupFormatUrl	=	"retailCustomerLookupHelpFormat"
+														   />
+				</mx:HBox>
+				<mx:HBox id="hbRef" width="100%" verticalAlign="middle" >
+					<mx:Label text="Ref. Order #" width="95" textAlign="right" height="20" />
+					<customcomponents:GenTextInput id="tiRef_trans_no" width="115" height="20" enabled="false"   
+						xmlTag="ref_trans_no" updatableFlag="true" tableName="sales_order" editable="false" />
+					<mx:Button id="btnGetData" label="..." width="37" paddingBottom="6" enabled="false"  height="16" tabIndex="5" toolTip="Fetch Orders" />
+				</mx:HBox>
+				<mx:HBox width="100%" height="4%" verticalAlign="middle"  verticalGap="0">
+					<mx:Label text="Contact" width="97" textAlign="right" height="20" />
+					<customcomponents:GenTextInput id="tiCustomer_contact" width="149" xmlTag="customer_contact"
+						updatableFlag="true" tabIndex="19" tableName="sales_order"
+						defaultValue="" validationFlag="false" toolTip="Customer Contact" height="20" 
+						maxChars="50" />
+				</mx:HBox>
+				<mx:HBox width="100%" height="4%" verticalAlign="middle"  verticalGap="0">
+					<mx:Label text="Phone" width="97" textAlign="right" height="20" />
+					<customcomponents:GenTextInput id="tiCustomer_phone" width="116" xmlTag="customer_phone"
+						updatableFlag="true" tabIndex="70" tableName="sales_order"
+						defaultValue="" validationFlag="false" toolTip="Customer Phone" height="20" 
+						maxChars="50"  />
+					<customcomponents:GenButton	id="btnSave" icon="@Embed('../../../com/generic/assets/phone.png')" disabledIcon="@Embed('../../../com/generic/assets/phone.png')" 
+													height="20" width="20" 	toolTip="Save" cornerRadius="0" enabled="{__genModel.activeModelLocator.addEditObj.editStatus}"
+													visible="true" 	textAlign="center"/>	
+				</mx:HBox>						
+		
+			</mx:VBox>	
+			<mx:VRule height="100%"/>
+			<mx:VBox width="25%" height="100%" verticalGap="3" horizontalGap="0" paddingBottom="0" paddingTop="0" enabled="false" styleName="disableAsEnable">
+				<mx:Spacer height="4%"/>
+				<mx:HBox width="100%"  verticalAlign="middle">
+					<mx:Label text="PO #" width="110" textAlign="right" height="20" />
+					<customcomponents:GenTextInput id="tiCustomer_po_id" width="110" xmlTag="ext_ref_no"
+						updatableFlag="true" tabIndex="9" tableName="sales_order"
+						defaultValue="" validationFlag="true" toolTip="Customer PO #" height="20" 
+						maxChars="50" upperCaseFlag="true" />					
+				</mx:HBox>
+				<mx:HBox width="100%"  verticalAlign="middle">
+					<mx:Label text="PO Date" width="110" textAlign="right" height="20" />
+					<customcomponents:GenDateField id="dfCustomer_po_date" width="110" xmlTag="ext_ref_date"
+						updatableFlag="true" tabIndex="10" tableName="sales_order" height="20" 
+						validationFlag="false" toolTip="Customer PO Date" />
+				</mx:HBox>
+				<mx:HBox width="100%" height="10%" verticalGap="0" >
+						<mx:Label text="Inside Rep #" width="110" textAlign="right" height="20" />
+						<customcomponents:GenTextInputWithHelp 
+							id="dcSales_person_code"
+							width="116" height="20"
+							toolTip="Sales Person #"
+							dataField="code"
+							labelField="code"
+							xmlTag="salesperson_code"
+							labelTag="salesperson_code"
+							dataSourceName="Salesperson" 
+							tabIndex="20"   
+							validationFlag="false" 
+							updatableFlag="true" 
+							tableName="sales_order"
+							/>
+						<!--<customcomponents:GenDynamicComboBoxWithHelp id="dcSales_person_code" width="116" toolTip="Sales Person #" 
+							dataSourceName="Salesperson" dataProvider="{__genModel.lookupObj.salesperson.children()}" labelField="name" dataField="code"
+							xmlTag="salesperson_code" updatableFlag="true" tabIndex="20" tableName="sales_order" height="20" 
+							defaultValue="" validationFlag="false" />-->
+				</mx:HBox>
+				<mx:HBox width="100%" height="10%" verticalGap="0" >
+					<mx:Label text="Outside Rep #" width="110" textAlign="right" height="20" />
+					<customcomponents:GenTextInputWithHelp 
+						id="dcExternalSales_person_code"
+						width="116" height="20"
+						toolTip="Sales Person #"
+						dataField="code"
+						labelField="code"
+						xmlTag="externalsalesperson_code"
+						labelTag="externalsalesperson_code"
+						dataSourceName="ExternalSalesPerson" 
+						tabIndex="30"   
+						validationFlag="false" 
+						updatableFlag="true" 
+						tableName="sales_order"
+						/>
+					
+					<!--<customcomponents:GenDynamicComboBoxWithHelp id="dcExternalSales_person_code" width="116" toolTip="Sales Person #" 
+						dataSourceName="ExternalSalesPerson" dataProvider="{__genModel.lookupObj.externalsalesperson.children()}" labelField="name" dataField="code"
+						xmlTag="externalsalesperson_code" updatableFlag="true" tabIndex="30" tableName="sales_order" height="20" 
+						defaultValue="" validationFlag="false" />-->
+				</mx:HBox>
+					
+			</mx:VBox>			
+			<mx:VRule height="100%"/>
+			<mx:VBox width="25%" height="100%" verticalGap="3" horizontalGap="0" paddingBottom="0" paddingTop="0">
+				<mx:Spacer height="4%"/>
+				<mx:HBox  width="100%" verticalAlign="middle"  verticalGap="0">
+					<mx:Label text="ArtWork Status" width="95" textAlign="right" height="20" />
+					<customcomponents:GenTextInput id="tiArtwork_status" width="153" xmlTag="artwork_status"
+						updatableFlag="true" tabIndex="20" tableName="sales_order"
+						defaultValue="" validationFlag="false" toolTip="Artwork Status" height="20" 
+						maxChars="50" enabled="false"  />
+				</mx:HBox>
+			</mx:VBox>
+			
+			<mx:VRule height="100%"/>
+			
+			<mx:VBox width="25%" height="100%" verticalGap="3" horizontalGap="0" paddingBottom="0" paddingTop="0" enabled="false" styleName="disableAsEnable">
+				<mx:Spacer height="4%"/>
+				<mx:HBox width="100%" height="10%" verticalGap="0">						
+					<mx:Label text="Order #" width="95" textAlign="right" height="20" />
+					<customcomponents:GenTextInput id="tiTrans_bk" width="35" height="20" visible="true" enabled="false"
+						xmlTag="trans_bk" updatableFlag="false" tableName="sales_order" fontWeight="bold" />
+					<customcomponents:GenTextInput id="tiTrans_no" width="71" xmlTag="trans_no" enabled="false" 
+						updatableFlag="true"  tableName="sales_order"  height="20" 
+						defaultValue="" validationFlag="false" toolTip="Trans #" fontWeight="bold" />	
+				</mx:HBox>				
+				<mx:HBox width="100%" height="10%" verticalGap="0">
+					<mx:Label text="Order Date" width="95" textAlign="right" height="20" />
+					<customcomponents:GenDateField id="dfTrans_date" width="116" xmlTag="trans_date"
+						updatableFlag="true" tabIndex="13" tableName="sales_order" height="20" 
+					 	itemChangedEvent="__localModel.trans_date=dfTrans_date.text;getAccountPeriod()"
+					 	validationFlag="false" toolTip="Trans Date"
+					/>
+				</mx:HBox>
+				<mx:HBox width="0" height="0" verticalGap="0" includeInLayout="false" visible="false">		
+					<mx:Label text="A/C Period" width="95" textAlign="right" height="20" />
+					<!--<customcomponents:GenDynamicComboBoxWithHelp id="dcAccount_period_code" width="116" 
+					toolTip="A/c Period Code"  defaultValue="" height="20" enabled="false"  
+					dataField="code" labelField="code"
+					dataSourceName="AccountPeriod" dataProvider="{__genModel.lookupObj.accountperiod.children()}"
+					validationFlag="true" xmlTag="account_period_code" updatableFlag="true" tableName="sales_order"  />-->
+					<customcomponents:GenTextInput id="dcAccount_period_code" width="116" xmlTag="account_period_code" enabled="false" 
+												   updatableFlag="true"  tableName="sales_order"  height="20"
+												   defaultValue="" validationFlag="true" toolTip="A/c Period Code" fontWeight="bold" />
+					
+				</mx:HBox>
+				
+				<mx:HBox width="0" height="0" verticalGap="0" includeInLayout="false" visible="false">		
+					<mx:Label text="Status" width="95" textAlign="right" height="20" />
+					<customcomponents:GenComboBox id="cbTrans_flag" width="116" cornerRadius="0" xmlTag="trans_flag" updatableFlag="true"
+						tableName="sales_order" enabled="false" defaultValue="A" labelField="label" height="20" editable="false"
+						dataProvider="{__genModel.masterData.child('trans_flag').trans_flag}"
+						toolTip="Status" />
+				</mx:HBox>
+				
+				<mx:HBox width="100%" height="10%" verticalGap="0" >
+					<customcomponents:GenComboBox id="cbOrder_type" width="0" cornerRadius="0" xmlTag="trans_type" updatableFlag="true"
+						tableName="sales_order"  tabIndex="3" labelField="label" height="0" defaultValue="S"  visible="false" includeInLayout="false" 		
+						dataProvider="{__genModel.masterData.child('trans_type').so}" toolTip="Order Type"/>	
+				</mx:HBox>
+			</mx:VBox>
+		</mx:HBox>
+		<mx:HBox width="100%">
+			<mx:Label id="lblOrderStatus" text="Order Status"/>
+			<customcomponents:GenTextInput id="tiOrderStatus" width="205" height="20" enabled="false"   
+						xmlTag="order_status" updatableFlag="true" tableName="sales_order" editable="false" />
+			<mx:Label id="lblOrderRevertStatus" text="Revert To" width="81" textAlign="right"/>		
+			
+			<!--<customcomponents:GenTextInputWithHelp 
+				id="dcOrder_Revert_status" 
+				lookupFormatUrl	=  "orderStagesLookupHelpFormat"
+				width="150" 
+				toolTip="Status" 
+				dataSourceName="OrderStatus"
+				height="20" 
+				xmlTag="stage_code"
+				labelTag="stage_code"
+				dataField="id" 
+				labelField= "stage_code"
+				filterEnabled="true"
+				filterKeyName="stage_code"
+				updatableFlag="true" 
+				tableName="sales_order" 
+				itemChangedEvent="dcOrder_Revert_status.dataValue = dcOrder_Revert_status.labelValue"
+				/>-->
+			<customcomponents:GenComboBox id="cbOrder_Revert_status" width="200" cornerRadius="0" xmlTag="stage_code" updatableFlag="true"
+			tableName="sales_order"  defaultValue="" labelField="value" height="20" editable="false" dataProvider="{orderStages.children()}"
+			toolTip="Status" />
+			<mx:Label text="Workflow Location" width="115" textAlign="right"/>
+			<customcomponents:GenTextInput id="tiWorkflow_Location" width="205" xmlTag="workflow_location"
+										   updatableFlag="true" tabIndex="20" tableName="sales_order"
+										   defaultValue="" validationFlag="false" toolTip="Workflow location" height="20" 
+										   maxChars="50" enabled="false"/>
+			
+		</mx:HBox>
+		<mx:VBox id="hbActivity" label="Activity" width="100%" height="100%" verticalGap="3">
+				<customcomponents:GenDataGrid id="dgActivityLines" creationComplete="setActivityDateLavelFunction()"
+					updatableFlag="true"
+					rootNode="sales_order_transaction_activities"
+					formatServiceID="lineActivityFormat"
+					height="100%"
+					width="100%"  visible="true" includeInLayout="true"/>
+		</mx:VBox>			
+		
+		
+	</mx:VBox>
+</gencomponents:AddEdit>
+

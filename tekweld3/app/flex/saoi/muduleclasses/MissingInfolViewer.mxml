@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:TitleWindow xmlns:fx="http://ns.adobe.com/mxml/2009" 
+		 xmlns:s="library://ns.adobe.com/flex/spark" 
+		 xmlns:mx="library://ns.adobe.com/flex/mx" width="636" height="590" xmlns:customcomponents="com.generic.customcomponents.*" verticalGap="3"
+		 creationComplete="creationComplete()"
+		 title="Information" showCloseButton="true" close="closeHandler()">
+	<fx:Declarations>
+		<!-- Place non-visual elements (e.g., services, value objects) here -->
+	</fx:Declarations>
+	<fx:Script>
+		<![CDATA[
+			import business.events.PreSaveEvent;
+			
+			import model.GenModelLocator;
+			
+			import mx.controls.Alert;
+			import mx.managers.PopUpManager;
+			
+			import saoi.muduleclasses.event.MissingInfoEvent;
+			
+			[Bindable]
+			public var orderDetail:XML= new XML();
+			[Bindable]
+			private var missingInfo:String = '';
+			[Bindable]
+			private var __genModel:GenModelLocator = GenModelLocator.getInstance();
+			private var xmlMissingInfo:XML = new XML();
+			private var screenView:String = '';
+			private var order_type:String = '';
+			private function creationComplete():void
+			{
+				this.parentApplication.focusManager.deactivate();
+				missingInfo 						= orderDetail.missinginfo.toString();
+				taInformationMessage.dataValue		= orderDetail.informationmsg.toString();
+				screenView							= orderDetail.screenview.toString();
+				order_type							= orderDetail.order_type.toString();
+				var checkBoxData:XMLList 			= XMLList(orderDetail.checkboxdata);
+				setScreenView(screenView);
+				setCheckboxData(checkBoxData);
+				if(__genModel.activeModelLocator.addEditObj.isRecordViewOnly)
+				{
+					vbCheckBox.enabled							= false;
+					vbCheckBox.setStyle('disabledOverlayAlpha',0);
+					
+					//cbOrderEnterCompleted.enabled				= false;
+					//cbArtworkAttched.includeInLayout			= false;
+					//cbCustPoAttached.includeInLayout			= false;
+					//cbQualityCheckCompleted.includeInLayout		= false;
+				}
+				else
+				{
+					vbCheckBox.enabled							= true;
+					vbCheckBox.setStyle('disabledOverlayAlpha',.5);
+					
+					//cbOrderEnterCompleted.enabled				= true;
+					//cbArtworkAttched.includeInLayout			= true;
+					//cbCustPoAttached.includeInLayout			= true;
+					//cbQualityCheckCompleted.includeInLayout		= true;
+				}
+			}
+			private function setCheckboxData(xmllist:XMLList):void
+			{
+				cbOrderEnterCompleted.dataValue 		= 	xmllist.orderentrycomplete_flag.toString() ;
+				
+				//cbArtworkAttched.dataValue				=	xmllist.artworkattached_flag.toString();
+				//cbCustPoAttached.dataValue				=	xmllist.custpoattached_flag.toString();
+				cbCustomerChecked.dataValue				=   xmllist.customer_checked_flag.toString();
+				cbContactChecked.dataValue				=   xmllist.contact_checked_flag.toString();
+				cbEmailChecked.dataValue				=   xmllist.email_checked_flag.toString();
+				cbItemChecked.dataValue					=   xmllist.item_checked_flag.toString();
+				cbQuantityChecked.dataValue				=   xmllist.quantity_checked_flag.toString();
+				cbImprintChecked.dataValue				=   xmllist.imprint_checked_flag.toString();
+				cbShippingChecked.dataValue				=   xmllist.shipping_checked_flag.toString();
+				cbBillingChecked.dataValue				=   xmllist.billing_checked_flag.toString();
+				cbPaymentChecked.dataValue				=   xmllist.payment_checked_flag.toString();
+				cbQualityCheckCompleted.dataValue		=	xmllist.orderqcstatus_flag.toString();
+			}
+			private function closeHandler():void
+			{
+				PopUpManager.removePopUp(this);
+			}
+			private function saveClickHandler():void
+			{
+				xmlMissingInfo  					   = new XML(<missing_info></missing_info>);
+				
+				xmlMissingInfo.orderentrycomplete_flag = cbOrderEnterCompleted.dataValue;
+				
+				//xmlMissingInfo.artworkattached_flag    = cbArtworkAttched.dataValue;
+				//xmlMissingInfo.custpoattached_flag     = cbCustPoAttached.dataValue;
+				xmlMissingInfo.customer_checked_flag     = cbCustomerChecked.dataValue;
+				xmlMissingInfo.contact_checked_flag      = cbContactChecked.dataValue;
+				xmlMissingInfo.email_checked_flag      	 = cbEmailChecked.dataValue;
+				xmlMissingInfo.item_checked_flag      	 = cbItemChecked.dataValue;
+				xmlMissingInfo.quantity_checked_flag     = cbQuantityChecked.dataValue;
+				xmlMissingInfo.imprint_checked_flag      = cbImprintChecked.dataValue;
+				xmlMissingInfo.shipping_checked_flag     = cbShippingChecked.dataValue;
+				xmlMissingInfo.billing_checked_flag      = cbBillingChecked.dataValue;
+				xmlMissingInfo.payment_checked_flag      = cbPaymentChecked.dataValue;
+				xmlMissingInfo.orderqcstatus_flag      	 = cbQualityCheckCompleted.dataValue;
+				
+				dispatchEvent(new MissingInfoEvent(MissingInfoEvent.MissingInfoEvent_Type,xmlMissingInfo));
+				closeHandler();
+			}
+			
+			private function setScreenView(screenView:String):void
+			{
+				if(screenView.toUpperCase()=='ASSIGNEDORDER')
+				{
+					vbEntryCompleted.visible 				    = true;
+					vbEntryCompleted.includeInLayout			= true;
+					vbQualityCheck.visible						= false;
+					vbQualityCheck.includeInLayout				= false;
+					
+					//cbOrderEnterCompleted.visible		  		= true;
+					//cbOrderEnterCompleted.includeInLayout	 	= true;
+					
+					//cbArtworkAttched.visible					= false;
+					//cbArtworkAttched.includeInLayout			= false;
+					//cbCustPoAttached.visible					= false;
+					//cbCustPoAttached.includeInLayout			= false;
+					//cbQualityCheckCompleted.visible				= false;
+					//cbQualityCheckCompleted.includeInLayout		= false;
+				}
+				else if (screenView.toUpperCase()=='QCORDER')
+				{
+					
+					vbEntryCompleted.visible 				    = false;
+					vbEntryCompleted.includeInLayout			= false;
+					vbQualityCheck.visible						= true;
+					vbQualityCheck.includeInLayout				= true;
+					
+					//cbArtworkAttched.visible						= true;
+					//cbCustPoAttached.visible						= true;
+					//cbQualityCheckCompleted.visible					= true;
+					//cbArtworkAttched.includeInLayout				= true;
+					//cbCustPoAttached.includeInLayout				= true;
+					//cbQualityCheckCompleted.includeInLayout			= true;
+					
+					//cbOrderEnterCompleted.visible					= false;
+					//cbOrderEnterCompleted.includeInLayout 			= false;
+					
+				}
+				else
+				{
+					vbEntryCompleted.visible 				    = false;
+					vbEntryCompleted.includeInLayout			= false;
+					vbQualityCheck.visible						= false;
+					vbQualityCheck.includeInLayout				= false;
+				}
+				if(order_type=='SAMPLE')
+				{
+					//cbArtworkAttched.visible						= false;
+					//cbArtworkAttched.includeInLayout				= false;
+				}
+			}
+			
+		]]>
+	</fx:Script>
+	<mx:HBox width="100%" height="4%" verticalAlign="top"  verticalGap="0">
+		<mx:Label text="Information Message" width="144" fontSize="12" textAlign="right"/>
+		<customcomponents:GenTextArea id="taInformationMessage" width="431" height="172"
+									  xmlTag="order_information_message" updatableFlag="false" tabIndex="170" maxChars="95"
+									  tableName="sales_order" editable="false" color="black" fontWeight="bold" fontSize="12" fontFamily="Arial" />
+	</mx:HBox>
+	<mx:HBox width="100%" height="4%" verticalAlign="top"  verticalGap="0">
+		<mx:Label text="Missing Information" width="144" fontSize="12" textAlign="right"/>
+		<customcomponents:GenTextArea id="taItemDescription" width="431" height="172" text="{missingInfo}"
+									  xmlTag="description" updatableFlag="false" tabIndex="10" maxChars="95"
+									  tableName="sales_order" editable="false" color="red" fontWeight="bold" fontSize="12" fontFamily="Arial" />
+	</mx:HBox>
+	<mx:VBox id="vbCheckBox" width="100%"  verticalAlign="top"  verticalGap="2">
+		<mx:VBox id="vbEntryCompleted" width="100%" visible="false" includeInLayout="false">
+			<customcomponents:GenCheckBox labelPlacement="left" label="Order Enter Completed" id="cbOrderEnterCompleted" width="168"
+										  xmlTag="orderentrycomplete_flag" updatableFlag="true" tableName="sales_order" defaultValue="N" textAlign="right" tabIndex="11"
+										  dataValueForOn ="Y" dataValueForOff ="N" />
+		</mx:VBox>
+		
+		<!--<customcomponents:GenCheckBox labelPlacement="left" label="Is Artwork Attached ?" id="cbArtworkAttched" width="168" visible="false" includeInLayout="false"
+									  xmlTag="artworkattached_flag" updatableFlag="true" tableName="sales_order" defaultValue="N" textAlign="right" tabIndex="11"
+									  dataValueForOn ="Y" dataValueForOff ="N" />	
+		<customcomponents:GenCheckBox labelPlacement="left" label="Is Cust PO Attached ?" id="cbCustPoAttached" width="168" visible="false" includeInLayout="false"
+									  xmlTag="custpoattached_flag" updatableFlag="true" tableName="sales_order" defaultValue="N" textAlign="right" tabIndex="11"
+									  dataValueForOn ="Y" dataValueForOff ="N" />	-->	
+		<mx:VBox id="vbQualityCheck" width="100%" height="116" verticalGap="3" visible="false" includeInLayout="false">
+			<mx:HBox width="100%" height="100%" verticalGap="3">
+				<mx:VBox width="100%" height="100%" verticalAlign="middle">
+					<customcomponents:GenCheckBox labelPlacement="left" label="Is Customer Checked ?" id="cbCustomerChecked" width="168"
+												  xmlTag="customer_checked_flag" updatableFlag="true" tableName="sales_order" defaultValue="N" textAlign="right" tabIndex="11"
+												  dataValueForOn ="Y" dataValueForOff ="N" />	
+					<customcomponents:GenCheckBox labelPlacement="left" label="Is Contact Checked ?" id="cbContactChecked" width="168" 
+												  xmlTag="contact_checked_flag" updatableFlag="true" tableName="sales_order" defaultValue="N" textAlign="right" tabIndex="11"
+												  dataValueForOn ="Y" dataValueForOff ="N" />
+					
+					<customcomponents:GenCheckBox labelPlacement="left" label="Is Email Checked ?" id="cbEmailChecked" width="168" 
+												  xmlTag="email_checked_flag" updatableFlag="true" tableName="sales_order" defaultValue="N" textAlign="right" tabIndex="11"
+												  dataValueForOn ="Y" dataValueForOff ="N" />
+				</mx:VBox>
+				<mx:VBox width="100%" height="100%" verticalAlign="middle">
+					
+					
+					<customcomponents:GenCheckBox labelPlacement="left" label="Is Item Checked ?" id="cbItemChecked" width="168" 
+												  xmlTag="item_checked_flag" updatableFlag="true" tableName="sales_order" defaultValue="N" textAlign="right" tabIndex="11"
+												  dataValueForOn ="Y" dataValueForOff ="N" />
+					<customcomponents:GenCheckBox labelPlacement="left" label="Is Quantity Checked ?" id="cbQuantityChecked" width="168" 
+												  xmlTag="quantity_checked_flag" updatableFlag="true" tableName="sales_order" defaultValue="N" textAlign="right" tabIndex="11"
+												  dataValueForOn ="Y" dataValueForOff ="N" />	
+					<customcomponents:GenCheckBox labelPlacement="left" label="Is Imprint Checked ?" id="cbImprintChecked" width="168" 
+												  xmlTag="imprint_checked_flag" updatableFlag="true" tableName="sales_order" defaultValue="N" textAlign="right" tabIndex="11"
+												  dataValueForOn ="Y" dataValueForOff ="N" />
+				</mx:VBox>
+				<mx:VBox width="100%" height="100%" verticalAlign="middle">
+					
+					<customcomponents:GenCheckBox labelPlacement="left" label="Is Shipping Checked ?" id="cbShippingChecked" width="168" 
+												  xmlTag="shipping_checked_flag" updatableFlag="true" tableName="sales_order" defaultValue="N" textAlign="right" tabIndex="11"
+												  dataValueForOn ="Y" dataValueForOff ="N" />
+					<customcomponents:GenCheckBox labelPlacement="left" label="Is Billing Checked ?" id="cbBillingChecked" width="168" 
+												  xmlTag="billing_checked_flag" updatableFlag="true" tableName="sales_order" defaultValue="N" textAlign="right" tabIndex="11"
+												  dataValueForOn ="Y" dataValueForOff ="N" />	
+					<customcomponents:GenCheckBox labelPlacement="left" label="Is Payment Checked ?" id="cbPaymentChecked" width="168" 
+												  xmlTag="payment_checked_flag" updatableFlag="true" tableName="sales_order" defaultValue="N" textAlign="right" tabIndex="11"
+												  dataValueForOn ="Y" dataValueForOff ="N" />
+				</mx:VBox>
+			</mx:HBox>
+			<mx:VBox width="25%" height="25" verticalAlign="middle">
+				<customcomponents:GenCheckBox labelPlacement="left" label="Quality Check Completed" id="cbQualityCheckCompleted" width="168" 
+											  xmlTag="orderqcstatus_flag" updatableFlag="true" tableName="sales_order" defaultValue="N" textAlign="right" tabIndex="11"
+											  dataValueForOn ="Y" dataValueForOff ="N"/>
+			</mx:VBox>
+			
+		</mx:VBox>
+		
+		
+		<mx:HBox width="100%" height="45" verticalAlign="middle"  verticalGap="0">
+			<s:Spacer width="146"/>
+			<s:Button label="Save" click="saveClickHandler()" tabIndex="12"/>
+			<s:Button label="Cancel" click="closeHandler()" tabIndex="13"/>
+		</mx:HBox>
+		
+	</mx:VBox>
+	
+	
+</mx:TitleWindow>

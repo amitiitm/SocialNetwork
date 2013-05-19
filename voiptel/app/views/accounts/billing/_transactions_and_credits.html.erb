@@ -1,0 +1,10 @@
+<div id="tabs-billing" style="display">
+	<ul>
+		<li><a href="/accounts/<%= params[:account_id] %>/billing/transactions">Transactions</a></li>
+		<li><a href="/accounts/<%= params[:account_id] %>/billing/credits">Credits</a></li>
+	</ul>
+</div>
+
+<script type="text/javascript">
+	$('#tabs-billing').tabs({ fx: { opacity: 'toggle' }, async: true});
+</script>

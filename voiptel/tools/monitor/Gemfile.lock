@@ -1,0 +1,20 @@
+GEM
+  remote: http://rubygems.org/
+  specs:
+    daemons (1.1.0)
+    eventmachine (0.12.10)
+    json (1.4.6)
+    juggernaut (2.0.0)
+      redis
+    memcache (1.2.13)
+    redis (2.1.1)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  daemons
+  eventmachine
+  json
+  juggernaut
+  memcache

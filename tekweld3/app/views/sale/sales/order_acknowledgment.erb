@@ -1,0 +1,34 @@
+
+Dear <%= assigns[:parameter].customer.name%>,<br></br>
+Your Order Number is <%= assigns[:parameter].trans_no%><br/>
+Your Acknowledgement is attached. Please review the list of items on order.<br/>
+<h4 align="center">OR</h4><br/>
+click on the Following icon to view and approve your order.<br/>
+<% if assigns[:parameter].artworkreceived_flag == 'N'%>
+  You have not send any ARTWORK with this order.<br/>
+<%end%>
+<% if assigns[:parameter].accountreviewed_flag != 'Y'%>
+  Your Accounts are not cleared please pay the necessary Amount ASAP so that your order may processed.<br/>
+<%end%>
+
+<%assigns[:parameter].sales_order_attributes_values.each{|attribute_value|%>
+  <%if attribute_value.trans_flag == 'A' and attribute_value.catalog_attribute_code == 'IMPRINTTYPE' and attribute_value.catalog_attribute_value_code == 'EMBROIDERY' and assigns[:parameter].orderacksent_flag == 'N'%>
+    <h3><p style="font-family:arial ;color:red ;font-size:18px">Embroidery Item Pricing will be updated after Artwork Confirmation  and Digitizing Done.</p></h3>
+    <%break%>
+  <%end%>
+<%}%>
+
+<h3> IF THERE ARE ANY DISCREPANCIES WE MUST BE NOTIFIED WITHIN 24 HOURS.</h3>
+<br></br>
+Thank you for your business  - we appreciate it very much.
+<br></br>
+Sincerely,<br/>
+Tekweld<br/>
+Tel: 631-694-5503<br/>
+Fax: 631-694-5568<br/>
+877-TEKWELD (835-9353)<br/>
+www.tekweld.com<br></br>
+*** PLEASE VISIT OUR NEW SITE WWW.TEKWELD.COM ***                                                              
+
+
+

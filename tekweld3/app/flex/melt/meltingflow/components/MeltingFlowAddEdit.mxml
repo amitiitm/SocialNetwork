@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<gencomponents:AddEdit xmlns:mx="http://www.adobe.com/2006/mxml"
+	height="100%" width="100%" verticalGap="0"
+	xmlns:customcomponents="com.generic.customcomponents.*"
+	xmlns:gencomponents="com.generic.components.*" 
+	creationPolicy="all" creationComplete="init()" >
+	
+	<mx:Script source="../scripts/MeltingFlowAddEditScript.as"/>
+	
+	<mx:Canvas height="100%" width="100%" horizontalScrollPolicy="off" verticalScrollPolicy="off">
+		
+		<mx:LinkButton label="RECEIVEPACKET" height="66" width="64" x="-5" y="178" 
+			icon="@Embed(source='../../../com/generic/assets/01-ReceivePacket.png')" skin="{null}" toolTip="Receive Packet" 
+			click="clickHandler(event)"/>
+		<mx:LinkButton label="ATTACHVIDEO" height="55" width="64" x="140" y="178" 
+			icon="@Embed(source='../../../com/generic/assets/03-AttachVideo.png')" skin="{null}" toolTip="Attach Video" 
+			click="clickHandler(event)"/>
+		<mx:LinkButton label="CALCULATEOFFER" height="66" width="64" x="430" y="178" 
+			icon="@Embed(source='../../../com/generic/assets/CalculateOffer.png')" skin="{null}" toolTip="Calculate Offer" 
+			click="clickHandler(event)" textAlign="center"/>
+		<mx:LinkButton label="CUSTOMERRESPONSEMANUAL" height="55" width="64" x="582" y="355" 
+			icon="@Embed(source='../../../com/generic/assets/RejectOffer_NoResponse.png')" skin="{null}" toolTip="Reject Offer/No Response"
+			 click="rejectClickHandler()"/>
+		<mx:LinkButton label="CUSTOMERRESPONSEMANUAL" height="55" width="64" x="582" y="10"
+			 icon="@Embed(source='../../../com/generic/assets/08-AccpetOffer.png')" skin="{null}" toolTip="Accept Offer"
+			  click="acceptClickHandler()"/>
+		<mx:LinkButton label="STOPPAYMENT" height="55" width="64" x="887" y="266" 
+			icon="@Embed(source='../../../com/generic/assets/11-StopPayment.png')" skin="{null}" toolTip="Stop Payment" 
+			click="clickHandler(event)" textAlign="center"/>
+		<mx:LinkButton label="CHECKPRINT" height="55" width="64" x="728" y="4" 
+			icon="@Embed(source='../../../com/generic/assets/Print_MailCheck.png')" skin="{null}" toolTip="Print/Mail Check" 
+			click="clickHandler(event)"/>
+		<mx:LinkButton label="PRINTCOMMCHECK" height="66" width="64" x="1041" y="103" 
+			icon="@Embed(source='../../../com/generic/assets/PrintCommissionCheck.png')" skin="{null}" toolTip="Print Commission Check" 
+			click="clickHandler(event)" textAlign="center"/>
+		<mx:LinkButton label="RETURNPACKET" height="55" width="64" x="1041" y="355" 
+			icon="@Embed(source='../../../com/generic/assets/12-ReturnPacket.png')" skin="{null}" toolTip="Return Packet" 
+			click="clickHandler(event)"/>
+		<mx:LinkButton label="DAILYMETALRATE" height="66" width="64" x="430" y="10" 
+			icon="@Embed(source='../../../com/generic/assets/DailyMetalRate.png')" skin="{null}" toolTip="Daily Metal Rate" textAlign="center"
+			 click="clickHandler(event)"/>
+		<mx:LinkButton label="SENDOFFERWITHVIDEO" useHandCursor="true" height="55" width="64" x="585" y="178"  
+			icon="@Embed(source='../../../com/generic/assets/SendOfferWithVideo.png')" skin="{null}" toolTip="Send Offer with Video" 
+			click="clickHandler(event)" textAlign="center" fontWeight="bold"/>
+		<mx:LinkButton label="SENDREMINDEROFFER" useHandCursor="true"  height="66" width="64" x="732" y="266" 
+			icon="@Embed(source='../../../com/generic/assets/SendOfferReminders.png')" skin="{null}" toolTip="Send Offer Reminders" 
+			textAlign="center" click="clickHandler(event)"/>
+		<mx:LinkButton label="UPDATECHECKSTATUS" height="66" width="64" x="887" y="103" 
+			icon="@Embed(source='../../../com/generic/assets/UpdateEncashDate.png')" skin="{null}" toolTip="Update Encash Date" 
+			textAlign="center" click="clickHandler(event)"/>
+		<mx:LinkButton label="METALANALYSIS" x="285" y="178" height="66" width="64" 
+			icon="@Embed(source='../../../com/generic/assets/metalanalysis.png')" skin="{null}" toolTip="Metal Analysis"
+			 click="clickHandler(event)" textAlign="center" useHandCursor="true"/>
+		<mx:LinkButton label="VERIFYCHECKSTATUS" height="66" width="64" x="732" y="173" 
+			icon="@Embed(source='../../../com/generic/assets/VerifyCheckStatus.png')" skin="{null}" toolTip="Verify Check Status"
+			 click="clickHandler(event)" textAlign="center"/>
+		<mx:LinkButton label="SENDREMINDERCHECKDEPOSIT" height="66" width="64" x="970" y="173" 
+			icon="@Embed(source='../../../com/generic/assets/SendDepositReminders.png')" skin="{null}" toolTip="Send Deposit Reminders" 
+			click="clickHandler(event)" textAlign="center"/>
+		<mx:LinkButton label="UPDATECOMMENCASHDATE" height="66" width="64" x="1142" y="103" 
+			icon="@Embed(source='../../../com/generic/assets/UpdateCommissionEncashDate.png')" skin="{null}" toolTip="Update Commission Encash Date" click="clickHandler(event)"/>
+		
+		<!--<mx:LinkButton label="SHIPPACKETSEND" height="66" width="64" x="-5" y="10" 
+			icon="@Embed(source='../../../com/generic/assets/shipping_box.png')" skin="{null}" toolTip="Ship Packet Send" 
+			click="clickHandler(event)"/>
+		<mx:LinkButton label="REFINEGOLD" height="66" width="64" x="1041" y="4" useHandCursor="false" 
+			icon="@Embed(source='../../../com/generic/assets/RefineGold.png')" skin="{null}" toolTip="Refine Gold" textAlign="center"/>
+		<mx:LinkButton label="VAULTARCHIVE" height="66" width="64" x="1142" y="266" useHandCursor="false"
+			icon="@Embed(source='../../../com/generic/assets/VaultArchive.png')" skin="{null}" toolTip="Vault Archive"/>
+		<mx:Label x="1080" y="280" text="Loose Stones"/>
+		<mx:Label x="1076" y="264" text="(6 months archive)"/>
+		<mx:Label x="87" y="451" text="Customer cannot be located"/>-->
+	</mx:Canvas>
+	<customcomponents:GenTextInput id="tiDummy" width="0" height="0" toolTip="Dummy" enabled="false" visible="false"
+		xmlTag="dummy" updatableFlag="false" tableName="melting_flow" defaultValue=""  />
+</gencomponents:AddEdit>			  

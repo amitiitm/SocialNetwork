@@ -1,0 +1,37 @@
+<%= javascript_include_tag "jquery.jstree.js" %>
+
+
+<%= page_title :title => "jsTree" %>
+<h3>Binding to an event and executing an action</h3>
+<input type="button" class="button" value="toggle_node" id="toggle_node" style="clear:both;" />
+<div id="demo1" class="demo">
+	<ul>
+		<li id="phtml_1">
+			<a href="#">Root node 1</a>
+			<ul>
+				<li id="phtml_2">
+					<a href="#">Child node 1</a>
+				</li>
+				<li id="phtml_3">
+					<a href="#">Child node 2</a>
+				</li>
+			</ul>
+		</li>
+		<li id="phtml_4">
+			<a href="#">Root node 2</a>
+		</li>
+	</ul>
+</div>
+<script type="text/javascript" charset="utf-8">
+	$(function () {
+		$("#toggle_node").click(function () {
+			alert("fuc1");
+			$("#demo1").jstree("toggle_node","#phtml_1");
+		});
+		$("#demo1")
+			.bind("open_node.jstree close_node.jstree", function (e) {
+				$("#log1").html("Last operation: " + e.type);
+			})
+			.jstree({ "plugins" : [ "themes", "html_data" ] });
+		});
+</script>

@@ -1,0 +1,26 @@
+<%= page_title :title => "Account EasyDialers" %>
+
+<% table :width => "500px" do |t| %>
+	<% t.th "#" %>
+	<% t.th "Phone" %>
+	<% t.th "ED" %>
+	<% t.th "Freq" %>
+	<% t.th "Actions" %>
+	
+	<% counter = 0 %>
+	<% for pb in @phone_books %>
+		<% t.td(counter += 1) %>
+		<% t.td pb.phone_number %>
+		<% t.td pb.easy_dial_number %>
+		<% t.td pb.freq %>
+		<% t.td(link_to("Edit", edit_account_phone_book_path(@account, pb), :class => "ajax", :update => "container") + " | " + 
+			link_to("Delete", account_phone_book_path(@account, pb), :class => "ajax-delete")
+		)%>
+		
+		<% t.new_row %>		
+	<% end -%>
+	
+<% end -%>
+<div id="container"></div>
+<script src="/js/tablesorter.js" type="text/javascript"></script>
+<script src="/js/accounts/index.js" type="text/javascript"></script>

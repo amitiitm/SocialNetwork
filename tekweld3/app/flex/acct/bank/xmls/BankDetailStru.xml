@@ -1,0 +1,12 @@
+<columns  lockedColumnCount='0'>
+
+	<column data='check_from'	label='From #'			editable='false'	visible='true' 	width='150'	textAlign='left'	forLevel='false' 
+			defaultForLevel=''	booleanFlag='false'		sortDataType='S'	columnPrecision="NaN"/>
+			
+	<column data='check_to'		label='To #'			editable='false' 	visible='true' 	width='150'	textAlign='left'	forLevel='false' 
+			defaultForLevel=''	booleanFlag='false'		sortDataType='S'	columnPrecision="NaN"/>
+			
+	<column data='payment_type'	label='Payment Type'	editable='false' 	visible='true' 	width='150'	textAlign='left'	forLevel='false' 
+			defaultForLevel=''	booleanFlag='false'		sortDataType='S'	columnPrecision="NaN"/>
+			
+</columns> 

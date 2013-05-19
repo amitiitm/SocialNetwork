@@ -1,0 +1,14 @@
+<% if not rate_sheet_files.blank? %>
+	<% if rate_sheet_files.size > 1 %>
+		<ul>
+			<% for rsf in rate_sheet_files do %>
+			<li>
+				<%= link_to(rsf.my_file.name, file_path(rsf.my_file)) + raw(" (#{rate_sheet_file_mapped(rsf)})")%>
+			</li>
+			<% end -%>
+		</ul>
+	<% else %>
+		<% rsf = rate_sheet_files[0] %>
+		<%= link_to(rsf.my_file.name, file_path(rsf.my_file)) + raw(" (#{rate_sheet_file_mapped(rsf)})")%>
+	<% end -%>
+<% end -%>

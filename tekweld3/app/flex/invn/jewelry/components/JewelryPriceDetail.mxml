@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<gencomponents:DetailAddEdit xmlns:mx="http://www.adobe.com/2006/mxml"
+	width="500" height="350" verticalGap="0"
+	xmlns:customcomponents="com.generic.customcomponents.*"
+	xmlns:gencomponents="com.generic.components.*"
+	creationComplete="creationCompleteHandler()">
+
+	<mx:Script source="../scripts/JewelryPriceDetailScript.as"/>
+	
+	<mx:VBox height="100%" width="100%" >
+		<mx:HBox>
+			<mx:Label text="From Date" height="20" width="95" textAlign="right"/>
+			<customcomponents:GenDateField id="dfFrom_date" width="110" height="18" toolTip="From Date" tabIndex="1" 
+				xmlTag="from_date" updatableFlag="true" tableName="catalog_item_price"/>
+	
+			<mx:Label text="To Date" height="20" width="95" textAlign="right"/>
+			<customcomponents:GenDateField id="dfTo_date" width="110" height="18" toolTip="To Date" tabIndex="2" 
+				xmlTag="to_date" updatableFlag="true" tableName="catalog_item_price"/> 			
+		</mx:HBox>
+    
+		<mx:HBox>
+			<mx:Label text="Price" width="95" textAlign="right"/>
+			<customcomponents:GenTextInput id="tiPrice"  height="20" textAlign="right"
+				updatableFlag="true" width="110" tabIndex="3" xmlTag="price" defaultValue = '0.00'
+				itemChangedEvent="dis_perchange();calculateOtherPrice()" tableName="catalog_item_price"
+				dataType="N" rounding="false" setDefaultOnEmpty="true"
+				maxValue="9999999999.99" validationFlag="true" toolTip="Price"/>
+		</mx:HBox>
+		
+		<mx:HBox>
+			<mx:Label text="Price A" width="95" textAlign="right" />
+			<customcomponents:GenTextInput id="tiPrice_a" height="20" width="110" textAlign="right" defaultValue = '0.00'
+				tabIndex="4" xmlTag="pricea" dataType="N" rounding="false" setDefaultOnEmpty="true" 
+				updatableFlag="true" tableName="catalog_item_price"	maxValue="9999999999.99"  toolTip="Price A"/>	
+			<mx:HBox horizontalGap="0">
+				<mx:Label text="(" width="8" />
+				<mx:Label id="markupa" width="37"  textAlign="center"/>
+				<mx:Label text="% discount )" width="100" />
+			</mx:HBox>	
+					
+		</mx:HBox>
+		<mx:HBox>	
+			<mx:Label text="Price B" width="95" textAlign="right"/>
+			<customcomponents:GenTextInput id="tiPrice_b" height="20" width="110" textAlign="right" defaultValue = '0.00'
+				tabIndex="5" xmlTag="priceb" dataType="N" rounding="false" setDefaultOnEmpty="true" 
+				updatableFlag="true" tableName="catalog_item_price"	maxValue="9999999999.99"  toolTip="Price B"/>		
+			<mx:HBox horizontalGap="0">
+				<mx:Label text="(" width="8" />
+				<mx:Label id="markupb" width="37"  textAlign="center"/>
+				<mx:Label text="% discount )" width="100" />	
+			</mx:HBox>
+			
+		</mx:HBox>
+		<mx:HBox>
+			<mx:Label text="Price C" width="95" textAlign="right" />
+			<customcomponents:GenTextInput id="tiPrice_c" height="20" width="110" textAlign="right" defaultValue = '0.00'
+				tabIndex="6" xmlTag="pricec" dataType="N" rounding="false" setDefaultOnEmpty="true" 
+				updatableFlag="true" tableName="catalog_item_price"	maxValue="9999999999.99"  toolTip="Price C"/>
+			<mx:HBox horizontalGap="0">
+				<mx:Label text="(" width="8" />
+				<mx:Label id="markupc" width="37"  textAlign="center"/>
+				<mx:Label text="% discount )" width="100" />		
+			</mx:HBox>		
+			
+		</mx:HBox>
+		<mx:HBox>
+			<mx:Label text="Price D" width="95" textAlign="right"/>
+			<customcomponents:GenTextInput id="tiPrice_d" height="20" width="110" textAlign="right" defaultValue = '0.00'
+				tabIndex="7" xmlTag="priced" dataType="N" rounding="false" setDefaultOnEmpty="true" 
+				updatableFlag="true" tableName="catalog_item_price"	maxValue="9999999999.99"  toolTip="Price D"/>
+			<mx:HBox horizontalGap="0">
+				<mx:Label text="(" width="8" />
+				<mx:Label id="markupd" width="37"  textAlign="center"/>
+				<mx:Label text="% discount )" width="100" />
+			</mx:HBox>	
+		</mx:HBox>
+		<mx:HBox>
+			<mx:Label text="Price E" width="95" textAlign="right" />
+			<customcomponents:GenTextInput id="tiPrice_e" height="20" width="110" textAlign="right" defaultValue = '0.00'
+				tabIndex="8" xmlTag="pricee" dataType="N" rounding="false" setDefaultOnEmpty="true" 
+				updatableFlag="true" tableName="catalog_item_price"	maxValue="9999999999.99"  toolTip="Price E"/>
+			<mx:HBox horizontalGap="0">
+				<mx:Label text="(" width="8" />
+				<mx:Label id="markupe" width="37"  textAlign="center"/>
+				<mx:Label text="% discount )" width="100" />
+			</mx:HBox>	
+		</mx:HBox>		
+		<mx:HBox>
+			<mx:Label text="Price F" width="95" textAlign="right"/>
+			<customcomponents:GenTextInput id="tiPrice_f" height="20" width="110" textAlign="right" defaultValue = '0.00'
+				tabIndex="9" xmlTag="pricef" dataType="N" rounding="false" setDefaultOnEmpty="true" 
+				updatableFlag="true" tableName="catalog_item_price"	maxValue="9999999999.99"  toolTip="Price F"/>
+			<mx:HBox horizontalGap="0">
+				<mx:Label text="(" width="8" />
+				<mx:Label id="markupf" width="37"  textAlign="center"/>	
+				<mx:Label text="% discount )" width="100" />
+			</mx:HBox>	
+		</mx:HBox>
+		<mx:HBox>
+			<mx:Label text="Price G" width="95" textAlign="right" />
+			<customcomponents:GenTextInput id="tiPrice_g" height="20" width="110" textAlign="right" defaultValue = '0.00'
+				tabIndex="10" xmlTag="priceg" dataType="N" rounding="false" setDefaultOnEmpty="true" 
+				updatableFlag="true" tableName="catalog_item_price"	maxValue="9999999999.99"  toolTip="Price G"/>		
+			<mx:HBox horizontalGap="0">
+				<mx:Label text="(" width="8" />
+				<mx:Label id="markupg" width="37"  textAlign="center"/>
+				<mx:Label text="% discount )" width="100" />
+			</mx:HBox>	
+		</mx:HBox>		
+		<mx:HBox>
+			<mx:Label text="Price H" width="95" textAlign="right"/>
+			<customcomponents:GenTextInput id="tiPrice_h" height="20" width="110" textAlign="right" defaultValue = '0.00'
+				tabIndex="11" xmlTag="priceh" dataType="N" rounding="false" setDefaultOnEmpty="true" 
+				updatableFlag="true" tableName="catalog_item_price"	maxValue="9999999999.99"  toolTip="Price H"/>	
+			<mx:HBox horizontalGap="0">
+				<mx:Label text="(" width="8" />
+				<mx:Label id="markuph" width="37"  textAlign="center"/>	
+				<mx:Label text="% discount )" width="100" />
+			</mx:HBox>	
+		</mx:HBox>
+		<mx:HBox>
+			<mx:Label text="Price I" width="95" textAlign="right" />
+			<customcomponents:GenTextInput id="tiPrice_i" height="20" width="110" textAlign="right" defaultValue = '0.00'
+				tabIndex="12" xmlTag="pricei" dataType="N" rounding="false" setDefaultOnEmpty="true" 
+				updatableFlag="true" tableName="catalog_item_price"	maxValue="9999999999.99"  toolTip="Price I"/>		
+			<mx:HBox horizontalGap="0">
+				<mx:Label text="(" width="8" />
+				<mx:Label id="markupi" width="37"  textAlign="center"/>
+				<mx:Label text="% discount )" width="100" />
+			</mx:HBox>	
+		</mx:HBox>
+		<mx:HBox>
+			<mx:Label text="Price J" width="95" textAlign="right"/>
+			<customcomponents:GenTextInput id="tiPrice_j" height="20" width="110" textAlign="right" defaultValue = '0.00'
+				tabIndex="13" xmlTag="pricej" dataType="N" rounding="false" setDefaultOnEmpty="true" 
+				updatableFlag="true" tableName="catalog_item_price"	maxValue="9999999999.99"  toolTip="Price J"/>	
+			<mx:HBox horizontalGap="0">
+				<mx:Label text="(" width="8" />
+				<mx:Label id="markupj" width="37"  textAlign="center"/>	
+				<mx:Label text="% discount )" width="100" />
+			</mx:HBox>	
+				
+		</mx:HBox>
+		
+		<mx:HBox>
+			<mx:Label text="Disc(%)" width="95" textAlign="right" />
+			<customcomponents:GenTextInput id="tiDiscount_per" height="20" width="110" textAlign="right" defaultValue = '0.00'
+				tabIndex="14" xmlTag="discount_per" dataType="N" rounding="false" setDefaultOnEmpty="true" 
+				itemChangedEvent="dis_perchange()" updatableFlag="true" tableName="catalog_item_price"
+				maxValue="9999.99" validationFlag="true" toolTip="Disc(%)"/>
+						
+			
+			<mx:Label text="Disc. Amt" width="95" textAlign="right"/>
+			<customcomponents:GenTextInput id="tiDiscount_amt"  height="20" textAlign="right"
+				updatableFlag="true" width="110" tabIndex="15" xmlTag="discount_amt" defaultValue = '0.00'
+				itemChangedEvent="dis_amtchange()" tableName="catalog_item_price"
+				dataType="N" rounding="true" setDefaultOnEmpty="true"
+				maxValue="9999999999.99" validationFlag="true" toolTip="Disc. Amt"/>				
+		</mx:HBox>
+	
+		<mx:HBox height="0" width="0" visible="false" >
+			<mx:Label text="Status" width="95" textAlign="right"/>
+			<customcomponents:GenComboBox id="cbTrans_flag" defaultValue="A" width="110" cornerRadius="0" xmlTag="trans_flag" updatableFlag="true"
+				tableName="catalog_item_price"  tabIndex="6"  labelField="label" 
+				dataProvider="{__genModel.masterData.child('trans_flag').trans_flag}" />
+		</mx:HBox>
+	
+		<customcomponents:GenTextInput id="tiSerial_no" width="0" height="0" visible="false"
+			editable="true" enabled="true" xmlTag="serial_no" updatableFlag="true"
+			tableName="catalog_item_price" defaultValue=""  maxChars="4" toolTip="Serial #" />
+	
+	</mx:VBox>
+</gencomponents:DetailAddEdit>

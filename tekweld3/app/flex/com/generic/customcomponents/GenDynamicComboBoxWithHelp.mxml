@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:HBox xmlns:mx="http://www.adobe.com/2006/mxml" xmlns:customcomponents="com.generic.customcomponents.*"
+	width="100%" height="100%" verticalAlign="middle"  horizontalGap="2"
+	paddingLeft="0" paddingRight="0" paddingTop="0" paddingBottom="0" letterSpacing="0"  verticalGap="0"
+	cornerRadius="0" creationPolicy="all"  creationComplete="handleCreationComplete()">
+
+	<mx:Metadata>
+		[Event(name="itemSelectedEvent", type="com.generic.events.GenDynamicComboBoxWithHelpEvent")]
+		[Event(name="itemChangedEvent", type="com.generic.events.GenDynamicComboBoxEvent")]
+		[Event(name="refreshCompleteEvent", type="com.generic.events.GenDynamicComboBoxWithHelpEvent")]
+		[Event(name="refreshEvent", type="com.generic.events.GenDynamicComboBoxWithHelpEvent")]
+	</mx:Metadata>
+
+	<mx:Script source="../scripts/GenDynamicComboBoxWithHelpScript.as"/>
+	
+	<customcomponents:GenDynamicComboBox 
+		id="dcb"
+		tabIndex="{this.tabIndex}"
+		width="{width - 16}"
+		height="{height}"
+		dataProvider="{_dataProvider}"		
+		dataType="{_dataType}"
+		defaultValue="{_defaultValue}"
+		xmlTag="{_xmlTag}"
+		validationFlag="{_validationFlag}"
+		updatableFlag="{_updatableFlag}"
+		tableName="{_tableName}"
+		dataField="{_dataField}"
+		validateData="{_validateData}"
+		filterEnabled="{_filterEnabled}"
+		filterKeyName="{_filterKeyName}"
+		enabled="{this.enabled}"
+		recordStatusEnabled="{_recordStatusEnabled}"
+		viewOnlyFlag="{_viewOnlyFlag}"
+		keyColumn="{_keyColumn}"
+		initialEditableFlag="{_initialEditableFlag}"
+		labelField="{_labelField}"
+		toolTip="{toolTip}"	/>
+	
+	<mx:HBox borderThickness="0" borderStyle="none" horizontalGap="0">
+		<mx:LinkButton	id="btn" width="0" label="" cornerRadius="0" height="0" click="handleBtnClick()"
+			icon="@Embed('../assets/referesh_comp.png')" toolTip="Refresh" visible="false" textAlign="center"/>
+		<mx:LinkButton id="btnLookup" width="14" label="" cornerRadius="0" height="16" click="handleLookupClick()"
+			icon="@Embed('../assets/lookup_help.png')" toolTip="Lookup" visible="true" textAlign="center"/>
+	</mx:HBox>						
+</mx:HBox>

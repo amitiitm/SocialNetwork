@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<s:MXDataGridItemRenderer xmlns:fx="http://ns.adobe.com/mxml/2009" 
+						  xmlns:s="library://ns.adobe.com/flex/spark" 
+						  xmlns:mx="library://ns.adobe.com/flex/mx" 
+						  focusEnabled="true">
+
+	<fx:Script>
+		<![CDATA[
+			import mx.controls.Alert;
+			import mx.events.ListEvent;
+			
+			import saoi.muduleclasses.CommonArtworkXml;
+			
+			public var updated_value:String='';  
+			
+			protected function cbArtworkType_changeHandler(event:ListEvent=null):void
+			{
+				if(cbArtworkType.text != '' || cbArtworkType.text != null)
+				{
+					updated_value = cbArtworkType.text	
+				}
+				else
+				{
+					updated_value = '';
+				}
+			}
+			
+			override public function set data(value:Object):void
+			{
+				cbArtworkType.text = value.attachment_type;
+				updated_value = cbArtworkType.text;
+			}
+		]]>
+	</fx:Script>
+	
+	<mx:ComboBox id="cbArtworkType" selectedIndex="-1" dataProvider="{new CommonArtworkXml().getArtworkList('orderreceive')}"
+		change="cbArtworkType_changeHandler(event)" />
+	
+</s:MXDataGridItemRenderer>

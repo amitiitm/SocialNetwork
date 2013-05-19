@@ -1,0 +1,22 @@
+<columns  lockedColumnCount='0'>
+	
+	<column data='serial_no'				label='Serial #'			editable='false'	visible='true'	width='80'	textAlign='left'	forLevel='false'
+			defaultForLevel=''				booleanFlag='false'			sortDataType='N'/>
+
+	<column data='gold_weight'		label='Gold Wt'				editable='false' 	visible='true' 	width='80'	textAlign='right'
+			dataType='N'			componentType="Text" 
+			validationFlag="false" 	negativeFlag="false" 		rounding="false" 	maxValue="99999.99999" />
+
+	<column data='total_pcs'		label='Total Pcs'			editable='false' 	visible='true' 	width='80'	textAlign='right'
+			dataType='N'			componentType="Text" 
+			validationFlag="false" 	negativeFlag="false" 		rounding="false" 	maxValue="99999" />
+
+	<column data='gold_per'			label='Gold %'				editable='false' 	visible='true' 	width='80'	textAlign='right'
+			dataType='N'			componentType="Text" 
+			validationFlag="false" 	negativeFlag="false" 		rounding="false" 	maxValue="999.99" />
+
+	<column data='description'		label='Description'			editable='false'		visible='true'	width='120'	textAlign='left'
+			dataType='S'			componentType="Text"
+			 />
+
+</columns> 

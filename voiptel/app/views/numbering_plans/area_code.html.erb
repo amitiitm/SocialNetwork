@@ -1,0 +1,15 @@
+<h1>Area Codes for <%= @country %></h1>
+<table cellspacing="0">
+	<th>#</th>
+  <th>City</th>
+	<th>CNS</th>	
+	<% counter = 0%>
+  <% for np in @area_codes do %>
+	<% counter += 1 %>
+  	<tr>
+			<td> <%= counter %></td>
+			<td><%= np.location %></td>
+			<td><%= np.cns %></td>
+		</tr>
+  <%  end %>
+</table>

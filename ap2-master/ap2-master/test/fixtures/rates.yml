@@ -1,0 +1,45 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  prefix: MyString
+  prefix_length: 1
+  desc: MyString
+  carrier_desc: MyString
+  buy: 9.99
+  sell: 9.99
+  rate_group_id: 1
+  rate_sheet_id: 1
+  trunk_id: 1
+  carrier_id: 1
+  country_id: 1
+  custom: false
+  freq: 1
+  publish: false
+  priority: 1
+  cli: false
+  quality: 1
+  status: 1
+  price_diff: 9.99
+  phone_type: 1
+
+two:
+  prefix: MyString
+  prefix_length: 1
+  desc: MyString
+  carrier_desc: MyString
+  buy: 9.99
+  sell: 9.99
+  rate_group_id: 1
+  rate_sheet_id: 1
+  trunk_id: 1
+  carrier_id: 1
+  country_id: 1
+  custom: false
+  freq: 1
+  publish: false
+  priority: 1
+  cli: false
+  quality: 1
+  status: 1
+  price_diff: 9.99
+  phone_type: 1

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<gencomponents:AddEdit xmlns:mx="http://www.adobe.com/2006/mxml" 
+	height="100%" width="100%" verticalGap="0"
+	xmlns:customcomponents="com.generic.customcomponents.*"
+	xmlns:gencomponents="com.generic.components.*" 
+	creationPolicy="all" >
+	
+	<mx:Script source="../scripts/ItemUploadAddEditScript.as"/>
+	
+	<mx:HBox height="0" width="0" visible="false">
+		<customcomponents:GenTextInput id="tiDummy"  width="0" height="0" visible="false" xmlTag="item" 
+			updatableFlag="false" tableName="item" 
+			validationFlag="false"  fontSize="9"/>	
+	</mx:HBox>
+	<mx:HBox width="100%">
+			<mx:Label width="95" text="Upload Items" textAlign="right"/>
+   			<customcomponents:GenTextInput id="tiFileName"  width="150" 
+				xmlTag="file_name" updatableFlag="true" tableName="item" />
+			<customcomponents:GenUploadButton id="btnBrowse_Xls" 
+				label="..." toolTip="Import Items" width="40" height="20" tabIndex="2"
+				uploadServiceID="itemUploadUrl" tableName="catalog_items"
+				fileTitle="Import Items" fileTypes="*.xls,*.xlsx" uploadFileNameSetEvent="handleUploadEvent(event)" 
+				downloadCompleteEvent="handleDownloadCompleteEvent(event)"/>
+			<mx:VRule width="20" height="0" />
+			<mx:LinkButton id="lbSampleXLS" label="Sample/Download Excel format" click="handleSampleXLS()" color="#0000FF" />
+	</mx:HBox>
+	
+	
+	<customcomponents:GenDataGrid id="dtlLine"
+			updatableFlag="true"
+			rootNode="catalog_items"
+			formatServiceID="itemDetailFormat"
+			height="100%" width="100%"
+			visible="true"
+			/>	
+	
+</gencomponents:AddEdit>

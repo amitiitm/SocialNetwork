@@ -1,0 +1,651 @@
+<?xml version="1.0" encoding="UTF-8"?><xsl:transform version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:j4lext="xalan://com.java4less.xreport.fop.XLSTExtension" extension-element-prefixes="j4lext"  >
+<xsl:template match="/"><fo:root xmlns:fo="http://www.w3.org/1999/XSL/Format">
+<fo:layout-master-set>
+<fo:simple-page-master master-name="master1" page-width="21.0cm" page-height="29.7cm" margin-top="1.0cm"   margin-bottom="1.0cm" margin-left="1.5cm"  margin-right="1.5cm"  > 
+  <fo:region-body   margin-top="1.49cm"/> 
+  <fo:region-before extent="1.49cm"/> 
+  <fo:region-after  extent="0.0cm"/> 
+  </fo:simple-page-master>
+</fo:layout-master-set>
+<fo:page-sequence master-reference="master1">
+<fo:static-content flow-name="xsl-region-before">
+
+	<fo:table width="18cm"  border-color="#FFFFFF" border-style="solid" border-width="medium" >
+		
+		<fo:table-column column-width="9cm"/>
+		
+		<fo:table-column column-width="9cm"/>
+
+
+		<fo:table-body>
+			    <fo:table-row   background-color="#ffffff" height="0.49cm">
+	
+      			
+
+			       <fo:table-cell  wrap-option="no-wrap"  border-color="#FFFFFF" border-style="solid" border-width="medium" number-columns-spanned="1" >
+				      <fo:block-container overflow="hidden" > <fo:block   margin-left="0.0cm" margin-right="0.0cm"   margin-top="0.0cm"  font-size="10pt"  font-family="SansSerif" font-style="bold"  color="#000000"  text-align="left"><xsl:value-of select="rows/report_properties/company_name"></xsl:value-of></fo:block></fo:block-container>
+
+				</fo:table-cell>
+       
+				
+				 <fo:table-cell  wrap-option="no-wrap"  border-color="#FFFFFF" border-style="solid" border-width="medium"  number-columns-spanned="1">
+				      <fo:block-container overflow="hidden" > <fo:block   margin-left="0.0cm" margin-right="0.0cm"  margin-top="0.0cm"  font-size="10pt"  font-family="SansSerif"  font-style="bold"  color="#000000"  text-align="left"><xsl:value-of select="concat('Run Date   ',/rows/report_properties/report_date)"></xsl:value-of></fo:block></fo:block-container>
+		        	</fo:table-cell>
+
+			</fo:table-row>	
+			<fo:table-row   background-color="#ffffff" height="0.49cm">
+				
+				<fo:table-cell  wrap-option="no-wrap"  border-color="#FFFFFF" border-style="solid" border-width="medium"  number-columns-spanned="1">
+			      	<fo:block-container overflow="hidden" > <fo:block   margin-left="0.0cm" margin-right="0.0cm"   margin-top="0.0cm"  font-size="10pt"  font-family="SansSerif" font-style="bold"  color="#000000"  text-align="left"><xsl:value-of select="rows/report_properties/store_name"></xsl:value-of></fo:block></fo:block-container>
+
+		        	</fo:table-cell>
+			      <fo:table-cell  wrap-option="no-wrap"  border-color="#FFFFFF" border-style="solid" border-width="medium"  number-columns-spanned="1">
+				      <fo:block-container overflow="hidden" > <fo:block   margin-left="0.0cm" margin-right="0.0cm"  margin-top="0.0cm"  font-size="10pt"  font-family="SansSerif"  font-style="bold"  color="#000000"  text-align="left">Page <fo:page-number />of <fo:page-number-citation  ref-id="theEnd" /></fo:block></fo:block-container>
+			      </fo:table-cell>
+
+
+			</fo:table-row>
+			<fo:table-row   background-color="#ffffff" height="0.49cm">
+
+
+				 <fo:table-cell  wrap-option="no-wrap"  border-color="#FFFFFF" border-style="solid" border-width="medium"  number-columns-spanned="1">
+     					 <fo:block-container overflow="hidden" > <fo:block   margin-left="0.0cm" margin-right="0.0cm"  margin-top="0.0cm"  font-size="10pt"  font-family="SansSerif"  font-style="bold"  color="#000000"  text-align="left"><xsl:value-of select="concat(/rows/report_properties/report_name,'   ',/rows/report_properties/layout_name)"></xsl:value-of></fo:block></fo:block-container>
+       			 </fo:table-cell>
+       
+				 <fo:table-cell  wrap-option="no-wrap"  border-color="#FFFFFF" border-style="solid" border-width="medium"  number-columns-spanned="1">
+     					 <fo:block-container overflow="hidden" > <fo:block   margin-left="0.0cm" margin-right="0.0cm"  margin-top="0.0cm"  font-size="10pt"  font-family="SansSerif"  font-style="bold"  color="#000000"  text-align="left"><xsl:value-of select="rows/report_properties/report_code"></xsl:value-of></fo:block></fo:block-container>
+        			</fo:table-cell>
+
+	
+        		</fo:table-row>
+
+		   
+         	</fo:table-body>
+
+	</fo:table>
+</fo:static-content>
+<fo:static-content flow-name="xsl-region-after">
+<fo:table width="18.0cm"  >
+  <fo:table-column column-width="18.0cm"/>
+  <fo:table-body>
+    <fo:table-row   background-color="#ffffff" height="0.0cm">
+      <fo:table-cell  wrap-option="no-wrap"><fo:table>
+      <fo:table-column column-width="18.0cm"/>
+      <fo:table-body>
+      <fo:table-row  background-color="#ffffff" height="0.0cm">
+        <fo:table-cell  wrap-option="no-wrap"   number-columns-spanned="1">
+        <fo:block-container overflow="hidden" > <fo:block></fo:block></fo:block-container>        </fo:table-cell>
+    </fo:table-row>
+    </fo:table-body>
+    </fo:table></fo:table-cell>
+    </fo:table-row>
+  </fo:table-body>
+</fo:table>
+</fo:static-content>
+<fo:flow flow-name="xsl-region-body"> 
+
+<!-- START Area Header -->
+<fo:table width="18.0cm"  >
+  <fo:table-column column-width="18.0cm"/>
+  <fo:table-body>
+    <fo:table-row   background-color="#ffffff" height="0.0cm">
+      <fo:table-cell  wrap-option="no-wrap"><fo:table>
+      <fo:table-column column-width="18.0cm"/>
+      <fo:table-body>
+      <fo:table-row  background-color="#ffffff" height="0.0cm">
+        <fo:table-cell  wrap-option="no-wrap"   number-columns-spanned="1">
+        <fo:block-container overflow="hidden" > <fo:block></fo:block></fo:block-container>        </fo:table-cell>
+    </fo:table-row>
+    </fo:table-body>
+    </fo:table></fo:table-cell>
+    </fo:table-row>
+<fo:table-row>
+<fo:table-cell  wrap-option="no-wrap" number-columns-spanned="1">
+<fo:block-container overflow="hidden" > <fo:block>
+
+<!-- START Area Detail -->
+<xsl:if test="count(rows/details/detail) &gt; 0" >
+<fo:table width="18.0cm"  border-color="#FFFFFF" border-style="solid" border-width="medium" >
+ 	<xsl:variable name="col1" select="/rows/column_properties/column1/width"/>
+	<xsl:variable name="col2" select="/rows/column_properties/column2/width"/>
+	<xsl:variable name="col3" select="/rows/column_properties/column3/width"/>
+	<xsl:variable name="col4" select="/rows/column_properties/column4/width"/>
+	<xsl:variable name="col5" select="/rows/column_properties/column5/width"/>
+	<xsl:variable name="col6" select="/rows/column_properties/column6/width"/> 	
+	<xsl:variable name="col7" select="/rows/column_properties/column7/width"/>
+	<xsl:variable name="col8" select="/rows/column_properties/column8/width"/>
+	<xsl:variable name="col9" select="/rows/column_properties/column9/width"/>
+
+	<xsl:variable name="col10" select="/rows/column_properties/column10/width"/>
+	<xsl:variable name="col11" select="/rows/column_properties/column11/width"/>
+	<xsl:variable name="col12" select="/rows/column_properties/column12/width"/> 	
+	<xsl:variable name="col13" select="/rows/column_properties/column13/width"/>
+	<xsl:variable name="col14" select="/rows/column_properties/column14/width"/>
+	<xsl:variable name="col15" select="/rows/column_properties/column15/width"/>
+	<xsl:variable name="col16" select="/rows/column_properties/column16/width"/>
+	<xsl:variable name="col17" select="/rows/column_properties/column17/width"/>
+	<xsl:variable name="col18" select="/rows/column_properties/column18/width"/>
+	<xsl:variable name="col19" select="/rows/column_properties/column19/width"/>
+
+	<xsl:variable name="col20" select="/rows/column_properties/column20/width"/>
+	<xsl:variable name="col21" select="/rows/column_properties/column21/width"/>
+	<xsl:variable name="col22" select="/rows/column_properties/column22/width"/>
+	<xsl:variable name="col23" select="/rows/column_properties/column23/width"/>
+	<xsl:variable name="col24" select="/rows/column_properties/column24/width"/> 	
+	<xsl:variable name="col25" select="/rows/column_properties/column25/width"/>
+	<xsl:variable name="col26" select="/rows/column_properties/column26/width"/>
+	<xsl:variable name="col27" select="/rows/column_properties/column27/width"/>
+	<xsl:variable name="col28" select="/rows/column_properties/column28/width"/>
+	<xsl:variable name="col29" select="/rows/column_properties/column29/width"/>
+
+	<xsl:variable name="col30" select="/rows/column_properties/column30/width"/> 	
+	<xsl:variable name="col31" select="/rows/column_properties/column31/width"/>
+	<xsl:variable name="col32" select="/rows/column_properties/column32/width"/>
+	<xsl:variable name="col33" select="/rows/column_properties/column33/width"/>
+	<xsl:variable name="col34" select="/rows/column_properties/column34/width"/>
+	<xsl:variable name="col35" select="/rows/column_properties/column35/width"/>
+	<xsl:variable name="col36" select="/rows/column_properties/column36/width"/>
+	<xsl:variable name="col37" select="/rows/column_properties/column37/width"/>
+	<xsl:variable name="col38" select="/rows/column_properties/column38/width"/>
+	<xsl:variable name="col39" select="/rows/column_properties/column39/width"/>
+
+	<xsl:variable name="col40" select="/rows/column_properties/column40/width"/>
+	<xsl:variable name="col41" select="/rows/column_properties/column41/width"/>
+	<xsl:variable name="col42" select="/rows/column_properties/column42/width"/> 	
+	<xsl:variable name="col43" select="/rows/column_properties/column43/width"/>
+	<xsl:variable name="col44" select="/rows/column_properties/column44/width"/>
+	<xsl:variable name="col45" select="/rows/column_properties/column45/width"/>
+	<xsl:variable name="col46" select="/rows/column_properties/column48/width"/>
+	<xsl:variable name="col47" select="/rows/column_properties/column47/width"/>
+	<xsl:variable name="col48" select="/rows/column_properties/column48/width"/>
+	<xsl:variable name="col49" select="/rows/column_properties/column49/width"/>
+	<xsl:variable name="col50" select="/rows/column_properties/column50/width"/>
+
+
+	<xsl:variable name="alignment1" select="/rows/column_properties/column1/alignment"/>
+	<xsl:variable name="alignment2" select="/rows/column_properties/column2/alignment"/>
+	<xsl:variable name="alignment3" select="/rows/column_properties/column3/alignment"/>
+	<xsl:variable name="alignment4" select="/rows/column_properties/column4/alignment"/>
+	<xsl:variable name="alignment5" select="/rows/column_properties/column5/alignment"/>
+	<xsl:variable name="alignment6" select="/rows/column_properties/column6/alignment"/>
+	<xsl:variable name="alignment7" select="/rows/column_properties/column7/alignment"/>
+	<xsl:variable name="alignment8" select="/rows/column_properties/column8/alignment"/>
+	<xsl:variable name="alignment9" select="/rows/column_properties/column9/alignment"/>
+	<xsl:variable name="alignment10" select="/rows/column_properties/column10/alignment"/>
+
+	<xsl:variable name="alignment11" select="/rows/column_properties/column11/alignment"/>
+	<xsl:variable name="alignment12" select="/rows/column_properties/column12/alignment"/>
+	<xsl:variable name="alignment13" select="/rows/column_properties/column13/alignment"/>
+	<xsl:variable name="alignment14" select="/rows/column_properties/column14/alignment"/>
+	<xsl:variable name="alignment15" select="/rows/column_properties/column15/alignment"/>
+	<xsl:variable name="alignment16" select="/rows/column_properties/column16/alignment"/>
+	<xsl:variable name="alignment17" select="/rows/column_properties/column17/alignment"/>
+	<xsl:variable name="alignment18" select="/rows/column_properties/column18/alignment"/>
+	<xsl:variable name="alignment19" select="/rows/column_properties/column19/alignment"/>
+	<xsl:variable name="alignment20" select="/rows/column_properties/column20/alignment"/>
+
+<xsl:variable name="alignment21" select="/rows/column_properties/column21/alignment"/>
+<xsl:variable name="alignment22" select="/rows/column_properties/column22/alignment"/>
+<xsl:variable name="alignment23" select="/rows/column_properties/column23/alignment"/>
+<xsl:variable name="alignment24" select="/rows/column_properties/column24/alignment"/>
+<xsl:variable name="alignment25" select="/rows/column_properties/column25/alignment"/>
+<xsl:variable name="alignment26" select="/rows/column_properties/column26/alignment"/>
+<xsl:variable name="alignment27" select="/rows/column_properties/column27/alignment"/>
+<xsl:variable name="alignment28" select="/rows/column_properties/column28/alignment"/>
+<xsl:variable name="alignment29" select="/rows/column_properties/column29/alignment"/>
+<xsl:variable name="alignment30" select="/rows/column_properties/column30/alignment"/>
+
+<xsl:variable name="alignment31" select="/rows/column_properties/column31/alignment"/>
+<xsl:variable name="alignment32" select="/rows/column_properties/column32/alignment"/>
+<xsl:variable name="alignment33" select="/rows/column_properties/column33/alignment"/>
+<xsl:variable name="alignment34" select="/rows/column_properties/column34/alignment"/>
+<xsl:variable name="alignment35" select="/rows/column_properties/column35/alignment"/>
+<xsl:variable name="alignment36" select="/rows/column_properties/column36/alignment"/>
+<xsl:variable name="alignment37" select="/rows/column_properties/column37/alignment"/>
+<xsl:variable name="alignment38" select="/rows/column_properties/column38/alignment"/>
+<xsl:variable name="alignment39" select="/rows/column_properties/column39/alignment"/>
+<xsl:variable name="alignment40" select="/rows/column_properties/column40/alignment"/>
+
+<xsl:variable name="alignment41" select="/rows/column_properties/column41/alignment"/>
+<xsl:variable name="alignment42" select="/rows/column_properties/column42/alignment"/>
+<xsl:variable name="alignment43" select="/rows/column_properties/column43/alignment"/>
+<xsl:variable name="alignment44" select="/rows/column_properties/column44/alignment"/>
+<xsl:variable name="alignment45" select="/rows/column_properties/column45/alignment"/>
+<xsl:variable name="alignment46" select="/rows/column_properties/column46/alignment"/>
+<xsl:variable name="alignment47" select="/rows/column_properties/column47/alignment"/>
+<xsl:variable name="alignment48" select="/rows/column_properties/column48/alignment"/>
+<xsl:variable name="alignment49" select="/rows/column_properties/column49/alignment"/>
+<xsl:variable name="alignment50" select="/rows/column_properties/column50/alignment"/>
+
+	<fo:table-column column-width="{$col1}"/>
+ 	<fo:table-column column-width="{$col2}"/>
+	<fo:table-column column-width="{$col3}"/>
+	<fo:table-column column-width="{$col4}"/>
+	<fo:table-column column-width="{$col5}"/>
+	<fo:table-column column-width="{$col6}"/>
+	<fo:table-column column-width="{$col7}"/>
+ 	<fo:table-column column-width="{$col8}"/>
+	<fo:table-column column-width="{$col9}"/>
+
+	<fo:table-column column-width="{$col10}"/>
+	<fo:table-column column-width="{$col11}"/>
+	<fo:table-column column-width="{$col12}"/>
+	<fo:table-column column-width="{$col13}"/>
+ 	<fo:table-column column-width="{$col14}"/>
+	<fo:table-column column-width="{$col15}"/>
+	<fo:table-column column-width="{$col16}"/>
+	<fo:table-column column-width="{$col17}"/>
+	<fo:table-column column-width="{$col18}"/>
+	<fo:table-column column-width="{$col19}"/>
+
+ 	<fo:table-column column-width="{$col20}"/>
+	<fo:table-column column-width="{$col21}"/>
+	<fo:table-column column-width="{$col22}"/>
+	<fo:table-column column-width="{$col23}"/>
+	<fo:table-column column-width="{$col24}"/>
+	<fo:table-column column-width="{$col25}"/>
+ 	<fo:table-column column-width="{$col26}"/>
+	<fo:table-column column-width="{$col27}"/>
+	<fo:table-column column-width="{$col28}"/>
+	<fo:table-column column-width="{$col29}"/>
+
+	<fo:table-column column-width="{$col30}"/>
+	<fo:table-column column-width="{$col31}"/>
+	<fo:table-column column-width="{$col32}"/>
+	<fo:table-column column-width="{$col33}"/>
+	<fo:table-column column-width="{$col34}"/>
+	<fo:table-column column-width="{$col35}"/>
+	<fo:table-column column-width="{$col36}"/>
+	<fo:table-column column-width="{$col37}"/>
+	<fo:table-column column-width="{$col38}"/>
+	<fo:table-column column-width="{$col39}"/>
+
+	<fo:table-column column-width="{$col40}"/>
+	<fo:table-column column-width="{$col41}"/>
+	<fo:table-column column-width="{$col42}"/>
+	<fo:table-column column-width="{$col43}"/>
+	<fo:table-column column-width="{$col44}"/>
+	<fo:table-column column-width="{$col45}"/>
+	<fo:table-column column-width="{$col46}"/>
+	<fo:table-column column-width="{$col47}"/>
+	<fo:table-column column-width="{$col48}"/>
+	<fo:table-column column-width="{$col49}"/>
+
+	<fo:table-column column-width="{$col50}"/>
+  <fo:table-header>
+ 
+	<fo:table-row   background-color="#ffffff" height="0.35cm">
+       
+        <fo:table-cell  wrap-option="no-wrap"  border-color="#FFFFFF" border-style="solid" border-width="medium"  number-columns-spanned="50">
+      <fo:block-container overflow="hidden" > <fo:block margin-left="0.0cm" margin-right="0.0cm"  margin-top="0.0cm" ><fo:leader leader-pattern="rule"  color="#000000"  rule-thickness="1.0pt"  rule-style="solid"  leader-length="100%"/></fo:block></fo:block-container>
+        </fo:table-cell>
+    </fo:table-row>
+
+ <fo:table-row   background-color="#ffffff" height="0.54cm">
+        <fo:table-cell  wrap-option="no-wrap"  border-color="#FFFFFF" border-style="solid" border-width="medium"  number-columns-spanned="1">
+      <fo:block-container overflow="hidden" > <fo:block   margin-left="0.0cm" margin-right="0.0cm"  margin-top="0.0cm"  font-size="10pt"  font-family="SansSerif"  color="#000000"  text-align="{$alignment1}"><xsl:value-of select="/rows/column_properties/column1/name"></xsl:value-of></fo:block></fo:block-container>
+        </fo:table-cell>
+        <fo:table-cell  wrap-option="no-wrap"  border-color="#FFFFFF" border-style="solid" border-width="medium"  number-columns-spanned="1">
+      <fo:block-container overflow="hidden" > <fo:block   margin-left="0.0cm" margin-right="0.0cm"  margin-top="0.0cm"  font-size="10pt"  font-family="SansSerif"  color="#000000"  text-align="{$alignment2}"><xsl:value-of select="/rows/column_properties/column2/name"></xsl:value-of></fo:block></fo:block-container>
+        </fo:table-cell>
+        <fo:table-cell  wrap-option="no-wrap"  border-color="#FFFFFF" border-style="solid" border-width="medium"  number-columns-spanned="1">
+      <fo:block-container overflow="hidden" > <fo:block   margin-left="0.0cm" margin-right="0.0cm"  margin-top="0.0cm"  font-size="10pt"  font-family="SansSerif"  color="#000000"  text-align="{$alignment3}"><xsl:value-of select="/rows/column_properties/column3/name"></xsl:value-of></fo:block></fo:block-container>
+        </fo:table-cell>
+        <fo:table-cell  wrap-option="no-wrap"  border-color="#FFFFFF" border-style="solid" border-width="medium"  number-columns-spanned="1">
+      <fo:block-container overflow="hidden" > <fo:block   margin-left="0.0cm" margin-right="0.0cm"  margin-top="0.0cm"  font-size="10pt"  font-family="SansSerif"  color="#000000"  text-align="{$alignment4}"><xsl:value-of select="/rows/column_properties/column4/name"></xsl:value-of></fo:block></fo:block-container>
+        </fo:table-cell>
+        <fo:table-cell  wrap-option="no-wrap"  border-color="#FFFFFF" border-style="solid" border-width="medium"  number-columns-spanned="1">
+      <fo:block-container overflow="hidden" > <fo:block   margin-left="0.0cm" margin-right="0.0cm"  margin-top="0.0cm"  font-size="10pt"  font-family="SansSerif"  color="#000000"  text-align="{$alignment5}"><xsl:value-of select="/rows/column_properties/column5/name"></xsl:value-of></fo:block></fo:block-container>
+        </fo:table-cell>
+        <fo:table-cell  wrap-option="no-wrap"  border-color="#FFFFFF" border-style="solid" border-width="medium"  number-columns-spanned="1">
+      <fo:block-container overflow="hidden" > <fo:block   margin-left="0.0cm" margin-right="0.0cm"  margin-top="0.0cm"  font-size="10pt"  font-family="SansSerif"  color="#000000"  text-align="{$alignment6}"><xsl:value-of select="/rows/column_properties/column6/name"></xsl:value-of></fo:block></fo:block-container>
+        </fo:table-cell>
+        <fo:table-cell  wrap-option="no-wrap"  border-color="#FFFFFF" border-style="solid" border-width="medium"  number-columns-spanned="1">
+      <fo:block-container overflow="hidden" > <fo:block   margin-left="0.0cm" margin-right="0.0cm"  margin-top="0.0cm"  font-size="10pt"  font-family="SansSerif"  color="#000000"  text-align="{$alignment7}"><xsl:value-of select="/rows/column_properties/column7/name"></xsl:value-of></fo:block></fo:block-container>
+        </fo:table-cell>
+        <fo:table-cell  wrap-option="no-wrap"  border-color="#FFFFFF" border-style="solid" border-width="medium"  number-columns-spanned="1">
+      <fo:block-container overflow="hidden" > <fo:block   margin-left="0.0cm" margin-right="0.0cm"  margin-top="0.0cm"  font-size="10pt"  font-family="SansSerif"  color="#000000"  text-align="{$alignment8}"><xsl:value-of select="/rows/column_properties/column8/name"></xsl:value-of></fo:block></fo:block-container>
+        </fo:table-cell>
+        <fo:table-cell  wrap-option="no-wrap"  border-color="#FFFFFF" border-style="solid" border-width="medium"  number-columns-spanned="1">
+      <fo:block-container overflow="hidden" > <fo:block   margin-left="0.0cm" margin-right="0.0cm"  margin-top="0.0cm"  font-size="10pt"  font-family="SansSerif"  color="#000000"  text-align="{$alignment9}"><xsl:value-of select="/rows/column_properties/column9/name"></xsl:value-of></fo:block></fo:block-container>
+        </fo:table-cell>
+        <fo:table-cell  wrap-option="no-wrap"  border-color="#FFFFFF" border-style="solid" border-width="medium"  number-columns-spanned="1">
+      <fo:block-container overflow="hidden" > <fo:block   margin-left="0.0cm" margin-right="0.0cm"  margin-top="0.0cm"  font-size="10pt"  font-family="SansSerif"  color="#000000"  text-align="{$alignment10}"><xsl:value-of select="/rows/column_properties/column10/name"></xsl:value-of></fo:block></fo:block-container>
+        </fo:table-cell>
+        <fo:table-cell  wrap-option="no-wrap"  border-color="#FFFFFF" border-style="solid" border-width="medium"  number-columns-spanned="1">
+      <fo:block-container overflow="hidden" > <fo:block   margin-left="0.0cm" margin-right="0.0cm"  margin-top="0.0cm"  font-size="10pt"  font-family="SansSerif"  color="#000000"  text-align="{$alignment11}"><xsl:value-of select="/rows/column_properties/column11/name"></xsl:value-of></fo:block></fo:block-container>
+        </fo:table-cell>
+        <fo:table-cell  wrap-option="no-wrap"  border-color="#FFFFFF" border-style="solid" border-width="medium"  number-columns-spanned="1">
+      <fo:block-container overflow="hidden" > <fo:block   margin-left="0.0cm" margin-right="0.0cm"  margin-top="0.0cm"  font-size="10pt"  font-family="SansSerif"  color="#000000"  text-align="{$alignment12}"><xsl:value-of select="/rows/column_properties/column12/name"></xsl:value-of></fo:block></fo:block-container>
+        </fo:table-cell>
+        <fo:table-cell  wrap-option="no-wrap"  border-color="#FFFFFF" border-style="solid" border-width="medium"  number-columns-spanned="1">
+      <fo:block-container overflow="hidden" > <fo:block   margin-left="0.0cm" margin-right="0.0cm"  margin-top="0.0cm"  font-size="10pt"  font-family="SansSerif"  color="#000000"  text-align="{$alignment13}"><xsl:value-of select="/rows/column_properties/column13/name"></xsl:value-of></fo:block></fo:block-container>
+        </fo:table-cell>
+        <fo:table-cell  wrap-option="no-wrap"  border-color="#FFFFFF" border-style="solid" border-width="medium"  number-columns-spanned="1">
+      <fo:block-container overflow="hidden" > <fo:block   margin-left="0.0cm" margin-right="0.0cm"  margin-top="0.0cm"  font-size="10pt"  font-family="SansSerif"  color="#000000"  text-align="{$alignment14}"><xsl:value-of select="/rows/column_properties/column14/name"></xsl:value-of></fo:block></fo:block-container>
+        </fo:table-cell>
+        <fo:table-cell  wrap-option="no-wrap"  border-color="#FFFFFF" border-style="solid" border-width="medium"  number-columns-spanned="1">
+      <fo:block-container overflow="hidden" > <fo:block   margin-left="0.0cm" margin-right="0.0cm"  margin-top="0.0cm"  font-size="10pt"  font-family="SansSerif"  color="#000000"  text-align="{$alignment15}"><xsl:value-of select="/rows/column_properties/column15/name"></xsl:value-of></fo:block></fo:block-container>
+        </fo:table-cell>
+        <fo:table-cell  wrap-option="no-wrap"  border-color="#FFFFFF" border-style="solid" border-width="medium"  number-columns-spanned="1">
+      <fo:block-container overflow="hidden" > <fo:block   margin-left="0.0cm" margin-right="0.0cm"  margin-top="0.0cm"  font-size="10pt"  font-family="SansSerif"  color="#000000"  text-align="{$alignment16}"><xsl:value-of select="/rows/column_properties/column16/name"></xsl:value-of></fo:block></fo:block-container>
+        </fo:table-cell>
+        <fo:table-cell  wrap-option="no-wrap"  border-color="#FFFFFF" border-style="solid" border-width="medium"  number-columns-spanned="1">
+      <fo:block-container overflow="hidden" > <fo:block   margin-left="0.0cm" margin-right="0.0cm"  margin-top="0.0cm"  font-size="10pt"  font-family="SansSerif"  color="#000000"  text-align="{$alignment17}"><xsl:value-of select="/rows/column_properties/column17/name"></xsl:value-of></fo:block></fo:block-container>
+        </fo:table-cell>
+        <fo:table-cell  wrap-option="no-wrap"  border-color="#FFFFFF" border-style="solid" border-width="medium"  number-columns-spanned="1">
+      <fo:block-container overflow="hidden" > <fo:block   margin-left="0.0cm" margin-right="0.0cm"  margin-top="0.0cm"  font-size="10pt"  font-family="SansSerif"  color="#000000"  text-align="{$alignment18}"><xsl:value-of select="/rows/column_properties/column18/name"></xsl:value-of></fo:block></fo:block-container>
+        </fo:table-cell>
+        <fo:table-cell  wrap-option="no-wrap"  border-color="#FFFFFF" border-style="solid" border-width="medium"  number-columns-spanned="1">
+      <fo:block-container overflow="hidden" > <fo:block   margin-left="0.0cm" margin-right="0.03cm"  margin-top="0.0cm"  font-size="10pt"  font-family="SansSerif"  color="#000000"  text-align="{$alignment19}"><xsl:value-of select="/rows/column_properties/column19/name"></xsl:value-of></fo:block></fo:block-container>
+        </fo:table-cell>
+        <fo:table-cell  wrap-option="no-wrap"  border-color="#FFFFFF" border-style="solid" border-width="medium"  number-columns-spanned="1">
+      <fo:block-container overflow="hidden" > <fo:block   margin-left="0.0cm" margin-right="0.0cm"  margin-top="0.0cm"  font-size="10pt"  font-family="SansSerif"  color="#000000"  text-align="{$alignment20}"><xsl:value-of select="/rows/column_properties/column20/name"></xsl:value-of></fo:block></fo:block-container>
+        </fo:table-cell>
+        <fo:table-cell  wrap-option="no-wrap"  border-color="#FFFFFF" border-style="solid" border-width="medium"  number-columns-spanned="1">
+      <fo:block-container overflow="hidden" > <fo:block   margin-left="0.0cm" margin-right="0.0cm"  margin-top="0.0cm"  font-size="10pt"  font-family="SansSerif"  color="#000000"  text-align="{$alignment21}"><xsl:value-of select="/rows/column_properties/column21/name"></xsl:value-of></fo:block></fo:block-container>
+        </fo:table-cell>
+        <fo:table-cell  wrap-option="no-wrap"  border-color="#FFFFFF" border-style="solid" border-width="medium"  number-columns-spanned="1">
+      <fo:block-container overflow="hidden" > <fo:block   margin-left="0.0cm" margin-right="0.0cm"  margin-top="0.0cm"  font-size="10pt"  font-family="SansSerif"  color="#000000"  text-align="{$alignment22}"><xsl:value-of select="/rows/column_properties/column22/name"></xsl:value-of></fo:block></fo:block-container>
+        </fo:table-cell>
+        <fo:table-cell  wrap-option="no-wrap"  border-color="#FFFFFF" border-style="solid" border-width="medium"  number-columns-spanned="1">
+      <fo:block-container overflow="hidden" > <fo:block   margin-left="0.0cm" margin-right="0.0cm"  margin-top="0.0cm"  font-size="10pt"  font-family="SansSerif"  color="#000000"  text-align="{$alignment23}"><xsl:value-of select="/rows/column_properties/column23/name"></xsl:value-of></fo:block></fo:block-container>
+        </fo:table-cell>
+        <fo:table-cell  wrap-option="no-wrap"  border-color="#FFFFFF" border-style="solid" border-width="medium"  number-columns-spanned="1">
+      <fo:block-container overflow="hidden" > <fo:block   margin-left="0.0cm" margin-right="0.0cm"  margin-top="0.0cm"  font-size="10pt"  font-family="SansSerif"  color="#000000"  text-align="{$alignment24}"><xsl:value-of select="/rows/column_properties/column24/name"></xsl:value-of></fo:block></fo:block-container>
+        </fo:table-cell>
+        <fo:table-cell  wrap-option="no-wrap"  border-color="#FFFFFF" border-style="solid" border-width="medium"  number-columns-spanned="1">
+      <fo:block-container overflow="hidden" > <fo:block   margin-left="0.0cm" margin-right="0.0cm"  margin-top="0.0cm"  font-size="10pt"  font-family="SansSerif"  color="#000000"  text-align="{$alignment25}"><xsl:value-of select="/rows/column_properties/column25/name"></xsl:value-of></fo:block></fo:block-container>
+        </fo:table-cell>
+        <fo:table-cell  wrap-option="no-wrap"  border-color="#FFFFFF" border-style="solid" border-width="medium"  number-columns-spanned="1">
+      <fo:block-container overflow="hidden" > <fo:block   margin-left="0.0cm" margin-right="0.0cm"  margin-top="0.0cm"  font-size="10pt"  font-family="SansSerif"  color="#000000"  text-align="{$alignment26}"><xsl:value-of select="/rows/column_properties/column26/name"></xsl:value-of></fo:block></fo:block-container>
+        </fo:table-cell>
+        <fo:table-cell  wrap-option="no-wrap"  border-color="#FFFFFF" border-style="solid" border-width="medium"  number-columns-spanned="1">
+      <fo:block-container overflow="hidden" > <fo:block   margin-left="0.0cm" margin-right="0.0cm"  margin-top="0.0cm"  font-size="10pt"  font-family="SansSerif"  color="#000000"  text-align="{$alignment27}"><xsl:value-of select="/rows/column_properties/column27/name"></xsl:value-of></fo:block></fo:block-container>
+        </fo:table-cell>
+        <fo:table-cell  wrap-option="no-wrap"  border-color="#FFFFFF" border-style="solid" border-width="medium"  number-columns-spanned="1">
+      <fo:block-container overflow="hidden" > <fo:block   margin-left="0.0cm" margin-right="0.0cm"  margin-top="0.0cm"  font-size="10pt"  font-family="SansSerif"  color="#000000"  text-align="{$alignment28}"><xsl:value-of select="/rows/column_properties/column28/name"></xsl:value-of></fo:block></fo:block-container>
+        </fo:table-cell>
+        <fo:table-cell  wrap-option="no-wrap"  border-color="#FFFFFF" border-style="solid" border-width="medium"  number-columns-spanned="1">
+      <fo:block-container overflow="hidden" > <fo:block   margin-left="0.0cm" margin-right="0.0cm"  margin-top="0.0cm"  font-size="10pt"  font-family="SansSerif"  color="#000000"  text-align="{$alignment29}"><xsl:value-of select="/rows/column_properties/column29/name"></xsl:value-of></fo:block></fo:block-container>
+        </fo:table-cell>
+        <fo:table-cell  wrap-option="no-wrap"  border-color="#FFFFFF" border-style="solid" border-width="medium"  number-columns-spanned="1">
+      <fo:block-container overflow="hidden" > <fo:block   margin-left="0.0cm" margin-right="0.03cm"  margin-top="0.0cm"  font-size="10pt"  font-family="SansSerif"  color="#000000"  text-align="{$alignment30}"><xsl:value-of select="/rows/column_properties/column30/name"></xsl:value-of></fo:block></fo:block-container>
+        </fo:table-cell>
+        <fo:table-cell  wrap-option="no-wrap"  border-color="#FFFFFF" border-style="solid" border-width="medium"  number-columns-spanned="1">
+      <fo:block-container overflow="hidden" > <fo:block   margin-left="0.0cm" margin-right="0.0cm"  margin-top="0.0cm"  font-size="10pt"  font-family="SansSerif"  color="#000000"  text-align="{$alignment31}"><xsl:value-of select="/rows/column_properties/column31/name"></xsl:value-of></fo:block></fo:block-container>
+        </fo:table-cell>
+        <fo:table-cell  wrap-option="no-wrap"  border-color="#FFFFFF" border-style="solid" border-width="medium"  number-columns-spanned="1">
+      <fo:block-container overflow="hidden" > <fo:block   margin-left="0.0cm" margin-right="0.05cm"  margin-top="0.0cm"  font-size="10pt"  font-family="SansSerif"  color="#000000"  text-align="{$alignment32}"><xsl:value-of select="/rows/column_properties/column32/name"></xsl:value-of></fo:block></fo:block-container>
+        </fo:table-cell>
+        <fo:table-cell  wrap-option="no-wrap"  border-color="#FFFFFF" border-style="solid" border-width="medium"  number-columns-spanned="1">
+      <fo:block-container overflow="hidden" > <fo:block   margin-left="0.0cm" margin-right="0.0cm"  margin-top="0.0cm"  font-size="10pt"  font-family="SansSerif"  color="#000000"  text-align="{$alignment33}"><xsl:value-of select="/rows/column_properties/column33/name"></xsl:value-of></fo:block></fo:block-container>
+        </fo:table-cell>
+        <fo:table-cell  wrap-option="no-wrap"  border-color="#FFFFFF" border-style="solid" border-width="medium"  number-columns-spanned="1">
+      <fo:block-container overflow="hidden" > <fo:block   margin-left="0.0cm" margin-right="0.0cm"  margin-top="0.0cm"  font-size="10pt"  font-family="SansSerif"  color="#000000"  text-align="{$alignment34}"><xsl:value-of select="/rows/column_properties/column34/name"></xsl:value-of></fo:block></fo:block-container>
+        </fo:table-cell>
+        <fo:table-cell  wrap-option="no-wrap"  border-color="#FFFFFF" border-style="solid" border-width="medium"  number-columns-spanned="1">
+      <fo:block-container overflow="hidden" > <fo:block   margin-left="0.0cm" margin-right="0.03cm"  margin-top="0.0cm"  font-size="10pt"  font-family="SansSerif"  color="#000000"  text-align="{$alignment35}"><xsl:value-of select="/rows/column_properties/column35/name"></xsl:value-of></fo:block></fo:block-container>
+        </fo:table-cell>
+        <fo:table-cell  wrap-option="no-wrap"  border-color="#FFFFFF" border-style="solid" border-width="medium"  number-columns-spanned="1">
+      <fo:block-container overflow="hidden" > <fo:block   margin-left="0.0cm" margin-right="0.0cm"  margin-top="0.0cm"  font-size="10pt"  font-family="SansSerif"  color="#000000"  text-align="{$alignment36}"><xsl:value-of select="/rows/column_properties/column36/name"></xsl:value-of></fo:block></fo:block-container>
+        </fo:table-cell>
+        <fo:table-cell  wrap-option="no-wrap"  border-color="#FFFFFF" border-style="solid" border-width="medium"  number-columns-spanned="1">
+      <fo:block-container overflow="hidden" > <fo:block   margin-left="0.0cm" margin-right="0.0cm"  margin-top="0.0cm"  font-size="10pt"  font-family="SansSerif"  color="#000000"  text-align="{$alignment37}"><xsl:value-of select="/rows/column_properties/column37/name"></xsl:value-of></fo:block></fo:block-container>
+        </fo:table-cell>
+        <fo:table-cell  wrap-option="no-wrap"  border-color="#FFFFFF" border-style="solid" border-width="medium"  number-columns-spanned="1">
+      <fo:block-container overflow="hidden" > <fo:block   margin-left="0.0cm" margin-right="0.02cm"  margin-top="0.0cm"  font-size="10pt"  font-family="SansSerif"  color="#000000"  text-align="{$alignment38}"><xsl:value-of select="/rows/column_properties/column38/name"></xsl:value-of></fo:block></fo:block-container>
+        </fo:table-cell>
+        <fo:table-cell  wrap-option="no-wrap"  border-color="#FFFFFF" border-style="solid" border-width="medium"  number-columns-spanned="1">
+      <fo:block-container overflow="hidden" > <fo:block   margin-left="0.0cm" margin-right="0.0cm"  margin-top="0.0cm"  font-size="10pt"  font-family="SansSerif"  color="#000000"  text-align="{$alignment39}"><xsl:value-of select="/rows/column_properties/column39/name"></xsl:value-of></fo:block></fo:block-container>
+        </fo:table-cell>
+        <fo:table-cell  wrap-option="no-wrap"  border-color="#FFFFFF" border-style="solid" border-width="medium"  number-columns-spanned="1">
+      <fo:block-container overflow="hidden" > <fo:block   margin-left="0.0cm" margin-right="0.0cm"  margin-top="0.0cm"  font-size="10pt"  font-family="SansSerif"  color="#000000"  text-align="{$alignment40}"><xsl:value-of select="/rows/column_properties/column40/name"></xsl:value-of></fo:block></fo:block-container>
+        </fo:table-cell>
+        <fo:table-cell  wrap-option="no-wrap"  border-color="#FFFFFF" border-style="solid" border-width="medium"  number-columns-spanned="1">
+      <fo:block-container overflow="hidden" > <fo:block   margin-left="0.0cm" margin-right="0.0cm"  margin-top="0.0cm"  font-size="10pt"  font-family="SansSerif"  color="#000000"  text-align="{$alignment41}"><xsl:value-of select="/rows/column_properties/column41/name"></xsl:value-of></fo:block></fo:block-container>
+        </fo:table-cell>
+        <fo:table-cell  wrap-option="no-wrap"  border-color="#FFFFFF" border-style="solid" border-width="medium"  number-columns-spanned="1">
+      <fo:block-container overflow="hidden" > <fo:block   margin-left="0.0cm" margin-right="0.0cm"  margin-top="0.0cm"  font-size="10pt"  font-family="SansSerif"  color="#000000"  text-align="{$alignment42}"><xsl:value-of select="/rows/column_properties/column42/name"></xsl:value-of></fo:block></fo:block-container>
+        </fo:table-cell>
+        <fo:table-cell  wrap-option="no-wrap"  border-color="#FFFFFF" border-style="solid" border-width="medium"  number-columns-spanned="1">
+      <fo:block-container overflow="hidden" > <fo:block   margin-left="0.0cm" margin-right="0.0cm"  margin-top="0.0cm"  font-size="10pt"  font-family="SansSerif"  color="#000000"  text-align="{$alignment43}"><xsl:value-of select="/rows/column_properties/column43/name"></xsl:value-of></fo:block></fo:block-container>
+        </fo:table-cell>
+        <fo:table-cell  wrap-option="no-wrap"  border-color="#FFFFFF" border-style="solid" border-width="medium"  number-columns-spanned="1">
+      <fo:block-container overflow="hidden" > <fo:block   margin-left="0.0cm" margin-right="0.0cm"  margin-top="0.0cm"  font-size="10pt"  font-family="SansSerif"  color="#000000"  text-align="{$alignment44}"><xsl:value-of select="/rows/column_properties/column44/name"></xsl:value-of></fo:block></fo:block-container>
+        </fo:table-cell>
+        <fo:table-cell  wrap-option="no-wrap"  border-color="#FFFFFF" border-style="solid" border-width="medium"  number-columns-spanned="1">
+      <fo:block-container overflow="hidden" > <fo:block   margin-left="0.0cm" margin-right="0.0cm"  margin-top="0.0cm"  font-size="10pt"  font-family="SansSerif"  color="#000000"  text-align="{$alignment45}"><xsl:value-of select="/rows/column_properties/column45/name"></xsl:value-of></fo:block></fo:block-container>
+        </fo:table-cell>
+        <fo:table-cell  wrap-option="no-wrap"  border-color="#FFFFFF" border-style="solid" border-width="medium"  number-columns-spanned="1">
+      <fo:block-container overflow="hidden" > <fo:block   margin-left="0.0cm" margin-right="0.0cm"  margin-top="0.0cm"  font-size="10pt"  font-family="SansSerif"  color="#000000"  text-align="{$alignment46}"><xsl:value-of select="/rows/column_properties/column46/name"></xsl:value-of></fo:block></fo:block-container>
+        </fo:table-cell>
+        <fo:table-cell  wrap-option="no-wrap"  border-color="#FFFFFF" border-style="solid" border-width="medium"  number-columns-spanned="1">
+      <fo:block-container overflow="hidden" > <fo:block   margin-left="0.0cm" margin-right="0.0cm"  margin-top="0.0cm"  font-size="10pt"  font-family="SansSerif"  color="#000000"  text-align="{$alignment47}"><xsl:value-of select="/rows/column_properties/column47/name"></xsl:value-of></fo:block></fo:block-container>
+        </fo:table-cell>
+        <fo:table-cell  wrap-option="no-wrap"  border-color="#FFFFFF" border-style="solid" border-width="medium"  number-columns-spanned="1">
+      <fo:block-container overflow="hidden" > <fo:block   margin-left="0.0cm" margin-right="0.0cm"  margin-top="0.0cm"  font-size="10pt"  font-family="SansSerif"  color="#000000"  text-align="{$alignment48}"><xsl:value-of select="/rows/column_properties/column48/name"></xsl:value-of></fo:block></fo:block-container>
+        </fo:table-cell>
+        <fo:table-cell  wrap-option="no-wrap"  border-color="#FFFFFF" border-style="solid" border-width="medium"  number-columns-spanned="1">
+      <fo:block-container overflow="hidden" > <fo:block   margin-left="0.0cm" margin-right="0.22cm"  margin-top="0.0cm"  font-size="10pt"  font-family="SansSerif"  color="#000000"  text-align="{$alignment49}"><xsl:value-of select="/rows/column_properties/column49/name"></xsl:value-of></fo:block></fo:block-container>
+        </fo:table-cell>
+        <fo:table-cell  wrap-option="no-wrap"  border-color="#FFFFFF" border-style="solid" border-width="medium"  number-columns-spanned="1">
+      <fo:block-container overflow="hidden" > <fo:block   margin-left="0.0cm" margin-right="0.16cm"  margin-top="0.0cm"  font-size="10pt"  font-family="SansSerif"  color="#000000"  text-align="{$alignment50}"><xsl:value-of select="/rows/column_properties/column50/name"></xsl:value-of></fo:block></fo:block-container>
+        </fo:table-cell>
+    </fo:table-row>
+    
+   <fo:table-row   background-color="#ffffff" height="0.35cm">
+        
+        <fo:table-cell  wrap-option="no-wrap"  border-color="#FFFFFF" border-style="solid" border-width="medium"  number-columns-spanned="50">
+      <fo:block-container overflow="hidden" > <fo:block margin-left="0.0cm" margin-right="0.0cm"  margin-top="0.0cm" ><fo:leader leader-pattern="rule"  color="#000000"  rule-thickness="1.0pt"  rule-style="solid"  leader-length="100%"/></fo:block></fo:block-container>
+        </fo:table-cell>
+    </fo:table-row>
+
+  </fo:table-header>
+  <fo:table-body>
+
+  <xsl:for-each select="rows/details/detail">
+    <fo:table-row   background-color="#ffffff" height="0.51cm">
+        <fo:table-cell  wrap-option="no-wrap"  border-color="#FFFFFF" border-style="solid" border-width="medium"  number-columns-spanned="1">
+      <fo:block-container overflow="hidden" > <fo:block   margin-left="0.0cm" margin-right="0.0cm"  margin-top="0.0cm"  font-size="10pt"  font-family="SansSerif"  color="#000000"  text-align="{$alignment1}"><xsl:value-of select="column1"></xsl:value-of></fo:block></fo:block-container>
+        </fo:table-cell>
+        <fo:table-cell  wrap-option="no-wrap"  border-color="#FFFFFF" border-style="solid" border-width="medium"  number-columns-spanned="1">
+      <fo:block-container overflow="hidden" > <fo:block   margin-left="0.0cm" margin-right="0.0cm"  margin-top="0.0cm"  font-size="10pt"  font-family="SansSerif"  color="#000000"  text-align="{$alignment2}"><xsl:value-of select="column2"></xsl:value-of></fo:block></fo:block-container>
+        </fo:table-cell>
+        <fo:table-cell  wrap-option="no-wrap"  border-color="#FFFFFF" border-style="solid" border-width="medium"  number-columns-spanned="1">
+      <fo:block-container overflow="hidden" > <fo:block   margin-left="0.0cm" margin-right="0.0cm"  margin-top="0.0cm"  font-size="10pt"  font-family="SansSerif"  color="#000000"  text-align="{$alignment3}"><xsl:value-of select="column3"></xsl:value-of></fo:block></fo:block-container>
+        </fo:table-cell>
+        <fo:table-cell  wrap-option="no-wrap"  border-color="#FFFFFF" border-style="solid" border-width="medium"  number-columns-spanned="1">
+      <fo:block-container overflow="hidden" > <fo:block   margin-left="0.0cm" margin-right="0.0cm"  margin-top="0.0cm"  font-size="10pt"  font-family="SansSerif"  color="#000000"  text-align="{$alignment4}"><xsl:value-of select="column4"></xsl:value-of></fo:block></fo:block-container>
+        </fo:table-cell>
+        <fo:table-cell  wrap-option="no-wrap"  border-color="#FFFFFF" border-style="solid" border-width="medium"  number-columns-spanned="1">
+      <fo:block-container overflow="hidden" > <fo:block   margin-left="0.0cm" margin-right="0.0cm"  margin-top="0.0cm"  font-size="10pt"  font-family="SansSerif"  color="#000000"  text-align="{$alignment5}"><xsl:value-of select="column5"></xsl:value-of></fo:block></fo:block-container>
+        </fo:table-cell>
+        <fo:table-cell  wrap-option="no-wrap"  border-color="#FFFFFF" border-style="solid" border-width="medium"  number-columns-spanned="1">
+      <fo:block-container overflow="hidden" > <fo:block   margin-left="0.0cm" margin-right="0.0cm"  margin-top="0.0cm"  font-size="10pt"  font-family="SansSerif"  color="#000000"  text-align="{$alignment6}"><xsl:value-of select="column6"></xsl:value-of></fo:block></fo:block-container>
+        </fo:table-cell>
+        <fo:table-cell  wrap-option="no-wrap"  border-color="#FFFFFF" border-style="solid" border-width="medium"  number-columns-spanned="1">
+      <fo:block-container overflow="hidden" > <fo:block   margin-left="0.0cm" margin-right="0.0cm"  margin-top="0.0cm"  font-size="10pt"  font-family="SansSerif"  color="#000000"  text-align="{$alignment7}"><xsl:value-of select="column7"></xsl:value-of></fo:block></fo:block-container>
+        </fo:table-cell>
+        <fo:table-cell  wrap-option="no-wrap"  border-color="#FFFFFF" border-style="solid" border-width="medium"  number-columns-spanned="1">
+      <fo:block-container overflow="hidden" > <fo:block   margin-left="0.0cm" margin-right="0.0cm"  margin-top="0.0cm"  font-size="10pt"  font-family="SansSerif"  color="#000000"  text-align="{$alignment8}"><xsl:value-of select="column8"></xsl:value-of></fo:block></fo:block-container>
+        </fo:table-cell>
+        <fo:table-cell  wrap-option="no-wrap"  border-color="#FFFFFF" border-style="solid" border-width="medium"  number-columns-spanned="1">
+      <fo:block-container overflow="hidden" > <fo:block   margin-left="0.0cm" margin-right="0.0cm"  margin-top="0.0cm"  font-size="10pt"  font-family="SansSerif"  color="#000000"  text-align="{$alignment9}"><xsl:value-of select="column9"></xsl:value-of></fo:block></fo:block-container>
+        </fo:table-cell>
+      
+	 <fo:table-cell  wrap-option="no-wrap"  border-color="#FFFFFF" border-style="solid" border-width="medium"  number-columns-spanned="1">
+      	<fo:block-container overflow="hidden" > <fo:block   margin-left="0.0cm" margin-right="0.0cm"  margin-top="0.0cm"  font-size="10pt"  font-family="SansSerif"  color="#000000"  text-align="{$alignment10}"><xsl:value-of select="column10"></xsl:value-of></fo:block></fo:block-container>
+
+        </fo:table-cell>
+
+	 <fo:table-cell  wrap-option="no-wrap"  border-color="#FFFFFF" border-style="solid" border-width="medium"  number-columns-spanned="1">
+      	<fo:block-container overflow="hidden" > <fo:block   margin-left="0.0cm" margin-right="0.0cm"  margin-top="0.0cm"  font-size="10pt"  font-family="SansSerif"  color="#000000"  text-align="{$alignment11}"><xsl:value-of select="column11"></xsl:value-of></fo:block></fo:block-container>
+
+        </fo:table-cell>
+	
+
+       
+
+	<fo:table-cell  wrap-option="no-wrap"  border-color="#FFFFFF" border-style="solid" border-width="medium"  number-columns-spanned="1">
+      <fo:block-container overflow="hidden" > <fo:block   margin-left="0.0cm" margin-right="0.0cm"  margin-top="0.0cm"  font-size="10pt"  font-family="SansSerif"  color="#000000"  text-align="{$alignment12}"><xsl:value-of select="column12"></xsl:value-of></fo:block></fo:block-container>
+        </fo:table-cell>
+        <fo:table-cell  wrap-option="no-wrap"  border-color="#FFFFFF" border-style="solid" border-width="medium"  number-columns-spanned="1">
+      <fo:block-container overflow="hidden" > <fo:block   margin-left="0.0cm" margin-right="0.0cm"  margin-top="0.0cm"  font-size="10pt"  font-family="SansSerif"  color="#000000"  text-align="{$alignment13}"><xsl:value-of select="column13"></xsl:value-of></fo:block></fo:block-container>
+        </fo:table-cell>
+        <fo:table-cell  wrap-option="no-wrap"  border-color="#FFFFFF" border-style="solid" border-width="medium"  number-columns-spanned="1">
+      <fo:block-container overflow="hidden" > <fo:block   margin-left="0.0cm" margin-right="0.0cm"  margin-top="0.0cm"  font-size="10pt"  font-family="SansSerif"  color="#000000"  text-align="{$alignment14}"><xsl:value-of select="column14"></xsl:value-of></fo:block></fo:block-container>
+        </fo:table-cell>
+        <fo:table-cell  wrap-option="no-wrap"  border-color="#FFFFFF" border-style="solid" border-width="medium"  number-columns-spanned="1">
+      <fo:block-container overflow="hidden" > <fo:block   margin-left="0.0cm" margin-right="0.0cm"  margin-top="0.0cm"  font-size="10pt"  font-family="SansSerif"  color="#000000"  text-align="{$alignment15}"><xsl:value-of select="column15"></xsl:value-of></fo:block></fo:block-container>
+        </fo:table-cell>
+        <fo:table-cell  wrap-option="no-wrap"  border-color="#FFFFFF" border-style="solid" border-width="medium"  number-columns-spanned="1">
+      <fo:block-container overflow="hidden" > <fo:block   margin-left="0.0cm" margin-right="0.0cm"  margin-top="0.0cm"  font-size="10pt"  font-family="SansSerif"  color="#000000"  text-align="{$alignment16}"><xsl:value-of select="column16"></xsl:value-of></fo:block></fo:block-container>
+        </fo:table-cell>
+        <fo:table-cell  wrap-option="no-wrap"  border-color="#FFFFFF" border-style="solid" border-width="medium"  number-columns-spanned="1">
+      <fo:block-container overflow="hidden" > <fo:block   margin-left="0.0cm" margin-right="0.0cm"  margin-top="0.0cm"  font-size="10pt"  font-family="SansSerif"  color="#000000"  text-align="{$alignment17}"><xsl:value-of select="column17"></xsl:value-of></fo:block></fo:block-container>
+        </fo:table-cell>
+        <fo:table-cell  wrap-option="no-wrap"  border-color="#FFFFFF" border-style="solid" border-width="medium"  number-columns-spanned="1">
+      <fo:block-container overflow="hidden" > <fo:block   margin-left="0.0cm" margin-right="0.0cm"  margin-top="0.0cm"  font-size="10pt"  font-family="SansSerif"  color="#000000"  text-align="{$alignment18}"><xsl:value-of select="column18"></xsl:value-of></fo:block></fo:block-container>
+        </fo:table-cell>
+        <fo:table-cell  wrap-option="no-wrap"  border-color="#FFFFFF" border-style="solid" border-width="medium"  number-columns-spanned="1">
+      <fo:block-container overflow="hidden" > <fo:block   margin-left="0.0cm" margin-right="0.0cm"  margin-top="0.0cm"  font-size="10pt"  font-family="SansSerif"  color="#000000"  text-align="{$alignment19}"><xsl:value-of select="column19"></xsl:value-of></fo:block></fo:block-container>
+        </fo:table-cell>
+        <fo:table-cell  wrap-option="no-wrap"  border-color="#FFFFFF" border-style="solid" border-width="medium"  number-columns-spanned="1">
+      <fo:block-container overflow="hidden" > <fo:block   margin-left="0.0cm" margin-right="0.0cm"  margin-top="0.0cm"  font-size="10pt"  font-family="SansSerif"  color="#000000"  text-align="{$alignment20}"><xsl:value-of select="column20"></xsl:value-of></fo:block></fo:block-container>
+        </fo:table-cell>
+        <fo:table-cell  wrap-option="no-wrap"  border-color="#FFFFFF" border-style="solid" border-width="medium"  number-columns-spanned="1">
+      <fo:block-container overflow="hidden" > <fo:block   margin-left="0.0cm" margin-right="0.0cm"  margin-top="0.0cm"  font-size="10pt"  font-family="SansSerif"  color="#000000"  text-align="{$alignment21}"><xsl:value-of select="column21"></xsl:value-of></fo:block></fo:block-container>
+        </fo:table-cell>
+        <fo:table-cell  wrap-option="no-wrap"  border-color="#FFFFFF" border-style="solid" border-width="medium"  number-columns-spanned="1">
+      <fo:block-container overflow="hidden" > <fo:block   margin-left="0.0cm" margin-right="0.0cm"  margin-top="0.0cm"  font-size="10pt"  font-family="SansSerif"  color="#000000"  text-align="{$alignment22}"><xsl:value-of select="column22"></xsl:value-of></fo:block></fo:block-container>
+        </fo:table-cell>
+        <fo:table-cell  wrap-option="no-wrap"  border-color="#FFFFFF" border-style="solid" border-width="medium"  number-columns-spanned="1">
+      <fo:block-container overflow="hidden" > <fo:block   margin-left="0.0cm" margin-right="0.0cm"  margin-top="0.0cm"  font-size="10pt"  font-family="SansSerif"  color="#000000"  text-align="{$alignment23}"><xsl:value-of select="column23"></xsl:value-of></fo:block></fo:block-container>
+        </fo:table-cell>
+        <fo:table-cell  wrap-option="no-wrap"  border-color="#FFFFFF" border-style="solid" border-width="medium"  number-columns-spanned="1">
+      <fo:block-container overflow="hidden" > <fo:block   margin-left="0.0cm" margin-right="0.0cm"  margin-top="0.0cm"  font-size="10pt"  font-family="SansSerif"  color="#000000"  text-align="{$alignment24}"><xsl:value-of select="column24"></xsl:value-of></fo:block></fo:block-container>
+        </fo:table-cell>
+        <fo:table-cell  wrap-option="no-wrap"  border-color="#FFFFFF" border-style="solid" border-width="medium"  number-columns-spanned="1">
+      <fo:block-container overflow="hidden" > <fo:block   margin-left="0.0cm" margin-right="0.0cm"  margin-top="0.0cm"  font-size="10pt"  font-family="SansSerif"  color="#000000"  text-align="{$alignment25}"><xsl:value-of select="column25"></xsl:value-of></fo:block></fo:block-container>
+        </fo:table-cell>
+        <fo:table-cell  wrap-option="no-wrap"  border-color="#FFFFFF" border-style="solid" border-width="medium"  number-columns-spanned="1">
+      <fo:block-container overflow="hidden" > <fo:block   margin-left="0.0cm" margin-right="0.0cm"  margin-top="0.0cm"  font-size="10pt"  font-family="SansSerif"  color="#000000"  text-align="{$alignment26}"><xsl:value-of select="column26"></xsl:value-of></fo:block></fo:block-container>
+        </fo:table-cell>
+        <fo:table-cell  wrap-option="no-wrap"  border-color="#FFFFFF" border-style="solid" border-width="medium"  number-columns-spanned="1">
+      <fo:block-container overflow="hidden" > <fo:block   margin-left="0.0cm" margin-right="0.0cm"  margin-top="0.0cm"  font-size="10pt"  font-family="SansSerif"  color="#000000"  text-align="{$alignment27}"><xsl:value-of select="column27"></xsl:value-of></fo:block></fo:block-container>
+        </fo:table-cell>
+        <fo:table-cell  wrap-option="no-wrap"  border-color="#FFFFFF" border-style="solid" border-width="medium"  number-columns-spanned="1">
+      <fo:block-container overflow="hidden" > <fo:block   margin-left="0.0cm" margin-right="0.0cm"  margin-top="0.0cm"  font-size="10pt"  font-family="SansSerif"  color="#000000"  text-align="{$alignment28}"><xsl:value-of select="column28"></xsl:value-of></fo:block></fo:block-container>
+        </fo:table-cell>
+        <fo:table-cell  wrap-option="no-wrap"  border-color="#FFFFFF" border-style="solid" border-width="medium"  number-columns-spanned="1">
+      <fo:block-container overflow="hidden" > <fo:block   margin-left="0.0cm" margin-right="0.0cm"  margin-top="0.0cm"  font-size="10pt"  font-family="SansSerif"  color="#000000"  text-align="{$alignment29}"><xsl:value-of select="column29"></xsl:value-of></fo:block></fo:block-container>
+        </fo:table-cell>
+        <fo:table-cell  wrap-option="no-wrap"  border-color="#FFFFFF" border-style="solid" border-width="medium"  number-columns-spanned="1">
+      <fo:block-container overflow="hidden" > <fo:block   margin-left="0.0cm" margin-right="0.03cm"  margin-top="0.0cm"  font-size="10pt"  font-family="SansSerif"  color="#000000"  text-align="{$alignment30}"><xsl:value-of select="column30"></xsl:value-of></fo:block></fo:block-container>
+        </fo:table-cell>
+        <fo:table-cell  wrap-option="no-wrap"  border-color="#FFFFFF" border-style="solid" border-width="medium"  number-columns-spanned="1">
+      <fo:block-container overflow="hidden" > <fo:block   margin-left="0.0cm" margin-right="0.0cm"  margin-top="0.0cm"  font-size="10pt"  font-family="SansSerif"  color="#000000"  text-align="{$alignment31}"><xsl:value-of select="column31"></xsl:value-of></fo:block></fo:block-container>
+        </fo:table-cell>
+        <fo:table-cell  wrap-option="no-wrap"  border-color="#FFFFFF" border-style="solid" border-width="medium"  number-columns-spanned="1">
+      <fo:block-container overflow="hidden" > <fo:block   margin-left="0.0cm" margin-right="0.0cm"  margin-top="0.0cm"  font-size="10pt"  font-family="SansSerif"  color="#000000"  text-align="{$alignment32}"><xsl:value-of select="column32"></xsl:value-of></fo:block></fo:block-container>
+        </fo:table-cell>
+        <fo:table-cell  wrap-option="no-wrap"  border-color="#FFFFFF" border-style="solid" border-width="medium"  number-columns-spanned="1">
+      <fo:block-container overflow="hidden" > <fo:block   margin-left="0.0cm" margin-right="0.0cm"  margin-top="0.0cm"  font-size="10pt"  font-family="SansSerif"  color="#000000"  text-align="{$alignment33}"><xsl:value-of select="column33"></xsl:value-of></fo:block></fo:block-container>
+        </fo:table-cell>
+        <fo:table-cell  wrap-option="no-wrap"  border-color="#FFFFFF" border-style="solid" border-width="medium"  number-columns-spanned="1">
+      <fo:block-container overflow="hidden" > <fo:block   margin-left="0.0cm" margin-right="0.0cm"  margin-top="0.0cm"  font-size="10pt"  font-family="SansSerif"  color="#000000"  text-align="{$alignment34}"><xsl:value-of select="column34"></xsl:value-of></fo:block></fo:block-container>
+        </fo:table-cell>
+        <fo:table-cell  wrap-option="no-wrap"  border-color="#FFFFFF" border-style="solid" border-width="medium"  number-columns-spanned="1">
+      <fo:block-container overflow="hidden" > <fo:block   margin-left="0.0cm" margin-right="0.0cm"  margin-top="0.0cm"  font-size="10pt"  font-family="SansSerif"  color="#000000"  text-align="{$alignment35}"><xsl:value-of select="column35"></xsl:value-of></fo:block></fo:block-container>
+        </fo:table-cell>
+        <fo:table-cell  wrap-option="no-wrap"  border-color="#FFFFFF" border-style="solid" border-width="medium"  number-columns-spanned="1">
+      <fo:block-container overflow="hidden" > <fo:block   margin-left="0.0cm" margin-right="0.0cm"  margin-top="0.0cm"  font-size="10pt"  font-family="SansSerif"  color="#000000"  text-align="{$alignment36}"><xsl:value-of select="column36"></xsl:value-of></fo:block></fo:block-container>
+        </fo:table-cell>
+        <fo:table-cell  wrap-option="no-wrap"  border-color="#FFFFFF" border-style="solid" border-width="medium"  number-columns-spanned="1">
+      <fo:block-container overflow="hidden" > <fo:block   margin-left="0.0cm" margin-right="0.0cm"  margin-top="0.0cm"  font-size="10pt"  font-family="SansSerif"  color="#000000"  text-align="{$alignment37}"><xsl:value-of select="column37"></xsl:value-of></fo:block></fo:block-container>
+        </fo:table-cell>
+        <fo:table-cell  wrap-option="no-wrap"  border-color="#FFFFFF" border-style="solid" border-width="medium"  number-columns-spanned="1">
+      <fo:block-container overflow="hidden" > <fo:block   margin-left="0.0cm" margin-right="0.02cm"  margin-top="0.0cm"  font-size="10pt"  font-family="SansSerif"  color="#000000"  text-align="{$alignment38}"><xsl:value-of select="column38"></xsl:value-of></fo:block></fo:block-container>
+        </fo:table-cell>
+        <fo:table-cell  wrap-option="no-wrap"  border-color="#FFFFFF" border-style="solid" border-width="medium"  number-columns-spanned="1">
+      <fo:block-container overflow="hidden" > <fo:block   margin-left="0.0cm" margin-right="0.0cm"  margin-top="0.0cm"  font-size="10pt"  font-family="SansSerif"  color="#000000"  text-align="{$alignment39}"><xsl:value-of select="column39"></xsl:value-of></fo:block></fo:block-container>
+        </fo:table-cell>
+        <fo:table-cell  wrap-option="no-wrap"  border-color="#FFFFFF" border-style="solid" border-width="medium"  number-columns-spanned="1">
+      <fo:block-container overflow="hidden" > <fo:block   margin-left="0.0cm" margin-right="0.03cm"  margin-top="0.0cm"  font-size="10pt"  font-family="SansSerif"  color="#000000"  text-align="{$alignment40}"><xsl:value-of select="column40"></xsl:value-of></fo:block></fo:block-container>
+        </fo:table-cell>
+        <fo:table-cell  wrap-option="no-wrap"  border-color="#FFFFFF" border-style="solid" border-width="medium"  number-columns-spanned="1">
+      <fo:block-container overflow="hidden" > <fo:block   margin-left="0.0cm" margin-right="0.0cm"  margin-top="0.0cm"  font-size="10pt"  font-family="SansSerif"  color="#000000"  text-align="{$alignment41}"><xsl:value-of select="column41"></xsl:value-of></fo:block></fo:block-container>
+        </fo:table-cell>
+        <fo:table-cell  wrap-option="no-wrap"  border-color="#FFFFFF" border-style="solid" border-width="medium"  number-columns-spanned="1">
+      <fo:block-container overflow="hidden" > <fo:block   margin-left="0.0cm" margin-right="0.0cm"  margin-top="0.0cm"  font-size="10pt"  font-family="SansSerif"  color="#000000"  text-align="{$alignment42}"><xsl:value-of select="column42"></xsl:value-of></fo:block></fo:block-container>
+        </fo:table-cell>
+        <fo:table-cell  wrap-option="no-wrap"  border-color="#FFFFFF" border-style="solid" border-width="medium"  number-columns-spanned="1">
+      <fo:block-container overflow="hidden" > <fo:block   margin-left="0.0cm" margin-right="0.0cm"  margin-top="0.0cm"  font-size="10pt"  font-family="SansSerif"  color="#000000"  text-align="{$alignment43}"><xsl:value-of select="column43"></xsl:value-of></fo:block></fo:block-container>
+        </fo:table-cell>
+        <fo:table-cell  wrap-option="no-wrap"  border-color="#FFFFFF" border-style="solid" border-width="medium"  number-columns-spanned="1">
+      <fo:block-container overflow="hidden" > <fo:block   margin-left="0.0cm" margin-right="0.0cm"  margin-top="0.0cm"  font-size="10pt"  font-family="SansSerif"  color="#000000"  text-align="{$alignment44}"><xsl:value-of select="column44"></xsl:value-of></fo:block></fo:block-container>
+        </fo:table-cell>
+        <fo:table-cell  wrap-option="no-wrap"  border-color="#FFFFFF" border-style="solid" border-width="medium"  number-columns-spanned="1">
+      <fo:block-container overflow="hidden" > <fo:block   margin-left="0.0cm" margin-right="0.0cm"  margin-top="0.0cm"  font-size="10pt"  font-family="SansSerif"  color="#000000"  text-align="{$alignment45}"><xsl:value-of select="column45"></xsl:value-of></fo:block></fo:block-container>
+        </fo:table-cell>
+        <fo:table-cell  wrap-option="no-wrap"  border-color="#FFFFFF" border-style="solid" border-width="medium"  number-columns-spanned="1">
+      <fo:block-container overflow="hidden" > <fo:block   margin-left="0.0cm" margin-right="0.0cm"  margin-top="0.0cm"  font-size="10pt"  font-family="SansSerif"  color="#000000"  text-align="{$alignment46}"><xsl:value-of select="column46"></xsl:value-of></fo:block></fo:block-container>
+        </fo:table-cell>
+        <fo:table-cell  wrap-option="no-wrap"  border-color="#FFFFFF" border-style="solid" border-width="medium"  number-columns-spanned="1">
+      <fo:block-container overflow="hidden" > <fo:block   margin-left="0.0cm" margin-right="0.0cm"  margin-top="0.0cm"  font-size="10pt"  font-family="SansSerif"  color="#000000"  text-align="{$alignment47}"><xsl:value-of select="column47"></xsl:value-of></fo:block></fo:block-container>
+        </fo:table-cell>
+        <fo:table-cell  wrap-option="no-wrap"  border-color="#FFFFFF" border-style="solid" border-width="medium"  number-columns-spanned="1">
+      <fo:block-container overflow="hidden" > <fo:block   margin-left="0.0cm" margin-right="0.0cm"  margin-top="0.0cm"  font-size="10pt"  font-family="SansSerif"  color="#000000"  text-align="{$alignment48}"><xsl:value-of select="column48"></xsl:value-of></fo:block></fo:block-container>
+        </fo:table-cell>
+        <fo:table-cell  wrap-option="no-wrap"  border-color="#FFFFFF" border-style="solid" border-width="medium"  number-columns-spanned="1">
+      <fo:block-container overflow="hidden" > <fo:block   margin-left="0.0cm" margin-right="0.19cm"  margin-top="0.0cm"  font-size="10pt"  font-family="SansSerif"  color="#000000"  text-align="{$alignment49}"><xsl:value-of select="column49"></xsl:value-of></fo:block></fo:block-container>
+        </fo:table-cell>
+        <fo:table-cell  wrap-option="no-wrap"  border-color="#FFFFFF" border-style="solid" border-width="medium"  number-columns-spanned="1">
+      <fo:block-container overflow="hidden" > <fo:block   margin-left="0.0cm" margin-right="0.19cm"  margin-top="0.0cm"  font-size="10pt"  font-family="SansSerif"  color="#000000"  text-align="{$alignment50}"><xsl:value-of select="column50"></xsl:value-of></fo:block></fo:block-container>
+        </fo:table-cell>
+    </fo:table-row>
+  </xsl:for-each>  
+</fo:table-body>
+</fo:table>
+</xsl:if>
+
+<!-- END Area Detail -->
+</fo:block></fo:block-container>
+</fo:table-cell>
+</fo:table-row>
+<fo:table-row>
+<fo:table-cell  wrap-option="no-wrap" number-columns-spanned="1">
+<fo:block-container overflow="hidden" > <fo:block>
+
+<!-- START Area Footer -->
+<fo:table width="18.0cm"  >
+  <fo:table-column column-width="18.0cm"/>
+  <fo:table-body>
+    <fo:table-row   background-color="#ffffff" height="0.0cm">
+      <fo:table-cell  wrap-option="no-wrap"><fo:table>
+      <fo:table-column column-width="18.0cm"/>
+      <fo:table-body>
+      <fo:table-row  background-color="#ffffff" height="0.0cm">
+        <fo:table-cell  wrap-option="no-wrap"   number-columns-spanned="1">
+        <fo:block-container overflow="hidden" > <fo:block></fo:block></fo:block-container>        </fo:table-cell>
+    </fo:table-row>
+    </fo:table-body>
+    </fo:table></fo:table-cell>
+    </fo:table-row>
+  </fo:table-body>
+</fo:table>
+
+<!-- END Area Footer -->
+</fo:block></fo:block-container>
+</fo:table-cell>
+</fo:table-row>
+  </fo:table-body>
+</fo:table>
+<fo:block id="theEnd"/>
+<!-- END Area Header -->
+</fo:flow>
+</fo:page-sequence>
+</fo:root>
+</xsl:template>
+</xsl:transform>

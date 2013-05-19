@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rds:ApplicationServices xmlns:rds="business.*" xmlns:mx="http://www.adobe.com/2006/mxml">
+
+	<mx:HTTPService id="saveRecord" url="/catalog/create_catalog_customer_services"/>
+	<mx:HTTPService id="getRecord" url="/catalog/show_catalog_customer_service"/>
+	
+	<mx:HTTPService id="saveHeadingDetail" url="/catalog/create_catalog_customer_service_lines"/>
+	<mx:HTTPService id="getHeadingDetail" url="/catalog/show_catalog_customer_service_line"/>
+	<mx:HTTPService id="getDefaultHeadingDetail" url="/catalog/reset_catalog_customer_service_lines/"/>
+	
+	
+	<mx:HTTPService id="getHeadingDetailFormat" url="ctlg/customerservices/xmls/ParagraphDetailStructure.xml"/>
+	<mx:HTTPService id="getMainSectionFormat" url="ctlg/customerservices/xmls/MainSectionStructure.xml"/>
+		
+</rds:ApplicationServices>

@@ -1,0 +1,2 @@
+module Rates::RateGroupsHelper
+end

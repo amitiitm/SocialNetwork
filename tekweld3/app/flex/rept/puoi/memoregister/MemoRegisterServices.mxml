@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rds:CommonServices xmlns:rds="business.*" xmlns:mx="http://www.adobe.com/2006/mxml">
+
+	<mx:HTTPService id="getViewFormat" url="rept/puoi/memoregister/xmls/MemoRegisterCriteriaStru.xml" />
+	<mx:HTTPService id="getList" url="/purchase/purchase_report/purchase_memo_register" />
+	<mx:HTTPService id="printRecord" url="" />
+	<mx:HTTPService id="printDataInSpecificFormat" url="/purchase/purchase_fixed_report/fixed_purchase_memo_register" />
+	
+	
+
+</rds:CommonServices>

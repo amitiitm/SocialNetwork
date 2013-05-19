@@ -1,0 +1,24 @@
+<columns  lockedColumnCount='0'>
+
+	<column data='code'			label='Store #'		editable='false'	visible='true'		width='100'	textAlign='left'	forLevel='true'
+			print_width = '18'	defaultForLevel='2'	booleanFlag='false'	sortDataType='S' 	columnPrecision="NaN"/>
+			
+	<column data='name'			label='Name'		editable='false'	visible='true'		width='160'	textAlign='left'	forLevel='true'
+			print_width = '20'	defaultForLevel=''	booleanFlag='false'	sortDataType='S'	columnPrecision="NaN"/>
+			
+	<column data='address1'		label='Address #1'	editable='false'	visible='true'		width='160'	textAlign='left'	forLevel='true' 
+			print_width = '26'	defaultForLevel=''	booleanFlag='false'	sortDataType='S'	columnPrecision="NaN"/>
+			
+	<column data='address2'		label='Address #2'	editable='false'	visible='true'		width='160'	textAlign='left'	forLevel='true' 
+			print_width = '26'	defaultForLevel=''	booleanFlag='false'	sortDataType='S'	columnPrecision="NaN"/>
+			
+	<column data='city'			label='City'		editable='false' 	visible='true' 		width='60'	textAlign='left'	forLevel='true' 
+			print_width = '18'	defaultForLevel='0'	booleanFlag='false'	sortDataType='S'	columnPrecision="NaN"/>
+			
+	<column data='state'		label='State'		editable='false' 	visible='true' 		width='60'	textAlign='left'	forLevel='true' 
+			print_width = '18'	defaultForLevel='1'	booleanFlag='false'	sortDataType='S'	columnPrecision="NaN"/>
+						
+	<column data='country'		label='Country'		editable='false' 	visible='true' 		width='60'	textAlign='left'	forLevel='true' 
+			print_width = '18'	defaultForLevel='2'	booleanFlag='false'	sortDataType='S'	columnPrecision="NaN"/>			
+			
+</columns> 

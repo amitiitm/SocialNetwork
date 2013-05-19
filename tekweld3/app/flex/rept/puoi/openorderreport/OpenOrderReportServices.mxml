@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rds:CommonServices xmlns:rds="business.*" xmlns:mx="http://www.adobe.com/2006/mxml">
+
+	<mx:HTTPService id="getViewFormat" url="rept/puoi/openorderreport/xmls/OpenOrderReportCriteriaStru.xml" />
+	<mx:HTTPService id="getList" url="/purchase/purchase_report/open_order_report" />
+	<mx:HTTPService id="printRecord" url="" />
+	<mx:HTTPService id="printDataInSpecificFormat" url="/purchase/purchase_fixed_report/fixed_purchase_open_order_register" />
+</rds:CommonServices>

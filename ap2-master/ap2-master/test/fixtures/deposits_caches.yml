@@ -1,0 +1,11 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  month: 2010-11-10
+  amount: 9.99
+  account_id: 1
+
+two:
+  month: 2010-11-10
+  amount: 9.99
+  account_id: 1

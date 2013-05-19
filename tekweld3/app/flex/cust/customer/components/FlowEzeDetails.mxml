@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<gencomponents:DetailAddEdit xmlns:mx="http://www.adobe.com/2006/mxml"
+	width="480" height="210" verticalGap="0"
+	xmlns:customcomponents="com.generic.customcomponents.*"
+	xmlns:gencomponents="com.generic.components.*">
+	
+	<mx:Script source="../scripts/FlowEzeDetailScript.as" />
+
+	<mx:VBox width="100%" height="100%">	
+		<mx:HBox horizontalGap="0" width="100%" borderStyle="none" height="20">
+		<mx:Spacer width="200"/>
+		<mx:Label text="Rate" width="132" textAlign="right" height="20"/>	
+		</mx:HBox>
+		
+		<mx:HBox horizontalGap="0" width="100%" borderStyle="none">
+			<mx:Label text="Item #" width="82" textAlign="right"/>
+			<customcomponents:GenTextInputWithHelp
+				lookupFormatUrl	=  "itemLookupHelpFormat"
+				id="dcItem_Code" 
+				width="110" 
+				toolTip="Item #" 
+				dataSourceName="Item"
+				height="20" 
+				tabIndex="1" 
+				validationFlag="true" 
+				xmlTag=""
+				labelTag=""
+				dataField="id" 
+				labelField= "store_code"
+				updatableFlag="true" 
+				tableName="" 
+				/>
+			
+			<!--<customcomponents:GenDynamicComboBoxWithHelp id="dcItem_Code" width="110"  height="20"
+				tabIndex="1" toolTip="Item #" defaultValue=""
+				dataField="id"
+				dataSourceName="Item" dataProvider="{GenModelLocator.getInstance().lookupObj.item.children()}" labelField="code" 
+				validationFlag="true" xmlTag="" updatableFlag="true" tableName=""  />-->
+		
+		<mx:Label text="100" width="82" textAlign="right"/>
+			<customcomponents:GenTextInput id="tiRate_100" height="20" width="110" textAlign="right" defaultValue ='0.000'
+				tabIndex="5" xmlTag="" dataType="N" rounding="false" setDefaultOnEmpty="true" 
+				itemChangedEvent="" updatableFlag="true" tableName=""
+				maxValue="9999.999" validationFlag="true" toolTip="Rate_100"/>
+		
+		</mx:HBox>
+		
+		<mx:HBox horizontalGap="0" width="100%" borderStyle="none">
+			<mx:Label text="From" textAlign="right" width="82"/>
+			<customcomponents:GenDateField id="dfFrom" height="20" xmlTag="ranking_date" updatableFlag="true" 
+				tableName = "jbtranking" width="110" yearNavigationEnabled="true" toolTip="From"
+				validationFlag="true" tabIndex="2" />
+			<mx:Label text="Status" textAlign="right" width="0" visible="false"/>
+			<customcomponents:GenComboBox id="cbTrans_flag" width="0" visible="false" cornerRadius="0" xmlTag="trans_flag" updatableFlag="true"
+				tableName="jbtranking" defaultValue="A" tabIndex="2" height="20" labelField="label"   
+				dataProvider="{GenModelLocator.getInstance().masterData.child('trans_flag').trans_flag}" />	
+				
+		<mx:Label text="250" width="82" textAlign="right"/>
+			<customcomponents:GenTextInput id="tiRate_250" height="20" width="110" textAlign="right" defaultValue ='0.000'
+				tabIndex="6" xmlTag="" dataType="N" rounding="false" setDefaultOnEmpty="true" 
+				itemChangedEvent="" updatableFlag="true" tableName=""
+				maxValue="9999.999" validationFlag="true" toolTip="Rate_100"/>		
+		</mx:HBox>
+			
+		<mx:HBox horizontalGap="0" width="100%" borderStyle="none">
+			<mx:Label text="To" textAlign="right" width="82"/>
+			<customcomponents:GenDateField id="dfTo" height="20" xmlTag="" updatableFlag="true" 
+				tableName = "jbtranking" width="110" yearNavigationEnabled="true" toolTip="To"
+				validationFlag="true" tabIndex="3" />
+				
+			<mx:Label text="500" width="82" textAlign="right"/>
+			<customcomponents:GenTextInput id="tiRate_500" height="20" width="110" textAlign="right" defaultValue ='0.000'
+				tabIndex="7" xmlTag="" dataType="N" rounding="false" setDefaultOnEmpty="true" 
+				itemChangedEvent="" updatableFlag="true" tableName=""
+				maxValue="9999.999" validationFlag="true" toolTip="Rate_100"/>
+		</mx:HBox>
+				
+		<mx:HBox horizontalGap="0" width="100%" borderStyle="none">
+			<mx:Label text="Charge Code" width="82" textAlign="right"/>
+			<customcomponents:GenTextInput id="tiCharge_Code" width="110" height="20" tabIndex="4"
+				xmlTag="" updatableFlag="true" tableName="" 
+				validationFlag="true" toolTip="Charge Code" maxChars="10"/>
+				
+			<mx:Label text="1000" width="82" textAlign="right"/>
+			<customcomponents:GenTextInput id="tiRate_1000" height="20" width="110" textAlign="right" defaultValue ='0.000'
+				tabIndex="8" xmlTag="" dataType="N" rounding="false" setDefaultOnEmpty="true" 
+				itemChangedEvent="" updatableFlag="true" tableName=""
+				maxValue="9999.999" validationFlag="true" toolTip="Rate_100"/>
+						
+		</mx:HBox>
+		
+		<mx:HBox horizontalGap="0" width="100%" borderStyle="none">
+			<mx:Label text="2500" width="275" textAlign="right"/>
+			<customcomponents:GenTextInput id="tiRate_2500" height="20" width="110" textAlign="right" defaultValue ='0.000'
+				tabIndex="9" xmlTag="" dataType="N" rounding="false" setDefaultOnEmpty="true" 
+				itemChangedEvent="" updatableFlag="true" tableName=""
+				maxValue="9999.999" validationFlag="true" toolTip="Rate_100"/>
+						
+		</mx:HBox>
+		<mx:HBox horizontalGap="0" width="100%" borderStyle="none">
+			<mx:Label text="5000" width="275" textAlign="right"/>
+			<customcomponents:GenTextInput id="tiRate_5000" height="20" width="110" textAlign="right" defaultValue ='0.00'
+				tabIndex="10" xmlTag="" dataType="N" rounding="false" setDefaultOnEmpty="true" 
+				itemChangedEvent="" updatableFlag="true" tableName=""
+				maxValue="9999.999" validationFlag="true" toolTip="Rate_100"/>
+						
+		</mx:HBox>
+		<mx:HBox horizontalGap="0" width="100%"  height="20" borderStyle="none">
+			<mx:Label text="5000+" width="275" textAlign="right"/>
+			<customcomponents:GenTextInput id="tiRate_5000_plus" height="20" width="110" textAlign="right" defaultValue ='0.000'
+				tabIndex="11" xmlTag="" dataType="N" rounding="false" setDefaultOnEmpty="true" 
+				itemChangedEvent="" updatableFlag="true" tableName=""
+				maxValue="9999.999" validationFlag="true" toolTip="Rate_100"/>
+						
+		</mx:HBox>
+		
+			
+		
+	</mx:VBox>
+</gencomponents:DetailAddEdit>

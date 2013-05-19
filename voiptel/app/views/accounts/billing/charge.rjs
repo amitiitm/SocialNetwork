@@ -1,0 +1,5 @@
+if not @error
+  page.alert("Transaction Completed!")
+else
+  page.alert("Could not complete the transaction. Visit Order page for details.")
+end

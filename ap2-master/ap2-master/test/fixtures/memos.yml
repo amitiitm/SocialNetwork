@@ -1,0 +1,25 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  content: MyText
+  memo_type_id: 1
+  follow_up: false
+  follow_up_due: 2010-10-08 19:17:59
+  follow_up_date: 2010-10-08 19:17:59
+  assigned_to: 1
+  follow_up_by: 1
+  related_to: 1
+  memoable_id: 1
+  memoable_type: MyString
+
+two:
+  content: MyText
+  memo_type_id: 1
+  follow_up: false
+  follow_up_due: 2010-10-08 19:17:59
+  follow_up_date: 2010-10-08 19:17:59
+  assigned_to: 1
+  follow_up_by: 1
+  related_to: 1
+  memoable_id: 1
+  memoable_type: MyString

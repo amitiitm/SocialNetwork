@@ -1,0 +1,10 @@
+--- 
+port: 3000
+environment: production
+#cwd: /home/jewel/projects/biztracker
+docroot: public
+log_file: log/mongrel.log
+pid_file: tmp/pids/mongrel.pid
+#user: welcome
+#group: 
+servers: 2

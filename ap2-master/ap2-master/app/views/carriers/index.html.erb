@@ -1,0 +1,41 @@
+<%= page_title :title => "Carriers" %>
+<%= link_to("Working Carriers", "/carriers", :class => "hash") %> | <%= link_to("All Carriers", "/carriers?view=all", :class => "hash") %><br><br>
+<% table :width => "700px" do |t| %>
+	<% t.th "#" %>
+	<% t.th "Carrier Name" %>
+	<% t.th "Last Answer" %>
+	<% t.th "Last Congestion" %>	
+	<% t.th "Added On" %>
+	<% t.th "Actions" %>
+
+	<% counter = 0 %>
+	<% for carrier in @carriers do %>
+		<% counter += 1 %>
+		<% t.td counter %>
+		<% t.td carrier.name %>
+		<% t.td(if carrier.last_answer then "#{time_ago_in_words(carrier.last_answer.date, true)} ago"else "<span class='red'>No Answer Yet</span>" end) %>
+		<% t.td(if carrier.last_call then "#{time_ago_in_words(carrier.last_call.date)} ago" else "<span class='red'>No Call Yet</span>" end) %>
+		<% t.td user_date(carrier.created_at) %>
+		<% t.td action_links(
+			link_to("Edit", edit_carrier_path(carrier), :class => "hash"),
+			link_to( ((carrier.archived) ? "Unarchive" : "Archive"), edit_carrier_path(carrier), :class => "archive", :id => carrier.id, :val => !carrier.archived)
+		)%> 
+		<% t.new_row :id => carrier.id, :class => "hover" %>
+	<%  end -%>
+<% end -%>
+
+<script type="text/javascript" charset="utf-8">
+	$(function(){
+		$('.archive').live("click", function(e){
+			e.preventDefault();
+			var id = $(this).attr("id");
+			var archive = $(this).attr("val");
+			var params = "carrier[archived]=" + archive + "&_method='put'";
+			<%= if params[:view] == "all" then 'params = params + "&view=all"' end %>
+			block_ui();
+			$.post(('/carriers/archive/' + id), params, function(resp){
+				$.unblockUI();
+			});
+		});
+	});
+</script>

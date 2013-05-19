@@ -1,0 +1,6 @@
+<% box :type => "dialog", :id => "dialog-map-rate-sheet", :title => "Map Rate Sheet Fields", :icon => "ui-icon-person", :width => "1000" do %>
+	<% box :type => "simple", :title => "Map Rate Sheet Fields" do %>
+		<%= render :partial => "carriers/trunks/rate_sheets/rate_sheet_files/rate_sheet_map_form", :locals => {:rate_sheet_file => @rate_sheet_file} %>
+	<% end -%>
+<% end -%>
+<%= javascript_include_tag "/js/ap.dialog.js" %>

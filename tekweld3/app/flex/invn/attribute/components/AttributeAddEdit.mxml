@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<gencomponents:AddEdit xmlns:mx="http://www.adobe.com/2006/mxml" 
+	height="100%" width="100%" verticalGap="0"
+	xmlns:customcomponents="com.generic.customcomponents.*"
+	xmlns:gencomponents="com.generic.components.*" 
+	creationPolicy="all">
+	
+	<mx:Script source="../scripts/AttributeAddEditScript.as"/>
+	
+	<mx:VBox width="100%" height="100%" verticalGap="3">
+		<mx:VBox width="802" height="227" verticalGap="3">
+			<mx:HBox width="100%" horizontalGap="0" verticalAlign="middle" height="20">
+				<mx:Label text="Code" width="130" textAlign="right"/>
+				<customcomponents:GenTextInput id="tiCode" width="116" xmlTag="code" height="20" upperCaseFlag="true"
+					updatableFlag="true" tableName="catalog_attribute" defaultValue="" tabIndex="1" maxChars="25" toolTip="Code"
+					validationFlag="true" fontSize="9"/>
+				<mx:Label text="Status" width="130" textAlign="right"/>
+				<customcomponents:GenComboBox id="cbTrans_flag" width="95" cornerRadius="0" xmlTag="trans_flag" updatableFlag="true"
+					tableName="catalog_attribute" defaultValue="A" tabIndex="2" height="20" labelField="label"
+					dataProvider="{__genModel.masterData.child('trans_flag').trans_flag}" />
+			</mx:HBox>
+		
+			<mx:HBox width="100%" horizontalGap="0" height="20" verticalAlign="middle">
+				<mx:Label text="Name" width="130" textAlign="right"/>
+				<customcomponents:GenTextInput id="tiName" width="340" xmlTag="name" updatableFlag="true" tabIndex="3" tableName="catalog_attribute"
+					defaultValue=""  height="20" validationFlag="false" toolTip="Name" maxChars="50" />
+			</mx:HBox>
+
+			<mx:HBox width="100%" horizontalGap="0" verticalAlign="top">
+				<mx:Label text="Description" width="130" textAlign="right"/>
+				<customcomponents:GenTextArea id="taDescription" width="340" xmlTag="description" updatableFlag="true" tabIndex="4" 
+					tableName="catalog_attribute" defaultValue="" validationFlag="false" toolTip="Description"
+					maxChars="100" height="100"/>
+			</mx:HBox>
+	
+			<mx:HBox width="100%" horizontalGap="0" verticalAlign="middle" height="20" visible="false" includeInLayout="false">
+				<mx:Label text="Attribute Group" width="130" textAlign="right"/>
+				<customcomponents:GenTextInput id="tiAttributeGroup" width="209" xmlTag="code"  height="20" upperCaseFlag="true"
+					updatableFlag="true" tableName="catalog_attribute" defaultValue="" tabIndex="6" maxChars="25" toolTip="Attribute Group"
+					validationFlag="false" fontSize="9"/>
+			</mx:HBox>
+			<mx:HBox width="100%" horizontalGap="0" verticalAlign="middle" height="20">
+				<mx:Label text="Charge Code 1" width="130" textAlign="right"/>
+				<customcomponents:GenTextInputWithHelp id="dcSetupItem_id"
+													   width="209" height="20" 
+													   toolTip="Setup Item #" defaultValue=""
+													   dataField="id" 		  labelField="store_code"
+													   xmlTag="setup_item_id" labelTag="setup_item_code"
+													   dataSourceName="SetupItem" 
+													   tabIndex="10"  itemChangedEvent="tiSetupItemCode.dataValue=dcSetupItem_id.labelValue"
+													   validationFlag="false" 
+													   updatableFlag="true" tableName="catalog_attribute"
+													   lookupFormatUrl	=	"tekweldSetupItemLookupHelpFormat"
+													   />
+				
+				<customcomponents:GenTextInput id="tiSetupItemCode" width="0" height="0" visible="true"
+											   editable="false" enabled="false" xmlTag="setup_item_code" updatableFlag="true"
+											   tableName="catalog_attribute" defaultValue=""  toolTip="" />
+			</mx:HBox>
+			<mx:HBox width="100%" horizontalGap="0" verticalAlign="middle" height="20">
+				<mx:Label text="Charge Code 2" width="130" textAlign="right"/>
+				<customcomponents:GenTextInputWithHelp id="dcSetupItem_id2"
+													   width="209" height="20" 
+													   toolTip="Setup Item #" defaultValue=""
+													   dataField="id" 		  labelField="store_code"
+													   xmlTag="setup_item_id2" labelTag="setup_item_code2"
+													   dataSourceName="SetupItem" 
+													   tabIndex="10"  itemChangedEvent="tiSetupItemCode2.dataValue=dcSetupItem_id2.labelValue"
+													   validationFlag="false" 
+													   updatableFlag="true" tableName="catalog_attribute"
+													   lookupFormatUrl	=	"tekweldSetupItemLookupHelpFormat"
+													   />
+				
+				<customcomponents:GenTextInput id="tiSetupItemCode2" width="0" height="0" visible="true"
+											   editable="false" enabled="false" xmlTag="setup_item_code2" updatableFlag="true"
+											   tableName="catalog_attribute" defaultValue=""  toolTip="" />
+			</mx:HBox>
+			<mx:HBox verticalAlign="middle" height="20" width="100%" >
+				<customcomponents:GenCheckBox labelPlacement="left" label="Missing Info Required ?" id="cbSelectAll" width="143" xmlTag="missing_info_required_flag"
+											  updatableFlag="true" tableName="catalog_attribute" defaultValue="N" textAlign="right" tabIndex="205"
+											  dataValueForOn="Y" dataValueForOff="N"/>
+			</mx:HBox>
+			
+		</mx:VBox>
+
+		<mx:Spacer height="10" />
+		
+		<mx:TabNavigator id="tnDetail" width="100%" height="100%">
+			<mx:HBox id="hbValues" label="Values" width="100%" height="100%" horizontalAlign="left">
+				<gencomponents:Detail id="dtlValue"
+					updatableFlag="true"
+					checkBlankRowColumn="code"
+					rootNode="catalog_attribute_values"
+					formatServiceID="valueDetailFormat"
+					height="100%" width="100%" 
+					title="Attribute Values" 
+					DetailEditClass="{invn.attribute.components.AttributeValueDetail}"/>
+			</mx:HBox>
+		</mx:TabNavigator>
+	</mx:VBox>
+</gencomponents:AddEdit>

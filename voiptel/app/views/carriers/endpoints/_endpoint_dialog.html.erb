@@ -1,0 +1,5 @@
+<% box :type => "dialog", :id => id, :title => title, :icon => "ui-icon-person" do %>
+	<% box :type => "simple", :title => title do %>
+		<%= render :partial => "carriers/endpoints/endpoint_form", :locals => {:obj => obj, :endpoint => endpoint} %>
+	<% end -%>
+<% end -%>

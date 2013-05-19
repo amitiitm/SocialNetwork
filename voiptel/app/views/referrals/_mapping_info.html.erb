@@ -1,0 +1,19 @@
+<tr id="row-<%= @id %>">
+	<td colspan=7>
+		<div id='dialog-<%= @id %>' style='display:none'>
+			<fieldset>
+				<legend>Confirm Referral</legend>
+				<span>
+					Name <%= text_field "ref", "name" %>
+				</span>
+				<%= new_line %>
+				<span>
+					Last Name <%= text_field "ref", "last", :size => 5%>
+				</span>
+				<%= new_line %>
+				<span style="float:right;display:block;"><%= link_to_function "Close", "$('row-#{@id}').fade({afterFinish: function() {$('row-#{@id}').remove()}})" %></span>
+			</fieldset>
+			<div></div>
+		</div>
+	</td>
+</tr>

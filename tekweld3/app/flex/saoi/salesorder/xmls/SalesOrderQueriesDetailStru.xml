@@ -1,0 +1,25 @@
+<columns  lockedColumnCount='0'>
+
+	<column data='serial_no'				label='Query #'				editable='false'	visible='true'	width='50'	textAlign='left'	forLevel='false'
+			defaultForLevel=''				booleanFlag='false'			sortDataType='S'	columnPrecision="NaN"/>
+
+	<column data='query_type'				label='Type'				editable='false'	visible='false'	width='0'	textAlign='left'	forLevel='false'
+			defaultForLevel=''				booleanFlag='false'			sortDataType='S'	columnPrecision="NaN"/>
+	
+	<column data='query_category'			label='Category'			editable='false'	visible='true'	width='80'	textAlign='left'	forLevel='false'
+			defaultForLevel=''				booleanFlag='false'			sortDataType='S'	columnPrecision="NaN"/>	
+	
+	<column data='date_added'				label='Date Added'			editable='false'	visible='true'	width='150'	textAlign='left'	forLevel='false'
+			defaultForLevel=''				booleanFlag='false'			sortDataType='D'	columnPrecision="NaN"/>
+	
+<!--	<column data='subject'					label='Subject'			editable='false'	visible='true'	width='110'	textAlign='left'	forLevel='false'-->
+<!--			defaultForLevel=''				booleanFlag='false'			sortDataType='S'	columnPrecision="NaN"/>	-->
+<!--			-->
+	<column data='question'					label='Query'				editable='false'	visible='true'	width='500'	textAlign='left'	forLevel='false'
+			defaultForLevel=''				booleanFlag='false'			sortDataType='S'	columnPrecision="NaN"/>
+	
+	<column data='answer'					label='Answer'			editable='false'	visible='true'	width='110'	textAlign='left'	forLevel='false'
+			defaultForLevel=''				booleanFlag='false'			sortDataType='S'	columnPrecision="NaN"/>
+			
+						
+</columns> 

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rds:CommonServices xmlns:rds="business.*" xmlns:mx="http://www.adobe.com/2006/mxml">
+
+	<mx:HTTPService id="getListFormat" url="stup/moodule/xmls/MooduleListStru.xml" />
+	<mx:HTTPService id="getViewFormat" url="stup/moodule/xmls/MooduleCriteriaStru.xml" />
+	<mx:HTTPService id="getList" url="/setup/moodule/list_moodules"/>
+	<mx:HTTPService id="saveRecord" url="/setup/moodule/create_moodules"/>
+	<mx:HTTPService id="getRecord" url="/setup/moodule/show_moodule"/>	
+
+</rds:CommonServices>	

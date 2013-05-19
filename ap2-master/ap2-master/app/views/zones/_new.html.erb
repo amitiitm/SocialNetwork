@@ -1,0 +1,88 @@
+<% box :type => "box_title", :title => "New Zone", :style => "width:560px" do %>
+	<br>
+	<% form_for @zone, :html => {:class => "forms"} do |f| %>
+		<%= f.hidden_field :country_id, :value => @country.id %>
+		<%= f.hidden_field :rates_in_cents, :value => 1 %>
+		<ul>
+			<li class="horizental">
+				<label>Zone Name</label>
+				<%= f.text_field :name, :size => 15 %>
+			</li>
+			<li class="horizental">
+				<label>Zone Prefix</label>
+				<%= f.text_field :prefix, :value => @country.country_code,  :size => 15 %>
+			</li>
+			<li class="horizental">
+				<label>Buy</label>
+				<%= f.text_field :buy_rate, :size => 5 %>
+			</li>
+			<li class="horizental">
+				<label>Margin %</label>
+				<%= f.text_field :margin, :size => 5, :value => 30 %>
+			</li>
+			<li class="horizental">
+				<label>Sell</label>
+				<%= f.text_field :sell_rate, :size => 5 %>
+			</li>
+			<li class="horizental">
+				<label>Publish</label>
+				<%= f.check_box :publish %>
+			</li>
+			<li class="buttons horizental" style="margin-top:5px;">
+				<%= f.submit "Save", :class => "ui-state-default ui-corner-all ui-button"%>
+			</li>
+			<li></li>
+		</ul>
+	<% end %>
+<% end %>
+
+<script type="text/javascript" charset="utf-8">
+	$(function(){
+		$("#zone_buy_rate").keydown(function(e){
+			if (e.keyCode == 13) {
+				$(this).blur();
+			};
+		});
+		
+		$("#zone_margin").keydown(function(e){
+			if (e.keyCode == 13) {
+				$(this).blur();
+			};
+		});
+		
+		$("#zone_sell_rate").keydown(function(e){
+			if (e.keyCode == 13) {
+				$(this).blur();
+			};
+		});
+		
+		$("#zone_buy_rate").change(function(){
+			var buy = parseFloat($("#zone_buy_rate").val());
+			var margin = parseFloat($("#zone_margin").val());
+			var sell = parseFloat($("#zone_sell_rate").val());
+			
+			sell = (buy * (margin / 100) + buy);
+			$("#zone_sell_rate").val(sell.toFixed(4));
+		});
+		
+		$("#zone_sell_rate").change(function(){
+			
+			var buy = parseFloat($("#zone_buy_rate").val());
+			var margin = parseFloat($("#zone_margin").val());
+			var sell = parseFloat($("#zone_sell_rate").val());
+			
+			margin = ((sell - buy) / buy) * 100;
+			$("#zone_margin").val(margin.toFixed(2));
+		});
+		
+		$("#zone_margin").change(function(){
+			var buy = parseFloat($("#zone_buy_rate").val());
+			var margin = parseFloat($("#zone_margin").val());
+			var sell = parseFloat($("#zone_sell_rate").val());
+			
+			sell = (buy * (margin / 100) + buy);
+			$("#zone_sell_rate").val(sell.toFixed(4));
+		});
+		
+	});
+</script>

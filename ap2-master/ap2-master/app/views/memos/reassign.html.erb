@@ -1,0 +1,137 @@
+<div class="inner-response">
+	<script type="text/javascript" src="/js/tablesorter.js"></script>
+	<script type="text/javascript" src="/js/tablesorter-pager.js"></script>
+	<%= page_title :title => "List of all Memos/Followups" %>
+	<% box :type => "box_title", :style => "width:1100px;", :title => "Filters" do %>
+		<br>
+		<% form_for @filter, :url => "", :html => {:class => "forms", :id => "form_filter"} do |f| %>
+			<ul>
+				<li class="horizental">
+					<label>Priority</label>					
+					<%= f.select :priority, Memo.pariority_select_options, :include_blank => true %>
+				</li>
+				<li class="horizental">
+					<label>Category</label>					
+					<%= f.select :memo_category_id, MemoCategory.all.collect { |c| [c.category, c.id.to_s] }, :include_blank => true %>
+				</li>
+				<li class="horizental">
+					<label>Memo Type</label>
+					<%= f.select :memo_type_id, MemoType.all.collect { |mt| [mt.subject, mt.id.to_s] }, :include_blank => true %>
+				</li>
+				<li class="horizental">
+					<label>Status</label>
+					<%= f.select :status, Memo::STATUS.collect {|s| [s[0], s[1].to_s]}, :include_blank => true %>
+				</li>
+				<li class="horizental">
+					<label>Memo For</label>
+					<%= f.select :memoable_type, Memo::MEMO_FOR, :include_blank => true %>
+				</li>
+				<% if allowed? %>
+					<li class="horizental">
+						<label>Assigned To</label>
+						<%= f.select :assigned_to_id, [["System", "0"]] + AdminUser.all.collect {|au| [au.name, au.id.to_s]}, :include_blank => true %>
+					</li>					
+				<% end %>
+				<li class="horizental" style="margin-top:15px">
+					<a id="filter_reload" href="baghali" class="btn ui-state-default ui-corner-all ignore-me">
+						Reload
+					</a>
+				</li>
+				<li class="horizental" style="margin-top:25px"> Total records found: <%= @size %></li>
+				<li class="horizental" style="margin-top:22px"><%= loading("Loading...", "loading-filter") %></li>
+			</ul>		
+			<div class="clear"></div>
+		<% end -%>
+	<% end -%>
+	<% box :type => "simple", :title => "Filters" do %>
+		<% table  :id => "memos_table", :class => "for-memos", :width => "1150;" do |t| %>
+			<% t.th(check_box(:select, :all, :id => "select_all", :class => "select-all")) if allowed? %>
+			<% t.th "#" %>
+			<% t.th "Memo For" %>
+			<% t.th "Memo Info" %>
+			<% t.th "Category" %>
+			<% t.th "Type" %>
+			<% t.th "Status" %>
+			<% t.th "Succd?" %>
+			<% t.th "LstFlp Date" %>
+			<% t.th "LstFlp By" %>
+			<% t.th "Flp Due" %>
+			<% t.th "Asnd To" %>
+			<% t.th "Created By" %>
+			<% t.th "Date Opened" %>
+			<% t.th "Actions" %>
+			<% counter = (((@page - 1) * @limit)) %>
+			<% for m in @memos do %>
+				<% t.td(check_box(:select, :single, :record_id => m.id, :class => "select-row"), :style=>"text-align: center;") if allowed? %>
+				<% t.td counter += 1 %>
+				<% t.td m.memoable.class.to_s %>
+				<% t.td m.memoable.info %>
+				<% t.td m.memo_category.category %>
+				<% t.td m.memo_type.subject if m.memo_type %>
+				<% t.td m.status_string %>
+				<% t.td((m.status == 3)? (yes_no(m.success)) : "Prog") %>
+				<% t.td followup_date(m, "No Flp") %>
+				<% t.td admin_user(m.followup_by, "No Flp") %>			
+				<% t.td user_date(m.followup_due) %>
+				<% t.td admin_user(m.assigned_to) %>
+				<% t.td admin_user(m.created_by) %>
+				<% t.td m.created_at.strftime("%a %m/%d") %>
+				<% t.td(link_to("Update", edit_memo_path(m), :class => "ajax", :update => "container")) %>
+				<% if m.followup %>
+					<% if m.status == Memo::CLOSED %>
+						<% t.new_row %>
+					<% else %>
+						<% t.new_row :class => "warn" %>
+					<% end -%>
+				<% else %>
+					<% t.new_row %>
+				<% end %>
+			<%  end -%>
+		<% end -%>
+	<div class="clear"></div>
+	<%= pager(@path, "inner-ajax") %>
+	<div class="clear"></div>
+	<% end -%>
+	<%= render :partial => "memos/batch_assign", :locals => {:action => "assign"} %>	
+	<div class="clear-fix"></div>
+	<div id="container" class="hidden"></div>
+	<script>
+		function assign() {
+			var admin = $("#assign_memo_to").val();
+			if (admin == "") {
+				alert("No Rep was selected!");
+				return;
+			};
+			var ids = selected_rows("#memos_table");
+			if (ids) {
+				$("#loading-pager").fadeIn();
+				var params = [];
+				ids = ids.join(",");
+				ids = "ids=" + ids;
+				params.push(ids);
+				params.push(param("assign_to", admin));
+				$.post("/memos/batch_assign", params.join("&"));				
+			}else{
+				alert("No memo is selected!");
+			};
+		}
+		$(function() {
+			$("#baghali").tablesorter({
+				widgets: ['zebra'],
+				headers: {
+				0: {            
+					sorter: false
+					}
+				}
+			});
+			$('.tooltip').tooltip({
+				track: true,
+				delay: 0,
+				showURL: false,
+				showBody: " - ",
+				fade: 250
+			});
+			// $(".header").append('<span class="ui-icon ui-icon-carat-2-n-s"></span>');
+		});
+	</script>
+</div>

@@ -1,0 +1,16 @@
+<% box :type => "dialog", :id => "dialog-edit-did", :title => "Multiple DID Edit", :icon => "ui-icon-person" do %>
+    <% box :type => "simple", :title => "Multiple DID Edit" do %>
+        <% form_for Did.new, :url => { :action => "update_all" }, :html => {:class => "forms"} do |f| %>
+            <%=hidden_field_tag :record_ids, @record_ids%>
+            <ul>
+              <li>
+                <label>Assign <%= f.check_box :active %></label>
+              </li>
+              <li>
+                <label>Handler</label>
+                <%= f.select :did_type, Did::TYPES %>
+              </li>
+            </ul>
+        <% end -%>
+    <% end -%>
+<% end -%>

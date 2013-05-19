@@ -1,0 +1,30 @@
+<%= page_title :title => "Forwardings" %>
+
+<% box :type => "simple" do %>
+	<% table :width => "500px" do |t| %>
+		<% t.th "#" %>
+	  <% t.th "Did"  %>
+	  <% t.th "Account"  %>
+	  <% t.th "Rate"  %>
+	  <% t.th "Priority"  %>
+		<% t.th "Actions" %>
+
+		<% counter = 0 %>	
+		<% for forwarding in @forwardings %>
+			<% t.td (counter += 1) %>
+		  <% t.td forwarding.did_id %>
+		  <% t.td forwarding.account_id %>
+		  <% t.td forwarding.rate %>
+		  <% t.td forwarding.priority %>
+			<% t.td action_links(
+				(link_to "Edit", edit_forwarding_path(forwarding), :class => "ajax", :update => "container"),
+				(link_to "Delete", forwarding_path(forwarding), :class => "ajax-delete")
+			)%>
+			<% t.new_row %>
+		<% end %>		
+	<% end %>
+	<br>
+	<%= button "new_forwarding", "New Forwarding", :href => new_forwarding_path, :update => "container" %>
+<% end %>
+
+<div class="hide" id="container"></div>

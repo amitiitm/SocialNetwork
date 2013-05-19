@@ -1,0 +1,15 @@
+<columns  lockedColumnCount='0'>
+
+	<column data='code'			label='Code'		editable='false'	visible='true'		width='100'	textAlign='left'	forLevel='true'
+			print_width='20'	defaultForLevel='0'	booleanFlag='false'	sortDataType='S' 	columnPrecision="NaN"/>
+			
+	<column data='name'			label='Name'		editable='false'	visible='true'		width='200'	textAlign='left'	forLevel='true'
+			print_width='20'	defaultForLevel='1'	booleanFlag='false'	sortDataType='S'	columnPrecision="NaN"/>
+			
+	<column data='description'	label='Description'	editable='false'	visible='true'		width='400'	textAlign='left'	forLevel='false'
+			print_width='24'	defaultForLevel=''	booleanFlag='false'	sortDataType='S'	columnPrecision="NaN"/>
+			
+	<column data='trans_flag'	label='Status'		editable='false'	visible='true'		width='60'	textAlign='left'	forLevel='true'
+			print_width='16'	defaultForLevel='2'	booleanFlag='false'	sortDataType='S'	columnPrecision="NaN"/>
+
+</columns> 

@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<gencomponents:AddEdit  xmlns:gencomponents="com.generic.components.*" 
+ 	xmlns:customcomponents="com.generic.customcomponents.*" 
+	xmlns:mx="http://www.adobe.com/2006/mxml" 
+	width="100%" height="100%" verticalGap="0" paddingTop="0" creationComplete="init()">
+
+	<mx:Script source="../Scripts/SalesPeopleAddEditScript.as"/>
+	
+	<mx:HBox id="HBoxHeader" width="100%"  horizontalGap="0" verticalGap="0" verticalAlign="top" paddingBottom="0" paddingTop="0">		
+		<mx:VBox width="400" height="100%" verticalGap="3" horizontalGap="0" paddingBottom="0" paddingTop="0">
+			<mx:Spacer height="4%"/>
+			<mx:HBox height="10%" verticalGap="0" width="100%" >
+				<mx:Label text="Code" width="150" height="20" textAlign="right"/>
+				<customcomponents:GenTextInput id="tiCode" width="109" height="20" toolTip="Code" 
+					validationFlag="true"  maxChars="25" xmlTag="code" upperCaseFlag="true" updatableFlag="true" tableName="sales_people" tabIndex="1"/>
+			</mx:HBox>
+			<mx:HBox height="10%" width="100%"  verticalGap="0">						
+				<mx:Label text="Name" height="20" width="150" textAlign="right"/>
+				<customcomponents:GenTextInput id="tiName" width="202" height="20" toolTip="Name" 
+					validationFlag="false"  maxChars="50" xmlTag="name" updatableFlag="true" tableName="sales_people" tabIndex="2"/>
+			</mx:HBox>	
+			<mx:HBox width="100%">
+				<mx:Label text="Category" width="150" height="20" textAlign="right"/>
+				<!--<customcomponents:GenTextInput id="tiCategory" width="109" height="20" toolTip="Category" 
+					validationFlag="false"  maxChars="25" xmlTag="category" updatableFlag="true" tableName="sales_people" tabIndex="3"/>-->
+				<customcomponents:GenComboBox id="cbCategory" defaultValue="Internal" width="167" cornerRadius="0" xmlTag="category" updatableFlag="true"
+				tableName="sales_person"  labelField="label" height="20" tabIndex="3"
+				dataProvider="{__genModel.masterData.child('salesperson_code').category}" />	
+			</mx:HBox>
+	</mx:VBox>
+	<mx:VRule height="100%"/>
+	<mx:VBox width="236" height="100%" verticalGap="3">
+			<mx:Spacer height="4%"/>
+			<mx:HBox width="100%" horizontalAlign="left">
+		 	   	<mx:Label text="Status" width="118" height="20" textAlign="right"/>
+				<customcomponents:GenComboBox id="cbTrans_flag" defaultValue="A" width="109" cornerRadius="0" xmlTag="trans_flag" updatableFlag="true"
+				tableName="sales_person"  labelField="label" height="20" tabIndex="4"
+				dataProvider="{__genModel.masterData.child('trans_flag').trans_flag}" />
+	 		</mx:HBox> 
+	 		
+	 		<mx:HBox width="100%" horizontalAlign="left">
+	 		<mx:Label text="Password" width="118" textAlign="right" height="20" />
+			<customcomponents:GenTextInput id="tiPassword" displayAsPassword="true" text="" height="20" width="109" tabIndex="5"
+				validationFlag="false" toolTip="Password" xmlTag ="password"  tableName="sales_person" updatableFlag="true" maxChars="20" itemChangedEvent="regExpPassword.validate()"/>
+		   </mx:HBox> 
+			
+	</mx:VBox>
+	</mx:HBox>
+	<mx:RegExpValidator id="regExpPassword" required="false" expression="^\S+$" source="{tiPassword}" property="text" noMatchError="Space Not Allow" invalid="OnInvalidPassword(event)"/>	
+	<mx:TabNavigator id="tnDetail" width="100%" height="100%">
+		<mx:VBox id="vbAddress" label="Address" width="100%" height="100%" verticalGap="3" tabIndex="5">
+				<mx:HBox width="100%" horizontalGap="2" verticalAlign="middle">
+					<mx:Label text="Address" width="237" fontSize="10" fontWeight="bold" textAlign="right" visible="true" height="20" />
+				</mx:HBox>					
+				
+				<mx:HBox width="100%" horizontalGap="2" verticalAlign="middle">
+					<mx:Label text="Address #1" width="150" textAlign="right" height="20" />
+					<customcomponents:GenTextInput id="tiaddress1" width="233" xmlTag="address1"
+						updatableFlag="true" tabIndex="6" tableName="sales_person" height="20"   
+						defaultValue="" validationFlag="false" toolTip="Address #1"
+						maxChars="50" />
+				</mx:HBox>
+				
+				<mx:HBox width="100%" horizontalGap="2" verticalAlign="middle">
+					<mx:Label text="#2" width="150" textAlign="right" height="20" />
+					<customcomponents:GenTextInput id="tiaddress2" width="233" xmlTag="address2"
+						updatableFlag="true" tabIndex="7" tableName="sales_person" height="20"  
+						defaultValue="" validationFlag="false" toolTip="Address #2" maxChars="50" />
+				</mx:HBox>
+				
+				<mx:HBox width="100%" horizontalGap="2" verticalAlign="middle">
+					<mx:Label text="City" width="150" textAlign="right" height="20" />
+					<customcomponents:GenTextInput id="ticity" width="233" xmlTag="city"
+						updatableFlag="true" tabIndex="8" tableName="sales_person"
+						defaultValue="" validationFlag="false" toolTip="City" height="20" maxChars="25" />
+					
+				</mx:HBox>
+				
+				<mx:HBox width="100%" horizontalGap="2" verticalAlign="middle">
+					<mx:Label text="State/ Zip" width="150" textAlign="right" height="20" />
+					<customcomponents:GenTextInput id="tistate" width="116" xmlTag="state"
+						updatableFlag="true" tabIndex="9" tableName="sales_person"
+						defaultValue="" validationFlag="false" toolTip="State" height="20" maxChars="2" upperCaseFlag="true" />
+					<customcomponents:GenTextInput id="tiZip" width="115" xmlTag="zip"
+						updatableFlag="true" tabIndex="10" tableName="sales_person"
+						defaultValue="" validationFlag="false" toolTip="Zip" height="20" maxChars="15" />
+				</mx:HBox>
+				
+				<mx:HBox width="100%" horizontalGap="2" verticalAlign="middle">
+					<mx:Label text="Country" width="150" textAlign="right" height="20" />
+					<customcomponents:GenTextInput id="ticountry" width="40" xmlTag="country"
+						updatableFlag="true" tabIndex="11" tableName="sales_person"
+						defaultValue="US" validationFlag="false" toolTip="Country" height="20" maxChars="2" />				
+				</mx:HBox>
+
+				<mx:HBox width="100%" horizontalGap="2" verticalAlign="middle">
+					<mx:Label text="Phone/Fax" width="150" textAlign="right" height="20" />
+					<customcomponents:GenTextInput id="tiphone1" width="116" xmlTag="phone1"
+						updatableFlag="true" tabIndex="12" tableName="sales_person"
+						defaultValue="" validationFlag="false" toolTip="Phone" height="20" maxChars="50" />
+					<customcomponents:GenTextInput id="tifax1" width="115" xmlTag="fax1"
+						updatableFlag="true" tabIndex="13" tableName="sales_person"
+						defaultValue="" validationFlag="false" toolTip="Fax" height="20" maxChars="50" />
+				</mx:HBox>
+
+				
+				
+				<mx:HBox width="100%" horizontalGap="2" verticalAlign="middle">
+					<mx:Label text="Email" width="150" textAlign="right" height="20" />
+					<customcomponents:GenTextInput id="tiEmail" width="233" xmlTag="email"
+						updatableFlag="true" tabIndex="8" tableName="sales_person"
+						defaultValue="" validationFlag="false" toolTip="Email" height="20" maxChars="200" />
+					
+				</mx:HBox>
+		</mx:VBox>
+		<mx:VBox label="Commission" width="100%" height="100%" verticalGap="3" verticalAlign="top" tabIndex="13">
+				
+                <mx:HBox width="100%" height="20">
+					<mx:Label text="Commission Type" width="150" textAlign="right" height="20" />
+					<customcomponents:GenTextInput id="tiCommissionType" width="115" xmlTag="commn_type"
+						updatableFlag="true" tabIndex="14" tableName="sales_person"
+						defaultValue="" validationFlag="false" toolTip="Commission Type" editable="true" height="20" maxChars="4" />		
+					<mx:Label text="Payment Type" width="195" textAlign="right" height="20" />
+					<customcomponents:GenTextInput id="tiPaymentType" width="115" xmlTag="commn_payment_type"
+						updatableFlag="true" tabIndex="15" tableName="sales_person"
+						defaultValue="" validationFlag="false" toolTip="Payment Type" editable="true" height="20" maxChars="2" />
+				</mx:HBox>
+				
+				<mx:HBox width="100%" height="20">
+					<mx:Label text="Flat%" width="150" textAlign="right" height="20" />
+					<customcomponents:GenTextInput id="tiFlat" width="75" xmlTag="flat_per"
+						updatableFlag="true" tabIndex="16" tableName="sales_person" rounding="false" setDefaultOnEmpty="true"
+						defaultValue="0.000" validationFlag="true" toolTip="Flat%" dataType="N"  editable="true" height="20" maxValue = "9999.999"  textAlign="right"/>		
+					<mx:Label text="Gross Margin%" width="235" textAlign="right" height="20" />
+					<customcomponents:GenTextInput id="tiGrossMargin" width="75" xmlTag="gross_margin_per" rounding="false" setDefaultOnEmpty="true"
+						updatableFlag="true" tabIndex="17" tableName="sales_person"
+						defaultValue="0.000" validationFlag="true" toolTip="Gross Margin" dataType="N" editable="true" height="20" maxValue = "9999.999"  textAlign="right"/>
+				</mx:HBox>
+				
+				<mx:HBox width="100%" height="20">
+					<mx:Label text="Commission On Receipt%" width="150" textAlign="right" height="20" />
+					<customcomponents:GenTextInput id="ticommissionOnReceipt" width="75" dataType="N" xmlTag="commission_on_receipt" setDefaultOnEmpty="true"
+						updatableFlag="true" tabIndex="18" tableName="sales_person" rounding="false"
+						defaultValue="0.000" validationFlag="true" toolTip="Commission On Receipt%" editable="true" height="20" maxValue ="9999.999"  textAlign="right"/>
+				</mx:HBox>
+				
+				<mx:HBox width="100%" height="20">
+					<mx:Label text="Price Level%" width="150" textAlign="right" height="20" />
+				</mx:HBox>
+				
+				<mx:HBox width="100%" height="20">
+					<mx:Label text="A"  textAlign="right" height="20"  width="150"/>
+							<customcomponents:GenTextInput id="tiA" width="75" xmlTag="a_per" rounding="false" setDefaultOnEmpty="true"
+							updatableFlag="true" tabIndex="19" tableName="sales_person"
+							defaultValue="0.00" validationFlag="true" dataType="N" toolTip="A" editable="true" height="20" maxValue ="9999.99" textAlign="right" />
+				    <mx:Label text="F" width="235" textAlign="right" height="20" />
+							<customcomponents:GenTextInput id="tiF" width="75" xmlTag="f_per" rounding="false" setDefaultOnEmpty="true"
+							updatableFlag="true" tabIndex="24" tableName="sales_person"
+							defaultValue="0.00" validationFlag="true" toolTip="F" editable="true" dataType="N" height="20" maxValue = "9999.99" textAlign="right"/>
+				</mx:HBox>
+				
+				<mx:HBox width="100%" height="20">
+					<mx:Label text="B"  textAlign="right" height="20"  width="150"/>
+							<customcomponents:GenTextInput id="tiB" width="75" xmlTag="b_per" rounding="false" setDefaultOnEmpty="true"
+							updatableFlag="true" tabIndex="20" tableName="sales_person"
+							defaultValue="0.00" validationFlag="true" toolTip="B" editable="true" dataType="N" height="20" maxValue = "9999.99"  textAlign="right"/>
+				    <mx:Label text="G" width="235" textAlign="right" height="20" />
+							<customcomponents:GenTextInput id="tiG" width="75" xmlTag="g_per" rounding="false" setDefaultOnEmpty="true"
+							updatableFlag="true" tabIndex="25" tableName="sales_person" dataType="N"
+							defaultValue="0.00" validationFlag="true" toolTip="G" editable="true" height="20" maxValue = "9999.99" textAlign="right" />
+				</mx:HBox>
+				
+				<mx:HBox width="100%" height="20">
+					<mx:Label text="C" width="150" textAlign="right" height="20" />
+							<customcomponents:GenTextInput id="tiC" width="75" xmlTag="c_per" rounding="false" setDefaultOnEmpty="true"
+							updatableFlag="true" tabIndex="21" tableName="sales_person"
+							defaultValue="0.00" validationFlag="true" toolTip="C" editable="true" dataType="N" height="20" maxValue = "9999.99" textAlign="right"/>	
+				   <mx:Label text="H" width="235" textAlign="right" height="20" />
+							<customcomponents:GenTextInput id="tiH" width="75" xmlTag="h_per" rounding="false" setDefaultOnEmpty="true"
+							updatableFlag="true" tabIndex="26" tableName="sales_person" dataType="N"
+							defaultValue="0.00" validationFlag="true" toolTip="H" editable="true" height="20" maxValue = "9999.99" textAlign="right" />	
+				</mx:HBox>
+				
+				<mx:HBox width="100%" height="20">
+					<mx:Label text="D" width="150" textAlign="right" height="20" />
+						<customcomponents:GenTextInput id="tiD" width="75" xmlTag="d_per" rounding="false" setDefaultOnEmpty="true"
+						updatableFlag="true" tabIndex="22" tableName="sales_person"
+						defaultValue="0.00" validationFlag="true" toolTip="D" editable="true" dataType="N" height="20" maxValue = "9999.99" textAlign="right" />	
+				   <mx:Label text="I" width="235" textAlign="right" height="20" />
+							<customcomponents:GenTextInput id="tiI" width="75" xmlTag="i_per" rounding="false" setDefaultOnEmpty="true"
+							updatableFlag="true" tabIndex="27" tableName="sales_person" dataType="N"
+							defaultValue="0.00" validationFlag="true" toolTip="I" editable="true" height="20" maxValue = "9999.99" textAlign="right" />	
+				</mx:HBox>
+				
+				
+				
+				<mx:HBox width="100%" height="20">
+					<mx:Label text="E" width="150" textAlign="right" height="20" />
+							<customcomponents:GenTextInput id="tiE" width="75" xmlTag="e_per" rounding="false" setDefaultOnEmpty="true"
+							updatableFlag="true" tabIndex="23" tableName="sales_person" dataType="N"
+							defaultValue="0.00" validationFlag="true" toolTip="E" editable="true" height="20" maxValue = "9999.99" textAlign="right" />	
+				  <mx:Label text="J" width="235" textAlign="right" height="20" />
+						<customcomponents:GenTextInput id="tiJ" width="75" xmlTag="j_per" rounding="false" setDefaultOnEmpty="true"
+						updatableFlag="true" tabIndex="28" tableName="sales_person" dataType="N"
+						defaultValue="0.00" validationFlag="true" toolTip="J" editable="true" height="20" maxValue = "9999.99" textAlign="right" />	
+				</mx:HBox>
+		</mx:VBox>
+		<mx:VBox id="vbEquipment" label="Equipment" width="100%" height="100%" verticalGap="3" tabIndex="29">
+			<gencomponents:Detail id="dtlLine"
+				updatableFlag="true"
+				checkBlankRowColumn=""
+				rootNode="salesperson_equipments"
+				formatServiceID="detailFormat"
+				height="100%" width="100%"
+				DetailEditClass="{saoi.salespeople.components.SalesPeopleDetail}"
+				title="Sales People Equipments"/>
+		</mx:VBox>
+		<mx:VBox id="vbCustomer" label="Customer" width="100%" height="100%" verticalGap="3" tabIndex="29">
+			<gencomponents:Detail id="dtlLineCustomer"
+				updatableFlag="true"
+				checkBlankRowColumn=""
+				rootNode="customer_salespeople"
+				formatServiceID="detailCustomerFormat"
+				height="100%" width="100%"
+				DetailEditClass="{saoi.salespeople.components.SalesPeopleCustomerDetail}"
+				title="Sales People Customer"/>
+		</mx:VBox>
+	</mx:TabNavigator>
+</gencomponents:AddEdit>

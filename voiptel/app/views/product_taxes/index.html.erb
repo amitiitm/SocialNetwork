@@ -1,0 +1,30 @@
+<%= page_title :title => "Products' Taxes" %>
+
+<% box :type => "simple" do %>
+	<% table :width => "700px" do |t| %>
+		<% t.th "#" %>
+	  <% t.th "App Name"  %>
+	  <% t.th "APP Handler"  %>
+	  <% t.th "Enabled"  %>
+	  <% t.th "Charge Type"  %>
+		<% t.th "Actions" %>
+
+		<% counter = 0 %>	
+		<% for product_tax in @product_taxes %>
+			<% t.td (counter += 1) %>
+		  <% t.td product_tax.product_name %>
+		  <% t.td product_tax.product_code %>
+		  <% t.td yes_no(product_tax.enabled) %>
+		  <% t.td((product_tax.charge_type == 1) ? "Add Tax" : "Deduct Tax") %>
+			<% t.td action_links(
+				(link_to "Edit", edit_product_taxis_path(product_tax), :class => "ajax", :update => "container"),
+				(link_to "Delete", product_taxis_path(product_tax), :class => "ajax-delete")
+			)%>
+			<% t.new_row %>
+		<% end %>		
+	<% end %>
+	<br>
+	<%= button "new_product_tax", "New Product Tax", :href => new_product_taxis_path, :update => "container" %>
+<% end %>
+
+<div class="hide" id="container"></div>

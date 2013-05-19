@@ -1,0 +1,21 @@
+<div id="update-me">
+	<%= render :partial => "sip_accounts" %>
+	<div class="clear"></div>
+	<%= render :partial => "account_dids" %>
+	<div class="clear"></div>
+</div>
+<%= javascript_include_tag "/js/autocomplete.js" %>
+<%= javascript_include_tag "jquery.clipboard.min.js" %>
+<%= stylesheet_link_tag "/css/autocomplete.css" %>
+
+<script type="text/javascript" charset="utf-8">
+	$(function(){
+		$(".did").live('change', function(){
+			var dom = $(this);
+			$("#sip_account_did_id").val(dom.attr('data-id'));
+			$("#selected_did_number").val(dom.val());
+			$("#sip_account_area_code").val(dom.attr('data-area-code'));
+			$("#sip_account_cid_number").val(dom.attr('data-did-number'));
+		});
+	});
+</script>

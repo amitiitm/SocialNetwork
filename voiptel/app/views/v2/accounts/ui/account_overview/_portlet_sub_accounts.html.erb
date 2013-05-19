@@ -1,0 +1,21 @@
+<% box :type => "portlet", :title => "Sub Accounts", :id => "portlet_sub_accounts" do %>	
+
+	<% table :width => "300px" do |t| %>
+		<% t.th "#" %>
+		<% t.th "Name" %>
+		<% t.th "Actions" %>
+
+		<% counter = 0 %>
+		<% for u in @account.users do %>
+			<% t.td counter += 1 %>
+			<% t.td((u.account_holder?)? "*#{u.name}" : u.name) %>
+			<% t.td(action_link("Edit", edit_account_user_path(@account, u)) + ((u.account_holder?)? "" : action_link(" | Delete", account_user_path(@account, u), :class => "ajax-delete"))) %>
+			<% t.new_row %>
+		<%  end -%>
+	<% end -%>
+	<%= button "new_user", "New Caller", :href => new_account_user_path(@account), :update => "container" %>	
+	<div class="clearfix"></div>
+	<div id="container" class="hidden"></div>
+<% end -%>
+
+<script type="text/javascript" src="/js/accounts/portlet_sub_accounts_ui.js"></script>

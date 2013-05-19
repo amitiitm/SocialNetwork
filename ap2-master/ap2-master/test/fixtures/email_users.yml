@@ -1,0 +1,33 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  email: MyString
+  first_name: MyString
+  last_name: MyString
+  uid: 1
+  gid: 1
+  home: MyString
+  maildir: MyString
+  enabled: false
+  change_password: false
+  clear: MyString
+  crypt: MyString
+  quota: MyString
+  procmailrc: MyString
+  spamassassinrc: MyString
+
+two:
+  email: MyString
+  first_name: MyString
+  last_name: MyString
+  uid: 1
+  gid: 1
+  home: MyString
+  maildir: MyString
+  enabled: false
+  change_password: false
+  clear: MyString
+  crypt: MyString
+  quota: MyString
+  procmailrc: MyString
+  spamassassinrc: MyString

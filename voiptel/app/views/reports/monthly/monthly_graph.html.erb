@@ -1,0 +1,20 @@
+<div class="two-column">
+	<div class="column">
+		<% box :type => "box_title", :title => "Daily Average" do %>
+			<%= high_chart("my_id2", @daily_average) %>
+		<% end -%>
+	</div>
+	<div class="column column-right">
+		<% box :type => "box_title", :title => "Traffic"do %>
+			<%= high_chart("my_id", @monthly_traffic) %>
+		<% end -%>		
+	</div>
+</div>
+<div class="clear"></div>
+<p>
+	<%= link_to "2008", "2008", :class => "years" %> | 
+	<%= link_to "2009", "2009", :class => "years" %> | 
+	<%= link_to "2010", "2010", :class => "years" %> |
+	<%= link_to "2011", "2011", :class => "years" %> <br>
+	<span class="red"><%= job_update('update_cached_stuff') %></span>
+</p>

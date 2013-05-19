@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<gencomponents:AddEdit xmlns:mx="http://www.adobe.com/2006/mxml" 
+	height="100%" width="100%" verticalGap="0"
+	xmlns:customcomponents="com.generic.customcomponents.*"
+	xmlns:gencomponents="com.generic.components.*" 
+	creationPolicy="all" creationComplete="init()">
+	
+	<mx:Script source="../scripts/ItemTransferAddEditScript.as"/>
+	<mx:HBox height="0" width="0" visible="false">
+		<customcomponents:GenTextInput id="tiRecIssFlag"  width="0" height="0" visible="false" xmlTag="receipt_issue_flag" 
+			updatableFlag="true" tableName="inventory_transaction" defaultValue="T"  
+			validationFlag="false"  fontSize="9"/>
+		<customcomponents:GenTextInput  width="0" height="0" validationFlag="false" visible="false"
+			xmlTag="trans_bk" updatableFlag="true" tableName="inventory_transaction" />
+		<customcomponents:GenTextInput id="tiCatalog_item_packet_id" width="0" height="0" visible="false"
+			xmlTag="catalog_item_packet_id" updatableFlag="true" tableName="inventory_transaction_issue_line" />	
+		<customcomponents:GenTextInput id="tiItemCode" width="0" height="0" visible="false"
+			xmlTag="catalog_item_code" updatableFlag="false"
+			tableName="inventory_transaction_issue_line"  text="{dcItemId.labelValue}" />
+		<customcomponents:GenComboBox id="cbItem_type" defaultValue="I" width="0" cornerRadius="0" xmlTag="item_type" updatableFlag="true"
+			tableName="inventory_transaction_issue_line" labelField="label"  visible="false" 		
+			dataProvider="{__genModel.masterData.child('invn_item_type').invn_item_type}" />	
+		<customcomponents:GenTextInput id="tiTrans_type" width="0" height="0" visible="false"
+			xmlTag="trans_type" updatableFlag="true"  editable="false" defaultValue="T" tableName="inventory_transaction_issue_line" />						
+	</mx:HBox>
+	
+	<mx:HBox width="100%">
+		<mx:VBox width="100%" verticalGap="3" horizontalGap="0" paddingBottom="0" paddingTop="0">
+			
+			<mx:HBox width="100%">
+				<mx:Label text="From Item #" width="95" textAlign="right" height="20" />
+				<customcomponents:GenTextInputWithHelp
+					lookupFormatUrl	=  "itemLookupHelpFormat"
+					id="dcItemId" 
+					width="150" 
+					toolTip="Item #" 
+					dataSourceName="InventoryItem"
+					height="20" 
+					tabIndex="1" 
+					validationFlag="true" 
+					xmlTag="catalog_item_id"
+					labelTag="catalog_item_code"
+					dataField="id" 
+					labelField= "store_code"
+					updatableFlag="true" 
+					tableName="inventory_transaction_issue_line" 
+					itemChangedEvent="getItemDetails()"
+					/>
+				
+				<!--	<customcomponents:GenDynamicComboBoxWithHelp id="dcItemId" width="150" height="20"
+					tabIndex="1" toolTip="Item #"  itemChangedEvent="getItemDetails()"
+					dataField="id"
+					dataSourceName="Item" dataProvider="{__genModel.lookupObj.item.children()}" labelField="code" 
+					validationFlag="true" xmlTag="catalog_item_id" updatableFlag="false" tableName="inventory_transaction_issue_line" />-->
+			</mx:HBox>
+
+			<mx:HBox width="100%">
+				<mx:Label text="Packet #" width="95" textAlign="right" height="20" />
+				<customcomponents:GenTextInput id="tiCatalog_item_packet_code" width="150" height="20" maxChars="25" validationFlag="false"
+					tabIndex="2" toolTip="Packet #" xmlTag="catalog_item_packet_code" updatableFlag="false" tableName="inventory_transaction_issue_line"
+					itemChangedEvent="getPacketDetails()" />
+			</mx:HBox>
+		</mx:VBox>
+
+		<mx:VRule height="100%"/>
+
+		<mx:VBox width="100%" verticalGap="3" horizontalGap="0" paddingBottom="0" paddingTop="0">
+			<mx:HBox width="100%">
+				<mx:Label text="Ref #" width="95" textAlign="right" height="20" />
+				<customcomponents:GenTextInput id="tiRefNo" width="150" height="20" visible="true"
+					xmlTag="ext_ref_no" updatableFlag="true"  maxChars="50" editable="true" 
+					tableName="inventory_transaction" tabIndex="3" toolTip="Ref #" />
+			</mx:HBox>
+		</mx:VBox>
+
+		<mx:VRule height="100%"/>
+
+		<mx:VBox width="100%" verticalGap="3" horizontalGap="0" paddingBottom="0" paddingTop="0">
+			<mx:HBox width="100%">
+				<mx:Label text="Qty" width="95" textAlign="right" height="20" />
+				<customcomponents:GenTextInput id="tiQty" width="110" height="20" visible="true"
+					editable="true" enabled="true" xmlTag="iss_qty" updatableFlag="false"
+					tableName="inventory_transaction_issue_line" defaultValue="0.00" tabIndex="4" toolTip="Pcs" setDefaultOnEmpty="true" 
+					itemChangedEvent="calculateNetAmount()" textAlign="right" dataType="N" maxValue="99999999.99" />
+			</mx:HBox>
+
+			<mx:HBox width="100%">
+				<mx:Label text="Price" width="95" textAlign="right" height="20" />
+				<customcomponents:GenTextInput id="tiPrice" width="110" height="20" visible="true"
+					xmlTag="iss_price" updatableFlag="false" tabIndex="5"
+					tableName="inventory_transaction_issue_line" defaultValue="0.000"  toolTip="Price" setDefaultOnEmpty="true" 
+					itemChangedEvent="calculateNetAmount()" textAlign="right" dataType="N" maxValue="9999999999.999" />
+			</mx:HBox>
+
+			<mx:HBox width="100%">
+				<mx:Label text="Item Amt" width="95" textAlign="right" height="20" />
+				<customcomponents:GenTextInput id="tiItem_amt" width="110" height="20" visible="true"
+					xmlTag="iss_amt" updatableFlag="false"  setDefaultOnEmpty="true" enabled="false"
+					tableName="inventory_transaction_issue_line" defaultValue="0.00" toolTip="Item Amt"
+					itemChangedEvent="itemAmountChangeHandler()" textAlign="right" dataType="N" maxValue="9999999999.99" />
+			</mx:HBox>
+		</mx:VBox>	
+
+		<mx:VRule height="100%"/>
+
+		<mx:VBox width="100%" verticalGap="3" horizontalGap="0" paddingBottom="0" paddingTop="0">
+			<mx:HBox width="100%" height="10%" verticalGap="0">						
+				<mx:Label text="Transfer #" width="95" textAlign="right" height="20" />
+				<customcomponents:GenTextInput id="tiTrans_no" width="70" xmlTag="trans_no" enabled="false" 
+					updatableFlag="true"  tableName="inventory_transaction" height="20"  
+					defaultValue="" validationFlag="false" toolTip="Trans #" />
+				<customcomponents:GenTextInput id="tiTrans_bk" width="35" height="20" validationFlag="false" enabled="false" 
+					xmlTag="trans_bk" updatableFlag="true" tableName="inventory_transaction" />
+			</mx:HBox>				
+			<mx:HBox width="100%"  verticalGap="0">
+				<mx:Label text="Transfer Date" width="95" textAlign="right" height="20" />
+				<customcomponents:GenDateField id="dfTrans_date" width="116" xmlTag="trans_date"
+					updatableFlag="true" tabIndex="6" tableName="inventory_transaction" height="20" 
+				 	itemChangedEvent="__localModel.trans_date=dfTrans_date.text;getAccountPeriod();"
+				 	validationFlag="false" toolTip="Transfer Date" />
+			</mx:HBox>
+			<mx:HBox width="0" height="0" verticalGap="0" includeInLayout="false" visible="false">		
+				<mx:Label text="A/C Period" width="95" textAlign="right" height="20" />
+				
+				<!--<customcomponents:GenDynamicComboBoxWithHelp id="dcAccount_period_code" width="116" 
+				toolTip="A/c Period Code"  defaultValue="" height="20" enabled="false"  
+				dataField="code" labelField="code"
+				dataSourceName="AccountPeriod" dataProvider="{__genModel.lookupObj.accountperiod.children()}"
+				validationFlag="true" xmlTag="account_period_code" updatableFlag="true" tableName="inventory_transaction"  />-->
+				
+				<customcomponents:GenTextInput id="dcAccount_period_code" width="116" xmlTag="account_period_code" enabled="false" 
+						   updatableFlag="true"  tableName="inventory_transaction"  height="20"
+						   defaultValue="" validationFlag="true" toolTip="A/c Period Code" fontWeight="bold" />
+				
+			</mx:HBox>
+			
+			
+			<mx:HBox width="100%"  verticalGap="0">		
+				<mx:Label text="Status" width="95" textAlign="right" height="20"/>
+				<customcomponents:GenComboBox id="cbTrans_flag" defaultValue="A" width="116" cornerRadius="0" xmlTag="trans_flag" updatableFlag="true"
+					tableName="inventory_transaction" tabIndex="7"  labelField="label" height="20" enabled="false"
+					dataProvider="{__genModel.masterData.child('trans_flag').trans_flag}" />
+			</mx:HBox>
+		</mx:VBox>	
+	</mx:HBox >	
+	<mx:Label text="To Item" width="95" fontSize="10" fontWeight="bold" textAlign="left" visible="true" height="20" />
+	<mx:HBox id="hbReceiptDetail" label="Receipt" width="100%" height="100%" horizontalAlign="center" fontSize="10">
+		<gencomponents:Detail id="dtlLine"
+			updatableFlag="true"
+			rootNode="inventory_transaction_receive_lines"
+			formatServiceID="lineReceiptDetailFormat"
+			height="100%" width="100%"
+			DetailEditClass="{invn.itemtransfer.components.ItemTransferDetail}"
+			title="To Item"
+			detailItemClick="changeImage()"	
+			detailAddEditComplete="setGrossAmount();changeImage()"
+			detailRemoveRow="setGrossAmount();changeImage()"
+		/>
+	</mx:HBox>
+	<mx:HBox id="hbIssueDetail" label="issue" width="0" height="0" horizontalAlign="center" fontSize="10">
+		<gencomponents:Detail id="dtlIssueLine"
+			updatableFlag="true"
+			rootNode="inventory_transaction_issue_lines"
+			formatServiceID="lineIssueDetailFormat"
+			height="0" width="0"
+			title="Issue Detail"
+		/>
+	</mx:HBox>
+	<mx:HBox id="hbFooter" height="135" width="100%"  horizontalAlign="left" horizontalGap="0" paddingTop="5">
+		<mx:VBox width="120" height="120">
+			<mx:Image id="itemImage" 
+				width="100%"
+				height="100%" 
+				verticalAlign="middle" 
+				horizontalAlign="center" 
+				source="{__genModel.path.image}{image_name}"/>
+		</mx:VBox>
+		<mx:VBox  height="100%" width="180" paddingLeft="20">
+			<mx:HBox>
+				<mx:Label text="Total Items" width="80" textAlign="right" />
+				<mx:Label id="lblTotal_items" width="35" textAlign="right" />
+			</mx:HBox>
+			<mx:HBox>
+				<mx:Label text="Item Qty" width="80" textAlign="right" />
+				<mx:Label id="lblItem_qty" width="35" textAlign="right" />
+			</mx:HBox>
+			
+		</mx:VBox>
+		<mx:VBox width="220" height="100%">
+			<mx:Label text="Remarks"/>
+			<customcomponents:GenTextArea width="200" height="50" id="taRemarks" maxChars="50"
+				 xmlTag="remarks" updatableFlag="true" tableName="inventory_transaction"/>
+		</mx:VBox>					
+		<mx:HBox width="100%" horizontalAlign="right">
+			<mx:Label text="Item Amount " width="110" textAlign="right" height="20" visible="false"/>
+			<customcomponents:GenTextInput id="tiRecItem_amt"  height="20" width="110" textAlign="right" editable="false"
+				backgroundAlpha="0" defaultValue="0.00" dataType="N" rounding="true" setDefaultOnEmpty="true" maxValue="9999999999.99" visible="false"/>
+		</mx:HBox>							
+	</mx:HBox>		
+</gencomponents:AddEdit>

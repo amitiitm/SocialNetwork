@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rds:CommonServices xmlns:rds="business.*" xmlns:mx="http://www.adobe.com/2006/mxml">
+
+	<mx:HTTPService id="saveRecord" url="/sale/pre_production_order/approve_pre_production_orders"/>
+	<mx:HTTPService id="getList" url="/sale/pre_production_order/list_pre_production_orders"/> 
+	<mx:HTTPService id="getViewFormat" url="saoi/specorderapproved/xmls/SpecOrderApprovedCriteriaStru.xml"/>
+	<mx:HTTPService id="getListFormat" url="saoi/specorderapproved/xmls/SpecOrderApprovedListStru.xml"/>
+	<mx:HTTPService id="printRecord" url=""/>
+
+</rds:CommonServices>

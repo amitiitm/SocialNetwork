@@ -1,0 +1,84 @@
+/* CSS Document */
+body{padding:0px; margin:0px; background:#0f0f0f url(../images/b_body.gif) 0 0 repeat-x; color:#ffffff; font:10px/14px Tahoma, Geneva, sans-serif;}
+div, p, ul, h2, h3, h4, img{padding:0px; margin:0px;}
+ul{list-style-type:none;}
+
+.clear {clear: both; margin: 0px; height:0}
+
+p a{font:10px/14px Tahoma, Geneva, sans-serif; color:#f6a823; text-decoration:underline;}
+p a:hover{ color:#fff; text-decoration:none;}
+
+.headline{font:11px/16px "Trebuchet MS", Arial, Helvetica, sans-serif; color:#fb0405; font-weight:bold}
+.headline2{font:11px/16px "Trebuchet MS", Arial, Helvetica, sans-serif; color:#308571; font-weight:bold}
+
+#container{width:695px; margin:0 auto; background:#292929}
+
+
+/* HEADER */
+
+#headerPan{width:695px; height:432px; position:relative; background:url(../images/b_header.jpg) 0 0 no-repeat}
+
+#headerPan img#logo{position:absolute; top:31px; left:484px}
+
+#headerPan ul.menu{position:absolute; top:37px; left:20px; width:440px; height:18px; }
+#headerPan ul.menu li{float:left; height:18px; margin-right:17px}
+#headerPan ul.menu li a{ height:18px;  display:block; text-indent:-20000px; }
+#headerPan ul.menu li a:hover{height:18px; }
+
+#headerPan ul.menu li.b01 a{ width:42px;  background:url(../images/btn_1.gif) 0 0 no-repeat; }
+#headerPan ul.menu li.b01 a:hover{ width:42px;  background:url(../images/btn_1_over.gif) 0 0 no-repeat;}
+
+#headerPan ul.menu li.b02 a{ width:52px;  background:url(../images/btn_2.gif) 0 0 no-repeat; }
+#headerPan ul.menu li.b02 a:hover{ width:52px;  background:url(../images/btn_2_over.gif) 0 0 no-repeat;}
+
+#headerPan ul.menu li.b03 a{ width:61px;  background:url(../images/btn_3.gif) 0 0 no-repeat; }
+#headerPan ul.menu li.b03 a:hover{ width:61px;  background:url(../images/btn_3_over.gif) 0 0 no-repeat;}
+
+#headerPan ul.menu li.b04 a{ width:65px;  background:url(../images/btn_4.gif) 0 0 no-repeat; }
+#headerPan ul.menu li.b04 a:hover{ width:65px;  background:url(../images/btn_4_over.gif) 0 0 no-repeat;}
+
+#headerPan ul.menu li.b05 {margin-right:0}
+#headerPan ul.menu li.b05 a{ width:72px;  background:url(../images/btn_5.gif) 0 0 no-repeat; }
+#headerPan ul.menu li.b05 a:hover{ width:72px;  background:url(../images/btn_5_over.gif) 0 0 no-repeat;}
+
+#headerPan ul.menu li.linem{width:1px; background:url(../images/spacer_m.gif) 0 5px no-repeat}
+
+#services{width:175px; position:absolute; top:116px; left:489px}
+#services h2{height:37px; position:relative; background:url(../images/h_services.gif) 0 0 no-repeat; margin-bottom:18px}
+.services_item{padding-bottom:7px; margin-bottom:7px; border-bottom:#6a6a6a 1px dotted}
+.services_item img{float:left; margin-right:4px;}
+.services_item p{padding-top:2px; color:#848484}
+
+
+/* CONTENT */
+
+#contentPan{width:695px; position:relative; padding-top:23px;}
+
+#c1{width:420px; margin:0 37px 0 30px; float:left; display:inline}
+#c2{width:188px; margin:0 0 0 0; float:left}
+
+
+#featured h2{height:31px; position:relative; background:url(../images/h_featured.gif) 0 0 no-repeat; margin-bottom:16px}
+#featured img{float:left; margin-right:10px}
+#feat1{width:190px; margin:0 27px 0 4px; float:left; display:inline}
+#feat2{width:195px; margin:0 0 0 0; float:left; }
+
+#contentPan ul li{ background: url(../images/arrow.gif) 0 7px no-repeat; padding:0 0 0 15px; margin-bottom:8px;}
+#contentPan ul li a{font:10px/14px Tahoma, Geneva, sans-serif; color:#fff; text-decoration:underline;}
+#contentPan ul li a:hover{color:#fff; text-decoration:none}
+
+#feat1 ul{margin-left:5px}
+
+#about h2{height:31px; position:relative; background:url(../images/h_about.gif) 0 0 no-repeat; margin-bottom:16px}
+#about img{margin-bottom:20px}
+#about p{margin-bottom:10px}
+
+#about ul{margin-left:5px}
+
+/* FOOTER */
+
+#footerPan {width:695px; height:63px; background:#0f0f0f}
+#footerPan p{padding: 14px 0 0 0; font:11px/16px "Trebuchet MS", Arial, Helvetica, sans-serif; font-weight:normal; text-align:center; color:#ffffff;}
+#footerPan p span{ font:11px/16px  "Trebuchet MS", Arial, Helvetica, sans-serif; color:#ffffff;}
+#footerPan p a{ font:11px/16px  "Trebuchet MS", Arial, Helvetica, sans-serif; color:#ffffff; text-decoration:none; padding: 0 3px }
+#footerPan p a:hover{ font:11px/16px "Trebuchet MS", Arial, Helvetica, sans-serif; text-decoration:underline;}

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:HBox  horizontalGap="5" width="100%"  xmlns:mx="http://www.adobe.com/2006/mxml">
+<mx:Script source="../scripts/ItemPromotionTemplate13Script.as"/>
+	<mx:Canvas>
+		
+		<mx:SWFLoader id="img1" name="image1" height="380" width="651" maintainAspectRatio="true"
+		 			source="{__genModel.path.image}{image1}"/>
+		<!--<mx:Image id="img1"  name="image1" height="380" width="651" maintainAspectRatio="true"
+			source="{__genModel.path.image}{image1}"/>-->
+		
+			<mx:Button name="image1" label="Edit"  toolTip="Edit"
+					buttonMode="{true}"
+					color="#FFFFFF"
+					textRollOverColor="#FFFFFF"
+					upSkin="@Embed('com/generic/assets/picEdit.png')"
+    		
+				    downSkin="@Embed('com/generic/assets/picEdit.png')"
+					
+					overSkin="@Embed('com/generic/assets/picEdit.png')"
+				   
+				    selectedUpSkin="@Embed('com/generic/assets/picEdit.png')"
+				    selectedOverSkin="@Embed('com/generic/assets/picEdit.png')"
+				    selectedDownSkin="@Embed('com/generic/assets/picEdit.png')"
+					
+					disabledSkin="@Embed('com/generic/assets/picEdit.png')"  />
+	</mx:Canvas>
+	
+	<mx:VBox width="100%" horizontalAlign="right">
+		<mx:Canvas>
+			<mx:SWFLoader id="img2" name="image2" height="122" width="304" maintainAspectRatio="true"
+		 			source="{__genModel.path.image}{image2}"/>
+			<!--<mx:Image id="img2" name="image2"	height="122" width="304" maintainAspectRatio="true"
+				source="{__genModel.path.image}{image2}"/>-->
+				
+			<mx:Button name="image2" label="Edit"   toolTip="Edit"
+				buttonMode="{true}"
+				color="#FFFFFF"
+				textRollOverColor="#FFFFFF"
+				upSkin="@Embed('com/generic/assets/lightBlue.png')"
+		
+		   		downSkin="@Embed('com/generic/assets/lightBlue.png')"
+			
+				overSkin="@Embed('com/generic/assets/lightBlue.png')"
+		   
+		    	selectedUpSkin="@Embed('com/generic/assets/lightBlue.png')"
+		   	 	selectedOverSkin="@Embed('com/generic/assets/lightBlue.png')"
+		   		selectedDownSkin="@Embed('com/generic/assets/lightBlue.png')"
+			
+				disabledSkin="@Embed('com/generic/assets/lightBlue.png')" />
+		</mx:Canvas>
+		<mx:Canvas>
+			<mx:SWFLoader id="img3" name="image3"	height="122" width="304" maintainAspectRatio="true"
+				source="{__genModel.path.image}{image3}"/>
+			<!--<mx:Image id="img3" name="image3"	height="122" width="304" maintainAspectRatio="true"
+				source="{__genModel.path.image}{image3}"/>	-->
+				
+			<mx:Button name="image3" label="Edit"   toolTip="Edit"
+				buttonMode="{true}"
+				color="#FFFFFF"
+				textRollOverColor="#FFFFFF"
+				upSkin="@Embed('com/generic/assets/lightBlue.png')"
+		
+		   		downSkin="@Embed('com/generic/assets/lightBlue.png')"
+			
+				overSkin="@Embed('com/generic/assets/lightBlue.png')"
+		   
+		    	selectedUpSkin="@Embed('com/generic/assets/lightBlue.png')"
+		   	 	selectedOverSkin="@Embed('com/generic/assets/lightBlue.png')"
+		   		selectedDownSkin="@Embed('com/generic/assets/lightBlue.png')"
+			
+				disabledSkin="@Embed('com/generic/assets/lightBlue.png')" />
+		</mx:Canvas>
+		<mx:Canvas>
+			<mx:SWFLoader id="img4"	 name="image4" height="122" width="304" maintainAspectRatio="true"
+				source="{__genModel.path.image}{image4}" />
+			<!--<mx:Image id="img4"	 name="image4" height="122" width="304" maintainAspectRatio="true"
+				source="{__genModel.path.image}{image4}" />	-->
+				
+				
+			<mx:Button name="image4" label="Edit"   toolTip="Edit"
+				buttonMode="{true}"
+				color="#FFFFFF"
+				textRollOverColor="#FFFFFF"
+				upSkin="@Embed('com/generic/assets/lightBlue.png')"
+		
+		   		downSkin="@Embed('com/generic/assets/lightBlue.png')"
+			
+				overSkin="@Embed('com/generic/assets/lightBlue.png')"
+		   
+		    	selectedUpSkin="@Embed('com/generic/assets/lightBlue.png')"
+		   	 	selectedOverSkin="@Embed('com/generic/assets/lightBlue.png')"
+		   		selectedDownSkin="@Embed('com/generic/assets/lightBlue.png')"
+			
+				disabledSkin="@Embed('com/generic/assets/lightBlue.png')" />
+		</mx:Canvas>
+	</mx:VBox>
+</mx:HBox>

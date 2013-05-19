@@ -1,0 +1,14 @@
+<?xml version="1.0" ?>
+<mx:HBox xmlns:mx="http://www.adobe.com/2006/mxml" horizontalAlign="center" verticalAlign="middle"
+	backgroundColor="#FFFFFF"  borderStyle="none" borderThickness="0"  horizontalGap="10" height="100" width="100%">
+	<mx:Script source="../scripts/OneItemDisplayRendererScript.as"/>
+	<mx:Image id="img" width="80" height="80" verticalAlign="middle" horizontalAlign="center" 
+		source="{__genModel.path.image}{data.image_thumnail}"/>
+	<mx:Label id="lblName" text="{data.item_name}" width="120" textAlign="center"/>
+	<mx:HBox width="100"  horizontalGap="2" horizontalAlign="center">
+		<mx:Label  text="Price:$" width="40"  textAlign="center"/>
+		<mx:Label id="lblItemPrice" width="50"  text="{data.item_price}" textAlign="left"/> 
+	</mx:HBox>
+	<mx:TextArea height="30"  borderStyle="none" width="100%"   verticalScrollPolicy="off" borderThickness="0" id="lblDescription"
+			text="{data.item_description}" textAlign="center"/>
+</mx:HBox>

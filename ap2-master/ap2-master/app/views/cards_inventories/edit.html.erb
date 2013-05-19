@@ -1,0 +1,28 @@
+<% modal_dialog "Reallocate Inventory", :id => "reallocate" do %>
+	<% form_for @inventory, :html => {:class => "forms"} do |f| %>
+		<%= error "Could not reallocate inventory:" %>
+		<p>
+			Return Cards:<br>
+			First Card: <%= formatted_serial @inventory.serial_start %> | Last Card <%= formatted_serial @inventory.serial_end %><br>
+			Number of Cards: <%= @inventory.num_cards %>
+		</p>
+		<ul>
+			<li>
+				<label>Start Serial:</label>
+				<%= f.text_field :return_start_serial %>
+			</li>
+			<li class="horizental">
+				<label>
+					<%= f.radio_button :return_end_method, "serial" %> By Ending Serial:
+				</label>
+				<%= f.text_field :return_end_serial, :size => 10 %>
+			</li>
+			<li class="horizental">
+				<label>
+					<%= f.radio_button :return_end_method, "to_end" %> To The End:
+				</label>
+			</li>
+		</ul>
+		<%= f.hidden_field :return %>
+	<% end %>
+<% end %>

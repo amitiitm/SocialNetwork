@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<gencomponents:AddEdit xmlns:mx="http://www.adobe.com/2006/mxml"
+	xmlns:customcomponents="com.generic.customcomponents.*"
+	xmlns:gencomponents="com.generic.components.*"
+	height="100%" width="100%" verticalGap="0"
+	creationPolicy="all" creationComplete="init()">
+	
+	<mx:Script source="../scripts/LeadAddEditScript.as"/>
+	
+	<mx:VBox width="100%" height="100%" verticalGap="3">
+		<mx:VBox width="100%" verticalGap="5">
+			<customcomponents:GenTextInput id="tiId" width="0" height="0"  visible="false" editable="false"
+				xmlTag="id" updatableFlag="false" tableName="crm_lead" />
+				
+			<mx:HBox width="100%">
+				<mx:Label text="Lead #" textAlign="right" width="150" height="20"/>
+				<customcomponents:GenTextInput id="tiLead_number" width="140" visible="true" tabIndex="1" validationFlag="true"
+					xmlTag="lead_number" updatableFlag="true" tableName="crm_lead" height="20" 
+					enabled="true"/>
+				<mx:Label text="Lead Date" textAlign="right" width="107" height="20"/>
+				<customcomponents:GenDateField id="dfLeadDate" width="140" xmlTag="lead_date"
+					updatableFlag="true" tableName="crm_lead" tabIndex="2" height="20"
+					validationFlag="true" toolTip="Lead Date"/>
+			</mx:HBox>
+			<mx:HBox>
+				<mx:Label textAlign="right" width="150" text="Lead Category #" height="20"/>
+				<customcomponents:GenDynamicComboBoxWithHelp id="dcCRM_lead_category_id" width="140" toolTip="Lead Category #" defaultValue=""
+					dataField="id" labelField="name" height="20"
+					dataSourceName="CrmAccountCategory" dataProvider="{__genModel.lookupObj.crmaccountcategory.children()}"  
+					 tabIndex="2" validationFlag="true" xmlTag="crm_lead_category_id" updatableFlag="true" tableName="crm_lead" />			
+					
+				<mx:Label text="Status" width="107" textAlign="right" height="20" />
+				<customcomponents:GenComboBox id="cbTrans_flag" defaultValue="A" width="140" cornerRadius="0" xmlTag="trans_flag" updatableFlag="true"
+					tableName="crm_lead" enabled="true"  labelField="label" height="20" editable="false"
+					dataProvider="{__genModel.masterData.child('trans_flag').trans_flag}" tabIndex="9"
+					toolTip="Status" />				
+			</mx:HBox>
+			<!--<mx:HBox width="100%">
+				<mx:Label text="Account #" textAlign="right" width="150" height="20"/>
+				<customcomponents:GenTextInput id="tiAccount_number" width="140" visible="true"  validationFlag="false"
+					xmlTag="account_number" updatableFlag="true" tableName="crm_lead" enabled="false" height="20" maxChars="50"/>
+			</mx:HBox>-->
+			<mx:HBox width="100%">
+				<mx:Label text="Topic" textAlign="right" width="150" height="20"/>
+				<customcomponents:GenTextInput id="tiTopic" width="402" visible="true" tabIndex="3" validationFlag="true"
+					xmlTag="topic" updatableFlag="true" tableName="crm_lead" height="20" maxChars="50"/>
+			</mx:HBox>
+			<mx:HBox width="100%">
+				<mx:Label text="Company Name" textAlign="right" height="20" width="150"/>
+				<customcomponents:GenTextInput id="tiName" width="402" visible="true" editable="true" validationFlag="true"
+					 tabIndex="4" xmlTag="name" height="20" updatableFlag="true" maxChars="50" tableName="crm_lead"/>
+				<!--<mx:Spacer width="60"/>	 
+				<customcomponents:GenButton id="btnConvertToAcct" 	fontWeight="normal"  label="Create Account" width="105"  height="18"  cornerRadius="0" tabIndex="110"
+					click="btnConvertToAcctClickHandler()" textAlign="center"
+					icon="@Embed('com/generic/assets/convert_acc.jpg')" />-->
+			</mx:HBox>
+			<mx:HBox width="100%">
+			<mx:Label text="Name" textAlign="right" height="20" width="150"/>
+				<customcomponents:GenComboBox id="cbSalutation" defaultValue="Mr" width="60" cornerRadius="0" xmlTag="saluation" updatableFlag="true"
+					tableName="crm_lead"  tabIndex="5" height="20" labelField="label" dataProvider="{__genModel.masterData.child('crm').salutation}" />
+				<customcomponents:GenTextInput id="tiFirst_name" width="163" visible="true" editable="true" validationFlag="true"
+					 tabIndex="6" xmlTag="first_name" height="20" updatableFlag="true" maxChars="50" tableName="crm_lead"/>
+				<customcomponents:GenTextInput id="tiLast_name" width="162" visible="true" editable="true" validationFlag="true"
+					 tabIndex="7" xmlTag="last_name" height="20" updatableFlag="true" maxChars="50" tableName="crm_lead"/>
+			</mx:HBox>
+			<mx:HBox width="100%">
+				<mx:Label text="Job Title" textAlign="right" width="150" height="20"/>
+				<customcomponents:GenTextInput id="tiJob_title" width="140" visible="true" editable="true"
+					tabIndex="8" xmlTag="job_title" updatableFlag="true" tableName="crm_lead" maxChars="50" height="20"/>
+			</mx:HBox>
+			<mx:HBox width="100%">
+				<mx:Label text="Description" textAlign="right"  height="20" width="150"/>
+				<customcomponents:GenTextArea id="taDescription" width="403" visible="true" editable="true" height="40"
+					 tabIndex="8" xmlTag="description" updatableFlag="true" tableName="crm_lead" maxChars="100"/>
+			</mx:HBox>			
+		</mx:VBox>
+		<mx:Spacer height="5"/>
+		<mx:TabNavigator width="100%" height="100%">
+			<mx:VBox label="Lead Detail" width="100%" height="100%">
+				<mx:VBox width="100%">
+					<mx:HBox width="100%">
+						<mx:Label text="Relationship Type" textAlign="right" height="20" width="150"/>
+						<customcomponents:GenComboBox id="cbRelationship_type" defaultValue="Competitor" width="140" cornerRadius="0" xmlTag="relationship_type" updatableFlag="true"
+							tableName="crm_lead"  tabIndex="9" height="20" labelField="label" dataProvider="{__genModel.masterData.child('crm').relationship_type}" />
+					</mx:HBox>
+					<mx:HBox width="100%">
+						<mx:Label text="Business Territory" textAlign="right" height="20" width="150"/>
+						<customcomponents:GenComboBox id="cbBusiness_territory" defaultValue="North-America" width="140" cornerRadius="0" xmlTag="business_territory" updatableFlag="true"
+							tableName="crm_lead"  tabIndex="10" height="20" labelField="label" dataProvider="{__genModel.masterData.child('crm').business_territory}" />
+						<mx:Label text="Industry" textAlign="right" width="150" height="20"/>
+						<customcomponents:GenComboBox id="cbIndustry" defaultValue="Accounting" width="140" cornerRadius="0" xmlTag="industry" updatableFlag="true"
+							tableName="crm_lead"  tabIndex="11" height="20" labelField="label" dataProvider="{__genModel.masterData.child('crm').industry}" />
+					</mx:HBox>
+					<mx:HBox width="100%">
+						<mx:Label text="Ownership Type" textAlign="right" width="150" height="20"/>
+						<customcomponents:GenComboBox id="cbOwnership_type" defaultValue="Public" width="140" cornerRadius="0" xmlTag="ownership_type" updatableFlag="true"
+							tableName="crm_lead"  tabIndex="12" height="20" labelField="label" dataProvider="{__genModel.masterData.child('crm').ownership_type}" />
+						<mx:Label text="No of Employees" textAlign="right" width="150" height="20"/>
+						<customcomponents:GenTextInput id="tiNo_of_employees" width="140" visible="true" editable="true" height="20"
+							 tabIndex="13" xmlTag="no_of_employees" updatableFlag="true" tableName="crm_lead" dataType="N"  setDefaultOnEmpty="true"
+							 maxValue="9999" defaultValue="0"/>
+					</mx:HBox>
+					<mx:HBox width="100%">
+						<mx:Label textAlign="right" width="150" text="Rating" height="20"/>
+						<customcomponents:GenComboBox id="cbRating" defaultValue="H" width="140" cornerRadius="0" xmlTag="rating" updatableFlag="true" validationFlag="false"
+							tableName="crm_lead"  tabIndex="14" height="20" labelField="label" dataProvider="{__genModel.masterData.child('crm').rating}" />
+						<mx:Label textAlign="right" width="150" height="20" text="Lead Source"/>
+						<customcomponents:GenComboBox id="cbCRMLeadSource" defaultValue="Direct" width="140" toolTip="Lead Source" 
+							labelField="label" height="20"
+							dataProvider="{__genModel.masterData.child('crm').lead_source}"   
+							 tabIndex="15" validationFlag="false" xmlTag="lead_source" updatableFlag="true" tableName="crm_lead" />						
+					</mx:HBox>
+					<mx:HBox width="100%">
+						<mx:Label text="Last Followed Date" textAlign="right" width="150" height="20"/>
+						<customcomponents:GenDateField id="dfLast_followed_date" width="140" xmlTag="last_followed_date"
+							updatableFlag="true" tableName="crm_lead" tabIndex="16" height="20"
+							validationFlag="false" toolTip="Close Date"/>
+						
+						<mx:Label text="Next Followed Date" textAlign="right" width="150" height="20"/>
+						<customcomponents:GenDateField id="dfNext_followed_date" width="140" xmlTag="next_followed_date"
+							updatableFlag="true" tableName="crm_lead" tabIndex="17" height="20" 
+							validationFlag="false" toolTip="Close Date"/>		
+				</mx:HBox>		
+			
+				<mx:HBox width="100%">
+					<mx:Label text="Annual Revenue" textAlign="right" width="150" height="20"/>
+					<customcomponents:GenTextInput id="tiAnnual_revenue" width="140" visible="true" editable="true" tabIndex="19"
+						  xmlTag="annual_revenue" updatableFlag="true" tableName="crm_lead" height="20"
+						 dataType="N" setDefaultOnEmpty="true" maxValue="9999999999.99" defaultValue="0.00"/>
+				</mx:HBox>
+				</mx:VBox>
+	
+			</mx:VBox>
+			<mx:VBox label="Primary Address" width="100%" height="100%" verticalGap="4">
+				<mx:HBox width="100%">
+					<mx:Label text="Address Name" textAlign="right" width="130" height="20"/>
+					<customcomponents:GenTextInput id="tiAddress_Name" width="403" visible="true" editable="true" height="20"
+						 tabIndex="26" xmlTag="address_name" updatableFlag="true" tableName="crm_lead" maxChars="50"/>
+				</mx:HBox>
+				<mx:HBox width="100%">
+					<mx:Label text="Address" textAlign="right" width="130" height="20"/>
+					<customcomponents:GenTextInput id="tiAddress_1" width="403" visible="true" editable="true"
+						tabIndex="27" xmlTag="address1" updatableFlag="true" height="20" tableName="crm_lead" maxChars="50"/>
+				</mx:HBox>
+				<mx:HBox width="100%">
+					<mx:Label textAlign="right" width="130" height="20"/>
+					<customcomponents:GenTextInput id="tiAddress_2" width="403" visible="true" editable="true" height="20"
+						tabIndex="28" xmlTag="address2" updatableFlag="true" tableName="crm_lead" maxChars="50"/>
+				</mx:HBox>
+				<mx:HBox width="100%">
+					<mx:Label text="City/State/Zip" textAlign="right" width="130" height="20"/>
+					<customcomponents:GenTextInput id="tiCity" width="133" visible="true" editable="true" height="20"
+						 tabIndex="29" xmlTag="city" updatableFlag="true" tableName="crm_lead" maxChars="25"/>
+					<customcomponents:GenTextInput id="tiState" width="133" visible="true" editable="true" height="20"
+						 tabIndex="30" xmlTag="state" updatableFlag="true" tableName="crm_lead" maxChars="25"/>
+					<customcomponents:GenTextInput id="tiZip" width="121" visible="true" editable="true" height="20"
+						tabIndex="31" xmlTag="zip" updatableFlag="true" tableName="crm_lead" maxChars="15"/>
+			
+				</mx:HBox>
+				<mx:HBox width="100%">
+					<mx:Label text="Country" textAlign="right" width="130" height="20"/>
+					<customcomponents:GenTextInput id="tiCountry" width="133" visible="true" editable="true" height="20"
+						 tabIndex="32" xmlTag="country" updatableFlag="true" tableName="crm_lead" maxChars="20"/>
+				</mx:HBox>
+				<mx:HBox width="100%">
+					<mx:Label text="Phone/Fax" textAlign="right" width="130" height="20"/>
+					<customcomponents:GenTextInput id="tiPhone" width="133" visible="true" editable="true" height="20"
+						tabIndex="33" xmlTag="phone" updatableFlag="true" tableName="crm_lead" maxChars="50"/>
+					<customcomponents:GenTextInput id="tiFax_no" width="133" visible="true" editable="true" height="20"
+						 tabIndex="34" xmlTag="fax" updatableFlag="true" tableName="crm_lead" maxChars="50"/>
+				</mx:HBox>
+				<mx:HBox width="100%">
+					<mx:Label text="Email" textAlign="right" width="130" height="20"/> 
+					<customcomponents:GenTextInput id="tiEmail" width="403" visible="true" editable="true" height="20"
+						tabIndex="35" xmlTag="email" updatableFlag="true" tableName="crm_lead" maxChars="50"/>
+				</mx:HBox>
+				<mx:HBox width="100%">
+					<mx:Label text="Website" textAlign="right" width="130" height="20"/> 
+					<customcomponents:GenTextInput id="tiWebsite" width="403" visible="true" editable="true" height="20"
+						tabIndex="36" xmlTag="website" updatableFlag="true" tableName="crm_lead" maxChars="50"/>
+				</mx:HBox>
+			</mx:VBox>
+			<mx:VBox label="Notes">
+				<gencomponents:Detail id="dtlNotes"
+							updatableFlag="true"
+							rootNode="lead_notes"
+							formatServiceID="notesDetailFormat"
+							height="100%" width="100%"
+							DetailEditClass="{crm.lead.components.LeadNotesDetail}"
+							title="Notes"
+							/>				
+			</mx:VBox>
+		</mx:TabNavigator>
+	</mx:VBox>
+	
+		<customcomponents:GenTextInput id="tiAccount_id" width="0" visible="false"  validationFlag="false" includeInLayout="false"
+			xmlTag="account_id" updatableFlag="true" tableName="crm_lead" enabled="false" height="0" maxChars="50"/>
+</gencomponents:AddEdit>

@@ -1,0 +1,16 @@
+<columns  lockedColumnCount='0'>
+
+	<column data='serial_no'				label='Serial #'			editable='false'	visible='true'	width='80'	textAlign='left'	forLevel='false'
+			defaultForLevel=''				booleanFlag='false'			sortDataType='N'	columnPrecision="0"/>
+			
+	<column data='user_cd'					label='User'				editable='false'	visible='true'	width='100'	textAlign='left'	forLevel='false'
+			defaultForLevel=''				booleanFlag='false'			sortDataType='S'	columnPrecision="NaN"/>
+			
+	<column data='note_date'				label='Date'				editable='false'	visible='true'	width='100'	textAlign='left'	forLevel='false'
+			defaultForLevel=''				booleanFlag='false'			sortDataType='D'	columnPrecision="NaN"/>
+
+
+	<column data='note'						label='Note'				editable='false'	visible='true'	width='250'	textAlign='left'	forLevel='false'
+			defaultForLevel=''				booleanFlag='false'			sortDataType='S'	columnPrecision="NaN"/>
+			
+</columns> 

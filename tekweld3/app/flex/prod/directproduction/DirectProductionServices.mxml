@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rds:CommonServices xmlns:rds="business.*" xmlns:mx="http://www.adobe.com/2006/mxml">
+
+	<mx:HTTPService id="saveRecord" 			url="/production/production_direct/create_direct_production_inbox"/>
+	<mx:HTTPService id="getList" 				url="/production/production_direct/production_inbox"/>
+	<mx:HTTPService id="getOptionData" 			url="/production/production_direct/production_option_inbox"/>
+	
+	<mx:HTTPService id="getViewFormat" 			url="/prod/directproduction/xmls/DirectProductionCriteriaStru.xml"/>
+	<mx:HTTPService id="getListFormat" 			url="/prod/directproduction/xmls/DirectProductionListStru.xml"/>
+	<mx:HTTPService id="printRecord" 			url=""/>
+	<mx:HTTPService id="printPickSlip" 			url="/production/production_report/render_packaging_job_format"/>
+	
+</rds:CommonServices>

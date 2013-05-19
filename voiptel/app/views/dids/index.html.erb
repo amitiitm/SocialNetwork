@@ -1,0 +1,121 @@
+<script type="text/javascript" src="/js/tablesorter.js"></script>
+<div class="inner-response">
+  <%= page_title :title => "List of DIDs" %>
+  <% form_for @filter, :url => "", :html => {:class => "forms", :id => "form_filter"} do |f| %>
+      <ul>
+        <li class="horizental">
+          <label>NPA</label>
+          <%= f.select :area_code, Did::select_options_for_area_code, :include_blank => true %>
+        </li>
+        <li class="horizental">
+          <label>Rate Center</label>
+          <%= f.select :rate_center, Did::select_options_for_rate_centers, :include_blank => true %>
+        </li>
+        <li class="horizental">
+          <label>DID Handler</label>
+          <%= f.select :did_type, Did::TYPES.map { |t| [t[0], t[1].to_s] }, :include_blank => true %>
+        </li>
+        <li class="horizental">
+          <label>Find DID</label>
+          <%= f.text_field :number__like, :size => 15 %>
+        </li>
+        <li class="horizental" style="margin-top:15px">
+          <a id="filter_reload" href="" class="btn ui-state-default ui-corner-all ignore-me">
+            Reload
+          </a>
+        </li>
+        <li class="horizental" style="margin-top:25px"> Total records found: <%= @size %></li>
+        <li class="horizental" style="margin-top:22px"><%= loading("Loading...", "loading-filter") %></li>
+        <li></li>
+      </ul>
+  <% end -%>
+  <% table :no_sort => true,:width => "730px", :id => "for-dids", :class => "dids" do |t| %>
+      <% t.th "#" %>
+      <% t.th "DID Number" %>
+      <% t.th "Rate Center" %>
+      <% t.th "State" %>
+      <% t.th "Provider" %>
+      <% t.th "Callers" %>
+      <% t.th "Type" %>
+      <% t.th "Assigned" %>
+      <% t.th('Actions') %>
+      <% t.th(check_box(:select, :all, :id => "select_all", :class => "select-all") +
+                      link_to(image_icon("book_edit.png"), "", :class => "fn", :function => "load_did()") + " | " +
+                      link_to(image_icon("red.png"), "", :class => "fn", :function => "delete_did()")
+         ) %>
+
+      <% counter = (@dids.size + 1) %>
+      <% for did in @dids do %>
+          <% t.td(counter -= 1) %>
+          <% unless @filter.number__like.blank? %>
+              <% t.td link_to_remote(did.number, :url => {:controller => "service", :action => "call", :id => did.number}).gsub(@filter.number__like, "<span class='highlight'>#{@filter.number__like}</span>") %>
+          <% else %>
+              <% t.td link_to_remote(number_to_phone(did.number, :area_code => true), :url => {:controller => "service", :action => "call", :id => did.number}) %>
+          <% end %>
+          <% t.td(if did.area_code_info.nil? then
+                    "<span id='redred' style='padding 0px;'>NOT FOUND</span>"
+                  else
+                    did.area_code_info.ratecenter
+                  end) %>
+          <% t.td(if did.area_code_info.nil? then
+                    "<span id='redred' style='padding 0px;'>NOT FOUND</span>"
+                  else
+                    did.area_code_info.state
+                  end) %>
+          <% t.td did.did_provider.name %>
+          <% t.td PhoneDidHandler.get_assigned_count_to_did did %>
+          <% t.td find_type(Did::TYPES, did.did_type) %>
+          <% t.td did.active? ? 'Yes' : "No"  %>
+          <% t.td(link_to("Edit", edit_did_path(did), :class => "ajax", :update => "container") + " | " + link_to("Remove", did_path(did), :class => "ajax-delete")) %>
+          <% t.td(check_box(:select, :single, :record_id => did.id, :class => "select-row"), :style => "text-align: center;") %>
+          <% t.new_row %>
+      <% end -%>
+  <% end -%>
+  <%= pager dids_path %>
+</div>
+<div id="container" class="hidden"></div>
+
+<script type="text/javascript">
+       table_options = {widgets:['zebra'],
+                         headers:{  0:{ sorter:false },
+                                    9:{ sorter:false }
+                                 }
+                        };
+        $('#for-dids').tablesorter(table_options);
+        $('#for-dids' + " .header").append('<span class="ui-icon ui-icon-carat-2-n-s"></span>');
+
+    function load_did() {
+        var selected = new Array();
+
+        $(document).ready(function () {
+            $("input[type=checkbox].select-row:checked").each(function () {
+                selected.push($(this).attr('record_id'));
+            });
+        });
+        if (selected.length > 0) {
+            $.get(('/dids/edit_all'), 'record_ids=' + selected, function (resp) {
+                $("#container").html(resp);
+            });
+        }
+    }
+
+    function delete_did() {
+        var selected = new Array();
+
+        $(document).ready(function () {
+            $("input[type=checkbox].select-row:checked").each(function () {
+                selected.push($(this).attr('record_id'));
+            });
+        });
+        if (selected.length > 0) {
+            var where_to = confirm("Do you really want to Delete selected record??");
+            if (where_to == true) {
+                $.get(('/dids/delete_all'), 'record_ids=' + selected, function (resp) {
+                    $("#container").html(resp);
+                });
+            }
+        }
+
+    }
+</script>
+

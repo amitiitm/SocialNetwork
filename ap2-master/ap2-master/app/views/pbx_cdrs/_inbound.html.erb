@@ -1,0 +1,136 @@
+<link rel="stylesheet" type="text/css" href="/css/custom.css">
+<link rel="stylesheet" type="text/css" href="/VOT_Admin_RecordedCalls_Inbound_files/style.css">
+<link rel="stylesheet" type="text/css" href="/VOT_Admin_RecordedCalls_Inbound_files/grid.css">
+<div class="inner-response" id="inner-response1">
+  <% if @type!='outbound'
+       cdrs = @cdrs.collect(&:cid)
+     else
+       cdrs = @cdrs.collect(&:dst_number)
+     end
+  -%>
+  <% cid_count = Hash.new(0) %>
+  <%- cdrs.each do |v|
+    cid_count[v] += 1
+  end
+  -%>
+
+  <div id="overview_content_container">
+    <div id="overview_content">
+      <div id="recordsList" style=" min-width:200px;">
+        <h3><%= @type=="outbound" ? "Outbound Calls" : "Inbound Calls" %></h3>
+
+        <div class="column column-right" style="">
+          <div id="player"></div>
+        </div>
+      </div>
+      <div style="clear:both;"></div>
+      <div id="overview-bar"><img src="../images/over_heading_bar.png" alt="" border="0"/></div>
+      <table id="inbound_pbxcdr" class="tablesorter table pbx_calls" border="0" cellpadding="0" cellspacing="0" width="1160">
+        <thead>
+        <%= render :partial => 'inbound_header' %>
+        </thead>
+        <% row=0 %>
+        <% counter = (@size - ((@page - 1) * @limit) + 1) %>
+        <tbody>
+        <% hidden_row = [] %>
+        <% @cdrs.each do |pbx_cdr| %>
+          <% show_image = false %>
+          <% counter -= 1 %>
+          <% row += 1 %>
+          <% i = row % 2 == 0 ? 2 : 1 %>
+          <% cid= @type=='outbound' ? pbx_cdr.dst_number : pbx_cdr.cid %>
+          <%- if (cid_count[cid] > 1)
+                show_image = true
+                cid_count.delete(cid)
+                hidden_row << cid
+                td_class = "#{cid} plus_image"
+                tr_class = "markbold"
+                style = ""
+              end
+          -%>
+          <%- if hidden_row.include?(cid) && show_image == false
+                tr_class = "#{cid} markitalic"
+                style = "display:none"
+              end
+          -%>
+          <% called= (pbx_cdr.disposition_status==2 && @type=='inbound') ? "background-color:lightBlue" : '' %>
+          <tr style="<%= called %>; <%= style %>" call_id="<%= pbx_cdr.id %>" class="<%= tr_class %>" id="tr<%= i %>">
+            <td valign="top">
+              <div style="width:50px; padding-top:0px; float:left;"><%= pbx_cdr.uid %></div>
+              <div class="<%= td_class %>" style="display:block;float:right">
+              </div>
+            </td>
+            <td valign="top"><%= user_date(pbx_cdr.date) %></td>
+            <td valign="top"><%= pbx_phone(cid, {:contactable_type => "User", :contactable_id => pbx_cdr.contactable.id}, pbx_cdr.contactable) %> </td>
+            <td valign="top"><%= (
+                                 if pbx_cdr.contactable then
+                                   link_to_contactable(pbx_cdr.contactable)
+                                 else
+                                   "Lead"
+                                 end) %></td>
+            <td valign="top"><%= display_disposition(pbx_cdr, @type) %></td>
+            <td valign="top"><%= recording(pbx_cdr) %></td>
+            <% if @type!='outbound' %>
+              <td valign="top"><%= voicemail(pbx_cdr) %></td>
+            <% end %>
+            <td valign="top"><%= pbx_cdr.admin_user.name %></td>
+            <td valign="top"><%= pbx_cdr.ext %></td>
+            <td valign="top"><%= (
+                                 if pbx_cdr.contactable then
+                                   begin
+                                     acc_id = contactable_link(pbx_cdr.contactable)
+                                     link_to(image_tag("/images/advance_search/zoom.png"), "/memos/latest_memo_notes/#{acc_id[1]}", :class => "ajax pbx", :update => "container")
+                                   rescue
+                                     "-"
+                                   end
+                                 else
+                                   "-"
+                                 end
+                                 ) %> </td>
+            <td valign="top"><%= time_in_word(pbx_cdr.date) if (@type=="outbound") || (pbx_cdr.disposition.to_s.downcase.match(/voicemail_in/) && pbx_cdr.duration <= 5) %></td>
+          </tr>
+        <% end %>
+        </tbody>
+      </table>
+      <br>
+
+      <div class="clear"></div>
+      <%= pbx_pager @path %>
+      <div style="clear:both;"></div>
+    </div>
+    <div class="clear"></div>
+    <div class="hide" id="container"></div>
+  </div>
+</div>
+<script>
+
+  jQuery(document).ready(function () {
+    $(function () {
+      $('.calls').click(function () {
+        $('.calls').attr('style', 'color:""')
+        $(this).attr('style', 'color:green')
+      });
+
+      $(".plus_image").click(function () {
+        var klass = $(this).attr('class');
+        var cid = klass.split(" ")
+        var match = klass.match(/minus/i)
+        if (match) {
+          $('.' + cid[0]).hide();
+          $('.' + cid[0] + '.minus').show();
+          $(this).removeClass('minus_image');
+          $(this).addClass('plus_image');
+        }
+        else {
+          $('.' + cid[0]).show();
+          $(this).removeClass('plus_image');
+          $(this).addClass('minus_image');
+        }
+        $(this).show();
+      });
+    });
+    $("#inbound_pbxcdr").tablesorter({sortList:[
+      [2, 1]
+    ]});
+  });
+</script>

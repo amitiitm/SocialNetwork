@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:HBox xmlns:mx="http://www.adobe.com/2006/mxml" creationPolicy="all" creationComplete="handleCreationComplete()" height="20" 
+	paddingLeft="0" paddingRight="0" horizontalGap="0" >
+
+ 	<mx:Script source="../scripts/CriteriaWithoutCheckBoxScript.as"/>
+
+	<mx:Label id="labelHB" width="100" textAlign="right" paddingRight="0" paddingLeft="0" /> 	
+</mx:HBox>

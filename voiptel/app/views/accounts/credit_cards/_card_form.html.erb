@@ -1,0 +1,63 @@
+<form method="post" action="/accounts/<%= @account.id %>/credit_cards" class="forms" id="new-credit-card">	
+	<%= error("Unable to Authorize:") %>
+	<ul>
+		<li>
+			<div class="first float-left">
+				<label class="desc">First Name</label>
+				<%= text_field :credit_card, :first_name, :class => 'field text', :size => 15%>
+			</div>
+			<div class="first float-left">
+				<label class="desc">Last Name</label>
+				<%= text_field :credit_card, :last_name, :class => 'field text', :size => 15%>
+			</div>
+		</li>
+		<li>
+			<div class="float-left">
+				<label class="desc">Card Number</label>
+				<%= text_field :credit_card, :number, :class => 'field text', :size => 15%>
+			</div>			
+			<div class="float-left">
+				<label class="desc">Card Type</label>
+				<%= select :credit_card, :type, CreditCard::TYPES, :class => 'field text', :size => 15%>
+			</div>
+		</li>
+		<li>
+			<div class="first float-left">
+				<label class="desc">Exp Date</label>
+				<%= select :credit_card, :month, (1..12), {},  :class => 'field text'%>
+				<%= select :credit_card, :year, (Time.now.year..Time.now.year + 10), {},  :class => 'field text'%>
+			</div>
+			<div class="float-left">
+				<label class="desc">Security Code</label>
+				<%= text_field :credit_card, :verification_value, :class => 'field text', :size => 5%>
+			</div>
+		</li>
+		<div class="inner-page-title">
+			<h3>Billing Address:</h3>
+    </div>
+		<li>
+			<div class="first float-left">
+				<label class="desc">Address 1</label>
+				<%= text_field :billing_address, :address1, :class => 'field text', :size => 15%>
+			</div>
+			<div class="float-left">
+				<label class="desc">Address 2</label>
+				<%= text_field :billing_address, :address2, :class => 'field text', :size => 15%>
+			</div>			
+		</li>
+		<li>
+			<div class="first float-left">
+				<label class="desc">City</label>
+				<%= text_field :billing_address, :city, :class => 'field text', :size => 15%>
+			</div>
+			<div class="float-left">
+				<label class="desc">State</label>
+				<%= select :billing_address, :state, Address::STATES%>
+			</div>
+			<div class="float-left">
+				<label class="desc">Zip Code</label>
+				<%= text_field :billing_address, :zipcode, :class => 'field text', :size => 15%>
+			</div>			
+		</li>		
+	</ul>
+</form>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rds:CommonServices xmlns:rds="business.*" xmlns:mx="http://www.adobe.com/2006/mxml">
+
+	<mx:HTTPService id="saveRecord" url="/setup/shipping/create_shippings"/>
+	<mx:HTTPService id="getRecord" url="/setup/shipping/show_shipping"/>
+	<mx:HTTPService id="getList" url="/setup/shipping/list_shippings"/>
+	<mx:HTTPService id="getListFormat" url="stup/shipping/xmls/ShippingListStru.xml"/>
+	<mx:HTTPService id="getViewFormat" url="stup/shipping/xmls/ShippingCriteriaStru.xml"/>
+	
+	<mx:HTTPService id="detailFormat" url="stup/shipping/xmls/ShippingImportStru.xml"/>
+	<mx:HTTPService id="recordUploadUrl" url="/setup/shipping/convert_exceltoxml_for_shipping"/>
+	
+	<mx:HTTPService id="printRecord" url=""/>
+
+</rds:CommonServices>

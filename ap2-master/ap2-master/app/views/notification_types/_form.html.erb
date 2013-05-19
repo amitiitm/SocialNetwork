@@ -1,0 +1,35 @@
+<% form_for @notification_type, :html => {:class => "forms"} do |f| %>
+	<%= error("Could not create:") %>
+	<ul>
+		<li>
+			<div class="first left">
+				<label>Category</label>
+				<%= f.select :notification_category_id, NotificationCategory.all.map {|c| [c.name, c.id]}.push(["Other", 0]) %>
+			</div>
+			<div class="left hidden" id="new-category">
+				<label>Category Name</label>
+				<%= f.text_field :new_category, :size => 15 %>				
+			</div>
+		</li>
+		<li>
+			<label>Type</label>
+			<%= f.text_field :name %>
+		</li>
+	</ul>
+<% end -%>
+<script>
+	$(function(){
+		if($("#notification_type_notification_category_id").val() == "0") {
+			$("#new-category").show();
+		}
+		$("#notification_type_notification_category_id").change(function(){
+			val = $("#notification_type_notification_category_id").val();
+			if (val == "0") {
+				$("#new-category").fadeIn();
+			} else {
+				$("#new-category").fadeOut();
+				$("#notification_type_new_category").val("");
+			};
+		});
+	});
+</script>

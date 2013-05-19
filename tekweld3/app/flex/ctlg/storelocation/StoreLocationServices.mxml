@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rds:ApplicationServices xmlns:rds="business.*" xmlns:mx="http://www.adobe.com/2006/mxml">
+
+	<mx:HTTPService id="saveRecord" url="/catalog/create_catalog_store_locations"/>
+	<mx:HTTPService id="getRecord" url="/catalog/show_catalog_store_location"/>
+	
+	<mx:HTTPService id="storeLocationDetailFormat" url="ctlg/storelocation/xmls/StoreLocationDetailStructure.xml"/>
+	
+	<mx:HTTPService id="printRecord" url=""/>
+
+</rds:ApplicationServices>

@@ -1,0 +1,452 @@
+/* Global styles */
+
+/* START:notice */
+#notice {
+  border: 2px solid red;
+  padding: 1em;
+  margin-bottom: 2em;
+  background-color: #f0f0f0;
+  font: bold smaller sans-serif;
+	width: 20em;
+}
+/* END:notice */
+
+
+/* Styles for main page */
+
+#banner {
+  background: #9c9;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid;
+  font: 40px/40px "Trebuchet MS", serif;
+  color: #282;
+  text-align: center;
+}
+
+#banner img {
+  float: left;
+}
+
+#columns {
+  background: #99CC99;
+}
+
+#main {
+  margin-left: 15em;
+  padding-top: 4ex;
+  padding-left: 2em;
+  background: white;
+}
+
+#side {
+  float: left;
+  padding-top: 1em;
+  padding-left: 1em;
+  padding-bottom: 1em;
+  width: 14em;
+  background: #99CC99;
+}
+
+
+
+/* An entry in the store catalog */
+
+#store  .entry {
+  border-bottom: 1px dotted #77d;
+}
+
+#store  .title {
+  font-size: 120%;
+  font-family: sans-serif;
+}
+
+#store .entry img {
+  width: 75px;
+  float: left;
+}
+
+
+#store .entry h3 {
+ margin-bottom: 2px;
+ color: #227;
+}
+
+#store .entry p {
+ margin-top: 0px; 
+ margin-bottom: 0.8em; 
+}
+
+#store .entry .price-line {
+}
+
+#store .entry .add-to-cart {
+  position: relative;
+}
+
+#store .entry  .price {
+  color: #44a;
+  font-weight: bold;
+  margin-right: 2em;
+}
+
+
+  /* START:inline */
+  #store .entry form, #store .entry form div {
+    display: inline;
+  }
+  /* END:inline */
+
+/* START:cart */
+/* Styles for the cart in the main page and the sidebar */
+
+.cart-title {
+  font: 120% bold; 
+}
+
+.item-price, .total-line {
+  text-align: right;	
+}
+
+.total-line .total-cell {
+  font-weight: bold;
+  border-top: 1px solid #595;
+}
+
+
+/* Styles for the cart in the sidebar */
+
+#cart, #cart table {
+  font-size: smaller;	
+  color:     white;
+}
+
+#cart table {
+  border-top:    1px dotted #595;
+  border-bottom: 1px dotted #595;
+  margin-bottom: 10px;
+}
+/* END:cart */
+
+/* Styles for order form */
+
+.depot-form fieldset {
+  background: #efe;
+}
+
+.depot-form legend {
+  color: #dfd;
+  background: #141;
+  font-family: sans-serif;
+  padding: 0.2em 1em;
+}
+
+.depot-form label {
+  width: 5em;
+  float: left;
+  text-align: right;
+  margin-right: 0.5em;
+  display: block;
+}
+
+.depot-form .submit {
+  margin-left: 5.5em;
+}
+
+/* The error box */
+
+.fieldWithErrors {
+  padding: 2px;
+  background-color: red;
+  display: table;
+}
+
+#errorExplanation {
+  width: 400px;
+  border: 2px solid red;
+  padding: 7px;
+  padding-bottom: 12px;
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+}
+
+#errorExplanation h2 {
+  text-align: left;
+  font-weight: bold;
+  padding: 5px 5px 5px 15px;
+  font-size: 12px;
+  margin: -7px;
+  background-color: #c00;
+  color: #fff;
+}
+
+#errorExplanation p {
+  color: #333;
+  margin-bottom: 0;
+  padding: 5px;
+}
+
+#errorExplanation ul li {
+  font-size: 12px;
+  list-style: square;
+}
+
+/*-------------------------*/
+
+
+span {
+    float: left;
+    padding: 5px;
+}
+/*#stylized{
+border:solid 2px #b7ddf2;
+background:#ebf4fb;
+width: auto;
+}*/
+
+/*fieldset {
+
+border:solid 2px #b7ddf2;
+background:#ebf4fb;    
+padding-top:20px;    
+padding: 10px;
+margin: 5px;    
+float: left;    
+}
+legend {
+position:absolute;
+top:-10px;
+width: inherit;        
+}*/
+pre {
+white-space:pre;
+font-weight:bold;
+color:navy;
+font-family:arial;
+}
+
+fieldset {
+    _position : relative;  /* The underscore means only IE will see it */
+    _padding-top : 20px;   /* Stupid IE */
+    _padding-bottom : 15px;
+    _display : block;
+    border : solid 2px #b7ddf2;
+    width : 40em;
+    background-color : #ebf4fb;
+    margin-bottom : 15px;
+    margin-left: 15px;
+    float: left;
+}
+
+legend {
+    _position : absolute;
+    _top : -10px;
+    font-weight : bold;
+    font-size : 120%;
+    padding : 0px 10px 0px 10px;
+    border-color: black;
+    border-style : solid;
+    border:solid 2px #b7ddf2;
+    background-color : #C3E0E8;
+}
+
+#new-line {
+    clear: left;
+}
+
+#butt {
+    height: 300px;
+}
+
+body {
+    font-family: 'Lucida Grande',"Trebuchet MS",Verdana,sans-serif;
+		font-size:12px;
+    /*color: #4f6b72;*/
+    background: white;
+}
+
+a {
+    color: #c75f3e;
+}
+
+#mytable {
+    width: 700px;
+    padding: 0;
+    margin: 0;
+}
+
+caption {
+    padding: 0 0 5px 0;
+    width: 700px;	 
+    font: italic 11px "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
+    text-align: right;
+}
+
+#redred {
+	color: red;
+}
+
+th {
+    font: bold 11px "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
+    color: #4f6b72;
+    border: 1px solid #C1DAD7;
+    text-align: left;
+    padding: 6px 6px 6px 12px;
+    background: #CAE8EA url(/images/bg_header.jpg) no-repeat;
+}
+
+th.nobg {
+    border-top: 0;
+    border-left: 0;
+    border-right: 1px solid #C1DAD7;
+    background: none;
+}
+
+td {
+    border: 1px solid #C1DAD7;
+    background: #fff;
+    padding: 6px 6px 6px 12px;
+    color: #4f6b72;
+}
+
+
+td.alt {
+    background: #F5FAFA;
+    color: #797268;
+}
+
+th.spec {
+    border-left: 1px solid #C1DAD7;
+    border-top: 0;
+    background: #fff url(/images/bullet1.gif) no-repeat;
+    font: bold 10px "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
+}
+
+th.specalt {
+    border-left: 1px solid #C1DAD7;
+    border-top: 0;
+    background: #f5fafa url(/images/bullet2.gif) no-repeat;
+    font: bold 10px "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
+    color: #797268;
+}
+
+.caption { background: #fff url(/images/title.gif) no-repeat; padding: 2px 0 0 18px; height: 35px; color: #fff;  }
+	.caption p { margin: 0; }
+#left { margin: 0 0 20px; clear: left; width: 270px; float: left; }
+.box { background: #eee; }
+#left img { padding: 6px; border-right: 1px solid #ccc; border-bottom: 1px solid #ccc; background: #fff;}
+.smallthumb { width: 109px; }
+#center { width: 240px; float: left; margin: 0 0 20px 15px; }
+#right { float: right; width: 380px; }
+	.date { font-size: .8em; border-top: 1px solid #eee; padding: 5px 0 0; }
+.box { background: #eee; padding: 10px; }
+.box li { list-style: none; border-bottom: 1px dotted #ccc; line-height: 26px; }
+.box li a { padding: 0 5px; }
+#footer { font-size: .84em; clear: both; padding: 15px; background: #eee; }
+#footer a { color: #444; }
+
+.lbl {
+	display:inline;
+	float:left;
+	margin-right:1em;
+	padding-top:15px;
+	position:relative;
+	text-align:right;
+	width:10em;
+}
+
+.input {
+	-x-system-font:none;
+	border:1px solid #CCCCCC;
+	color:#777777;
+	font-size:12px;
+	font-size-adjust:none;
+	font-stretch:normal;
+	font-style:normal;
+	font-variant:normal;
+	font-weight:normal;
+	height:14px;
+	line-height:normal;
+	margin:10px 0;
+	padding:5px;
+	width:180px;
+}
+
+.select {
+	margin-right:10px;
+	margin-top:15px;
+}
+
+.error_block {
+	background:#FBE3E4 none repeat scroll 0 0;
+	margin-bottom :10px;
+	border:2px solid #FBC2C4;
+	color:#8A1F11;
+	padding:10px;
+	width:470px;
+}
+
+.success_block {
+	text-align: center;
+	background:#E6EFC2 none repeat scroll 0 0;
+	margin-bottom :10px;
+	border:2px solid #C6D880;
+	color:#264409;
+	padding:10px;
+	width:470px;
+}
+
+.vertical_label {
+	
+}
+
+.loading {
+	
+	background:#F7F7F7 none repeat scroll 0 0;
+	margin-bottom :10px;
+	border:2px solid #6F6F6F;
+	color:black;
+	padding:10px;
+	width:470px;
+}
+
+#flashcontent {
+	display: block;
+	margin: 0 auto;
+	padding: 0;
+}
+
+.error_block ul{
+	padding-left: 20px;
+	padding-top: 5px;
+}
+
+.error_block li {
+	padding-bottom: 5px;
+}
+
+.no_th_decoration {
+	text-decoration:none;
+	text-transform:none;
+}
+
+.autocomplete-w1 { background:url(/images/shadow.png) no-repeat bottom right; position:absolute; top:7px; left:6px; /* IE6 fix: */ _background:none; _top:1px; }
+.autocomplete { width:300px; border:1px solid #999; background:#FFF; cursor:default; text-align:left; max-height:350px; overflow:auto; margin:-6px 6px 6px -6px; /* IE specific: */ _height:350px;  _margin:0px 6px 6px 0; overflow-x:hidden; }
+.autocomplete .selected { background:#F0F0F0; }
+.autocomplete div { padding:2px 5px; white-space:nowrap; }
+.autocomplete strong { font-weight:bold; color: red;}
+
+#iFrame {
+  display     : none;
+  visibility  : hidden;
+  height      : 1px;
+}
+.credit_card_icon {
+	vertical-align: inherit;
+	padding-right: 5px;
+	background-color: none;
+}
+
+
+
+

@@ -1,0 +1,9 @@
+<columns  lockedColumnCount='0'>
+	
+	<column data='holiday_date' 		label='Date' 		editable='false' 	visible='true' 		width='100' 		textAlign='left'
+		 	print_width = '20'			forLevel='true' 	defaultForLevel='1'	booleanFlag='false'	sortDataType='D'	columnPrecision="NaN"/>
+
+	<column data='event' 				label='Event'	editable='false' 	visible='true' 		width='100' 			textAlign='left'
+		 	print_width = '20'			forLevel='true' 	defaultForLevel='0' booleanFlag='false'	sortDataType='S'	columnPrecision="NaN"/>
+    
+</columns> 

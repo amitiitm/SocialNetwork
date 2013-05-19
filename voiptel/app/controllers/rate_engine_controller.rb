@@ -1,0 +1,2 @@
+class RateEngineController < ApplicationController
+end

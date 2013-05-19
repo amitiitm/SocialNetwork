@@ -1,0 +1,231 @@
+<style type="text/css" media="screen">
+	
+	/* common
+	--------------------------------------------------*/
+	
+	body {
+		margin: 0px;
+		padding: 0px;
+		color: #666;
+		background: #e5e0c9 url("http://openfo.com/images/bgTile.gif") repeat;
+	}
+	#BodyImposter {
+		color: #666;
+		background: #e5e0c9 url("http://openfo.com/images/bgTile.gif") repeat;
+		width: 100%;
+		margin: 0px;
+		padding: 0px;
+		text-align: center;
+	}
+	#BodyImposter li,
+	#BodyImposter p,
+	#BodyImposter td {
+		font-size: 12px;
+		line-height: 1.5em;
+		font-family: Helvetica, Arial, sans-serif;
+		text-align: justify;
+	}
+	#BodyImposter p,
+	#BodyImposter ol,
+	#BodyImposter ul {
+		margin: 0em 0em 1em 0em;
+	}
+	#BodyImposter img {
+		border: 0px;
+	}
+	#Primary img {
+		float: right;
+		margin: 5px 0px 15px 15px;
+		border: 1px solid #d3d3d3;
+		padding: 6px;
+	}
+	#BodyImposter small {
+		font-size: 10px;
+		line-height: 1.3em;
+	}
+	#BodyImposter ol {
+		padding-left: 1em;
+	}
+	#Primary ul {
+		padding-left: 1em;
+		padding-right: 1em;
+	}
+	#BodyImposter ol li {
+		margin: 0px;
+		padding: 0px;
+	}
+	#BodyImposter ul li {
+		background: url("http://openfo.com/images/bullet.gif") no-repeat 0em 0.5em;
+		padding: 0px 0px 0px 8px;
+		margin: 0px;
+		list-style: none;
+	}
+	
+	/* links
+	--------------------------------------------------*/
+	
+	#BodyImposter a {
+		text-decoration: underline;
+	}
+	#Primary a:link,
+	#Primary a:visited {
+		color: #000;
+		background: #fff;
+	}
+	#Helpful a:link,
+	#Helpful a:visited,
+	#Legal a:link,
+	#Legal a:visited {
+		color: #666;
+		background: transparent;
+	}
+	#BodyImposter a:hover {
+		text-decoration: none;
+	}
+	#BodyImposter a:active {
+		color: #000;
+		background: #fff;
+		text-decoration: none;
+	}
+	
+	/* heads
+	--------------------------------------------------*/
+	
+	#BodyImposter h1,
+	#BodyImposter h2 {
+		color: #945620;
+		background: #fff;
+		font-family: Georgia, Palatino, serif;
+		font-weight: normal;
+		line-height: normal;
+		margin: 0em 0em 0.5em 0em;
+		padding: 0px;
+		text-align: left;
+	}
+	#Masthead h1 {
+		font-size: 28px;
+		color: #fff;
+		background: #333;
+		margin: 0px;
+	}
+	#Primary h2 {
+		font-size: 22px;
+		/*background: url("images/ornament.gif") no-repeat center top;*/
+		padding-top: 35px;
+		text-align: center;
+	}
+	
+	/* boxes
+	--------------------------------------------------*/
+	
+	#Box {
+		color: #666;
+		background: #fff;
+		border: 1px solid #d3d3d3;
+		margin: 0px auto;
+	}
+	#Content {
+		border: 1px solid #d3d3d3;
+	}
+	#Helpful,
+	#Legal {
+		margin: 0px auto;
+	}
+	#Helpful p,
+	#Legal p {
+		margin: 0px;
+		padding: 0px;
+		text-align: center;
+	}
+	#Masthead {
+		color: #fff;
+		background: #333;
+	}
+	#Masthead h1,
+	#Masthead p {
+		text-align: left;
+	}
+	#Masthead p {
+		font-size: 14px;
+		margin: 0px;
+	}
+	#Masthead p #Date {
+		float: right;
+	}
+	#Masthead {
+		width: 100%;
+		text-align: center;
+	}
+	
+</style>
+
+<body>
+<div id="BodyImposter" style="color: #666; background-color: #e5e0c9;">
+	<table id="Box" cellspacing="0" cellpadding="15" width="700" style="color: #666; background-color: #fff;">
+		<tr>
+			<td>
+				<table id="Masthead" cellspacing="0" cellpadding="20" width="700">
+					<tr>
+						<td style="color: #fff; background: #333; font-family: Helvetica, Arial, sans-serif;">
+							<h1 style="font-family: Georgia, Palatino, serif;">OpenFo Calling System</h1>
+							<p><span id="Date"><%= Time.now.strftime("%B %d, %Y")-%></span> Account Update</p>
+						</td>
+					</tr>
+				</table>
+				<table id="Content" cellspacing="0" cellpadding="20" width="700" style="color: #666; background-color: #fff;">
+					<tr valign="top">
+						<td id="Primary" style="font-family: Helvetica, Arial, sans-serif;">
+							<h2 style="font-family: Georgia, Palatino, serif;">Replacing Calling Card Numbers</h2>
+							Dear <strong><%= @user.first_name -%></strong>,<br><br>
+							Effective today, please replace your existing calling card numbers with the numbers that are provided to you in this email.<br>Enjoy unlimited Nationwide and 300 minutes of International calls at no cost for the next 30 days.<br>
+							Please be patient with us as we are testing our network in order to optimize the best quality of call and provide you with the most competitive rate in the market when you decide to stay with us as one of our valuable long term customers.<br>Again we appreciate your support and hope to provide you with the best quality of service that is available in the market today.<br><br>							
+							<table cellspacing="0">	
+							  	<tr>
+										<td><strong>Account Number: <%= @account.number %></strong></td>			
+									</tr>
+									<tr>
+										<td><strong>Account Pin Code: <%= @account.pin %></strong></td>			
+									</tr>
+							</table><br>
+
+							Your new Calling Card Numbers:<br>
+							<table cellspacing="0">
+								<% for phone in @user.phones -%>
+									<% if phone.assigned_did -%>
+							  	<tr>
+										<td>For <b><%= number_to_phone(phone.complete_phone_number, :area_code => true) %></b>, please use <b><%= number_to_phone(phone.assigned_did.did.number, :area_code => true) %></b></td>
+									</tr>
+									<% end -%>
+								<% end -%>
+							</table><br>
+
+							Please follow the below instructions to make your calls:<br>
+							<strong><u>Step 1 - Connecting to OpenFo Network:</u></strong><br>
+								<p>Dial the Calling Card Number.<br>
+									*If your phone number is not registered in our system you must then enter your account and pin number to proceed with your call<br></p>
+
+							<strong><u>Step 2 - Dialing your number</u></strong>:<br>
+								<p><strong>For U.S domestic calls, please dial your number starting with "1", example:</strong><br>
+									To call (800) 555-7777 you should dial: 18005557777</p>
+
+								<strong>For international calls, please dial your number starting with "011" or "00":</strong><br>
+								To call Iran, dial 01198 or 0098 at the beginning of your number.<br><br>							
+
+							For customer support you may contact <strong>support@openfo.com</strong> or call your <strong>calling card number and enter 1</strong> to connect to the costumer service department.<br><br>	
+
+							<strong>Thank you for testing OpenFo Calling System.</strong>
+						</td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+	</table>
+	<table id="Legal" cellspacing="0" cellpadding="15" width="610">
+		<tr>
+			<td style="font-family: Helvetica, Arial, sans-serif;">
+				<p>&#169; OpenFo Inc, USA</p>
+			</td>
+		</tr>
+	</table>
+</div>
+</body>

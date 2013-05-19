@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rds:ApplicationServices xmlns:rds="business.*" xmlns:mx="http://www.adobe.com/2006/mxml">
+
+	<mx:HTTPService id="saveRecord" url="/account/gl_setup/create_gl_setups"/>
+	<mx:HTTPService id="getRecord" url="/account/gl_setup/show_gl_setup"/>
+	<mx:HTTPService id="glSetupDetailFormat" url="acct/glsetup/xmls/GLSetupDetailStructure.xml"/>
+	<mx:HTTPService id="printRecord" url=""/>
+	<mx:HTTPService id="lookupHelpFormat" url="acct/glsetup/xmls/LookupHelpStru.xml"/>
+</rds:ApplicationServices>

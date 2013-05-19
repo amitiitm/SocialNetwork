@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rds:CommonServices xmlns:rds="business.*" xmlns:mx="http://www.adobe.com/2006/mxml">
+
+	<mx:HTTPService id="saveRecord" url="/setup/company/create_companies"/>
+	<mx:HTTPService id="getRecord" url="/setup/company/show_company"/>
+	<mx:HTTPService id="getList" url="/setup/company/list_companies"/>
+	<mx:HTTPService id="getListFormat" url="stup/store/xmls/StoreListStru.xml"/>
+	<mx:HTTPService id="getViewFormat" url="stup/store/xmls/StoreCriteriaStru.xml"/>
+	<mx:HTTPService id="detailFormat" url="stup/store/xmls/StoreDetailStru.xml"/>
+	<mx:HTTPService id="printRecord" url=""/>
+	<mx:HTTPService id="detailFormatBook" url="stup/store/xmls/StoreDetailBookStru.xml" />
+	<mx:HTTPService id="imageUploadUrl" url="/inventory/item/upload_image"/>
+	
+</rds:CommonServices>

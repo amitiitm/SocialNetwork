@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rds:CommonServices xmlns:rds="business.*" xmlns:mx="http://www.adobe.com/2006/mxml">
+
+	<mx:HTTPService id="saveRecord" url="/diamond_inventory/create_inventory_transfers"/>
+	<mx:HTTPService id="getList" url="/diamond_inventory/list_transfer_inwards"/>
+	
+	<mx:HTTPService id="getViewFormat" url="dinvn/storetransferinward/xmls/StoreTransferInwardCriteriaStru.xml"/>
+	<mx:HTTPService id="getListFormat" url="dinvn/storetransferinward/xmls/StoreTransferInwardListStru.xml"/>
+	
+	<mx:HTTPService id="printRecord" url=""/>
+
+</rds:CommonServices>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<gencomponents:DetailAddEdit xmlns:mx="http://www.adobe.com/2006/mxml"
+	width="400" height="100" verticalGap="0"
+	xmlns:customcomponents="com.generic.customcomponents.*"
+	xmlns:gencomponents="com.generic.components.*">
+
+	<mx:Script source="../scripts/ApplicationSettingTypesDetailScript.as"/>
+	
+	<mx:VBox height="100%" width="100%">
+		<mx:HBox>
+			<mx:Label text="Value" width="120" textAlign="right"/>
+			<customcomponents:GenTextInput id="tiValue" width="155" xmlTag="value" updatableFlag="true"
+				tableName="detail" tabIndex="1" defaultValue="" />
+		</mx:HBox>
+		<mx:HBox>
+			<mx:Label text="Description" width="120" textAlign="right"/>
+			<customcomponents:GenTextInput id="tiDescription" width="250" xmlTag="description" updatableFlag="true"
+				tableName="detail" tabIndex="2" defaultValue=""  />
+		</mx:HBox>
+		<mx:HBox height="0" width="0" visible="false">
+			<customcomponents:GenTextInput id="tiSerial_no" width="0" height="0" visible="false"
+				editable="true" enabled="true" xmlTag="serial_no" updatableFlag="true"
+				tableName="detail" defaultValue=""  maxChars="4" />	
+		</mx:HBox>
+	</mx:VBox>
+</gencomponents:DetailAddEdit>

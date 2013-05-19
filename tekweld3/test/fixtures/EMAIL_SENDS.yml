@@ -1,0 +1,41 @@
+--- 
+email_sends_001: 
+  email_to: testing1@diaspark.com
+  updated_at: 2009-12-04 12:38:06.000000
+  body: "Dear testing1 testing1, You can login to retail application using this url http://localhost:3000/bin/RetailNew.  Login:  testing1@diaspark.com and password: 1890729483"
+  update_flag: Y
+  email_config_id: 100
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  subject: New User created
+  updated_by: 
+  id: 100
+  sent_on: 2009-12-04 12:04:56.000000
+  header: "Content-Type: text/plain; charset=utf-8"
+  email_from: retail@diaspark.com
+  email_cc: vijay.jain@diaspark.com
+  company_id: 1
+  email_bcc: 
+  attempts: 
+  created_at: 2009-12-04 12:04:59.000000
+email_sends_002: 
+  email_to: sports@diaspark.com
+  updated_at: 2009-12-05 14:49:37.000000
+  body: "Dear sports marwin, You can login to retail application using this url http://localhost:3000/bin/RetailNew.  Login:  sports@diaspark.com and password: 2170637172"
+  update_flag: Y
+  email_config_id: 100
+  trans_flag: A
+  created_by: 
+  lock_version: 0
+  subject: New User created
+  updated_by: 
+  id: 120
+  sent_on: 2009-12-05 14:48:27.000000
+  header: "Content-Type: text/plain; charset=utf-8"
+  email_from: retail@diaspark.com
+  email_cc: vijay.jain@diaspark.com
+  company_id: 1
+  email_bcc: 
+  attempts: 
+  created_at: 2009-12-05 14:48:27.000000

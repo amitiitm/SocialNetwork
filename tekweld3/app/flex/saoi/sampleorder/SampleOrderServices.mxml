@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rds:CommonServices xmlns:rds="business.*" xmlns:mx="http://www.adobe.com/2006/mxml">
+
+	<mx:HTTPService id="saveRecord" 				url="/sale/sample_order/create_sample_orders" />
+	<mx:HTTPService id="getRecord" 					url="/sale/sample_order/show_sample_order" />
+	<mx:HTTPService id="getList" 					url="/sale/sample_order/list_sample_orders" />
+	<mx:HTTPService id="printRecord" 				url="/sale/sales_report/render_sample_order_format" />
+	<mx:HTTPService id="validateCreditCard" 		url="/payment/payment/validate_credit_card" />
+	<mx:HTTPService id="validateUniqueness" 		url="/setup/setup/validate_uniqueness" />
+	<mx:HTTPService id="getDataForTracking" 		url="/sale/sales/show_order_and_artwork_flow" />
+	<mx:HTTPService id="printJob" 					url="/sales_report/render_sample_order_job_format" />
+	<mx:HTTPService id="shippingUploadUrl" 			url="/shipping/shipping/convert_exceltoxml_to_for_sales_order_shippings" />
+	<mx:HTTPService id="getEstimatedShipDate" 		url="/shipping/shipping/calculate_estimated_ship_date_and_packages" />
+	<mx:HTTPService id="artworkUploadUrl" 			url="/artwork/artwork/upload_artwork_attachments" />
+	<mx:HTTPService id="getShippingmethodsForSampleOrder" 			url="/sale/sample_order/get_shipping_methods" />
+	<mx:HTTPService id="cancelAuthorizePayment" 			url="/payment/payment/cancel_authorized_transaction"/>
+	<mx:HTTPService id="resendAcknowledgment" 				url="/sale/sales/resend_order_acknowledgment" />
+	<mx:HTTPService id="getInhandDate" 						url="/shipping/shipping/get_inhand_date"/>
+	<mx:HTTPService id="getShippingmethodsFromApi" 			url="/shipping/shipping/get_shipping_methods"/>
+	
+	<mx:HTTPService id="detailFormat" 				url="saoi/sampleorder/xmls/SampleOrderShippingImportStru.xml"/>
+	<mx:HTTPService id="getListFormat" 				url="saoi/sampleorder/xmls/SampleOrderListStru.xml" />
+	<mx:HTTPService id="getViewFormat" 				url="saoi/sampleorder/xmls/SampleOrderCriteriaStru.xml" />
+	<mx:HTTPService id="lineDetailFormat"			url="saoi/sampleorder/xmls/SampleOrderLineDetailStru.xml" />
+	<mx:HTTPService id="lineActivityFormat" 		url="saoi/sampleorder/xmls/SampleOrderActivityDetailStru.xml" />
+	<mx:HTTPService id="shippingDetailFormat" 		url="saoi/sampleorder/xmls/SampleOrderShippingDetailStru.xml" />
+	<mx:HTTPService id="shippingHeaderDetailFormat" url="saoi/sampleorder/xmls/SampleOrderShippingHeaderDetailStru.xml" />
+	<mx:HTTPService id="dgItemOptionsGridFormat" 	url="saoi/sampleorder/xmls/SampleOrderItemOptionsDetailStru.xml" />
+	<mx:HTTPService id="queryDetailFormat" 			url="saoi/sampleorder/xmls/SampleOrderQueriesDetailStru.xml" />
+	<mx:HTTPService id="artworkDetailFormat" 		url="saoi/sampleorder/xmls/SampleOrderArtworkDetailStru.xml" />
+	<mx:HTTPService id="paymentInfoActivityDetailFormat" 	url="saoi/sampleorder/xmls/SampleOrderPaymentActivityDetailStru.xml" />
+	<mx:HTTPService id="dgItemPacketsGridFormat" 			url="saoi/sampleorder/xmls/SampleOrderItemPacketsDetailStru.xml" />
+</rds:CommonServices>

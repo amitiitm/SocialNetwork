@@ -1,0 +1,13 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  amount: 9.99
+  note: MyString
+  account_id: 1
+  admin_user_id: 1
+
+two:
+  amount: 9.99
+  note: MyString
+  account_id: 1
+  admin_user_id: 1

@@ -1,0 +1,22 @@
+<columns  lockedColumnCount='0'>
+
+	<column data='trans_no'					label='Order #'				editable='false'	visible='true'	width='110'	textAlign='left'	forLevel='false'
+			defaultForLevel=''				booleanFlag='false'			sortDataType='S'	columnPrecision="NaN"/>
+	
+	<column data='ext_ref_no'				label='Customer PO #'		editable='false'	visible='true'	width='110'	textAlign='left'	forLevel='false'
+			defaultForLevel=''				booleanFlag='false'			sortDataType='S'	columnPrecision="NaN"/>
+	
+	<column data='ship_date'				label='Ship Date'			editable='false'	visible='true'	width='110'	textAlign='left'	forLevel='false'
+			defaultForLevel=''				booleanFlag='false'			sortDataType='D'	columnPrecision="NaN"/>
+	
+	<column data='catalog_item_code'		label='Item #'			editable='false'	visible='true'	width='110'	textAlign='left'	forLevel='false'
+			defaultForLevel=''				booleanFlag='false'		    sortDataType='S'	columnPrecision="NaN"/>		
+				
+					
+	<column data='order_qty'				label='Order Qty'			editable='false'	visible='true'	width='110'	textAlign='left'	forLevel='false'
+			defaultForLevel=''				booleanFlag='false'		    sortDataType='N'	columnPrecision="0"/>
+	
+	<column data='stock_qty'				label='Stock Qty'			editable='false'	visible='true'	width='110'	textAlign='left'	forLevel='false'
+			defaultForLevel=''				booleanFlag='false'		    sortDataType='N'	columnPrecision="0"/>				
+											
+</columns> 

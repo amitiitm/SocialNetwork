@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rds:CommonServices xmlns:rds="business.*" xmlns:mx="http://www.adobe.com/2006/mxml">
+
+	<mx:HTTPService id="getListFormat" url="stup/metalunitconversion/xmls/MetalUnitConversionListStru.xml" />
+	<mx:HTTPService id="getViewFormat" url="stup/metalunitconversion/xmls/MetalUnitConversionCriteriaStru.xml" />
+	<mx:HTTPService id="getList" url="/inventory/jewelry/list_jewelry_unit_conversions"/>
+	<mx:HTTPService id="saveRecord" url="/inventory/jewelry/create_jewelry_unit_conversions"/>
+	<mx:HTTPService id="getRecord" url="/inventory/jewelry/show_jewelry_unit_conversion"/>	
+	<mx:HTTPService id="printRecord" url="" />
+
+</rds:CommonServices>	

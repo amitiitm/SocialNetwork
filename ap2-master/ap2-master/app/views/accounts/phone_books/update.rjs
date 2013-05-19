@@ -1,0 +1,7 @@
+if @success
+  r = "window.location.reload()"
+else
+  r = "alert('an error happened')"
+end
+
+page << r

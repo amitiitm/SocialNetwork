@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:HBox xmlns:mx="http://www.adobe.com/2006/mxml" 
+	 width="100%" 
+	 height="30"
+	 horizontalAlign="left" 
+	 horizontalGap="0" 
+	 verticalGap="0"
+	 xmlns:customcomponents="com.generic.customcomponents.*">
+
+	<mx:Script source="../scripts/ButtonControlPanelDetailEditScript.as"/>
+	
+	<customcomponents:GenButton	
+		id="btnAdd" 
+		icon="@Embed('../assets/add.png')" 
+		disabledIcon="@Embed('../assets/add_disabled.png')"
+		color="#D2C5EB"
+		height="25" 
+		width="25" 
+		toolTip="Add (Ctrl I)"
+		cornerRadius="0"
+		click="btnAddClickHandler()"
+		enabled="{!__genModel.activeModelLocator.detailEditObj.editStatus}" />
+
+	<customcomponents:GenButton 
+		id="btnSave" 
+		icon="@Embed('../assets/save.png')" 
+		disabledIcon="@Embed('../assets/save_disabled.png')" 
+		color="#D2C5EB"
+		height="25" 
+		width="25" 
+		toolTip="Save (Ctrl S)"
+		cornerRadius="0"
+		click="btnSaveClickHandler()"	
+		enabled="{__genModel.activeModelLocator.detailEditObj.editStatus}" />
+	
+	<mx:Spacer width="10"/>
+
+	<customcomponents:GenButton
+		id="btnCancel" 
+		icon="@Embed('../assets/close.png')" 
+		disabledIcon="@Embed('../assets/close_disabled.png')"
+		height="25" 
+		width="25" 
+		toolTip="Cancel (Ctrl D)"
+		cornerRadius="0"
+		click="btnCancelClickHandler()"
+		enabled="{__genModel.activeModelLocator.detailEditObj.editStatus}" />
+
+	<customcomponents:GenButton	id="btnCopyRow" 
+		icon="@Embed('../assets/copy_record.png')" 
+		disabledIcon="@Embed('../assets/copy_record_disabled.png')"
+		enabled="{!__genModel.activeModelLocator.detailEditObj.editStatus}" 
+		height="25" 
+		width="25" 
+		toolTip="Copy (Ctrl Shift C)"
+		cornerRadius="0"
+		click="btnCopyClickHandler()"
+		textAlign="center"/>	
+	<mx:Spacer width="10"/>
+
+	<customcomponents:GenButton
+		id="btnFirst" 
+		icon="@Embed('../assets/first.png')" 
+		disabledIcon="@Embed('../assets/first_disabled.png')"
+		color="#D2C5EB"
+		height="25" 
+		width="25" 
+		toolTip="First (Ctrl &#0060;)"
+		cornerRadius="0"
+		click="btnFirstClickHandler()"
+		enabled="{!__genModel.activeModelLocator.detailEditObj.editStatus}" />
+		
+	<customcomponents:GenButton
+		id="btnPrevious" 
+		icon="@Embed('../assets/prevoius.png')" 
+		disabledIcon="@Embed('../assets/prevoius_disabled.png')"
+		color="#D2C5EB"
+		height="25" 
+		width="25" 
+		toolTip="Previous (Ctrl -)"
+		cornerRadius="0"
+		click="btnPreviousClickHandler()"
+		enabled="{!__genModel.activeModelLocator.detailEditObj.editStatus}" />
+	
+	<customcomponents:GenButton
+		id="btnNext" 
+		icon="@Embed('../assets/next.png')" 
+		disabledIcon="@Embed('../assets/next_disabled.png')"
+		color="#D2C5EB"
+		height="25" 
+		width="25" 
+		toolTip="Next (Ctrl +)"
+		cornerRadius="0"
+		click="btnNextClickHandler()"
+		enabled="{!__genModel.activeModelLocator.detailEditObj.editStatus}" />
+	
+	<customcomponents:GenButton
+		id="btnLast" 
+		icon="@Embed('../assets/last.png')" 
+		disabledIcon="@Embed('../assets/last_disabled.png')"
+		color="#D2C5EB"
+		height="25" 
+		width="25" 
+		toolTip="Last (Ctrl >)"
+		cornerRadius="0"
+		click="btnLastClickHandler()"
+		enabled="{!__genModel.activeModelLocator.detailEditObj.editStatus}" />
+		
+	<mx:HBox width="100%"  height="100%" horizontalAlign="right" verticalAlign="middle">
+		<mx:Label id="lblRowInfo" text="{rowUpdateInfo}"   textAlign="center" fontWeight="normal" color="#000000"/>	
+	</mx:HBox>	
+		
+</mx:HBox>

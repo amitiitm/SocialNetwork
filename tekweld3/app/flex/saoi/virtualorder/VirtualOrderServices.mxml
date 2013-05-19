@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rds:CommonServices xmlns:rds="business.*" xmlns:mx="http://www.adobe.com/2006/mxml">
+
+	<mx:HTTPService id="saveRecord" 				url="/sale/virtual_order/create_virtual_orders" />
+	<mx:HTTPService id="getRecord" 					url="/sale/virtual_order/show_virtual_order" />
+	<mx:HTTPService id="getList" 					url="/sale/virtual_order/list_virtual_orders" />
+	<mx:HTTPService id="printRecord" 				url="/sale/sales_report/render_virtual_order_format" />
+	<mx:HTTPService id="artworkUploadUrl" 			url="/artwork/artwork/upload_artwork_attachments" />
+	<mx:HTTPService id="sendToCustomer" 			url="/artwork/artwork/send_artwork_to_customer" />
+	<mx:HTTPService id="validateCreditCard" 		url="/payment/payment/validate_credit_card" />
+	<mx:HTTPService id="printJob" 					url="/sales_report/render_virtual_order_job_format" />
+	<mx:HTTPService id="validateUniqueness" 		url="/setup/setup/validate_uniqueness" />
+	<mx:HTTPService id="getDataForTracking" 		url="/sale/sales/show_order_and_artwork_flow" />
+	<mx:HTTPService id="resendAcknowledgment" 		url="/sale/sales/resend_order_acknowledgment" />
+	
+	<mx:HTTPService id="getListFormat" 				url="saoi/virtualorder/xmls/VirtualOrderListStru.xml" />
+	<mx:HTTPService id="getViewFormat" 				url="saoi/virtualorder/xmls/VirtualOrderCriteriaStru.xml" />
+	<mx:HTTPService id="lineDetailFormat" 			url="saoi/virtualorder/xmls/VirtualOrderLineDetailStru.xml" />
+	<mx:HTTPService id="lineActivityFormat" 		url="saoi/virtualorder/xmls/VirtualOrderActivityDetailStru.xml" />
+	<mx:HTTPService id="shippingDetailFormat" 		url="saoi/virtualorder/xmls/VirtualOrderShippingDetailStru.xml" />
+	<mx:HTTPService id="artworkDetailFormat" 		url="saoi/virtualorder/xmls/VirtualOrderArtworkDetailStru.xml" />
+	<mx:HTTPService id="lineItemOptionsFormat" 		url="saoi/virtualorder/xmls/VirtualOrderItemOptionsDetailStru.xml" />
+	<mx:HTTPService id="dgItemOptionsGridFormat" 	url="saoi/virtualorder/xmls/VirtualOrderItemOptionsDetailStru.xml" />
+	<mx:HTTPService id="queryDetailFormat" 			url="saoi/virtualorder/xmls/VirtualOrderQueriesDetailStru.xml" />
+</rds:CommonServices>

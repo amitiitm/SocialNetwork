@@ -1,0 +1,11 @@
+# 
+# To change this template, choose Tools | Templates
+# and open the template in the editor.
+ 
+require File.dirname(__FILE__) + '/../test_helper'
+class SalesControllerTest < ActionController::TestCase
+  # Replace this with your real tests.
+  def test_truth
+    assert true
+  end
+end

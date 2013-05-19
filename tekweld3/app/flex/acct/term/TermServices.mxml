@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rds:CommonServices xmlns:rds="business.*" xmlns:mx="http://www.adobe.com/2006/mxml">
+
+	<mx:HTTPService id="saveRecord" url="/setup/term/create_terms" />
+	<mx:HTTPService id="getRecord" url="/setup/term/show_term" />
+	<mx:HTTPService id="getListFormat" url="acct/term/xmls/TermListStru.xml" />
+	<mx:HTTPService id="getList" url="/setup/term/list_terms" />
+	<mx:HTTPService id="getViewFormat" url="acct/term/xmls/TermCriteriaStru.xml" />
+	<mx:HTTPService id="printRecord" url="" />
+	
+	<mx:HTTPService id="detailFormat" url="acct/term/xmls/TermImportStru.xml"/>
+	<mx:HTTPService id="recordUploadUrl" url="/setup/term/convert_exceltoxml_for_terms"/>
+	
+</rds:CommonServices>

@@ -1,0 +1,2 @@
+module DiamondPurchaseHelper
+end

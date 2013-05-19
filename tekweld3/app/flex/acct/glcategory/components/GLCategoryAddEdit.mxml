@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<gencomponents:AddEdit xmlns:mx="http://www.adobe.com/2006/mxml" 
+	height="100%" width="100%" verticalGap="0"
+	xmlns:customcomponents="com.generic.customcomponents.*"
+	xmlns:gencomponents="com.generic.components.*" 
+	creationPolicy="all">
+	
+	<mx:Script source="../scripts/GLCategoryAddEditScript.as"/>
+	
+	<mx:VBox width="100%" height="100%" verticalGap="3">
+		<mx:HBox width="100%" horizontalGap="0" verticalAlign="middle">
+			<mx:Label text="Code" width="95" height="20" textAlign="right"/>
+			<customcomponents:GenTextInput id="tiCode" width="116" xmlTag="code" upperCaseFlag="true"
+				updatableFlag="true" tableName="gl_category"  height="20" defaultValue="" tabIndex="1"
+				validationFlag="true" toolTip="Code" maxChars="25" fontSize="9"/>
+			
+			<mx:Label text="Status" width="95" height="20" textAlign="right"/>
+			<customcomponents:GenComboBox id="cbTrans_flag" defaultValue="A" width="95" cornerRadius="0" xmlTag="trans_flag" updatableFlag="true"
+				tableName="gl_category"  tabIndex="2" height="20" labelField="label" 
+				dataProvider="{__genModel.masterData.child('trans_flag').trans_flag}" />
+		</mx:HBox>
+		
+		<mx:HBox width="100%" horizontalGap="0" height="20" verticalAlign="middle">
+			<mx:Label text="Name" width="95" textAlign="right"/>
+			<customcomponents:GenTextInput id="tiName" width="210" xmlTag="name" updatableFlag="true" tabIndex="3" tableName="gl_category"
+				defaultValue="" validationFlag = "false" toolTip="Name" height="20"
+				maxChars="50" />
+		</mx:HBox>
+		
+		<mx:HBox width="100%" horizontalGap="0" height="20" verticalAlign="middle">
+			<mx:Label text="Account Type" width="95" textAlign="right"/>
+			<customcomponents:GenComboBox id="cbAcc_Type" defaultValue="BA" width="116" cornerRadius="0" xmlTag="account_type" updatableFlag="true"
+				tableName="gl_category"  tabIndex="4" height="20" labelField="label" 
+				dataProvider="{__genModel.masterData.child('gl_category').account_type}" />
+		</mx:HBox>
+		<mx:HBox width="100%" horizontalGap="0" verticalAlign="middle">
+			<mx:Label text="TB Seq #" width="95" height="20" textAlign="right"/>
+			<customcomponents:GenTextInput id="tiTb_seq_no" width="116" xmlTag="tb_seq_no"
+				updatableFlag="true" tableName="gl_category" height="20" tabIndex="5"
+				validationFlag="false" toolTip="TB Seq #" setDefaultOnEmpty="true"
+				defaultValue="0" dataType="N" maxValue="9999" textAlign="right" />
+		</mx:HBox>
+	</mx:VBox>
+</gencomponents:AddEdit>

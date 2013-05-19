@@ -1,0 +1,370 @@
+<?xml version="1.0" encoding="utf-8"?>
+<gencomponents:DetailAddEdit xmlns:mx="http://www.adobe.com/2006/mxml"
+	width="430" height="500" verticalGap="0"
+	xmlns:customcomponents="com.generic.customcomponents.*"
+	xmlns:gencomponents="com.generic.components.*">
+
+	<mx:Script source="../scripts/ItemPriceQuantityDetailScript.as"/>
+	
+	<mx:VBox height="100%" width="100%" >    
+	
+		
+		<mx:HBox visible="false" includeInLayout="false">
+			<mx:Label text="From Date" height="20" width="95" textAlign="right"/>
+			<customcomponents:GenDateField id="dfFrom_Date" width="110" height="18" toolTip="From Date" tabIndex="1" 
+				xmlTag="from_date" updatableFlag="true" tableName="catalog_item_price"/>
+	
+			<mx:Label text="To Date" height="20" width="95" textAlign="right"/>
+			<customcomponents:GenDateField id="dfTo_Date" width="110" height="18" toolTip="To Date" tabIndex="2" 
+				xmlTag="to_date" updatableFlag="true" tableName="catalog_item_price"/> 			
+		</mx:HBox>
+		<mx:HBox>
+			<mx:Label text="Price" width="163" textAlign="right"/>
+			<mx:Label text="Discount #" width="95" textAlign="right"/>
+			<mx:Label text="Net Price" width="84" textAlign="right"/>
+						
+		</mx:HBox>
+		<mx:HBox>
+			<mx:Label text="Blank" width="95" textAlign="right"/>
+			<customcomponents:GenTextInput id="tiBlank_good_price_before_discount"  height="20" textAlign="right"
+										   updatableFlag="true" width="80" tabIndex="3" xmlTag="blank_good_price_before_discount" defaultValue ="0.000"
+										   tableName="catalog_item_price" itemChangedEvent="setNetPrice()"
+										   dataType="N" rounding="false" setDefaultOnEmpty="true"
+										   maxValue="9999999999.999" validationFlag="true" toolTip="Quantity"/>
+			<customcomponents:GenComboBox id="cbDiscountBlankGoods" width="80" cornerRadius="0" xmlTag="blank_good_discount_code" updatableFlag="true"
+										  tableName="catalog_item_price"  tabIndex="4" defaultValue="" labelField="label"  itemChangedEvent="setNetPrice()"
+										  dataProvider="{__genModel.masterData.child('invn').column_discount_code}" />
+			<customcomponents:GenTextInput id="tiBlank_good_price" width="80" height="20"
+										   dataType="N" defaultValue="0.000" enabled="false"
+										   maxValue="9999999999.999" rounding="false"
+										   setDefaultOnEmpty="true" tabIndex="50"
+										   tableName="catalog_item_price" textAlign="right"
+										   toolTip="Quantity" updatableFlag="true"
+										   validationFlag="true" xmlTag="blank_good_price"/>
+			
+		</mx:HBox>
+		<mx:HBox>
+			
+			<mx:Label text="Tier 1" width="95" textAlign="right"/>
+			<customcomponents:GenTextInput id="tiColumn1_price_before_discount"  height="20" textAlign="right"
+										   updatableFlag="true" width="80" tabIndex="5" xmlTag="column1_price_before_discount" defaultValue ="0.000"
+										   tableName="catalog_item_price" itemChangedEvent="setNetPrice()"
+										   dataType="N" rounding="false" setDefaultOnEmpty="true"
+										   maxValue="9999999999.999" validationFlag="true" toolTip="Quantity"/>
+			<customcomponents:GenComboBox id="cbDiscountcolumn1" width="80" cornerRadius="0" xmlTag="column1_discount_code" updatableFlag="true"
+										  tableName="catalog_item_price"  tabIndex="6" defaultValue="" labelField="label" itemChangedEvent="setNetPrice()"
+										  dataProvider="{__genModel.masterData.child('invn').column_discount_code}" />
+
+			<customcomponents:GenTextInput id="tiColumn1" width="80" height="20" dataType="N"
+										   defaultValue="0.000" enabled="false"
+										   itemChangedEvent="setColumnsOrder()"
+										   maxValue="9999999999.999" rounding="false"
+										   setDefaultOnEmpty="true" tabIndex="60"
+										   tableName="catalog_item_price" textAlign="right"
+										   toolTip="Quantity" updatableFlag="true"
+										   validationFlag="true" xmlTag="column1"/>
+		</mx:HBox>
+		
+			<mx:HBox>
+			<mx:Label text="Tier 2" width="95" textAlign="right"/>
+				<customcomponents:GenTextInput id="tiColumn2_price_before_discount"  height="20" textAlign="right"
+											   updatableFlag="true" width="80" tabIndex="7" xmlTag="column2_price_before_discount" defaultValue ="0.000"
+											   tableName="catalog_item_price" itemChangedEvent="setNetPrice()"
+											   dataType="N" rounding="false" setDefaultOnEmpty="true"
+											   maxValue="9999999999.999" validationFlag="true" toolTip="Quantity"/>
+				<customcomponents:GenComboBox id="cbDiscountcolumn2" width="80" cornerRadius="0" xmlTag="column2_discount_code" updatableFlag="true"
+											  tableName="catalog_item_price"  tabIndex="8" defaultValue="" labelField="label" itemChangedEvent="setNetPrice()" 
+											  dataProvider="{__genModel.masterData.child('invn').column_discount_code}" />
+
+				<customcomponents:GenTextInput id="tiColumn2" width="80" height="20" dataType="N"
+											   defaultValue="0.000" enabled="false"
+											   itemChangedEvent="setColumnsOrder()"
+											   maxValue="9999999999.999" rounding="false"
+											   setDefaultOnEmpty="true" tabIndex="80"
+											   tableName="catalog_item_price" textAlign="right"
+											   toolTip="Quantity" updatableFlag="true"
+											   validationFlag="true" xmlTag="column2"/>
+		</mx:HBox>
+			<mx:HBox>
+			<mx:Label text="Tier 3" width="95" textAlign="right"/>
+			
+				<customcomponents:GenTextInput id="tiColumn3_price_before_discount"  height="20" textAlign="right"
+											   updatableFlag="true" width="80" tabIndex="9" xmlTag="column3_price_before_discount" defaultValue ="0.000"
+											   tableName="catalog_item_price" itemChangedEvent="setNetPrice()"
+											   dataType="N" rounding="false" setDefaultOnEmpty="true"
+											   maxValue="9999999999.999" validationFlag="true" toolTip="Quantity"/>
+				<customcomponents:GenComboBox id="cbDiscountcolumn3" width="80" cornerRadius="0" xmlTag="column3_discount_code" updatableFlag="true"
+											  tableName="catalog_item_price"  tabIndex="10" defaultValue="" labelField="label" itemChangedEvent="setNetPrice()"
+											  dataProvider="{__genModel.masterData.child('invn').column_discount_code}" />
+
+				<customcomponents:GenTextInput id="tiColumn3" width="80" height="20" dataType="N"
+											   defaultValue="0.000" enabled="false"
+											   itemChangedEvent="setColumnsOrder()"
+											   maxValue="9999999999.999" rounding="false"
+											   setDefaultOnEmpty="true" tabIndex="100"
+											   tableName="catalog_item_price" textAlign="right"
+											   toolTip="Quantity" updatableFlag="true"
+											   validationFlag="true" xmlTag="column3"/>
+		</mx:HBox>
+			<mx:HBox>
+			<mx:Label text="Tier 4" width="95" textAlign="right"/>
+				<customcomponents:GenTextInput id="tiColumn4_price_before_discount"  height="20" textAlign="right"
+											   updatableFlag="true" width="80" tabIndex="11" xmlTag="column4_price_before_discount" defaultValue ="0.000"
+											   tableName="catalog_item_price" itemChangedEvent="setNetPrice()"
+											   dataType="N" rounding="false" setDefaultOnEmpty="true"
+											   maxValue="9999999999.999" validationFlag="true" toolTip="Quantity"/>
+				<customcomponents:GenComboBox id="cbDiscountcolumn4" width="80" cornerRadius="0" xmlTag="column4_discount_code" updatableFlag="true"
+											  tableName="catalog_item_price"  tabIndex="12" defaultValue="" labelField="label" itemChangedEvent="setNetPrice()" 
+											  dataProvider="{__genModel.masterData.child('invn').column_discount_code}" />
+
+				<customcomponents:GenTextInput id="tiColumn4" width="80" height="20" dataType="N"
+											   defaultValue="0.000" enabled="false"
+											   itemChangedEvent="setColumnsOrder()"
+											   maxValue="9999999999.999" rounding="false"
+											   setDefaultOnEmpty="true" tabIndex="120"
+											   tableName="catalog_item_price" textAlign="right"
+											   toolTip="Quantity" updatableFlag="true"
+											   validationFlag="true" xmlTag="column4"/>
+		</mx:HBox>
+			<mx:HBox>
+			<mx:Label text="Tier 5" width="95" textAlign="right"/>
+				<customcomponents:GenTextInput id="tiColumn5_price_before_discount"  height="20" textAlign="right"
+											   updatableFlag="true" width="80" tabIndex="13" xmlTag="column5_price_before_discount" defaultValue ="0.000"
+											   tableName="catalog_item_price" itemChangedEvent="setNetPrice()"
+											   dataType="N" rounding="false" setDefaultOnEmpty="true"
+											   maxValue="9999999999.999" validationFlag="true" toolTip="Quantity"/>
+				<customcomponents:GenComboBox id="cbDiscountcolumn5" width="80" cornerRadius="0" xmlTag="column5_discount_code" updatableFlag="true"
+											  tableName="catalog_item_price"  tabIndex="14" defaultValue="" labelField="label"  itemChangedEvent="setNetPrice()"
+											  dataProvider="{__genModel.masterData.child('invn').column_discount_code}" />
+
+				<customcomponents:GenTextInput id="tiColumn5" width="80" height="20" dataType="N"
+											   defaultValue="0.000" enabled="false"
+											   itemChangedEvent="setColumnsOrder()"
+											   maxValue="9999999999.999" rounding="false"
+											   setDefaultOnEmpty="true" tabIndex="140"
+											   tableName="catalog_item_price" textAlign="right"
+											   toolTip="Quantity" updatableFlag="true"
+											   validationFlag="true" xmlTag="column5"/>
+		</mx:HBox>
+		<mx:HBox>
+			<mx:Label text="Tier 6" width="95" textAlign="right"/>
+			<customcomponents:GenTextInput id="tiColumn6_price_before_discount"  height="20" textAlign="right"
+										   updatableFlag="true" width="80" tabIndex="15" xmlTag="column6_price_before_discount" defaultValue ="0.000"
+										   tableName="catalog_item_price" itemChangedEvent="setNetPrice()"
+										   dataType="N" rounding="false" setDefaultOnEmpty="true"
+										   maxValue="9999999999.999" validationFlag="true" toolTip="Quantity"/>
+			<customcomponents:GenComboBox id="cbDiscountcolumn6" width="80" cornerRadius="0" xmlTag="column6_discount_code" updatableFlag="true"
+										  tableName="catalog_item_price"  tabIndex="16" defaultValue="" labelField="label" itemChangedEvent="setNetPrice()"
+										  dataProvider="{__genModel.masterData.child('invn').column_discount_code}" />
+
+			<customcomponents:GenTextInput id="tiColumn6" width="80" height="20" dataType="N"
+										   defaultValue="0.000" enabled="false"
+										   itemChangedEvent="setColumnsOrder()"
+										   maxValue="9999999999.999" rounding="false"
+										   setDefaultOnEmpty="true" tabIndex="160"
+										   tableName="catalog_item_price" textAlign="right"
+										   toolTip="Quantity" updatableFlag="true"
+										   validationFlag="true" xmlTag="column6"/>	
+		</mx:HBox>
+		
+		<mx:HBox>
+			<mx:Label text="Tier 7" width="95" textAlign="right"/>
+			<customcomponents:GenTextInput id="tiColumn7_price_before_discount"  height="20" textAlign="right"
+										   updatableFlag="true" width="80" tabIndex="17" xmlTag="column7_price_before_discount" defaultValue ="0.000"
+										   tableName="catalog_item_price" itemChangedEvent="setNetPrice()"
+										   dataType="N" rounding="false" setDefaultOnEmpty="true"
+										   maxValue="9999999999.999" validationFlag="true" toolTip="Quantity"/>
+			<customcomponents:GenComboBox id="cbDiscountcolumn7" width="80" cornerRadius="0" xmlTag="column7_discount_code" updatableFlag="true"
+										  tableName="catalog_item_price"  tabIndex="18" defaultValue="" labelField="label" itemChangedEvent="setNetPrice()"
+										  dataProvider="{__genModel.masterData.child('invn').column_discount_code}" />
+
+			<customcomponents:GenTextInput id="tiColumn7" width="80" height="20" dataType="N"
+										   defaultValue="0.000" enabled="false"
+										   itemChangedEvent="setColumnsOrder()"
+										   maxValue="9999999999.999" rounding="false"
+										   setDefaultOnEmpty="true" tabIndex="180"
+										   tableName="catalog_item_price" textAlign="right"
+										   toolTip="Quantity" updatableFlag="true"
+										   validationFlag="true" xmlTag="column7"/>	
+		</mx:HBox>
+		<mx:HBox>
+			<mx:Label text="Tier 8" width="95" textAlign="right"/>
+			<customcomponents:GenTextInput id="tiColumn8_price_before_discount"  height="20" textAlign="right"
+										   updatableFlag="true" width="80" tabIndex="19" xmlTag="column8_price_before_discount" defaultValue ="0.000"
+										   tableName="catalog_item_price" itemChangedEvent="setNetPrice()"
+										   dataType="N" rounding="false" setDefaultOnEmpty="true"
+										   maxValue="9999999999.999" validationFlag="true" toolTip="Quantity"/>
+			<customcomponents:GenComboBox id="cbDiscountcolumn8" width="80" cornerRadius="0" xmlTag="column8_discount_code" updatableFlag="true"
+										  tableName="catalog_item_price"  tabIndex="20" defaultValue="" labelField="label" itemChangedEvent="setNetPrice()"
+										  dataProvider="{__genModel.masterData.child('invn').column_discount_code}" />
+
+			<customcomponents:GenTextInput id="tiColumn8" width="80" height="20" dataType="N"
+										   defaultValue="0.000" enabled="false"
+										   itemChangedEvent="setColumnsOrder()"
+										   maxValue="9999999999.999" rounding="false"
+										   setDefaultOnEmpty="true" tabIndex="200"
+										   tableName="catalog_item_price" textAlign="right"
+										   toolTip="Quantity" updatableFlag="true"
+										   validationFlag="true" xmlTag="column8"/>	
+		</mx:HBox>
+		<mx:HBox>
+			<mx:Label text="Tier 9" width="95" textAlign="right"/>
+			<customcomponents:GenTextInput id="tiColumn9_price_before_discount"  height="20" textAlign="right"
+										   updatableFlag="true" width="80" tabIndex="21" xmlTag="column9_price_before_discount" defaultValue ="0.000"
+										   tableName="catalog_item_price" itemChangedEvent="setNetPrice()"
+										   dataType="N" rounding="false" setDefaultOnEmpty="true"
+										   maxValue="9999999999.999" validationFlag="true" toolTip="Quantity"/>
+			<customcomponents:GenComboBox id="cbDiscountcolumn9" width="80" cornerRadius="0" xmlTag="column9_discount_code" updatableFlag="true"
+										  tableName="catalog_item_price"  tabIndex="22" defaultValue="" labelField="label" itemChangedEvent="setNetPrice()"
+										  dataProvider="{__genModel.masterData.child('invn').column_discount_code}" />
+
+			<customcomponents:GenTextInput id="tiColumn9" width="80" height="20" dataType="N"
+										   defaultValue="0.000" enabled="false"
+										   itemChangedEvent="setColumnsOrder()"
+										   maxValue="9999999999.999" rounding="false"
+										   setDefaultOnEmpty="true" tabIndex="220"
+										   tableName="catalog_item_price" textAlign="right"
+										   toolTip="Quantity" updatableFlag="true"
+										   validationFlag="true" xmlTag="column9"/>	
+		</mx:HBox>
+		<mx:HBox>
+			<mx:Label text="Tier 10" width="95" textAlign="right"/>
+			<customcomponents:GenTextInput id="tiColumn10_price_before_discount"  height="20" textAlign="right"
+										   updatableFlag="true" width="80" tabIndex="23" xmlTag="column10_price_before_discount" defaultValue ="0.000"
+										   tableName="catalog_item_price" itemChangedEvent="setNetPrice()"
+										   dataType="N" rounding="false" setDefaultOnEmpty="true"
+										   maxValue="9999999999.999" validationFlag="true" toolTip="Quantity"/>
+			<customcomponents:GenComboBox id="cbDiscountcolumn10" width="80" cornerRadius="0" xmlTag="column10_discount_code" updatableFlag="true"
+										  tableName="catalog_item_price"  tabIndex="24" defaultValue="" labelField="label" itemChangedEvent="setNetPrice()"
+										  dataProvider="{__genModel.masterData.child('invn').column_discount_code}" />
+
+			<customcomponents:GenTextInput id="tiColumn10" width="80" height="20" dataType="N"
+										   defaultValue="0.000" enabled="false"
+										   itemChangedEvent="setColumnsOrder()"
+										   maxValue="9999999999.999" rounding="false"
+										   setDefaultOnEmpty="true" tabIndex="240"
+										   tableName="catalog_item_price" textAlign="right"
+										   toolTip="Quantity" updatableFlag="true"
+										   validationFlag="true" xmlTag="column10"/>	
+		</mx:HBox>
+		<mx:HBox>
+			<mx:Label text="Tier 11" width="95" textAlign="right"/>
+			<customcomponents:GenTextInput id="tiColumn11_price_before_discount"  height="20" textAlign="right"
+										   updatableFlag="true" width="80" tabIndex="25" xmlTag="column11_price_before_discount" defaultValue ="0.000"
+										   tableName="catalog_item_price" itemChangedEvent="setNetPrice()"
+										   dataType="N" rounding="false" setDefaultOnEmpty="true"
+										   maxValue="9999999999.999" validationFlag="true" toolTip="Quantity"/>
+			<customcomponents:GenComboBox id="cbDiscountcolumn11" width="80" cornerRadius="0" xmlTag="column11_discount_code" updatableFlag="true"
+										  tableName="catalog_item_price"  tabIndex="26" defaultValue="" labelField="label" itemChangedEvent="setNetPrice()"
+										  dataProvider="{__genModel.masterData.child('invn').column_discount_code}" />
+			
+			<customcomponents:GenTextInput id="tiColumn11" width="80" height="20" dataType="N"
+										   defaultValue="0.000" enabled="false"
+										   itemChangedEvent="setColumnsOrder()"
+										   maxValue="9999999999.999" rounding="false"
+										   setDefaultOnEmpty="true" tabIndex="240"
+										   tableName="catalog_item_price" textAlign="right"
+										   toolTip="Quantity" updatableFlag="true"
+										   validationFlag="true" xmlTag="column11"/>	
+		</mx:HBox>
+		<mx:HBox>
+			<mx:Label text="Tier 12" width="95" textAlign="right"/>
+			<customcomponents:GenTextInput id="tiColumn12_price_before_discount"  height="20" textAlign="right"
+										   updatableFlag="true" width="80" tabIndex="27" xmlTag="column12_price_before_discount" defaultValue ="0.000"
+										   tableName="catalog_item_price" itemChangedEvent="setNetPrice()"
+										   dataType="N" rounding="false" setDefaultOnEmpty="true"
+										   maxValue="9999999999.999" validationFlag="true" toolTip="Quantity"/>
+			<customcomponents:GenComboBox id="cbDiscountcolumn12" width="80" cornerRadius="0" xmlTag="column12_discount_code" updatableFlag="true"
+										  tableName="catalog_item_price"  tabIndex="28" defaultValue="" labelField="label" itemChangedEvent="setNetPrice()"
+										  dataProvider="{__genModel.masterData.child('invn').column_discount_code}" />
+			
+			<customcomponents:GenTextInput id="tiColumn12" width="80" height="20" dataType="N"
+										   defaultValue="0.000" enabled="false"
+										   itemChangedEvent="setColumnsOrder()"
+										   maxValue="9999999999.999" rounding="false"
+										   setDefaultOnEmpty="true" tabIndex="240"
+										   tableName="catalog_item_price" textAlign="right"
+										   toolTip="Quantity" updatableFlag="true"
+										   validationFlag="true" xmlTag="column12"/>	
+		</mx:HBox>
+		<mx:HBox>
+			<mx:Label text="Tier 13" width="95" textAlign="right"/>
+			<customcomponents:GenTextInput id="tiColumn13_price_before_discount"  height="20" textAlign="right"
+										   updatableFlag="true" width="80" tabIndex="29" xmlTag="column13_price_before_discount" defaultValue ="0.000"
+										   tableName="catalog_item_price" itemChangedEvent="setNetPrice()"
+										   dataType="N" rounding="false" setDefaultOnEmpty="true"
+										   maxValue="9999999999.999" validationFlag="true" toolTip="Quantity"/>
+			<customcomponents:GenComboBox id="cbDiscountcolumn13" width="80" cornerRadius="0" xmlTag="column13_discount_code" updatableFlag="true"
+										  tableName="catalog_item_price"  tabIndex="30" defaultValue="" labelField="label" itemChangedEvent="setNetPrice()"
+										  dataProvider="{__genModel.masterData.child('invn').column_discount_code}" />
+			
+			<customcomponents:GenTextInput id="tiColumn13" width="80" height="20" dataType="N"
+										   defaultValue="0.000" enabled="false"
+										   itemChangedEvent="setColumnsOrder()"
+										   maxValue="9999999999.999" rounding="false"
+										   setDefaultOnEmpty="true" tabIndex="240"
+										   tableName="catalog_item_price" textAlign="right"
+										   toolTip="Quantity" updatableFlag="true"
+										   validationFlag="true" xmlTag="column13"/>	
+		</mx:HBox>
+		<mx:HBox>
+			<mx:Label text="Tier 14" width="95" textAlign="right"/>
+			<customcomponents:GenTextInput id="tiColumn14_price_before_discount"  height="20" textAlign="right"
+										   updatableFlag="true" width="80" tabIndex="31" xmlTag="column14_price_before_discount" defaultValue ="0.000"
+										   tableName="catalog_item_price" itemChangedEvent="setNetPrice()"
+										   dataType="N" rounding="false" setDefaultOnEmpty="true"
+										   maxValue="9999999999.999" validationFlag="true" toolTip="Quantity"/>
+			<customcomponents:GenComboBox id="cbDiscountcolumn14" width="80" cornerRadius="0" xmlTag="column14_discount_code" updatableFlag="true"
+										  tableName="catalog_item_price"  tabIndex="32" defaultValue="" labelField="label" itemChangedEvent="setNetPrice()"
+										  dataProvider="{__genModel.masterData.child('invn').column_discount_code}" />
+			
+			<customcomponents:GenTextInput id="tiColumn14" width="80" height="20" dataType="N"
+										   defaultValue="0.000" enabled="false"
+										   itemChangedEvent="setColumnsOrder()"
+										   maxValue="9999999999.999" rounding="false"
+										   setDefaultOnEmpty="true" tabIndex="240"
+										   tableName="catalog_item_price" textAlign="right"
+										   toolTip="Quantity" updatableFlag="true"
+										   validationFlag="true" xmlTag="column14"/>	
+		</mx:HBox>
+		<mx:HBox>
+			<mx:Label text="Tier 15" width="95" textAlign="right"/>
+			<customcomponents:GenTextInput id="tiColumn15_price_before_discount"  height="20" textAlign="right"
+										   updatableFlag="true" width="80" tabIndex="33" xmlTag="column15_price_before_discount" defaultValue ="0.000"
+										   tableName="catalog_item_price" itemChangedEvent="setNetPrice()"
+										   dataType="N" rounding="false" setDefaultOnEmpty="true"
+										   maxValue="9999999999.999" validationFlag="true" toolTip="Quantity"/>
+			<customcomponents:GenComboBox id="cbDiscountcolumn15" width="80" cornerRadius="0" xmlTag="column15_discount_code" updatableFlag="true"
+										  tableName="catalog_item_price"  tabIndex="34" defaultValue="" labelField="label" itemChangedEvent="setNetPrice()"
+										  dataProvider="{__genModel.masterData.child('invn').column_discount_code}" />
+			
+			<customcomponents:GenTextInput id="tiColumn15" width="80" height="20" dataType="N"
+										   defaultValue="0.000" enabled="false"
+										   itemChangedEvent="setColumnsOrder()"
+										   maxValue="9999999999.999" rounding="false"
+										   setDefaultOnEmpty="true" tabIndex="240"
+										   tableName="catalog_item_price" textAlign="right"
+										   toolTip="Quantity" updatableFlag="true"
+										   validationFlag="true" xmlTag="column15"/>	
+		</mx:HBox>
+		<mx:HBox>
+			<mx:Label text="EQP Tier" width="95" textAlign="right"/>
+			<customcomponents:GenComboBox id="cbEqpTier" width="80" cornerRadius="0" xmlTag="end_quantity_price" updatableFlag="true"
+										  tableName="catalog_item_price"  tabIndex="35" defaultValue="1" labelField="label"
+										  dataProvider="{commonartworkXml.getArtworkList('end_quantity_price')}" />
+		</mx:HBox>
+		<mx:HBox height="0" width="0" visible="false" includeInLayout="false" >
+			<mx:Label text="Status" width="95" textAlign="right"/>
+			<customcomponents:GenComboBox id="cbTrans_flag" width="110" cornerRadius="0" xmlTag="trans_flag" updatableFlag="true"
+				tableName="catalog_item_price"  tabIndex="6" defaultValue="A" labelField="label" 
+				dataProvider="{__genModel.masterData.child('trans_flag').trans_flag}" />
+			<mx:Label text="Column 1" width="95" textAlign="right"/>
+		</mx:HBox>
+		
+	
+		<customcomponents:GenTextInput id="tiSerial_no" width="0" height="0" visible="false"
+			editable="true" enabled="true" xmlTag="serial_no" updatableFlag="true"
+			tableName="catalog_item_price" defaultValue=""  maxChars="4" toolTip="Serial #" />
+	
+	</mx:VBox>
+</gencomponents:DetailAddEdit>

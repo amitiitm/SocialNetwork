@@ -1,0 +1,24 @@
+change names:
+	Cote dIvoire
+	replace , with - or space
+	north korea
+	
+problems:
+	British Indian Ocean Territory	246
+	Aland Islands
+	Mayotte - Comoros
+	Midway Islands - United States Minor Outlying Islands
+	212	- Morocco	- Western Sahara
+	64 - New Zealand - Proper	Antarctica
+	Isle of Man
+	
+change names:
+	Timor-Leste to East Timor
+	
+fuck:
+	118	UK Directory Enquiries	Dominican Republic
+	118118	UK Directory Enquiries	Dominican Republic
+	118247	UK Directory Enquiries	Dominican Republic
+	118500	UK Directory Enquiries	Dominican Republic
+	
+	

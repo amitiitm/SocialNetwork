@@ -1,0 +1,96 @@
+<%= page_title :title => "Daily Traffic Charts | #{@date.strftime('%B, %Y')} Traffic" %>
+
+<script type="text/javascript" src="/ofc/js/swfobject.js"></script>
+<div class="clear"></div>
+<div class="content-box">
+	<div class="two-column">
+		<div class="column">
+			<div class="portlet ui-widget ui-widget-content ui-helper-clearfix ui-corner-all">
+				<div class="portlet-header ui-widget-header">AccessConnect<span class="ui-icon ui-icon-circle-arrow-s"></span></div>
+				<div class="portlet-content">
+					<div id='ac'></div>
+					<p>
+						<h3 class="nice-blue">
+							<%= if @current_month then 
+								"Today: #{@ac_today} | 
+								Yesterday: #{@ac_yesterday} | 
+								Partial Average: #{@ac_partial_average} | " 
+							end %>
+							<%= unless @current_month then "Average: #{@ac_average}  | " end %>
+							Total Minutes: <%= @ac_total %>
+						</h3>
+					</p>
+				</div>
+			</div>
+
+			<div class="portlet ui-widget ui-widget-content ui-helper-clearfix ui-corner-all">
+				<div class="portlet-header ui-widget-header">Trunks<span class="ui-icon ui-icon-circle-arrow-s"></span></div>
+				<div class="portlet-content">
+					<div id='trunk'></div>
+					<p>
+						<h3 class="nice-blue">
+							<%= if @current_month then 
+								"Today: #{@trunk_today} | 
+								Yesterday: #{@trunk_yesterday} | 
+								Partial Average: #{@trunk_partial_average} | " 
+							end %>
+							<%= unless @current_month then "Average: #{@trunk_average}  | " end %>
+							Total Minutes: <%= @trunk_total %>
+						</h3>
+					</p>
+				</div>
+			</div>
+
+				<div class="content-box">
+					<h4 class="ui-box-header ui-corner-all">Other Months</h4>
+					<p><%= show_months(Chronic.parse("2008-08-01").beginning_of_month) %></p>
+				</div>
+				
+		</div>
+
+		<div class="column column-right">
+			<div class="portlet ui-widget ui-widget-content ui-helper-clearfix ui-corner-all">
+				<div class="portlet-header ui-widget-header">CardConnect<span class="ui-icon ui-icon-circle-arrow-s"></span></div>
+				<div class="portlet-content">
+					<div id='cc'></div>
+					<p>
+						<h3 class="nice-blue">
+							<%= if @current_month then 
+								"Today: #{@cc_today} | 
+								Yesterday: #{@cc_yesterday} | 
+								Partial Average: #{@cc_partial_average} | " 
+							end %>
+							<%= unless @current_month then "Average: #{@cc_average}  | " end %>
+							Total Minutes: <%= @cc_total %>
+						</h3>
+					</p>
+				</div>
+			</div>
+		</div>
+	<div class="clear"></div>
+</div>
+
+<script type="text/javascript">
+	$(function(){
+		//var width = $(".column").width() - 20;
+		var width = 800;
+		swfobject.embedSWF(
+		  "/ofc/open-flash-chart.swf", "ac", width, "250",
+		  "9.0.0", "expressInstall.swf",
+		  {"data-file":"/reports/data%3fyear%3d<%=@year%>%26month%3d<%=@month%>"},
+			{"wmode" : "transparent"}
+		);
+		swfobject.embedSWF(
+	  	"/ofc/open-flash-chart.swf", "cc", width, "250",
+	  	"9.0.0", "expressInstall.swf",
+	  	{"data-file":"/reports/data3%3fyear%3d<%=@year%>%26month%3d<%=@month%>"},
+			{"wmode" : "transparent"}
+	  );
+		swfobject.embedSWF(
+	  	"/ofc/open-flash-chart.swf", "trunk", width, "250",
+	  	"9.0.0", "expressInstall.swf",
+	  	{"data-file":"/reports/data2%3fyear%3d<%=@year%>%26month%3d<%=@month%>"},
+			{"wmode" : "transparent"}
+	  );
+	})
+</script>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rds:ApplicationServices xmlns:rds="business.*" xmlns:mx="http://www.adobe.com/2006/mxml">
+
+	<mx:HTTPService id="saveRecord" url="/inventory/item/create_catalog_items"/>
+	<mx:HTTPService id="getRecord" url=""/>
+	
+	<mx:HTTPService id="itemDetailFormat" url="ctlg/itemupload/xmls/ItemDetailStructure.xml"/>
+	<mx:HTTPService id="itemUploadUrl" url="/inventory/item/upload_item_data_from_excel"/>
+	
+	<mx:HTTPService id="printRecord" url=""/>
+
+</rds:ApplicationServices>

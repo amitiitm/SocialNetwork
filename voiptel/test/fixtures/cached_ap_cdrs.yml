@@ -1,0 +1,29 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  month: 2010-11-15
+  duration: 1
+  calls: 1
+  answer: 1
+  busy: 1
+  cancel: 1
+  congestion: 1
+  invalid_num: 1
+  no_input: 1
+  other_disposition: 1
+  buy_cost: 9.99
+  sell_cost: 9.99
+
+two:
+  month: 2010-11-15
+  duration: 1
+  calls: 1
+  answer: 1
+  busy: 1
+  cancel: 1
+  congestion: 1
+  invalid_num: 1
+  no_input: 1
+  other_disposition: 1
+  buy_cost: 9.99
+  sell_cost: 9.99

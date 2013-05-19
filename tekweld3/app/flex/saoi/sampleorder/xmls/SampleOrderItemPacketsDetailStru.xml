@@ -1,0 +1,21 @@
+<columns  lockedColumnCount='0'>
+
+	<column data='carton_length'			label='Length'				editable='false'	visible='true'	width='60'	textAlign='right'	forLevel='false'
+			defaultForLevel=''				booleanFlag='false'			sortDataType='N'	columnPrecision="2"/>
+	
+	<column data='carton_width'				label='Width'				editable='false' 	visible='true' 	width='60'	textAlign='right'	forLevel='false' 
+			defaultForLevel=''				booleanFlag='false'			sortDataType='N'	columnPrecision="2"/>
+					
+	<column data='carton_height'			label='Height'				editable='false'	visible='true'	width='60'	textAlign='right'	forLevel='false'
+			defaultForLevel=''				booleanFlag='false'			sortDataType='N'	columnPrecision="2"/>
+	
+	<column data='carton_wt'				label='Weight'				editable='false'	visible='true'	width='60'	textAlign='right'	forLevel='false'
+			defaultForLevel=''				booleanFlag='false'			sortDataType='N'	columnPrecision="3"/>
+	
+	<column data='pcs_per_carton'			label='Pcs per Cartoon'		editable='false' 	visible='true' 	width='80'	textAlign='left'	forLevel='false' 
+			defaultForLevel=''				booleanFlag='false'			sortDataType='N'	columnPrecision="0"/>
+	
+	<column data='tracking_no'				label='Tracking #'			editable='false'	visible='true'	width='300'	textAlign='left'	forLevel='false'
+			defaultForLevel=''				booleanFlag='false'			sortDataType='S'	columnPrecision="NaN"/>
+				
+</columns> 

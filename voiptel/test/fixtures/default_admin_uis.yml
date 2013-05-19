@@ -1,0 +1,13 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  partial_name: MyString
+  partial_location: MyString
+  container: MyString
+  position: 1
+
+two:
+  partial_name: MyString
+  partial_location: MyString
+  container: MyString
+  position: 1

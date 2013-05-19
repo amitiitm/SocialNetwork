@@ -1,0 +1,9 @@
+<columns  lockedColumnCount='0'>
+
+	<column data='attribute_name'	label='Attribute'	editable='false'	visible='true'	width='200'	textAlign='left'	forLevel='false'
+			defaultForLevel=''		booleanFlag='false'	sortDataType='S' 	columnPrecision="NaN"/>
+
+	<column data='value_name'		label='Value'		editable='false'	visible='true'	width='150'	textAlign='left'	forLevel='false'
+			defaultForLevel=''		booleanFlag='false'	sortDataType='S' 	columnPrecision="NaN"/>
+		
+</columns> 

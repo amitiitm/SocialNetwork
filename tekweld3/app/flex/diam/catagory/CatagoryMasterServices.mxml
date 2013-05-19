@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rds:CommonServices xmlns:rds="business.*"
+	xmlns:mx="http://www.adobe.com/2006/mxml">
+
+	<mx:HTTPService id="saveRecord" url="/diamond/create_categories"/>
+	<mx:HTTPService id="getRecord" url="/diamond/show_category"/>
+	<mx:HTTPService id="getListFormat" url="diam/catagory/xmls/CatagoryMasterListStru.xml"/>
+	<mx:HTTPService id="getList" url="/diamond/list_categories"/>
+	<mx:HTTPService id="getViewFormat" url="diam/catagory/xmls/CatagoryMasterCriteriaStru.xml"/>
+	<mx:HTTPService id="setDefaultView" url=""/>
+	<mx:HTTPService id="printRecord" url=""/>
+	
+	<mx:HTTPService id="detailFormat" url="diam/catagory/xmls/CatagoryMasterImportStru.xml"/>
+	<mx:HTTPService id="recordUploadUrl" url="/diamond/convert_exceltoxml_for_diamond_categories"/>
+
+
+</rds:CommonServices>

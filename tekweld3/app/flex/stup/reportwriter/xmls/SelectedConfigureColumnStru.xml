@@ -1,0 +1,15 @@
+<columns>
+
+		<column	data='select_yn'	label='Select'			editable='true'		visible='true'		width='50' 					
+				textAlign='center' 	forLevel='false'		dataType='S' 		booleanFlag='true'  sortDataType='S'	columnPrecision="NaN"/>
+
+		<column data='column_label' label='Column' 			editable='false' 	visible='true' 		width='80' 
+				textAlign='left' 	forLevel='true'			dataType='S' 		booleanFlag='false'	sortDataType='S'	columnPrecision="NaN"/>
+
+		<column data='print_width'	label='Width (Print)'	editable='true'		visible='true' 		width='80' 
+				textAlign='right' 	forLevel='false'		dataType='N' 		booleanFlag='false'	sortDataType='N'	columnPrecision="0"/>
+				
+		<column	data='istotal' 		label='Total'			editable='true'		visible='true'		width='30' 					
+				textAlign='center'	forLevel='false'		dataType='S' 		booleanFlag='true' 	sortDataType='S'	columnPrecision="NaN"/>
+
+</columns> 

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rds:CommonServices xmlns:rds="business.*" xmlns:mx="http://www.adobe.com/2006/mxml">
+
+	<mx:HTTPService id="saveRecord" url="/crm/crm_account_category/create_account_categories"/>
+	<mx:HTTPService id="getRecord" url="/crm/crm_account_category/show_account_category"/>
+	<mx:HTTPService id="getList" url="/crm/crm_account_category/list_account_categories"/>
+	<mx:HTTPService id="getViewFormat" url="crm/category/xmls/AccountCategoryCriteriaStru.xml"/>
+	<mx:HTTPService id="getListFormat" url="crm/category/xmls/AccountCategoryListStru.xml"/>
+	<mx:HTTPService id="printRecord" url=""/>
+
+</rds:CommonServices>
+
+
+

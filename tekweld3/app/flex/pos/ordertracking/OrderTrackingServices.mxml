@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rds:CommonServices xmlns:rds="business.*" xmlns:mx="http://www.adobe.com/2006/mxml">
+
+	<mx:HTTPService id="saveRecord" url=""/>
+	<mx:HTTPService id="getList" url="/point_of_sale/order_tracking"/>
+	
+	<mx:HTTPService id="getViewFormat" url="pos/ordertracking/xmls/OrderTrackingCriteriaStru.xml"/>
+	<mx:HTTPService id="getListFormat" url="pos/ordertracking/xmls/OrderTrackingListStru.xml"/>
+	
+	<mx:HTTPService id="printRecord" url=""/>
+
+</rds:CommonServices>

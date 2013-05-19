@@ -1,0 +1,11 @@
+<% if !@dids.blank? -%>
+	<% for d in @dids -%>
+	<div class="did_result">
+		<% did_number = number_to_phone(d.number, :area_code => true) -%>
+		<input class="did" name='dids' type='radio' value='<%= did_number %>' data-id='<%= d.id %>' data-area-code='<%= d.area_code %>' data-did-number='<%= d.number %>'> <%= did_number %></input>
+	</div>	
+	<% end %>
+<% else %>
+	<br>
+  No DID found!
+<% end -%>

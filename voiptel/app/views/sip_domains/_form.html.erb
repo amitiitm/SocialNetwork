@@ -1,0 +1,10 @@
+<% form_for @sip_domain, :html => {:class => "forms"} do |f| %>
+  <%= error("Could not create sip_domain:") %>
+	<ul>
+	  <li>
+	    <%= f.label :domain %>
+	    <%= f.text_field :domain %>
+	  </li>
+	</ul>
+	<!-- <%= submit_button("Save") %> <%= loading("Please wait...") %> -->
+<% end %>

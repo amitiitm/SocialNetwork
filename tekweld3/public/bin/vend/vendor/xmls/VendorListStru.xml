@@ -1,0 +1,42 @@
+<columns  lockedColumnCount='4'>
+
+	<column data='code'				label='Code'			editable='false'	visible='true'		width='100'	textAlign='left'	forLevel='true'
+			print_width = '20'		defaultForLevel='2'		booleanFlag='false'	sortDataType='S' 	columnPrecision="NaN"/>
+			
+	<column data='name'				label='Name'			editable='false'	visible='true'		width='160'	textAlign='left'	forLevel='true'
+			print_width = '20'		defaultForLevel=''		booleanFlag='false'	sortDataType='S'	columnPrecision="NaN"/>
+	
+	<column data='invoice_term_code' label='Invoice Term'	editable='false'	visible='true'		width='80'	textAlign='left'	forLevel='true'
+			print_width = '15'		defaultForLevel=''		booleanFlag='false'	sortDataType='S'	columnPrecision="NaN"/>
+			
+	<column data='memo_term_code'	label='Memo Term'		editable='false'	visible='true'		width='80'	textAlign='left'	forLevel='true'
+			print_width = '15'		defaultForLevel=''		booleanFlag='false'	sortDataType='S'	columnPrecision="NaN"/>
+			
+	<column data='credit_limit' 	label='Credit Limit'	editable='false'	visible='true'		width='80'	textAlign='right'	forLevel='false'
+			print_width = '18'		defaultForLevel=''		booleanFlag='false'	sortDataType='N'	columnPrecision="2"/>
+
+	<column data='gl_account_code'	label='Expense A/c'		editable='false'	visible='true'		width='80'	textAlign='left'	forLevel='true'
+			print_width = '18'		defaultForLevel='1'		booleanFlag='false'	sortDataType='S'	columnPrecision="NaN"/>
+			
+	<column data='discount_per' 	label='Discount%'		editable='false'	visible='true'		width='80'	textAlign='right'	forLevel='false'
+			print_width = '16'		defaultForLevel=''		booleanFlag='false'	sortDataType='N'	columnPrecision="2"/>
+			
+	<column data='price_level'		label='Price Level'		editable='false'	visible='true'		width='80'	textAlign='left'	forLevel='true'
+			print_width = '18'		defaultForLevel=''		booleanFlag='false'	sortDataType='S'	columnPrecision="NaN"/>
+			
+	<column data='first_name' 		label='First Name'		editable='false'	visible='true'		width='80'	textAlign='left'	forLevel='false'
+			print_width = '18'		defaultForLevel=''		booleanFlag='false'	sortDataType='S'	columnPrecision="NaN"/>
+			
+	<column data='last_name'		label='Last Name'		editable='false'	visible='true'		width='80'	textAlign='left'	forLevel='true'
+			print_width = '18'		defaultForLevel=''		booleanFlag='false'	sortDataType='S'	columnPrecision="NaN"/>
+			
+	<column data='city' 			label='City'			editable='false'	visible='true'		width='80'	textAlign='left'	forLevel='false'
+			print_width = '18'		defaultForLevel=''		booleanFlag='false'	sortDataType='S'	columnPrecision="NaN"/>
+			
+	<column data='state'			label='State'			editable='false'	visible='true'		width='80'	textAlign='left'	forLevel='true'
+			print_width = '18'		defaultForLevel=''		booleanFlag='false'	sortDataType='S'	columnPrecision="NaN"/>
+			
+	<column data='country'			label='Country'			editable='false'	visible='true'		width='80'	textAlign='left'	forLevel='true'
+			print_width = '18'		defaultForLevel=''		booleanFlag='false'	sortDataType='S'	columnPrecision="NaN"/>
+			
+</columns> 

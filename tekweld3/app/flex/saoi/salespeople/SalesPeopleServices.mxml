@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rds:CommonServices xmlns:rds="business.*" xmlns:mx="http://www.adobe.com/2006/mxml">
+
+	<mx:HTTPService id="saveRecord" url="/sale/sales_person/create_people"/>
+	<mx:HTTPService id="getRecord" url="/sale/sales_person/show_person"/>
+	<mx:HTTPService id="getList" url="/sale/sales_person/list_people"/> 
+	<mx:HTTPService id="getListFormat" url="saoi/salespeople/xmls/SalesPeopleListStru.xml"/>
+	<mx:HTTPService id="getViewFormat" url="saoi/salespeople/xmls/SalesPeopleCriteriaStru.xml"/>
+	<mx:HTTPService id="printRecord" url=""/>
+	<mx:HTTPService id="detailFormat" url="saoi/salespeople/xmls/SalesPeopleDetailStru.xml"/>
+	<mx:HTTPService id="detailCustomerFormat" url="saoi/salespeople/xmls/SalesPeopleDetailCustomerStru.xml"/>
+	
+	<mx:HTTPService id="importDetailFormat" url="saoi/salespeople/xmls/SalesPeopleImportStru.xml"/>
+	<mx:HTTPService id="recordUploadUrl" url="/sale/sales_person/convert_exceltoxml_for_salespeople"/>
+
+</rds:CommonServices>

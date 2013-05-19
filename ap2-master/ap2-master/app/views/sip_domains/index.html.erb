@@ -1,0 +1,19 @@
+<%= page_title :title => "Sip Domains" %>
+
+<% box :type => "simple" do %>
+	<% table :width => "300px" do |t| %>
+		<% t.th "#" %>
+	  <% t.th "Domain"  %>
+
+		<% counter = 0 %>	
+		<% for sip_domain in @sip_domains %>
+			<% t.td (counter += 1) %>
+		  <% t.td sip_domain.domain %>
+			<% t.new_row %>
+		<% end %>		
+	<% end %>
+	<br>
+	<%= button "new_sip_domain", "New Sip Domain", :href => new_sip_domain_path, :update => "container" %>
+<% end %>
+
+<div class="hide" id="container"></div>

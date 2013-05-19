@@ -1,0 +1,13 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  callerid: MyString
+  duration: 1
+  vm_box_id: 1
+  file_name: MyString
+
+two:
+  callerid: MyString
+  duration: 1
+  vm_box_id: 1
+  file_name: MyString

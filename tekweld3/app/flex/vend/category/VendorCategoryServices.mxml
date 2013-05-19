@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rds:CommonServices xmlns:rds="business.*" xmlns:mx="http://www.adobe.com/2006/mxml">
+
+	<mx:HTTPService id="saveRecord" url="/purchase/vendor_category/create_vendor_categories"/>
+	<mx:HTTPService id="getRecord" url="/purchase/vendor_category/show_vendor_category"/>
+	<mx:HTTPService id="getList" url="/purchase/vendor_category/list_vendor_categories"/>
+	<mx:HTTPService id="getViewFormat" url="vend/category/xmls/VendorCategoryCriteriaStru.xml"/>
+	<mx:HTTPService id="getListFormat" url="vend/category/xmls/VendorCategoryListStru.xml"/>
+
+	<mx:HTTPService id="printRecord" url=""/>
+	
+	<mx:HTTPService id="detailFormat" url="vend/category/xmls/VendorCategoryImportStru.xml"/>
+	<mx:HTTPService id="recordUploadUrl" url="/purchase/vendor_category/convert_exceltoxml_for_vendor_categories"/>
+
+</rds:CommonServices>
+
+
+

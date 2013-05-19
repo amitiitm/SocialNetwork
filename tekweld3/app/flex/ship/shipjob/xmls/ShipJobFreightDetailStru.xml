@@ -1,0 +1,29 @@
+<columns  lockedColumnCount='0'>
+
+   <column data='package_type'				label='Package Type'			editable='false'	visible='true'	width='100'	textAlign='left'	forLevel='false'
+			defaultForLevel=''				booleanFlag='false'			sortDataType='S'	columnPrecision="NaN"/>
+   
+   
+    <column data='package_length'		label='Package Length'		editable='false' 	visible='true' 		width='100' textAlign='right'
+		forLevel='false' 				defaultForLevel=''			booleanFlag='false'	sortDataType='N'	columnPrecision="0"/>
+   
+    <column data='package_width'		label='Package Width'		editable='false' 	visible='true' 		width='100' textAlign='right'
+		forLevel='false' 				defaultForLevel=''			booleanFlag='false'	sortDataType='N'	columnPrecision="0"/>
+   
+   
+   <column data='package_height'			label='Package Height'		editable='false' 	visible='true' 		width='100' textAlign='right'
+		forLevel='false' 				defaultForLevel=''			booleanFlag='false'	sortDataType='N'	columnPrecision="0"/>
+  
+	<column data='no_of_boxes'			label='No Of Boxes'			editable='false'	visible='true'		width='80'	textAlign='right' 
+		forLevel='false'				defaultForLevel='' 			booleanFlag='false'	sortDataType='N' 	columnPrecision="0"/>
+		
+	<column data='package_wt'			label='Package Weight'		editable='false'	visible='true'		width='80'	textAlign='left'
+		forLevel='false'				defaultForLevel='' 			booleanFlag='false'	sortDataType='N' 	columnPrecision="2"/>
+	
+		
+	<column data='freight_class'			label='Freight Class'			editable='false'	visible='true'	width='300'	textAlign='left'	forLevel='false'
+			defaultForLevel=''				booleanFlag='false'			sortDataType='S'	columnPrecision="NaN"/>
+	
+	
+			
+</columns> 

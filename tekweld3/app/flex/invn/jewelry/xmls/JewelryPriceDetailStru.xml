@@ -1,0 +1,48 @@
+<columns>
+
+	<column data='from_date' 	label='From Date' 		editable='false'	visible='true' 	width='100' textAlign='left' forLevel='false' 
+			defaultForLevel=''	booleanFlag='false'		sortDataType='D' 	columnPrecision="NaN"/>
+				
+	<column data='to_date' 		label='To Date' 		editable='false' 	visible='true' 	width='100' textAlign='left' forLevel='false' 
+			defaultForLevel=''	booleanFlag='false'		sortDataType='D' 	columnPrecision="NaN"/>	
+				
+	<column data='price' 		label='Price' 			editable='false' 	visible='true' 	width='100' textAlign='right' forLevel='false' 
+			defaultForLevel=''	booleanFlag='false'		sortDataType='N' 	columnPrecision="2"/>
+
+	<column data='pricea' 		label='Price A' 		editable='false' 	visible='true' 	width='80' textAlign='right' forLevel='false' 
+			defaultForLevel=''	booleanFlag='false'	sortDataType='N'	columnPrecision="2"/>
+	
+	<column data='priceb' 		label='Price B' 		editable='false' 	visible='true' 	width='80' textAlign='right' forLevel='false' 
+			defaultForLevel=''	booleanFlag='false'	sortDataType='N'	columnPrecision="2"/>
+	
+	<column data='pricec' 		label='Price C' 		editable='false' 	visible='true' 	width='80' textAlign='right' forLevel='false' 
+			defaultForLevel=''	booleanFlag='false'	sortDataType='N'	columnPrecision="2"/>
+			
+	<column data='priced' 		label='Price D' 		editable='false' 	visible='true' 	width='80' textAlign='right' forLevel='false' 
+			defaultForLevel=''	booleanFlag='false'	sortDataType='N'	columnPrecision="2"/>
+	
+	<column data='pricee' 		label='Price E' 		editable='false' 	visible='true' 	width='80' textAlign='right' forLevel='false' 
+			defaultForLevel=''	booleanFlag='false'	sortDataType='N'	columnPrecision="2"/>
+	
+	<column data='pricef' 		label='Price F' 		editable='false' 	visible='true' 	width='80' textAlign='right' forLevel='false' 
+			defaultForLevel=''	booleanFlag='false'	sortDataType='N'	columnPrecision="2"/>
+	
+	<column data='priceg' 		label='Price G' 		editable='false' 	visible='true' 	width='80' textAlign='right' forLevel='false' 
+			defaultForLevel=''	booleanFlag='false'	sortDataType='N'	columnPrecision="2"/>
+	
+	<column data='priceh' 		label='Price H' 		editable='false' 	visible='true' 	width='80' textAlign='right' forLevel='false' 
+			defaultForLevel=''	booleanFlag='false'	sortDataType='N'	columnPrecision="2"/>					
+	
+	<column data='pricei' 		label='Price I' 		editable='false' 	visible='true' 	width='80' textAlign='right' forLevel='false' 
+			defaultForLevel=''	booleanFlag='false'	sortDataType='N'	columnPrecision="2"/>
+	
+	<column data='pricej' 		label='Price J' 		editable='false' 	visible='true' 	width='80' textAlign='right' forLevel='false' 
+			defaultForLevel=''	booleanFlag='false'	sortDataType='N'	columnPrecision="2"/>
+				
+	<column data='discount_amt'	label='Discount Amt'	editable='false' 	visible='true' 	width='100' textAlign='right' forLevel='false' 
+			defaultForLevel=''	booleanFlag='false'		sortDataType='N' 	columnPrecision="2"/>	
+				
+	<column data='discount_per' label='Discount%' 		editable='false' 	visible='true'	width='100' textAlign='right' forLevel='false' 
+			defaultForLevel=''	booleanFlag='false'		sortDataType='N' 	columnPrecision="2"/>													
+
+</columns> 

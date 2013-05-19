@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:TitleWindow xmlns:fx="http://ns.adobe.com/mxml/2009" 
+		 xmlns:s="library://ns.adobe.com/flex/spark" 
+		 xmlns:mx="library://ns.adobe.com/flex/mx" width="246" height="260" verticalGap="0" xmlns:customcomponents="com.generic.customcomponents.*"
+		 creationComplete="creationComplete()"
+		 title="Package Detail" showCloseButton="true" close="closeHandler()">
+	<fx:Declarations>
+		<!-- Place non-visual elements (e.g., services, value objects) here -->
+	</fx:Declarations>
+	<fx:Script>
+		<![CDATA[
+			import business.events.GetInformationEvent;
+			import business.events.PreSaveEvent;
+			
+			import com.generic.events.GenDynamicComboBoxEvent;
+			import com.generic.genclass.GenNumberFormatter;
+			
+			import flash.globalization.NumberFormatter;
+			
+			import flashx.textLayout.tlf_internal;
+			
+			import model.GenModelLocator;
+			
+			import mx.controls.Alert;
+			import mx.managers.PopUpManager;
+			import mx.rpc.IResponder;
+			import mx.rpc.Responder;
+			
+			import saoi.muduleclasses.event.MissingInfoEvent;
+			
+			[Bindable]
+			public var xml:XML= new XML();
+			
+			[Bindable]
+			private var __genModel:GenModelLocator = GenModelLocator.getInstance();
+			
+			[Embed("com/generic/assets/save.png")]
+			private const saveButtonIcon:Class;
+			
+			[Embed("com/generic/assets/save_disabled.png")]
+			private const save_disabledButtonIcon:Class;
+			
+			[Bindable]
+			private var rowXml:XML 				= new XML();
+			
+			private var resultXmlFromItem:XML  	= new XML();
+			private var append_flag:Boolean 	= true;
+			
+			private function creationComplete():void
+			{
+				var target:String		 = xml.children()[0].toString();
+				rowXml		 			 = XML(xml.children()[1]);
+				
+				if(rowXml==null)
+				{
+					rowXml				 =  new XML(<sales_order_shipping_package></sales_order_shipping_package>);
+				}
+				else
+				{
+					rowXml				 = XML(rowXml.children()[0]).copy();
+				}
+				
+				if(target.toString()=='dgPackets') // retrieve
+				{
+					tiId.dataValue						=  rowXml.id.toString();
+					tiCarton_weight.dataValue			=  rowXml.carton_wt.toString();
+					tiCartonHeight.dataValue 			=  rowXml.carton_height.toString();
+					tiCartonLength.dataValue 			=  rowXml.carton_length.toString();
+					//tiCartonSize.dataValue				=  rowXml.carton_size.toString();
+					tiCartonWidth.dataValue				=  rowXml.carton_width.toString();
+					cbTrans_flag.dataValue				=  rowXml.trans_flag.toString();
+					tiPcs_carton.dataValue				=  rowXml.pcs_per_carton.toString();
+					append_flag		 	 				=  false;
+				}
+				else  // reset
+				{
+					tiId.dataValue						=  tiId.defaultValue;
+					tiCarton_weight.dataValue 			=  tiCarton_weight.defaultValue;
+					tiCartonHeight.dataValue 			=  tiCartonHeight.defaultValue;
+					tiCartonLength.dataValue			=  tiCartonLength.defaultValue;
+					//tiCartonSize.dataValue				=  tiCartonSize.defaultValue;
+					tiCartonWidth.dataValue      		=  tiCartonWidth.defaultValue;
+					cbTrans_flag.dataValue				=  cbTrans_flag.defaultValue;
+					tiPcs_carton.dataValue				=  tiPcs_carton.defaultValue;
+					append_flag		 	 				=  true;
+				}
+			}
+			
+			private function closeHandler():void
+			{
+				PopUpManager.removePopUp(this);
+			}
+			private function saveClickHandler():void
+			{
+				
+				var msg:String = giveAlertMsg();
+				if(msg!='')
+				{
+					Alert.show(msg+" can't be less than 0");
+					
+				}
+				else
+				{
+					rowXml.id 								= tiId.dataValue;
+					rowXml.carton_wt						= tiCarton_weight.dataValue;
+					rowXml.carton_height					= tiCartonHeight.dataValue;
+					rowXml.carton_length					= tiCartonLength.dataValue;
+					rowXml.carton_width						= tiCartonWidth.dataValue;
+					//rowXml.carton_size						= tiCartonSize.dataValue;
+					rowXml.trans_flag						= cbTrans_flag.dataValue;
+					rowXml.pcs_per_carton					= tiPcs_carton.dataValue;
+					
+					var tempXml:XML							= new XML(<rows>
+																	<row>{append_flag.toString()}</row>
+																	<row>{rowXml}</row>
+															 </rows>);
+					
+					dispatchEvent(new MissingInfoEvent(MissingInfoEvent.MissingInfoEvent_Type,tempXml));
+					closeHandler();
+				}
+			}
+			private function giveAlertMsg():String
+			{
+				var returnValue:String = '';
+				if(Number(tiCarton_weight.dataValue)<=0)
+				{
+					returnValue  = tiCarton_weight.toolTip;
+				}
+				else if(Number(tiCartonHeight.dataValue)<=0)
+				{
+					returnValue  = tiCartonHeight.toolTip;
+				}
+				else if(Number(tiCartonLength.dataValue)<=0)
+				{
+					returnValue  = tiCartonLength.toolTip;
+				}
+				/* else if(Number(tiCartonSize.dataValue)<=0)
+				{
+					returnValue  = tiCartonSize.toolTip;
+				} */
+				else if(Number(tiPcs_carton.dataValue)<=0)
+				{
+					returnValue  = tiPcs_carton.toolTip;
+				}
+				return returnValue;
+			}
+			
+			
+		]]>
+	</fx:Script>
+	<mx:VBox height="100%" width="100%" >	
+		<mx:HBox verticalAlign="middle" >
+			<customcomponents:GenButton	id="btnEdit" 
+										icon="{saveButtonIcon}"
+										disabledIcon="{save_disabledButtonIcon}"
+										color="#D2C5EB"
+										height="25" 
+										width="25" 
+										toolTip="Edit"
+										cornerRadius="0"
+										tabIndex="6"
+										click="saveClickHandler()" />
+		</mx:HBox>
+		<mx:VBox height="100%" width="100%">
+			<!--<mx:HBox visible="false" includeInLayout="false">
+				<mx:Label text="Carton Size" width="95" textAlign="right"/>
+				<customcomponents:GenTextInput id="tiCartonSize"  height="20" textAlign="right"
+											   updatableFlag="true" width="110" tabIndex="1" xmlTag="carton_size" maxChars="500"
+											   tableName="sales_order_shipping_package" defaultValue = '1'
+											   validationFlag="false" toolTip="Size"/>
+			</mx:HBox>-->
+			
+			<mx:HBox>
+				<mx:Label text="Pcs/Carton" width="95" textAlign="right"/>
+				<customcomponents:GenTextInput id="tiPcs_carton"  height="20" textAlign="right"
+											   updatableFlag="true" width="110" tabIndex="1" xmlTag="pcs_per_carton" defaultValue = '0.00'
+											   tableName="sales_order_shipping_package"
+											   dataType="N" rounding="false" setDefaultOnEmpty="true"
+											   maxValue="9999999999.99" validationFlag="" toolTip="Pcs/Carton"/>
+			</mx:HBox> 
+			<mx:HBox>
+				<mx:Label text="Carton Length" width="95" textAlign="right"/>
+				<customcomponents:GenTextInput id="tiCartonLength"  height="20" textAlign="right"
+											   updatableFlag="true" width="110" tabIndex="2" xmlTag="carton_length" maxChars="50"
+											   tableName="sales_order_shipping_package" defaultValue = '1'
+											   dataType="N" rounding="false" setDefaultOnEmpty="true"
+											   maxValue="9999999999" validationFlag="true" toolTip="Length"/>
+			</mx:HBox>
+			<mx:HBox>
+				<mx:Label text="Carton Width" width="95" textAlign="right"/>
+				<customcomponents:GenTextInput id="tiCartonWidth"  height="20" textAlign="right"
+											   updatableFlag="true" width="110" tabIndex="3" xmlTag="carton_width" maxChars="50"
+											   tableName="sales_order_shipping_package" defaultValue = '1' 
+											   dataType="N" rounding="false" setDefaultOnEmpty="true"
+											   maxValue="9999999999" validationFlag="true" toolTip="Width"/>
+			</mx:HBox>
+			<mx:HBox>
+				<mx:Label text="Carton Height" width="95" textAlign="right"/>
+				<customcomponents:GenTextInput id="tiCartonHeight"  height="20" textAlign="right"
+											   updatableFlag="true" width="110" tabIndex="4" xmlTag="carton_height" maxChars="50"
+											   tableName="sales_order_shipping_package" defaultValue = '1'
+											   dataType="N" rounding="false" setDefaultOnEmpty="true"
+											   maxValue="9999999999" validationFlag="true" toolTip="Height"/>
+			</mx:HBox>   
+			
+			
+			
+			<mx:HBox>
+				<mx:Label text="Carton Weight" width="95" textAlign="right" />
+				<customcomponents:GenTextInput id="tiCarton_weight" height="20" width="110" textAlign="right" defaultValue = '0.00'
+											   tabIndex="5" xmlTag="carton_wt" dataType="N" rounding="false" setDefaultOnEmpty="true" 
+											   updatableFlag="true" tableName="sales_order_shipping_package"
+											   maxValue="9999.99" validationFlag="true" toolTip="Carton Weight"/>		
+			</mx:HBox>
+			<mx:HBox height="0" width="0" visible="false" >
+				<mx:Label text="Status" width="95" textAlign="right"/>
+				<customcomponents:GenComboBox id="cbTrans_flag" width="110" cornerRadius="0" xmlTag="trans_flag" updatableFlag="true"
+											  tableName="sales_order_shipping_package"  tabIndex="6" defaultValue="A" labelField="label" 
+											  dataProvider="{__genModel.masterData.child('trans_flag').trans_flag}" />
+			</mx:HBox>
+			<customcomponents:GenTextInput id="tiId" width="0" height="0" includeInLayout="false" visible="false"
+										   xmlTag="id" updatableFlag="true" tabIndex="3" maxChars="100" defaultValue=""
+										   tableName="sales_order_shipping_package" />
+		</mx:VBox>
+			
+		
+	</mx:VBox>
+</mx:TitleWindow>

@@ -1,0 +1,22 @@
+<%= page_title :title => "Memo Types" %>
+<% box :type => "simple" do %>
+	<% table :width => "400px" do |t| %>
+		<% t.th "#" %>
+		<% t.th "Category" %>
+		<% t.th "Type" %>
+		<% t.th "Actions" %>
+		
+		<% counter = 0 %>
+		<% for m in @memo_types do %>
+			<% t.td counter += 1 %>
+			<% t.td m.memo_category.category %>
+			<% t.td m.subject %>
+			<% t.td(link_to("Edit", edit_memo_type_path(m), :class => "ajax", :update => "container")) %>
+			<% t.new_row %>
+		<%  end -%>
+	<% end -%>
+	<br>
+	<%= button "new_memo_type", "New Memo Type", :href => new_memo_type_path, :update => "container" %>
+<% end -%>
+
+<div id="container" class="hide"></div>

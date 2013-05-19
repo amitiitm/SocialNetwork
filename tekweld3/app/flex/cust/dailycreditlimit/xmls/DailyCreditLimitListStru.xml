@@ -1,0 +1,12 @@
+<columns  lockedColumnCount=''>
+
+	<column data='customer_code' 		label='Customer #'			editable='false'	visible='true'	width='200'	textAlign='left'	forLevel='true'
+			print_width = '20'			defaultForLevel='0'			booleanFlag='false' 	sortDataType='S'	columnPrecision="NaN"/>
+		
+	<column data='credit_limit_date' 	label='Credit Limit Date'	editable='false'	visible='true'	width='100'	textAlign='left'	forLevel='false'
+			print_width = '18'			defaultForLevel=''			booleanFlag='false' 	sortDataType='D'	columnPrecision="NaN"/>
+			
+	<column data='credit_limit' 		label='Credit Limit'		editable='false'	visible='true'	width='150'	textAlign='right'	forLevel='true'
+			print_width = '22'			defaultForLevel=''			booleanFlag='false' 	sortDataType='N'	columnPrecision="2"/>	
+				
+</columns> 

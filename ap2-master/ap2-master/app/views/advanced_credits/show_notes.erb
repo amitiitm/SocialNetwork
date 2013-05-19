@@ -1,0 +1,16 @@
+<% box :type => "dialog", :id => "credit-notes", :width => "320", :title => "Advanced Credit Notes", :icon => "ui-icon-person" do %>
+  <% box :type => "simple", :title => "Advanced Credit Notes" do %>
+    <p>
+      <%= @credit_notes.note %>
+    </p>
+  <% end -%>
+<% end -%>
+
+<script type="text/javascript">
+  $('#credit-notes').dialog({
+    autoOpen:true,
+    width:'500px',
+    bgiframe:false,
+    modal:false
+  });
+</script>

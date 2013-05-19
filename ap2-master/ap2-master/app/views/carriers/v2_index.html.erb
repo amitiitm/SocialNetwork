@@ -1,0 +1,18 @@
+<%= page_title :title => "Carriers" %>
+
+<% table :width => "400px" do |t| %>
+	<% t.th "#" %>
+	<% t.th "Carrier Name" %>
+	<% t.th "Endpoints" %>
+	<% t.th "Trunks" %>
+
+	<% counter = @carriers.size + 1 %>
+	<% for carrier in @carriers do %>
+		<% counter -= 1 %>
+		<% t.td counter %>
+		<% t.td link_to(carrier.name, carrier_path(carrier)) %> 
+		<% t.td carrier.endpoints.count %>
+		<% t.td carrier.trunks.count %>
+		<% t.new_row %>
+	<%  end -%>
+<% end -%>

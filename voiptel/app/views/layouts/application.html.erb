@@ -1,0 +1,24 @@
+<%= render :partial => "/layouts/header" %>
+<!--<div class="wazzup">
+	<div>
+		wazzup! <%= image_tag("tree.png", :class => "icon") %>
+	</div>
+</div>-->
+<div id="page-layout">	
+	<div id="page-content">
+		<div id="page-content-wrapper" style="overflow-x: auto" class="no-bg-image wrapper-full">
+			<div id="menu-holder"><menu class="trigger" href=""></menu></div>
+			<div id="response">
+				<%= yield %>
+			</div>
+      <div id='publish_date' style="float:right;top:10px;position: relative;"><%= publish_date %></div>
+			<div class="clear"></div>
+			<%= render :partial => "/layouts/sidebar" %>
+      <div class="clear"></div>
+		</div>
+
+	</div>
+  <div class="clear"></div>
+</div>
+
+<%= render :partial => "/layouts/footer" %>

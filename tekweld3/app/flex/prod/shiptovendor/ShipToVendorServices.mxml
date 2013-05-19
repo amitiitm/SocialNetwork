@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rds:CommonServices xmlns:rds="business.*" xmlns:mx="http://www.adobe.com/2006/mxml">
+
+	<mx:HTTPService id="saveRecord" 	url="/shipping/shipping/create_vendor_shipping_inboxes"/>
+	<mx:HTTPService id="getList" 		url="/shipping/shipping/list_vendor_shipping_inbox"/>
+	<mx:HTTPService id="printUpsLabel" 	url="/shipping/shipping/print_ups_label_for_vendor_shipping"/>
+	
+	<mx:HTTPService id="getViewFormat" url="prod/shiptovendor/xmls/ShipToVendorCriteriaStru.xml"/>
+	<mx:HTTPService id="getListFormat" url="prod/shiptovendor/xmls/ShipToVendorListStru.xml"/>
+	
+	<mx:HTTPService id="printRecord" url=""/>
+
+</rds:CommonServices>

@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:TitleWindow xmlns:mx="http://www.adobe.com/2006/mxml" xmlns:components="com.generic.components.*" 
+	paddingTop="20" verticalAlign="top" verticalGap="0"  borderStyle="outset"
+	title="Change Current Store"
+	showCloseButton="true" 
+	creationPolicy="all"
+	backgroundAlpha="0.9"
+	horizontalAlign="center"
+	close="closeHandler()"
+	creationComplete="handleCreationComplete()"
+	xmlns:customcomponents="com.generic.customcomponents.*" width="330" height="176"
+	initialize="{this.parentApplication.focusManager.deactivate()}">
+
+ 	<mx:Script>
+ 		<![CDATA[
+ 			import mx.core.Application;
+ 			import mx.managers.CursorManager;
+ 			import mx.controls.Alert;
+ 			import valueObjects.UserVO;
+ 			import business.events.GetInformationEvent;
+ 			import mx.rpc.IResponder;
+ 			import mx.managers.PopUpManager;
+ 			import model.GenModelLocator;
+ 			
+ 			[Bindable]
+ 			private var __genModel:GenModelLocator = GenModelLocator.getInstance();
+ 			
+ 			private var getInformationEvent:GetInformationEvent;
+ 			private var store_id:int;
+			private var firstTimeOpen:Boolean = false
+				
+ 			private function handleCreationComplete():void
+ 			{
+				getStoreInfo(__genModel.user.default_company_id.toString())
+				firstTimeOpen = true
+ 			}
+ 			
+			private function closeHandler():void
+			{
+				PopUpManager.removePopUp(this)
+			}
+
+			private function changeHandler():void
+			{
+				store_id = parseInt(dcStore_id.dataValue);
+				firstTimeOpen = false
+				getStoreInfo(store_id.toString());
+			}
+
+			private function getStoreInfo(store_id:String):void
+			{
+				if(store_id != '' && store_id != null) 
+				{
+					CursorManager.setBusyCursor();
+					Application.application.enabled = false;
+
+					var callbacks:IResponder = new mx.rpc.Responder(getStoreInfoHandler, null);
+					
+					getInformationEvent	= new GetInformationEvent('companystoreinfo', callbacks, store_id);
+					getInformationEvent.dispatch(); 
+				}
+			}
+			
+			private function getStoreInfoHandler(resultXml:XML):void
+			{
+				dcStore_id.dataValue	=	resultXml.children().child('id').toString();
+				dcStore_id.labelValue	=	resultXml.children().child('company_cd').toString();
+				
+				if(!firstTimeOpen)
+				{
+					setStoreDetail(resultXml);	
+				}
+				else
+				{
+					CursorManager.removeBusyCursor();
+					Application.application.enabled = true;
+				}
+			}
+			
+			private function setStoreDetail(resultXml:XML):void
+			{
+				var __userVO:UserVO = GenModelLocator.getInstance().user; 
+
+				__userVO.default_company_id = store_id; 
+				
+				__userVO.id 				= resultXml.children().child('id').toString();
+				__userVO.company_name 		= resultXml.children().child('name').toString();
+				__userVO.complc_address1 	= resultXml.children().child('address1').toString();
+				__userVO.complc_address2 	= resultXml.children().child('address2').toString();
+				__userVO.complc_city 		= resultXml.children().child('city').toString();
+				__userVO.complc_state 		= resultXml.children().child('state').toString();
+				__userVO.complc_fax 		= resultXml.children().child('fax').toString();
+				__userVO.complc_phone 		= resultXml.children().child('phone').toString();
+				__userVO.complc_email		= resultXml.children().child('email_to').toString();
+				__userVO.complc_emailcc		= resultXml.children().child('email_cc').toString();
+				__userVO.complc_pin 		= resultXml.children().child('zip').toString();
+				__userVO.company_cd			= resultXml.children().child('company_cd').toString();
+
+				CursorManager.removeBusyCursor();
+				Application.application.enabled = true;
+
+				closeHandler();
+			}
+
+ 		]]>
+ 	</mx:Script>
+ 	
+ 	<mx:VBox horizontalAlign="center" verticalAlign="middle">
+		<mx:HBox width="100%" height="100%" verticalGap="2"  horizontalGap="2" verticalAlign="middle">
+			<mx:Label width="50" height="20" text="Store #" textAlign="right" />
+			<customcomponents:GenTextInputWithHelp
+				lookupFormatUrl	=  "userStoreAccessLookupHelpFormat"
+				id="dcStore_id" 
+				width="150" 
+				toolTip="Store #" 
+				dataSourceName="UserStoreAccess"
+				recordStatusEnabled="false"
+				height="20" 
+				tabIndex="1" 
+				xmlTag="default_company_id" 
+				labelTag="company_cd"
+				dataField="id" 
+				labelField= "company_cd"
+				/>
+			
+			<!--<customcomponents:GenDynamicComboBoxWithHelp id="dcStore_id" width="150" height="20" recordStatusEnabled="false"
+				tabIndex="1" toolTip="Store #"  defaultValue="{__genModel.user.default_company_id.toString()}"
+				dataField="id" labelField="name"
+				dataSourceName="UserStoreAccess" dataProvider="{__genModel.lookupObj.userstoreaccess.children()}" />-->
+				
+		</mx:HBox>
+
+		<mx:Spacer height="20" />
+		
+		<mx:HBox width="100%" height="100%" horizontalGap="10" verticalAlign="middle" horizontalAlign="center">
+			<mx:Button label="Change" width="70" tabIndex="2" click="changeHandler()" />
+			<mx:Button label="Cancel" width="70" tabIndex="3" click="closeHandler()" />
+		</mx:HBox>
+ 	</mx:VBox>
+</mx:TitleWindow>

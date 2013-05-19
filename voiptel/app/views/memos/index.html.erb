@@ -1,0 +1,60 @@
+<%= page_title :title => "Memos/Followups" %>
+
+<% table  :id => "memos_table", :class => "for-memos", :width => "1150;" do |t| %>
+	<% t.th "#" %>
+	<% t.th "Memo For" %>
+	<% t.th "Memo Info" %>
+	<% t.th "Category" %>
+	<% t.th "Type" %>
+	<% t.th "Status" %>
+	<% t.th "Succd?" %>
+	<% t.th "LstFlp Date" %>
+	<% t.th "LstFlp By" %>
+	<% t.th "Flp Due" %>
+	<% t.th "Asnd To" %>
+	<% t.th "Created By" %>
+	<% t.th "Date Opened" %>
+	<% t.th "Actions" %>
+	<% counter = 0 %>
+	<% for m in @memos do %>
+		<% t.td counter += 1 %>
+		<% t.td m.memoable.class.to_s %>
+		<% t.td link_to(m.memoable.info, send("#{m.memoable_type.downcase}_path", m.memoable_id, :no_memo => 1),
+			:class=>"ajax", :update => "memoable-container") %>
+		<% t.td m.memo_category.category %>
+		<% t.td (if m.memo_type then m.memo_type.subject else "Error" end) %>
+		<% t.td m.status_string %>
+		<% t.td((m.status == 3)? (yes_no(m.success)) : "Prog") %>
+		<% t.td followup_date(m, "No Flp") %>
+		<% t.td admin_user(m.followup_by, "No Flp") %>			
+		<% t.td user_date(m.followup_due) %>
+		<% t.td admin_user(m.assigned_to) %>
+		<% t.td admin_user(m.created_by) %>
+		<% t.td m.created_at.strftime("%a %m/%d") %>
+		<% t.td(link_to("Update", edit_memo_path(m), :class => "ajax", :update => "container")) %>
+		<% if m.followup %>
+			<% if m.status == Memo::CLOSED %>
+				<% t.new_row %>
+			<% else %>
+				<% t.new_row :class => "warn" %>
+			<% end -%>
+		<% else %>
+			<% t.new_row %>
+		<% end %>
+	<%  end -%>
+<% end %>
+
+<br>
+<% show_button = false %>
+<% if @memoable.class.reflections[:memos] %>
+	<% show_button = true %>
+<% else %>
+	<% if not @memoable.memo %>
+		<% show_button = true %>
+	<% end -%>
+<% end -%>
+<% if show_button %>
+	<%= button "new_memo", "New Memo", :href => gooz_new_memo_path, :update => "container" %>
+	<div class="clear"></div>
+<% end -%>
+<div id="container" class="hide"></div>

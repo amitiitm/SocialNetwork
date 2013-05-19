@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomReport xmlns="com.generic.components.*" xmlns:mx="http://www.adobe.com/2006/mxml" width="100%" height="100%" creationPolicy="all"
+	
+	genModuleActive		=	"handlePoliceLogReportActive(event)" 
+	creationComplete	= 	"handleCreationComplete(event)"
+
+	view				=	"{__localModel.viewObj.view}" 
+	defaultView			= 	"{__localModel.viewObj.selectedView}"
+	layouts				= 	"{__localModel.layoutObj.layout}" 
+	defaultLayout		= 	"{__localModel.layoutObj.selectedLayout}"
+	reportFormat 	  	= 	"{__localModel.layoutObj.listFormat}"	
+	changeInLayout		=	"{__localModel.layoutObj.changeInLayout}"
+	filteredReport  	= 	"{__localModel.reportObj.filteredReport}"
+	>
+	
+	<mx:Script source="../scripts/PoliceLogReportScript.as"/>
+	
+</CustomReport>

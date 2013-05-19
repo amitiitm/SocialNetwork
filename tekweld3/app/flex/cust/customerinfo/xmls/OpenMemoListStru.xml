@@ -1,0 +1,70 @@
+<columns  lockedColumnCount='0'>
+
+	<column data='trans_bk'		label='Trans Bk'			editable='false'	visible='true'		
+			width='80'	textAlign='left'			forLevel='false'			print_width='18'	defaultForLevel=''		
+			booleanFlag='false'	sortDataType='S' 	columnPrecision="NaN"/>
+	
+	<column data='trans_no'		label='Trans #'			editable='false'	visible='true'		
+			width='100'	textAlign='left'			forLevel='false'				print_width='20'	defaultForLevel=''		
+			booleanFlag='false'	sortDataType='S' 	columnPrecision="NaN"/>		
+
+	<column data='trans_date'	label='Trans Date'		editable='false'	visible='true'		width='100'	textAlign='left'	forLevel='false' 
+			print_width='20'	defaultForLevel=''		booleanFlag='false' sortDataType='D'	columnPrecision="NaN"/>			
+	
+	<column data='catalog_item_category_code'		label='Item Category #'			editable='false'	visible='true'		
+			width='120'	textAlign='left'			forLevel='false'				print_width='30'	defaultForLevel=''		
+			booleanFlag='false'	sortDataType='S' 	columnPrecision="NaN"/>
+			
+
+	<column data='catalog_item_code'				label='Item #'					editable='false'	visible='true'		
+			width='120'	textAlign='left'			forLevel='false'				print_width='24'	defaultForLevel=''		
+			booleanFlag='false'	sortDataType='S'	columnPrecision="NaN"/>
+
+	<column data='catalog_item_batch_code'  label='Batch #' 			editable='false'	visible='true'	width='100'	textAlign='left' 	forLevel='false' 				
+			defaultForLevel=''				booleanFlag='false'			sortDataType='S'	columnPrecision="NaN"/>
+			
+	<column data='catalog_item_packet_code'			label='Item Packet #'					editable='false'	visible='true'		
+			width='120'	textAlign='left'			forLevel='false'				print_width='24'	defaultForLevel=''		
+			booleanFlag='false'	sortDataType='S'	columnPrecision="NaN"/>		
+			
+			
+	<column data='item_description'					label='Item Description'		editable='false'	visible='true'		
+			width='120'	textAlign='left'			forLevel='false'				print_width='30'	defaultForLevel=''		
+			booleanFlag='false'	sortDataType='S'	columnPrecision="NaN"/>		
+					
+
+	<column data='item_price'						label='Item Price'				editable='false'	visible='true'		
+			width='100'	textAlign='right'			forLevel='false'				print_width='20'	defaultForLevel=''	
+			booleanFlag='false'	sortDataType='N'	columnPrecision="2"/>
+			
+	<column data='item_qty'							label='Item Qty'				editable='false'	visible='true'		
+			width='100'	textAlign='right'			forLevel='false'				print_width='22'	defaultForLevel=''	
+			booleanFlag='false'	sortDataType='N'	columnPrecision="2"/>
+			
+	<column data='open_qty'							label='Open Qty'				editable='false'	visible='true'		
+			width='100'	textAlign='right'			forLevel='false'				print_width='20'	defaultForLevel=''	
+			booleanFlag='false'	sortDataType='N'	columnPrecision="2"/>
+			
+	<column data='open_amt'							label='Open Amt'				editable='false'	visible='true'		
+			width='100'	textAlign='right'			forLevel='false'				print_width='20'	defaultForLevel=''	
+			booleanFlag='false'	sortDataType='N'	columnPrecision="2"/>
+				
+	<column data='term_code'						label='Term #'					editable='false'	visible='true'		
+			width='120'	textAlign='left'			forLevel='false'				print_width='22'	defaultForLevel=''		
+			booleanFlag='false'	sortDataType='S'	columnPrecision="NaN"/>
+
+	<column data='due_date'							label='Due Date'		editable='false'	visible='true'		width='100'	textAlign='left'	forLevel='false' 
+			print_width='20'	defaultForLevel=''		booleanFlag='false' sortDataType='D'	columnPrecision="NaN"/>	
+
+	<column data='account_period_code'				label='Account Period #'			editable='false'	visible='true'		
+			width='120'	textAlign='left'			forLevel='false'				print_width='26'	defaultForLevel=''		
+			booleanFlag='false'	sortDataType='S' 	columnPrecision="NaN"/>	
+						
+	<column data='ext_ref_no'		label='Ext Ref #'			editable='false'	visible='true'		
+			width='100'	textAlign='left'			forLevel='false'				print_width='23'	defaultForLevel=''		
+			booleanFlag='false'	sortDataType='S' 	columnPrecision="NaN"/>		
+			
+	<column data='ext_ref_date'						label='Ext Ref Date'		editable='false'	visible='true'		width='100'	textAlign='left'	forLevel='false' 
+			print_width='23'	defaultForLevel=''		booleanFlag='false' sortDataType='D'	columnPrecision="NaN"/>				
+
+</columns>

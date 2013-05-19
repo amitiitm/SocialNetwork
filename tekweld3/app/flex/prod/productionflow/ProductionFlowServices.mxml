@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rds:ApplicationServices xmlns:rds="business.*" xmlns:mx="http://www.adobe.com/2006/mxml">
+
+	<mx:HTTPService id="saveRecord" url=""/>
+	<mx:HTTPService id="getRecord" url=""/>
+	<mx:HTTPService id="imageUploadUrl" url=""/>
+    <mx:HTTPService id="printRecord" url=""/>
+
+</rds:ApplicationServices>

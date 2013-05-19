@@ -1,0 +1,103 @@
+<columns>
+		<column data='design_category' label='Design Category' editable='false'        	visible='true' 		width='80' 		textAlign='left' 	
+			  dataType='S'  		 sortDataType='S' 	 columnPrecision="NaN" 		booleanFlag='false' 	componentType="Text"	/>
+
+		<column data='style_no' 	 label='Style #' 		 editable='false' 		visible='true' 		width='80' 		textAlign='left' 	
+			  dataType='S'  		 sortDataType='S' 	 columnPrecision="NaN" 		booleanFlag='false' 	componentType="Text"	/>
+				
+		<column data='card_no' label='Card #' editable='false' visible='true' width='80' textAlign='left' 	
+				dataType='N'  sortDataType='N' columnPrecision="2" booleanFlag='false' componentType="Text"	/>	
+				
+		<column data='kt' label='KT.' editable='false' visible='true' width='100' textAlign='left' 	
+				dataType='S'  sortDataType='S' columnPrecision="NaN" booleanFlag='false' componentType="Text"	/>	
+				
+		<column data='col' label='Col.' editable='false' visible='true' width='100' textAlign='left' 	
+				dataType='S'  sortDataType='S' columnPrecision="NaN" booleanFlag='false' componentType="Text"	/>	
+				
+		<column data='stone_type' label='Stone Type' editable='false' visible='true' width='100' textAlign='left' 	
+				dataType='S'  sortDataType='S' columnPrecision="NaN" booleanFlag='false' componentType="Text"	/>					
+		
+		<column data='shape' label='Shape' editable='false' visible='true' width='100' textAlign='left' 	
+				dataType='S'  sortDataType='S' columnPrecision="NaN" booleanFlag='false' componentType="Text"	/>	
+						
+		<column data='quality' label='Quality' editable='false' visible='true' width='80' textAlign='left' 	
+				dataType='S'  sortDataType='S' columnPrecision="NaN" booleanFlag='false' componentType="Text"	/>	
+				
+		<column data='color' label='Color' editable='false' visible='true' width='80' textAlign='left' 	
+				dataType='S'  sortDataType='S' columnPrecision="NaN" booleanFlag='false' componentType="Text"	/>
+				
+		<column data='ptr_wt' label='PTR. WT.' editable='false' visible='true' width='80' textAlign='right' 	
+				dataType='N'  sortDataType='N' columnPrecision="3" booleanFlag='false' componentType="Text"	/>
+				
+		<column data='dim_qty' label='Diam. Qty' editable='false' visible='true' width='80' textAlign='right' 	
+				dataType='N'  sortDataType='N' columnPrecision="0" booleanFlag='false' componentType="Text"	/>
+
+		<column data='dim_wt' label='Diam. WT.' editable='false' visible='true' width='80' textAlign='right' 	
+				dataType='N'  sortDataType='N' columnPrecision="3" booleanFlag='false' componentType="Text"	/>
+
+		<column data='dim_rate' label='DIM. Rate(cts.)' editable='false' visible='true' width='80' textAlign='right' 	
+				dataType='N'  sortDataType='N' columnPrecision="3" booleanFlag='false' componentType="Text"	/>
+
+		<column data='total_dim' label='Total Diam.' editable='false' visible='true' width='80' textAlign='right' 	
+				dataType='N'  sortDataType='N' columnPrecision="2" booleanFlag='false' componentType="Text"	/>
+
+		<column data='total_cts' label='Total CTS.' editable='false' visible='true' width='80' textAlign='right' 	
+				dataType='N'  sortDataType='N' columnPrecision="2" booleanFlag='false' componentType="Text"	/>
+
+		<column data='total_dim_value' label='Total Diam Value' editable='false' visible='true' width='80' textAlign='right' 	
+				dataType='N'  sortDataType='N' columnPrecision="2" booleanFlag='false' componentType="Text"	/>
+
+		<column data='gold_base' label='Gold Base' editable='false' visible='true' width='80' textAlign='right' 	
+				dataType='N'  sortDataType='N' columnPrecision="2" booleanFlag='false' componentType="Text"	/>
+
+		<column data='finish_gold_wt' label='Finish Gold Wt' editable='false' visible='true' width='80' textAlign='right' 	
+				dataType='N'  sortDataType='N' columnPrecision="3" booleanFlag='false' componentType="Text"	/>
+
+		<column data='net_gold_wt' label='Net Gold Wt' editable='false' visible='true' width='80' textAlign='right' 	
+				dataType='N'  sortDataType='N' columnPrecision="3" booleanFlag='false' componentType="Text"	/>
+
+		<column data='gold_rate' label='Gold Rate(kt./gms.)' editable='false' visible='true' width='80' textAlign='right' 	
+				dataType='N'  sortDataType='N' columnPrecision="2" booleanFlag='false' componentType="Text"	/>
+
+		<column data='gold_loss' label='Gold Loss' editable='false' visible='true' width='80' textAlign='right' 	
+				dataType='N'  sortDataType='N' columnPrecision="2" booleanFlag='false' componentType="Text"	/>
+		
+		<column data='total_gold_rate' label='Total Gold Rate' editable='false' visible='true' width='80' textAlign='right' 	
+				dataType='N'  sortDataType='N' columnPrecision="2" booleanFlag='false' componentType="Text"	/>
+
+		<column data='gold_value' label='Gold Value' editable='false' visible='true' width='80' textAlign='right' 	
+				dataType='N'  sortDataType='N' columnPrecision="2" booleanFlag='false' componentType="Text"	/>
+		
+		<column data='finding_code' label='Finding Code' editable='false' visible='true' width='80' textAlign='left' 	
+				dataType='S'  sortDataType='S' columnPrecision="NaN" booleanFlag='false' componentType="Text"	/>
+
+		<column data='qty' label='Qty' editable='false' visible='true' width='80' textAlign='right' 	
+				dataType='N'  sortDataType='N' columnPrecision="0" booleanFlag='false' componentType="Text"	/>
+
+		<column data='wt' label='WT.' editable='false' visible='true' width='80' textAlign='right' 	
+				dataType='N'  sortDataType='N' columnPrecision="3" booleanFlag='false' componentType="Text"	/>
+
+		<column data='rate'       label='Rate' editable='false' visible='true' width='80' textAlign='right' 	
+				dataType='N'  sortDataType='N' columnPrecision="2" booleanFlag='false' componentType="Text"	/>
+
+		<column data='total_value' label='Total Value' editable='false' visible='true' width='80' textAlign='right' 	
+				dataType='N'  sortDataType='N' columnPrecision="2" booleanFlag='false' componentType="Text"	/>
+
+		<column data='setting_charges' label='Setting Charges' editable='false' visible='true' width='80' textAlign='right' 	
+				dataType='N'  sortDataType='N' columnPrecision="2" booleanFlag='false' componentType="Text"	/>
+
+
+		<column data='labour' label='Labour(CFP)' editable='false' visible='true' width='80' textAlign='left' 	
+				dataType='N'  sortDataType='N' columnPrecision="2" booleanFlag='false' componentType="Text"	/>
+
+
+		<column data='unit_price' label='Unit Price' editable='false' visible='true' width='80' textAlign='right' 	
+				dataType='N'  sortDataType='N' columnPrecision="2" booleanFlag='false' componentType="Text"	/>
+
+
+		<column data='image' label='Total Value' editable='false' visible='true' width='80' textAlign='left' 	
+				dataType='S'  sortDataType='S' columnPrecision="NaN" booleanFlag='false' componentType="Text"	/>
+
+														
+
+</columns> 

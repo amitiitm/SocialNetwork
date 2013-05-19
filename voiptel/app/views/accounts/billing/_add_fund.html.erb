@@ -1,0 +1,70 @@
+<div id="wrapper">
+  <div id="container" style="width:337px;">
+    <div id="popupTitle" style="width:337px;">
+      <div id="title_popup_lft"></div>
+      <div id="title_popup_ctr" style="width:303px;">
+        <h1 style="float:left; padding-left:3px;">Add Funds</h1>
+
+        <div id="btns" style="float:right;">
+          <img src="/images/billing/tophideicon.gif"/>
+          <img src="/images/billing/topcrossicon.gif"/>
+        </div>
+      </div>
+      <div id="title_popup_rgt"></div>
+    </div>
+    <!--popupTitle-->
+    <div class="clear"></div>
+
+    <div id="middle_popup" style="width:338px; min-height:80px;">
+      <div id="middle_popup_ctr" style="width:321px; min-height:80px; background:url(/images/billing/popup_middle_bg_321.png) repeat-y;">
+        <div id="middleContainer" style="width:319px; float:left;">
+          <div style="border:#c1c1c1 solid 1px; background:#f0f0f0; padding:0px; padding-bottom:12px; float:left; border-radius:5px; width:290px; margin:12px 13px 0px 13px; ">
+            <% form_tag charge_account_credit_cards_path(@account), :class => "forms", :indicator => "charge-card" do %>
+            <%= error("Unable to charge the card:") %>
+                <div class="divfield" style="width:112px;">
+                  <div>
+                    <label>Credit Card: </label>
+                    <%= select "charge", "credit_card_id",
+                    						[["#{@card.card_type.upcase}-#{@card.card_number}", @card.id]], {}, :style=>"width:116px; margin-left:0px;"
+                    					%>
+                  </div>
+                </div>
+                <!--divfield-->
+                <div class="divfield" style="width:66px; margin-left:none;">
+                  <div>
+                    <label>Amount: </label>
+                    <%= select(:charge, :amount, Account::DEPOSIT_AMOUNTS, {:selected => 10},:style=>"width:55px; margin-left:0px;") %>
+                  </div>
+                </div>
+                <!--divfield-->
+
+                <div class="divfield" style="width:72px; margin-top:18px; margin-left:none;">
+                  <div>
+                    <%=image_submit_tag "/images/billing/btn_charge.png",:style=>"padding:0 0 0 0 ; height:28px"%>
+                  </div>
+                </div>
+                <%= loading("Please wait...") %>
+                <!--divfield-->
+            <%end%>
+          </div>
+        </div>
+        <!--middleContainer-->
+      </div>
+      <!--middle_popup_ctr-->
+      <div class="clear"></div>
+    </div>
+    <!--middle_popup-->
+    <div class="clear"></div>
+    <div id="bottom_popup" style="width:337px;">
+      <div id="bottom_popup_lft"></div>
+      <div id="bottom_popup_ctr" style="width:303px;">
+      </div>
+      <div id="bottom_popup_rgt"></div>
+    </div>
+    <!--bottom_popup-->
+  </div>
+  <!--center_stripe-->
+</div><!--middleContentBg-->
+<div class="clear"></div>
+</div><!--container-->
+</div><!--wrapper-->

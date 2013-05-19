@@ -1,0 +1,25 @@
+# ap2 capistrano deployment file
+role :ap2, "baghali1", "baghali2", "baghali3"
+
+desc "update ap2"
+task :update do |channel|
+  puts "Local: #{`git log master -1`}\n"
+  run "cd /opt/openfo/ap2 && git pull -q"
+	run "cd /opt/openfo/ap2 && git log -1" do |channel, streem, data|
+	 puts "host-name: #{channel[:host]} : #{data}"
+	end	
+end
+
+desc "restart passenger"
+task :restart do |channel|
+	run "cd /opt/openfo/ap2 && touch tmp/restart.txt" do |channel, streem, data|
+	 puts "host-name: #{channel[:host]} touched tmp/restart.txt"
+	end	
+end
+
+desc "rails db migrate"
+task "db-migrate" do |channel|
+	run "cd /opt/openfo/ap2 && RAILS_ENV='production' rake db:migrate" do |channel, streem, data|
+	 puts "host-name: #{channel[:host]} db migrate: #{data.gsub(/\(in.*\)/,  '').strip}"
+	end	
+end

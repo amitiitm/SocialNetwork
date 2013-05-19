@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rds:ApplicationServices xmlns:rds="business.*"	xmlns:mx="http://www.adobe.com/2006/mxml">
+	<mx:HTTPService id="getNote" url="/setup/note/list_notes"/>
+	<mx:HTTPService id="saveNote" url="/setup/note/create_notes"/>
+	<mx:HTTPService id="noteFormat" url="com/generic/xmls/NoteStru.xml"/>
+	
+	
+	<mx:HTTPService id="getAttachment" url="/setup/attachment/list_attachments"/>
+	<mx:HTTPService id="uploadAttachment" url="/setup/attachment/create_attachments"/>
+	<mx:HTTPService id="attachmentFormat" url="com/generic/xmls/AttachmentStru.xml"/>
+	
+	<!--<mx:HTTPService id="getColumnsList" url="com/generic/xmls/TempAllColumnsList.xml" />-->
+	<mx:HTTPService id="getColumnsList" url="/report/report/list_document_columns" />
+	<mx:HTTPService id="export" url="/setup/setup/export_xml_to_excel" />
+	<mx:HTTPService id="printReport" url="/report/print_report/render_print_format" />
+	<mx:HTTPService id="getPrintSpecificFormat" 					url="/report/report/list_document_fixed_formats" />
+	
+	<mx:HTTPService id="lookupHelpFormat" 							url="com/generic/xmls/DefaultGenTextInputWithHelpLookupStru.xml"/>
+	<mx:HTTPService id="retailCustomerLookupHelpFormat" 			url="com/generic/xmls/RetailCustomerLookupHelpStru.xml"/>
+	<mx:HTTPService id="tekweldCustomerContactLookupHelpFormat" 	url="com/generic/xmls/TekweldCustomerContactLookupHelpStru.xml"/>
+	<mx:HTTPService id="tekweldSetupItemLookupHelpFormat" 			url="com/generic/xmls/TekweldSetupItemLookupHelpStru.xml"/>
+	<mx:HTTPService id="tekweldInventoryItemLookupHelpFormat" 		url="com/generic/xmls/TekweldInventoryItemLookupHelpStru.xml"/>
+	<mx:HTTPService id="itemLookupHelpFormat" 						url="com/generic/xmls/ItemLookupHelpStru.xml"/>
+	<mx:HTTPService id="companyStoreLookupHelpFormat" 				url="com/generic/xmls/CompanyStoreLookupHelpStru.xml"/>
+	<mx:HTTPService id="userLookupHelpFormat" 						url="com/generic/xmls/UserLookupHelpStru.xml"/>
+	<mx:HTTPService id="documentLookupHelpFormat" url="com/generic/xmls/DocumentLookupHelpStru.xml"/>
+	<mx:HTTPService id="mooduleLookupHelpFormat" url="com/generic/xmls/MooduleLookupHelpStru.xml"/>
+	<mx:HTTPService id="customerPaymentProfileLookupHelpFormat" 	url="com/generic/xmls/CustomerPaymentProfileLookupHelpStru.xml"/>
+	<mx:HTTPService id="customerSpecificShippingLookupHelpFormat" 	url="com/generic/xmls/CustomerSpecificShippingLookupHelpStru.xml"/>
+	<mx:HTTPService id="orderStagesLookupHelpFormat" 				url="com/generic/xmls/OrderStagesLookupHelpStru.xml"/>
+	
+</rds:ApplicationServices>

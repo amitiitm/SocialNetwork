@@ -1,0 +1,106 @@
+<columns lockedColumnCount='0'>
+
+	
+	<column data='select_yn' 			label='Select' 			editable='true' 	visible='true' 	width='65' 	textAlign='center' 	
+			forLevel='false'			defaultForLevel='' 		sortDataType='S'	dataType='S'	booleanFlag='true'
+			dataValueForOn="Y"			dataValueForOff="N"
+			componentType="CheckBox"	
+	/>
+	
+	<column data='damaged_qty' 			label='Damaged Qty' 		editable='true' 	visible='true' 	width='80' textAlign='right' 	
+			forLevel='true'				defaultForLevel='' 			sortDataType='N'	dataType='N'	booleanFlag='false' validationFlag="true"  negativeFlag="true"
+			componentType="Text"		columnPrecision="0"
+	/>
+	
+	<column data='ship_qty'				label='Ship Qty'			editable='true'		visible='true'	 width='70'	  textAlign='right'	
+				forLevel='true'			print_width = '20'			defaultForLevel='3'		booleanFlag='false'	 validationFlag="true"  negativeFlag="true"
+										sortDataType='S' 			dataType='N' componentType="Text" columnPrecision="0"/>
+	
+	
+	<column data='clear_qty'			label='Shipped Qty'				editable='false' 	visible='true'	width='70'	textAlign='right'	
+			forLevel='false'			defaultForLevel='2' 		sortDataType='N'	dataType='N'	booleanFlag='false'
+			componentType="Text"		columnPrecision="0"
+	/>	
+	
+<!--	<column data='item_qty'				label='Quantity'			editable='false' 	visible='true'	width='70'	textAlign='right'	-->
+<!--			forLevel='false'			defaultForLevel='2' 		sortDataType='N'	dataType='N'	booleanFlag='false'-->
+<!--			componentType="Text"		columnPrecision="0"-->
+<!--	/>-->
+<!--	-->
+	<column data='order_type'			label='Order Type'			editable='false' 	visible='true'	width='70'	textAlign='left'	
+										forLevel='true'				defaultForLevel='1' 	sortDataType='S'	dataType='S'	booleanFlag='false'
+										componentType="Text"		columnPrecision="NaN"
+	/>
+	
+	<column data='ext_ref_no'			label='Customer PO#'		editable='false'	visible='true'	 width='100'	  textAlign='left'	
+										forLevel='true'			print_width = '20'			defaultForLevel='3'		booleanFlag='false'	
+										sortDataType='S' componentType="Text" columnPrecision="NaN"/>
+	
+	<column data='trans_no' 			label='JOB#' 			editable='false' 	visible='true' 	width='100' textAlign='left' 	
+			forLevel='true'				defaultForLevel='' 		sortDataType='S'	dataType='S'	booleanFlag='false'
+			componentType="Text"		columnPrecision="NaN"
+	/>
+	
+	<column data='trans_date'			label='Date' 			editable='false' 	visible='true' 	width='90' 	textAlign='left' 	
+			forLevel='false'			defaultForLevel='' 		sortDataType='D'	dataType='D'	booleanFlag='false'
+			componentType="Date"	
+	/>
+	
+	<column data='ship_date'			label='Ship Date' 		editable='false' 	visible='true' 	width='90' 	textAlign='left' 	
+			forLevel='true'				defaultForLevel='1' 	sortDataType='D'	dataType='D'	booleanFlag='false'
+			componentType="Date"	
+	/>
+	
+<!--	<column data='logo_name'			label='Logo #'		editable='false'	visible='true'	 width='120'	  textAlign='left'	-->
+<!--										forLevel='true'			print_width = '20'			defaultForLevel='3'		booleanFlag='false'	-->
+<!--										sortDataType='S' componentType="Text" columnPrecision="NaN"/>-->
+<!--		-->
+<!--	<column data='catalog_item_code'	label='Item'			editable='false' 	visible='true'	width='200'	textAlign='left'	-->
+<!--			forLevel='false'			defaultForLevel='2' 	sortDataType='S'	dataType='S'	booleanFlag='false'-->
+<!--			componentType="Text"		columnPrecision="NaN"-->
+<!--	/>-->
+		 
+	<column data='order_status'			label='Order Status'		editable='false'	visible='true'	 width='120'	  textAlign='left'	
+				forLevel='true'			print_width = '20'			defaultForLevel='3'		booleanFlag='false'	
+										sortDataType='S' 			componentType="Text" columnPrecision="NaN"/>
+	
+	<column data='ship_name'			label='Ship Name'			editable='false'	visible='true'	 width='120'	  textAlign='left'	
+				forLevel='true'			print_width = '20'			defaultForLevel='3'		booleanFlag='false'	
+										sortDataType='S' 			componentType="Text" columnPrecision="NaN"/>
+		
+	<column data='ship_address1'		label='Address1'			editable='false'	visible='true'	 width='120'	  textAlign='left'	
+				forLevel='true'			print_width = '20'			defaultForLevel='3'		booleanFlag='false'	
+										sortDataType='S' 			componentType="Text" columnPrecision="NaN"/>
+	
+	<column data='ship_address2'		label='Address2'			editable='false'	visible='true'	 width='120'	  textAlign='left'	
+				forLevel='true'			print_width = '20'			defaultForLevel='3'		booleanFlag='false'	
+										sortDataType='S' 			componentType="Text" columnPrecision="NaN"/>
+	
+	<column data='ship_city'			label='Ship City'			editable='false'	visible='true'	 width='120'	  textAlign='left'	
+				forLevel='true'			print_width = '20'			defaultForLevel='3'		booleanFlag='false'	
+										sortDataType='S' 			componentType="Text" columnPrecision="NaN"/>
+	
+	<column data='ship_city'			label='Ship City'			editable='false'	visible='true'	 width='120'	  textAlign='left'	
+				forLevel='true'			print_width = '20'			defaultForLevel='3'		booleanFlag='false'	
+										sortDataType='S' 			componentType="Text" columnPrecision="NaN"/>
+										
+	<column data='ship_state'			label='Ship State'			editable='false'	visible='true'	 width='120'	  textAlign='left'	
+				forLevel='true'			print_width = '20'			defaultForLevel='3'		booleanFlag='false'	
+										sortDataType='S' 			componentType="Text" columnPrecision="NaN"/>
+										
+	<column data='ship_zip'				label='Ship Zip'			editable='false'	visible='true'	 width='120'	  textAlign='left'	
+				forLevel='true'			print_width = '20'			defaultForLevel='3'		booleanFlag='false'	
+										sortDataType='S' 			componentType="Text" columnPrecision="NaN"/>
+										
+   <column data='ship_country'			label='Ship Country'			editable='false'	visible='true'	 width='120'	  textAlign='left'	
+				forLevel='true'			print_width = '20'			defaultForLevel='3'		booleanFlag='false'	
+										sortDataType='S' 			componentType="Text" columnPrecision="NaN"/>																					
+	
+	<column data='shipping_code'		label='Ship Via'			editable='false'	visible='true'	 width='120'	  textAlign='left'	
+				forLevel='true'			print_width = '20'			defaultForLevel='3'		booleanFlag='false'	
+										sortDataType='S' 			componentType="Text" columnPrecision="NaN"/>
+										
+	<column data='ship_method'			label='Ship Method'			editable='false'	visible='true'	 width='120'	  textAlign='left'	
+				forLevel='true'			print_width = '20'			defaultForLevel='3'		booleanFlag='false'	
+										sortDataType='S' 			componentType="Text" columnPrecision="NaN"/>																																														
+</columns> 

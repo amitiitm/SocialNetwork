@@ -1,0 +1,30 @@
+--- 
+users_001: 
+  salt: 308e1a9d7d7cb1aee536e74c9e147ec9a7c72035
+  user_flag: A
+  date_format: mm/dd/yyyy
+  last_moodule_id: 600
+  updated_at: 2011/01/24 18:54:18
+  crypted_password: ec68ae06b8b5684d18f882fb3e494856e1749851
+  login_flag: N
+  update_flag: Y
+  password_change_date: 
+  user_cd: 
+  trans_flag: A
+  created_by: 230
+  remember_token_expires_at: 
+  type_id: "0"
+  lock_version: 12708
+  updated_by: 1
+  id: 1
+  category_id: 
+  remember_token: 
+  company_id: 1
+  first_name: Administrator
+  default_company_id: 1
+  total_logins: 2
+  last_name: Administrator
+  login: administrator@diaspark.com
+  login_type: G
+  email: administrator@diaspark.com
+  created_at: 2009/12/01 11:33:47

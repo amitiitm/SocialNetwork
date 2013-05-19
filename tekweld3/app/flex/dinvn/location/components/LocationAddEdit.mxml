@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<gencomponents:AddEdit xmlns:mx="http://www.adobe.com/2006/mxml" 
+	height="100%" width="100%" verticalGap="0"
+	xmlns:customcomponents="com.generic.customcomponents.*"
+	xmlns:gencomponents="com.generic.components.*">
+	<mx:Script source="../scripts/LocationAddEditscript.as"/>
+	
+	<mx:VBox horizontalGap="0" width="100%">
+		<mx:HBox height="20" verticalAlign="middle" horizontalGap="2">
+			<mx:Label text="Code" width="90" textAlign="right" height="20" />
+			<customcomponents:GenTextInput id="tiCode" width="150" tabIndex="1" height="20"  
+				xmlTag="code" updatableFlag="true" tableName="location" maxChars="25" upperCaseFlag="true"/>	
+		</mx:HBox>
+
+		<mx:HBox height="20" verticalAlign="middle" horizontalGap="2" width="100%">
+			<mx:Label text="Location Name" width="90" textAlign="right" height="20" />
+			<customcomponents:GenTextInput id="tiLocation_name" width="150" tabIndex="2" height="20"  
+				xmlTag="name" updatableFlag="true" tableName="location" maxChars="50"/>	
+		</mx:HBox>
+	</mx:VBox>
+</gencomponents:AddEdit>

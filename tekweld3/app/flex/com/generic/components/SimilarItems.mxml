@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:TitleWindow xmlns:mx="http://www.adobe.com/2006/mxml" 
+	xmlns:customcomponents="com.generic.customcomponents.*"
+	xmlns:gencomponents="com.generic.components.*"
+	layout="absolute" width="700" height="400"
+	showCloseButton="true"
+	close="closeHandler()"
+	creationComplete="creationCompleteHandler()"
+	title="Similar Items List"
+	initialize="{this.parentApplication.focusManager.deactivate()}">
+	
+	<mx:Script source="../scripts/SimilarItemsScript.as"/>
+	
+	
+	<mx:VBox height="100%" width="100%">
+		<mx:TileList id="tlItemList"   height="100%"  width="670"   selectionColor="#ffffff" rollOverColor="#ffffff"
+ 	  			 dataProvider="{Items.children()}"
+ 	  			 itemRenderer="com.generic.components.OneItemDisplayRenderer"
+ 	  			 columnCount="1"
+ 	  			 columnWidth="{tlItemList.width}"
+ 	  			 rowHeight="100"
+ 	  			 
+ 	  			/>
+	</mx:VBox>
+</mx:TitleWindow>

@@ -1,0 +1,55 @@
+<div id="pager">
+	<% if @page > 1 %>
+		<%= link_to( 
+			'<span class="ui-icon ui-icon-circle-arrow-w"></span>',
+			"#",
+			:class => "btn_no_text btn ui-state-default ui-corner-all prev pager-link ignore-me",
+			:title => "Previous Page",
+			:indicator => "pager",
+			:page => "prev"
+		)%>
+	<% end -%>	
+		<span class="text">Page: </span>
+		<input id = "page_num" type="text" class="pagedisplay" value="<%= @page %>" size="1"/>
+		<span class="text">/ <%= @pages %></span>
+		<% if @page < @pages %>
+			<%= link_to(
+				'<span class="ui-icon ui-icon-circle-arrow-e"></span>',
+				"#",
+				:class => "btn_no_text btn ui-state-default ui-corner-all next pager-link ignore-me",
+				:title => "Next Page",
+				:indicator => "pager",
+				:page => "next"
+			)%>
+			
+		<% end -%>
+		<%= select "pager", "limit", UiHelper::PAGER_LIMITS, {:selected => @limit}, {:class => "pagesize pager-limit"} %>
+		<div style="padding-top:7px;" class="hidden" id="loading-pager"><%= image_tag("load.gif", :class => "icon") %> Loading...</div>
+		<input type="hidden" id="pager_url" name="url" value="<%= path %>"></input>
+		<form id="ghatogh">
+			<% @params_filter.keys.each do |k| -%>
+				<input type="hidden" id="filter_<%= k %>" name="filter[<%= k %>]" value="<%= @conditions[k] %>">
+			<% end -%>
+			<input type="hidden" name="page" id="page" value="<%= @page %>">
+			<input type="hidden" name="limit" id="limit" value="<%= @limit %>">	
+			<input type="hidden" name="size" id="size" value="<%= @size %>">	
+		</form>
+</div>
+<script>
+	$("#page_num").keydown(function(e){
+		if (e.keyCode == 13) {
+			$("#page").val($("#page_num").val());
+			$("#loading-pager").fadeIn('slow');
+			var url = $("#pager_url").val();
+			var form = $("#ghatogh");
+			var filters = $('#form_filter');
+			var args = form.serialize();
+			if (filters) {
+				args += "&" + filters.serialize();
+			};
+			$.get(url, args, function(response){ 
+		   $('.inner-response').html(response);
+		  });			
+		};
+	});
+</script>

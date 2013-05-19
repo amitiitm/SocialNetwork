@@ -1,0 +1,57 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  npa: 1
+  nxx: 1
+  country_pop: 1
+  zipcode_count: 1
+  zipcode_freq: 1
+  lat: 9.99
+  long: 9.99
+  state: MyString
+  city: MyString
+  county: MyString
+  timezone: MyString
+  observes_dst: MyString
+  nxx_use_type: MyString
+  nxx_intro_version: MyString
+  zipcode: MyString
+  npa_new: MyString
+  fips: MyString
+  lata: MyString
+  overlay: MyString
+  ratecenter: MyString
+  switch_cli: MyString
+  msa_cbsa: MyString
+  msa_cbsa_code: MyString
+  ocn: MyString
+  company: MyString
+  npanxx: 1
+
+two:
+  npa: 1
+  nxx: 1
+  country_pop: 1
+  zipcode_count: 1
+  zipcode_freq: 1
+  lat: 9.99
+  long: 9.99
+  state: MyString
+  city: MyString
+  county: MyString
+  timezone: MyString
+  observes_dst: MyString
+  nxx_use_type: MyString
+  nxx_intro_version: MyString
+  zipcode: MyString
+  npa_new: MyString
+  fips: MyString
+  lata: MyString
+  overlay: MyString
+  ratecenter: MyString
+  switch_cli: MyString
+  msa_cbsa: MyString
+  msa_cbsa_code: MyString
+  ocn: MyString
+  company: MyString
+  npanxx: 1

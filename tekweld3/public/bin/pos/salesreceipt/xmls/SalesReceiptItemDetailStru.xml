@@ -1,0 +1,30 @@
+<columns  lockedColumnCount='0'>
+
+	<column data='serial_no'				label='Serial #' 		editable='false' 	visible='true' 	width='50'	textAlign='left' 
+			forLevel='false' 				defaultForLevel='' 		booleanFlag='false' sortDataType='N' columnPrecision="NaN"/>
+	<column data='catalog_item_code'		label='Item #'			editable='false'	visible='true'	width='120'	textAlign='left'	
+			forLevel='false'				defaultForLevel=''		booleanFlag='false'	sortDataType='S' columnPrecision="NaN"/>
+	<column data='item_description'			label='Item Description' 	editable='false'	visible='true'	width='180'	textAlign='left'	
+			forLevel='false'				defaultForLevel=''		booleanFlag='false'	sortDataType='S' columnPrecision="NaN"/>
+	<column data='taxable'					label='Taxable' 		editable='false'	visible='true'	width='50'	textAlign='left'	
+			forLevel='false'				defaultForLevel=''		booleanFlag='false'	sortDataType='S' columnPrecision="NaN"/>
+	<column data='deposit_amt'				label='Deposit Amt' 	editable='false'	visible='true'	width='80'	textAlign='right'	
+			forLevel='false'				defaultForLevel=''		booleanFlag='false'	sortDataType='N' columnPrecision="2"/>
+
+
+	<column data='catalog_item_packet_code' label='Packet #' 		editable='true'		visible='true'	width='100'	textAlign='left'
+			forLevel='false' 				defaultForLevel=''		booleanFlag='false'	sortDataType='S' columnPrecision="NaN"/>
+	<column data='item_qty'					label='Qty'				editable='true' 	visible='true' 	width='60'	textAlign='right'	
+			forLevel='false'				defaultForLevel=''		booleanFlag='false'	sortDataType='N'columnPrecision="0"/>
+	<column data='item_price'				label='Price'			editable='true'		visible='true'	width='80'	textAlign='right'	
+			forLevel='false'				defaultForLevel=''		booleanFlag='false'	sortDataType='N' columnPrecision="2"/>
+	<column data='item_amt'					label='Item Amt'		editable='true'		visible='true'	width='100'	textAlign='right'	
+			forLevel='false'				defaultForLevel=''		booleanFlag='false'	sortDataType='N' columnPrecision="2"/>
+	<column data='discount_per' 			label='Disc(%)' 		editable='true' 	visible='true' 	width='60' 	textAlign='right' 
+			forLevel='false' 				defaultForLevel='' 		booleanFlag='false' sortDataType='N' columnPrecision="2"/>		
+	<column data='discount_amt' 			label='Disc Amt' 		editable='true' 	visible='true' 	width='80' 	textAlign='right' 
+			forLevel='false' 				defaultForLevel='' 		booleanFlag='false' sortDataType='N' columnPrecision="2"/>		
+	<column data='net_amt' 					label='Net Amt' 		editable='false' 	visible='true' 	width='100' textAlign='right' 
+			forLevel='false' 				defaultForLevel='' 		booleanFlag='false' sortDataType='N' columnPrecision="2"/>	
+
+</columns> 

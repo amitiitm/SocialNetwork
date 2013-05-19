@@ -1,0 +1,30 @@
+<% box :type => "simple" do %>
+	Simple
+<% end -%>
+
+<% box :type => "simple_title", :title => "Title" do %>
+	Simple Title
+	
+<% end -%>
+
+<% box :type => "box_title", :title => "Title" do %>
+	<p>Box Title</p>
+<% end -%>
+<div class="clearfix"></div>
+<% box :type => "window_title", :title1 => "Title1", :title2 => "Title 2" do %>
+	<p>Window Title</p>
+	<input type="text" id="datepicker" />
+<% end -%>
+
+<% box :type => "accordion" do %>
+	<% accordion :title => "Testing 1" do %>
+		123
+	<% end -%>
+	<% accordion :title => "Testing 2" do %>
+		456
+	<% end -%>
+	<% accordion :title => "Testing 3" do %>
+		789
+	<% end -%>
+<% end -%>
+

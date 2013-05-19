@@ -1,0 +1,15 @@
+<columns  lockedColumnCount='0'>
+
+	<column data='catalog_item_code'	label='Assemble Item #'		editable='false'	visible='true'		width='100'	textAlign='left' 
+			forLevel='false'			defaultForLevel='' 			booleanFlag='false'	sortDataType='S' 	columnPrecision="NaN"/>
+		
+	<column data='catalog_item_name' 	label='Assemble Item Name'	editable='false' 	visible='true' 		width='200' textAlign='left'
+			forLevel='false' 			defaultForLevel=''			booleanFlag='false'	sortDataType='S' 	columnPrecision="NaN"/>
+		
+	<column data='qty'					label='Qty'					editable='false'	visible='true'		width='100'	textAlign='right' 
+			forLevel='false'			defaultForLevel='' 			booleanFlag='false'	sortDataType='N' 	columnPrecision="0"/>
+
+	<column data='cost'					label='Cost'				editable='false'	visible='true'		width='100'	textAlign='right'
+			forLevel='false'			defaultForLevel=''			booleanFlag='false'	sortDataType='N' 	columnPrecision="2"/>
+
+</columns> 

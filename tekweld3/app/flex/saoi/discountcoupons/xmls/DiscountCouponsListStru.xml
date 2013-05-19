@@ -1,0 +1,30 @@
+<columns  lockedColumnCount='0'>
+	
+	<column data='from_date' 			label='From Date' 	editable='false' 	visible='true' 		width='100' 		textAlign='left'
+		 	print_width = '20'			forLevel='true' 	defaultForLevel='1'	booleanFlag='false'	sortDataType='D'	columnPrecision="NaN"/>
+		 	
+	<column data='to_date' 				label='To Date' 	editable='false' 	visible='true' 		width='100' 		textAlign='left'
+		 	print_width = '20'			forLevel='true' 	defaultForLevel='1'	booleanFlag='false'	sortDataType='D'	columnPrecision="NaN"/>	 	
+
+	<column data='coupon_code' 			label='Coupon #'		editable='false' 	visible='true' 		width='150' 			textAlign='left'
+		 	print_width = '20'			forLevel='true' 	defaultForLevel='0' booleanFlag='false'	sortDataType='S'	columnPrecision="NaN"/>
+	
+	<column data='customer_code' 		label='Customer #'	editable='false' 	visible='true' 		width='100' 			textAlign='left'
+		 	print_width = '20'			forLevel='true' 	defaultForLevel='0' booleanFlag='false'	sortDataType='S'	columnPrecision="NaN"/>
+	
+	<column data='catalog_item_code' 	label='Item #'		editable='false' 	visible='true' 		width='100' 			textAlign='left'
+		 	print_width = '20'			forLevel='true' 	defaultForLevel='0' booleanFlag='false'	sortDataType='S'	columnPrecision="NaN"/>	 		 	
+    
+    <column data='created_by_code' 		label='Created By #' 		editable='false' 	visible='true' 	width='200' textAlign='left' forLevel='false' 
+			defaultForLevel=''			booleanFlag='false'		sortDataType='S'	columnPrecision="NaN"/>
+			
+    <column data='no_of_uses' 			label='Rewareded' 		editable='false' 	visible='true' 	width='80' textAlign='right' forLevel='false' 
+			defaultForLevel=''			booleanFlag='false'	sortDataType='N'	columnPrecision="0"/>
+	
+	<column data='no_of_used' 			label='Reedemed' 		editable='false' 	visible='true' 	width='60' textAlign='right' forLevel='false' 
+			defaultForLevel=''			booleanFlag='false'	sortDataType='N'	columnPrecision="0"/>
+	
+	<column data='approval_flag' 		label='Approved ?' 		editable='false' 	visible='true' 	width='60' textAlign='left' forLevel='false' 
+			defaultForLevel=''			booleanFlag='false'	sortDataType='S'	columnPrecision="3"/>		
+	
+</columns> 

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rds:CommonServices xmlns:rds="business.*" xmlns:mx="http://www.adobe.com/2006/mxml">
+
+	<mx:HTTPService id="saveRecord" url="/sale/sales_invoice/create_invoices_from_inbox"/>
+	<mx:HTTPService id="getList" url="/sale/sales_invoice/sales_invoice_inbox"/> 
+	<mx:HTTPService id="getViewFormat" url="saoi/salesorderinvoices/xmls/SalesOrderInvoicesCriteriaStru.xml"/>
+	<mx:HTTPService id="getListFormat" url="saoi/salesorderinvoices/xmls/SalesOrderInvoicesListStru.xml"/>
+	<mx:HTTPService id="printRecord" url=""/>
+
+</rds:CommonServices>

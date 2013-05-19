@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<gencomponents:AddEdit xmlns:mx="http://www.adobe.com/2006/mxml"
+	height="100%" width="100%" verticalGap="0"
+	xmlns:customcomponents="com.generic.customcomponents.*"
+	xmlns:gencomponents="com.generic.components.*"
+	creationPolicy="all" creationComplete="init()">
+	
+	<mx:Script source="../scripts/SendMultipleArtworkToCustomerAddEditScript.as"/>
+
+	<mx:VBox width="0" height="0" verticalGap="0" horizontalGap="0" verticalAlign="top" visible="false">
+		<customcomponents:GenTextInput id="tiTrans_qty_pcs" width="0" height="0" visible="false" editable="false"
+			xmlTag="item_qty" updatableFlag="true" tableName="sales_order" />
+	</mx:VBox>
+	
+	<mx:VBox width="100%" height="100%" >
+		
+		<mx:HBox id="HBoxHeader" width="100%"  horizontalGap="0" verticalGap="0" verticalAlign="top"  
+			paddingBottom="0" paddingTop="0">
+			<mx:VBox width="50%" height="100%" horizontalGap="0" verticalGap="3" paddingBottom="0" paddingTop="0">
+				<mx:Spacer height="4%"/>
+				<mx:HBox width="100%" height="4%" verticalAlign="middle"  verticalGap="0" enabled="false" styleName="disableAsEnable" >
+					<mx:Label text="Customer #" width="100" textAlign="right" height="20" />
+					<customcomponents:GenTextInputWithHelp id="dcCustomer_id"
+														   width="200" height="20" 
+														   toolTip="Customer #" defaultValue=""
+														   dataField="id" 		labelField="code"
+														   xmlTag="customer_id" labelTag="customer_code"
+														   dataSourceName="Customer" 
+														   tabIndex="10"  itemChangedEvent="getCustomerDetails()"  
+														   validationFlag="true" 
+														   updatableFlag="true" tableName="sales_order"
+														   lookupFormatUrl	=	"retailCustomerLookupHelpFormat"
+														   />
+				</mx:HBox>
+				<mx:HBox visible="false" includeInLayout="false">
+					<mx:Label text="Code" width="95" textAlign="right" />
+					<customcomponents:GenTextInput id="tiCustomerCode" height="20" width="140" textAlign="left" defaultValue='' tabIndex="1"
+												   xmlTag="customer_code" dataType="S" updatableFlag="true" tableName="sales_order" maxChars="50" toolTip="Code"
+												   editable="true" validationFlag="true" upperCaseFlag="true" />
+				</mx:HBox>
+				<mx:HBox height="20" width="100%" horizontalGap="2" verticalAlign="middle">
+					<mx:Label text="Mail To" width="105" textAlign="right"/>
+					<customcomponents:GenTextInput id="tiMailTo" width="366" tabIndex="8" height="20" defaultValue=""  updatableFlag="true" maxChars="100" xmlTag="artwork_customer_email" tableName="sales_order"
+												   validationType="email" validationFlag="true" toolTip="Mail To" />
+				</mx:HBox>
+				<mx:HBox height="20" width="100%" horizontalGap="2" verticalAlign="middle">
+					<mx:Label text="Subject" width="105" textAlign="right"/>
+					<customcomponents:GenTextInput id="tiSubject" width="366" tabIndex="9" height="20"  updatableFlag="true" maxChars="100" xmlTag="artwork_subject" tableName="sales_order"
+												   toolTip="Subject" />
+				</mx:HBox>
+				<mx:HBox width="50%" height="100%">
+					<mx:Label text="Comment" width="100" textAlign="right"/>
+					<customcomponents:GenTextArea id="tiComment" width="366" height="100%" tabIndex="1" updatableFlag="true" maxChars="1000" xmlTag="artwork_comment" tableName="sales_order" editable="false"
+												   />
+					<mx:VBox>
+						
+						<customcomponents:GenCheckBox labelPlacement="right" label="Text 1" id="cbCheckArtwork1" width="150" 
+													  updatableFlag="false" defaultValue="N" textAlign="left" tabIndex="10" enabled="true" 
+													  dataValueForOn = "Y" dataValueForOff = "N" change="setMessage()"/>
+						<customcomponents:GenCheckBox labelPlacement="right" label="Text 2" id="cbCheckArtwork2" width="150" 
+													  updatableFlag="false" defaultValue="N" textAlign="left" tabIndex="11" enabled="true" 
+													  dataValueForOn = "Y" dataValueForOff = "N" change="setMessage()"/>
+						<customcomponents:GenCheckBox labelPlacement="right" label="Text 3" id="cbCheckArtwork3" width="150" 
+													  updatableFlag="false" defaultValue="N" textAlign="left" tabIndex="12" enabled="true" 
+													  dataValueForOn = "Y" dataValueForOff = "N" change="setMessage()"/>
+						<customcomponents:GenCheckBox labelPlacement="right" label="Text 4" id="cbCheckArtwork4" width="150" 
+													  updatableFlag="false" defaultValue="N" textAlign="left" tabIndex="13" enabled="true" 
+													  dataValueForOn = "Y" dataValueForOff = "N" change="setMessage()"/>
+						<customcomponents:GenCheckBox labelPlacement="right" label="Text 5" id="cbCheckArtwork5" width="150" 
+													  updatableFlag="false" defaultValue="N" textAlign="left" tabIndex="14" enabled="true" 
+													  dataValueForOn = "Y" dataValueForOff = "N" change="setMessage()"/>
+						<customcomponents:GenCheckBox labelPlacement="right" label="Text 6" id="cbCheckArtwork6" width="150" 
+													  updatableFlag="false" defaultValue="N" textAlign="left" tabIndex="15" enabled="true" 
+													  dataValueForOn = "Y" dataValueForOff = "N" change="setMessage()"/>
+
+					</mx:VBox>	
+				</mx:HBox>
+				<mx:HBox width="0" height="0" verticalGap="0" includeInLayout="false" visible="false">		
+					<mx:Label text="A/C Period" width="95" textAlign="right" height="20" />
+					<customcomponents:GenTextInput id="dcAccount_period_code" width="116" xmlTag="account_period_code" enabled="false" 
+												   updatableFlag="true"  tableName="sales_order"  height="20"
+												   defaultValue="" validationFlag="true" toolTip="A/c Period Code" fontWeight="bold" />
+					
+				</mx:HBox>
+				
+				<mx:HBox width="0" height="0" verticalGap="0" includeInLayout="false" visible="false">		
+					<mx:Label text="Status" width="95" textAlign="right" height="20" />
+					<customcomponents:GenComboBox id="cbTrans_flag" width="116" cornerRadius="0" xmlTag="trans_flag" updatableFlag="true"
+												  tableName="sales_order" enabled="false" defaultValue="A" labelField="label" height="20" editable="false"
+												  dataProvider="{__genModel.masterData.child('trans_flag').trans_flag}"
+												  toolTip="Status" />
+				</mx:HBox>
+				
+				<mx:HBox width="100%" height="10%" verticalGap="0" visible="false" includeInLayout="false"  >
+					<customcomponents:GenComboBox id="cbOrder_type" width="0" cornerRadius="0" xmlTag="trans_type" updatableFlag="true"
+												  tableName="sales_order"  tabIndex="3" labelField="label" height="0" defaultValue="S"  		
+												  dataProvider="{__genModel.masterData.child('trans_type').so}" toolTip="Order Type"/>	
+				</mx:HBox>
+				
+		
+			</mx:VBox>	
+			<mx:VRule height="100%"/>
+			<mx:VBox width="50%" height="100%" verticalGap="3" horizontalGap="0" paddingBottom="0" paddingTop="0">
+				<mx:Spacer height="4%"/>
+				
+				<mx:HBox width="100%" height="10%" verticalGap="0" enabled="false" styleName="disableAsEnable">						
+					<mx:Label text="Order #" width="100" textAlign="right" height="20" />
+					<customcomponents:GenTextInput id="tiTrans_bk" width="35" height="20" visible="true" enabled="false"
+												   xmlTag="trans_bk" updatableFlag="false" tableName="sales_order" fontWeight="bold" />
+					<customcomponents:GenTextInput id="tiTrans_no" width="71" xmlTag="trans_no" enabled="false" 
+												   updatableFlag="true"  tableName="sales_order"  height="20" 
+												   defaultValue="" validationFlag="false" toolTip="Trans #" fontWeight="bold" />	
+				</mx:HBox>	
+				
+				<mx:HBox width="100%" height="10%" verticalGap="0" enabled="false" styleName="disableAsEnable">
+					<mx:Label text="Order Date" width="100" textAlign="right" height="20" />
+					<customcomponents:GenDateField id="dfTrans_date" width="116" xmlTag="trans_date"
+												   updatableFlag="true" tabIndex="13" tableName="sales_order" height="20" 
+												   itemChangedEvent="__localModel.trans_date=dfTrans_date.text;getAccountPeriod()"
+												   validationFlag="false" toolTip="Trans Date"
+												   />
+				</mx:HBox>
+				<mx:HBox width="100%" height="20" horizontalGap="2" verticalAlign="middle" enabled="false" styleName="disableAsEnable">
+					<mx:Label text="Order Status" width="105" textAlign="right"/>
+					<customcomponents:GenTextInput id="tiCurrent_status" width="100%" xmlTag="order_status"
+												   updatableFlag="true" tabIndex="20" tableName="sales_order"
+												   defaultValue="" validationFlag="false" toolTip="Order Status" height="20" 
+												   maxChars="50"/>
+				</mx:HBox>
+				<mx:HBox width="100%" height="20" verticalAlign="middle" enabled="false" styleName="disableAsEnable" horizontalGap="2">
+					<mx:Label text="Workflow Location" width="105" textAlign="right"/>
+					<customcomponents:GenTextInput id="tiWorkflow_Location" width="100%" xmlTag="workflow_location"
+												   updatableFlag="true" tabIndex="20" tableName="sales_order"
+												   defaultValue="" validationFlag="false" toolTip="Workflow location" height="20" 
+												   maxChars="50"/>
+				</mx:HBox>
+				<mx:HBox height="100%" width="100%" horizontalGap="2" enabled="false" styleName="disableAsEnable">
+					<mx:Label text="Customer Message" width="105" textAlign="left" height="20" paddingTop="4"/>
+					<customcomponents:GenTextArea id="taSpecialInstruction" width="100%" height="100%"
+												  xmlTag="special_instructions" updatableFlag="true" tabIndex="58" maxChars="500"
+												  tableName="sales_order" />
+				</mx:HBox>
+				<mx:HBox height="100%" width="100%" horizontalGap="2">
+					<mx:Label text="Internal Comment" width="105" textAlign="right"/>
+					<customcomponents:GenTextInput id="tiInternalComment" width="100%" height="100%" tabIndex="16" updatableFlag="true" maxChars="1000"  xmlTag="artwork_internal_comment" tableName="sales_order"
+												   toolTip="Internal Comment" />
+				</mx:HBox>
+									
+			</mx:VBox>			
+		</mx:HBox>
+		<mx:Spacer height="2"/>
+		<customcomponents:GenButton label="Proof Preview" color="blue" click="getArtworkId()"/>
+		
+		
+ 		<mx:TabNavigator id="tnDetail" width="100%" height="100%"  >
+			<mx:VBox id="hbItem" label="Item" width="100%" height="100%" verticalGap="3" tabIndex="20">
+				<gencomponents:Detail id="dtlItem"
+									  updatableFlag="true"
+									  checkBlankRowColumn=""
+									  rootNode="sales_order_lines"
+									  formatServiceID="lineDetailFormat"
+									  height="100%" width="100%"
+									  DetailEditClass="{saoi.sendmultipleartworktocustomer.components.SendMultipleArtworkToCustomerLineDetail}"
+									  title="Item Detail"
+									  />
+				
+			</mx:VBox>
+			<mx:VBox id="vbArtwork" label="Artwork/PO" width="100%" height="100%" verticalGap="3" tabIndex="20">
+				<customcomponents:GenDataGrid 	id="dgArtwork"
+											  	editable="true"
+									  			updatableFlag="true"
+									  			checkBlankRowColumn=""
+									  			rootNode="sales_order_artworks"
+									  			formatServiceID="artworkDetailFormat"
+									  			height="100%" width="100%"
+												itemClick=""
+									  />
+				
+			</mx:VBox>
+			<mx:VBox id="hbActivity" label="Activity" width="100%" height="100%" verticalGap="3">
+				<customcomponents:GenDataGrid id="dgActivityLines" creationComplete="setActivityDateLavelFunction()"
+											  updatableFlag="true"
+											  rootNode="sales_order_transaction_activities"
+											  formatServiceID="lineActivityFormat"
+											  height="100%"
+											  width="100%"  visible="true" includeInLayout="true"/>
+			</mx:VBox>
+			<mx:VBox id="hbQueriesDetail" label="Queries" width="100%" height="100%" verticalGap="3" tabIndex="20">
+				<gencomponents:Detail id="dtlQueries"
+									  updatableFlag="true"
+									  checkBlankRowColumn=""
+									  rootNode="queries"
+									  formatServiceID="queryDetailFormat"
+									  height="100%" width="100%"
+									  DetailEditClass="{saoi.sendmultipleartworktocustomer.components.SendMultipleArtworkToCustomerQueriesDetail}"
+									  title="Query Detail"
+									  creationComplete="setQueryDateLavelFunction()"
+									  deleteOnlyUnSavedRow="{true}"/>
+				
+			</mx:VBox>
+		
+		</mx:TabNavigator>
+	</mx:VBox>
+</gencomponents:AddEdit>
+

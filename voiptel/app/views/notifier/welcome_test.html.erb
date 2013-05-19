@@ -1,0 +1,223 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+	<head>
+		<meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
+		<title>Welcome to OpenFo Calling System</title>
+		<meta name="author" content="aranea" />
+		<style type="text/css">
+			a:hover { text-decoration: none !important; }
+			.date_txt {
+				font-weight: bold; font-size: 12px; line-height: 23px;
+				background-color: #E97D00; font-family: Georgia, Arial,
+				Helvetica, sans-serif; color: #fff; font-style: italic;
+				text-align: center;
+			}
+			.cont_cell {font-size: 12px; padding: 17px 36px 15px 22px;}
+			.txt {
+				font-size: 12px; line-height: 20px; padding: 0px 0px 7px;
+				font-family: Arial, Helvetica, sans-serif; color: #333333;
+			}
+			.head {
+				font-size: 12px; background: #2D2D2D;
+				font-family: Arial, Helvetica, sans-serif;
+				padding: 0px 0px 0px 16px; color: #A1A1A1;
+			}
+			.user{
+				font-size: 12px; color: #000;
+			}
+			.section {
+				font-weight: normal; font-size: 18px;
+				margin: 0px 0px 15px 0px; font-family: Georgia;
+				padding: 0px 0px 0px 5px; color: #000;
+			}
+			.foot_top{
+				font-size: 12px; background: #E2E2E2; padding: 0px 0px 0px 0px;
+				font-family: Arial, Helvetica, sans-serif; color: #7C7C7C; text-align: center;
+			}
+		</style>
+		
+	</head>
+	<body>
+		<table cellspacing="0" border="0" cellpadding="0" width="100%">
+ 			<tr>
+  			<td style="text-align: center;">
+   				<center>
+    				<table cellspacing="0" border="0" cellpadding="0" align="center" width="700">
+     					<tr>
+      					<td class="head" height="35">
+       						You are receiving this email because you are a registered member of OpenFo network.
+      					</td>
+     					</tr>
+     					<tr>
+      					<td class="center" style="border: 1px solid #EFEFEF;">
+       						<table cellspacing="0" border="0" cellpadding="0" width="100%">
+        						<tr>
+         							<td class="logo" style="padding: 16px 0px 0px 19px;">
+          							<img src="http://openfo.com/images/email/email_logo.jpg" border="0" height="66" alt="logo" width="183" />
+         							</td>
+        						</tr>
+        						<tr>
+         							<td height="29">
+          							<table cellspacing="0" border="0" cellpadding="0" width="100%">
+           								<tr>
+            								<td class="date_lft" valign="top" style="padding: 0px 0px 0px 0px;" width="477">
+															<img src="http://openfo.com/images/email/date_lft.jpg" border="0" height="29" alt="" width="477" />
+														</td>
+            								<td class="date_rht" valign="top">
+             									<table cellspacing="0" border="0" cellpadding="0" width="100%">
+              									<tr>
+               										<td class="date_txt" height="23">
+																		<%= Time.now.strftime("%B %d, %Y" ) %>
+																	</td>
+              									</tr>
+             									</table>
+            								</td>
+           								</tr>
+          							</table>
+         							</td>
+        						</tr>        
+        						<tr>
+         							<td class="cont_cell">
+          							<p style="line-height: 20px; padding: 0px 0px 7px 0px;">
+													<b class="user" style="font-size: 14px; color: #000;">
+														Dear <span style="color: #EE7600;"><%= @user.first_name %></span>,
+													</b>
+												</p>
+          							<p class="txt">
+          								Welcome to OpenFo Network.<br>Please refer to the information in this email for your future calls.
+													<br>
+													<br>
+													<b class="user" style="font-size: 12px; color: #000;">
+														Your Account Number is: <span style="color: #EE7600;"><%= @account.number %></span>
+													</b>
+													<br>
+          							</p>
+												<p class="txt">
+          								Use the following Access Number(s) to make your long distance calls:
+													<br>
+													<% for phone in @user.phones -%>
+														For <b class="user">
+															<%= number_to_phone(phone.complete_phone_number, :area_code => true) %>
+														</b>, please use
+														<b>
+															<span style="color: #EE7600;">
+																<% if phone.assigned_did %>
+																	<%= number_to_phone(phone.assigned_did.did.number , :area_code => true) %>
+																<% else %>
+																	"1(877) 810-3003 *Toll Free*"
+																<% end %>
+															</span>
+														</b>
+														<br>
+													<% end %>
+          							</p>
+         							</td>
+        						</tr>
+        						<tr>
+         							<td class="art_sep" style="padding: 10px 0px 0px 0px;">
+												<img src="http://openfo.com/images/email/art_sep_abs.gif" border="0" height="1" alt="" width="697" />
+											</td>
+        						</tr>
+        						<tr>
+         							<td class="cont_cell">
+          							<table cellspacing="0" border="0" cellpadding="0" width="100%">
+           								<tr>
+            								<td width="4">
+															<img src="http://openfo.com/images/email/art_head.gif" border="0" height="34" alt="" width="3" />
+														</td>
+            								<td>
+															<h4 class="section">Calling Instructions:</h4>
+														</td>
+           								</tr>
+          							</table>
+          							<table cellspacing="0" border="0" cellpadding="0" width="100%">
+           								<tr>
+            								<td width="460">
+             									<p class="txt">
+             										<b><span style="color: #EE7600;"><u>Step 1 - Connecting to OpenFo Network:</u></span></b>
+																<br>
+																Dial your Access Number.
+																<br>
+	           										<b><span style="color: #EE7600;"><u>Step 2 - Dialing Your Destination Number:</u></span></b>
+																<br>
+																For <b>International calls</b>, please <b>dial "011" followed by destination number</b>, example:
+																<br>
+																To call <b>982155667788</b> you should dial: <b><span style="color: ">011</span>982155667788</b>
+																<br>
+																<br>		
+																For <b>U.S domestic calls</b>, please <b>dial your destination number starting with "1"</b>, example:
+																<br>
+																To call <b>(800) 555-7777</b> you should dial: <b><span style="color: ">1</span>8005557777</b>
+																<br>		
+             									</p>
+						 									<p class="txt">
+																<b><span style="color: #EE7600;"><u>Discover OpenFo EasyDialer:</u></span></b>
+																<br>
+																<u>EasyDialer</u> is the <u>last 4 digits of your destination numbers</u> which helps you save time
+																and reduce keying errors when dialing. Each time that you dial a new destination number, 
+																OpenFo automatically creates an <u>EasyDialer in your phone book</u> for your future calls. 
+																For example if you dial <b>01198215566<u>7788 </u></b>your EasyDialer would be <b><u>7788</u></b>.
+																<br>
+																To view and access your EasyDialer phone book you can login to your OpenFo account and 
+																go to "My EasyDialer" page. You can always register your destination numbers ahead of
+																 time in your "My EasyDialer" page.
+						 									</p>
+            								</td>
+           								</tr>
+          							</table>
+         							</td>
+        						</tr>
+        						<tr>
+         							<td class="art_sep" style="padding: 10px 0px 0px 0px;">
+												<img src="http://openfo.com/images/email/art_sep_abs.gif" border="0" height="1" alt="" width="697" />
+											</td>
+        						</tr>
+        						<tr>
+         							<td class="cont_cell">
+          							<table cellspacing="0" border="0" cellpadding="0" width="100%">
+           								<tr>
+            								<td width="4">
+															<img src="http://openfo.com/images/email/art_head.gif" border="0" height="34" alt="" width="3" />
+														</td>
+            								<td>
+															<h4 class="section">Customer Support: </h4>
+														</td>
+           								</tr>
+          							</table>
+          							<table cellspacing="0" border="0" cellpadding="0" width="100%">
+           								<tr>
+            								<td width="460">
+             									<p class="txt">
+																For customer support you may contact <b>support@openfo.com</b> or call your Access 
+																Number and press 2 to connect to one of our customer support representatives.<br>							
+															</p>
+															<p class="txt">
+																Thank you for joining the <b>OpenFo Network</b>
+															</p>
+
+            								</td>
+           								</tr>
+       									</table>
+      								</td>
+     								</tr>
+     								<tr>										
+      								<td class="footer">
+       									<table cellspacing="0" border="0" cellpadding="0" width="100%">
+        									<tr>
+         										<td class="foot_top" height="31">
+															&#169; OpenFo, Inc.<br>
+															2967 Michelson Dr.  #G480, Irvine, CA 92612
+         										</td>
+        									</tr>
+       									</table>
+      								</td>											
+     								</tr>
+    							</table>
+							</td>
+						</table>
+   				</center> 
+  			</td>
+ 			</tr>
+		</table>
+	</body>
+</html>

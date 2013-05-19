@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<gencomponents:DetailAddEdit xmlns:mx="http://www.adobe.com/2006/mxml"
+	width="380" height="140" verticalGap="0"
+	xmlns:customcomponents="com.generic.customcomponents.*"
+	xmlns:gencomponents="com.generic.components.*"
+	creationComplete="creationCompleteHandler()">
+
+	<mx:Script source="../scripts/CustomerNotesDetailScript.as"/>
+	
+		<mx:VBox width="100%" height="100%">	
+			<mx:HBox horizontalGap="0" width="100%">
+				<mx:Label text="Date" textAlign="right" width="45"/>
+				<customcomponents:GenDateField id="dfTrans_dt" height="20" width="122" yearNavigationEnabled="true"
+					xmlTag="trans_dt" updatableFlag="true" tableName = "note" tabIndex="1" toolTip="Date"
+					validationFlag="true" />
+			</mx:HBox>
+				
+			<mx:HBox horizontalGap="0" width="100%" verticalAlign="middle">
+				<mx:Label text="Notes" textAlign="right" width="45"/>
+				<customcomponents:GenTextArea id="taDaily_notes" width="250" height="42" tabIndex="2" 
+					xmlTag="daily_notes" updatableFlag="true" tableName="note" />
+			</mx:HBox>
+			
+			<mx:HBox horizontalGap="0"  width="0" visible="false">
+				<mx:Label text="Status" width="45" textAlign="right"/>
+				<customcomponents:GenComboBox id="cbTrans_flag" width="83" cornerRadius="0" xmlTag="trans_flag" updatableFlag="true"
+					tableName="note" defaultValue="A" tabIndex="3" height="20" labelField="label"
+					dataProvider="{GenModelLocator.getInstance().masterData.child('trans_flag').trans_flag}" />
+			</mx:HBox>
+			
+			<mx:HBox width="0" height="0" visible="false">
+				<customcomponents:GenTextInput id="tiSerial_no" toolTip="Serial #" restrict="1234567890" visible="false"
+					validationFlag="false" 
+					xmlTag="serial_no" updatableFlag="true" tableName="note"/>
+			</mx:HBox>
+		</mx:VBox>
+</gencomponents:DetailAddEdit>

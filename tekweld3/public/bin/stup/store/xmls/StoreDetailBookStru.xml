@@ -1,0 +1,11 @@
+<columns  lockedColumnCount='0'>
+
+	<column data='book_cd'		label='Book #'			editable='false'	visible='true' 	width='150'	textAlign='left'	forLevel='false' 
+			defaultForLevel=''	booleanFlag='false'		sortDataType='S'	columnPrecision="NaN"/>
+
+	<column data='book_nm'		label='Book Name'		editable='false' 	visible='true' 	width='250'	textAlign='left'	forLevel='false' 
+			defaultForLevel=''	booleanFlag='false'		sortDataType='S'	columnPrecision="NaN"/>
+
+	<column data='book_lno'		label='Book Last No.'	editable='true' 	visible='true' 	width='250'	textAlign='left'	forLevel='false' 
+			defaultForLevel=''	booleanFlag='false'		sortDataType='S'	columnPrecision="NaN"/>
+</columns> 

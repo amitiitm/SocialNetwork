@@ -1,0 +1,41 @@
+<%= page_title :title => "All Referrals (Matched & Unmacthed)" %>
+<div class="hastable">	
+  <form name="myform" class="pager-form" method="post" action="">
+    <table id="referrals-table" style="width:850px;">
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Customer Name</th>
+          <th>Referrer Name</th>
+          <th>Referrer Phone</th>
+          <th>Date</th>
+          <th>Status</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        <% counter = @referrals.size + 1 %>
+        <% for referral in @referrals do %>
+            <% counter -= 1 %>
+            <tr>
+              <% Rails.logger.info {"ID: #{referral.referred_account_id}"} %>
+              <td> <%= counter %></td>
+              <td><%= Account.find(referral.referred_account_id).account_holder.name %></td>
+              <td><%= "#{referral.referrer_first_name} #{referral.referrer_last_name}"%></td>
+              <td><%= referral.referrer_phone_number %></td>
+              <td><%= "#{referral.created_at}" %></td>
+              <td><%= referral_status(referral) %></td>
+              <td></td>
+            </tr>
+          <%  end %>
+        </tbody>
+      </table>
+    </form>
+  </div>
+  <div id="container"></div>
+  <script>
+    $(function(){
+      $("#referrals-table").tablesorter({widgets: ['zebra'], headers: { 0: { sorter: false } }});
+      $("#referrals-table .header").append('<span class="ui-icon ui-icon-carat-2-n-s"></span>');
+    });
+  </script>

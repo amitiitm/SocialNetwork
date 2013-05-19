@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rds:CommonServices xmlns:rds="business.*" xmlns:mx="http://www.adobe.com/2006/mxml">
+
+	<mx:HTTPService id="saveRecord" url="/purchase/create_memos" />
+	<mx:HTTPService id="getRecord" url="/purchase/show_memo" />
+	<mx:HTTPService id="getList" url="/purchase/list_memos" />
+	<mx:HTTPService id="getListFormat" url="puoi/purchasememo/xmls/PurchaseMemoListStru.xml" />
+	<mx:HTTPService id="getViewFormat" url="puoi/purchasememo/xmls/PurchaseMemoCriteriaStru.xml" />
+	<mx:HTTPService id="itemDetailFormat" url="puoi/purchasememo/xmls/PurchaseMemoLineDetailStru.xml" />
+	<mx:HTTPService id="fetchRecordFormat" url="puoi/purchasememo/xmls/PurchaseMemoFetchRecordStru.xml"/>
+	<mx:HTTPService id="fetch_open_memo_orders" url="/purchase/list_open_memo_orders"/>
+
+	<mx:HTTPService id="fetch_open_memo_orders_hdr" url="/purchase/list_open_memo_orders_hdr"/>
+	<mx:HTTPService id="fetchOrderHdrFormat" url="puoi/purchasememo/xmls/PurchaseMemoFetchOrderHdrStru.xml"/>
+	<mx:HTTPService id="fetchGetSelectedOrderServiceID" url="/purchase/list_open_memo_order_lines"/>
+
+	<mx:HTTPService id="printRecord" url="/purchase_report/render_purchase_memo_format" />
+
+</rds:CommonServices>	
+	
